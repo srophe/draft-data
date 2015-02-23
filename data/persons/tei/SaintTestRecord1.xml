@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://syriaca.org/documentation/syriaca-tei-main.rnc" type="application/relax-ng-compact-syntax"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/"
-    xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl" xmlns:functx="http://www.functx.com"
+    xmlns:functx="http://www.functx.com" xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
     xml:lang="en">
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title level="a">Ahrun of Serugh — <foreign xml:lang="syr">ܐܗܪܘܢ</foreign></title>
+                <title level="a" xml:lang="en">Ahrūn<!-- C --> — <foreign xml:lang="syr">ܐܗܪܘܢ<!-- D --></foreign>
+                </title>
                 <title level="m">Qadishe: A Guide to the Syriac Saints</title>
                 <sponsor>Syriaca.org: The Syriac Reference Portal</sponsor>
                 <funder>The International Balzan Prize Foundation</funder>
@@ -34,21 +36,25 @@
                         Michelson</name>
                 </respStmt>
                 <respStmt>
-                    <resp>Editing, proofreading, and revision by</resp>
-                    <name ref="http://syriaca.org/editors.xml#tcarlson">Thomas A. Carlson</name>
-                </respStmt>
-                <respStmt>
-                    <resp>Editing, proofreading, and revision by</resp>
-                    <name ref="http://syriaca.org/editors.xml#ngibson">Nathan P. Gibson</name>
-                </respStmt>
-                <respStmt>
                     <resp>Editing, Syriac data conversion, data entry, and reconciling by</resp>
                     <name ref="http://syriaca.org/editors.xml#akane">Adam P. Kane</name>
                 </respStmt>
                 <respStmt>
-                    <resp>Entries based on the work of</resp>
+                    <resp>Editing and Syriac data proofreading by</resp>
+                    <name ref="http://syriaca.org/editors.xml#abarschabo">Aram Bar Schabo</name>
+                </respStmt>
+                <respStmt>
+                    <resp>Entries adapted from the work of</resp>
                     <name type="person" ref="http://syriaca.org/editors.xml#jmfiey">Jean Maurice
                         Fiey</name>
+                </respStmt>
+                <respStmt>
+                    <resp>Entries adapted from on the work of</resp>
+                    <name type="person" ref="http://syriaca.org/editors.xml#uzanetti">Ugo Zanetti</name>
+                </respStmt>
+                <respStmt>
+                    <resp>Entries adapted from on the work of</resp>
+                    <name type="person" ref="http://syriaca.org/editors.xml#cdetienne">Claude Detienne</name>
                 </respStmt>
             </titleStmt>
             <editionStmt>
@@ -56,23 +62,15 @@
             </editionStmt>
             <publicationStmt>
                 <authority>Syriaca.org: The Syriac Reference Portal</authority>
-                <idno type="URI">http://syriaca.org/person/1092/tei</idno>
+                <idno type="URI">http://syriaca.org/person/1092/tei<!-- URI --></idno>
                 <availability>
                     <licence target="http://creativecommons.org/licenses/by/3.0/">
                         <p>Distributed under a Creative Commons Attribution 3.0 Unported
                             License.</p>
                     </licence>
                 </availability>
-                <date>2014-11-5-01:00</date>
+                <date><!-- Current Date --></date>
             </publicationStmt>
-            <seriesStmt>
-                <title level="s">Gateway to the Syriac Saints</title>
-                <biblScope unit="vol">1</biblScope>
-                <editor role="general" ref="http://syriaca.org/documentation/editors.xml#jnmsl"
-                    >Jeanne-Nicole Mellon Saint-Laurent</editor>
-                <editor role="general" ref="http://syriaca.org/documentation/editors.xml#dmichelson"
-                    >David A. Michelson</editor>
-            </seriesStmt>
             <sourceDesc>
                 <p>Born digital.</p>
             </sourceDesc>
@@ -123,8 +121,6 @@
                 <language ident="en-x-gedsh">Names or terms Romanized into English according to the
                     standards adopted by the Gorgias Encyclopedic Dictionary of the Syriac
                     Heritage</language>
-                <language ident="fr-x-bhsyre">Names or terms Romanized into French according to the
-                    standards adopted by the Biblioteca Hagiographica Syriaca Electronica</language>
                 <language ident="ar">Arabic</language>
                 <language ident="fr">French</language>
                 <language ident="de">German</language>
@@ -133,42 +129,53 @@
         </profileDesc>
         <revisionDesc>
             <change who="http://syriaca.org/documentation/editors.xml#dmichelson" n="1.0"
-                when="2014-11-5-01:00"> CREATED: person </change>
+                when="<!-- Current Date -->"> CREATED: person</change>
         </revisionDesc>
     </teiHeader>
     <text>
         <body>
             <listPerson>
-                <person xml:id="person-1092" ana="#syriaca-saint">
-                    <persName xml:id="name1092-1" xml:lang="syr" source="#bib1092-1"
-                        syriaca-tags="#syriaca-headword">ܐܗܪܘܢ</persName>
-                    <persName xml:id="name1092-2" xml:lang="en-x-gedsh"
-                        syriaca-tags="#syriaca-headword">Ahrun of Serugh</persName>
-                    <persName xml:id="name1092-3" xml:lang="fr-x-bhsyre" source="#bib1092-1">ʾAhrōn</persName>
-                    <persName xml:id="name1092-4" xml:lang="en">Aaron of Saroug</persName>
-                    <persName xml:id="name1092-5" xml:lang="fr" source="#bib1092-1 #bib1092-2">Aaron
-                        de Saroug</persName>
-                    <note type="abstract" xml:id="abstract-en-1092" source="#bib1092-2">Aaron of
-                        <placeName ref="http://syriaca.org/place/48">Serugh</placeName> was a disciple of <persName>Mar Awgin</persName> and founder of two monasteries near
-                        <placeName ref="http://syriaca.org/place/136">Melitene</placeName>.</note>
-                    <idno type="URI">http://syriaca.org/person/1092</idno>
-                    <sex value="M" source="#bib1092-2">male</sex>
-                    <death when="0337" source="#bib1092-2">337</death>
+                <person xml:id="person-1092<!-- URI -->" ana="#syriaca-saint">
+                    <persName xml:id="name1092<!-- URI -->-1" xml:lang="syr" source="#bib1092-1"
+                        syriaca-tags="#syriaca-headword">ܐܗܪܘܢ<!-- D --></persName>
+                    <!-- Run a check to see if D-H contain different strings, if so create a new persName similar to line above for each unique string but without syriaca-tags="#syriaca-headword" which is only on name from column D -->
+                    <persName xml:id="name1092<!-- URI -->-2" xml:lang="en-x-gedsh"
+                        syriaca-tags="#syriaca-headword">Ahrūn<!-- C --></persName>
+                    <persName xml:id="name1092<!-- URI -->-3" xml:lang="fr-x-bhsyre" source="#bib1092-1">ʾAhrōn<!-- J --></persName>
+                    <!-- Run a check to see if J-K contain different strings, if so create a new persName similar to line above for each unique string -->
+                    <persName xml:id="name1092<!-- URI -->-4" xml:lang="en" syriaca-tags="#syriaca-anglicized">Aaron of Saroug<!-- L --></persName>
+                    <!-- Run a check to see if L-M contain different strings, if so create a new persName similar to line above for each unique string -->
+                    <persName xml:id="name1092<!-- URI -->-5" xml:lang="en" syriaca-tags="#syriaca-anglicized">Aaron of Serug<!-- AP --></persName>
+                    <persName xml:id="name1092<!-- URI -->-6" xml:lang="fr" source="#bib1092-1 #bib1092-2">Aaron de Saroug<!-- P --></persName>
+                    <!-- Run a check to see if P-S contain different strings, if so create a new persName similar to line above for each unique string -->
+                    <persName xml:id="name1092<!-- URI -->-7" xml:lang="fr" source="#bib1092-2">AARON DE SAROUG<!-- AM --></persName>
+                    <!-- Run a check to see if AM matches P-S, if AM is unique, i.e. does NOT match P-S then create a new persName as line above here-->
+                    <note type="abstract" xml:id="abstract-en-1092" source="#bib1092-2">Aaron of Saroug was a disciple of Mar Awgin and founder of two monasteries near Melitene.<!-- AD --></note>
+                    <idno type="URI">http://syriaca.org/person/1092<!-- URI --></idno>
+                    <idno type="FIEY">1<!-- AK --></idno>
+                    <idno type="BHSYRE">477<!-- BH --></idno>
+                    <!-- Please repeat for BH through DV if these contain a numeric string -->
+                    <sex value="M<!-- AR -->" source="#bib1092-2">male<!-- Please completed as male if M in @, female if F, and eunuch if E. Note there is some noise in this data, just leave the garbage in if that is okay (ie, some say M/F --></sex>
+                    <birth when="<!-- AU -->" source="#bib1092<!-- URI -->-2" syriaca-computed-start="<!-- please compute from AU if data present-->"
+                        ><!-- AU --></birth>
+                    <death when="0373" source="#bib1092<!-- URI -->-2" syriaca-computed-start="0373-01-01<!-- please compute from AV if data present-->"
+                        >373<!-- AV --></death>
+                        <floruit source="#bib1092<!-- URI -->-2" syriaca-computed-start="<!-- please compute from AV-->"<!-- @values and text node contents here will be as follows: @when=AW, @notBefore=AZ, @notAfter=BA, @from=AX, @to=AY; please generate when there is contents in these columns--></floruit>
+                    <state type="martyr" source="#bib1092<!-- URI -->-2">Martyr<!-- Create this state element only if column BC = yes --></state>
+                    <note>Fiey provides the following bibliographic citations: <quote source="#bib1092<!-- URI -->-2"><!-- insert contents of BD here after the colon and white space --></quote></note>
                     <bibl xml:id="bib1092-1">
                         <title level="m" xml:lang="la">Biblioteca Hagiographica Syriaca
                             electronica</title>
                         <ptr target="http://syriaca.org/bibl/649"/>
-                        <citedRange unit="entry">477</citedRange>
+                        <citedRange unit="entry">477<!-- Please concat the numbers in BH-DV separating with commas and white spaces. --></citedRange>
                     </bibl>
                     <bibl xml:id="bib1092-2">
                         <title level="m" xml:lang="fr">Saints Syriaques</title>
+                        <title level="a" xml:lang="fr">AARON DE SAROUG<!-- AM --></title>
                         <ptr target="http://syriaca.org/bibl/650"/>
-                        <citedRange unit="entry">1</citedRange>
+                        <citedRange unit="entry">1<!-- AK --></citedRange>
                     </bibl>
                 </person>
-                <relation name="has-relation-to-place" active="#person-1092" passive="http://syriaca.org/place/48 http://syriaca.org/place/136" source="#bib1092-2">
-                    <desc xml:lang="en">This person has an unspecified connection to places.</desc>
-                </relation>
             </listPerson>
         </body>
     </text>

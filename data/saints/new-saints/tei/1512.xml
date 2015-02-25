@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://syriaca.org/documentation/syriaca-tei-main.rnc" type="application/relax-ng-compact-syntax"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:syriaca="http://syriaca.org"
+     xmlns:saxon="http://saxon.sf.net/"
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+     xmlns:functx="http://www.functx.com"
+     xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="a" xml:lang="en">Yawnān Nūkhriṭā — <foreign xml:lang="syr">ܝܘܢܢ ܢܘܟܪܝܛܐ</foreign>
+            </title>
+            <title level="m">Qadishe: A Guide to the Syriac Saints</title>
+            <sponsor>Syriaca.org: The Syriac Reference Portal</sponsor>
+            <funder>The International Balzan Prize Foundation</funder>
+            <funder>The National Endowment for the Humanities</funder>
+            <principal>David A. Michelson</principal>
+            <editor role="general"
+                    ref="http://syriaca.org/documentation/editors.xml#jnmsaintlaurent">Jeanne-Nicole Mellon Saint-Laurent</editor>
+            <editor role="general"
+                    ref="http://syriaca.org/documentation/editors.xml#dmichelson">David A. Michelson</editor>
+            <editor role="creator"
+                    ref="http://syriaca.org/documentation/editors.xml#jnmsaintlaurent">Jeanne-Nicole Mellon Saint-Laurent</editor>
+            <editor role="creator"
+                    ref="http://syriaca.org/documentation/editors.xml#dmichelson">David A. Michelson</editor>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#jnmsaintlaurent">Jeanne-Nicole Mellon Saint-Laurent</name>
+            </respStmt>
+            <respStmt>
+               <resp>Data architecture and encoding by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#dmichelson">David A. Michelson</name>
+            </respStmt>
+            <respStmt>
+               <resp>Editing, Syriac data conversion, data entry, and reconciling by</resp>
+               <name ref="http://syriaca.org/editors.xml#akane">Adam P. Kane</name>
+            </respStmt>
+            <respStmt>
+               <resp>Editing and Syriac data proofreading by</resp>
+               <name ref="http://syriaca.org/editors.xml#abarschabo">Aram Bar Schabo</name>
+            </respStmt>
+            <respStmt>
+               <resp>Entries adapted from the work of</resp>
+               <name type="person" ref="http://syriaca.org/editors.xml#jmfiey">Jean Maurice Fiey</name>
+            </respStmt>
+            <respStmt>
+               <resp>Entries adapted from on the work of</resp>
+               <name type="person" ref="http://syriaca.org/editors.xml#uzanetti">Ugo Zanetti</name>
+            </respStmt>
+            <respStmt>
+               <resp>Entries adapted from on the work of</resp>
+               <name type="person" ref="http://syriaca.org/editors.xml#cdetienne">Claude Detienne</name>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition n="1.0"/>
+         </editionStmt>
+         <publicationStmt>
+            <authority>Syriaca.org: The Syriac Reference Portal</authority>
+            <idno type="URI">http://syriaca.org/person/1512/tei</idno>
+            <availability>
+               <licence target="http://creativecommons.org/licenses/by/3.0/">
+                  <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
+               </licence>
+            </availability>
+            <date>2015-02-25-05:00</date>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Born digital.</p>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <editorialDecl>
+            <p>This record created following the Syriaca.org guidelines. 
+                        Documentation available at: <ref target="http://syriaca.org/documentation">http://syriaca.org/documentation</ref>.</p>
+            <interpretation>
+               <p>Approximate dates described in terms of centuries or partial centuries
+                            have been interpreted as documented in 
+                            <ref target="http://syriaca.org/documentation/dates.html">Syriaca.org Dates</ref>.</p>
+            </interpretation>
+         </editorialDecl>
+         <classDecl>
+            <taxonomy>
+               <category xml:id="syriaca-headword">
+                  <catDesc>The name used by Syriaca.org for document titles, citation, and
+                                disambiguation. These names have been created according to the
+                                Syriac.org guidelines for headwords: <ref target="http://syriaca.org/documentation/headwords.html">http://syriaca.org/documentation/headwords.html</ref>.</catDesc>
+               </category>
+               <category xml:id="syriaca-anglicized">
+                  <catDesc>An anglicized version of a name, included to facilitate
+                                searching.</catDesc>
+               </category>
+            </taxonomy>
+            <taxonomy>
+               <category xml:id="syriaca-author">
+                  <catDesc>A person who is relevant to the Guide to Syriac Authors</catDesc>
+               </category>
+               <category xml:id="syriaca-saint">
+                  <catDesc>A person who is relevant to the Bibliotheca Hagiographica
+                                Syriaca.</catDesc>
+               </category>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="syr">Unvocalized Syriac of any variety or period</language>
+            <language ident="syr-Syrj">Vocalized West Syriac</language>
+            <language ident="syr-Syrn">Vocalized East Syriac</language>
+            <language ident="en">English</language>
+            <language ident="en-x-gedsh">Names or terms Romanized into English according to the standards 
+                        adopted by the Gorgias Encyclopedic Dictionary of the Syriac Heritage</language>
+            <language ident="ar">Arabic</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+      </profileDesc>
+      <revisionDesc>
+         <change who="http://syriaca.org/documentation/editors.xml#dmichelson"
+                 n="1.0"
+                 when="2015-02-25-05:00"> CREATED: person </change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <listPerson>
+            <person xml:id="saint-1512" ana="#syriaca-saint">
+               <persName xml:id="name1512-1" xml:lang="en" syriaca-tags="#syriaca-headword">John the Anchorite</persName>
+               <persName xml:id="name1512-2" xml:lang="en">Yawnan the foreigner</persName>
+               <persName xml:id="name1512-3"
+                         xml:lang="syr"
+                         syriaca-tags="#syriaca-headword"
+                         source="#bibl1512-2">ܝܘܢܢ ܢܘܟܪܝܛܐ</persName>
+               <persName xml:id="name1512-4" xml:lang="fr-x-zanetti" source="#bibl1512-2">Yawnān Nūḵrēṭā</persName>
+               <persName xml:id="name1512-5" xml:lang="fr" source="#bibl1512-2">Jonas l’anachorète</persName>
+               <persName xml:id="name1512-6" xml:lang="fr-x-fiey" source="#bibl1512-1">YAWNĀN L'ETRANGER</persName>
+               <idno type="URI">http://syriaca.org/person/1512</idno>
+               <idno type="FIEY">456</idno>
+               <idno type="FIEY">456</idno>
+               <idno type="BHSYRE">36</idno>
+               <idno type="BHSYRE">1208</idno>
+               <idno type="BHSYRE"/>
+               <idno type="BHSYRE"/>
+               <idno type="BHSYRE"/>
+               <idno type="BHSYRE"/>
+               <idno type="BHSYRE"/>
+               <idno type="BHSYRE"/>
+               <idno type="BHSYRE"/>
+               <idno type="BHSYRE"/>
+               <idno type="BHSYRE"/>
+               <idno type="BHSYRE"/>
+               <idno type="BHSYRE"/>
+               <idno type="BHSYRE"/>
+               <idno type="BHSYRE"/>
+               <idno type="BHSYRE"/>
+               <idno type="BHSYRE"/>
+               <idno type="BHSYRE"/>
+               <idno type="BHSYRE"/>
+               <idno type="BHSYRE"/>
+               <idno type="BHSYRE"/>
+               <idno type="BHSYRE"/>
+               <idno type="BHSYRE"/>
+               <idno type="BHSYRE"/>
+               <idno type="BHSYRE"/>
+               <idno type="BHSYRE"/>
+               <idno type="BHSYRE"/>
+               <idno type="BHSYRE"/>
+               <idno type="BHSYRE"/>
+               <idno type="BHSYRE"/>
+               <idno type="BHSYRE"/>
+               <idno type="BHSYRE"/>
+               <idno type="BHSYRE"/>
+               <idno type="BHSYRE"/>
+               <idno type="BHSYRE"/>
+               <idno type="BHSYRE"/>
+               <idno type="BHSYRE"/>
+               <idno type="BHSYRE"/>
+               <idno type="BHSYRE"/>
+               <idno type="BHSYRE"/>
+               <idno type="BHSYRE"/>
+               <idno type="BHSYRE"/>
+               <idno type="BHSYRE"/>
+               <idno type="BHSYRE"/>
+               <idno type="BHSYRE"/>
+               <idno type="BHSYRE"/>
+               <idno type="BHSYRE"/>
+               <idno type="BHSYRE"/>
+               <idno type="BHSYRE"/>
+               <idno type="BHSYRE"/>
+               <idno type="BHSYRE"/>
+               <idno type="BHSYRE"/>
+               <idno type="BHSYRE"/>
+               <idno type="BHSYRE"/>
+               <idno type="BHSYRE"/>
+               <idno type="BHSYRE"/>
+               <idno type="BHSYRE"/>
+               <idno type="BHSYRE"/>
+               <idno type="BHSYRE"/>
+               <idno type="BHSYRE"/>
+               <idno type="BHSYRE"/>
+               <idno type="BHSYRE"/>
+               <idno type="BHSYRE"/>
+               <idno type="BHSYRE"/>
+               <idno type="BHSYRE"/>
+               <idno type="BHSYRE"/>
+               <sex value="M" source="#bibl1512-1">male</sex>
+               <death when="normalize-space(.)"
+                      source="#bibl1512-2"
+                      syriaca-computed-start="0327-01-01">0327</death>
+               <floruit source="#bibl1512-2"
+                        notBefore="&#xA;        &#xA;        &#xA;        Yawnān Nūkhriṭā&#xA;        ܝܘܢܢ ܢܘܟܪܝܛܐ&#xA;        ܝܘܢܢ ܢܘܟܪܝܛܐ&#xA;        &#xA;        &#xA;        &#xA;        ܝܘܢܢ ܢܘܟܪܝܛܐ&#xA;        Yawnān Nūḵrēṭā&#xA;        &#xA;        John the Anchorite&#xA;        &#xA;        &#xA;        Jonas l’anachorète&#xA;        &#xA;        &#xA;        &#xA;        &#xA;        Individual Saint&#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        monk, founder&#xA;        &#xA;        Arzun&#xA;        &#xA;        490&#xA;        456&#xA;        456&#xA;        YAWNĀN L'ETRANGER&#xA;        YAWNĀN L'ETRANGER&#xA;        &#xA;        &#xA;        Yawnan the foreigner&#xA;        &#xA;        M&#xA;        &#xA;        &#xA;        &#xA;        0327&#xA;        &#xA;        &#xA;        &#xA;        0300&#xA;        0400&#xA;        &#xA;        &#xA;        Yawnan mourut dans son couvent d'al-Anbar. AMS, I, 466-525 ; BHO, 527- 30. Suhadii', II, 143- 75. BSO, II, 1354- 55 (J.M. Fiey) . Sur le christianisme dans le Golfe : Fiey, &#34;Dioceses&#34;, 177-219, et les decouvertes recentes a Kharg et Faylaka (Kuwait).&#xA;        &#xA;        36,37,1208&#xA;        &#xA;        36&#xA;        37&#xA;        1208&#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        475&#xA;        1512&#xA;    "
+                        syriaca-computed-start="&#xA;        &#xA;        &#xA;        Yawnān Nūkhriṭā&#xA;        ܝܘܢܢ ܢܘܟܪܝܛܐ&#xA;        ܝܘܢܢ ܢܘܟܪܝܛܐ&#xA;        &#xA;        &#xA;        &#xA;        ܝܘܢܢ ܢܘܟܪܝܛܐ&#xA;        Yawnān Nūḵrēṭā&#xA;        &#xA;        John the Anchorite&#xA;        &#xA;        &#xA;        Jonas l’anachorète&#xA;        &#xA;        &#xA;        &#xA;        &#xA;        Individual Saint&#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        monk, founder&#xA;        &#xA;        Arzun&#xA;        &#xA;        490&#xA;        456&#xA;        456&#xA;        YAWNĀN L'ETRANGER&#xA;        YAWNĀN L'ETRANGER&#xA;        &#xA;        &#xA;        Yawnan the foreigner&#xA;        &#xA;        M&#xA;        &#xA;        &#xA;        &#xA;        0327&#xA;        &#xA;        &#xA;        &#xA;        0300&#xA;        0400&#xA;        &#xA;        &#xA;        Yawnan mourut dans son couvent d'al-Anbar. AMS, I, 466-525 ; BHO, 527- 30. Suhadii', II, 143- 75. BSO, II, 1354- 55 (J.M. Fiey) . Sur le christianisme dans le Golfe : Fiey, &#34;Dioceses&#34;, 177-219, et les decouvertes recentes a Kharg et Faylaka (Kuwait).&#xA;        &#xA;        36,37,1208&#xA;        &#xA;        36&#xA;        37&#xA;        1208&#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        475&#xA;        1512&#xA;    "
+                        notAfter="&#xA;        &#xA;        &#xA;        Yawnān Nūkhriṭā&#xA;        ܝܘܢܢ ܢܘܟܪܝܛܐ&#xA;        ܝܘܢܢ ܢܘܟܪܝܛܐ&#xA;        &#xA;        &#xA;        &#xA;        ܝܘܢܢ ܢܘܟܪܝܛܐ&#xA;        Yawnān Nūḵrēṭā&#xA;        &#xA;        John the Anchorite&#xA;        &#xA;        &#xA;        Jonas l’anachorète&#xA;        &#xA;        &#xA;        &#xA;        &#xA;        Individual Saint&#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        monk, founder&#xA;        &#xA;        Arzun&#xA;        &#xA;        490&#xA;        456&#xA;        456&#xA;        YAWNĀN L'ETRANGER&#xA;        YAWNĀN L'ETRANGER&#xA;        &#xA;        &#xA;        Yawnan the foreigner&#xA;        &#xA;        M&#xA;        &#xA;        &#xA;        &#xA;        0327&#xA;        &#xA;        &#xA;        &#xA;        0300&#xA;        0400&#xA;        &#xA;        &#xA;        Yawnan mourut dans son couvent d'al-Anbar. AMS, I, 466-525 ; BHO, 527- 30. Suhadii', II, 143- 75. BSO, II, 1354- 55 (J.M. Fiey) . Sur le christianisme dans le Golfe : Fiey, &#34;Dioceses&#34;, 177-219, et les decouvertes recentes a Kharg et Faylaka (Kuwait).&#xA;        &#xA;        36,37,1208&#xA;        &#xA;        36&#xA;        37&#xA;        1208&#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        475&#xA;        1512&#xA;    "
+                        syriaca-computed-end="&#xA;        &#xA;        &#xA;        Yawnān Nūkhriṭā&#xA;        ܝܘܢܢ ܢܘܟܪܝܛܐ&#xA;        ܝܘܢܢ ܢܘܟܪܝܛܐ&#xA;        &#xA;        &#xA;        &#xA;        ܝܘܢܢ ܢܘܟܪܝܛܐ&#xA;        Yawnān Nūḵrēṭā&#xA;        &#xA;        John the Anchorite&#xA;        &#xA;        &#xA;        Jonas l’anachorète&#xA;        &#xA;        &#xA;        &#xA;        &#xA;        Individual Saint&#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        monk, founder&#xA;        &#xA;        Arzun&#xA;        &#xA;        490&#xA;        456&#xA;        456&#xA;        YAWNĀN L'ETRANGER&#xA;        YAWNĀN L'ETRANGER&#xA;        &#xA;        &#xA;        Yawnan the foreigner&#xA;        &#xA;        M&#xA;        &#xA;        &#xA;        &#xA;        0327&#xA;        &#xA;        &#xA;        &#xA;        0300&#xA;        0400&#xA;        &#xA;        &#xA;        Yawnan mourut dans son couvent d'al-Anbar. AMS, I, 466-525 ; BHO, 527- 30. Suhadii', II, 143- 75. BSO, II, 1354- 55 (J.M. Fiey) . Sur le christianisme dans le Golfe : Fiey, &#34;Dioceses&#34;, 177-219, et les decouvertes recentes a Kharg et Faylaka (Kuwait).&#xA;        &#xA;        36,37,1208&#xA;        &#xA;        36&#xA;        37&#xA;        1208&#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        475&#xA;        1512&#xA;    "/>
+               <note>Fiey provides the following bibliographic citations: 
+                                            <quote source="#bibl1512-2">Yawnan mourut dans son couvent d'al-Anbar. AMS, I, 466-525 ; BHO, 527- 30. Suhadii', II, 143- 75. BSO, II, 1354- 55 (J.M. Fiey) . Sur le christianisme dans le Golfe : Fiey, "Dioceses", 177-219, et les decouvertes recentes a Kharg et Faylaka (Kuwait).</quote>
+               </note>
+               <state type="commemoration-mode" source="#bibl1512-2">
+                  <label>Individual Saint</label>
+               </state>
+               <note type="abstract">monk, founder</note>
+               <note type="bibliography" source="#bibl1512-1">
+                                            Fiey cites Yawnan mourut dans son couvent d'al-Anbar. AMS, I, 466-525 ; BHO, 527- 30. Suhadii', II, 143- 75. BSO, II, 1354- 55 (J.M. Fiey) . Sur le christianisme dans le Golfe : Fiey, "Dioceses", 177-219, et les decouvertes recentes a Kharg et Faylaka (Kuwait).</note>
+               <bibl xml:id="bib1092-1">
+                  <title level="m" xml:lang="la">Biblioteca Hagiographica Syriaca electronica</title>
+                  <ptr target="http://syriaca.org/bibl/649"/>
+                  <citedRange unit="entry">36, 1208, , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , </citedRange>
+               </bibl>
+               <bibl xml:id="bib1092-2">
+                  <title level="m" xml:lang="fr">Saints Syriaques</title>
+                  <title level="a" xml:lang="fr">AARON DE SAROUG</title>
+                  <ptr target="http://syriaca.org/bibl/650"/>
+                  <citedRange unit="entry">456</citedRange>
+               </bibl>
+            </person>
+         </listPerson>
+         <note type="relation">This saint is related to places "Arzun" and ""</note>
+      </body>
+   </text>
+</TEI>

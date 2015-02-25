@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://syriaca.org/documentation/syriaca-tei-main.rnc" type="application/relax-ng-compact-syntax"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:syriaca="http://syriaca.org"
+     xmlns:saxon="http://saxon.sf.net/"
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+     xmlns:functx="http://www.functx.com"
+     xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="a" xml:lang="en">Ignaṭiyos — <foreign xml:lang="syr">ܐܓܢܛܝܘܣ</foreign>
+            </title>
+            <title level="m">Qadishe: A Guide to the Syriac Saints</title>
+            <sponsor>Syriaca.org: The Syriac Reference Portal</sponsor>
+            <funder>The International Balzan Prize Foundation</funder>
+            <funder>The National Endowment for the Humanities</funder>
+            <principal>David A. Michelson</principal>
+            <editor role="general"
+                    ref="http://syriaca.org/documentation/editors.xml#jnmsaintlaurent">Jeanne-Nicole Mellon Saint-Laurent</editor>
+            <editor role="general"
+                    ref="http://syriaca.org/documentation/editors.xml#dmichelson">David A. Michelson</editor>
+            <editor role="creator"
+                    ref="http://syriaca.org/documentation/editors.xml#jnmsaintlaurent">Jeanne-Nicole Mellon Saint-Laurent</editor>
+            <editor role="creator"
+                    ref="http://syriaca.org/documentation/editors.xml#dmichelson">David A. Michelson</editor>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#jnmsaintlaurent">Jeanne-Nicole Mellon Saint-Laurent</name>
+            </respStmt>
+            <respStmt>
+               <resp>Data architecture and encoding by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#dmichelson">David A. Michelson</name>
+            </respStmt>
+            <respStmt>
+               <resp>Editing, Syriac data conversion, data entry, and reconciling by</resp>
+               <name ref="http://syriaca.org/editors.xml#akane">Adam P. Kane</name>
+            </respStmt>
+            <respStmt>
+               <resp>Editing and Syriac data proofreading by</resp>
+               <name ref="http://syriaca.org/editors.xml#abarschabo">Aram Bar Schabo</name>
+            </respStmt>
+            <respStmt>
+               <resp>Entries adapted from the work of</resp>
+               <name type="person" ref="http://syriaca.org/editors.xml#jmfiey">Jean Maurice Fiey</name>
+            </respStmt>
+            <respStmt>
+               <resp>Entries adapted from on the work of</resp>
+               <name type="person" ref="http://syriaca.org/editors.xml#uzanetti">Ugo Zanetti</name>
+            </respStmt>
+            <respStmt>
+               <resp>Entries adapted from on the work of</resp>
+               <name type="person" ref="http://syriaca.org/editors.xml#cdetienne">Claude Detienne</name>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition n="1.0"/>
+         </editionStmt>
+         <publicationStmt>
+            <authority>Syriaca.org: The Syriac Reference Portal</authority>
+            <idno type="URI">http://syriaca.org/person/208/tei</idno>
+            <availability>
+               <licence target="http://creativecommons.org/licenses/by/3.0/">
+                  <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
+               </licence>
+            </availability>
+            <date>2015-02-25-05:00</date>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Born digital.</p>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <editorialDecl>
+            <p>This record created following the Syriaca.org guidelines. 
+                        Documentation available at: <ref target="http://syriaca.org/documentation">http://syriaca.org/documentation</ref>.</p>
+            <interpretation>
+               <p>Approximate dates described in terms of centuries or partial centuries
+                            have been interpreted as documented in 
+                            <ref target="http://syriaca.org/documentation/dates.html">Syriaca.org Dates</ref>.</p>
+            </interpretation>
+         </editorialDecl>
+         <classDecl>
+            <taxonomy>
+               <category xml:id="syriaca-headword">
+                  <catDesc>The name used by Syriaca.org for document titles, citation, and
+                                disambiguation. These names have been created according to the
+                                Syriac.org guidelines for headwords: <ref target="http://syriaca.org/documentation/headwords.html">http://syriaca.org/documentation/headwords.html</ref>.</catDesc>
+               </category>
+               <category xml:id="syriaca-anglicized">
+                  <catDesc>An anglicized version of a name, included to facilitate
+                                searching.</catDesc>
+               </category>
+            </taxonomy>
+            <taxonomy>
+               <category xml:id="syriaca-author">
+                  <catDesc>A person who is relevant to the Guide to Syriac Authors</catDesc>
+               </category>
+               <category xml:id="syriaca-saint">
+                  <catDesc>A person who is relevant to the Bibliotheca Hagiographica
+                                Syriaca.</catDesc>
+               </category>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="syr">Unvocalized Syriac of any variety or period</language>
+            <language ident="syr-Syrj">Vocalized West Syriac</language>
+            <language ident="syr-Syrn">Vocalized East Syriac</language>
+            <language ident="en">English</language>
+            <language ident="en-x-gedsh">Names or terms Romanized into English according to the standards 
+                        adopted by the Gorgias Encyclopedic Dictionary of the Syriac Heritage</language>
+            <language ident="ar">Arabic</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+      </profileDesc>
+      <revisionDesc>
+         <change who="http://syriaca.org/documentation/editors.xml#dmichelson"
+                 n="1.0"
+                 when="2015-02-25-05:00"> CREATED: person </change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <listPerson>
+            <person xml:id="saint-208" ana="#syriaca-saint">
+               <persName xml:id="name208-1" xml:lang="en" syriaca-tags="#syriaca-headword">Ignatius of Antioch</persName>
+               <persName xml:id="name208-2" xml:lang="en">Ignatius</persName>
+               <persName xml:id="name208-3"
+                         xml:lang="syr"
+                         syriaca-tags="#syriaca-headword"
+                         source="#bibl208-2">ܐܓܢܛܝܣ</persName>
+               <persName xml:id="name208-4" xml:lang="fr-x-zanetti" source="#bibl208-2">ʾAgnāṭīs</persName>
+               <persName xml:id="name208-5" xml:lang="fr" source="#bibl208-2">Ignace d’Antioche</persName>
+               <persName xml:id="name208-6" xml:lang="fr-x-fiey" source="#bibl208-1">IGNACE</persName>
+               <idno type="URI">http://syriaca.org/person/208</idno>
+               <idno type="FIEY">199</idno>
+               <idno type="FIEY">199</idno>
+               <idno type="BHSYRE">80</idno>
+               <idno type="BHSYRE"/>
+               <idno type="BHSYRE"/>
+               <idno type="BHSYRE"/>
+               <idno type="BHSYRE"/>
+               <idno type="BHSYRE"/>
+               <idno type="BHSYRE"/>
+               <idno type="BHSYRE"/>
+               <idno type="BHSYRE"/>
+               <idno type="BHSYRE"/>
+               <idno type="BHSYRE"/>
+               <idno type="BHSYRE"/>
+               <idno type="BHSYRE"/>
+               <idno type="BHSYRE"/>
+               <idno type="BHSYRE"/>
+               <idno type="BHSYRE"/>
+               <idno type="BHSYRE"/>
+               <idno type="BHSYRE"/>
+               <idno type="BHSYRE"/>
+               <idno type="BHSYRE"/>
+               <idno type="BHSYRE"/>
+               <idno type="BHSYRE"/>
+               <idno type="BHSYRE"/>
+               <idno type="BHSYRE"/>
+               <idno type="BHSYRE"/>
+               <idno type="BHSYRE"/>
+               <idno type="BHSYRE"/>
+               <idno type="BHSYRE"/>
+               <idno type="BHSYRE"/>
+               <idno type="BHSYRE"/>
+               <idno type="BHSYRE"/>
+               <idno type="BHSYRE"/>
+               <idno type="BHSYRE"/>
+               <idno type="BHSYRE"/>
+               <idno type="BHSYRE"/>
+               <idno type="BHSYRE"/>
+               <idno type="BHSYRE"/>
+               <idno type="BHSYRE"/>
+               <idno type="BHSYRE"/>
+               <idno type="BHSYRE"/>
+               <idno type="BHSYRE"/>
+               <idno type="BHSYRE"/>
+               <idno type="BHSYRE"/>
+               <idno type="BHSYRE"/>
+               <idno type="BHSYRE"/>
+               <idno type="BHSYRE"/>
+               <idno type="BHSYRE"/>
+               <idno type="BHSYRE"/>
+               <idno type="BHSYRE"/>
+               <idno type="BHSYRE"/>
+               <idno type="BHSYRE"/>
+               <idno type="BHSYRE"/>
+               <idno type="BHSYRE"/>
+               <idno type="BHSYRE"/>
+               <idno type="BHSYRE"/>
+               <idno type="BHSYRE"/>
+               <idno type="BHSYRE"/>
+               <idno type="BHSYRE"/>
+               <idno type="BHSYRE"/>
+               <idno type="BHSYRE"/>
+               <idno type="BHSYRE"/>
+               <idno type="BHSYRE"/>
+               <idno type="BHSYRE"/>
+               <idno type="BHSYRE"/>
+               <idno type="BHSYRE"/>
+               <idno type="BHSYRE"/>
+               <sex value="M" source="#bibl208-1">male</sex>
+               <floruit source="#bibl208-2"
+                        when="&#xA;        544&#xA;        &#xA;        Ignaṭiyos&#xA;        ܐܓܢܛܝܘܣ&#xA;        ܐܓܢܛܝܣ&#xA;        &#xA;        &#xA;        &#xA;        ܐܓܢܛܝܣ&#xA;        ʾAgnāṭīs&#xA;        &#xA;        Ignatius of Antioch&#xA;        &#xA;        &#xA;        Ignace d’Antioche&#xA;        &#xA;        &#xA;        &#xA;        &#xA;        Individual Saint&#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        Ignatius was an early bishop of Antioch who was martyred under Trajan.  On his way to his martyrdom, Ignatius wrote letters to different Christian communities whom he knew.&#xA;        Bishop of Antioch, Martyr&#xA;        &#xA;        Antioch&#xA;        &#xA;        396&#xA;        199&#xA;        199&#xA;        IGNACE&#xA;        IGNACE&#xA;        &#xA;        &#xA;        Ignatius&#xA;        &#xA;        M&#xA;        &#xA;        &#xA;        &#xA;        &#xA;        0110&#xA;        &#xA;        &#xA;        &#xA;        &#xA;        12/20/2014&#xA;        Yes&#xA;        Vies des saints, II, 1 er fevrier, 7-15. DTC, VII.l, col. 685- 713 (G. Bareille). BS, VII, 653-65 (G. Bosio/C. Colafranceschi).&#xA;        80,547&#xA;        80,547&#xA;        &#xA;        80&#xA;        547&#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        208&#xA;        &#xA;    "
+                        syriaca-computed-start="&#xA;        544&#xA;        &#xA;        Ignaṭiyos&#xA;        ܐܓܢܛܝܘܣ&#xA;        ܐܓܢܛܝܣ&#xA;        &#xA;        &#xA;        &#xA;        ܐܓܢܛܝܣ&#xA;        ʾAgnāṭīs&#xA;        &#xA;        Ignatius of Antioch&#xA;        &#xA;        &#xA;        Ignace d’Antioche&#xA;        &#xA;        &#xA;        &#xA;        &#xA;        Individual Saint&#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        Ignatius was an early bishop of Antioch who was martyred under Trajan.  On his way to his martyrdom, Ignatius wrote letters to different Christian communities whom he knew.&#xA;        Bishop of Antioch, Martyr&#xA;        &#xA;        Antioch&#xA;        &#xA;        396&#xA;        199&#xA;        199&#xA;        IGNACE&#xA;        IGNACE&#xA;        &#xA;        &#xA;        Ignatius&#xA;        &#xA;        M&#xA;        &#xA;        &#xA;        &#xA;        &#xA;        0110&#xA;        &#xA;        &#xA;        &#xA;        &#xA;        12/20/2014&#xA;        Yes&#xA;        Vies des saints, II, 1 er fevrier, 7-15. DTC, VII.l, col. 685- 713 (G. Bareille). BS, VII, 653-65 (G. Bosio/C. Colafranceschi).&#xA;        80,547&#xA;        80,547&#xA;        &#xA;        80&#xA;        547&#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        208&#xA;        &#xA;    "/>
+               <state type="martyr" source="#bibl208-2">Martyr</state>
+               <note>Fiey provides the following bibliographic citations: 
+                                            <quote source="#bibl208-2">Vies des saints, II, 1 er fevrier, 7-15. DTC, VII.l, col. 685- 713 (G. Bareille). BS, VII, 653-65 (G. Bosio/C. Colafranceschi).</quote>
+               </note>
+               <event type="veneration" source="#bibl208-1">
+                  <desc>The saint is venerated on 12/20/2014.</desc>
+               </event>
+               <state type="commemoration-mode" source="#bibl208-2">
+                  <label>Individual Saint</label>
+               </state>
+               <note type="abstract">Bishop of Antioch, Martyr</note>
+               <note type="martyrdom">This saint is a martyr.</note>
+               <note type="bibliography" source="#bibl208-1">
+                                            Fiey cites Vies des saints, II, 1 er fevrier, 7-15. DTC, VII.l, col. 685- 713 (G. Bareille). BS, VII, 653-65 (G. Bosio/C. Colafranceschi).</note>
+               <bibl xml:id="bib1092-1">
+                  <title level="m" xml:lang="la">Biblioteca Hagiographica Syriaca electronica</title>
+                  <ptr target="http://syriaca.org/bibl/649"/>
+                  <citedRange unit="entry">80, , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , </citedRange>
+               </bibl>
+               <bibl xml:id="bib1092-2">
+                  <title level="m" xml:lang="fr">Saints Syriaques</title>
+                  <title level="a" xml:lang="fr">AARON DE SAROUG</title>
+                  <ptr target="http://syriaca.org/bibl/650"/>
+                  <citedRange unit="entry">199</citedRange>
+               </bibl>
+            </person>
+         </listPerson>
+         <note type="relation">This saint is related to places "Antioch" and ""</note>
+      </body>
+   </text>
+</TEI>

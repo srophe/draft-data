@@ -122,35 +122,30 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#dmichelson"
                  n="1.0"
-                 when="2015-02-25-05:00"> CREATED: person </change>
+                 when="2015-02-25-05:00">CREATED: person</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPerson>
             <person xml:id="saint-1664" ana="#syriaca-saint">
-               <persName xml:id="name1664-1" xml:lang="en" syriaca-tags="#syriaca-headword">Cyriacus</persName>
-               <persName xml:id="name1664-2"
+               <persName xml:id="name1664-1"
                          xml:lang="syr"
                          syriaca-tags="#syriaca-headword"
                          source="#bibl1664-1">ܩܘܪܝܩܐ</persName>
-               <persName xml:id="name1664-3" xml:lang="fr-x-zanetti" source="#bibl1664-1">Qūryaqā</persName>
-               <persName xml:id="name1664-4" xml:lang="fr" source="#bibl1664-1">Cyriaque</persName>
+               <persName xml:id="name1664-2"
+                         xml:lang="en-x-gedsh"
+                         syriaca-tags="#syriaca-headword">Qūryaqā</persName>
+               <persName xml:id="name1664-3" xml:lang="en">Cyriacus</persName>
+               <persName xml:id="name1664-4" xml:lang="fr-x-zanetti" source="#bibl1664-1">Qūryaqā</persName>
+               <persName xml:id="name1664-5" xml:lang="fr" source="#bibl1664-1">Cyriaque</persName>
                <idno type="URI">http://syriaca.org/person/1664</idno>
                <idno type="BHSYRE">625</idno>
                <note type="disambiguation">from John of Ephesus' LES</note>
-               <state type="commemoration-mode" source="#bibl1664-1">
-                  <label>Multiple Named Saints</label>
-               </state>
                <bibl xml:id="bib1092-1">
                   <title level="m" xml:lang="la">Biblioteca Hagiographica Syriaca electronica</title>
                   <ptr target="http://syriaca.org/bibl/649"/>
                   <citedRange unit="entry">625</citedRange>
-               </bibl>
-               <bibl xml:id="bib1092-2">
-                  <title level="m" xml:lang="fr">Saints Syriaques</title>
-                  <title level="a" xml:lang="fr">AARON DE SAROUG</title>
-                  <ptr target="http://syriaca.org/bibl/650"/>
                </bibl>
             </person>
          </listPerson>

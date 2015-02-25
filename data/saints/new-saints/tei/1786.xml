@@ -122,20 +122,23 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#dmichelson"
                  n="1.0"
-                 when="2015-02-25-05:00"> CREATED: person </change>
+                 when="2015-02-25-05:00">CREATED: person</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPerson>
             <person xml:id="saint-1786" ana="#syriaca-saint">
-               <persName xml:id="name1786-1" xml:lang="en" syriaca-tags="#syriaca-headword">Innocents</persName>
-               <persName xml:id="name1786-2"
+               <persName xml:id="name1786-1"
                          xml:lang="syr"
                          syriaca-tags="#syriaca-headword"
                          source="#bibl1786-1">ܝܘܚܢܢ ܡܥܡܕܢܐ</persName>
-               <persName xml:id="name1786-3" xml:lang="fr-x-zanetti" source="#bibl1786-1">Yōḥanān maʾmʿdānā</persName>
-               <persName xml:id="name1786-4" xml:lang="fr" source="#bibl1786-1">Innocents</persName>
+               <persName xml:id="name1786-2"
+                         xml:lang="en-x-gedsh"
+                         syriaca-tags="#syriaca-headword">Yōḥanān maʿmdānā</persName>
+               <persName xml:id="name1786-3" xml:lang="en">Innocents</persName>
+               <persName xml:id="name1786-4" xml:lang="fr-x-zanetti" source="#bibl1786-1">Yōḥanān maʾmʿdānā</persName>
+               <persName xml:id="name1786-5" xml:lang="fr" source="#bibl1786-1">Innocents</persName>
                <idno type="URI">http://syriaca.org/person/1786</idno>
                <idno type="BHSYRE">1351</idno>
                <idno type="BHSYRE">482</idno>
@@ -143,18 +146,10 @@
                <idno type="BHSYRE">991</idno>
                <idno type="BHSYRE">1342</idno>
                <idno type="BHSYRE">1720</idno>
-               <state type="commemoration-mode" source="#bibl1786-1">
-                  <label>Individual Saint</label>
-               </state>
                <bibl xml:id="bib1092-1">
                   <title level="m" xml:lang="la">Biblioteca Hagiographica Syriaca electronica</title>
                   <ptr target="http://syriaca.org/bibl/649"/>
                   <citedRange unit="entry">1351, 482, 677, 991, 1342, 1720</citedRange>
-               </bibl>
-               <bibl xml:id="bib1092-2">
-                  <title level="m" xml:lang="fr">Saints Syriaques</title>
-                  <title level="a" xml:lang="fr">AARON DE SAROUG</title>
-                  <ptr target="http://syriaca.org/bibl/650"/>
                </bibl>
             </person>
          </listPerson>

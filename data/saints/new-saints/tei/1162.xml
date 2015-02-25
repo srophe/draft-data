@@ -122,41 +122,37 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#dmichelson"
                  n="1.0"
-                 when="2015-02-25-05:00"> CREATED: person </change>
+                 when="2015-02-25-05:00">CREATED: person</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPerson>
             <person xml:id="saint-1162" ana="#syriaca-saint">
-               <persName xml:id="name1162-1" xml:lang="en" syriaca-tags="#syriaca-headword">Barsamya</persName>
-               <persName xml:id="name1162-2"
+               <persName xml:id="name1162-1"
                          xml:lang="syr"
                          syriaca-tags="#syriaca-headword"
                          source="#bibl1162-2">ܒܪܣܡܝܐ</persName>
-               <persName xml:id="name1162-3" xml:lang="fr-x-zanetti" source="#bibl1162-2">Barsamyā</persName>
-               <persName xml:id="name1162-4" xml:lang="fr" source="#bibl1162-2">Barsamya</persName>
-               <persName xml:id="name1162-5" xml:lang="fr-x-fiey" source="#bibl1162-1">BARSAMYA</persName>
+               <persName xml:id="name1162-2"
+                         xml:lang="en-x-gedsh"
+                         syriaca-tags="#syriaca-headword">Barsamyā</persName>
+               <persName xml:id="name1162-3" xml:lang="en">Barsamya</persName>
+               <persName xml:id="name1162-4" xml:lang="fr-x-zanetti" source="#bibl1162-2">Barsamyā</persName>
+               <persName xml:id="name1162-5" xml:lang="fr" source="#bibl1162-2">Barsamya</persName>
+               <persName xml:id="name1162-6" xml:lang="fr-x-fiey" source="#bibl1162-1">BARSAMYA</persName>
                <idno type="URI">http://syriaca.org/person/1162</idno>
                <idno type="FIEY">78</idno>
                <idno type="FIEY">78</idno>
                <idno type="BHSYRE">5</idno>
                <sex value="M" source="#bibl1162-1">male</sex>
-               <death when="normalize-space(.)"
-                      source="#bibl1162-2"
-                      syriaca-computed-start="0105-01-01">0105</death>
-               <state type="martyr" source="#bibl1162-2">Martyr</state>
-               <note>Fiey provides the following bibliographic citations: 
-                                            <quote source="#bibl1162-2">AMS, I, 120- 30 ; BHO, 150 et 151. Suhadii', I, 62-68. Cureton, Documents, 63- 85. R. Duval, "Les actes de Scharbil et de Barsamya", JA, 8• serie, 14 (1889), 40- 58, et idem, "Histoire d'Edesse", JA, 8• serie, 18 (1891), 384- 90. AB 10 (1891), 479. DHGE, VI, col. 944 (R. Janin). Vies des saints, I, 30 janvier, 615, s.v. Barsimee. Segal, Edessa, 82- 87. BS, II, 838- 39 (J.-M. Sauget).</quote>
+               <death when="0105"
+                      syriaca-computed-start="0105-01-01"
+                      source="#bibl1162-1">0105</death>
+               <state type="martyr" source="#bibl1162-1">Martyr</state>
+               <note>Fiey provides the following bibliographic citations: <quote source="#bibl1162-1">AMS, I, 120- 30 ; BHO, 150 et 151. Suhadii', I, 62-68. Cureton, Documents, 63- 85. R. Duval, "Les actes de Scharbil et de Barsamya", JA, 8• serie, 14 (1889), 40- 58, et idem, "Histoire d'Edesse", JA, 8• serie, 18 (1891), 384- 90. AB 10 (1891), 479. DHGE, VI, col. 944 (R. Janin). Vies des saints, I, 30 janvier, 615, s.v. Barsimee. Segal, Edessa, 82- 87. BS, II, 838- 39 (J.-M. Sauget).</quote>
                </note>
                <note type="disambiguation">Edessan saint</note>
-               <state type="commemoration-mode" source="#bibl1162-2">
-                  <label>Individual Saint</label>
-               </state>
                <note type="abstract">Bishop</note>
-               <note type="martyrdom">This saint is a martyr.</note>
-               <note type="bibliography" source="#bibl1162-1">
-                                            Fiey cites AMS, I, 120- 30 ; BHO, 150 et 151. Suhadii', I, 62-68. Cureton, Documents, 63- 85. R. Duval, "Les actes de Scharbil et de Barsamya", JA, 8• serie, 14 (1889), 40- 58, et idem, "Histoire d'Edesse", JA, 8• serie, 18 (1891), 384- 90. AB 10 (1891), 479. DHGE, VI, col. 944 (R. Janin). Vies des saints, I, 30 janvier, 615, s.v. Barsimee. Segal, Edessa, 82- 87. BS, II, 838- 39 (J.-M. Sauget).</note>
                <bibl xml:id="bib1092-1">
                   <title level="m" xml:lang="la">Biblioteca Hagiographica Syriaca electronica</title>
                   <ptr target="http://syriaca.org/bibl/649"/>

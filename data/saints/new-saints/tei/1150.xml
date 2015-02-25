@@ -122,41 +122,37 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#dmichelson"
                  n="1.0"
-                 when="2015-02-25-05:00"> CREATED: person </change>
+                 when="2015-02-25-05:00">CREATED: person</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPerson>
             <person xml:id="saint-1150" ana="#syriaca-saint">
-               <persName xml:id="name1150-1" xml:lang="en" syriaca-tags="#syriaca-headword">Azazael</persName>
-               <persName xml:id="name1150-2" xml:lang="en">Azizail</persName>
-               <persName xml:id="name1150-3"
+               <persName xml:id="name1150-1"
                          xml:lang="syr"
                          syriaca-tags="#syriaca-headword"
                          source="#bibl1150-2">ܥܙܙܐܝܠ</persName>
-               <persName xml:id="name1150-4" xml:lang="fr-x-zanetti" source="#bibl1150-2">ʾAzāzāʾīl</persName>
-               <persName xml:id="name1150-5" xml:lang="fr" source="#bibl1150-2">Azazaïl</persName>
-               <persName xml:id="name1150-6" xml:lang="fr" source="#bibl1150-2">Pancrace</persName>
-               <persName xml:id="name1150-7" xml:lang="fr-x-fiey" source="#bibl1150-1">AZIZAÏL</persName>
+               <persName xml:id="name1150-2"
+                         xml:lang="en-x-gedsh"
+                         syriaca-tags="#syriaca-headword">ʿZāzāʾēl</persName>
+               <persName xml:id="name1150-3" xml:lang="en">Azazael</persName>
+               <persName xml:id="name1150-4" xml:lang="en">Azizail</persName>
+               <persName xml:id="name1150-5" xml:lang="fr-x-zanetti" source="#bibl1150-2">ʾAzāzāʾīl</persName>
+               <persName xml:id="name1150-6" xml:lang="fr" source="#bibl1150-2">Azazaïl</persName>
+               <persName xml:id="name1150-7" xml:lang="fr" source="#bibl1150-2">Pancrace</persName>
+               <persName xml:id="name1150-8" xml:lang="fr-x-fiey" source="#bibl1150-1">AZIZAÏL</persName>
                <idno type="URI">http://syriaca.org/person/1150</idno>
                <idno type="FIEY">65</idno>
                <idno type="FIEY">65</idno>
                <idno type="BHSYRE">1013</idno>
                <sex value="M" source="#bibl1150-1">male</sex>
-               <death when="normalize-space(.)"
-                      source="#bibl1150-2"
-                      syriaca-computed-start="0304-01-01">0304</death>
-               <state type="martyr" source="#bibl1150-2">Martyr</state>
-               <note>Fiey provides the following bibliographic citations: 
-                                            <quote source="#bibl1150-2">BSO, I, 328 (J .M. Fiey).</quote>
+               <death when="0304"
+                      syriaca-computed-start="0304-01-01"
+                      source="#bibl1150-1">0304</death>
+               <state type="martyr" source="#bibl1150-1">Martyr</state>
+               <note>Fiey provides the following bibliographic citations: <quote source="#bibl1150-1">BSO, I, 328 (J .M. Fiey).</quote>
                </note>
-               <state type="commemoration-mode" source="#bibl1150-2">
-                  <label>Individual Saint</label>
-               </state>
-               <note type="martyrdom">This saint is a martyr.</note>
-               <note type="bibliography" source="#bibl1150-1">
-                                            Fiey cites BSO, I, 328 (J .M. Fiey).</note>
                <bibl xml:id="bib1092-1">
                   <title level="m" xml:lang="la">Biblioteca Hagiographica Syriaca electronica</title>
                   <ptr target="http://syriaca.org/bibl/649"/>

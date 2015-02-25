@@ -122,41 +122,37 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#dmichelson"
                  n="1.0"
-                 when="2015-02-25-05:00"> CREATED: person </change>
+                 when="2015-02-25-05:00">CREATED: person</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPerson>
             <person xml:id="saint-1253" ana="#syriaca-saint">
-               <persName xml:id="name1253-1" xml:lang="en" syriaca-tags="#syriaca-headword">Gregory Pirangoushnasp</persName>
-               <persName xml:id="name1253-2" xml:lang="en">Gregory Pirangushnasp</persName>
-               <persName xml:id="name1253-3"
+               <persName xml:id="name1253-1"
                          xml:lang="syr"
                          syriaca-tags="#syriaca-headword"
                          source="#bibl1253-2">ܓܪܝܓܘܪ</persName>
-               <persName xml:id="name1253-4" xml:lang="fr-x-zanetti" source="#bibl1253-2">Grīgōr</persName>
-               <persName xml:id="name1253-5" xml:lang="fr" source="#bibl1253-2">Grégoire Pîrângoushnasp</persName>
-               <persName xml:id="name1253-6" xml:lang="fr-x-fiey" source="#bibl1253-1">GRÉGOIRE PĪRĀNGUŜNASP</persName>
+               <persName xml:id="name1253-2"
+                         xml:lang="en-x-gedsh"
+                         syriaca-tags="#syriaca-headword">Grigōr</persName>
+               <persName xml:id="name1253-3" xml:lang="en">Gregory Pirangoushnasp</persName>
+               <persName xml:id="name1253-4" xml:lang="en">Gregory Pirangushnasp</persName>
+               <persName xml:id="name1253-5" xml:lang="fr-x-zanetti" source="#bibl1253-2">Grīgōr</persName>
+               <persName xml:id="name1253-6" xml:lang="fr" source="#bibl1253-2">Grégoire Pîrângoushnasp</persName>
+               <persName xml:id="name1253-7" xml:lang="fr-x-fiey" source="#bibl1253-1">GRÉGOIRE PĪRĀNGUŜNASP</persName>
                <idno type="URI">http://syriaca.org/person/1253</idno>
                <idno type="FIEY">177</idno>
                <idno type="FIEY">177</idno>
                <idno type="BHSYRE">692</idno>
                <sex value="M" source="#bibl1253-1">male</sex>
-               <death when="normalize-space(.)"
-                      source="#bibl1253-2"
-                      syriaca-computed-start="0542-01-01">0542</death>
-               <state type="martyr" source="#bibl1253-2">Martyr</state>
-               <note>Fiey provides the following bibliographic citations: 
-                                            <quote source="#bibl1253-2">Bedjan, appendice a Jab-Alaha, 347-94. BHO, 353. Hoffmann, Ausziige, 78- 86. Devos, "Martyrs persans", 216.</quote>
+               <death when="0542"
+                      syriaca-computed-start="0542-01-01"
+                      source="#bibl1253-1">0542</death>
+               <state type="martyr" source="#bibl1253-1">Martyr</state>
+               <note>Fiey provides the following bibliographic citations: <quote source="#bibl1253-1">Bedjan, appendice a Jab-Alaha, 347-94. BHO, 353. Hoffmann, Ausziige, 78- 86. Devos, "Martyrs persans", 216.</quote>
                </note>
-               <state type="commemoration-mode" source="#bibl1253-2">
-                  <label>Individual Saint</label>
-               </state>
                <note type="abstract">?</note>
-               <note type="martyrdom">This saint is a martyr.</note>
-               <note type="bibliography" source="#bibl1253-1">
-                                            Fiey cites Bedjan, appendice a Jab-Alaha, 347-94. BHO, 353. Hoffmann, Ausziige, 78- 86. Devos, "Martyrs persans", 216.</note>
                <bibl xml:id="bib1092-1">
                   <title level="m" xml:lang="la">Biblioteca Hagiographica Syriaca electronica</title>
                   <ptr target="http://syriaca.org/bibl/649"/>

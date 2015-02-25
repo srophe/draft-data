@@ -122,38 +122,35 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#dmichelson"
                  n="1.0"
-                 when="2015-02-25-05:00"> CREATED: person </change>
+                 when="2015-02-25-05:00">CREATED: person</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPerson>
             <person xml:id="saint-1187" ana="#syriaca-saint">
-               <persName xml:id="name1187-1" xml:lang="en" syriaca-tags="#syriaca-headword">Cyrus of Harran</persName>
-               <persName xml:id="name1187-2" xml:lang="en">Cyrus (Qura)</persName>
-               <persName xml:id="name1187-3"
+               <persName xml:id="name1187-1"
                          xml:lang="syr"
                          syriaca-tags="#syriaca-headword"
                          source="#bibl1187-2">ܩܘܪܝܘܣ</persName>
-               <persName xml:id="name1187-4" xml:lang="fr" source="#bibl1187-2">Cyrus ou Curius de Harran</persName>
-               <persName xml:id="name1187-5" xml:lang="fr-x-fiey" source="#bibl1187-1">CYR</persName>
+               <persName xml:id="name1187-2"
+                         xml:lang="en-x-gedsh"
+                         syriaca-tags="#syriaca-headword">Quriyos</persName>
+               <persName xml:id="name1187-3" xml:lang="en">Cyrus of Harran</persName>
+               <persName xml:id="name1187-4" xml:lang="en">Cyrus (Qura)</persName>
+               <persName xml:id="name1187-5" xml:lang="fr" source="#bibl1187-2">Cyrus ou Curius de Harran</persName>
+               <persName xml:id="name1187-6" xml:lang="fr-x-fiey" source="#bibl1187-1">CYR</persName>
                <idno type="URI">http://syriaca.org/person/1187</idno>
                <idno type="FIEY">103</idno>
                <idno type="FIEY">103</idno>
                <idno type="BHSYRE">1388</idno>
                <sex value="M" source="#bibl1187-1">male</sex>
-               <death when="normalize-space(.)"
-                      source="#bibl1187-2"
-                      syriaca-computed-start="0770-01-01">0770</death>
-               <note>Fiey provides the following bibliographic citations: 
-                                            <quote source="#bibl1187-2">A. Harrak, "Piecing Together the Fragmentary Account of the Martyrdom of Cyrus of Harran", AB 121 (2003), 297- 328.</quote>
+               <death when="0770"
+                      syriaca-computed-start="0770-01-01"
+                      source="#bibl1187-1">0770</death>
+               <note>Fiey provides the following bibliographic citations: <quote source="#bibl1187-1">A. Harrak, "Piecing Together the Fragmentary Account of the Martyrdom of Cyrus of Harran", AB 121 (2003), 297- 328.</quote>
                </note>
-               <state type="commemoration-mode" source="#bibl1187-2">
-                  <label>Individual Saint</label>
-               </state>
                <note type="abstract">martyr of Harran</note>
-               <note type="bibliography" source="#bibl1187-1">
-                                            Fiey cites A. Harrak, "Piecing Together the Fragmentary Account of the Martyrdom of Cyrus of Harran", AB 121 (2003), 297- 328.</note>
                <bibl xml:id="bib1092-1">
                   <title level="m" xml:lang="la">Biblioteca Hagiographica Syriaca electronica</title>
                   <ptr target="http://syriaca.org/bibl/649"/>

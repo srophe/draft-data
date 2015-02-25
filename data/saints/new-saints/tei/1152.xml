@@ -122,22 +122,28 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#dmichelson"
                  n="1.0"
-                 when="2015-02-25-05:00"> CREATED: person </change>
+                 when="2015-02-25-05:00">CREATED: person</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPerson>
             <person xml:id="saint-1152" ana="#syriaca-saint">
-               <persName xml:id="name1152-1" xml:lang="en" syriaca-tags="#syriaca-headword">Babylas</persName>
+               <persName xml:id="name1152-1"
+                         xml:lang="syr"
+                         syriaca-tags="#syriaca-headword"
+                         source="#bibl1152-2">ܒܒܘܠܐ</persName>
+               <persName xml:id="name1152-2"
+                         xml:lang="en-x-gedsh"
+                         syriaca-tags="#syriaca-headword">Bābūlā</persName>
                <persName xml:id="name1152-2"
                          xml:lang="syr"
                          syriaca-tags="#syriaca-headword"
                          source="#bibl1152-2">ܒܐܒܘܠܐ</persName>
-               <persName xml:id="name1152-3" xml:lang="syr" source="#bibl1152-2">ܒܒܘܠܐ</persName>
-               <persName xml:id="name1152-4" xml:lang="fr-x-zanetti" source="#bibl1152-2">Bābūlā</persName>
-               <persName xml:id="name1152-5" xml:lang="fr" source="#bibl1152-2">Babylas</persName>
-               <persName xml:id="name1152-6" xml:lang="fr-x-fiey" source="#bibl1152-1">BABYLAS</persName>
+               <persName xml:id="name1152-4" xml:lang="en">Babylas</persName>
+               <persName xml:id="name1152-5" xml:lang="fr-x-zanetti" source="#bibl1152-2">Bābūlā</persName>
+               <persName xml:id="name1152-6" xml:lang="fr" source="#bibl1152-2">Babylas</persName>
+               <persName xml:id="name1152-7" xml:lang="fr-x-fiey" source="#bibl1152-1">BABYLAS</persName>
                <idno type="URI">http://syriaca.org/person/1152</idno>
                <idno type="FIEY">67</idno>
                <idno type="FIEY">67</idno>
@@ -146,22 +152,13 @@
                <idno type="BHSYRE">124</idno>
                <idno type="BHSYRE">1055</idno>
                <sex value="M" source="#bibl1152-1">male</sex>
-               <death when="normalize-space(.)"
-                      source="#bibl1152-2"
-                      syriaca-computed-start="0250-01-01">0250</death>
-               <floruit source="#bibl1152-2"
-                        when="&#xA;        &#xA;        &#xA;        Bābūlā&#xA;        ܒܒܘܠܐ&#xA;        ܒܐܒܘܠܐ&#xA;        &#xA;        &#xA;        ܒܒܘܠܐ&#xA;        ܒܐܒܘܠܐ&#xA;        Bābūlā&#xA;        Bābūlā&#xA;        Babylas&#xA;        Babylas&#xA;        &#xA;        Babylas&#xA;        Babylas&#xA;        &#xA;        &#xA;        &#xA;        Individual Saint&#xA;        &#xA;        &#xA;        Urbanus, Appolonius, Barbadus&#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        Babylas was a bishop of Antioch who died from poor treatment in prison; noted for demanding that Emperor Philip the Arab make public penance.  &#xA;        Bishop of Antioch&#xA;        &#xA;        Antioch&#xA;        Daphne outside of Antioch&#xA;        137&#xA;        67&#xA;        67&#xA;        BABYLAS&#xA;        BABYLAS&#xA;        &#xA;        &#xA;        Babylas&#xA;        &#xA;        M&#xA;        &#xA;        &#xA;        &#xA;        0250&#xA;        0237&#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        yes&#xA;        AMS, IV, 274- 83 ; BHO 127-28. DHGE, VI, col. 33 (R. Janin) . Vies des saints, I, 24 janvier, 483-86. BS, II, 679- 80 (F. Caraffa). Sur Babylas : Jean Chrysostome, Panegyrici in Baby/am martyrem, ed. et trad. M.A. Schatkin et al., Discours sur Babylas (Paris, 1990 ; SC 362).&#xA;        124,1055,508,509&#xA;        679,508,509,124,1055&#xA;        DIFF&#xA;        679&#xA;        508&#xA;        509&#xA;        124&#xA;        1055&#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        72&#xA;        1152&#xA;    "
-                        syriaca-computed-start="&#xA;        &#xA;        &#xA;        Bābūlā&#xA;        ܒܒܘܠܐ&#xA;        ܒܐܒܘܠܐ&#xA;        &#xA;        &#xA;        ܒܒܘܠܐ&#xA;        ܒܐܒܘܠܐ&#xA;        Bābūlā&#xA;        Bābūlā&#xA;        Babylas&#xA;        Babylas&#xA;        &#xA;        Babylas&#xA;        Babylas&#xA;        &#xA;        &#xA;        &#xA;        Individual Saint&#xA;        &#xA;        &#xA;        Urbanus, Appolonius, Barbadus&#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        Babylas was a bishop of Antioch who died from poor treatment in prison; noted for demanding that Emperor Philip the Arab make public penance.  &#xA;        Bishop of Antioch&#xA;        &#xA;        Antioch&#xA;        Daphne outside of Antioch&#xA;        137&#xA;        67&#xA;        67&#xA;        BABYLAS&#xA;        BABYLAS&#xA;        &#xA;        &#xA;        Babylas&#xA;        &#xA;        M&#xA;        &#xA;        &#xA;        &#xA;        0250&#xA;        0237&#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        yes&#xA;        AMS, IV, 274- 83 ; BHO 127-28. DHGE, VI, col. 33 (R. Janin) . Vies des saints, I, 24 janvier, 483-86. BS, II, 679- 80 (F. Caraffa). Sur Babylas : Jean Chrysostome, Panegyrici in Baby/am martyrem, ed. et trad. M.A. Schatkin et al., Discours sur Babylas (Paris, 1990 ; SC 362).&#xA;        124,1055,508,509&#xA;        679,508,509,124,1055&#xA;        DIFF&#xA;        679&#xA;        508&#xA;        509&#xA;        124&#xA;        1055&#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        &#xA;        72&#xA;        1152&#xA;    "/>
-               <note>Fiey provides the following bibliographic citations: 
-                                            <quote source="#bibl1152-2">AMS, IV, 274- 83 ; BHO 127-28. DHGE, VI, col. 33 (R. Janin) . Vies des saints, I, 24 janvier, 483-86. BS, II, 679- 80 (F. Caraffa). Sur Babylas : Jean Chrysostome, Panegyrici in Baby/am martyrem, ed. et trad. M.A. Schatkin et al., Discours sur Babylas (Paris, 1990 ; SC 362).</quote>
+               <death when="0250"
+                      syriaca-computed-start="0250-01-01"
+                      source="#bibl1152-1">0250</death>
+               <floruit source="#bibl1152-1" when="0237" syriaca-computed-start="0237">0237</floruit>
+               <note>Fiey provides the following bibliographic citations: <quote source="#bibl1152-1">AMS, IV, 274- 83 ; BHO 127-28. DHGE, VI, col. 33 (R. Janin) . Vies des saints, I, 24 janvier, 483-86. BS, II, 679- 80 (F. Caraffa). Sur Babylas : Jean Chrysostome, Panegyrici in Baby/am martyrem, ed. et trad. M.A. Schatkin et al., Discours sur Babylas (Paris, 1990 ; SC 362).</quote>
                </note>
-               <state type="commemoration-mode" source="#bibl1152-2">
-                  <label>Individual Saint</label>
-               </state>
                <note type="abstract">Bishop of Antioch</note>
-               <note type="martyrdom">This saint is a martyr.</note>
-               <note type="bibliography" source="#bibl1152-1">
-                                            Fiey cites AMS, IV, 274- 83 ; BHO 127-28. DHGE, VI, col. 33 (R. Janin) . Vies des saints, I, 24 janvier, 483-86. BS, II, 679- 80 (F. Caraffa). Sur Babylas : Jean Chrysostome, Panegyrici in Baby/am martyrem, ed. et trad. M.A. Schatkin et al., Discours sur Babylas (Paris, 1990 ; SC 362).</note>
                <bibl xml:id="bib1092-1">
                   <title level="m" xml:lang="la">Biblioteca Hagiographica Syriaca electronica</title>
                   <ptr target="http://syriaca.org/bibl/649"/>

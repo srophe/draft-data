@@ -122,34 +122,29 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#dmichelson"
                  n="1.0"
-                 when="2015-02-25-05:00"> CREATED: person </change>
+                 when="2015-02-25-05:00">CREATED: person</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPerson>
             <person xml:id="saint-1998" ana="#syriaca-saint">
-               <persName xml:id="name1998-1" xml:lang="en" syriaca-tags="#syriaca-headword">Philip</persName>
-               <persName xml:id="name1998-2"
+               <persName xml:id="name1998-1"
                          xml:lang="syr"
                          syriaca-tags="#syriaca-headword"
                          source="#bibl1998-1">ܦܝܠܝܦܘܣ</persName>
-               <persName xml:id="name1998-3" xml:lang="fr-x-zanetti" source="#bibl1998-1">Pīlīpōs</persName>
-               <persName xml:id="name1998-4" xml:lang="fr" source="#bibl1998-1">Philippe</persName>
+               <persName xml:id="name1998-2"
+                         xml:lang="en-x-gedsh"
+                         syriaca-tags="#syriaca-headword">Pīlīpōs</persName>
+               <persName xml:id="name1998-3" xml:lang="en">Philip</persName>
+               <persName xml:id="name1998-4" xml:lang="fr-x-zanetti" source="#bibl1998-1">Pīlīpōs</persName>
+               <persName xml:id="name1998-5" xml:lang="fr" source="#bibl1998-1">Philippe</persName>
                <idno type="URI">http://syriaca.org/person/1998</idno>
                <idno type="BHSYRE">684</idno>
-               <state type="commemoration-mode" source="#bibl1998-1">
-                  <label>Individual Saint</label>
-               </state>
                <bibl xml:id="bib1092-1">
                   <title level="m" xml:lang="la">Biblioteca Hagiographica Syriaca electronica</title>
                   <ptr target="http://syriaca.org/bibl/649"/>
                   <citedRange unit="entry">684</citedRange>
-               </bibl>
-               <bibl xml:id="bib1092-2">
-                  <title level="m" xml:lang="fr">Saints Syriaques</title>
-                  <title level="a" xml:lang="fr">AARON DE SAROUG</title>
-                  <ptr target="http://syriaca.org/bibl/650"/>
                </bibl>
             </person>
          </listPerson>

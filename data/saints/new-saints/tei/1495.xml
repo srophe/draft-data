@@ -122,39 +122,35 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#dmichelson"
                  n="1.0"
-                 when="2015-02-25-05:00"> CREATED: person </change>
+                 when="2015-02-25-05:00">CREATED: person</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPerson>
             <person xml:id="saint-1495" ana="#syriaca-saint">
-               <persName xml:id="name1495-1" xml:lang="en" syriaca-tags="#syriaca-headword">Tarbo</persName>
-               <persName xml:id="name1495-2"
+               <persName xml:id="name1495-1"
                          xml:lang="syr"
                          syriaca-tags="#syriaca-headword"
                          source="#bibl1495-2">ܬܪܒܘ</persName>
-               <persName xml:id="name1495-3" xml:lang="fr-x-zanetti" source="#bibl1495-2">Tarbō</persName>
-               <persName xml:id="name1495-4" xml:lang="fr" source="#bibl1495-2">Tarbo, sa soeur et sa servante</persName>
-               <persName xml:id="name1495-5" xml:lang="fr-x-fiey" source="#bibl1495-1">TARBO</persName>
+               <persName xml:id="name1495-2"
+                         xml:lang="en-x-gedsh"
+                         syriaca-tags="#syriaca-headword">Tarbu</persName>
+               <persName xml:id="name1495-3" xml:lang="en">Tarbo</persName>
+               <persName xml:id="name1495-4" xml:lang="fr-x-zanetti" source="#bibl1495-2">Tarbō</persName>
+               <persName xml:id="name1495-5" xml:lang="fr" source="#bibl1495-2">Tarbo, sa soeur et sa servante</persName>
+               <persName xml:id="name1495-6" xml:lang="fr-x-fiey" source="#bibl1495-1">TARBO</persName>
                <idno type="URI">http://syriaca.org/person/1495</idno>
                <idno type="FIEY">436</idno>
                <idno type="FIEY">436</idno>
                <idno type="BHSYRE">48</idno>
                <sex value="F" source="#bibl1495-1">female</sex>
-               <death when="normalize-space(.)"
-                      source="#bibl1495-2"
-                      syriaca-computed-start="0341-01-01">0341</death>
-               <state type="martyr" source="#bibl1495-2">Martyr</state>
-               <note>Fiey provides the following bibliographic citations: 
-                                            <quote source="#bibl1495-2">Assemani, ASMO, 54-59; BHO, 1149 ; Lagrange 61-64 ; Leclercq, III, 165-68. AMS, II, 254-60. Suhada ', I, 256-60. Delehaye, Actes, 439- 44, 558- 59. Wiessner, Miirtyrer, 144- 48. Trad. anglaise dans Brock-Harvey, Holy Women, 73-76.</quote>
+               <death when="0341"
+                      syriaca-computed-start="0341-01-01"
+                      source="#bibl1495-1">0341</death>
+               <state type="martyr" source="#bibl1495-1">Martyr</state>
+               <note>Fiey provides the following bibliographic citations: <quote source="#bibl1495-1">Assemani, ASMO, 54-59; BHO, 1149 ; Lagrange 61-64 ; Leclercq, III, 165-68. AMS, II, 254-60. Suhada ', I, 256-60. Delehaye, Actes, 439- 44, 558- 59. Wiessner, Miirtyrer, 144- 48. Trad. anglaise dans Brock-Harvey, Holy Women, 73-76.</quote>
                </note>
-               <state type="commemoration-mode" source="#bibl1495-2">
-                  <label>Individual Saint</label>
-               </state>
-               <note type="martyrdom">This saint is a martyr.</note>
-               <note type="bibliography" source="#bibl1495-1">
-                                            Fiey cites Assemani, ASMO, 54-59; BHO, 1149 ; Lagrange 61-64 ; Leclercq, III, 165-68. AMS, II, 254-60. Suhada ', I, 256-60. Delehaye, Actes, 439- 44, 558- 59. Wiessner, Miirtyrer, 144- 48. Trad. anglaise dans Brock-Harvey, Holy Women, 73-76.</note>
                <bibl xml:id="bib1092-1">
                   <title level="m" xml:lang="la">Biblioteca Hagiographica Syriaca electronica</title>
                   <ptr target="http://syriaca.org/bibl/649"/>

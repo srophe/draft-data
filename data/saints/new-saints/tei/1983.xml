@@ -122,19 +122,22 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#dmichelson"
                  n="1.0"
-                 when="2015-02-25-05:00"> CREATED: person </change>
+                 when="2015-02-25-05:00">CREATED: person</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPerson>
             <person xml:id="saint-1983" ana="#syriaca-saint">
-               <persName xml:id="name1983-1" xml:lang="en" syriaca-tags="#syriaca-headword">Paul</persName>
-               <persName xml:id="name1983-2"
+               <persName xml:id="name1983-1"
                          xml:lang="syr"
                          syriaca-tags="#syriaca-headword"
                          source="#bibl1983-1">ܦܘܠܘܣ</persName>
-               <persName xml:id="name1983-3" xml:lang="fr" source="#bibl1983-1">Paul</persName>
+               <persName xml:id="name1983-2"
+                         xml:lang="en-x-gedsh"
+                         syriaca-tags="#syriaca-headword">Pawlōs</persName>
+               <persName xml:id="name1983-3" xml:lang="en">Paul</persName>
+               <persName xml:id="name1983-4" xml:lang="fr" source="#bibl1983-1">Paul</persName>
                <idno type="URI">http://syriaca.org/person/1983</idno>
                <idno type="BHSYRE">934</idno>
                <idno type="BHSYRE">1098</idno>
@@ -159,19 +162,11 @@
                <idno type="BHSYRE">861</idno>
                <idno type="BHSYRE">1561</idno>
                <note type="disambiguation">apostle</note>
-               <state type="commemoration-mode" source="#bibl1983-1">
-                  <label>Individual Saint</label>
-               </state>
                <note type="misc" source="#bibl1983-">Problem Entry</note>
                <bibl xml:id="bib1092-1">
                   <title level="m" xml:lang="la">Biblioteca Hagiographica Syriaca electronica</title>
                   <ptr target="http://syriaca.org/bibl/649"/>
                   <citedRange unit="entry">934, 1098, 1533, 1580, 1607, 1614, 2, 496, 753, 754, 836, 945, 1003, 1004, 1005, 1127, 1789, 1808, 1986, 2002, 861, 1561</citedRange>
-               </bibl>
-               <bibl xml:id="bib1092-2">
-                  <title level="m" xml:lang="fr">Saints Syriaques</title>
-                  <title level="a" xml:lang="fr">AARON DE SAROUG</title>
-                  <ptr target="http://syriaca.org/bibl/650"/>
                </bibl>
             </person>
          </listPerson>

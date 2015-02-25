@@ -122,25 +122,31 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#dmichelson"
                  n="1.0"
-                 when="2015-02-25-05:00"> CREATED: person </change>
+                 when="2015-02-25-05:00">CREATED: person</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPerson>
             <person xml:id="saint-1851" ana="#syriaca-saint">
-               <persName xml:id="name1851-1" xml:lang="en" syriaca-tags="#syriaca-headword">Gaisus</persName>
-               <persName xml:id="name1851-2" xml:lang="en">Thief</persName>
-               <persName xml:id="name1851-3" xml:lang="en">bandit</persName>
-               <persName xml:id="name1851-4"
+               <persName xml:id="name1851-1"
+                         xml:lang="syr"
+                         syriaca-tags="#syriaca-headword"
+                         source="#bibl1851-1">ܓܝܣܐ ܕܡܢ ܝܡܝܢܐ</persName>
+               <persName xml:id="name1851-2"
+                         xml:lang="en-x-gedsh"
+                         syriaca-tags="#syriaca-headword">Gayāsā d-men yamina</persName>
+               <persName xml:id="name1851-2"
                          xml:lang="syr"
                          syriaca-tags="#syriaca-headword"
                          source="#bibl1851-1">ܓܝܣܐ</persName>
-               <persName xml:id="name1851-5" xml:lang="syr" source="#bibl1851-1">ܓܝܣܐ ܕܡܢ ܝܡܝܢܐ</persName>
-               <persName xml:id="name1851-6" xml:lang="fr-x-zanetti" source="#bibl1851-1">Gayāsā</persName>
-               <persName xml:id="name1851-7" xml:lang="fr" source="#bibl1851-1">Larron</persName>
-               <persName xml:id="name1851-8" xml:lang="fr" source="#bibl1851-1">larron</persName>
-               <persName xml:id="name1851-9" xml:lang="fr" source="#bibl1851-1">Larron (bon)</persName>
+               <persName xml:id="name1851-4" xml:lang="en">Gaisus</persName>
+               <persName xml:id="name1851-5" xml:lang="en">Thief</persName>
+               <persName xml:id="name1851-6" xml:lang="en">bandit</persName>
+               <persName xml:id="name1851-7" xml:lang="fr-x-zanetti" source="#bibl1851-1">Gayāsā</persName>
+               <persName xml:id="name1851-8" xml:lang="fr" source="#bibl1851-1">Larron</persName>
+               <persName xml:id="name1851-9" xml:lang="fr" source="#bibl1851-1">larron</persName>
+               <persName xml:id="name1851-10" xml:lang="fr" source="#bibl1851-1">Larron (bon)</persName>
                <idno type="URI">http://syriaca.org/person/1851</idno>
                <idno type="BHSYRE">481</idno>
                <idno type="BHSYRE">1202</idno>
@@ -151,19 +157,10 @@
                <idno type="BHSYRE">1794</idno>
                <idno type="BHSYRE">1810</idno>
                <idno type="BHSYRE">749</idno>
-               <state type="commemoration-mode" source="#bibl1851-1">
-                  <label>Individual Saint</label>
-                  <label>Multiple Named Saints</label>
-               </state>
                <bibl xml:id="bib1092-1">
                   <title level="m" xml:lang="la">Biblioteca Hagiographica Syriaca electronica</title>
                   <ptr target="http://syriaca.org/bibl/649"/>
                   <citedRange unit="entry">481, 1202, 1081, 1082, 1324, 1877, 1794, 1810, 749</citedRange>
-               </bibl>
-               <bibl xml:id="bib1092-2">
-                  <title level="m" xml:lang="fr">Saints Syriaques</title>
-                  <title level="a" xml:lang="fr">AARON DE SAROUG</title>
-                  <ptr target="http://syriaca.org/bibl/650"/>
                </bibl>
             </person>
          </listPerson>

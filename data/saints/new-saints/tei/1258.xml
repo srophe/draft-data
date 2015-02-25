@@ -122,21 +122,24 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#dmichelson"
                  n="1.0"
-                 when="2015-02-25-05:00"> CREATED: person </change>
+                 when="2015-02-25-05:00">CREATED: person</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPerson>
             <person xml:id="saint-1258" ana="#syriaca-saint">
-               <persName xml:id="name1258-1" xml:lang="en" syriaca-tags="#syriaca-headword">Habib</persName>
-               <persName xml:id="name1258-2"
+               <persName xml:id="name1258-1"
                          xml:lang="syr"
                          syriaca-tags="#syriaca-headword"
                          source="#bibl1258-2">ܚܒܝܒ</persName>
-               <persName xml:id="name1258-3" xml:lang="fr-x-zanetti" source="#bibl1258-2">Ḥabīb</persName>
-               <persName xml:id="name1258-4" xml:lang="fr" source="#bibl1258-2">Habib</persName>
-               <persName xml:id="name1258-5" xml:lang="fr-x-fiey" source="#bibl1258-1">ḤABĪB</persName>
+               <persName xml:id="name1258-2"
+                         xml:lang="en-x-gedsh"
+                         syriaca-tags="#syriaca-headword">Ḥabīb</persName>
+               <persName xml:id="name1258-3" xml:lang="en">Habib</persName>
+               <persName xml:id="name1258-4" xml:lang="fr-x-zanetti" source="#bibl1258-2">Ḥabīb</persName>
+               <persName xml:id="name1258-5" xml:lang="fr" source="#bibl1258-2">Habib</persName>
+               <persName xml:id="name1258-6" xml:lang="fr-x-fiey" source="#bibl1258-1">ḤABĪB</persName>
                <idno type="URI">http://syriaca.org/person/1258</idno>
                <idno type="FIEY">182</idno>
                <idno type="FIEY">182</idno>
@@ -144,20 +147,13 @@
                <idno type="BHSYRE">1396</idno>
                <idno type="BHSYRE">1559</idno>
                <sex value="M" source="#bibl1258-1">male</sex>
-               <death when="normalize-space(.)"
-                      source="#bibl1258-2"
-                      syriaca-computed-start="0322-01-01">0322</death>
-               <note>Fiey provides the following bibliographic citations: 
-                                            <quote source="#bibl1258-2">Le martyrologe de Rabban $a1Iba fete un I:Jabib, non identifie, au 11 mars. 1MS, I, 144- 60; Burkitt, Euphemia, 26*-43* , 112- 28; BHO, 367. Suhada ', I, 102- 12. Homelie metrique de Jacques de Sarug: AMS, I, 160- 72 ; BHO, 368. Vies des saints, XI, 15 novembre, 472-75, avec references. Segal, Edessa, 85- 86. BS, I, 77- 81 (G.M. Fusconi/S. Orienti).</quote>
+               <death when="0322"
+                      syriaca-computed-start="0322-01-01"
+                      source="#bibl1258-1">0322</death>
+               <note>Fiey provides the following bibliographic citations: <quote source="#bibl1258-1">Le martyrologe de Rabban $a1Iba fete un I:Jabib, non identifie, au 11 mars. 1MS, I, 144- 60; Burkitt, Euphemia, 26*-43* , 112- 28; BHO, 367. Suhada ', I, 102- 12. Homelie metrique de Jacques de Sarug: AMS, I, 160- 72 ; BHO, 368. Vies des saints, XI, 15 novembre, 472-75, avec references. Segal, Edessa, 85- 86. BS, I, 77- 81 (G.M. Fusconi/S. Orienti).</quote>
                </note>
                <note type="disambiguation">edessan martyr</note>
-               <state type="commemoration-mode" source="#bibl1258-2">
-                  <label>Individual Saint</label>
-                  <label>Multiple Named Saints</label>
-               </state>
                <note type="abstract">Deacon of Edessa, Martyr</note>
-               <note type="bibliography" source="#bibl1258-1">
-                                            Fiey cites Le martyrologe de Rabban $a1Iba fete un I:Jabib, non identifie, au 11 mars. 1MS, I, 144- 60; Burkitt, Euphemia, 26*-43* , 112- 28; BHO, 367. Suhada ', I, 102- 12. Homelie metrique de Jacques de Sarug: AMS, I, 160- 72 ; BHO, 368. Vies des saints, XI, 15 novembre, 472-75, avec references. Segal, Edessa, 85- 86. BS, I, 77- 81 (G.M. Fusconi/S. Orienti).</note>
                <bibl xml:id="bib1092-1">
                   <title level="m" xml:lang="la">Biblioteca Hagiographica Syriaca electronica</title>
                   <ptr target="http://syriaca.org/bibl/649"/>

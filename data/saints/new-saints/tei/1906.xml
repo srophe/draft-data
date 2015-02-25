@@ -122,34 +122,29 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#dmichelson"
                  n="1.0"
-                 when="2015-02-25-05:00"> CREATED: person </change>
+                 when="2015-02-25-05:00">CREATED: person</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPerson>
             <person xml:id="saint-1906" ana="#syriaca-saint">
-               <persName xml:id="name1906-1" xml:lang="en" syriaca-tags="#syriaca-headword">Martyrs and Confessors</persName>
-               <persName xml:id="name1906-2"
+               <persName xml:id="name1906-1"
                          xml:lang="syr"
                          syriaca-tags="#syriaca-headword"
                          source="#bibl1906-1">ܣܗ̈ܕܐ ܘܡܘܕ̈ܝܢܐ</persName>
-               <persName xml:id="name1906-3" xml:lang="fr" source="#bibl1906-1">Martyrs et Confesseurs</persName>
+               <persName xml:id="name1906-2"
+                         xml:lang="en-x-gedsh"
+                         syriaca-tags="#syriaca-headword">Sāhdē w-Mawdyane</persName>
+               <persName xml:id="name1906-3" xml:lang="en">Martyrs and Confessors</persName>
+               <persName xml:id="name1906-4" xml:lang="fr" source="#bibl1906-1">Martyrs et Confesseurs</persName>
                <idno type="URI">http://syriaca.org/person/1906</idno>
                <idno type="BHSYRE">750</idno>
                <idno type="BHSYRE">1612</idno>
-               <state type="commemoration-mode" source="#bibl1906-1">
-                  <label>Individual Saint</label>
-               </state>
                <bibl xml:id="bib1092-1">
                   <title level="m" xml:lang="la">Biblioteca Hagiographica Syriaca electronica</title>
                   <ptr target="http://syriaca.org/bibl/649"/>
                   <citedRange unit="entry">750, 1612</citedRange>
-               </bibl>
-               <bibl xml:id="bib1092-2">
-                  <title level="m" xml:lang="fr">Saints Syriaques</title>
-                  <title level="a" xml:lang="fr">AARON DE SAROUG</title>
-                  <ptr target="http://syriaca.org/bibl/650"/>
                </bibl>
             </person>
          </listPerson>

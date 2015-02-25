@@ -122,45 +122,41 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#dmichelson"
                  n="1.0"
-                 when="2015-02-25-05:00"> CREATED: person </change>
+                 when="2015-02-25-05:00">CREATED: person</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPerson>
             <person xml:id="saint-1099" ana="#syriaca-saint">
-               <persName xml:id="name1099-1" xml:lang="en" syriaca-tags="#syriaca-headword">Abda</persName>
-               <persName xml:id="name1099-2" xml:lang="en">Abda ('Awda), 'Awdisho' de Kaskar</persName>
-               <persName xml:id="name1099-3"
+               <persName xml:id="name1099-1"
                          xml:lang="syr"
                          syriaca-tags="#syriaca-headword"
                          source="#bibl1099-2">ܥܒܕܐ</persName>
-               <persName xml:id="name1099-4" xml:lang="fr-x-zanetti" source="#bibl1099-2">ʿAḇdā</persName>
-               <persName xml:id="name1099-5" xml:lang="fr" source="#bibl1099-2">Abda</persName>
-               <persName xml:id="name1099-6" xml:lang="fr-x-fiey" source="#bibl1099-1">ABDA ('AWDA), 'AWDİŜO'</persName>
+               <persName xml:id="name1099-2"
+                         xml:lang="en-x-gedsh"
+                         syriaca-tags="#syriaca-headword">ʿAbdā</persName>
+               <persName xml:id="name1099-3" xml:lang="en">Abda</persName>
+               <persName xml:id="name1099-4" xml:lang="en">Abda ('Awda), 'Awdisho' de Kaskar</persName>
+               <persName xml:id="name1099-5" xml:lang="fr-x-zanetti" source="#bibl1099-2">ʿAḇdā</persName>
+               <persName xml:id="name1099-6" xml:lang="fr" source="#bibl1099-2">Abda</persName>
+               <persName xml:id="name1099-7" xml:lang="fr-x-fiey" source="#bibl1099-1">ABDA ('AWDA), 'AWDİŜO'</persName>
                <idno type="URI">http://syriaca.org/person/1099</idno>
                <idno type="FIEY">8</idno>
                <idno type="FIEY">8</idno>
                <idno type="BHSYRE">62</idno>
                <sex value="M" source="#bibl1099-1">male</sex>
-               <death when="normalize-space(.)"
-                      source="#bibl1099-2"
-                      syriaca-computed-start="0376-01-01">0376</death>
-               <state type="martyr" source="#bibl1099-2">Martyr</state>
-               <note>Fiey provides the following bibliographic citations: 
-                                            <quote source="#bibl1099-2">AMS, II, 325-48 ; BHO, 5. Suhadii', I, 357-68. Assemani, ASMO, 144- 60 ; Lagrange, 109- 93; Leclercq, III, 207-19; Hoffmann, Ausziige, 34- 36. BS, I, 42- 43 (G . Lucchesi) .</quote>
+               <death when="0376"
+                      syriaca-computed-start="0376-01-01"
+                      source="#bibl1099-1">0376</death>
+               <state type="martyr" source="#bibl1099-1">Martyr</state>
+               <note>Fiey provides the following bibliographic citations: <quote source="#bibl1099-1">AMS, II, 325-48 ; BHO, 5. Suhadii', I, 357-68. Assemani, ASMO, 144- 60 ; Lagrange, 109- 93; Leclercq, III, 207-19; Hoffmann, Ausziige, 34- 36. BS, I, 42- 43 (G . Lucchesi) .</quote>
                </note>
                <event type="veneration" source="#bibl1099-1">
                   <desc>The saint is venerated on 16 May in East Syrian church.</desc>
                </event>
                <note type="disambiguation">martyred with 38 companions</note>
-               <state type="commemoration-mode" source="#bibl1099-2">
-                  <label>Multiple Named Saints</label>
-               </state>
                <note type="abstract">Persian martyr and bishop; Persian martyr and bishop</note>
-               <note type="martyrdom">This saint is a martyr.</note>
-               <note type="bibliography" source="#bibl1099-1">
-                                            Fiey cites AMS, II, 325-48 ; BHO, 5. Suhadii', I, 357-68. Assemani, ASMO, 144- 60 ; Lagrange, 109- 93; Leclercq, III, 207-19; Hoffmann, Ausziige, 34- 36. BS, I, 42- 43 (G . Lucchesi) .</note>
                <bibl xml:id="bib1092-1">
                   <title level="m" xml:lang="la">Biblioteca Hagiographica Syriaca electronica</title>
                   <ptr target="http://syriaca.org/bibl/649"/>

@@ -122,44 +122,40 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#dmichelson"
                  n="1.0"
-                 when="2015-02-25-05:00"> CREATED: person </change>
+                 when="2015-02-25-05:00">CREATED: person</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPerson>
             <person xml:id="saint-1102" ana="#syriaca-saint">
-               <persName xml:id="name1102-1" xml:lang="en" syriaca-tags="#syriaca-headword">Abdalmasih</persName>
-               <persName xml:id="name1102-2" xml:lang="en">Abd al-Masih</persName>
-               <persName xml:id="name1102-3"
+               <persName xml:id="name1102-1"
                          xml:lang="syr"
                          syriaca-tags="#syriaca-headword"
                          source="#bibl1102-2">ܥܒܕܐܠܡܣܝܚ</persName>
-               <persName xml:id="name1102-4" xml:lang="fr-x-zanetti" source="#bibl1102-2">ʾAbdelmasīḥ</persName>
-               <persName xml:id="name1102-5" xml:lang="fr" source="#bibl1102-2">Abdalmasih</persName>
-               <persName xml:id="name1102-6" xml:lang="fr-x-fiey" source="#bibl1102-1">ABD AL-MASİḤ ('ABDA, CHRISTODULE)</persName>
+               <persName xml:id="name1102-2"
+                         xml:lang="en-x-gedsh"
+                         syriaca-tags="#syriaca-headword">ʿAbdelmasiḥ</persName>
+               <persName xml:id="name1102-3" xml:lang="en">Abdalmasih</persName>
+               <persName xml:id="name1102-4" xml:lang="en">Abd al-Masih</persName>
+               <persName xml:id="name1102-5" xml:lang="fr-x-zanetti" source="#bibl1102-2">ʾAbdelmasīḥ</persName>
+               <persName xml:id="name1102-6" xml:lang="fr" source="#bibl1102-2">Abdalmasih</persName>
+               <persName xml:id="name1102-7" xml:lang="fr-x-fiey" source="#bibl1102-1">ABD AL-MASİḤ ('ABDA, CHRISTODULE)</persName>
                <idno type="URI">http://syriaca.org/person/1102</idno>
                <idno type="FIEY">10</idno>
                <idno type="FIEY">10</idno>
                <idno type="BHSYRE">9</idno>
                <sex value="M" source="#bibl1102-1">male</sex>
-               <death when="normalize-space(.)"
-                      source="#bibl1102-2"
-                      syriaca-computed-start="0390-01-01">0390</death>
-               <state type="martyr" source="#bibl1102-2">Martyr</state>
-               <note>Fiey provides the following bibliographic citations: 
-                                            <quote source="#bibl1102-2">Les textes de base (syriaque, armenien, arabe) et les etudes sont indiques dans mon article du Museon 77 (1964), 205-23, complete ici sur quelques points. BS, I, 48-49 (M. Japundzic). Fiey, "Hagiographie", 461-62.</quote>
+               <death when="0390"
+                      syriaca-computed-start="0390-01-01"
+                      source="#bibl1102-1">0390</death>
+               <state type="martyr" source="#bibl1102-1">Martyr</state>
+               <note>Fiey provides the following bibliographic citations: <quote source="#bibl1102-1">Les textes de base (syriaque, armenien, arabe) et les etudes sont indiques dans mon article du Museon 77 (1964), 205-23, complete ici sur quelques points. BS, I, 48-49 (M. Japundzic). Fiey, "Hagiographie", 461-62.</quote>
                </note>
                <event type="veneration" source="#bibl1102-1">
                   <desc>The saint is venerated on Syr., hazir. 27 (BHO).</desc>
                </event>
-               <state type="commemoration-mode" source="#bibl1102-2">
-                  <label>Individual Saint</label>
-               </state>
                <note type="abstract">jewish child, Persian martyr, shepherd, slave</note>
-               <note type="martyrdom">This saint is a martyr.</note>
-               <note type="bibliography" source="#bibl1102-1">
-                                            Fiey cites Les textes de base (syriaque, armenien, arabe) et les etudes sont indiques dans mon article du Museon 77 (1964), 205-23, complete ici sur quelques points. BS, I, 48-49 (M. Japundzic). Fiey, "Hagiographie", 461-62.</note>
                <bibl xml:id="bib1092-1">
                   <title level="m" xml:lang="la">Biblioteca Hagiographica Syriaca electronica</title>
                   <ptr target="http://syriaca.org/bibl/649"/>

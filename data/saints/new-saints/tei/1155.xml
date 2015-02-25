@@ -122,40 +122,36 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#dmichelson"
                  n="1.0"
-                 when="2015-02-25-05:00"> CREATED: person </change>
+                 when="2015-02-25-05:00">CREATED: person</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPerson>
             <person xml:id="saint-1155" ana="#syriaca-saint">
-               <persName xml:id="name1155-1" xml:lang="en" syriaca-tags="#syriaca-headword">Badma</persName>
-               <persName xml:id="name1155-2"
+               <persName xml:id="name1155-1"
                          xml:lang="syr"
                          syriaca-tags="#syriaca-headword"
                          source="#bibl1155-2">ܒܕܡܐ</persName>
-               <persName xml:id="name1155-3" xml:lang="fr-x-zanetti" source="#bibl1155-2">Badmā</persName>
-               <persName xml:id="name1155-4" xml:lang="fr" source="#bibl1155-2">Badma</persName>
-               <persName xml:id="name1155-5" xml:lang="fr-x-fiey" source="#bibl1155-1">BADMA</persName>
+               <persName xml:id="name1155-2"
+                         xml:lang="en-x-gedsh"
+                         syriaca-tags="#syriaca-headword">Badmā</persName>
+               <persName xml:id="name1155-3" xml:lang="en">Badma</persName>
+               <persName xml:id="name1155-4" xml:lang="fr-x-zanetti" source="#bibl1155-2">Badmā</persName>
+               <persName xml:id="name1155-5" xml:lang="fr" source="#bibl1155-2">Badma</persName>
+               <persName xml:id="name1155-6" xml:lang="fr-x-fiey" source="#bibl1155-1">BADMA</persName>
                <idno type="URI">http://syriaca.org/person/1155</idno>
                <idno type="FIEY">70</idno>
                <idno type="FIEY">70</idno>
                <idno type="BHSYRE">63</idno>
                <sex value="M" source="#bibl1155-1">male</sex>
-               <death when="normalize-space(.)"
-                      source="#bibl1155-2"
-                      syriaca-computed-start="0375-01-01">0375</death>
-               <state type="martyr" source="#bibl1155-2">Martyr</state>
-               <note>Fiey provides the following bibliographic citations: 
-                                            <quote source="#bibl1155-2">AMS, II, 347-51 ; BHO, 131. Assemani, ASMO, 165- 67 ; Lagrange, 124-26 ; Leclercq, III, 220- 22. Buhadii', I, 368-71. Actes grecs : Delehaye, Actes, 473- 77. DHGE, VI, col. 148, s.v. Bademas (A. van Lantschoot). BS, II, 690 (J .-M. Sauget).</quote>
+               <death when="0375"
+                      syriaca-computed-start="0375-01-01"
+                      source="#bibl1155-1">0375</death>
+               <state type="martyr" source="#bibl1155-1">Martyr</state>
+               <note>Fiey provides the following bibliographic citations: <quote source="#bibl1155-1">AMS, II, 347-51 ; BHO, 131. Assemani, ASMO, 165- 67 ; Lagrange, 124-26 ; Leclercq, III, 220- 22. Buhadii', I, 368-71. Actes grecs : Delehaye, Actes, 473- 77. DHGE, VI, col. 148, s.v. Bademas (A. van Lantschoot). BS, II, 690 (J .-M. Sauget).</quote>
                </note>
-               <state type="commemoration-mode" source="#bibl1155-2">
-                  <label>Individual Saint</label>
-               </state>
                <note type="abstract">Archimandrite</note>
-               <note type="martyrdom">This saint is a martyr.</note>
-               <note type="bibliography" source="#bibl1155-1">
-                                            Fiey cites AMS, II, 347-51 ; BHO, 131. Assemani, ASMO, 165- 67 ; Lagrange, 124-26 ; Leclercq, III, 220- 22. Buhadii', I, 368-71. Actes grecs : Delehaye, Actes, 473- 77. DHGE, VI, col. 148, s.v. Bademas (A. van Lantschoot). BS, II, 690 (J .-M. Sauget).</note>
                <bibl xml:id="bib1092-1">
                   <title level="m" xml:lang="la">Biblioteca Hagiographica Syriaca electronica</title>
                   <ptr target="http://syriaca.org/bibl/649"/>

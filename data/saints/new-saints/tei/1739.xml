@@ -122,33 +122,28 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#dmichelson"
                  n="1.0"
-                 when="2015-02-25-05:00"> CREATED: person </change>
+                 when="2015-02-25-05:00">CREATED: person</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPerson>
             <person xml:id="saint-1739" ana="#syriaca-saint">
-               <persName xml:id="name1739-1" xml:lang="en" syriaca-tags="#syriaca-headword">Monastic Founders</persName>
-               <persName xml:id="name1739-2"
+               <persName xml:id="name1739-1"
                          xml:lang="syr"
                          syriaca-tags="#syriaca-headword"
                          source="#bibl1739-1">ܐܒܗ̈ܬܐ</persName>
-               <persName xml:id="name1739-3" xml:lang="fr" source="#bibl1739-1">Fondateurs</persName>
+               <persName xml:id="name1739-2"
+                         xml:lang="en-x-gedsh"
+                         syriaca-tags="#syriaca-headword">Abahatha</persName>
+               <persName xml:id="name1739-3" xml:lang="en">Monastic Founders</persName>
+               <persName xml:id="name1739-4" xml:lang="fr" source="#bibl1739-1">Fondateurs</persName>
                <idno type="URI">http://syriaca.org/person/1739</idno>
                <idno type="BHSYRE">1658</idno>
-               <state type="commemoration-mode" source="#bibl1739-1">
-                  <label>Individual Saint</label>
-               </state>
                <bibl xml:id="bib1092-1">
                   <title level="m" xml:lang="la">Biblioteca Hagiographica Syriaca electronica</title>
                   <ptr target="http://syriaca.org/bibl/649"/>
                   <citedRange unit="entry">1658</citedRange>
-               </bibl>
-               <bibl xml:id="bib1092-2">
-                  <title level="m" xml:lang="fr">Saints Syriaques</title>
-                  <title level="a" xml:lang="fr">AARON DE SAROUG</title>
-                  <ptr target="http://syriaca.org/bibl/650"/>
                </bibl>
             </person>
          </listPerson>

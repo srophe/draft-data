@@ -122,44 +122,39 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#dmichelson"
                  n="1.0"
-                 when="2015-02-25-05:00"> CREATED: person </change>
+                 when="2015-02-25-05:00">CREATED: person</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPerson>
             <person xml:id="saint-1108" ana="#syriaca-saint">
-               <persName xml:id="name1108-1" xml:lang="en" syriaca-tags="#syriaca-headword">Abraham, bishop of Arbela</persName>
-               <persName xml:id="name1108-2" xml:lang="en">Abraham</persName>
-               <persName xml:id="name1108-3"
+               <persName xml:id="name1108-1"
                          xml:lang="syr"
                          syriaca-tags="#syriaca-headword"
                          source="#bibl1108-2">ܐܒܪܗܡ</persName>
-               <persName xml:id="name1108-4" xml:lang="fr-x-zanetti" source="#bibl1108-2">ʾAḇrāhām</persName>
-               <persName xml:id="name1108-5" xml:lang="fr" source="#bibl1108-2">Abraham, évêque d’Arbèles</persName>
-               <persName xml:id="name1108-6" xml:lang="fr-x-fiey" source="#bibl1108-1">ABRAHAM</persName>
+               <persName xml:id="name1108-2"
+                         xml:lang="en-x-gedsh"
+                         syriaca-tags="#syriaca-headword">Abraham</persName>
+               <persName xml:id="name1108-3" xml:lang="en">Abraham, bishop of Arbela</persName>
+               <persName xml:id="name1108-5" xml:lang="fr-x-zanetti" source="#bibl1108-2">ʾAḇrāhām</persName>
+               <persName xml:id="name1108-6" xml:lang="fr" source="#bibl1108-2">Abraham, évêque d’Arbèles</persName>
+               <persName xml:id="name1108-7" xml:lang="fr-x-fiey" source="#bibl1108-1">ABRAHAM</persName>
                <idno type="URI">http://syriaca.org/person/1108</idno>
                <idno type="FIEY">18</idno>
                <idno type="FIEY">18</idno>
                <idno type="BHSYRE">104</idno>
                <sex value="M" source="#bibl1108-1">male</sex>
-               <death when="normalize-space(.)"
-                      source="#bibl1108-2"
-                      syriaca-computed-start="0345-01-01">0345</death>
-               <state type="martyr" source="#bibl1108-2">Martyr</state>
-               <note>Fiey provides the following bibliographic citations: 
-                                            <quote source="#bibl1108-2">AMS, IV, 130-31 ; BHO 12, trad. et adapte du grec, BHG, 10- 11. Delehaye, Actes, 450- 52. BS I, 111-112.  Suhadii', I, 277. Peeters, "Passionnaire", 271- 72. DHGE, I, col. 161, s.v. l.Abraham (S. Vailhe). BS, I, 111- 12 (G. Lucchesi).</quote>
+               <death when="0345"
+                      syriaca-computed-start="0345-01-01"
+                      source="#bibl1108-1">0345</death>
+               <state type="martyr" source="#bibl1108-1">Martyr</state>
+               <note>Fiey provides the following bibliographic citations: <quote source="#bibl1108-1">AMS, IV, 130-31 ; BHO 12, trad. et adapte du grec, BHG, 10- 11. Delehaye, Actes, 450- 52. BS I, 111-112.  Suhadii', I, 277. Peeters, "Passionnaire", 271- 72. DHGE, I, col. 161, s.v. l.Abraham (S. Vailhe). BS, I, 111- 12 (G. Lucchesi).</quote>
                </note>
                <event type="veneration" source="#bibl1108-1">
                   <desc>The saint is venerated on Feb. 5 (BHO).</desc>
                </event>
-               <state type="commemoration-mode" source="#bibl1108-2">
-                  <label>Individual Saint</label>
-               </state>
                <note type="abstract">Abraham was a bishop of Arbela who was martyred under Shapur II.</note>
-               <note type="martyrdom">This saint is a martyr.</note>
-               <note type="bibliography" source="#bibl1108-1">
-                                            Fiey cites AMS, IV, 130-31 ; BHO 12, trad. et adapte du grec, BHG, 10- 11. Delehaye, Actes, 450- 52. BS I, 111-112.  Suhadii', I, 277. Peeters, "Passionnaire", 271- 72. DHGE, I, col. 161, s.v. l.Abraham (S. Vailhe). BS, I, 111- 12 (G. Lucchesi).</note>
                <bibl xml:id="bib1092-1">
                   <title level="m" xml:lang="la">Biblioteca Hagiographica Syriaca electronica</title>
                   <ptr target="http://syriaca.org/bibl/649"/>

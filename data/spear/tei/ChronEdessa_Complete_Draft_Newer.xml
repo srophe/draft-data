@@ -175,7 +175,6 @@
                     <person>
                         <persName ref="http://syriaca.org/person/Severus"/>
                         <sex value="M">Male</sex>
-            <!-- CHANGE VALUES FOR SEX! THEY WOULD NOT VALIDATE WITH "M" AND "F" BUT I COULDN'T STAND TO LOOK AT ALL THAT RED. -->
                     </person>
                 </listPerson>
                 <bibl type="primary">
@@ -365,15 +364,8 @@
                 <listEvent>
                     <event ref="http://syriaca.org/keyword/naturalDisaster">
                         <desc>
-                            <placeName ref="http://syriaca.org/place/191">
-                The Daisan river
-              </placeName> 
-              flooded
-              <placeName ref="http://syriaca.org/place/78">
-                Edessa
-              </placeName> 
-              in 
-              <choice>
+                            In 
+                            <choice>
                                 <reg>
                                     <date when="0201-11" calendar="Gregorian" syriaca-computed-start="0201-11-01">November A. D. 201</date>
                                 </reg>
@@ -381,10 +373,16 @@
                                     <date when-custom="0513-02" datingMethod="Seleucid-SyriacMonths">Teshri II A. Gr. 513</date>
                                 </orig>
                             </choice> 
-              during the reign of 
-              <persName ref="http://syriaca.org/person/AbgarVIII">
-                Abgar
-              </persName>.
+                            during the reign of 
+                            <persName ref="http://syriaca.org/person/AbgarVIII">
+                                Abgar
+                            </persName>, <placeName ref="http://syriaca.org/place/191">
+                the Daisan river
+              </placeName> 
+              flooded
+              <placeName ref="http://syriaca.org/place/78">
+                Edessa
+              </placeName>.
             </desc>
                     </event>
                 </listEvent>
@@ -796,6 +794,15 @@
                 <listEvent>
                     <event ref="http://syriaca.org/keyword/architecture http://syriaca.org/keyword/decree">
                         <desc>
+                            In 
+                            <choice>
+                                <reg>
+                                    <date when="0201-11" calendar="Gregorian" syriaca-computed-start="0201-11-01">November A. D. 201</date>
+                                </reg>
+                                <orig>
+                                    <date when-custom="0513-02" datingMethod="Seleucid-SyriacMonths">Teshri II A. Gr. 513</date>
+                                </orig>
+                            </choice>, 
                             <persName ref="http://syriaca.org/person/AbgarVIII">
                 Abgar
               </persName> 
@@ -2129,6 +2136,15 @@
                 <listEvent>
                     <event ref="http://syriaca.org/keyword/sacredSite http://syriaca.org/keyword/architecture">
                         <desc>
+                            In 
+                            <choice>
+                                <reg>
+                                    <date notBefore="0312-10" notAfter="0313-09" calendar="Gregorian" syriaca-computed-end="0313-09-01" syriaca-computed-start="0312-10-01">A. D. 312/3</date>
+                                </reg>
+                                <orig>
+                                    <date when-custom="0624" datingMethod="Seleucid">A. Gr. 624</date>
+                                </orig>
+                            </choice>, 
                             <name ref="http://syriaca.org/person/Shaʿd">
                 Shaʿd
               </name> 
@@ -6889,6 +6905,15 @@
                 <listEvent>
                     <event ref="http://syriaca.org/keyword/architecture http://syriaca.org/keyword/sacredSite">
                         <desc>
+                            After 
+                            <choice>
+                                <reg>
+                                    <date notBefore="0435-08-08" calendar="Gregorian" syriaca-computed-start="0435-08-08">8 August A. D. 435</date>
+                                </reg>
+                                <orig>
+                                    <date notBefore-custom="0746-11-08" datingMethod="Seleucid-SyriacMonths">8 Āb A. Gr. 746</date>
+                                </orig>
+                            </choice>
                             <persName ref="http://syriaca.org/person/534">
                 Hiba
               </persName> 
@@ -6945,6 +6970,15 @@
                 <listEvent>
                     <event ref="http://syriaca.org/keyword/sacredSite">
                         <desc>
+                            In 
+                            <choice>
+                                <reg>
+                                    <date notBefore="0437-10" notAfter="0438-09" calendar="Gregorian" syriaca-computed-end="0438-09-01" syriaca-computed-start="0437-10-01">A. D. 437/8</date>
+                                </reg>
+                                <orig>
+                                    <date when-custom="0749" datingMethod="Seleucid">A. Gr. 749</date>
+                                </orig>
+                            </choice>
                             <persName ref="http://syriaca.org/person/Senator">
                 Senator
               </persName>
@@ -7629,7 +7663,15 @@
                 <listEvent>
                     <event ref="http://syriaca.org/keyword/architecture http://syriaca.org/keyword/sacredSite">
                         <desc>
-                            <persName ref="http://syriaca.org/person/Nonos">
+                            After 
+                            <choice>
+                                <reg>
+                                    <date notBefore="0448-07-21" calendar="Gregorian" syriaca-computed-start="0448-07-21">21 July A. D. 448</date>
+                                </reg>
+                                <orig>
+                                    <date notBefore-custom="0759-10-21" datingMethod="Seleucid-SyriacMonths">21 Tāmmuz A. Gr. 759</date>
+                                </orig>
+                            </choice><persName ref="http://syriaca.org/person/Nonos">
                 Nonos
               </persName> 
               built a sacristy in the church of 
@@ -8535,6 +8577,15 @@
                 <listEvent>
                     <event>
                         <desc>
+                            In 
+                            <choice>
+                                <reg>
+                                    <date notBefore="0465-10" notAfter="0466-09" calendar="Gregorian" syriaca-computed-end="0466-09-01" syriaca-computed-start="0465-10-01">A. D. 465/6</date>
+                                </reg>
+                                <orig>
+                                    <date when-custom="0777" datingMethod="Seleucid">A. Gr. 777</date>
+                                </orig>
+                            </choice>, 
                             <persName ref="http://syriaca.org/person/EmperorLeo">
                 Leo
               </persName>
@@ -11645,6 +11696,15 @@
                 <listEvent>
                     <event>
                         <desc>
+                            After
+                            <choice>
+                                <reg>
+                                    <date notBefore="0525-06-27" calendar="Gregorian" syriaca-computed-start="0525-06-27">27 June A. D. 525</date>
+                                </reg>
+                                <orig>
+                                    <date notBefore-custom="0836-09-27" datingMethod="Seleucid-SyriacMonths">27 Ḥazirān A. Gr. 836</date>
+                                </orig>
+                            </choice>, 
                             <persName ref="http://syriaca.org/person/PaulBpEdessa">
                 Pawla
               </persName> 
@@ -13133,8 +13193,17 @@
                 <listEvent>
                     <event ref="http://syriaca.org/keyword/war">
                         <desc>
+                            After
+                            <choice>
+                                <reg>
+                                    <date notBefore="0540-05" calendar="Gregorian" syriaca-computed-start="0540-05-01">May A. D. 540</date>
+                                </reg>
+                                <orig>
+                                    <date notBefore-custom="0851-08" datingMethod="Seleucid-SyriacMonths">Iyār A. Gr. 851</date>
+                                </orig>
+                            </choice>, 
                             <persName ref="http://syriaca.org/person/Anonymi21">
-                The great men of the city of 
+                the great men of the city of 
                 <placeName ref="http://syriaca.org/place/78">
                   Edessa
                 </placeName>

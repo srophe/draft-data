@@ -4,140 +4,47 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>Title</title>
+                <title level="a">Chronicle of Edessa</title>
+                <title level="m">SPEAR: Syriac Persons, Events, and Relations</title>
+                <funder>The National Endowment for the Humanities</funder>
+                <principal>David A. Michelson</principal>
+                <funder>Texas A&amp;M University</funder>
+                <principal>Daniel L. Schwartz</principal>
+                <editor role="general" ref="http://syriaca.org/editors.xml#dschwartz">Daniel L. Schwartz</editor>
+                <editor role="general" ref="http://syriaca.org/editors.xml#dmichelson">David A. Michelson</editor>
+                <editor role="creator" ref="http://syriaca.org/editors.xml#dschwartz">Daniel L. Schwartz</editor>
+                <respStmt>
+                    <resp><!-- WHAT SHOULD WE INCLUDE HERE? --></resp>
+                    <name ref="http://syriaca.org/editors.xml#dschwartz">Daniel L. Schwartz</name>
+                </respStmt>
             </titleStmt>
+            <editionStmt>
+                <edition n="1.0"/>
+            </editionStmt>
             <publicationStmt>
                 <authority>Syriaca.org: The Syriac Reference Portal</authority>
-                <idno type="URI">http://syriaca.org/prosopographyfile/633/tei</idno>
-        <!-- How does this fit in our data model? Does it correspond to the text or the factoids from a text? -->
+                <idno type="URI">http://syriaca.org/spear/633/tei</idno>
+                <!-- IS THIS CORRECT? -->
                 <availability>
                     <licence target="http://creativecommons.org/licenses/by/3.0/">
                         <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
+                        <!-- SINCE EVERYTHING IS IN THE PUBLIC DOMAIN, GUESSING WE DON'T INCLUDE ANYTHING ABOUT COPYRIGHTED MATERIAL? -->
                     </licence>
                 </availability>
+                <date><!-- INPUT ONCE WE HAVE SOMETHING APPROXIMATING A "FINAL" DRAFT --></date>
             </publicationStmt>
             <sourceDesc>
                 <p>Information about the source</p>
             </sourceDesc>
         </fileDesc>
         <encodingDesc>
+            <editorialDecl>
+                <p>
+                    <!-- INCLUDE OVERVIEW OF RELEVANT EDITORIAL PRINCIPLES AND PRACTICES-->
+                </p>
+            </editorialDecl>
             <classDecl>
                 <taxonomy>
-                    <category xml:id="accession">
-                        <catDesc>
-              Data addressing the start of a political or ecclesiastical office.
-            </catDesc>
-                    </category>
-                    <category xml:id="apostasy">
-                        <catDesc>
-              Data addressing a person leaving a religious community.
-            </catDesc>
-                    </category>
-                    <category xml:id="architecture">
-                        <catDesc>
-              Data addressing structures and the act of building.
-            </catDesc>
-                    </category>
-                    <category xml:id="sacredSite">
-                        <catDesc>
-              Data addressing churches, temples, mosques, synagogues, shrines, pilgrimage sites, etc.
-            </catDesc>
-                    </category>
-                    <category xml:id="governance">
-                        <catDesc>
-              Data addressing the act of governing or changes in forms of government.
-            </catDesc>
-                    </category>
-                    <category xml:id="naturalDisaster">
-                        <catDesc>
-              Data addressing a natural disaster.
-            </catDesc>
-                    </category>
-                    <category xml:id="decree">
-                        <catDesc>
-              Data addressing a decree or command of an emperor, king, or governor
-            </catDesc>
-                    </category>
-                    <category xml:id="violence">
-                        <catDesc>
-              Data addressing acts of violence between persons or states
-            </catDesc>
-                    </category>
-                    <category xml:id="war">
-                        <catDesc>
-              Data addressing the waging of war
-            </catDesc>
-                    </category>
-                    <category xml:id="writing">
-                        <catDesc>
-              Data addressing writing, scribal activity, and archiving
-            </catDesc>
-                    </category>
-                    <category xml:id="synod">
-                        <catDesc>
-              Data addressing a council of church leaders
-            </catDesc>
-                    </category>
-                    <category xml:id="birth">
-                        <catDesc>
-              An event factoid containing the date of a person's birth
-            </catDesc>
-                    </category>
-                    <category xml:id="death">
-                        <catDesc>
-              An event factoid containing the date of a person's death
-            </catDesc>
-                    </category>
-                    <category xml:id="persecution">
-                        <catDesc>
-              An event describing persecution
-            </catDesc>
-                    </category>
-                    <category xml:id="martyrdom">
-                        <catDesc>
-              Data addressing martyrs and martyrdom
-            </catDesc>
-                    </category>
-                    <category xml:id="heresy">
-                        <catDesc>
-              Data addressing persons or ideas described as heresy
-            </catDesc>
-                    </category>
-                    <category xml:id="cultOfSaints">
-                        <catDesc>
-              Data pertaining to the Cult of Saints
-            </catDesc>
-                    </category>
-                    <category xml:id="usurpation">
-                        <catDesc>
-              Data pertaining to the usurpation of imperial power
-            </catDesc>
-                    </category>
-                    <category xml:id="education">
-                        <catDesc>
-              Data pertaining to schools and education
-            </catDesc>
-                    </category>
-                    <category xml:id="omen">
-                        <catDesc>
-              Data pertaining to omens, prodigies, etc.
-            </catDesc>
-                    </category>
-                    <category xml:id="deposition">
-                        <catDesc>
-              Data pertaining to the removal of a cleric (bishop, priest, etc.) from his ecclesiastical position.
-            </catDesc>
-                    </category>
-                    <category xml:id="exile">
-                        <catDesc>
-              Data pertaining to the exile of a person.
-            </catDesc>
-                    </category>
-                    <category xml:id="diplomacy">
-                        <catDesc>
-              Data pertaining to diplimacy between states.
-            </catDesc>
-                    </category>
                     <category xml:id="calculated">
             <!-- This is the only category that is still in use in the TEI below. It appears in @ana attributes.  -->
                         <catDesc>
@@ -147,12 +54,17 @@
                 </taxonomy>
             </classDecl>
         </encodingDesc>
+        <profileDesc>
+            <!-- HAVE WE USED THIS CORRECTLY IN THE GAZETTEER? GUIDELINES HAVE NO EXAMPLE OF USE WITH A "BORN DIGITAL" DOC. ALL EXAMPLES DESCRIBE THE DOCUMENT ENCODED. -->
+        </profileDesc>
+        <revisionDesc>
+            <change/>
+        </revisionDesc>
     </teiHeader>
     <text>
         <body>
-      <!-- Encoding Description: We are going to call this sample prosopography document, file 633, so the xml id indicates that this is eventFactoid number one for document 633 -->
       <!-- Encoding Description: Multiple analysis refs encouraged and allowed. -->
-      <!-- Encoding Description: Since event will be visualized on a timeline, all event factoids must contain a date even if that date spans centuries and requires a note type="dubia".  -->
+      <!-- Encoding Description: Since event will be visualized on a timeline, event factoids should contain a date wherever possible even if that date spans centuries and requires a note type="dubia".  -->
             <div uri="http://syriaca.org/spear/633-1">
                 <listPerson>
                     <person>

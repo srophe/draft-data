@@ -67,7 +67,7 @@
             <xsl:variable name="record-id" select="position() + 220"/>
 
             <!-- Creates a variable containing the path of the file that should be created for this record. -->
-            <xsl:variable name="filename" select="concat('works/',$record-id,'.xml')"/>
+            <xsl:variable name="filename" select="concat('tei/',$record-id,'.xml')"/>
 
             <xsl:result-document href="{$filename}" format="xml">
                 <xsl:processing-instruction name="xml-model">
@@ -152,7 +152,7 @@
                                                 <xsl:value-of select="normalize-space(EdTitle1)"/>
                                             </title>
                                             <citedRange><xsl:value-of
-                                                  select="normalize-space(EdRef1)"/</citedRange>
+                                                  select="normalize-space(EdRef1)"/></citedRange>
                                         </bibl>
                                     </note>
                                 </xsl:if>

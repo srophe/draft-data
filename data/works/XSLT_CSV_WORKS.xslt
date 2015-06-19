@@ -276,6 +276,20 @@
                                         </bibl>
                                     </note>
                                 </xsl:if>
+                                <!-- Adds MSS information -->
+                                <xsl:for-each
+                                    select="MSS">
+                                    <xsl:if test="normalize-space(.) !=''">
+                                        <note
+                                            xml:lang="en"
+                                            type="MSS"
+                                            source="#bib{$record-id}-1">
+                                            <bibl>
+                                                <xsl:value-of select="normalize-space(.)"/>
+                                            </bibl>
+                                        </note>
+                                    </xsl:if>
+                                </xsl:for-each>
                                 <!-- ID numbers -->
                                 <!-- Syriaca.org id -->
                                 <idno type="URI">http://syriaca.org/work/<xsl:value-of
@@ -285,7 +299,17 @@
                                 <idno type="BHSYRE">
                                     <xsl:value-of select="normalize-space(File)"/>
                                 </idno>
-
+                                <!-- BHO Number -->
+                                
+                                <xsl:if test="normalize-space(BHO) !=''"><idno type="BHO">
+                                    <xsl:value-of select="normalize-space(BHO)"/>
+                                </idno></xsl:if>
+                                <!-- CPG Number -->
+                                
+                                <xsl:if test="normalize-space(CPG) !=''"><idno type="CPG">
+                                    <xsl:value-of select="normalize-space(CPG)"/>
+                                </idno></xsl:if>
+                                
                                 <!-- ADD BIBLIOGRAPHY -->
                                 <bibl>
                                     <xsl:attribute name="xml:id"

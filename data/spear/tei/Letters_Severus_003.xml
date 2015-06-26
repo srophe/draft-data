@@ -68,6 +68,31 @@
         -->
         <body>
             <div uri="http://syriaca.org/spear/XYZ-1">
+                <listPerson>
+                    <person>
+                        <persName ref="http://syriaca.org/person/Oecumenius">
+                            Oecumenius
+                        </persName>
+                    </person>
+                </listPerson>
+                <bibl type="primary">
+                    <biblScope type="pp">
+                        <ptr target="#biblXYZ-1"/>194</biblScope>
+                </bibl>
+            </div>
+            <div uri="http://syriaca.org/spear/XYZ-2">
+                <listPerson>
+                    <person>
+                        <persName ref="http://syriaca.org/person/Oecumenius"/>
+                        <sex value="M">Male</sex>
+                    </person>
+                </listPerson>
+                <bibl type="primary">
+                    <biblScope type="pp">
+                        <ptr target="#biblXYZ-1"/>194</biblScope>
+                </bibl>
+            </div>
+            <div uri="http://syriaca.org/spear/XYZ-3">
                 <listEvent>
                     <event ref="http://syriaca.org/keyword/epistle http://syriaca.org/keyword/writing">
                         <desc>
@@ -88,23 +113,6 @@
                             <persName ref="http://syriaca.org/person/Oecumenius">
                                 Oecumenius
                             </persName>.
-                            This letter references 
-                            <ref target="http://syriaca.org/work/???">
-                                an earlier letter ???
-                                <!-- Work out system for naming. -->
-                            </ref>
-                            by
-                            <persName ref="http://syriaca.org/person/Oecumenius">
-                                Oecumenius
-                            </persName>
-                            to 
-                            <persName ref="http://syriaca.org/person/??">
-                                <!-- Perhaps person/32 -->
-                                Peter the 
-                                <ref target="http://syriaca.org/keyword/presbyter">
-                                    presbyter
-                                </ref>
-                            </persName>.
                         </desc>
                     </event>
                 </listEvent>
@@ -113,21 +121,10 @@
                         <ptr target="#biblXYZ-1"/>194</biblScope>
                 </bibl>
             </div>
-            <div uri="http://syriaca.org/spear/XYZ-2">
+            <div uri="http://syriaca.org/spear/XYZ-4">
                 <listRelation>
                     <relation>
-                        <!-- Relationship between Severus and Oecumenius. -->
-                    </relation>
-                </listRelation>
-                <bibl type="primary">
-                    <biblScope type="pp">
-                        <ptr target="#biblXYZ-1"/>194</biblScope>
-                </bibl>
-            </div>
-            <div uri="http://syriaca.org/spear/XYZ-3">
-                <listRelation>
-                    <relation>
-                        <!-- Relationship between Oecumenius and Peter. -->
+                        <!-- Relationship between Severus and Oecumenius. Need to work on relations. The letter constitutes a relationship but a hostile letter is different from a friendly letter. -->
                     </relation>
                 </listRelation>
                 <bibl type="primary">

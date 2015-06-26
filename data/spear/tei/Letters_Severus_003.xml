@@ -53,13 +53,86 @@
     </teiHeader>
     <text>
         <body>
-            <div>
-                
+            <div uri="http://syriaca.org/spear/XYZ-1">
+                <listEvent>
+                    <event ref="http://syriaca.org/keyword/epistle http://syriaca.org/keyword/writing">
+                        <desc>
+                            Between
+                                <date notBefore="0513" notAfter="0518" calendar="Gregorian"> A. D. 513 and 518</date>
+                            <persName ref="http://syriaca.org/person/51">
+                                Severus of 
+                                <placeName ref="http://syriaca.org/place/10">
+                                    Antioch
+                                </placeName>
+                            </persName>
+                            wrote 
+                            <ref target="http://syriaca.org/work/???">
+                                letter PO 12 #3
+                                <!-- Work out system for naming the letters. -->
+                            </ref>
+                            to 
+                            <persName ref="http://syriaca.org/person/Oecumenius">
+                                Oecumenius
+                            </persName>.
+                            This letter references 
+                            <ref target="http://syriaca.org/work/???">
+                                an earlier letter ???
+                                <!-- Work out system for naming. -->
+                            </ref>
+                            by
+                            <persName ref="http://syriaca.org/person/Oecumenius">
+                                Oecumenius
+                            </persName>
+                            to 
+                            <persName ref="http://syriaca.org/person/??">
+                                <!-- Perhaps person/32 -->
+                                Peter the 
+                                <ref target="http://syriaca.org/keyword/presbyter">
+                                    presbyter
+                                </ref>
+                            </persName>.
+                        </desc>
+                    </event>
+                </listEvent>
+                <bibl type="primary">
+                    <biblScope type="pp">
+                        <ptr target="#biblXYZ-1"/>194</biblScope>
+                </bibl>
+            </div>
+            <div uri="http://syriaca.org/spear/XYZ-2">
+                <listRelation>
+                    <relation>
+                        <!-- Relationship between Severus and Oecumenius. -->
+                    </relation>
+                </listRelation>
+                <bibl type="primary">
+                    <biblScope type="pp">
+                        <ptr target="#biblXYZ-1"/>194</biblScope>
+                </bibl>
+            </div>
+            <div uri="http://syriaca.org/spear/XYZ-3">
+                <listRelation>
+                    <relation>
+                        <!-- Relationship between Oecumenius and Peter. -->
+                    </relation>
+                </listRelation>
+                <bibl type="primary">
+                    <biblScope type="pp">
+                        <ptr target="#biblXYZ-1"/>194</biblScope>
+                </bibl>
             </div>
         </body>
         <back>
             <div>
-                
+                <bibl xml:id="biblXYZ-1">
+                    <title xml:lang="la">Patrologia Orientalis, 12</title>
+                    <!-- Not sure how best to deal with the weirdness of PO here. -->
+                    <editor>E. W. Brooks</editor>
+                    <editor role="translator">E. W. Brooks</editor>
+                    <pubPlace>Paris</pubPlace>
+                    <publisher>Firmin-Didot et C.</publisher>
+                    <date when="1919">1919</date>
+                </bibl>
             </div>
         </back>
     </text>

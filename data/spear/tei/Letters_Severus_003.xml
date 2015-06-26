@@ -52,6 +52,20 @@
         </revisionDesc>
     </teiHeader>
     <text>
+        <!-- 
+            I would like to propose starting work on the letters by creating an XML file for each letter that includes the "low hanging fruit" captured below.
+            1) An event that is the writing of the letter from one person to another person.
+            2) Basic person data about writer and recipient: name(s) and sex. 
+            3) The relationships established by the letter itself.
+            
+            Rational:
+            1) There are some 250 letters and just doing this basic encoding will get us most of the way to the 1500 factoids from the letters we promised NEH.
+            2) As we do this, we can mint the URIs for many new people and places (think dioceses that are part of names) not in our database yet. Having these URIs will speed future encoding.
+            3) This will very rapidly get us a lot of relation data in multiple SPEAR files for Winona to play with.
+            4) Encoders will have basics in place for working systematically through the letters collecting the additional data.
+            5) This basic level of data should be conducive to the creation of forms. Perhaps Laura and I can work on that this summer.
+            6) We could roll out such forms to contributers pretty quickly. I'm thinking of Philip Forness who wants to collect data on Jacob of Sarug's letters
+        -->
         <body>
             <div uri="http://syriaca.org/spear/XYZ-1">
                 <listEvent>

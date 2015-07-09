@@ -23,7 +23,7 @@
             </editionStmt>
             <publicationStmt>
                 <authority>Syriaca.org: The Syriac Reference Portal</authority>
-                <idno type="URI">http://syriaca.org/spear/???/tei</idno> <!-- WHAT NUMBER DO WE WANT FOR THE LETTERS OF SEVERUS? OR DO WE USE A SEPARATE NUMBER FOR EACH LETTER? -->
+                <idno type="URI">http://syriaca.org/spear/???/tei</idno> <!-- WHAT NUMBER DO WE WANT FOR THE LETTERS OF SEVERUS? OR DO WE USE A SEPARATE NUMBER FOR EACH LETTER?-->
                 <!-- IS THIS CORRECT? -->
                 <availability>
                     <licence target="http://creativecommons.org/licenses/by/3.0/">
@@ -52,44 +52,30 @@
         </revisionDesc>
     </teiHeader>
     <text>
-        <!-- 
-            I would like to propose starting work on the letters by creating an XML file for each letter that includes the "low hanging fruit" captured below.
-            1) An event that is the writing of the letter from one person to another person.
-            2) Basic person data about writer and recipient: name(s) and sex. 
-            3) The relationships established by the letter itself.
-            
-            Rational:
-            1) There are some 250 letters and just doing this basic encoding will get us most of the way to the 1500 factoids from the letters we promised NEH.
-            2) As we do this, we can mint the URIs for many new people and places (think dioceses that are part of names) not in our database yet. Having these URIs will speed future encoding.
-            3) This will very rapidly get us a lot of relation data in multiple SPEAR files for Winona to play with.
-            4) Encoders will have basics in place for working systematically through the letters collecting the additional data.
-            5) This basic level of data should be conducive to the creation of forms. Perhaps Laura and I can work on that this summer.
-            6) We could roll out such forms to contributers pretty quickly. I'm thinking of Philip Forness who wants to collect data on Jacob of Sarug's letters
-        -->
         <body>
             <div uri="http://syriaca.org/spear/XYZ-1">
                 <listPerson>
                     <person>
-                        <persName ref="http://syriaca.org/person/Oecumenius">
-                            Oecumenius
+                        <persName ref="http://syriaca.org/person/EusebiusScholastic">
+                            Eusebius the Scholastic
                         </persName>
                     </person>
                 </listPerson>
                 <bibl type="primary">
                     <biblScope type="pp">
-                        <ptr target="#biblXYZ-1"/>194</biblScope>
+                        <ptr target="#biblXYZ-1"/>195</biblScope>
                 </bibl>
             </div>
             <div uri="http://syriaca.org/spear/XYZ-2">
                 <listPerson>
                     <person>
-                        <persName ref="http://syriaca.org/person/Oecumenius"/>
+                        <persName ref="http://syriaca.org/person/EusebiusScholastic"/>
                         <sex value="M">Male</sex>
                     </person>
                 </listPerson>
                 <bibl type="primary">
                     <biblScope type="pp">
-                        <ptr target="#biblXYZ-1"/>194</biblScope>
+                        <ptr target="#biblXYZ-1"/>195</biblScope>
                 </bibl>
             </div>
             <div uri="http://syriaca.org/spear/XYZ-3">
@@ -106,17 +92,19 @@
                             </persName>
                             wrote 
                             <ref target="http://syriaca.org/work/???">
-                                letter PO 12 #3
+                                letter PO 12 #5
                                 <!-- Work out system for naming the letters. -->
                             </ref>
-                            to 
-                            <persName ref="http://syriaca.org/person/Oecumenius">
-                                Oecumenius
+                            responding to an earlier letter from 
+                            <!-- OR, should this be two events. Encoding the date of the previous letter would be difficult, i.e. a time before a vague date range. -->
+                            <persName ref="http://syriaca.org/person/EusebiusScholastic">
+                                Eusebius the Scholastic
                             </persName>
-                            addressing the unity without confusion of the natures of 
-                            <persName ref="http://syriaca.org/person/Christ">
-                                Emmanuel
+                            that raised objections to 
+                            <persName ref="http://syriaca.org/person/51">
+                                Severus'
                             </persName>.
+                            use of Christological language.
                         </desc>
                     </event>
                 </listEvent>
@@ -127,49 +115,40 @@
             </div>
             <div uri="http://syriaca.org/spear/XYZ-4">
                 <listRelation>
-                    <relation name="correspondents" active="http://syriaca.org/person/51" passive="http://syriaca.org/person/Oecumenius"/>
+                    <relation name="correspondents" active="http://syriaca.org/person/51" passive="http://syriaca.org/person/EusebiusScholastic"/>
                 </listRelation>
                 <bibl type="primary">
                     <biblScope type="pp">
-                        <ptr target="#biblXYZ-1"/>194</biblScope>
+                        <ptr target="#biblXYZ-1"/>195</biblScope>
                 </bibl>
             </div>
             <div uri="http://syriaca.org/spear/XYZ-5">
                 <listRelation>
-                    <relation name="epistolaryReference" active="http://syriaca.org/person/51" passive="http://syriaca.org/person/Peter-the-Presbyter"/>
+                    <relation name="correspondents" active="http://syriaca.org/person/EusebiusScholastic" passive="http://syriaca.org/person/51"/>
+                    <!-- Wondering about some way to encode the fact that Eusebius' letter attached Severus -->
                 </listRelation>
                 <bibl type="primary">
                     <biblScope type="pp">
-                        <ptr target="#biblXYZ-1"/>194</biblScope>
+                        <ptr target="#biblXYZ-1"/>195</biblScope>
                 </bibl>
             </div>
-            <!--  Get some input on this. My inclination is to wait until I get to the letter that does name the presbyter Peter as the brother of Severus and then decide whether or not the two Peters are the same.
-            <div uri="http://syriaca.org/spear/XYZ-6">
-                <listRelation>
-                    <relation name="snap:brotherOf" mutual="http://syriaca.org/person/51 http://syriaca.org/person/Peter-the-Presbyter"/>
-                </listRelation>
-                <bibl type="secondary">
-                    <biblScope type="pp">
-                        <ptr target="#biblXYZ-1"/>194, n. 2</biblScope>
-                </bibl>
-            </div>
-             -->
             <div uri="http://syriaca.org/spear/XYZ-7">
                 <listPerson>
-                    <person>
-                        <persName ref="http://syriaca.org/Christ">
-                            Emmanuel
+                    <personGrp>
+                        <!-- Tricky, this is really more of a concept than a group of individuals. Could a keyword be sufficient? Our texts will not infrequently name individuals whom they consider part of this group. Hmm, keep thinking about this. -->
+                        <persName ref="http://syriaca.org/TheFathers--Anonymi">
+                            The holy fathers
                         </persName>
-                    </person>
+                    </personGrp>
                 </listPerson>
                 <bibl type="primary">
                     <biblScope type="pp">
-                        <ptr target="#biblXYZ-1"/>194</biblScope>
+                        <ptr target="#biblXYZ-1"/>195</biblScope>
                 </bibl>
             </div>
             <div uri="http://syriaca.org/spear/XYZ-8">
                 <listRelation>
-                    <relation name="epistolaryReference" active="http://syriaca.org/person/51" passive="http://syriaca.org/person/Christ"/>
+                    <relation name="epistolaryReference" active="http://syriaca.org/person/51" passive="http://syriaca.org/person/TheFathers--Anonymi"/>
                 </listRelation>
                 <bibl type="primary">
                     <biblScope type="pp">

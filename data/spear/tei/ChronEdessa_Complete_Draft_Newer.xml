@@ -109,7 +109,10 @@
                 was 
                 <ref target="http://syriaca.org/keyword/emperor">
                   emperor
-                </ref>.
+                </ref>
+                                <placeName ref="http://syriaca.org/place/166">
+                                    Rome
+                                </placeName>.
               </desc>
                         </state>
                     </person>
@@ -287,7 +290,7 @@
                             </choice> 
                             during the reign of 
                             <persName ref="http://syriaca.org/person/AbgarVIII">
-                                Abgar
+                                Abgar the Great
                             </persName>, 
                             <placeName ref="http://syriaca.org/place/191">
                 the Daisan river
@@ -347,7 +350,7 @@
                   The workers
                 </persName> 
                 were 
-                <ref target="http://syriaca.org/keyword/bureaucrat">
+                <ref target="http://syriaca.org/keyword/bureaucrat"> <!-- SHOULD WE USE KEYWORDS IN PERSON FACTOIDS OR SHOULD WE RESERVE THEM FOR EVENT FACTOIDS? -->
                   government officials
                 </ref> 
                 in 
@@ -1157,19 +1160,18 @@
                 <listEvent>
                     <event ref="http://syriaca.org/keyword/governance">
                         <desc>
-              King's began to rule in 
-              <placeName ref="http://syriaca.org/place/78">
-                Edessa
-              </placeName> 
-              in 
-              <choice>
+                            In 
+                            <choice>
                                 <reg>
                                     <date notBefore="-0132-10" notAfter="-0131-09" calendar="Gregorian" syriaca-computed-start="-0132-10-01" syriaca-computed-end="-0131-09">132/1 B.C.</date>
                                 </reg>
                                 <orig>
                                     <date when-custom="0180" datingMethod="Seleucid">A. Gr. 180</date>
                                 </orig>
-                            </choice>.
+                            </choice>King's began to rule in 
+              <placeName ref="http://syriaca.org/place/78">
+                Edessa
+              </placeName>.
             </desc>
                     </event>
                 </listEvent>
@@ -1235,11 +1237,31 @@
                         </state>
                     </person>
                 </listPerson>
+                <bibl type="primary">
+                    <biblScope type="pp">
+                        <ptr target="#bibl633-1"/>3</biblScope>
+                </bibl>
+                <bibl type="primary">
+                    <biblScope type="part">
+                        <ptr target="#bibl633-2"/>2</biblScope>
+                </bibl>
             </div>
             <div uri="http://syriaca.org/spear/633-46">
                 <listEvent>
                     <event ref="http://syriaca.org/keyword/accession">
                         <desc>
+                            In 
+                            <choice>
+                                <corr>
+                                    <date when="-0044" calendar="Gregorian" syriaca-computed-start="-0044-01-01">44 B.C.</date>
+                                </corr>
+                                <sic>
+                                    <date notBefore="-0046-10" notAfter="-0045-09" calendar="Gregorian">46/5 B.C.</date>
+                                </sic>
+                                <orig>
+                                    <date when-custom="0266" datingMethod="Seleucid">A. Gr. 266</date>
+                                </orig>
+                            </choice>
                             <persName ref="http://syriaca.org/person/Augustus">
                 Augustus
               </persName> 
@@ -1250,19 +1272,7 @@
               of 
               <placeName ref="http://syriaca.org/place/166">
                 Rome
-              </placeName> 
-              in 
-              <choice>
-                                <corr>
-                                    <date when="-0044" calendar="Gregorian" syriaca-computed-start="-0044-01-01">44 B.C.</date>
-                                </corr>
-                                <sic>
-                                    <date notBefore="-0046-10" notAfter="-0045-09" calendar="Gregorian">46/5 B.C.</date>
-                                </sic>
-                                <orig>
-                                    <date when-custom="0266" datingMethod="Seleucid">A. Gr. 266</date>
-                                </orig>
-                            </choice>.
+              </placeName>.
             </desc>
                     </event>
                 </listEvent>
@@ -1702,9 +1712,9 @@
                             <persName ref="http://syriaca.org/person/LuciusVerus">
                 Lucius Verus
               </persName> 
-              and
+              and his brother 
               <persName ref="http://syriaca.org/person/Commodus">
-                his brother Commodus
+                Commodus
               </persName> 
               conquered 
               <persName ref="http://syriaca.org/person/Anonymi22">
@@ -2063,13 +2073,13 @@
                 <listEvent>
                     <event ref="http://syriaca.org/keyword/sacredSite http://syriaca.org/keyword/architecture">
                         <desc>
-                            In 
+                            After 
                             <choice>
                                 <reg>
-                                    <date notBefore="0312-10" notAfter="0313-09" calendar="Gregorian" syriaca-computed-end="0313-09-01" syriaca-computed-start="0312-10-01">A. D. 312/3</date>
+                                    <date notBefore="0313-10" calendar="Gregorian" syriaca-computed-start="0312-10-01">A. D. 312/3</date>
                                 </reg>
                                 <orig>
-                                    <date when-custom="0624" datingMethod="Seleucid">A. Gr. 624</date>
+                                    <date notBefore-custom="0625" datingMethod="Seleucid">A. Gr. 624</date>
                                 </orig>
                             </choice>, 
                             <name ref="http://syriaca.org/person/Shaʿad">
@@ -2251,6 +2261,7 @@
                     </bibl>
                 </note>
             </div>
+            <!-- I NEED TO REVISIT 633-77 AND 633-78 -->
             <div uri="http://syriaca.org/spear/633-78">
                 <listEvent>
                     <event ref="http://syriaca.org/keyword/accession">
@@ -2459,7 +2470,7 @@
                 Bishop
               </ref> 
                 of 
-              <placeName ref="http://syriaca.org/place/142">
+              <placeName ref="http://syriaca.org/place/2351">
                 Nisibis
               </placeName>
                         </persName>
@@ -2540,7 +2551,7 @@
                         <desc>
                             <persName ref="http://syriaca.org/person/811">
                 Jacob of 
-                                <placeName ref="http://syriaca.org/place/2351">
+                                <placeName ref="http://syriaca.org/place/142">
                     Nisibis
                 </placeName>
               </persName>
@@ -3256,6 +3267,14 @@
             </desc>
                     </event>
                 </listEvent>
+                <bibl type="primary">
+                    <biblScope type="pp">
+                        <ptr target="#bibl633-1"/>4</biblScope>
+                </bibl>
+                <bibl type="primary">
+                    <biblScope type="part">
+                        <ptr target="#bibl633-2"/>25</biblScope>
+                </bibl>
             </div>
             <div uri="http://syriaca.org/spear/633-110">
                 <listEvent>
@@ -4034,7 +4053,7 @@
               <placeName ref="http://syriaca.org/place/78">
                 Edessa
               </placeName>
-              in 
+                            in <!-- According to Hallier, the chronicler made an error in his dating; this event took place on 27 December 378. Check Segal! -->
                             <choice>
                                 <reg>
                                     <date when="0377-12" calendar="Gregorian" syriaca-computed-start="0377-12-01">December A. D.377</date>
@@ -4063,7 +4082,7 @@
                 <listEvent>
                     <event ref="http://syriaca.org/keyword/sacredSite">
                         <desc>
-              In 
+                            In <!-- According to Hallier, the chronicler made an error in his dating; this event took place on 27 December 378. Check Segal! -->
               <choice>
                                 <reg>
                                     <date when="0377-12" calendar="Gregorian" syriaca-computed-start="0377-12-01">December A. D.377</date>
@@ -4210,6 +4229,7 @@
             </persName>
                     </person>
                 </listPerson>
+                <!-- I REALLY NEED TO COLLECT NAME VARIANTS IN SYRIAC. THIS WOULD CREATE AN AMAZING ONOMASTIC TOOL. -->
                 <bibl type="primary">
                     <biblScope type="pp">
                         <ptr target="#bibl633-1"/>5</biblScope>
@@ -4335,10 +4355,10 @@
                 <listEvent>
                     <event ref="http://syriaca.org/keyword/sacredSite http://syriaca.org/keyword/architecture">
                         <desc>
-              In 
+              After 
               <choice>
                                 <reg>
-                                    <date notBefore="0379-01-19" notAfter="0380-01-18" calendar="Gregorian" syriaca-computed-end="0380-01-18" syriaca-computed-start="0379-01-19">A. D. 379/80</date>
+                                    <date notBefore="0380-01-18" calendar="Gregorian" syriaca-computed-start="0380-01-18">A. D. 379/80</date>
                                 </reg>
                                 <orig>
                                     <date>the year Theodosius the Great became king</date>
@@ -4499,15 +4519,15 @@
                         <death>
                             <choice>
                                 <reg>
-                                    <date when="0387-04-23" calendar="Gregorian" syriaca-computed-start="0387-04-23">23 April A. D. 373</date>
+                                    <date when="0387-04-23" calendar="Gregorian" syriaca-computed-start="0387-04-23">23 April A. D. 387</date>
                                 </reg>
                                 <orig>
-                                    <date when-custom="0387-07-23" datingMethod="Seleucid">Good Friday, A. Gr. 698</date>
+                                    <date when-custom="0698-07-23" datingMethod="Seleucid">Good Friday, A. Gr. 698</date>
                                 </orig>
                             </choice>
                         </death>
                         <note type="desc">
-              Eulogios died in A. D. 386/7
+              Eulogios died on 23 April A. D. 387
             </note>
                     </person>
                 </listPerson>
@@ -4527,10 +4547,10 @@
               On 
               <choice>
                                 <reg>
-                                    <date when="0387-04-23" calendar="Gregorian" syriaca-computed-start="0387-04-23">23 April A. D. 373</date>
+                                    <date when="0387-04-23" calendar="Gregorian" syriaca-computed-start="0387-04-23">23 April A. D. 387</date>
                                 </reg>
                                 <orig>
-                                    <date when-custom="0387-07-23" datingMethod="Seleucid">Good Friday, A. Gr. 698</date>
+                                    <date when-custom="0698-07-23" datingMethod="Seleucid">Good Friday, A. Gr. 698</date>
                                 </orig>
                             </choice>
                             <persName ref="http://syriaca.org/person/Eulogios">
@@ -5131,15 +5151,15 @@
                         <death>
                             <choice>
                                 <reg>
-                                    <date when="0398-10" calendar="Gregorian" syriaca-computed-start="0398-10-01">October A. D. 398</date>
+                                    <date when="0398-10-17" calendar="Gregorian" syriaca-computed-start="0398-10-17">17 October A. D. 398</date>
                                 </reg>
                                 <orig>
-                                    <date when-custom="0710-01" datingMethod="Seleucid-SyriacMonths">Teshri I A. Gr. 710</date>
+                                    <date when-custom="0710-01-17" datingMethod="Seleucid-SyriacMonths">17 Teshri I A. Gr. 710</date>
                                 </orig>
                             </choice>
                         </death>
                         <note type="desc">
-              Silwo died in October A. D. 398.
+              Silwo died on 17 October A. D. 398.
             </note>
                     </person>
                 </listPerson>
@@ -5159,10 +5179,10 @@
               In 
               <choice>
                                 <reg>
-                                    <date when="0398-10" calendar="Gregorian" syriaca-computed-start="0398-10-01">October A. D. 398</date>
+                                    <date when="0398-10-17" calendar="Gregorian" syriaca-computed-start="0398-10-17">17 October A. D. 398</date>
                                 </reg>
                                 <orig>
-                                    <date when-custom="0710-01" datingMethod="Seleucid-SyriacMonths">Teshri I A. Gr. 710</date>
+                                    <date when-custom="0710-01-17" datingMethod="Seleucid-SyriacMonths">17 Teshri I A. Gr. 710</date>
                                 </orig>
                             </choice>
                             <persName ref="http://syriaca.org/person/Silwanā">
@@ -5398,7 +5418,6 @@
               <placeName ref="http://syriaca.org/place/2345">
                 Mopsuestia
               </placeName>
-                <!-- The Gazetteer lists a diocese (place/2345) and a settlement (place/138) for Mopsuestia. It only lists a settlement for Edessa. Which should I use in this case? -->
                         </persName>
                     </person>
                 </listPerson>
@@ -5419,7 +5438,6 @@
               <placeName ref="http://syriaca.org/place/2345">
                 Mopsesta
               </placeName>
-              <!-- The Gazetteer lists a diocese (place/2345) and a settlement (place/138) for Mopsuestia. It only lists a settlement for Edessa. Which should I use in this case? -->
                         </persName>
                     </person>
                 </listPerson>
@@ -5874,15 +5892,15 @@
                         <death>
                             <choice>
                                 <reg>
-                                    <date when="0409-08" calendar="Gregorian" syriaca-computed-start="0409-08-01">August A. D. 409</date>
+                                    <date when="0409-08-01" calendar="Gregorian" syriaca-computed-start="0409-08-01">1 August A. D. 409</date>
                                 </reg>
                                 <orig>
-                                    <date when-custom="0720-11" datingMethod="Seleucid-SyriacMonths">Āb A. Gr. 720</date>
+                                    <date when-custom="0720-11-01" datingMethod="Seleucid-SyriacMonths">1 Āb A. Gr. 720</date>
                                 </orig>
                             </choice>
                         </death>
                         <note type="desc">
-              Pakidā died in August A. D. 409.
+              Pakidā died on 1 August A. D. 409.
             </note>
                     </person>
                 </listPerson>
@@ -5899,13 +5917,13 @@
                 <listEvent>
                     <event ref="http://syriaca.org/keyword/death">
                         <desc>
-              In 
+              On 
               <choice>
                                 <reg>
-                                    <date when="0409-08" calendar="Gregorian" syriaca-computed-start="0409-08-01">August A. D. 409</date>
+                                    <date when="0409-08-01" calendar="Gregorian" syriaca-computed-start="0409-08-01">1 August A. D. 409</date>
                                 </reg>
                                 <orig>
-                                    <date when-custom="0720-11" datingMethod="Seleucid-SyriacMonths">Āb A. Gr. 720</date>
+                                    <date when-custom="0720-11-01" datingMethod="Seleucid-SyriacMonths">1 Āb A. Gr. 720</date>
                                 </orig>
                             </choice>
                             <persName ref="http://syriaca.org/person/Pakidā">

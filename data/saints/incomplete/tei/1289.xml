@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://syriaca.org/documentation/syriaca-tei-main.rnc" type="application/relax-ng-compact-syntax"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:tei="http://www.tei-c.org/ns/1.0"
      xmlns:syriaca="http://syriaca.org"
      xmlns:saxon="http://saxon.sf.net/"
      xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
@@ -65,7 +66,7 @@
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
                </licence>
             </availability>
-            <date>2015-03-04-05:00</date>
+            <date>2015-07-30-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -121,7 +122,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#dmichelson"
                  n="1.0"
-                 when="2015-03-04-05:00">CREATED: person</change>
+                 when="2015-07-30-04:00">CREATED: person</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -132,7 +133,6 @@
                <persName xml:id="name1289-3" xml:lang="fr-x-fiey" source="#bibl1289-1">ĪŠŌ'YAW BAR QUSRÉ</persName>
                <idno type="URI">http://syriaca.org/person/1289</idno>
                <idno type="FIEY">214</idno>
-               <idno type="FIEY">214</idno>
                <sex value="M" source="#bibl1289-1">male</sex>
                <floruit source="#bibl1289-1"
                         from="0500"
@@ -141,12 +141,39 @@
                         syriaca-computed-end="0600">0500-0600</floruit>
                <note>Fiey provides the following bibliographic citations: <quote source="#bibl1289-1">Liber castitatis, n° 50. Chronique de Seert, II, 107- 109. Marl, 55 arabe ; $1Iwa, 44 arabe. Fiey, Mossoul chretienne, 104- 10. BSO, II, 262 (J .M. Fiey).</quote>
                </note>
-               <note type="abstract">ĪŠŌ'YAW BAR QUSRÉ was a monk from the monastery of Adiabene.  He founded a great temple which became the church of Mar Ishaya.  This became the residence of the metropolitan of Mossul. </note>
-               <bibl xml:id="bib1092-1">
+               <note type="abstract">Īšōʿyaw bar Qusré was a monk from the monastery of Adiabene. He founded a great temple which became the church of Mar Ishaya. This became the residence of the metropolitan of Mosul.</note>
+               <bibl xml:id="bib1289-1">
                   <title level="m" xml:lang="fr">Saints Syriaques</title>
                   <title level="a" xml:lang="fr">ĪŠŌ'YAW BAR QUSRÉ</title>
                   <ptr target="http://syriaca.org/bibl/650"/>
                   <citedRange unit="entry">214</citedRange>
+               </bibl>
+               <bibl xml:id="bib1289-3">
+                  <title>Liber castitatis</title>
+                  <citedRange>n° 50.</citedRange>
+               </bibl>
+               <bibl xml:id="bib1289-4">
+                  <title>Chronicle of Seert</title>
+                  <citedRange> II, 107-109.</citedRange>
+               </bibl>
+               <bibl xml:id="bib1289-5">
+                  <title>Mārī</title>
+                  <citedRange>55 arabe</citedRange>
+               </bibl>
+               <bibl xml:id="bib1289-6">
+                  <title>Ṣlīwa</title>
+                  <citedRange>44 arabe.</citedRange>
+               </bibl>
+               <bibl xml:id="bib1289-7">
+                  <author>Fiey</author>
+                  <title>Mossoul chrétienne</title>
+                  <citedRange>104-10.</citedRange>
+               </bibl>
+               <bibl xml:id="bib1289-8">
+                  <author>J .M. Fiey</author>
+                  <title>BSO</title>
+                  <citedRange>II,
+               262</citedRange>
                </bibl>
             </person>
          </listPerson>

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://syriaca.org/documentation/syriaca-tei-main.rnc" type="application/relax-ng-compact-syntax"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:tei="http://www.tei-c.org/ns/1.0"
      xmlns:syriaca="http://syriaca.org"
      xmlns:saxon="http://saxon.sf.net/"
      xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
@@ -65,7 +66,7 @@
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
                </licence>
             </availability>
-            <date>2015-03-04-05:00</date>
+            <date>2015-07-30-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -121,7 +122,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#dmichelson"
                  n="1.0"
-                 when="2015-03-04-05:00">CREATED: person</change>
+                 when="2015-07-30-04:00">CREATED: person</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -132,17 +133,51 @@
                <persName xml:id="name1515-3" xml:lang="fr-x-fiey" source="#bibl1515-1">YAZDANDUHT</persName>
                <idno type="URI">http://syriaca.org/person/1515</idno>
                <idno type="FIEY">459</idno>
-               <idno type="FIEY">459</idno>
                <sex value="F" source="#bibl1515-1">female</sex>
                <floruit source="#bibl1515-1" when="0345" syriaca-computed-start="0345">0345</floruit>
                <note>Fiey provides the following bibliographic citations: <quote source="#bibl1515-1">ASMO, 105- 109 ; Lagrange, 84- 87; Leclercq, III, 184- 86. AMS, II, 291-95 ; BHO, 718. Suhadii ', I, 278-81. Peeters, "Passionnaire", 292. BSO, II, 1355- 56 (J. Habbi).</quote>
                </note>
-               <note type="abstract">YAZDANDUHT is a holy woman of Arbela who, in 345, in the royal cities, takes care of 120 martyrs of Adiabene, 111 priests and deacons and nine virgins in their prison, then buried them.      </note>
-               <bibl xml:id="bib1092-1">
+               <note type="abstract">Yazdanduht was a holy woman of Arbela who, in 345, in the royal cities, took care of 120 martyrs of Adiabene (111 priests and deacons; nine virgins), She then buried them.</note>
+               <bibl xml:id="bib1515-1">
                   <title level="m" xml:lang="fr">Saints Syriaques</title>
                   <title level="a" xml:lang="fr">YAZDANDUHT</title>
                   <ptr target="http://syriaca.org/bibl/650"/>
                   <citedRange unit="entry">459</citedRange>
+               </bibl>
+               <bibl xml:id="bib1515-3">
+                  <title>ASMO</title>
+                  <citedRange>105-109</citedRange>
+               </bibl>
+               <bibl xml:id="bib1515-4">
+                  <author>Lagrange</author>
+                  <citedRange>84-87</citedRange>
+               </bibl>
+               <bibl xml:id="bib1515-5">
+                  <author>Leclercq</author>
+                  <citedRange>III, 184-86.</citedRange>
+               </bibl>
+               <bibl xml:id="bib1515-6">
+                  <title>AMS</title>
+                  <citedRange>II, 291-95</citedRange>
+               </bibl>
+               <bibl xml:id="bib1515-7">
+                  <title>BHO</title>
+                  <citedRange>718</citedRange>
+               </bibl>
+               <bibl xml:id="bib1515-8">
+                  <title>Shuhadā'</title>
+                  <citedRange> I, 278-81</citedRange>
+               </bibl>
+               <bibl xml:id="bib1515-9">
+                  <author>Peeters</author>
+                  <title> "Passionnaire"</title>
+                  <citedRange>292.</citedRange>
+               </bibl>
+               <bibl xml:id="bib1515-10">
+                  <author>J. Habbi</author>
+                  <title>BSO</title>
+                  <citedRange>II,
+               1355-56</citedRange>
                </bibl>
             </person>
          </listPerson>

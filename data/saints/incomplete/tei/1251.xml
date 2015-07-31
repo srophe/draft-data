@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://syriaca.org/documentation/syriaca-tei-main.rnc" type="application/relax-ng-compact-syntax"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:tei="http://www.tei-c.org/ns/1.0"
      xmlns:syriaca="http://syriaca.org"
      xmlns:saxon="http://saxon.sf.net/"
      xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
@@ -65,7 +66,7 @@
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
                </licence>
             </availability>
-            <date>2015-03-04-05:00</date>
+            <date>2015-07-30-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -121,7 +122,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#dmichelson"
                  n="1.0"
-                 when="2015-03-04-05:00">CREATED: person</change>
+                 when="2015-07-30-04:00">CREATED: person</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -132,19 +133,78 @@
                <persName xml:id="name1251-3" xml:lang="fr-x-fiey" source="#bibl1251-1">GOLINDOUCH</persName>
                <idno type="URI">http://syriaca.org/person/1251</idno>
                <idno type="FIEY">174</idno>
-               <idno type="FIEY">174</idno>
                <sex value="F" source="#bibl1251-1">female</sex>
                <death when="0591"
                       syriaca-computed-start="0591-01-01"
                       source="#bibl1251-1">0591</death>
                <note>Fiey provides the following bibliographic citations: <quote source="#bibl1251-1">Le dossier de Golindouch avait ete etabli dans Peeters, "Golindouch", 74- 125. II a ete mis au point grace a Ia traduction par G. Garitte, dans AB 74 (1956), 405-40, de Ia legende georgienne publiee par Kekelidze (Tiflis, 1955). Completer par Evagre d'Epiphanie, Histoire ecclesiastique (A.J. Festugiere, Byzantion 45 (1975], 462), et Theophylacte Simocatta (ibid., 480- 81) . Voir aussi Peeters, "Ex-voto" , 5- 56; Devos, "Sainte Sirin" , 111 n. 1. Resume dans Vies des saints, VII, 13 juillet, 296- 98. Fiey, "Hagiographie", 460. BSO, II, 72-73 (J.M. Fiey). Sur le "Fort de l'Oubli", cf. Fiey, "Topography", 3-38.</quote>
                </note>
-               <note type="abstract">Golinduch, the "living martyr," was a Persian princess who became a Christian through the influence of Greek prisoners of war. She was tortured and imprisoned for converting to Christianity, but she was freed by an angel and fled to Nisibis and Mabbug. She is venerated as a living martyr.  Her life is preserved in Georgian.  </note>
-               <bibl xml:id="bib1092-1">
+               <note type="abstract">Golinduch, the "living martyr," was a Persian princess who became a Christian through the influence of Greek prisoners of war. She was tortured and imprisoned for converting to Christianity, but she was freed by an angel and fled to Nisibis and Mabbug. She was venerated as a living martyr. Her life was preserved in Georgian.</note>
+               <bibl xml:id="bib1251-1">
                   <title level="m" xml:lang="fr">Saints Syriaques</title>
                   <title level="a" xml:lang="fr">GOLINDOUCH</title>
                   <ptr target="http://syriaca.org/bibl/650"/>
                   <citedRange unit="entry">174</citedRange>
+               </bibl>
+               <bibl xml:id="bib1251-3">
+                  <author>Peeters</author>
+                  <title>"Golindouch"</title>
+                  <citedRange>74-125.</citedRange>
+               </bibl>
+               <bibl xml:id="bib1251-4">
+                  <author>G. Garitte</author>
+                  <title>AB</title>
+                  <citedRange>74 (1956),
+               405-40,</citedRange>
+               </bibl>
+               <bibl xml:id="bib1251-5">
+                  <author>Kekelidze</author>
+                  <citedRange>(Tbilsi, 1955)</citedRange>
+               </bibl>
+               <bibl xml:id="bib1251-6">
+                  <author>Evagrius of Epiphanius</author>
+                  <title>Histoire ecclesiastique</title>
+                  <author>A.J. Festugiere</author>
+                  <title>Byzantion 45</title>
+                  <citedRange>(1975), 462</citedRange>
+               </bibl>
+               <bibl xml:id="bib1251-7">
+                  <author>Theophylact Simocatta</author>
+                  <title>Histoire ecclesiastique</title>
+                  <author>A.J. Festugiere</author>
+                  <title>Byzantion 45</title>
+                  <citedRange>480-81</citedRange>
+               </bibl>
+               <bibl xml:id="bib1251-8">
+                  <author>Peeters</author>
+                  <title>"Ex-voto" </title>
+                  <citedRange>5-56</citedRange>
+               </bibl>
+               <bibl xml:id="bib1251-9">
+                  <author>Devos</author>
+                  <title>"Sainte Sirin" </title>
+                  <citedRange>111 n. 1.</citedRange>
+               </bibl>
+               <bibl xml:id="bib1251-10">
+                  <title>Vies des saints</title>
+                  <citedRange>VII, 13 juillet, 296-98.</citedRange>
+               </bibl>
+               <bibl xml:id="bib1251-11">
+                  <author>Fiey</author>
+                  <title>"Hagiographie"</title>
+                  <citedRange>460.</citedRange>
+               </bibl>
+               <bibl xml:id="bib1251-12">
+                  <author>J.M. Fiey</author>
+                  <title>BSO</title>
+                  <citedRange>II,
+               72-73</citedRange>
+               </bibl>
+               <bibl xml:id="bib1251-13">
+                  <title>"Fort de l'Oubli"</title>
+                  <author>Fiey</author>
+                  <title>"Topography"</title>
+                  <citedRange> 3-38.</citedRange>
                </bibl>
             </person>
          </listPerson>

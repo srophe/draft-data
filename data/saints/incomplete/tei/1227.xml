@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://syriaca.org/documentation/syriaca-tei-main.rnc" type="application/relax-ng-compact-syntax"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:tei="http://www.tei-c.org/ns/1.0"
      xmlns:syriaca="http://syriaca.org"
      xmlns:saxon="http://saxon.sf.net/"
      xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
@@ -65,7 +66,7 @@
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
                </licence>
             </availability>
-            <date>2015-03-04-05:00</date>
+            <date>2015-07-30-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -121,7 +122,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#dmichelson"
                  n="1.0"
-                 when="2015-03-04-05:00">CREATED: person</change>
+                 when="2015-07-30-04:00">CREATED: person</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -133,7 +134,6 @@
                <persName xml:id="name1227-4" xml:lang="fr" source="#bibl1227-2">Enfants d’Éphèse</persName>
                <persName xml:id="name1227-5" xml:lang="fr-x-fiey" source="#bibl1227-1">LES HUITS ENFANTS D'ÈPEHESE</persName>
                <idno type="URI">http://syriaca.org/person/1227</idno>
-               <idno type="FIEY">146</idno>
                <idno type="FIEY">146</idno>
                <idno type="BHSYRE">29</idno>
                <idno type="BHSYRE">877</idno>
@@ -147,23 +147,57 @@
                         syriaca-computed-start="0249"
                         to="0251"
                         syriaca-computed-end="0251">0249-0251</floruit>
-               <state type="martyr" source="#bibl1227-1">Martyr</state>
+               <state type="martyr" source="#bibl1227-1">
+                  <p>Martyr</p>
+               </state>
                <note>Fiey provides the following bibliographic citations: <quote source="#bibl1227-1">E. Honigmann, "Stephen of Ephesus ( 448) and the Legend of the Seven Sleepers", dans sa Patristic Studies (Citta del Vaticano, 1953 : SeT 173), 125- 68 (ch. XVII). Y. Moubarac, etude d'apres les Opera Minora deL. Massignon (Beyrouth, 1963), III, 104- 80. F. Jourdan, La tradition des Sept Dormants (Paris, 1983). Vies des saints, VII, 27 juillet, 650- 51. M. van Esbroeck, "La legende des Sept Dormants d'Ephese selon le Codex syriaque N.S. 4 de Saint-Petersbourg", dans VI Symposium Syriacum (Rome, 1994 ; OCA 247) , 189-200.</quote>
                </note>
-               <note type="abstract">This legend is situated in the time of the emperor Decius.  These children were placed in a cave with their dog Qitmir for 190 years.  The legend dates to the middle of the fifth century.    </note>
+               <note type="abstract">This legend was situated in the time of the emperor Decius. Eight children of Ephesus were placed in a cave with their dog Qitmir for 190 years. The legend dates to the middle of the fifth century.</note>
                <event type="veneration" source="#bibl1227-1">
                   <desc>The saint is venerated on Oct. 22 (BHO).</desc>
                </event>
-               <bibl xml:id="bib1092-1">
+               <bibl xml:id="bib1227-1">
                   <title level="m" xml:lang="la">Biblioteca Hagiographica Syriaca electronica</title>
                   <ptr target="http://syriaca.org/bibl/649"/>
                   <citedRange unit="entry">29, 877, 988, 1088, 1893, 1987, 2005</citedRange>
                </bibl>
-               <bibl xml:id="bib1092-2">
+               <bibl xml:id="bib1227-2">
                   <title level="m" xml:lang="fr">Saints Syriaques</title>
                   <title level="a" xml:lang="fr">LES HUITS ENFANTS D'ÈPEHESE</title>
                   <ptr target="http://syriaca.org/bibl/650"/>
                   <citedRange unit="entry">146</citedRange>
+               </bibl>
+               <bibl xml:id="bib1227-3">
+                  <author>E. Honigmann</author>
+                  <title>"Stephen of Ephesus ( 448) and the Legend of the Seven
+               Sleepers"</title>
+                  <title>Patristic Studies</title>
+                  <citedRange>(Citta del Vaticano, 1953 : SeT 173), 125-68, ch.
+               XVII.</citedRange>
+               </bibl>
+               <bibl xml:id="bib1227-4">
+                  <author>Y. Moubarac</author>
+                  <note>Study according to the</note>
+                  <title>Opera Minora of L. Massignon</title>
+                  <citedRange>(Beirut,
+               1963), III, 104-80</citedRange>
+               </bibl>
+               <bibl xml:id="bib1227-5">
+                  <author>F. Jourdan</author>
+                  <title>La tradition des Sept Dormants</title>
+                  <citedRange>(Paris, 1983).</citedRange>
+               </bibl>
+               <bibl xml:id="bib1227-6">
+                  <title>Vies des saints</title>
+                  <citedRange>VII, 27 juillet, 650-51.</citedRange>
+               </bibl>
+               <bibl xml:id="bib1227-7">
+                  <author>M. van Esbroeck</author>
+                  <title>"La legende des Sept Dormants d'Ephese selon le Codex
+               syriaque N.S. 4 de Saint-Petersbourg"</title>
+                  <title>VI Symposium Syriacum</title>
+                  <citedRange>Rome, 1994</citedRange>
+                  <title>OCA</title>
                </bibl>
             </person>
          </listPerson>

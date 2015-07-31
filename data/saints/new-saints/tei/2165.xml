@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://syriaca.org/documentation/syriaca-tei-main.rnc" type="application/relax-ng-compact-syntax"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:tei="http://www.tei-c.org/ns/1.0"
      xmlns:syriaca="http://syriaca.org"
      xmlns:saxon="http://saxon.sf.net/"
      xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
@@ -9,7 +10,7 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title level="a" xml:lang="en">Mushe Luwbaya — <foreign xml:lang="syr">ܡܘܫܐ ܠܘܒܝܐ</foreign>
+            <title level="a" xml:lang="en">Yōlīnē — <foreign xml:lang="syr">ܝܘܠܝܢܐ</foreign>
             </title>
             <title level="m">Qadishe: A Guide to the Syriac Saints</title>
             <sponsor>Syriaca.org: The Syriac Reference Portal</sponsor>
@@ -60,13 +61,13 @@
          </editionStmt>
          <publicationStmt>
             <authority>Syriaca.org: The Syriac Reference Portal</authority>
-            <idno type="URI">http://syriaca.org/person/1387/tei</idno>
+            <idno type="URI">http://syriaca.org/person/2165/tei</idno>
             <availability>
                <licence target="http://creativecommons.org/licenses/by/3.0/">
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
                </licence>
             </availability>
-            <date>2015-03-04-05:00</date>
+            <date>2015-07-30-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -122,43 +123,29 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#dmichelson"
                  n="1.0"
-                 when="2015-03-04-05:00">CREATED: person</change>
+                 when="2015-07-30-04:00">CREATED: person</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPerson>
-            <person xml:id="saint-1387" ana="#syriaca-saint">
-               <persName xml:id="name1387-1"
+            <person xml:id="saint-2165" ana="#syriaca-saint">
+               <persName xml:id="name2165-1"
                          xml:lang="syr"
                          syriaca-tags="#syriaca-headword"
-                         source="#bibl1387-2">ܡܘܫܐ ܠܘܒܝܐ</persName>
-               <persName xml:id="name1387-2"
+                         source="#bibl2165-1">ܝܘܠܝܢܐ</persName>
+               <persName xml:id="name2165-2"
                          xml:lang="en-x-gedsh"
-                         syriaca-tags="#syriaca-headword">Mushe Luwbaya</persName>
-               <persName xml:id="name1387-3" xml:lang="en">Moses the Libyan</persName>
-               <persName xml:id="name1387-4" xml:lang="en">Moses</persName>
-               <persName xml:id="name1387-5" xml:lang="fr-x-zanetti" source="#bibl1387-2">Mūšē Lēwbāyā</persName>
-               <persName xml:id="name1387-6" xml:lang="fr" source="#bibl1387-2">Moïse le Libyen</persName>
-               <persName xml:id="name1387-7" xml:lang="fr-x-fiey" source="#bibl1387-1">MOÏSE</persName>
-               <idno type="URI">http://syriaca.org/person/1387</idno>
-               <idno type="FIEY">319</idno>
-               <idno type="FIEY">319</idno>
-               <idno type="BHSYRE">264</idno>
-               <sex value="M" source="#bibl1387-1">male</sex>
-               <state type="martyr" source="#bibl1387-1">Martyr</state>
-               <note>Fiey provides the following bibliographic citations: <quote source="#bibl1387-1">Vies syriaques : AMS, VII, 219-26 ; BHO, 778. References dans Vies des saints, VIII, 554-55. Remarquer que son nom est tombe de l'Index du P. Peeters au Martyrologe, 200. BS, IX, 652- 54 (J.-M. Sauget).</quote>
-               </note>
-               <bibl xml:id="bib1092-1">
+                         syriaca-tags="#syriaca-headword">Yōlīnē</persName>
+               <persName xml:id="name2165-3" xml:lang="en">Juliana</persName>
+               <persName xml:id="name2165-4" xml:lang="fr-x-zanetti" source="#bibl2165-1">Yōlīnē</persName>
+               <persName xml:id="name2165-5" xml:lang="fr" source="#bibl2165-1">Julienne</persName>
+               <idno type="URI">http://syriaca.org/person/2165</idno>
+               <idno type="BHSYRE">231</idno>
+               <bibl xml:id="bib2165-1">
                   <title level="m" xml:lang="la">Biblioteca Hagiographica Syriaca electronica</title>
                   <ptr target="http://syriaca.org/bibl/649"/>
-                  <citedRange unit="entry">264</citedRange>
-               </bibl>
-               <bibl xml:id="bib1092-2">
-                  <title level="m" xml:lang="fr">Saints Syriaques</title>
-                  <title level="a" xml:lang="fr">MOÏSE</title>
-                  <ptr target="http://syriaca.org/bibl/650"/>
-                  <citedRange unit="entry">319</citedRange>
+                  <citedRange unit="entry">231</citedRange>
                </bibl>
             </person>
          </listPerson>

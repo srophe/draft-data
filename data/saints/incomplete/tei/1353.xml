@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://syriaca.org/documentation/syriaca-tei-main.rnc" type="application/relax-ng-compact-syntax"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:tei="http://www.tei-c.org/ns/1.0"
      xmlns:syriaca="http://syriaca.org"
      xmlns:saxon="http://saxon.sf.net/"
      xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
@@ -65,7 +66,7 @@
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
                </licence>
             </availability>
-            <date>2015-03-04-05:00</date>
+            <date>2015-07-30-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -121,7 +122,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#dmichelson"
                  n="1.0"
-                 when="2015-03-04-05:00">CREATED: person</change>
+                 when="2015-07-30-04:00">CREATED: person</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -132,17 +133,34 @@
                <persName xml:id="name1353-3" xml:lang="fr-x-fiey" source="#bibl1353-1">MAMELHTA</persName>
                <idno type="URI">http://syriaca.org/person/1353</idno>
                <idno type="FIEY">285</idno>
-               <idno type="FIEY">285</idno>
                <sex value="F" source="#bibl1353-1">female</sex>
-               <state type="martyr" source="#bibl1353-1">Martyr</state>
+               <state type="martyr" source="#bibl1353-1">
+                  <p>Martyr</p>
+               </state>
                <note>Fiey provides the following bibliographic citations: <quote source="#bibl1353-1">Devos, "Commemoraisons", 146--47, 151-55. References dans Vies des saints, au 17 octobre (X, 545), s.v. Mamelta. BS, VIII, 613- 14 (J.-M. Sauget).</quote>
                </note>
-               <note type="abstract">Mamelhta was a virgin and martyr from Beth Garmai.  She is known in the Greek martyr Acts as Mamlaha, Mamlahtina, Mazahia or Malpetha.  </note>
-               <bibl xml:id="bib1092-1">
+               <note type="abstract">Mamelhta was a virgin and martyr from Beth Garmai. She was known in the Greek martyr Acts as Mamlaha, Mamlahtina, Mazahia or Malpetha.</note>
+               <bibl xml:id="bib1353-1">
                   <title level="m" xml:lang="fr">Saints Syriaques</title>
                   <title level="a" xml:lang="fr">MAMELHTA</title>
                   <ptr target="http://syriaca.org/bibl/650"/>
                   <citedRange unit="entry">285</citedRange>
+               </bibl>
+               <bibl xml:id="bib1353-3">
+                  <author>Devos</author>
+                  <title>"Commemoraisons"</title>
+                  <citedRange>146--47, 151-55.</citedRange>
+               </bibl>
+               <bibl xml:id="bib1353-4">
+                  <title>Vies des saints</title>
+                  <citedRange>17 October (X, 545)</citedRange>
+                  <citedRange> Mamelta.</citedRange>
+               </bibl>
+               <bibl xml:id="bib1353-5">
+                  <author>J.-M. Sauget</author>
+                  <title>BS</title>
+                  <citedRange>VIII,
+                  613-14</citedRange>
                </bibl>
             </person>
          </listPerson>

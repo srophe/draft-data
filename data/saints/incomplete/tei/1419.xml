@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://syriaca.org/documentation/syriaca-tei-main.rnc" type="application/relax-ng-compact-syntax"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:tei="http://www.tei-c.org/ns/1.0"
      xmlns:syriaca="http://syriaca.org"
      xmlns:saxon="http://saxon.sf.net/"
      xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
@@ -65,7 +66,7 @@
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
                </licence>
             </availability>
-            <date>2015-03-04-05:00</date>
+            <date>2015-07-30-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -121,7 +122,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#dmichelson"
                  n="1.0"
-                 when="2015-03-04-05:00">CREATED: person</change>
+                 when="2015-07-30-04:00">CREATED: person</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -132,17 +133,39 @@
                <persName xml:id="name1419-3" xml:lang="fr-x-fiey" source="#bibl1419-1">PROTONICE</persName>
                <idno type="URI">http://syriaca.org/person/1419</idno>
                <idno type="FIEY">355</idno>
-               <idno type="FIEY">355</idno>
                <sex value="F" source="#bibl1419-1">female</sex>
                <floruit source="#bibl1419-1" when="0050" syriaca-computed-start="0050">0050</floruit>
                <note>Fiey provides the following bibliographic citations: <quote source="#bibl1419-1">J. Leroy, Manuscrits syriaques d peintures (Paris, 1964), I, 360-61. Segal, Edessa, 69- 72. S. Reid, "Zur friihen Protonike und Kyriakoslegende", AB 109 (1991), 73-108. Protoniqe figure dans le Hymne sur les saintes femmes (Fiey, "Saintes femmes" ). BSO, II, 858 (J.M. Fiey).</quote>
                </note>
-               <note type="abstract">Protonike is purportedly the wife of the emperor Claudius. Her legend is interpolated into the Teaching of Addai.  She travels to Jerusalem, convertsto Christianity, and discovers the true cross. </note>
-               <bibl xml:id="bib1092-1">
+               <note type="abstract">Protonike was purportedly the wife of the emperor Claudius. Her legend was interpolated into the Teaching of Addai. She travelled to Jerusalem, converted to Christianity, and discovered the true cross.</note>
+               <bibl xml:id="bib1419-1">
                   <title level="m" xml:lang="fr">Saints Syriaques</title>
                   <title level="a" xml:lang="fr">PROTONICE</title>
                   <ptr target="http://syriaca.org/bibl/650"/>
                   <citedRange unit="entry">355</citedRange>
+               </bibl>
+               <bibl xml:id="bib1419-3">
+                  <author>J. Leroy</author>
+                  <title>Manuscrits syriaques de peintures</title>
+                  <citedRange>(Paris, 1964), I, 360-61.</citedRange>
+               </bibl>
+               <note>Segal, Edessa, 69-72.</note>
+               <bibl xml:id="bib1419-5">
+                  <author>S. Reid</author>
+                  <title> "Zur frühen Protonike und Kyriakoslegende"</title>
+                  <title> AB</title>
+                  <citedRange>109 (1991),
+               73-108.</citedRange>
+               </bibl>
+               <bibl xml:id="bib1419-6">
+                  <author>Fiey</author>
+                  <title>"Saintes femmes"</title>
+               </bibl>
+               <bibl xml:id="bib1419-7">
+                  <author>J.M. Fiey</author>
+                  <title>BSO</title>
+                  <citedRange>II,
+               858</citedRange>
                </bibl>
             </person>
          </listPerson>

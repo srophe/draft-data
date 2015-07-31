@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://syriaca.org/documentation/syriaca-tei-main.rnc" type="application/relax-ng-compact-syntax"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:tei="http://www.tei-c.org/ns/1.0"
      xmlns:syriaca="http://syriaca.org"
      xmlns:saxon="http://saxon.sf.net/"
      xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
@@ -65,7 +66,7 @@
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
                </licence>
             </availability>
-            <date>2015-03-04-05:00</date>
+            <date>2015-07-30-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -121,7 +122,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#dmichelson"
                  n="1.0"
-                 when="2015-03-04-05:00">CREATED: person</change>
+                 when="2015-07-30-04:00">CREATED: person</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -132,20 +133,25 @@
                <persName xml:id="name1389-3" xml:lang="fr-x-fiey" source="#bibl1389-1">MU'ĀWIYA</persName>
                <idno type="URI">http://syriaca.org/person/1389</idno>
                <idno type="FIEY">322</idno>
-               <idno type="FIEY">322</idno>
                <sex value="M" source="#bibl1389-1">male</sex>
-               <state type="martyr" source="#bibl1389-1">Martyr</state>
+               <state type="martyr" source="#bibl1389-1">
+                  <p>Martyr</p>
+               </state>
                <note>Fiey provides the following bibliographic citations: <quote source="#bibl1389-1">Vies des saints, I, 4 janvier, 72.</quote>
                </note>
-               <note type="abstract">Mu'awiya was a martyr in Arabia who was thrown to the beasts.</note>
+               <note type="abstract">Muʿawiya was a martyr in Arabia who was thrown to the beasts.</note>
                <event type="veneration" source="#bibl1389-1">
                   <desc>The saint is venerated on 4 janvier.</desc>
                </event>
-               <bibl xml:id="bib1092-1">
+               <bibl xml:id="bib1389-1">
                   <title level="m" xml:lang="fr">Saints Syriaques</title>
                   <title level="a" xml:lang="fr">MU'ĀWIYA</title>
                   <ptr target="http://syriaca.org/bibl/650"/>
                   <citedRange unit="entry">322</citedRange>
+               </bibl>
+               <bibl xml:id="bib1389-3">
+                  <title>Vies des saints</title>
+                  <citedRange>I, 4 January, 72.</citedRange>
                </bibl>
             </person>
          </listPerson>

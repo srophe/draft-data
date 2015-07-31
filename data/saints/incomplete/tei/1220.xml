@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://syriaca.org/documentation/syriaca-tei-main.rnc" type="application/relax-ng-compact-syntax"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:tei="http://www.tei-c.org/ns/1.0"
      xmlns:syriaca="http://syriaca.org"
      xmlns:saxon="http://saxon.sf.net/"
      xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
@@ -65,7 +66,7 @@
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
                </licence>
             </availability>
-            <date>2015-03-04-05:00</date>
+            <date>2015-07-30-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -121,7 +122,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#dmichelson"
                  n="1.0"
-                 when="2015-03-04-05:00">CREATED: person</change>
+                 when="2015-07-30-04:00">CREATED: person</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -132,21 +133,37 @@
                <persName xml:id="name1220-3" xml:lang="fr-x-fiey" source="#bibl1220-1">ÉLIE</persName>
                <idno type="URI">http://syriaca.org/person/1220</idno>
                <idno type="FIEY">139</idno>
-               <idno type="FIEY">139</idno>
                <sex value="M" source="#bibl1220-1">male</sex>
                <floruit source="#bibl1220-1"
                         from="0709"
                         syriaca-computed-start="0709"
                         to="0723"
                         syriaca-computed-end="0723">0709-0723</floruit>
-               <note>Fiey provides the following bibliographic citations: <quote source="#bibl1220-1">A. van Roey, "La lettre apologetique d'Elie a Leon", Le Museon 57 (1944), 1- 52; ed. et trad. van Roey, Eliae epistula apologetica ad Leonum, Syncellum harranensem (Louvain, 1985 ; CSCO 469- 70, Scr. syri 201- 202). BSO, I, 752 (J.M. Fiey) .</quote>
+               <note>Fiey provides the following bibliographic citations: <quote source="#bibl1220-1">A. van Roey, "La lettre apologetique d'Elie a Leon", Le Museon 57 (1944), 1- 52; ed. et trad. van Roey, Eliae epistula apologetica ad Leonum, Syncellum Ḥarranensem (Louvain, 1985 ; CSCO 469- 70, Scr. syri 201- 202). BSO, I, 752 (J.M. Fiey) .</quote>
                </note>
-               <note type="abstract">Elie was the Syrian Orthodox bishop of Antioch and a convert from the Melkite community.  He was a monk from the monastery of Gubba Baraya.  He was bishop of Apamea and later Patriarch of Antioch.  He was esteemed by Calif Al-Walid I who allowed him to build a church.  </note>
-               <bibl xml:id="bib1092-1">
+               <note type="abstract">Elie was the Syrian Orthodox Bishop of Antioch and a convert from the Melkite community. He was a monk from the monastery of Gubba Baraya. He was Bishop of Apamea and later Patriarch of Antioch. He was esteemed by Calif Al-Walid I who allowed him to build a church.</note>
+               <bibl xml:id="bib1220-1">
                   <title level="m" xml:lang="fr">Saints Syriaques</title>
                   <title level="a" xml:lang="fr">ÉLIE</title>
                   <ptr target="http://syriaca.org/bibl/650"/>
                   <citedRange unit="entry">139</citedRange>
+               </bibl>
+               <bibl xml:id="bib1220-3">
+                  <author>A. van Roey</author>
+                  <title>"La lettre apologetique d'Elie a Leon"</title>
+                  <title>Le Museon</title>
+                  <citedRange>57 (1944), 1-52</citedRange>
+               </bibl>
+               <bibl xml:id="bib1220-4">
+                  <editor>Van Roey</editor>
+                  <title> Eliae epistula apologetica ad Leonum, Syncellum
+               harranensem</title>
+                  <citedRange>Louvain, 1985; CSCO 469-70, Scr. syri 201-202.</citedRange>
+               </bibl>
+               <bibl xml:id="bib1220-5">
+                  <author>J.M. Fiey</author>
+                  <title>BSO</title>
+                  <citedRange>I, 752</citedRange>
                </bibl>
             </person>
          </listPerson>

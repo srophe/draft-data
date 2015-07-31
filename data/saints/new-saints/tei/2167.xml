@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://syriaca.org/documentation/syriaca-tei-main.rnc" type="application/relax-ng-compact-syntax"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:tei="http://www.tei-c.org/ns/1.0"
      xmlns:syriaca="http://syriaca.org"
      xmlns:saxon="http://saxon.sf.net/"
      xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
@@ -9,7 +10,8 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title level="a" xml:lang="en">Person 1300</title>
+            <title level="a" xml:lang="en">Yōlēṭā — <foreign xml:lang="syr">ܝܘܠܝܛܐ</foreign>
+            </title>
             <title level="m">Qadishe: A Guide to the Syriac Saints</title>
             <sponsor>Syriaca.org: The Syriac Reference Portal</sponsor>
             <funder>The International Balzan Prize Foundation</funder>
@@ -59,13 +61,13 @@
          </editionStmt>
          <publicationStmt>
             <authority>Syriaca.org: The Syriac Reference Portal</authority>
-            <idno type="URI">http://syriaca.org/person/1300/tei</idno>
+            <idno type="URI">http://syriaca.org/person/2167/tei</idno>
             <availability>
                <licence target="http://creativecommons.org/licenses/by/3.0/">
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
                </licence>
             </availability>
-            <date>2015-03-04-05:00</date>
+            <date>2015-07-30-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -121,42 +123,29 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#dmichelson"
                  n="1.0"
-                 when="2015-03-04-05:00">CREATED: person</change>
+                 when="2015-07-30-04:00">CREATED: person</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPerson>
-            <person xml:id="saint-1300" ana="#syriaca-saint">
-               <persName xml:id="name1300-2" xml:lang="en">Potamianus</persName>
-               <persName xml:id="name1300-3" xml:lang="en">Jacob of Serug</persName>
-               <persName xml:id="name1300-4" xml:lang="fr" source="#bibl1300-2">Potamiène</persName>
-               <persName xml:id="name1300-5" xml:lang="fr-x-fiey" source="#bibl1300-1">JACQUES DE SAROUG</persName>
-               <idno type="URI">http://syriaca.org/person/1300</idno>
-               <idno type="FIEY">228</idno>
-               <idno type="FIEY">228</idno>
-               <idno type="BHSYRE">188</idno>
-               <idno type="BHSYRE">412</idno>
-               <idno type="BHSYRE">413</idno>
-               <sex value="M" source="#bibl1300-1">male</sex>
-               <death when="0521"
-                      syriaca-computed-start="0521-01-01"
-                      source="#bibl1300-1">0521</death>
-               <note>Fiey provides the following bibliographic citations: <quote source="#bibl1300-1">LB. Abbeloos, De vita et scriptis S. Jacobi Batnarum Sarugi in Mesopotamia episcopi (Louvain, 1867 ; dissertation de doctorat), 24- 103 ; BHO, 413- 14. Barsaum, Lu 'lu '2 , 273- 80. BSO, I, 1027- 28 (J. Rabbi) .</quote>
-               </note>
-               <event type="veneration" source="#bibl1300-1">
-                  <desc>The saint is venerated on tesr. post. 25. (BHO).</desc>
-               </event>
-               <bibl xml:id="bib1092-1">
+            <person xml:id="saint-2167" ana="#syriaca-saint">
+               <persName xml:id="name2167-1"
+                         xml:lang="syr"
+                         syriaca-tags="#syriaca-headword"
+                         source="#bibl2167-1">ܝܘܠܝܛܐ</persName>
+               <persName xml:id="name2167-2"
+                         xml:lang="en-x-gedsh"
+                         syriaca-tags="#syriaca-headword">Yōlēṭā</persName>
+               <persName xml:id="name2167-3" xml:lang="en">Juliet</persName>
+               <persName xml:id="name2167-4" xml:lang="fr-x-zanetti" source="#bibl2167-1">Yōlēṭā</persName>
+               <persName xml:id="name2167-5" xml:lang="fr" source="#bibl2167-1">Julitte</persName>
+               <idno type="URI">http://syriaca.org/person/2167</idno>
+               <idno type="BHSYRE">1089</idno>
+               <bibl xml:id="bib2167-1">
                   <title level="m" xml:lang="la">Biblioteca Hagiographica Syriaca electronica</title>
                   <ptr target="http://syriaca.org/bibl/649"/>
-                  <citedRange unit="entry">188, 412, 413</citedRange>
-               </bibl>
-               <bibl xml:id="bib1092-2">
-                  <title level="m" xml:lang="fr">Saints Syriaques</title>
-                  <title level="a" xml:lang="fr">JACQUES DE SAROUG</title>
-                  <ptr target="http://syriaca.org/bibl/650"/>
-                  <citedRange unit="entry">228</citedRange>
+                  <citedRange unit="entry">1089</citedRange>
                </bibl>
             </person>
          </listPerson>

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://syriaca.org/documentation/syriaca-tei-main.rnc" type="application/relax-ng-compact-syntax"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:tei="http://www.tei-c.org/ns/1.0"
      xmlns:syriaca="http://syriaca.org"
      xmlns:saxon="http://saxon.sf.net/"
      xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
@@ -65,7 +66,7 @@
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
                </licence>
             </availability>
-            <date>2015-03-04-05:00</date>
+            <date>2015-07-30-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -121,7 +122,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#dmichelson"
                  n="1.0"
-                 when="2015-03-04-05:00">CREATED: person</change>
+                 when="2015-07-30-04:00">CREATED: person</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -132,17 +133,21 @@
                <persName xml:id="name1216-3" xml:lang="fr-x-fiey" source="#bibl1216-1">LES ÉGYPTIENS DE QARTMĪN</persName>
                <idno type="URI">http://syriaca.org/person/1216</idno>
                <idno type="FIEY">135</idno>
-               <idno type="FIEY">135</idno>
                <sex value="M" source="#bibl1216-1">male</sex>
                <floruit source="#bibl1216-1" when="0648" syriaca-computed-start="0648">0648</floruit>
                <note>Fiey provides the following bibliographic citations: <quote source="#bibl1216-1">Palmer, Monk and Mason, 58- 62, fig. 15, 16.</quote>
                </note>
-               <note type="abstract">The Egyptians of Qartmin are a group of 800 monks from Egypt who were buried at Qartmin.  The legend is connected to the crania in Qartmin. 800 princes on pilgrimage from Egypt became monks of Qartmin. </note>
-               <bibl xml:id="bib1092-1">
+               <note type="abstract">The “Egyptians of Qartmin” were a group of 800 monks from Egypt who were buried at Qartmin. Their legend was connected to the crania in the monastery Qartmin. Eight hundred princes on pilgrimage from Egypt became monks of Qartmin.</note>
+               <bibl xml:id="bib1216-1">
                   <title level="m" xml:lang="fr">Saints Syriaques</title>
                   <title level="a" xml:lang="fr">LES ÉGYPTIENS DE QARTMĪN</title>
                   <ptr target="http://syriaca.org/bibl/650"/>
                   <citedRange unit="entry">135</citedRange>
+               </bibl>
+               <bibl xml:id="bib1216-3">
+                  <author>Palmer</author>
+                  <title>Monk and Mason</title>
+                  <citedRange>58-62, fig. 15, 16.</citedRange>
                </bibl>
             </person>
          </listPerson>

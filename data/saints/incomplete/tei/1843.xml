@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://syriaca.org/documentation/syriaca-tei-main.rnc" type="application/relax-ng-compact-syntax"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:tei="http://www.tei-c.org/ns/1.0"
      xmlns:syriaca="http://syriaca.org"
      xmlns:saxon="http://saxon.sf.net/"
      xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
@@ -9,7 +10,7 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title level="a" xml:lang="en">Person 122</title>
+            <title level="a" xml:lang="en">Person 1843</title>
             <title level="m">Qadishe: A Guide to the Syriac Saints</title>
             <sponsor>Syriaca.org: The Syriac Reference Portal</sponsor>
             <funder>The International Balzan Prize Foundation</funder>
@@ -59,13 +60,13 @@
          </editionStmt>
          <publicationStmt>
             <authority>Syriaca.org: The Syriac Reference Portal</authority>
-            <idno type="URI">http://syriaca.org/person/122/tei</idno>
+            <idno type="URI">http://syriaca.org/person/1843/tei</idno>
             <availability>
                <licence target="http://creativecommons.org/licenses/by/3.0/">
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
                </licence>
             </availability>
-            <date>2015-03-04-05:00</date>
+            <date>2015-07-30-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -121,29 +122,27 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#dmichelson"
                  n="1.0"
-                 when="2015-03-04-05:00">CREATED: person</change>
+                 when="2015-07-30-04:00">CREATED: person</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPerson>
-            <person xml:id="saint-122" ana="#syriaca-saint">
-               <persName xml:id="name122-2" xml:lang="en">George</persName>
-               <persName xml:id="name122-3" xml:lang="fr-x-fiey" source="#bibl122-1">GEORGES, ÉVÊQUE DES ARABES</persName>
-               <idno type="URI">http://syriaca.org/person/122</idno>
-               <idno type="FIEY">169</idno>
-               <idno type="FIEY">169</idno>
-               <sex value="M" source="#bibl122-1">male</sex>
-               <death when="0726" syriaca-computed-start="0726-01-01" source="#bibl122-1">0726</death>
-               <note>Fiey provides the following bibliographic citations: <quote source="#bibl122-1">BSO, I, 1081-82 (J. Rabbi).</quote>
-               </note>
-               <note type="abstract">George of the Arabs was a student of Severus of Seboht at Qenneshre, who was versed in all the branches of knowledge of his time.  George became bishop of the Arabic tribes in 686.  His seat was in Aqula.  </note>
-               <bibl xml:id="bib1092-1">
+            <person xml:id="saint-1843" ana="#syriaca-saint">
+               <idno type="URI">http://syriaca.org/person/1843</idno>
+               <idno type="FIEY">274</idno>
+               <floruit source="#bibl1843-1" when="735" syriaca-computed-start="735">735</floruit>
+               <note type="abstract">Lazarus was a Bishop of Ṭur ʿAbdin, who was attested in a synod of 735.</note>
+               <bibl xml:id="bib1843-1">
                   <title level="m" xml:lang="fr">Saints Syriaques</title>
-                  <title level="a" xml:lang="fr">GEORGES, ÉVÊQUE DES ARABES</title>
+                  <title level="a" xml:lang="fr"/>
                   <ptr target="http://syriaca.org/bibl/650"/>
-                  <citedRange unit="entry">169</citedRange>
+                  <citedRange unit="entry">274</citedRange>
                </bibl>
+               <note>N/A</note>
+               <note>N/A</note>
+               <note>N/A</note>
+               <note>N/A</note>
             </person>
          </listPerson>
       </body>

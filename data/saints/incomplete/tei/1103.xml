@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://syriaca.org/documentation/syriaca-tei-main.rnc" type="application/relax-ng-compact-syntax"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:tei="http://www.tei-c.org/ns/1.0"
      xmlns:syriaca="http://syriaca.org"
      xmlns:saxon="http://saxon.sf.net/"
      xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
@@ -65,7 +66,7 @@
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
                </licence>
             </availability>
-            <date>2015-03-04-05:00</date>
+            <date>2015-07-30-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -121,7 +122,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#dmichelson"
                  n="1.0"
-                 when="2015-03-04-05:00">CREATED: person</change>
+                 when="2015-07-30-04:00">CREATED: person</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -133,20 +134,35 @@
                <persName xml:id="name1103-4" xml:lang="fr-x-fiey" source="#bibl1103-1">ABDON et SENNEN</persName>
                <idno type="URI">http://syriaca.org/person/1103</idno>
                <idno type="FIEY">11</idno>
-               <idno type="FIEY">11</idno>
                <sex value="M" source="#bibl1103-1">male</sex>
                <death when="0297"
                       syriaca-computed-start="0297-01-01"
                       source="#bibl1103-1">0297</death>
-               <state type="martyr" source="#bibl1103-1">Martyr</state>
+               <state type="martyr" source="#bibl1103-1">
+                  <p>Martyr</p>
+               </state>
                <note>Fiey provides the following bibliographic citations: <quote source="#bibl1103-1">Abdon et Sennen ne figurent pas dans les martyrologes syriaques. Aux references Jatines ajouter : J .M. Fiey, dans OS 11 (1966), 137-45. BS, I, 50- 57 (M. Chiara Celletti).</quote>
                </note>
-               <note type="abstract">Abdon and Sennen were two Persian twin saints martyred in Rome whose story is contained in the martyrology of bishop Polychrone, a bishop of Babylon.  They do not figure in Syriac hagiography, but it Latin are called Ciccensis adiabenicis victis </note>
-               <bibl xml:id="bib1092-1">
+               <note type="abstract">ʿAbdon and Sennen were two Persian twins martyred in Rome. Their story was contained in the martyrology of Bishop Polychrone, a Bishop of Babylon. They do not figure in Syriac hagiography, but in the Latin tradition they are called Ciccensis adiabenicis victis.</note>
+               <bibl xml:id="bib1103-1">
                   <title level="m" xml:lang="fr">Saints Syriaques</title>
                   <title level="a" xml:lang="fr">ABDON et SENNEN</title>
                   <ptr target="http://syriaca.org/bibl/650"/>
                   <citedRange unit="entry">11</citedRange>
+               </bibl>
+               <note>Abdon and Sennen are not found in syriac martyrologies.</note>
+               <bibl xml:id="bib1103-4">
+                  <note>For Latin references, please see:</note>
+                  <author>J. .M. Fiey</author>
+                  <title>OS 11</title>
+                  <date>1966</date>
+                  <citedRange>137-45</citedRange>
+               </bibl>
+               <bibl xml:id="bib1103-5">
+                  <author>M. Chiara Celletti</author>
+                  <title>BS</title>
+                  <citedRange>I,
+                  50-57</citedRange>
                </bibl>
             </person>
          </listPerson>

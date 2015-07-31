@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://syriaca.org/documentation/syriaca-tei-main.rnc" type="application/relax-ng-compact-syntax"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:tei="http://www.tei-c.org/ns/1.0"
      xmlns:syriaca="http://syriaca.org"
      xmlns:saxon="http://saxon.sf.net/"
      xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
@@ -65,7 +66,7 @@
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
                </licence>
             </availability>
-            <date>2015-03-04-05:00</date>
+            <date>2015-07-30-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -121,7 +122,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#dmichelson"
                  n="1.0"
-                 when="2015-03-04-05:00">CREATED: person</change>
+                 when="2015-07-30-04:00">CREATED: person</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -131,7 +132,6 @@
                <persName xml:id="name1306-2" xml:lang="en">John Bar Abdun</persName>
                <persName xml:id="name1306-3" xml:lang="fr-x-fiey" source="#bibl1306-1">JEAN BĀR 'ABDŪN</persName>
                <idno type="URI">http://syriaca.org/person/1306</idno>
-               <idno type="FIEY">236</idno>
                <idno type="FIEY">236</idno>
                <sex value="M" source="#bibl1306-1">male</sex>
                <death when="1033"
@@ -144,12 +144,25 @@
                         syriaca-computed-end="1033">1004-1033</floruit>
                <note>Fiey provides the following bibliographic citations: <quote source="#bibl1306-1">G. Dagron, "Minorites ethniques et religieuses dans l'Orient byzantin a Ia fin du x• siecle et au debut du XI• siecle : l'immigration syrienne" dans Travaux et memoires 6 (1976), 177- 210. ' BSO, I, llll-12 (J.M. Fiey) .</quote>
                </note>
-               <note type="abstract">John bar Abdun was patriarch of the Syrian orthodox church, and he had a life fraught with pain.  He was accused of attracting Chalcedonians to the Syrian Orthodox, yet was brought to Constantinople to be condemned by the Chalcedonians.  He was slapped in Hagia Sophia by the Melkite bishop John of Melitene.  He died in exile in Thrace and is honored as a martyr by the Syrian Orthodox. </note>
-               <bibl xml:id="bib1092-1">
+               <note type="abstract">John bar Abdun was Patriarch of the Syrian Orthodox church, and he had a life fraught with pain. He was accused of attracting Chalcedonians to the Syrian Orthodox, and he was brought to Constantinople to be condemned by the Chalcedonians. He was slapped in the church of Hagia Sophia by the Melkite Bishop John of Melitene. He died in exile in Thrace and was honored as a martyr by the Syrian Orthodox.</note>
+               <bibl xml:id="bib1306-1">
                   <title level="m" xml:lang="fr">Saints Syriaques</title>
                   <title level="a" xml:lang="fr">JEAN BĀR 'ABDŪN</title>
                   <ptr target="http://syriaca.org/bibl/650"/>
                   <citedRange unit="entry">236</citedRange>
+               </bibl>
+               <bibl xml:id="bib1306-3">
+                  <author>G. Dagron</author>
+                  <title>"Minorités ethniques et religieuses dans l'Orient byzantin à la fin du
+               Xe siècle et au debut du XIe : ' l'immigration syrienne' "</title>
+                  <title>Travaux et mémoires</title>
+                  <citedRange>6 (1976), 177-210.</citedRange>
+               </bibl>
+               <bibl xml:id="bib1306-4">
+                  <author>J.M. Fiey</author>
+                  <title>BSO</title>
+                  <citedRange>I,
+               llll-12</citedRange>
                </bibl>
             </person>
          </listPerson>

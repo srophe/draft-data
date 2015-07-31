@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://syriaca.org/documentation/syriaca-tei-main.rnc" type="application/relax-ng-compact-syntax"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:tei="http://www.tei-c.org/ns/1.0"
      xmlns:syriaca="http://syriaca.org"
      xmlns:saxon="http://saxon.sf.net/"
      xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
@@ -9,7 +10,7 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title level="a" xml:lang="en">Person 106</title>
+            <title level="a" xml:lang="en">Person 1839</title>
             <title level="m">Qadishe: A Guide to the Syriac Saints</title>
             <sponsor>Syriaca.org: The Syriac Reference Portal</sponsor>
             <funder>The International Balzan Prize Foundation</funder>
@@ -59,13 +60,13 @@
          </editionStmt>
          <publicationStmt>
             <authority>Syriaca.org: The Syriac Reference Portal</authority>
-            <idno type="URI">http://syriaca.org/person/106/tei</idno>
+            <idno type="URI">http://syriaca.org/person/1839/tei</idno>
             <availability>
                <licence target="http://creativecommons.org/licenses/by/3.0/">
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
                </licence>
             </availability>
-            <date>2015-03-04-05:00</date>
+            <date>2015-07-30-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -121,32 +122,32 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#dmichelson"
                  n="1.0"
-                 when="2015-03-04-05:00">CREATED: person</change>
+                 when="2015-07-30-04:00">CREATED: person</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPerson>
-            <person xml:id="saint-106" ana="#syriaca-saint">
-               <persName xml:id="name106-2" xml:lang="en">Severus II Bar Masqa</persName>
-               <persName xml:id="name106-3" xml:lang="fr-x-fiey" source="#bibl106-1">SÉVÈRE II BAR MAŠQA</persName>
-               <idno type="URI">http://syriaca.org/person/106</idno>
-               <idno type="FIEY">407</idno>
-               <idno type="FIEY">407</idno>
-               <sex value="M" source="#bibl106-1">male</sex>
-               <floruit source="#bibl106-1"
-                        from="0668"
-                        syriaca-computed-start="0668"
-                        to="0681"
-                        syriaca-computed-end="0681">0668-0681</floruit>
-               <note>Fiey provides the following bibliographic citations: <quote source="#bibl106-1">Severe est !'auteur de pieces liturgiques. Barsaum, Lu 'lu 12 , 359. Mounayer, Synodes, 32. V66bus, Sammlungen, 200. BSO, II, 1017 (J.M. Fiey) .</quote>
-               </note>
-               <note type="abstract">Severus II Bar Mashqa was monk from the convent of Asfoulos.  He became patriarch in 668.  He had correspondences and tensions bishops of Mar Mattai which ended with under his successor Athanasius.</note>
-               <bibl xml:id="bib1092-1">
+            <person xml:id="saint-1839" ana="#syriaca-saint">
+               <idno type="URI">http://syriaca.org/person/1839</idno>
+               <idno type="FIEY">99</idno>
+               <floruit source="#bibl1839-1" when="600" syriaca-computed-start="600">600</floruit>
+               <note type="abstract">Constantine was a Bishop of Edessa commemorated by Rabban Saliba.</note>
+               <bibl xml:id="bib1839-1">
                   <title level="m" xml:lang="fr">Saints Syriaques</title>
-                  <title level="a" xml:lang="fr">SÉVÈRE II BAR MAŠQA</title>
+                  <title level="a" xml:lang="fr"/>
                   <ptr target="http://syriaca.org/bibl/650"/>
-                  <citedRange unit="entry">407</citedRange>
+                  <citedRange unit="entry">99</citedRange>
+               </bibl>
+               <bibl xml:id="bib1839-3">
+                  <author>J.M. Fiey</author>
+                  <title>BSO</title>
+                  <citedRange>I, 569</citedRange>
+               </bibl>
+               <bibl xml:id="bib1839-3">
+                  <author>J.M. Fiey</author>
+                  <title>BSO</title>
+                  <citedRange>I, 569</citedRange>
                </bibl>
             </person>
          </listPerson>

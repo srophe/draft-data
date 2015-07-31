@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://syriaca.org/documentation/syriaca-tei-main.rnc" type="application/relax-ng-compact-syntax"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:tei="http://www.tei-c.org/ns/1.0"
      xmlns:syriaca="http://syriaca.org"
      xmlns:saxon="http://saxon.sf.net/"
      xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
@@ -65,7 +66,7 @@
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
                </licence>
             </availability>
-            <date>2015-03-04-05:00</date>
+            <date>2015-07-30-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -121,7 +122,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#dmichelson"
                  n="1.0"
-                 when="2015-03-04-05:00">CREATED: person</change>
+                 when="2015-07-30-04:00">CREATED: person</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -132,17 +133,32 @@
                <persName xml:id="name1207-3" xml:lang="fr-x-fiey" source="#bibl1207-1">DEMETRIANUS</persName>
                <idno type="URI">http://syriaca.org/person/1207</idno>
                <idno type="FIEY">124</idno>
-               <idno type="FIEY">124</idno>
                <sex value="M" source="#bibl1207-1">male</sex>
                <floruit source="#bibl1207-1" notAfter="0260" syriaca-computed-end="0260">0260</floruit>
                <note>Fiey provides the following bibliographic citations: <quote source="#bibl1207-1">P. Peeters, dans AB 42 (1924), 288-314. Fiey, "Elam" (1969), 229-33. BS, IV, 550-51 (C. Sisto).</quote>
                </note>
-               <note type="abstract">Demetrianus is attested as a bishop of Antioch.  He was deported by Persians after the conquest of the city in 256. The beginnings of the diocese of Gundishapur are attributed to him. Floruit not after 260. </note>
-               <bibl xml:id="bib1092-1">
+               <note type="abstract">Demetrianus was attested as a Bishop of Antioch. He was deported by the Persians after the conquest of the city in 256. The beginnings of the diocese of Gundishapur were attributed to him.</note>
+               <bibl xml:id="bib1207-1">
                   <title level="m" xml:lang="fr">Saints Syriaques</title>
                   <title level="a" xml:lang="fr">DEMETRIANUS</title>
                   <ptr target="http://syriaca.org/bibl/650"/>
                   <citedRange unit="entry">124</citedRange>
+               </bibl>
+               <bibl xml:id="bib1207-3">
+                  <author>P. Peeters</author>
+                  <title>AB 42</title>
+                  <citedRange> (1924), 288-314.</citedRange>
+               </bibl>
+               <bibl xml:id="bib1207-4">
+                  <author>Fiey</author>
+                  <title>"Elam"</title>
+                  <citedRange> (1969), 229-33.</citedRange>
+               </bibl>
+               <bibl xml:id="bib1207-5">
+                  <author>C. Sisto</author>
+                  <title>BS</title>
+                  <citedRange>IV,
+               550-51</citedRange>
                </bibl>
             </person>
          </listPerson>

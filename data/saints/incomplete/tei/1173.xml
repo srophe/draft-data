@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://syriaca.org/documentation/syriaca-tei-main.rnc" type="application/relax-ng-compact-syntax"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:tei="http://www.tei-c.org/ns/1.0"
      xmlns:syriaca="http://syriaca.org"
      xmlns:saxon="http://saxon.sf.net/"
      xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
@@ -65,7 +66,7 @@
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
                </licence>
             </availability>
-            <date>2015-03-04-05:00</date>
+            <date>2015-07-30-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -121,7 +122,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#dmichelson"
                  n="1.0"
-                 when="2015-03-04-05:00">CREATED: person</change>
+                 when="2015-07-30-04:00">CREATED: person</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -132,20 +133,48 @@
                <persName xml:id="name1173-3" xml:lang="fr-x-fiey" source="#bibl1173-1">BENJAMIN</persName>
                <idno type="URI">http://syriaca.org/person/1173</idno>
                <idno type="FIEY">88</idno>
-               <idno type="FIEY">88</idno>
                <sex value="M" source="#bibl1173-1">male</sex>
                <death when="0371"
                       syriaca-computed-start="0371-01-01"
                       source="#bibl1173-1">0371</death>
-               <state type="martyr" source="#bibl1173-1">Martyr</state>
+               <state type="martyr" source="#bibl1173-1">
+                  <p>Martyr</p>
+               </state>
                <note>Fiey provides the following bibliographic citations: <quote source="#bibl1173-1">Manuscrit syriaque occidental, date de 1197, au Bnt1sh Museum (Catalogue Wnght, 1134- 35, cod. DCCCCLX, fol. 388r-394v n° 67) . Resume allemand Hoffmann, Ausziige, 28- 33 ; BHO, 783. Fiey, "Ma'In" , 437-53. BSO, I, 419-20 (J.M. Fiey).</quote>
                </note>
-               <note type="abstract">Benjamin was a hermit and priest from Dara; he was ordained by Barsai of Edessa and travelled to Mount Singar. He converted Ma'in; both Benjamin and Ma'in were martyred.</note>
-               <bibl xml:id="bib1092-1">
+               <note type="abstract">Benjamin was a hermit and priest from Dara; he was ordained by Barsai of Edessa and travelled to Mount Sinjar. He converted Maʿin; both Benjamin and Maʿin were martyred.</note>
+               <bibl xml:id="bib1173-1">
                   <title level="m" xml:lang="fr">Saints Syriaques</title>
                   <title level="a" xml:lang="fr">BENJAMIN</title>
                   <ptr target="http://syriaca.org/bibl/650"/>
                   <citedRange unit="entry">88</citedRange>
+               </bibl>
+               <bibl xml:id="bib1173-3">
+                  <note>West Syrian manuscript, dated from 1197, in British Museum.</note>
+                  <title>Catalogue</title>
+                  <author>Wright</author>
+                  <citedRange>1134-35, cod. DCCCCLX, fol. 388r-394v n° 67</citedRange>
+               </bibl>
+               <bibl xml:id="bib1173-4">
+                  <note>German summary in</note>
+                  <author>Hoffmann</author>
+                  <title>Auszüge</title>
+                  <citedRange>28-33</citedRange>
+               </bibl>
+               <bibl xml:id="bib1173-5">
+                  <title>BHO</title>
+                  <citedRange>783</citedRange>
+               </bibl>
+               <bibl xml:id="bib1173-6">
+                  <author>Fiey</author>
+                  <title>"Ma'īn"</title>
+                  <citedRange>437-53.</citedRange>
+               </bibl>
+               <bibl xml:id="bib1173-7">
+                  <author>J.M. Fiey</author>
+                  <title>BSO</title>
+                  <citedRange>I,
+               419-20</citedRange>
                </bibl>
             </person>
          </listPerson>

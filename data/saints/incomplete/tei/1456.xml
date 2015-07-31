@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://syriaca.org/documentation/syriaca-tei-main.rnc" type="application/relax-ng-compact-syntax"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:tei="http://www.tei-c.org/ns/1.0"
      xmlns:syriaca="http://syriaca.org"
      xmlns:saxon="http://saxon.sf.net/"
      xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
@@ -65,7 +66,7 @@
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
                </licence>
             </availability>
-            <date>2015-03-04-05:00</date>
+            <date>2015-07-30-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -121,7 +122,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#dmichelson"
                  n="1.0"
-                 when="2015-03-04-05:00">CREATED: person</change>
+                 when="2015-07-30-04:00">CREATED: person</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -132,7 +133,6 @@
                <persName xml:id="name1456-3" xml:lang="fr-x-fiey" source="#bibl1456-1">SAWRĪŠŌ'</persName>
                <idno type="URI">http://syriaca.org/person/1456</idno>
                <idno type="FIEY">392</idno>
-               <idno type="FIEY">392</idno>
                <sex value="M" source="#bibl1456-1">male</sex>
                <birth when="0520"
                       syriaca-computed-start="0520-01-01"
@@ -142,13 +142,40 @@
                       source="#bibl1456-1">0604</death>
                <note>Fiey provides the following bibliographic citations: <quote source="#bibl1456-1">Biographie : Bedjan, Jab-Alaha, 288-331 ; BHO, 1032. Autres references : Fiey, Assyrie chretienne, III, 56-60. M. Tamcke, Der Katholikos-Patriarch Sabrisho' I und das Monchtums (Frankfurt et Bern, 1988). BSO, II, 916- 17 (J .M. Fiey).</quote>
                </note>
-               <note type="abstract">Sawrisho was a student of the School of Nisibis.  He became a monk of the mountain of Qardu and performed many miracles.  He became a bishop and played a role in the conversion of Al Numan, the Lakhmid king. Under the influence of Kusro II, he became the Catholicos of the Church of the East.  He performed many miracles.     </note>
+               <note type="abstract">Sawrisho was a student of the School of Nisibis. He became a monk of the mountain of Qardu and performed many miracles. He became a Bishop and played a role in the conversion of Al Numan, the Lakhmid king. Under the influence of Khusro II, he became the Catholicos of the Church of the East.  </note>
                <note type="misc" source="#bibl1456-1">What kind of date is this?</note>
-               <bibl xml:id="bib1092-1">
+               <bibl xml:id="bib1456-1">
                   <title level="m" xml:lang="fr">Saints Syriaques</title>
                   <title level="a" xml:lang="fr">SAWRĪŠŌ'</title>
                   <ptr target="http://syriaca.org/bibl/650"/>
                   <citedRange unit="entry">392</citedRange>
+               </bibl>
+               <bibl xml:id="bib1456-3">
+                  <author> Bedjan</author>
+                  <title>Jab-Alaha</title>
+                  <citedRange>288-331</citedRange>
+               </bibl>
+               <bibl xml:id="bib1456-4">
+                  <title>BHO</title>
+                  <citedRange>1032</citedRange>
+               </bibl>
+               <bibl xml:id="bib1456-5">
+                  <author> Fiey</author>
+                  <title>Assyrie chrétienne</title>
+                  <citedRange>III, 56-60.</citedRange>
+               </bibl>
+               <bibl xml:id="bib1456-6">
+                  <author>M. Tamcke</author>
+                  <title>Der Katholikos-Patriarch Sabrisho' I und das Monchtums</title>
+                  <citedRange>(Frankfurt
+               et Bern, 1988).</citedRange>
+               </bibl>
+               <bibl xml:id="bib1456-7"/>
+               <bibl xml:id="bib1456-8">
+                  <author>J .M. Fiey</author>
+                  <title>BSO</title>
+                  <citedRange>II,
+               916-17</citedRange>
                </bibl>
             </person>
          </listPerson>

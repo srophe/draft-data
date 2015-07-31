@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://syriaca.org/documentation/syriaca-tei-main.rnc" type="application/relax-ng-compact-syntax"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:tei="http://www.tei-c.org/ns/1.0"
      xmlns:syriaca="http://syriaca.org"
      xmlns:saxon="http://saxon.sf.net/"
      xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
@@ -65,7 +66,7 @@
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
                </licence>
             </availability>
-            <date>2015-03-04-05:00</date>
+            <date>2015-07-30-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -121,7 +122,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#dmichelson"
                  n="1.0"
-                 when="2015-03-04-05:00">CREATED: person</change>
+                 when="2015-07-30-04:00">CREATED: person</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -132,19 +133,57 @@
                <persName xml:id="name1391-3" xml:lang="fr-x-fiey" source="#bibl1391-1">NAĞRĀN</persName>
                <idno type="URI">http://syriaca.org/person/1391</idno>
                <idno type="FIEY">324</idno>
-               <idno type="FIEY">324</idno>
                <sex value="M, F" source="#bibl1391-1">M, F</sex>
                <death when="0523"
                       syriaca-computed-start="0523-01-01"
                       source="#bibl1391-1">0523</death>
                <note>Fiey provides the following bibliographic citations: <quote source="#bibl1391-1">F. De Blois, dans Arabian Archaeology and Epigraphy 1 (1990), 110-27. Passion arabe : Fromage, Murii§ al-a!Jyiir, 905- 10 ; Suhadii', II, 396-408. Abrege syriaque : BHO, 104 ; P. Devos, dans AB 90 (1972), 337-59. Trad. anglaise des sections sur les femmes : Brock- Harvey, Holy Women, 105-21. BS, II, 401-403 (P. Sfair). J.M. Fiey, AB 105 (1987), 259-71.</quote>
                </note>
-               <note type="abstract">The martyrs of Nagran, led by Arethas, died in Himyar, condemned by Josef, a Jewish governor.  </note>
-               <bibl xml:id="bib1092-1">
+               <note type="abstract">The martyrs of Najran, led by Arethas, died in Ḥimyar, condemned by Josef, a Jewish governor.</note>
+               <bibl xml:id="bib1391-1">
                   <title level="m" xml:lang="fr">Saints Syriaques</title>
                   <title level="a" xml:lang="fr">NAĞRĀN</title>
                   <ptr target="http://syriaca.org/bibl/650"/>
                   <citedRange unit="entry">324</citedRange>
+               </bibl>
+               <bibl xml:id="bib1391-3">
+                  <author>F. De Blois</author>
+                  <title>Arabian Archaeology and Epigraphy</title>
+                  <citedRange>1 (1990), 110-27.</citedRange>
+               </bibl>
+               <bibl xml:id="bib1391-4">
+                  <author>Fromage</author>
+                  <title>Murūǧ al-ahyār</title>
+                  <citedRange>905-10</citedRange>
+               </bibl>
+               <bibl xml:id="bib1391-5">
+                  <title>Shuhadā'</title>
+                  <citedRange>II, 396-408.</citedRange>
+               </bibl>
+               <bibl xml:id="bib1391-6">
+                  <title>BHO</title>
+                  <citedRange>104</citedRange>
+               </bibl>
+               <bibl xml:id="bib1391-7">
+                  <author>P. Devos</author>
+                  <title>AB</title>
+                  <citedRange>90 (1972), 337-59.</citedRange>
+               </bibl>
+               <bibl xml:id="bib1391-8">
+                  <author>Brock-Harvey</author>
+                  <title>Holy Women</title>
+                  <citedRange>105-21.</citedRange>
+               </bibl>
+               <bibl xml:id="bib1391-9">
+                  <author>P. Sfair</author>
+                  <title>BS</title>
+                  <citedRange>II,
+               401-403</citedRange>
+               </bibl>
+               <bibl xml:id="bib1391-10">
+                  <author>J.M. Fiey</author>
+                  <title>AB </title>
+                  <citedRange>105 (1987), 259-71.</citedRange>
                </bibl>
             </person>
          </listPerson>

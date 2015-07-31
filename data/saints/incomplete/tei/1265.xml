@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://syriaca.org/documentation/syriaca-tei-main.rnc" type="application/relax-ng-compact-syntax"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:tei="http://www.tei-c.org/ns/1.0"
      xmlns:syriaca="http://syriaca.org"
      xmlns:saxon="http://saxon.sf.net/"
      xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
@@ -65,7 +66,7 @@
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
                </licence>
             </availability>
-            <date>2015-03-04-05:00</date>
+            <date>2015-07-30-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -121,7 +122,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#dmichelson"
                  n="1.0"
-                 when="2015-03-04-05:00">CREATED: person</change>
+                 when="2015-07-30-04:00">CREATED: person</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -132,7 +133,6 @@
                <persName xml:id="name1265-3" xml:lang="fr-x-fiey" source="#bibl1265-1">HÉLÈNE</persName>
                <idno type="URI">http://syriaca.org/person/1265</idno>
                <idno type="FIEY">188</idno>
-               <idno type="FIEY">188</idno>
                <sex value="F" source="#bibl1265-1">female</sex>
                <birth when="0250"
                       syriaca-computed-start="0250-01-01"
@@ -142,12 +142,44 @@
                       source="#bibl1265-1">0330</death>
                <note>Fiey provides the following bibliographic citations: <quote source="#bibl1265-1">En Occident, Helene est fetee le 18 aout. Vies des saints, VIII, 322-25. Diet. d'archeologie chretienne et de liturgie, VI, col. 2126- 45, avec references. J .M. Fiey, dans Le Museon 88 (1975), 59- 64. BS, IV, 988-95 (E. Croce). J .W. Drijvers, Helena Augusta (Leiden, 1992). M. van Esbroeck, "Helene a Edesse et Ia croix", in G.J. Reinink etA. C. Klugkist, eds., After Bardaisan : Studies .. . in Honour of Professor Han 1. W. Drijvers (Louvain, 1999), 107- 15.</quote>
                </note>
-               <note type="abstract">Helen, the mother of Constantine, is honored in the Syriac church in the hymn to the holy women.  Her role in the discovery of the true cross is described in the Syriac narratives.  Her feast day is with her son, Constantine.  </note>
-               <bibl xml:id="bib1092-1">
+               <note type="abstract">Helen, the mother of Constantine, is honored in the Syriac church in the hymn to the holy women. Her role in the discovery of the true cross was described in the Syriac narratives. Her feast day is with her son, Constantine.</note>
+               <bibl xml:id="bib1265-1">
                   <title level="m" xml:lang="fr">Saints Syriaques</title>
                   <title level="a" xml:lang="fr">HÉLÈNE</title>
                   <ptr target="http://syriaca.org/bibl/650"/>
                   <citedRange unit="entry">188</citedRange>
+               </bibl>
+               <note>In the West, Helena is celebrated on the 18 of August.</note>
+               <bibl xml:id="bib1265-4">
+                  <title>Vies des saints</title>
+                  <citedRange>VIII, 322-25.</citedRange>
+               </bibl>
+               <bibl xml:id="bib1265-5">
+                  <title>Dict. d'archéologie chrétienne et de liturgie</title>
+                  <citedRange>VI, col. 2126-45</citedRange>
+               </bibl>
+               <bibl xml:id="bib1265-6">
+                  <author>J .M. Fiey</author>
+                  <title>Le Museon</title>
+                  <citedRange>88 (1975), 59-64.</citedRange>
+               </bibl>
+               <bibl xml:id="bib1265-7">
+                  <author>E. Croce</author>
+                  <title>BS</title>
+                  <citedRange>IV,
+               988-95</citedRange>
+               </bibl>
+               <bibl xml:id="bib1265-8">
+                  <author>J .W. Drijvers</author>
+                  <title> Helena Augusta</title>
+                  <citedRange>(Leiden, 1992).</citedRange>
+               </bibl>
+               <bibl xml:id="bib1265-9">
+                  <author>M. van Esbroeck</author>
+                  <title>"Helene à Edesse et la croix"</title>
+                  <editor>G.J. Reinink and A. C. Klugkist</editor>
+                  <title>After Bardaisan : Studies .. . in Honour of Professor Han J. W. Drijvers</title>
+                  <citedRange>(Louvain,1999), 107-15.</citedRange>
                </bibl>
             </person>
          </listPerson>

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://syriaca.org/documentation/syriaca-tei-main.rnc" type="application/relax-ng-compact-syntax"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:tei="http://www.tei-c.org/ns/1.0"
      xmlns:syriaca="http://syriaca.org"
      xmlns:saxon="http://saxon.sf.net/"
      xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
@@ -65,7 +66,7 @@
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
                </licence>
             </availability>
-            <date>2015-03-04-05:00</date>
+            <date>2015-07-30-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -121,7 +122,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#dmichelson"
                  n="1.0"
-                 when="2015-03-04-05:00">CREATED: person</change>
+                 when="2015-07-30-04:00">CREATED: person</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -133,24 +134,27 @@
                <persName xml:id="name1340-4" xml:lang="fr-x-fiey" source="#bibl1340-1">LAZARE</persName>
                <idno type="URI">http://syriaca.org/person/1340</idno>
                <idno type="FIEY">274</idno>
-               <idno type="FIEY">274</idno>
                <idno type="BHSYRE">1712</idno>
                <sex value="M" source="#bibl1340-1">male</sex>
+               <death when="420" syriaca-computed-start="0420-01-01" source="#bibl1340-1">420</death>
                <note>Fiey provides the following bibliographic citations: <quote source="#bibl1340-1">N/A</quote>
                </note>
-               <note type="abstract">There are four commemorations under this name in the martyrlogy of Rabban Saliba.  There was a Lazarus confessor, a victim of Barsauma of Nisibis, who was a disciple of Samuel of Qartmin.  He died in 420.  There was also a Lazarus of Tur Abdin, a bishop, also from Tu Abdin, who is attested in a synod of 735.  There is another Lazarus of Habsinas, for whom Simeon of the Olives named a monastery (dead in 734).  Finally there is a Lazarus of Zagug, a famous monastery around Alexandria.  </note>
-               <note type="misc" source="#bibl1340-1">PROBLEM ENTRY </note>
-               <bibl xml:id="bib1092-1">
+               <note type="abstract">Lazarus was a confessor, a victim of Barsauma of Nisibis, who was a disciple of Samuel of Qartmin.</note>
+               <bibl xml:id="bib1340-1">
                   <title level="m" xml:lang="la">Biblioteca Hagiographica Syriaca electronica</title>
                   <ptr target="http://syriaca.org/bibl/649"/>
                   <citedRange unit="entry">1712</citedRange>
                </bibl>
-               <bibl xml:id="bib1092-2">
+               <bibl xml:id="bib1340-2">
                   <title level="m" xml:lang="fr">Saints Syriaques</title>
                   <title level="a" xml:lang="fr">LAZARE</title>
                   <ptr target="http://syriaca.org/bibl/650"/>
                   <citedRange unit="entry">274</citedRange>
                </bibl>
+               <note>N/A</note>
+               <note>N/A</note>
+               <note>N/A</note>
+               <note>N/A</note>
             </person>
          </listPerson>
       </body>

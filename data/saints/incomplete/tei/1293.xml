@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://syriaca.org/documentation/syriaca-tei-main.rnc" type="application/relax-ng-compact-syntax"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:tei="http://www.tei-c.org/ns/1.0"
      xmlns:syriaca="http://syriaca.org"
      xmlns:saxon="http://saxon.sf.net/"
      xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
@@ -65,7 +66,7 @@
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
                </licence>
             </availability>
-            <date>2015-03-04-05:00</date>
+            <date>2015-07-30-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -121,7 +122,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#dmichelson"
                  n="1.0"
-                 when="2015-03-04-05:00">CREATED: person</change>
+                 when="2015-07-30-04:00">CREATED: person</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -132,20 +133,54 @@
                <persName xml:id="name1293-3" xml:lang="fr-x-fiey" source="#bibl1293-1">IṮĀLĀHĀ</persName>
                <idno type="URI">http://syriaca.org/person/1293</idno>
                <idno type="FIEY">218</idno>
-               <idno type="FIEY">218</idno>
                <sex value="M" source="#bibl1293-1">male</sex>
                <death when="0355"
                       syriaca-computed-start="0355-01-01"
                       source="#bibl1293-1">0355</death>
-               <state type="martyr" source="#bibl1293-1">Martyr</state>
+               <state type="martyr" source="#bibl1293-1">
+                  <p>Martyr</p>
+               </state>
                <note>Fiey provides the following bibliographic citations: <quote source="#bibl1293-1">AMS, IV, 133-37 ; BHO, 29. Suhada', I, 308- 11. DHGE, I, col. 1226 (F. Nau), s.v. Aitalaha. P. Peeters, "Passionnaire", 277- 84, ou le recours a Ia suspecte Chronique d'Arbele (v. J .M. Fiey, dans OS 12 [1967], 265- 302) ne fait qu'embrouiller les chases. BS, I, 646 (B . Burchi).</quote>
                </note>
-               <note type="abstract">Italaha was a pagan priest from Arbela who became a Christian.  He was imprisoned with other future Persian martyrs, and his ear was cut off.  He was decapitated at Beth Lapat.  </note>
-               <bibl xml:id="bib1092-1">
+               <note type="abstract">Ithālāhā was a pagan priest from Arbela who became a Christian. He was imprisoned with other future Persian Martyr, and his ear was cut off. He was decapitated at Beth Lapaṭ.</note>
+               <bibl xml:id="bib1293-1">
                   <title level="m" xml:lang="fr">Saints Syriaques</title>
                   <title level="a" xml:lang="fr">IṮĀLĀHĀ</title>
                   <ptr target="http://syriaca.org/bibl/650"/>
                   <citedRange unit="entry">218</citedRange>
+               </bibl>
+               <bibl xml:id="bib1293-3">
+                  <title>AMS</title>
+                  <citedRange>IV, 133-37</citedRange>
+               </bibl>
+               <bibl xml:id="bib1293-4">
+                  <title>BHO</title>
+                  <citedRange>29</citedRange>
+               </bibl>
+               <bibl xml:id="bib1293-5">
+                  <title>Shuhadā'</title>
+                  <citedRange>I, 308-11.</citedRange>
+               </bibl>
+               <bibl xml:id="bib1293-6">
+                  <title>DHGE</title>
+                  <author>F. Nau</author>
+                  <citedRange>I, col. 1226, s.v.
+               Aitalaha</citedRange>
+               </bibl>
+               <bibl xml:id="bib1293-7">
+                  <author>P. Peeters</author>
+                  <title>"Passionnaire"</title>
+                  <citedRange>277-84</citedRange>
+               </bibl>
+               <bibl xml:id="bib1293-8">
+                  <author>J .M. Fiey</author>
+                  <title> OS</title>
+                  <citedRange>12 [1967], 265-302</citedRange>
+               </bibl>
+               <bibl xml:id="bib1293-9">
+                  <author>B . Burchi</author>
+                  <title>BS</title>
+                  <citedRange>I, 646</citedRange>
                </bibl>
             </person>
          </listPerson>

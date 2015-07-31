@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://syriaca.org/documentation/syriaca-tei-main.rnc" type="application/relax-ng-compact-syntax"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:tei="http://www.tei-c.org/ns/1.0"
      xmlns:syriaca="http://syriaca.org"
      xmlns:saxon="http://saxon.sf.net/"
      xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
@@ -65,7 +66,7 @@
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
                </licence>
             </availability>
-            <date>2015-03-04-05:00</date>
+            <date>2015-07-30-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -121,7 +122,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#dmichelson"
                  n="1.0"
-                 when="2015-03-04-05:00">CREATED: person</change>
+                 when="2015-07-30-04:00">CREATED: person</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -132,7 +133,6 @@
                <persName xml:id="name1294-3" xml:lang="fr-x-fiey" source="#bibl1294-1">JACQUES (YA'QŪB)</persName>
                <idno type="URI">http://syriaca.org/person/1294</idno>
                <idno type="FIEY">219</idno>
-               <idno type="FIEY">219</idno>
                <sex value="M" source="#bibl1294-1">male</sex>
                <birth when="0627"
                       syriaca-computed-start="0627-01-01"
@@ -142,12 +142,32 @@
                       source="#bibl1294-1">0717</death>
                <note>Fiey provides the following bibliographic citations: <quote source="#bibl1294-1">Liber castitatis, n° 140. Thomas de Marga, Governors, II, 119-21. Fiey, Assyrie chretienne, II, 711- 16. BSO, I, 1023-24 (J. Rabbi).</quote>
                </note>
-               <note type="abstract">Jacob was a monk, visionary, and chanter from Beth Garmai.  He took over the leadership of the monastery that ĪŠŌ'YAW had founded, and that monastery came to be named after Jacob.  </note>
-               <bibl xml:id="bib1092-1">
+               <note type="abstract">Jacob was a monk, visionary, and chanter from Beth Garmai. He took over the leadership of the monastery that Īšōyaw had founded, and that monastery came to be named after Jacob.</note>
+               <bibl xml:id="bib1294-1">
                   <title level="m" xml:lang="fr">Saints Syriaques</title>
                   <title level="a" xml:lang="fr">JACQUES (YA'QŪB)</title>
                   <ptr target="http://syriaca.org/bibl/650"/>
                   <citedRange unit="entry">219</citedRange>
+               </bibl>
+               <bibl xml:id="bib1294-3">
+                  <title>Liber castitatis</title>
+                  <citedRange>n° 140.</citedRange>
+               </bibl>
+               <bibl xml:id="bib1294-4">
+                  <author>Thomas de Marga</author>
+                  <title>Governors</title>
+                  <citedRange>II, 119-21.</citedRange>
+               </bibl>
+               <bibl xml:id="bib1294-5">
+                  <author>Fiey</author>
+                  <title>Assyrie chrétienne</title>
+                  <citedRange>II, 711-16.</citedRange>
+               </bibl>
+               <bibl xml:id="bib1294-6">
+                  <author>J. Habbi</author>
+                  <title>BSO</title>
+                  <citedRange>I,
+               1023-24</citedRange>
                </bibl>
             </person>
          </listPerson>

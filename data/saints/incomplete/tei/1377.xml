@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://syriaca.org/documentation/syriaca-tei-main.rnc" type="application/relax-ng-compact-syntax"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:tei="http://www.tei-c.org/ns/1.0"
      xmlns:syriaca="http://syriaca.org"
      xmlns:saxon="http://saxon.sf.net/"
      xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
@@ -65,7 +66,7 @@
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
                </licence>
             </availability>
-            <date>2015-03-04-05:00</date>
+            <date>2015-07-30-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -121,7 +122,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#dmichelson"
                  n="1.0"
-                 when="2015-03-04-05:00">CREATED: person</change>
+                 when="2015-07-30-04:00">CREATED: person</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -132,17 +133,27 @@
                <persName xml:id="name1377-3" xml:lang="fr-x-fiey" source="#bibl1377-1">MICHEL DE TAR'ĪL</persName>
                <idno type="URI">http://syriaca.org/person/1377</idno>
                <idno type="FIEY">311</idno>
-               <idno type="FIEY">311</idno>
                <sex value="M" source="#bibl1377-1">male</sex>
                <floruit source="#bibl1377-1" notAfter="0650" syriaca-computed-end="0650">0650</floruit>
                <note>Fiey provides the following bibliographic citations: <quote source="#bibl1377-1">Fiey, Assyrie chretienne, I, 141- 42, 176- 80. BSO, II, 520-21 (J.M. Fiey) .</quote>
                </note>
                <note type="abstract">Michael of Taril was a disciple of Sawrisho, who founded Bath Qoqa, southwest of Arbela.</note>
-               <bibl xml:id="bib1092-1">
+               <bibl xml:id="bib1377-1">
                   <title level="m" xml:lang="fr">Saints Syriaques</title>
                   <title level="a" xml:lang="fr">MICHEL DE TAR'ĪL</title>
                   <ptr target="http://syriaca.org/bibl/650"/>
                   <citedRange unit="entry">311</citedRange>
+               </bibl>
+               <bibl xml:id="bib1377-3">
+                  <author>Fiey</author>
+                  <title>Assyrie chrétienne</title>
+                  <citedRange>I, 141-42, 176-80.</citedRange>
+               </bibl>
+               <bibl xml:id="bib1377-4">
+                  <author>J.M. Fiey</author>
+                  <title>BSO</title>
+                  <citedRange>II,
+               520-21</citedRange>
                </bibl>
             </person>
          </listPerson>

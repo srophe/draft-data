@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://syriaca.org/documentation/syriaca-tei-main.rnc" type="application/relax-ng-compact-syntax"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:tei="http://www.tei-c.org/ns/1.0"
      xmlns:syriaca="http://syriaca.org"
      xmlns:saxon="http://saxon.sf.net/"
      xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
@@ -65,7 +66,7 @@
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
                </licence>
             </availability>
-            <date>2015-03-04-05:00</date>
+            <date>2015-07-30-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -121,7 +122,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#dmichelson"
                  n="1.0"
-                 when="2015-03-04-05:00">CREATED: person</change>
+                 when="2015-07-30-04:00">CREATED: person</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -132,19 +133,48 @@
                <persName xml:id="name1392-3" xml:lang="fr-x-fiey" source="#bibl1392-1">NARSAÏ</persName>
                <idno type="URI">http://syriaca.org/person/1392</idno>
                <idno type="FIEY">326</idno>
-               <idno type="FIEY">326</idno>
                <sex value="M" source="#bibl1392-1">male</sex>
                <death when="0344"
                       syriaca-computed-start="0344-01-01"
                       source="#bibl1392-1">0344</death>
                <note>Fiey provides the following bibliographic citations: <quote source="#bibl1392-1">AMS, II, 284-86 ; BHO, 806. ASMO, 97-99; Lagrange, 80-83; Leclercq, III, 181- 83. Suhadii', I, 275- 77. BS, IX, 732- 40 (J.-M. Sauget).</quote>
                </note>
-               <note type="abstract">Narsai, bishop of Sharqart, and Joseph his disciple, were martyrs of Beth Garmai.   </note>
-               <bibl xml:id="bib1092-1">
+               <note type="abstract">Narsai, Bishop of Sharqart, and Joseph his disciple, were martyrs of Beth Garmai.</note>
+               <bibl xml:id="bib1392-1">
                   <title level="m" xml:lang="fr">Saints Syriaques</title>
                   <title level="a" xml:lang="fr">NARSAÏ</title>
                   <ptr target="http://syriaca.org/bibl/650"/>
                   <citedRange unit="entry">326</citedRange>
+               </bibl>
+               <bibl xml:id="bib1392-3">
+                  <title>AMS</title>
+                  <citedRange>II, 284-86</citedRange>
+               </bibl>
+               <bibl xml:id="bib1392-4">
+                  <title>BHO</title>
+                  <citedRange>806</citedRange>
+               </bibl>
+               <bibl xml:id="bib1392-5">
+                  <title>ASMO</title>
+                  <citedRange>97-99</citedRange>
+               </bibl>
+               <bibl xml:id="bib1392-6">
+                  <author>Lagrange</author>
+                  <citedRange>80-83</citedRange>
+               </bibl>
+               <bibl xml:id="bib1392-7">
+                  <author>Leclercq</author>
+                  <citedRange>III, 181-83.</citedRange>
+               </bibl>
+               <bibl xml:id="bib1392-8">
+                  <title>Shuhadā'</title>
+                  <citedRange>I, 275-77.</citedRange>
+               </bibl>
+               <bibl xml:id="bib1392-9">
+                  <author>J.-M. Sauget</author>
+                  <title>BS</title>
+                  <citedRange>IX,
+               732-40</citedRange>
                </bibl>
             </person>
          </listPerson>

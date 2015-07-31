@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://syriaca.org/documentation/syriaca-tei-main.rnc" type="application/relax-ng-compact-syntax"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:tei="http://www.tei-c.org/ns/1.0"
      xmlns:syriaca="http://syriaca.org"
      xmlns:saxon="http://saxon.sf.net/"
      xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
@@ -65,7 +66,7 @@
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
                </licence>
             </availability>
-            <date>2015-03-04-05:00</date>
+            <date>2015-07-30-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -121,7 +122,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#dmichelson"
                  n="1.0"
-                 when="2015-03-04-05:00">CREATED: person</change>
+                 when="2015-07-30-04:00">CREATED: person</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -132,19 +133,29 @@
                <persName xml:id="name1114-3" xml:lang="fr-x-fiey" source="#bibl1114-1">ABŜELAMA</persName>
                <idno type="URI">http://syriaca.org/person/1114</idno>
                <idno type="FIEY">26</idno>
-               <idno type="FIEY">26</idno>
                <sex value="M" source="#bibl1114-1">male</sex>
                <note>Fiey provides the following bibliographic citations: <quote source="#bibl1114-1">Peeters, Martyrologe, 165. BS, I, 130 (G. Lucchesi).</quote>
                </note>
-               <note type="abstract">According to the Teaching of Addai, Abshelama was an early bishop of Edessa and a copyist for the apostle Addai. </note>
+               <note type="abstract">According to the Teaching of Addai, Abshelama was an early Bishop of Edessa and a copyist for the apostle Addai.</note>
                <event type="veneration" source="#bibl1114-1">
                   <desc>The saint is venerated on 19 Oct..</desc>
                </event>
-               <bibl xml:id="bib1092-1">
+               <bibl xml:id="bib1114-1">
                   <title level="m" xml:lang="fr">Saints Syriaques</title>
                   <title level="a" xml:lang="fr">ABŜELAMA</title>
                   <ptr target="http://syriaca.org/bibl/650"/>
                   <citedRange unit="entry">26</citedRange>
+               </bibl>
+               <bibl xml:id="bib1114-3">
+                  <author>Peeters</author>
+                  <title>Martyrologe</title>
+                  <citedRange>165</citedRange>
+               </bibl>
+               <bibl xml:id="bib1114-4">
+                  <author>G. Lucchesi</author>
+                  <title>BS</title>
+                  <citedRange>I,
+               130</citedRange>
                </bibl>
             </person>
          </listPerson>

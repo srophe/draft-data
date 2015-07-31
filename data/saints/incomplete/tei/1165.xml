@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://syriaca.org/documentation/syriaca-tei-main.rnc" type="application/relax-ng-compact-syntax"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:tei="http://www.tei-c.org/ns/1.0"
      xmlns:syriaca="http://syriaca.org"
      xmlns:saxon="http://saxon.sf.net/"
      xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
@@ -65,7 +66,7 @@
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
                </licence>
             </availability>
-            <date>2015-03-04-05:00</date>
+            <date>2015-07-30-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -121,7 +122,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#dmichelson"
                  n="1.0"
-                 when="2015-03-04-05:00">CREATED: person</change>
+                 when="2015-07-30-04:00">CREATED: person</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -132,17 +133,47 @@
                <persName xml:id="name1165-3" xml:lang="fr-x-fiey" source="#bibl1165-1">BAR ŜEWYA</persName>
                <idno type="URI">http://syriaca.org/person/1165</idno>
                <idno type="FIEY">81</idno>
-               <idno type="FIEY">81</idno>
                <sex value="M" source="#bibl1165-1">male</sex>
                <floruit source="#bibl1165-1" when="0424" syriaca-computed-start="0424">0424</floruit>
                <note>Fiey provides the following bibliographic citations: <quote source="#bibl1165-1">Chronique de Seert, I, 143-46. Marl, 27 arabe.</quote>
                </note>
-               <note type="abstract">BAR ŜEWYA or Bar Shabba was a solitary and first bishop of Merv; he was deported from Byzantine territory to Ctesiphon.  The sister or wife of Shapor, Shirawan, became Christian and built a church there which Bar Shabba consecrated. </note>
-               <bibl xml:id="bib1092-1">
+               <note type="abstract">Bar Ŝewya or Bar Shabba was a solitary and first Bishop of Merv; he was deported from Byzantine territory to Ctesiphon. The sister or wife of Shapor, Shirawan, became Christian and built a church there which Bar Shabba consecrated.</note>
+               <bibl xml:id="bib1165-1">
                   <title level="m" xml:lang="fr">Saints Syriaques</title>
                   <title level="a" xml:lang="fr">BAR ŜEWYA</title>
                   <ptr target="http://syriaca.org/bibl/650"/>
                   <citedRange unit="entry">81</citedRange>
+               </bibl>
+               <bibl xml:id="bib1165-3">
+                  <title>Chronicle of Seert</title>
+                  <citedRange>I, 143-46.</citedRange>
+               </bibl>
+               <note>Mārī, 27 arabe.</note>
+               <bibl xml:id="bib1165-5">
+                  <author>J .M. Fiey</author>
+                  <title> Le Museon</title>
+                  <citedRange>86 (1973), 75-79.</citedRange>
+               </bibl>
+               <bibl xml:id="bib1165-6">
+                  <author>J.-M. Sauget</author>
+                  <title>BS</title>
+                  <citedRange>II,
+               836-37</citedRange>
+               </bibl>
+               <bibl xml:id="bib1165-7">
+                  <author>N. Sims-Williams</author>
+                  <title>"Baršabba"</title>
+                  <title>Encyclopaedia Iranica</title>
+                  <citedRange> III (1989), 823.</citedRange>
+               </bibl>
+               <bibl xml:id="bib1165-8">
+                  <author>S.P. Brock</author>
+                  <title>"Bar Shabba/Mār Shabba, First Bishop of Merv"</title>
+                  <editor> M. Tamcke et
+               al.,</editor>
+                  <title>Syrisches Christentum Weltweit. Festschrift W. Hage</title>
+                  <citedRange>(Munster, 1995),
+               190-201.</citedRange>
                </bibl>
             </person>
          </listPerson>

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://syriaca.org/documentation/syriaca-tei-main.rnc" type="application/relax-ng-compact-syntax"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:tei="http://www.tei-c.org/ns/1.0"
      xmlns:syriaca="http://syriaca.org"
      xmlns:saxon="http://saxon.sf.net/"
      xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
@@ -9,7 +10,8 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title level="a" xml:lang="en">Person 170</title>
+            <title level="a" xml:lang="en">Person 1450 — <foreign xml:lang="syr">ܫܡܥܘܢ</foreign>
+            </title>
             <title level="m">Qadishe: A Guide to the Syriac Saints</title>
             <sponsor>Syriaca.org: The Syriac Reference Portal</sponsor>
             <funder>The International Balzan Prize Foundation</funder>
@@ -59,13 +61,13 @@
          </editionStmt>
          <publicationStmt>
             <authority>Syriaca.org: The Syriac Reference Portal</authority>
-            <idno type="URI">http://syriaca.org/person/170/tei</idno>
+            <idno type="URI">http://syriaca.org/person/1450/tei</idno>
             <availability>
                <licence target="http://creativecommons.org/licenses/by/3.0/">
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
                </licence>
             </availability>
-            <date>2015-03-04-05:00</date>
+            <date>2015-07-30-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -121,28 +123,113 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#dmichelson"
                  n="1.0"
-                 when="2015-03-04-05:00">CREATED: person</change>
+                 when="2015-07-30-04:00">CREATED: person</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPerson>
-            <person xml:id="saint-170" ana="#syriaca-saint">
-               <persName xml:id="name170-2" xml:lang="en">George</persName>
-               <persName xml:id="name170-3" xml:lang="fr-x-fiey" source="#bibl170-1">GEORGE, PATRIARCHE D'ANTIOCHE</persName>
-               <idno type="URI">http://syriaca.org/person/170</idno>
-               <idno type="FIEY">170</idno>
-               <idno type="FIEY">170</idno>
-               <sex value="M" source="#bibl170-1">male</sex>
-               <death when="0790" syriaca-computed-start="0790-01-01" source="#bibl170-1">0790</death>
-               <note>Fiey provides the following bibliographic citations: <quote source="#bibl170-1">Barsaum, Lu'lu'2 , 401-403. BS, VI, 533-34 (R. Janin) .</quote>
+            <person xml:id="saint-1450" ana="#syriaca-saint">
+               <persName xml:id="name1450-1"
+                         xml:lang="syr"
+                         syriaca-tags="#syriaca-headword"
+                         source="#bibl1450-2">ܫܡܥܘܢ</persName>
+               <persName xml:id="name1450-3" xml:lang="en">Simon</persName>
+               <persName xml:id="name1450-4" xml:lang="en">Shapor and Isaac, Abraham, Ma'ana, Simeon</persName>
+               <persName xml:id="name1450-5" xml:lang="fr-x-zanetti" source="#bibl1450-2">Šemʿōn</persName>
+               <persName xml:id="name1450-6" xml:lang="fr" source="#bibl1450-2">Simon</persName>
+               <persName xml:id="name1450-7" xml:lang="fr-x-fiey" source="#bibl1450-1">ŠAPOR, ISAAC, MA'NA, ABRAHAM, et SIMEON</persName>
+               <idno type="URI">http://syriaca.org/person/1450</idno>
+               <idno type="FIEY">386</idno>
+               <idno type="BHSYRE">40</idno>
+               <sex value="M" source="#bibl1450-1">male</sex>
+               <floruit source="#bibl1450-1" notAfter="0379" syriaca-computed-end="0379">0379 </floruit>
+               <note>Fiey provides the following bibliographic citations: <quote source="#bibl1450-1">AMS, II, 51 - 56 ; BHO, 1042. Assemani, ASMO, 226- 29 ; Lagrange, 31- 34 ; Leclercq, III, 142-44. Suhada ', I, 189- 92. Fiey, "Rehabilitation" , 208- 209. BS, I, 125 (T.F. Bossuyt).</quote>
                </note>
-               <note type="abstract">George was a monk of Qenneshrin.  He was elected patriarch in 758.  He convoked the synod of Kafar Nubu.  This synod discussed the commerce of relics.  </note>
-               <bibl xml:id="bib1092-1">
+               <note type="abstract">Shapur (Šapor) was a Bishop of Niqator who was martyred under Shapur II with Isaac, Maʿna, and Abraham.    </note>
+               <note type="disambiguation">with Shahpour et al.</note>
+               <bibl xml:id="bib1450-1">
+                  <title level="m" xml:lang="la">Biblioteca Hagiographica Syriaca electronica</title>
+                  <ptr target="http://syriaca.org/bibl/649"/>
+                  <citedRange unit="entry">40</citedRange>
+               </bibl>
+               <bibl xml:id="bib1450-2">
                   <title level="m" xml:lang="fr">Saints Syriaques</title>
-                  <title level="a" xml:lang="fr">GEORGE, PATRIARCHE D'ANTIOCHE</title>
+                  <title level="a" xml:lang="fr">ŠAPOR, ISAAC, MA'NA, ABRAHAM, et SIMEON</title>
                   <ptr target="http://syriaca.org/bibl/650"/>
-                  <citedRange unit="entry">170</citedRange>
+                  <citedRange unit="entry">386</citedRange>
+               </bibl>
+               <bibl xml:id="bib1450-3">
+                  <title>AMS</title>
+                  <citedRange>II, 51-56</citedRange>
+               </bibl>
+               <bibl xml:id="bib1450-4">
+                  <title>BHO</title>
+                  <citedRange>1042</citedRange>
+               </bibl>
+               <bibl xml:id="bib1450-5">
+                  <author>Assemani</author>
+                  <title>ASMO</title>
+                  <citedRange>226-29</citedRange>
+               </bibl>
+               <bibl xml:id="bib1450-6">
+                  <author>Lagrange</author>
+                  <citedRange>31-34</citedRange>
+               </bibl>
+               <bibl xml:id="bib1450-7">
+                  <author>Leclercq</author>
+                  <citedRange>III, 142-44.</citedRange>
+               </bibl>
+               <bibl xml:id="bib1450-8">
+                  <title>Shuhadā'</title>
+                  <citedRange>I, 189-92.</citedRange>
+               </bibl>
+               <bibl xml:id="bib1450-9">
+                  <author>Fiey</author>
+                  <title>"Rehabilitation"</title>
+                  <citedRange>208-209.</citedRange>
+               </bibl>
+               <bibl xml:id="bib1450-10">
+                  <author>T.F. Bossuyt</author>
+                  <title>BS</title>
+                  <citedRange>I,
+               125</citedRange>
+               </bibl>
+               <bibl xml:id="bib1450-3">
+                  <title>AMS</title>
+                  <citedRange>II, 51-56</citedRange>
+               </bibl>
+               <bibl xml:id="bib1450-4">
+                  <title>BHO</title>
+                  <citedRange>1042</citedRange>
+               </bibl>
+               <bibl xml:id="bib1450-5">
+                  <author>Assemani</author>
+                  <title>ASMO</title>
+                  <citedRange>226-29</citedRange>
+               </bibl>
+               <bibl xml:id="bib1450-6">
+                  <author>Lagrange</author>
+                  <citedRange>31-34</citedRange>
+               </bibl>
+               <bibl xml:id="bib1450-7">
+                  <author>Leclercq</author>
+                  <citedRange>III, 142-44.</citedRange>
+               </bibl>
+               <bibl xml:id="bib1450-8">
+                  <author>Shuhadā'</author>
+                  <citedRange>I, 189-92.</citedRange>
+               </bibl>
+               <bibl xml:id="bib1450-9">
+                  <author>Fiey</author>
+                  <title>"Rehabilitation"</title>
+                  <citedRange> 208-209.</citedRange>
+               </bibl>
+               <bibl xml:id="bib1450-10">
+                  <author>T.F. Bossuyt</author>
+                  <title>BS</title>
+                  <citedRange>I,
+               125</citedRange>
                </bibl>
             </person>
          </listPerson>

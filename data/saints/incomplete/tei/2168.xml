@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://syriaca.org/documentation/syriaca-tei-main.rnc" type="application/relax-ng-compact-syntax"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:tei="http://www.tei-c.org/ns/1.0"
      xmlns:syriaca="http://syriaca.org"
      xmlns:saxon="http://saxon.sf.net/"
      xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
@@ -9,7 +10,7 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title level="a" xml:lang="en">Person 57</title>
+            <title level="a" xml:lang="en">Person 2168</title>
             <title level="m">Qadishe: A Guide to the Syriac Saints</title>
             <sponsor>Syriaca.org: The Syriac Reference Portal</sponsor>
             <funder>The International Balzan Prize Foundation</funder>
@@ -59,13 +60,13 @@
          </editionStmt>
          <publicationStmt>
             <authority>Syriaca.org: The Syriac Reference Portal</authority>
-            <idno type="URI">http://syriaca.org/person/57/tei</idno>
+            <idno type="URI">http://syriaca.org/person/2168/tei</idno>
             <availability>
                <licence target="http://creativecommons.org/licenses/by/3.0/">
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
                </licence>
             </availability>
-            <date>2015-03-04-05:00</date>
+            <date>2015-07-30-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -121,28 +122,21 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#dmichelson"
                  n="1.0"
-                 when="2015-03-04-05:00">CREATED: person</change>
+                 when="2015-07-30-04:00">CREATED: person</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPerson>
-            <person xml:id="saint-57" ana="#syriaca-saint">
-               <persName xml:id="name57-2" xml:lang="en">Thomas</persName>
-               <persName xml:id="name57-3" xml:lang="fr-x-fiey" source="#bibl57-1">THOMAS</persName>
-               <idno type="URI">http://syriaca.org/person/57</idno>
-               <idno type="FIEY">446</idno>
-               <idno type="FIEY">446</idno>
-               <sex value="M" source="#bibl57-1">male</sex>
-               <floruit source="#bibl57-1" when="0519" syriaca-computed-start="0519">0519</floruit>
-               <note>Fiey provides the following bibliographic citations: <quote source="#bibl57-1">Honigmann, Eveques et eveches, 73- 74, avec references. BSO, II, 1306 (J .M. Fiey).</quote>
-               </note>
-               <note type="abstract">Thomas was a bishop of Germanicia.  He was in correspondence with Severus of Antioch and was an Anti-Chalcedonian bishop who was was banished to Egypt. </note>
-               <bibl xml:id="bib1092-1">
-                  <title level="m" xml:lang="fr">Saints Syriaques</title>
-                  <title level="a" xml:lang="fr">THOMAS</title>
-                  <ptr target="http://syriaca.org/bibl/650"/>
-                  <citedRange unit="entry">446</citedRange>
+            <person xml:id="saint-2168" ana="#syriaca-saint">
+               <persName xml:id="name2168-2" xml:lang="en">All the just</persName>
+               <persName xml:id="name2168-3" xml:lang="fr" source="#bibl2168-1">Justes d’autrefois (tous les)</persName>
+               <idno type="URI">http://syriaca.org/person/2168</idno>
+               <idno type="BHSYRE">657</idno>
+               <bibl xml:id="bib2168-1">
+                  <title level="m" xml:lang="la">Biblioteca Hagiographica Syriaca electronica</title>
+                  <ptr target="http://syriaca.org/bibl/649"/>
+                  <citedRange unit="entry">657</citedRange>
                </bibl>
             </person>
          </listPerson>

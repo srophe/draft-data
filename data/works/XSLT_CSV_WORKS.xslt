@@ -343,6 +343,13 @@
                                         <xsl:value-of select="normalize-space(File)"/>
                                     </citedRange>
                                 </bibl>
+                                <xsl:for-each select="De_qua">
+                                    <bibl>
+                                        <xsl:attribute name="xml:id"
+                                            select="concat('bibl', $record-id, position() + 1)"/>
+                                        <xsl:value-of select="."/>
+                                    </bibl>
+                                </xsl:for-each>
                             </bibl>
                         </body>
                     </text>

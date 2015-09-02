@@ -276,8 +276,8 @@
                                         </bibl>
                                     </note>
                                 </xsl:if>
-				<xsl:for-each select="lang">
-                                    <xsl:for-each select="following-sibling::Ref.">
+                                <xsl:for-each select="Lang">
+                                    <xsl:for-each-group select="following-sibling::Ref." group-adjacent="boolean(self::Ref.)">
                                         <xsl:if test=". != ''">
                                             <xsl:choose>
                                                 <xsl:when test="contains(.,'; ')">
@@ -295,7 +295,7 @@
                                                 </xsl:otherwise>
                                             </xsl:choose>
                                         </xsl:if>
-                                    </xsl:for-each>
+                                    </xsl:for-each-group>
                                 </xsl:for-each>
 
                                 <!-- Adds MSS information -->

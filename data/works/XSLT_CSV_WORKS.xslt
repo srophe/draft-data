@@ -276,12 +276,17 @@
                                         </bibl>
                                     </note>
                                 </xsl:if>
-                                <xsl:for-each select="lang">
+				<xsl:for-each select="lang">
                                     <xsl:for-each select="following-sibling::Ref.">
                                         <xsl:if test=". != ''">
                                             <xsl:choose>
                                                 <xsl:when test="contains(.,'; ')">
-                                                    
+                                                    <xsl:variable name="lang" select="preceding-sibling::lang[1]"/>
+                                                    <xsl:for-each select="tokenize(.,'; ')">
+                                                        <note xml:lang="{$lang}" type="ancientTranslation" source="#bib221-1">
+                                                            <bibl><xsl:value-of select="normalize-space(.)"/></bibl>
+                                                        </note>
+                                                    </xsl:for-each>
                                                 </xsl:when>
                                                 <xsl:otherwise>
                                                     <note xml:lang="{preceding-sibling::lang[1]}" type="ancientTranslation" source="#bib221-1">

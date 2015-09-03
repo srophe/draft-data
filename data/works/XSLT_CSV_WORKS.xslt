@@ -18,7 +18,7 @@
 
     <xsl:function name="syriaca:ancientlangs" as="xs:string">
         <!-- The spreadsheet presents ancient langs as prose, this converts the prose language names to IDO codes-->
-        <xsl:param name="AncientLang" as="xs:string"/>
+        <xsl:param name="AncientLang" as="xs:string*"/>
         <xsl:choose>
             <xsl:when test="$Lang='Latin'">
                 <xsl:text>la</xsl:text>
@@ -305,7 +305,7 @@
                                     </xsl:if>
                                 </xsl:for-each>
                                 <!-- Add Ancient Versions -->
-                                <xsl:for-each select="Lang">
+                                <xsl:for-each select="Lang[. != '']">
                                     <xsl:for-each-group select="following-sibling::Ref." group-adjacent="boolean(self::Ref.)">
                                         <xsl:if test=". != ''">
                                             <xsl:choose>

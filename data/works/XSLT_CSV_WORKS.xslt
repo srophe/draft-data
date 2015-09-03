@@ -311,13 +311,13 @@
                                                 <xsl:when test="contains(.,'; ')">
                                                     <xsl:variable name="Lang" select="preceding-sibling::Lang[1]"/>
                                                     <xsl:for-each select="tokenize(.,'; ')">
-                                                        <note xml:lang="{$Lang}" type="ancientVersion" source="#bib221-1">
+                                                        <note xml:lang="{syriaca:ancientlangs($Lang)}" type="ancientVersion" source="#bib221-1">
                                                             <bibl><xsl:value-of select="normalize-space(.)"/></bibl>
                                                         </note>
                                                     </xsl:for-each>
                                                 </xsl:when>
                                                 <xsl:otherwise>
-                                                    <note xml:lang="{preceding-sibling::Lang[1]}" type="ancientVersion" source="#bib221-1">
+                                                    <note xml:lang="{syriaca:ancientlangs(preceding-sibling::Lang[1])}" type="ancientVersion" source="#bib221-1">
                                                         <bibl><xsl:value-of select="normalize-space(.)"/></bibl>
                                                     </note>
                                                 </xsl:otherwise>

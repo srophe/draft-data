@@ -20,12 +20,13 @@
         <!-- The spreadsheet presents ancient langs as prose, this converts the prose language names to IDO codes-->
         <xsl:param name="AncientLang" as="xs:string"/>
         <xsl:choose>
-            <xsl:when test="$AncientLang='Latin'">
+            <xsl:when test="$Lang='Latin'">
                 <xsl:text>la</xsl:text>
             </xsl:when>
-            <xsl:when test="$AncientLang='Greek'">
+            <xsl:when test="$Lang='Greek'">
                 <xsl:text>grc</xsl:text>
             </xsl:when>
+            <xsl:otherwise/>
         </xsl:choose>
     </xsl:function>
     

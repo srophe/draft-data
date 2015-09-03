@@ -6,10 +6,10 @@
      xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
      xmlns:functx="http://www.functx.com"
      xml:lang="en">
-   <teiHeader type="text">
+   <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title level="a" xml:lang="en">On Peter the apostle — <foreign xml:lang="syr">ܫܡܥܘܢ ܟܐܦܐ</foreign>
+            <title level="a" xml:lang="en">On Mary of Egypt — <foreign xml:lang="syr">ܡܐܪܝܐ ܐܓܝܦܛܝܬܐ</foreign>
             </title>
             <title level="m">Qadishe: A Guide to the Lives of the Syriac Saints</title>
             <sponsor>Syriaca.org: The Syriac Reference Portal</sponsor>
@@ -33,44 +33,30 @@
             <respStmt>
                <resp>Editing, proofreading, data entry and revision by</resp>
                <name type="person"
-                     ref="http://syriaca.org/documentation/editors.xml#jnmsaintlaurent"
-                     full="yes"
-                     instant="false">Jeanne-Nicole Mellon Saint-Laurent</name>
+                     ref="http://syriaca.org/documentation/editors.xml#jnmsaintlaurent">Jeanne-Nicole Mellon Saint-Laurent</name>
             </respStmt>
             <respStmt>
                <resp>Data architecture and encoding by</resp>
                <name type="person"
-                     ref="http://syriaca.org/documentation/editors.xml#dmichelson"
-                     full="yes"
-                     instant="false">David A.
+                     ref="http://syriaca.org/documentation/editors.xml#dmichelson">David A.
                             Michelson</name>
             </respStmt>
             <respStmt>
                <resp>Editing, Syriac data conversion, data entry, and reconciling by</resp>
-               <name ref="http://syriaca.org/editors.xml#akane"
-                     full="yes"
-                     instant="false">Adam P. Kane</name>
+               <name ref="http://syriaca.org/editors.xml#akane">Adam P. Kane</name>
             </respStmt>
             <respStmt>
                <resp>Editing and Syriac data proofreading by</resp>
-               <name ref="http://syriaca.org/editors.xml#abarschabo"
-                     full="yes"
-                     instant="false">Aram Bar Schabo</name>
+               <name ref="http://syriaca.org/editors.xml#abarschabo">Aram Bar Schabo</name>
             </respStmt>
             <respStmt>
                <resp>Entries adapted from the work of</resp>
-               <name type="person"
-                     ref="http://syriaca.org/editors.xml#uzanetti"
-                     full="yes"
-                     instant="false">Ugo
+               <name type="person" ref="http://syriaca.org/editors.xml#uzanetti">Ugo
                             Zanetti</name>
             </respStmt>
             <respStmt>
                <resp>Entries adapted from the work of</resp>
-               <name type="person"
-                     ref="http://syriaca.org/editors.xml#cdetienne"
-                     full="yes"
-                     instant="false">Claude
+               <name type="person" ref="http://syriaca.org/editors.xml#cdetienne">Claude
                             Detienne</name>
             </respStmt>
          </titleStmt>
@@ -80,33 +66,33 @@
          <publicationStmt>
             <authority>Syriaca.org: The Syriac Reference Portal</authority>
             <idno type="URI">http://syriaca.org/work/221/tei</idno>
-            <availability default="false" status="unknown">
+            <availability>
                <licence target="http://creativecommons.org/licenses/by/3.0/">
-                  <p part="N">Distributed under a Creative Commons Attribution 3.0 Unported
+                  <p>Distributed under a Creative Commons Attribution 3.0 Unported
                                 License.</p>
-                  <p part="N">This entry incorporates copyrighted material from the following
-                                work(s): <listBibl default="false">
-                        <bibl default="false" status="draft">
+                  <p>This entry incorporates copyrighted material from the following
+                                work(s): <listBibl>
+                        <bibl>
                            <ptr target="http://syriaca.org/bibl/649"/>
                         </bibl>
                      </listBibl>
-                     <note anchored="true">used under a Creative Commons Attribution license <ref target="http://creativecommons.org/licenses/by/3.0/"/>
+                     <note>used under a Creative Commons Attribution license <ref target="http://creativecommons.org/licenses/by/3.0/"/>
                      </note>
                   </p>
                </licence>
             </availability>
-            <date instant="false">2015-09-03-05:00</date>
+            <date>2015-09-03-04:00</date>
          </publicationStmt>
-         <sourceDesc default="false">
-            <p part="N">Born digital.</p>
+         <sourceDesc>
+            <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <editorialDecl default="false">
-            <p part="N">This record created following the Syriaca.org guidelines. Documentation
+         <editorialDecl>
+            <p>This record created following the Syriaca.org guidelines. Documentation
                         available at: <ref target="http://syriaca.org/documentation">http://syriaca.org/documentation</ref>.</p>
-            <interpretation default="false">
-               <p part="N">Approximate dates described in terms of centuries or partial centuries
+            <interpretation>
+               <p>Approximate dates described in terms of centuries or partial centuries
                             have been interpreted as documented in <ref target="http://syriaca.org/documentation/dates.html">Syriaca.org
                                 Dates</ref>.</p>
             </interpretation>
@@ -126,7 +112,7 @@
          </classDecl>
       </encodingDesc>
       <profileDesc>
-         <langUsage default="false">
+         <langUsage>
             <language ident="syr">Unvocalized Syriac of any variety or period</language>
             <language ident="syr-Syrj">Vocalized West Syriac</language>
             <language ident="syr-Syrn">Vocalized East Syriac</language>
@@ -143,101 +129,82 @@
             <language ident="la">Latin</language>
          </langUsage>
       </profileDesc>
-      <revisionDesc status="draft">
+      <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#dmichelson"
                  n="1.0"
-                 status="draft"
-                 when="2015-09-03-05:00">CREATED: work</change>
+                 when="2015-09-03-04:00">CREATED: work</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
-         <bibl default="false"
-               status="draft"
-               xml:id="work-221"
-               ana="#syriaca-saint">
+         <bibl xml:id="work-221" ana="#syriaca-saint">
             <title xml:id="name221-1"
                    xml:lang="syr"
                    source="#bib221-1"
-                   syriaca-tags="#syriaca-headword">ܫܡܥܘܢ ܟܐܦܐ</title>
-            <title xml:id="name221-2" xml:lang="fr-x-bhsyre" source="#bib221-1">Šemʿōn Kēpā</title>
-            <title xml:id="name221-3" xml:lang="fr" source="#bib221-1">De Pierre, apôtre</title>
+                   syriaca-tags="#syriaca-headword">ܡܐܪܝܐ ܐܓܝܦܛܝܬܐ</title>
+            <title xml:id="name221-2" xml:lang="fr-x-bhsyre" source="#bib221-1">Māryā ʾAǥīfṭāyṯā</title>
+            <title xml:id="name221-3" xml:lang="fr" source="#bib221-1">De Marie l’Égyptienne</title>
             <title xml:id="name221-4"
                    xml:lang="en"
                    source="#bib221-1"
-                   syriaca-tags="#syriaca-headword">On Peter the apostle</title>
-            <note xml:lang="syr"
-                  type="prologue"
-                  source="#bib221-1"
-                  anchored="true">
-               <quote defective="false">ܬܫܥܝܬܐ ܕܪ̈ܚܡܘܗܝ ܕܡܫܝܚܐ ܐܬܬܒܥܢܢ ܠܡܫܬܥܝܘ. ܘܠܝܬ ܒܢ ܚܝܠܐ ܕܣܦܩ ܠܡܡܠܝܘ ܦܘܪܥܢܐ ܡܕܡ ܕܐܬܬܒܥܢܢ. ܕܠܡ ܗܿܝ ܕܙܥܘܪܐ ܡܫܘܚܬܢ:</quote>
+                   syriaca-tags="#syriaca-headword">On Mary of Egypt</title>
+            <author xml:lang="fr" source="#bib221-1">Sophrone de Jérusalem</author>
+            <author xml:lang="en" source="#bib221-1">Sophronius of Jerusalem</author>
+            <note xml:lang="syr" type="prologue" source="#bib221-1">
+               <quote>ܐܪܙܗ ܕܡܠܟܐ ܫܦܝܪ ܠܡܛܫܝܘ: ܡܫܒܚܐ ܗ̣ܝ ܕܝܢ ܕܢܟܪܙ ܥܒܕܘ̈ܗܝ ܕܐܠܗܐ. ܗܟܢܐ ܓܝܪ ܐܡܪ ܡܠܐܟܐ ܠܛܘܒܝܬ ܡܢ ܒܬܪ ܚܙܝܐ ܗܘܿ ܬܡܝܗܐ ܕܡܢܕܪܫ ܕܣܡܝܘܬܐ ܕܥܝܢܘ̈ܗܝ: ܘܡܢ ܒܬܪ ܐܘ̈ܠܨܢܐ ܗܢܿܘܢ ܕܣܒܠ: ܘܡܢܗܘܢ ܐܫܬܘܙܒ: ܡܛܠ ܫܦܝܪܘܬ ܕܚܠܬܐ ܕܩܢܐ ܗܘ̣ܐ.</quote>
             </note>
-            <note xml:lang="fr"
-                  type="prologue"
-                  source="#bib221-1"
-                  anchored="true">
-               <quote defective="false">On nous a réclamé de raconter l'histoire des amis du Christ, et nous n'avons pas assez de force pour nous acquitter de ce qui nous a été réclamé, car la petitesse est notre mesure . . .</quote>
+            <note xml:lang="syr" type="incipit" source="#bib221-1">
+               <quote>ܗܘܐ ܐܢܫ ܒܕܝܪ̈ܬܐ ܕܦܠܣܛܝܢܐ: ܓܒܪܐ ܕܒܕܘܒܪ̈ܐ ܘܒܡܠܬܐ ܡܨܒܬ ܗܘ̣ܐ: ܗܘܿ ܕܡܢܗܘܢ ܕܥܙܪ̈ܘܪܐ ܒܙ̈ܢܝܐ ܟܝܬ ܘܒܣܘܥܪ̈ܢܐ ܕܝܪ̈ܝܐ ܐܬܪܒܝ: ܙܘܣܝܡܐܣ ܐܝܬܘܗܝ ܗܘ̣ܐ ܫܡܐ ܠܗܢܐ ܣܒܐ.</quote>
             </note>
-            <note xml:lang="en"
-                  type="prologue"
-                  source="#bib221-1"
-                  anchored="true">
-               <quote defective="false">It was demanded that we tell the story of the friends of Christ, and we do not have the power to fulfill this request sufficiently, for the smallness is our measure . . .</quote>
+            <note xml:lang="fr" type="incipit" source="#bib221-1">
+               <quote>Il y avait dans les monastères de Palestine un homme à la vie et à la parole distinguées, qui dès le berceau avait grandi dans les moeurs et les affaires monastiques; le nom de ce vieillard était Zosime.</quote>
             </note>
-            <note xml:lang="syr"
-                  type="incipit"
-                  source="#bib221-1"
-                  anchored="true">
-               <quote defective="false">ܘܟܕ ܓܝܪ ܒܣ̣ܐ ܒܪܢܫܢ ܩܕܡܝܐ: ܘܥ̣ܒܪ ܥܠ ܦܘܩܕܢܐ ܕܐܠܗܐ: ܘܐܬܓܠܙ ܡܢ ܗܢܿܘܢ ܛܘ̈ܒܐ ܡܫܒܚ̈ܐ.</quote>
+            <note xml:lang="fr" type="explicit" source="#bib221-1">
+               <quote>Or Zosime mourut aussi dans ce monastère, âgé de près de cent ans, comme il l’avait dit…_x000B_Mais moi, selon ma force, j’ai écrit cette histoire, sans honorer la moindre chose avant la vérité._x000B_Que Dieu qui fait des choses grandes et admirables… Amen.</quote>
             </note>
-            <note xml:lang="fr" type="incipit" source="#bib221-1" anchored="true">
-               <quote defective="false">Quand en effet notre premier homme eut avec mépris agi contre le commandement de Dieu et qu’il eut été privé de ces biens glorieux…</quote>
-            </note>
-            <note xml:lang="en" type="incipit" source="#bib221-1" anchored="true">
-               <quote defective="false">For when the first man disdained and acted against the commandment of God, and was deprived of glorious things . . .</quote>
-            </note>
-            <note xml:lang="syr"
-                  type="explicit"
-                  source="#bib221-1"
-                  anchored="true">
-               <quote defective="false">FILL IN</quote>
-            </note>
-            <note xml:lang="fr"
-                  type="explicit"
-                  source="#bib221-1"
-                  anchored="true">
-               <quote defective="false">Et quand l’âme du saint se fut élevée, Marcellus s’approcha, sans avoir pris conseil de personne, et il descendit Simon de la croix… Et ainsi fut achevé le couronnement du bienheureux Mâr Simon… Amen.</quote>
-            </note>
-            <note xml:lang="en"
-                  type="explicit"
-                  source="#bib221-1"
-                  anchored="true">
-               <quote defective="false">And when the soul of the saint arose, Marcellus approached, without having been advised by anyone. He brought Simeon down from the cross . . . and in this way the crowning of Mar Simon was completed.</quote>
-            </note>
-            <note type="editions" anchored="true">
-               <bibl source="#bib221-1" default="false" status="draft">
+            <note type="editions">
+               <bibl source="#bib221-1">
                   <author>Bedjan, P.</author>
-                  <title>AMS 1</title>
-                  <citedRange>p. 1-33</citedRange>
+                  <title>AMS 5</title>
+                  <citedRange>P. 342-385</citedRange>
                </bibl>
             </note>
-            <note xml:lang="en" type="MSS" source="#bib221-1" anchored="true">
-               <bibl default="false" status="draft">ed: Rome (&lt; Guidi ?)</bibl>
+            <note xml:lang="en" type="MSS" source="#bib221-1">
+               <bibl>ed: ms Paris, Bibliothèque nationale, syr. 234, f. 62-80 + ms Londres, British Library, Add. 14649, f. 2v-19</bibl>
             </note>
-            <note xml:lang="en" type="MSS" source="#bib221-1" anchored="true">
-               <bibl default="false" status="draft">ms Vatican, Syr. 597, f. 50-55v</bibl>
+            <note xml:lang="en" type="MSS" source="#bib221-1">
+               <bibl>ms Damas, Patriarcat syrien orthodoxe, cod. 12/18 (olim ms Dayr az-Za‘faran, cod. 19), f. 154-157v</bibl>
             </note>
-            <note xml:lang="en" type="MSS" source="#bib221-1" anchored="true">
-               <bibl default="false" status="draft">ms Londres, British Library, Or. 9391, p. 331-367</bibl>
+            <note xml:lang="en" type="MSS" source="#bib221-1">
+               <bibl>ms Dayr az-Za‘faran, cod. pap. 116 (Dolabany)</bibl>
+            </note>
+            <note xml:lang="la" type="ancientVersion" source="#bib221-1">
+               <bibl>cf. CPG</bibl>
+            </note>
+            <note xml:lang="" type="ancientVersion" source="#bib221-1">
+               <bibl>cf. CPG</bibl>
+            </note>
+            <note xml:lang="" type="ancientVersion" source="#bib221-1">
+               <bibl>cf. CPG</bibl>
+            </note>
+            <note xml:lang="" type="ancientVersion" source="#bib221-1">
+               <bibl>cf. CPG</bibl>
+            </note>
+            <note xml:lang="" type="ancientVersion" source="#bib221-1">
+               <bibl>cf. CPG</bibl>
+            </note>
+            <note xml:lang="" type="ancientVersion" source="#bib221-1">
+               <bibl>cf. CPG</bibl>
             </note>
             <idno type="URI">http://syriaca.org/work/221</idno>
-            <idno type="BHSYRE">1</idno>
-            <idno type="BHO">935</idno>
-            <bibl default="false" status="draft" xml:id="bibl221-1">
+            <idno type="BHSYRE">137</idno>
+            <idno type="BHO">684</idno>
+            <idno type="CPG">7675</idno>
+            <bibl xml:id="bibl221-1">
                <title level="m" xml:lang="la">Biblioteca Hagiographica Syriaca
                                         electronica</title>
                <ptr target="http://syriaca.org/bibl/649"/>
-               <citedRange unit="entry">1</citedRange>
+               <citedRange unit="entry">137</citedRange>
             </bibl>
          </bibl>
       </body>

@@ -16,6 +16,19 @@
         <xsl:text> </xsl:text>
     </xsl:variable>
 
+    <xsl:function name="syriaca:ancientlangs" as="xs:string">
+        <!-- The spreadsheet presents ancient langs as prose, this converts the prose language names to IDO codes-->
+        <xsl:param name="AncientLang" as="xs:string"/>
+        <xsl:choose>
+            <xsl:when test="$AncientLang='Latin'">
+                <xsl:text>la</xsl:text>
+            </xsl:when>
+            <xsl:when test="$AncientLang='Greek'">
+                <xsl:text>grc</xsl:text>
+            </xsl:when>
+        </xsl:choose>
+    </xsl:function>
+    
     <xsl:function name="syriaca:normalizeYear" as="xs:string">
         <!-- The spreadsheet presents years normally, but datable attributes need 4-digit years -->
         <xsl:param name="year" as="xs:string"/>
@@ -296,15 +309,15 @@
                                         <xsl:if test=". != ''">
                                             <xsl:choose>
                                                 <xsl:when test="contains(.,'; ')">
-                                                    <xsl:variable name="lang" select="preceding-sibling::lang[1]"/>
+                                                    <xsl:variable name="Lang" select="preceding-sibling::Lang[1]"/>
                                                     <xsl:for-each select="tokenize(.,'; ')">
-                                                        <note xml:lang="{$lang}" type="ancientVersion" source="#bib221-1">
+                                                        <note xml:lang="{$Lang}" type="ancientVersion" source="#bib221-1">
                                                             <bibl><xsl:value-of select="normalize-space(.)"/></bibl>
                                                         </note>
                                                     </xsl:for-each>
                                                 </xsl:when>
                                                 <xsl:otherwise>
-                                                    <note xml:lang="{preceding-sibling::lang[1]}" type="ancientVersion" source="#bib221-1">
+                                                    <note xml:lang="{preceding-sibling::Lang[1]}" type="ancientVersion" source="#bib221-1">
                                                         <bibl><xsl:value-of select="normalize-space(.)"/></bibl>
                                                     </note>
                                                 </xsl:otherwise>

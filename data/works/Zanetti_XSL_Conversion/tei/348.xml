@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://syriaca.org/documentation/syriaca-tei-main.rnc" type="application/relax-ng-compact-syntax"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:syriaca="http://syriaca.org"
+     xmlns:saxon="http://saxon.sf.net/"
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+     xmlns:functx="http://www.functx.com"
+     xml:lang="en">
+   <teiHeader type="text">
+      <fileDesc>
+         <titleStmt>
+            <title level="a" xml:lang="en">On Rabbula — <foreign xml:lang="syr">ܪܒܘܠܐ</foreign>
+            </title>
+            <title level="m">Qadishe: A Guide to the Lives of the Syriac Saints</title>
+            <sponsor>Syriaca.org: The Syriac Reference Portal</sponsor>
+            <funder>The International Balzan Prize Foundation</funder>
+            <funder>The National Endowment for the Humanities</funder>
+            <principal>David A. Michelson</principal>
+            <editor role="general"
+                    ref="http://syriaca.org/documentation/editors.xml#jnmsaintlaurent">Jeanne-Nicole Mellon Saint-Laurent</editor>
+            <editor role="general"
+                    ref="http://syriaca.org/documentation/editors.xml#dmichelson">David A.
+                        Michelson</editor>
+            <editor role="creator"
+                    ref="http://syriaca.org/documentation/editors.xml#jnmsaintlaurent">Jeanne-Nicole Mellon Saint-Laurent</editor>
+            <editor role="creator"
+                    ref="http://syriaca.org/documentation/editors.xml#dmichelson">David A.
+                        Michelson</editor>
+            <editor role="creator" ref="http://syriaca.org/editors.xml#uzanetti">Ugo
+                        Zanetti</editor>
+            <editor role="creator" ref="http://syriaca.org/editors.xml#cdetienne">Claude
+                        Detienne</editor>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#jnmsaintlaurent"
+                     full="yes"
+                     instant="false">Jeanne-Nicole Mellon Saint-Laurent</name>
+            </respStmt>
+            <respStmt>
+               <resp>Data architecture and encoding by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#dmichelson"
+                     full="yes"
+                     instant="false">David A.
+                            Michelson</name>
+            </respStmt>
+            <respStmt>
+               <resp>Editing, Syriac data conversion, data entry, and reconciling by</resp>
+               <name ref="http://syriaca.org/editors.xml#akane"
+                     full="yes"
+                     instant="false">Adam P. Kane</name>
+            </respStmt>
+            <respStmt>
+               <resp>Editing and Syriac data proofreading by</resp>
+               <name ref="http://syriaca.org/editors.xml#abarschabo"
+                     full="yes"
+                     instant="false">Aram Bar Schabo</name>
+            </respStmt>
+            <respStmt>
+               <resp>Entries adapted from the work of</resp>
+               <name type="person"
+                     ref="http://syriaca.org/editors.xml#uzanetti"
+                     full="yes"
+                     instant="false">Ugo
+                            Zanetti</name>
+            </respStmt>
+            <respStmt>
+               <resp>Entries adapted from the work of</resp>
+               <name type="person"
+                     ref="http://syriaca.org/editors.xml#cdetienne"
+                     full="yes"
+                     instant="false">Claude
+                            Detienne</name>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition n="1.0"/>
+         </editionStmt>
+         <publicationStmt>
+            <authority>Syriaca.org: The Syriac Reference Portal</authority>
+            <idno type="URI">http://syriaca.org/work/348/tei</idno>
+            <availability default="false" status="unknown">
+               <licence target="http://creativecommons.org/licenses/by/3.0/">
+                  <p part="N">Distributed under a Creative Commons Attribution 3.0 Unported
+                                License.</p>
+                  <p part="N">This entry incorporates copyrighted material from the following
+                                work(s): <listBibl default="false">
+                        <bibl default="false" status="draft">
+                           <ptr target="http://syriaca.org/bibl/649"/>
+                        </bibl>
+                     </listBibl>
+                     <note anchored="true">used under a Creative Commons Attribution license <ref target="http://creativecommons.org/licenses/by/3.0/"/>
+                     </note>
+                  </p>
+               </licence>
+            </availability>
+            <date instant="false">2015-09-03-05:00</date>
+         </publicationStmt>
+         <sourceDesc default="false">
+            <p part="N">Born digital.</p>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <editorialDecl default="false">
+            <p part="N">This record created following the Syriaca.org guidelines. Documentation
+                        available at: <ref target="http://syriaca.org/documentation">http://syriaca.org/documentation</ref>.</p>
+            <interpretation default="false">
+               <p part="N">Approximate dates described in terms of centuries or partial centuries
+                            have been interpreted as documented in <ref target="http://syriaca.org/documentation/dates.html">Syriaca.org
+                                Dates</ref>.</p>
+            </interpretation>
+         </editorialDecl>
+         <classDecl>
+            <taxonomy>
+               <category xml:id="syriaca-headword">
+                  <catDesc>The name used by Syriaca.org for document titles, citation, and
+                                disambiguation. These names have been created according to the
+                                Syriac.org guidelines for headwords: <ref target="http://syriaca.org/documentation/headwords.html">http://syriaca.org/documentation/headwords.html</ref>.</catDesc>
+               </category>
+               <category xml:id="syriaca-anglicized">
+                  <catDesc>An anglicized version of a name, included to facilitate
+                                searching.</catDesc>
+               </category>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
+      <profileDesc>
+         <langUsage default="false">
+            <language ident="syr">Unvocalized Syriac of any variety or period</language>
+            <language ident="syr-Syrj">Vocalized West Syriac</language>
+            <language ident="syr-Syrn">Vocalized East Syriac</language>
+            <language ident="en">English</language>
+            <language ident="en-x-gedsh">Names or terms Romanized into English according to
+                        the standards adopted by the Gorgias Encyclopedic Dictionary of the Syriac
+                        Heritage</language>
+            <language ident="ar">Arabic</language>
+            <language ident="fr">French</language>
+            <language ident="fr-x-bhsyre">Names or terms Romanized into French according to
+                        the standards adopted by the Biblioteca Hagiographica Syriaca
+                        electronica</language>
+            <language ident="de">German</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+      </profileDesc>
+      <revisionDesc status="draft">
+         <change who="http://syriaca.org/documentation/editors.xml#dmichelson"
+                 n="1.0"
+                 status="draft"
+                 when="2015-09-03-05:00">CREATED: work</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <bibl default="false"
+               status="draft"
+               xml:id="work-348"
+               ana="#syriaca-saint">
+            <title xml:id="name348-1"
+                   xml:lang="syr"
+                   source="#bib348-1"
+                   syriaca-tags="#syriaca-headword">ܪܒܘܠܐ</title>
+            <title xml:id="name348-2" xml:lang="fr-x-bhsyre" source="#bib348-1">Rabūlā</title>
+            <title xml:id="name348-3" xml:lang="fr" source="#bib348-1">De Rabboula</title>
+            <title xml:id="name348-4"
+                   xml:lang="en"
+                   source="#bib348-1"
+                   syriaca-tags="#syriaca-headword">On Rabbula</title>
+            <note xml:lang="syr"
+                  type="prologue"
+                  source="#bib348-1"
+                  anchored="true">
+               <quote defective="false">ܐܚܝ̈: ܒܛܢܢܐ ܕܚܘܒܗ ܕܡܫܝܚܐ ܨܝܿܪܝܢ ܚܢܢ ܩܕܡ ܚܘܒܟܘܢ ܒܝܕ ܟܬܝ̈ܒܬܐ ܝܘܩܢܐ ܕܕܘܒܪ̈ܘܗܝ ܡܝܬܪ̈ܐ ܕܡܪܝ ܪܒܘܠܐ ܐܦܣܩܘܦܐ: ܫܘܒܗܪܐ ܕܡܕܝܢܬܢ.</quote>
+            </note>
+            <note xml:lang="syr"
+                  type="incipit"
+                  source="#bib348-1"
+                  anchored="true">
+               <quote defective="false">ܐܝܬܘܗܝ ܗܘ̣ܐ ܕܝܢ ܛܘܒܢܐ ܗܢܐ ܪܒܘܠܐ ܡܢ ܛܠܝܘܬܗ ܚܢܦܐ: ܡܛܠ ܕܐܦ ܗܘ ܐܒܘܗܝ ܚܢܦܐ ܗܘ̣ܐ ܘܟܘܡܪܐ.</quote>
+            </note>
+            <note xml:lang="fr" type="incipit" source="#bib348-1" anchored="true">
+               <quote defective="false">Ce bienheureux Rabboulâ était dans son jeune âge païen, parce que son père aussi était païen et prêtre des idoles.</quote>
+            </note>
+            <note xml:lang="syr"
+                  type="explicit"
+                  source="#bib348-1"
+                  anchored="true">
+               <quote defective="false">ܘܠܝܘܡܐ ܕܒܬܪܗ: ܣܪܗܒܘ ܣܬܪܘܗܝ ܠܓܘܫܡܗ ܢܩܕܐ ܒܓܠܘܣܩܡܐ ܕܩܝܣܐ ܡܢܗ ܕܓܘ ܥܘܡܪܗ: ܐܝܟ ܕܠܐ ܢܬܢܬܫ ܦܓܪܗ ܩܕܝܫܐ ܡܢ ܐܝܕܝ̈ ܥܡܐ ܟܠܗ: ܕܚܒܿܨ ܗܘ̣ܐ ܒܚܘܒܗ ܠܡܣܒ ܡܢܗ ܚܢܢܐ ܒܗܝܡܢܘܬܗܘܢ... ܠܟ ܣܓܕܝܢ ܚܢܢ: ܘܠܐܒܘܟ ܡܘܕܝܢ ܚܢܢ: ܘܠܪܘܚ ܩܘܕܫܟ ܡܫܒܚܝܢ ܚܢܢ: ܐܦ ܗܫܐ ܘܠܥܠܡ ܥܠܡܝܢ: ܐܡܝܢ.</quote>
+            </note>
+            <note xml:lang="fr"
+                  type="explicit"
+                  source="#bib348-1"
+                  anchored="true">
+               <quote defective="false">Et le jour suivant ils se hâtèrent d’enterrer son corps précieux dans un reliquaire en bois à l’intérieur de son monastère pour que son saint corps ne fût pas déchiré par les mains de tout le peuple qui, dans sa foi, se pressait pour y prendre des reliques… Nous t’adorons et nous confessons ton Père et nous glorifions ton Saint Esprit, maintenant aussi et dans les siècles des siècles. Amen.</quote>
+            </note>
+            <note type="editions" anchored="true">
+               <bibl source="#bib348-1" default="false" status="draft">
+                  <author>(1) Bedjan, P.</author>
+                  <title>(1) AMS 4</title>
+                  <citedRange>(1) p. 396-450</citedRange>
+               </bibl>
+            </note>
+            <note type="editions" anchored="true">
+               <bibl source="#bib348-1" default="false" status="draft">
+                  <author>(2) Overbeck, J.J.</author>
+                  <title>(2) S. Ephraemi Syri, Rabulae episcopi Edesseni, Balaei aliorumque opera selecta</title>
+                  <citedRange>(2) Oxford, 1865, p. 159-209</citedRange>
+               </bibl>
+            </note>
+            <note xml:lang="en" type="MSS" source="#bib348-1" anchored="true">
+               <bibl default="false" status="draft">ed: ms Londres, British Library, Add. 14652, f. 83-125</bibl>
+            </note>
+            <note xml:lang=""
+                  type="modernTranslation"
+                  source="#bib221-1"
+                  anchored="true">
+               <bibl default="false" status="draft">— allemande par G. Bickell, Ausgewählte Schriften der syrischen Kirchenväter Aphraates, Rabulas und IsaaK von Ninive (Bibliothek der Kirchenväter), Kempten, 1874, p. 166-211</bibl>
+            </note>
+            <idno type="URI">http://syriaca.org/work/348</idno>
+            <idno type="BHSYRE">127</idno>
+            <idno type="BHO">1023</idno>
+            <bibl default="false" status="draft" xml:id="bibl348-1">
+               <title level="m" xml:lang="la">Biblioteca Hagiographica Syriaca
+                                        electronica</title>
+               <ptr target="http://syriaca.org/bibl/649"/>
+               <citedRange unit="entry">127</citedRange>
+            </bibl>
+            <bibl default="false" status="draft" xml:id="bibl348-2">Tj. Baarda, The Gospel Text in the Biography of Rabbula, dans VC, 14 (1960), p. 102-127&amp;G.G. Blum, Rabbula von Edessa. Der Christ, der Bischof, der Theologe (CSCO 300, Subs. 34), Louvain, 1969</bibl>
+            <bibl default="false" status="draft" xml:id="bibl348-3">P. Peeters, La Vie de Rabboula, évêque d’Édesse († 7 août 436), dans RechScRel, 18 (1928), p. 170-204</bibl>
+            <bibl default="false" status="draft" xml:id="bibl348-4">CR de Peeters par le P. Lagrange, dans RB, 40 (1931) p. 121-129</bibl>
+            <bibl default="false" status="draft" xml:id="bibl348-5">F. Nau, Les “belles actions” de Mar Rabboula évêque d’Édesse de 412 au 7 août 435 (ou 436), dans RHR, 103 (1931), p. 97-135</bibl>
+         </bibl>
+      </body>
+   </text>
+</TEI>

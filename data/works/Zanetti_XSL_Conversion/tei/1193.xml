@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://syriaca.org/documentation/syriaca-tei-main.rnc" type="application/relax-ng-compact-syntax"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:syriaca="http://syriaca.org"
+     xmlns:saxon="http://saxon.sf.net/"
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+     xmlns:functx="http://www.functx.com"
+     xml:lang="en">
+   <teiHeader type="text">
+      <fileDesc>
+         <titleStmt>
+            <title level="a" xml:lang="en">On Himyarite martyrs — <foreign xml:lang="syr">ܣܗ̈ܕܐ ܚܡܝܪ̈ܝܐ</foreign>
+            </title>
+            <title level="m">Qadishe: A Guide to the Lives of the Syriac Saints</title>
+            <sponsor>Syriaca.org: The Syriac Reference Portal</sponsor>
+            <funder>The International Balzan Prize Foundation</funder>
+            <funder>The National Endowment for the Humanities</funder>
+            <principal>David A. Michelson</principal>
+            <editor role="general"
+                    ref="http://syriaca.org/documentation/editors.xml#jnmsaintlaurent">Jeanne-Nicole Mellon Saint-Laurent</editor>
+            <editor role="general"
+                    ref="http://syriaca.org/documentation/editors.xml#dmichelson">David A.
+                        Michelson</editor>
+            <editor role="creator"
+                    ref="http://syriaca.org/documentation/editors.xml#jnmsaintlaurent">Jeanne-Nicole Mellon Saint-Laurent</editor>
+            <editor role="creator"
+                    ref="http://syriaca.org/documentation/editors.xml#dmichelson">David A.
+                        Michelson</editor>
+            <editor role="creator" ref="http://syriaca.org/editors.xml#uzanetti">Ugo
+                        Zanetti</editor>
+            <editor role="creator" ref="http://syriaca.org/editors.xml#cdetienne">Claude
+                        Detienne</editor>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#jnmsaintlaurent"
+                     full="yes"
+                     instant="false">Jeanne-Nicole Mellon Saint-Laurent</name>
+            </respStmt>
+            <respStmt>
+               <resp>Data architecture and encoding by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#dmichelson"
+                     full="yes"
+                     instant="false">David A.
+                            Michelson</name>
+            </respStmt>
+            <respStmt>
+               <resp>Editing, Syriac data conversion, data entry, and reconciling by</resp>
+               <name ref="http://syriaca.org/editors.xml#akane"
+                     full="yes"
+                     instant="false">Adam P. Kane</name>
+            </respStmt>
+            <respStmt>
+               <resp>Editing and Syriac data proofreading by</resp>
+               <name ref="http://syriaca.org/editors.xml#abarschabo"
+                     full="yes"
+                     instant="false">Aram Bar Schabo</name>
+            </respStmt>
+            <respStmt>
+               <resp>Entries adapted from the work of</resp>
+               <name type="person"
+                     ref="http://syriaca.org/editors.xml#uzanetti"
+                     full="yes"
+                     instant="false">Ugo
+                            Zanetti</name>
+            </respStmt>
+            <respStmt>
+               <resp>Entries adapted from the work of</resp>
+               <name type="person"
+                     ref="http://syriaca.org/editors.xml#cdetienne"
+                     full="yes"
+                     instant="false">Claude
+                            Detienne</name>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition n="1.0"/>
+         </editionStmt>
+         <publicationStmt>
+            <authority>Syriaca.org: The Syriac Reference Portal</authority>
+            <idno type="URI">http://syriaca.org/work/1193/tei</idno>
+            <availability default="false" status="unknown">
+               <licence target="http://creativecommons.org/licenses/by/3.0/">
+                  <p part="N">Distributed under a Creative Commons Attribution 3.0 Unported
+                                License.</p>
+                  <p part="N">This entry incorporates copyrighted material from the following
+                                work(s): <listBibl default="false">
+                        <bibl default="false" status="draft">
+                           <ptr target="http://syriaca.org/bibl/649"/>
+                        </bibl>
+                     </listBibl>
+                     <note anchored="true">used under a Creative Commons Attribution license <ref target="http://creativecommons.org/licenses/by/3.0/"/>
+                     </note>
+                  </p>
+               </licence>
+            </availability>
+            <date instant="false">2015-09-03-05:00</date>
+         </publicationStmt>
+         <sourceDesc default="false">
+            <p part="N">Born digital.</p>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <editorialDecl default="false">
+            <p part="N">This record created following the Syriaca.org guidelines. Documentation
+                        available at: <ref target="http://syriaca.org/documentation">http://syriaca.org/documentation</ref>.</p>
+            <interpretation default="false">
+               <p part="N">Approximate dates described in terms of centuries or partial centuries
+                            have been interpreted as documented in <ref target="http://syriaca.org/documentation/dates.html">Syriaca.org
+                                Dates</ref>.</p>
+            </interpretation>
+         </editorialDecl>
+         <classDecl>
+            <taxonomy>
+               <category xml:id="syriaca-headword">
+                  <catDesc>The name used by Syriaca.org for document titles, citation, and
+                                disambiguation. These names have been created according to the
+                                Syriac.org guidelines for headwords: <ref target="http://syriaca.org/documentation/headwords.html">http://syriaca.org/documentation/headwords.html</ref>.</catDesc>
+               </category>
+               <category xml:id="syriaca-anglicized">
+                  <catDesc>An anglicized version of a name, included to facilitate
+                                searching.</catDesc>
+               </category>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
+      <profileDesc>
+         <langUsage default="false">
+            <language ident="syr">Unvocalized Syriac of any variety or period</language>
+            <language ident="syr-Syrj">Vocalized West Syriac</language>
+            <language ident="syr-Syrn">Vocalized East Syriac</language>
+            <language ident="en">English</language>
+            <language ident="en-x-gedsh">Names or terms Romanized into English according to
+                        the standards adopted by the Gorgias Encyclopedic Dictionary of the Syriac
+                        Heritage</language>
+            <language ident="ar">Arabic</language>
+            <language ident="fr">French</language>
+            <language ident="fr-x-bhsyre">Names or terms Romanized into French according to
+                        the standards adopted by the Biblioteca Hagiographica Syriaca
+                        electronica</language>
+            <language ident="de">German</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+      </profileDesc>
+      <revisionDesc status="draft">
+         <change who="http://syriaca.org/documentation/editors.xml#dmichelson"
+                 n="1.0"
+                 status="draft"
+                 when="2015-09-03-05:00">CREATED: work</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <bibl default="false"
+               status="draft"
+               xml:id="work-1193"
+               ana="#syriaca-saint">
+            <title xml:id="name1193-1"
+                   xml:lang="syr"
+                   source="#bib1193-1"
+                   syriaca-tags="#syriaca-headword">ܣܗ̈ܕܐ ܚܡܝܪ̈ܝܐ</title>
+            <title xml:id="name1193-2" xml:lang="fr-x-bhsyre" source="#bib1193-1">Sāhdē Ḥmīrāyē</title>
+            <title xml:id="name1193-3" xml:lang="fr" source="#bib1193-1">De Martyrs Himyarites</title>
+            <title xml:id="name1193-4"
+                   xml:lang="en"
+                   source="#bib1193-1"
+                   syriaca-tags="#syriaca-headword">On Himyarite martyrs</title>
+            <author xml:lang="fr" source="#bib1193-1">Syméon de Beth Arsham</author>
+            <note xml:lang="syr"
+                  type="incipit"
+                  source="#bib1193-1"
+                  anchored="true">
+               <quote defective="false">ܐܫܬܥܝܘ ܕܝܢ ܗܠܝܢ ܕܐܬܘ ܡܢ ܢܝܓܪܢ. ܕܩܕܡܐܝܬ ܠܡ ܟܕ ܐܡܠܟ ܗܘܐ ܗܢܐ ܪܫܝܥܐ ܝܘܕܝܐ. ܫܕܪ ܠܚܨܪܡܘܬ ܘܠܫܒܐ ܘܠܚܙܒܐ. ܘܠܕܝܪܝܕܢ. ܘܠܬܝܡܢܬ ܘܠܢܝܓܪܢ. ܘܠܫܪܟܐ ܕܐܬܪ̈ܘܬܐ ܕܫܘܠܛܢܗ: ܕܢܐܬܘܢ ܠܘܬܗ ܠܕܝܐܪܝܪܢ.</quote>
+            </note>
+            <note xml:lang="fr"
+                  type="incipit"
+                  source="#bib1193-1"
+                  anchored="true">
+               <quote defective="false">Ceux qui vinrent de Najran racontèrent que dès que ce juif impie devint roi, il envoya à Hadramaout, à Shabâ, à Hazabâ, à Du-Raydan, à Taymant, à Najran et dans les autres pays de son empire pour qu’on vienne chez lui à Du-Raydan.</quote>
+            </note>
+            <note xml:lang="syr"
+                  type="explicit"
+                  source="#bib1193-1"
+                  anchored="true">
+               <quote defective="false">ܟܬܒܢܢ ܕܝܢ ܐܓܪܬܐ ܗܕܐ ܠܐܒܗܘܬܟܘܢ. ܡܢ ܚܝܪܬܐ ܕܓܒܐܠܐ ܡܠܟܐ ܕܥܣܢܝ̈ܐ. ܒܕܘܟܬܐ ܕܡܬܩܪܝܐ ܓܒܝܬܐ ܒܐܝܪܚ ܬܡܘܙ ܕܗܕܐ ܫܢܬ ܬܡܢܡ̈ܐܐ ܘܬܠܬܝܢ ܕܐܠܟܣܢܕܪܘܣ. ܫܡ̈ܗܐ ܕܪ̈ܝܫܝ ܩܫܝ̈ܫܐ ܕܝܩܕܘ ܒܥܕܬܐ ܕܢܝܓܪܢ... ܘܡܢ ܦܘܡܢ ܟܠܢ ܬܘܕܝܬܐ ܬܬܩܪܒܝ ܠܗ. ܘܠܐܒܘܗܝ ܘܠܪܘܚܗ ܩܕܝܫܐ... ܐܡܝܢ.</quote>
+            </note>
+            <note xml:lang="fr"
+                  type="explicit"
+                  source="#bib1193-1"
+                  anchored="true">
+               <quote defective="false">Nous vous avons écrit cette lettre, Père, depuis le camp de Jabâlâ, roi des Ghassanides, à l’endroit appelé al-Jabiya, au mois de juillet de cette année 830 d’Alexandre. Noms des archiprêtres qui furent brûlés dans l’église de Najran… et de notre bouche à tous que l’action de grâces lui soit afferte à lui, à son Père et à son Esprit Saint… Amen.</quote>
+            </note>
+            <note type="editions" anchored="true">
+               <bibl source="#bib1193-1" default="false" status="draft">
+                  <author>Shahid, I.</author>
+                  <title>(1) Bréviaire 1</title>
+                  <citedRange>Bruxelles, 1971, p. III-XXXII (entre p. 40 et 43)</citedRange>
+               </bibl>
+            </note>
+            <note xml:lang="en" type="MSS" source="#bib1193-1" anchored="true">
+               <bibl default="false" status="draft">ed: ms Damas, Patriarcat syrien orthodoxe, cod. 12/18 (olim ms Dayr az-Za‘faran, cod. 19), f. 110-114 ?</bibl>
+            </note>
+            <note xml:lang=""
+                  type="modernTranslation"
+                  source="#bib221-1"
+                  anchored="true">
+               <bibl default="false" status="draft">— anglaise par I. Shahid, p. 44-64</bibl>
+            </note>
+            <note xml:lang=""
+                  type="modernTranslation"
+                  source="#bib221-1"
+                  anchored="true">
+               <bibl default="false" status="draft">— arabe pa le Patriarche Ignace Jacques III, A¯-¯uhad‹Æ al-¿imyar¬yºn al-æArab f¬ Æl-wa‡‹Æiq as-sury‹n¬ya, Damas, 1966, p. 24-42</bibl>
+            </note>
+            <idno type="URI">http://syriaca.org/work/1193</idno>
+            <idno type="BHSYRE">1014</idno>
+            <bibl default="false" status="draft" xml:id="bibl1193-1">
+               <title level="m" xml:lang="la">Biblioteca Hagiographica Syriaca
+                                        electronica</title>
+               <ptr target="http://syriaca.org/bibl/649"/>
+               <citedRange unit="entry">1014</citedRange>
+            </bibl>
+            <bibl default="false" status="draft" xml:id="bibl1193-2">I. Shahid, The Martyrs of Najran: Miscellaneous Reflexions, dans Le Muséon, 93 (1980), p. 149-161</bibl>
+            <bibl default="false" status="draft" xml:id="bibl1193-3">J. Ryckmans, Les Rapports de dépendance entre les récits hagiographiques relatifs à la persécution des Himyarites, dans LM, 100 (1987), p. 297-305</bibl>
+            <bibl default="false" status="draft" xml:id="bibl1193-4">I. Shahid, The Martyrs of Najran: Further Reflections, dans Le Muséon, 103 (1990), p. 151-153</bibl>
+            <bibl default="false" status="draft" xml:id="bibl1193-5">P. Devos, Quelques aspects de la nouvelle lettre, récemment découverte, de Siméon de Bêth-Ars¯âm sur les martyrs ¡imyarites, dans IV Congresso Internazionale di Studi Etiopici (Roma, 10-15 aprile 1972). Tomo I. Sezione storica (Problemi attuali di scienza e di cultura, 191), Rome, 1974, p. 107-116</bibl>
+            <bibl default="false" status="draft" xml:id="bibl1193-6">CR de l’éd. de Shahid par A. de Halleux, dans LM, 86 (1973), p. 219-222</bibl>
+            <bibl default="false" status="draft" xml:id="bibl1193-7">Y. Shitomi, Note sur le Martyrium Arethae § 20: Date de la persécution de Naõr‹n, dans LM, 100 (1987), p. 315-321</bibl>
+            <bibl default="false" status="draft" xml:id="bibl1193-8">Y. Shitomi, La persécution de Nagran: réexamen des dates figurant dans le Martyrium Arethae, dans Orient, 24 (1988), p. 71-83</bibl>
+            <bibl default="false" status="draft" xml:id="bibl1193-9">L. Van Rompay, The Martyrs of Najran, Some Remarks on the Nature of the Sources, dans J. Quaegebeur (éd.), Studia Paulo Naster oblata. II. Orientalia antiqua (OLA 13), Louvain, 1982, p. 301-309</bibl>
+         </bibl>
+      </body>
+   </text>
+</TEI>

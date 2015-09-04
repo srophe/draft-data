@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://syriaca.org/documentation/syriaca-tei-main.rnc" type="application/relax-ng-compact-syntax"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:syriaca="http://syriaca.org"
+     xmlns:saxon="http://saxon.sf.net/"
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+     xmlns:functx="http://www.functx.com"
+     xml:lang="en">
+   <teiHeader type="text">
+      <fileDesc>
+         <titleStmt>
+            <title level="a" xml:lang="en">On Mary Mother of God — <foreign xml:lang="syr">ܡܪܝܡ ܝܠܕܬ ܐܠܗܐ</foreign>
+            </title>
+            <title level="m">Qadishe: A Guide to the Lives of the Syriac Saints</title>
+            <sponsor>Syriaca.org: The Syriac Reference Portal</sponsor>
+            <funder>The International Balzan Prize Foundation</funder>
+            <funder>The National Endowment for the Humanities</funder>
+            <principal>David A. Michelson</principal>
+            <editor role="general"
+                    ref="http://syriaca.org/documentation/editors.xml#jnmsaintlaurent">Jeanne-Nicole Mellon Saint-Laurent</editor>
+            <editor role="general"
+                    ref="http://syriaca.org/documentation/editors.xml#dmichelson">David A.
+                        Michelson</editor>
+            <editor role="creator"
+                    ref="http://syriaca.org/documentation/editors.xml#jnmsaintlaurent">Jeanne-Nicole Mellon Saint-Laurent</editor>
+            <editor role="creator"
+                    ref="http://syriaca.org/documentation/editors.xml#dmichelson">David A.
+                        Michelson</editor>
+            <editor role="creator" ref="http://syriaca.org/editors.xml#uzanetti">Ugo
+                        Zanetti</editor>
+            <editor role="creator" ref="http://syriaca.org/editors.xml#cdetienne">Claude
+                        Detienne</editor>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#jnmsaintlaurent"
+                     full="yes"
+                     instant="false">Jeanne-Nicole Mellon Saint-Laurent</name>
+            </respStmt>
+            <respStmt>
+               <resp>Data architecture and encoding by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#dmichelson"
+                     full="yes"
+                     instant="false">David A.
+                            Michelson</name>
+            </respStmt>
+            <respStmt>
+               <resp>Editing, Syriac data conversion, data entry, and reconciling by</resp>
+               <name ref="http://syriaca.org/editors.xml#akane"
+                     full="yes"
+                     instant="false">Adam P. Kane</name>
+            </respStmt>
+            <respStmt>
+               <resp>Editing and Syriac data proofreading by</resp>
+               <name ref="http://syriaca.org/editors.xml#abarschabo"
+                     full="yes"
+                     instant="false">Aram Bar Schabo</name>
+            </respStmt>
+            <respStmt>
+               <resp>Entries adapted from the work of</resp>
+               <name type="person"
+                     ref="http://syriaca.org/editors.xml#uzanetti"
+                     full="yes"
+                     instant="false">Ugo
+                            Zanetti</name>
+            </respStmt>
+            <respStmt>
+               <resp>Entries adapted from the work of</resp>
+               <name type="person"
+                     ref="http://syriaca.org/editors.xml#cdetienne"
+                     full="yes"
+                     instant="false">Claude
+                            Detienne</name>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition n="1.0"/>
+         </editionStmt>
+         <publicationStmt>
+            <authority>Syriaca.org: The Syriac Reference Portal</authority>
+            <idno type="URI">http://syriaca.org/work/1081/tei</idno>
+            <availability default="false" status="unknown">
+               <licence target="http://creativecommons.org/licenses/by/3.0/">
+                  <p part="N">Distributed under a Creative Commons Attribution 3.0 Unported
+                                License.</p>
+                  <p part="N">This entry incorporates copyrighted material from the following
+                                work(s): <listBibl default="false">
+                        <bibl default="false" status="draft">
+                           <ptr target="http://syriaca.org/bibl/649"/>
+                        </bibl>
+                     </listBibl>
+                     <note anchored="true">used under a Creative Commons Attribution license <ref target="http://creativecommons.org/licenses/by/3.0/"/>
+                     </note>
+                  </p>
+               </licence>
+            </availability>
+            <date instant="false">2015-09-03-05:00</date>
+         </publicationStmt>
+         <sourceDesc default="false">
+            <p part="N">Born digital.</p>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <editorialDecl default="false">
+            <p part="N">This record created following the Syriaca.org guidelines. Documentation
+                        available at: <ref target="http://syriaca.org/documentation">http://syriaca.org/documentation</ref>.</p>
+            <interpretation default="false">
+               <p part="N">Approximate dates described in terms of centuries or partial centuries
+                            have been interpreted as documented in <ref target="http://syriaca.org/documentation/dates.html">Syriaca.org
+                                Dates</ref>.</p>
+            </interpretation>
+         </editorialDecl>
+         <classDecl>
+            <taxonomy>
+               <category xml:id="syriaca-headword">
+                  <catDesc>The name used by Syriaca.org for document titles, citation, and
+                                disambiguation. These names have been created according to the
+                                Syriac.org guidelines for headwords: <ref target="http://syriaca.org/documentation/headwords.html">http://syriaca.org/documentation/headwords.html</ref>.</catDesc>
+               </category>
+               <category xml:id="syriaca-anglicized">
+                  <catDesc>An anglicized version of a name, included to facilitate
+                                searching.</catDesc>
+               </category>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
+      <profileDesc>
+         <langUsage default="false">
+            <language ident="syr">Unvocalized Syriac of any variety or period</language>
+            <language ident="syr-Syrj">Vocalized West Syriac</language>
+            <language ident="syr-Syrn">Vocalized East Syriac</language>
+            <language ident="en">English</language>
+            <language ident="en-x-gedsh">Names or terms Romanized into English according to
+                        the standards adopted by the Gorgias Encyclopedic Dictionary of the Syriac
+                        Heritage</language>
+            <language ident="ar">Arabic</language>
+            <language ident="fr">French</language>
+            <language ident="fr-x-bhsyre">Names or terms Romanized into French according to
+                        the standards adopted by the Biblioteca Hagiographica Syriaca
+                        electronica</language>
+            <language ident="de">German</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+      </profileDesc>
+      <revisionDesc status="draft">
+         <change who="http://syriaca.org/documentation/editors.xml#dmichelson"
+                 n="1.0"
+                 status="draft"
+                 when="2015-09-03-05:00">CREATED: work</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <bibl default="false"
+               status="draft"
+               xml:id="work-1081"
+               ana="#syriaca-saint">
+            <title xml:id="name1081-1"
+                   xml:lang="syr"
+                   source="#bib1081-1"
+                   syriaca-tags="#syriaca-headword">ܡܪܝܡ ܝܠܕܬ ܐܠܗܐ</title>
+            <title xml:id="name1081-2" xml:lang="fr-x-bhsyre" source="#bib1081-1">Maryam yāldaṯ Alāhā</title>
+            <title xml:id="name1081-3" xml:lang="fr" source="#bib1081-1">De Marie Mère de Dieu</title>
+            <title xml:id="name1081-4"
+                   xml:lang="en"
+                   source="#bib1081-1"
+                   syriaca-tags="#syriaca-headword">On Mary Mother of God</title>
+            <author xml:lang="fr" source="#bib1081-1">Jacques de Serugh</author>
+            <note xml:lang="syr"
+                  type="incipit"
+                  source="#bib1081-1"
+                  anchored="true">
+               <quote defective="false">ܛܒܐ ܕܦܬܝܚ ܬܪܥܗ ܠܒܝ̈ܫܐ ܘܠܚܛܝ̈ܐ: ܗܒ ܠܝ ܐܥܘܠ ܐܚܙܐ ܫܘܦܪܟ ܟܕ ܬܗܪ ܐܢܐ.</quote>
+            </note>
+            <note xml:lang="fr"
+                  type="incipit"
+                  source="#bib1081-1"
+                  anchored="true">
+               <quote defective="false">Toi le bon dont la porte est ouverte aux mauvais et aux pécheurs, donne-moi d’entrer et de voir ta beauté avec étonnement.</quote>
+            </note>
+            <note xml:lang="syr"
+                  type="explicit"
+                  source="#bib1081-1"
+                  anchored="true">
+               <quote defective="false">ܛܘܒܝܗܿ ܕܒܪܗܿ ܝܗܒ ܛܘܒܐ ܠܟܠ ܛܘ̈ܒܢܐ: ܒܪܝܟ ܕܕܢܚ ܠܢ ܡܢ ܕܟܝܘܬܗܿ ܩܕܝܫܐܝܬ.</quote>
+            </note>
+            <note xml:lang="fr"
+                  type="explicit"
+                  source="#bib1081-1"
+                  anchored="true">
+               <quote defective="false">Bienheureuse celle dont le fils déclare bienheureux tous les bienheureux; béni soit celui qui est apparu venant saintement de sa pureté.</quote>
+            </note>
+            <note type="editions" anchored="true">
+               <bibl source="#bib1081-1" default="false" status="draft">
+                  <author>(1) Abbeloos, J.-B.</author>
+                  <title>(1) S. Martyrii, qui et Sahdona, quae supersunt omnia</title>
+                  <citedRange>(1) Louvain, 1867, p. 202-252</citedRange>
+               </bibl>
+            </note>
+            <note type="editions" anchored="true">
+               <bibl source="#bib1081-1" default="false" status="draft">
+                  <author>(2) Bedjan, P.</author>
+                  <title>(2) Cantus seu Homiliae Mar-Jacobi in Jesum et Mariam</title>
+                  <citedRange>(2) Paris-Leipzig, 1902, p. 614-639</citedRange>
+               </bibl>
+            </note>
+            <note type="editions" anchored="true">
+               <bibl source="#bib1081-1" default="false" status="draft">
+                  <author>(3) Bedjan, P.</author>
+                  <title>(3) Proben syrischer Poesie aus Jakob von Sarug</title>
+                  <citedRange>(3) Paris-Leipzig, 1902, p. 2-27</citedRange>
+               </bibl>
+            </note>
+            <note xml:lang="en" type="MSS" source="#bib1081-1" anchored="true">
+               <bibl default="false" status="draft">ed (1): ms Vatican, Syr. 118, f. 26-31v + Syr. 117, f. 64-66v</bibl>
+            </note>
+            <note xml:lang="en" type="MSS" source="#bib1081-1" anchored="true">
+               <bibl default="false" status="draft">ed (2): + ms Londres, British Library, Add. 14516, f. 143-149</bibl>
+            </note>
+            <note xml:lang="en" type="MSS" source="#bib1081-1" anchored="true">
+               <bibl default="false" status="draft">ms Vatican, Borg. Syr. 128, f. 71v-78v</bibl>
+            </note>
+            <note xml:lang="en" type="MSS" source="#bib1081-1" anchored="true">
+               <bibl default="false" status="draft">ms Londres, British Library, Add. 14515, f. 186v-192</bibl>
+            </note>
+            <note xml:lang="en" type="MSS" source="#bib1081-1" anchored="true">
+               <bibl default="false" status="draft">ms Londres, British Library, Add. 14588, f. 1-12 (mutilé du début)</bibl>
+            </note>
+            <note xml:lang="en" type="MSS" source="#bib1081-1" anchored="true">
+               <bibl default="false" status="draft">ms Londres, British Library, Add. 12165, f. 11-13v (mutilé du début et au milieu)</bibl>
+            </note>
+            <note xml:lang="en" type="MSS" source="#bib1081-1" anchored="true">
+               <bibl default="false" status="draft">ms Paris, Bibliothèque nationale, syr. 196, f. 27-32</bibl>
+            </note>
+            <note xml:lang="en" type="MSS" source="#bib1081-1" anchored="true">
+               <bibl default="false" status="draft">ms Birmingham, Selly Oak College Library, Coll. Mingana, Syr. 48, f. 95-101v</bibl>
+            </note>
+            <note xml:lang="en" type="MSS" source="#bib1081-1" anchored="true">
+               <bibl default="false" status="draft">ms Birmingham, Selly Oak College Library, Coll. Mingana, Syr. 77, f. 78-84v</bibl>
+            </note>
+            <note xml:lang="en" type="MSS" source="#bib1081-1" anchored="true">
+               <bibl default="false" status="draft">ms Manchester, Joh, Rylands Library, Syr. 39, p. 162-174</bibl>
+            </note>
+            <note xml:lang="en" type="MSS" source="#bib1081-1" anchored="true">
+               <bibl default="false" status="draft">ms Oxford, Bodleian Library, syr. 135 (Poc. 404), f. 39-42v</bibl>
+            </note>
+            <note xml:lang="en" type="MSS" source="#bib1081-1" anchored="true">
+               <bibl default="false" status="draft">ms Mossoul, Résidence épiscopale syrienne orthodoxe, cod. 124, f. 99v-106v</bibl>
+            </note>
+            <note xml:lang="en" type="MSS" source="#bib1081-1" anchored="true">
+               <bibl default="false" status="draft">ms Damas, Patriarcat syrien orthodoxe, cod. 12/15 (olim ms Dayr az-Za‘faran, cod. parch. 13 (Dolabany))</bibl>
+            </note>
+            <note xml:lang="en" type="MSS" source="#bib1081-1" anchored="true">
+               <bibl default="false" status="draft">ms Mardin, Évêché syrien orthodoxe, cod. 131 (olim ms Dayr az-Za‘faran, cod. pap. 58 (Dolabany))</bibl>
+            </note>
+            <note xml:lang=""
+                  type="modernTranslation"
+                  source="#bib221-1"
+                  anchored="true">
+               <bibl default="false" status="draft">— latine par J.-B. Abbeloos, ibid.</bibl>
+            </note>
+            <note xml:lang=""
+                  type="modernTranslation"
+                  source="#bib221-1"
+                  anchored="true">
+               <bibl default="false" status="draft">— allemande par G. Bickell, Ausgewählte Gedichte der syrischen Kirchenväter Cyrillonas, Baläus, Isaak von Antiochien und Jakob von Sarug (Bibliothek der Kirchenväter), Kempten, 1872, p. 228-246</bibl>
+            </note>
+            <note xml:lang=""
+                  type="modernTranslation"
+                  source="#bib221-1"
+                  anchored="true">
+               <bibl default="false" status="draft">— italienne par C. Vona, Omelie mariologiche di S. Giacomo di Sarug, dans Lateranum, N.S. 19, p. 115-134</bibl>
+            </note>
+            <idno type="URI">http://syriaca.org/work/1081</idno>
+            <idno type="BHSYRE">903</idno>
+            <bibl default="false" status="draft" xml:id="bibl1081-1">
+               <title level="m" xml:lang="la">Biblioteca Hagiographica Syriaca
+                                        electronica</title>
+               <ptr target="http://syriaca.org/bibl/649"/>
+               <citedRange unit="entry">903</citedRange>
+            </bibl>
+            <bibl default="false" status="draft" xml:id="bibl1081-2">A. Van Roey, La sainteté de Marie d’après Jacques de Saroug, dans ETL, 31 (1955), p. 46-62</bibl>
+            <bibl default="false" status="draft" xml:id="bibl1081-3">Mimouni, S.C., Dormition et Assomption de Marie. Histoire des traditions anciennes (Théologie historique 98), Paris, 1995, p. 421-422</bibl>
+         </bibl>
+      </body>
+   </text>
+</TEI>

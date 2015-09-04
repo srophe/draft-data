@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://syriaca.org/documentation/syriaca-tei-main.rnc" type="application/relax-ng-compact-syntax"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:syriaca="http://syriaca.org"
+     xmlns:saxon="http://saxon.sf.net/"
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+     xmlns:functx="http://www.functx.com"
+     xml:lang="en">
+   <teiHeader type="text">
+      <fileDesc>
+         <titleStmt>
+            <title level="a" xml:lang="en">On  — <foreign xml:lang="syr">ܡܪܝܡ ܝܠܕܬ ܐܠܗܐ</foreign>
+            </title>
+            <title level="m">Qadishe: A Guide to the Lives of the Syriac Saints</title>
+            <sponsor>Syriaca.org: The Syriac Reference Portal</sponsor>
+            <funder>The International Balzan Prize Foundation</funder>
+            <funder>The National Endowment for the Humanities</funder>
+            <principal>David A. Michelson</principal>
+            <editor role="general"
+                    ref="http://syriaca.org/documentation/editors.xml#jnmsaintlaurent">Jeanne-Nicole Mellon Saint-Laurent</editor>
+            <editor role="general"
+                    ref="http://syriaca.org/documentation/editors.xml#dmichelson">David A.
+                        Michelson</editor>
+            <editor role="creator"
+                    ref="http://syriaca.org/documentation/editors.xml#jnmsaintlaurent">Jeanne-Nicole Mellon Saint-Laurent</editor>
+            <editor role="creator"
+                    ref="http://syriaca.org/documentation/editors.xml#dmichelson">David A.
+                        Michelson</editor>
+            <editor role="creator" ref="http://syriaca.org/editors.xml#uzanetti">Ugo
+                        Zanetti</editor>
+            <editor role="creator" ref="http://syriaca.org/editors.xml#cdetienne">Claude
+                        Detienne</editor>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#jnmsaintlaurent"
+                     full="yes"
+                     instant="false">Jeanne-Nicole Mellon Saint-Laurent</name>
+            </respStmt>
+            <respStmt>
+               <resp>Data architecture and encoding by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#dmichelson"
+                     full="yes"
+                     instant="false">David A.
+                            Michelson</name>
+            </respStmt>
+            <respStmt>
+               <resp>Editing, Syriac data conversion, data entry, and reconciling by</resp>
+               <name ref="http://syriaca.org/editors.xml#akane"
+                     full="yes"
+                     instant="false">Adam P. Kane</name>
+            </respStmt>
+            <respStmt>
+               <resp>Editing and Syriac data proofreading by</resp>
+               <name ref="http://syriaca.org/editors.xml#abarschabo"
+                     full="yes"
+                     instant="false">Aram Bar Schabo</name>
+            </respStmt>
+            <respStmt>
+               <resp>Entries adapted from the work of</resp>
+               <name type="person"
+                     ref="http://syriaca.org/editors.xml#uzanetti"
+                     full="yes"
+                     instant="false">Ugo
+                            Zanetti</name>
+            </respStmt>
+            <respStmt>
+               <resp>Entries adapted from the work of</resp>
+               <name type="person"
+                     ref="http://syriaca.org/editors.xml#cdetienne"
+                     full="yes"
+                     instant="false">Claude
+                            Detienne</name>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition n="1.0"/>
+         </editionStmt>
+         <publicationStmt>
+            <authority>Syriaca.org: The Syriac Reference Portal</authority>
+            <idno type="URI">http://syriaca.org/work/987/tei</idno>
+            <availability default="false" status="unknown">
+               <licence target="http://creativecommons.org/licenses/by/3.0/">
+                  <p part="N">Distributed under a Creative Commons Attribution 3.0 Unported
+                                License.</p>
+                  <p part="N">This entry incorporates copyrighted material from the following
+                                work(s): <listBibl default="false">
+                        <bibl default="false" status="draft">
+                           <ptr target="http://syriaca.org/bibl/649"/>
+                        </bibl>
+                     </listBibl>
+                     <note anchored="true">used under a Creative Commons Attribution license <ref target="http://creativecommons.org/licenses/by/3.0/"/>
+                     </note>
+                  </p>
+               </licence>
+            </availability>
+            <date instant="false">2015-09-03-05:00</date>
+         </publicationStmt>
+         <sourceDesc default="false">
+            <p part="N">Born digital.</p>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <editorialDecl default="false">
+            <p part="N">This record created following the Syriaca.org guidelines. Documentation
+                        available at: <ref target="http://syriaca.org/documentation">http://syriaca.org/documentation</ref>.</p>
+            <interpretation default="false">
+               <p part="N">Approximate dates described in terms of centuries or partial centuries
+                            have been interpreted as documented in <ref target="http://syriaca.org/documentation/dates.html">Syriaca.org
+                                Dates</ref>.</p>
+            </interpretation>
+         </editorialDecl>
+         <classDecl>
+            <taxonomy>
+               <category xml:id="syriaca-headword">
+                  <catDesc>The name used by Syriaca.org for document titles, citation, and
+                                disambiguation. These names have been created according to the
+                                Syriac.org guidelines for headwords: <ref target="http://syriaca.org/documentation/headwords.html">http://syriaca.org/documentation/headwords.html</ref>.</catDesc>
+               </category>
+               <category xml:id="syriaca-anglicized">
+                  <catDesc>An anglicized version of a name, included to facilitate
+                                searching.</catDesc>
+               </category>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
+      <profileDesc>
+         <langUsage default="false">
+            <language ident="syr">Unvocalized Syriac of any variety or period</language>
+            <language ident="syr-Syrj">Vocalized West Syriac</language>
+            <language ident="syr-Syrn">Vocalized East Syriac</language>
+            <language ident="en">English</language>
+            <language ident="en-x-gedsh">Names or terms Romanized into English according to
+                        the standards adopted by the Gorgias Encyclopedic Dictionary of the Syriac
+                        Heritage</language>
+            <language ident="ar">Arabic</language>
+            <language ident="fr">French</language>
+            <language ident="fr-x-bhsyre">Names or terms Romanized into French according to
+                        the standards adopted by the Biblioteca Hagiographica Syriaca
+                        electronica</language>
+            <language ident="de">German</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+      </profileDesc>
+      <revisionDesc status="draft">
+         <change who="http://syriaca.org/documentation/editors.xml#dmichelson"
+                 n="1.0"
+                 status="draft"
+                 when="2015-09-03-05:00">CREATED: work</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <bibl default="false"
+               status="draft"
+               xml:id="work-987"
+               ana="#syriaca-saint">
+            <title xml:id="name987-1"
+                   xml:lang="syr"
+                   source="#bib987-1"
+                   syriaca-tags="#syriaca-headword">ܡܪܝܡ ܝܠܕܬ ܐܠܗܐ</title>
+            <title xml:id="name987-2" xml:lang="fr-x-bhsyre" source="#bib987-1">Maryam yāldaṯ Alāhā</title>
+            <title xml:id="name987-3" xml:lang="fr" source="#bib987-1">De Marie Mère de Dieu</title>
+            <author xml:lang="fr" source="#bib987-1">Éphrem</author>
+            <note xml:lang="syr"
+                  type="incipit"
+                  source="#bib987-1"
+                  anchored="true">
+               <quote defective="false">ܕܘܨ ܟܢܫܐ ܕܥܠܝ̈ܡܬܐ. ܒܒܬܘܠܬܐ ܡܠܝܬ ܬܗܪܐ. ܕܒܪܟܬ ܝܠܕܬ ܓܢܒܪܐ. ܕܦܟܪ ܚܒܫܗ ܠܡܪܘܕܐ. ܕܠܐ ܢܛܥܐ ܒܥܠܝ̈ܡܬܐ.</quote>
+            </note>
+            <note xml:lang="fr" type="incipit" source="#bib987-1" anchored="true">
+               <quote defective="false">Exulte, assemblée de jeunes filles, en la Vierge très admirable qui s’accroupit et enfanta le héros qui enchaîna et emprisonna le rebelle pour qu’il ne trompât pas les jeunes filles.</quote>
+            </note>
+            <note xml:lang="syr"
+                  type="explicit"
+                  source="#bib987-1"
+                  anchored="true">
+               <quote defective="false">ܚܘܝܗ ܡܪܝܐ ܠܢܒܝܐ. ܒܕܪ̈ܬܐ ܗܢܝ̈ܬܐ. ܬܪܥܐ ܕܐܚܝܕ ܘܐܡܪ ܠܗ. ܕܗܢܐ ܠܡ ܢܗܘܐ ܐܚܝܕ. ܥܠ ܕܐܠܗܐ ܥܐܠ ܒܗ.</quote>
+            </note>
+            <note xml:lang="fr"
+                  type="explicit"
+                  source="#bib987-1"
+                  anchored="true">
+               <quote defective="false">Le Seigneur montra au prophète dans les cours agréables la porte fermée et lui dit: «Celle-ci sera fermée parce que Dieu entrera par elle.»</quote>
+            </note>
+            <note type="editions" anchored="true">
+               <bibl source="#bib987-1" default="false" status="draft">
+                  <author>(1) Lamy, T. J.</author>
+                  <title>(1) SESHS 2</title>
+                  <citedRange>(1) col. 529-533</citedRange>
+               </bibl>
+            </note>
+            <note type="editions" anchored="true">
+               <bibl source="#bib987-1" default="false" status="draft">
+                  <author>(2) Manna, J. E.</author>
+                  <title>(2) MCLA 1</title>
+                  <citedRange>(2) p. 71-73</citedRange>
+               </bibl>
+            </note>
+            <note xml:lang="en" type="MSS" source="#bib987-1" anchored="true">
+               <bibl default="false" status="draft">ed (1): mss Londres, British Library, Add. 14506, f. 7v-8 + Add. 14515, f. 45v-46 + Add. 14516, f. 26v-27 + Add. 14511, f. 21v-22</bibl>
+            </note>
+            <note xml:lang="en" type="MSS" source="#bib987-1" anchored="true">
+               <bibl default="false" status="draft">ms Vatican, Syr. 521, f. 96-97v</bibl>
+            </note>
+            <note xml:lang=""
+                  type="modernTranslation"
+                  source="#bib221-1"
+                  anchored="true">
+               <bibl default="false" status="draft">— latine par T. J. Lamy, col. 530-534</bibl>
+            </note>
+            <note xml:lang=""
+                  type="modernTranslation"
+                  source="#bib221-1"
+                  anchored="true">
+               <bibl default="false" status="draft">— italienne par G. Ricciotti, S. Efrem Siro. Inni alla Vergine, Rome, 1925, p. 19-21</bibl>
+            </note>
+            <idno type="URI">http://syriaca.org/work/987</idno>
+            <idno type="BHSYRE">797</idno>
+            <bibl default="false" status="draft" xml:id="bibl987-1">
+               <title level="m" xml:lang="la">Biblioteca Hagiographica Syriaca
+                                        electronica</title>
+               <ptr target="http://syriaca.org/bibl/649"/>
+               <citedRange unit="entry">797</citedRange>
+            </bibl>
+            <bibl default="false" status="draft" xml:id="bibl987-2">J.M. Bover, S. Ephraem, Doctoris Syri, testimonia de Universali B. Mariae V. Mediatione, dans ETL, 4 (1927), p. 161-179</bibl>
+         </bibl>
+      </body>
+   </text>
+</TEI>

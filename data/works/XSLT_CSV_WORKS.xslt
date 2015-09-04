@@ -380,11 +380,11 @@
                                     </citedRange>
                                 </bibl>
                                 <xsl:for-each select="De_qua">
-                                    <xsl:if test="normalize-space(De_qua) !=''">
+                                    <xsl:if test="normalize-space(.) !=''">
                                         <bibl>
                                         <xsl:attribute name="xml:id"
-                                            select="concat('bibl', $record-id, position() + 1)"/>
-                                        <xsl:value-of select="."/>
+                                            select="concat('bibl', $record-id, '-', position() + 1)"/>
+                                            <xsl:value-of select="normalize-space(.)"/>
                                         </bibl>
                                     </xsl:if>
                                 </xsl:for-each>

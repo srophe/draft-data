@@ -26,6 +26,33 @@
             <xsl:when test="normalize-space($AncientLang)='Greek'">
                 <xsl:text>grc</xsl:text>
             </xsl:when>
+            <xsl:when test="normalize-space($AncientLang)='Arabic'">
+                <xsl:text>ar</xsl:text>
+            </xsl:when>
+            <xsl:when test="normalize-space($AncientLang)='Armenian'">
+                <xsl:text>hy</xsl:text>
+            </xsl:when>
+            <xsl:when test="normalize-space($AncientLang)='Georgian'">
+                <xsl:text>ka</xsl:text>
+            </xsl:when>
+            <xsl:when test="normalize-space($AncientLang)='Soghdian'">
+                <xsl:text>sog</xsl:text>
+            </xsl:when>
+            <xsl:when test="normalize-space($AncientLang)='Slavic'">
+                <xsl:text>cu</xsl:text>
+            </xsl:when>
+            <xsl:when test="normalize-space($AncientLang)='Coptic'">
+                <xsl:text>cop</xsl:text>
+            </xsl:when>
+            <xsl:when test="normalize-space($AncientLang)='Ethiopic'">
+                <xsl:text>gez</xsl:text>
+            </xsl:when>
+            <xsl:when test="normalize-space($AncientLang)='Syro-Palestinian'">
+                <xsl:text>syr-pal</xsl:text>
+            </xsl:when>
+            <xsl:when test="normalize-space($AncientLang)='Karshuni'">
+                <xsl:text>ar-syr</xsl:text>
+            </xsl:when>
             <xsl:otherwise/>
         </xsl:choose>
     </xsl:function>

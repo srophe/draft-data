@@ -9,7 +9,8 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title level="a" xml:lang="en">On Cyriaque</title>
+            <title level="a" xml:lang="en">On Euphrosyne — <foreign xml:lang="syr">ܐܘܦܪܘܣܝܢܝ ܐܙܡܪܓܕܘܣ</foreign>
+            </title>
             <title level="m">Qadishe: A Guide to the Lives of the Syriac Saints</title>
             <sponsor>Syriaca.org: The Syriac Reference Portal</sponsor>
             <funder>The International Balzan Prize Foundation</funder>
@@ -80,7 +81,7 @@
                   </p>
                </licence>
             </availability>
-            <date>2015-06-19-04:00</date>
+            <date>2015-09-24-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -131,33 +132,58 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#dmichelson"
                  n="1.0"
-                 when="2015-06-19-04:00">CREATED: work</change>
+                 when="2015-09-24-04:00">CREATED: work</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <bibl xml:id="work-1750" ana="#syriaca-saint">
-            <title xml:id="name1750-3" xml:lang="fr" source="#bib1750-1">De Cyriaque (varia)</title>
+            <title xml:id="name1750-1"
+                   xml:lang="syr"
+                   source="#bib1750-1"
+                   syriaca-tags="#syriaca-headword">ܐܘܦܪܘܣܝܢܝ ܐܙܡܪܓܕܘܣ</title>
+            <title xml:id="name1750-2" xml:lang="fr-x-bhsyre" source="#bib1750-1">ʾĒwprōsīnī ʾEzmargḏōs</title>
+            <title xml:id="name1750-3" xml:lang="fr" source="#bib1750-1">De Euphrosyne</title>
             <title xml:id="name1750-4"
                    xml:lang="en"
                    source="#bib1750-1"
-                   syriaca-tags="#syriaca-headword">On Cyriaque</title>
-            <note xml:lang="en" type="MSS" source="#bib1750-1">
-               <bibl>ms Cambridge (Mass.), Harvard University Library, Syr. 38, f. 1-49v</bibl>
+                   syriaca-tags="#syriaca-headword">On Euphrosyne</title>
+            <note xml:lang="syr" type="incipit" source="#bib1750-1">
+               <quote>ܐܝܬ ܗܘܐ ܕܝܢ ܒܙܒܢ ܒܡܕܝܢܬܐ ܪܒܬܐ ܐܠܟܣܢܕܪܝܐ. ܓܒܪܐ ܚܕ ܡܝܩܪܐ ܘܫܡܗ ܗܘܐ ܦܦܢܛܘܣ: ܘܚܦܝܛ ܗܘܐ ܕܢܫܡܠܐ ܦܘܩ̈ܕܢܘܗܝ ܕܐܠܗܐ.</quote>
+            </note>
+            <note xml:lang="fr" type="incipit" source="#bib1750-1">
+               <quote>Il était une fois dans la grande ville d’Alexandrie un homme honorable qui s’appelait Paphnuce, et il était appliqué à exécuter les commandements de Dieu.</quote>
+            </note>
+            <note xml:lang="syr" type="explicit" source="#bib1750-1">
+               <quote>ܚܝܐ ܕܝܢ ܐܒܘܗܿ ܒܕܝܪܐ ܗܿܝ ܫ̈ܢܝܐ ܥܣܪ: ܘܚܙܩ ܠܘܬ ܡܪܗ. ܘܫܒܩ ܐܪ̈ܥܢܝܬܐ ܘܐܬܩܒܪ ܥܠ ܓܪܡܗ ܕܩܕܝܫܬܐ ܐܘܦܪܘܣܝܢܐ ܒܪܬܗ ܠܬܫܒܘܚܬܐ ܕܐܒܐ.... ܐܡܝܢ.</quote>
+            </note>
+            <note xml:lang="fr" type="explicit" source="#bib1750-1">
+               <quote>Et son père vécut dans ce monastère dix ans; et il partit vers son Seigneur, et il abandonna les choses terrestres et fut enterré près du corps de sainte Euphrosyne sa fille pour la gloire du Père… Amen.</quote>
+            </note>
+            <note type="editions">
+               <bibl source="#bib1750-1">
+                  <author>Lewis, A.S.</author>
+                  <title>Select Narratives of Holy Women</title>
+                  <citedRange>Londres, 1900, p. 61-80 (syr.)</citedRange>
+               </bibl>
             </note>
             <note xml:lang="en" type="MSS" source="#bib1750-1">
-               <bibl>ms Ourmia, Sarau-Shedd 41</bibl>
+               <bibl>ed: ms Sinai, Monastère Sainte-Catherine, Syr. 30 (Kamil 74)</bibl>
             </note>
-            <note xml:lang="en" type="MSS" source="#bib1750-1">
-               <bibl>ms Ourmia, Sarau-Shedd 203</bibl>
+            <note xml:lang="ar" type="ancientVersion" source="#bib221-1">
+               <bibl>M. Kamil, Sainte Euphrosyne, vierge d’Alexandrie, dans Tome commémoratif du millénaire de la Bibliothèque patriarcale d’Alexandrie (Publications de l’Institut d’études orientales de la Bibliothèque patriarcale d’Alexandrie, 2), Alexandrie, 1953, p. 231-260</bibl>
+            </note>
+            <note xml:lang="" type="modernTranslation" source="#bib221-1">
+               <bibl>— anglaise par A.S. Lewis, Select Narratives of Holy Women (Studia Sinaitica, 10), Londres, 1900, p. 46-59</bibl>
             </note>
             <idno type="URI">http://syriaca.org/work/1750</idno>
-            <idno type="BHSYRE">1662</idno>
+            <idno type="BHSYRE">1685</idno>
+            <idno type="BHO">289</idno>
             <bibl xml:id="bibl1750-1">
                <title level="m" xml:lang="la">Biblioteca Hagiographica Syriaca
                                         electronica</title>
                <ptr target="http://syriaca.org/bibl/649"/>
-               <citedRange unit="entry">1662</citedRange>
+               <citedRange unit="entry">1685</citedRange>
             </bibl>
          </bibl>
       </body>

@@ -9,7 +9,8 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title level="a" xml:lang="en">On Eugene and Disciples</title>
+            <title level="a" xml:lang="en">On Thomas — <foreign xml:lang="syr">ܬܐܘܡܐ</foreign>
+            </title>
             <title level="m">Qadishe: A Guide to the Lives of the Syriac Saints</title>
             <sponsor>Syriaca.org: The Syriac Reference Portal</sponsor>
             <funder>The International Balzan Prize Foundation</funder>
@@ -80,7 +81,7 @@
                   </p>
                </licence>
             </availability>
-            <date>2015-06-19-04:00</date>
+            <date>2015-09-24-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -131,27 +132,39 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#dmichelson"
                  n="1.0"
-                 when="2015-06-19-04:00">CREATED: work</change>
+                 when="2015-09-24-04:00">CREATED: work</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <bibl xml:id="work-1677" ana="#syriaca-saint">
-            <title xml:id="name1677-3" xml:lang="fr" source="#bib1677-1">De Eugène et disciples</title>
+            <title xml:id="name1677-1"
+                   xml:lang="syr"
+                   source="#bib1677-1"
+                   syriaca-tags="#syriaca-headword">ܬܐܘܡܐ</title>
+            <title xml:id="name1677-2" xml:lang="fr-x-bhsyre" source="#bib1677-1">Tōmā</title>
+            <title xml:id="name1677-3" xml:lang="fr" source="#bib1677-1">De Thomas (tourgama)</title>
             <title xml:id="name1677-4"
                    xml:lang="en"
                    source="#bib1677-1"
-                   syriaca-tags="#syriaca-headword">On Eugene and Disciples</title>
+                   syriaca-tags="#syriaca-headword">On Thomas</title>
+            <author xml:lang="fr" source="#bib1677-1">Georges d’Alqosh</author>
+            <note xml:lang="syr" type="incipit" source="#bib1677-1">
+               <quote>ܐܘ ܕܡܗܝܡܢܝܢ ܒܐܒܐ ܘܒܪܐ ܘܣܓܕܝܢ ܠܪܘܚܐ̣. ܘܡܘܕܝܢ ܡܫܒܚܝܢ ܚܕܐ ܬܘܕܝܬܐ ܬܪܝܨܬ ܫܘܒܚܐ.</quote>
+            </note>
+            <note xml:lang="fr" type="incipit" source="#bib1677-1">
+               <quote>Ô vous qui croyez dans le Père et dans le Fils, qui adorez l’Esprit, qui confessez et louez la religion orthodoxe.</quote>
+            </note>
             <note xml:lang="en" type="MSS" source="#bib1677-1">
-               <bibl>ms Siirt, Évêché chaldéen, cod. 55</bibl>
+               <bibl>ms Cambridge, University Library, Add. 1977, f. 32-33</bibl>
             </note>
             <idno type="URI">http://syriaca.org/work/1677</idno>
-            <idno type="BHSYRE">1585</idno>
+            <idno type="BHSYRE">1605</idno>
             <bibl xml:id="bibl1677-1">
                <title level="m" xml:lang="la">Biblioteca Hagiographica Syriaca
                                         electronica</title>
                <ptr target="http://syriaca.org/bibl/649"/>
-               <citedRange unit="entry">1585</citedRange>
+               <citedRange unit="entry">1605</citedRange>
             </bibl>
          </bibl>
       </body>

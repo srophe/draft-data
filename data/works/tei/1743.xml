@@ -9,7 +9,8 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title level="a" xml:lang="en">On Steven</title>
+            <title level="a" xml:lang="en">On Job — <foreign xml:lang="syr">ܐܝܘܒ</foreign>
+            </title>
             <title level="m">Qadishe: A Guide to the Lives of the Syriac Saints</title>
             <sponsor>Syriaca.org: The Syriac Reference Portal</sponsor>
             <funder>The International Balzan Prize Foundation</funder>
@@ -80,7 +81,7 @@
                   </p>
                </licence>
             </availability>
-            <date>2015-06-19-04:00</date>
+            <date>2015-09-24-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -131,33 +132,52 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#dmichelson"
                  n="1.0"
-                 when="2015-06-19-04:00">CREATED: work</change>
+                 when="2015-09-24-04:00">CREATED: work</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <bibl xml:id="work-1743" ana="#syriaca-saint">
-            <title xml:id="name1743-3" xml:lang="fr" source="#bib1743-1">De Étienne</title>
+            <title xml:id="name1743-1"
+                   xml:lang="syr"
+                   source="#bib1743-1"
+                   syriaca-tags="#syriaca-headword">ܐܝܘܒ</title>
+            <title xml:id="name1743-2" xml:lang="fr-x-bhsyre" source="#bib1743-1">ʾĪyōḇ</title>
+            <title xml:id="name1743-3" xml:lang="fr" source="#bib1743-1">De Job</title>
             <title xml:id="name1743-4"
                    xml:lang="en"
                    source="#bib1743-1"
-                   syriaca-tags="#syriaca-headword">On Steven</title>
+                   syriaca-tags="#syriaca-headword">On Job</title>
+            <author xml:lang="fr" source="#bib1743-1">Jacques de Serugh</author>
             <note xml:lang="syr" type="incipit" source="#bib1743-1">
-               <quote>ܐܘ ܟܡܐ ܫܦܝܪ ܕܘܟܪܢܐ ܕܥܒܕܐ ܥܕܬܐ ܝܘܡܢܐ.</quote>
+               <quote>ܩܪܒܐ ܥܒܕ ܙܟܘܬܐ: ܘܕܪܐ ܗܘ ܥܠܬܗ ܕܟܠܝܠܐ. ܘܡܢ ܐܓܘܢܐ ܡܬܝܕܥܐ: ܐܬܠܝܛܘܬܐ ܕܚܠܝ̈ܨܐ.</quote>
             </note>
             <note xml:lang="fr" type="incipit" source="#bib1743-1">
-               <quote>Comme est belle la mémoire que fait l’Église aujourd’hui.</quote>
+               <quote>La guerre fait la victoire et le combat est la cause du couronnement; et la vaillance des forts est connue par la lutte.</quote>
+            </note>
+            <note xml:lang="syr" type="explicit" source="#bib1743-1">
+               <quote>ܠܐ ܢܦܘܩ ܛܒܐ ܒܐܪܥܐ: ܕܚܕ ܚܠܫܐ ܙܟܐ ܠܓܒܢ. ܒܚܝܨܘܬܐ ܐܩܪܒܘ ܥܡܗ: ܘܗܐ ܢܦܠ ܒܥܓܠ ܩܘܕܡܝܟܘܢ.</quote>
+            </note>
+            <note xml:lang="fr" type="explicit" source="#bib1743-1">
+               <quote>Que le bon ne sorte pas sur la terre car un faible a vaincu notre côté; avec vigueur ils ont combattu avec lui et voilà il est tombé rapidement devant vous.</quote>
+            </note>
+            <note type="editions">
+               <bibl source="#bib1743-1">
+                  <author>Bedjan, P.</author>
+                  <title>HSMJS 5</title>
+                  <citedRange>p. 180-202</citedRange>
+               </bibl>
             </note>
             <note xml:lang="en" type="MSS" source="#bib1743-1">
-               <bibl>ms Cambridge, University Library, Add. 2041, f. 12v-13</bibl>
+               <bibl>ed: mss Londres, British Library, Add. 14584, f. 77v-86 + Add. 12162, f. 160-168</bibl>
             </note>
             <idno type="URI">http://syriaca.org/work/1743</idno>
-            <idno type="BHSYRE">1654</idno>
+            <idno type="BHSYRE">1676</idno>
             <bibl xml:id="bibl1743-1">
                <title level="m" xml:lang="la">Biblioteca Hagiographica Syriaca
                                         electronica</title>
                <ptr target="http://syriaca.org/bibl/649"/>
-               <citedRange unit="entry">1654</citedRange>
+               <citedRange unit="entry">1676</citedRange>
             </bibl>
          </bibl>
       </body>

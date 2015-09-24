@@ -9,7 +9,8 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title level="a" xml:lang="en">On Apostles</title>
+            <title level="a" xml:lang="en">On Steven — <foreign xml:lang="syr">ܣܛܐܦܢܘܣ</foreign>
+            </title>
             <title level="m">Qadishe: A Guide to the Lives of the Syriac Saints</title>
             <sponsor>Syriaca.org: The Syriac Reference Portal</sponsor>
             <funder>The International Balzan Prize Foundation</funder>
@@ -80,7 +81,7 @@
                   </p>
                </licence>
             </availability>
-            <date>2015-06-19-04:00</date>
+            <date>2015-09-24-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -131,39 +132,44 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#dmichelson"
                  n="1.0"
-                 when="2015-06-19-04:00">CREATED: work</change>
+                 when="2015-09-24-04:00">CREATED: work</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <bibl xml:id="work-709" ana="#syriaca-saint">
-            <title xml:id="name709-3" xml:lang="fr" source="#bib709-1">De Apôtres</title>
+            <title xml:id="name709-1"
+                   xml:lang="syr"
+                   source="#bib709-1"
+                   syriaca-tags="#syriaca-headword">ܣܛܐܦܢܘܣ</title>
+            <title xml:id="name709-2" xml:lang="fr-x-bhsyre" source="#bib709-1">Sṭēpanōs</title>
+            <title xml:id="name709-3" xml:lang="fr" source="#bib709-1">De Étienne</title>
             <title xml:id="name709-4"
                    xml:lang="en"
                    source="#bib709-1"
-                   syriaca-tags="#syriaca-headword">On Apostles</title>
+                   syriaca-tags="#syriaca-headword">On Steven</title>
             <author xml:lang="fr" source="#bib709-1">Sévère d’Antioche, Jacques d’Édesse</author>
             <note xml:lang="syr" type="incipit" source="#bib709-1">
-               <quote>ܫ̈ܠܝܚܐ ܕܫܪܪܐ ܘܡܣܒܪ̈ܢܐ ܘܡ̈ܠܦܢܐ ܕܥܕܬܐ̣. ܠܟܘܢ ܟܐܢܐܝܬ ܟܠ ܡܕܝܢܬܐ ܘܐܬܪܐ...</quote>
+               <quote>ܘܩܕܡ ܕܢܨܚ ܒܣܗܕܘܬܐ. ܣܬܐܦܐܢܘܣ ܗܿܘ ܪܝܫܐ ܕܣܗ̈ܕܐ ܒܟܠܝܠܐ ܕܣܗܕܘܬܐ ܡܗܕܪ ܗܘܐ ܘܡܟܠܠ ܡܢ ܟܕܘ.</quote>
             </note>
             <note xml:lang="fr" type="incipit" source="#bib709-1">
-               <quote>Pour vous, villes et pays, les apôtres de la vérité, prédicateurs et docteurs de l’Église, en toute justice…</quote>
+               <quote>Avant sont triomphe dans le martyre, Étienne, chef des martyrs, était déjà orné et couronné de la couronne du martyre.</quote>
             </note>
             <note xml:lang="syr" type="explicit" source="#bib709-1">
-               <quote>ܐܦܝܣܘ ܗܟܝܠ ܒܒܥܘ ܡܢܟܘܢ̣. ܕܒܝ̈ܘܠܦܢܝܟܘܢ ܐܠܗ̈ܝܐ ܢܫܬܪ̈ܪܢ ܢܦܫ̈ܬܐ ܕܟܠܢ̣. ܘܕܢܫܬܘܐ ܕܢܫܟܚ ܪ̈ܚܡܐ ܣ̈ܓܝܐܐ.</quote>
+               <quote>ܗܿܘ ܕܒܨ̈ܠܘܬܗ ܘܥܠ ܟܠܢ ܚܘܣ ܘܐܬܪܚܡ ܡܪܝܐ ܕܡܬܬܢܝܚ ܒܩ̈ܕܝܫܐ.</quote>
             </note>
             <note xml:lang="fr" type="explicit" source="#bib709-1">
-               <quote>Suppliez-donc, je vous en prie, pour que nos âmes à tous soient affermies par vos enseignements divins, et que nous soyons jugés dignes de trouver grande miséricorde.</quote>
+               <quote>Par ses prières épargne-nous et prends pitié de nous tous, Seigneur qui trouve ta satisfaction dans les saints.</quote>
             </note>
             <note type="editions">
                <bibl source="#bib709-1">
                   <author>Brooks, E. W.</author>
-                  <title>James of Edessa, Hymns of Severus of Antioch and Others 1</title>
-                  <citedRange>p. 168-169</citedRange>
+                  <title>JEHSA 1</title>
+                  <citedRange>p. 167-168</citedRange>
                </bibl>
             </note>
             <note xml:lang="en" type="MSS" source="#bib709-1">
-               <bibl n="1">(Edited Above): mss Londres, British Library, Add. 17134, f. 37r-v + add. 18816, f. 52r</bibl>
+               <bibl>ed: mss Londres, British Library, Add. 17134, f. 37r + add. 18816, f. 51v</bibl>
             </note>
             <note xml:lang="en" type="MSS" source="#bib709-1">
                <bibl>ms Paris, Bibliothèque nationale, syr. 337</bibl>
@@ -171,14 +177,17 @@
             <note xml:lang="en" type="MSS" source="#bib709-1">
                <bibl>ms Cambridge, University Library, Add. 1993</bibl>
             </note>
+            <note xml:lang="" type="modernTranslation" source="#bib221-1">
+               <bibl>anglaise par E. W. Brooks, ibid.</bibl>
+            </note>
             <idno type="URI">http://syriaca.org/work/709</idno>
-            <idno type="BHSYRE">495</idno>
+            <idno type="BHSYRE">494</idno>
             <idno type="CPG">7072</idno>
             <bibl xml:id="bibl709-1">
                <title level="m" xml:lang="la">Biblioteca Hagiographica Syriaca
                                         electronica</title>
                <ptr target="http://syriaca.org/bibl/649"/>
-               <citedRange unit="entry">495</citedRange>
+               <citedRange unit="entry">494</citedRange>
             </bibl>
          </bibl>
       </body>

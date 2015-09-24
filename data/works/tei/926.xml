@@ -9,7 +9,8 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title level="a" xml:lang="en">On Sabas</title>
+            <title level="a" xml:lang="en">On Philemon — <foreign xml:lang="syr">ܦܝܠܝܡܘܢ</foreign>
+            </title>
             <title level="m">Qadishe: A Guide to the Lives of the Syriac Saints</title>
             <sponsor>Syriaca.org: The Syriac Reference Portal</sponsor>
             <funder>The International Balzan Prize Foundation</funder>
@@ -80,7 +81,7 @@
                   </p>
                </licence>
             </availability>
-            <date>2015-06-19-04:00</date>
+            <date>2015-09-24-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -131,34 +132,39 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#dmichelson"
                  n="1.0"
-                 when="2015-06-19-04:00">CREATED: work</change>
+                 when="2015-09-24-04:00">CREATED: work</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <bibl xml:id="work-926" ana="#syriaca-saint">
-            <title xml:id="name926-3" xml:lang="fr" source="#bib926-1">De Sabas</title>
+            <title xml:id="name926-1"
+                   xml:lang="syr"
+                   source="#bib926-1"
+                   syriaca-tags="#syriaca-headword">ܦܝܠܝܡܘܢ</title>
+            <title xml:id="name926-2" xml:lang="fr-x-bhsyre" source="#bib926-1">Pīlīmōn</title>
+            <title xml:id="name926-3" xml:lang="fr" source="#bib926-1">De Philémon</title>
             <title xml:id="name926-4"
                    xml:lang="en"
                    source="#bib926-1"
-                   syriaca-tags="#syriaca-headword">On Sabas</title>
+                   syriaca-tags="#syriaca-headword">On Philemon</title>
             <note type="editions">
                <bibl source="#bib926-1">
                   <author>Land, J. P. N.</author>
                   <title>Otia Syriaca</title>
-                  <citedRange>p. 170 (syr.)</citedRange>
+                  <citedRange>p. 169-170 (syr.)</citedRange>
                </bibl>
             </note>
             <note xml:lang="en" type="MSS" source="#bib926-1">
-               <bibl n="1">(Edited Above): ms Saint-Pétersbourg, ?</bibl>
+               <bibl>ed: ms Saint-Pétersbourg, ?</bibl>
             </note>
             <idno type="URI">http://syriaca.org/work/926</idno>
-            <idno type="BHSYRE">724</idno>
+            <idno type="BHSYRE">723</idno>
             <bibl xml:id="bibl926-1">
                <title level="m" xml:lang="la">Biblioteca Hagiographica Syriaca
                                         electronica</title>
                <ptr target="http://syriaca.org/bibl/649"/>
-               <citedRange unit="entry">724</citedRange>
+               <citedRange unit="entry">723</citedRange>
             </bibl>
          </bibl>
       </body>

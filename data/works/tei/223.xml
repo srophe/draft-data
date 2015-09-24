@@ -6,10 +6,10 @@
      xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
      xmlns:functx="http://www.functx.com"
      xml:lang="en">
-   <teiHeader type="text">
+   <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title level="a" xml:lang="en">On Acts of Thomas — <foreign xml:lang="syr">ܬܐܘܡܐ</foreign>
+            <title level="a" xml:lang="en">On Paul the Apostle — <foreign xml:lang="syr">ܦܘܠܘܣ</foreign>
             </title>
             <title level="m">Qadishe: A Guide to the Lives of the Syriac Saints</title>
             <sponsor>Syriaca.org: The Syriac Reference Portal</sponsor>
@@ -33,44 +33,30 @@
             <respStmt>
                <resp>Editing, proofreading, data entry and revision by</resp>
                <name type="person"
-                     ref="http://syriaca.org/documentation/editors.xml#jnmsaintlaurent"
-                     full="yes"
-                     instant="false">Jeanne-Nicole Mellon Saint-Laurent</name>
+                     ref="http://syriaca.org/documentation/editors.xml#jnmsaintlaurent">Jeanne-Nicole Mellon Saint-Laurent</name>
             </respStmt>
             <respStmt>
                <resp>Data architecture and encoding by</resp>
                <name type="person"
-                     ref="http://syriaca.org/documentation/editors.xml#dmichelson"
-                     full="yes"
-                     instant="false">David A.
+                     ref="http://syriaca.org/documentation/editors.xml#dmichelson">David A.
                             Michelson</name>
             </respStmt>
             <respStmt>
                <resp>Editing, Syriac data conversion, data entry, and reconciling by</resp>
-               <name ref="http://syriaca.org/editors.xml#akane"
-                     full="yes"
-                     instant="false">Adam P. Kane</name>
+               <name ref="http://syriaca.org/editors.xml#akane">Adam P. Kane</name>
             </respStmt>
             <respStmt>
                <resp>Editing and Syriac data proofreading by</resp>
-               <name ref="http://syriaca.org/editors.xml#abarschabo"
-                     full="yes"
-                     instant="false">Aram Bar Schabo</name>
+               <name ref="http://syriaca.org/editors.xml#abarschabo">Aram Bar Schabo</name>
             </respStmt>
             <respStmt>
                <resp>Entries adapted from the work of</resp>
-               <name type="person"
-                     ref="http://syriaca.org/editors.xml#uzanetti"
-                     full="yes"
-                     instant="false">Ugo
+               <name type="person" ref="http://syriaca.org/editors.xml#uzanetti">Ugo
                             Zanetti</name>
             </respStmt>
             <respStmt>
                <resp>Entries adapted from the work of</resp>
-               <name type="person"
-                     ref="http://syriaca.org/editors.xml#cdetienne"
-                     full="yes"
-                     instant="false">Claude
+               <name type="person" ref="http://syriaca.org/editors.xml#cdetienne">Claude
                             Detienne</name>
             </respStmt>
          </titleStmt>
@@ -80,33 +66,33 @@
          <publicationStmt>
             <authority>Syriaca.org: The Syriac Reference Portal</authority>
             <idno type="URI">http://syriaca.org/work/223/tei</idno>
-            <availability default="false" status="unknown">
+            <availability>
                <licence target="http://creativecommons.org/licenses/by/3.0/">
-                  <p part="N">Distributed under a Creative Commons Attribution 3.0 Unported
+                  <p>Distributed under a Creative Commons Attribution 3.0 Unported
                                 License.</p>
-                  <p part="N">This entry incorporates copyrighted material from the following
-                                work(s): <listBibl default="false">
-                        <bibl default="false" status="draft">
+                  <p>This entry incorporates copyrighted material from the following
+                                work(s): <listBibl>
+                        <bibl>
                            <ptr target="http://syriaca.org/bibl/649"/>
                         </bibl>
                      </listBibl>
-                     <note anchored="true">used under a Creative Commons Attribution license <ref target="http://creativecommons.org/licenses/by/3.0/"/>
+                     <note>used under a Creative Commons Attribution license <ref target="http://creativecommons.org/licenses/by/3.0/"/>
                      </note>
                   </p>
                </licence>
             </availability>
-            <date instant="false">2015-09-03-05:00</date>
+            <date>2015-09-24-04:00</date>
          </publicationStmt>
-         <sourceDesc default="false">
-            <p part="N">Born digital.</p>
+         <sourceDesc>
+            <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <editorialDecl default="false">
-            <p part="N">This record created following the Syriaca.org guidelines. Documentation
+         <editorialDecl>
+            <p>This record created following the Syriaca.org guidelines. Documentation
                         available at: <ref target="http://syriaca.org/documentation">http://syriaca.org/documentation</ref>.</p>
-            <interpretation default="false">
-               <p part="N">Approximate dates described in terms of centuries or partial centuries
+            <interpretation>
+               <p>Approximate dates described in terms of centuries or partial centuries
                             have been interpreted as documented in <ref target="http://syriaca.org/documentation/dates.html">Syriaca.org
                                 Dates</ref>.</p>
             </interpretation>
@@ -126,7 +112,7 @@
          </classDecl>
       </encodingDesc>
       <profileDesc>
-         <langUsage default="false">
+         <langUsage>
             <language ident="syr">Unvocalized Syriac of any variety or period</language>
             <language ident="syr-Syrj">Vocalized West Syriac</language>
             <language ident="syr-Syrn">Vocalized East Syriac</language>
@@ -143,161 +129,80 @@
             <language ident="la">Latin</language>
          </langUsage>
       </profileDesc>
-      <revisionDesc status="draft">
+      <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#dmichelson"
                  n="1.0"
-                 status="draft"
-                 when="2015-09-03-05:00">CREATED: work</change>
+                 when="2015-09-24-04:00">CREATED: work</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
-         <bibl default="false"
-               status="draft"
-               xml:id="work-223"
-               ana="#syriaca-saint">
+         <bibl xml:id="work-223" ana="#syriaca-saint">
             <title xml:id="name223-1"
                    xml:lang="syr"
                    source="#bib223-1"
-                   syriaca-tags="#syriaca-headword">ܬܐܘܡܐ</title>
-            <title xml:id="name223-2" xml:lang="fr-x-bhsyre" source="#bib223-1">Tōmā</title>
-            <title xml:id="name223-3" xml:lang="fr" source="#bib223-1">De Thomas apôtre</title>
+                   syriaca-tags="#syriaca-headword">ܦܘܠܘܣ</title>
+            <title xml:id="name223-2" xml:lang="fr-x-bhsyre" source="#bib223-1">Pawlōs</title>
+            <title xml:id="name223-3" xml:lang="fr" source="#bib223-1">De Paul, apôtre</title>
             <title xml:id="name223-4"
                    xml:lang="en"
                    source="#bib223-1"
-                   syriaca-tags="#syriaca-headword">On Acts of Thomas</title>
-            <note xml:lang="syr"
-                  type="incipit"
-                  source="#bib223-1"
-                  anchored="true">
-               <quote defective="false">ܘܟܕ ܗܘܘ ܙܒܢܐ ܒܐܘܪܫܠܡ ܫܠܝ̈ܚܐ ܟܠܗܘܢ: ܫܡܥܘܢ ܟܐܦܐ ܘܐܢܕܪܐܘܣ: ܘܝܥܩܘܒ ܘܝܘܚܢܢ: ܘܦܝܠܝܦܘܣ ܘܒܪ ܬܘܠܡܝ: ܘܬܐܘܡܐ ܘܡܬܝ ܡܟܣܐ: ܘܝܥܩܘܒ ܒܪ ܚܠܦܝ ܘܫܡܥܘܢ ܩܢܢܝܐ: ܘܝܗܘܕܐ ܒܪ ܝܥܩܘܒ: ܦܠܓܘ ܗܘ̣ܘ ܐܬܪ̈ܘܬܐ ܒܝܢܝܗܘܢ.</quote>
+                   syriaca-tags="#syriaca-headword">On Paul the Apostle</title>
+            <note xml:lang="syr" type="prologue" source="#bib223-1">
+               <quote>ܢܐܬܐ ܡܟܝܠ ܠܬܫܥܝܬܐ ܕܢܨܚܢ̈ܘܗܝ ܕܛܘܒܢܐ ܦܘܠܘܣ. ܗܢܐ ܕܝܬܝܪ ܡܢ ܟܠܗܘܢ ܠܐܝ ܐܝܟ ܡܠܬ ܪܘܚܐ ܕܡܠܠ ܒܗ: ܘܪܗܛܗ ܫܠܡ: ܘܬܫܡܫܬܗ ܢܛܪ: ܘܚܠܦ ܡܪܢ ܝܫܘܥ ܡܫܝܚܐ ܢܘܩܝܐ ܕܕܡܗ ܐܬܐܫܕ ܠܬܪܥܘܬܐ ܕܚܠܦ ܡܪܥܝܬܗ...</quote>
             </note>
-            <note xml:lang="fr" type="incipit" source="#bib223-1" anchored="true">
-               <quote defective="false">Alors que tous les apôtres étaient depuis quelque temps à Jérusalem — Simon Pierre et André, Jacques et Jean, Philippe et Barthélemy, Thomas et Matthieu le publicain, Jacques fils d’Alphée et Simon le Cananéen, et Jude fils de Jacques — ils se partagèrent les pays.</quote>
+            <note xml:lang="en" type="prologue" source="#bib223-1">
+               <quote>Let us therefore approach the story of the great deeds of the blessed Paul, the one who more than them all labored, as the word of the Spirit that spoke in him . . .</quote>
             </note>
-            <note xml:lang="syr"
-                  type="explicit"
-                  source="#bib223-1"
-                  anchored="true">
-               <quote defective="false">ܘܡܪܟܢ ܗܘ̣ܐ ܪܫܗ ܡܙܕܝ ܡܠܟܐ ܬܚܝܬ ܐܝܕܗ ܕܨܝܦܘܪ ܩܫܝܫܐ: ܘܡܦܝܣ ܗܘ̣ܐ ܘܒܥܿܐ ܡܢ ܟܠܗܘܢ ܐܚ̈ܐ: ܕܢܨܠܘܢ ܥܠܘܗܝ: ܕܢܬܚܢܢ ܥܡܗܘܢ ܩܕܡ ܡܪܢ ܝܫܘܥ ܡܫܝܚܐ: ܒܡܠܟܘܬܗ ܕܠܥܠܡ ܥܠܡܝܢ. ܐܡܝܢ... ܘܟܠ ܕܡܫܬܘܬܦ ܒܕܘܟܪܢܗ ܕܩܕܝܫܐ ܗܢܐ: ܐܢ ܒܣܓܝ ܘܐܢ ܒܙܥܘܪ: ܢܥܒܕ ܠܗ ܡܪܢ ܡܢܬܐ ܥܡܗ ܒܡܠܟܘܬܐ ܕܫܡܝܐ: ܘܢܬܒܣܡ ܒܛܒ̈ܬܐ ܕܥܬܝܕܢ ܘܠܐ ܥܒܪ̈ܢ. ܕܠܐܒܐ... ܐܡܝܢ</quote>
+            <note xml:lang="syr" type="incipit" source="#bib223-1">
+               <quote>ܥܒܪܝܐ ܗܟܝܠ ܐܝܬܘܗܝ ܗܘܐ ܡܢ ܫܪܒܬܐ ܕܒܢܝܡܝܢ. ܦܪܝܫܝܐ ܒܗܪܣܝܣ ܕܝܠܗ. ܘܩܕܡ ܪ̈ܓܠܘܗܝ ܕܓܡܠܝܐܝܠ ܡܠܦܢܐ ܘܪܕܝܐ ܒܢܡܘܣܐ ܐܬܕܪܫ ܗܘܐ.</quote>
             </note>
-            <note xml:lang="fr"
-                  type="explicit"
-                  source="#bib223-1"
-                  anchored="true">
-               <quote defective="false">Et le roi inclina sa tête sous la main du prêtre Sîfour, et il suppliait et demandait à tous les frères de prier pour lui, pour qu’il obtienne miséricorde avec eux devant notre Seigneur Jésus-Christ dans son royaume pour les siècles des siècles. Amen._x000B_Et quiconque participe à la commémoration de ce saint, soit beaucoup soit peu, que le Seigneur lui fasse une part avec lui dans le royaume du ciel, et qu’il jouisse des biens à venir qui ne passent pas. Au Père… Amen._x000B_</quote>
+            <note xml:lang="fr" type="incipit" source="#bib223-1">
+               <quote>Il était donc juif, de la tribu de Benjamin, de la secte des Pharisiens. Il étudia la loi chez le savant docteur Gamaliel.</quote>
             </note>
-            <note type="editions" anchored="true">
-               <bibl source="#bib223-1" default="false" status="draft">
-                  <author>(1) Bedjan, P.(partielle)</author>
-                  <title>(1) AMS 3</title>
-                  <citedRange>(1) p. 3-175</citedRange>
+            <note xml:lang="en" type="incipit" source="#bib223-1">
+               <quote>He was a Hebrew, from the tribe of Benjamin, of the sect of the Pharisees. He was trained in the law before the feet of the cultivated teacher Gamaliel.</quote>
+            </note>
+            <note xml:lang="syr" type="explicit" source="#bib223-1">
+               <quote>ܐܝܟܢܐ ܕܡܢ ܣܓܝܐܘܬܐ ܕܬܘܠܡܕܗܘܢ ܐܬܬܙܝܥ ܚܣܡܐ ܒܝܗܘ̈ܕܝܐ ܨܠܘܒ̈ܐ: ܘܡܓܢܒܐܝܬ ܒܠܠܝܐ ܦܣܩܘ ܐܢܘܢ ܠܐܝܠܢ̈ܐ ܗܢܿܘܢ. ܘܡܛܠ ܕܠܐ ܫܘܐ ܗܘ̣ܐ ܥܠܡܐ ܠܡܘܗܒܬܐ ܕܐܣܝܘܬܐ ܕܡܢܗܘܢ: ܬܘܒ ܠܐ ܝܥ̣ܘ ܐܝܠܢ̈ܐ ܗܢܿܘܢ. ܗܠܝܢ ܗܟܝܠ ܕܬܫܥܝܬܗ ܕܡܪܝ ܦܘܠܘܣ... ܐܝܢ ܘܐܡܝܢ.</quote>
+            </note>
+            <note xml:lang="fr" type="explicit" source="#bib223-1">
+               <quote>À tel point que le grand nombre de leurs disciples excita la jalousie des juifs crucifieurs, qui coupèrent ces arbres furtivement pendant la nuit. Et parce que le monde n’est pas digne du don de la guérison qu’ils procurent, ils n’ont pas repoussé. Telle est donc l’histoire de Mâr Paul… Oui, amen.</quote>
+            </note>
+            <note xml:lang="en" type="explicit" source="#bib223-1">
+               <quote>And thus from the multitude of their disciples, jealousy from the Jews, the crucifiers, was aroused, and secretly at night they cut down these trees.</quote>
+            </note>
+            <note type="editions">
+               <bibl source="#bib223-1">
+                  <author>Bedjan, P.</author>
+                  <title>AMS 1</title>
+                  <citedRange>p. 34-44</citedRange>
                </bibl>
             </note>
-            <note type="editions" anchored="true">
-               <bibl source="#bib223-1" default="false" status="draft">
-                  <author>(2) Wright, W</author>
-                  <title>(2) AAA 1</title>
-                  <citedRange>(2) p. 172-333</citedRange>
-               </bibl>
+            <note xml:lang="en" type="MSS" source="#bib223-1">
+               <bibl>ed: Rome (&lt; Guidi ?)</bibl>
             </note>
-            <note type="editions" anchored="true">
-               <bibl source="#bib223-1" default="false" status="draft">
-                  <author>(3) Jansma, T. (partielle)</author>
-                  <title>(3) A Selection from the Acts of Judas Thomas</title>
-                  <citedRange>(3) Leiden, 1952, p. 3-46 (syr.)</citedRange>
-               </bibl>
+            <note xml:lang="en" type="MSS" source="#bib223-1">
+               <bibl>ms Vatican, Syr. 597, f. 67-69 (mutilé de la fin)</bibl>
             </note>
-            <note type="editions" anchored="true">
-               <bibl source="#bib223-1" default="false" status="draft">
-                  <author>(4) Hoffmann, G.</author>
-                  <title>(4) Zwei Hymnen der Thomasakten</title>
-                  <citedRange>(4) 4 (1903), p. 273-283</citedRange>
-               </bibl>
+            <note xml:lang="en" type="MSS" source="#bib223-1">
+               <bibl>ms Londres, British Library, Or. 9391, p. 367-379</bibl>
             </note>
-            <note type="editions" anchored="true">
-               <bibl source="#bib223-1" default="false" status="draft">
-                  <author>(5) Beyer, K. (partielle en transcription)</author>
-                  <title>(5) Das syrische Perlenlied. Ein Erlösungsmythos als Märchengedicht</title>
-                  <citedRange>(5) 140 (1990), p. 242-250</citedRange>
-               </bibl>
-            </note>
-            <note type="editions" anchored="true">
-               <bibl source="#bib223-1" default="false" status="draft">
-                  <author>(6) Lewis, A.S.</author>
-                  <title>(6) Acta mythologica apostolorum</title>
-                  <citedRange>(6) Londres, 1904, p. 192-228</citedRange>
-               </bibl>
-            </note>
-            <note type="editions" anchored="true">
-               <bibl source="#bib223-1" default="false" status="draft">
-                  <author>(7) Preuschen, E. (partielle)</author>
-                  <title>(7) Zwei gnostische Hymnen</title>
-                  <citedRange>(7) Gieszen, 1904, p. 11-27</citedRange>
-               </bibl>
-            </note>
-            <note type="editions" anchored="true">
-               <bibl source="#bib223-1" default="false" status="draft">
-                  <author>(8) Halévy, J.</author>
-                  <title>(8) Cantique syriaque sur saint Thomas</title>
-                  <citedRange>(8) 16 (1908), p. 85-92</citedRange>
-               </bibl>
-            </note>
-            <note type="editions" anchored="true">
-               <bibl source="#bib223-1" default="false" status="draft">
-                  <author>(9) Bevan, A.A.</author>
-                  <title>(9) The Hymn of the Soul</title>
-                  <citedRange>(9) Cambridge, 1897, p. 11-30</citedRange>
-               </bibl>
-            </note>
-            <note xml:lang="en" type="MSS" source="#bib223-1" anchored="true">
-               <bibl default="false" status="draft">ed (1): collation du ms Berlin, Königliche Bibliothek, syr. 75 (Sachau 222), f. 2v-52</bibl>
-            </note>
-            <note xml:lang="en" type="MSS" source="#bib223-1" anchored="true">
-               <bibl default="false" status="draft">ed (2): ms Londres, British Library, Add. 14645, f. 1v-49v</bibl>
-            </note>
-            <note xml:lang="en" type="MSS" source="#bib223-1" anchored="true">
-               <bibl default="false" status="draft">ed (6): ms Sinai, Monastère Sainte-Catherine, Syr. 30 (Kamil 74), f. 153-168v</bibl>
-            </note>
-            <note xml:lang="en" type="MSS" source="#bib223-1" anchored="true">
-               <bibl default="false" status="draft">ed (9): ms Londres, British Library, Add. 14645, f. 30v-32</bibl>
-            </note>
-            <note xml:lang="en" type="MSS" source="#bib223-1" anchored="true">
-               <bibl default="false" status="draft">ms Alqosh, Église paroissiale chaldéenne, cod. 87 ?</bibl>
-            </note>
-            <note xml:lang="en" type="MSS" source="#bib223-1" anchored="true">
-               <bibl default="false" status="draft">ms Dawra, Monastère chaldéen, cod. 622, f. 1-39</bibl>
-            </note>
-            <note xml:lang="en" type="MSS" source="#bib223-1" anchored="true">
-               <bibl default="false" status="draft">ms Dawra, Monastère chaldéen, cod. 626, f. 1-50</bibl>
-            </note>
-            <note xml:lang="en" type="MSS" source="#bib223-1" anchored="true">
-               <bibl default="false" status="draft">ms Dawra, Monastère chaldéen, cod. 628 (olim Alqosh, Monastère N.-D. des Semences, cod. 214 Vosté), cah. 1 p. 1 - cah. 8 p. 7</bibl>
-            </note>
-            <note xml:lang="en" type="MSS" source="#bib223-1" anchored="true">
-               <bibl default="false" status="draft">ms Vatican, Syr. 597, f. 1-8v (fgt)</bibl>
-            </note>
-            <note xml:lang="en" type="MSS" source="#bib223-1" anchored="true">
-               <bibl default="false" status="draft">ms Cambridge, University Library, Add. 2822</bibl>
-            </note>
-            <note xml:lang="en" type="MSS" source="#bib223-1" anchored="true">
-               <bibl default="false" status="draft">ms Diyarbakir, Archevêché chaldéen, cod. 97</bibl>
-            </note>
-            <note xml:lang="en" type="MSS" source="#bib223-1" anchored="true">
-               <bibl default="false" status="draft">ms Birmingham, Selly Oak College Library, Coll. Mingana, Syr. 524, f. 1r-v (fgt)</bibl>
-            </note>
-            <note xml:lang="en" type="MSS" source="#bib223-1" anchored="true">
-               <bibl default="false" status="draft">ms Bagdad, Patriarcat chaldéen catholique, = olim Mossoul, Patriarcat chaldéen, cod. 86</bibl>
+            <note xml:lang="Italian" type="modernTranslation" source="#bib221-1">
+               <bibl>par E.L. de Stefani, Storia del Beato Apostolo S. Paolo, dans Giornale della Società Asiatica Italiana, 14 (1901), p. 209-216</bibl>
             </note>
             <idno type="URI">http://syriaca.org/work/223</idno>
-            <idno type="BHSYRE">76</idno>
-            <idno type="BHO">1186 à 1204</idno>
-            <bibl default="false" status="draft" xml:id="bibl223-1">
+            <idno type="BHSYRE">2</idno>
+            <idno type="BHO">889</idno>
+            <bibl xml:id="bibl223-1">
                <title level="m" xml:lang="la">Biblioteca Hagiographica Syriaca
                                         electronica</title>
                <ptr target="http://syriaca.org/bibl/649"/>
-               <citedRange unit="entry">76</citedRange>
+               <citedRange unit="entry">2</citedRange>
             </bibl>
+            <bibl xml:id="bibl223-2">A. Baumstark, Die Petrus- und Paulusacten in der litterarischen Ueberlieferung der syrischen Kirche. Festgruss dem Priestercollegium des deutschen Campo Santo zu Rom zur Feier seines 25jährigen Bestehens (8 December 1901), Leipzig, 1902</bibl>
+            <bibl xml:id="bibl223-3">P. Peeters, Notes sur la légende des apôtres s. Pierre et s. Paul dans la littérature syrienne, dans AB, 21 (1902), p. 121-140</bibl>
+            <bibl xml:id="bibl223-4">I. Guidi, Bemerkungen zum ersten Bande der syrischen Acta Martyrum et Sanctorum, dans ZDMG, 46 (1892), p. 744-746</bibl>
          </bibl>
       </body>
    </text>

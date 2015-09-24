@@ -9,7 +9,8 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title level="a" xml:lang="en">On Sabrisho‘ of Beth Qoqa</title>
+            <title level="a" xml:lang="en">On Abgar — <foreign xml:lang="syr">ܐܒܓܪ</foreign>
+            </title>
             <title level="m">Qadishe: A Guide to the Lives of the Syriac Saints</title>
             <sponsor>Syriaca.org: The Syriac Reference Portal</sponsor>
             <funder>The International Balzan Prize Foundation</funder>
@@ -80,7 +81,7 @@
                   </p>
                </licence>
             </availability>
-            <date>2015-06-19-04:00</date>
+            <date>2015-09-24-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -131,33 +132,42 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#dmichelson"
                  n="1.0"
-                 when="2015-06-19-04:00">CREATED: work</change>
+                 when="2015-09-24-04:00">CREATED: work</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <bibl xml:id="work-1813" ana="#syriaca-saint">
-            <title xml:id="name1813-3" xml:lang="fr" source="#bib1813-1">De Sabrisho‘ de Beth Qoqa</title>
+            <title xml:id="name1813-1"
+                   xml:lang="syr"
+                   source="#bib1813-1"
+                   syriaca-tags="#syriaca-headword">ܐܒܓܪ</title>
+            <title xml:id="name1813-2" xml:lang="fr-x-bhsyre" source="#bib1813-1">ʾAḇgar</title>
+            <title xml:id="name1813-3" xml:lang="fr" source="#bib1813-1">De Abgar</title>
             <title xml:id="name1813-4"
                    xml:lang="en"
                    source="#bib1813-1"
-                   syriaca-tags="#syriaca-headword">On Sabrisho‘ of Beth Qoqa</title>
-            <note xml:lang="en" type="MSS" source="#bib1813-1">
-               <bibl>ms Dawra, Monastère chaldéen, cod. 578 (olim Alqosh Monastère N.-D. des Semences, cod. 199 Vosté), cah. 5, p. 12 - fin</bibl>
+                   syriaca-tags="#syriaca-headword">On Abgar</title>
+            <author xml:lang="fr" source="#bib1813-1">Jacques de Serugh</author>
+            <note xml:lang="syr" type="incipit" source="#bib1813-1">
+               <quote>ܝܫܘܥ ܢܗܪܐ ܕܠܛܠܠܐ ܒܕܢܚܗ ܐܥܪܩ...</quote>
+            </note>
+            <note xml:lang="fr" type="incipit" source="#bib1813-1">
+               <quote>Jésus lumière qui par ton apparition a éloigné les ténèbres…</quote>
             </note>
             <note xml:lang="en" type="MSS" source="#bib1813-1">
-               <bibl>ms Dawra, Monastère chaldéen, cod. 938 (olim Alqosh Monastère N.-D. des Semences, cod. 329 Vosté), cah. 10, p. 11 - cah. 13, p. 16</bibl>
+               <bibl>ms Damas Patriarcat syrien orthodoxe, cod. 12/16 (olim Jérusalem, Couvent syrien orthodoxe Saint-Marc, cod. 156 (Baumstark Litur. 43)), f. 56-59v</bibl>
             </note>
             <note xml:lang="en" type="MSS" source="#bib1813-1">
-               <bibl>ms Louvain, Coll. CSCO, syr. 19</bibl>
+               <bibl>ms Mardin, Évêché syrien orthodoxe, cod. 137 (olim ms Dayr az-Za‘faran, cod. pap. 64 (Dolabany))</bibl>
             </note>
             <idno type="URI">http://syriaca.org/work/1813</idno>
-            <idno type="BHSYRE">1735</idno>
+            <idno type="BHSYRE">1754</idno>
             <bibl xml:id="bibl1813-1">
                <title level="m" xml:lang="la">Biblioteca Hagiographica Syriaca
                                         electronica</title>
                <ptr target="http://syriaca.org/bibl/649"/>
-               <citedRange unit="entry">1735</citedRange>
+               <citedRange unit="entry">1754</citedRange>
             </bibl>
          </bibl>
       </body>

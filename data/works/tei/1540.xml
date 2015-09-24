@@ -9,7 +9,8 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title level="a" xml:lang="en">On the Cross</title>
+            <title level="a" xml:lang="en">On Clement — <foreign xml:lang="syr">ܩܠܡܣ</foreign>
+            </title>
             <title level="m">Qadishe: A Guide to the Lives of the Syriac Saints</title>
             <sponsor>Syriaca.org: The Syriac Reference Portal</sponsor>
             <funder>The International Balzan Prize Foundation</funder>
@@ -80,7 +81,7 @@
                   </p>
                </licence>
             </availability>
-            <date>2015-06-19-04:00</date>
+            <date>2015-09-24-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -131,32 +132,62 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#dmichelson"
                  n="1.0"
-                 when="2015-06-19-04:00">CREATED: work</change>
+                 when="2015-09-24-04:00">CREATED: work</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <bibl xml:id="work-1540" ana="#syriaca-saint">
-            <title xml:id="name1540-3" xml:lang="fr" source="#bib1540-1">De Croix</title>
+            <title xml:id="name1540-1"
+                   xml:lang="syr"
+                   source="#bib1540-1"
+                   syriaca-tags="#syriaca-headword">ܩܠܡܣ</title>
+            <title xml:id="name1540-2" xml:lang="fr-x-bhsyre" source="#bib1540-1">Qlēmis</title>
+            <title xml:id="name1540-3" xml:lang="fr" source="#bib1540-1">De Clément</title>
             <title xml:id="name1540-4"
                    xml:lang="en"
                    source="#bib1540-1"
-                   syriaca-tags="#syriaca-headword">On the Cross</title>
-            <author xml:lang="fr" source="#bib1540-1">Sévère d’Antioche</author>
-            <note xml:lang="en" type="MSS" source="#bib1540-1">
-               <bibl>ms Oxford, Bodleian Library, Syr. 156 (Hunt. 586), f. 21-24</bibl>
+                   syriaca-tags="#syriaca-headword">On Clement</title>
+            <note xml:lang="syr" type="incipit" source="#bib1540-1">
+               <quote>ܒܝܘܡܐ ܕܬܠܬܐ ܒܛܪܝܦܘܠܣ ܟܕ ܡܢ ܩܘܕܡܐ ܡܢ ܫܢܬܗ ܩܡ ܦܛܪܘܣ ܘܠܓܢܬܐ ܥܠ ܗܘܐ. ܐܬܪ ܕܡ̈ܝܐ ܣܓܝ̈ܐܐ ܐܡܝܢܐܝܬ ܪ̈ܕܝܢ ܗܘܘ.</quote>
+            </note>
+            <note xml:lang="fr" type="incipit" source="#bib1540-1">
+               <quote>Le troisième jour à Tripoli, Pierre, s’étant levé plutôt de son sommeil, entra dans le jardin, endroit où des eaux abondantes coulaient continuellement.</quote>
+            </note>
+            <note xml:lang="syr" type="explicit" source="#bib1540-1">
+               <quote>ܘܟܕ ܕܝܢ ܡܟܝܠ ܪܡܫܐ ܩܕܡܢ ܒܒܝܬܐ ܕܒܝܬ ܡܫܪܝܢ ܥܠܢ ܘܥܡܗ ܟܠܢ ܐܟܚܕܐ ܫܟܒܢ.</quote>
+            </note>
+            <note xml:lang="fr" type="explicit" source="#bib1540-1">
+               <quote>Et après que le soir nous eut précédés, nous entrâmes dans la maison de l’hôtellerie et nous dormîmes tous ensemble avec lui.</quote>
+            </note>
+            <note type="editions">
+               <bibl source="#bib1540-1">
+                  <author>(1) Frankenberg, W.</author>
+                  <title>(1) Die syrischen Clementinen mit griechischem Paralleltext</title>
+                  <citedRange>(1) Leipzig, 1937, p. 236-254</citedRange>
+               </bibl>
+            </note>
+            <note type="editions">
+               <bibl source="#bib1540-1">
+                  <author>(2) de Lagarde, P.A.</author>
+                  <title>(2) Clementis Romani Recognitiones Syriace</title>
+                  <citedRange>(2) Leipzig-Londres, 1861, p. 124-132</citedRange>
+               </bibl>
             </note>
             <note xml:lang="en" type="MSS" source="#bib1540-1">
-               <bibl>ms Cambridge, University Library, Add. 1991, f. 40v-47</bibl>
+               <bibl>ed (1) et (2): ms Londres, British Library, Add. 12150, f. 52-56</bibl>
             </note>
             <idno type="URI">http://syriaca.org/work/1540</idno>
-            <idno type="BHSYRE">1430</idno>
+            <idno type="BHSYRE">1448</idno>
+            <idno type="BHO">198</idno>
+            <idno type="CPG">1015410</idno>
             <bibl xml:id="bibl1540-1">
                <title level="m" xml:lang="la">Biblioteca Hagiographica Syriaca
                                         electronica</title>
                <ptr target="http://syriaca.org/bibl/649"/>
-               <citedRange unit="entry">1430</citedRange>
+               <citedRange unit="entry">1448</citedRange>
             </bibl>
+            <bibl xml:id="bibl1540-2">F.S. Jones, Evaluating the Latin and Syriac Translations of the Pseudo-Clementine Recognitions, dans Apocrypha, 3 (1992), p. 237-257</bibl>
          </bibl>
       </body>
    </text>

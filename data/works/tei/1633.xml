@@ -9,7 +9,8 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title level="a" xml:lang="en">On a Saint</title>
+            <title level="a" xml:lang="en">On Fausta of Cyzicus — <foreign xml:lang="syr">ܦܘܣܛܐ</foreign>
+            </title>
             <title level="m">Qadishe: A Guide to the Lives of the Syriac Saints</title>
             <sponsor>Syriaca.org: The Syriac Reference Portal</sponsor>
             <funder>The International Balzan Prize Foundation</funder>
@@ -80,7 +81,7 @@
                   </p>
                </licence>
             </availability>
-            <date>2015-06-19-04:00</date>
+            <date>2015-09-24-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -131,27 +132,41 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#dmichelson"
                  n="1.0"
-                 when="2015-06-19-04:00">CREATED: work</change>
+                 when="2015-09-24-04:00">CREATED: work</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <bibl xml:id="work-1633" ana="#syriaca-saint">
-            <title xml:id="name1633-3" xml:lang="fr" source="#bib1633-1">De un Saint (fgt)</title>
+            <title xml:id="name1633-1"
+                   xml:lang="syr"
+                   source="#bib1633-1"
+                   syriaca-tags="#syriaca-headword">ܦܘܣܛܐ</title>
+            <title xml:id="name1633-2" xml:lang="fr-x-bhsyre" source="#bib1633-1">Pawsṭā</title>
+            <title xml:id="name1633-3" xml:lang="fr" source="#bib1633-1">De Fausta de Cyzique</title>
             <title xml:id="name1633-4"
                    xml:lang="en"
                    source="#bib1633-1"
-                   syriaca-tags="#syriaca-headword">On a Saint</title>
+                   syriaca-tags="#syriaca-headword">On Fausta of Cyzicus</title>
+            <note xml:lang="syr" type="prologue" source="#bib1633-1">
+               <quote>ܝܘܡܢܐ ܙܕܩ ܠܢ ܕܥܡ ܢܒܝܐ ܪܘܚܢܐ ܕܐܘܝܕ ܢܙܡܪ...</quote>
+            </note>
+            <note xml:lang="syr" type="incipit" source="#bib1633-1">
+               <quote>ܐܝܬ ܗܘܐ ܕܝܢ ܒܬܘܠܬܐ ܒܩܘܙܝܩܘܣ ܡܕܝܢܬܐ ܕܫܡܗ ܗܘܐ ܦܘܣܛܐ ܕܝܬܡܬܐ ܗܘܬ ܡܢ ܐܒ̈ܗܐ.</quote>
+            </note>
+            <note xml:lang="fr" type="incipit" source="#bib1633-1">
+               <quote>Il y avait dans la ville de Cyzique une vierge qui s’appelait Fausta et qui était orpheline.</quote>
+            </note>
             <note xml:lang="en" type="MSS" source="#bib1633-1">
-               <bibl>ms Berlin, Königliche Bibliothek, syr. 203 (Sachau 27), f. 61r-v</bibl>
+               <bibl>ms Paris, Bibliothèque nationale, syr. 234, f. 295-299</bibl>
             </note>
             <idno type="URI">http://syriaca.org/work/1633</idno>
-            <idno type="BHSYRE">1535</idno>
+            <idno type="BHSYRE">1558</idno>
             <bibl xml:id="bibl1633-1">
                <title level="m" xml:lang="la">Biblioteca Hagiographica Syriaca
                                         electronica</title>
                <ptr target="http://syriaca.org/bibl/649"/>
-               <citedRange unit="entry">1535</citedRange>
+               <citedRange unit="entry">1558</citedRange>
             </bibl>
          </bibl>
       </body>

@@ -9,7 +9,8 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title level="a" xml:lang="en">On Mary Mother of God (Death of)</title>
+            <title level="a" xml:lang="en">On Piminos — <foreign xml:lang="syr">ܦܝܡܝܢܘܣ</foreign>
+            </title>
             <title level="m">Qadishe: A Guide to the Lives of the Syriac Saints</title>
             <sponsor>Syriaca.org: The Syriac Reference Portal</sponsor>
             <funder>The International Balzan Prize Foundation</funder>
@@ -80,7 +81,7 @@
                   </p>
                </licence>
             </availability>
-            <date>2015-06-19-04:00</date>
+            <date>2015-09-24-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -131,30 +132,44 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#dmichelson"
                  n="1.0"
-                 when="2015-06-19-04:00">CREATED: work</change>
+                 when="2015-09-24-04:00">CREATED: work</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <bibl xml:id="work-1909" ana="#syriaca-saint">
-            <title xml:id="name1909-3" xml:lang="fr" source="#bib1909-1">De Marie, Mère de Dieu (mort)</title>
+            <title xml:id="name1909-1"
+                   xml:lang="syr"
+                   source="#bib1909-1"
+                   syriaca-tags="#syriaca-headword">ܦܝܡܝܢܘܣ</title>
+            <title xml:id="name1909-2" xml:lang="fr-x-bhsyre" source="#bib1909-1">Pīmīnōs</title>
+            <title xml:id="name1909-3" xml:lang="fr" source="#bib1909-1">De Piminus</title>
             <title xml:id="name1909-4"
                    xml:lang="en"
                    source="#bib1909-1"
-                   syriaca-tags="#syriaca-headword">On Mary Mother of God (Death of)</title>
-            <note xml:lang="en" type="MSS" source="#bib1909-1">
-               <bibl>ms Damas, Patriarcat syrien orthodoxe, cod. 12/17 (olim ms Dayr az-Za‘faran, cod. parch. 18 (Dolabany)), f. 196v-199v</bibl>
+                   syriaca-tags="#syriaca-headword">On Piminos</title>
+            <note xml:lang="syr" type="incipit" source="#bib1909-1">
+               <quote>ܚܕ ܓܒܪܐ ܚܕ ܥܬܝܪܐ ܡܢ ܪܘܡܝ ܡܕܝܢܬ ܡ̈ܠܟܐ. ܕܫܡܗ ܐܝܬܘܗܝ ܦܝܡܝܢܘܣ ܘܒܪܬ ܙܘܓܗ ܓܠܐܢܝܣ.</quote>
+            </note>
+            <note xml:lang="fr" type="incipit" source="#bib1909-1">
+               <quote>Un homme riche de la ville impériale de Rome s’appelait Piminus et son épouse s’appelait Galanis.</quote>
+            </note>
+            <note xml:lang="syr" type="explicit" source="#bib1909-1">
+               <quote>ܘܠܗ ܠܐܠܗܐ ܬܫܒܘܚܬܐ ܘܪ̈ܚܡܐ ܥܠܝܟܘܢ ܫܡ̈ܘܥܐ ܘܥܠ ܐܡܘܪ̈ܐ ܘܫܡ̈ܘܥܐ ܪ̈ܚܡܐ ܢܗܘܘܢ ܒܟܠܥܕܢ.</quote>
+            </note>
+            <note xml:lang="fr" type="explicit" source="#bib1909-1">
+               <quote>À Dieu la louange et sur vous auditeurs la miséricorde; que la miséricorde soit sur les lecteurs et les auditeurs en tout temps.</quote>
             </note>
             <note xml:lang="en" type="MSS" source="#bib1909-1">
-               <bibl>ms Dayr az-Za‘faran, cod. pap. 113 (Dolabany)</bibl>
+               <bibl>ms Oxford, Bodleian Library, syr. 138 (Bodl. Or. 19), f. 130-152</bibl>
             </note>
             <idno type="URI">http://syriaca.org/work/1909</idno>
-            <idno type="BHSYRE">1848</idno>
+            <idno type="BHSYRE">1871</idno>
             <bibl xml:id="bibl1909-1">
                <title level="m" xml:lang="la">Biblioteca Hagiographica Syriaca
                                         electronica</title>
                <ptr target="http://syriaca.org/bibl/649"/>
-               <citedRange unit="entry">1848</citedRange>
+               <citedRange unit="entry">1871</citedRange>
             </bibl>
          </bibl>
       </body>

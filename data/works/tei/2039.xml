@@ -9,7 +9,8 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title level="a" xml:lang="en">On the Children of Ephesus</title>
+            <title level="a" xml:lang="en">On Steven — <foreign xml:lang="syr">ܣܛܦܢܘܣ</foreign>
+            </title>
             <title level="m">Qadishe: A Guide to the Lives of the Syriac Saints</title>
             <sponsor>Syriaca.org: The Syriac Reference Portal</sponsor>
             <funder>The International Balzan Prize Foundation</funder>
@@ -80,7 +81,7 @@
                   </p>
                </licence>
             </availability>
-            <date>2015-06-19-04:00</date>
+            <date>2015-09-24-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -131,28 +132,42 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#dmichelson"
                  n="1.0"
-                 when="2015-06-19-04:00">CREATED: work</change>
+                 when="2015-09-24-04:00">CREATED: work</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <bibl xml:id="work-2039" ana="#syriaca-saint">
-            <title xml:id="name2039-3" xml:lang="fr" source="#bib2039-1">De Enfants d’Éphèse</title>
+            <title xml:id="name2039-1"
+                   xml:lang="syr"
+                   source="#bib2039-1"
+                   syriaca-tags="#syriaca-headword">ܣܛܦܢܘܣ</title>
+            <title xml:id="name2039-2" xml:lang="fr-x-bhsyre" source="#bib2039-1">Sṭapānōs</title>
+            <title xml:id="name2039-3" xml:lang="fr" source="#bib2039-1">De Étienne</title>
             <title xml:id="name2039-4"
                    xml:lang="en"
                    source="#bib2039-1"
-                   syriaca-tags="#syriaca-headword">On the Children of Ephesus</title>
+                   syriaca-tags="#syriaca-headword">On Steven</title>
             <author xml:lang="fr" source="#bib2039-1">Jacques de Serugh</author>
+            <note xml:lang="syr" type="incipit" source="#bib2039-1">
+               <quote>ܥܠ ܫܡܘܥ̈ܐ...</quote>
+            </note>
+            <note xml:lang="fr" type="incipit" source="#bib2039-1">
+               <quote>Sur les auditeurs…</quote>
+            </note>
             <note xml:lang="en" type="MSS" source="#bib2039-1">
-               <bibl>ms Mardin, Évêché syrien orthodoxe, cod. 139 (olim ms Dayr az-Za‘faran, cod. pap. 65 (Dolabany))</bibl>
+               <bibl>ms Damas, Patriarcat syrien orthodoxe, cod. 12/15 (olim ms Dayr az-Za‘faran, cod. parch. 13 (Dolabany))</bibl>
+            </note>
+            <note xml:lang="en" type="MSS" source="#bib2039-1">
+               <bibl>ms Mardin, Évêché syrien orthodoxe, cod. 134 (olim ms Dayr az-Za‘faran, cod. pap. 61 (Dolabany))</bibl>
             </note>
             <idno type="URI">http://syriaca.org/work/2039</idno>
-            <idno type="BHSYRE">1987</idno>
+            <idno type="BHSYRE">2010</idno>
             <bibl xml:id="bibl2039-1">
                <title level="m" xml:lang="la">Biblioteca Hagiographica Syriaca
                                         electronica</title>
                <ptr target="http://syriaca.org/bibl/649"/>
-               <citedRange unit="entry">1987</citedRange>
+               <citedRange unit="entry">2010</citedRange>
             </bibl>
          </bibl>
       </body>

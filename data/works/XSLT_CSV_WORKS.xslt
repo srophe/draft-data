@@ -17,7 +17,7 @@
     </xsl:variable>
 
     <xsl:function name="syriaca:ancientlangs" as="xs:string*">
-        <!-- The spreadsheet presents ancient langs as prose, this converts the prose language names to IDO codes-->
+        <!-- The spreadsheet presents ancient langs as prose, this converts the prose language names to ISO codes-->
         <xsl:param name="AncientLang" as="xs:string*"/>
         <xsl:choose>
             <xsl:when test="normalize-space($AncientLang) ='Latin'">
@@ -52,6 +52,47 @@
             </xsl:when>
             <xsl:when test="normalize-space($AncientLang)='Karshuni'">
                 <xsl:text>ar-syr</xsl:text>
+            </xsl:when>
+            <xsl:otherwise/>
+        </xsl:choose>
+    </xsl:function>
+    
+    <xsl:function name="syriaca:modernlangs" as="xs:string*">
+        <!-- The spreadsheet presents modern langs as prose, this converts the prose language names to ISO codes-->
+        <xsl:param name="ModernLang" as="xs:string*"/>
+        <xsl:choose>
+            <xsl:when test="normalize-space($ModernLang) ='Latin'">
+                <xsl:text>la</xsl:text>
+            </xsl:when>
+            <xsl:when test="normalize-space($ModernLang)='German'">
+                <xsl:text>de</xsl:text>
+            </xsl:when>
+            <xsl:when test="normalize-space($ModernLang)='French'">
+                <xsl:text>fr</xsl:text>
+            </xsl:when>
+            <xsl:when test="normalize-space($ModernLang)='English'">
+                <xsl:text>en</xsl:text>
+            </xsl:when>
+            <xsl:when test="normalize-space($ModernLang)='Italian'">
+                <xsl:text>it</xsl:text>
+            </xsl:when>
+            <xsl:when test="normalize-space($ModernLang)='Portugese'">
+                <xsl:text>pt</xsl:text>
+            </xsl:when>
+            <xsl:when test="normalize-space($ModernLang)='Russian'">
+                <xsl:text>ru</xsl:text>
+            </xsl:when>
+            <xsl:when test="normalize-space($ModernLang)='Dutch'">
+                <xsl:text>nl</xsl:text>
+            </xsl:when>
+            <xsl:when test="normalize-space($ModernLang)='Arabic'">
+                <xsl:text>ar</xsl:text>
+            </xsl:when>
+            <xsl:when test="normalize-space($ModernLang)='Spanish'">
+                <xsl:text>es</xsl:text>
+            </xsl:when>
+            <xsl:when test="normalize-space($ModernLang)='Armenian'">
+                <xsl:text>hy</xsl:text>
             </xsl:when>
             <xsl:otherwise/>
         </xsl:choose>
@@ -361,13 +402,13 @@
                                                 <xsl:when test="contains(.,'; ')">
                                                     <xsl:variable name="Mlang" select="preceding-sibling::Mlang[1]"/>
                                                     <xsl:for-each select="tokenize(.,'; ')">
-                                                        <note xml:lang="{$Mlang}" type="modernTranslation" source="#bib221-1">
+                                                        <note xml:lang="{syriaca:modernlangs($Mlang)}" type="modernTranslation" source="#bib221-1">
                                                             <bibl><xsl:value-of select="normalize-space(.)"/></bibl>
                                                         </note>
                                                     </xsl:for-each>
                                                 </xsl:when>
                                                 <xsl:otherwise>
-                                                    <note xml:lang="{preceding-sibling::Mlang[1]}" type="modernTranslation" source="#bib221-1">
+                                                    <note xml:lang="{syriaca:modernlangs(preceding-sibling::Mlang[1])}" type="modernTranslation" source="#bib221-1">
                                                         <bibl><xsl:value-of select="normalize-space(.)"/></bibl>
                                                     </note>
                                                 </xsl:otherwise>

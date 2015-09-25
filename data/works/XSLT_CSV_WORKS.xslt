@@ -470,7 +470,7 @@
         <xsl:param name="bib-ids"/>
 
         <xsl:variable name="english-headword">
-            <xsl:value-of select="concat('On ',normalize-space(Saint_English))"/>
+            <xsl:value-of select="concat(normalize-space(Saint_English), ' (text)')"/>
         </xsl:variable>
         <xsl:variable name="syriac-headword">
             <xsl:choose>

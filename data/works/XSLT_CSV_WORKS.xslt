@@ -183,9 +183,9 @@
                                                   >#syriaca-headword</xsl:attribute>
                                                 </xsl:when>
                                             </xsl:choose>
-                                            <xsl:if test="self::Saint_French">De </xsl:if>
-                                            <xsl:if test="self::Saint_English">On </xsl:if>
                                             <xsl:value-of select="normalize-space(.)"/>
+                                            <xsl:if test="self::Saint_French"> (texte)</xsl:if>
+                                            <xsl:if test="self::Saint_English"> (text)</xsl:if>
                                         </title>
                                     </xsl:if>
                                 </xsl:for-each>

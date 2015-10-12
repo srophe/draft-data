@@ -164,7 +164,7 @@
                         <body>
                             <bibl>
                                 <xsl:attribute name="xml:id" select="concat('work-', $record-id)"/>
-                                <xsl:attribute name="ana" select="'#syriaca-saint'"/>
+                                <xsl:attribute name="ana" select="'#hagiographic'"/>
                                 <xsl:for-each
                                     select="Saint_English | Syriac_Name | Saint_French | Transcr.">
                                     <xsl:if test="normalize-space(.) !=''">
@@ -172,7 +172,7 @@
                                             xml:lang="{
                                                 if(self::Saint_English) then 'en' 
                                                 else if(self::Syriac_Name) then 'syr'
-                                                else if(self::Transcr.) then 'fr-x-bhsyre'
+                                                else if(self::Transcr.) then 'fr-x-bhs'
                                                 else if(self::Saint_French) then 'fr'
                                                 else ()}"
                                             source="#bib{$record-id}-1">
@@ -180,7 +180,7 @@
                                                 <xsl:when
                                                   test="self::Saint_English or self::Syriac_Name">
                                                   <xsl:attribute name="syriaca-tags" namespace=""
-                                                  >#syriaca-headword</xsl:attribute>
+                                                      >#syriaca-headword #syriaca-anglicized</xsl:attribute>
                                                 </xsl:when>
                                             </xsl:choose>
                                             <xsl:value-of select="normalize-space(.)"/>
@@ -422,7 +422,7 @@
                                         select="$record-id"/></idno>
                                 <!-- Zanetti Fiche Number -->
 
-                                <idno type="BHSYRE">
+                                <idno type="BHS">
                                     <xsl:value-of select="normalize-space(File)"/>
                                 </idno>
                                 <!-- BHO Number -->
@@ -440,8 +440,7 @@
                                 <bibl>
                                     <xsl:attribute name="xml:id"
                                         select="concat('bibl', $record-id,'-1')"/>
-                                    <title level="m" xml:lang="la">Biblioteca Hagiographica Syriaca
-                                        electronica</title>
+                                    <title level="m" xml:lang="la">Bibliotheca Hagiographica Syriaca</title>
                                     <ptr target="http://syriaca.org/bibl/649"/>
                                     <citedRange unit="entry">
                                         <xsl:value-of select="normalize-space(File)"/>
@@ -490,7 +489,9 @@
                     <title level="a" xml:lang="en">
                         <xsl:copy-of select="$record-title"/>
                     </title>
-                    <title level="m">Qadishe: A Guide to the Lives of the Syriac Saints</title>
+                    <title level="m">Bibliotheca Hagiographica Syriaca Electronica</title>
+                    <title level="s">Gateway to the Syriac Saints</title>
+                    <title level="s">New Handbook of Syriac Literature</title>
                     <sponsor>Syriaca.org: The Syriac Reference Portal</sponsor>
                     <funder>The International Balzan Prize Foundation</funder>
                     <funder>The National Endowment for the Humanities</funder>
@@ -604,20 +605,31 @@
             </encodingDesc>
             <profileDesc>
                 <langUsage>
-                    <language ident="syr">Unvocalized Syriac of any variety or period</language>
+                    <language ident="ar-syr">Arabic Karshuni in Syriac Characters</language>
+                    <language ident="ar">Arabic</language>
+                    <language ident="cop">Coptic</language>
+                    <language ident="cu">Old Church Slavonic</language>
+                    <language ident="de">German</language>
+                    <language ident="en-x-gedsh">Names or terms Romanized into English according to the standards adopted by the Gorgias Encyclopedic Dictionary of the Syriac Heritage</language>
+                    <language ident="en">English</language>
+                    <language ident="es">Spanish</language>
+                    <language ident="fr-x-bhs">Names or terms Romanized into French according to the standards adopted by the Bibliotheca Hagiographica Syriaca</language>
+                    <language ident="fr">French</language>
+                    <language ident="gez">Ge'ez</language>
+                    <language ident="gr">German</language>
+                    <language ident="grc">Ancient or Medieval Greek</language>
+                    <language ident="hy">Classical or Modern Armenian</language>
+                    <language ident="it">Italian</language>
+                    <language ident="ka">Classical or Modern Georgian</language>
+                    <language ident="la">Latin</language>
+                    <language ident="nl">Dutch</language>
+                    <language ident="pt">Portugese</language>
+                    <language ident="ru">Russian</language>
+                    <language ident="sog">Soghdian</language>
+                    <language ident="syr-pal">Syro-Palestinian</language>
                     <language ident="syr-Syrj">Vocalized West Syriac</language>
                     <language ident="syr-Syrn">Vocalized East Syriac</language>
-                    <language ident="en">English</language>
-                    <language ident="en-x-gedsh">Names or terms Romanized into English according to
-                        the standards adopted by the Gorgias Encyclopedic Dictionary of the Syriac
-                        Heritage</language>
-                    <language ident="ar">Arabic</language>
-                    <language ident="fr">French</language>
-                    <language ident="fr-x-bhsyre">Names or terms Romanized into French according to
-                        the standards adopted by the Biblioteca Hagiographica Syriaca
-                        electronica</language>
-                    <language ident="de">German</language>
-                    <language ident="la">Latin</language>
+                    <language ident="syr">Unvocalized Syriac of any variety or period</language>
                 </langUsage>
             </profileDesc>
             <revisionDesc>

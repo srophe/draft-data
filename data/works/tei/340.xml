@@ -1,17 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://syriaca.org/documentation/syriaca-tei-main.rnc" type="application/relax-ng-compact-syntax"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0"
-     xmlns:syriaca="http://syriaca.org"
-     xmlns:saxon="http://saxon.sf.net/"
-     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
-     xmlns:functx="http://www.functx.com"
-     xml:lang="en">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
             <title level="a" xml:lang="en">Abda, Hasho, Isaac, Ephrem, Papa, Dadouq, Dourtan and Papa (text) — <foreign xml:lang="syr">ܥܒܕܐ ܘܗܫܘ ܘܐܝܣܚܩ ܘܐܝܣܚܩ ܘܦܦܐ ܘܕܕܘܩ ܘܕܘܪܬܢ ܘܦܦܐ</foreign>
             </title>
-            <title level="m">Qadishe: A Guide to the Lives of the Syriac Saints</title>
+            <title level="m">Bibliotheca Hagiographica Syriaca Electronica</title>
+            <title level="s">Gateway to the Syriac Saints</title>
+            <title level="s">New Handbook of Syriac Literature</title>
             <sponsor>Syriaca.org: The Syriac Reference Portal</sponsor>
             <funder>The International Balzan Prize Foundation</funder>
             <funder>The National Endowment for the Humanities</funder>
@@ -81,7 +78,7 @@
                   </p>
                </licence>
             </availability>
-            <date>2015-09-28-04:00</date>
+            <date>2015-10-12-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -113,41 +110,52 @@
       </encodingDesc>
       <profileDesc>
          <langUsage>
-            <language ident="syr">Unvocalized Syriac of any variety or period</language>
+            <language ident="ar-syr">Arabic Karshuni in Syriac Characters</language>
+            <language ident="ar">Arabic</language>
+            <language ident="cop">Coptic</language>
+            <language ident="cu">Old Church Slavonic</language>
+            <language ident="de">German</language>
+            <language ident="en-x-gedsh">Names or terms Romanized into English according to the standards adopted by the Gorgias Encyclopedic Dictionary of the Syriac Heritage</language>
+            <language ident="en">English</language>
+            <language ident="es">Spanish</language>
+            <language ident="fr-x-bhs">Names or terms Romanized into French according to the standards adopted by the Bibliotheca Hagiographica Syriaca</language>
+            <language ident="fr">French</language>
+            <language ident="gez">Ge'ez</language>
+            <language ident="gr">German</language>
+            <language ident="grc">Ancient or Medieval Greek</language>
+            <language ident="hy">Classical or Modern Armenian</language>
+            <language ident="it">Italian</language>
+            <language ident="ka">Classical or Modern Georgian</language>
+            <language ident="la">Latin</language>
+            <language ident="nl">Dutch</language>
+            <language ident="pt">Portugese</language>
+            <language ident="ru">Russian</language>
+            <language ident="sog">Soghdian</language>
+            <language ident="syr-pal">Syro-Palestinian</language>
             <language ident="syr-Syrj">Vocalized West Syriac</language>
             <language ident="syr-Syrn">Vocalized East Syriac</language>
-            <language ident="en">English</language>
-            <language ident="en-x-gedsh">Names or terms Romanized into English according to
-                        the standards adopted by the Gorgias Encyclopedic Dictionary of the Syriac
-                        Heritage</language>
-            <language ident="ar">Arabic</language>
-            <language ident="fr">French</language>
-            <language ident="fr-x-bhsyre">Names or terms Romanized into French according to
-                        the standards adopted by the Biblioteca Hagiographica Syriaca
-                        electronica</language>
-            <language ident="de">German</language>
-            <language ident="la">Latin</language>
+            <language ident="syr">Unvocalized Syriac of any variety or period</language>
          </langUsage>
       </profileDesc>
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#dmichelson"
                  n="1.0"
-                 when="2015-09-28-04:00">CREATED: work</change>
+                 when="2015-10-12-04:00">CREATED: work</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
-         <bibl xml:id="work-340" ana="#syriaca-saint">
+         <bibl xml:id="work-340" ana="#hagiographic">
             <title xml:id="name340-1"
                    xml:lang="syr"
                    source="#bib340-1"
-                   syriaca-tags="#syriaca-headword">ܥܒܕܐ ܘܗܫܘ ܘܐܝܣܚܩ ܘܐܝܣܚܩ ܘܦܦܐ ܘܕܕܘܩ ܘܕܘܪܬܢ ܘܦܦܐ</title>
-            <title xml:id="name340-2" xml:lang="fr-x-bhsyre" source="#bib340-1">ʿAḇdā w-Hašū w-ʾĪsḥāq w-ʾAfrēm w-Pāpā w-Dāḏūq w-Dūrṯān w-Pāpā</title>
+                   syriaca-tags="#syriaca-headword #syriaca-anglicized">ܥܒܕܐ ܘܗܫܘ ܘܐܝܣܚܩ ܘܐܝܣܚܩ ܘܦܦܐ ܘܕܕܘܩ ܘܕܘܪܬܢ ܘܦܦܐ</title>
+            <title xml:id="name340-2" xml:lang="fr-x-bhs" source="#bib340-1">ʿAḇdā w-Hašū w-ʾĪsḥāq w-ʾAfrēm w-Pāpā w-Dāḏūq w-Dūrṯān w-Pāpā</title>
             <title xml:id="name340-3" xml:lang="fr" source="#bib340-1">Abda, Hachou, Isaac, Éphrem, Papa, Dadouq, Dourtan et Papa (texte)</title>
             <title xml:id="name340-4"
                    xml:lang="en"
                    source="#bib340-1"
-                   syriaca-tags="#syriaca-headword">Abda, Hasho, Isaac, Ephrem, Papa, Dadouq, Dourtan and Papa (text)</title>
+                   syriaca-tags="#syriaca-headword #syriaca-anglicized">Abda, Hasho, Isaac, Ephrem, Papa, Dadouq, Dourtan and Papa (text)</title>
             <note xml:lang="syr" type="incipit" source="#bib340-1">
                <quote>ܒܫܢܬ ܥܣܪܝܢ ܘܬܪܬܝܢ ܕܝܙܕܓܪܕ ܡܠܟܐ ܦܪܣܝܐ: ܟܝܡܘܢܐ ܩܫܝܐ ܕܒܥܠܕܒܒܐ ܩܡ ܥܠ ܥܡܢ. ܘܪܘܪ̈ܒܢܐ ܕܡܠܟܐ ܥܡ ܡܓܘ̈ܫܐ ܐܚܝ̈ܕܝ ܫܘܠܛܢܐ ܐܟܠܘ ܩܪ̈ܨܐ ܕܥܡܢ ܘܐܡܪܘ ܩܕܡ ܡܠܟܐ...</quote>
             </note>
@@ -168,11 +176,10 @@
                <bibl>O. Braun, AAPM, p. 139-141</bibl>
             </note>
             <idno type="URI">http://syriaca.org/work/340</idno>
-            <idno type="BHSYRE">120</idno>
+            <idno type="BHS">120</idno>
             <idno type="BHO">6</idno>
             <bibl xml:id="bibl340-1">
-               <title level="m" xml:lang="la">Biblioteca Hagiographica Syriaca
-                                        electronica</title>
+               <title level="m" xml:lang="la">Bibliotheca Hagiographica Syriaca</title>
                <ptr target="http://syriaca.org/bibl/649"/>
                <citedRange unit="entry">120</citedRange>
             </bibl>

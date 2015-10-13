@@ -1,17 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://syriaca.org/documentation/syriaca-tei-main.rnc" type="application/relax-ng-compact-syntax"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0"
-     xmlns:syriaca="http://syriaca.org"
-     xmlns:saxon="http://saxon.sf.net/"
-     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
-     xmlns:functx="http://www.functx.com"
-     xml:lang="en">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
             <title level="a" xml:lang="en">Jacob of Serugh (text) — <foreign xml:lang="syr">ܝܥܩܘܒ ܕܒܛܢܢ ܕܣܪܘܓ</foreign>
             </title>
-            <title level="m">Qadishe: A Guide to the Lives of the Syriac Saints</title>
+            <title level="m">Bibliotheca Hagiographica Syriaca Electronica</title>
+            <title level="s">Gateway to the Syriac Saints</title>
+            <title level="s">New Handbook of Syriac Literature</title>
             <sponsor>Syriaca.org: The Syriac Reference Portal</sponsor>
             <funder>The International Balzan Prize Foundation</funder>
             <funder>The National Endowment for the Humanities</funder>
@@ -81,7 +78,7 @@
                   </p>
                </licence>
             </availability>
-            <date>2015-09-28-04:00</date>
+            <date>2015-10-12-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -113,41 +110,52 @@
       </encodingDesc>
       <profileDesc>
          <langUsage>
-            <language ident="syr">Unvocalized Syriac of any variety or period</language>
+            <language ident="ar-syr">Arabic Karshuni in Syriac Characters</language>
+            <language ident="ar">Arabic</language>
+            <language ident="cop">Coptic</language>
+            <language ident="cu">Old Church Slavonic</language>
+            <language ident="de">German</language>
+            <language ident="en-x-gedsh">Names or terms Romanized into English according to the standards adopted by the Gorgias Encyclopedic Dictionary of the Syriac Heritage</language>
+            <language ident="en">English</language>
+            <language ident="es">Spanish</language>
+            <language ident="fr-x-bhs">Names or terms Romanized into French according to the standards adopted by the Bibliotheca Hagiographica Syriaca</language>
+            <language ident="fr">French</language>
+            <language ident="gez">Ge'ez</language>
+            <language ident="gr">German</language>
+            <language ident="grc">Ancient or Medieval Greek</language>
+            <language ident="hy">Classical or Modern Armenian</language>
+            <language ident="it">Italian</language>
+            <language ident="ka">Classical or Modern Georgian</language>
+            <language ident="la">Latin</language>
+            <language ident="nl">Dutch</language>
+            <language ident="pt">Portugese</language>
+            <language ident="ru">Russian</language>
+            <language ident="sog">Soghdian</language>
+            <language ident="syr-pal">Syro-Palestinian</language>
             <language ident="syr-Syrj">Vocalized West Syriac</language>
             <language ident="syr-Syrn">Vocalized East Syriac</language>
-            <language ident="en">English</language>
-            <language ident="en-x-gedsh">Names or terms Romanized into English according to
-                        the standards adopted by the Gorgias Encyclopedic Dictionary of the Syriac
-                        Heritage</language>
-            <language ident="ar">Arabic</language>
-            <language ident="fr">French</language>
-            <language ident="fr-x-bhsyre">Names or terms Romanized into French according to
-                        the standards adopted by the Biblioteca Hagiographica Syriaca
-                        electronica</language>
-            <language ident="de">German</language>
-            <language ident="la">Latin</language>
+            <language ident="syr">Unvocalized Syriac of any variety or period</language>
          </langUsage>
       </profileDesc>
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#dmichelson"
                  n="1.0"
-                 when="2015-09-28-04:00">CREATED: work</change>
+                 when="2015-10-12-04:00">CREATED: work</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
-         <bibl xml:id="work-981" ana="#syriaca-saint">
+         <bibl xml:id="work-981" ana="#hagiographic">
             <title xml:id="name981-1"
                    xml:lang="syr"
                    source="#bib981-1"
-                   syriaca-tags="#syriaca-headword">ܝܥܩܘܒ ܕܒܛܢܢ ܕܣܪܘܓ</title>
-            <title xml:id="name981-2" xml:lang="fr-x-bhsyre" source="#bib981-1">Yaʿqōḇ d-Ḇatnān da-Srūǥ</title>
+                   syriaca-tags="#syriaca-headword #syriaca-anglicized">ܝܥܩܘܒ ܕܒܛܢܢ ܕܣܪܘܓ</title>
+            <title xml:id="name981-2" xml:lang="fr-x-bhs" source="#bib981-1">Yaʿqōḇ d-Ḇatnān da-Srūǥ</title>
             <title xml:id="name981-3" xml:lang="fr" source="#bib981-1">Jacques de Serugh (texte)</title>
             <title xml:id="name981-4"
                    xml:lang="en"
                    source="#bib981-1"
-                   syriaca-tags="#syriaca-headword">Jacob of Serugh (text)</title>
+                   syriaca-tags="#syriaca-headword #syriaca-anglicized">Jacob of Serugh (text)</title>
             <note xml:lang="syr" type="incipit" source="#bib981-1">
                <quote>ܩܕܝܫܐ ܡܪܝ ܝܥܩܘܒ ܡܠܦܢܐ ܐܒܘܒܐ ܕܪܘܚܐ ܕܩܘܕܫܐ ܘܟܢܪܐ ܕܥܕܬܐ ܡܗܝܡܢܬܐ ܐܝܬܘܗܝ ܡܢ ܟܘܪܬܡ ܩܪܝܬܐ ܕܥܠ ܦܪܬ ܢܗܪܐ ܒܪ ܢܕܪ̈ܐ ܕܐܒ̈ܗܐ ܡܗ̈ܝܡܢܐ ܘܥܩܪ̈ܐ.</quote>
             </note>
@@ -196,11 +204,10 @@
                <bibl>J. S. Assemani, ibid.</bibl>
             </note>
             <idno type="URI">http://syriaca.org/work/981</idno>
-            <idno type="BHSYRE">791</idno>
+            <idno type="BHS">791</idno>
             <idno type="BHO">414</idno>
             <bibl xml:id="bibl981-1">
-               <title level="m" xml:lang="la">Biblioteca Hagiographica Syriaca
-                                        electronica</title>
+               <title level="m" xml:lang="la">Bibliotheca Hagiographica Syriaca</title>
                <ptr target="http://syriaca.org/bibl/649"/>
                <citedRange unit="entry">791</citedRange>
             </bibl>

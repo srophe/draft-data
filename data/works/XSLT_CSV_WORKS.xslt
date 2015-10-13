@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+enc<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
 	schematypens="http://purl.oclc.org/dsdl/schematron"?>
 
@@ -568,6 +568,50 @@
                         <xsl:value-of select="current-date()"/>
                     </date>
                 </publicationStmt>
+                <seriesStmt>
+                        <title level="s">Gateway to the Syriac Saints</title>
+                    <editor role="general"
+                        ref="http://syriaca.org/documentation/editors.xml#jnmsaintlaurent"
+                        >Jeanne-Nicole Mellon Saint-Laurent</editor>
+                    <editor role="general"
+                        ref="http://syriaca.org/documentation/editors.xml#dmichelson">David A.
+                        Michelson</editor>
+                        <respStmt>
+                            <resp>Edited by</resp>
+                            <name type="person"
+                                ref="http://syriaca.org/documentation/editors.xml#jnmsaintlaurent"
+                                >Jeanne-Nicole Mellon Saint-Laurent</name>
+                        </respStmt>
+                    <respStmt>
+                        <resp>Edited by</resp>
+                        <name type="person"
+                            ref="http://syriaca.org/documentation/editors.xml#dmichelson">David A.
+                            Michelson</name>
+                    </respStmt>
+                        <biblScope unit="vol">1</biblScope>
+                    <idno type="URI">http://syriaca.org/q</idno>
+                </seriesStmt>
+                <seriesStmt>
+                    <title level="s">New Handbook of Syriac Literature</title>
+                    <editor role="general"
+                        ref="http://syriaca.org/documentation/editors.xml#ngibson"
+                        >Nathan P. Gibson</editor>
+                    <editor role="general"
+                        ref="http://syriaca.org/documentation/editors.xml#dmichelson">David A.
+                        Michelson</editor>
+                    <respStmt>
+                        <resp>Edited by</resp>
+                        <name type="person" ref="http://syriaca.org/documentation/editors.xml#ngibson">Nathan P. Gibson</name>
+                    </respStmt>
+                    <respStmt>
+                        <resp>Edited by</resp>
+                        <name type="person"
+                            ref="http://syriaca.org/documentation/editors.xml#dmichelson">David A.
+                            Michelson</name>
+                    </respStmt>
+                    <biblScope unit="vol">1</biblScope>
+                    <idno type="URI">http://syriaca.org/works</idno>
+                </seriesStmt>
                 <sourceDesc>
                     <p>Born digital.</p>
                 </sourceDesc>
@@ -575,28 +619,23 @@
             <encodingDesc>
                 <editorialDecl>
                     <p>This record created following the Syriaca.org guidelines. Documentation
-                        available at: <ref target="http://syriaca.org/documentation"
-                            >http://syriaca.org/documentation</ref>.</p>
+                        available at: <ref target="http://syriaca.org/documentation">http://syriaca.org/documentation</ref>.</p>
                     <interpretation>
                         <p>Approximate dates described in terms of centuries or partial centuries
-                            have been interpreted as documented in <ref
-                                target="http://syriaca.org/documentation/dates.html">Syriaca.org
-                                Dates</ref>.</p>
+                            have been interpreted as documented in the Syriaca.org
+                            guidelines for date encoding <ref target="http://syriaca.org/documentation/dates.html">http://syriaca.org/documentation/dates.html</ref>.</p>
                     </interpretation>
-                    <!-- Are there other editorial decisions we need to record here? -->
                 </editorialDecl>
                 <classDecl>
                     <taxonomy>
                         <category xml:id="syriaca-headword">
                             <catDesc>The name used by Syriaca.org for document titles, citation, and
                                 disambiguation. These names have been created according to the
-                                Syriac.org guidelines for headwords: <ref
-                                    target="http://syriaca.org/documentation/headwords.html"
-                                    >http://syriaca.org/documentation/headwords.html</ref>.</catDesc>
+                                Syriac.org guidelines for headwords: <ref target="http://syriaca.org/documentation/headwords.html">http://syriaca.org/documentation/headwords.html</ref>.</catDesc>
                         </category>
                         <category xml:id="syriaca-anglicized">
-                            <catDesc>An anglicized version of a name, included to facilitate
-                                searching.</catDesc>
+                            <catDesc>An anglicized version of a name created by Syriaca.org used to facilitate
+                                searching in English.</catDesc>
                         </category>
                     </taxonomy>
                 </classDecl>

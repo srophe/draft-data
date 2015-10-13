@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-enc<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
 	schematypens="http://purl.oclc.org/dsdl/schematron"?>
 
-<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:syriaca="http://syriaca.org/ns"
-    xmlns:xs="http://www.w3.org/2001/XMLSchema" exclude-result-prefixes="xs syriaca" version="2.0">
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+    xmlns:syriaca="http://syriaca.org/ns" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    exclude-result-prefixes="xs syriaca" version="2.0">
 
     <xsl:output encoding="UTF-8" indent="yes" method="xml" name="xml"/>
     <xsl:variable name="n">
@@ -18,98 +19,98 @@ enc<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/
         <!-- The spreadsheet presents ancient langs as prose, this converts the prose language names to ISO codes-->
         <xsl:param name="AncientLang" as="xs:string*"/>
         <xsl:choose>
-            <xsl:when test="normalize-space($AncientLang) ='Latin'">
+            <xsl:when test="normalize-space($AncientLang) = 'Latin'">
                 <xsl:text>la</xsl:text>
             </xsl:when>
-            <xsl:when test="normalize-space($AncientLang)='Greek'">
+            <xsl:when test="normalize-space($AncientLang) = 'Greek'">
                 <xsl:text>grc</xsl:text>
             </xsl:when>
-            <xsl:when test="normalize-space($AncientLang)='Arabic'">
+            <xsl:when test="normalize-space($AncientLang) = 'Arabic'">
                 <xsl:text>ar</xsl:text>
             </xsl:when>
-            <xsl:when test="normalize-space($AncientLang)='Armenian'">
+            <xsl:when test="normalize-space($AncientLang) = 'Armenian'">
                 <xsl:text>hy</xsl:text>
             </xsl:when>
-            <xsl:when test="normalize-space($AncientLang)='Georgian'">
+            <xsl:when test="normalize-space($AncientLang) = 'Georgian'">
                 <xsl:text>ka</xsl:text>
             </xsl:when>
-            <xsl:when test="normalize-space($AncientLang)='Soghdian'">
+            <xsl:when test="normalize-space($AncientLang) = 'Soghdian'">
                 <xsl:text>sog</xsl:text>
             </xsl:when>
-            <xsl:when test="normalize-space($AncientLang)='Slavic'">
+            <xsl:when test="normalize-space($AncientLang) = 'Slavic'">
                 <xsl:text>cu</xsl:text>
             </xsl:when>
-            <xsl:when test="normalize-space($AncientLang)='Coptic'">
+            <xsl:when test="normalize-space($AncientLang) = 'Coptic'">
                 <xsl:text>cop</xsl:text>
             </xsl:when>
-            <xsl:when test="normalize-space($AncientLang)='Ethiopic'">
+            <xsl:when test="normalize-space($AncientLang) = 'Ethiopic'">
                 <xsl:text>gez</xsl:text>
             </xsl:when>
-            <xsl:when test="normalize-space($AncientLang)='Syro-Palestinian'">
+            <xsl:when test="normalize-space($AncientLang) = 'Syro-Palestinian'">
                 <xsl:text>syr-pal</xsl:text>
             </xsl:when>
-            <xsl:when test="normalize-space($AncientLang)='Karshuni'">
+            <xsl:when test="normalize-space($AncientLang) = 'Karshuni'">
                 <xsl:text>ar-syr</xsl:text>
             </xsl:when>
             <xsl:otherwise/>
         </xsl:choose>
     </xsl:function>
-    
+
     <xsl:function name="syriaca:modernlangs" as="xs:string*">
         <!-- The spreadsheet presents modern langs as prose, this converts the prose language names to ISO codes-->
         <xsl:param name="ModernLang" as="xs:string*"/>
         <xsl:choose>
-            <xsl:when test="normalize-space($ModernLang) ='Latin'">
+            <xsl:when test="normalize-space($ModernLang) = 'Latin'">
                 <xsl:text>la</xsl:text>
             </xsl:when>
-            <xsl:when test="normalize-space($ModernLang)='German'">
+            <xsl:when test="normalize-space($ModernLang) = 'German'">
                 <xsl:text>de</xsl:text>
             </xsl:when>
-            <xsl:when test="normalize-space($ModernLang)='French'">
+            <xsl:when test="normalize-space($ModernLang) = 'French'">
                 <xsl:text>fr</xsl:text>
             </xsl:when>
-            <xsl:when test="normalize-space($ModernLang)='English'">
+            <xsl:when test="normalize-space($ModernLang) = 'English'">
                 <xsl:text>en</xsl:text>
             </xsl:when>
-            <xsl:when test="normalize-space($ModernLang)='Italian'">
+            <xsl:when test="normalize-space($ModernLang) = 'Italian'">
                 <xsl:text>it</xsl:text>
             </xsl:when>
-            <xsl:when test="normalize-space($ModernLang)='Portugese'">
+            <xsl:when test="normalize-space($ModernLang) = 'Portugese'">
                 <xsl:text>pt</xsl:text>
             </xsl:when>
-            <xsl:when test="normalize-space($ModernLang)='Russian'">
+            <xsl:when test="normalize-space($ModernLang) = 'Russian'">
                 <xsl:text>ru</xsl:text>
             </xsl:when>
-            <xsl:when test="normalize-space($ModernLang)='Dutch'">
+            <xsl:when test="normalize-space($ModernLang) = 'Dutch'">
                 <xsl:text>nl</xsl:text>
             </xsl:when>
-            <xsl:when test="normalize-space($ModernLang)='Arabic'">
+            <xsl:when test="normalize-space($ModernLang) = 'Arabic'">
                 <xsl:text>ar</xsl:text>
             </xsl:when>
-            <xsl:when test="normalize-space($ModernLang)='Spanish'">
+            <xsl:when test="normalize-space($ModernLang) = 'Spanish'">
                 <xsl:text>es</xsl:text>
             </xsl:when>
-            <xsl:when test="normalize-space($ModernLang)='Armenian'">
+            <xsl:when test="normalize-space($ModernLang) = 'Armenian'">
                 <xsl:text>hy</xsl:text>
             </xsl:when>
             <xsl:otherwise/>
         </xsl:choose>
     </xsl:function>
-    
+
     <xsl:function name="syriaca:normalizeYear" as="xs:string">
         <!-- The spreadsheet presents years normally, but datable attributes need 4-digit years -->
         <xsl:param name="year" as="xs:string"/>
         <xsl:choose>
-            <xsl:when test="starts-with($year,'-')">
-                <xsl:value-of select="concat('-',syriaca:normalizeYear(substring($year,2)))"/>
+            <xsl:when test="starts-with($year, '-')">
+                <xsl:value-of select="concat('-', syriaca:normalizeYear(substring($year, 2)))"/>
             </xsl:when>
             <xsl:otherwise>
                 <xsl:choose>
-                    <xsl:when test="string-length($year) &gt; 3">
+                    <xsl:when test="string-length($year) > 3">
                         <xsl:value-of select="$year"/>
                     </xsl:when>
                     <xsl:otherwise>
-                        <xsl:value-of select="syriaca:normalizeYear(concat('0',$year))"/>
+                        <xsl:value-of select="syriaca:normalizeYear(concat('0', $year))"/>
                     </xsl:otherwise>
                 </xsl:choose>
             </xsl:otherwise>
@@ -120,20 +121,20 @@ enc<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/
         <xsl:param name="date" as="xs:string"/>
         <xsl:variable name="trim-date" select="normalize-space($date)"/>
         <xsl:choose>
-            <xsl:when test="starts-with($trim-date,'0000') and string-length($trim-date) eq 4">
+            <xsl:when test="starts-with($trim-date, '0000') and string-length($trim-date) eq 4">
                 <xsl:text>0001-01-01</xsl:text>
             </xsl:when>
             <xsl:when test="string-length($trim-date) eq 4">
-                <xsl:value-of select="concat($trim-date,'-01-01')"/>
+                <xsl:value-of select="concat($trim-date, '-01-01')"/>
             </xsl:when>
             <xsl:when test="string-length($trim-date) eq 5">
-                <xsl:value-of select="concat($trim-date,'-01-01')"/>
+                <xsl:value-of select="concat($trim-date, '-01-01')"/>
             </xsl:when>
             <xsl:when test="string-length($trim-date) eq 5">
-                <xsl:value-of select="concat($trim-date,'-01-01')"/>
+                <xsl:value-of select="concat($trim-date, '-01-01')"/>
             </xsl:when>
             <xsl:when test="string-length($trim-date) eq 7">
-                <xsl:value-of select="concat($trim-date,'-01')"/>
+                <xsl:value-of select="concat($trim-date, '-01')"/>
             </xsl:when>
             <xsl:otherwise>
                 <xsl:value-of select="$trim-date"/>
@@ -147,7 +148,7 @@ enc<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/
             <xsl:variable name="record-id" select="position() + 220"/>
 
             <!-- Creates a variable containing the path of the file that should be created for this record. -->
-            <xsl:variable name="filename" select="concat('tei/',$record-id,'.xml')"/>
+            <xsl:variable name="filename" select="concat('tei/', $record-id, '.xml')"/>
 
             <xsl:result-document href="{$filename}" format="xml">
                 <xsl:processing-instruction name="xml-model">
@@ -165,7 +166,7 @@ enc<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/
                                 <xsl:attribute name="ana" select="'#hagiographic'"/>
                                 <xsl:for-each
                                     select="Saint_English | Syriac_Name | Saint_French | Transcr.">
-                                    <xsl:if test="normalize-space(.) !=''">
+                                    <xsl:if test="normalize-space(.) != ''">
                                         <title xml:id="{concat('name', $record-id, '-',position())}"
                                             xml:lang="{
                                                 if(self::Saint_English) then 'en' 
@@ -178,7 +179,8 @@ enc<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/
                                                 <xsl:when
                                                   test="self::Saint_English or self::Syriac_Name">
                                                   <xsl:attribute name="syriaca-tags" namespace=""
-                                                      >#syriaca-headword #syriaca-anglicized</xsl:attribute>
+                                                  >#syriaca-headword
+                                                  #syriaca-anglicized</xsl:attribute>
                                                 </xsl:when>
                                             </xsl:choose>
                                             <xsl:value-of select="normalize-space(.)"/>
@@ -188,7 +190,7 @@ enc<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/
                                     </xsl:if>
                                 </xsl:for-each>
                                 <xsl:for-each select="Auct_FR | A_ET_">
-                                    <xsl:if test="normalize-space(.) !=''">
+                                    <xsl:if test="normalize-space(.) != ''">
                                         <author
                                             xml:lang="{
                                             if(self::A_ET_) then 'en' 
@@ -202,7 +204,7 @@ enc<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/
                                 <!-- Adds Incipit etc. -->
                                 <xsl:for-each
                                     select="Prol._inc. | Prol._FT_ | Prol._ET | Text_inc. | Text_inc._FT | Text_inc._ET | Text._des. | Text._Des._FT | Text._Des._ET">
-                                    <xsl:if test="normalize-space(.) !=''">
+                                    <xsl:if test="normalize-space(.) != ''">
                                         <note
                                             xml:lang="{
                                             if(self::Prol._inc. or self::Text_inc. or self::Text._des.) then 'syr'
@@ -222,7 +224,7 @@ enc<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/
                                     </xsl:if>
                                 </xsl:for-each>
                                 <!-- Adds Edition Information -->
-                                <xsl:if test="normalize-space(EdAuthor1) !=''">
+                                <xsl:if test="normalize-space(EdAuthor1) != ''">
                                     <note type="editions">
                                         <bibl source="#bib{$record-id}-1">
                                             <author>
@@ -231,12 +233,13 @@ enc<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/
                                             <title>
                                                 <xsl:value-of select="normalize-space(EdTitle1)"/>
                                             </title>
-                                            <citedRange><xsl:value-of
-                                                  select="normalize-space(EdRef1)"/></citedRange>
+                                            <citedRange>
+                                                <xsl:value-of select="normalize-space(EdRef1)"/>
+                                            </citedRange>
                                         </bibl>
                                     </note>
                                 </xsl:if>
-                                <xsl:if test="normalize-space(EdAuthor2) !=''">
+                                <xsl:if test="normalize-space(EdAuthor2) != ''">
                                     <note type="editions">
                                         <bibl source="#bib{$record-id}-1">
                                             <author>
@@ -251,7 +254,7 @@ enc<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/
                                         </bibl>
                                     </note>
                                 </xsl:if>
-                                <xsl:if test="normalize-space(EdAuthor3) !=''">
+                                <xsl:if test="normalize-space(EdAuthor3) != ''">
                                     <note type="editions">
                                         <bibl source="#bib{$record-id}-1">
                                             <author>
@@ -266,7 +269,7 @@ enc<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/
                                         </bibl>
                                     </note>
                                 </xsl:if>
-                                <xsl:if test="normalize-space(EdAuthor4) !=''">
+                                <xsl:if test="normalize-space(EdAuthor4) != ''">
                                     <note type="editions">
                                         <bibl source="#bib{$record-id}-1">
                                             <author>
@@ -281,7 +284,7 @@ enc<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/
                                         </bibl>
                                     </note>
                                 </xsl:if>
-                                <xsl:if test="normalize-space(EdAuthor5) !=''">
+                                <xsl:if test="normalize-space(EdAuthor5) != ''">
                                     <note type="editions">
                                         <bibl source="#bib{$record-id}-1">
                                             <author>
@@ -296,7 +299,7 @@ enc<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/
                                         </bibl>
                                     </note>
                                 </xsl:if>
-                                <xsl:if test="normalize-space(EdAuthor6) !=''">
+                                <xsl:if test="normalize-space(EdAuthor6) != ''">
                                     <note type="editions">
                                         <bibl source="#bib{$record-id}-1">
                                             <author>
@@ -311,7 +314,7 @@ enc<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/
                                         </bibl>
                                     </note>
                                 </xsl:if>
-                                <xsl:if test="normalize-space(EdAuthor7) !=''">
+                                <xsl:if test="normalize-space(EdAuthor7) != ''">
                                     <note type="editions">
                                         <bibl source="#bib{$record-id}-1">
                                             <author>
@@ -326,7 +329,7 @@ enc<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/
                                         </bibl>
                                     </note>
                                 </xsl:if>
-                                <xsl:if test="normalize-space(EdAuthor8) !=''">
+                                <xsl:if test="normalize-space(EdAuthor8) != ''">
                                     <note type="editions">
                                         <bibl source="#bib{$record-id}-1">
                                             <author>
@@ -341,7 +344,7 @@ enc<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/
                                         </bibl>
                                     </note>
                                 </xsl:if>
-                                <xsl:if test="normalize-space(EdAuthor9) !=''">
+                                <xsl:if test="normalize-space(EdAuthor9) != ''">
                                     <note type="editions">
                                         <bibl source="#bib{$record-id}-1">
                                             <author>
@@ -357,13 +360,9 @@ enc<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/
                                     </note>
                                 </xsl:if>
                                 <!-- Adds MSS information -->
-                                <xsl:for-each
-                                    select="MSS">
-                                    <xsl:if test="normalize-space(.) !=''">
-                                        <note
-                                            xml:lang="en"
-                                            type="MSS"
-                                            source="#bib{$record-id}-1">
+                                <xsl:for-each select="MSS">
+                                    <xsl:if test="normalize-space(.) != ''">
+                                        <note xml:lang="en" type="MSS" source="#bib{$record-id}-1">
                                             <bibl>
                                                 <xsl:value-of select="normalize-space(.)"/>
                                             </bibl>
@@ -372,21 +371,30 @@ enc<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/
                                 </xsl:for-each>
                                 <!-- Add Ancient Versions -->
                                 <xsl:for-each select="Lang[. != '']">
-                                    <xsl:for-each-group select="following-sibling::Ref." group-adjacent="boolean(self::Ref.)">
+                                    <xsl:for-each-group select="following-sibling::Ref."
+                                        group-adjacent="boolean(self::Ref.)">
                                         <xsl:if test=". != ''">
                                             <xsl:choose>
-                                                <xsl:when test="contains(.,'; ')">
-                                                    <xsl:variable name="Lang" select="preceding-sibling::Lang[1]"/>
-                                                    <xsl:for-each select="tokenize(.,'; ')">
-                                                        <note xml:lang="{syriaca:ancientlangs($Lang)}" type="ancientVersion" source="#bib221-1">
-                                                            <bibl><xsl:value-of select="normalize-space(.)"/></bibl>
-                                                        </note>
-                                                    </xsl:for-each>
+                                                <xsl:when test="contains(., '; ')">
+                                                  <xsl:variable name="Lang"
+                                                  select="preceding-sibling::Lang[1]"/>
+                                                  <xsl:for-each select="tokenize(., '; ')">
+                                                  <note xml:lang="{syriaca:ancientlangs($Lang)}"
+                                                  type="ancientVersion" source="#bib221-1">
+                                                  <bibl>
+                                                  <xsl:value-of select="normalize-space(.)"/>
+                                                  </bibl>
+                                                  </note>
+                                                  </xsl:for-each>
                                                 </xsl:when>
                                                 <xsl:otherwise>
-                                                    <note xml:lang="{syriaca:ancientlangs(preceding-sibling::Lang[1])}" type="ancientVersion" source="#bib221-1">
-                                                        <bibl><xsl:value-of select="normalize-space(.)"/></bibl>
-                                                    </note>
+                                                  <note
+                                                  xml:lang="{syriaca:ancientlangs(preceding-sibling::Lang[1])}"
+                                                  type="ancientVersion" source="#bib221-1">
+                                                  <bibl>
+                                                  <xsl:value-of select="normalize-space(.)"/>
+                                                  </bibl>
+                                                  </note>
                                                 </xsl:otherwise>
                                             </xsl:choose>
                                         </xsl:if>
@@ -394,21 +402,30 @@ enc<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/
                                 </xsl:for-each>
                                 <!-- Add Modern Translations -->
                                 <xsl:for-each select="Mlang">
-                                    <xsl:for-each-group select="following-sibling::Ref." group-adjacent="boolean(self::Ref.)">
+                                    <xsl:for-each-group select="following-sibling::Ref."
+                                        group-adjacent="boolean(self::Ref.)">
                                         <xsl:if test=". != ''">
                                             <xsl:choose>
-                                                <xsl:when test="contains(.,'; ')">
-                                                    <xsl:variable name="Mlang" select="preceding-sibling::Mlang[1]"/>
-                                                    <xsl:for-each select="tokenize(.,'; ')">
-                                                        <note xml:lang="{syriaca:modernlangs($Mlang)}" type="modernTranslation" source="#bib221-1">
-                                                            <bibl><xsl:value-of select="normalize-space(.)"/></bibl>
-                                                        </note>
-                                                    </xsl:for-each>
+                                                <xsl:when test="contains(., '; ')">
+                                                  <xsl:variable name="Mlang"
+                                                  select="preceding-sibling::Mlang[1]"/>
+                                                  <xsl:for-each select="tokenize(., '; ')">
+                                                  <note xml:lang="{syriaca:modernlangs($Mlang)}"
+                                                  type="modernTranslation" source="#bib221-1">
+                                                  <bibl>
+                                                  <xsl:value-of select="normalize-space(.)"/>
+                                                  </bibl>
+                                                  </note>
+                                                  </xsl:for-each>
                                                 </xsl:when>
                                                 <xsl:otherwise>
-                                                    <note xml:lang="{syriaca:modernlangs(preceding-sibling::Mlang[1])}" type="modernTranslation" source="#bib221-1">
-                                                        <bibl><xsl:value-of select="normalize-space(.)"/></bibl>
-                                                    </note>
+                                                  <note
+                                                  xml:lang="{syriaca:modernlangs(preceding-sibling::Mlang[1])}"
+                                                  type="modernTranslation" source="#bib221-1">
+                                                  <bibl>
+                                                  <xsl:value-of select="normalize-space(.)"/>
+                                                  </bibl>
+                                                  </note>
                                                 </xsl:otherwise>
                                             </xsl:choose>
                                         </xsl:if>
@@ -424,31 +441,36 @@ enc<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/
                                     <xsl:value-of select="normalize-space(File)"/>
                                 </idno>
                                 <!-- BHO Number -->
-                                
-                                <xsl:if test="normalize-space(BHO) !=''"><idno type="BHO">
-                                    <xsl:value-of select="normalize-space(BHO)"/>
-                                </idno></xsl:if>
+
+                                <xsl:if test="normalize-space(BHO) != ''">
+                                    <idno type="BHO">
+                                        <xsl:value-of select="normalize-space(BHO)"/>
+                                    </idno>
+                                </xsl:if>
                                 <!-- CPG Number -->
-                                
-                                <xsl:if test="normalize-space(CPG) !=''"><idno type="CPG">
-                                    <xsl:value-of select="normalize-space(CPG)"/>
-                                </idno></xsl:if>
-                                
+
+                                <xsl:if test="normalize-space(CPG) != ''">
+                                    <idno type="CPG">
+                                        <xsl:value-of select="normalize-space(CPG)"/>
+                                    </idno>
+                                </xsl:if>
+
                                 <!-- ADD BIBLIOGRAPHY -->
                                 <bibl>
                                     <xsl:attribute name="xml:id"
-                                        select="concat('bibl', $record-id,'-1')"/>
-                                    <title level="m" xml:lang="la">Bibliotheca Hagiographica Syriaca</title>
+                                        select="concat('bibl', $record-id, '-1')"/>
+                                    <title level="m" xml:lang="la">Bibliotheca Hagiographica
+                                        Syriaca</title>
                                     <ptr target="http://syriaca.org/bibl/649"/>
                                     <citedRange unit="entry">
                                         <xsl:value-of select="normalize-space(File)"/>
                                     </citedRange>
                                 </bibl>
                                 <xsl:for-each select="De_qua">
-                                    <xsl:if test="normalize-space(.) !=''">
+                                    <xsl:if test="normalize-space(.) != ''">
                                         <bibl>
-                                        <xsl:attribute name="xml:id"
-                                            select="concat('bibl', $record-id, '-', position() + 1)"/>
+                                            <xsl:attribute name="xml:id"
+                                                select="concat('bibl', $record-id, '-', position() + 1)"/>
                                             <xsl:value-of select="normalize-space(.)"/>
                                         </bibl>
                                     </xsl:if>
@@ -569,39 +591,41 @@ enc<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/
                     </date>
                 </publicationStmt>
                 <seriesStmt>
-                        <title level="s">Gateway to the Syriac Saints</title>
+                    <title level="s">Gateway to the Syriac Saints</title>
                     <editor role="general"
                         ref="http://syriaca.org/documentation/editors.xml#jnmsaintlaurent"
                         >Jeanne-Nicole Mellon Saint-Laurent</editor>
                     <editor role="general"
                         ref="http://syriaca.org/documentation/editors.xml#dmichelson">David A.
                         Michelson</editor>
-                        <respStmt>
-                            <resp>Edited by</resp>
-                            <name type="person"
-                                ref="http://syriaca.org/documentation/editors.xml#jnmsaintlaurent"
-                                >Jeanne-Nicole Mellon Saint-Laurent</name>
-                        </respStmt>
+                    <respStmt>
+                        <resp>Edited by</resp>
+                        <name type="person"
+                            ref="http://syriaca.org/documentation/editors.xml#jnmsaintlaurent"
+                            >Jeanne-Nicole Mellon Saint-Laurent</name>
+                    </respStmt>
                     <respStmt>
                         <resp>Edited by</resp>
                         <name type="person"
                             ref="http://syriaca.org/documentation/editors.xml#dmichelson">David A.
                             Michelson</name>
                     </respStmt>
-                        <biblScope unit="vol">1</biblScope>
+                    <biblScope unit="vol">1</biblScope>
                     <idno type="URI">http://syriaca.org/q</idno>
                 </seriesStmt>
                 <seriesStmt>
                     <title level="s">New Handbook of Syriac Literature</title>
                     <editor role="general"
-                        ref="http://syriaca.org/documentation/editors.xml#ngibson"
-                        >Nathan P. Gibson</editor>
+                        ref="http://syriaca.org/documentation/editors.xml#ngibson">Nathan P.
+                        Gibson</editor>
                     <editor role="general"
                         ref="http://syriaca.org/documentation/editors.xml#dmichelson">David A.
                         Michelson</editor>
                     <respStmt>
                         <resp>Edited by</resp>
-                        <name type="person" ref="http://syriaca.org/documentation/editors.xml#ngibson">Nathan P. Gibson</name>
+                        <name type="person"
+                            ref="http://syriaca.org/documentation/editors.xml#ngibson">Nathan P.
+                            Gibson</name>
                     </respStmt>
                     <respStmt>
                         <resp>Edited by</resp>
@@ -619,11 +643,13 @@ enc<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/
             <encodingDesc>
                 <editorialDecl>
                     <p>This record created following the Syriaca.org guidelines. Documentation
-                        available at: <ref target="http://syriaca.org/documentation">http://syriaca.org/documentation</ref>.</p>
+                        available at: <ref target="http://syriaca.org/documentation"
+                            >http://syriaca.org/documentation</ref>.</p>
                     <interpretation>
                         <p>Approximate dates described in terms of centuries or partial centuries
-                            have been interpreted as documented in the Syriaca.org
-                            guidelines for date encoding <ref target="http://syriaca.org/documentation/dates.html">http://syriaca.org/documentation/dates.html</ref>.</p>
+                            have been interpreted as documented in the Syriaca.org guidelines for
+                            date encoding <ref target="http://syriaca.org/documentation/dates.html"
+                                >http://syriaca.org/documentation/dates.html</ref>.</p>
                     </interpretation>
                 </editorialDecl>
                 <classDecl>
@@ -631,11 +657,13 @@ enc<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/
                         <category xml:id="syriaca-headword">
                             <catDesc>The name used by Syriaca.org for document titles, citation, and
                                 disambiguation. These names have been created according to the
-                                Syriac.org guidelines for headwords: <ref target="http://syriaca.org/documentation/headwords.html">http://syriaca.org/documentation/headwords.html</ref>.</catDesc>
+                                Syriac.org guidelines for headwords: <ref
+                                    target="http://syriaca.org/documentation/headwords.html"
+                                    >http://syriaca.org/documentation/headwords.html</ref>.</catDesc>
                         </category>
                         <category xml:id="syriaca-anglicized">
-                            <catDesc>An anglicized version of a name created by Syriaca.org used to facilitate
-                                searching in English.</catDesc>
+                            <catDesc>An anglicized version of a name created by Syriaca.org used to
+                                facilitate searching in English.</catDesc>
                         </category>
                     </taxonomy>
                 </classDecl>
@@ -647,10 +675,13 @@ enc<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/
                     <language ident="cop">Coptic</language>
                     <language ident="cu">Old Church Slavonic</language>
                     <language ident="de">German</language>
-                    <language ident="en-x-gedsh">Names or terms Romanized into English according to the standards adopted by the Gorgias Encyclopedic Dictionary of the Syriac Heritage</language>
+                    <language ident="en-x-gedsh">Names or terms Romanized into English according to
+                        the standards adopted by the Gorgias Encyclopedic Dictionary of the Syriac
+                        Heritage</language>
                     <language ident="en">English</language>
                     <language ident="es">Spanish</language>
-                    <language ident="fr-x-bhs">Names or terms Romanized into French according to the standards adopted by the Bibliotheca Hagiographica Syriaca</language>
+                    <language ident="fr-x-bhs">Names or terms Romanized into French according to the
+                        standards adopted by the Bibliotheca Hagiographica Syriaca</language>
                     <language ident="fr">French</language>
                     <language ident="gez">Ge'ez</language>
                     <language ident="gr">German</language>

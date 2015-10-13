@@ -1,17 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://syriaca.org/documentation/syriaca-tei-main.rnc" type="application/relax-ng-compact-syntax"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0"
-     xmlns:syriaca="http://syriaca.org"
-     xmlns:saxon="http://saxon.sf.net/"
-     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
-     xmlns:functx="http://www.functx.com"
-     xml:lang="en">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
    <teiHeader type="text">
       <fileDesc>
          <titleStmt>
-            <title level="a" xml:lang="en">On Mari — <foreign xml:lang="syr">ܡܐܪܝ</foreign>
+            <title level="a" xml:lang="en">Peter the Apostle (text) — <foreign xml:lang="syr">ܫܡܥܘܢ ܟܐܦܐ</foreign>
             </title>
-            <title level="m">Qadishe: A Guide to the Lives of the Syriac Saints</title>
+            <title level="m">Bibliotheca Hagiographica Syriaca Electronica</title>
+            <title level="s">Gateway to the Syriac Saints</title>
+            <title level="s">New Handbook of Syriac Literature</title>
             <sponsor>Syriaca.org: The Syriac Reference Portal</sponsor>
             <funder>The International Balzan Prize Foundation</funder>
             <funder>The National Endowment for the Humanities</funder>
@@ -95,8 +92,58 @@
                   </p>
                </licence>
             </availability>
-            <date instant="false">2015-09-25-05:00</date>
+            <date instant="false">2015-10-12-05:00</date>
          </publicationStmt>
+         <seriesStmt>
+            <title level="s">Gateway to the Syriac Saints</title>
+            <editor role="general"
+                    ref="http://syriaca.org/documentation/editors.xml#jnmsaintlaurent">Jeanne-Nicole Mellon Saint-Laurent</editor>
+            <editor role="general"
+                    ref="http://syriaca.org/documentation/editors.xml#dmichelson">David A.
+                        Michelson</editor>
+            <respStmt>
+               <resp>Edited by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#jnmsaintlaurent"
+                     full="yes"
+                     instant="false">Jeanne-Nicole Mellon Saint-Laurent</name>
+            </respStmt>
+            <respStmt>
+               <resp>Edited by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#dmichelson"
+                     full="yes"
+                     instant="false">David A.
+                            Michelson</name>
+            </respStmt>
+            <biblScope unit="vol">1</biblScope>
+            <idno type="URI">http://syriaca.org/q</idno>
+         </seriesStmt>
+         <seriesStmt>
+            <title level="s">New Handbook of Syriac Literature</title>
+            <editor role="general"
+                    ref="http://syriaca.org/documentation/editors.xml#ngibson">Nathan P. Gibson</editor>
+            <editor role="general"
+                    ref="http://syriaca.org/documentation/editors.xml#dmichelson">David A.
+                        Michelson</editor>
+            <respStmt>
+               <resp>Edited by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#ngibson"
+                     full="yes"
+                     instant="false">Nathan P. Gibson</name>
+            </respStmt>
+            <respStmt>
+               <resp>Edited by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#dmichelson"
+                     full="yes"
+                     instant="false">David A.
+                            Michelson</name>
+            </respStmt>
+            <biblScope unit="vol">1</biblScope>
+            <idno type="URI">http://syriaca.org/works</idno>
+         </seriesStmt>
          <sourceDesc default="false">
             <p part="N">Born digital.</p>
          </sourceDesc>
@@ -107,8 +154,8 @@
                         available at: <ref target="http://syriaca.org/documentation">http://syriaca.org/documentation</ref>.</p>
             <interpretation default="false">
                <p part="N">Approximate dates described in terms of centuries or partial centuries
-                            have been interpreted as documented in <ref target="http://syriaca.org/documentation/dates.html">Syriaca.org
-                                Dates</ref>.</p>
+                            have been interpreted as documented in the Syriaca.org
+                            guidelines for date encoding <ref target="http://syriaca.org/documentation/dates.html">http://syriaca.org/documentation/dates.html</ref>.</p>
             </interpretation>
          </editorialDecl>
          <classDecl>
@@ -119,35 +166,46 @@
                                 Syriac.org guidelines for headwords: <ref target="http://syriaca.org/documentation/headwords.html">http://syriaca.org/documentation/headwords.html</ref>.</catDesc>
                </category>
                <category xml:id="syriaca-anglicized">
-                  <catDesc>An anglicized version of a name, included to facilitate
-                                searching.</catDesc>
+                  <catDesc>An anglicized version of a name created by Syriaca.org used to facilitate
+                                searching in English.</catDesc>
                </category>
             </taxonomy>
          </classDecl>
       </encodingDesc>
       <profileDesc>
          <langUsage default="false">
-            <language ident="syr">Unvocalized Syriac of any variety or period</language>
+            <language ident="ar-syr">Arabic Karshuni in Syriac Characters</language>
+            <language ident="ar">Arabic</language>
+            <language ident="cop">Coptic</language>
+            <language ident="cu">Old Church Slavonic</language>
+            <language ident="de">German</language>
+            <language ident="en-x-gedsh">Names or terms Romanized into English according to the standards adopted by the Gorgias Encyclopedic Dictionary of the Syriac Heritage</language>
+            <language ident="en">English</language>
+            <language ident="es">Spanish</language>
+            <language ident="fr-x-bhs">Names or terms Romanized into French according to the standards adopted by the Bibliotheca Hagiographica Syriaca</language>
+            <language ident="fr">French</language>
+            <language ident="gez">Ge'ez</language>
+            <language ident="gr">German</language>
+            <language ident="grc">Ancient or Medieval Greek</language>
+            <language ident="hy">Classical or Modern Armenian</language>
+            <language ident="it">Italian</language>
+            <language ident="ka">Classical or Modern Georgian</language>
+            <language ident="la">Latin</language>
+            <language ident="nl">Dutch</language>
+            <language ident="pt">Portugese</language>
+            <language ident="ru">Russian</language>
+            <language ident="sog">Soghdian</language>
+            <language ident="syr-pal">Syro-Palestinian</language>
             <language ident="syr-Syrj">Vocalized West Syriac</language>
             <language ident="syr-Syrn">Vocalized East Syriac</language>
-            <language ident="en">English</language>
-            <language ident="en-x-gedsh">Names or terms Romanized into English according to
-                        the standards adopted by the Gorgias Encyclopedic Dictionary of the Syriac
-                        Heritage</language>
-            <language ident="ar">Arabic</language>
-            <language ident="fr">French</language>
-            <language ident="fr-x-bhsyre">Names or terms Romanized into French according to
-                        the standards adopted by the Biblioteca Hagiographica Syriaca
-                        electronica</language>
-            <language ident="de">German</language>
-            <language ident="la">Latin</language>
+            <language ident="syr">Unvocalized Syriac of any variety or period</language>
          </langUsage>
       </profileDesc>
       <revisionDesc status="draft">
          <change who="http://syriaca.org/documentation/editors.xml#dmichelson"
                  n="1.0"
                  status="draft"
-                 when="2015-09-25-05:00">CREATED: work</change>
+                 when="2015-10-12-05:00">CREATED: work</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -155,28 +213,40 @@
          <bibl default="false"
                status="draft"
                xml:id="work-222"
-               ana="#syriaca-saint">
+               ana="#hagiographic">
             <title xml:id="name222-1"
                    xml:lang="syr"
                    source="#bib222-1"
-                   syriaca-tags="#syriaca-headword">ܡܐܪܝ</title>
-            <title xml:id="name222-2" xml:lang="fr-x-bhsyre" source="#bib222-1">mārī</title>
-            <title xml:id="name222-3" xml:lang="fr" source="#bib222-1">Mari (texte)</title>
+                   syriaca-tags="#syriaca-headword #syriaca-anglicized">ܫܡܥܘܢ ܟܐܦܐ</title>
+            <title xml:id="name222-2" xml:lang="fr-x-bhs" source="#bib222-1">Šemʿōn Kēpā</title>
+            <title xml:id="name222-3" xml:lang="fr" source="#bib222-1">Pierre, apôtre (texte)</title>
             <title xml:id="name222-4"
                    xml:lang="en"
                    source="#bib222-1"
-                   syriaca-tags="#syriaca-headword">Mari (text)</title>
+                   syriaca-tags="#syriaca-headword #syriaca-anglicized">Peter the Apostle (text)</title>
+            <note xml:lang="syr"
+                  type="prologue"
+                  source="#bib222-1"
+                  anchored="true">
+               <quote defective="false">ܬܫܥܝܬܐ ܕܪ̈ܚܡܘܗܝ ܕܡܫܝܚܐ ܐܬܬܒܥܢܢ ܠܡܫܬܥܝܘ. ܘܠܝܬ ܒܢ ܚܝܠܐ ܕܣܦܩ ܠܡܡܠܝܘ ܦܘܪܥܢܐ ܡܕܡ ܕܐܬܬܒܥܢܢ. ܕܠܡ ܗܿܝ ܕܙܥܘܪܐ ܡܫܘܚܬܢ:</quote>
+            </note>
+            <note xml:lang="en"
+                  type="prologue"
+                  source="#bib222-1"
+                  anchored="true">
+               <quote defective="false">It was demanded that we tell the story of the friends of Christ, and we do not have the power to fulfill this request sufficiently, for the smallness is our measure . . .</quote>
+            </note>
             <note xml:lang="syr"
                   type="incipit"
                   source="#bib222-1"
                   anchored="true">
-               <quote defective="false">ܡܢ ܒܬܪ ܕܝܢ ܚܡܫܥܣܪ̈ܐ ܫܢ̈ܝܢ ܕܡܡܠܟ ܗܘ̣ܐ ܛܒܪܝܘܣ ܩܣܪ: ܟܕ ܫܪܝ ܕܫܘܠܡܐ ܡܝܬܪܐ ܢܫܩ̈ܠܢ ܬܠܬ ܫܢ̈ܝܢ ܕܡܕܒܪܢܘܬܗ ܕܡܪܢ ܝܫܘܥ ܡܫܝܚܐ ܕܒܝܬ ܒܢܝ̈ܢܫܐ: ܗܢܝܢ ܕܒܗܝܢ ܦܘܪܩܢܐ ܕܟܠܗ ܓܘܐ: ܕܥܠ̈ܝܐ ܘܕܬܚ̈ܬܝܐ: ܐܬܓܡܪ...</quote>
+               <quote defective="false">ܘܟܕ ܓܝܪ ܒܣ̣ܐ ܒܪܢܫܢ ܩܕܡܝܐ: ܘܥ̣ܒܪ ܥܠ ܦܘܩܕܢܐ ܕܐܠܗܐ: ܘܐܬܓܠܙ ܡܢ ܗܢܿܘܢ ܛܘ̈ܒܐ ܡܫܒܚ̈ܐ.</quote>
             </note>
             <note xml:lang="fr" type="incipit" source="#bib222-1" anchored="true">
-               <quote defective="false">Après quinze ans du règne de Tibère César, alors qu’allaient recevoir une fin excellente les trois années de l’économie de notre Seigneur Jésus-Christ parmi les hommes, pendant lesquelles fut accomplie la rédemption de tout l’univers supérieur et inférieur…</quote>
+               <quote defective="false">Quand en effet notre premier homme eut avec mépris agi contre le commandement de Dieu et qu’il eut été privé de ces biens glorieux…</quote>
             </note>
             <note xml:lang="en" type="incipit" source="#bib222-1" anchored="true">
-               <quote defective="false">After fifteen years of the reign of Tiberius Caesar, when the three years of the economy of our Lord Jesus Christ started to reach its end,</quote>
+               <quote defective="false">For when the first man disdained and acted against the commandment of God, and was deprived of glorious things . . .</quote>
             </note>
             <note xml:lang="syr"
                   type="explicit"
@@ -188,94 +258,42 @@
                   type="explicit"
                   source="#bib222-1"
                   anchored="true">
-               <quote defective="false">Et après cela le bienheureux Mâr Mârî sortit de ce monde . . . Et il fut placé dans l'église de Dûr Qônî devant le sanctuaire . . . selon l'ordre de Papâ héritier de son trône . . . Et nous, mes bien-aimés, honorons le jour de la mémoire de ce saint apôtre et athlète de la justice . . . pour qu'ils s'y réjouissent et soient glorifiés par la droite de celui qui est nos prémices. Amen.</quote>
+               <quote defective="false">Et quand l’âme du saint se fut élevée, Marcellus s’approcha, sans avoir pris conseil de personne, et il descendit Simon de la croix… Et ainsi fut achevé le couronnement du bienheureux Mâr Simon… Amen.</quote>
             </note>
             <note xml:lang="en"
                   type="explicit"
                   source="#bib222-1"
                   anchored="true">
-               <quote defective="false">And after this, the blessed Mar Mari left this world . . . and he was placed in the church in Dur Qoni before the sanctuary . . . according to the command of Papa, the heir of his throne ...</quote>
+               <quote defective="false">And when the soul of the saint arose, Marcellus approached, without having been advised by anyone. He brought Simeon down from the cross . . . and in this way the crowning of Mar Simon was completed.</quote>
             </note>
             <note type="editions" anchored="true">
                <bibl source="#bib222-1" default="false" status="draft">
-                  <author>(1) Bedjan, P.</author>
-                  <title>(1) AMS 1</title>
-                  <citedRange>(1) p. 45-94 + variantes p. 527</citedRange>
-               </bibl>
-            </note>
-            <note type="editions" anchored="true">
-               <bibl source="#bib222-1" default="false" status="draft">
-                  <author>(2) Abbeloos, J.-B.</author>
-                  <title>(2) Acta sancti Maris Assyriae, Babyloniae ac Persidis seculo I Apostoli Syriace sive Aramaice juxta manuscriptum Alqoschianum adjectis aliorum codicum lectionibus variantibus versione Latina et annotationibus illustrata</title>
-                  <citedRange>(2) Bruxelles, 1885, p. 12-90 + variantes p. 91-93 = AB, 4 (1885), p. 50-131</citedRange>
+                  <author>Bedjan, P.</author>
+                  <title>AMS 1</title>
+                  <citedRange>p. 1-33</citedRange>
                </bibl>
             </note>
             <note xml:lang="en" type="MSS" source="#bib222-1" anchored="true">
-               <bibl default="false" status="draft">ed (1): ? copie à Mavana d’un ms de Sath ? + variantes du ms Berlin, Königliche Bibliothek, syr. 75 (Sachau 222), f. 52-74</bibl>
+               <bibl default="false" status="draft">ed: Rome (&lt; Guidi ?)</bibl>
             </note>
             <note xml:lang="en" type="MSS" source="#bib222-1" anchored="true">
-               <bibl default="false" status="draft">ed (2): ms d’Abbeloos (?) + ms Berlin, Königliche Bibliothek, syr. 75 (Sachau 222), f. 52-74, tous deux copiés à Alqoch</bibl>
+               <bibl default="false" status="draft">ms Vatican, Syr. 597, f. 50-55v</bibl>
             </note>
             <note xml:lang="en" type="MSS" source="#bib222-1" anchored="true">
-               <bibl default="false" status="draft">ms Alqosh, Église paroissiale chaldéenne, cod. 87 ?</bibl>
-            </note>
-            <note xml:lang="en" type="MSS" source="#bib222-1" anchored="true">
-               <bibl default="false" status="draft">ms Alqosh, Monstère N.-D. des Semences, cod. 215 (Vosté) (ms perdu ?)</bibl>
-            </note>
-            <note xml:lang="en" type="MSS" source="#bib222-1" anchored="true">
-               <bibl default="false" status="draft">ms Dawra, Monastère chaldéen, cod. 622, f. 39-67</bibl>
-            </note>
-            <note xml:lang="en" type="MSS" source="#bib222-1" anchored="true">
-               <bibl default="false" status="draft">ms Dawra, Monastère chaldéen, cod. 624, f. 1-61</bibl>
-            </note>
-            <note xml:lang="en" type="MSS" source="#bib222-1" anchored="true">
-               <bibl default="false" status="draft">ms Dawra, Monastère chaldéen, cod. 628 (olim Alqosh, Monastère N.-D. des Semences, cod. 214), cah. 8 p. 7 - cah. 11 p. 8</bibl>
-            </note>
-            <note xml:lang="en" type="MSS" source="#bib222-1" anchored="true">
-               <bibl default="false" status="draft">ms Dawra, Monastère chaldéen, cod. 630 (olim Alqosh, Monastère N.-D. des Semences, cod. 217 Vosté), cah. 2, p. 12 - cah. 5, p. 7</bibl>
-            </note>
-            <note xml:lang="en" type="MSS" source="#bib222-1" anchored="true">
-               <bibl default="false" status="draft">ms Dawra, Monastère chaldéen, cod. 636, cah. 1 - cah. 8</bibl>
-            </note>
-            <note xml:lang="en" type="MSS" source="#bib222-1" anchored="true">
-               <bibl default="false" status="draft">ms Vatican, Syr. 597, f. 8v-17v (fgt)</bibl>
-            </note>
-            <note xml:lang="en" type="MSS" source="#bib222-1" anchored="true">
-               <bibl default="false" status="draft">ms Londres, British Library, Or. 9384.II, f. 42v-59</bibl>
-            </note>
-            <note xml:lang="en" type="MSS" source="#bib222-1" anchored="true">
-               <bibl default="false" status="draft">ms Londres, British Library, Or. 9391, p. 254-306</bibl>
-            </note>
-            <note xml:lang="en" type="MSS" source="#bib222-1" anchored="true">
-               <bibl default="false" status="draft">ms Bagdad, Patriarcat chaldéen catholique, = olim Mossoul, Patriarcat chaldéen, cod. 86</bibl>
-            </note>
-            <note xml:lang="en" type="MSS" source="#bib222-1" anchored="true">
-               <bibl default="false" status="draft">ms Ourmia, Sarau-Shedd 103</bibl>
-            </note>
-            <note xml:lang="en" type="MSS" source="#bib222-1" anchored="true">
-               <bibl default="false" status="draft">ms Ourmia, Sarau-Shedd 160</bibl>
-            </note>
-            <note xml:lang="la"
-                  type="modernTranslation"
-                  source="#bib221-1"
-                  anchored="true">
-               <bibl default="false" status="draft">par J.-B. Abbeloos, ibid.</bibl>
-            </note>
-            <note xml:lang="de"
-                  type="modernTranslation"
-                  source="#bib221-1"
-                  anchored="true">
-               <bibl default="false" status="draft">par R. Raabe, Die Geschichte des Dominus Mâri eines Apostels des Orients, Leipzig, 1893, p. 13-63</bibl>
+               <bibl default="false" status="draft">ms Londres, British Library, Or. 9391, p. 331-367</bibl>
             </note>
             <idno type="URI">http://syriaca.org/work/222</idno>
-            <idno type="BHSYRE">3</idno>
-            <idno type="BHO">610</idno>
+            <idno type="BHS">1</idno>
+            <idno type="BHO">935</idno>
             <bibl default="false" status="draft" xml:id="bibl222-1">
-               <title level="m" xml:lang="la">Biblioteca Hagiographica Syriaca
-                                        electronica</title>
+               <title level="m" xml:lang="la">Bibliotheca Hagiographica Syriaca</title>
                <ptr target="http://syriaca.org/bibl/649"/>
-               <citedRange unit="entry">3</citedRange>
+               <citedRange unit="entry">1</citedRange>
             </bibl>
+            <bibl default="false" status="draft" xml:id="bibl222-2">A. Baumstark, Die Petrus- und Paulusacten in der litterarischen Ueberlieferung der syrischen Kirche. Festgruss dem Priestercollegium des deutschen Campo Santo zu Rom zur Feier seines 25jährigen Bestehens (8 December 1901), Leipzig, 1902</bibl>
+            <bibl default="false" status="draft" xml:id="bibl222-3">P. Peeters, Notes sur la légende des apôtres s. Pierre et s. Paul dans la littérature syrienne, dans AB, 21 (1902), p. 121-140</bibl>
+            <bibl default="false" status="draft" xml:id="bibl222-4">I. Guidi, Bemerkungen zum ersten Bande der syrischen Acta Martyrum et Sanctorum, dans ZDMG, 46 (1892), p. 744-746</bibl>
+            <bibl default="false" status="draft" xml:id="bibl222-5">G. Poupon, Les ‘Actes de Pierre’ et leur remaniement, dans W. Haase (ed.), Religion (Vorkonstantinisches Christentum: Leben und Umwelt Jesu; Neues Testament [Kanonische Schriften und Apokryphen], Schluss (ANRW, II.25:6), Berlin-New York, 1988, p. 4363-4383</bibl>
          </bibl>
       </body>
    </text>

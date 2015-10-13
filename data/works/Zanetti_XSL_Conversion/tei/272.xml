@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://syriaca.org/documentation/syriaca-tei-main.rnc" type="application/relax-ng-compact-syntax"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader type="text">
+      <fileDesc>
+         <titleStmt>
+            <title level="a" xml:lang="en">Barshebya (text) — <foreign xml:lang="syr">ܒܪܫܒܝܐ</foreign>
+            </title>
+            <title level="m">Bibliotheca Hagiographica Syriaca Electronica</title>
+            <title level="s">Gateway to the Syriac Saints</title>
+            <title level="s">New Handbook of Syriac Literature</title>
+            <sponsor>Syriaca.org: The Syriac Reference Portal</sponsor>
+            <funder>The International Balzan Prize Foundation</funder>
+            <funder>The National Endowment for the Humanities</funder>
+            <principal>David A. Michelson</principal>
+            <editor role="general"
+                    ref="http://syriaca.org/documentation/editors.xml#jnmsaintlaurent">Jeanne-Nicole Mellon Saint-Laurent</editor>
+            <editor role="general"
+                    ref="http://syriaca.org/documentation/editors.xml#dmichelson">David A.
+                        Michelson</editor>
+            <editor role="creator"
+                    ref="http://syriaca.org/documentation/editors.xml#jnmsaintlaurent">Jeanne-Nicole Mellon Saint-Laurent</editor>
+            <editor role="creator"
+                    ref="http://syriaca.org/documentation/editors.xml#dmichelson">David A.
+                        Michelson</editor>
+            <editor role="creator" ref="http://syriaca.org/editors.xml#uzanetti">Ugo
+                        Zanetti</editor>
+            <editor role="creator" ref="http://syriaca.org/editors.xml#cdetienne">Claude
+                        Detienne</editor>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#jnmsaintlaurent"
+                     full="yes"
+                     instant="false">Jeanne-Nicole Mellon Saint-Laurent</name>
+            </respStmt>
+            <respStmt>
+               <resp>Data architecture and encoding by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#dmichelson"
+                     full="yes"
+                     instant="false">David A.
+                            Michelson</name>
+            </respStmt>
+            <respStmt>
+               <resp>Editing, Syriac data conversion, data entry, and reconciling by</resp>
+               <name ref="http://syriaca.org/editors.xml#akane"
+                     full="yes"
+                     instant="false">Adam P. Kane</name>
+            </respStmt>
+            <respStmt>
+               <resp>Editing and Syriac data proofreading by</resp>
+               <name ref="http://syriaca.org/editors.xml#abarschabo"
+                     full="yes"
+                     instant="false">Aram Bar Schabo</name>
+            </respStmt>
+            <respStmt>
+               <resp>Entries adapted from the work of</resp>
+               <name type="person"
+                     ref="http://syriaca.org/editors.xml#uzanetti"
+                     full="yes"
+                     instant="false">Ugo
+                            Zanetti</name>
+            </respStmt>
+            <respStmt>
+               <resp>Entries adapted from the work of</resp>
+               <name type="person"
+                     ref="http://syriaca.org/editors.xml#cdetienne"
+                     full="yes"
+                     instant="false">Claude
+                            Detienne</name>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition n="1.0"/>
+         </editionStmt>
+         <publicationStmt>
+            <authority>Syriaca.org: The Syriac Reference Portal</authority>
+            <idno type="URI">http://syriaca.org/work/272/tei</idno>
+            <availability default="false" status="unknown">
+               <licence target="http://creativecommons.org/licenses/by/3.0/">
+                  <p part="N">Distributed under a Creative Commons Attribution 3.0 Unported
+                                License.</p>
+                  <p part="N">This entry incorporates copyrighted material from the following
+                                work(s): <listBibl default="false">
+                        <bibl default="false" status="draft">
+                           <ptr target="http://syriaca.org/bibl/649"/>
+                        </bibl>
+                     </listBibl>
+                     <note anchored="true">used under a Creative Commons Attribution license <ref target="http://creativecommons.org/licenses/by/3.0/"/>
+                     </note>
+                  </p>
+               </licence>
+            </availability>
+            <date instant="false">2015-10-12-05:00</date>
+         </publicationStmt>
+         <seriesStmt>
+            <title level="s">Gateway to the Syriac Saints</title>
+            <editor role="general"
+                    ref="http://syriaca.org/documentation/editors.xml#jnmsaintlaurent">Jeanne-Nicole Mellon Saint-Laurent</editor>
+            <editor role="general"
+                    ref="http://syriaca.org/documentation/editors.xml#dmichelson">David A.
+                        Michelson</editor>
+            <respStmt>
+               <resp>Edited by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#jnmsaintlaurent"
+                     full="yes"
+                     instant="false">Jeanne-Nicole Mellon Saint-Laurent</name>
+            </respStmt>
+            <respStmt>
+               <resp>Edited by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#dmichelson"
+                     full="yes"
+                     instant="false">David A.
+                            Michelson</name>
+            </respStmt>
+            <biblScope unit="vol">1</biblScope>
+            <idno type="URI">http://syriaca.org/q</idno>
+         </seriesStmt>
+         <seriesStmt>
+            <title level="s">New Handbook of Syriac Literature</title>
+            <editor role="general"
+                    ref="http://syriaca.org/documentation/editors.xml#ngibson">Nathan P. Gibson</editor>
+            <editor role="general"
+                    ref="http://syriaca.org/documentation/editors.xml#dmichelson">David A.
+                        Michelson</editor>
+            <respStmt>
+               <resp>Edited by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#ngibson"
+                     full="yes"
+                     instant="false">Nathan P. Gibson</name>
+            </respStmt>
+            <respStmt>
+               <resp>Edited by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#dmichelson"
+                     full="yes"
+                     instant="false">David A.
+                            Michelson</name>
+            </respStmt>
+            <biblScope unit="vol">1</biblScope>
+            <idno type="URI">http://syriaca.org/works</idno>
+         </seriesStmt>
+         <sourceDesc default="false">
+            <p part="N">Born digital.</p>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <editorialDecl default="false">
+            <p part="N">This record created following the Syriaca.org guidelines. Documentation
+                        available at: <ref target="http://syriaca.org/documentation">http://syriaca.org/documentation</ref>.</p>
+            <interpretation default="false">
+               <p part="N">Approximate dates described in terms of centuries or partial centuries
+                            have been interpreted as documented in the Syriaca.org
+                            guidelines for date encoding <ref target="http://syriaca.org/documentation/dates.html">http://syriaca.org/documentation/dates.html</ref>.</p>
+            </interpretation>
+         </editorialDecl>
+         <classDecl>
+            <taxonomy>
+               <category xml:id="syriaca-headword">
+                  <catDesc>The name used by Syriaca.org for document titles, citation, and
+                                disambiguation. These names have been created according to the
+                                Syriac.org guidelines for headwords: <ref target="http://syriaca.org/documentation/headwords.html">http://syriaca.org/documentation/headwords.html</ref>.</catDesc>
+               </category>
+               <category xml:id="syriaca-anglicized">
+                  <catDesc>An anglicized version of a name created by Syriaca.org used to facilitate
+                                searching in English.</catDesc>
+               </category>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
+      <profileDesc>
+         <langUsage default="false">
+            <language ident="ar-syr">Arabic Karshuni in Syriac Characters</language>
+            <language ident="ar">Arabic</language>
+            <language ident="cop">Coptic</language>
+            <language ident="cu">Old Church Slavonic</language>
+            <language ident="de">German</language>
+            <language ident="en-x-gedsh">Names or terms Romanized into English according to the standards adopted by the Gorgias Encyclopedic Dictionary of the Syriac Heritage</language>
+            <language ident="en">English</language>
+            <language ident="es">Spanish</language>
+            <language ident="fr-x-bhs">Names or terms Romanized into French according to the standards adopted by the Bibliotheca Hagiographica Syriaca</language>
+            <language ident="fr">French</language>
+            <language ident="gez">Ge'ez</language>
+            <language ident="gr">German</language>
+            <language ident="grc">Ancient or Medieval Greek</language>
+            <language ident="hy">Classical or Modern Armenian</language>
+            <language ident="it">Italian</language>
+            <language ident="ka">Classical or Modern Georgian</language>
+            <language ident="la">Latin</language>
+            <language ident="nl">Dutch</language>
+            <language ident="pt">Portugese</language>
+            <language ident="ru">Russian</language>
+            <language ident="sog">Soghdian</language>
+            <language ident="syr-pal">Syro-Palestinian</language>
+            <language ident="syr-Syrj">Vocalized West Syriac</language>
+            <language ident="syr-Syrn">Vocalized East Syriac</language>
+            <language ident="syr">Unvocalized Syriac of any variety or period</language>
+         </langUsage>
+      </profileDesc>
+      <revisionDesc status="draft">
+         <change who="http://syriaca.org/documentation/editors.xml#dmichelson"
+                 n="1.0"
+                 status="draft"
+                 when="2015-10-12-05:00">CREATED: work</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <bibl default="false"
+               status="draft"
+               xml:id="work-272"
+               ana="#hagiographic">
+            <title xml:id="name272-1"
+                   xml:lang="syr"
+                   source="#bib272-1"
+                   syriaca-tags="#syriaca-headword #syriaca-anglicized">ܒܪܫܒܝܐ</title>
+            <title xml:id="name272-2" xml:lang="fr-x-bhs" source="#bib272-1">Baršeḇyā</title>
+            <title xml:id="name272-3" xml:lang="fr" source="#bib272-1">Barshebya (texte)</title>
+            <title xml:id="name272-4"
+                   xml:lang="en"
+                   source="#bib272-1"
+                   syriaca-tags="#syriaca-headword #syriaca-anglicized">Barshebya (text)</title>
+            <note xml:lang="syr"
+                  type="incipit"
+                  source="#bib272-1"
+                  anchored="true">
+               <quote defective="false">ܒܗ ܒܙܒܢܐ ܗܢܐ ܕܡܝܠܣ ܛܘܒܢܐ ܐܬܟܠܠ: ܪܫܕܝܪܐ ܚܕ ܐܝܬ ܗܘ̣ܐ ܒܐܬܪܐ ܕܦܪܣ: ܕܫܡܗ ܗܘ̣ܐ ܒܪܫܒܝܐ.</quote>
+            </note>
+            <note xml:lang="fr" type="incipit" source="#bib272-1" anchored="true">
+               <quote defective="false">Au même temps où fut couronné le bienheureux Mîlès, il y avait au pays de Perse un abbé dont le nom était Barshebyâ.</quote>
+            </note>
+            <note xml:lang="syr"
+                  type="explicit"
+                  source="#bib272-1"
+                  anchored="true">
+               <quote defective="false">ܘܐܦ ܐܢܬܬܗ ܘܒܢܘ̈ܗܝ ܘܒ̈ܢܝ ܒܝܬܗ ܒܥܠܬܗ ܡܗܝܡ̈ܢܐ ܫܪܝܪ̈ܐ ܗܘܘ: ܘܒܕܚܠܬ ܐܠܗܐ ܟܠܗܘܢ ܝܘ̈ܡܬܐ ܕܚܝܝ̈ܗܘܢ ܐܬܕܒܪܘ. ܐܬܟܠܠܘ ܕܝܢ ܩܕܝ̈ܫܐ ܒܫܒܥܣܪܐ ܒܝܪܚ ܚܙܝܪܢ ܒܕܣܗܪܐ.</quote>
+            </note>
+            <note xml:lang="fr"
+                  type="explicit"
+                  source="#bib272-1"
+                  anchored="true">
+               <quote defective="false">Et sa femme, ses fils et ses domestiques devinrent aussi de vrais croyants à cause de lui et ils vécurent dans la crainte de Dieu tous les jours de leur vie. Les saints furent couronnés le 17 du mois lunaire de Hazîran.</quote>
+            </note>
+            <note type="editions" anchored="true">
+               <bibl source="#bib272-1" default="false" status="draft">
+                  <author>(1) Bedjan, P.</author>
+                  <title>(1) AMS 2</title>
+                  <citedRange>(1) p. 281-284</citedRange>
+               </bibl>
+            </note>
+            <note type="editions" anchored="true">
+               <bibl source="#bib272-1" default="false" status="draft">
+                  <author>(2) Assemani, S. E.</author>
+                  <title>(2) ASMOO 1</title>
+                  <citedRange>(2) p. 93-95</citedRange>
+               </bibl>
+            </note>
+            <note xml:lang="en" type="MSS" source="#bib272-1" anchored="true">
+               <bibl default="false" status="draft">ed (1): collation du ms Berlin, Königliche Bibliothek, or. oct. 1257 (Assfalg 27, olim Abbeloos, dein Bedjan copié sur ms Diyarbakir, Archevêché chaldéen, cod. 96 [nunc Mardin, Évêché chaldéen, y vu en 1969]), p. 24-28</bibl>
+            </note>
+            <note xml:lang="en" type="MSS" source="#bib272-1" anchored="true">
+               <bibl default="false" status="draft">ed (2): ms Vatican ?</bibl>
+            </note>
+            <note xml:lang="en" type="MSS" source="#bib272-1" anchored="true">
+               <bibl default="false" status="draft">ms Vatican, Syr. 160, f. 103 (mutilé du début)</bibl>
+            </note>
+            <note xml:lang="en" type="MSS" source="#bib272-1" anchored="true">
+               <bibl default="false" status="draft">ms Vatican, Syr. 161, f. 64v-65</bibl>
+            </note>
+            <note xml:lang="en" type="MSS" source="#bib272-1" anchored="true">
+               <bibl default="false" status="draft">ms Londres, British Library, Add. 14645, f. 322v-323v</bibl>
+            </note>
+            <note xml:lang="en" type="MSS" source="#bib272-1" anchored="true">
+               <bibl default="false" status="draft">ms Dawra, Monstère chaldéen, cod. 631 (olim Alqosh, Monastère N.-D. des Semences, cod. 218 (Vosté)</bibl>
+            </note>
+            <note xml:lang="la"
+                  type="modernTranslation"
+                  source="#bib221-1"
+                  anchored="true">
+               <bibl default="false" status="draft">S. E. Assemani, ibid.</bibl>
+            </note>
+            <idno type="URI">http://syriaca.org/work/272</idno>
+            <idno type="BHS">51</idno>
+            <idno type="BHO">146</idno>
+            <bibl default="false" status="draft" xml:id="bibl272-1">
+               <title level="m" xml:lang="la">Bibliotheca Hagiographica Syriaca</title>
+               <ptr target="http://syriaca.org/bibl/649"/>
+               <citedRange unit="entry">51</citedRange>
+            </bibl>
+            <bibl default="false" status="draft" xml:id="bibl272-2">P. Devos, Les Martyrs persans à travers leurs Actes syriaques, dans Atti del Convegno sul tema: La Persia e il mondo greco-romano (Roma 11-14 aprile 1965) (Problemi attuali di scienza e di cultura, 76), Rome, 1966, p. 213-225</bibl>
+            <bibl default="false" status="draft" xml:id="bibl272-3">J.S. Assemani, BO 1, p. 188</bibl>
+         </bibl>
+      </body>
+   </text>
+</TEI>

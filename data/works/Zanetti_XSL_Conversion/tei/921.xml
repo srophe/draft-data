@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://syriaca.org/documentation/syriaca-tei-main.rnc" type="application/relax-ng-compact-syntax"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader type="text">
+      <fileDesc>
+         <titleStmt>
+            <title level="a" xml:lang="en">Addai (Teaching of) (text) — <foreign xml:lang="syr">ܐܕܝ</foreign>
+            </title>
+            <title level="m">Bibliotheca Hagiographica Syriaca Electronica</title>
+            <title level="s">Gateway to the Syriac Saints</title>
+            <title level="s">New Handbook of Syriac Literature</title>
+            <sponsor>Syriaca.org: The Syriac Reference Portal</sponsor>
+            <funder>The International Balzan Prize Foundation</funder>
+            <funder>The National Endowment for the Humanities</funder>
+            <principal>David A. Michelson</principal>
+            <editor role="general"
+                    ref="http://syriaca.org/documentation/editors.xml#jnmsaintlaurent">Jeanne-Nicole Mellon Saint-Laurent</editor>
+            <editor role="general"
+                    ref="http://syriaca.org/documentation/editors.xml#dmichelson">David A.
+                        Michelson</editor>
+            <editor role="creator"
+                    ref="http://syriaca.org/documentation/editors.xml#jnmsaintlaurent">Jeanne-Nicole Mellon Saint-Laurent</editor>
+            <editor role="creator"
+                    ref="http://syriaca.org/documentation/editors.xml#dmichelson">David A.
+                        Michelson</editor>
+            <editor role="creator" ref="http://syriaca.org/editors.xml#uzanetti">Ugo
+                        Zanetti</editor>
+            <editor role="creator" ref="http://syriaca.org/editors.xml#cdetienne">Claude
+                        Detienne</editor>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#jnmsaintlaurent"
+                     full="yes"
+                     instant="false">Jeanne-Nicole Mellon Saint-Laurent</name>
+            </respStmt>
+            <respStmt>
+               <resp>Data architecture and encoding by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#dmichelson"
+                     full="yes"
+                     instant="false">David A.
+                            Michelson</name>
+            </respStmt>
+            <respStmt>
+               <resp>Editing, Syriac data conversion, data entry, and reconciling by</resp>
+               <name ref="http://syriaca.org/editors.xml#akane"
+                     full="yes"
+                     instant="false">Adam P. Kane</name>
+            </respStmt>
+            <respStmt>
+               <resp>Editing and Syriac data proofreading by</resp>
+               <name ref="http://syriaca.org/editors.xml#abarschabo"
+                     full="yes"
+                     instant="false">Aram Bar Schabo</name>
+            </respStmt>
+            <respStmt>
+               <resp>Entries adapted from the work of</resp>
+               <name type="person"
+                     ref="http://syriaca.org/editors.xml#uzanetti"
+                     full="yes"
+                     instant="false">Ugo
+                            Zanetti</name>
+            </respStmt>
+            <respStmt>
+               <resp>Entries adapted from the work of</resp>
+               <name type="person"
+                     ref="http://syriaca.org/editors.xml#cdetienne"
+                     full="yes"
+                     instant="false">Claude
+                            Detienne</name>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition n="1.0"/>
+         </editionStmt>
+         <publicationStmt>
+            <authority>Syriaca.org: The Syriac Reference Portal</authority>
+            <idno type="URI">http://syriaca.org/work/921/tei</idno>
+            <availability default="false" status="unknown">
+               <licence target="http://creativecommons.org/licenses/by/3.0/">
+                  <p part="N">Distributed under a Creative Commons Attribution 3.0 Unported
+                                License.</p>
+                  <p part="N">This entry incorporates copyrighted material from the following
+                                work(s): <listBibl default="false">
+                        <bibl default="false" status="draft">
+                           <ptr target="http://syriaca.org/bibl/649"/>
+                        </bibl>
+                     </listBibl>
+                     <note anchored="true">used under a Creative Commons Attribution license <ref target="http://creativecommons.org/licenses/by/3.0/"/>
+                     </note>
+                  </p>
+               </licence>
+            </availability>
+            <date instant="false">2015-10-12-05:00</date>
+         </publicationStmt>
+         <seriesStmt>
+            <title level="s">Gateway to the Syriac Saints</title>
+            <editor role="general"
+                    ref="http://syriaca.org/documentation/editors.xml#jnmsaintlaurent">Jeanne-Nicole Mellon Saint-Laurent</editor>
+            <editor role="general"
+                    ref="http://syriaca.org/documentation/editors.xml#dmichelson">David A.
+                        Michelson</editor>
+            <respStmt>
+               <resp>Edited by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#jnmsaintlaurent"
+                     full="yes"
+                     instant="false">Jeanne-Nicole Mellon Saint-Laurent</name>
+            </respStmt>
+            <respStmt>
+               <resp>Edited by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#dmichelson"
+                     full="yes"
+                     instant="false">David A.
+                            Michelson</name>
+            </respStmt>
+            <biblScope unit="vol">1</biblScope>
+            <idno type="URI">http://syriaca.org/q</idno>
+         </seriesStmt>
+         <seriesStmt>
+            <title level="s">New Handbook of Syriac Literature</title>
+            <editor role="general"
+                    ref="http://syriaca.org/documentation/editors.xml#ngibson">Nathan P. Gibson</editor>
+            <editor role="general"
+                    ref="http://syriaca.org/documentation/editors.xml#dmichelson">David A.
+                        Michelson</editor>
+            <respStmt>
+               <resp>Edited by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#ngibson"
+                     full="yes"
+                     instant="false">Nathan P. Gibson</name>
+            </respStmt>
+            <respStmt>
+               <resp>Edited by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#dmichelson"
+                     full="yes"
+                     instant="false">David A.
+                            Michelson</name>
+            </respStmt>
+            <biblScope unit="vol">1</biblScope>
+            <idno type="URI">http://syriaca.org/works</idno>
+         </seriesStmt>
+         <sourceDesc default="false">
+            <p part="N">Born digital.</p>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <editorialDecl default="false">
+            <p part="N">This record created following the Syriaca.org guidelines. Documentation
+                        available at: <ref target="http://syriaca.org/documentation">http://syriaca.org/documentation</ref>.</p>
+            <interpretation default="false">
+               <p part="N">Approximate dates described in terms of centuries or partial centuries
+                            have been interpreted as documented in the Syriaca.org
+                            guidelines for date encoding <ref target="http://syriaca.org/documentation/dates.html">http://syriaca.org/documentation/dates.html</ref>.</p>
+            </interpretation>
+         </editorialDecl>
+         <classDecl>
+            <taxonomy>
+               <category xml:id="syriaca-headword">
+                  <catDesc>The name used by Syriaca.org for document titles, citation, and
+                                disambiguation. These names have been created according to the
+                                Syriac.org guidelines for headwords: <ref target="http://syriaca.org/documentation/headwords.html">http://syriaca.org/documentation/headwords.html</ref>.</catDesc>
+               </category>
+               <category xml:id="syriaca-anglicized">
+                  <catDesc>An anglicized version of a name created by Syriaca.org used to facilitate
+                                searching in English.</catDesc>
+               </category>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
+      <profileDesc>
+         <langUsage default="false">
+            <language ident="ar-syr">Arabic Karshuni in Syriac Characters</language>
+            <language ident="ar">Arabic</language>
+            <language ident="cop">Coptic</language>
+            <language ident="cu">Old Church Slavonic</language>
+            <language ident="de">German</language>
+            <language ident="en-x-gedsh">Names or terms Romanized into English according to the standards adopted by the Gorgias Encyclopedic Dictionary of the Syriac Heritage</language>
+            <language ident="en">English</language>
+            <language ident="es">Spanish</language>
+            <language ident="fr-x-bhs">Names or terms Romanized into French according to the standards adopted by the Bibliotheca Hagiographica Syriaca</language>
+            <language ident="fr">French</language>
+            <language ident="gez">Ge'ez</language>
+            <language ident="gr">German</language>
+            <language ident="grc">Ancient or Medieval Greek</language>
+            <language ident="hy">Classical or Modern Armenian</language>
+            <language ident="it">Italian</language>
+            <language ident="ka">Classical or Modern Georgian</language>
+            <language ident="la">Latin</language>
+            <language ident="nl">Dutch</language>
+            <language ident="pt">Portugese</language>
+            <language ident="ru">Russian</language>
+            <language ident="sog">Soghdian</language>
+            <language ident="syr-pal">Syro-Palestinian</language>
+            <language ident="syr-Syrj">Vocalized West Syriac</language>
+            <language ident="syr-Syrn">Vocalized East Syriac</language>
+            <language ident="syr">Unvocalized Syriac of any variety or period</language>
+         </langUsage>
+      </profileDesc>
+      <revisionDesc status="draft">
+         <change who="http://syriaca.org/documentation/editors.xml#dmichelson"
+                 n="1.0"
+                 status="draft"
+                 when="2015-10-12-05:00">CREATED: work</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <bibl default="false"
+               status="draft"
+               xml:id="work-921"
+               ana="#hagiographic">
+            <title xml:id="name921-1"
+                   xml:lang="syr"
+                   source="#bib921-1"
+                   syriaca-tags="#syriaca-headword #syriaca-anglicized">ܐܕܝ</title>
+            <title xml:id="name921-2" xml:lang="fr-x-bhs" source="#bib921-1">ʾAdday</title>
+            <title xml:id="name921-3" xml:lang="fr" source="#bib921-1">Addaï (Doctrine d’) (texte)</title>
+            <title xml:id="name921-4"
+                   xml:lang="en"
+                   source="#bib921-1"
+                   syriaca-tags="#syriaca-headword #syriaca-anglicized">Addai (Teaching of) (text)</title>
+            <note xml:lang="syr"
+                  type="incipit"
+                  source="#bib921-1"
+                  anchored="true">
+               <quote defective="false">ܒܫܢܬ ܬܠܬܡܐܐ ܘܐܪ̈ܒܥܝܢ ܘܬܠܬ ܠܡܠܟܘܬܐ ܕܝܘ̈ܢܝܐ. ܘܒܡܠܟܘܬܗ ܕܡܪܢ ܛܝܒܪܝܣ ܩܣܪ ܪܗܘܡܝܐ: ܘܒܡܠܟܘܬܗ ܕܐܒܓܪ ܡܠܟܐ ܒܪ ܡܥܢܘ ܡܠܟܐ: ܒܐܝܪܚ ܬܫܪܝ ܩܕܡ ܒܝܘܡ ܬܪ̈ܥܣܪ̣. ܫܕܪ ܗܘܐ ܐܒܓܪ ܐܘܟܡܐ ܠܡܪܝܗܒ ܘܠܫܡܫܓܪܡ. ܪ̈ܫܢܐ ܘܡܝܩܪ̈ܐ ܕܡܠܟܘܬܗ. ܘܠܚܿܢܢ ܛܒܘܠܪܐ ܫܪܝܪܐ ܥܡܗܘܢ.</quote>
+            </note>
+            <note xml:lang="fr" type="incipit" source="#bib921-1" anchored="true">
+               <quote defective="false">En l’an 343 du règne des Grecs, sous le règne de notre seigneur Tibère, césar de Rome, et sous le règne du roi Abgar fils du roi Ma‘nou, au mois de Teshrî I, le douzième jour, Abgar le Noir envoya Maryahb et Shmeshgram, nobles honorables de son royaume et avec eux l’archiviste fidèle Hanan.</quote>
+            </note>
+            <note xml:lang="syr"
+                  type="explicit"
+                  source="#bib921-1"
+                  anchored="true">
+               <quote defective="false">ܗܟܢܐ ܐܦ ܠܒܘܒܢܐ ܒܪܣܢܩ ܒܪ ܥܒܕ ܫܕܝ ܣܦܪܐ ܕܡܠܟܐ ܟܬܒ ܗܘ̣ܐ ܗܢܝܢ ܗܠܝܢ ܕܐܕܝ ܫܠܝܚܐ ܡܢ ܫܘܪܝܐ ܠܫܘܠܡܐ. ܟܕ ܪܡܐ ܗܘ̣ܐ ܐܝܕܐ ܕܣܗܕܘܬܐ̣. ܐܦܢ ܚܢܢ ܛܒܘܠܪܐ ܫܪܝܪܐ ܕܡ̈ܠܟܐ̣. ܘܣܡ ܗܘ̣ܐ ܒܝܬ ܥܘܗ̈ܕܢܐ ܕܡ̈ܠܟܐ ܐܝܟܐ ܕܦܘܩ̈ܕܢܐ ܘܢܡ̈ܘܣܐ ܣܝܡܝܢ ܘܕܙܒܢܝܢ ܘܕܡܙܒܢܝܢ ܬܡܢ ܢܛܝܪܝܢ ܒܙܗܝܪܘܬܐ ܕܠܐ ܒܣܝܢܐ ܡܕܡ.</quote>
+            </note>
+            <note xml:lang="fr"
+                  type="explicit"
+                  source="#bib921-1"
+                  anchored="true">
+               <quote defective="false">Ainsi aussi Laboubnâ, fils de Sénaq fis de Ebedshadday, scribe royal, écrivit ce qui concerne l’apôtre Adday du début à la fin, tandis que Hanan l’archiviste fidèle du roi levait la main en témoignage, et il le plaça au milieu des archives du roi, là où sont placés les commandements et les lois, et où les pièces des acheteurs et des vendeus sont conservées avec soin et sans aucune négligence.</quote>
+            </note>
+            <note type="editions" anchored="true">
+               <bibl source="#bib921-1" default="false" status="draft">
+                  <author>(1) Phillips, G.</author>
+                  <title>(1) The Doctrine of Addai, The Apostle</title>
+                  <citedRange>(1) London, 1876, p. 1-53 (syr.)</citedRange>
+               </bibl>
+            </note>
+            <note type="editions" anchored="true">
+               <bibl source="#bib921-1" default="false" status="draft">
+                  <author>(2) Cureton, W.</author>
+                  <title>(2) ASD</title>
+                  <citedRange>(2) p. 5-23 (syr.) et 108-110 (syr.)</citedRange>
+               </bibl>
+            </note>
+            <note type="editions" anchored="true">
+               <bibl source="#bib921-1" default="false" status="draft">
+                  <author>(3) Me¯?erskaja, E.N. (photo du ms)</author>
+                  <title>(3) Legenda ob Avgare - Rannesirijskij literaturnyj pamjatnik</title>
+                  <citedRange>(3) Moscou, 1984, p. 119-184</citedRange>
+               </bibl>
+            </note>
+            <note xml:lang="en" type="MSS" source="#bib921-1" anchored="true">
+               <bibl default="false" status="draft">ed (1) et (3): ms Saint-Pétersbourg, Bibliothèque Publique Saltykov-Shchedrine, N.S. Syr. 4 (Pigulevskaya 48), , f. 1v33</bibl>
+            </note>
+            <note xml:lang="en" type="MSS" source="#bib921-1" anchored="true">
+               <bibl default="false" status="draft">ed (2): ms Londres, British Library, Add. 14654, f. 33r-v (fgt) + Add. 14644, f. 1-9v + Add. 14535, f. 1r (fgt) + Add. 12155, f. 53v + Add. 17193, f. 36v-37 (extrait)</bibl>
+            </note>
+            <note xml:lang="en" type="MSS" source="#bib921-1" anchored="true">
+               <bibl default="false" status="draft">ms Alqosh, Église paroissiale chaldéenne, cod. 87 ?</bibl>
+            </note>
+            <note xml:lang="en" type="MSS" source="#bib921-1" anchored="true">
+               <bibl default="false" status="draft">ms Londres, British Library, Add. 12161, f. 1v (fgt)</bibl>
+            </note>
+            <note xml:lang="en" type="MSS" source="#bib921-1" anchored="true">
+               <bibl default="false" status="draft">ms Londres, British Library, Add. 14612, f. 165r (fgt)</bibl>
+            </note>
+            <note xml:lang="en" type="MSS" source="#bib921-1" anchored="true">
+               <bibl default="false" status="draft">ms Londres, British Library, Add. 14644, f. 1-9v (mutilé du début et au milieu)</bibl>
+            </note>
+            <note xml:lang="en" type="MSS" source="#bib921-1" anchored="true">
+               <bibl default="false" status="draft">ms Paris, Bibliothèque nationale, syr. 62, f. 102v-108 (extraits)</bibl>
+            </note>
+            <note xml:lang="en" type="MSS" source="#bib921-1" anchored="true">
+               <bibl default="false" status="draft">ms Birmingham, Selly Oak College Library, Coll. Mingana, Syr. 405, f. 1</bibl>
+            </note>
+            <note xml:lang="en" type="MSS" source="#bib921-1" anchored="true">
+               <bibl default="false" status="draft">ms Jérusalem, Couvent syrien orthodoxe Saint-Marc, cod. 153, p. 241-259</bibl>
+            </note>
+            <note xml:lang="hy"
+                  type="ancientVersion"
+                  source="#bib221-1"
+                  anchored="true">
+               <bibl default="false" status="draft">A. Carrière, La Légende d’Abgar dans l’Histoire d’Arménie de Moïse de Khoren, dans Centenaire de l’École des langues orientales vivantes, Paris, 1895, p. 357-414. (CR de A. Burckhardt, dans ByzZ 6 [1897], p. 426-435)</bibl>
+            </note>
+            <note xml:lang="gez"
+                  type="ancientVersion"
+                  source="#bib221-1"
+                  anchored="true">
+               <bibl default="false" status="draft">G. Haile, The legend of Abgar in the Ethiopic tradition, dans OCP, 55 (1989), p. 375-410</bibl>
+            </note>
+            <note xml:lang="fr"
+                  type="modernTranslation"
+                  source="#bib221-1"
+                  anchored="true">
+               <bibl default="false" status="draft">A. Desreumaux, Histoire du roi Abgar et de Jésus, Turnhout, 1993, p. 53-117 (Coll. “Apocryphes”)</bibl>
+            </note>
+            <note xml:lang="en"
+                  type="modernTranslation"
+                  source="#bib221-1"
+                  anchored="true">
+               <bibl default="false" status="draft">G. Howard, The Teaching of Addai (Society of Biblical Literature. Texts and Translations 16. Early Christian Literature Series 4), Chico CA, 1981, p. 3-107 (avec réimpression de l’édition de G. Phillips)</bibl>
+            </note>
+            <note xml:lang="ru"
+                  type="modernTranslation"
+                  source="#bib221-1"
+                  anchored="true">
+               <bibl default="false" status="draft">E.N. Me¯?erskaja, p. 185-203</bibl>
+            </note>
+            <note xml:lang="nl"
+                  type="modernTranslation"
+                  source="#bib221-1"
+                  anchored="true">
+               <bibl default="false" status="draft">— néerlandaise partielle (Croix) par J.W. Drijvers, Helena Augusta: waarheid en legende, Groningen, 1989, p. 153-157</bibl>
+            </note>
+            <idno type="URI">http://syriaca.org/work/921</idno>
+            <idno type="BHS">717</idno>
+            <idno type="BHO">24</idno>
+            <bibl default="false" status="draft" xml:id="bibl921-1">
+               <title level="m" xml:lang="la">Bibliotheca Hagiographica Syriaca</title>
+               <ptr target="http://syriaca.org/bibl/649"/>
+               <citedRange unit="entry">717</citedRange>
+            </bibl>
+            <bibl default="false" status="draft" xml:id="bibl921-2">J. Nirschl, Der Briefwechsel des Königs Abgar von Edessa mit Jesus in Jerusalem oder die Abgarfrage, dans Der Katholik, 76 (1896), p. 17-40, 97-114, 193-209, 322-345, 398-420</bibl>
+            <bibl default="false" status="draft" xml:id="bibl921-3">J. Nirschl, Der Briefwechsel des Königs Abgar von Edessa mit Jesus in Jerusalem oder die Abgarfrage, dans Der Katholik, 76 (1896), p. 17-40, 97-114, 193-209, 322-345, 398-420 (pas vu)</bibl>
+            <bibl default="false" status="draft" xml:id="bibl921-4">T. Nöldeke, Über einige edessenische Märtyrerakten, dans Strassburger Festschrift zur XLVI. Versammlung deutscher Philologen und Schulmänner, Strassburg, 1901, p. 13-22</bibl>
+            <bibl default="false" status="draft" xml:id="bibl921-5">E. N. Me¯?erskaja, Legenda ob Avgare i apotropei?eskie teksty na gre?eskom jazyke, dans PalSb, 26 (1989), p. 102-106</bibl>
+            <bibl default="false" status="draft" xml:id="bibl921-6">S.A. Harvey, The Edessan Martyrs and Ascetic Tradition, dans V Symposium Syriacum, éd. par R. Lavenant (Orientalia christiana analecta, 236), Rome, 1990, p. 195-206 = The Harp, 6 (1993), p. 99-110 (?)</bibl>
+            <bibl default="false" status="draft" xml:id="bibl921-7">V. Rodnikov, K skazaniju o sno¯enijax Edesskago knjazja Avgarja so Xristom Spasitelem, dans Trudy Kievskoj Duxovnoj Akademii, 1903/2, p. 501-513</bibl>
+            <bibl default="false" status="draft" xml:id="bibl921-8">B.H. Cowper, Syriac Literature. The Acts of Addi, extrait de The Journal of Sacred Literature and Biblical Record, 1858</bibl>
+            <bibl default="false" status="draft" xml:id="bibl921-9">J. Straubinger, Die Kreuzauffindungslegende. Untersuchungen über ihre altchristlichen Fassungen mit besonderer Berücksichtigung der syrischen Texte, Paderborn, 1912, p. 82-103</bibl>
+            <bibl default="false" status="draft" xml:id="bibl921-10">P. Devos, Égérie à Édesse. S. Thomas l’Apôtre. Le roi Abgar, dans AB, 85 (1967), p. 381-400</bibl>
+            <bibl default="false" status="draft" xml:id="bibl921-11">A. Desreumaux, La Doctrine d’Addaï, l’image du Christ et les monophysites, dans Nicée II 787-1987. Douze siècles d’images religieuses. Actes du colloque international Nicée II tenu au Collège de France, Paris, les 2, 3, 4 oct. 1986, éd. par F. Boespflug et N. Lossky, Paris, 1987, p. 73-79</bibl>
+            <bibl default="false" status="draft" xml:id="bibl921-12">A. Desreumaux, La Doctrine d’Addaï: le chroniqueur et ses documents, dans Apocrypha, 1 (1990), p. 249-267</bibl>
+            <bibl default="false" status="draft" xml:id="bibl921-13">F. Fiaccadori, Cristo all’Eufrate, dans Parola del Passato, 226 (1986), p. 59-63</bibl>
+            <bibl default="false" status="draft" xml:id="bibl921-14">H.J.W. Drijvers, Abgarsage, dans W. Schneemelcher (ed.), Neutestamentliche Apokryphen, I. Evangelien, Tübingen, 51987, p. 389-395</bibl>
+            <bibl default="false" status="draft" xml:id="bibl921-15">J.W. Drijvers, Helena Augusta: waarheid en legende, Groningen, 1989, p. 153-171</bibl>
+            <bibl default="false" status="draft" xml:id="bibl921-16">H.J.W. Drijvers, Apocryphal Literature in the Cultural Milieu of Osrhoëne, dans Apocrypha, 1 (1990), p. 231-247</bibl>
+            <bibl default="false" status="draft" xml:id="bibl921-17">M. Erbetta, Gli Apocrifi del Nuovo Testamento. III. Lettere e Apocalissi, s.l. 1969, p. 79-84</bibl>
+            <bibl default="false" status="draft" xml:id="bibl921-18">H. Kaufhold, Die “Lehre des Apostels Addai” (“Lehre der Apostel”). Zur Überlieferung pseudo-apostolischer Kanones in der syrischen Literatur, dans Paul de Lagarde und die syrische Kirchengeschichte, Göttingen, 1968, p. 102-128</bibl>
+            <bibl default="false" status="draft" xml:id="bibl921-19">G. Bonet Maury, La Légende d’Abgar et de Thaddée et les missions chrétiennes à Édesse, dans RHR, 16 (1887), p. 269-283</bibl>
+            <bibl default="false" status="draft" xml:id="bibl921-20">A. Desreumaux, La doctrine d’Addaï: essai de classement des témoins syriaques et grecs, dans Augustinianum, 23 (1983), p. 181-186</bibl>
+            <bibl default="false" status="draft" xml:id="bibl921-21">E.N. Me¯?erskaja, Legenda ob Avgare v literaturax vizantijskogo kul’turnogo kruga, dans Kavkaz i Vizantija, 3 (1982), p. 97-107</bibl>
+            <bibl default="false" status="draft" xml:id="bibl921-22">E.N. Me¯?erskaja, K izu?eniju sirijskix isto?nikov i gre?esko-slavjanskix versij apokrifi?eskix legend, dans PalSb, 23 (86) (1971), p. 168-172</bibl>
+            <bibl default="false" status="draft" xml:id="bibl921-23">R.A. Lipisius, Die edessenische Abgar-Sage kritisch untersucht, Braunschweig, 1880</bibl>
+         </bibl>
+      </body>
+   </text>
+</TEI>

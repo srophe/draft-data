@@ -176,11 +176,8 @@
                                                 else ()}"
                                             source="#bib{$record-id}-1">
                                             <xsl:choose>
-                                                <xsl:when
-                                                  test="self::Saint_English or self::Syriac_Name">
-                                                  <xsl:attribute name="syriaca-tags" namespace=""
-                                                  >#syriaca-headword
-                                                  #syriaca-anglicized</xsl:attribute>
+                                                <xsl:when test="self::Saint_English or self::Syriac_Name">
+                                                  <xsl:attribute name="syriaca-tags"><xsl:text>#syriaca-headword #syriaca-anglicized</xsl:text></xsl:attribute>
                                                 </xsl:when>
                                             </xsl:choose>
                                             <xsl:value-of select="normalize-space(.)"/>

@@ -15,20 +15,44 @@ let $pages :=
                     if ($segment instance of element(fn:match)) then 
                         <tei:citedRange>{$segment/fn:group[@nr='1']/text()}</tei:citedRange>
                     else 
-                        $segment/string()
+                        <tei:p>{$segment/string()}</tei:p>
                         
 
-return element tei:bibl {($bibl/@xml:id, $pages)}
+let $pagesreturn := element tei:bibl {($bibl/@xml:id, $pages)}
 
-(:let $author := 
-                for $segment1 in analyze-string($pagesreturn/text(),"^(.+?),")/node()
+let $author := 
+                for $segment1 in analyze-string($pagesreturn/tei:p/text(),"^(.+?),\s*")/node()
                 return
                     if ($segment1 instance of element(fn:match)) then 
                         <tei:author>{$segment1/fn:group[@nr='1']/text()}</tei:author>
                     else 
-                        $segment1/string()
+                         <tei:p>{$segment1/string()}</tei:p>
                         
 
-let $authorreturn := element tei:bibl {($bibl/@xml:id, $author, $pages)}
+let $authorreturn := element tei:bibl {($bibl/@xml:id, $author, $pagesreturn//tei:citedRange)}
 
-return $authorreturn :)
+let $bookdate := 
+                for $segment2 in analyze-string($authorreturn/tei:p/text(),",\s(\d{4})")/node()
+                return
+                    if ($segment2 instance of element(fn:match)) then 
+                        <tei:date>{$segment2/fn:group[@nr='1']/text()}</tei:date>
+                    else 
+                         <tei:p>{$segment2/string()}</tei:p>
+                        
+
+let $bookdatereturn := element tei:bibl {($bibl/@xml:id, $authorreturn//tei:author, $bookdate, $pagesreturn//tei:citedRange)}
+
+return $bookdatereturn
+
+let $articleinfo := 
+                for $segment3 in analyze-string($bookdatereturn/tei:p/text(),",\s(\d{4})")/node()
+                return
+                    if ($segment3 instance of element(fn:match)) then 
+                        <tei:date>{$segment3/fn:group[@nr='1']/text()}</tei:date>
+                    else 
+                         <tei:p>{$segment3/string()}</tei:p>
+                        
+
+let $bookdatereturn := element tei:bibl {($bibl/@xml:id, $authorreturn//tei:author, $bookdate, $pagesreturn//tei:citedRange)}
+
+return $bookdatereturn

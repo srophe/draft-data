@@ -4,7 +4,7 @@ xquery version "3.1";
 
 declare namespace tei = "http://www.tei-c.org/ns/1.0";
 
-let $uri := "https://raw.githubusercontent.com/srophe/draft-data/e898b33a24e175b48931609d64d86a58d3a93f79/data/works/Zanetti_XSL_Conversion/ZanettiBiblFull.xml"
+let $uri := "https://raw.githubusercontent.com/srophe/draft-data/cc849a1c35f0776ece347b2fea3f7e39af299deb/data/works/Zanetti_XSL_Conversion/ZanettiBiblFull.xml"
 
 for $bibl in fn:doc($uri)//tei:bibl
 
@@ -42,10 +42,8 @@ let $bookdate :=
 
 let $bookdatereturn := element tei:bibl {($bibl/@xml:id, $authorreturn//tei:author, $bookdate, $pagesreturn//tei:citedRange)}
 
-return $bookdatereturn
-
 let $articleinfo := 
-                for $segment3 in analyze-string($bookdatereturn/tei:p/text(),",\s(\d{4})")/node()
+                for $segment3 in analyze-string($bookdatereturn/tei:p/text(),"\((\d{4})\)$")/node()
                 return
                     if ($segment3 instance of element(fn:match)) then 
                         <tei:date>{$segment3/fn:group[@nr='1']/text()}</tei:date>
@@ -53,6 +51,6 @@ let $articleinfo :=
                          <tei:p>{$segment3/string()}</tei:p>
                         
 
-let $bookdatereturn := element tei:bibl {($bibl/@xml:id, $authorreturn//tei:author, $bookdate, $pagesreturn//tei:citedRange)}
+let $articelinforeturn := element tei:bibl {($bibl/@xml:id, $authorreturn//tei:author, $articleinfo, $bookdatereturn//tei:date, $pagesreturn//tei:citedRange)}
 
-return $bookdatereturn
+return $articelinforeturn

@@ -4,7 +4,7 @@ xquery version "3.1";
 
 declare namespace tei = "http://www.tei-c.org/ns/1.0";
 
-let $uri := "https://raw.githubusercontent.com/srophe/draft-data/2d893e1ce39acf74fef76d2ae45b3c883868f109/data/works/Zanetti_XSL_Conversion/ZanettiBiblFull.xml"
+let $uri := ""
 
 for $bibl in fn:doc($uri)//tei:bibl
 

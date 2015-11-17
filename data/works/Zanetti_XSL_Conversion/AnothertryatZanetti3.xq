@@ -4,7 +4,7 @@ xquery version "3.1";
 
 declare namespace tei = "http://www.tei-c.org/ns/1.0";
 
-let $uri := "https://raw.githubusercontent.com/srophe/draft-data/cc849a1c35f0776ece347b2fea3f7e39af299deb/data/works/Zanetti_XSL_Conversion/ZanettiBiblFull.xml"
+let $uri := "https://raw.githubusercontent.com/srophe/draft-data/2d893e1ce39acf74fef76d2ae45b3c883868f109/data/works/Zanetti_XSL_Conversion/ZanettiBiblFull.xml"
 
 for $bibl in fn:doc($uri)//tei:bibl
 
@@ -42,8 +42,12 @@ let $bookdate :=
 
 let $bookdatereturn := element tei:bibl {($bibl/@xml:id, $authorreturn//tei:author, $bookdate, $pagesreturn//tei:citedRange)}
 
-let $articleinfo := 
-                for $segment3 in analyze-string($bookdatereturn/tei:p/text(),"\((\d{4})\)$")/node()
+return $bookdatereturn
+
+(: up to this point my query works but from here on there are multiple tei:p sections of the data and the query runs into an error where it expects an item and gets a sequence, telling it to chose the first instance can fix that but then one loses the other instance:)
+
+(: let $articledate := 
+                for $segment3 in analyze-string($bookdatereturn/tei:p[1]/text(),"\((\d{4})\)$")/node()
                 return
                     if ($segment3 instance of element(fn:match)) then 
                         <tei:date>{$segment3/fn:group[@nr='1']/text()}</tei:date>
@@ -51,6 +55,5 @@ let $articleinfo :=
                          <tei:p>{$segment3/string()}</tei:p>
                         
 
-let $articelinforeturn := element tei:bibl {($bibl/@xml:id, $authorreturn//tei:author, $articleinfo, $bookdatereturn//tei:date, $pagesreturn//tei:citedRange)}
-
-return $articelinforeturn
+let $articeldatereturn := element tei:bibl {($bibl/@xml:id, $authorreturn//tei:author, $articledate, $bookdatereturn//tei:date, $pagesreturn//tei:citedRange)}
+:)

@@ -11,7 +11,25 @@ let $citation :=
     return 
         if ($bibl instance of element(fn:match)) then 
             if($bibl/fn:group[@nr='1']) then 
-                <tei:author>{$bibl/fn:group[@nr='1']/text()}</tei:author>
+                for $author in tokenize($bibl/fn:group[@nr='1']/text(), "[\s]et[\s]")
+                return <tei:author>
+                        {for $forename in analyze-string($author, "^([\w\.\-]+).*$")/node()
+                        return
+                            if ($forename instance of element(fn:match)) then 
+                                if($forename/fn:group[@nr='1']) then 
+                                    <tei:forename>{$forename/fn:group[@nr='1']/text()}</tei:forename>
+                                else ''
+                            else ''
+                           }
+                       {for $surname in analyze-string($author, "^[\w\.\-]+[\s]+(.*)$")/node()
+                        return
+                            if ($surname instance of element(fn:match)) then 
+                                if($surname/fn:group[@nr='1']) then 
+                                    <tei:surname>{$surname/fn:group[@nr='1']/text()}</tei:surname>
+                                else ''
+                            else ''
+                       }
+                        </tei:author>
             else if($bibl/fn:group[@nr='2']) then 
                 <tei:citedRange unit="pp">{$bibl/fn:group[@nr='2']/text()}</tei:citedRange>
             else <tei:p>{$bibl/text()}</tei:p>
@@ -57,13 +75,31 @@ let $citation :=
                                                     <tei:citedRange level="vol">{$series-vol/fn:group[@nr='1']/text()}</tei:citedRange>
                                                 else <tei:p>{$series-vol/text()}</tei:p>
                                             else 
-                                                for $editors in analyze-string(normalize-space($series-vol/text()), "[,\?][\s]*dans[\s]*(.+)[\s]+\([eé]d\.\)|[eé]d\.[\s]*par[\s]*(.*)$")/node()
+                                                for $editors in analyze-string(normalize-space($series-vol/text()), "[,\?][\s]*dans[\s]*(.+)[\s]+\([eé]d\.\)|[eé]d\.[\s]*(par)*[\s]*(.*)$")/node()
                                                 return 
                                                     if ($editors instance of element(fn:match)) then
-                                                        if($editors/fn:group[@nr='1']) then 
-                                                            <tei:editor>{$editors/fn:group[@nr='1']/text()}</tei:editor>
-                                                        else if($editors/fn:group[@nr='2']) then 
-                                                            <tei:editor>{$editors/fn:group[@nr='2']/text()}</tei:editor>
+                                                        if($editors/fn:group[@nr='1'] or $editors/fn:group[@nr='3']) then 
+                                                            let $editors-all := concat($editors/fn:group[@nr='1']/text(),$editors/fn:group[@nr='3']/text())
+                                                            return 
+                                                                for $editor in tokenize($editors-all, "[\s]et[\s]")
+                                                                return <tei:editor>
+                                                                        {for $forename in analyze-string($editor, "^([\w\.\-]+).*$")/node()
+                                                                        return
+                                                                            if ($forename instance of element(fn:match)) then 
+                                                                                if($forename/fn:group[@nr='1']) then 
+                                                                                    <tei:forename>{$forename/fn:group[@nr='1']/text()}</tei:forename>
+                                                                                else ''
+                                                                            else ''
+                                                                           }
+                                                                       {for $surname in analyze-string($editor, "^[\w\.\-]+[\s]+(.*)$")/node()
+                                                                        return
+                                                                            if ($surname instance of element(fn:match)) then 
+                                                                                if($surname/fn:group[@nr='1']) then 
+                                                                                    <tei:surname>{$surname/fn:group[@nr='1']/text()}</tei:surname>
+                                                                                else ''
+                                                                            else ''
+                                                                       }
+                                                                        </tei:editor>
                                                         else <tei:p>{$editors/text()}</tei:p>
                                                 else 
                                                     for $edited-book in analyze-string($editors/text(), "^[,][\s]+(.*)$")/node()
@@ -72,11 +108,7 @@ let $citation :=
                                                             if($edited-book/fn:group[@nr='1']) then 
                                                                 <tei:title level="m">{$edited-book/fn:group[@nr='1']/text()}</tei:title>
                                                             else <tei:p>{$edited-book/text()}</tei:p>
-                                                        else <tei:p>{$edited-book/text()}</tei:p>
-                                                
-                                                
-                                
-(:                        there are enough Symposium Syriacum that this might deserve special handling:)
+                                                        else <tei:title level="m">{$edited-book/text()}</tei:title>
         
 let $articeldatereturn := element tei:bibl {($bibl/@xml:id, $citation)}
 return ($bibl,$articeldatereturn)

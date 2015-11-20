@@ -29,10 +29,35 @@ declare function syriaca:split-name-parts
                 else ()
             else ()
     } ;
+    
+declare function syriaca:nodes-from-regex
+    ($input-string as xs:string, $pattern as xs:string, $element as xs:string, $regex-group as xs:integer) as element()* {
+        for $part in analyze-string($input-string, $pattern)/node()
+        return
+            <tei:bibl>
+            {
+                if ($part instance of element(fn:match)) then
+                    if($part/fn:group[@nr=$regex-group]) then 
+                        element {$element} {$part/fn:group[@nr=$regex-group]/text()}
+                    else ()
+                else <tei:p>{$part/text()}</tei:p>
+            }
+            </tei:bibl>
+    } ;
 
 let $uri := "https://raw.githubusercontent.com/srophe/draft-data/master/data/works/Zanetti_XSL_Conversion/ZanettiBiblFull-normalized-spaces-and-vertical-tabs.xml"
 
 for $bibl in fn:doc($uri)//tei:bibl
+
+(:let $citedRangeTest :=
+    syriaca:nodes-from-regex($bibl/text(),"[,]*\s*[p]\.\s*(\w*[-]*w*.*)$","tei:citedRange",1)
+let $citedRanges := element tei:citedRange { attribute unit { 'pp' }, $citedRangeTest/tei:citedRange/text() }
+let $all-authors := syriaca:nodes-from-regex($citedRangeTest/tei:p/text(),'^(.+?),\s*','tei:author',1)
+let $unsplit-authors := tokenize($all-authors,"[\s]et[\s]|[,][\s]+")
+let $authors := 
+    for $author in $unsplit-authors
+    return syriaca:nodes-from-regex($author,"^([\w\.\-]*\s*\w{0,1}\.{0,1}\s*\w{0,1}\.{0,1})[\s]+.+$","forename",1):)
+
 let $citation := 
     for $bibl in analyze-string(normalize-space($bibl/text()),"^(.+?),\s*|[,]*\s*[p]\.\s*(\w*[-]*w*.*)$")/node()
     return 

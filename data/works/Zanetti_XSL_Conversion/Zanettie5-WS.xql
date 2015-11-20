@@ -15,6 +15,17 @@ declare function syriaca:expand-abbreviations
     else $abbreviation
  } ;
 
+declare function syriaca:split-name-parts
+    ($name as xs:string?, $name-part-pattern as xs:string?, $name-part-regex-group as xs:integer) {
+        for $name-part in analyze-string($name, $name-part-pattern)/node()
+        return
+            if ($name-part instance of element(fn:match)) then 
+                if($name-part/fn:group[@nr=$name-part-regex-group]) then 
+                    $name-part/fn:group[@nr=$name-part-regex-group]/text()
+                else ()
+            else ()
+    } ;
+
 let $uri := "https://raw.githubusercontent.com/srophe/draft-data/master/data/works/Zanetti_XSL_Conversion/ZanettiBiblFull-normalized-spaces-and-vertical-tabs.xml"
 
 for $bibl in fn:doc($uri)//tei:bibl
@@ -23,25 +34,15 @@ let $citation :=
     return 
         if ($bibl instance of element(fn:match)) then 
             if($bibl/fn:group[@nr='1']) then 
-                for $author in tokenize($bibl/fn:group[@nr='1']/text(), "[\s]et[\s]")
-                return <tei:author>
-                        {for $forename in analyze-string($author, "^([\w\.\-]+).*$")/node()
-                        return
-                            if ($forename instance of element(fn:match)) then 
-                                if($forename/fn:group[@nr='1']) then 
-                                    <tei:forename>{$forename/fn:group[@nr='1']/text()}</tei:forename>
-                                else ''
-                            else ''
-                           }
-                       {for $surname in analyze-string($author, "^[\w\.\-]+[\s]+(.*)$")/node()
-                        return
-                            if ($surname instance of element(fn:match)) then 
-                                if($surname/fn:group[@nr='1']) then 
-                                    <tei:surname>{$surname/fn:group[@nr='1']/text()}</tei:surname>
-                                else ''
-                            else ''
-                       }
-                        </tei:author>
+                for $author in tokenize($bibl/fn:group[@nr='1']/text(), "[\s]et[\s]|[,][\s]+")
+                return
+                    <tei:author>
+                        <tei:forename>{syriaca:split-name-parts($author,"^([\w\.\-]*\s*\w{0,1}\.{0,1}\s*\w{0,1}\.{0,1})[\s]+.+$",1)}</tei:forename>
+                        <tei:surname>
+                            {syriaca:split-name-parts($author,"[\s]+([\w\-\?\s]+)$",1)}
+                            {syriaca:split-name-parts($author,"^([\w\-\?]+)$",1)}
+                        </tei:surname>
+                    </tei:author>
             else if($bibl/fn:group[@nr='2']) then 
                 <tei:citedRange unit="pp">{$bibl/fn:group[@nr='2']/text()}</tei:citedRange>
             else <tei:p>{$bibl/text()}</tei:p>
@@ -95,22 +96,8 @@ let $citation :=
                                                             return 
                                                                 for $editor in tokenize($editors-all, "[\s]et[\s]|[,][\s]+")
                                                                 return <tei:editor>
-                                                                        {for $forename in analyze-string($editor, "^([\w\.\-]+).*$")/node()
-                                                                        return
-                                                                            if ($forename instance of element(fn:match)) then 
-                                                                                if($forename/fn:group[@nr='1']) then 
-                                                                                    <tei:forename>{$forename/fn:group[@nr='1']/text()}</tei:forename>
-                                                                                else ''
-                                                                            else ''
-                                                                           }
-                                                                       {for $surname in analyze-string($editor, "^[\w\.\-]+[\s]+(.*)$")/node()
-                                                                        return
-                                                                            if ($surname instance of element(fn:match)) then 
-                                                                                if($surname/fn:group[@nr='1']) then 
-                                                                                    <tei:surname>{$surname/fn:group[@nr='1']/text()}</tei:surname>
-                                                                                else ''
-                                                                            else ''
-                                                                       }
+                                                                            <tei:forename>{syriaca:split-name-parts($editor,"^([\w\.\-]+).*$",1)}</tei:forename>
+                                                                            <tei:surname>{syriaca:split-name-parts($editor,"^[\w\.\-]+[\s]+(.*)$",1)}</tei:surname>
                                                                         </tei:editor>
                                                         else <tei:p>{$editors/text()}</tei:p>
                                                 else 

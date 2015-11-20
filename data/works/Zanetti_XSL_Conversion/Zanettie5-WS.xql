@@ -5,13 +5,17 @@ xquery version "3.0";
 declare namespace tei = "http://www.tei-c.org/ns/1.0";
 declare namespace syriaca = "http://syriaca.org";
 
+(: Compares the input string to a list of abbreviations and expands it, if found. :)
 declare function syriaca:expand-abbreviations
   ( $abbreviation as xs:string?)  as xs:string? { 
    let $abb-uri := "https://raw.githubusercontent.com/srophe/draft-data/master/data/works/Zanetti_XSL_Conversion/ZanettiAbbreviations.xml"
    let $abbreviations := fn:doc($abb-uri)
    return
+   (: If there's a row with an abbreviation that matches the input string ... :)
     if($abbreviations//row[Abbreviated_Title=$abbreviation]) then
+        (: grab the expanded version :)
          $abbreviations//row[Abbreviated_Title=$abbreviation]/Expanded_Title/text()
+         (: otherwise just return the input string :)
     else $abbreviation
  } ;
 
@@ -88,16 +92,19 @@ let $citation :=
                                                     <tei:citedRange level="vol">{$series-vol/fn:group[@nr='1']/text()}</tei:citedRange>
                                                 else <tei:p>{$series-vol/text()}</tei:p>
                                             else 
-                                                for $editors in analyze-string(normalize-space($series-vol/text()), "[,\?][\s]*dans[\s]*(.+)[\s]+\([eé]d\.\)|[eé]d\.[\s]*(par)*[\s]*(.*)$")/node()
+                                                for $editors in analyze-string(normalize-space($series-vol/text()), "[,\?][\s]*dans[\s]*(.+)[\s]+\([eé]d\.\)|[eé]d\.[\s]*(par|by)*[\s]*(.*)$")/node()
                                                 return 
                                                     if ($editors instance of element(fn:match)) then
                                                         if($editors/fn:group[@nr='1'] or $editors/fn:group[@nr='3']) then 
                                                             let $editors-all := concat($editors/fn:group[@nr='1']/text(),$editors/fn:group[@nr='3']/text())
                                                             return 
-                                                                for $editor in tokenize($editors-all, "[\s]et[\s]|[,][\s]+")
+                                                                for $editor in tokenize($editors-all, "[\s]et[\s]|[,][\s]+|[\s]and[\s]")
                                                                 return <tei:editor>
-                                                                            <tei:forename>{syriaca:split-name-parts($editor,"^([\w\.\-]+).*$",1)}</tei:forename>
-                                                                            <tei:surname>{syriaca:split-name-parts($editor,"^[\w\.\-]+[\s]+(.*)$",1)}</tei:surname>
+                                                                            <tei:forename>{syriaca:split-name-parts($editor,"^([\w\.\-]*\s*\w{0,1}\.{0,1}\s*\w{0,1}\.{0,1})[\s]+.+$",1)}</tei:forename>
+                                                                            <tei:surname>
+                                                                                {syriaca:split-name-parts($editor,"[\s]+([\w\-\?\s]+)$",1)}
+                                                                                {syriaca:split-name-parts($editor,"^([\w\-\?]+)$",1)}
+                                                                            </tei:surname>
                                                                         </tei:editor>
                                                         else <tei:p>{$editors/text()}</tei:p>
                                                 else 

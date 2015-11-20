@@ -3,10 +3,20 @@ xquery version "3.0";
 (: Tested in eXide :)
 
 declare namespace tei = "http://www.tei-c.org/ns/1.0";
+declare namespace syriaca = "http://syriaca.org";
+
+declare function syriaca:expand-abbreviations
+  ( $abbreviation as xs:string?)  as xs:string? { 
+   let $abb-uri := "https://raw.githubusercontent.com/srophe/draft-data/master/data/works/Zanetti_XSL_Conversion/ZanettiAbbreviations.xml"
+   let $abbreviations := fn:doc($abb-uri)
+   return
+    if($abbreviations//row[Abbreviated_Title=$abbreviation]) then
+         $abbreviations//row[Abbreviated_Title=$abbreviation]/Expanded_Title/text()
+    else $abbreviation
+ } ;
 
 let $uri := "https://raw.githubusercontent.com/srophe/draft-data/master/data/works/Zanetti_XSL_Conversion/ZanettiBiblFull-normalized-spaces-and-vertical-tabs.xml"
-let $abb-uri := "https://raw.githubusercontent.com/srophe/draft-data/master/data/works/Zanetti_XSL_Conversion/ZanettiAbbreviations.xml"
-let $abbreviations := fn:doc($abb-uri)
+
 for $bibl in fn:doc($uri)//tei:bibl
 let $citation := 
     for $bibl in analyze-string(normalize-space($bibl/text()),"^(.+?),\s*|[,]*\s*[p]\.\s*(\w*[-]*w*.*)$")/node()
@@ -49,9 +59,7 @@ let $citation :=
                     return
                         if ($journal instance of element(fn:match)) then
                             if($journal/fn:group[@nr='1']) then 
-                                if($abbreviations//row[Abbreviated_Title=$journal/fn:group[@nr='1']]) then
-                                    <tei:title level="j">{$abbreviations//row[Abbreviated_Title=$journal/fn:group[@nr='1']]/Expanded_Title/text()}</tei:title>
-                                else <tei:title level="j">{$journal/fn:group[@nr='1']/text()}</tei:title>
+                                <tei:title level="j">{syriaca:expand-abbreviations($journal/fn:group[@nr='1']/text())}</tei:title>
                             else if($journal/fn:group[@nr='2']) then 
                                 <tei:citedRange unit="vol">{$journal/fn:group[@nr='2']/text()}</tei:citedRange>
                             else <tei:p>{$journal/text()}</tei:p>
@@ -67,9 +75,7 @@ let $citation :=
                                     return
                                         if ($series instance of element(fn:match)) then
                                             if($series/fn:group[@nr='1']) then 
-                                                if($abbreviations//row[Abbreviated_Title=replace($series/fn:group[@nr='1']/text(), "[,]$","")]) then
-                                                    <tei:title level="s">{$abbreviations//row[Abbreviated_Title=replace($series/fn:group[@nr='1']/text(), "[,]$","")]/Expanded_Title/text()}</tei:title>
-                                                else <tei:title level="s">{replace($series/fn:group[@nr='1']/text(), "[,]$","")}</tei:title>
+                                                <tei:title level="s">{syriaca:expand-abbreviations(replace($series/fn:group[@nr='1']/text(),"[,]$",""))}</tei:title>
                                             else if($series/fn:group[@nr='2']) then 
                                                 <tei:citedRange level="vol">{$series/fn:group[@nr='2']/text()}</tei:citedRange>
                                             else <tei:p>{$series/text()}</tei:p>
@@ -112,9 +118,9 @@ let $citation :=
                                                     return
                                                         if ($edited-book instance of element(fn:match)) then
                                                             if($edited-book/fn:group[@nr='1']) then 
-                                                                <tei:title level="m">{$edited-book/fn:group[@nr='1']/text()}</tei:title>
+                                                                <tei:title level="m">{syriaca:expand-abbreviations($edited-book/fn:group[@nr='1']/text())}</tei:title>
                                                             else <tei:p>{$edited-book/text()}</tei:p>
-                                                        else <tei:title level="m">{$edited-book/text()}</tei:title>
+                                                        else <tei:title level="m">{syriaca:expand-abbreviations($edited-book/text())}</tei:title>
         
 let $articeldatereturn := element tei:bibl {($bibl/@xml:id, $citation)}
 return ($bibl,$articeldatereturn)

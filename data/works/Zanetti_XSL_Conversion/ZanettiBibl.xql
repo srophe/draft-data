@@ -87,10 +87,10 @@ let $uri := "https://raw.githubusercontent.com/srophe/draft-data/master/data/wor
 
 for $bibl in fn:doc($uri)//bibl
 return
-    let $citedRange-test :=
-        syriaca:nodes-from-regex($bibl/text(),"[,]*\s*[p]\.\s*(\w*[-]*w*.*)$","citedRange",1,false())
-    let $citedRanges := functx:add-attributes($citedRange-test/citedRange,'unit','pp')
-    let $author-test := syriaca:nodes-from-regex($citedRange-test/p/text(),'^(.+?),\s*','author',1,false())
+    let $page-test :=
+        syriaca:nodes-from-regex($bibl/text(),"[,]*\s*[p]\.\s*(\w*[-]*w*.*)$","biblScope",1,false())
+    let $pages := functx:add-attributes($page-test/biblScope,'unit','pp')
+    let $author-test := syriaca:nodes-from-regex($page-test/p/text(),'^(.+?),\s*','author',1,false())
     let $authors-fullname := tokenize($author-test/author/text(),"[\s]et[\s]|[,][\s]+")
     let $authors := 
         for $author in $authors-fullname
@@ -103,18 +103,18 @@ return
     (: If the following doesn't work right, try running it on $bibl/text() instead of $author-test/p/text() :)
     let $title-analytic-test := syriaca:nodes-from-regex($author-test/p/text(),"^(.*)[,][\s]*dans[\s]*","title",1,true())
     let $titles-analytic := functx:add-attributes($title-analytic-test/title,'level','a')
-    let $date-test := syriaca:nodes-from-regex($title-analytic-test/p/text(),'[\(]*([\d]+[\-]*[\d]*)[\)]*$','date',1,false())
+    let $date-test := syriaca:nodes-from-regex($title-analytic-test/p/text(),'[\(]*([\d]+[\-]*[\d]*|s\.\s*d\.)[\)]*$','date',1,false())
     let $dates := $date-test/date
-    let $title-journal-test := syriaca:nodes-from-regex($author-test/p/text(),'^.*[,][\s]*dans[\s]*([\w\-:\s]*)[,]','title',1,true())
+    let $title-journal-test := syriaca:nodes-from-regex($author-test/p/text(),'^.*[,][\s]*dans[\s]*([\w\-:\s]*)[,][\s]*([\d]+)[\s]*\([\d\-]+\)','title',1,true())
     let $titles-journal := functx:add-attributes($title-journal-test/title,'level','j')
-    let $vol-journal-test := syriaca:nodes-from-regex($title-journal-test/p/text(), '[\s]*([\d]+)[\s]*\([\d\-]+\)$','citedRange',1,false())
-    let $vols-journal := functx:add-attributes($vol-journal-test/citedRange,'unit','vol')
+    let $vol-journal-test := syriaca:nodes-from-regex($author-test/p/text(), '^.*[,][\s]*dans[\s]*([\w\-:\s]*)[,][\s]*([\d]+)[\s]*\([\d\-]+\)','biblScope',2,false())
+    let $vols-journal := functx:add-attributes($vol-journal-test/biblScope,'unit','vol')
     let $pubPlace-test := syriaca:nodes-from-regex($vol-journal-test/p/text(),'[,][\s]*([\w\-\s]+)[,][\s]*[\d]{4}$','pubPlace',1,false())
     let $pubPlaces := $pubPlace-test/pubPlace
     let $title-series-test := syriaca:nodes-from-regex($pubPlace-test/p/text(),'\(([^\(]*)[,\s]+[\d]+\)$','title',1,true())
     let $titles-series := functx:add-attributes($title-series-test/title,'level','s')
-    let $vol-series-test := syriaca:nodes-from-regex($pubPlace-test/p/text(),'\([^\(]*[,\s]+([\d]+)\)$','citedRange',1,false())
-    let $vols-series := functx:add-attributes($vol-series-test/citedRange,'unit','vol')
+    let $vol-series-test := syriaca:nodes-from-regex($pubPlace-test/p/text(),'\([^\(]*[,\s]+([\d]+)\)$','biblScope',1,false())
+    let $vols-series := functx:add-attributes($vol-series-test/biblScope,'unit','vol')
     let $editor-test := 
         (: have to do this part manually using analyze-string instead of the custom syriaca:nodes-from-regex because 
         we need to be able to match against two patterns at once :)
@@ -148,8 +148,51 @@ return
     let $titles-monograph := functx:add-attributes($title-monograph-test/title,'level','m')
     let $leftovers := $title-monograph-test/p
         
-let $citation := ($authors, $titles-analytic, $titles-monograph, $titles-journal, $vols-journal, $editors, $titles-edited-book, $titles-series, $vols-series, $pubPlaces, $dates, $citedRanges, $leftovers)
-let $articeldatereturn := element bibl {($bibl/@xml:id, $citation)}
+let $citation := 
+    (if($titles-analytic) then
+        <analytic>
+            {$authors, $titles-analytic}
+        </analytic>
+    else (),
+    if($titles-monograph) then
+        <monogr>
+            {$authors,$titles-monograph}
+            <imprint>
+                {$pubPlaces,$dates}
+            </imprint>
+            {$pages}
+        </monogr>
+    else (),
+    if($titles-edited-book or $editors) then
+        <monogr>
+            {$editors,$titles-edited-book}
+            <imprint>
+                {$pubPlaces,$dates}
+            </imprint>
+            {$pages}
+        </monogr>
+    else (),
+    if($titles-journal or $vols-journal) then
+        <monogr>
+            {$titles-journal}
+            <imprint>
+                {$dates}
+            </imprint>
+            {$vols-journal,$pages}
+        </monogr>
+    else (),
+    if($titles-series or $vols-series) then
+        <series>
+            {$titles-series,$vols-series}
+        </series>
+    else(),
+    if($leftovers) then
+        <note>
+            {$leftovers}
+        </note>
+    else())
+
+let $articeldatereturn := element biblStruct {($bibl/@xml:id, $citation)}
 return ($bibl,$articeldatereturn)
 
             }

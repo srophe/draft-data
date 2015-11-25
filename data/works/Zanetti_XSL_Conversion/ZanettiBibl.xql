@@ -7,6 +7,8 @@ declare namespace tei = "http://www.tei-c.org/ns/1.0";
 declare namespace syriaca = "http://syriaca.org";
 declare namespace functx = "http://www.functx.com";
 
+(: perhaps could add a language function that adds @xml:lang to titles based on common words appearing 
+in Fr/En/De :)
 (: Compares the input string to a list of abbreviations and expands it, if found. :)
 declare function syriaca:expand-abbreviations
   ( $abbreviation as xs:string?)  as xs:string? { 
@@ -138,7 +140,8 @@ return
                     syriaca:nodes-from-regex($editor,"^([\w\-\?]+)$","surname",1,false())/surname
                }
                </editor>
-    let $title-edited-book-test := syriaca:nodes-from-regex($editor-test/p/text(),('^[,][\s]+(.+)$'),'title',1,true())
+    (: the following is not catching all the instances of "dans ..." that it should. e.g., ", dans V Symposium Syriacum..." :)
+    let $title-edited-book-test := syriaca:nodes-from-regex($editor-test/p/text(),('^[,]+[\s]*(dans)*[\s]+(.+)$'),'title',2,true())
     let $titles-edited-book := functx:add-attributes($title-edited-book-test/title,'level','m')
     let $unprocessed-text := 
         if($title-edited-book-test/p/text() and $titles-analytic/text()) then

@@ -9,7 +9,7 @@ declare namespace functx = "http://www.functx.com";
 (: Compares the input string to a list of abbreviations and expands it, if found. :)
 declare function syriaca:expand-abbreviations
   ( $abbreviation as xs:string?)  as xs:string? { 
-   let $abb-uri := "https://raw.githubusercontent.com/srophe/draft-data/master/data/works/Zanetti_XSL_Conversion/ZanettiAbbreviations.xml"
+   let $abb-uri := "https://raw.githubusercontent.com/srophe/draft-data/master/data/works/Zanetti_XSL_Conversion/Zanetti-and-Fiey-Abbreviations.xml"
    let $abbreviations := fn:doc($abb-uri)
    return
    (: If there's a row with an abbreviation that matches the input string ... :)

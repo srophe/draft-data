@@ -6,8 +6,6 @@ declare namespace syriaca = "http://syriaca.org";
 declare namespace functx = "http://www.functx.com";
 
 
-(: perhaps could add a language function that adds @xml:lang to titles based on common words appearing 
-in Fr/En/De :)
 (: Compares the input string to a list of abbreviations and expands it, if found. :)
 declare function syriaca:expand-abbreviations
   ( $abbreviation as xs:string?)  as xs:string? { 
@@ -57,16 +55,18 @@ declare function syriaca:add-lang
     ($text-to-identify as element()*) as element()* {
     for $text in $text-to-identify
     let $lang := 
-        if(matches($text,'[\s]([Tt]he|[Aa]nd)[\s]')) then
+        if(matches($text,'([\s]|^)([Tt]he|[Aa]nd|[Aa]s|[Oo]f)[\s]')) then
             'en'
-        else if(matches($text,'[\s]([Dd](er|en|em|as|ie|esser)|[\s][Uu]nd)[\s]|lich[a-z]{1,2}')) then
+        else if(matches($text,'([\s]|^)([Dd](er|en|em|as|ie|esser)|[Uu]nd|[Ff]ür)[\s]|lich[a-z]{1,2}|isch[a-z]{1,2}')) then
             'de'
-        else if(matches($text,'[\s]([Dd](’|u)|[Ll]es|[Ss]ur)[\s]')) then
+        else if(matches($text,"([\s]|^)(([Dd](’|u|')|[Ll]es|[Ll]e|[Ss]ur|[Uu]n[e]{1})[\s]|[Ll](’|'))|ique([\s]|$)")) then
             'fr'
-        else if(matches($text,'([\s][Ii]|ski[a-z]{1})[\s]')) then
+        else if(matches($text,'(([\s]|^)[Ii]|ski[a-z]{1})[\s]')) then
             'ru'
-        else if(matches($text,'[\s](e|[Dd]el|[Dd]i)[\s]')) then
+        else if(matches($text,'([\s]|^)(e|[Dd]el|[Dd]i)[\s]')) then
             'it'
+        else if(matches($text,'((([\s]|^)[Aa]l\-)|iyya)([\s]|$)')) then
+            'ar'
         else ()
     return
         if($lang != '') then

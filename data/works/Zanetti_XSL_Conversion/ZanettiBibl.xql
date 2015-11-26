@@ -112,13 +112,14 @@ return
                }
                </author> 
     (: If the following doesn't work right, try running it on $bibl/text() instead of $author-test/p/text() :)
-    let $title-analytic-test := syriaca:nodes-from-regex($author-test/p/text(),"^(.*)[,][\s]*dans[\s]*","title",1,true())
+    let $title-analytic-parsing := replace($author-test/p/text(),'[,][\s]*dans','~~~dans')
+    let $title-analytic-test := syriaca:nodes-from-regex($title-analytic-parsing,"^(.*)~~~","title",1,true())
     let $titles-analytic := functx:add-attributes($title-analytic-test/title,'level','a')
     let $date-test := syriaca:nodes-from-regex($title-analytic-test/p/text(),'[\(]*([\d]+[\-]*[\d]*|s\.\s*d\.)[\)]*$','date',1,false())
     let $dates := $date-test/date
-    let $title-journal-test := syriaca:nodes-from-regex($author-test/p/text(),'[,]*[\s]*dans[\s]*([\w\-:\s]+)[,][\s]*([\d]+[\d\s\(\)]*)[\s]*\([\d\-]+\)','title',1,true())
+    let $title-journal-test := syriaca:nodes-from-regex($title-analytic-test/p/text(),'[,]*[\s]*dans[\s]*([\w\-:\s]+)[,][\s]*([\d]+[\d\s\(\)]*)[\s]*\([\d\-]+\)','title',1,true())
     let $titles-journal := functx:add-attributes($title-journal-test/title,'level','j')
-    let $vol-journal-test := syriaca:nodes-from-regex($author-test/p/text(), '[,]*[\s]*dans[\s]*([\w\-:\s]+)[,][\s]*([\d]+[\d\s\(\)]*)[\s]*\([\d\-]+\)','biblScope',2,false())
+    let $vol-journal-test := syriaca:nodes-from-regex($title-analytic-test/p/text(), '[,]*[\s]*dans[\s]*([\w\-:\s]+)[,][\s]*([\d]+[\d\s\(\)]*)[\s]*\([\d\-]+\)','biblScope',2,false())
     let $vols-journal := functx:add-attributes($vol-journal-test/biblScope,'unit','vol')
     let $pubPlace-test := syriaca:nodes-from-regex($vol-journal-test/p/text(),'[,][\s]*([\w\-\s]+)[,][\s]*[\d]{4}$','pubPlace',1,false())
     let $pubPlaces := $pubPlace-test/pubPlace
@@ -131,13 +132,13 @@ return
         we need to be able to match against two patterns at once :)
         for $string in $vol-series-test/p/text()
         return
-            for $editor-test-string in analyze-string($string,('[,\?][\s]*dans[\s]*(.+)[\s]+\([eé]d\.\)|[eé]d\.[\s]*(par|by)*[\s]+(.*)$'))/node()
+            for $editor-test-string in analyze-string($string,('([,\?][\s]*|^)dans[\s]*(.+)[\s]+\([eé]d\.\)|[eé]d\.[\s]*(par|by)*[\s]+(.*)$'))/node()
             return
                 <bibl>
                 {
                     if($editor-test-string instance of element(fn:match)) then
-                        if($editor-test-string/fn:group[@nr=1 or @nr=3]) then 
-                            <editor>{$editor-test-string/fn:group[@nr=1 or @nr=3]/text()}</editor>
+                        if($editor-test-string/fn:group[@nr=2 or @nr=4]) then 
+                            <editor>{$editor-test-string/fn:group[@nr=2 or @nr=4]/text()}</editor>
                         else ()
                     else <p>{$editor-test-string/text()}</p>
                 }
@@ -152,7 +153,7 @@ return
                }
                </editor>
     (: the following is not catching all the instances of "dans ..." that it should. e.g., ", dans V Symposium Syriacum..." :)
-    let $title-edited-book-test := syriaca:nodes-from-regex($editor-test/p/text(),('^[,]*[\s]*(dans)*[\s]+(.+)$'),'title',2,true())
+    let $title-edited-book-test := syriaca:nodes-from-regex($editor-test/p/text(),('(^[,][\s]*|dans)[\s]+(.+)$'),'title',2,true())
     let $titles-edited-book := functx:add-attributes($title-edited-book-test/title,'level','m')
     let $unprocessed-text := 
         if($title-edited-book-test/p/text() and $titles-analytic/text()) then

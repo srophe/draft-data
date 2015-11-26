@@ -53,6 +53,27 @@ declare function syriaca:trim
     return replace($text,('^\s+|^[,]+|\s+$|[,]+$'),'')
     } ;
     
+declare function syriaca:add-lang
+    ($text-to-identify as element()*) as element()* {
+    for $text in $text-to-identify
+    let $lang := 
+        if(matches($text,'[\s]([Tt]he|[Aa]nd)[\s]')) then
+            'en'
+        else if(matches($text,'[\s]([Dd](er|en|em|as|ie|esser)|[\s][Uu]nd)[\s]|lich[a-z]{1,2}')) then
+            'de'
+        else if(matches($text,'[\s]([Dd](’|u)|[Ll]es|[Ss]ur)[\s]')) then
+            'fr'
+        else if(matches($text,'([\s][Ii]|ski[a-z]{1})[\s]')) then
+            'ru'
+        else if(matches($text,'[\s](e|[Dd]el|[Dd]i)[\s]')) then
+            'it'
+        else ()
+    return
+        if($lang != '') then
+            functx:add-attributes($text,'xml:lang',$lang)
+        else $text
+    } ;
+    
 declare function functx:add-attributes
   ( $elements as element()* ,
   (: changed $attrNames from xs:QName* to xs:string* since it was creating namespace problems I was having trouble resolving :)
@@ -137,17 +158,17 @@ let $unique-bibls :=
     (: If the following doesn't work right, try running it on $bibl/text() instead of $author-test/p/text() :)
     let $title-analytic-parsing := replace($author-test/p/text(),'[,][\s]*dans','~~~dans')
     let $title-analytic-test := syriaca:nodes-from-regex($title-analytic-parsing,"^(.*)~~~","title",1,true())
-    let $titles-analytic := functx:add-attributes($title-analytic-test/title,'level','a')
+    let $titles-analytic := syriaca:add-lang(functx:add-attributes($title-analytic-test/title,'level','a'))
     let $date-test := syriaca:nodes-from-regex($title-analytic-test/p/text(),'[\(]*([\d]+[\-]*[\d]*|s\.\s*d\.)[\)]*$','date',1,false())
     let $dates := $date-test/date
     let $title-journal-test := syriaca:nodes-from-regex($title-analytic-test/p/text(),'[,]*[\s]*dans[\s]*([\w\-:\s]+)[,][\s]*([\d]+[\d\s\(\)]*)[\s]*\([\d\-]+\)','title',1,true())
-    let $titles-journal := functx:add-attributes($title-journal-test/title,'level','j')
+    let $titles-journal := syriaca:add-lang(functx:add-attributes($title-journal-test/title,'level','j'))
     let $vol-journal-test := syriaca:nodes-from-regex($title-analytic-test/p/text(), '[,]*[\s]*dans[\s]*([\w\-:\s]+)[,][\s]*([\d]+[\d\s\(\)]*)[\s]*\([\d\-]+\)','biblScope',2,false())
     let $vols-journal := functx:add-attributes($vol-journal-test/biblScope,'unit','vol')
     let $pubPlace-test := syriaca:nodes-from-regex($vol-journal-test/p/text(),'[,][\s]*([\w\-\s]+)[,][\s]*[\d]{4}$','pubPlace',1,false())
     let $pubPlaces := $pubPlace-test/pubPlace
     let $title-series-test := syriaca:nodes-from-regex($pubPlace-test/p/text(),'\(([^\(]*)[,\s]+[\d]+\)$','title',1,true())
-    let $titles-series := functx:add-attributes($title-series-test/title,'level','s')
+    let $titles-series := syriaca:add-lang(functx:add-attributes($title-series-test/title,'level','s'))
     let $vol-series-test := syriaca:nodes-from-regex($pubPlace-test/p/text(),'\([^\(]*[,\s]+([\d]+)\)$','biblScope',1,false())
     let $vols-series := functx:add-attributes($vol-series-test/biblScope,'unit','vol')
     let $editor-test := 
@@ -177,13 +198,13 @@ let $unique-bibls :=
                </editor>
     (: the following is not catching all the instances of "dans ..." that it should. e.g., ", dans V Symposium Syriacum..." :)
     let $title-edited-book-test := syriaca:nodes-from-regex($editor-test/p/text(),('(^[,][\s]*|dans)[\s]+(.+)$'),'title',2,true())
-    let $titles-edited-book := functx:add-attributes($title-edited-book-test/title,'level','m')
+    let $titles-edited-book := syriaca:add-lang(functx:add-attributes($title-edited-book-test/title,'level','m'))
     let $unprocessed-text := 
         if($title-edited-book-test/p/text() and $titles-analytic/text()) then
             replace($title-edited-book-test/p/text(),functx:escape-for-regex($titles-analytic/text()),'')
         else $title-edited-book-test/p/text()
     let $title-monograph-test := syriaca:nodes-from-regex($unprocessed-text,'(.+)','title',1,true())
-    let $titles-monograph := functx:add-attributes($title-monograph-test/title,'level','m')
+    let $titles-monograph := syriaca:add-lang(functx:add-attributes($title-monograph-test/title,'level','m'))
     let $leftovers := $title-monograph-test/p
         
     let $citation := 

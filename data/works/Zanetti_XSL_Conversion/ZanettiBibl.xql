@@ -99,7 +99,9 @@ return
     let $page-test :=
         syriaca:nodes-from-regex($bibl/text(),"[,]*\s*[p]\.\s*(\w*[-]*w*.*)$","biblScope",1,false())
     let $pages := functx:add-attributes($page-test/biblScope,'unit','pp')
-    let $author-test := syriaca:nodes-from-regex($page-test/p/text(),'^(.+?),\s*','author',1,false())
+    let $col-test := syriaca:nodes-from-regex($page-test/p/text(),'[,]*\s*col\.\s*(\w*[-]*w*.*)$','biblScope',1,false())
+    let $cols := functx:add-attributes($col-test/biblScope,'unit','col')
+    let $author-test := syriaca:nodes-from-regex($col-test/p/text(),'^(.+?),\s*','author',1,false())
     let $authors-fullname := tokenize($author-test/author/text(),"[\s]et[\s]|[,][\s]+")
     let $authors := 
         for $author in $authors-fullname
@@ -172,7 +174,7 @@ let $citation :=
             <imprint>
                 {$pubPlaces,$dates}
             </imprint>
-            {$pages}
+            {$pages, $cols}
         </monogr>
     else (),
     if($titles-edited-book or $editors) then
@@ -181,7 +183,7 @@ let $citation :=
             <imprint>
                 {$pubPlaces,$dates}
             </imprint>
-            {$pages}
+            {$pages, $cols}
         </monogr>
     else (),
     if($titles-journal or $vols-journal) then
@@ -190,7 +192,7 @@ let $citation :=
             <imprint>
                 {$dates}
             </imprint>
-            {$vols-journal,$pages}
+            {$vols-journal,$pages, $cols}
         </monogr>
     else (),
     if($titles-series or $vols-series) then

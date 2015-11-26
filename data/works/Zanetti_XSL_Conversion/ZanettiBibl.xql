@@ -114,9 +114,9 @@ return
     let $titles-analytic := functx:add-attributes($title-analytic-test/title,'level','a')
     let $date-test := syriaca:nodes-from-regex($title-analytic-test/p/text(),'[\(]*([\d]+[\-]*[\d]*|s\.\s*d\.)[\)]*$','date',1,false())
     let $dates := $date-test/date
-    let $title-journal-test := syriaca:nodes-from-regex($author-test/p/text(),'[,]*[\s]*dans[\s]*([\w\-:\s]+)[,][\s]*([\d]+(\s\([\d]+\)\s)*)[\s]*\([\d\-]+\)','title',1,true())
+    let $title-journal-test := syriaca:nodes-from-regex($author-test/p/text(),'[,]*[\s]*dans[\s]*([\w\-:\s]+)[,][\s]*([\d]+[\d\s\(\)]*)[\s]*\([\d\-]+\)','title',1,true())
     let $titles-journal := functx:add-attributes($title-journal-test/title,'level','j')
-    let $vol-journal-test := syriaca:nodes-from-regex($author-test/p/text(), '[,]*[\s]*dans[\s]*([\w\-:\s]+)[,][\s]*([\d]+(\s\([\d]+\)\s)*)[\s]*\([\d\-]+\)','biblScope',2,false())
+    let $vol-journal-test := syriaca:nodes-from-regex($author-test/p/text(), '[,]*[\s]*dans[\s]*([\w\-:\s]+)[,][\s]*([\d]+[\d\s\(\)]*)[\s]*\([\d\-]+\)','biblScope',2,false())
     let $vols-journal := functx:add-attributes($vol-journal-test/biblScope,'unit','vol')
     let $pubPlace-test := syriaca:nodes-from-regex($vol-journal-test/p/text(),'[,][\s]*([\w\-\s]+)[,][\s]*[\d]{4}$','pubPlace',1,false())
     let $pubPlaces := $pubPlace-test/pubPlace

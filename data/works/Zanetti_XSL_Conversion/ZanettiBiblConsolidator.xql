@@ -109,7 +109,7 @@ let $all-bibls :=
         return ($articeldatereturn,$pages)
 let $unique-bibls := 
     for $unique-bibl at $pos in distinct-values($all-bibls/p)
-    let $idno := 700 + $pos
+    let $idno := <idno type="URI">{concat('http://syriaca.org/bibl/',700 + $pos)}</idno>
     let $matching-bibls := $all-bibls[p/text()=$unique-bibl]
     let $corresp := 
         for $id in $matching-bibls/@xml:id
@@ -228,13 +228,9 @@ let $unique-bibls :=
                 {$leftovers}
             </note>
         else())
+    order by $citation//author[1]/surname
     return
-        element biblStruct {attribute xml:id {$idno}, attribute corresp {$corresp}, $citation, $citedRanges}
-(:let $citedRanges := 
-    for $bibl in $unique-bibls
-    return
-        for $item in $unique-bibls/@corresp
-        return $all-bibls/biblScope[@corresp=$item]:)
+        element biblStruct {attribute corresp {$corresp}, $citation, $idno, $citedRanges}
 return ($unique-bibls)
         }
         </listBibl>

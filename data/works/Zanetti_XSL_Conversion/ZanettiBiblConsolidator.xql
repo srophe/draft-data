@@ -123,10 +123,11 @@ let $all-bibls :=
             syriaca:nodes-from-regex($bibl/text(),"[,]*\s*[p]\.\s*(\w*[-]*w*.*)$","biblScope",1,false())
         let $pages := 
             let $pages-text := functx:add-attributes($page-test/biblScope,('unit','corresp'),('pp',$bibl/@xml:id))
+            (: when cited range is just one page, this only lists it as @from :)
             let $page-range-test := analyze-string($pages-text/text(),'^([\d]+)\-([\d,\s]+).*$')/node()
             let $from := $page-range-test/fn:group[@nr=1]
-            let $to := $page-range-test/fn:group[@nr=2]
-            return functx:add-attributes(functx:add-attributes($pages-text,'from',replace($pages-text/text(),'\-[\d]+.*$','')),'to',$to)
+            let $to := syriaca:trim($page-range-test/fn:group[@nr=2])
+            return functx:add-attributes(functx:add-attributes($pages-text,'from',$from),'to',$to)
         let $col-test := syriaca:nodes-from-regex($page-test/p/text(),'[,]*\s*col\.\s*(\w*[-]*w*.*)$','biblScope',1,false())
         let $cols := functx:add-attributes($col-test/biblScope,('unit','corresp'),('col',$bibl/@xml:id))
         let $pages-and-cols := ($pages,$cols)

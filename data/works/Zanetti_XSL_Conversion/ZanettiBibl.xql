@@ -1,5 +1,6 @@
 xquery version "3.0";
 
+(: DEPRECATED in favor of ZanettiBiblConsolidator.xql :)
 (: Tested in eXide :)
 
 declare default element namespace "http://www.tei-c.org/ns/1.0";

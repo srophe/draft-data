@@ -121,12 +121,17 @@ let $all-bibls :=
     return
         let $page-test :=
             syriaca:nodes-from-regex($bibl/text(),"[,]*\s*[p]\.\s*(\w*[-]*w*.*)$","biblScope",1,false())
-        let $pages := functx:add-attributes($page-test/biblScope,('unit','corresp'),('pp',$bibl/@xml:id))
+        let $pages := 
+            let $pages-text := functx:add-attributes($page-test/biblScope,('unit','corresp'),('pp',$bibl/@xml:id))
+            let $page-range-test := analyze-string($pages-text/text(),'^([\d]+)\-([\d,\s]+).*$')/node()
+            let $from := $page-range-test/fn:group[@nr=1]
+            let $to := $page-range-test/fn:group[@nr=2]
+            return functx:add-attributes(functx:add-attributes($pages-text,'from',replace($pages-text/text(),'\-[\d]+.*$','')),'to',$to)
         let $col-test := syriaca:nodes-from-regex($page-test/p/text(),'[,]*\s*col\.\s*(\w*[-]*w*.*)$','biblScope',1,false())
         let $cols := functx:add-attributes($col-test/biblScope,('unit','corresp'),('col',$bibl/@xml:id))
         let $pages-and-cols := ($pages,$cols)
         
-        let $articeldatereturn := element bibl {$bibl/@xml:id, element p {$col-test/p/text()}, element citedRange {($pages-and-cols/@unit,$pages-and-cols/@corresp,$pages-and-cols/node())}}
+        let $articeldatereturn := element bibl {$bibl/@xml:id, element p {$col-test/p/text()}, element citedRange {($pages-and-cols/@unit,$pages-and-cols/@corresp,$pages-and-cols/@from,$pages-and-cols/@to,$pages-and-cols/node())}}
         return ($articeldatereturn,$pages)
 let $unique-bibls := 
     for $unique-bibl at $pos in distinct-values($all-bibls/p)

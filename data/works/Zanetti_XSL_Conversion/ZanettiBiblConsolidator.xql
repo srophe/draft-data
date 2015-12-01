@@ -216,12 +216,12 @@ let $unique-bibls :=
     let $citation := 
         (if($titles-analytic) then
             <analytic>
-                {$authors, $titles-analytic}
+                {$authors, $titles-analytic, $idno}
             </analytic>
         else (),
         if($titles-monograph) then
             <monogr>
-                {$authors,$titles-monograph}
+                {$authors,$titles-monograph, if(not($titles-analytic)) then $idno else ()}
                 <imprint>
                     {$pubPlaces,$dates}
                 </imprint>
@@ -229,7 +229,7 @@ let $unique-bibls :=
         else (),
         if($titles-edited-book or $editors) then
             <monogr>
-                {$editors,$titles-edited-book}
+                {$editors,$titles-edited-book, if(not($titles-analytic|$titles-monograph)) then $idno else ()}
                 <imprint>
                     {$pubPlaces,$dates}
                 </imprint>
@@ -238,7 +238,7 @@ let $unique-bibls :=
         else (),
         if($titles-journal or $vols-journal) then
             <monogr>
-                {$titles-journal}
+                {$titles-journal, if(not($titles-analytic|$titles-monograph|$titles-edited-book)) then $idno else ()}
                 <imprint>
                     {$dates}
                 </imprint>
@@ -257,7 +257,7 @@ let $unique-bibls :=
         else())
     order by $citation//author[1]/surname
     return
-        element biblStruct {attribute corresp {$corresp}, $citation, $idno, $citedRanges}
+        element biblStruct {attribute corresp {$corresp}, $citation, $citedRanges}
 return ($unique-bibls)
         }
         </listBibl>

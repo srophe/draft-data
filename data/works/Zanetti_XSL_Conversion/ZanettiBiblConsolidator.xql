@@ -122,9 +122,11 @@ let $all-bibls :=
         let $pages := 
             let $pages-text := functx:add-attributes($page-test/citedRange,('unit','corresp'),('pp',$bibl/@xml:id))
             (: when cited range is just one page, this only lists it as @from :)
-            let $page-range-test := analyze-string($pages-text/text(),'^([\d]+)\-([\d,\s]+).*$')/node()
+            let $page-range-test := if(contains($pages-text,'-')) then 
+                                        analyze-string($pages-text/text(),'^([\d]+)\-([\d,\s]+).*$')/node()
+                                    else analyze-string($pages-text/text(),'^([\d]+)')/node()
             let $from := $page-range-test/fn:group[@nr=1]
-            let $to := syriaca:trim($page-range-test/fn:group[@nr=2])
+            let $to := if($page-range-test/fn:group[@nr=2]) then syriaca:trim($page-range-test/fn:group[@nr=2]) else $from
             return functx:add-attributes($pages-text,('from','to'),($from,$to))
         let $col-test := syriaca:nodes-from-regex($page-test/p/text(),'[,]*\s*col\.\s*(\w*[-]*w*.*)$','citedRange',1,false())
         let $cols := functx:add-attributes($col-test/citedRange,('unit','corresp'),('col',$bibl/@xml:id))
@@ -147,7 +149,7 @@ let $unique-bibls :=
     let $biblScopes := 
         for $biblScope in $citedRanges[@unit='pp'][1]|$citedRanges[@unit='col'][1]
         return
-            element biblScope {$biblScope/@unit,$biblScope/node()}
+            element biblScope {$biblScope/@unit,$biblScope/@from,$biblScope/@to,$biblScope/node()}
     let $author-test := syriaca:nodes-from-regex($unique-bibl,'^(.+?),\s*','author',1,false())
     let $authors-fullname := tokenize($author-test/author/text(),"[\s]et[\s]|[,][\s]+")
     let $authors := 

@@ -208,7 +208,9 @@ let $unique-bibls :=
         if($title-edited-book-test/p/text() and $titles-analytic/text()) then
             replace($title-edited-book-test/p/text(),functx:escape-for-regex($titles-analytic/text()),'')
         else $title-edited-book-test/p/text()
-    let $title-monograph-test := syriaca:nodes-from-regex($unprocessed-text,'(.+)','title',1,true())
+    let $title-monograph-test := if(matches($unprocessed-text, '([A-Za-z]{1,2}\.)+[\s]+[\w]')) then 
+                                    syriaca:nodes-from-regex($unprocessed-text,'(.+)','author',1,false())
+                                else syriaca:nodes-from-regex($unprocessed-text,'(.+)','title',1,true())
     let $titles-monograph := syriaca:add-lang(functx:add-attributes($title-monograph-test/title,'level','m'))
     let $leftovers := $title-monograph-test/p
         
@@ -256,7 +258,7 @@ let $unique-bibls :=
         else())
     order by $citation//author[1]/surname
     return
-        element biblStruct {attribute corresp {$corresp}, $citation, $citedRanges}
+        (element bibl {attribute corresp {$corresp}, $unique-bibl}, element biblStruct {attribute corresp {$corresp}, $citation, $citedRanges})
 return ($unique-bibls)
         }
         </listBibl>

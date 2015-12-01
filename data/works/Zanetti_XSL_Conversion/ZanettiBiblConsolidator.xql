@@ -208,10 +208,17 @@ let $unique-bibls :=
         if($title-edited-book-test/p/text() and $titles-analytic/text()) then
             replace($title-edited-book-test/p/text(),functx:escape-for-regex($titles-analytic/text()),'')
         else $title-edited-book-test/p/text()
-    let $title-monograph-test := if(matches($unprocessed-text, '([A-Za-z]{1,2}\.)+[\s]+[\w]')) then 
+    let $title-monograph-test := if(matches($unprocessed-text, '^([A-Za-z]{1,2}\.)+[\s]+[\w]')) then 
                                     syriaca:nodes-from-regex($unprocessed-text,'(.+)','author',1,false())
                                 else syriaca:nodes-from-regex($unprocessed-text,'(.+)','title',1,true())
-    let $titles-monograph := syriaca:add-lang(functx:add-attributes($title-monograph-test/title,'level','m'))
+    let $titles-monograph := (syriaca:add-lang(functx:add-attributes($title-monograph-test/title,'level','m')),
+                                for $author in $title-monograph-test/author/text()
+                                return <author> {
+                                            syriaca:nodes-from-regex($author,"^([\w\.\-]*\s*\w{0,1}\.{0,1}\s*\w{0,1}\.{0,1})[\s]+.+$","forename",1,false())/forename ,
+                                            syriaca:nodes-from-regex($author,"[\s]+([\w\-\?\s]+)$","surname",1,false())/surname ,
+                                            syriaca:nodes-from-regex($author,"^([\w\-\?]+)$","surname",1,false())/surname
+                                       } </author> 
+                                       )
     let $leftovers := $title-monograph-test/p
         
     let $citation := 

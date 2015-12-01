@@ -9,8 +9,7 @@ declare namespace functx = "http://www.functx.com";
 (: Compares the input string to a list of abbreviations and expands it, if found. :)
 declare function syriaca:expand-abbreviations
   ( $abbreviation as xs:string?)  as xs:string? { 
-   let $abb-uri := "Zanetti-and-Fiey-Abbreviations.xml"
-   (:https://raw.githubusercontent.com/srophe/draft-data/master/data/works/Zanetti_XSL_Conversion/Zanetti-and-Fiey-Abbreviations.xml:)
+   let $abb-uri := "https://raw.githubusercontent.com/srophe/draft-data/master/data/works/Zanetti_XSL_Conversion/Zanetti-and-Fiey-Abbreviations.xml"
    let $abbreviations := fn:doc($abb-uri)
    return
    (: If there's a row with an abbreviation that matches the input string ... :)
@@ -113,26 +112,24 @@ declare function functx:add-attributes
          <listBibl> 
             {
 
-let $uri := "ZanettiBiblFull-normalized-spaces-and-vertical-tabs.xml"
-(:https://raw.githubusercontent.com/srophe/draft-data/master/data/works/Zanetti_XSL_Conversion/ZanettiBiblFull-normalized-spaces-and-vertical-tabs.xml:)
+let $uri := "https://raw.githubusercontent.com/srophe/draft-data/master/data/works/Zanetti_XSL_Conversion/ZanettiBiblFull-normalized-spaces-and-vertical-tabs.xml"
 
 let $all-bibls := 
     for $bibl in fn:doc($uri)//bibl
     return
         let $page-test :=
-            syriaca:nodes-from-regex($bibl/text(),"[,]*\s*[p]\.\s*(\w*[-]*w*.*)$","biblScope",1,false())
+            syriaca:nodes-from-regex($bibl/text(),"[,]*\s*[p]\.\s*(\w*[-]*w*.*)$","citedRange",1,false())
         let $pages := 
-            let $pages-text := functx:add-attributes($page-test/biblScope,('unit','corresp'),('pp',$bibl/@xml:id))
+            let $pages-text := functx:add-attributes($page-test/citedRange,('unit','corresp'),('pp',$bibl/@xml:id))
             (: when cited range is just one page, this only lists it as @from :)
             let $page-range-test := analyze-string($pages-text/text(),'^([\d]+)\-([\d,\s]+).*$')/node()
             let $from := $page-range-test/fn:group[@nr=1]
             let $to := syriaca:trim($page-range-test/fn:group[@nr=2])
-            return functx:add-attributes(functx:add-attributes($pages-text,'from',$from),'to',$to)
-        let $col-test := syriaca:nodes-from-regex($page-test/p/text(),'[,]*\s*col\.\s*(\w*[-]*w*.*)$','biblScope',1,false())
-        let $cols := functx:add-attributes($col-test/biblScope,('unit','corresp'),('col',$bibl/@xml:id))
-        let $pages-and-cols := ($pages,$cols)
+            return functx:add-attributes($pages-text,('from','to'),($from,$to))
+        let $col-test := syriaca:nodes-from-regex($page-test/p/text(),'[,]*\s*col\.\s*(\w*[-]*w*.*)$','citedRange',1,false())
+        let $cols := functx:add-attributes($col-test/citedRange,('unit','corresp'),('col',$bibl/@xml:id))
         
-        let $articeldatereturn := element bibl {$bibl/@xml:id, element p {$col-test/p/text()}, element citedRange {($pages-and-cols/@unit,$pages-and-cols/@corresp,$pages-and-cols/@from,$pages-and-cols/@to,$pages-and-cols/node())}}
+        let $articeldatereturn := element bibl {$bibl/@xml:id, element p {$col-test/p/text()}, $pages, $cols}
         return ($articeldatereturn,$pages)
 let $unique-bibls := 
     for $unique-bibl at $pos in distinct-values($all-bibls/p)

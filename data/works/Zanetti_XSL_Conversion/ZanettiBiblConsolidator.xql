@@ -93,6 +93,20 @@ declare function syriaca:add-lang
         else $text
     } ;
     
+declare function syriaca:add-from-to-attributes
+    ($node-to-parse as element()*) as element()* {
+    for $node in $node-to-parse
+    return
+        let $node-text := $node/text()
+        let $range-test := 
+            if(contains($node-text,'-')) then 
+                    analyze-string($node-text,'^([\d]+)\-([\d,\s]+).*$')/node()
+            else analyze-string($node-text,'^([\d]+)')/node()
+        let $from := $range-test/fn:group[@nr=1]
+        let $to := if($range-test/fn:group[@nr=2]) then syriaca:trim($range-test/fn:group[@nr=2]) else $from
+        return functx:add-attributes($node,('from','to'),($from,$to))
+    } ;
+    
 declare function functx:add-attributes
   ( $elements as element()* ,
   (: changed $attrNames from xs:QName* to xs:string* since it was creating namespace problems I was having trouble resolving :)
@@ -141,13 +155,7 @@ let $all-bibls :=
             syriaca:nodes-from-regex($bibl/text(),"[,]*\s*[p]\.\s*(\w*[-]*w*.*)$","citedRange",1,false())
         let $pages := 
             let $pages-text := functx:add-attributes($page-test/citedRange,('unit','corresp'),('pp',$bibl/@xml:id))
-            (: when cited range is just one page, this only lists it as @from :)
-            let $page-range-test := if(contains($pages-text,'-')) then 
-                                        analyze-string($pages-text/text(),'^([\d]+)\-([\d,\s]+).*$')/node()
-                                    else analyze-string($pages-text/text(),'^([\d]+)')/node()
-            let $from := $page-range-test/fn:group[@nr=1]
-            let $to := if($page-range-test/fn:group[@nr=2]) then syriaca:trim($page-range-test/fn:group[@nr=2]) else $from
-            return functx:add-attributes($pages-text,('from','to'),($from,$to))
+            return syriaca:add-from-to-attributes($pages-text)
         let $col-test := syriaca:nodes-from-regex($page-test/p/text(),'[,]*\s*col\.\s*(\w*[-]*w*.*)$','citedRange',1,false())
         let $cols := functx:add-attributes($col-test/citedRange,('unit','corresp'),('col',$bibl/@xml:id))
         
@@ -189,7 +197,9 @@ let $unique-bibls :=
     let $title-journal-test := syriaca:nodes-from-regex($title-analytic-test/p/text(),'[,]*[\s]*dans[\s]*([\w\-:\s]+)[,][\s]*([\d]+[\d\s\(\)]*)[\s]*\([\d\-]+\)','title',1,true())
     let $titles-journal := (syriaca:add-lang(functx:add-attributes($title-journal-test/title,'level','j')), $title-journal-test/idno)
     let $vol-journal-test := syriaca:nodes-from-regex($title-analytic-test/p/text(), '[,]*[\s]*dans[\s]*([\w\-:\s]+)[,][\s]*([\d]+[\d\s\(\)]*)[\s]*\([\d\-]+\)','biblScope',2,false())
-    let $vols-journal := functx:add-attributes($vol-journal-test/biblScope,'unit','vol')
+    let $vols-journal := 
+        let $vols-journal-text := functx:add-attributes($vol-journal-test/biblScope,'unit','vol')
+        return syriaca:add-from-to-attributes($vols-journal-text)
     let $pubPlace-test := syriaca:nodes-from-regex($vol-journal-test/p/text(),'[,][\s]*([\w\-\s]+)[,][\s]*[\d]{4}$','pubPlace',1,false())
     let $pubPlaces := $pubPlace-test/pubPlace
     let $title-series-test := syriaca:nodes-from-regex($pubPlace-test/p/text(),'\(([^\(]*)[,\s]+[\d]+\)$','title',1,true())

@@ -60,7 +60,7 @@ declare function syriaca:build-tei($node as element()*) as node(){
         <text>
             <body>
                 <biblStruct>
-                    {$node/child::*}
+                    {$node/child::*[name()!='citedRange']}
                 </biblStruct>
             </body>
         </text>

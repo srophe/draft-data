@@ -8,16 +8,27 @@ declare namespace functx = "http://www.functx.com";
 
 (: Compares the input string to a list of abbreviations and expands it, if found. :)
 declare function syriaca:expand-abbreviations
-  ( $abbreviation as xs:string?)  as xs:string? { 
+  ( $abbreviation as xs:string?)  as element()* { 
    let $abb-uri := "https://raw.githubusercontent.com/srophe/draft-data/master/data/works/Zanetti_XSL_Conversion/Zanetti-and-Fiey-Abbreviations.xml"
    let $abbreviations := fn:doc($abb-uri)
    return
    (: If there's a row with an abbreviation that matches the input string ... :)
-    if($abbreviations//row[Abbreviated_Title=$abbreviation]) then
-        (: grab the expanded version :)
-         $abbreviations//row[Abbreviated_Title=$abbreviation]/Expanded_Title/text()
-         (: otherwise just return the input string :)
-    else $abbreviation
+    <abbreviation>
+        {
+            if($abbreviations//row[Abbreviated_Title=$abbreviation]) then
+                let $row := $abbreviations//row[Abbreviated_Title=$abbreviation]
+                return
+                       (     (: grab the expanded version :)
+                            <expanded>{$row/Expanded_Title/text()}</expanded>,
+                            (: and provide the zotero id if there is one :)
+                            if($row/Reference_Number!='') then
+                                    <idno type="zotero">{$row/Reference_Number/text()}</idno>
+                            else ()
+                        )
+                 (: otherwise just return the input string :)
+            else <expanded>{$abbreviation}</expanded>
+        }
+    </abbreviation>
  } ;
     
 declare function syriaca:nodes-from-regex
@@ -26,6 +37,10 @@ declare function syriaca:nodes-from-regex
         return
             for $part in analyze-string($string, $pattern)/node()
             let $correct-part-text := $part/fn:group[@nr=$regex-group]/text()
+            let $abbreviation := 
+                if($expand-abbreviation) then 
+                    syriaca:expand-abbreviations(syriaca:trim($correct-part-text))
+                else ()
             return
                 <bibl>
                 {
@@ -33,14 +48,19 @@ declare function syriaca:nodes-from-regex
                         if($correct-part-text) then 
                             if(syriaca:trim($correct-part-text) != '') then
                                 element {$element} {
-                                    if($expand-abbreviation) then 
-                                        syriaca:expand-abbreviations(syriaca:trim($correct-part-text))
+                                    if($abbreviation) then 
+                                        $abbreviation/expanded/text()
                                     else syriaca:trim($correct-part-text)
                                     }
                             else ()
                         else ()
-                    else <p>{$part/text()}</p>
-                }
+                    else <p>{$part/text()}</p> }
+                    { 
+                        if($abbreviation/idno) then 
+                            $abbreviation/idno
+                        else ()
+                    }
+                
                 </bibl>
     } ;
     
@@ -163,17 +183,17 @@ let $unique-bibls :=
     (: If the following doesn't work right, try running it on $bibl/text() instead of $author-test/p/text() :)
     let $title-analytic-parsing := replace($author-test/p/text(),'[,][\s]*dans','~~~dans')
     let $title-analytic-test := syriaca:nodes-from-regex($title-analytic-parsing,"^(.*)~~~","title",1,true())
-    let $titles-analytic := syriaca:add-lang(functx:add-attributes($title-analytic-test/title,'level','a'))
+    let $titles-analytic := (syriaca:add-lang(functx:add-attributes($title-analytic-test/title,'level','a')),$title-analytic-test/idno)
     let $date-test := syriaca:nodes-from-regex($title-analytic-test/p/text(),'[\(]*([\d]+[\-]*[\d]*|s\.\s*d\.)[\)]*$','date',1,false())
     let $dates := $date-test/date
     let $title-journal-test := syriaca:nodes-from-regex($title-analytic-test/p/text(),'[,]*[\s]*dans[\s]*([\w\-:\s]+)[,][\s]*([\d]+[\d\s\(\)]*)[\s]*\([\d\-]+\)','title',1,true())
-    let $titles-journal := syriaca:add-lang(functx:add-attributes($title-journal-test/title,'level','j'))
+    let $titles-journal := (syriaca:add-lang(functx:add-attributes($title-journal-test/title,'level','j')), $title-journal-test/idno)
     let $vol-journal-test := syriaca:nodes-from-regex($title-analytic-test/p/text(), '[,]*[\s]*dans[\s]*([\w\-:\s]+)[,][\s]*([\d]+[\d\s\(\)]*)[\s]*\([\d\-]+\)','biblScope',2,false())
     let $vols-journal := functx:add-attributes($vol-journal-test/biblScope,'unit','vol')
     let $pubPlace-test := syriaca:nodes-from-regex($vol-journal-test/p/text(),'[,][\s]*([\w\-\s]+)[,][\s]*[\d]{4}$','pubPlace',1,false())
     let $pubPlaces := $pubPlace-test/pubPlace
     let $title-series-test := syriaca:nodes-from-regex($pubPlace-test/p/text(),'\(([^\(]*)[,\s]+[\d]+\)$','title',1,true())
-    let $titles-series := syriaca:add-lang(functx:add-attributes($title-series-test/title,'level','s'))
+    let $titles-series := (syriaca:add-lang(functx:add-attributes($title-series-test/title,'level','s')), $title-series-test/idno)
     let $vol-series-test := syriaca:nodes-from-regex($pubPlace-test/p/text(),'\([^\(]*[,\s]+([\d]+)\)$','biblScope',1,false())
     let $vols-series := functx:add-attributes($vol-series-test/biblScope,'unit','vol')
     let $editor-test := 
@@ -203,7 +223,7 @@ let $unique-bibls :=
                </editor>
     (: the following is not catching all the instances of "dans ..." that it should. e.g., ", dans V Symposium Syriacum..." :)
     let $title-edited-book-test := syriaca:nodes-from-regex($editor-test/p/text(),('(^[,][\s]*|dans)[\s]+(.+)$'),'title',2,true())
-    let $titles-edited-book := syriaca:add-lang(functx:add-attributes($title-edited-book-test/title,'level','m'))
+    let $titles-edited-book := (syriaca:add-lang(functx:add-attributes($title-edited-book-test/title,'level','m')), $title-edited-book-test/idno)
     let $unprocessed-text := 
         if($title-edited-book-test/p/text() and $titles-analytic/text()) then
             replace($title-edited-book-test/p/text(),functx:escape-for-regex($titles-analytic/text()),'')
@@ -211,7 +231,7 @@ let $unique-bibls :=
     let $title-monograph-test := if(matches($unprocessed-text, '^([A-Za-z]{1,2}\.)+[\s]+[\w]')) then 
                                     syriaca:nodes-from-regex($unprocessed-text,'(.+)','author',1,false())
                                 else syriaca:nodes-from-regex($unprocessed-text,'(.+)','title',1,true())
-    let $titles-monograph := (syriaca:add-lang(functx:add-attributes($title-monograph-test/title,'level','m')),
+    let $titles-monograph := (syriaca:add-lang(functx:add-attributes($title-monograph-test/title,'level','m')), $title-monograph-test/idno,
                                 for $author in $title-monograph-test/author/text()
                                 return <author> {
                                             syriaca:nodes-from-regex($author,"^([\w\.\-]*\s*\w{0,1}\.{0,1}\s*\w{0,1}\.{0,1})[\s]+.+$","forename",1,false())/forename ,

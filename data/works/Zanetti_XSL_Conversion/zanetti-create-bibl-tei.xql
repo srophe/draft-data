@@ -68,7 +68,7 @@ declare function syriaca:build-tei($node as element()*) as node(){
 declare function syriaca:create-tei-records($node as node()){
     for $bibl in $node//tei:biblStruct
     let $collection-uri := '/db/apps/srophe-data/data/bibl/tei/'
-    let $file-name := concat(tokenize($bibl/tei:idno,'/')[last()],'.xml')
+    let $file-name := concat(tokenize($bibl//tei:idno[1],'/')[last()],'.xml')
     return
         (:($collection-uri, $file-name, syriaca:build-tei($bibl) ):)
         xmldb:store($collection-uri, xmldb:encode-uri($file-name), syriaca:build-tei($bibl))

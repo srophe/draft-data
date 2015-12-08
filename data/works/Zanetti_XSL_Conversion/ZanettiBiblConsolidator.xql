@@ -5,7 +5,6 @@ declare namespace tei = "http://www.tei-c.org/ns/1.0";
 declare namespace syriaca = "http://syriaca.org";
 declare namespace functx = "http://www.functx.com";
 
-
 (: Compares the input string to a list of abbreviations and expands it, if found. :)
 declare function syriaca:expand-abbreviations
   ( $abbreviation as xs:string?)  as element()* { 
@@ -129,6 +128,51 @@ declare function functx:add-attributes
 
    replace($arg,
            '(\.|\[|\]|\\|\||\-|\^|\$|\?|\*|\+|\{|\}|\(|\))','\\$1')
+ } ;
+ 
+ declare function functx:remove-elements
+  ( $elements as element()* ,
+    $names as xs:string* )  as element()* {
+
+   for $element in $elements
+   return element
+     {node-name($element)}
+     {$element/@*,
+      $element/node()[not(functx:name-test(name(),$names))] }
+ } ;
+ 
+declare function functx:name-test
+  ( $testname as xs:string? ,
+    $names as xs:string* )  as xs:boolean {
+
+$testname = $names
+or
+$names = '*'
+or
+functx:substring-after-if-contains($testname,':') =
+   (for $name in $names
+   return substring-after($name,'*:'))
+or
+substring-before($testname,':') =
+   (for $name in $names[contains(.,':*')]
+   return substring-before($name,':*'))
+ } ;
+ 
+declare function functx:substring-after-if-contains
+  ( $arg as xs:string? ,
+    $delim as xs:string )  as xs:string? {
+
+   if (contains($arg,$delim))
+   then substring-after($arg,$delim)
+   else $arg
+ } ;
+ 
+declare function functx:index-of-node
+  ( $nodes as node()* ,
+    $nodeToFind as node() )  as xs:integer* {
+
+  for $seq in (1 to count($nodes))
+  return $seq[$nodes[$seq] is $nodeToFind]
  } ;
  
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
@@ -296,7 +340,8 @@ let $unique-bibls :=
     order by $citation//author[1]/surname
     return
         (element bibl {attribute corresp {$corresp}, $unique-bibl}, element biblStruct {attribute corresp {$corresp}, $citation, $citedRanges})
-return ($unique-bibls)
+return 
+($unique-bibls)
         }
         </listBibl>
       </body>

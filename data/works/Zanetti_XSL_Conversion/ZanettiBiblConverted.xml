@@ -1,4 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!-- QUESTIONS:
+   1. How do we input multiple languages for authors? Using choice/seg inside author? See, e.g., bibl/2, which I don't think is the right way to do this.
+   2. How should Russian transliteration be shown in @xml:lang? "ru-Latn-iso9r95"?
+   3. If I come across URIs for works while looking up their info, should I insert them as idno/@type="URI"? -->
+
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -140,13 +145,19 @@
             <biblStruct corresp="bibl250-13">
                <analytic>
                   <author>
-                     <forename>Z.</forename>
+                     <forename xml:lang="en-x-gedsh">Z.</forename>
+                     <surname xml:lang="en-x-gedsh">ʿAywāṣ</surname>
+                     <forename xml:lang="ar">ز.</forename>
+                     <surname xml:lang="ar">عيواص</surname>
                   </author>
-                  <title xml:lang="ar" level="a">Qi??at ahl al-kahf fi Æl-ma?‹dir al-sury‹niyya</title>
+                  <title xml:lang="en-x-gedsh" level="a">Qiṣṣat ahl al-kahf fi al-maṣādir al-suryāniyya</title>
+                  <title xml:lang="ar" level="a">قصة اهل الكهف في المصادر السريانية</title>
                   <idno type="URI">http://syriaca.org/bibl/1039</idno>
+                  <idno type="URI">http://www.iraqnla-iq.com/opac/fullrecr.php?nid=29621</idno>
                </analytic>
                <monogr>
                   <title xml:lang="en" level="j">Journal of the Syriac Academy</title>
+                  <title xml:lang="ar" level="j"> مجلة مجمع اللغة السريانية</title>
                   <imprint>
                      <date>1975</date>
                   </imprint>
@@ -469,29 +480,44 @@
             <biblStruct corresp="bibl345-2">
                <analytic>
                   <author>
-                     <forename>E.</forename>
-                     <surname>Ani?kov</surname>
+                     <choice>
+                        <seg>
+                           <forename xml:lang="en-x">E.</forename>
+                           <surname xml:lang="en-x">Aničkov</surname>
+                        </seg>
+                     </choice>
+                     <choice>
+                        <seg>
+                           <forename xml:lang="ru">Е.</forename>
+                           <surname xml:lang="ru">Аничков</surname>
+                        </seg>
+                     </choice>
                   </author>
-                  <title xml:lang="ru" level="a">Sv. Nikolaj i Artemida Èfesskaja</title>
+                  <title xml:lang="en-x" level="a">Sv. Nikolaj i Artemida Èfesskaja</title>
+                  <title xml:lang="ru" level="a">Св. Николай и Артемида Эфесская</title>
                   <idno type="URI">http://syriaca.org/bibl/902</idno>
+                  <idno type="URI">http://krotov.info/acts/10/3/nikolay.htm</idno><!-- OK to include this? As an idno? -->
                </analytic>
                <monogr>
-                  <title level="m">Zapiski Vosto?nago Otdelenija Imperatorskago Russkago Arxeologi?eskago ob¯?estva, 9 (1895)</title>
+                  <title level="j">Zapiski Vostočnago Otdelenija Imperatorskago Russkago Arxeologičeskago obščestva</title>
+                  <title level="j">Записки Восточного отделения Императорского Русского Археологического общества</title>
                   <imprint>
                      <date>1895</date>
                   </imprint>
+                  <biblScope unit="vol" from="9" to="9">9</biblScope>
                   <biblScope unit="pp" from="69" to="77">69-77</biblScope>
                </monogr>
                <citedRange from="69" to="77" unit="pp" corresp="bibl345-2">69-77</citedRange>
             </biblStruct>
-            <bibl corresp="bibl980-5">I. Armalé, M‹r Yahqºb Æusquf Sarºj, ba¡‡ Æintiq‹d¬y t‹r¬ÿ¬y d¬n¬y, Jounieh, 1946</bibl>
+            <bibl corresp="bibl980-5">I. Armalé, Mār Yahqºb Æusquf Sarºj, ba¡‡ Æintiqād¬y tār¬ÿ¬y d¬n¬y, Jounieh, 1946</bibl>
             <biblStruct corresp="bibl980-5">
                <monogr>
                   <author>
                      <forename>I.</forename>
                      <surname>Armalé</surname>
                   </author>
-                  <title level="m">M‹r Yahqºb Æusquf Sarºj, ba¡‡ Æintiq‹d¬y t‹r¬ÿ¬y d¬n¬y</title>
+                  <title level="m" xml:lang="en-x-gedsh">Mār Yaʿqūb Usquf Sarūj al-Malfān, baḥth intiqādī tārīkhī dīnī</title>
+                  <title level="m" xml:lang="ar">مار يعقوب أسقف سروج الملفان : بحث إنتقادي تاريخي ديني</title>
                   <idno type="URI">http://syriaca.org/bibl/708</idno>
                   <imprint>
                      <pubPlace>Jounieh</pubPlace>
@@ -501,6 +527,7 @@
             </biblStruct>
             <bibl corresp="bibl297-64">A.K. Arvanitis, ?O Òpóstolow Yvmâw kaì ä SuriakÎ ¸Ekklhsía toû Malampár, Athènes, 1962</bibl>
             <biblStruct corresp="bibl297-64">
+               <!-- check -->
                <monogr>
                   <author>
                      <forename>A.K.</forename>
@@ -2487,10 +2514,19 @@
             <biblStruct corresp="bibl792-2">
                <monogr>
                   <author>
-                     <forename>A.</forename>
-                     <surname>Djakonov</surname>
+                     <choice>
+                        <seg>
+                           <forename xml:lang="ru-Latn-iso9r95">A. P.</forename>
+                           <surname xml:lang="ru-Latn-iso9r95">D'âkonov</surname>
+                        </seg>
+                        <seg>
+                           <forename xml:lang="ru">А. П.</forename>
+                           <surname xml:lang="ru">Дьяконов</surname>
+                        </seg>
+                     </choice>
                   </author>
-                  <title xml:lang="ru" level="m">Ioann Efesskij i ego cerkovno-istori?eskie trudy</title>
+                  <title xml:lang="ru-Latn-iso9r95" level="m">Ioann Efesskij i ego cerkovno-istoričeskie trudy</title>
+                  <title xml:lang="ru" level="m">Иоанн Ефесский и его церковно-исторические труды</title>
                   <idno type="URI">http://syriaca.org/bibl/819</idno>
                   <imprint>
                      <pubPlace>Saint-Pétersbourg</pubPlace>
@@ -4376,7 +4412,8 @@
                   <idno type="URI">http://syriaca.org/bibl/797</idno>
                </analytic>
                <monogr>
-                  <title level="j">PalSb</title>
+                  <title level="j" xml:lang="en-x">Palestinskij sbornik</title>
+                  <title level="j" xml:lang="ru">Палестинский сборник</title>
                   <imprint>
                      <date>1978</date>
                   </imprint>
@@ -4982,7 +5019,8 @@
                   <idno type="URI">http://syriaca.org/bibl/756</idno>
                </analytic>
                <monogr>
-                  <title level="j">PalSb</title>
+                  <title level="j" xml:lang="en-x">Palestinskij sbornik</title>
+                  <title level="j" xml:lang="ru">Палестинский сборник</title>
                   <imprint>
                      <date>1989</date>
                   </imprint>
@@ -5022,7 +5060,8 @@
                   <idno type="URI">http://syriaca.org/bibl/770</idno>
                </analytic>
                <monogr>
-                  <title level="j">PalSb</title>
+                  <title level="j" xml:lang="en-x">Palestinskij sbornik</title>
+                  <title level="j" xml:lang="ru">Палестинский сборник</title>
                   <imprint>
                      <date>1971</date>
                   </imprint>
@@ -5042,7 +5081,8 @@
                   <idno type="URI">http://syriaca.org/bibl/858</idno>
                </analytic>
                <monogr>
-                  <title level="j">PalSb</title>
+                  <title level="j" xml:lang="en-x">Palestinskij sbornik</title>
+                  <title level="j" xml:lang="ru">Палестинский сборник</title>
                   <imprint>
                      <date>1987</date>
                   </imprint>
@@ -5910,7 +5950,8 @@
                   <idno type="URI">http://syriaca.org/bibl/736</idno>
                </analytic>
                <monogr>
-                  <title level="j">PalSb</title>
+                  <title level="j" xml:lang="en-x">Palestinskij sbornik</title>
+                  <title level="j" xml:lang="ru">Палестинский сборник</title>
                   <imprint>
                      <date>1978</date>
                   </imprint>
@@ -5923,14 +5964,24 @@
             <biblStruct corresp="bibl930-4 bibl929-7 bibl228-6">
                <analytic>
                   <author>
-                     <forename>A.V.</forename>
-                     <surname>Pajkova</surname>
+                     <choice>
+                        <seg>
+                           <forename xml:lang="en-x">A.V.</forename>
+                           <surname xml:lang="en-x">Pajkova</surname>
+                        </seg>
+                        <seg>
+                           <forename xml:lang="ru">Аза Владимировна</forename>
+                           <surname xml:lang="ru">Пайкова</surname>
+                        </seg>
+                     </choice>
                   </author>
-                  <title level="a">K voprosu o vozniknovenii belletristi?eskogo povestvovanija v sirijskoj literature</title>
+                  <title level="a" xml:lang="en-x">K voprosu o vozniknovenii belletrističeskogo povestvovanija v sirijskoj literature</title>
+                  <title level="a" xml:lang="ru">К вопросу о возникновении беллетристического повествования в сирийской литературе</title>
                   <idno type="URI">http://syriaca.org/bibl/738</idno>
                </analytic>
                <monogr>
-                  <title level="j">PalSb</title>
+                  <title level="j" xml:lang="en-x">Palestinskij sbornik</title>
+                  <title level="j" xml:lang="ru">Палестинский сборник</title>
                   <imprint>
                      <date>1971</date>
                   </imprint>
@@ -5945,21 +5996,51 @@
             <biblStruct corresp="bibl1065-2">
                <analytic>
                   <author>
-                     <forename>A. V.</forename>
-                     <surname>Pajkova</surname>
+                     <choice>
+                        <seg>
+                           <forename xml:lang="en-x">A.V.</forename>
+                           <surname xml:lang="en-x">Pajkova</surname>
+                        </seg>
+                        <seg>
+                           <forename xml:lang="ru">Аза Владимировна</forename>
+                           <surname xml:lang="ru">Пайкова</surname>
+                        </seg>
+                     </choice>
                   </author>
-                  <title level="a">K voprosu o proisxoådenii “Åitija Aleksija, ?eloveka Boåjego”</title>
+                  <title level="a" xml:lang="en-x">K voprosu o proisxoådenii “Åitija Aleksija, ?eloveka Boåjego”</title>
+                  <title level="a" xml:lang="ru">К вопросу о происхождении “Жития Алексия, Человека Божьего”</title>
                   <idno type="URI">http://syriaca.org/bibl/1130</idno>
                </analytic>
                <monogr>
-                  <title level="j">PalSb</title>
+                  <title level="j" xml:lang="en-x">Palestinskij sbornik</title>
+                  <title level="j" xml:lang="ru">Палестинский сборник</title>
                   <imprint>
                      <date>1986</date>
                   </imprint>
                   <biblScope from="28" to="28" unit="vol">28 (91)</biblScope>
-                  <biblScope unit="pp" from="158" to="169">158-169F. Plaine, La Vie syriaque de saint Alexis et l’authenticité substantielle de sa Vie latine, dans Revue des questions historiques, 51 (1892), p. 560-576</biblScope>
+                  <biblScope unit="pp" from="158" to="169">158-169</biblScope>
                </monogr>
-               <citedRange from="158" to="169" unit="pp" corresp="bibl1065-2">158-169F. Plaine, La Vie syriaque de saint Alexis et l’authenticité substantielle de sa Vie latine, dans Revue des questions historiques, 51 (1892), p. 560-576</citedRange>
+               <citedRange from="158" to="169" unit="pp" corresp="bibl1065-2">158-169</citedRange>
+            </biblStruct>
+            <bibl corresp="bibl1065-2b">F. Plaine, La Vie syriaque de saint Alexis et l’authenticité substantielle de sa Vie latine, dans Revue des questions historiques, 51 (1892), p. 560-576</bibl>
+            <biblStruct corresp="bibl1065-2b">
+               <analytic>
+                  <author>
+                     <forename>F.</forename>
+                     <surname>Plaine</surname>
+                  </author>
+                  <title level="a">La Vie syriaque de saint Alexis et l’authenticité substantielle de sa Vie latine</title>
+                  <idno type="URI">http://syriaca.org/bibl/1200</idno>
+               </analytic>
+               <monogr>
+                  <title level="j">Revue des questions historiques</title>
+                  <imprint>
+                     <date>1892</date>
+                  </imprint>
+                  <biblScope unit="vol" from="51" to="51">51</biblScope>
+                  <biblScope unit="pp" from="560" to="576">560-576</biblScope>
+               </monogr>
+               <citedRange corresp="bibl1065-2b" unit="pp" from="560" to="576">560-576</citedRange>
             </biblStruct>
             <bibl corresp="bibl340-2 bibl283-2">V. Palachkovsky, Les saints Abdas, martyrs persans, dans Tome commémoratif du millénaire de la Bibliothèque patriarcale d’Alexandrie (Publications de l’Institut d’études orientales de la Bibliothèque patriarcale d’Alexandrie, 2), Alexandrie, 1953</bibl>
             <biblStruct corresp="bibl340-2 bibl283-2">
@@ -7047,7 +7128,8 @@
                   <idno type="URI">http://syriaca.org/bibl/789</idno>
                </analytic>
                <monogr>
-                  <title level="j">PalSb</title>
+                  <title level="j" xml:lang="en-x">Palestinskij sbornik</title>
+                  <title level="j" xml:lang="ru">Палестинский сборник</title>
                   <imprint>
                      <date>1956</date>
                   </imprint>
@@ -8356,6 +8438,7 @@
             </biblStruct>
             <bibl corresp="bibl297-60">J. Teixidor, Le Marchand-Apôtre dans la première littérature syriaque, dans C. Kappler (éd.), Traditions de l’Au-delà et conceptions de l’Univers dans le Proche-Orient ancien, Paris, 1985</bibl>
             <biblStruct corresp="bibl297-60">
+               <!-- Is this a confused reference? WorldCat doesn't seem to have this book. CBSC has "Teixidor, Javier, ''L’apôtre marchand d’âmes dans la première littérature syriaque. Voies commerciales et voies de l’Évangile au Proche-Orient'', Pages 379-396 in Apocalypses et voyages dans l’au-delà. Edited by Kappler, Claude. Etudes annexes de la Bible de Jérusalem. Paris: Cerf, 1987." -->
                <analytic>
                   <author>
                      <forename>J.</forename>

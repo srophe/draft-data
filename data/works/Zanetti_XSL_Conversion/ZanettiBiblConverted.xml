@@ -215,7 +215,7 @@
             <biblStruct corresp="bibl231-3">
                <!-- check -->
                <analytic>
-                  <author/>
+                  <!-- What to do with anonymous author? -->
                   <title xml:lang="it" level="a">Il libro di Eusebio De martyribus
                      Palaestinae</title>
                   <idno type="URI">http://syriaca.org/bibl/1041</idno>
@@ -286,21 +286,21 @@
             <bibl corresp="bibl250-5">AA, I sette dormienti. Storia e leggenda, dans Bessarione, 1
                (1896-1897)</bibl>
             <biblStruct corresp="bibl250-5">
+               <!-- check -->
                <analytic>
-                  <author>
-                     <surname>AA</surname>
-                  </author>
-                  <title xml:lang="ru" level="a">I sette dormienti. Storia e leggenda</title>
+                  <!-- do we put in anything for anonymous author? -->
+                  <title xml:lang="it" level="a">I sette dormienti. Storia e leggenda</title>
                   <idno type="URI">http://syriaca.org/bibl/1031</idno>
                </analytic>
                <monogr>
-                  <title level="j">Bessarione</title>
+                  <title xml:lang="it" level="j">Bessarione</title>
                   <imprint>
                      <date>1896-1897</date>
                   </imprint>
                   <biblScope from="1" to="1" unit="vol">1</biblScope>
                   <biblScope unit="pp" from="318" to="320">318-320</biblScope>
                </monogr>
+               <note xml:lang="en">No author listed in original publication. (See http://hdl.handle.net/2027/uc1.b3144714.)</note>
                <citedRange from="318" to="320" unit="pp" corresp="bibl250-5">318-320</citedRange>
             </biblStruct>
             <bibl corresp="bibl297-36">S. Abouzayd, The Acts of Thomas and the Unity of the
@@ -4296,15 +4296,25 @@
             </biblStruct>
             <bibl corresp="bibl314-2 bibl313-2">E.R. Hambye, Pishay, anachorète.</bibl>
             <biblStruct corresp="bibl314-2 bibl313-2">
-               <monogr>
+               <analytic>
                   <author>
                      <forename>E.R.</forename>
                      <surname>Hambye</surname>
                   </author>
-                  <title level="m">Pishay, anachorète.</title>
+                  <title xml:lang="fr" level="a">Pishay, anachorète. Une commémoraison peu connue du calendrier de l’Eglise syrienne d’Antioche</title>
                   <idno type="URI">http://syriaca.org/bibl/914</idno>
-                  <imprint/>
+               </analytic>
+               <monogr>
+                  <title xml:lang="fr" level="j">L’Orient Syrien</title>
+                  <idno type="zotero">102</idno>
+                  <imprint>
+                     <date>1962</date>
+                  </imprint>
+                  <biblScope unit="vol" from="7" to="7">7</biblScope>
+                  <biblScope unit="pp" from="255" to="259">255-259</biblScope>
                </monogr>
+               <citedRange corresp="bibl314-2" unit="pp" from="255" to="259">255-259</citedRange>
+               <citedRange corresp="bibl313-2" unit="pp" from="255" to="259">255-259</citedRange>
             </biblStruct>
             <bibl corresp="bibl297-49">E.R. Hambye, L’Apôtre Saint Thomas en Inde. Quelques
                réflexions, dans OS, 8 (1963)</bibl>
@@ -4545,11 +4555,17 @@
                      <forename>G.</forename>
                      <surname>Hoffmann</surname>
                   </author>
-                  <title xml:lang="de" level="m">Auszüge aus syrischen Akten persischer Märtyrer
-                     (Abhandlungen für die Kunde des Morgenlandes, 7/3), Leipzig</title>
+                  <title xml:lang="de" level="m">Auszüge aus syrischen Akten persischer Märtyrer</title>
                   <idno type="URI">http://syriaca.org/bibl/779</idno>
-                  <imprint/>
+                  <imprint>
+                     <pubPlace>Leipzig</pubPlace>
+                     <date>1880</date>
+                  </imprint>
                </monogr>
+               <series>
+                  <title xml:lang="de" level="s">Abhandlungen für die Kunde des Morgenlandes</title>
+                  <biblScope unit="vol">7/3</biblScope>
+               </series>
                <citedRange from="115" to="121, 167" unit="pp" corresp="bibl901-2">115-121,
                   167-175</citedRange>
                <citedRange from="174" to="175" unit="pp" corresp="bibl338-2">174-175</citedRange>
@@ -5206,13 +5222,22 @@
             </biblStruct>
             <bibl corresp="bibl1106-2">P. Krüger</bibl>
             <biblStruct corresp="bibl1106-2">
-               <monogr>
+               <analytic>
                   <author>
                      <forename>P.</forename>
                      <surname>Krüger</surname>
                   </author>
+                  <title xml:lang="fr" level="a">Traduction et commentaire de l’Homélie de Narsai sur les martyrs. Contribution à l’étude du culte des martyrs dans le nestorianisme primitif</title>
                   <idno type="URI">http://syriaca.org/bibl/1123</idno>
-                  <imprint/>
+               </analytic>
+               <monogr>
+                  <title xml:lang="fr" level="j">L'Orient syrien</title>
+                  <idno type="zotero">102</idno>
+                  <imprint>
+                     <date>1958</date>
+                  </imprint>
+                  <biblScope unit="vol" from="3" to="3">3</biblScope>
+                  <biblScope unit="pp" from="299" to="316">299-316</biblScope>
                </monogr>
                <citedRange from="299" to="303" unit="pp" corresp="bibl1106-2">299-303</citedRange>
             </biblStruct>
@@ -5248,17 +5273,18 @@
                      <forename>M. A.</forename>
                      <surname>Kugener</surname>
                   </author>
-                  <title xml:lang="fr" level="a">Observations sur la vie de l’ascète Isaïe</title>
+                  <title xml:lang="fr" level="a">Observations sur la vie de l’ascète Isaie et sur les vies de Pierre l’Ibérien et de Théodore d’Antinoé par Zacharie le Scolastique'</title>
                   <idno type="URI">http://syriaca.org/bibl/854</idno>
                </analytic>
                <monogr>
-                  <title level="m">B. Z., 9</title>
+                  <title level="j">Byzantinische Zeitschrift</title>
                   <imprint>
-                     <date>9</date>
+                     <date>1900</date>
                   </imprint>
-                  <biblScope unit="pp" from="" to="">464-</biblScope>
+                  <biblScope unit="vol" from="9" to="9">9</biblScope>
+                  <biblScope unit="pp" from="464" to="470">464-470</biblScope>
                </monogr>
-               <citedRange from="" to="" unit="pp" corresp="bibl555-3">464-</citedRange>
+               <citedRange from="464" to="470" unit="pp" corresp="bibl555-3">464-470</citedRange>
             </biblStruct>
             <bibl corresp="bibl895-13">E.I. Ky?anov, Sirijskoe nestorianstvo v Kitae i central’noj
                Azii, dans PalSb, 26 (89) (1978)</bibl>
@@ -9014,8 +9040,7 @@
                </monogr>
                <note xml:lang="fr">pas vu, cf ByzZ 5, biblio</note>
                <citedRange from="43" to="66" unit="pp" corresp="bibl974-2b">43-66</citedRange>
-               <citedRange from="43" to="66" unit="pp" corresp="bibl250-2">43-66 AA, I sette dormienti. Storia e leggenda, dans Bessarione, 1 (1896-1897),
-                  p. 318-320</citedRange>
+               <citedRange from="43" to="66" unit="pp" corresp="bibl250-2">43-66</citedRange>
             </biblStruct>
             <bibl corresp="bibl560-2">V. Ryssel</bibl>
             <biblStruct corresp="bibl560-2">
@@ -9265,7 +9290,7 @@
                      <forename>P.G.</forename>
                      <surname>Sfair</surname>
                   </author>
-                  <title xml:lang="fr" level="a">L’ortodossia di Narsai rivelata dalla Omilia sui
+                  <title xml:lang="it" level="a">L’ortodossia di Narsai rivelata dalla Omilia sui
                      Dottori Greci</title>
                   <idno type="URI">http://syriaca.org/bibl/1129</idno>
                </analytic>

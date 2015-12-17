@@ -6529,13 +6529,21 @@
             </biblStruct>
             <bibl corresp="bibl1596-3 bibl1064-3 bibl1063-3 bibl1062-3">F. Nau</bibl>
             <biblStruct corresp="bibl1596-3 bibl1064-3 bibl1063-3 bibl1062-3">
-               <monogr>
+               <analytic>
                   <author>
                      <forename>F.</forename>
                      <surname>Nau</surname>
                   </author>
+                  <title xml:lang="fr" level="a">Notice historique sur le monastère de Qartamin suivie d’une note sur le monastère de Qennešré</title>
                   <idno type="URI">http://syriaca.org/bibl/1052</idno>
-                  <imprint/>
+               </analytic>
+               <monogr>
+                  <title xml:lang="fr" level="m">Actes du XIVe Congrès international des Orientalistes, Alger 1897. IIe partie: Section II (Langues sémitiques)</title>
+                  <imprint>
+                     <pubPlace>Paris</pubPlace>
+                     <date>1907</date>
+                  </imprint>
+                  <biblScope unit="pp" from="37" to="135">37-135</biblScope>
                </monogr>
                <citedRange from="55" to="67" unit="pp" corresp="bibl1596-3">55-67 (avec extraits
                   traduits)</citedRange>
@@ -6549,6 +6557,7 @@
             <bibl corresp="bibl1493-2">F. Nau, Résumé de monographies syriaques, dans ROC, 2e sér.,
                9 (1914)</bibl>
             <biblStruct corresp="bibl1493-2">
+               <!-- check: is this the right way to handle multiple series of journal? -->
                <analytic>
                   <author>
                      <forename>F.</forename>
@@ -6558,11 +6567,14 @@
                   <idno type="URI">http://syriaca.org/bibl/1072</idno>
                </analytic>
                <monogr>
-                  <title level="m">ROC, 2e sér., 9 (1914)</title>
+                  <title level="m">Revue de l’Orient chrétien</title>
+                  <idno type="zotero">118</idno>
                   <imprint>
                      <date>1914</date>
                   </imprint>
-                  <biblScope unit="pp" from="420" to="431">420-431</biblScope>
+                  <biblScope unit="series" from="2" to="2">2</biblScope>
+                  <biblScope unit="vol" from="9" to="9">9</biblScope>
+                  <biblScope unit="pp" from="420" to="431">414-440</biblScope>
                </monogr>
                <citedRange from="420" to="431" unit="pp" corresp="bibl1493-2">420-431</citedRange>
             </biblStruct>
@@ -6879,10 +6891,13 @@
                   <idno type="URI">http://syriaca.org/bibl/1073</idno>
                </analytic>
                <monogr>
-                  <title xml:lang="de" level="m">Marginalien und Materialien, Tübingen, 1893
-                     (pagination propre)</title>
-                  <imprint/>
+                  <title xml:lang="de" level="m">Marginalien und Materialien</title>
+                  <imprint>
+                     <pubPlace>Tübingen</pubPlace>
+                     <date>1893</date>
+                  </imprint>
                </monogr>
+               <note xml:lang="fr">pagination propre</note>
             </biblStruct>
             <bibl corresp="bibl1161-2">E. Nestle, Ein syrisches Bruchstück aus dem Protevangelium
                Jacobi, dans ZNW, 3 (1902)</bibl>
@@ -8125,13 +8140,22 @@
             </biblStruct>
             <bibl corresp="bibl1400-2">P. Peeters</bibl>
             <biblStruct corresp="bibl1400-2">
-               <monogr>
+               <analytic>
                   <author>
                      <forename>P.</forename>
                      <surname>Peeters</surname>
                   </author>
+                  <title xml:lang="fr" level="a">Une Légende syriaque de S. Iazdbozid</title>
                   <idno type="URI">http://syriaca.org/bibl/1084</idno>
-                  <imprint/>
+               </analytic>
+               <monogr>
+                  <title xml:lang="la" level="j">Analecta Bollandiana</title>
+                  <idno type="zotero">1</idno>
+                  <imprint>
+                     <date>1931</date>
+                  </imprint>
+                  <biblScope from="49" to="49" unit="vol">49</biblScope>
+                  <biblScope from="5" to="21" unit="pp">5-21</biblScope>
                </monogr>
                <citedRange from="13" to="21" unit="pp" corresp="bibl1400-2">13-21</citedRange>
             </biblStruct>
@@ -8369,6 +8393,7 @@
                civilisation au VIe siècle de l’ère nouvelle, dans Mélanges Massé, Téhéran, 1963,
                10</bibl>
             <biblStruct corresp="bibl896-3">
+               <!-- check: what to do with this "offprint" pagination, which is different from the version listed in CBSC? -->
                <analytic>
                   <author>
                      <forename>N.</forename>
@@ -8379,13 +8404,15 @@
                   <idno type="URI">http://syriaca.org/bibl/784</idno>
                </analytic>
                <monogr>
-                  <title level="m">Mélanges Massé, Téhéran, 1963, 10</title>
+                  <title level="m">Mélanges d’orientalisme offerts à Henri Massé</title>
                   <imprint>
-                     <date>10</date>
+                     <pubPlace>Téhéran</pubPlace>
+                     <date>1963</date>
                   </imprint>
-                  <biblScope unit="pp" from="" to="">(tiré à part)</biblScope>
+                  <biblScope unit="pp" from="" to=""></biblScope>
                </monogr>
-               <citedRange from="" to="" unit="pp" corresp="bibl896-3">(tiré à part)</citedRange>
+               <note>tiré à part</note>
+               <citedRange from="10" to="10" unit="pp" corresp="bibl896-3">10</citedRange>
             </biblStruct>
             <bibl corresp="bibl1042-4">P. Piovanelli, Les origines de l’Apocalypse de Paul
                reconsidérées, dans Apocrypha, 4 (1993)</bibl>
@@ -9063,14 +9090,24 @@
                <citedRange from="43" to="66" unit="pp" corresp="bibl250-2">43-66</citedRange>
             </biblStruct>
             <bibl corresp="bibl560-2">V. Ryssel</bibl>
-            <biblStruct corresp="bibl560-2">
-               <monogr>
+            <biblStruct corresp="bibl1053-3">
+               <analytic>
                   <author>
                      <forename>V.</forename>
                      <surname>Ryssel</surname>
                   </author>
+                  <title xml:lang="de" level="a">Syrische Quellen abendländischer
+                     Erzählungsstoffe: II. Die Siebenschläferlegende</title>
                   <idno type="URI">http://syriaca.org/bibl/847</idno>
-                  <imprint/>
+               </analytic>
+               <monogr>
+                  <title xml:lang="de" level="j">Archiv für das Studium der neueren Sprachen und
+                     Litteraturen</title>
+                  <imprint>
+                     <date>1895</date>
+                  </imprint>
+                  <biblScope from="95" to="95" unit="vol">95</biblScope>
+                  <biblScope unit="pp" from="1" to="54">1-54</biblScope>
                </monogr>
                <citedRange from="1" to="21" unit="pp" corresp="bibl560-2">1-21</citedRange>
             </biblStruct>
@@ -9106,19 +9143,20 @@
                      <surname>Ryssel</surname>
                   </author>
                   <title xml:lang="de" level="a">Syrische Quellen abendländischer
-                     Erzählungsstoffe</title>
+                     Erzählungsstoffe: II. Die Siebenschläferlegende</title>
                   <idno type="URI">http://syriaca.org/bibl/1139</idno>
                </analytic>
                <monogr>
                   <title xml:lang="de" level="j">Archiv für das Studium der neueren Sprachen und
-                     Litteraturen II</title>
+                     Litteraturen</title>
                   <imprint>
                      <date>1894</date>
                   </imprint>
                   <biblScope from="93" to="93" unit="vol">93</biblScope>
-                  <biblScope unit="pp" from="277" to="280">277-280</biblScope>
+                  <biblScope unit="pp" from="277" to="280">241-280</biblScope>
                </monogr>
                <citedRange from="277" to="280" unit="pp" corresp="bibl1053-3">277-280</citedRange>
+               <!--<citedRange from="1" to="21" unit="pp" corresp="bibl560-2">1-21</citedRange>-->
             </biblStruct>
             <bibl
                corresp="bibl1717-2 bibl1716-2 bibl1257-2 bibl1256-2 bibl1255-2 bibl1254-2 bibl1253-2"

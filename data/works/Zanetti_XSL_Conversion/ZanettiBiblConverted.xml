@@ -438,7 +438,7 @@
                   <idno type="URI">http://syriaca.org/bibl/1056</idno>
                </analytic>
                <monogr>
-                  <title level="j">Americal Historical Review</title>
+                  <title level="j">American Historical Review</title>
                   <imprint>
                      <date>1968</date>
                   </imprint>
@@ -5609,16 +5609,30 @@
             </biblStruct>
             <bibl corresp="bibl351-2">H. Lietzmann</bibl>
             <biblStruct corresp="bibl351-2">
+               <!-- is this an ok way to represent this work and Zanetti's reference to it in work/351? See 
+               http://www.csc.org.il/db/search.aspx?db=SB&f1=Lietzmann&f2=Das%20Leben%20des%20heiligen%20Symeon%20Stylites&f3=&fn1=&fn2=&fn3=&c1=and&c2=and&yf=&yt= and 
+               http://biblio.ebaf.info/cgi-bin/koha/opac-ISBDdetail.pl?biblionumber=34490 -->
                <monogr>
-                  <author>
+                  <editor>
                      <forename>H.</forename>
                      <surname>Lietzmann</surname>
-                  </author>
+                  </editor>
+                  <editor role="translator">
+                     <forename>H.</forename>
+                     <surname>Hilgenfeld</surname>
+                  </editor>
+                  <title xml:lang="de" level="m">Das Leben des heiligen Symeon Stylites</title>
                   <idno type="URI">http://syriaca.org/bibl/887</idno>
-                  <imprint/>
+                  <imprint>
+                     <pubPlace>Leipzig</pubPlace>
+                     <date>1908</date>
+                  </imprint>
                </monogr>
-               <citedRange from="197" to="255" unit="pp" corresp="bibl351-2">197-255:
-                  études</citedRange>
+               <series>
+                  <title xml:lang="de" level="s">Texte und Untersuchungen zur Geschichte der altchristlichen Literatur</title>
+                  <biblScope unit="vol">32.4</biblScope>
+               </series>
+               <citedRange from="197" to="255" unit="pp" corresp="bibl351-2">197-255: études</citedRange>
             </biblStruct>
             <bibl corresp="bibl921-23">R.A. Lipisius, Die edessenische Abgar-Sage kritisch
                untersucht, Braunschweig, 1880</bibl>
@@ -6238,13 +6252,19 @@
             </biblStruct>
             <bibl corresp="bibl368-2">A. Mingana</bibl>
             <biblStruct corresp="bibl368-2">
-               <monogr>
+               <analytic>
                   <author>
                      <forename>A.</forename>
                      <surname>Mingana</surname>
                   </author>
+                  <title xml:lang="en" level="m">Some Early Judaeo-Christian Documents in the John Rylands Library</title>
                   <idno type="URI">http://syriaca.org/bibl/878</idno>
-                  <imprint/>
+               </analytic>
+               <monogr>
+                  <title xml:lang="en" level="j">The Bulletin of the John Rylands Library</title>
+                  <imprint>
+                     <date>1917</date>
+                  </imprint>
                </monogr>
                <citedRange from="59" to="66" unit="pp" corresp="bibl368-2">59-66</citedRange>
             </biblStruct>

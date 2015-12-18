@@ -2,7 +2,8 @@
 <!-- QUESTIONS:
    1. How do we input multiple languages for authors? Using choice/seg inside author? See, e.g., bibl/2, which I don't think is the right way to do this.
    2. How should Russian transliteration be shown in @xml:lang? "ru-Latn-iso9r95"?
-   3. If I come across URIs for works while looking up their info, should I insert them as idno/@type="URI"? -->
+   3. If I come across URIs for works while looking up their info, should I insert them as idno/@type="URI"? 
+   4. Is the usage of relatedItem and the notes accompanying them the best way to do reprints? (see bibl/940, 941, 942, 1202 below). -->
 
 <!-- LOG: 
    1. Manually dealt with Unicode characters that had not come in correctly: Æ = ‘, æ = ‘, ¥ = ē, € = [?], ‹ = ā, ˜ = ō, º = ū, ? = ṣ -->
@@ -132,6 +133,14 @@
             <bibl corresp="bibl297-21">J. Vellian (éd.), The Apostle Thomas in India according to
                the Acts of Thomas (The Syrian Churches Series, 1), Kottayam, 1972</bibl>
             <biblStruct corresp="bibl297-21">
+               <analytic>
+                  <author>
+                     <forename>J.N.</forename>
+                     <surname>Farquhar</surname>
+                  </author>
+                  <title xml:lang="en" level="a">The Apostle Thomas in North India</title>
+                  <idno type="URI">http://syriaca.org/bibl/942</idno>
+               </analytic>
                <monogr>
                   <editor>
                      <forename>J.</forename>
@@ -139,31 +148,94 @@
                   </editor>
                   <title xml:lang="en" level="m">The Apostle Thomas in India according to the Acts
                      of Thomas</title>
-                  <idno type="URI">http://syriaca.org/bibl/942</idno>
                   <imprint>
                      <pubPlace>Kottayam</pubPlace>
                      <date>1972</date>
                   </imprint>
+                  <biblScope unit="pp" from="1" to="76">1-76 <note>This article is the first of two within this page range.</note></biblScope>
                </monogr>
                <series>
                   <title xml:lang="en" level="s">The Syrian Churches Series</title>
                   <biblScope unit="vol">1</biblScope>
                </series>
-               <citedRange from="1" to="76" unit="pp" corresp="bibl297-21">1-76 (réimpr. des 2
-                  articles de Farquhar)</citedRange>
+               <relatedItem target="http://syriaca.org/bibl/940" type="alternate-printing"/>
+               <note>This is a reprint of <ref target="http://syriaca.org/bibl/940">The Bulletin of the John Rylands Library 10 (1926), 80-111</ref>.</note>
+               <citedRange from="1" to="76" unit="pp" corresp="bibl297-21">1-76 <note>This article is the first of two within this page range.</note></citedRange>
+            </biblStruct>
+            <biblStruct corresp="bibl297-21b">
+               <analytic>
+                  <author>
+                     <forename>J.N.</forename>
+                     <surname>Farquhar</surname>
+                  </author>
+                  <title xml:lang="en" level="a">The Apostle Thomas in South India</title>
+                  <idno type="URI">http://syriaca.org/bibl/1202</idno>
+               </analytic>
+               <monogr>
+                  <editor>
+                     <forename>J.</forename>
+                     <surname>Vellian</surname>
+                  </editor>
+                  <title xml:lang="en" level="m">The Apostle Thomas in India according to the Acts
+                     of Thomas</title>
+                  <imprint>
+                     <pubPlace>Kottayam</pubPlace>
+                     <date>1972</date>
+                  </imprint>
+                  <biblScope unit="pp" from="1" to="76">1-76 <note>This article is the second of two within this page range.</note></biblScope>
+               </monogr>
+               <series>
+                  <title xml:lang="en" level="s">The Syrian Churches Series</title>
+                  <biblScope unit="vol">1</biblScope>
+               </series>
+               <relatedItem target="http://syriaca.org/bibl/941" type="alternate-printing"/>
+               <note>This is a reprint of <ref target="http://syriaca.org/bibl/941">The Bulletin of the John Rylands Library 11 (1927), 20-50</ref>.</note>
+               <citedRange from="1" to="76" unit="pp" corresp="bibl297-21">1-76 <note>This article is the second of two within this page range.</note></citedRange>
             </biblStruct>
             <bibl corresp="bibl297-71">G. Bornkamm, dans E. Hennecke et W. Schneemelcher,
                Neutestamentliche Apokryphen in deutscher Übersetzung3, Tübingen, 1964</bibl>
             <biblStruct corresp="bibl297-71">
-               <monogr>
-                  <title xml:lang="de" level="m">E. Hennecke et W. Schneemelcher, Neutestamentliche
-                     Apokryphen in deutscher Übersetzung3</title>
+               <analytic>
+                  <author>
+                     <forename>G.</forename>
+                     <surname>Bornkamm</surname>
+                  </author>
+                  <title xml:lang="de" level="a">Thomasakten</title>
                   <idno type="URI">http://syriaca.org/bibl/991</idno>
+               </analytic>
+               <monogr>
+                  <editor>
+                     <forename>E.</forename>
+                     <surname>Hennecke</surname>
+                  </editor>
+                  <editor>
+                     <forename>W.</forename>
+                     <surname>Schneemelcher</surname>
+                  </editor>
+                  <title xml:lang="de" level="m">Apostolisches, Apokalypsen und Verwandtes</title>
                   <imprint>
                      <pubPlace>Tübingen</pubPlace>
                      <date>1964</date>
                   </imprint>
                   <biblScope unit="pp" from="349" to="353">349-353</biblScope>
+               </monogr>
+               <monogr>
+                  <editor>
+                     <forename>E.</forename>
+                     <surname>Hennecke</surname>
+                  </editor>
+                  <editor>
+                     <forename>W.</forename>
+                     <surname>Schneemelcher</surname>
+                  </editor>
+                  <title xml:lang="de" level="m">Neutestamentliche
+                     Apokryphen in deutscher Übersetzung</title>
+                  <edition>3</edition>
+                  <imprint>
+                     <pubPlace>Tübingen</pubPlace>
+                     <date>1959-1964</date>
+                  </imprint>
+                  <biblScope unit="vol" from="2" to="2"></biblScope>
                </monogr>
                <note xml:lang="fr">le reste de la trad. est faite
                   sur le grec</note>
@@ -242,18 +314,6 @@
                   </imprint>
 
                </monogr>
-            </biblStruct>
-            <bibl corresp="bibl1316-2">F. Nau, dans ROC, 2e sér., 9 (1914)</bibl>
-            <biblStruct corresp="bibl1316-2">
-               <monogr>
-                  <title level="m">ROC, 2e sér., 9 (1914)</title>
-                  <idno type="URI">http://syriaca.org/bibl/1087</idno>
-                  <imprint>
-                     <date>1914</date>
-                  </imprint>
-                  <biblScope unit="pp" from="432" to="440">432-440</biblScope>
-               </monogr>
-               <citedRange from="432" to="440" unit="pp" corresp="bibl1316-2">432-440</citedRange>
             </biblStruct>
             <bibl corresp="bibl250-5">AA, I sette dormienti. Storia e leggenda, dans Bessarione, 1
                (1896-1897)</bibl>
@@ -3428,6 +3488,8 @@
                   <biblScope from="10" to="10" unit="vol">10</biblScope>
                   <biblScope unit="pp" from="80" to="111">80-111</biblScope>
                </monogr>
+               <relatedItem target="http://syriaca.org/bibl/942" type="alternate-printing"/>
+               <note>This is reprinted in <ref target="http://syriaca.org/bibl/942">J. Vellian (ed.), The Apostle Thomas in India according to the Acts of Thomas (Kottayam, 1972), 1-76</ref>.</note>
                <citedRange from="80" to="111" unit="pp" corresp="bibl297-19">80-111</citedRange>
             </biblStruct>
             <bibl corresp="bibl297-20">J.N. Farquhar, The Apostle Thomas in South India, dans BJRL,
@@ -3449,6 +3511,8 @@
                   <biblScope from="11" to="11" unit="vol">11</biblScope>
                   <biblScope unit="pp" from="20" to="50">20-50</biblScope>
                </monogr>
+               <relatedItem target="http://syriaca.org/bibl/1202" type="alternate-printing"/>
+               <note>This is reprinted in <ref target="http://syriaca.org/bibl/1202">J. Vellian (ed.), The Apostle Thomas in India according to the Acts of Thomas (Kottayam, 1972), 1-76</ref>.</note>
                <citedRange from="20" to="50" unit="pp" corresp="bibl297-20">20-50</citedRange>
             </biblStruct>
             <bibl corresp="bibl921-13">F. Fiaccadori, Cristo all’Eufrate, dans Parola del Passato,
@@ -6528,14 +6592,14 @@
             </biblStruct>
             <bibl corresp="bibl1493-2">F. Nau, Résumé de monographies syriaques, dans ROC, 2e sér.,
                9 (1914)</bibl>
-            <biblStruct corresp="bibl1493-2">
+            <biblStruct corresp="bibl1493-2 bibl1135-2 bibl1316-2">
                <!-- check: is this the right way to handle multiple series of journal? -->
                <analytic>
                   <author>
                      <forename>F.</forename>
                      <surname>Nau</surname>
                   </author>
-                  <title level="a">Résumé de monographies syriaques</title>
+                  <title level="a">Résumé de monographies syriaques: Barṣauma, Abraham de la Haute Montagne, Siméon de Kefar ʿAbdin, Yaret l’alexandrin, Jacques le reclus, Romanus, Talia, Asia, Pantaléon, Candida</title>
                   <idno type="URI">http://syriaca.org/bibl/1072</idno>
                </analytic>
                <monogr>
@@ -6549,6 +6613,8 @@
                   <biblScope unit="pp" from="420" to="431">414-440</biblScope>
                </monogr>
                <citedRange from="420" to="431" unit="pp" corresp="bibl1493-2">420-431</citedRange>
+               <citedRange from="413" to="419" unit="pp" corresp="bibl1135-2">413-419</citedRange>
+               <citedRange from="432" to="440" unit="pp" corresp="bibl1316-2">432-440</citedRange>
             </biblStruct>
             <bibl corresp="bibl1288-2">F. Nau, Une version syriaque inédite de la Vie de Schenoudi,
                dans Revue sémitique, 7 (1899)</bibl>
@@ -6664,26 +6730,6 @@
                <citedRange from="224" to="246" unit="pp" corresp="bibl1136-2">224-246</citedRange>
                <citedRange from="224" to="246" unit="pp" corresp="bibl1973-2">224-246</citedRange>
             </biblStruct>
-            <bibl corresp="bibl1135-2">F. Nau, Résumé de monographies syriaques, dans ROC, 2e sér. 9
-               (1914)</bibl>
-            <biblStruct corresp="bibl1135-2">
-               <analytic>
-                  <author>
-                     <forename>F.</forename>
-                     <surname>Nau</surname>
-                  </author>
-                  <title level="a">Résumé de monographies syriaques</title>
-                  <idno type="URI">http://syriaca.org/bibl/1120</idno>
-               </analytic>
-               <monogr>
-                  <title level="m">ROC, 2e sér. 9 (1914)</title>
-                  <imprint>
-                     <date>1914</date>
-                  </imprint>
-                  <biblScope unit="pp" from="413" to="419">413-419</biblScope>
-               </monogr>
-               <citedRange from="413" to="419" unit="pp" corresp="bibl1135-2">413-419</citedRange>
-            </biblStruct>
             <bibl
                corresp="bibl1134-2 bibl1133-2 bibl1132-2 bibl1131-2 bibl1130-2 bibl1129-2 bibl1128-2 bibl1127-2 bibl1068-3 bibl1065-3"
                >F. Nau, Hagiographie syriaque, dans ROC, 2e sér. 5 (1910)</bibl>
@@ -6782,8 +6828,11 @@
                   <biblScope unit="pp" from="272" to="276, 379">272-276, 379-389; 9 (1914), p.
                      113-134, 278-289</biblScope>
                </monogr>
-               <citedRange from="272" to="276, 379" unit="pp" corresp="bibl1073-4">272-276, 379-389;
-                  9 (1914), p. 113-134, 278-289</citedRange>
+               <!-- check: These all seem to be part of the same article (and the same as bibl/1072). How to do this? Also make sure biblScope is correct -->
+               <citedRange from="272" to="276" unit="pp" corresp="bibl1073-4">272-276</citedRange>
+               <citedRange from="379" to="389" unit="pp" corresp="bibl1073-4">379-389</citedRange>
+               <citedRange from="113" to="134" unit="pp" corresp="bibl1073-4">9 (1914), 113-134</citedRange>
+               <citedRange from="278" to="289" unit="pp" corresp="bibl1073-4">9 (1914), 278-289</citedRange>
             </biblStruct>
             <bibl corresp="bibl297-41">S. Neill, A History of Christianity in India. The Beginnings
                to AD 1707, Cambridge, 1984</bibl>

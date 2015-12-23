@@ -31,7 +31,7 @@
             <biblStruct
                corresp="bibl894-2 bibl893-2 bibl892-2 bibl891-2 bibl890-2 bibl889-2 bibl888-5 bibl297-10" type="review">
                <analytic>
-                  <title level="a">CR de T. Nöldeke</title>
+                  <title level="a" xml:lang="fr">CR de T. Nöldeke</title>
                   <idno type="URI">http://syriaca.org/bibl/799</idno>
                </analytic>
                <monogr>
@@ -60,18 +60,21 @@
                      <forename>A.</forename>
                      <surname>Hengstenberg</surname>
                   </author>
-                  <title level="a">Nachtrag zu dem Aufsatz: Der Drachenkampf des heiligen
+                  <title level="a" xml:lang="de">Nachtrag zu dem Aufsatz: Der Drachenkampf des heiligen
                      Theodor</title>
                   <idno type="URI">http://syriaca.org/bibl/861</idno>
                </analytic>
                <monogr>
-                  <title level="j">Oriens christianus, n.s.</title>
+                  <title level="j" xml:lang="la">Oriens christianus</title>
                   <imprint>
                      <date>1913</date>
                   </imprint>
                   <biblScope unit="vol" from="3" to="3">3</biblScope>
                   <biblScope from="135" to="137" unit="pp" corresp="bibl397-3">135-137</biblScope>
                </monogr>
+               <series>
+                  <title level="s" xml:lang="de">Neue Serie</title>
+               </series>
                <citedRange from="135" to="137" unit="pp" corresp="bibl397-3">135-137</citedRange>
             </biblStruct>
             <bibl corresp="bibl396-4">D. Hemmerdinger-Iliadou, dans DSp IV</bibl>
@@ -158,8 +161,13 @@
                   <title xml:lang="en" level="s">The Syrian Churches Series</title>
                   <biblScope unit="vol">1</biblScope>
                </series>
-               <relatedItem target="http://syriaca.org/bibl/940" type="alternate-printing"/>
-               <note>This is a reprint of <ref target="http://syriaca.org/bibl/940">The Bulletin of the John Rylands Library 10 (1926), 80-111</ref>.</note>
+               <relatedItem>
+                  <listRelation>
+                     <relation name="alternate-printing-of" active="http://syriaca.org/bibl/942" passive="http://syriaca.org/bibl/940">
+                        <desc>This is a reprint of <ref target="http://syriaca.org/bibl/940">The Bulletin of the John Rylands Library 10 (1926), 80-111</ref>.</desc>
+                     </relation>
+                  </listRelation>
+               </relatedItem>
                <citedRange from="1" to="76" unit="pp" corresp="bibl297-21">1-76 <note>This article is the first of two within this page range.</note></citedRange>
             </biblStruct>
             <biblStruct corresp="bibl297-21b">
@@ -279,7 +287,7 @@
                   <idno type="URI">http://syriaca.org/bibl/1041</idno>
                </analytic>
                <monogr>
-                  <title level="j">La Civiltà cattolica</title>
+                  <title level="j" xml:lang="it">La Civiltà cattolica</title>
                   <imprint>
                      <date>1897</date>
                   </imprint>
@@ -292,16 +300,10 @@
             <biblStruct corresp="bibl1404-2">
                <monogr>
                   <author>
-                     <choice xml:lang="en-x-gedsh">
-                        <seg>
-                           <forename>S.</forename>
-                           <surname>Qāšā</surname>
-                        </seg>
-                        <seg xml:lang="ar">
-                           <forename>سهيل</forename>
-                           <surname>قاشا</surname>
-                        </seg>
-                     </choice>
+                     <forename xml:lang="en-x-gedsh">S.</forename>
+                     <surname xml:lang="en-x-gedsh">Qāšā</surname>
+                     <forename xml:lang="ar">سهيل</forename>
+                     <surname xml:lang="ar">قاشا</surname>
                   </author>
                   <title level="m" xml:lang="en-x-gedsh">Sīrat al-šahīd Mār Zaynā</title>
                   <title level="m" xml:lang="ar">سيرة الشهيد مار زينا</title>
@@ -312,7 +314,6 @@
                      <pubPlace>Mossoul</pubPlace>
                      <date>1965</date>
                   </imprint>
-
                </monogr>
             </biblStruct>
             <bibl corresp="bibl250-5">AA, I sette dormienti. Storia e leggenda, dans Bessarione, 1
@@ -406,7 +407,7 @@
                   <biblScope unit="pp" from="47" to="56">47-56</biblScope>
                </monogr>
                <series>
-                  <title level="s">Cahiers d’orientalisme</title>
+                  <title level="s" xml:lang="fr">Cahiers d’orientalisme</title>
                   <biblScope unit="vol">20</biblScope>
                </series>
                <citedRange from="47" to="56" unit="pp" corresp="bibl353-5">47-56</citedRange>
@@ -470,7 +471,7 @@
                   <idno type="URI">http://syriaca.org/bibl/1056</idno>
                </analytic>
                <monogr>
-                  <title level="j">American Historical Review</title>
+                  <title level="j" xml:lang="en">American Historical Review</title>
                   <imprint>
                      <date>1968</date>
                   </imprint>
@@ -545,18 +546,22 @@
                   <idno type="URI">http://syriaca.org/bibl/1065</idno>
                </analytic>
                <monogr>
-                  <title level="j">Medievalia et Humanistica, N.S.</title>
+                  <title level="j" xml:lang="la">Medievalia et Humanistica</title>
                   <imprint>
                      <date>1971</date>
                   </imprint>
                   <biblScope unit="vol" from="2" to="2">2</biblScope>
                   <biblScope unit="pp" from="47" to="68">47-68</biblScope>
                </monogr>
+               <series>
+                  <title xml:lang="en" level="s">New Series</title>
+               </series>
                <citedRange from="47" to="68" unit="pp" corresp="bibl1558-12">47-68</citedRange>
             </biblStruct>
             <bibl corresp="bibl250-4">A. Allgeier, Untersuchungen zur syrischen Überlieferung der
                Siebenschläferlegende, dans OC, n.s. 4 (1915)</bibl>
             <biblStruct corresp="bibl250-4">
+               <!-- check: how to cite articles that span multiple volumes? -->
                <analytic>
                   <author>
                      <forename>A.</forename>
@@ -567,15 +572,28 @@
                   <idno type="URI">http://syriaca.org/bibl/1030</idno>
                </analytic>
                <monogr>
-                  <title level="m">OC, n.s. 4 (1915)</title>
+                  <title level="m" xml:lang="la">Oriens christianus</title>
+                  <idno type="zotero">98</idno>
                   <imprint>
                      <date>1915</date>
                   </imprint>
+                  <biblScope unit="series" from="2" to="2">2</biblScope>
+                  <biblScope unit="vol" from="4" to="4">4</biblScope>
+                  <biblScope unit="pp" from="279" to="297">279-297</biblScope>
+               </monogr>
+               <monogr>
+                  <title level="m" xml:lang="la">Oriens christianus</title>
+                  <idno type="zotero">98</idno>
+                  <imprint>
+                     <date>1915</date>
+                  </imprint>
+                  <biblScope unit="series" from="2" to="2">2</biblScope>
+                  <biblScope unit="vol" from="5" to="5">5</biblScope>
                   <biblScope unit="pp" from="279" to="297">279-297; n.s. 5 (1915), p. 10-59 et
                      262-270</biblScope>
                </monogr>
-               <citedRange from="279" to="297" unit="pp" corresp="bibl250-4">279-297; n.s. 5 (1915),
-                  p. 10-59 et 262-270</citedRange>
+               <citedRange from="10" to="59" unit="pp" corresp="bibl250-4">10-59</citedRange>
+               <citedRange from="262" to="270" unit="pp" corresp="bibl250-4">262-270</citedRange>
             </biblStruct>
             <bibl corresp="bibl1053-2">A. Allgeier, Die älteste Gestalt der Siebenschläferlegende,
                dans OC, n.s. 7-8 (1918)</bibl>
@@ -590,12 +608,17 @@
                   <idno type="URI">http://syriaca.org/bibl/1138</idno>
                </analytic>
                <monogr>
-                  <title level="m">OC, n.s. 7-8 (1918)</title>
+                  <title level="m">Oriens christianus</title>
+                  <idno type="zotero">98</idno>
                   <imprint>
                      <date>1918</date>
                   </imprint>
+                  <biblScope unit="vol" from="7" to="8">7-8</biblScope>
                   <biblScope unit="pp" from="33" to="87">33-87</biblScope>
                </monogr>
+               <series>
+                  <title xml:lang="de" level="s">Neue Serie</title>
+               </series>
                <citedRange from="33" to="87" unit="pp" corresp="bibl1053-2">33-87</citedRange>
             </biblStruct>
             <bibl corresp="bibl345-2">E. Ani?kov, Sv. Nikolaj i Artemida Èfesskaja, dans Zapiski
@@ -604,22 +627,13 @@
             <biblStruct corresp="bibl345-2">
                <analytic>
                   <author>
-                     <choice>
-                        <seg xml:lang="ru-Latn-iso9r95">
-                           <forename>E.</forename>
-                           <surname>Aničkov</surname>
-                        </seg>
-                     </choice>
-                     <choice>
-                        <seg xml:lang="ru">
-                           <forename>Е.</forename>
-                           <surname>Аничков</surname>
-                        </seg>
-                     </choice>
+                     <forename xml:lang="ru-Latn-iso9r95">E.</forename>
+                     <surname xml:lang="ru-Latn-iso9r95">Aničkov</surname>
+                     <forename xml:lang="ru">Е.</forename>
+                     <surname xml:lang="ru">Аничков</surname>
                   </author>
-                  <title xml:lang="ru-Latn-iso9r95" level="a">Sv. Nikolaj i Artemida
-                     Èfesskaâ</title>
-                  <title xml:lang="ru" level="a">Св. Николай и Артемида Эфесская</title>
+                  <title level="a" xml:lang="ru-Latn-iso9r95">Sv. Nikolaj i Artemida Èfesskaâ</title>
+                  <title level="a" xml:lang="ru">Св. Николай и Артемида Эфесская</title>
                   <idno type="URI">http://syriaca.org/bibl/902</idno>
                   <idno type="URI">http://krotov.info/acts/10/3/nikolay.htm</idno>
                   <!-- OK to include this? As an idno? -->
@@ -662,10 +676,13 @@
                <!-- check -->
                <monogr>
                   <author>
-                     <forename>A.K.</forename>
-                     <surname>Arvanitis</surname>
+                     <forename xml:lang="el-Latn-iso843">A.K.</forename>
+                     <surname xml:lang="el-Latn-iso843">Arvanítīs</surname>
+                     <forename xml:lang="el">Αθανάσιος Κ.</forename>
+                     <surname xml:lang="el">Αρβανίτης</surname>
                   </author>
-                  <title level="m">?O Òpóstolow Yvmâw kaì ä SuriakÎ ¸Ekklhsía toû Malampár</title>
+                  <title level="m" xml:lang="el-Latn-iso843">O Apóstolos Thōmás kai Syriakī́ Ekklīsía toy Malampár en tī istoría kai tō parónti</title>
+                  <title level="m" xml:lang="el">Ο Απόστολος Θωμάς και Συριακή Εκκλησία του Μαλαμπάρ εν τη ιστορία και τω παρόντι</title>
                   <idno type="URI">http://syriaca.org/bibl/984</idno>
                   <imprint>
                      <pubPlace>Athènes</pubPlace>
@@ -677,17 +694,30 @@
                corresp="bibl980-6 bibl400-2 bibl291-3 bibl285-5 bibl284-3 bibl283-5 bibl277-5 bibl276-4 bibl275-3 bibl273-4 bibl272-3 bibl271-4 bibl270-3 bibl269-4 bibl263-7 bibl260-3 bibl1387-2 bibl1292-2 bibl1151-2b"
                >J.S. Assemani, BO 1</bibl>
             <biblStruct
-               corresp="bibl980-6 bibl400-2 bibl291-3 bibl285-5 bibl284-3 bibl283-5 bibl277-5 bibl276-4 bibl275-3 bibl273-4 bibl272-3 bibl271-4 bibl270-3 bibl269-4 bibl263-7 bibl260-3 bibl1387-2 bibl1292-2 bibl1151-2b">
+               corresp="bibl916-2 bibl980-6 bibl400-2 bibl291-3 bibl285-5 bibl284-3 bibl283-5 bibl277-5 bibl276-4 bibl275-3 bibl273-4 bibl272-3 bibl271-4 bibl270-3 bibl269-4 bibl263-7 bibl260-3 bibl1387-2 bibl1292-2 bibl1151-2b">
                <monogr>
                   <author>
                      <forename>J.S.</forename>
                      <surname>Assemani</surname>
                   </author>
-                  <title level="m">BO 1</title>
+                  <title level="m" xml:lang="la">De scriptoribus Syris orthodoxis</title>
                   <idno type="URI">http://syriaca.org/bibl/709</idno>
                   <imprint>
-                     <date>1</date>
+                     <pubPlace>Rome</pubPlace>
+                     <date>1719</date>
                   </imprint>
+               </monogr>
+               <monogr>
+                  <author>
+                     <forename>J.S.</forename>
+                     <surname>Assemani</surname>
+                  </author>
+                  <title level="m" xml:lang="la">Bibliotheca orientalis Clementino-Vaticana</title>
+                  <idno type="zotero">17</idno>
+                  <imprint>
+                     <date>1719-1728</date>
+                  </imprint>
+                  <biblScope unit="vol" from="1" to="1">1</biblScope>
                </monogr>
                <citedRange from="286" to="289" unit="pp" corresp="bibl980-6">286-289 (dans note),
                   340</citedRange>
@@ -711,21 +741,6 @@
                <citedRange from="139" to="140" unit="pp" corresp="bibl1292-2">139-140</citedRange>
                <citedRange from="335" to="338" unit="pp" corresp="bibl1151-2b">335-338</citedRange>
             </biblStruct>
-            <bibl corresp="bibl916-2">J. S. Assemani, BO 1</bibl>
-            <biblStruct corresp="bibl916-2">
-               <monogr>
-                  <author>
-                     <forename>J. S.</forename>
-                     <surname>Assemani</surname>
-                  </author>
-                  <title level="m">BO 1</title>
-                  <idno type="URI">http://syriaca.org/bibl/774</idno>
-                  <imprint>
-                     <date>1</date>
-                  </imprint>
-               </monogr>
-               <citedRange from="239" to="253" unit="pp" corresp="bibl916-2">239-253</citedRange>
-            </biblStruct>
             <bibl corresp="bibl1290-2">J.S. Assemani, BO 3</bibl>
             <biblStruct corresp="bibl1290-2">
                <monogr>
@@ -733,11 +748,25 @@
                      <forename>J.S.</forename>
                      <surname>Assemani</surname>
                   </author>
-                  <title level="m">BO 3</title>
-                  <idno type="URI">http://syriaca.org/bibl/1088</idno>
+                  <title level="m" xml:lang="la">De scriptoribus Syris Nestorianis</title>
+                  <idno type="URI">http://syriaca.org/bibl/709</idno>
                   <imprint>
-                     <date>3</date>
+                     <pubPlace>Rome</pubPlace>
+                     <date>1725</date>
                   </imprint>
+               </monogr>
+               <monogr>
+                  <author>
+                     <forename>J.S.</forename>
+                     <surname>Assemani</surname>
+                  </author>
+                  <title level="m" xml:lang="la">Bibliotheca orientalis Clementino-Vaticana</title>
+                  <idno type="zotero">17</idno>
+                  <imprint>
+                     <date>1719-1728</date>
+                  </imprint>
+                  <biblScope unit="vol" from="1" to="1">1</biblScope>
+                  <biblScope unit="part" from="1" to="1">1</biblScope>
                </monogr>
                <citedRange from="463" to="501" unit="pp" corresp="bibl1290-2">463-501</citedRange>
             </biblStruct>
@@ -2014,13 +2043,18 @@
                      <forename>R.</forename>
                      <surname>Caro</surname>
                   </author>
-                  <title xml:lang="ru" level="m">La Homiletica Mariana Griega en el Siglo V. I
-                     (Marian Library Studies, NS 3), Dayton (Ohio), 1971</title>
+                  <title xml:lang="es" level="m">La Homiletica Mariana Griega en el Siglo V</title>
                   <idno type="URI">http://syriaca.org/bibl/1143</idno>
                   <imprint>
+                     <pubPlace>Dayton (Ohio)</pubPlace>
                      <date>1971</date>
                   </imprint>
+                  <biblScope unit="part" from="1" to="1">1</biblScope>
                </monogr>
+               <series>
+                  <title level="a" xml:lang="en">Marian Library Studies, new series</title>
+                  <biblScope unit="vol" from="3" to="3">3</biblScope>
+               </series>
                <citedRange from="59" to="75" unit="pp" corresp="bibl1046-3">59-75</citedRange>
             </biblStruct>
             <bibl corresp="bibl1558-7">A. Carotoglou, Méthode de Patara, ‘Le temps de l’apostasie et
@@ -2058,15 +2092,16 @@
                   <idno type="URI">http://syriaca.org/bibl/747</idno>
                </analytic>
                <monogr>
-                  <title xml:lang="fr" level="m">Revue de l’Orient latin, 3 (1895)</title>
+                  <title xml:lang="fr" level="j">Revue de l’Orient latin</title>
                   <imprint>
                      <date>1895</date>
                   </imprint>
-                  <biblScope unit="pp" from="367" to="397">367-397 (analyse avec traduction de
-                     quelques passages)</biblScope>
+                  <biblScope unit="vol" from="3" to="3">3</biblScope>
+                  <biblScope unit="pp" from="367" to="397">367-397</biblScope>
                </monogr>
-               <citedRange from="367" to="397" unit="pp" corresp="bibl928-3">367-397 (analyse avec
-                  traduction de quelques passages)</citedRange>
+               <note xml:lang="fr">analyse avec traduction de
+                  quelques passages</note>
+               <citedRange from="367" to="397" unit="pp" corresp="bibl928-3">367-397</citedRange>
             </biblStruct>
             <bibl corresp="bibl1271-2">J.H. Charlesworth</bibl>
             <biblStruct corresp="bibl1271-2">
@@ -2172,7 +2207,7 @@
                      <forename>B.E.</forename>
                      <surname>Colless</surname>
                   </author>
-                  <title xml:lang="en" level="a">The Biograhies of John Saba</title>
+                  <title xml:lang="en" level="a">The Biographies of John Saba</title>
                   <idno type="URI">http://syriaca.org/bibl/1136</idno>
                </analytic>
                <monogr>
@@ -2467,7 +2502,7 @@
                      <forename>B.</forename>
                      <surname>Dehandschutter</surname>
                   </author>
-                  <title xml:lang="de" level="m">Martyrium Polycarpi. Een literair-kritische
+                  <title xml:lang="nl" level="m">Martyrium Polycarpi. Een literair-kritische
                      studie</title>
                   <idno type="URI">http://syriaca.org/bibl/877</idno>
                   <imprint>
@@ -3157,16 +3192,10 @@
             <biblStruct corresp="bibl792-2">
                <monogr>
                   <author>
-                     <choice>
-                        <seg>
-                           <forename xml:lang="ru-Latn-iso9r95">A. P.</forename>
-                           <surname xml:lang="ru-Latn-iso9r95">D'âkonov</surname>
-                        </seg>
-                        <seg>
-                           <forename xml:lang="ru">А. П.</forename>
-                           <surname xml:lang="ru">Дьяконов</surname>
-                        </seg>
-                     </choice>
+                     <forename xml:lang="ru-Latn-iso9r95">A. P.</forename>
+                     <surname xml:lang="ru-Latn-iso9r95">D'âkonov</surname>
+                     <forename xml:lang="ru">А. П.</forename>
+                     <surname xml:lang="ru">Дьяконов</surname>
                   </author>
                   <title xml:lang="ru-Latn-iso9r95" level="m">Ioann Efesskij i ego
                      cerkovno-istoričeskie trudy</title>
@@ -4602,19 +4631,19 @@
                   <title xml:lang="de" level="s">Abhandlungen für die Kunde des Morgenlandes</title>
                   <biblScope unit="vol">7/3</biblScope>
                </series>
-               <citedRange from="115" to="121, 167" unit="pp" corresp="bibl901-2">115-121,
-                  167-175</citedRange>
+               <citedRange from="115" to="121" unit="pp" corresp="bibl901-2">115-121</citedRange>
+               <citedRange from="167" to="175" unit="pp" corresp="bibl901-2">167-175</citedRange>
                <citedRange from="174" to="175" unit="pp" corresp="bibl338-2">174-175</citedRange>
                <citedRange from="281" to="293" unit="pp" corresp="bibl332-2">281-293</citedRange>
                <citedRange from="122" to="130" unit="pp" corresp="bibl294-2">122-130</citedRange>
                <citedRange from="175" to="179" unit="pp" corresp="bibl286-2">175-179</citedRange>
-               <citedRange from="130" to="161, 267" unit="pp" corresp="bibl274-2">130-161,
-                  267-281</citedRange>
-               <citedRange from="250" to="253, 281" unit="pp" corresp="bibl1227-2">250-253,
-                  281-293</citedRange>
+               <citedRange from="130" to="161" unit="pp" corresp="bibl274-2">130-161</citedRange>
+               <citedRange from="267" to="281" unit="pp" corresp="bibl274-2">267-281</citedRange>
+               <citedRange from="250" to="253" unit="pp" corresp="bibl1227-2">250-253</citedRange>
+               <citedRange from="281" to="293" unit="pp" corresp="bibl1227-2">281-293</citedRange>
                <citedRange from="130" to="166" unit="pp" corresp="bibl1226-2">130-166</citedRange>
-               <citedRange from="130" to="161, 175" unit="pp" corresp="bibl1210-2">130-161,
-                  175-188</citedRange>
+               <citedRange from="130" to="161" unit="pp" corresp="bibl1210-2">130-161</citedRange>
+               <citedRange from="175" to="188" unit="pp" corresp="bibl1210-2">175-188</citedRange>
             </biblStruct>
             <bibl corresp="bibl297-12">G. Hoffmann, Zwei Hymnen der Thomasakten, dans ZNW, 4
                (1903)</bibl>
@@ -4785,15 +4814,9 @@
             <biblStruct corresp="bibl254-6">
                <monogr>
                   <author>
-                     <choice>
-                        <seg xml:lang="fr">
-                           <addName>Patriarche</addName>
-                           <surname>Ignace Jacques III</surname>
-                        </seg>
-                        <seg xml:lang="ar">
-                           <surname>أغناطيوس يعقوب الثالث</surname>
-                        </seg>
-                     </choice>
+                     <addName xml:lang="fr">Patriarche</addName>
+                     <surname xml:lang="fr">Ignace Jacques III</surname>
+                     <surname xml:lang="ar">أغناطيوس يعقوب الثالث</surname>
                   </author>
                   <title level="m" xml:lang="en-x-gedsh">Al-šuhadāʾ al-ḥimyarīyūn al-ʿArab fī
                      al-wathāʾiq al-suryānīya</title>
@@ -4814,8 +4837,7 @@
                      <forename>T.</forename>
                      <surname>Jansma</surname>
                   </author>
-                  <title xml:lang="fr" level="a">Projet d’édition du Ketâbâ derê¯ mellê de Jean bar
-                     Penkaye</title>
+                  <title xml:lang="fr" level="a">Projet d’edition du Ketaba d-rêshmellé, de Jean bar Penkayé</title>
                   <idno type="URI">http://syriaca.org/bibl/1112</idno>
                </analytic>
                <monogr>
@@ -4825,7 +4847,7 @@
                      <date>1963</date>
                   </imprint>
                   <biblScope from="8" to="8" unit="vol">8</biblScope>
-                  <biblScope unit="pp" from="89" to="92">89-92</biblScope>
+                  <biblScope unit="pp" from="89" to="92">87-106</biblScope>
                </monogr>
                <citedRange from="89" to="92" unit="pp" corresp="bibl1167-2a">89-92</citedRange>
                <citedRange from="89" to="92" unit="pp" corresp="bibl1072-2">89-92R. Beulay,
@@ -5327,16 +5349,10 @@
             <biblStruct corresp="bibl895-13">
                <analytic>
                   <author>
-                     <choice>
-                        <seg xml:lang="ru-Latn-iso9r95">
-                           <forename>E.I.</forename>
-                           <surname>Kyčanov</surname>
-                        </seg>
-                        <seg xml:lang="ru">
-                           <forename>E.И.</forename>
-                           <surname>Кычанов</surname>
-                        </seg>
-                     </choice>
+                     <forename xml:lang="ru-Latn-iso9r95">E.I.</forename>
+                     <surname xml:lang="ru-Latn-iso9r95">Kyčanov</surname>
+                     <forename xml:lang="ru">E.И.</forename>
+                     <surname xml:lang="ru">Кычанов</surname>
                   </author>
                   <title xml:lang="ru-Latn-iso9r95" level="a">Sirijskoe nestorianstvo v Kitae i
                      Central’noj Azii</title>
@@ -5989,21 +6005,64 @@
                      <forename>G.</forename>
                      <surname>Mercati</surname>
                   </author>
-                  <title xml:lang="ru" level="a">I Martiri di Palestina di Eusebio di Cesarea nel
+                  <title xml:lang="it" level="a">I Martiri di Palestina di Eusebio di Cesarea nel
                      codice Sinaitico</title>
                   <idno type="URI">http://syriaca.org/bibl/1044</idno>
                </analytic>
                <monogr>
-                  <title xml:lang="it" level="m">Rendiconti del R. Istituto Lombardo di Scienz e
-                     Lettere, ser. II, 30 (1897)</title>
+                  <title xml:lang="it" level="j">Rendiconti del R. Istituto Lombardo di Scienze
+                     Lettere</title>
                   <imprint>
                      <date>1897</date>
                   </imprint>
-                  <biblScope unit="pp" from="1060" to="1079,">1060-1079, repris dans Opere Minori 2
+                  <biblScope unit="vol" from="30" to="30">30</biblScope>
+                  <biblScope unit="pp" from="1060" to="1079">1060-1079, repris dans Opere Minori 2
                      (SeT 77), Vatican, 1937, p. 1-16</biblScope>
                </monogr>
-               <citedRange from="1060" to="1079," unit="pp" corresp="bibl231-6">1060-1079, repris
-                  dans Opere Minori 2 (SeT 77), Vatican, 1937, p. 1-16</citedRange>
+               <series>
+                  <title level="s">ser. II</title>
+               </series>
+               <relatedItem>
+                  <listRelation>
+                     <relation name="alternate-printing-of" active="http://syriaca.org/bibl/1203" passive="http://syriaca.org/bibl/1044">
+                        <desc>This was reprinted in <ref target="http://syriaca.org/bibl/1203">Opere Minori 2 (Vatican, 1937), 1-16</ref>.</desc>
+                     </relation>
+                  </listRelation>
+               </relatedItem>
+               <citedRange from="1060" to="1079," unit="pp" corresp="bibl231-6">1060-1079</citedRange>
+            </biblStruct>
+            <biblStruct corresp="bibl231-6b">
+               <analytic>
+                  <author>
+                     <forename>G.</forename>
+                     <surname>Mercati</surname>
+                  </author>
+                  <title xml:lang="it" level="a">I Martiri di Palestina di Eusebio di Cesarea nel
+                     codice Sinaitico</title>
+                  <idno type="URI">http://syriaca.org/bibl/1203</idno>
+               </analytic>
+               <monogr>
+                  <title xml:lang="it" level="m">Opere Minori</title>
+                  <imprint>
+                     <pubPlace>Vatican</pubPlace>
+                     <date>1937</date>
+                  </imprint>
+                  <biblScope unit="vol" from="2" to="2">2</biblScope>
+                  <biblScope unit="pp" from="1" to="16">1-16</biblScope>
+               </monogr>
+               <series>
+                  <title level="s">Studi e testi</title>
+                  <biblScope unit="vol" from="77" to="77">77</biblScope>
+               </series>
+               <relatedItem>
+                  <listRelation>
+                     <relation name="alternate-printing-of" active="http://syriaca.org/bibl/1203" passive="http://syriaca.org/bibl/1044">
+                        <desc>This is a reprint of <ref target="http://syriaca.org/bibl/1044">Rendiconti del R. Istituto Lombardo di Scienze
+                           Lettere 30 (1897), 1060-1079</ref>.</desc>
+                     </relation>
+                  </listRelation>
+               </relatedItem>
+               <citedRange from="1" to="16," unit="pp" corresp="bibl231-6b">1-16</citedRange>
             </biblStruct>
             <bibl corresp="bibl297-75">R. Merkelbach, Roman und Mysterium in der Antike,
                Munich-Berlin, 1962</bibl>
@@ -6027,16 +6086,10 @@
             <biblStruct corresp="bibl921-5">
                <analytic>
                   <author>
-                     <choice>
-                        <seg xml:lang="ru-Latn-iso9r95">
-                           <forename>E. N.</forename>
-                           <surname>Meŝerskaja</surname>
-                        </seg>
-                        <seg xml:lang="ru">
-                           <forename>Е. Н.</forename>
-                           <surname>Мещерская</surname>
-                        </seg>
-                     </choice>
+                     <forename xml:lang="ru-Latn-iso9r95">E. N.</forename>
+                     <surname xml:lang="ru-Latn-iso9r95">Meŝerskaja</surname>
+                     <forename xml:lang="ru">Е. Н.</forename>
+                     <surname xml:lang="ru">Мещерская</surname>
                   </author>
                   <title xml:lang="ru-Latn-iso9r95" level="a">Legenda ob avgare i apotropeičeskie
                      teksty na grečeskom jazyke</title>
@@ -6060,16 +6113,10 @@
             <biblStruct corresp="bibl921-21">
                <analytic>
                   <author>
-                     <choice>
-                        <seg xml:lang="ru-Latn-iso9r95">
-                           <forename>E. N.</forename>
-                           <surname>Meŝerskaja</surname>
-                        </seg>
-                        <seg xml:lang="ru">
-                           <forename>Е. Н.</forename>
-                           <surname>Мещерская</surname>
-                        </seg>
-                     </choice>
+                     <forename xml:lang="ru-Latn-iso9r95">E. N.</forename>
+                     <surname xml:lang="ru-Latn-iso9r95">Meŝerskaja</surname>
+                     <forename xml:lang="ru">Е. Н.</forename>
+                     <surname xml:lang="ru">Мещерская</surname>
                   </author>
                   <title level="a" xml:lang="ru-Latn-iso9r95">Legenda ob Avgare v literaturah
                      vizantijskogo kul'turnogo kruga</title>
@@ -6093,16 +6140,10 @@
             <biblStruct corresp="bibl921-22">
                <analytic>
                   <author>
-                     <choice>
-                        <seg xml:lang="ru-Latn-iso9r95">
-                           <forename>E. N.</forename>
-                           <surname>Meŝerskaja</surname>
-                        </seg>
-                        <seg xml:lang="ru">
-                           <forename>Е. Н.</forename>
-                           <surname>Мещерская</surname>
-                        </seg>
-                     </choice>
+                     <forename xml:lang="ru-Latn-iso9r95">E. N.</forename>
+                     <surname xml:lang="ru-Latn-iso9r95">Meŝerskaja</surname>
+                     <forename xml:lang="ru">Е. Н.</forename>
+                     <surname xml:lang="ru">Мещерская</surname>
                   </author>
                   <title xml:lang="ru-Latn-iso9r95" level="a">K izučeniû sirijskih istočnikov i
                      grečesko-slavânskih versij apokrifičeskih legend</title>
@@ -6126,16 +6167,10 @@
             <biblStruct corresp="bibl403-2">
                <analytic>
                   <author>
-                     <choice>
-                        <seg xml:lang="ru-Latn-iso9r95">
-                           <forename>E. N.</forename>
-                           <surname>Meŝerskaja</surname>
-                        </seg>
-                        <seg xml:lang="ru">
-                           <forename>Е. Н.</forename>
-                           <surname>Мещерская</surname>
-                        </seg>
-                     </choice>
+                     <forename xml:lang="ru-Latn-iso9r95">E. N.</forename>
+                     <surname xml:lang="ru-Latn-iso9r95">Meŝerskaja</surname>
+                     <forename xml:lang="ru">Е. Н.</forename>
+                     <surname xml:lang="ru">Мещерская</surname>
                   </author>
                   <title level="a" xml:lang="ru-Latn-iso9r95">“Pateriki” v sirijskoj
                      pis'mennosti</title>
@@ -6592,8 +6627,9 @@
             </biblStruct>
             <bibl corresp="bibl1493-2">F. Nau, Résumé de monographies syriaques, dans ROC, 2e sér.,
                9 (1914)</bibl>
-            <biblStruct corresp="bibl1493-2 bibl1135-2 bibl1316-2">
+            <biblStruct corresp="bibl1073-4 bibl1493-2 bibl1135-2 bibl1316-2">
                <!-- check: is this the right way to handle multiple series of journal? -->
+               <!-- check: what is the best way to handle an article appearing across multiple volumes (but without explicitly identified parts)? -->
                <analytic>
                   <author>
                      <forename>F.</forename>
@@ -6606,15 +6642,38 @@
                   <title level="m">Revue de l’Orient chrétien</title>
                   <idno type="zotero">118</idno>
                   <imprint>
+                     <date>1913</date>
+                  </imprint>
+                  <biblScope unit="vol" from="18" to="18">18</biblScope>
+                  <biblScope unit="pp" from="270" to="276">270-276</biblScope>
+                  <biblScope unit="pp" from="379" to="389">379-389</biblScope>
+               </monogr>
+               <monogr>
+                  <title level="m" xml:lang="fr">Revue de l’Orient chrétien</title>
+                  <idno type="zotero">118</idno>
+                  <imprint>
                      <date>1914</date>
                   </imprint>
-                  <biblScope unit="series" from="2" to="2">2</biblScope>
-                  <biblScope unit="vol" from="9" to="9">9</biblScope>
-                  <biblScope unit="pp" from="420" to="431">414-440</biblScope>
+                  <biblScope unit="vol" from="19" to="19">19</biblScope>
+                  <biblScope unit="pp" from="113" to="134">113-134</biblScope>
+                  <biblScope unit="pp" from="278" to="289">278-289</biblScope>
+                  <biblScope unit="pp" from="414" to="440">414-440</biblScope>
                </monogr>
-               <citedRange from="420" to="431" unit="pp" corresp="bibl1493-2">420-431</citedRange>
-               <citedRange from="413" to="419" unit="pp" corresp="bibl1135-2">413-419</citedRange>
-               <citedRange from="432" to="440" unit="pp" corresp="bibl1316-2">432-440</citedRange>
+               <series>
+                  <title level="s" xml:lang="fr">Deuxième Série</title>
+                  <biblScope unit="vol" from="8" to="8">8</biblScope>
+               </series>
+               <series>
+                  <title level="s" xml:lang="fr">Deuxième Série</title>
+                  <biblScope unit="vol" from="9" to="9">9</biblScope>
+               </series>
+               <citedRange from="272" to="276" unit="pp" corresp="bibl1073-4">8 (1913), 272-276</citedRange>
+               <citedRange from="379" to="389" unit="pp" corresp="bibl1073-4">8 (1913), 379-389</citedRange>
+               <citedRange from="113" to="134" unit="pp" corresp="bibl1073-4">9 (1914), 113-134</citedRange>
+               <citedRange from="278" to="289" unit="pp" corresp="bibl1073-4">9 (1914), 278-289</citedRange>
+               <citedRange from="420" to="431" unit="pp" corresp="bibl1493-2">9 (1914), 420-431</citedRange>
+               <citedRange from="413" to="419" unit="pp" corresp="bibl1135-2">9 (1914), 413-419</citedRange>
+               <citedRange from="432" to="440" unit="pp" corresp="bibl1316-2">9 (1914), 432-440</citedRange>
             </biblStruct>
             <bibl corresp="bibl1288-2">F. Nau, Une version syriaque inédite de la Vie de Schenoudi,
                dans Revue sémitique, 7 (1899)</bibl>
@@ -6663,6 +6722,7 @@
             <bibl corresp="bibl1143-2 bibl1142-2 bibl1141-2 bibl1140-2 bibl1139-2 bibl1138-2">F.
                Nau, Résumé de monographies syriaques, dans ROC, 2e sér. 10 (1915-1917)</bibl>
             <biblStruct corresp="bibl1143-2 bibl1142-2 bibl1141-2 bibl1140-2 bibl1139-2 bibl1138-2">
+               <!-- check: how should this article's pages be cited? -->
                <analytic>
                   <author>
                      <forename>F.</forename>
@@ -6809,31 +6869,6 @@
                </monogr>
                <citedRange from="184" to="202" unit="pp" corresp="bibl1073-3">184-202</citedRange>
             </biblStruct>
-            <bibl corresp="bibl1073-4">F. Nau, Résumé de monographies syriaques, dans ROC, 2e sér. 8
-               (1913)</bibl>
-            <biblStruct corresp="bibl1073-4">
-               <analytic>
-                  <author>
-                     <forename>F.</forename>
-                     <surname>Nau</surname>
-                  </author>
-                  <title level="a">Résumé de monographies syriaques</title>
-                  <idno type="URI">http://syriaca.org/bibl/1127</idno>
-               </analytic>
-               <monogr>
-                  <title level="m">ROC, 2e sér. 8 (1913)</title>
-                  <imprint>
-                     <date>1913</date>
-                  </imprint>
-                  <biblScope unit="pp" from="272" to="276, 379">272-276, 379-389; 9 (1914), p.
-                     113-134, 278-289</biblScope>
-               </monogr>
-               <!-- check: These all seem to be part of the same article (and the same as bibl/1072). How to do this? Also make sure biblScope is correct -->
-               <citedRange from="272" to="276" unit="pp" corresp="bibl1073-4">272-276</citedRange>
-               <citedRange from="379" to="389" unit="pp" corresp="bibl1073-4">379-389</citedRange>
-               <citedRange from="113" to="134" unit="pp" corresp="bibl1073-4">9 (1914), 113-134</citedRange>
-               <citedRange from="278" to="289" unit="pp" corresp="bibl1073-4">9 (1914), 278-289</citedRange>
-            </biblStruct>
             <bibl corresp="bibl297-41">S. Neill, A History of Christianity in India. The Beginnings
                to AD 1707, Cambridge, 1984</bibl>
             <biblStruct corresp="bibl297-41">
@@ -6946,7 +6981,8 @@
             <bibl corresp="bibl921-2 bibl921-3">J. Nirschl, Der Briefwechsel des Königs Abgar von
                Edessa mit Jesus in Jerusalem oder die Abgarfrage, dans Der Katholik, 76
                (1896)</bibl>
-            <biblStruct corresp="bibl921-2 bibl921-3">
+            <biblStruct corresp="bibl921-2">
+               <!-- check: what to do with article spread across multiple page ranges? This one has labeled parts. -->
                <analytic>
                   <author>
                      <forename>J.</forename>
@@ -6962,13 +6998,19 @@
                      <date>1896</date>
                   </imprint>
                   <biblScope from="76" to="76" unit="vol">76</biblScope>
-                  <biblScope unit="pp" from="17" to="40, 97">17-40, 97-114, 193-209, 322-345,
-                     398-420</biblScope>
+                  <biblScope unit="pp" from="17" to="40">17-40</biblScope>
+                  <biblScope unit="pp" from="97" to="114">97-114</biblScope>
+                  <biblScope unit="pp" from="193" to="209">193-209</biblScope>
+                  <biblScope unit="pp" from="322" to="345">322-345</biblScope>
+                  <biblScope unit="pp" from="398" to="420">398-420</biblScope>
                </monogr>
-               <citedRange from="17" to="40, 97" unit="pp" corresp="bibl921-2">17-40, 97-114,
-                  193-209, 322-345, 398-420</citedRange>
-               <citedRange from="17" to="40, 97" unit="pp" corresp="bibl921-3">17-40, 97-114,
-                  193-209, 322-345, 398-420 (pas vu)</citedRange>
+               <citedRange from="76" to="76" unit="vol" corresp="bibl921-2">76</citedRange>
+               <citedRange unit="pp" from="17" to="40" corresp="bibl921-2">17-40</citedRange>
+               <citedRange unit="pp" from="97" to="114" corresp="bibl921-2">97-114</citedRange>
+               <citedRange unit="pp" from="193" to="209" corresp="bibl921-2">193-209</citedRange>
+               <citedRange unit="pp" from="322" to="345" corresp="bibl921-2">322-345</citedRange>
+               <citedRange unit="pp" from="398" to="420" corresp="bibl921-2">398-420</citedRange>
+               <note corresp="bibl921-2" xml:lang="fr">pas vu</note>
             </biblStruct>
             <bibl corresp="bibl1748-2 bibl931-2 bibl1342-2 bibl1341-2 bibl1340-2 bibl1300-2">H. Näf,
                Syrische Josef-Gedichte, Zurich, 1923</bibl>
@@ -7104,11 +7146,13 @@
             <biblStruct corresp="bibl930-2">
                <analytic>
                   <author>
-                     <forename>A. V.</forename>
-                     <surname>Pajkova</surname>
+                     <forename xml:lang="ru-Latn-iso9r95">A.V.</forename>
+                     <surname xml:lang="ru-Latn-iso9r95">Pajkova</surname>
+                     <forename xml:lang="ru">Аза Владимировна</forename>
+                     <surname xml:lang="ru">Пайкова</surname>
                   </author>
-                  <title xml:lang="ru" level="a">Povestj o Evfimii i Gote (K voprosu ob opredelenii
-                     jazyka originala)</title>
+                  <title xml:lang="ru-Latn-iso9r95" level="a">Povest' o Evfimii i gote (k voprosu ob opredelenii âzyka originala)</title>
+                  <title xml:lang="ru" level="a">Повесть о Евфимии и готе (к вопросу об определении языка оригинала)</title>
                   <idno type="URI">http://syriaca.org/bibl/736</idno>
                </analytic>
                <monogr>
@@ -7128,16 +7172,10 @@
             <biblStruct corresp="bibl930-4 bibl929-7 bibl228-6">
                <analytic>
                   <author>
-                     <choice>
-                        <seg xml:lang="ru-Latn-iso9r95">
-                           <forename>A.V.</forename>
-                           <surname>Pajkova</surname>
-                        </seg>
-                        <seg xml:lang="ru">
-                           <forename>Аза Владимировна</forename>
-                           <surname>Пайкова</surname>
-                        </seg>
-                     </choice>
+                     <forename xml:lang="ru-Latn-iso9r95">A.V.</forename>
+                     <surname xml:lang="ru-Latn-iso9r95">Pajkova</surname>
+                     <forename xml:lang="ru">Аза Владимировна</forename>
+                     <surname xml:lang="ru">Пайкова</surname>
                   </author>
                   <title level="a" xml:lang="ru-Latn-iso9r95">K voprosu o vozniknovenii
                      belletrističeskogo povestvovaniâ v sirijskoj literature</title>
@@ -7163,16 +7201,10 @@
             <biblStruct corresp="bibl1065-2">
                <analytic>
                   <author>
-                     <choice>
-                        <seg xml:lang="ru-Latn-iso9r95">
-                           <forename>A.V.</forename>
-                           <surname>Pajkova</surname>
-                        </seg>
-                        <seg xml:lang="ru">
-                           <forename>Аза Владимировна</forename>
-                           <surname>Пайкова</surname>
-                        </seg>
-                     </choice>
+                     <forename xml:lang="ru-Latn-iso9r95">A.V.</forename>
+                     <surname xml:lang="ru-Latn-iso9r95">Pajkova</surname>
+                     <forename xml:lang="ru">Аза Владимировна</forename>
+                     <surname xml:lang="ru">Пайкова</surname>
                   </author>
                   <title level="a" xml:lang="ru-Latn-iso9r95">K voprosu o proishoždenii “Žitiâ
                      Aleksiâ, Čeloveka Bož'ego”</title>
@@ -8100,7 +8132,7 @@
                      <forename>P.</forename>
                      <surname>Peeters</surname>
                   </author>
-                  <title level="a">S. Éleuthérios-Guhi¯tazad</title>
+                  <title level="a">S. Eleutherios-Guhištazad</title>
                   <idno type="URI">http://syriaca.org/bibl/1007</idno>
                </analytic>
                <monogr>
@@ -8320,6 +8352,7 @@
             <bibl corresp="bibl297-28">W.R. Phillipps, The Connection of St. Thomas the Apostle with
                India, dansThe Indian Antiquary, 32 (1903)</bibl>
             <biblStruct corresp="bibl297-28">
+               <!-- check: what to do with articles spanning multiple volumes. Apparently the reference to vol. 33 is an additional note under the heading "Miscellanea" -->
                <analytic>
                   <author>
                      <forename>W.R.</forename>
@@ -8335,10 +8368,20 @@
                      <date>1903</date>
                   </imprint>
                   <biblScope from="32" to="32" unit="vol">32</biblScope>
-                  <biblScope unit="pp" from="1" to="15, 145">1-15, 145-160; 33 (1904), p.
-                     31</biblScope>
+                  <biblScope unit="pp" from="1" to="15">1-15</biblScope>
+                  <biblScope unit="pp" from="145" to="160">145-160</biblScope>
                </monogr>
-               <citedRange from="1" to="15, 145" unit="pp" corresp="bibl297-28">1-15, 145-160; 33
+               <monogr>
+                  <title xml:lang="en" level="j">The Indian Antiquary</title>
+                  <imprint>
+                     <date>1904</date>
+                  </imprint>
+                  <biblScope from="32" to="32" unit="vol">33</biblScope>
+                  <biblScope unit="pp" from="31" to="31">31</biblScope>
+               </monogr>
+               <citedRange from="1" to="15" unit="pp" corresp="bibl297-28">1-15</citedRange>
+               <citedRange from="145" to="160" unit="pp" corresp="bibl297-28">145-160</citedRange>
+               <citedRange from="31" to="31" unit="pp" corresp="bibl297-28">33
                   (1904), p. 31</citedRange>
             </biblStruct>
             <bibl corresp="bibl1147-2 bibl1123-2">N. Pigoulewsky, Le Martyre de saint Cyriaque de
@@ -8353,12 +8396,14 @@
                   <idno type="URI">http://syriaca.org/bibl/1116</idno>
                </analytic>
                <monogr>
-                  <title level="m">ROC, 3e sér. 6 (1927-1928)</title>
+                  <title level="m">Revue de l'Orient chrétien</title>
                   <imprint>
                      <date>1927-1928</date>
                   </imprint>
                   <biblScope unit="pp" from="305" to="331">305-331</biblScope>
                </monogr>
+               <citedRange unit="series" from="3" to="3">3</citedRange>
+               <citedRange unit="vol" from="6" to="6">6</citedRange>
                <citedRange from="305" to="331" unit="pp" corresp="bibl1147-2">305-331</citedRange>
                <citedRange from="305" to="331" unit="pp" corresp="bibl1123-2">305-331</citedRange>
             </biblStruct>
@@ -8367,10 +8412,13 @@
             <biblStruct corresp="bibl895-5">
                <analytic>
                   <author>
-                     <forename>N.V.</forename>
-                     <surname>Pigulevskaja</surname>
+                     <forename xml:lang="ru-Latn-iso9r95">N.V.</forename>
+                     <surname xml:lang="ru-Latn-iso9r95">Pigulevskaâ</surname>
+                     <forename xml:lang="ru">Н.В.</forename>
+                     <surname xml:lang="ru">Пигулевская</surname>
                   </author>
-                  <title xml:lang="ru" level="a">Istorija mar Jabalaxi i Saumy</title>
+                  <title xml:lang="ru-Latn-iso9r95" level="a">Istoriâ mar Âbalahi i Saumy</title>
+                  <title xml:lang="ru" level="a">История мар Ябалахи и Саумы</title>
                   <idno type="URI">http://syriaca.org/bibl/789</idno>
                </analytic>
                <monogr>
@@ -8399,13 +8447,21 @@
                   <idno type="URI">http://syriaca.org/bibl/1004</idno>
                </analytic>
                <monogr>
-                  <title xml:lang="de" level="m">R. Stiehl et H.E. Stier, Beiträge zur Alten
-                     Geschichte und deren Nachleben. Festschrift für Franz Altheim zum 6.10.1968,
-                     vol. 2</title>
+                  <editor>
+                     <forename>R.</forename>
+                     <surname>Stiehl</surname>
+                  </editor>
+                  <editor>
+                     <forename>H.E.</forename>
+                     <surname>Stier</surname>
+                  </editor>
+                  <title xml:lang="de" level="m">Beiträge zur Alten
+                     Geschichte und deren Nachleben. Festschrift für Franz Altheim zum 6.10.1968</title>
                   <imprint>
                      <pubPlace>Berlin</pubPlace>
                      <date>1970</date>
                   </imprint>
+                  <biblScope unit="vol" from="2" to="2">2</biblScope>
                   <biblScope unit="pp" from="96" to="100">96-100</biblScope>
                </monogr>
                <citedRange from="96" to="100" unit="pp" corresp="bibl269-5">96-100</citedRange>
@@ -8414,7 +8470,7 @@
                civilisation au VIe siècle de l’ère nouvelle, dans Mélanges Massé, Téhéran, 1963,
                10</bibl>
             <biblStruct corresp="bibl896-3">
-               <!-- check: what to do with this "offprint" pagination, which is different from the version listed in CBSC? -->
+               <!-- check: what to do with this "offprint" pagination, which is different from the page range (327-336) listed in CBSC? -->
                <analytic>
                   <author>
                      <forename>N.</forename>
@@ -8430,10 +8486,10 @@
                      <pubPlace>Téhéran</pubPlace>
                      <date>1963</date>
                   </imprint>
-                  <biblScope unit="pp" from="" to=""></biblScope>
+                  <biblScope unit="pp" from="327" to="336">327-336</biblScope>
                </monogr>
                <note>tiré à part</note>
-               <citedRange from="10" to="10" unit="pp" corresp="bibl896-3">10</citedRange>
+               <citedRange unit="pp" corresp="bibl896-3">10 <note>page citation refers to an offprint</note></citedRange>
             </biblStruct>
             <bibl corresp="bibl1042-4">P. Piovanelli, Les origines de l’Apocalypse de Paul
                reconsidérées, dans Apocrypha, 4 (1993)</bibl>
@@ -8928,17 +8984,20 @@
             <biblStruct corresp="bibl921-7">
                <analytic>
                   <author>
-                     <forename>V.</forename>
-                     <surname>Rodnikov</surname>
+                     <forename xml:lang="ru-Latn-iso9r95">V.</forename>
+                     <surname xml:lang="ru-Latn-iso9r95">Rodnikov</surname>
+                     <forename xml:lang="ru">В.</forename>
+                     <surname xml:lang="ru">Родников</surname>
                   </author>
-                  <title level="a">K skazaniju o sno¯enijax Edesskago knjazja Avgarja so Xristom
-                     Spasitelem</title>
+                  <title xml:lang="ru-Latn-iso9r95">K skazaniû o snošeniâh Edesskogo knâzâ Avgarâ so Hristom Spasitelem</title>
+                  <title level="a" xml:lang="ru">К сказанию о сношениях Едесского князя Авгаря со Христом Спасителем</title>
                   <idno type="URI">http://syriaca.org/bibl/757</idno>
                </analytic>
                <monogr>
-                  <title level="m">Trudy Kievskoj Duxovnoj Akademii, 1903/2</title>
+                  <title level="j" xml:lang="ru-Latn-iso9r95">Trudy Kievskoj Duhovnoj Akademii</title>
+                  <title level="j" xml:lang="ru">Труды Киевской Духовной Академии</title>
                   <imprint>
-                     <date>2</date>
+                     <date>1903/2</date>
                   </imprint>
                   <biblScope unit="pp" from="501" to="513">501-513</biblScope>
                </monogr>
@@ -8953,9 +9012,12 @@
                      <surname>Rossabi</surname>
                   </author>
                   <title xml:lang="en" level="m">Voyager from Xanadu. Rabban Sauma and the First
-                     Journey from China to the West, Tokyo/New York/Londres, 1992</title>
+                     Journey from China to the West</title>
                   <idno type="URI">http://syriaca.org/bibl/798</idno>
                   <imprint>
+                     <pubPlace>Tokyo</pubPlace>
+                     <pubPlace>New York</pubPlace>
+                     <pubPlace>Londres</pubPlace>
                      <date>1992</date>
                   </imprint>
                </monogr>
@@ -9881,7 +9943,7 @@
                syriaque, dans C. Kappler (éd.), Traditions de l’Au-delà et conceptions de l’Univers
                dans le Proche-Orient ancien, Paris, 1985</bibl>
             <biblStruct corresp="bibl297-60">
-               <!-- Is this a confused reference? WorldCat doesn't seem to have this book. CBSC has "Teixidor, Javier, ''L’apôtre marchand d’âmes dans la première littérature syriaque. Voies commerciales et voies de l’Évangile au Proche-Orient'', Pages 379-396 in Apocalypses et voyages dans l’au-delà. Edited by Kappler, Claude. Etudes annexes de la Bible de Jérusalem. Paris: Cerf, 1987." -->
+               <!-- check: Is this a confused reference? WorldCat doesn't seem to have this book. CBSC has "Teixidor, Javier, ''L’apôtre marchand d’âmes dans la première littérature syriaque. Voies commerciales et voies de l’Évangile au Proche-Orient'', Pages 379-396 in Apocalypses et voyages dans l’au-delà. Edited by Kappler, Claude. Etudes annexes de la Bible de Jérusalem. Paris: Cerf, 1987." -->
                <analytic>
                   <author>
                      <forename>J.</forename>
@@ -9902,9 +9964,9 @@
                      <pubPlace>Paris</pubPlace>
                      <date>1985</date>
                   </imprint>
-                  <biblScope unit="pp" from="" to="">???</biblScope>
                </monogr>
-               <citedRange from="" to="" unit="pp" corresp="bibl297-60">???</citedRange>
+               <note>uncertain page range</note>
+               <note corresp="bibl297-60">uncertain page citation</note>
             </biblStruct>
             <bibl corresp="bibl297-47">Y. Tissot, L’encratisme des Actes de Thomas, dans W. Haase
                (ed.), Religion (Vorkonstantinisches Christentum: Leben und Umwelt Jesu; Neues

@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://syriaca.org/documentation/syriaca-tei-main.rnc" type="application/relax-ng-compact-syntax"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title level="a" xml:lang="en">
+                    <!-- English title of work [Syriaca headword] + "(text) — " + Syriac title of work [Syriaca headword] -->
+                    Sogitha on the Angel &amp; Mary (text) — <foreign xml:lang="syr">ܣܘܓܝܬܐ ܥܠ ܥܝܪܐ ܘܡܪܝܡ</foreign>
+                </title>
+                <title level="s">New Handbook of Syriac Literature</title>
+                <sponsor>Syriaca.org: The Syriac Reference Portal</sponsor>
+                <funder>The International Balzan Prize Foundation</funder>
+                <funder>The National Endowment for the Humanities</funder>
+                <principal>David A. Michelson</principal>
+                <editor role="general" ref="http://syriaca.org/documentation/editors.xml#ngibson">Nathan P. Gibson</editor>
+                <editor role="general" ref="http://syriaca.org/documentation/editors.xml#dmichelson">David A. Michelson</editor>
+                <editor role="creator" ref="http://syriaca.org/documentation/editors.xml#dmichelson">David A. Michelson</editor>
+                <editor role="creator" ref="http://syriaca.org/editors.xml#ngibson">Nathan P. Gibson</editor>
+                <respStmt>
+                    <resp><!-- figure out appopriate resp statements --></resp>
+                    <name type="person" ref="http://syriaca.org/documentation/editors.xml#foo">someone</name>
+                </respStmt>
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0"/>
+            </editionStmt>
+            <publicationStmt>
+                <authority>Syriaca.org: The Syriac Reference Portal</authority>
+                <idno type="URI">http://syriaca.org/work/000/tei</idno>
+                <availability>
+                    <licence target="http://creativecommons.org/licenses/by/3.0/">
+                        <p>Distributed under a Creative Commons Attribution 3.0 Unported
+                                License.</p>
+                    </licence>
+                </availability>
+                <date>2015-11-05-06:00</date>
+            </publicationStmt>
+            <seriesStmt>
+                <title level="s">New Handbook of Syriac Literature</title>
+                <editor role="general" ref="http://syriaca.org/documentation/editors.xml#ngibson">Nathan P. Gibson</editor>
+                <editor role="general" ref="http://syriaca.org/documentation/editors.xml#dmichelson">David A. Michelson</editor>
+                <respStmt>
+                    <resp>Edited by</resp>
+                    <name type="person" ref="http://syriaca.org/documentation/editors.xml#ngibson">Nathan P. Gibson</name>
+                </respStmt>
+                <respStmt>
+                    <resp>Edited by</resp>
+                    <name type="person" ref="http://syriaca.org/documentation/editors.xml#dmichelson">David A. Michelson</name>
+                </respStmt>
+                <!-- which vol? -->
+                <biblScope unit="vol">2</biblScope>
+                <idno type="URI">http://syriaca.org/works</idno>
+            </seriesStmt>
+            <sourceDesc>
+                <p>Born digital.</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <editorialDecl>
+                <p>This record created following the Syriaca.org guidelines. Documentation
+                        available at: <ref target="http://syriaca.org/documentation">http://syriaca.org/documentation</ref>.</p>
+                <interpretation>
+                    <p>Approximate dates described in terms of centuries or partial centuries
+                            have been interpreted as documented in the Syriaca.org guidelines for
+                            date encoding <ref target="http://syriaca.org/documentation/dates.html">http://syriaca.org/documentation/dates.html</ref>.</p>
+                </interpretation>
+            </editorialDecl>
+            <classDecl>
+                <taxonomy>
+                    <category xml:id="syriaca-headword">
+                        <catDesc>The name used by Syriaca.org for document titles, citation, and
+                                disambiguation. These names have been created according to the
+                                Syriaca.org guidelines for headwords: <ref target="http://syriaca.org/documentation/headwords.html">http://syriaca.org/documentation/headwords.html</ref>.</catDesc>
+                    </category>
+                    <category xml:id="syriaca-anglicized">
+                        <catDesc>An anglicized version of a name created by Syriaca.org used to
+                                facilitate searching in English.</catDesc>
+                    </category>
+                </taxonomy>
+            </classDecl>
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="ar-syr">Arabic Karshuni in Syriac Characters</language>
+                <language ident="ar">Arabic</language>
+                <language ident="cop">Coptic</language>
+                <language ident="cu">Old Church Slavonic</language>
+                <language ident="de">German</language>
+                <language ident="en-x-gedsh">Names or terms Romanized into English according to
+                        the standards adopted by the Gorgias Encyclopedic Dictionary of the Syriac
+                        Heritage</language>
+                <language ident="en">English</language>
+                <language ident="es">Spanish</language>
+                <language ident="fr-x-bhs">Names or terms Romanized into French according to the
+                        standards adopted by the Bibliotheca Hagiographica Syriaca</language>
+                <language ident="fr">French</language>
+                <language ident="gez">Ge'ez</language>
+                <!-- German is already listed above ("de") and the following is not the correct ISO 639 code for it. -->
+                <language ident="gr">German</language>
+                <language ident="grc">Ancient or Medieval Greek</language>
+                <language ident="hy">Classical or Modern Armenian</language>
+                <language ident="it">Italian</language>
+                <language ident="ka">Classical or Modern Georgian</language>
+                <language ident="la">Latin</language>
+                <language ident="nl">Dutch</language>
+                <language ident="pt">Portugese</language>
+                <language ident="ru">Russian</language>
+                <language ident="sog">Soghdian</language>
+                <language ident="syr-pal">Syro-Palestinian</language>
+                <language ident="syr-Syrj">Vocalized West Syriac</language>
+                <language ident="syr-Syrn">Vocalized East Syriac</language>
+                <language ident="syr">Unvocalized Syriac of any variety or period</language>
+            </langUsage>
+        </profileDesc>
+        <revisionDesc status="draft">
+            <change who="http://syriaca.org/documentation/editors.xml#ngibson" n="1.0" when="2015-12-28">CREATED: work</change>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <bibl xml:id="work-000">
+                <!-- The title, author, and relatedItem elements cannot have @source. Can we add this to our schema? -->
+                <author ref="http://syriaca.org/person/650" source="#bib000-1 #bib000-3">
+                    <forename sort="1">Narsai</forename>
+                </author>
+                <title xml:id="name000-1" xml:lang="syr" source="#bib000-1" syriaca-tags="#syriaca-headword">ܣܘܓܝܬܐ ܥܠ ܥܝܪܐ ܘܡܪܝܡ</title>
+                <title xml:id="name000-2" xml:lang="en" source="#bib000-1" syriaca-tags="#syriaca-headword #syriaca-anglicized">Sogitha on the Angel &amp; Mary</title>
+                <title xml:id="name000-3" xml:lang="syr" source="#bib000-5">ܣܘܓܝܬܐ ܕܡܐܡܪܐ ܕܡܪܝܡ</title>
+                <title xml:id="name000-4" xml:lang="de" source="#bib000-6">Der Engel (Gabriel) und Maria</title>
+                <title xml:id="name000-5" xml:lang="la" source="#bib000-10">Hymnus de Angelo et Maria</title>
+                <title xml:id="name000-6" xml:lang="en" source="#bib000-12-1">Canticle on the Annunciation of the Virgin</title>
+                <!-- Should we source this from Wright, from the ms, or from both? -->
+                <title xml:id="name000-7" xml:lang="syr" source="#bib000-11 #bib000-12-1" syriaca-tags="#syriaca-headword">ܕܥܠ ܥܝܪܐ ܘܡܪܝܡ</title>
+                <title xml:id="name000-8" xml:lang="syr-Syrn" source="#bib000-16">ܣܘܿܓ݂ܝܼܬ݂ܵܐ ܕܝܼܠܹܗ ܕܡܹܐܡ݃ܪܐ ܕܡܲܪܝܲܡ</title>
+                <title xml:id="name000-9" xml:lang="en" source="#bib000-13 #bib000-14 #bib000-12-2 #bib000-12-3"><foreign xml:lang="syr">ܣܘܓܝܬܐ</foreign> on the Angel and Mary</title>
+                <title xml:id="name000-10" xml:lang="en" source="#bib000-15">A Soghitha on the Angel and Mary</title>
+                <textLang mainLang="syr" source="#bib000-1">Syriac</textLang>
+                <!-- can we use HMML's rubrics and incipits or do we just have to link there? -->
+                <note xml:lang="syr" type="rubric" source="#bib000-1">
+                    <quote>ܒܫܡ ܐܒܐ ܘܒܪܐ ܘܪܘܚܐ ܩܕܝܫܐ ܚܕ ܐܠܗܐ ܫܪܝܪܐ ܐܡܝܢ ܡܫܪܝܢܢ ܠܡܟܬܒ ܣܘܓ̈ܝܬܐ ܕܡܠܦܢܐ ܣܘܪܝܝܐ ܢܪܣܝ ܗܘ ܕܗܘܐ ܡܘܠܕܗ ܒܡܢܬܐ ܩܕܡܝܬܐ ܕܕܪܐ ܚܡܝܫܝܐ܃ ܘܡܘܬܗ ܫܢܬ ܚܡܫܡܐܐ ܘܬܪܝܢ܃ ܡܢ ܟܬܒܗ ܗܘ ܕܡܐܡܪ̈ܐ ܪܒܐ ܕܐܝܬܘܗܝ ܕܘܒܩܐ ܘܗܠܝܢ ܐܢܘܢ܃ ܥܠ ܥܝܪܐ ܘܡܪܝܡ</quote>
+                </note>
+                <note xml:lang="syr" type="incipit" source="#bib000-15">
+                    <!-- if they let us use this -->
+                    <quote>ܚܝܠܗ ܕܐܒܐ ܕܢܚܬ ܫܪܐ</quote>
+                </note>
+                
+                
+                <!-- this is the inverse of LAWD "embodies" -->
+                <!-- use @subtype for subclasses of LAWD WrittenWork -->
+                <!-- use @corresp on editions/translations to show manuscript bases -->
+                <!-- If we've already assigned syriaca URIs to all mss and edition/translation parts, do we need any text here or just the URI? -->
+                <relatedItem type="isEmbodiedBy" subtype="Hand" source="#bib000-1" target="http://syriaca.org/manuscript/AAA" xml:id="bib000-2"/>
+                <relatedItem type="isEmbodiedBy" subtype="Edition" source="#bib000-1" target="http://syriaca.org/bibl/AAA" xml:id="bib000-3" corresp="#bib000-2"/><!-- Mingana edition -->
+                <relatedItem type="isEmbodiedBy" subtype="Edition" target="http://syriaca.org/bibl/BBB" xml:id="bib000-5" corresp="#bib000-8"/><!-- Feldmann edition -->
+                <relatedItem type="isEmbodiedBy" subtype="Translation" target="http://syriaca.org/bibl/CCC" xml:id="bib000-6" corresp="#bib000-8"/><!-- Feldmann German translation -->
+                <relatedItem type="isEmbodiedBy" subtype="Hand" source="#bib000-7" target="http://syriaca.org/manuscript/BBB" xml:id="bib000-8"/><!-- Sachau 174-176, ff. 58b-61a -->
+                <relatedItem type="isEmbodiedBy" subtype="Edition" source="#bib000-7" target="http://syriaca.org/bibl/DDD" xml:id="bib000-9" corresp="#bib000-11 #bib000-13 #bib000-14"/><!-- Lamy edition (left column) https://archive.org/stream/sanctiephraemsy02lamygoog#page/n324/mode/2up -->
+                <relatedItem type="isEmbodiedBy" subtype="Translation" source="#bib000-7" target="http://syriaca.org/bibl/EEE" xml:id="bib000-10" corresp="#bib000-11 #bib000-13 #bib000-14"/><!-- Lamy Latin translation (right column) https://archive.org/stream/sanctiephraemsy02lamygoog#page/n324/mode/2up -->
+                <!-- Can we do something like this to cite the citedRange directly? -->
+                <relatedItem type="isEmbodiedBy" subtype="Hand" source="#bib000-10 #bib000-12-1" target="http://syriaca.org/manuscript/CCC" xml:id="bib000-11"/><!-- BL Add. 14,506 -->
+                <relatedItem type="isEmbodiedBy" subtype="Hand" source="#bib000-10 #bib000-12-2" target="http://syriaca.org/manuscript/DDD" xml:id="bib000-13"/><!-- BL Add. 14,515 -->
+                <relatedItem type="isEmbodiedBy" subtype="Hand" source="#bib000-10 #bib000-12-3" target="http://syriaca.org/manuscript/EEE" xml:id="bib000-14"/><!-- BL Add. 14,516 -->
+                <relatedItem type="isEmbodiedBy" subtype="Edition" source="#bib000-15" target="http://syriaca.org/bibl/GGG" xml:id="bib000-16" corresp="#bib000-19"/><!-- Patriarchal Press edition https://archive.org/stream/PatriarchalPressNarsaiVol1/Patriarchal%20Press_Narsai_vol%201#page/n179/mode/1up -->
+                <relatedItem type="isEmbodiedBy" subtype="Hand" source="#bib000-17 #bib000-18" target="http://syriaca.org/manuscript/FFF" xml:id="bib000-19"/><!-- 1901 ms. reproduced in Patriarchal Press edition -->
+                <relatedItem type="isEmbodiedBy" subtype="Translation" source="#bib000-18" target="http://syriaca.org/bibl/JJJ" xml:id="bib000-20"/><!-- Brock's English Translation in Bride of Light -->
+                <relatedItem type="isEmbodiedBy" subtype="Translation" source="#bib000-7" target="http://syriaca.org/bibl/KKK" xml:id="bib000-21"/><!-- Zingerle, Festkränze, 48-54 German Translation. What mss is this based on? https://books.google.de/books?id=SkQ9AAAAcAAJ&printsec=frontcover&dq=Zingerle,+Festkr%C3%A4nze&hl=en&sa=X&redir_esc=y#v=onepage&q&f=false -->
+                <!-- have not been able to access Officia sanctorum juxta ritum ecclesiae Maronitarum (see Feldmann) -->
+                
+                <idno type="URI">http://syriaca.org/work/000</idno>
+                <bibl xml:id="bibl000-1">
+                    <!-- What should we use for the titles from Oliver? -->
+                    <title level="m">Oliver</title>
+                    <publisher>Hill Museum &amp; Manuscript Library</publisher>
+                    <pubPlace>Collegeville, Minnesota</pubPlace>
+                    <date>2015</date>
+                    <!-- assign a syriaca bibl just to Oliver as a whole or also to every ms description page?  -->
+                    <ptr target="http://syriaca.org/bibl/000"/>
+                    <!-- using ref rather than ptr b/c resource is represented online (see http://www.tei-c.org/release/doc/tei-p5-doc/en/html/#COBIXR) -->
+                    <ref target="http://www.hmml.org/oliver.html"/>
+                    <citedRange target="http://www.vhmml.us/research2014/catalog/detail.asp?MSID=122602" unit="entry">ZFRN 00055</citedRange>
+                </bibl>
+                <bibl xml:id="bib000-4">
+                    <title level="m" xml:lang="en">A Comprehensive Bibliography on Syriac Christianity</title>
+                    <ptr target="http://syriaca.org/bibl/5"/>
+                    <citedRange unit="entry" target="http://www.csc.org.il/db/browse.aspx?db=SB&amp;sL=N&amp;sK=Narsai&amp;sT=keywords">Narsai</citedRange>
+                </bibl>
+                <bibl xml:id="bib000-7">
+                    <title level="m" xml:lang="de">Syrische Wechsellieder von Narses. Ein Beitrag zur altchristlichen syrischen Hymnologie, nach einer Handschrift der Königlichen Bibliothek in Berlin</title>
+                    <ptr target="http://syriaca.org/bibl/DDD"/>
+                    <citedRange unit="pp" target="https://archive.org/stream/syrischewechsel00feldgoog#page/n11/mode/2up">v-vi</citedRange>
+                </bibl>
+                <bibl xml:id="bib000-12">
+                    <title level="m" xml:lang="en">Catalogue of Syriac Manuscripts in the British Museum Acquired since the Year 1838</title>
+                    <ptr target="http://syriaca.org/bibl/8"/>
+                    <citedRange unit="vol" from="1" to="1">1</citedRange>
+                    <citedRange xml:id="bib000-12-1" unit="pp" from="248" to="248">248</citedRange>
+                    <citedRange xml:id="bib000-12-2" unit="pp" from="240" to="240">240</citedRange>
+                    <citedRange xml:id="bib000-12-3" unit="pp" from="245" to="245">245</citedRange>
+                </bibl>
+                <bibl xml:id="bib000-15">
+                    <title level="a">Narsai</title>
+                    <title level="m">Syri.ac: An annotated bibliography of Syriac resources online</title>
+                    <ptr target="http://syriaca.org/bibl/FFF"/>
+                    <ref target="http://syri.ac/narsai"/>
+                </bibl>
+                <bibl xml:id="bib000-17">
+                    <title level="m">Homilies of Mar Narsai</title>
+                    <ptr target="http://syriaca.org/bibl/HHH"/>
+                    <ref target="https://archive.org/stream/PatriarchalPressNarsaiVol1/Patriarchal Press_Narsai_vol 1"/>
+                    <citedRange unit="volume">1</citedRange>
+                    <citedRange unit="pp" target="https://archive.org/stream/PatriarchalPressNarsaiVol1/Patriarchal%20Press_Narsai_vol%201#page/n24/mode/1up">xxiv</citedRange>
+                </bibl>
+                <bibl xml:id="bib000-18">
+                    <title level="a">A Guide to Narsai's Homilies</title>
+                    <ptr target="http://syriaca.org/bibl/III"/>
+                    <ref target="http://syrcom.cua.edu/Hugoye/Vol12No1/HV12N1Brock.pdf"/>
+                    <citedRange unit="pp">22</citedRange>
+                </bibl>
+                <!-- moved listRelation inside the bibl element b/c it is not allowed directly under body. -->
+                <listRelation>
+                    <relation name="syriaca:commemorated" active="http://syriaca.org/work/000" passive="http://syriaca.org/person/624"/>
+                    <!-- suggested relationship. discuss. see https://docs.google.com/document/d/1NhwuazMJqOg8WVYyY8FYtBU2DzmLy2isGQhBlL00fXA/edit#heading=h.6miof5cph9y4 -->
+                    <relation name="syriaca:attributed-to" active="http://syriaca.org/work/000" passive="http://syriaca.org/person/13" source="#bib000-10"/>
+                </listRelation>
+            </bibl>
+        </body>
+    </text>
+</TEI>

@@ -17,12 +17,49 @@ declare function syriaca:create-new-bibl($id, $node) {
             <bibl xmlns="http://www.tei-c.org/ns/1.0" xml:id="{$bibl-id}">
                 {(  
                     $bibl/descendant::tei:title,
-                    <ptr target="{$bibl//tei:idno/text()}"/>,
-                    $bibl/tei:citedRange[@corresp = $bibl-id]
+                    <ptr target="{$bibl//tei:idno[contains(.,'syriaca')]/text()}"/>,
+                    functx:remove-attributes($bibl/tei:citedRange[@corresp = $bibl-id],'corresp')
                 )}
             </bibl>
     return $new-bibl
 };
+
+declare function functx:remove-attributes
+  ( $elements as element()* ,
+    $names as xs:string* )  as element()* {
+
+   for $element in $elements
+   return element
+     {node-name($element)}
+     {$element/@*[not(functx:name-test(name(),$names))],
+      $element/node() }
+ } ;
+ 
+ declare function functx:name-test
+  ( $testname as xs:string? ,
+    $names as xs:string* )  as xs:boolean {
+
+$testname = $names
+or
+$names = '*'
+or
+functx:substring-after-if-contains($testname,':') =
+   (for $name in $names
+   return substring-after($name,'*:'))
+or
+substring-before($testname,':') =
+   (for $name in $names[contains(.,':*')]
+   return substring-before($name,':*'))
+ } ;
+ 
+ declare function functx:substring-after-if-contains
+  ( $arg as xs:string? ,
+    $delim as xs:string )  as xs:string? {
+
+   if (contains($arg,$delim))
+   then substring-after($arg,$delim)
+   else $arg
+ } ;
 
 (: Copy of latest xml data to be converted. This is my local path :)
 let $uri := "/db/apps/srophe-forms/data/zanetti.xml"

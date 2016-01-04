@@ -41,7 +41,7 @@ declare function syriaca:build-tei($node as element()*) as node(){
                 </titleStmt>
                 <publicationStmt>
                     <authority>Syriaca.org: The Syriac Reference Portal</authority>
-                    <idno type="URI">{concat($node//tei:idno/text(),'/tei')}</idno>
+                    <idno type="URI">{concat($node//tei:idno[contains(.,'syriaca')]/text(),'/tei')}</idno>
                     <availability>
                         <licence target="http://creativecommons.org/licenses/by/3.0/">
                             <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>

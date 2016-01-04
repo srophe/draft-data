@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- QUESTIONS:
-   1. How do we input multiple languages for authors? Using choice/seg inside author? See, e.g., bibl/2, which I don't think is the right way to do this.
-   2. How should Russian transliteration be shown in @xml:lang? "ru-Latn-iso9r95"?
-   3. If I come across URIs for works while looking up their info, should I insert them as idno/@type="URI"? 
-   4. Is the usage of relatedItem and the notes accompanying them the best way to do reprints? (see bibl/940, 941, 942, 1202 below). -->
+   1. How should Russian transliteration be shown in @xml:lang? "ru-Latn-iso9r95"?
+   2. Is the usage of relatedItem and the notes accompanying them the best way to do reprints? (see bibl/940, 941, 942, 1202 below). -->
 
 <!-- LOG: 
    1. Manually dealt with Unicode characters that had not come in correctly: Æ = ‘, æ = ‘, ¥ = ē, € = [?], ‹ = ā, ˜ = ō, º = ū, ? = ṣ
@@ -2414,8 +2412,7 @@
                      <date>1849</date>
                   </imprint>
                </monogr>
-               <note xml:lang="fr" corresp="bibl301-2">extrait</note>
-               <citedRange from="222" to="225" unit="pp" corresp="bibl301-2">222-225</citedRange>
+               <citedRange from="222" to="225" unit="pp" corresp="bibl301-2">222-225 <note xml:lang="fr">extrait</note></citedRange>
             </biblStruct>
             <bibl corresp="bibl1168-2b">F. DEL RÍO SÁNCHEZ, Abrahám de Na‡par, dans “Studia
                monastica”, 42/1 (2000)</bibl>
@@ -6680,8 +6677,7 @@
                   </imprint>
                   <biblScope unit="vol" from="2" to="2">2</biblScope>
                </monogr>
-               <note corresp="bibl581-2" xml:lang="fr">bref extrai</note>
-               <citedRange from="49" to="49" unit="pp" corresp="bibl581-2">49</citedRange>
+               <citedRange from="49" to="49" unit="pp" corresp="bibl581-2">49 <note xml:lang="fr">bref extrai</note></citedRange>
             </biblStruct>
             <bibl corresp="bibl692-2">F. Nau, Sur Aaron de Saroug et ses deux monastères, dans ROC,
                3e sér. 7 (1929-1930)</bibl>
@@ -7236,14 +7232,14 @@
                   <biblScope unit="pp" from="322" to="345">322-345</biblScope>
                   <biblScope unit="pp" from="398" to="420">398-420</biblScope>
                </monogr>
-               <note type="flag">article spanning multiple volumes</note>
+               <note type="flag">article spanning multiple page ranges</note>
+               <note xml:lang="fr">pas vu</note>
                <citedRange from="76" to="76" unit="vol" corresp="bibl921-2">76</citedRange>
                <citedRange unit="pp" from="17" to="40" corresp="bibl921-2">17-40</citedRange>
                <citedRange unit="pp" from="97" to="114" corresp="bibl921-2">97-114</citedRange>
                <citedRange unit="pp" from="193" to="209" corresp="bibl921-2">193-209</citedRange>
                <citedRange unit="pp" from="322" to="345" corresp="bibl921-2">322-345</citedRange>
                <citedRange unit="pp" from="398" to="420" corresp="bibl921-2">398-420</citedRange>
-               <note corresp="bibl921-2" xml:lang="fr">pas vu</note>
             </biblStruct>
             <bibl corresp="bibl1748-2 bibl931-2 bibl1342-2 bibl1341-2 bibl1340-2 bibl1300-2">H. Näf,
                Syrische Josef-Gedichte, Zurich, 1923</bibl>
@@ -10301,8 +10297,8 @@
                   </imprint>
                </monogr>
                <note>uncertain page range</note>
-               <note corresp="bibl297-60">uncertain page citation</note>
                <note type="flag">WorldCat doesn't seem to have this book. CBSC has "Teixidor, Javier, ''L’apôtre marchand d’âmes dans la première littérature syriaque. Voies commerciales et voies de l’Évangile au Proche-Orient'', Pages 379-396 in Apocalypses et voyages dans l’au-delà. Edited by Kappler, Claude. Etudes annexes de la Bible de Jérusalem. Paris: Cerf, 1987."</note>
+               <citedRange corresp="bibl297-60"><note>uncertain page citation</note></citedRange>
             </biblStruct>
             <bibl corresp="bibl297-47">Y. Tissot, L’encratisme des Actes de Thomas, dans W. Haase
                (ed.), Religion (Vorkonstantinisches Christentum: Leben und Umwelt Jesu; Neues

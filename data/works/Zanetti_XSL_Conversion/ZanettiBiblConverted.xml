@@ -283,9 +283,7 @@
             <bibl corresp="bibl231-3">AA., Il libro di Eusebio De martyribus Palaestinae, dans La
                Civiltà cattolica, 12 (1897)</bibl>
             <biblStruct corresp="bibl231-3">
-               <!-- check -->
                <analytic>
-                  <!-- What to do with anonymous author? -->
                   <title xml:lang="it" level="a">Il libro di Eusebio De martyribus
                      Palaestinae</title>
                   <idno type="URI">http://syriaca.org/bibl/1041</idno>
@@ -299,6 +297,7 @@
                   <biblScope unit="pp" from="56" to="65">56-65</biblScope>
                </monogr>
                <citedRange from="56" to="65" unit="pp" corresp="bibl231-3">56-65</citedRange>
+               <note type="flag">anonymous author</note>
             </biblStruct>
             <bibl corresp="bibl1404-2">S. Q‹¯‹, S¬rat a¯-¯ah¬d M‹r Zayn‹, Mossoul, 1965</bibl>
             <biblStruct corresp="bibl1404-2">
@@ -327,9 +326,7 @@
             <bibl corresp="bibl250-5">AA, I sette dormienti. Storia e leggenda, dans Bessarione, 1
                (1896-1897)</bibl>
             <biblStruct corresp="bibl250-5">
-               <!-- check -->
                <analytic>
-                  <!-- do we put in anything for anonymous author? -->
                   <title xml:lang="it" level="a">I sette dormienti. Storia e leggenda</title>
                   <idno type="URI">http://syriaca.org/bibl/1031</idno>
                </analytic>
@@ -341,6 +338,7 @@
                   <biblScope from="1" to="1" unit="vol">1</biblScope>
                   <biblScope unit="pp" from="318" to="320">318-320</biblScope>
                </monogr>
+               <note type="flag">anonymous author</note>
                <note xml:lang="en">No author listed in original publication. (See http://hdl.handle.net/2027/uc1.b3144714.)</note>
                <citedRange from="318" to="320" unit="pp" corresp="bibl250-5">318-320</citedRange>
             </biblStruct>
@@ -569,7 +567,6 @@
             <bibl corresp="bibl250-4">A. Allgeier, Untersuchungen zur syrischen Überlieferung der
                Siebenschläferlegende, dans OC, n.s. 4 (1915)</bibl>
             <biblStruct corresp="bibl250-4">
-               <!-- check: how to cite articles that span multiple volumes? -->
                <analytic>
                   <author>
                      <forename>A.</forename>
@@ -600,6 +597,7 @@
                   <biblScope unit="pp" from="279" to="297">279-297; n.s. 5 (1915), p. 10-59 et
                      262-270</biblScope>
                </monogr>
+               <note type="flag">article spanning multiple volumes</note>
                <citedRange from="10" to="59" unit="pp" corresp="bibl250-4">10-59</citedRange>
                <citedRange from="262" to="270" unit="pp" corresp="bibl250-4">262-270</citedRange>
             </biblStruct>
@@ -646,7 +644,6 @@
                   <title level="a" xml:lang="ru">Св. Николай и Артемида Эфесская</title>
                   <idno type="URI">http://syriaca.org/bibl/902</idno>
                   <idno type="URI">http://krotov.info/acts/10/3/nikolay.htm</idno>
-                  <!-- OK to include this? As an idno? -->
                </analytic>
                <monogr>
                   <title level="j" xml:lang="ru-Latn-iso9r95">Zapiski Vostočnogo otdeleniâ
@@ -683,7 +680,6 @@
             <bibl corresp="bibl297-64">A.K. Arvanitis, ?O Òpóstolow Yvmâw kaì ä SuriakÎ ¸Ekklhsía
                toû Malampár, Athènes, 1962</bibl>
             <biblStruct corresp="bibl297-64">
-               <!-- check -->
                <monogr>
                   <author>
                      <persName xml:lang="el-Latn-iso843">
@@ -703,6 +699,7 @@
                      <date>1962</date>
                   </imprint>
                </monogr>
+               <note type="flag">Greek transliteration</note>
             </biblStruct>
             <bibl
                corresp="bibl980-6 bibl400-2 bibl291-3 bibl285-5 bibl284-3 bibl283-5 bibl277-5 bibl276-4 bibl275-3 bibl273-4 bibl272-3 bibl271-4 bibl270-3 bibl269-4 bibl263-7 bibl260-3 bibl1387-2 bibl1292-2 bibl1151-2b"
@@ -1337,7 +1334,6 @@
                >article de S.P. Brock, The XL Martyrs in Syriac Tradition, à paraître</bibl>
             <biblStruct
                corresp="bibl871-2 bibl863-2 bibl402-2 bibl307-2 bibl1022-2 bibl1021-2 bibl1020-2 bibl1019-2 bibl1018-2 bibl1968-2">
-               <!-- check: I haven't been able to find this forthcoming article. Is it still forthcoming? -->
                <monogr>
                   <author>
                      <forename>S.</forename>
@@ -1346,9 +1342,10 @@
                   <title xml:lang="en" level="m">The XL Martyrs in Syriac Tradition</title>
                   <idno type="URI">http://syriaca.org/bibl/811</idno>
                   <imprint>
-                     <date>à paraître</date>
+                     <date xml:lang="fr">à paraître</date>
                   </imprint>
                </monogr>
+               <note type="flag">forthcoming article not found so far</note>
             </biblStruct>
             <bibl corresp="bibl565-3">S.P. Brock, Ephrem’s Verse Homily on Jonah and the Repentance
                of Nineveh: Notes on the Textual Tradition, dans A. Schoors et P. Van Deun (éd.),
@@ -3840,7 +3837,6 @@
             <bibl corresp="bibl1715-2">J.-M. Fiey, Isho‘yaw le Grand. Vie du Catholicos nestorien
                Isho‘yaw III d’Adiabène (580-659), dans OCP, 35 (1969)</bibl>
             <biblStruct corresp="bibl1715-2">
-               <!-- check: how to do articles spanning multiple volumes -->
                <analytic>
                   <author>
                      <forename>J.-M.</forename>
@@ -3868,6 +3864,7 @@
                   <biblScope from="36" to="36" unit="vol">36</biblScope>
                   <biblScope unit="pp" from="5" to="46">5-46</biblScope>
                </monogr>
+               <note type="flag">article spanning multiple volumes</note>
                <citedRange from="305" to="333" unit="pp" corresp="bibl1715-2">305-333; 36 (1970), p.
                   5-46</citedRange>
             </biblStruct>
@@ -4276,10 +4273,11 @@
                   <imprint>
                      <date>1886</date>
                   </imprint>
-                  <biblScope unit="vol" from="11" to="11">Nr. 11</biblScope><!-- This seems to have a strange numbering/volume system. Is this the right way to note it? -->
+                  <biblScope unit="vol" from="11" to="11">Nr. 11</biblScope>
                   <biblScope unit="pp" from="453" to="459">453-459</biblScope>
                </monogr>
                <note xml:lang="fr">pas vu, cf. ByzZ 5, biblio s. v. Ryssel</note>
+               <note type="flag">check volume/numbering system</note>
             </biblStruct>
             <bibl corresp="bibl895-10">W. Hage, Syriac Christianity in India (M˜r‹n ‘Eth’˜ Series,
                1), Kottayam, 1988</bibl>
@@ -4657,7 +4655,6 @@
                         xml:lang="syr">ܬܫܥܝܬܐ ܕܡܪܝ ܝܗܒܐܠܗܐ ܦܛܪܝܪܟܐ ܘܕܪܒܢ ܨܘܡܐ</foreign></title>
                   <idno type="URI">http://syriaca.org/bibl/790</idno>
                   <idno type="URI">http://catalog.hathitrust.org/Record/009658790</idno>
-                  <!--OK to include this?-->
                   <imprint>
                      <pubPlace>Leipzig</pubPlace>
                      <date>1894</date>
@@ -5771,9 +5768,6 @@
             </biblStruct>
             <bibl corresp="bibl351-2">H. Lietzmann</bibl>
             <biblStruct corresp="bibl351-2">
-               <!-- is this an ok way to represent this work and Zanetti's reference to it in work/351? See 
-               http://www.csc.org.il/db/search.aspx?db=SB&f1=Lietzmann&f2=Das%20Leben%20des%20heiligen%20Symeon%20Stylites&f3=&fn1=&fn2=&fn3=&c1=and&c2=and&yf=&yt= and 
-               http://biblio.ebaf.info/cgi-bin/koha/opac-ISBDdetail.pl?biblionumber=34490 -->
                <monogr>
                   <editor>
                      <forename>H.</forename>
@@ -5785,6 +5779,7 @@
                   </editor>
                   <title xml:lang="de" level="m">Das Leben des heiligen Symeon Stylites</title>
                   <idno type="URI">http://syriaca.org/bibl/887</idno>
+                  <idno type="URI">http://biblio.ebaf.info/cgi-bin/koha/opac-ISBDdetail.pl?biblionumber=34490</idno>
                   <imprint>
                      <pubPlace>Leipzig</pubPlace>
                      <date>1908</date>
@@ -5794,6 +5789,7 @@
                   <title xml:lang="de" level="s">Texte und Untersuchungen zur Geschichte der altchristlichen Literatur</title>
                   <biblScope unit="vol">32.4</biblScope>
                </series>
+               <note type="flag">check format for translations</note>
                <citedRange from="197" to="255" unit="pp" corresp="bibl351-2">197-255 <note xml:lang="fr">études</note></citedRange>
             </biblStruct>
             <bibl corresp="bibl921-23">R.A. Lipisius, Die edessenische Abgar-Sage kritisch
@@ -5890,7 +5886,6 @@
             <bibl corresp="bibl297-27">S. Lévi, Notes sur les Indo-Scythes. III. Saint Thomas,
                Gondopharès et Mazdeo, dans JA, 9e sér., 9 (1897)</bibl>
             <biblStruct corresp="bibl297-27">
-               <!-- check: how to do articles that span mutliple volumes? -->
                <analytic>
                   <author>
                      <forename>S.</forename>
@@ -5924,6 +5919,7 @@
                      </relation>
                   </listRelation>
                </relatedItem>
+               <note type="flag">article spanning multiple volumes</note>
                <citedRange from="27" to="42" unit="pp" corresp="bibl297-27">27-42</citedRange>
                <citedRange unit="part" from="3" to="3" corresp="bibl297-27">III. Saint Thomas, Gondopharès et Mazdeo</citedRange>
             </biblStruct>
@@ -6849,9 +6845,7 @@
             </biblStruct>
             <bibl corresp="bibl1493-2">F. Nau, Résumé de monographies syriaques, dans ROC, 2e sér.,
                9 (1914)</bibl>
-            <biblStruct corresp="bibl1073-4 bibl1493-2 bibl1135-2 bibl1316-2">
-               <!-- check: is this the right way to handle multiple series of journal? -->
-               <!-- check: what is the best way to handle an article appearing across multiple volumes (but without explicitly identified parts)? -->
+            <biblStruct corresp="bibl1073-4 bibl1493-2 bibl1135-2 bibl1316-2 bibl1143-2 bibl1142-2 bibl1141-2 bibl1140-2 bibl1139-2 bibl1138-2">
                <analytic>
                   <author>
                      <forename>F.</forename>
@@ -6870,6 +6864,11 @@
                   <biblScope unit="pp" from="270" to="276">270-276</biblScope>
                   <biblScope unit="pp" from="379" to="389">379-389</biblScope>
                </monogr>
+               <series>
+                  <title level="s" xml:lang="fr">Revue de l’Orient chrétien</title>
+                  <biblScope unit="series" from="2" to="2" xml:lang="fr">Deuxième Série</biblScope>
+                  <biblScope unit="vol" from="8" to="8">8</biblScope>
+               </series>
                <monogr>
                   <title level="m" xml:lang="fr">Revue de l’Orient chrétien</title>
                   <idno type="zotero">118</idno>
@@ -6884,20 +6883,35 @@
                <series>
                   <title level="s" xml:lang="fr">Revue de l’Orient chrétien</title>
                   <biblScope unit="series" from="2" to="2" xml:lang="fr">Deuxième Série</biblScope>
-                  <biblScope unit="vol" from="8" to="8">8</biblScope>
-               </series>
-               <series>
-                  <title level="s" xml:lang="fr">Revue de l’Orient chrétien</title>
-                  <biblScope unit="series" from="2" to="2" xml:lang="fr">Deuxième Série</biblScope>
                   <biblScope unit="vol" from="9" to="9">9</biblScope>
                </series>
-               <citedRange from="272" to="276" unit="pp" corresp="bibl1073-4">8 (1913), 272-276</citedRange>
-               <citedRange from="379" to="389" unit="pp" corresp="bibl1073-4">8 (1913), 379-389</citedRange>
-               <citedRange from="113" to="134" unit="pp" corresp="bibl1073-4">9 (1914), 113-134</citedRange>
-               <citedRange from="278" to="289" unit="pp" corresp="bibl1073-4">9 (1914), 278-289</citedRange>
-               <citedRange from="420" to="431" unit="pp" corresp="bibl1493-2">9 (1914), 420-431</citedRange>
-               <citedRange from="413" to="419" unit="pp" corresp="bibl1135-2">9 (1914), 413-419</citedRange>
-               <citedRange from="432" to="440" unit="pp" corresp="bibl1316-2">9 (1914), 432-440</citedRange>
+               <monogr>
+                  <title level="j" xml:lang="fr">Revue de l’Orient chrétien</title>
+                  <imprint>
+                     <date>1915-1917</date>
+                  </imprint>
+                  <biblScope unit="vol" from="20" to="20">20</biblScope>
+                  <biblScope unit="pp" from="3" to="32">3-32</biblScope>
+               </monogr>
+               <series>
+                  <title level="s" xml:lang="fr">Revue de l’Orient chrétien</title>
+                  <biblScope unit="series" from="2" to="2" xml:lang="fr">Deuxieme Série</biblScope>
+                  <biblScope unit="vol" from="10" to="10">10</biblScope>
+               </series>
+               <note type="flag">article spanning multiple volumes</note>
+               <citedRange from="272" to="276" unit="pp" corresp="bibl1073-4">18 (1913), 272-276</citedRange>
+               <citedRange from="379" to="389" unit="pp" corresp="bibl1073-4">18 (1913), 379-389</citedRange>
+               <citedRange from="113" to="134" unit="pp" corresp="bibl1073-4">19 (1914), 113-134</citedRange>
+               <citedRange from="278" to="289" unit="pp" corresp="bibl1073-4">19 (1914), 278-289</citedRange>
+               <citedRange from="420" to="431" unit="pp" corresp="bibl1493-2">19 (1914), 420-431</citedRange>
+               <citedRange from="413" to="419" unit="pp" corresp="bibl1135-2">19 (1914), 413-419</citedRange>
+               <citedRange from="432" to="440" unit="pp" corresp="bibl1316-2">19 (1914), 432-440</citedRange>
+               <citedRange from="23" to="24" unit="pp" corresp="bibl1143-2">20 (1915-1917), 23-24</citedRange>
+               <citedRange from="21" to="22" unit="pp" corresp="bibl1142-2">20 (1915-1917), 21-22</citedRange>
+               <citedRange from="17" to="20" unit="pp" corresp="bibl1141-2">20 (1915-1917), 17-20</citedRange>
+               <citedRange from="15" to="16" unit="pp" corresp="bibl1140-2">20 (1915-1917), 15-16</citedRange>
+               <citedRange from="13" to="15" unit="pp" corresp="bibl1139-2">20 (1915-1917), 13-15</citedRange>
+               <citedRange from="3" to="12" unit="pp" corresp="bibl1138-2">20 (1915-1917), 3-12</citedRange>
             </biblStruct>
             <bibl corresp="bibl1288-2">F. Nau, Une version syriaque inédite de la Vie de Schenoudi,
                dans Revue sémitique, 7 (1899)</bibl>
@@ -6942,38 +6956,6 @@
                   <biblScope unit="pp" from="396" to="400">396-400</biblScope>
                </monogr>
                <citedRange from="396" to="400" unit="pp" corresp="bibl1148-2">396-400</citedRange>
-            </biblStruct>
-            <bibl corresp="bibl1143-2 bibl1142-2 bibl1141-2 bibl1140-2 bibl1139-2 bibl1138-2">F.
-               Nau, Résumé de monographies syriaques, dans ROC, 2e sér. 10 (1915-1917)</bibl>
-            <biblStruct corresp="bibl1143-2 bibl1142-2 bibl1141-2 bibl1140-2 bibl1139-2 bibl1138-2">
-               <!-- check: how should this article's pages be cited? -->
-               <analytic>
-                  <author>
-                     <forename>F.</forename>
-                     <surname>Nau</surname>
-                  </author>
-                  <title level="a" xml:lang="fr">Résumé de monographies syriaques</title>
-                  <idno type="URI">http://syriaca.org/bibl/1117</idno>
-               </analytic>
-               <monogr>
-                  <title level="j" xml:lang="fr">Revue de l’Orient chrétien</title>
-                  <imprint>
-                     <date>1915-1917</date>
-                  </imprint>
-                  <biblScope unit="vol" from="20" to="20">20</biblScope>
-                  <biblScope unit="pp" from="23" to="24">23-24</biblScope>
-               </monogr>
-               <series>
-                  <title level="s" xml:lang="fr">Revue de l’Orient chrétien</title>
-                  <biblScope unit="series" from="2" to="2" xml:lang="fr">Deuxieme Série</biblScope>
-                  <biblScope unit="vol" from="10" to="10">10</biblScope>
-               </series>
-               <citedRange from="23" to="24" unit="pp" corresp="bibl1143-2">23-24</citedRange>
-               <citedRange from="21" to="22" unit="pp" corresp="bibl1142-2">21-22</citedRange>
-               <citedRange from="17" to="20" unit="pp" corresp="bibl1141-2">17-20</citedRange>
-               <citedRange from="15" to="16" unit="pp" corresp="bibl1140-2">15-16</citedRange>
-               <citedRange from="13" to="15" unit="pp" corresp="bibl1139-2">13-15</citedRange>
-               <citedRange from="3" to="12" unit="pp" corresp="bibl1138-2">3-12</citedRange>
             </biblStruct>
             <bibl corresp="bibl1137-2 bibl1972-2">F. Nau, L’Homélie de Moyse bar Cépha sur les
                confesseurs du vendredi, dans ROC, 2e sér. 9 (1914)</bibl>
@@ -7233,7 +7215,6 @@
                Edessa mit Jesus in Jerusalem oder die Abgarfrage, dans Der Katholik, 76
                (1896)</bibl>
             <biblStruct corresp="bibl921-2">
-               <!-- check: what to do with article spread across multiple page ranges? This one has labeled parts. -->
                <analytic>
                   <author>
                      <forename>J.</forename>
@@ -7255,6 +7236,7 @@
                   <biblScope unit="pp" from="322" to="345">322-345</biblScope>
                   <biblScope unit="pp" from="398" to="420">398-420</biblScope>
                </monogr>
+               <note type="flag">article spanning multiple volumes</note>
                <citedRange from="76" to="76" unit="vol" corresp="bibl921-2">76</citedRange>
                <citedRange unit="pp" from="17" to="40" corresp="bibl921-2">17-40</citedRange>
                <citedRange unit="pp" from="97" to="114" corresp="bibl921-2">97-114</citedRange>
@@ -8549,7 +8531,6 @@
             <bibl corresp="bibl928-4 bibl683-3">M. Peisker, Severus von Antiochien. Ein kritischer
                Quellenbeitrag zur Geschichte des Monophysitismus, Halle s/Saale, 1908</bibl>
             <biblStruct corresp="bibl928-4 bibl683-3">
-               <!-- check: date listed in CBSC as 1903 -->
                <monogr>
                   <author>
                      <forename>M.</forename>
@@ -8563,6 +8544,7 @@
                      <date>1908</date>
                   </imprint>
                </monogr>
+               <note type="flag">date listed in CBSC as 1903</note>
                <citedRange from="17" to="21" unit="pp" corresp="bibl928-4">17-21</citedRange>
                <citedRange from="8" to="17" unit="pp" corresp="bibl683-3">8-17</citedRange>
             </biblStruct>
@@ -8621,7 +8603,6 @@
             <bibl corresp="bibl297-28">W.R. Phillipps, The Connection of St. Thomas the Apostle with
                India, dansThe Indian Antiquary, 32 (1903)</bibl>
             <biblStruct corresp="bibl297-28">
-               <!-- check: what to do with articles spanning multiple volumes. Apparently the reference to vol. 33 is an additional note under the heading "Miscellanea" -->
                <analytic>
                   <author>
                      <forename>W.R.</forename>
@@ -8648,6 +8629,7 @@
                   <biblScope from="33" to="33" unit="vol">33</biblScope>
                   <biblScope unit="pp" from="31" to="31">31</biblScope>
                </monogr>
+               <note type="flag">article spanning multiple volumes</note>
                <citedRange from="1" to="15" unit="pp" corresp="bibl297-28">1-15</citedRange>
                <citedRange from="145" to="160" unit="pp" corresp="bibl297-28">145-160</citedRange>
                <citedRange from="31" to="31" unit="pp" corresp="bibl297-28">31</citedRange>
@@ -8747,7 +8729,6 @@
                civilisation au VIe siècle de l’ère nouvelle, dans Mélanges Massé, Téhéran, 1963,
                10</bibl>
             <biblStruct corresp="bibl896-3">
-               <!-- check: what to do with this "offprint" pagination, which is different from the page range (327-336) listed in CBSC? -->
                <analytic>
                   <author>
                      <forename>N.</forename>
@@ -8765,7 +8746,8 @@
                   </imprint>
                   <biblScope unit="pp" from="327" to="336">327-336</biblScope>
                </monogr>
-               <note>tiré à part</note>
+               <note xml:lang="fr">tiré à part</note>
+               <note type="flag">offprint pagination</note>
                <citedRange unit="pp" corresp="bibl896-3">10 <note>page citation refers to an offprint</note></citedRange>
             </biblStruct>
             <bibl corresp="bibl1042-4">P. Piovanelli, Les origines de l’Apocalypse de Paul
@@ -9520,7 +9502,7 @@
                      <surname>Ryssel</surname>
                   </author>
                   <title xml:lang="de" level="a">Syrische Quellen abendländischer
-                     Erzählungsstoffe: II. Die Siebenschläferlegende</title>
+                     Erzählungsstoffe: IV. Die Silvesterlegende</title>
                   <idno type="URI">http://syriaca.org/bibl/847</idno>
                </analytic>
                <monogr>
@@ -9579,7 +9561,6 @@
                   <biblScope unit="pp" from="277" to="280">241-280</biblScope>
                </monogr>
                <citedRange from="277" to="280" unit="pp" corresp="bibl1053-3">277-280</citedRange>
-               <!--<citedRange from="1" to="21" unit="pp" corresp="bibl560-2">1-21</citedRange>-->
             </biblStruct>
             <bibl
                corresp="bibl1717-2 bibl1716-2 bibl1257-2 bibl1256-2 bibl1255-2 bibl1254-2 bibl1253-2"
@@ -10298,7 +10279,6 @@
                syriaque, dans C. Kappler (éd.), Traditions de l’Au-delà et conceptions de l’Univers
                dans le Proche-Orient ancien, Paris, 1985</bibl>
             <biblStruct corresp="bibl297-60">
-               <!-- check: Is this a confused reference? WorldCat doesn't seem to have this book. CBSC has "Teixidor, Javier, ''L’apôtre marchand d’âmes dans la première littérature syriaque. Voies commerciales et voies de l’Évangile au Proche-Orient'', Pages 379-396 in Apocalypses et voyages dans l’au-delà. Edited by Kappler, Claude. Etudes annexes de la Bible de Jérusalem. Paris: Cerf, 1987." -->
                <analytic>
                   <author>
                      <forename>J.</forename>
@@ -10322,6 +10302,7 @@
                </monogr>
                <note>uncertain page range</note>
                <note corresp="bibl297-60">uncertain page citation</note>
+               <note type="flag">WorldCat doesn't seem to have this book. CBSC has "Teixidor, Javier, ''L’apôtre marchand d’âmes dans la première littérature syriaque. Voies commerciales et voies de l’Évangile au Proche-Orient'', Pages 379-396 in Apocalypses et voyages dans l’au-delà. Edited by Kappler, Claude. Etudes annexes de la Bible de Jérusalem. Paris: Cerf, 1987."</note>
             </biblStruct>
             <bibl corresp="bibl297-47">Y. Tissot, L’encratisme des Actes de Thomas, dans W. Haase
                (ed.), Religion (Vorkonstantinisches Christentum: Leben und Umwelt Jesu; Neues
@@ -10862,7 +10843,6 @@
             <bibl corresp="bibl487-2">P. Van den Ven, S. Jérôme et la Vie du moine Malchus, dans LM
                19 (1900)</bibl>
             <biblStruct corresp="bibl487-2">
-               <!-- check: article spread across multiple volumes -->
                <analytic>
                   <author>
                      <forename>P.</forename>
@@ -10887,6 +10867,7 @@
                   <biblScope unit="vol" from="20" to="20">20</biblScope>
                   <biblScope unit="pp" from="208" to="326">208-326</biblScope>
                </monogr>
+               <note type="flag">article spanning multiple volumes</note>
                <citedRange from="413" to="433" unit="pp" corresp="bibl487-2">413-433; 20 (1901), p.
                   208-326</citedRange>
             </biblStruct>
@@ -11680,7 +11661,6 @@
                Christenverfolgung Schapurs II (Abhandlungen `der Akademie der Wissenschaften in
                Göttingen. Phil.-hist. Kl. 3. Folge, 67), Göttingen, 1967</bibl>
             <biblStruct corresp="bibl268-2">
-               <!-- check: not finished with this -->
                <monogr>
                   <author>
                      <forename>G.</forename>
@@ -11694,10 +11674,22 @@
                      <date>1967</date>
                   </imprint>
                </monogr>
+               <monogr>
+                  <title xml:lang="de" level="m">Untersuchungen zur syrischen Literaturgeschichte</title>
+                  <imprint>
+                     <pubPlace>Göttingen</pubPlace>
+                     <date>1967</date>
+                  </imprint>
+                  <biblScope unit="vol" from="1" to="1">1</biblScope>
+               </monogr>
                <series>
                   <title xml:lang="de" level="s">Abhandlungen der Akademie der Wissenschaften in
-                     Göttingen. Philologisch-historische Klasse 3. Folge</title>
-                  <biblScope unit="vol">67</biblScope>
+                     Göttingen</title>
+                  <biblScope unit="vol" from="67" to="67">67</biblScope>
+               </series>
+               <series>
+                  <title xml:lang="de" level="s">Philologisch-historische Klasse</title>
+                  <biblScope xml:lang="de">3. Folge</biblScope>
                </series>
                <citedRange from="128" to="144" unit="pp" corresp="bibl268-2">128-144</citedRange>
             </biblStruct>
@@ -11921,9 +11913,9 @@
                </monogr>
                <citedRange from="219" to="222" unit="pp" corresp="bibl1174-6">219-222</citedRange>
             </biblStruct>
-            <bibl corresp="bibl1179-2">ed: ms Paris, Bibliothèque nationale, syr. 234</bibl>
+            <!--<bibl corresp="bibl1179-2">ed: ms Paris, Bibliothèque nationale, syr. 234</bibl>
             <biblStruct corresp="bibl1179-2">
-               <!-- check: shouldn't this be in the mss section? -->
+               <!-\- check: shouldn't this be in the mss section? -\->
                <monogr>
                   <author>
                      <surname>ms Paris</surname>
@@ -11934,7 +11926,7 @@
                      <date>234</date>
                   </imprint>
                </monogr>
-            </biblStruct>
+            </biblStruct>-->
          </listBibl>
       </body>
    </text>

@@ -6,7 +6,9 @@
    4. Is the usage of relatedItem and the notes accompanying them the best way to do reprints? (see bibl/940, 941, 942, 1202 below). -->
 
 <!-- LOG: 
-   1. Manually dealt with Unicode characters that had not come in correctly: Æ = ‘, æ = ‘, ¥ = ē, € = [?], ‹ = ā, ˜ = ō, º = ū, ? = ṣ -->
+   1. Manually dealt with Unicode characters that had not come in correctly: Æ = ‘, æ = ‘, ¥ = ē, € = [?], ‹ = ā, ˜ = ō, º = ū, ? = ṣ
+   2. For journals, only used a series element with vol. if there was a competing numbering system for the series (e.g., Revue de l'Orient chrétien).
+-->
 
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
@@ -252,10 +254,14 @@
             <biblStruct corresp="bibl250-13">
                <analytic>
                   <author>
-                     <forename xml:lang="en-x-gedsh">Z.</forename>
-                     <surname xml:lang="en-x-gedsh">ʿAywāṣ</surname>
-                     <forename xml:lang="ar">ز.</forename>
-                     <surname xml:lang="ar">عيواص</surname>
+                     <persName xml:lang="en-x-gedsh">
+                        <forename>Z.</forename>
+                        <surname>ʿAywāṣ</surname>
+                     </persName>
+                     <persName xml:lang="ar">
+                        <forename>ز.</forename>
+                        <surname>عيواص</surname>
+                     </persName>
                   </author>
                   <title xml:lang="en-x-gedsh" level="a">Qiṣṣat ahl al-kahf fi al-maṣādir
                      al-suryāniyya</title>
@@ -298,10 +304,14 @@
             <biblStruct corresp="bibl1404-2">
                <monogr>
                   <author>
-                     <forename xml:lang="en-x-gedsh">S.</forename>
-                     <surname xml:lang="en-x-gedsh">Qāšā</surname>
-                     <forename xml:lang="ar">سهيل</forename>
-                     <surname xml:lang="ar">قاشا</surname>
+                     <persName xml:lang="en-x-gedsh">
+                        <forename>S.</forename>
+                        <surname>Qāšā</surname>
+                     </persName>
+                     <persName xml:lang="ar">
+                        <forename>سهيل</forename>
+                        <surname>قاشا</surname>
+                     </persName>
                   </author>
                   <title level="m" xml:lang="en-x-gedsh">Sīrat al-šahīd Mār Zaynā</title>
                   <title level="m" xml:lang="ar">سيرة الشهيد مار زينا</title>
@@ -498,7 +508,7 @@
                      <surname>Sinor</surname>
                   </editor>
                   <title xml:lang="en" level="m">Proceedings of the Twenty-Seventh International
-                     Congress of Orientalists. Ann Arbor, Michigan 13th-19th August 1967,</title>
+                     Congress of Orientalists. Ann Arbor, Michigan 13th-19th August 1967</title>
                   <imprint>
                      <pubPlace>Wiesbaden</pubPlace>
                      <date>1971</date>
@@ -623,10 +633,14 @@
             <biblStruct corresp="bibl345-2">
                <analytic>
                   <author>
-                     <forename xml:lang="ru-Latn-iso9r95">E.</forename>
-                     <surname xml:lang="ru-Latn-iso9r95">Aničkov</surname>
-                     <forename xml:lang="ru">Е.</forename>
-                     <surname xml:lang="ru">Аничков</surname>
+                     <persName xml:lang="ru-Latn-iso9r95">
+                        <forename>E.</forename>
+                        <surname>Aničkov</surname>
+                     </persName>
+                     <persName xml:lang="ru">
+                        <forename>Е.</forename>
+                        <surname>Аничков</surname>
+                     </persName>
                   </author>
                   <title level="a" xml:lang="ru-Latn-iso9r95">Sv. Nikolaj i Artemida Èfesskaâ</title>
                   <title level="a" xml:lang="ru">Св. Николай и Артемида Эфесская</title>
@@ -672,10 +686,14 @@
                <!-- check -->
                <monogr>
                   <author>
-                     <forename xml:lang="el-Latn-iso843">A.K.</forename>
-                     <surname xml:lang="el-Latn-iso843">Arvanítīs</surname>
-                     <forename xml:lang="el">Αθανάσιος Κ.</forename>
-                     <surname xml:lang="el">Αρβανίτης</surname>
+                     <persName xml:lang="el-Latn-iso843">
+                        <forename>A.K.</forename>
+                        <surname>Arvanítīs</surname>
+                     </persName>
+                     <persName xml:lang="el">
+                        <forename>Αθανάσιος Κ.</forename>
+                        <surname>Αρβανίτης</surname>
+                     </persName>
                   </author>
                   <title level="m" xml:lang="el-Latn-iso843">O Apóstolos Thōmás kai Syriakī́ Ekklīsía toy Malampár en tī istoría kai tō parónti</title>
                   <title level="m" xml:lang="el">Ο Απόστολος Θωμάς και Συριακή Εκκλησία του Μαλαμπάρ εν τη ιστορία και τω παρόντι</title>
@@ -715,8 +733,8 @@
                   </imprint>
                   <biblScope unit="vol" from="1" to="1">1</biblScope>
                </monogr>
-               <citedRange from="286" to="289" unit="pp" corresp="bibl980-6">286-289 (dans note),
-                  340</citedRange>
+               <citedRange from="286" to="289" unit="pp" corresp="bibl980-6">286-289 <note xml:lang="fr">dans note</note></citedRange>
+               <citedRange from="340" to="340" unit="pp" corresp="bibl980-6">340</citedRange>
                <citedRange from="258" to="259" unit="pp" corresp="bibl400-2">258-259</citedRange>
                <citedRange from="181" to="183" unit="pp" corresp="bibl291-3">181-183</citedRange>
                <citedRange from="193" to="194" unit="pp" corresp="bibl285-5">193-194</citedRange>
@@ -902,7 +920,7 @@
                   </imprint>
                </monogr>
             </biblStruct>
-            <bibl corresp="bibl1167-2b bibl1058-2">R. Beulay, Précisions touchant l’identité et la
+            <bibl corresp="bibl1167-2b bibl1058-2 bibl1072-2b">R. Beulay, Précisions touchant l’identité et la
                biographie de Jean Saba de Dalyatha, dans PdO, 8 (1977-1978)</bibl>
             <biblStruct corresp="bibl1167-2b bibl1058-2">
                <analytic>
@@ -925,6 +943,7 @@
                </monogr>
                <citedRange from="87" to="116" unit="pp" corresp="bibl1167-2b">87-116</citedRange>
                <citedRange from="87" to="116" unit="pp" corresp="bibl1058-2">87-116</citedRange>
+               <citedRange from="87" to="116" unit="pp" corresp="bibl1072-2b">87-116</citedRange>
             </biblStruct>
             <bibl corresp="bibl297-17">K. Beyer, Das syrische Perlenlied. Ein Erlösungsmythos als
                Märchengedicht, dans ZDMG, 140 (1990)</bibl>
@@ -959,12 +978,17 @@
                      <surname>Blersch</surname>
                   </author>
                   <title xml:lang="de" level="m">Die Säule im Weltgeviert. Der Aufstieg Simeons, des
-                     ersten Säulenheiligen (Sophia, 17)Trêves, 1978</title>
+                     ersten Säulenheiligen</title>
                   <idno type="URI">http://syriaca.org/bibl/886</idno>
                   <imprint>
+                     <pubPlace>Trêves</pubPlace>
                      <date>1978</date>
                   </imprint>
                </monogr>
+               <series>
+                  <title level="s">Sophia</title>
+                  <biblScope unit="vol" from="17" to="17">17</biblScope>
+               </series>
             </biblStruct>
             <bibl corresp="bibl347-2b">G.G. Blum, Rabbula von Edessa. Der Christ, der Bischof, der
                Theologe (CSCO 300, Subs. 34), Louvain, 1969</bibl>
@@ -1092,14 +1116,14 @@
                      <date>1923</date>
                   </imprint>
                </monogr>
-               <citedRange from="26" to="57" unit="pp" corresp="bibl976-2">26-57 et
-                  137-150</citedRange>
-               <citedRange from="26" to="57" unit="pp" corresp="bibl552-2">26-57 et
-                  137-150</citedRange>
-               <citedRange from="26" to="57" unit="pp" corresp="bibl551-2">26-57 et
-                  137-150</citedRange>
-               <citedRange from="26" to="57" unit="pp" corresp="bibl549-2">26-57 et
-                  137-150</citedRange>
+               <citedRange from="26" to="57" unit="pp" corresp="bibl976-2">26-57</citedRange>
+               <citedRange from="137" to="150" unit="pp" corresp="bibl976-2">137-150</citedRange>
+               <citedRange from="26" to="57" unit="pp" corresp="bibl552-2">26-57</citedRange>
+               <citedRange from="137" to="150" unit="pp" corresp="bibl552-2">137-150</citedRange>
+               <citedRange from="26" to="57" unit="pp" corresp="bibl551-2">26-57</citedRange>
+               <citedRange from="137" to="150" unit="pp" corresp="bibl551-2">137-150</citedRange>
+               <citedRange from="26" to="57" unit="pp" corresp="bibl549-2">26-57</citedRange>
+               <citedRange from="137" to="150" unit="pp" corresp="bibl549-2">137-150</citedRange>
             </biblStruct>
             <bibl corresp="bibl297-13">W. Bousset, Manichäisches in den Thomasakten, dans ZNW, 18
                (1917-1918)</bibl>
@@ -1185,14 +1209,53 @@
                      <forename>W.</forename>
                      <surname>Haase</surname>
                   </editor>
-                  <title xml:lang="de" level="m">Religion (Vorkonstantinisches Christentum: Leben
-                     und Umwelt Jesu; Neues Testament [Kanonische Schriften und Apokryphen], Schluss
-                     (ANRW, II.25:6)</title>
+                  <title xml:lang="de" level="m">6. Teilband, Schluss</title>
                   <imprint>
-                     <pubPlace>Berlin-New York</pubPlace>
+                     <pubPlace>Berlin</pubPlace>
+                     <pubPlace>New York</pubPlace>
                      <date>1988</date>
                   </imprint>
                   <biblScope unit="pp" from="4431" to="4527">4431-4527</biblScope>
+               </monogr>
+               <monogr>
+                  <editor>
+                     <forename>W.</forename>
+                     <surname>Haase</surname>
+                  </editor>
+                  <title xml:lang="de" level="m">Religion (Vorkonstantinisches Christentum: Leben
+                     und Umwelt Jesu; Neues Testament [Kanonische Schriften und Apokryphen])</title>
+                  <imprint>
+                     <date>1982-1988</date>
+                  </imprint>
+                  <extent>6 parts</extent>
+                  <biblScope unit="part" from="6" to="6">6</biblScope>
+               </monogr>
+               <monogr>
+                  <editor>
+                     <forename>H.</forename>
+                     <surname>Temporini</surname>
+                  </editor>
+                  <editor>
+                     <forename>W.</forename>
+                     <surname>Haase</surname>
+                  </editor>
+                  <title xml:lang="de" level="m">Principat</title>
+                  <imprint>
+                     <date>1974-1996</date>
+                  </imprint>
+                  <biblScope unit="vol" from="25" to="25">25</biblScope>
+               </monogr>
+               <monogr>
+                  <editor>
+                     <forename>W.</forename>
+                     <surname>Haase</surname>
+                  </editor>
+                  <title xml:lang="de" level="m">Aufstieg und Niedergang der römischen Welt (ANRW)</title>
+                  <title xml:lang="en" level="m">Rise and decline of the Roman world</title>
+                  <imprint>
+                     <date>1972-1996</date>
+                  </imprint>
+                  <biblScope unit="part" from="2" to="2">2</biblScope>
                </monogr>
                <citedRange from="4431" to="4527" unit="pp" corresp="bibl890-4"
                   >4431-4527</citedRange>
@@ -1228,7 +1291,7 @@
                      <surname>Briquel-Chatonnet</surname>
                   </author>
                   <title xml:lang="fr" level="a">Note sur l’histoire du monastère de Saint-Gabriel
-                     de Qartam¬n</title>
+                     de Quartamin</title>
                   <idno type="URI">http://syriaca.org/bibl/1054</idno>
                </analytic>
                <monogr>
@@ -1277,6 +1340,7 @@
                <!-- check: I haven't been able to find this forthcoming article. Is it still forthcoming? -->
                <monogr>
                   <author>
+                     <forename>S.</forename>
                      <surname>Brock</surname>
                   </author>
                   <title xml:lang="en" level="m">The XL Martyrs in Syriac Tradition</title>
@@ -1497,13 +1561,53 @@
                      <forename>W.</forename>
                      <surname>Haase</surname>
                   </editor>
-                  <title xml:lang="de" level="m">Religion (Hellenistisches Judentum in römischer
-                     Zeit, ausgenommen Philon und Josephus) 1 (ANRW, II.20:1)</title>
+                  <title xml:lang="de" level="m">1. Halbband</title>
                   <imprint>
-                     <pubPlace>Berlin-New York</pubPlace>
+                     <pubPlace>Berlin</pubPlace>
+                     <pubPlace>New York</pubPlace>
                      <date>1987</date>
                   </imprint>
-                  <biblScope unit="pp" from="574" to="581">574-581</biblScope>
+                  <biblScope from="574" to="581" unit="pp">574-581</biblScope>
+               </monogr>
+               <monogr>
+                  <editor>
+                     <forename>W.</forename>
+                     <surname>Haase</surname>
+                  </editor>
+                  <title xml:lang="de" level="m">Religion (Hellenistisches Judentum in römischer Zeit, ausgenommen
+                     Philon und Josephus)</title>
+                  <imprint>
+                     <date>1986-1987</date>
+                  </imprint>
+                  <extent>2 parts</extent>
+                  <biblScope unit="part" from="1" to="1">1</biblScope>
+               </monogr>
+               <monogr>
+                  <editor>
+                     <forename>H.</forename>
+                     <surname>Temporini</surname>
+                  </editor>
+                  <editor>
+                     <forename>W.</forename>
+                     <surname>Haase</surname>
+                  </editor>
+                  <title xml:lang="de" level="m">Principat</title>
+                  <imprint>
+                     <date>1974-1996</date>
+                  </imprint>
+                  <biblScope unit="vol" from="20" to="20">20</biblScope>
+               </monogr>
+               <monogr>
+                  <editor>
+                     <forename>W.</forename>
+                     <surname>Haase</surname>
+                  </editor>
+                  <title xml:lang="de" level="m">Aufstieg und Niedergang der römischen Welt (ANRW)</title>
+                  <title xml:lang="en" level="m">Rise and decline of the Roman world</title>
+                  <imprint>
+                     <date>1972-1996</date>
+                  </imprint>
+                  <biblScope unit="part" from="2" to="2">2</biblScope>
                </monogr>
                <citedRange from="574" to="581" unit="pp" corresp="bibl559-2">574-581</citedRange>
             </biblStruct>
@@ -1588,30 +1692,186 @@
                      <date>1904</date>
                   </imprint>
                </monogr>
-               <citedRange from="193" to="228" unit="pp" corresp="bibl297-78">193-228; traduit en
-                  allemand par E. Preuschen, Urchristentum im Orient, Tübingen, 107, p.
-                  134-160</citedRange>
+               <relatedItem type="is-translated-in" target="http://syriaca.org/bibl/1205"/>
+               <citedRange from="193" to="228" unit="pp" corresp="bibl297-78">193-228</citedRange>
+            </biblStruct>
+            <biblStruct corresp="bibl297-78b">
+               <monogr>
+                  <author>
+                     <forename>F.C.</forename>
+                     <surname>Burkitt</surname>
+                  </author>
+                  <editor role="translator">
+                     <forename>E.</forename>
+                     <surname>Preuschen</surname>
+                  </editor>
+                  <title xml:lang="de" level="m">Urchristentum im Orient</title>
+                  <idno type="URI">http://syriaca.org/bibl/1205</idno>
+                  <imprint>
+                     <pubPlace>Tübingen</pubPlace>
+                     <date>1907</date>
+                  </imprint>
+               </monogr>
+               <relatedItem type="is-translation-of" target="http://syriaca.org/bibl/997"/>
+               <citedRange from="134" to="160" unit="pp" corresp="bibl297-78b">134-160</citedRange>
             </biblStruct>
             <bibl
-               corresp="bibl976-3 bibl786-3 bibl552-3 bibl551-3a bibl550-3 bibl549-3 bibl548-3 bibl547-3 bibl546-3 bibl545-3 bibl544-3 bibl543-3 bibl542-3 bibl541-3 bibl540-3 bibl539-3 bibl538-3 bibl537-3 bibl536-3 bibl535-3 bibl534-3 bibl533-3 bibl532-3 bibl531-3 bibl530-3 bibl529-3 bibl528-3 bibl527-3 bibl526-3 bibl525-3 bibl524-3 bibl523-3 bibl522-3 bibl521-3 bibl520-3 bibl519-3 bibl1555-3"
-               >C. Butler, The Lausiac History of Palladius. A Critical Discussion together with
+               corresp="bibl680-2 bibl679-2 bibl675-2 bibl674-2 bibl673-2 bibl672-2 bibl671-2 bibl670-2 bibl669-2 bibl668-2 bibl667-2 bibl666-2 bibl665-2 bibl664-2 bibl663-2 bibl662-2 bibl661-2 bibl660-2 bibl655-2 bibl654-2 bibl653-2 bibl652-2 bibl651-2 bibl650-2 bibl649-2 bibl648-2 bibl647-2 bibl646-2 bibl645-2 bibl644-2 bibl643-2 bibl642-2 bibl641-2 bibl640-2 bibl639-2 bibl638-2 bibl637-2 bibl636-2 bibl635-2 bibl634-2 bibl633-2 bibl632-2 bibl631-2 bibl630-2 bibl629-2 bibl628-2 bibl627-2 bibl626-2 bibl625-2 bibl624-2 bibl623-2 bibl622-2 bibl472-2 bibl471-2 bibl470-2 bibl469-2 bibl468-2 bibl467-2 bibl466-2 bibl465-2 bibl464-2 bibl463-2 bibl462-2 bibl461-2 bibl460-2 bibl459-2 bibl458-2 bibl457-2 bibl456-2 bibl455-2 bibl454-2 bibl453-2 bibl452-2 bibl451-2 bibl450-2 bibl449-2 bibl448-2 bibl447-2 bibl446-2 bibl445-2 bibl444-2 bibl443-2 bibl442-2 bibl441-2 bibl440-2 bibl439-2 bibl438-2 bibl437-2 bibl436-2 bibl435-2 bibl434-2 bibl433-2 bibl432-2 bibl431-2 bibl430-2 bibl429-2 bibl428-2 bibl427-2 bibl426-2 bibl425-2 bibl424-2 bibl423-2 bibl422-2 bibl421-2 bibl420-2 bibl419-2 bibl418-2 bibl417-2 bibl416-2 bibl415-2 bibl414-2 bibl413-2 bibl412-2 bibl411-2 bibl410-2 bibl409-2 bibl408-2 bibl407-2 bibl406-2 bibl405-2 bibl404-2 bibl403-4"
+               >C. Butler, The Lausiac History of Palladius. I. A Critical Discussion together with
                Notes on Early Egyptian Monachism (Texts and Studies, 6/1), Cambridge, 1898</bibl>
             <biblStruct
-               corresp="bibl976-3 bibl786-3 bibl552-3 bibl551-3a bibl550-3 bibl549-3 bibl548-3 bibl547-3 bibl546-3 bibl545-3 bibl544-3 bibl543-3 bibl542-3 bibl541-3 bibl540-3 bibl539-3 bibl538-3 bibl537-3 bibl536-3 bibl535-3 bibl534-3 bibl533-3 bibl532-3 bibl531-3 bibl530-3 bibl529-3 bibl528-3 bibl527-3 bibl526-3 bibl525-3 bibl524-3 bibl523-3 bibl522-3 bibl521-3 bibl520-3 bibl519-3 bibl1555-3">
+               corresp="bibl680-2 bibl679-2 bibl675-2 bibl674-2 bibl673-2 bibl672-2 bibl671-2 bibl670-2 bibl669-2 bibl668-2 bibl667-2 bibl666-2 bibl665-2 bibl664-2 bibl663-2 bibl662-2 bibl661-2 bibl660-2 bibl655-2 bibl654-2 bibl653-2 bibl652-2 bibl651-2 bibl650-2 bibl649-2 bibl648-2 bibl647-2 bibl646-2 bibl645-2 bibl644-2 bibl643-2 bibl642-2 bibl641-2 bibl640-2 bibl639-2 bibl638-2 bibl637-2 bibl636-2 bibl635-2 bibl634-2 bibl633-2 bibl632-2 bibl631-2 bibl630-2 bibl629-2 bibl628-2 bibl627-2 bibl626-2 bibl625-2 bibl624-2 bibl623-2 bibl622-2 bibl472-2 bibl471-2 bibl470-2 bibl469-2 bibl468-2 bibl467-2 bibl466-2 bibl465-2 bibl464-2 bibl463-2 bibl462-2 bibl461-2 bibl460-2 bibl459-2 bibl458-2 bibl457-2 bibl456-2 bibl455-2 bibl454-2 bibl453-2 bibl452-2 bibl451-2 bibl450-2 bibl449-2 bibl448-2 bibl447-2 bibl446-2 bibl445-2 bibl444-2 bibl443-2 bibl442-2 bibl441-2 bibl440-2 bibl439-2 bibl438-2 bibl437-2 bibl436-2 bibl435-2 bibl434-2 bibl433-2 bibl432-2 bibl431-2 bibl430-2 bibl429-2 bibl428-2 bibl427-2 bibl426-2 bibl425-2 bibl424-2 bibl423-2 bibl422-2 bibl421-2 bibl420-2 bibl419-2 bibl418-2 bibl417-2 bibl416-2 bibl415-2 bibl414-2 bibl413-2 bibl412-2 bibl411-2 bibl410-2 bibl409-2 bibl408-2 bibl407-2 bibl406-2 bibl405-2 bibl404-2 bibl403-4 bibl976-3 bibl786-3 bibl552-3 bibl551-3a bibl550-3 bibl549-3 bibl548-3 bibl547-3 bibl546-3 bibl545-3 bibl544-3 bibl543-3 bibl542-3 bibl541-3 bibl540-3 bibl539-3 bibl538-3 bibl537-3 bibl536-3 bibl535-3 bibl534-3 bibl533-3 bibl532-3 bibl531-3 bibl530-3 bibl529-3 bibl528-3 bibl527-3 bibl526-3 bibl525-3 bibl524-3 bibl523-3 bibl522-3 bibl521-3 bibl520-3 bibl519-3 bibl1555-3">
                <monogr>
                   <author>
                      <forename>C.</forename>
                      <surname>Butler</surname>
                   </author>
-                  <title xml:lang="en" level="m">The Lausiac History of Palladius. A Critical
-                     Discussion together with Notes on Early Egyptian Monachism (Texts and Studies,
-                     6/1)</title>
-                  <idno type="URI">http://syriaca.org/bibl/715</idno>
+                  <title xml:lang="en" level="m">A Critical Discussion together with Notes on Early Egyptian Monachism</title>
+                  <idno type="URI">http://syriaca.org/bibl/836</idno>
                   <imprint>
                      <pubPlace>Cambridge</pubPlace>
                      <date>1898</date>
                   </imprint>
                </monogr>
+               <series>
+                  <title xml:lang="en" level="s">Texts and Studies</title>
+                  <biblScope unit="vol" from="6" to="6">6/1</biblScope>
+               </series>
+               <monogr>
+                  <author>
+                     <forename>C.</forename>
+                     <surname>Butler</surname>
+                  </author>
+                  <title xml:lang="en" level="m">The Lausiac History of Palladius</title>
+                  <imprint>
+                     <pubPlace>Cambridge</pubPlace>
+                     <date>1898-1904</date>
+                  </imprint>
+                  <extent>2 vols.</extent>
+                  <biblScope unit="vol" from="1" to="1">1</biblScope>
+               </monogr>
+               <citedRange from="77" to="96" unit="pp" corresp="bibl680-2">77-96</citedRange>
+               <citedRange from="77" to="96" unit="pp" corresp="bibl679-2">77-96</citedRange>
+               <citedRange from="77" to="96" unit="pp" corresp="bibl675-2">77-96</citedRange>
+               <citedRange from="77" to="96" unit="pp" corresp="bibl674-2">77-96</citedRange>
+               <citedRange from="77" to="96" unit="pp" corresp="bibl673-2">77-96</citedRange>
+               <citedRange from="77" to="96" unit="pp" corresp="bibl672-2">77-96</citedRange>
+               <citedRange from="77" to="96" unit="pp" corresp="bibl671-2">77-96</citedRange>
+               <citedRange from="77" to="96" unit="pp" corresp="bibl670-2">77-96</citedRange>
+               <citedRange from="77" to="96" unit="pp" corresp="bibl669-2">77-96</citedRange>
+               <citedRange from="77" to="96" unit="pp" corresp="bibl668-2">77-96</citedRange>
+               <citedRange from="77" to="96" unit="pp" corresp="bibl667-2">77-96</citedRange>
+               <citedRange from="77" to="96" unit="pp" corresp="bibl666-2">77-96</citedRange>
+               <citedRange from="77" to="96" unit="pp" corresp="bibl665-2">77-96</citedRange>
+               <citedRange from="77" to="96" unit="pp" corresp="bibl664-2">77-96</citedRange>
+               <citedRange from="77" to="96" unit="pp" corresp="bibl663-2">77-96</citedRange>
+               <citedRange from="77" to="96" unit="pp" corresp="bibl662-2">77-96</citedRange>
+               <citedRange from="77" to="96" unit="pp" corresp="bibl661-2">77-96</citedRange>
+               <citedRange from="77" to="96" unit="pp" corresp="bibl660-2">77-96</citedRange>
+               <citedRange from="77" to="96" unit="pp" corresp="bibl655-2">77-96</citedRange>
+               <citedRange from="77" to="96" unit="pp" corresp="bibl654-2">77-96</citedRange>
+               <citedRange from="77" to="96" unit="pp" corresp="bibl653-2">77-96</citedRange>
+               <citedRange from="77" to="96" unit="pp" corresp="bibl652-2">77-96</citedRange>
+               <citedRange from="77" to="96" unit="pp" corresp="bibl651-2">77-96</citedRange>
+               <citedRange from="77" to="96" unit="pp" corresp="bibl650-2">77-96</citedRange>
+               <citedRange from="77" to="96" unit="pp" corresp="bibl649-2">77-96</citedRange>
+               <citedRange from="77" to="96" unit="pp" corresp="bibl648-2">77-96</citedRange>
+               <citedRange from="77" to="96" unit="pp" corresp="bibl647-2">77-96</citedRange>
+               <citedRange from="77" to="96" unit="pp" corresp="bibl646-2">77-96</citedRange>
+               <citedRange from="77" to="96" unit="pp" corresp="bibl645-2">77-96</citedRange>
+               <citedRange from="77" to="96" unit="pp" corresp="bibl644-2">77-96</citedRange>
+               <citedRange from="77" to="96" unit="pp" corresp="bibl643-2">77-96</citedRange>
+               <citedRange from="77" to="96" unit="pp" corresp="bibl642-2">77-96</citedRange>
+               <citedRange from="77" to="96" unit="pp" corresp="bibl641-2">77-96</citedRange>
+               <citedRange from="77" to="96" unit="pp" corresp="bibl640-2">77-96</citedRange>
+               <citedRange from="77" to="96" unit="pp" corresp="bibl639-2">77-96</citedRange>
+               <citedRange from="77" to="96" unit="pp" corresp="bibl638-2">77-96</citedRange>
+               <citedRange from="77" to="96" unit="pp" corresp="bibl637-2">77-96</citedRange>
+               <citedRange from="77" to="96" unit="pp" corresp="bibl636-2">77-96</citedRange>
+               <citedRange from="77" to="96" unit="pp" corresp="bibl635-2">77-96</citedRange>
+               <citedRange from="77" to="96" unit="pp" corresp="bibl634-2">77-96</citedRange>
+               <citedRange from="77" to="96" unit="pp" corresp="bibl633-2">77-96</citedRange>
+               <citedRange from="77" to="96" unit="pp" corresp="bibl632-2">77-96</citedRange>
+               <citedRange from="77" to="96" unit="pp" corresp="bibl631-2">77-96</citedRange>
+               <citedRange from="77" to="96" unit="pp" corresp="bibl630-2">77-96</citedRange>
+               <citedRange from="77" to="96" unit="pp" corresp="bibl629-2">77-96</citedRange>
+               <citedRange from="77" to="96" unit="pp" corresp="bibl628-2">77-96</citedRange>
+               <citedRange from="77" to="96" unit="pp" corresp="bibl627-2">77-96</citedRange>
+               <citedRange from="77" to="96" unit="pp" corresp="bibl626-2">77-96</citedRange>
+               <citedRange from="77" to="96" unit="pp" corresp="bibl625-2">77-96</citedRange>
+               <citedRange from="77" to="96" unit="pp" corresp="bibl624-2">77-96</citedRange>
+               <citedRange from="77" to="96" unit="pp" corresp="bibl623-2">77-96</citedRange>
+               <citedRange from="77" to="96" unit="pp" corresp="bibl622-2">77-96</citedRange>
+               <citedRange from="77" to="96" unit="pp" corresp="bibl472-2">77-96</citedRange>
+               <citedRange from="77" to="96" unit="pp" corresp="bibl471-2">77-96</citedRange>
+               <citedRange from="77" to="96" unit="pp" corresp="bibl470-2">77-96</citedRange>
+               <citedRange from="77" to="96" unit="pp" corresp="bibl469-2">77-96</citedRange>
+               <citedRange from="77" to="96" unit="pp" corresp="bibl468-2">77-96</citedRange>
+               <citedRange from="77" to="96" unit="pp" corresp="bibl467-2">77-96</citedRange>
+               <citedRange from="77" to="96" unit="pp" corresp="bibl466-2">77-96</citedRange>
+               <citedRange from="77" to="96" unit="pp" corresp="bibl465-2">77-96</citedRange>
+               <citedRange from="77" to="96" unit="pp" corresp="bibl464-2">77-96</citedRange>
+               <citedRange from="77" to="96" unit="pp" corresp="bibl463-2">77-96</citedRange>
+               <citedRange from="77" to="96" unit="pp" corresp="bibl462-2">77-96</citedRange>
+               <citedRange from="77" to="96" unit="pp" corresp="bibl461-2">77-96</citedRange>
+               <citedRange from="77" to="96" unit="pp" corresp="bibl460-2">77-96</citedRange>
+               <citedRange from="77" to="96" unit="pp" corresp="bibl459-2">77-96</citedRange>
+               <citedRange from="77" to="96" unit="pp" corresp="bibl458-2">77-96</citedRange>
+               <citedRange from="77" to="96" unit="pp" corresp="bibl457-2">77-96</citedRange>
+               <citedRange from="77" to="96" unit="pp" corresp="bibl456-2">77-96</citedRange>
+               <citedRange from="77" to="96" unit="pp" corresp="bibl455-2">77-96</citedRange>
+               <citedRange from="77" to="96" unit="pp" corresp="bibl454-2">77-96</citedRange>
+               <citedRange from="77" to="96" unit="pp" corresp="bibl453-2">77-96</citedRange>
+               <citedRange from="77" to="96" unit="pp" corresp="bibl452-2">77-96</citedRange>
+               <citedRange from="77" to="96" unit="pp" corresp="bibl451-2">77-96</citedRange>
+               <citedRange from="77" to="96" unit="pp" corresp="bibl450-2">77-96</citedRange>
+               <citedRange from="77" to="96" unit="pp" corresp="bibl449-2">77-96</citedRange>
+               <citedRange from="77" to="96" unit="pp" corresp="bibl448-2">77-96</citedRange>
+               <citedRange from="77" to="96" unit="pp" corresp="bibl447-2">77-96</citedRange>
+               <citedRange from="77" to="96" unit="pp" corresp="bibl446-2">77-96</citedRange>
+               <citedRange from="77" to="96" unit="pp" corresp="bibl445-2">77-96</citedRange>
+               <citedRange from="77" to="96" unit="pp" corresp="bibl444-2">77-96</citedRange>
+               <citedRange from="77" to="96" unit="pp" corresp="bibl443-2">77-96</citedRange>
+               <citedRange from="77" to="96" unit="pp" corresp="bibl442-2">77-96</citedRange>
+               <citedRange from="77" to="96" unit="pp" corresp="bibl441-2">77-96</citedRange>
+               <citedRange from="77" to="96" unit="pp" corresp="bibl440-2">77-96</citedRange>
+               <citedRange from="77" to="96" unit="pp" corresp="bibl439-2">77-96</citedRange>
+               <citedRange from="77" to="96" unit="pp" corresp="bibl438-2">77-96</citedRange>
+               <citedRange from="77" to="96" unit="pp" corresp="bibl437-2">77-96</citedRange>
+               <citedRange from="77" to="96" unit="pp" corresp="bibl436-2">77-96</citedRange>
+               <citedRange from="77" to="96" unit="pp" corresp="bibl435-2">77-96</citedRange>
+               <citedRange from="77" to="96" unit="pp" corresp="bibl434-2">77-96</citedRange>
+               <citedRange from="77" to="96" unit="pp" corresp="bibl433-2">77-96</citedRange>
+               <citedRange from="77" to="96" unit="pp" corresp="bibl432-2">77-96</citedRange>
+               <citedRange from="77" to="96" unit="pp" corresp="bibl431-2">77-96</citedRange>
+               <citedRange from="77" to="96" unit="pp" corresp="bibl430-2">77-96</citedRange>
+               <citedRange from="77" to="96" unit="pp" corresp="bibl429-2">77-96</citedRange>
+               <citedRange from="77" to="96" unit="pp" corresp="bibl428-2">77-96</citedRange>
+               <citedRange from="77" to="96" unit="pp" corresp="bibl427-2">77-96</citedRange>
+               <citedRange from="77" to="96" unit="pp" corresp="bibl426-2">77-96</citedRange>
+               <citedRange from="77" to="96" unit="pp" corresp="bibl425-2">77-96</citedRange>
+               <citedRange from="77" to="96" unit="pp" corresp="bibl424-2">77-96</citedRange>
+               <citedRange from="77" to="96" unit="pp" corresp="bibl423-2">77-96</citedRange>
+               <citedRange from="77" to="96" unit="pp" corresp="bibl422-2">77-96</citedRange>
+               <citedRange from="77" to="96" unit="pp" corresp="bibl421-2">77-96</citedRange>
+               <citedRange from="77" to="96" unit="pp" corresp="bibl420-2">77-96</citedRange>
+               <citedRange from="77" to="96" unit="pp" corresp="bibl419-2">77-96</citedRange>
+               <citedRange from="77" to="96" unit="pp" corresp="bibl418-2">77-96</citedRange>
+               <citedRange from="77" to="96" unit="pp" corresp="bibl417-2">77-96</citedRange>
+               <citedRange from="77" to="96" unit="pp" corresp="bibl416-2">77-96</citedRange>
+               <citedRange from="77" to="96" unit="pp" corresp="bibl415-2">77-96</citedRange>
+               <citedRange from="77" to="96" unit="pp" corresp="bibl414-2">77-96</citedRange>
+               <citedRange from="77" to="96" unit="pp" corresp="bibl413-2">77-96</citedRange>
+               <citedRange from="77" to="96" unit="pp" corresp="bibl412-2">77-96</citedRange>
+               <citedRange from="77" to="96" unit="pp" corresp="bibl411-2">77-96</citedRange>
+               <citedRange from="77" to="96" unit="pp" corresp="bibl410-2">77-96</citedRange>
+               <citedRange from="77" to="96" unit="pp" corresp="bibl409-2">77-96</citedRange>
+               <citedRange from="77" to="96" unit="pp" corresp="bibl408-2">77-96</citedRange>
+               <citedRange from="77" to="96" unit="pp" corresp="bibl407-2">77-96</citedRange>
+               <citedRange from="77" to="96" unit="pp" corresp="bibl406-2">77-96</citedRange>
+               <citedRange from="77" to="96" unit="pp" corresp="bibl405-2">77-96</citedRange>
+               <citedRange from="77" to="96" unit="pp" corresp="bibl404-2">77-96</citedRange>
+               <citedRange from="77" to="96" unit="pp" corresp="bibl403-4">77-96</citedRange>
                <citedRange from="77" to="96" unit="pp" corresp="bibl976-3">77-96</citedRange>
                <citedRange from="266" to="267" unit="pp" corresp="bibl786-3">266-267</citedRange>
                <citedRange from="77" to="96" unit="pp" corresp="bibl552-3">77-96</citedRange>
@@ -1650,392 +1910,159 @@
                <citedRange from="266" to="267" unit="pp" corresp="bibl519-3">266-267</citedRange>
                <citedRange from="266" to="267" unit="pp" corresp="bibl1555-3">266-267</citedRange>
             </biblStruct>
-            <bibl
-               corresp="bibl680-2 bibl679-2 bibl675-2 bibl674-2 bibl673-2 bibl672-2 bibl671-2 bibl670-2 bibl669-2 bibl668-2 bibl667-2 bibl666-2 bibl665-2 bibl664-2 bibl663-2 bibl662-2 bibl661-2 bibl660-2 bibl655-2 bibl654-2 bibl653-2 bibl652-2 bibl651-2 bibl650-2 bibl649-2 bibl648-2 bibl647-2 bibl646-2 bibl645-2 bibl644-2 bibl643-2 bibl642-2 bibl641-2 bibl640-2 bibl639-2 bibl638-2 bibl637-2 bibl636-2 bibl635-2 bibl634-2 bibl633-2 bibl632-2 bibl631-2 bibl630-2 bibl629-2 bibl628-2 bibl627-2 bibl626-2 bibl625-2 bibl624-2 bibl623-2 bibl622-2 bibl472-2 bibl471-2 bibl470-2 bibl469-2 bibl468-2 bibl467-2 bibl466-2 bibl465-2 bibl464-2 bibl463-2 bibl462-2 bibl461-2 bibl460-2 bibl459-2 bibl458-2 bibl457-2 bibl456-2 bibl455-2 bibl454-2 bibl453-2 bibl452-2 bibl451-2 bibl450-2 bibl449-2 bibl448-2 bibl447-2 bibl446-2 bibl445-2 bibl444-2 bibl443-2 bibl442-2 bibl441-2 bibl440-2 bibl439-2 bibl438-2 bibl437-2 bibl436-2 bibl435-2 bibl434-2 bibl433-2 bibl432-2 bibl431-2 bibl430-2 bibl429-2 bibl428-2 bibl427-2 bibl426-2 bibl425-2 bibl424-2 bibl423-2 bibl422-2 bibl421-2 bibl420-2 bibl419-2 bibl418-2 bibl417-2 bibl416-2 bibl415-2 bibl414-2 bibl413-2 bibl412-2 bibl411-2 bibl410-2 bibl409-2 bibl408-2 bibl407-2 bibl406-2 bibl405-2 bibl404-2 bibl403-4"
-               >C. Butler, The Lausiac History of Palladius. I. A Critical Discussion together with
-               Notes on Early Egyptian Monachism (Texts and Studies, 6/1), Cambridge, 1898</bibl>
             <biblStruct
-               corresp="bibl680-2 bibl679-2 bibl675-2 bibl674-2 bibl673-2 bibl672-2 bibl671-2 bibl670-2 bibl669-2 bibl668-2 bibl667-2 bibl666-2 bibl665-2 bibl664-2 bibl663-2 bibl662-2 bibl661-2 bibl660-2 bibl655-2 bibl654-2 bibl653-2 bibl652-2 bibl651-2 bibl650-2 bibl649-2 bibl648-2 bibl647-2 bibl646-2 bibl645-2 bibl644-2 bibl643-2 bibl642-2 bibl641-2 bibl640-2 bibl639-2 bibl638-2 bibl637-2 bibl636-2 bibl635-2 bibl634-2 bibl633-2 bibl632-2 bibl631-2 bibl630-2 bibl629-2 bibl628-2 bibl627-2 bibl626-2 bibl625-2 bibl624-2 bibl623-2 bibl622-2 bibl472-2 bibl471-2 bibl470-2 bibl469-2 bibl468-2 bibl467-2 bibl466-2 bibl465-2 bibl464-2 bibl463-2 bibl462-2 bibl461-2 bibl460-2 bibl459-2 bibl458-2 bibl457-2 bibl456-2 bibl455-2 bibl454-2 bibl453-2 bibl452-2 bibl451-2 bibl450-2 bibl449-2 bibl448-2 bibl447-2 bibl446-2 bibl445-2 bibl444-2 bibl443-2 bibl442-2 bibl441-2 bibl440-2 bibl439-2 bibl438-2 bibl437-2 bibl436-2 bibl435-2 bibl434-2 bibl433-2 bibl432-2 bibl431-2 bibl430-2 bibl429-2 bibl428-2 bibl427-2 bibl426-2 bibl425-2 bibl424-2 bibl423-2 bibl422-2 bibl421-2 bibl420-2 bibl419-2 bibl418-2 bibl417-2 bibl416-2 bibl415-2 bibl414-2 bibl413-2 bibl412-2 bibl411-2 bibl410-2 bibl409-2 bibl408-2 bibl407-2 bibl406-2 bibl405-2 bibl404-2 bibl403-4">
+               corresp="bibl680-2b bibl679-2b bibl675-2b bibl674-2b bibl673-2b bibl672-2b bibl671-2b bibl670-2b bibl669-2b bibl668-2b bibl667-2b bibl666-2b bibl665-2b bibl664-2b bibl663-2b bibl662-2b bibl661-2b bibl660-2b bibl655-2b bibl654-2b bibl653-2b bibl652-2b bibl651-2b bibl650-2b bibl649-2b bibl648-2b bibl647-2b bibl646-2b bibl645-2b bibl644-2b bibl643-2b bibl642-2b bibl641-2b bibl640-2b bibl639-2b bibl638-2b bibl637-2b bibl636-2b bibl635-2b bibl634-2b bibl633-2b bibl632-2b bibl631-2b bibl630-2b bibl629-2b bibl628-2b bibl627-2b bibl626-2b bibl625-2b bibl624-2b bibl623-2b bibl622-2b bibl472-2b bibl471-2b bibl470-2b bibl469-2b bibl468-2b bibl467-2b bibl466-2b bibl465-2b bibl464-2b bibl463-2b bibl462-2b bibl461-2b bibl460-2b bibl459-2b bibl458-2b bibl457-2b bibl456-2b bibl455-2b bibl454-2b bibl453-2b bibl452-2b bibl451-2b bibl450-2b bibl449-2b bibl448-2b bibl447-2b bibl446-2b bibl445-2b bibl444-2b bibl443-2b bibl442-2b bibl441-2b bibl440-2b bibl439-2b bibl438-2b bibl437-2b bibl436-2b bibl435-2b bibl434-2b bibl433-2b bibl432-2b bibl431-2b bibl430-2b bibl429-2b bibl428-2b bibl427-2b bibl426-2b bibl425-2b bibl424-2b bibl423-2b bibl422-2b bibl421-2b bibl420-2b bibl419-2b bibl418-2b bibl417-2b bibl416-2b bibl415-2b bibl414-2b bibl413-2b bibl412-2b bibl411-2b bibl410-2b bibl409-2b bibl408-2b bibl407-2b bibl406-2b bibl405-2b bibl404-2b bibl403-4b">
                <monogr>
                   <author>
                      <forename>C.</forename>
                      <surname>Butler</surname>
                   </author>
-                  <title xml:lang="en" level="m">The Lausiac History of Palladius. I. A Critical
-                     Discussion together with Notes on Early Egyptian Monachism (Texts and Studies,
-                     6/1)</title>
-                  <idno type="URI">http://syriaca.org/bibl/836</idno>
+                  <title xml:lang="en" level="m">The Greek Text Edited with Introduction and Notes</title>
+                  <idno type="URI">http://syriaca.org/bibl/1208</idno>
                   <imprint>
                      <pubPlace>Cambridge</pubPlace>
-                     <date>1898</date>
+                     <date>1904</date>
                   </imprint>
                </monogr>
-               <citedRange from="77" to="96" unit="pp" corresp="bibl680-2">77-96; II. The Greek Text
-                  Edited with Introduction and Notes (Texts and Studies, 6/2), Cambridge, 1904, p.
-                  lxxvii-lxxx</citedRange>
-               <citedRange from="77" to="96" unit="pp" corresp="bibl679-2">77-96; II. The Greek Text
-                  Edited with Introduction and Notes (Texts and Studies, 6/2), Cambridge, 1904, p.
-                  lxxvii-lxxx</citedRange>
-               <citedRange from="77" to="96" unit="pp" corresp="bibl675-2">77-96; II. The Greek Text
-                  Edited with Introduction and Notes (Texts and Studies, 6/2), Cambridge, 1904, p.
-                  lxxvii-lxxx</citedRange>
-               <citedRange from="77" to="96" unit="pp" corresp="bibl674-2">77-96; II. The Greek Text
-                  Edited with Introduction and Notes (Texts and Studies, 6/2), Cambridge, 1904, p.
-                  lxxvii-lxxx</citedRange>
-               <citedRange from="77" to="96" unit="pp" corresp="bibl673-2">77-96; II. The Greek Text
-                  Edited with Introduction and Notes (Texts and Studies, 6/2), Cambridge, 1904, p.
-                  lxxvii-lxxx</citedRange>
-               <citedRange from="77" to="96" unit="pp" corresp="bibl672-2">77-96; II. The Greek Text
-                  Edited with Introduction and Notes (Texts and Studies, 6/2), Cambridge, 1904, p.
-                  lxxvii-lxxx</citedRange>
-               <citedRange from="77" to="96" unit="pp" corresp="bibl671-2">77-96; II. The Greek Text
-                  Edited with Introduction and Notes (Texts and Studies, 6/2), Cambridge, 1904, p.
-                  lxxvii-lxxx</citedRange>
-               <citedRange from="77" to="96" unit="pp" corresp="bibl670-2">77-96; II. The Greek Text
-                  Edited with Introduction and Notes (Texts and Studies, 6/2), Cambridge, 1904, p.
-                  lxxvii-lxxx</citedRange>
-               <citedRange from="77" to="96" unit="pp" corresp="bibl669-2">77-96; II. The Greek Text
-                  Edited with Introduction and Notes (Texts and Studies, 6/2), Cambridge, 1904, p.
-                  lxxvii-lxxx</citedRange>
-               <citedRange from="77" to="96" unit="pp" corresp="bibl668-2">77-96; II. The Greek Text
-                  Edited with Introduction and Notes (Texts and Studies, 6/2), Cambridge, 1904, p.
-                  lxxvii-lxxx</citedRange>
-               <citedRange from="77" to="96" unit="pp" corresp="bibl667-2">77-96; II. The Greek Text
-                  Edited with Introduction and Notes (Texts and Studies, 6/2), Cambridge, 1904, p.
-                  lxxvii-lxxx</citedRange>
-               <citedRange from="77" to="96" unit="pp" corresp="bibl666-2">77-96; II. The Greek Text
-                  Edited with Introduction and Notes (Texts and Studies, 6/2), Cambridge, 1904, p.
-                  lxxvii-lxxx</citedRange>
-               <citedRange from="77" to="96" unit="pp" corresp="bibl665-2">77-96; II. The Greek Text
-                  Edited with Introduction and Notes (Texts and Studies, 6/2), Cambridge, 1904, p.
-                  lxxvii-lxxx</citedRange>
-               <citedRange from="77" to="96" unit="pp" corresp="bibl664-2">77-96; II. The Greek Text
-                  Edited with Introduction and Notes (Texts and Studies, 6/2), Cambridge, 1904, p.
-                  lxxvii-lxxx</citedRange>
-               <citedRange from="77" to="96" unit="pp" corresp="bibl663-2">77-96; II. The Greek Text
-                  Edited with Introduction and Notes (Texts and Studies, 6/2), Cambridge, 1904, p.
-                  lxxvii-lxxx</citedRange>
-               <citedRange from="77" to="96" unit="pp" corresp="bibl662-2">77-96; II. The Greek Text
-                  Edited with Introduction and Notes (Texts and Studies, 6/2), Cambridge, 1904, p.
-                  lxxvii-lxxx</citedRange>
-               <citedRange from="77" to="96" unit="pp" corresp="bibl661-2">77-96; II. The Greek Text
-                  Edited with Introduction and Notes (Texts and Studies, 6/2), Cambridge, 1904, p.
-                  lxxvii-lxxx</citedRange>
-               <citedRange from="77" to="96" unit="pp" corresp="bibl660-2">77-96; II. The Greek Text
-                  Edited with Introduction and Notes (Texts and Studies, 6/2), Cambridge, 1904, p.
-                  lxxvii-lxxx</citedRange>
-               <citedRange from="77" to="96" unit="pp" corresp="bibl655-2">77-96; II. The Greek Text
-                  Edited with Introduction and Notes (Texts and Studies, 6/2), Cambridge, 1904, p.
-                  lxxvii-lxxx</citedRange>
-               <citedRange from="77" to="96" unit="pp" corresp="bibl654-2">77-96; II. The Greek Text
-                  Edited with Introduction and Notes (Texts and Studies, 6/2), Cambridge, 1904, p.
-                  lxxvii-lxxx</citedRange>
-               <citedRange from="77" to="96" unit="pp" corresp="bibl653-2">77-96; II. The Greek Text
-                  Edited with Introduction and Notes (Texts and Studies, 6/2), Cambridge, 1904, p.
-                  lxxvii-lxxx</citedRange>
-               <citedRange from="77" to="96" unit="pp" corresp="bibl652-2">77-96; II. The Greek Text
-                  Edited with Introduction and Notes (Texts and Studies, 6/2), Cambridge, 1904, p.
-                  lxxvii-lxxx</citedRange>
-               <citedRange from="77" to="96" unit="pp" corresp="bibl651-2">77-96; II. The Greek Text
-                  Edited with Introduction and Notes (Texts and Studies, 6/2), Cambridge, 1904, p.
-                  lxxvii-lxxx</citedRange>
-               <citedRange from="77" to="96" unit="pp" corresp="bibl650-2">77-96; II. The Greek Text
-                  Edited with Introduction and Notes (Texts and Studies, 6/2), Cambridge, 1904, p.
-                  lxxvii-lxxx</citedRange>
-               <citedRange from="77" to="96" unit="pp" corresp="bibl649-2">77-96; II. The Greek Text
-                  Edited with Introduction and Notes (Texts and Studies, 6/2), Cambridge, 1904, p.
-                  lxxvii-lxxx</citedRange>
-               <citedRange from="77" to="96" unit="pp" corresp="bibl648-2">77-96; II. The Greek Text
-                  Edited with Introduction and Notes (Texts and Studies, 6/2), Cambridge, 1904, p.
-                  lxxvii-lxxx</citedRange>
-               <citedRange from="77" to="96" unit="pp" corresp="bibl647-2">77-96; II. The Greek Text
-                  Edited with Introduction and Notes (Texts and Studies, 6/2), Cambridge, 1904, p.
-                  lxxvii-lxxx</citedRange>
-               <citedRange from="77" to="96" unit="pp" corresp="bibl646-2">77-96; II. The Greek Text
-                  Edited with Introduction and Notes (Texts and Studies, 6/2), Cambridge, 1904, p.
-                  lxxvii-lxxx</citedRange>
-               <citedRange from="77" to="96" unit="pp" corresp="bibl645-2">77-96; II. The Greek Text
-                  Edited with Introduction and Notes (Texts and Studies, 6/2), Cambridge, 1904, p.
-                  lxxvii-lxxx</citedRange>
-               <citedRange from="77" to="96" unit="pp" corresp="bibl644-2">77-96; II. The Greek Text
-                  Edited with Introduction and Notes (Texts and Studies, 6/2), Cambridge, 1904, p.
-                  lxxvii-lxxx</citedRange>
-               <citedRange from="77" to="96" unit="pp" corresp="bibl643-2">77-96; II. The Greek Text
-                  Edited with Introduction and Notes (Texts and Studies, 6/2), Cambridge, 1904, p.
-                  lxxvii-lxxx</citedRange>
-               <citedRange from="77" to="96" unit="pp" corresp="bibl642-2">77-96; II. The Greek Text
-                  Edited with Introduction and Notes (Texts and Studies, 6/2), Cambridge, 1904, p.
-                  lxxvii-lxxx</citedRange>
-               <citedRange from="77" to="96" unit="pp" corresp="bibl641-2">77-96; II. The Greek Text
-                  Edited with Introduction and Notes (Texts and Studies, 6/2), Cambridge, 1904, p.
-                  lxxvii-lxxx</citedRange>
-               <citedRange from="77" to="96" unit="pp" corresp="bibl640-2">77-96; II. The Greek Text
-                  Edited with Introduction and Notes (Texts and Studies, 6/2), Cambridge, 1904, p.
-                  lxxvii-lxxx</citedRange>
-               <citedRange from="77" to="96" unit="pp" corresp="bibl639-2">77-96; II. The Greek Text
-                  Edited with Introduction and Notes (Texts and Studies, 6/2), Cambridge, 1904, p.
-                  lxxvii-lxxx</citedRange>
-               <citedRange from="77" to="96" unit="pp" corresp="bibl638-2">77-96; II. The Greek Text
-                  Edited with Introduction and Notes (Texts and Studies, 6/2), Cambridge, 1904, p.
-                  lxxvii-lxxx</citedRange>
-               <citedRange from="77" to="96" unit="pp" corresp="bibl637-2">77-96; II. The Greek Text
-                  Edited with Introduction and Notes (Texts and Studies, 6/2), Cambridge, 1904, p.
-                  lxxvii-lxxx</citedRange>
-               <citedRange from="77" to="96" unit="pp" corresp="bibl636-2">77-96; II. The Greek Text
-                  Edited with Introduction and Notes (Texts and Studies, 6/2), Cambridge, 1904, p.
-                  lxxvii-lxxx</citedRange>
-               <citedRange from="77" to="96" unit="pp" corresp="bibl635-2">77-96; II. The Greek Text
-                  Edited with Introduction and Notes (Texts and Studies, 6/2), Cambridge, 1904, p.
-                  lxxvii-lxxx</citedRange>
-               <citedRange from="77" to="96" unit="pp" corresp="bibl634-2">77-96; II. The Greek Text
-                  Edited with Introduction and Notes (Texts and Studies, 6/2), Cambridge, 1904, p.
-                  lxxvii-lxxx</citedRange>
-               <citedRange from="77" to="96" unit="pp" corresp="bibl633-2">77-96; II. The Greek Text
-                  Edited with Introduction and Notes (Texts and Studies, 6/2), Cambridge, 1904, p.
-                  lxxvii-lxxx</citedRange>
-               <citedRange from="77" to="96" unit="pp" corresp="bibl632-2">77-96; II. The Greek Text
-                  Edited with Introduction and Notes (Texts and Studies, 6/2), Cambridge, 1904, p.
-                  lxxvii-lxxx</citedRange>
-               <citedRange from="77" to="96" unit="pp" corresp="bibl631-2">77-96; II. The Greek Text
-                  Edited with Introduction and Notes (Texts and Studies, 6/2), Cambridge, 1904, p.
-                  lxxvii-lxxx</citedRange>
-               <citedRange from="77" to="96" unit="pp" corresp="bibl630-2">77-96; II. The Greek Text
-                  Edited with Introduction and Notes (Texts and Studies, 6/2), Cambridge, 1904, p.
-                  lxxvii-lxxx</citedRange>
-               <citedRange from="77" to="96" unit="pp" corresp="bibl629-2">77-96; II. The Greek Text
-                  Edited with Introduction and Notes (Texts and Studies, 6/2), Cambridge, 1904, p.
-                  lxxvii-lxxx</citedRange>
-               <citedRange from="77" to="96" unit="pp" corresp="bibl628-2">77-96; II. The Greek Text
-                  Edited with Introduction and Notes (Texts and Studies, 6/2), Cambridge, 1904, p.
-                  lxxvii-lxxx</citedRange>
-               <citedRange from="77" to="96" unit="pp" corresp="bibl627-2">77-96; II. The Greek Text
-                  Edited with Introduction and Notes (Texts and Studies, 6/2), Cambridge, 1904, p.
-                  lxxvii-lxxx</citedRange>
-               <citedRange from="77" to="96" unit="pp" corresp="bibl626-2">77-96; II. The Greek Text
-                  Edited with Introduction and Notes (Texts and Studies, 6/2), Cambridge, 1904, p.
-                  lxxvii-lxxx</citedRange>
-               <citedRange from="77" to="96" unit="pp" corresp="bibl625-2">77-96; II. The Greek Text
-                  Edited with Introduction and Notes (Texts and Studies, 6/2), Cambridge, 1904, p.
-                  lxxvii-lxxx</citedRange>
-               <citedRange from="77" to="96" unit="pp" corresp="bibl624-2">77-96; II. The Greek Text
-                  Edited with Introduction and Notes (Texts and Studies, 6/2), Cambridge, 1904, p.
-                  lxxvii-lxxx</citedRange>
-               <citedRange from="77" to="96" unit="pp" corresp="bibl623-2">77-96; II. The Greek Text
-                  Edited with Introduction and Notes (Texts and Studies, 6/2), Cambridge, 1904, p.
-                  lxxvii-lxxx</citedRange>
-               <citedRange from="77" to="96" unit="pp" corresp="bibl622-2">77-96; II. The Greek Text
-                  Edited with Introduction and Notes (Texts and Studies, 6/2), Cambridge, 1904, p.
-                  lxxvii-lxxx</citedRange>
-               <citedRange from="77" to="96" unit="pp" corresp="bibl472-2">77-96; II. The Greek Text
-                  Edited with Introduction and Notes (Texts and Studies, 6/2), Cambridge, 1904, p.
-                  lxxvii-lxxx</citedRange>
-               <citedRange from="77" to="96" unit="pp" corresp="bibl471-2">77-96; II. The Greek Text
-                  Edited with Introduction and Notes (Texts and Studies, 6/2), Cambridge, 1904, p.
-                  lxxvii-lxxx</citedRange>
-               <citedRange from="77" to="96" unit="pp" corresp="bibl470-2">77-96; II. The Greek Text
-                  Edited with Introduction and Notes (Texts and Studies, 6/2), Cambridge, 1904, p.
-                  lxxvii-lxxx</citedRange>
-               <citedRange from="77" to="96" unit="pp" corresp="bibl469-2">77-96; II. The Greek Text
-                  Edited with Introduction and Notes (Texts and Studies, 6/2), Cambridge, 1904, p.
-                  lxxvii-lxxx</citedRange>
-               <citedRange from="77" to="96" unit="pp" corresp="bibl468-2">77-96; II. The Greek Text
-                  Edited with Introduction and Notes (Texts and Studies, 6/2), Cambridge, 1904, p.
-                  lxxvii-lxxx</citedRange>
-               <citedRange from="77" to="96" unit="pp" corresp="bibl467-2">77-96; II. The Greek Text
-                  Edited with Introduction and Notes (Texts and Studies, 6/2), Cambridge, 1904, p.
-                  lxxvii-lxxx</citedRange>
-               <citedRange from="77" to="96" unit="pp" corresp="bibl466-2">77-96; II. The Greek Text
-                  Edited with Introduction and Notes (Texts and Studies, 6/2), Cambridge, 1904, p.
-                  lxxvii-lxxx</citedRange>
-               <citedRange from="77" to="96" unit="pp" corresp="bibl465-2">77-96; II. The Greek Text
-                  Edited with Introduction and Notes (Texts and Studies, 6/2), Cambridge, 1904, p.
-                  lxxvii-lxxx</citedRange>
-               <citedRange from="77" to="96" unit="pp" corresp="bibl464-2">77-96; II. The Greek Text
-                  Edited with Introduction and Notes (Texts and Studies, 6/2), Cambridge, 1904, p.
-                  lxxvii-lxxx</citedRange>
-               <citedRange from="77" to="96" unit="pp" corresp="bibl463-2">77-96; II. The Greek Text
-                  Edited with Introduction and Notes (Texts and Studies, 6/2), Cambridge, 1904, p.
-                  lxxvii-lxxx</citedRange>
-               <citedRange from="77" to="96" unit="pp" corresp="bibl462-2">77-96; II. The Greek Text
-                  Edited with Introduction and Notes (Texts and Studies, 6/2), Cambridge, 1904, p.
-                  lxxvii-lxxx</citedRange>
-               <citedRange from="77" to="96" unit="pp" corresp="bibl461-2">77-96; II. The Greek Text
-                  Edited with Introduction and Notes (Texts and Studies, 6/2), Cambridge, 1904, p.
-                  lxxvii-lxxx</citedRange>
-               <citedRange from="77" to="96" unit="pp" corresp="bibl460-2">77-96; II. The Greek Text
-                  Edited with Introduction and Notes (Texts and Studies, 6/2), Cambridge, 1904, p.
-                  lxxvii-lxxx</citedRange>
-               <citedRange from="77" to="96" unit="pp" corresp="bibl459-2">77-96; II. The Greek Text
-                  Edited with Introduction and Notes (Texts and Studies, 6/2), Cambridge, 1904, p.
-                  lxxvii-lxxx</citedRange>
-               <citedRange from="77" to="96" unit="pp" corresp="bibl458-2">77-96; II. The Greek Text
-                  Edited with Introduction and Notes (Texts and Studies, 6/2), Cambridge, 1904, p.
-                  lxxvii-lxxx</citedRange>
-               <citedRange from="77" to="96" unit="pp" corresp="bibl457-2">77-96; II. The Greek Text
-                  Edited with Introduction and Notes (Texts and Studies, 6/2), Cambridge, 1904, p.
-                  lxxvii-lxxx</citedRange>
-               <citedRange from="77" to="96" unit="pp" corresp="bibl456-2">77-96; II. The Greek Text
-                  Edited with Introduction and Notes (Texts and Studies, 6/2), Cambridge, 1904, p.
-                  lxxvii-lxxx</citedRange>
-               <citedRange from="77" to="96" unit="pp" corresp="bibl455-2">77-96; II. The Greek Text
-                  Edited with Introduction and Notes (Texts and Studies, 6/2), Cambridge, 1904, p.
-                  lxxvii-lxxx</citedRange>
-               <citedRange from="77" to="96" unit="pp" corresp="bibl454-2">77-96; II. The Greek Text
-                  Edited with Introduction and Notes (Texts and Studies, 6/2), Cambridge, 1904, p.
-                  lxxvii-lxxx</citedRange>
-               <citedRange from="77" to="96" unit="pp" corresp="bibl453-2">77-96; II. The Greek Text
-                  Edited with Introduction and Notes (Texts and Studies, 6/2), Cambridge, 1904, p.
-                  lxxvii-lxxx</citedRange>
-               <citedRange from="77" to="96" unit="pp" corresp="bibl452-2">77-96; II. The Greek Text
-                  Edited with Introduction and Notes (Texts and Studies, 6/2), Cambridge, 1904, p.
-                  lxxvii-lxxx</citedRange>
-               <citedRange from="77" to="96" unit="pp" corresp="bibl451-2">77-96; II. The Greek Text
-                  Edited with Introduction and Notes (Texts and Studies, 6/2), Cambridge, 1904, p.
-                  lxxvii-lxxx</citedRange>
-               <citedRange from="77" to="96" unit="pp" corresp="bibl450-2">77-96; II. The Greek Text
-                  Edited with Introduction and Notes (Texts and Studies, 6/2), Cambridge, 1904, p.
-                  lxxvii-lxxx</citedRange>
-               <citedRange from="77" to="96" unit="pp" corresp="bibl449-2">77-96; II. The Greek Text
-                  Edited with Introduction and Notes (Texts and Studies, 6/2), Cambridge, 1904, p.
-                  lxxvii-lxxx</citedRange>
-               <citedRange from="77" to="96" unit="pp" corresp="bibl448-2">77-96; II. The Greek Text
-                  Edited with Introduction and Notes (Texts and Studies, 6/2), Cambridge, 1904, p.
-                  lxxvii-lxxx</citedRange>
-               <citedRange from="77" to="96" unit="pp" corresp="bibl447-2">77-96; II. The Greek Text
-                  Edited with Introduction and Notes (Texts and Studies, 6/2), Cambridge, 1904, p.
-                  lxxvii-lxxx</citedRange>
-               <citedRange from="77" to="96" unit="pp" corresp="bibl446-2">77-96; II. The Greek Text
-                  Edited with Introduction and Notes (Texts and Studies, 6/2), Cambridge, 1904, p.
-                  lxxvii-lxxx</citedRange>
-               <citedRange from="77" to="96" unit="pp" corresp="bibl445-2">77-96; II. The Greek Text
-                  Edited with Introduction and Notes (Texts and Studies, 6/2), Cambridge, 1904, p.
-                  lxxvii-lxxx</citedRange>
-               <citedRange from="77" to="96" unit="pp" corresp="bibl444-2">77-96; II. The Greek Text
-                  Edited with Introduction and Notes (Texts and Studies, 6/2), Cambridge, 1904, p.
-                  lxxvii-lxxx</citedRange>
-               <citedRange from="77" to="96" unit="pp" corresp="bibl443-2">77-96; II. The Greek Text
-                  Edited with Introduction and Notes (Texts and Studies, 6/2), Cambridge, 1904, p.
-                  lxxvii-lxxx</citedRange>
-               <citedRange from="77" to="96" unit="pp" corresp="bibl442-2">77-96; II. The Greek Text
-                  Edited with Introduction and Notes (Texts and Studies, 6/2), Cambridge, 1904, p.
-                  lxxvii-lxxx</citedRange>
-               <citedRange from="77" to="96" unit="pp" corresp="bibl441-2">77-96; II. The Greek Text
-                  Edited with Introduction and Notes (Texts and Studies, 6/2), Cambridge, 1904, p.
-                  lxxvii-lxxx</citedRange>
-               <citedRange from="77" to="96" unit="pp" corresp="bibl440-2">77-96; II. The Greek Text
-                  Edited with Introduction and Notes (Texts and Studies, 6/2), Cambridge, 1904, p.
-                  lxxvii-lxxx</citedRange>
-               <citedRange from="77" to="96" unit="pp" corresp="bibl439-2">77-96; II. The Greek Text
-                  Edited with Introduction and Notes (Texts and Studies, 6/2), Cambridge, 1904, p.
-                  lxxvii-lxxx</citedRange>
-               <citedRange from="77" to="96" unit="pp" corresp="bibl438-2">77-96; II. The Greek Text
-                  Edited with Introduction and Notes (Texts and Studies, 6/2), Cambridge, 1904, p.
-                  lxxvii-lxxx</citedRange>
-               <citedRange from="77" to="96" unit="pp" corresp="bibl437-2">77-96; II. The Greek Text
-                  Edited with Introduction and Notes (Texts and Studies, 6/2), Cambridge, 1904, p.
-                  lxxvii-lxxx</citedRange>
-               <citedRange from="77" to="96" unit="pp" corresp="bibl436-2">77-96; II. The Greek Text
-                  Edited with Introduction and Notes (Texts and Studies, 6/2), Cambridge, 1904, p.
-                  lxxvii-lxxx</citedRange>
-               <citedRange from="77" to="96" unit="pp" corresp="bibl435-2">77-96; II. The Greek Text
-                  Edited with Introduction and Notes (Texts and Studies, 6/2), Cambridge, 1904, p.
-                  lxxvii-lxxx</citedRange>
-               <citedRange from="77" to="96" unit="pp" corresp="bibl434-2">77-96; II. The Greek Text
-                  Edited with Introduction and Notes (Texts and Studies, 6/2), Cambridge, 1904, p.
-                  lxxvii-lxxx</citedRange>
-               <citedRange from="77" to="96" unit="pp" corresp="bibl433-2">77-96; II. The Greek Text
-                  Edited with Introduction and Notes (Texts and Studies, 6/2), Cambridge, 1904, p.
-                  lxxvii-lxxx</citedRange>
-               <citedRange from="77" to="96" unit="pp" corresp="bibl432-2">77-96; II. The Greek Text
-                  Edited with Introduction and Notes (Texts and Studies, 6/2), Cambridge, 1904, p.
-                  lxxvii-lxxx</citedRange>
-               <citedRange from="77" to="96" unit="pp" corresp="bibl431-2">77-96; II. The Greek Text
-                  Edited with Introduction and Notes (Texts and Studies, 6/2), Cambridge, 1904, p.
-                  lxxvii-lxxx</citedRange>
-               <citedRange from="77" to="96" unit="pp" corresp="bibl430-2">77-96; II. The Greek Text
-                  Edited with Introduction and Notes (Texts and Studies, 6/2), Cambridge, 1904, p.
-                  lxxvii-lxxx</citedRange>
-               <citedRange from="77" to="96" unit="pp" corresp="bibl429-2">77-96; II. The Greek Text
-                  Edited with Introduction and Notes (Texts and Studies, 6/2), Cambridge, 1904, p.
-                  lxxvii-lxxx</citedRange>
-               <citedRange from="77" to="96" unit="pp" corresp="bibl428-2">77-96; II. The Greek Text
-                  Edited with Introduction and Notes (Texts and Studies, 6/2), Cambridge, 1904, p.
-                  lxxvii-lxxx</citedRange>
-               <citedRange from="77" to="96" unit="pp" corresp="bibl427-2">77-96; II. The Greek Text
-                  Edited with Introduction and Notes (Texts and Studies, 6/2), Cambridge, 1904, p.
-                  lxxvii-lxxx</citedRange>
-               <citedRange from="77" to="96" unit="pp" corresp="bibl426-2">77-96; II. The Greek Text
-                  Edited with Introduction and Notes (Texts and Studies, 6/2), Cambridge, 1904, p.
-                  lxxvii-lxxx</citedRange>
-               <citedRange from="77" to="96" unit="pp" corresp="bibl425-2">77-96; II. The Greek Text
-                  Edited with Introduction and Notes (Texts and Studies, 6/2), Cambridge, 1904, p.
-                  lxxvii-lxxx</citedRange>
-               <citedRange from="77" to="96" unit="pp" corresp="bibl424-2">77-96; II. The Greek Text
-                  Edited with Introduction and Notes (Texts and Studies, 6/2), Cambridge, 1904, p.
-                  lxxvii-lxxx</citedRange>
-               <citedRange from="77" to="96" unit="pp" corresp="bibl423-2">77-96; II. The Greek Text
-                  Edited with Introduction and Notes (Texts and Studies, 6/2), Cambridge, 1904, p.
-                  lxxvii-lxxx</citedRange>
-               <citedRange from="77" to="96" unit="pp" corresp="bibl422-2">77-96; II. The Greek Text
-                  Edited with Introduction and Notes (Texts and Studies, 6/2), Cambridge, 1904, p.
-                  lxxvii-lxxx</citedRange>
-               <citedRange from="77" to="96" unit="pp" corresp="bibl421-2">77-96; II. The Greek Text
-                  Edited with Introduction and Notes (Texts and Studies, 6/2), Cambridge, 1904, p.
-                  lxxvii-lxxx</citedRange>
-               <citedRange from="77" to="96" unit="pp" corresp="bibl420-2">77-96; II. The Greek Text
-                  Edited with Introduction and Notes (Texts and Studies, 6/2), Cambridge, 1904, p.
-                  lxxvii-lxxx</citedRange>
-               <citedRange from="77" to="96" unit="pp" corresp="bibl419-2">77-96; II. The Greek Text
-                  Edited with Introduction and Notes (Texts and Studies, 6/2), Cambridge, 1904, p.
-                  lxxvii-lxxx</citedRange>
-               <citedRange from="77" to="96" unit="pp" corresp="bibl418-2">77-96; II. The Greek Text
-                  Edited with Introduction and Notes (Texts and Studies, 6/2), Cambridge, 1904, p.
-                  lxxvii-lxxx</citedRange>
-               <citedRange from="77" to="96" unit="pp" corresp="bibl417-2">77-96; II. The Greek Text
-                  Edited with Introduction and Notes (Texts and Studies, 6/2), Cambridge, 1904, p.
-                  lxxvii-lxxx</citedRange>
-               <citedRange from="77" to="96" unit="pp" corresp="bibl416-2">77-96; II. The Greek Text
-                  Edited with Introduction and Notes (Texts and Studies, 6/2), Cambridge, 1904, p.
-                  lxxvii-lxxx</citedRange>
-               <citedRange from="77" to="96" unit="pp" corresp="bibl415-2">77-96; II. The Greek Text
-                  Edited with Introduction and Notes (Texts and Studies, 6/2), Cambridge, 1904, p.
-                  lxxvii-lxxx</citedRange>
-               <citedRange from="77" to="96" unit="pp" corresp="bibl414-2">77-96; II. The Greek Text
-                  Edited with Introduction and Notes (Texts and Studies, 6/2), Cambridge, 1904, p.
-                  lxxvii-lxxx</citedRange>
-               <citedRange from="77" to="96" unit="pp" corresp="bibl413-2">77-96; II. The Greek Text
-                  Edited with Introduction and Notes (Texts and Studies, 6/2), Cambridge, 1904, p.
-                  lxxvii-lxxx</citedRange>
-               <citedRange from="77" to="96" unit="pp" corresp="bibl412-2">77-96; II. The Greek Text
-                  Edited with Introduction and Notes (Texts and Studies, 6/2), Cambridge, 1904, p.
-                  lxxvii-lxxx</citedRange>
-               <citedRange from="77" to="96" unit="pp" corresp="bibl411-2">77-96; II. The Greek Text
-                  Edited with Introduction and Notes (Texts and Studies, 6/2), Cambridge, 1904, p.
-                  lxxvii-lxxx</citedRange>
-               <citedRange from="77" to="96" unit="pp" corresp="bibl410-2">77-96; II. The Greek Text
-                  Edited with Introduction and Notes (Texts and Studies, 6/2), Cambridge, 1904, p.
-                  lxxvii-lxxx</citedRange>
-               <citedRange from="77" to="96" unit="pp" corresp="bibl409-2">77-96; II. The Greek Text
-                  Edited with Introduction and Notes (Texts and Studies, 6/2), Cambridge, 1904, p.
-                  lxxvii-lxxx</citedRange>
-               <citedRange from="77" to="96" unit="pp" corresp="bibl408-2">77-96; II. The Greek Text
-                  Edited with Introduction and Notes (Texts and Studies, 6/2), Cambridge, 1904, p.
-                  lxxvii-lxxx</citedRange>
-               <citedRange from="77" to="96" unit="pp" corresp="bibl407-2">77-96; II. The Greek Text
-                  Edited with Introduction and Notes (Texts and Studies, 6/2), Cambridge, 1904, p.
-                  lxxvii-lxxx</citedRange>
-               <citedRange from="77" to="96" unit="pp" corresp="bibl406-2">77-96; II. The Greek Text
-                  Edited with Introduction and Notes (Texts and Studies, 6/2), Cambridge, 1904, p.
-                  lxxvii-lxxx</citedRange>
-               <citedRange from="77" to="96" unit="pp" corresp="bibl405-2">77-96; II. The Greek Text
-                  Edited with Introduction and Notes (Texts and Studies, 6/2), Cambridge, 1904, p.
-                  lxxvii-lxxx</citedRange>
-               <citedRange from="77" to="96" unit="pp" corresp="bibl404-2">77-96; II. The Greek Text
-                  Edited with Introduction and Notes (Texts and Studies, 6/2), Cambridge, 1904, p.
-                  lxxvii-lxxx</citedRange>
-               <citedRange from="77" to="96" unit="pp" corresp="bibl403-4">77-96; II. The Greek Text
-                  Edited with Introduction and Notes (Texts and Studies, 6/2), Cambridge, 1904, p.
-                  lxxvii-lxxx</citedRange>
+               <series>
+                  <title xml:lang="en" level="s">Texts and Studies</title>
+                  <biblScope unit="vol" from="6" to="6">6/2</biblScope>
+               </series>
+               <monogr>
+                  <author>
+                     <forename>C.</forename>
+                     <surname>Butler</surname>
+                  </author>
+                  <title xml:lang="en" level="m">The Lausiac History of Palladius</title>
+                  <imprint>
+                     <pubPlace>Cambridge</pubPlace>
+                     <date>1898-1904</date>
+                  </imprint>
+                  <extent>2 vols.</extent>
+                  <biblScope unit="vol" from="2" to="2">2</biblScope>
+               </monogr>
+               <citedRange unit="pp" corresp="bibl680-2b">lxxvii-lxxx</citedRange>
+               <citedRange unit="pp" corresp="bibl679-2b">lxxvii-lxxx</citedRange>
+               <citedRange unit="pp" corresp="bibl675-2b">lxxvii-lxxx</citedRange>
+               <citedRange unit="pp" corresp="bibl674-2b">lxxvii-lxxx</citedRange>
+               <citedRange unit="pp" corresp="bibl673-2b">lxxvii-lxxx</citedRange>
+               <citedRange unit="pp" corresp="bibl672-2b">lxxvii-lxxx</citedRange>
+               <citedRange unit="pp" corresp="bibl671-2b">lxxvii-lxxx</citedRange>
+               <citedRange unit="pp" corresp="bibl670-2b">lxxvii-lxxx</citedRange>
+               <citedRange unit="pp" corresp="bibl669-2b">lxxvii-lxxx</citedRange>
+               <citedRange unit="pp" corresp="bibl668-2b">lxxvii-lxxx</citedRange>
+               <citedRange unit="pp" corresp="bibl667-2b">lxxvii-lxxx</citedRange>
+               <citedRange unit="pp" corresp="bibl666-2b">lxxvii-lxxx</citedRange>
+               <citedRange unit="pp" corresp="bibl665-2b">lxxvii-lxxx</citedRange>
+               <citedRange unit="pp" corresp="bibl664-2b">lxxvii-lxxx</citedRange>
+               <citedRange unit="pp" corresp="bibl663-2b">lxxvii-lxxx</citedRange>
+               <citedRange unit="pp" corresp="bibl662-2b">lxxvii-lxxx</citedRange>
+               <citedRange unit="pp" corresp="bibl661-2b">lxxvii-lxxx</citedRange>
+               <citedRange unit="pp" corresp="bibl660-2b">lxxvii-lxxx</citedRange>
+               <citedRange unit="pp" corresp="bibl655-2b">lxxvii-lxxx</citedRange>
+               <citedRange unit="pp" corresp="bibl654-2b">lxxvii-lxxx</citedRange>
+               <citedRange unit="pp" corresp="bibl653-2b">lxxvii-lxxx</citedRange>
+               <citedRange unit="pp" corresp="bibl652-2b">lxxvii-lxxx</citedRange>
+               <citedRange unit="pp" corresp="bibl651-2b">lxxvii-lxxx</citedRange>
+               <citedRange unit="pp" corresp="bibl650-2b">lxxvii-lxxx</citedRange>
+               <citedRange unit="pp" corresp="bibl649-2b">lxxvii-lxxx</citedRange>
+               <citedRange unit="pp" corresp="bibl648-2b">lxxvii-lxxx</citedRange>
+               <citedRange unit="pp" corresp="bibl647-2b">lxxvii-lxxx</citedRange>
+               <citedRange unit="pp" corresp="bibl646-2b">lxxvii-lxxx</citedRange>
+               <citedRange unit="pp" corresp="bibl645-2b">lxxvii-lxxx</citedRange>
+               <citedRange unit="pp" corresp="bibl644-2b">lxxvii-lxxx</citedRange>
+               <citedRange unit="pp" corresp="bibl643-2b">lxxvii-lxxx</citedRange>
+               <citedRange unit="pp" corresp="bibl642-2b">lxxvii-lxxx</citedRange>
+               <citedRange unit="pp" corresp="bibl641-2b">lxxvii-lxxx</citedRange>
+               <citedRange unit="pp" corresp="bibl640-2b">lxxvii-lxxx</citedRange>
+               <citedRange unit="pp" corresp="bibl639-2b">lxxvii-lxxx</citedRange>
+               <citedRange unit="pp" corresp="bibl638-2b">lxxvii-lxxx</citedRange>
+               <citedRange unit="pp" corresp="bibl637-2b">lxxvii-lxxx</citedRange>
+               <citedRange unit="pp" corresp="bibl636-2b">lxxvii-lxxx</citedRange>
+               <citedRange unit="pp" corresp="bibl635-2b">lxxvii-lxxx</citedRange>
+               <citedRange unit="pp" corresp="bibl634-2b">lxxvii-lxxx</citedRange>
+               <citedRange unit="pp" corresp="bibl633-2b">lxxvii-lxxx</citedRange>
+               <citedRange unit="pp" corresp="bibl632-2b">lxxvii-lxxx</citedRange>
+               <citedRange unit="pp" corresp="bibl631-2b">lxxvii-lxxx</citedRange>
+               <citedRange unit="pp" corresp="bibl630-2b">lxxvii-lxxx</citedRange>
+               <citedRange unit="pp" corresp="bibl629-2b">lxxvii-lxxx</citedRange>
+               <citedRange unit="pp" corresp="bibl628-2b">lxxvii-lxxx</citedRange>
+               <citedRange unit="pp" corresp="bibl627-2b">lxxvii-lxxx</citedRange>
+               <citedRange unit="pp" corresp="bibl626-2b">lxxvii-lxxx</citedRange>
+               <citedRange unit="pp" corresp="bibl625-2b">lxxvii-lxxx</citedRange>
+               <citedRange unit="pp" corresp="bibl624-2b">lxxvii-lxxx</citedRange>
+               <citedRange unit="pp" corresp="bibl623-2b">lxxvii-lxxx</citedRange>
+               <citedRange unit="pp" corresp="bibl622-2b">lxxvii-lxxx</citedRange>
+               <citedRange unit="pp" corresp="bibl472-2b">lxxvii-lxxx</citedRange>
+               <citedRange unit="pp" corresp="bibl471-2b">lxxvii-lxxx</citedRange>
+               <citedRange unit="pp" corresp="bibl470-2b">lxxvii-lxxx</citedRange>
+               <citedRange unit="pp" corresp="bibl469-2b">lxxvii-lxxx</citedRange>
+               <citedRange unit="pp" corresp="bibl468-2b">lxxvii-lxxx</citedRange>
+               <citedRange unit="pp" corresp="bibl467-2b">lxxvii-lxxx</citedRange>
+               <citedRange unit="pp" corresp="bibl466-2b">lxxvii-lxxx</citedRange>
+               <citedRange unit="pp" corresp="bibl465-2b">lxxvii-lxxx</citedRange>
+               <citedRange unit="pp" corresp="bibl464-2b">lxxvii-lxxx</citedRange>
+               <citedRange unit="pp" corresp="bibl463-2b">lxxvii-lxxx</citedRange>
+               <citedRange unit="pp" corresp="bibl462-2b">lxxvii-lxxx</citedRange>
+               <citedRange unit="pp" corresp="bibl461-2b">lxxvii-lxxx</citedRange>
+               <citedRange unit="pp" corresp="bibl460-2b">lxxvii-lxxx</citedRange>
+               <citedRange unit="pp" corresp="bibl459-2b">lxxvii-lxxx</citedRange>
+               <citedRange unit="pp" corresp="bibl458-2b">lxxvii-lxxx</citedRange>
+               <citedRange unit="pp" corresp="bibl457-2b">lxxvii-lxxx</citedRange>
+               <citedRange unit="pp" corresp="bibl456-2b">lxxvii-lxxx</citedRange>
+               <citedRange unit="pp" corresp="bibl455-2b">lxxvii-lxxx</citedRange>
+               <citedRange unit="pp" corresp="bibl454-2b">lxxvii-lxxx</citedRange>
+               <citedRange unit="pp" corresp="bibl453-2b">lxxvii-lxxx</citedRange>
+               <citedRange unit="pp" corresp="bibl452-2b">lxxvii-lxxx</citedRange>
+               <citedRange unit="pp" corresp="bibl451-2b">lxxvii-lxxx</citedRange>
+               <citedRange unit="pp" corresp="bibl450-2b">lxxvii-lxxx</citedRange>
+               <citedRange unit="pp" corresp="bibl449-2b">lxxvii-lxxx</citedRange>
+               <citedRange unit="pp" corresp="bibl448-2b">lxxvii-lxxx</citedRange>
+               <citedRange unit="pp" corresp="bibl447-2b">lxxvii-lxxx</citedRange>
+               <citedRange unit="pp" corresp="bibl446-2b">lxxvii-lxxx</citedRange>
+               <citedRange unit="pp" corresp="bibl445-2b">lxxvii-lxxx</citedRange>
+               <citedRange unit="pp" corresp="bibl444-2b">lxxvii-lxxx</citedRange>
+               <citedRange unit="pp" corresp="bibl443-2b">lxxvii-lxxx</citedRange>
+               <citedRange unit="pp" corresp="bibl442-2b">lxxvii-lxxx</citedRange>
+               <citedRange unit="pp" corresp="bibl441-2b">lxxvii-lxxx</citedRange>
+               <citedRange unit="pp" corresp="bibl440-2b">lxxvii-lxxx</citedRange>
+               <citedRange unit="pp" corresp="bibl439-2b">lxxvii-lxxx</citedRange>
+               <citedRange unit="pp" corresp="bibl438-2b">lxxvii-lxxx</citedRange>
+               <citedRange unit="pp" corresp="bibl437-2b">lxxvii-lxxx</citedRange>
+               <citedRange unit="pp" corresp="bibl436-2b">lxxvii-lxxx</citedRange>
+               <citedRange unit="pp" corresp="bibl435-2b">lxxvii-lxxx</citedRange>
+               <citedRange unit="pp" corresp="bibl434-2b">lxxvii-lxxx</citedRange>
+               <citedRange unit="pp" corresp="bibl433-2b">lxxvii-lxxx</citedRange>
+               <citedRange unit="pp" corresp="bibl432-2b">lxxvii-lxxx</citedRange>
+               <citedRange unit="pp" corresp="bibl431-2b">lxxvii-lxxx</citedRange>
+               <citedRange unit="pp" corresp="bibl430-2b">lxxvii-lxxx</citedRange>
+               <citedRange unit="pp" corresp="bibl429-2b">lxxvii-lxxx</citedRange>
+               <citedRange unit="pp" corresp="bibl428-2b">lxxvii-lxxx</citedRange>
+               <citedRange unit="pp" corresp="bibl427-2b">lxxvii-lxxx</citedRange>
+               <citedRange unit="pp" corresp="bibl426-2b">lxxvii-lxxx</citedRange>
+               <citedRange unit="pp" corresp="bibl425-2b">lxxvii-lxxx</citedRange>
+               <citedRange unit="pp" corresp="bibl424-2b">lxxvii-lxxx</citedRange>
+               <citedRange unit="pp" corresp="bibl423-2b">lxxvii-lxxx</citedRange>
+               <citedRange unit="pp" corresp="bibl422-2b">lxxvii-lxxx</citedRange>
+               <citedRange unit="pp" corresp="bibl421-2b">lxxvii-lxxx</citedRange>
+               <citedRange unit="pp" corresp="bibl420-2b">lxxvii-lxxx</citedRange>
+               <citedRange unit="pp" corresp="bibl419-2b">lxxvii-lxxx</citedRange>
+               <citedRange unit="pp" corresp="bibl418-2b">lxxvii-lxxx</citedRange>
+               <citedRange unit="pp" corresp="bibl417-2b">lxxvii-lxxx</citedRange>
+               <citedRange unit="pp" corresp="bibl416-2b">lxxvii-lxxx</citedRange>
+               <citedRange unit="pp" corresp="bibl415-2b">lxxvii-lxxx</citedRange>
+               <citedRange unit="pp" corresp="bibl414-2b">lxxvii-lxxx</citedRange>
+               <citedRange unit="pp" corresp="bibl413-2b">lxxvii-lxxx</citedRange>
+               <citedRange unit="pp" corresp="bibl412-2b">lxxvii-lxxx</citedRange>
+               <citedRange unit="pp" corresp="bibl411-2b">lxxvii-lxxx</citedRange>
+               <citedRange unit="pp" corresp="bibl410-2b">lxxvii-lxxx</citedRange>
+               <citedRange unit="pp" corresp="bibl409-2b">lxxvii-lxxx</citedRange>
+               <citedRange unit="pp" corresp="bibl408-2b">lxxvii-lxxx</citedRange>
+               <citedRange unit="pp" corresp="bibl407-2b">lxxvii-lxxx</citedRange>
+               <citedRange unit="pp" corresp="bibl406-2b">lxxvii-lxxx</citedRange>
+               <citedRange unit="pp" corresp="bibl405-2b">lxxvii-lxxx</citedRange>
+               <citedRange unit="pp" corresp="bibl404-2b">lxxvii-lxxx</citedRange>
+               <citedRange unit="pp" corresp="bibl403-4b">lxxvii-lxxx</citedRange>
             </biblStruct>
             <bibl corresp="bibl1046-3">R. Caro, La Homiletica Mariana Griega en el Siglo V. I
                (Marian Library Studies, NS 3), Dayton (Ohio), 1971</bibl>
@@ -2411,11 +2438,10 @@
                   </imprint>
                   <biblScope unit="vol" from="42" to="42">42</biblScope>
                   <biblScope unit="issue" from="1" to="1">1</biblScope>
-                  <biblScope unit="pp" from="53" to="63">53-63 (annonce édition des
-                     oeuvres)</biblScope>
+                  <biblScope unit="pp" from="53" to="63">53-63</biblScope>
                </monogr>
-               <citedRange from="53" to="63" unit="pp" corresp="bibl1168-2b">53-63 (annonce édition
-                  des oeuvres)</citedRange>
+               <citedRange from="53" to="63" unit="pp" corresp="bibl1168-2b">53-63 <note xml:lang="fr">annonce édition
+                  des oeuvres</note></citedRange>
             </biblStruct>
             <bibl corresp="bibl297-30">J. Dahlmann, Die Thomas-Legende und die ältesten historischen
                Beziehungen des Christentums zum fernen Osten im Lichte der indischen Altertumskunde
@@ -2605,7 +2631,7 @@
                   </editor>
                   <title xml:lang="fr" level="m">Nicée II 787-1987. Douze siècles d’images
                      religieuses. Actes du colloque international Nicée II tenu au Collège de
-                     France, Paris, les 2, 3, 4 oct. 1986,</title>
+                     France, Paris, les 2, 3, 4 oct. 1986</title>
                   <imprint>
                      <pubPlace>Paris</pubPlace>
                      <date>1987</date>
@@ -2888,10 +2914,7 @@
                <citedRange from="213" to="225" unit="pp" corresp="bibl325-4">213-225</citedRange>
                <citedRange from="213" to="225" unit="pp" corresp="bibl324-5">213-225</citedRange>
                <citedRange from="213" to="225" unit="pp" corresp="bibl323-2b">213-225</citedRange>
-               <citedRange from="213" to="225" unit="pp" corresp="bibl292-2">213-225G. Wiessner,
-                  Christlicher Heiligenkult im Umkreis eines sassanidischen Grosskönigs, dans W.
-                  Eilers (éd.), Festgabe deutscher Iranisten zur 2500 Jahrfeier Irans, Stuttgart,
-                  1971, p. 141-155</citedRange>
+               <citedRange from="213" to="225" unit="pp" corresp="bibl292-2">213-225</citedRange>
                <citedRange from="213" to="225" unit="pp" corresp="bibl291-2">213-225</citedRange>
                <citedRange from="213" to="225" unit="pp" corresp="bibl290-2">213-225</citedRange>
                <citedRange from="213" to="225" unit="pp" corresp="bibl289-4">213-225</citedRange>
@@ -3132,7 +3155,7 @@
                      <surname>Devos</surname>
                   </author>
                   <title xml:lang="fr" level="a">Quelques aspects de la nouvelle lettre, récemment
-                     découverte, de Siméon de Bêth-Ars¯âm sur les martyrs ḥimyarites</title>
+                     découverte, de Siméon de Bêth-Aršâm sur les martyrs ḥimyarites</title>
                   <idno type="URI">http://syriaca.org/bibl/1106</idno>
                </analytic>
                <monogr>
@@ -3198,10 +3221,14 @@
             <biblStruct corresp="bibl792-2">
                <monogr>
                   <author>
-                     <forename xml:lang="ru-Latn-iso9r95">A. P.</forename>
-                     <surname xml:lang="ru-Latn-iso9r95">D'âkonov</surname>
-                     <forename xml:lang="ru">А. П.</forename>
-                     <surname xml:lang="ru">Дьяконов</surname>
+                     <persName xml:lang="ru-Latn-iso9r95">
+                        <forename>A. P.</forename>
+                        <surname>D'âkonov</surname>
+                     </persName>
+                     <persName xml:lang="ru">
+                        <forename>А. П.</forename>
+                        <surname>Дьяконов</surname>
+                     </persName>
                   </author>
                   <title xml:lang="ru-Latn-iso9r95" level="m">Ioann Efesskij i ego
                      cerkovno-istoričeskie trudy</title>
@@ -3262,7 +3289,7 @@
                      <surname>Thomson</surname>
                   </editor>
                   <title xml:lang="en" level="m">Biblical and Patristic Studies in Memory of Robert
-                     Pierce Casey,</title>
+                     Pierce Casey</title>
                   <imprint>
                      <pubPlace>Fribourg</pubPlace>
                      <date>1963</date>
@@ -3410,7 +3437,7 @@
                      <date>1889</date>
                   </imprint>
                   <biblScope unit="series" from="8" to="8" xml:lang="fr">Huitième Série</biblScope>
-                  <biblScope unit="vol" from="13" to="13"></biblScope>
+                  <biblScope unit="vol" from="13" to="13">13</biblScope>
                   <biblScope unit="pp" from="313" to="354">313-354</biblScope>
                </monogr>
                <citedRange from="313" to="354" unit="pp" corresp="bibl895-4">313-354</citedRange>
@@ -3526,7 +3553,7 @@
                   <biblScope from="10" to="10" unit="vol">10</biblScope>
                   <biblScope unit="pp" from="80" to="111">80-111</biblScope>
                </monogr>
-               <relatedItem target="http://syriaca.org/bibl/942" type="alternate-printing"/>
+               <relatedItem target="http://syriaca.org/bibl/942" type="has-alternate-printing"/>
                <note>This is reprinted in <ref target="http://syriaca.org/bibl/942">J. Vellian (ed.), The Apostle Thomas in India according to the Acts of Thomas (Kottayam, 1972), 1-76</ref>.</note>
                <citedRange from="80" to="111" unit="pp" corresp="bibl297-19">80-111</citedRange>
             </biblStruct>
@@ -3813,6 +3840,7 @@
             <bibl corresp="bibl1715-2">J.-M. Fiey, Isho‘yaw le Grand. Vie du Catholicos nestorien
                Isho‘yaw III d’Adiabène (580-659), dans OCP, 35 (1969)</bibl>
             <biblStruct corresp="bibl1715-2">
+               <!-- check: how to do articles spanning multiple volumes -->
                <analytic>
                   <author>
                      <forename>J.-M.</forename>
@@ -3829,7 +3857,16 @@
                      <date>1969</date>
                   </imprint>
                   <biblScope from="35" to="35" unit="vol">35</biblScope>
-                  <biblScope unit="pp" from="305" to="333">305-333; 36 (1970), p. 5-46</biblScope>
+                  <biblScope unit="pp" from="305" to="333">305-333</biblScope>
+               </monogr>
+               <monogr>
+                  <title level="j" xml:lang="la">Orientalia christiana periodica</title>
+                  <idno type="zotero">100</idno>
+                  <imprint>
+                     <date>1970</date>
+                  </imprint>
+                  <biblScope from="36" to="36" unit="vol">36</biblScope>
+                  <biblScope unit="pp" from="5" to="46">5-46</biblScope>
                </monogr>
                <citedRange from="305" to="333" unit="pp" corresp="bibl1715-2">305-333; 36 (1970), p.
                   5-46</citedRange>
@@ -3992,7 +4029,7 @@
                      <surname>Sodini</surname>
                   </editor>
                   <title xml:lang="fr" level="m">Les saints et leur sanctuaire à Byzance. Textes,
-                     Images et Monuments,</title>
+                     Images et Monuments</title>
                   <imprint>
                      <pubPlace>Paris</pubPlace>
                      <date>1993</date>
@@ -4034,6 +4071,7 @@
                corresp="bibl894-3 bibl893-3 bibl892-3 bibl891-3 bibl890-3 bibl889-3 bibl888-6">
                <analytic>
                   <author>
+                     <forename>A.</forename>
                      <surname>Geiger</surname>
                   </author>
                   <title xml:lang="de" level="a">Sprachliche Bemerkungen zu Wright’s Apocryphal
@@ -4304,8 +4342,8 @@
                   <biblScope from="16" to="16" unit="vol">16</biblScope>
                   <biblScope unit="pp" from="85" to="94">85-94 et 168-175</biblScope>
                </monogr>
-               <citedRange from="85" to="94" unit="pp" corresp="bibl297-76">85-94 et
-                  168-175</citedRange>
+               <citedRange from="85" to="94" unit="pp" corresp="bibl297-76">85-94</citedRange>
+               <citedRange from="168" to="175" unit="pp" corresp="bibl297-76">168-175</citedRange>
             </biblStruct>
             <bibl corresp="bibl254-7">J. Halévy, Examen critique des sources relatives à la
                persécution des Chrétiens de Nedjran par le roi juif des Himyarites, dans REJ, 18
@@ -4440,34 +4478,55 @@
                      <forename>R.</forename>
                      <surname>Lavenant</surname>
                   </editor>
-                  <title level="m" xml:lang="la">V Symposium Syriacum,</title>
+                  <title level="m" xml:lang="la">V Symposium Syriacum</title>
                   <imprint>
                      <pubPlace>Rome</pubPlace>
                      <date>1990</date>
                   </imprint>
-                  <biblScope unit="pp" from="195" to="206">195-206 = The Harp, 6 (1993), p. 99-110
-                     (?)</biblScope>
+                  <biblScope unit="pp" from="195" to="206">195-206</biblScope>
                </monogr>
                <series>
                   <title level="s" xml:lang="la">Orientalia christiana analecta</title>
+                  <idno type="zotero">99</idno>
                   <biblScope unit="vol">236</biblScope>
                </series>
-               <citedRange from="195" to="206" unit="pp" corresp="bibl971-2">195-206 = The Harp, 6
-                  (1993), p. 99-110 (?)</citedRange>
-               <citedRange from="195" to="206" unit="pp" corresp="bibl929-3">195-206 = The Harp, 6
-                  (1993), p. 99-110 (?)</citedRange>
-               <citedRange from="195" to="206" unit="pp" corresp="bibl921-6">195-206 = The Harp, 6
-                  (1993), p. 99-110 (?)</citedRange>
-               <citedRange from="195" to="206" unit="pp" corresp="bibl229-2">195-206 = The Harp, 6
-                  (1993), p. 99-110 (?)</citedRange>
-               <citedRange from="195" to="206" unit="pp" corresp="bibl228-3">195-206 = The Harp, 6
-                  (1993), p. 99-110 (?)</citedRange>
-               <citedRange from="195" to="206" unit="pp" corresp="bibl227-2">195-206 = The Harp, 6
-                  (1993), p. 99-110 (?)</citedRange>
-               <citedRange from="195" to="206" unit="pp" corresp="bibl226-2">195-206 = The Harp, 6
-                  (1993), p. 99-110 (?)</citedRange>
-               <citedRange from="195" to="206" unit="pp" corresp="bibl225-3">195-206 = The Harp, 6
-                  (1993), p. 99-110 (?)</citedRange>
+               <relatedItem type="has-alternate-printing" target="http://syriaca.org/bibl/1207"/>
+               <citedRange from="195" to="206" unit="pp" corresp="bibl971-2">195-206</citedRange>
+               <citedRange from="195" to="206" unit="pp" corresp="bibl929-3">195-206</citedRange>
+               <citedRange from="195" to="206" unit="pp" corresp="bibl921-6">195-206</citedRange>
+               <citedRange from="195" to="206" unit="pp" corresp="bibl229-2">195-206</citedRange>
+               <citedRange from="195" to="206" unit="pp" corresp="bibl228-3">195-206</citedRange>
+               <citedRange from="195" to="206" unit="pp" corresp="bibl227-2">195-206</citedRange>
+               <citedRange from="195" to="206" unit="pp" corresp="bibl226-2">195-206</citedRange>
+               <citedRange from="195" to="206" unit="pp" corresp="bibl225-3">195-206</citedRange>
+            </biblStruct>
+            <biblStruct
+               corresp="bibl971-2b bibl929-3b bibl921-6b bibl229-2b bibl228-3b bibl227-2b bibl226-2b bibl225-3b">
+               <analytic>
+                  <author>
+                     <forename>S.A.</forename>
+                     <surname>Harvey</surname>
+                  </author>
+                  <title xml:lang="en" level="a">The Edessan Martyrs and Ascetic Tradition</title>
+                  <idno type="URI">http://syriaca.org/bibl/1207</idno>
+               </analytic>
+               <monogr>
+                  <title level="j" xml:lang="en">The Harp</title>
+                  <imprint>
+                     <date>1993</date>
+                  </imprint>
+                  <biblScope unit="vol" from="6" to="6">6</biblScope>
+                  <biblScope unit="pp" from="99" to="110">99-110 <note>?</note></biblScope>
+               </monogr>
+               <relatedItem type="alternate-printing-of" target="http://syriaca.org/bibl/722"/>
+               <citedRange from="99" to="110" unit="pp" corresp="bibl971-2b">99-110 <note>?</note></citedRange>
+               <citedRange from="99" to="110" unit="pp" corresp="bibl929-3b">99-110 <note>?</note></citedRange>
+               <citedRange from="99" to="110" unit="pp" corresp="bibl921-6b">99-110 <note>?</note></citedRange>
+               <citedRange from="99" to="110" unit="pp" corresp="bibl229-2b">99-110 <note>?</note></citedRange>
+               <citedRange from="99" to="110" unit="pp" corresp="bibl228-3b">99-110 <note>?</note></citedRange>
+               <citedRange from="99" to="110" unit="pp" corresp="bibl227-2b">99-110 <note>?</note></citedRange>
+               <citedRange from="99" to="110" unit="pp" corresp="bibl226-2b">99-110 <note>?</note></citedRange>
+               <citedRange from="99" to="110" unit="pp" corresp="bibl225-3b">99-110 <note>?</note></citedRange>
             </biblStruct>
             <bibl corresp="bibl870-2 bibl352-3">S. A. Harvey, The Memory and Meaning of a Saint: Two
                Homilies on Simeon Stylites, dans Aram, 5 (1993)</bibl>
@@ -4580,8 +4639,8 @@
                   <biblScope unit="vol" from="2" to="2">2</biblScope>
                   <biblScope unit="pp" from="78" to="106">78-106 et 241-280</biblScope>
                </monogr>
-               <citedRange from="78" to="106" unit="pp" corresp="bibl397-2">78-106 et
-                  241-280</citedRange>
+               <citedRange from="78" to="106" unit="pp" corresp="bibl397-2">78-106</citedRange>
+               <citedRange from="241" to="280" unit="pp" corresp="bibl397-2">241-280</citedRange>
             </biblStruct>
             <bibl corresp="bibl895-6">H. Hilgenfeld, Textkritische Bemerkungen zu Te¯æ¬‡‹ d-M‹r(y)
                Yah(h)í ÆAl‹h‹ pa$r¬yark‹ wa-?-Rabban ±awm‹, Leipzig, 1894</bibl>
@@ -4761,16 +4820,29 @@
                      <forename>M.</forename>
                      <surname>Huber</surname>
                   </author>
-                  <title xml:lang="de" level="m">Beitrag zur Siebenschläferlegende des Mittelalters.
-                     Eine literargeschichtliche Untersuchung. III. Zur Überlieferungsgeschichte der
-                     Legende. Die syrischen Texte mit besonderer Berücksichtigung ihrer Vertreter
-                     (Beilgage zum Jahresbericht des humanistischen Gymnasiums Metten für das
-                     Schuljahr 1907/08), Landshut, s.d.</title>
+                  <title xml:lang="de" level="m">Zur Überlieferungsgeschichte der
+                     Legende. Die syrischen Texte mit besonderer Berücksichtigung ihrer Vertreter</title>
                   <idno type="URI">http://syriaca.org/bibl/845</idno>
                   <imprint>
-                     <date>s.d.</date>
+                     <pubPlace>Landshut</pubPlace>
+                     <date>1908</date>
                   </imprint>
                </monogr>
+               <monogr>
+                  <author>
+                     <forename>M.</forename>
+                     <surname>Huber</surname>
+                  </author>
+                  <title xml:lang="de" level="m">Beitrag zur Siebenschläferlegende des Mittelalters.
+                     Eine literargeschichtliche Untersuchung</title>
+                  <imprint>
+                     <date>1903-1908</date>
+                  </imprint>
+               </monogr>
+               <series>
+                  <title xml:lang="de" level="s">Beilage zum Jahresbericht des humanistischen Gymnasiums Metten</title>
+                  <biblScope>für das Schuljahr 1907/08</biblScope>
+               </series>
             </biblStruct>
             <bibl corresp="bibl250-9">M. Huber, Die Wanderlegende von den Siebenschläfern. Eine
                literargeschichtliche Untersuchung, Leipzig, 1910</bibl>
@@ -4873,9 +4945,7 @@
                   <biblScope unit="pp" from="89" to="92">87-106</biblScope>
                </monogr>
                <citedRange from="89" to="92" unit="pp" corresp="bibl1167-2a">89-92</citedRange>
-               <citedRange from="89" to="92" unit="pp" corresp="bibl1072-2">89-92R. Beulay,
-                  Précisions touchant l’identité et la biographie de Jean Saba de Dalyatha, dans
-                  PdO, 8 (1977-1978), p. 87-116</citedRange>
+               <citedRange from="89" to="92" unit="pp" corresp="bibl1072-2">89-92</citedRange>
             </biblStruct>
             <bibl corresp="bibl297-70">H. Jonas, Gnosis und spätantiker Geist. I. Die mythologische
                Gnosis (Forschungen zur Religion und Literatur des Alten und Neuen Testaments 33),
@@ -5356,7 +5426,7 @@
                      <forename>M. A.</forename>
                      <surname>Kugener</surname>
                   </author>
-                  <title xml:lang="fr" level="a">Observations sur la vie de l’ascète Isaie et sur les vies de Pierre l’Ibérien et de Théodore d’Antinoé par Zacharie le Scolastique'</title>
+                  <title xml:lang="fr" level="a">Observations sur la vie de l’ascète Isaïe et sur les vies de Pierre l’Ibérien et de Théodore d’Antinoé par Zacharie le Scolastique</title>
                   <idno type="URI">http://syriaca.org/bibl/854</idno>
                </analytic>
                <monogr>
@@ -5374,10 +5444,14 @@
             <biblStruct corresp="bibl895-13">
                <analytic>
                   <author>
-                     <forename xml:lang="ru-Latn-iso9r95">E.I.</forename>
-                     <surname xml:lang="ru-Latn-iso9r95">Kyčanov</surname>
-                     <forename xml:lang="ru">E.И.</forename>
-                     <surname xml:lang="ru">Кычанов</surname>
+                     <persName xml:lang="ru-Latn-iso9r95">
+                        <forename>E.I.</forename>
+                        <surname>Kyčanov</surname>
+                     </persName>
+                     <persName xml:lang="ru">
+                        <forename>E.И.</forename>
+                        <surname>Кычанов</surname>
+                     </persName>
                   </author>
                   <title xml:lang="ru-Latn-iso9r95" level="a">Sirijskoe nestorianstvo v Kitae i
                      Central’noj Azii</title>
@@ -5555,7 +5629,7 @@
                      <surname>Ries</surname>
                   </editor>
                   <title xml:lang="fr" level="m">Archéologie et philologie dans l’étude des
-                     civilisations orientales,</title>
+                     civilisations orientales</title>
                   <imprint>
                      <date>4</date>
                   </imprint>
@@ -5720,7 +5794,7 @@
                   <title xml:lang="de" level="s">Texte und Untersuchungen zur Geschichte der altchristlichen Literatur</title>
                   <biblScope unit="vol">32.4</biblScope>
                </series>
-               <citedRange from="197" to="255" unit="pp" corresp="bibl351-2">197-255: études</citedRange>
+               <citedRange from="197" to="255" unit="pp" corresp="bibl351-2">197-255 <note xml:lang="fr">études</note></citedRange>
             </biblStruct>
             <bibl corresp="bibl921-23">R.A. Lipisius, Die edessenische Abgar-Sage kritisch
                untersucht, Braunschweig, 1880</bibl>
@@ -6186,10 +6260,14 @@
             <biblStruct corresp="bibl921-5">
                <analytic>
                   <author>
-                     <forename xml:lang="ru-Latn-iso9r95">E. N.</forename>
-                     <surname xml:lang="ru-Latn-iso9r95">Meŝerskaja</surname>
-                     <forename xml:lang="ru">Е. Н.</forename>
-                     <surname xml:lang="ru">Мещерская</surname>
+                     <persName xml:lang="ru-Latn-iso9r95">
+                        <forename>E. N.</forename>
+                        <surname>Meŝerskaja</surname>
+                     </persName>
+                     <persName xml:lang="ru">
+                        <forename>Е. Н.</forename>
+                        <surname>Мещерская</surname>
+                     </persName>
                   </author>
                   <title xml:lang="ru-Latn-iso9r95" level="a">Legenda ob avgare i apotropeičeskie
                      teksty na grečeskom jazyke</title>
@@ -6213,10 +6291,14 @@
             <biblStruct corresp="bibl921-21">
                <analytic>
                   <author>
-                     <forename xml:lang="ru-Latn-iso9r95">E. N.</forename>
-                     <surname xml:lang="ru-Latn-iso9r95">Meŝerskaja</surname>
-                     <forename xml:lang="ru">Е. Н.</forename>
-                     <surname xml:lang="ru">Мещерская</surname>
+                     <persName xml:lang="ru-Latn-iso9r95">
+                        <forename>E. N.</forename>
+                        <surname>Meŝerskaja</surname>
+                     </persName>
+                     <persName xml:lang="ru">
+                        <forename>Е. Н.</forename>
+                        <surname>Мещерская</surname>
+                     </persName>
                   </author>
                   <title level="a" xml:lang="ru-Latn-iso9r95">Legenda ob Avgare v literaturah
                      vizantijskogo kul'turnogo kruga</title>
@@ -6240,10 +6322,14 @@
             <biblStruct corresp="bibl921-22">
                <analytic>
                   <author>
-                     <forename xml:lang="ru-Latn-iso9r95">E. N.</forename>
-                     <surname xml:lang="ru-Latn-iso9r95">Meŝerskaja</surname>
-                     <forename xml:lang="ru">Е. Н.</forename>
-                     <surname xml:lang="ru">Мещерская</surname>
+                     <persName xml:lang="ru-Latn-iso9r95">
+                        <forename>E. N.</forename>
+                        <surname>Meŝerskaja</surname>
+                     </persName>
+                     <persName xml:lang="ru">
+                        <forename>Е. Н.</forename>
+                        <surname>Мещерская</surname>
+                     </persName>
                   </author>
                   <title xml:lang="ru-Latn-iso9r95" level="a">K izučeniû sirijskih istočnikov i
                      grečesko-slavânskih versij apokrifičeskih legend</title>
@@ -6267,10 +6353,14 @@
             <biblStruct corresp="bibl403-2">
                <analytic>
                   <author>
-                     <forename xml:lang="ru-Latn-iso9r95">E. N.</forename>
-                     <surname xml:lang="ru-Latn-iso9r95">Meŝerskaja</surname>
-                     <forename xml:lang="ru">Е. Н.</forename>
-                     <surname xml:lang="ru">Мещерская</surname>
+                     <persName xml:lang="ru-Latn-iso9r95">
+                        <forename>E. N.</forename>
+                        <surname>Meŝerskaja</surname>
+                     </persName>
+                     <persName xml:lang="ru">
+                        <forename>Е. Н.</forename>
+                        <surname>Мещерская</surname>
+                     </persName>
                   </author>
                   <title level="a" xml:lang="ru-Latn-iso9r95">“Pateriki” v sirijskoj
                      pis'mennosti</title>
@@ -6318,6 +6408,7 @@
                corresp="bibl887-2b bibl785-2 bibl1552-2 bibl1460-2 bibl1419-6 bibl1418-6 bibl1417-5 bibl1416-5 bibl1415-2b bibl1414-5 bibl1413-6 bibl1412-6 bibl1411-6 bibl1235-4 bibl1172-3 bibl1171-4 bibl1170-4 bibl1169-4 bibl1162-4 bibl1080-4 bibl1076-3 bibl1046-4 bibl2047-2 bibl1898-2 bibl1798-2">
                <monogr>
                   <author>
+                     <forename>S.C.</forename>
                      <surname>Mimouni</surname>
                   </author>
                   <title level="m" xml:lang="fr">S.C., Dormition et Assomption de Marie. Histoire des traditions
@@ -6353,8 +6444,8 @@
                <citedRange from="101" to="104" unit="pp" corresp="bibl1162-4">101-104</citedRange>
                <citedRange from="104" to="109" unit="pp" corresp="bibl1080-4">104-109</citedRange>
                <citedRange from="421" to="422" unit="pp" corresp="bibl1076-3">421-422</citedRange>
-               <citedRange from="398" to="399" unit="pp" corresp="bibl1046-4">398-399 et
-                  402</citedRange>
+               <citedRange from="398" to="399" unit="pp" corresp="bibl1046-4">398-399</citedRange>
+               <citedRange from="402" to="402" unit="pp" corresp="bibl1046-4">402</citedRange>
                <citedRange from="110" to="112" unit="pp" corresp="bibl2047-2">110-112</citedRange>
                <citedRange from="110" to="112" unit="pp" corresp="bibl1898-2">110-112</citedRange>
                <citedRange from="423" to="424" unit="pp" corresp="bibl1798-2">423-424</citedRange>
@@ -6745,14 +6836,16 @@
                   </imprint>
                   <biblScope unit="pp" from="37" to="135">37-135</biblScope>
                </monogr>
-               <citedRange from="55" to="67" unit="pp" corresp="bibl1596-3">55-67 (avec extraits
-                  traduits)</citedRange>
-               <citedRange from="49" to="55" unit="pp" corresp="bibl1064-3">49-55 (avec traduction
-                  d’extraits)</citedRange>
-               <citedRange from="42" to="49" unit="pp" corresp="bibl1063-3">42-49 (avec traduction
-                  d’extraits)</citedRange>
-               <citedRange from="55" to="67" unit="pp" corresp="bibl1062-3">55-67 (avec extraits
-                  traduits)</citedRange>
+               <citedRange from="55" to="67" unit="pp" corresp="bibl1596-3">55-67 <note xml:lang="fr">avec extraits
+                  traduits</note></citedRange>
+               <citedRange from="55" to="67" unit="pp" corresp="bibl1596-3">55-67 <note xml:lang="fr">avec extraits
+                  traduits</note></citedRange>
+               <citedRange from="49" to="55" unit="pp" corresp="bibl1064-3">49-55 <note xml:lang="fr">avec traduction
+                  d’extraits</note></citedRange>
+               <citedRange from="42" to="49" unit="pp" corresp="bibl1063-3">42-49 <note xml:lang="fr">avec traduction
+                  d’extraits</note></citedRange>
+               <citedRange from="55" to="67" unit="pp" corresp="bibl1062-3">55-67 <note xml:lang="fr">avec extraits
+                  traduits</note></citedRange>
             </biblStruct>
             <bibl corresp="bibl1493-2">F. Nau, Résumé de monographies syriaques, dans ROC, 2e sér.,
                9 (1914)</bibl>
@@ -7088,8 +7181,8 @@
                   <biblScope unit="pp" from="319" to="345">319-345 (rapports entre syriaque, grec et
                      latin)</biblScope>
                </monogr>
-               <citedRange from="319" to="345" unit="pp" corresp="bibl972-3">319-345 (rapports entre
-                  syriaque, grec et latin)</citedRange>
+               <citedRange from="319" to="345" unit="pp" corresp="bibl972-3">319-345 <note xml:lang="fr">rapports entre
+                  syriaque, grec et latin</note></citedRange>
             </biblStruct>
             <bibl corresp="bibl1450-3">E. Nestle, Die dem Epiphanius zugeschriebenen Vitae
                Prophetarum, dans Marginalien und Materialien, Tübingen, 1893 (pagination
@@ -7306,10 +7399,14 @@
             <biblStruct corresp="bibl930-2">
                <analytic>
                   <author>
-                     <forename xml:lang="ru-Latn-iso9r95">A.V.</forename>
-                     <surname xml:lang="ru-Latn-iso9r95">Pajkova</surname>
-                     <forename xml:lang="ru">Аза Владимировна</forename>
-                     <surname xml:lang="ru">Пайкова</surname>
+                     <persName xml:lang="ru-Latn-iso9r95">
+                        <forename>A.V.</forename>
+                        <surname>Pajkova</surname>
+                     </persName>
+                     <persName xml:lang="ru">
+                        <forename>Аза Владимировна</forename>
+                        <surname>Пайкова</surname>
+                     </persName>
                   </author>
                   <title xml:lang="ru-Latn-iso9r95" level="a">Povest' o Evfimii i gote (k voprosu ob opredelenii âzyka originala)</title>
                   <title xml:lang="ru" level="a">Повесть о Евфимии и готе (к вопросу об определении языка оригинала)</title>
@@ -7332,10 +7429,14 @@
             <biblStruct corresp="bibl930-4 bibl929-7 bibl228-6">
                <analytic>
                   <author>
-                     <forename xml:lang="ru-Latn-iso9r95">A.V.</forename>
-                     <surname xml:lang="ru-Latn-iso9r95">Pajkova</surname>
-                     <forename xml:lang="ru">Аза Владимировна</forename>
-                     <surname xml:lang="ru">Пайкова</surname>
+                     <persName xml:lang="ru-Latn-iso9r95">
+                        <forename>A.V.</forename>
+                        <surname>Pajkova</surname>
+                     </persName>
+                     <persName xml:lang="ru">
+                        <forename>Аза Владимировна</forename>
+                        <surname>Пайкова</surname>
+                     </persName>
                   </author>
                   <title level="a" xml:lang="ru-Latn-iso9r95">K voprosu o vozniknovenii
                      belletrističeskogo povestvovaniâ v sirijskoj literature</title>
@@ -7361,10 +7462,14 @@
             <biblStruct corresp="bibl1065-2">
                <analytic>
                   <author>
-                     <forename xml:lang="ru-Latn-iso9r95">A.V.</forename>
-                     <surname xml:lang="ru-Latn-iso9r95">Pajkova</surname>
-                     <forename xml:lang="ru">Аза Владимировна</forename>
-                     <surname xml:lang="ru">Пайкова</surname>
+                     <persName xml:lang="ru-Latn-iso9r95">
+                        <forename>A.V.</forename>
+                        <surname>Pajkova</surname>
+                     </persName>
+                     <persName xml:lang="ru">
+                        <forename>Аза Владимировна</forename>
+                        <surname>Пайкова</surname>
+                     </persName>
                   </author>
                   <title level="a" xml:lang="ru-Latn-iso9r95">K voprosu o proishoždenii “Žitiâ
                      Aleksiâ, Čeloveka Bož'ego”</title>
@@ -7467,7 +7572,7 @@
                      <forename>G.J.</forename>
                      <surname>Reinink</surname>
                   </editor>
-                  <title level="m" xml:lang="la">IV Symposium Syriacum 1984,</title>
+                  <title level="m" xml:lang="la">IV Symposium Syriacum 1984</title>
                   <imprint>
                      <pubPlace>Rome</pubPlace>
                      <date>1987</date>
@@ -7499,7 +7604,7 @@
                      <forename>R.</forename>
                      <surname>Lavenant</surname>
                   </editor>
-                  <title level="m" xml:lang="la">V Symposium Syriacum,</title>
+                  <title level="m" xml:lang="la">V Symposium Syriacum</title>
                   <imprint>
                      <pubPlace>Rome</pubPlace>
                      <date>1990</date>
@@ -7888,6 +7993,7 @@
             <biblStruct corresp="bibl734-2">
                <analytic>
                   <author>
+                     <forename>P.</forename>
                      <surname>Peeters</surname>
                   </author>
                   <title level="a" xml:lang="fr">La Date de la fête des SS. Juventin et Maximin</title>
@@ -8168,8 +8274,8 @@
                   <biblScope unit="pp" from="285" to="373">285-373</biblScope>
                </monogr>
                <citedRange from="285" to="373" unit="pp" corresp="bibl342-2">285-373</citedRange>
-               <citedRange from="285" to="373" unit="pp" corresp="bibl308-2">285-373 (spéc. p.
-                  339-342)</citedRange>
+               <citedRange from="285" to="373" unit="pp" corresp="bibl308-2">285-373 <note xml:lang="fr">spéc. p.
+                  339-342</note></citedRange>
             </biblStruct>
             <bibl corresp="bibl306-3">P. Peeters, CR de Weyh, dans AB, 32 (1913)</bibl>
             <biblStruct corresp="bibl306-3" type="review">
@@ -8443,15 +8549,17 @@
             <bibl corresp="bibl928-4 bibl683-3">M. Peisker, Severus von Antiochien. Ein kritischer
                Quellenbeitrag zur Geschichte des Monophysitismus, Halle s/Saale, 1908</bibl>
             <biblStruct corresp="bibl928-4 bibl683-3">
+               <!-- check: date listed in CBSC as 1903 -->
                <monogr>
                   <author>
                      <forename>M.</forename>
                      <surname>Peisker</surname>
                   </author>
                   <title xml:lang="de" level="m">Severus von Antiochien. Ein kritischer
-                     Quellenbeitrag zur Geschichte des Monophysitismus, Halle s/Saale, 1908</title>
+                     Quellenbeitrag zur Geschichte des Monophysitismus</title>
                   <idno type="URI">http://syriaca.org/bibl/748</idno>
                   <imprint>
+                     <pubPlace>Halle</pubPlace>
                      <date>1908</date>
                   </imprint>
                </monogr>
@@ -8537,13 +8645,12 @@
                   <imprint>
                      <date>1904</date>
                   </imprint>
-                  <biblScope from="32" to="32" unit="vol">33</biblScope>
+                  <biblScope from="33" to="33" unit="vol">33</biblScope>
                   <biblScope unit="pp" from="31" to="31">31</biblScope>
                </monogr>
                <citedRange from="1" to="15" unit="pp" corresp="bibl297-28">1-15</citedRange>
                <citedRange from="145" to="160" unit="pp" corresp="bibl297-28">145-160</citedRange>
-               <citedRange from="31" to="31" unit="pp" corresp="bibl297-28">33
-                  (1904), p. 31</citedRange>
+               <citedRange from="31" to="31" unit="pp" corresp="bibl297-28">31</citedRange>
             </biblStruct>
             <bibl corresp="bibl1147-2 bibl1123-2">N. Pigoulewsky, Le Martyre de saint Cyriaque de
                Jérusalem, dans ROC, 3e sér. 6 (1927-1928)</bibl>
@@ -8558,6 +8665,7 @@
                </analytic>
                <monogr>
                   <title level="j" xml:lang="fr">Revue de l'Orient chrétien</title>
+                  <idno type="zotero">118</idno>
                   <imprint>
                      <date>1927-1928</date>
                   </imprint>
@@ -8577,10 +8685,14 @@
             <biblStruct corresp="bibl895-5">
                <analytic>
                   <author>
-                     <forename xml:lang="ru-Latn-iso9r95">N.V.</forename>
-                     <surname xml:lang="ru-Latn-iso9r95">Pigulevskaâ</surname>
-                     <forename xml:lang="ru">Н.В.</forename>
-                     <surname xml:lang="ru">Пигулевская</surname>
+                     <persName xml:lang="ru-Latn-iso9r95">
+                        <forename>N.V.</forename>
+                        <surname>Pigulevskaâ</surname>
+                     </persName>
+                     <persName xml:lang="ru">
+                        <forename>Н.В.</forename>
+                        <surname>Пигулевская</surname>
+                     </persName>
                   </author>
                   <title xml:lang="ru-Latn-iso9r95" level="a">Istoriâ mar Âbalahi i Saumy</title>
                   <title xml:lang="ru" level="a">История мар Ябалахи и Саумы</title>
@@ -8817,14 +8929,53 @@
                      <forename>W.</forename>
                      <surname>Haase</surname>
                   </editor>
-                  <title xml:lang="de" level="m">Religion (Vorkonstantinisches Christentum: Leben
-                     und Umwelt Jesu; Neues Testament [Kanonische Schriften und Apokryphen], Schluss
-                     (ANRW, II.25:6)</title>
+                  <title xml:lang="de" level="m">6. Teilband, Schluss</title>
                   <imprint>
-                     <pubPlace>Berlin-New York</pubPlace>
+                     <pubPlace>Berlin</pubPlace>
+                     <pubPlace>New York</pubPlace>
                      <date>1988</date>
                   </imprint>
-                  <biblScope unit="pp" from="4363" to="4383">4363-4383</biblScope>
+                  <biblScope from="4363" to="4383" unit="pp">4363-4383</biblScope>
+               </monogr>
+               <monogr>
+                  <editor>
+                     <forename>W.</forename>
+                     <surname>Haase</surname>
+                  </editor>
+                  <title xml:lang="de" level="m">Religion (Vorkonstantinisches Christentum: Leben
+                     und Umwelt Jesu; Neues Testament [Kanonische Schriften und Apokryphen])</title>
+                  <imprint>
+                     <date>1982-1988</date>
+                  </imprint>
+                  <extent>6 parts</extent>
+                  <biblScope unit="part" from="6" to="6">6</biblScope>
+               </monogr>
+               <monogr>
+                  <editor>
+                     <forename>H.</forename>
+                     <surname>Temporini</surname>
+                  </editor>
+                  <editor>
+                     <forename>W.</forename>
+                     <surname>Haase</surname>
+                  </editor>
+                  <title xml:lang="de" level="m">Principat</title>
+                  <imprint>
+                     <date>1974-1996</date>
+                  </imprint>
+                  <biblScope unit="vol" from="25" to="25">25</biblScope>
+               </monogr>
+               <monogr>
+                  <editor>
+                     <forename>W.</forename>
+                     <surname>Haase</surname>
+                  </editor>
+                  <title xml:lang="de" level="m">Aufstieg und Niedergang der römischen Welt (ANRW)</title>
+                  <title xml:lang="en" level="m">Rise and decline of the Roman world</title>
+                  <imprint>
+                     <date>1972-1996</date>
+                  </imprint>
+                  <biblScope unit="part" from="2" to="2">2</biblScope>
                </monogr>
                <citedRange from="4363" to="4383" unit="pp" corresp="bibl222-5"
                   >4363-4383</citedRange>
@@ -9088,9 +9239,28 @@
                      <date>1906</date>
                   </imprint>
                </monogr>
-               <citedRange from="107" to="110," unit="pp" corresp="bibl297-73">107-110, repris dans
-                  E. Lehmann et H. Haas, Textbuch zur Religionsgeschichte, Leipzig-Erlangen, 1922,
-                  p. 218-222</citedRange>
+               <relatedItem type="has-alternate-printing" target="http://syriaca.org/bibl/1206"/>
+               <citedRange from="107" to="110," unit="pp" corresp="bibl297-73">107-110</citedRange>
+            </biblStruct>
+            <biblStruct corresp="bibl297-73b">
+               <analytic>
+                  <author>
+                     <forename>R.</forename>
+                     <surname>Reitzenstein</surname>
+                  </author>
+                  <title xml:lang="de" level="a">Hellenistische Wundererzählungen</title>
+                  <idno type="URI">http://syriaca.org/bibl/1206</idno>
+               </analytic>
+               <monogr>
+                  <title level="m" xml:lang="de">Textbuch zur Religionsgeschichte</title>
+                  <imprint>
+                     <pubPlace>Leipzig</pubPlace>
+                     <pubPlace>Erlangen</pubPlace>
+                     <date>1922</date>
+                  </imprint>
+               </monogr>
+               <relatedItem type="alternate-printing-of" target="http://syriaca.org/bibl/992"/>
+               <citedRange from="218" to="222," unit="pp" corresp="bibl297-73b">218-222</citedRange>
             </biblStruct>
             <bibl corresp="bibl979-2a bibl315-3">G. Ricciotti, Sant’ Efrem Siro. Biografia, Scritti,
                Teologia, Turin, 1925</bibl>
@@ -9150,10 +9320,14 @@
             <biblStruct corresp="bibl921-7">
                <analytic>
                   <author>
-                     <forename xml:lang="ru-Latn-iso9r95">V.</forename>
-                     <surname xml:lang="ru-Latn-iso9r95">Rodnikov</surname>
-                     <forename xml:lang="ru">В.</forename>
-                     <surname xml:lang="ru">Родников</surname>
+                     <persName xml:lang="ru-Latn-iso9r95">
+                        <forename>V.</forename>
+                        <surname>Rodnikov</surname>
+                     </persName>
+                     <persName xml:lang="ru">
+                        <forename>В.</forename>
+                        <surname>Родников</surname>
+                     </persName>
                   </author>
                   <title xml:lang="ru-Latn-iso9r95">K skazaniû o snošeniâh Edesskogo knâzâ Avgarâ so Hristom Spasitelem</title>
                   <title level="a" xml:lang="ru">К сказанию о сношениях Едесского князя Авгаря со Христом Спасителем</title>
@@ -9512,13 +9686,17 @@
                      <surname>Schermann</surname>
                   </author>
                   <title xml:lang="de" level="m">Propheten- und Apostellegenden nebst
-                     Jüngerkatalogen des Dorotheus und verwandter Texte (TU 31/3)</title>
+                     Jüngerkatalogen des Dorotheus und verwandter Texte</title>
                   <idno type="URI">http://syriaca.org/bibl/1067</idno>
                   <imprint>
                      <pubPlace>Leipzig</pubPlace>
                      <date>1907</date>
                   </imprint>
                </monogr>
+               <series>
+                  <title level="s">Texte und Untersuchungen zur Geschichte der altchristlichen Literatur</title>
+                  <biblScope unit="vol">31/3</biblScope>
+               </series>
                <citedRange from="24" to="35" unit="pp" corresp="bibl1545-2">24-35</citedRange>
                <citedRange from="24" to="35" unit="pp" corresp="bibl1544-2">24-35</citedRange>
                <citedRange from="24" to="35" unit="pp" corresp="bibl1450-2">24-35</citedRange>
@@ -9579,6 +9757,7 @@
             <biblStruct corresp="bibl681-2 bibl353-2">
                <monogr>
                   <author>
+                     <forename>F.</forename>
                      <surname>Schulthess</surname>
                   </author>
                   <title xml:lang="de" level="m">Probe einer syrischen Version der Vita St.
@@ -9589,8 +9768,8 @@
                      <date>1894</date>
                   </imprint>
                </monogr>
-               <citedRange from="1" to="51" unit="pp" corresp="bibl681-2">1-51 (syr.)</citedRange>
-               <citedRange from="1" to="51" unit="pp" corresp="bibl353-2">1-51 (syr.)</citedRange>
+               <citedRange from="1" to="51" unit="pp" corresp="bibl681-2">1-51 (syr.) <note xml:lang="fr">extrait</note></citedRange>
+               <citedRange from="1" to="51" unit="pp" corresp="bibl353-2">1-51 (syr.) <note xml:lang="fr">extrait</note></citedRange>
             </biblStruct>
             <bibl corresp="bibl1067-3">P.G. Sfair, L’ortodossia di Narsai rivelata dalla Omilia sui
                Dottori Greci, dans Bessarione, 33 (1917)</bibl>
@@ -9903,7 +10082,7 @@
                      <forename>F.</forename>
                      <surname>Stanley Jones</surname>
                   </author>
-                  <title xml:lang="en" level="a">Evaluating the Latin and Syriac $Translations of
+                  <title xml:lang="en" level="a">Evaluating the Latin and Syriac Translations of
                      the Pseudo-Clementine Recognitions</title>
                   <idno type="URI">http://syriaca.org/bibl/1093</idno>
                </analytic>
@@ -10078,13 +10257,20 @@
                      <surname>Tamcke</surname>
                   </author>
                   <title xml:lang="de" level="m">Der Katholikos-Patriarch Sabrīšō’ I. (598-604) und
-                     das Mönchtum (Europäische Hochschulschriften. Reihe XXIII Theologie, 302),
-                     Francfort/Berne/New York, 1988</title>
+                     das Mönchtum</title>
                   <idno type="URI">http://syriaca.org/bibl/783</idno>
                   <imprint>
+                     <pubPlace>Francfort</pubPlace>
+                     <pubPlace>Berne</pubPlace>
+                     <pubPlace>New York</pubPlace>
                      <date>1988</date>
                   </imprint>
                </monogr>
+               <series>
+                  <title level="s" xml:lang="de">Europäische Hochschulschriften</title>
+                  <biblScope unit="series" from="23" to="23" xml:lang="de">Reihe XXIII Theologie</biblScope>
+                  <biblScope unit="vol" from="302" to="302">302</biblScope>
+               </series>
                <citedRange from="12" to="13" unit="pp" corresp="bibl897-2">12-13</citedRange>
             </biblStruct>
             <bibl corresp="bibl297-48">J. Teixidor, L’apôtre d’après la littérature syriaque, dans
@@ -10155,14 +10341,53 @@
                      <forename>W.</forename>
                      <surname>Haase</surname>
                   </editor>
-                  <title xml:lang="de" level="m">Religion (Vorkonstantinisches Christentum: Leben
-                     und Umwelt Jesu; Neues Testament [Kanonische Schriften und Apokryphen], Schluss
-                     (ANRW, II.25:6)</title>
+                  <title xml:lang="de" level="m">6. Teilband, Schluss</title>
                   <imprint>
-                     <pubPlace>Berlin-New York</pubPlace>
+                     <pubPlace>Berlin</pubPlace>
+                     <pubPlace>New York</pubPlace>
                      <date>1988</date>
                   </imprint>
                   <biblScope unit="pp" from="4415" to="4430">4415-4430</biblScope>
+               </monogr>
+               <monogr>
+                  <editor>
+                     <forename>W.</forename>
+                     <surname>Haase</surname>
+                  </editor>
+                  <title xml:lang="de" level="m">Religion (Vorkonstantinisches Christentum: Leben
+                     und Umwelt Jesu; Neues Testament [Kanonische Schriften und Apokryphen])</title>
+                  <imprint>
+                     <date>1982-1988</date>
+                  </imprint>
+                  <extent>6 parts</extent>
+                  <biblScope unit="part" from="6" to="6">6</biblScope>
+               </monogr>
+               <monogr>
+                  <editor>
+                     <forename>H.</forename>
+                     <surname>Temporini</surname>
+                  </editor>
+                  <editor>
+                     <forename>W.</forename>
+                     <surname>Haase</surname>
+                  </editor>
+                  <title xml:lang="de" level="m">Principat</title>
+                  <imprint>
+                     <date>1974-1996</date>
+                  </imprint>
+                  <biblScope unit="vol" from="25" to="25">25</biblScope>
+               </monogr>
+               <monogr>
+                  <editor>
+                     <forename>W.</forename>
+                     <surname>Haase</surname>
+                  </editor>
+                  <title xml:lang="de" level="m">Aufstieg und Niedergang der römischen Welt (ANRW)</title>
+                  <title xml:lang="en" level="m">Rise and decline of the Roman world</title>
+                  <imprint>
+                     <date>1972-1996</date>
+                  </imprint>
+                  <biblScope unit="part" from="2" to="2">2</biblScope>
                </monogr>
                <citedRange from="4415" to="4430" unit="pp" corresp="bibl297-47"
                   >4415-4430</citedRange>
@@ -10488,11 +10713,10 @@
                      <date>1890</date>
                   </imprint>
                   <biblScope from="9" to="9" unit="vol">9</biblScope>
-                  <biblScope unit="pp" from="624" to="626">624-626 (compare Abbeloos et
-                     Feige)</biblScope>
+                  <biblScope unit="pp" from="624" to="626">624-626</biblScope>
                </monogr>
-               <citedRange from="624" to="626" unit="pp" corresp="bibl287-2">624-626 (compare
-                  Abbeloos et Feige)</citedRange>
+               <citedRange from="624" to="626" unit="pp" corresp="bibl287-2">624-626 <note xml:lang="fr">compare
+                  Abbeloos et Feige</note></citedRange>
             </biblStruct>
             <bibl corresp="bibl1076-2">A. Van Roey, La sainteté de Marie d’après Jacques de Saroug,
                dans ETL, 31 (1955)</bibl>
@@ -10968,7 +11192,7 @@
                   </editor>
                   <title xml:lang="en" level="m">After Chalcedon. Studies in Theology and Church
                      History offered to Professor Albert Van Roey for his seventieth
-                     birthday,</title>
+                     birthday</title>
                   <imprint>
                      <pubPlace>Louvain</pubPlace>
                      <date>1985</date>
@@ -11132,7 +11356,7 @@
                      <surname>Vööbus</surname>
                   </author>
                   <title xml:lang="en" level="a">Discovery of the Biography of Severus of Antioch by
-                     Qyriaqos of Tagr¬t</title>
+                     Qyriaqos of Tagrit</title>
                   <idno type="URI">http://syriaca.org/bibl/1152</idno>
                </analytic>
                <monogr>
@@ -11304,8 +11528,8 @@
                      <date>1911</date>
                   </imprint>
                </monogr>
-               <citedRange from="35" to="38" unit="pp" corresp="bibl306-2">35-38 (rapport au grec)
-                  et 38-40 (rapport à la légende de Bassos)</citedRange>
+               <citedRange from="35" to="38" unit="pp" corresp="bibl306-2">35-38 <note xml:lang="fr">rapport au grec</note></citedRange>
+               <citedRange from="38" to="40" unit="pp" corresp="bibl306-2">38-40 <note xml:lang="fr">rapport à la légende de Bassos</note></citedRange>
             </biblStruct>
             <bibl corresp="bibl796-2">M. Whitby, Maro the Dendrite: an anti-social holy man? dans M.
                Whitby, P. Hardie (éd.), Homo Viator. Classical Essays for John Bramble, Bristol,
@@ -11456,6 +11680,7 @@
                Christenverfolgung Schapurs II (Abhandlungen `der Akademie der Wissenschaften in
                Göttingen. Phil.-hist. Kl. 3. Folge, 67), Göttingen, 1967</bibl>
             <biblStruct corresp="bibl268-2">
+               <!-- check: not finished with this -->
                <monogr>
                   <author>
                      <forename>G.</forename>
@@ -11470,8 +11695,8 @@
                   </imprint>
                </monogr>
                <series>
-                  <title xml:lang="de" level="s">Abhandlungen `der Akademie der Wissenschaften in
-                     Göttingen. Phil.-hist. Kl. 3. Folge</title>
+                  <title xml:lang="de" level="s">Abhandlungen der Akademie der Wissenschaften in
+                     Göttingen. Philologisch-historische Klasse 3. Folge</title>
                   <biblScope unit="vol">67</biblScope>
                </series>
                <citedRange from="128" to="144" unit="pp" corresp="bibl268-2">128-144</citedRange>

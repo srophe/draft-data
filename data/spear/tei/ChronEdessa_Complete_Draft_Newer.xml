@@ -1686,7 +1686,7 @@
             </div>
             <div uri="http://syriaca.org/spear/633-59">
                 <listRelation>
-                    <relation name="snap:brotherOf" active="http://syriaca.org/person/2288" passive="http://syriaca.org/person/2246"/>
+                    <relation type="family" name="snap:BrotherOf" mutual="http://syriaca.org/person/2288 http://syriaca.org/person/2246"/>
                 </listRelation>
                 <bibl type="primary">
                     <biblScope type="pp">
@@ -2804,7 +2804,7 @@
             </div>
             <div uri="http://syriaca.org/spear/633-93">
                 <listRelation>
-                    <relation name="snap:childOf" active="http://syriaca.org/person/2249" passive="http://syriaca.org/person/1655"/>
+                    <relation type="family" name="snap:ChildOf" active="http://syriaca.org/person/2249" passive="http://syriaca.org/person/1655"/>
                 </listRelation>
                 <bibl type="primary">
                     <biblScope type="pp">
@@ -3259,6 +3259,19 @@
                         <ptr target="#bibl633-2"/>25</biblScope>
                 </bibl>
             </div>
+            <div uri="http://syriaca.org/spear/633-108-1">
+                <listRelation>
+                    <relation type="professional" name="snap:ProfessionalRelationship" mutual="http://syriaca.org/person/2241 http://syriaca.org/person/2249"/>
+                </listRelation>
+                <bibl type="primary">
+                    <biblScope type="pp">
+                        <ptr target="#bibl633-1"/>4</biblScope>
+                </bibl>
+                <bibl type="primary">
+                    <biblScope type="part">
+                        <ptr target="#bibl633-2"/>25</biblScope>
+                </bibl>
+            </div>
             <div uri="http://syriaca.org/spear/633-109">
                 <listEvent>
                     <event>
@@ -3520,7 +3533,7 @@
             </div>
             <div uri="http://syriaca.org/spear/633-117">
                 <listRelation>
-                    <relation name="snap:brotherOf" active="http://syriaca.org/person/2310" passive="http://syriaca.org/person/2309"/>
+                    <relation type="family" name="snap:BrotherOf" mutual="http://syriaca.org/person/2310 http://syriaca.org/person/2309"/>
                 </listRelation>
                 <bibl type="primary">
                     <biblScope type="pp">
@@ -3882,6 +3895,19 @@
                         </persName>
                     </personGrp>
                 </listPerson>
+                <bibl type="primary">
+                    <biblScope type="pp">
+                        <ptr target="#bibl633-1"/>5</biblScope>
+                </bibl>
+                <bibl type="primary">
+                    <biblScope type="part">
+                        <ptr target="#bibl633-2"/>31</biblScope>
+                </bibl>
+            </div>
+            <div>
+                <listRelation>
+                    <relation type="religious" name="snap:EnmityFor" active="http://syriaca.org/person/2211" passive="http://syriaca.org/person/2208"/>
+                </listRelation>
                 <bibl type="primary">
                     <biblScope type="pp">
                         <ptr target="#bibl633-1"/>5</biblScope>
@@ -5648,7 +5674,7 @@
             </div>
             <div uri="http://syriaca.org/spear/633-189">
                 <listRelation>
-                    <relation name="snap:sisterOf" active="http://syriaca.org/person/2234" passive="http://syriaca.org/person/13"/>
+                    <relation type="family" name="snap:SisterOf" active="http://syriaca.org/person/2234" passive="http://syriaca.org/person/13"/>
                 </listRelation>
                 <bibl type="primary">
                     <biblScope type="pp">
@@ -5661,7 +5687,7 @@
             </div>
             <div uri="http://syriaca.org/spear/633-190">
                 <listRelation>
-                    <relation name="snap:sonOf" active="http://syriaca.org/person/16" passive="http://syriaca.org/person/2234"/>
+                    <relation type="family" name="snap:SonOf" active="http://syriaca.org/person/16" passive="http://syriaca.org/person/2234"/>
                 </listRelation>
                 <bibl type="primary">
                     <biblScope type="pp">
@@ -5674,7 +5700,7 @@
             </div>
             <div uri="http://syriaca.org/spear/633-191">
                 <listRelation>
-                    <relation name="snap:nephewOf" active="http://syriaca.org/person/16" passive="http://syriaca.org/person/13"/>
+                    <relation type="family" name="snap:NephewOf" active="http://syriaca.org/person/16" passive="http://syriaca.org/person/13"/>
                 </listRelation>
                 <bibl type="primary">
                     <biblScope type="pp">
@@ -6317,6 +6343,19 @@
             </desc>
                     </event>
                 </listEvent>
+                <bibl type="primary">
+                    <biblScope type="pp">
+                        <ptr target="#bibl633-1"/>6</biblScope>
+                </bibl>
+                <bibl type="primary">
+                    <biblScope type="part">
+                        <ptr target="#bibl633-2"/>52</biblScope>
+                </bibl>
+            </div>
+            <div uri="http://syriaca.org/spear/633-216-1">
+                <listRelation>
+                    <relation type="professional" name="snap:ProfessionalRelation" mutual="http://syriaca.org/person/2266 http://syriaca.org/person/2267"></relation>
+                </listRelation>
                 <bibl type="primary">
                     <biblScope type="pp">
                         <ptr target="#bibl633-1"/>6</biblScope>
@@ -7464,20 +7503,53 @@
                         <ptr target="#bibl633-2"/>63</biblScope>
                 </bibl>
             </div>
+            <div uri="http://syriaca.org/spear/633-252-2">
+                <listPerson>
+                    <personGrp>
+                        <persName ref="http://syriaca.org/person/2314">
+                            The bishops assembled at the Second Council of 
+                            <placeName ref="http://syriaca.org/place/623">
+                                Ephesus
+                            </placeName> in
+                            <date when"0429">A. D. 429</date>
+                        </persName>
+                    </personGrp>
+                </listPerson>
+                <bibl type="primary">
+                    <biblScope type="pp">
+                        <ptr target="#bibl633-1"/>7</biblScope>
+                </bibl>
+                <bibl type="primary">
+                    <biblScope type="part">
+                        <ptr target="#bibl633-2"/>63</biblScope>
+                </bibl>
+            </div>
+            <div uri="http://syriaca.org/spear/633-252-3">
+                <listRelation>
+                    <relation type="religious intellectual" name="snap:EnmityFor" active="http://syriaca.org/person/2314" passive="http://syriaca.org/person/2282 http://syriaca.org/person/2264 http://syriaca.org/person/847 http://syriaca.org/person/534 http://syriaca.org/person/2280 http://syriaca.org/person/2257 http://syriaca.org/person/2304 http://syriaca.org/person/781"/>
+                </listRelation>
+                <bibl type="primary">
+                    <biblScope type="pp">
+                        <ptr target="#bibl633-1"/>7</biblScope>
+                </bibl>
+                <bibl type="primary">
+                    <biblScope type="part">
+                        <ptr target="#bibl633-2"/>63</biblScope>
+                </bibl>
+            </div>
             <div uri="http://syriaca.org/spear/633-253">
                 <listEvent>
-                    <event ref="http://syriaca.org/keyword/synod">
+                    <event ref="http://syriaca.org/keyword/synod http://syriaca.org/keyword/councilEphesusII">
                         <desc>
                             <!-- NO DATE IS GIVEN FOR THIS WELL-KNOWN EVENT WITH A WELL-KNOWN DATE. HOW SHOULD SPEAR HANDLE THIS? 
                                 The dates before and after don't help. Ephesus II met in spring 449 = 760. The previous year given is 756 = 444/5. The next year given is 1 Jan. 448.-->
-              A 
-              <ref target="http://syriaca.org/keyword/councilEphesusII">
-                second council assembled at 
-                <placeName ref="http://syriaca.org/place/623">
-                  Ephesus
-                </placeName>
-                            </ref> 
-              and anathematized 
+                            <persName ref="http://syriaca.org/person/2314">
+                                The bishops assembled at the Second Council of 
+                                <placeName ref="http://syriaca.org/place/623">
+                                    Ephesus
+                                </placeName>
+                            </persName>
+              anathematized 
               <persName ref="http://syriaca.org/person/2282">
                 Flavian of 
                 <placeName ref="http://syriaca.org/place/586">
@@ -8948,6 +9020,19 @@
                         <ptr target="#bibl633-2"/>72</biblScope>
                 </bibl>
             </div>
+            <div uri="http://syriaca.org/spear/633-298-1">
+                <listRelation>
+                    <relation type="professional" name="snap:ProfessionalRelationship" ana="neg" mutual="http://syriaca.org/person/2287 http://syriaca.org/person/2273"/>
+                </listRelation>
+                <bibl type="primary">
+                    <biblScope type="pp">
+                        <ptr target="#bibl633-1"/>8</biblScope>
+                </bibl>
+                <bibl type="primary">
+                    <biblScope type="part">
+                        <ptr target="#bibl633-2"/>72</biblScope>
+                </bibl>
+            </div>
             <div uri="http://syriaca.org/spear/633-299">
                 <listEvent>
                     <event ref="http://syriaca.org/keyword/usurpation">
@@ -9587,6 +9672,19 @@
                         <ptr target="#bibl633-2"/>76</biblScope>
                 </bibl>
             </div>
+            <div uri="http://syriaca.org/spear/633-317-2">
+                <listRelation>
+                    <relation type="clerical" name="syriaca:BishopOverClergy" active="http://syriaca.org/person/2235 http://syriaca.org/person/2218"></relation>
+                </listRelation>
+                <bibl type="primary">
+                    <biblScope type="pp">
+                        <ptr target="#bibl633-1"/>8</biblScope>
+                </bibl>
+                <bibl type="primary">
+                    <biblScope type="part">
+                        <ptr target="#bibl633-2"/>76</biblScope>
+                </bibl>
+            </div>
             <div uri="http://syriaca.org/spear/633-318">
                 <listEvent>
                     <event ref="http://syriaca.org/keyword/naturalDisaster http://syriaca.org/keyword/death">
@@ -9780,6 +9878,19 @@
                         </state>
                     </person>
                 </listPerson>
+                <bibl type="primary">
+                    <biblScope type="pp">
+                        <ptr target="#bibl633-1"/>9</biblScope>
+                </bibl>
+                <bibl type="primary">
+                    <biblScope type="part">
+                        <ptr target="#bibl633-2"/>77</biblScope>
+                </bibl>
+            </div>
+            <div uri="http://syriaca.org/spear/633-323-1">
+                <listRelation>
+                    <relation type="professional" name="snap:ProfessionalRelation" ana="neg" mutual="http://syriaca.org/person/2265 http://syriaca.org/person/2277"/>
+                </listRelation>
                 <bibl type="primary">
                     <biblScope type="pp">
                         <ptr target="#bibl633-1"/>9</biblScope>
@@ -10587,6 +10698,19 @@
                         <ptr target="#bibl633-2"/>84</biblScope>
                 </bibl>
             </div>
+            <div uri="http://syriaca.org/spear/633-350-1">
+                <listRelation>
+                    <relation type="professional" name="snap:ProfessionalRelationship" ana="neg" mutual="http://syriaca.org/person/2265 http://syriaca.org/person/2289"/>
+                </listRelation>
+                <bibl type="primary">
+                    <biblScope type="pp">
+                        <ptr target="#bibl633-1"/>9</biblScope>
+                </bibl>
+                <bibl type="primary">
+                    <biblScope type="part">
+                        <ptr target="#bibl633-2"/>84</biblScope>
+                </bibl>
+            </div>
             <div uri="http://syriaca.org/spear/633-351">
                 <listEvent>
                     <event ref="http://syriaca.org/keyword/deposition">
@@ -10697,6 +10821,19 @@
                         <sex value="M">Male</sex>
                     </person>
                 </listPerson>
+                <bibl type="primary">
+                    <biblScope type="pp">
+                        <ptr target="#bibl633-1"/>9</biblScope>
+                </bibl>
+                <bibl type="primary">
+                    <biblScope type="part">
+                        <ptr target="#bibl633-2"/>85</biblScope>
+                </bibl>
+            </div>
+            <div uri="http://syriaca.org/spear/633-354-2">
+                <listRelation>
+                    <relation type="professional" name="snap:ProfessionalRelationship" ana="neg" mutual="http://syriaca.org/person/2311 http://syriaca.org/person/2265"/>
+                </listRelation>
                 <bibl type="primary">
                     <biblScope type="pp">
                         <ptr target="#bibl633-1"/>9</biblScope>
@@ -11028,6 +11165,19 @@
                         <ptr target="#bibl633-2"/>87</biblScope>
                 </bibl>
             </div>
+            <div uri="http://syriaca.org/spear/633/365-1">
+                <listRelation>
+                    <relation type="professional" name="snap:ProfessionalRelationship" ana="neg" mutual="http://syriaca.org/person/2268 http://syriaca.org/person/51 http://syriaca.org/person/44"/>
+                </listRelation>
+                <bibl type="primary">
+                    <biblScope type="pp">
+                        <ptr target="#bibl633-1"/>10</biblScope>
+                </bibl>
+                <bibl type="primary">
+                    <biblScope type="part">
+                        <ptr target="#bibl633-2"/>87</biblScope>
+                </bibl>
+            </div>
             <div uri="http://syriaca.org/spear/633-366">
                 <listEvent>
                     <event ref="http://syriaca.org/keyword/deposition">
@@ -11095,6 +11245,19 @@
                         <sex value="M">Male</sex>
                     </person>
                 </listPerson>
+                <bibl type="primary">
+                    <biblScope type="pp">
+                        <ptr target="#bibl633-1"/>10</biblScope>
+                </bibl>
+                <bibl type="primary">
+                    <biblScope type="part">
+                        <ptr target="#bibl633-2"/>89</biblScope>
+                </bibl>
+            </div>
+            <div uri="http://syriaca.org/spear/633-367-2">
+                <listRelation>
+                    <relation type="professional" name="snap:ProfessionalRelationship" mutual="http://syriaca.org/person/2281 http://syriaca.org/person/2268 http://syriaca.org/person/2296"/>
+                </listRelation>
                 <bibl type="primary">
                     <biblScope type="pp">
                         <ptr target="#bibl633-1"/>10</biblScope>
@@ -11452,6 +11615,19 @@
                         <ptr target="#bibl633-2"/>90</biblScope>
                 </bibl>
             </div>
+            <div uri="http://syriaca.org/spear/633-374-2">
+                <listRelation>
+                    <relation type="clerical" name="syriaca:BishopOverMonk" ana="neg" active="http://syriaca.org/person/2236" passive="http://syriaca.org/person/2221"/>
+                </listRelation>
+                <bibl type="primary">
+                    <biblScope type="pp">
+                        <ptr target="#bibl633-1"/>10</biblScope>
+                </bibl>
+                <bibl type="primary">
+                    <biblScope type="part">
+                        <ptr target="#bibl633-2"/>90</biblScope>
+                </bibl>
+            </div>
             <div uri="http://syriaca.org/spear/633-375">
                 <listEvent>
                     <event ref="http://syriaca.org/keyword/synod http://syriaca.org/keyword/exile">
@@ -11608,6 +11784,19 @@
                         </state>
                     </person>
                 </listPerson>
+                <bibl type="primary">
+                    <biblScope type="pp">
+                        <ptr target="#bibl633-1"/>11</biblScope>
+                </bibl>
+                <bibl type="primary">
+                    <biblScope type="part">
+                        <ptr target="#bibl633-2"/>92</biblScope>
+                </bibl>
+            </div>
+            <div uri="http://syriaca.org/spear/633-379-1">
+                <listRelation>
+                    <relation type="professional" name="snap:ProfessionalRelationship" mutual="http://syriaca.org/person/2236 http://syriaca.org/person/2278"/>
+                </listRelation>
                 <bibl type="primary">
                     <biblScope type="pp">
                         <ptr target="#bibl633-1"/>11</biblScope>
@@ -11802,6 +11991,27 @@
                         </state>
                     </person>
                 </listPerson>
+                <bibl type="primary">
+                    <biblScope type="pp">
+                        <ptr target="#bibl633-1"/>11</biblScope>
+                </bibl>
+                <bibl type="primary">
+                    <biblScope type="part">
+                        <ptr target="#bibl633-2"/>93</biblScope>
+                </bibl>
+            </div>
+            <div uri="http://syriaca.org/spear/633-384-3">
+                <listRelation>
+                    <relation type="professional" name="snap:ProfessionalRelationship" mutual="http://syriaca.org/person/2284 http://syriaca.org/person/2278 http://syriaca.org/person/2296"/>
+                </listRelation>
+                <bibl type="primary">
+                    <biblScope type="pp">
+                        <ptr target="#bibl633-1"/>11</biblScope>
+                </bibl>
+                <bibl type="primary">
+                    <biblScope type="part">
+                        <ptr target="#bibl633-2"/>93</biblScope>
+                </bibl>
             </div>
             <div uri="http://syriaca.org/spear/633-385">
                 <listEvent>
@@ -12698,6 +12908,19 @@
                         <ptr target="#bibl633-2"/>98</biblScope>
                 </bibl>
             </div>
+            <div uri="http://syriaca.org/spear/633-412-1">
+                <listRelation>
+                    <relation type="professional" name="snap:ProfessionalRelationship" mutual="http://syriaca.org/person/2284 http://syriaca.org/person/2268"/>
+                </listRelation>
+                <bibl type="primary">
+                    <biblScope type="pp">
+                        <ptr target="#bibl633-1"/>12</biblScope>
+                </bibl>
+                <bibl type="primary">
+                    <biblScope type="part">
+                        <ptr target="#bibl633-2"/>98</biblScope>
+                </bibl>
+            </div>
             <div uri="http://syriaca.org/spear/633-413">
                 <listEvent>
                     <event ref="http://syriaca.org/keyword/accession">
@@ -13525,7 +13748,7 @@
                         <state type="office">
                             <desc>
                                 <persName ref="http://syriaca.org/person/1529">
-                                    Honorios
+                                    Theodosius
                                 </persName> 
                                 was 
                                 <ref target="http://syriaca.org/keyword/emperor">
@@ -13539,6 +13762,19 @@
                         </state>
                     </person>
                 </listPerson>
+                <bibl type="primary">
+                    <biblScope type="pp">
+                        <ptr target="#bibl633-1"/>13</biblScope>
+                </bibl>
+                <bibl type="primary">
+                    <biblScope type="part">
+                        <ptr target="#bibl633-2"/>106</biblScope>
+                </bibl>
+            </div>
+            <div uri="http://syriaca.org/spear/633-434-3">
+                <listRelation>
+                    <relation type="professional" name="snap:ProfessionalRelationship" mutual="http://syriaca.org/person/2267 http://syriaca.org/person/1529"/>
+                </listRelation>
                 <bibl type="primary">
                     <biblScope type="pp">
                         <ptr target="#bibl633-1"/>13</biblScope>

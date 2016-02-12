@@ -1,0 +1,92 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix lawd: <http://lawd.info/ontology/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dct:<http://purl.org/dc/terms/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix syriaca: <http://syriaca.org/ontology#> .
+# also, prov looks like it may be useful for citations and attributed authorship
+
+@base <http://syriaca.org/work/270> .
+
+# THE MAIN WORK BEING DESCRIBED
+<>
+	a lawd:ConceptualWork ;
+	dc:identifier "BHS: 49", "BHO: 772" ;
+	dct:language "syr" ;
+	# No language tag on rdfs:label because combination of Syriac and English.
+	rdfs:label "Miles, Aboursam and Sinay (text) — ܡܝܠܣ ܘܐܒܘܪܣܡ ܘܣܝܢܝ"
+	dc:title
+	# Can/should lawd:primaryForm be used here?
+		"ܡܝܠܣ ܘܐܒܘܪܣܡ ܘܣܝܢܝ"@syr ,
+		"Mīles w-ʾĀbūrsām w-Sīnay"@fr-x-bhs ,
+		"Milès, Aboursam et Sinay (texte)"@fr ,
+		"Miles, Aboursam and Sinay (text)"@en ;
+	# Could we use lawd:responsibleAgent if relationship of agent to work is unclear?
+	dc:creator <http://syriaca.org/person/foo> ;
+	dct:description "An account of three persons martyred during the reign of Shapur II (4th century)."@en ;
+	syriaca:commemorated
+		<http://syriaca.org/person/1922> ,
+		<http://syriaca.org/person/1544> ,
+		<http://syriaca.org/person/1383> ;
+	# Should we use lawd:TextPart instead?
+	dct:hasPart
+		<#prologue270-1> ,
+		<#incipit270-1> ,
+		<#explicit270-1> ;
+	# dct:bibliographicCitation would also be a possibility, but dct:isReferencedBy seems more specific.
+	dct:isReferencedBy
+		<#bib270-1> ,
+		<#bib270-2> ,
+		<#bib270-3> .
+# Could perhaps use skos:Concept (or related properties) for Library of Congress keywords.
+
+# MANUSCRIPT WITNESSES
+# Is there a way to more explicitly declare the following as manuscript
+# witnesses without committing to lawd:Hand or lawd:AssembledWork?
+<http://syriaca.org/manuscript/20001>
+	a lawd:WrittenWork ;
+	dct:hasPart <http://syriaca.org/manuscript/20001#a1> .
+<http://syriaca.org/manuscript/20001#a1>
+	a lawd:WrittenWork ;
+	lawd:embodies <> .
+<http://syriaca.org/manuscript/20002>
+	a lawd:WrittenWork ;
+	dct:hasPart <http://syriaca.org/manuscript/20002#b1> .
+<http://syriaca.org/manuscript/20002#b1>
+	a lawd:WrittenWork ;
+	lawd:embodies <> .
+
+# EDITIONS AND MODERN TRANSLATIONS
+# Edition from known manuscript .
+<http://syriaca.org/bibl/10001>
+	a lawd:Edition ;
+	lawd:embodies <> ;
+	dct:source <http://syriaca.org/manuscript/20001#a1> .
+# Edition and translation from unknown manuscript(s).
+	# This may be difficult to serialize with a stylesheet. Something like: When there are multiple
+	# bibl/biblStruct elements that have a ptr/idno to the same URI but differing biblScopes, then
+	# use dct:hasPart + @xml:ids.
+<http://syriaca.org/bibl/10002>
+	a lawd:WrittenWork ;
+	dct:hasPart <#bib270-5> , <#bib270-16> .
+<#bib270-5>
+	a lawd:Edition ;
+	dct:language "syr" ;
+	lawd:embodies <> .
+<#bib270-16>
+	a lawd:Translation ;
+	dct:language "la" ;
+	dct:source <> .
+
+# ANCIENT TRANSLATIONS
+<#bib270-15>
+	a lawd:Translation ;
+	dct:language "hy" ;
+	dct:source <> .
+
+# SECONDARY LITERATURE
+# Is there anything else we should include here to indicate these are about work/270?
+<#bib270-1> lawd:represents <http://syriaca.org/bibl/649> .
+<#bib270-2> lawd:represents <http://syriaca.org/bibl/781> .
+<#bib270-3> lawd:represents <http://syriaca.org/bibl/709> .

@@ -1,0 +1,15 @@
+@prefix lawd: <http://lawd.info/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+<http://cwkb.org/work/id/1411/rdf>
+  a <http://lawd.info/ontology/conceptualWork> ;
+  lawd:responsibleAgent "http://cwkb.org/author/id/678/rdf" ;
+  rdfs:label "Eclogae"@la, "Bucólicas"@es, "Églogas"@es, "Bucolica"@la, "Bucoliche"@it, "Egloghe"@it, "Eklogen"@de, "Hirtengedichte"@de, "Bucoliques"@fr, "Éclogues"@fr, "Bucolics"@en, "Eclogues"@en ;
+  lawd:abbreviation "ecl." ;
+  dc:identifier "phi:0690.001", "urn:cts:latinLit:phi0690.phi001" ;
+  dc:language "latin" ;
+  owl:sameAs <http://data.perseus.org/catalog/urn:cts:latinLit:phi0690.phi001> ;
+  lawd:Citation "http://cwkb.org/resolver?rft.auauthority=P. Vergilius
+            Maro&rft.titleauthority=Eclogae&rft_val_fmt=info:ofi/fmt:kev:mtx:canonical_cit&ctx_ver=Z39.88-2004" .

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- RDFa example from Perseus of how they use LAWD to describe texts -->
+<div class="contents" id="data-contents">
+    <div id="cts-passage-uri"
+        resource="http://data.perseus.org/citations/urn:cts:latinLit:phi0448.phi001.perseus-lat1:1.1.1"
+        typeof="http://lawd.info/ontology/Citation">
+        <span class="data-label">Citation URI:</span>
+        <a
+            href="http://data.perseus.org/citations/urn:cts:latinLit:phi0448.phi001.perseus-lat1:1.1.1"
+            >http://data.perseus.org/citations/urn:cts:latinLit:phi0448.phi001.perseus-lat1:1.1.1</a>
+        <div id="cts-text-uri"
+            resource="http://data.perseus.org/texts/urn:cts:latinLit:phi0448.phi001.perseus-lat1"
+            typeof="http://lawd.info/ontology/WrittenWork"
+            property="http://lawd.info/ontology/represents">
+            <span class="data-label">Text URI:</span>
+            <a href="http://data.perseus.org/texts/urn:cts:latinLit:phi0448.phi001.perseus-lat1"
+                >http://data.perseus.org/texts/urn:cts:latinLit:phi0448.phi001.perseus-lat1</a>
+            <div id="cts-work-uri"
+                resource="http://data.perseus.org/texts/urn:cts:latinLit:phi0448.phi001"
+                typeof="http://lawd.info/ontology/ConceptualWork"
+                property="http://lawd.info/ontology/embodies">
+                <span class="data-label">Work URI:</span>
+                <a href="http://data.perseus.org/texts/urn:cts:latinLit:phi0448.phi001"
+                    >http://data.perseus.org/texts/urn:cts:latinLit:phi0448.phi001</a>
+            </div>
+            <div id="cts-catalog-uri"
+                resource="http://data.perseus.org/catalog/urn:cts:latinLit:phi0448.phi001.perseus-lat1"
+                property="http://www.w3.org/2000/01/rdf-schema#isDefinedBy">
+                <span class="data-label">Catalog Record URI:</span>
+                <a
+                    href="http://data.perseus.org/catalog/urn:cts:latinLit:phi0448.phi001.perseus-lat1"
+                    target="_blank"
+                    >http://data.perseus.org/catalog/urn:cts:latinLit:phi0448.phi001.perseus-lat1</a>
+            </div>
+        </div>
+    </div>
+</div>

@@ -104,6 +104,15 @@
                 </bibl>
             </div>
             <div>
+                <listRelation>
+                    <relation type="epistolary" name="syriaca:RecipientOfLetterFrom" active="http://syriaca.org/person/51" passive="http://syriaca.org/person/2513"/>
+                </listRelation>
+                <bibl type="primary">
+                    <biblScope type="pp">
+                        <ptr target="#bibl3004-1"/>3</biblScope>
+                </bibl>
+            </div>
+            <div>
                 <listPerson>
                     <person>
                         <persName ref="http://syriaca.org/person/2528">
@@ -158,7 +167,14 @@
                 <listPerson>
                     <person>
                         <persName ref="http://syriaca.org/person/anonymi1">
-                            Those with Asterias when he joined Severus 
+                            Those with 
+                            <persName ref="http://syriaca.org/person/2528">
+                                Asterias
+                            </persName>
+                            when he joined 
+                            <persName ref="http://syriaca.org/person/51">
+                                Severus
+                            </persName>
                         </persName>
                     </person>
                 </listPerson>
@@ -231,7 +247,7 @@
                 <listPerson>
                     <person>
                         <persName ref="http://syriaca.org/person/2265">
-                            the pious king
+                            The pious king
                         </persName>
                     </person>
                 </listPerson>
@@ -562,7 +578,7 @@
                             <placeName>
                                 Pamphylia
                             </placeName>
-                            was a citizen of 
+                            was a citizen of <!-- This is more than we can fit into a name variant factoid. We could encode this information in a nationality element, sadly TEI chooses a term that suggests nation instead of city. -->
                             <placeName>
                                 Perga
                             </placeName>
@@ -674,7 +690,7 @@
                                 </persName> 
                                 was Patriarch of 
                                 <placeName>
-                                    Alexander's City 
+                                    Alexandria<!-- Here we probably want the standard name for the city, even though above for the name variant it's good to capture Severus' turn of phrase. --> 
                                 </placeName>
                             </desc>
                         </state>
@@ -746,7 +762,7 @@
                     <person>
                         <state type="vocation">
                             <desc>
-                                <persName ref="http://syriaca.org/person/680"> 
+                                <persName ref="http://syriaca.org/person/680"> <!-- I need to double check something here. -->
                                     Peter of
                                     <placeName> 
                                         Iberia
@@ -768,11 +784,16 @@
             <div> 
                 <listPerson>
                     <personGrp>
-                        <persName ref="http://syriaca.org/person/anonymi3">
-                            holy fathers of
+                        <persName ref="http://syriaca.org/person/anonymi3"><!-- Ideally, we hope to be able to identify individuals who were part of our anonymous groups. In order to do so we need to be more specific. -->
+                            The holy fathers of
                             <placeName>
                                 Palestine
                             </placeName>
+                            when 
+                            <persName ref="http://syriaca.org/person/680">
+                                Peter the Iberian
+                            </persName>
+                            <persName></persName>
                             </persName>
                     </personGrp>
                 </listPerson>
@@ -785,7 +806,7 @@
                 <listPerson>
                     <personGrp>
                         <persName ref="http://syriaca.org/person/anonymi4">
-                            orthodox people of
+                            The orthodox people of
                             <placeName>
                                 Palestine
                             </placeName>

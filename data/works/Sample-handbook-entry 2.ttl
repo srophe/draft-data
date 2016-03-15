@@ -10,11 +10,14 @@
 @base <http://syriaca.org/work/270> .
 
 # THE MAIN WORK BEING DESCRIBED
+# put in some schema.org to match up with WorldCat?
+# put in some CIDOC-CRM for sake of partners
 <>
 	a lawd:ConceptualWork ;
 	dc:identifier "BHS: 49", "BHO: 772" ;
 	dct:language "syr" ;
 	# No language tag on rdfs:label because combination of Syriac and English.
+	# These descriptions are sometimes data which we are reusing from other resources under a creative commons license. In those cases we need to show an attribution on this. How would we do that, could we use a lawd:attribution?
 	rdfs:label "Miles, Aboursam and Sinay (text) — ܡܝܠܣ ܘܐܒܘܪܣܡ ܘܣܝܢܝ"
 	dc:title
 	# Can/should lawd:primaryForm be used here?

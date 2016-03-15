@@ -214,168 +214,112 @@
                         <quote>Et ses habitants crurent que, du fait de la bénédiction des os des justes qui y étaient placés, ils n’avaient pas réussi à entrer. Les saints furent couronnés le treize du mois lunaire de Teshrî II.</quote>
                     </seg>
                 </note>
-                <!-- listBibl not allowed here but listRelation is. SAWS recommends using relation with @active, @passive, and @ref to create RDF triples.
-                But bibl not allowed directly in relation, only as child of desc. -->
-                <listRelation type="editions">
-                    <relation active="#bib270-4 #bib270-5" ref="lawd:embodies" passive="http://syriaca.org/work/270" source="#bib270-1">
-                        <desc>
-                            <listBibl>
-                                <bibl type="lawd:Edition" n="1" xml:id="bib270-4">
-                                    <author>Bedjan, P.</author>
-                                    <title>AMS 2</title>
-                                    <!-- Should we put a lawd class on ptr in the @type attribute? -->
-                                    <ptr target="http://syriaca.org/bibl/10001"/>
-                                    <citedRange>p. 260-275</citedRange>
-                                    <listRelation type="MS-witnesses">
-                                        <relation active="#bib270-4" ref="dct:source" passive="#bib270-6"/>
-                                    </listRelation>
-                                </bibl>
-                                <biblStruct type="lawd:Edition" n="2" xml:id="bib270-5">
-                                    <analytic>
-                                        <editor>
-                                            <forename>S. E.</forename>
-                                            <surname>Assemani</surname>
-                                        </editor>
-                                        <title level="a" xml:lang="syr">ܣܗܕܘܬܐ ܕܡܝܠܣ ܐܦܝܣܩܘܦܐ ܕܫܘܫܢ ܘܟܐܒܪܘܣܝܡ ܩܫܝܫܐ ܘܕܣܝܢܝ ܡܫܡܫܢܐ ܒܫܘܪܝܗ ܕܪܕܘܦܝܢ</title>
-                                        <textLang mainLang="syr"/>
-                                    </analytic>
-                                    <monogr>
-                                        <editor>
-                                            <forename>S. E.</forename>
-                                            <surname>Assemani</surname>
-                                        </editor>
-                                        <title level="m" xml:lang="la">Acta Sanctorum Martyrum Orientalium et Occidentalium</title>
-                                        <!-- Should we use ptr or idno here? -->
-                                        <ptr target="http://syriaca.org/bibl/10002"/>
-                                        <imprint>
-                                            <pubPlace>Rome</pubPlace>
-                                            <date>1748</date>
-                                        </imprint>
-                                        <biblScope unit="vol" from="1" to="1">1</biblScope>
-                                        <biblScope unit="pp" from="66" to="79">66-79</biblScope>
-                                        <biblScope unit="column">outside</biblScope>
-                                    </monogr>
-                                </biblStruct>
-                            </listBibl>
-                        </desc>
-                    </relation>
-                </listRelation>
-                <listRelation type="MSS">
-                    <relation active="#bib270-6 #bib270-9" ref="lawd:embodies" passive="http://syriaca.org/work/270" source="#bib270-1">
-                        <desc>
-                            <listBibl>
-                                <!-- I don't see a general lawd class for manuscripts - only lawd:AssembledWork or lawd:Hand
-                                    Only in some cases will we be able to specify @type more specifically as one of these -->
-                                <msDesc type="lawd:WrittenWork" xml:id="bib270-6">
-                                    <msIdentifier>
-                                        <country>Germany</country>
-                                        <settlement>Berlin</settlement>
-                                        <collection xml:lang="de">Königliche Bibliothek</collection>
-                                        <idno type="URI">http://syriaca.org/manuscript/20001</idno>
-                                        <altIdentifier>
-                                            <idno type="KB-Shelfmark">or. oct. 1257</idno>
-                                            <note xml:lang="fr">Assfalg 27, olim Abbeloos, dein Bedjan, copié sur ms Diyarbakir, Archevêché chaldéen, cod. 96 [nunc Mardin, Évêché chaldéen, y vu en 1969]</note>
-                                        </altIdentifier>
-                                    </msIdentifier>
-                                    <msContents>
-                                        <msItem>
-                                            <locus from="1" to="23">p. 1-23</locus>
-                                            <idno type="URI">http://syriaca.org/manuscript/20001#a1</idno>
-                                        </msItem>
-                                    </msContents>
-                                </msDesc>
-                                <msDesc type="lawd:WrittenWork" xml:id="bib270-9">
-                                    <msIdentifier>
-                                        <collection>Vatican</collection>
-                                        <idno type="URI">http://syriaca.org/manuscript/20002</idno>
-                                        <altIdentifier>
-                                            <idno type="VT-Shelfmark">Syr. 161</idno>
-                                        </altIdentifier>
-                                    </msIdentifier>
-                                    <msContents>
-                                        <msItem>
-                                            <locus from="61" to="64v">ff. 61-64v</locus>
-                                            <idno type="URI">http://syriaca.org/manuscript/20002#b1</idno>
-                                        </msItem>
-                                    </msContents>
-                                </msDesc>
-                            </listBibl>
-                        </desc>
-                    </relation>
-                </listRelation>
-                <listRelation type="ancientVersion">
-                    <relation active="#bib270-15" ref="lawd:embodies" passive="http://syriaca.org/work/270" source="#bib270-1">
-                        <desc>
-                            <!-- Is it OK to mark this as lawd:Translation even though we don't know the particular lawd:WrittenWork it translates? -->
-                            <bibl type="lawd:Translation" xml:id="bib270-15" xml:lang="hy">L. Ter-Petrossian, Abraham Xostovanoøi «Vkaykæ arevelicæ=» (Bnagragitakan hetazotutæyun), Érévan, 1976</bibl>
-                        </desc>
-                    </relation>
-                </listRelation>
-                <listRelation type="modernTranslation">
-                    <relation active="#bib270-16" ref="dct:source" passive="http://syriaca.org/work/270" source="#bib270-1">
-                        <desc>
-                            <!-- Should the translated portion of a WrittenWork have a different URI from the edition, even if the translation 
-                                is side-by-side? Or is having its own xml:id enough? -->
-                            <biblStruct type="lawd:Translation" xml:id="bib270-16">
-                                <analytic>
-                                    <editor>
-                                        <forename>S. E.</forename>
-                                        <surname>Assemani</surname>
-                                    </editor>
-                                    <title level="a" xml:lang="la">Martyrium SS. Milis, Susae Episcopi, Ambrosimi, Presbyteri, et Sinae, Diaconi</title>
-                                    <textLang mainLang="la"/>
-                                </analytic>
-                                <monogr>
-                                    <editor>
-                                        <forename>S. E.</forename>
-                                        <surname>Assemani</surname>
-                                    </editor>
-                                    <title level="m" xml:lang="la">Acta Sanctorum Martyrum Orientalium et Occidentalium</title>
-                                    <!-- Should we use ptr or idno here? -->
-                                    <ptr target="http://syriaca.org/bibl/10002"/>
-                                    <imprint>
-                                        <pubPlace>Rome</pubPlace>
-                                        <date>1748</date>
-                                    </imprint>
-                                    <biblScope unit="vol" from="1" to="1">1</biblScope>
-                                    <biblScope unit="pp" from="66" to="79">66-79</biblScope>
-                                    <biblScope unit="column">inside</biblScope>
-                                </monogr>
-                            </biblStruct>
-                        </desc>
-                    </relation>
-                </listRelation>
+                <bibl type="lawd:Edition" n="1" xml:id="bib270-4">
+                    <author>
+                        <forename>P.</forename>
+                        <surname>Bedjan</surname>
+                    </author>
+                    <title level="m" xml:lang="la">Acta Martyrum et Sanctorum</title>
+                    <!-- Should we put a lawd class on ptr in the @type attribute? -->
+                    <ptr target="http://syriaca.org/bibl/10001"/>
+                    <citedRange unit="volume" from="2" to="2">2</citedRange>
+                    <citedRange unit="pp" from="260" to="275">260-275</citedRange>
+                </bibl>
+                <bibl type="lawd:Edition" n="2" xml:id="bib270-5">
+                        <editor>
+                            <forename>S. E.</forename>
+                            <surname>Assemani</surname>
+                        </editor>
+                        <title level="a" xml:lang="syr">ܣܗܕܘܬܐ ܕܡܝܠܣ ܐܦܝܣܩܘܦܐ ܕܫܘܫܢ ܘܟܐܒܪܘܣܝܡ ܩܫܝܫܐ ܘܕܣܝܢܝ ܡܫܡܫܢܐ ܒܫܘܪܝܗ ܕܪܕܘܦܝܢ</title>
+                        <title level="m" xml:lang="la">Acta Sanctorum Martyrum Orientalium et Occidentalium</title>
+                        <textLang mainLang="syr"/>
+                        <ptr target="http://syriaca.org/bibl/10002"/>
+                        <biblScope unit="vol" from="1" to="1">1</biblScope>
+                        <biblScope unit="pp" from="66" to="79">66-79</biblScope>
+                        <biblScope unit="column">outside</biblScope>
+                </bibl>
+                <!-- I don't see a general lawd class for manuscripts - only lawd:AssembledWork or lawd:Hand
+                    Only in some cases will we be able to specify @type more specifically as one of these -->
+                <bibl type="lawd:WrittenWork" xml:id="bib270-6">
+                    <msIdentifier>
+                        <country>Germany</country>
+                        <settlement>Berlin</settlement>
+                        <collection xml:lang="de">Königliche Bibliothek</collection>
+                        <idno type="URI">http://syriaca.org/manuscript/20001</idno>
+                        <altIdentifier>
+                            <idno type="KB-Shelfmark">or. oct. 1257</idno>
+                            <note xml:lang="fr">Assfalg 27, olim Abbeloos, dein Bedjan, copié sur ms Diyarbakir, Archevêché chaldéen, cod. 96 [nunc Mardin, Évêché chaldéen, y vu en 1969]</note>
+                        </altIdentifier>
+                    </msIdentifier>
+                    <biblScope>
+                        <locus from="1" to="23">p. 1-23</locus>
+                        <idno type="URI">http://syriaca.org/manuscript/20001#a1</idno>
+                    </biblScope>
+                </bibl>
+                <bibl type="lawd:WrittenWork" xml:id="bib270-9">
+                    <msIdentifier>
+                        <collection>Vatican</collection>
+                        <idno type="URI">http://syriaca.org/manuscript/20002</idno>
+                        <altIdentifier>
+                            <idno type="VT-Shelfmark">Syr. 161</idno>
+                        </altIdentifier>
+                    </msIdentifier>
+                    <biblScope>
+                        <locus from="61" to="64v">ff. 61-64v</locus>
+                        <idno type="URI">http://syriaca.org/manuscript/20002#b1</idno>
+                    </biblScope>
+                </bibl>
+                <!-- Is it OK to mark this as lawd:Translation even though we don't know the particular lawd:WrittenWork it translates? -->
+                <bibl type="lawd:Translation" xml:id="bib270-15" xml:lang="hy">L. Ter-Petrossian, Abraham Xostovanoøi «Vkaykæ arevelicæ=» (Bnagragitakan hetazotutæyun), Érévan, 1976</bibl>
+                <!-- Note that the Syriac and Latin texts have different xml:ids. -->
+                <bibl type="lawd:Translation" xml:id="bib270-16">
+                    <editor>
+                        <forename>S. E.</forename>
+                        <surname>Assemani</surname>
+                    </editor>
+                    <title level="a" xml:lang="la">Martyrium SS. Milis, Susae Episcopi, Ambrosimi, Presbyteri, et Sinae, Diaconi</title>
+                    <title level="m" xml:lang="la">Acta Sanctorum Martyrum Orientalium et Occidentalium</title>
+                    <textLang mainLang="la"/>
+                    <ptr target="http://syriaca.org/bibl/10002"/>
+                    <biblScope unit="vol" from="1" to="1">1</biblScope>
+                    <biblScope unit="pp" from="66" to="79">66-79</biblScope>
+                    <biblScope unit="column">inside</biblScope>
+                </bibl>
                 <idno type="URI">http://syriaca.org/work/270</idno>
                 <idno type="BHS">49</idno>
                 <idno type="BHO">772</idno>
-                <note type="secondaryLiterature">
-                    <!-- What is the appropriate RDF property for linking Citations with what they describe? -->
-                    <listBibl>
-                        <bibl type="lawd:Citation" xml:id="bib270-1">
-                            <title level="m" xml:lang="la">Bibliotheca Hagiographica
-                                Syriaca</title>
-                            <ptr target="http://syriaca.org/bibl/649"/>
-                            <citedRange unit="entry">49</citedRange>
-                        </bibl>
-                        <bibl type="lawd:Citation" xml:id="bib270-2">
-                            <title xml:lang="fr" level="a">Les Martyrs persans à travers leurs Actes
-                                syriaques</title>
-                            <title xml:lang="it" level="m">Atti del Convegno sul tema: La Persia e il mondo
-                                greco-romano (Roma 11-14 aprile 1965)</title>
-                            <title xml:lang="it" level="s">Problemi attuali di scienza e di cultura</title>
-                            <ptr target="http://syriaca.org/bibl/781"/>
-                            <citedRange from="213" to="225" unit="pp">213-225</citedRange>
-                        </bibl>
-                        <bibl type="lawd:Citation" xml:id="bib270-3">
-                            <title level="m" xml:lang="la">De scriptoribus Syris orthodoxis</title>
-                            <title level="m" xml:lang="la">Bibliotheca orientalis Clementino-Vaticana</title>
-                            <ptr target="http://syriaca.org/bibl/709"/>
-                            <citedRange from="12" to="13" unit="pp">12-13</citedRange>
-                            <citedRange from="186" to="187" unit="pp">186-187</citedRange>
-                        </bibl>
-                    </listBibl>
-                </note>
+                    <!-- Should we designate these with any relation? Or does the lack of a relation imply that they are just secondary lit?
+                        What is the appropriate RDF property for linking Citations with what they describe? -->
+                <bibl type="lawd:Citation" xml:id="bib270-1">
+                    <title level="m" xml:lang="la">Bibliotheca Hagiographica
+                        Syriaca</title>
+                    <ptr target="http://syriaca.org/bibl/649"/>
+                    <citedRange unit="entry">49</citedRange>
+                </bibl>
+                <bibl type="lawd:Citation" xml:id="bib270-2">
+                    <title xml:lang="fr" level="a">Les Martyrs persans à travers leurs Actes
+                        syriaques</title>
+                    <title xml:lang="it" level="m">Atti del Convegno sul tema: La Persia e il mondo
+                        greco-romano (Roma 11-14 aprile 1965)</title>
+                    <title xml:lang="it" level="s">Problemi attuali di scienza e di cultura</title>
+                    <ptr target="http://syriaca.org/bibl/781"/>
+                    <citedRange from="213" to="225" unit="pp">213-225</citedRange>
+                </bibl>
+                <bibl type="lawd:Citation" xml:id="bib270-3">
+                    <title level="m" xml:lang="la">De scriptoribus Syris orthodoxis</title>
+                    <title level="m" xml:lang="la">Bibliotheca orientalis Clementino-Vaticana</title>
+                    <ptr target="http://syriaca.org/bibl/709"/>
+                    <citedRange from="12" to="13" unit="pp">12-13</citedRange>
+                    <citedRange from="186" to="187" unit="pp">186-187</citedRange>
+                </bibl>
+                    
+                
                 <listRelation>
+                    <relation type="editions" active="#bib270-4 #bib270-5" ref="lawd:embodies" passive="http://syriaca.org/work/270" source="#bib270-1"/>
+                    <relation type="ancientVersion" active="#bib270-15" ref="lawd:embodies" passive="http://syriaca.org/work/270" source="#bib270-1"/>
+                    <relation type="mss" active="http://syriaca.org/manuscript/20001#a1 http://syriaca.org/manuscript/20002#b1" ref="lawd:embodies" passive="http://syriaca.org/work/270" source="#bib270-1"/>
+                    <relation type="mssWitnesses" active="#bib270-4" ref="dct:source" passive="http://syriaca.org/manuscript/20001#a1"/>
+                    <relation type="modernTranslation" active="#bib270-16" ref="dct:source" passive="http://syriaca.org/work/270" source="#bib270-1"/>
                     <relation ref="syriaca:commemorated" active="http://syriaca.org/work/270" passive="http://syriaca.org/person/1922 http://syriaca.org/person/1544 http://syriaca.org/person/1383" source="#bib270-1"/>
                 </listRelation>
             </bibl>

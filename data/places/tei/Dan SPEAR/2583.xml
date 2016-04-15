@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://syriaca.org/documentation/syriaca-tei-main.rnc" type="application/relax-ng-compact-syntax"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:syriaca="http://syriaca.org" xml:lang="en">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title level="a" xml:lang="en">Winter Palace of Abgar VIII
+                    — <foreign xml:lang="syr">ܒܝܬ ܣܬܘܐ</foreign>
+                </title>
+                <title level="m" xml:lang="en">The Syriac Gazetteer</title>
+                <sponsor>Syriaca.org: The Syriac Reference Portal</sponsor>
+                <funder>The National Endowment for the Humanities</funder>
+                <funder>The International Balzan Prize Foundation</funder>
+                <principal>David A. Michelson</principal>
+                <editor role="general" ref="http://syriaca.org/documentation/editors.xml#tcarlson">Thomas A. Carlson</editor>
+                <editor role="general" ref="http://syriaca.org/documentation/editors.xml#dmichelson">David A. Michelson</editor>
+                <editor role="creator" ref="http://syriaca.org/documentation/editors.xml#tcarlson">Thomas A. Carlson</editor>
+                <editor role="creator" ref="http://syriaca.org/documentation/editors.xml#dmichelson">David A. Michelson</editor>
+                <respStmt>
+                    <resp>XML by</resp>
+                    <name ref="http://syriaca.org/documentation/editors.xml#tcarlson">Thomas A. Carlson</name>
+                </respStmt>
+                <respStmt>
+                    <resp>Data submitted by</resp>
+                    <name ref="http://syriaca.org/documentation/editors.xml#dschwartz">Daniel L. Schwartz</name>
+                </respStmt>
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0"/>
+            </editionStmt>
+            <publicationStmt>
+                <authority>Syriaca.org: The Syriac Reference Portal</authority>
+                <idno type="URI">http://syriaca.org/place/2583/tei</idno>
+                <availability>
+                    <licence target="http://creativecommons.org/licenses/by/3.0/">
+                        <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
+                    </licence>
+                </availability>
+                <date>2015-07-07</date>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Born digital.</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <editorialDecl>
+                <p>This record created following the Syriaca.org guidelines. Documentation available at: <ref target="http://syriaca.org/documentation">http://syriaca.org/documentation</ref>.</p>
+                <p>The capitalization of names from GEDSH (<idno type="URI">http://syriaca.org/bibl/1</idno>) was normalized (i.e. names in ALL-CAPS were replaced by Proper-noun capitalization).</p>
+                <p>The unchanging parts of alternate names from Barsoum (<idno type="URI">http://syriaca.org/bibl/2</idno>, <idno type="URI">http://syriaca.org/bibl/3</idno>, or <idno type="URI">http://syriaca.org/bibl/4</idno>) have been supplied to each alternate.</p>
+                <p>Names from the English translation of Barsoum (<idno type="URI">http://syriaca.org/bibl/4</idno>) were put in sentence word order rather than fronting a dictionary headword.  Any commas in the Barsoum name in English were removed.</p>
+                <p>The <gi>state</gi> element of @type="existence" indicates the period for which this place was in use as a place of its indicated type (e.g. an inhabited settlement, a functioning monastery or church, an administrative province).  Natural features always in existence have no <gi>state</gi> element of @type="existence".</p>
+            </editorialDecl>
+            <classDecl>
+                <taxonomy>
+                    <category xml:id="syriaca-headword">
+                        <catDesc>The name used by Syriaca.org for document titles, citation, and disambiguation. These names have been created according to the Syriac.org guidelines for headwords: <ref target="http://syriaca.org/documentation/headwords.html">http://syriaca.org/documentation/headwords.html</ref>.</catDesc>
+                    </category>
+                </taxonomy>
+            </classDecl>
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="syr">Unvocalized Syriac of any variety or period</language>
+                <language ident="syr-Syrj">Vocalized West Syriac</language>
+                <language ident="syr-Syrn">Vocalized East Syriac</language>
+                <language ident="en">English</language>
+                <language ident="ar">Arabic</language>
+            </langUsage>
+        </profileDesc>
+        <revisionDesc>
+            <change who="http://syriaca.org/documentation/editors.xml#tcarlson" when="2015-07-07">CREATED: place</change>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <listPlace>
+                <place xml:id="place-2583" type="building">
+                    <placeName xml:id="name2583-1" xml:lang="en" syriaca-tags="#syriaca-headword">Winter Palace of Abgar VIII</placeName>
+                    <placeName xml:id="name2583-2" xml:lang="syr" syriaca-tags="#syriaca-headword" source="#bib2583-1">ܒܝܬ ܣܬܘܐ</placeName>
+                    <desc xml:id="abstract-en-2583" xml:lang="en">A royal residence in the <placeName ref="http://syriaca.org/place/2584">Beth Tabarā</placeName> area of <placeName ref="http://syriaca.org/place/78">Edessa</placeName>, built after the flood of 201.</desc>
+                    <desc xml:lang="en">
+                        <quote source="#bib2583-3">Fearful of a recurrence of the floods, Abgar the Great constructed a 'winter hourse as a royal dwelling' (in one text called a 'castle') on the Citadel mount in, apparently, 205-6.</quote>
+                    </desc>
+                    <location type="nested" source="#bib2583-1">
+                        <district ref="http://syriaca.org/place/2584">Beth Tabarā</district>
+                        <settlement ref="http://syriaca.org/place/78">Edessa</settlement>
+                    </location>
+                    <state type="existence" from="0201">
+                        <precision match="@from" notBefore="0201" notAfter="0223"/>
+                    </state>
+                    <idno type="URI">http://syriaca.org/place/2583</idno>
+                    <bibl xml:id="bib2583-1">
+                        <title xml:lang="en">Chronica Minora</title>
+                        <ptr target="http://syriaca.org/bibl/659"/>
+                        <citedRange unit="pp">2</citedRange>
+                    </bibl>
+                    <bibl xml:id="bib2583-2">
+                        <title xml:lang="en">Selections from the Syriac, No. 1: The Chronicle of Edessa</title>
+                        <ptr target="http://syriaca.org/bibl/657"/>
+                        <citedRange unit="pp">31</citedRange>
+                    </bibl>
+                    <bibl xml:id="bib2583-3">
+                        <title xml:lang="en">Edessa, 'the Blessed City'</title>
+                        <ptr target="http://syriaca.org/bibl/664"/>
+                        <citedRange unit="pp">17</citedRange>
+                    </bibl>
+                </place>
+            </listPlace>
+        </body>
+    </text>
+</TEI>

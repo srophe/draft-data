@@ -59,7 +59,7 @@
                 </listPerson>
                 <bibl type="primary">
                     <biblScope type="pp">
-                        <ptr target="#bibl3094-1"/>46</biblScope>
+                        <ptr target="#bib3094-1"/>46</biblScope>
                 </bibl>
             </div>
             <div>
@@ -73,7 +73,7 @@
                 </listPerson>
                 <bibl type="primary">
                     <biblScope type="pp">
-                        <ptr target="#bibl3094-1"/>46</biblScope>
+                        <ptr target="#bib3094-1"/>46</biblScope>
                 </bibl>
             </div>
             <div>
@@ -84,14 +84,17 @@
                               <persName ref="http://syriaca.org/person/2536">
                                   Eucharius
                               </persName>
-                              was a bishop. 
+                              was the bishop of 
+                              <placeName>
+                                  Paltus
+                              </placeName>. 
                           </desc>
                       </state>
                   </person>
               </listPerson> 
                 <bibl type="primary">
                     <biblScope type="pp">
-                        <ptr target="#bibl3094-1"/>46</biblScope>
+                        <ptr target="#bib3094-1"/>46</biblScope>
                 </bibl>
             </div>
             <div>
@@ -100,7 +103,16 @@
                 </listRelation>
                 <bibl type="primary">
                     <biblScope type="pp">
-                        <ptr target="#bibl3094-1"/>46</biblScope>
+                        <ptr target="#bib3094-1"/>46</biblScope>
+                </bibl>
+            </div>
+            <div>
+                <listRelation>
+                    <relation type="clerical" name="syriaca:BishopOverBishop" active="http://syriaca.org/person/51" passive="http://syriaca.org/person/2536"/>
+                </listRelation>
+                <bibl type="primary">
+                    <biblScope type="pp">
+                        <ptr target="#bib3094-1"/>46</biblScope>
                 </bibl>
             </div>
             <div>
@@ -113,13 +125,13 @@
                 </listPerson>
                 <bibl type="primary">
                     <biblScope type="pp">
-                        <ptr target="#bibl3094-1"/>46</biblScope>
+                        <ptr target="#bib3094-1"/>46</biblScope>
                 </bibl>
             </div>
             <div>
                 <listPerson>
                     <person>
-                        <persName ref="http:/>/syriaca.org/person/2537"/>
+                        <persName ref="http://syriaca.org/person/2537"/>
                         <sex value="M">
                             Male
                         </sex>
@@ -131,24 +143,41 @@
                 </bibl>
             </div>
             <div>
-                <listPerson>
-                    <person>
-                        <state type="vocation">
-                            <desc>
-                                <persName ref="http://syriaca.org/person/2537">
-                                    Firmius
-                                </persName>
-                                was a cleric of
-                                <placeName>
-                                    Paltus
-                                </placeName>
-                            </desc>
-                        </state>
-                    </person>
-                </listPerson> 
+                <listRelation>
+                    <relation type="clerical" name="syriaca:BishopOver" active="http://syriaca.org/person/2536" passive="http://syriaca.org/person/2537 http://syriaca.org/person/anonymi1"/>
+                </listRelation>
                 <bibl type="primary">
                     <biblScope type="pp">
-                        <ptr target="#bibl3094-1"/>46</biblScope>
+                        <ptr target="#bib3094-1"/>46</biblScope>
+                </bibl>
+            </div>
+            <div>
+                <listPerson>
+                    <person>
+                        <persName ref="http;//syriaca.org/person/anonymi1">
+                            The people of 
+                            <placeName>
+                                Paltus
+                            </placeName>
+                            who brought charges against 
+                            <persName ref="http://syriaca.org/person/2537">
+                                Firminus
+                            </persName>
+                        </persName>
+                    </person>
+                </listPerson>
+                <bibl type="primary">
+                    <biblScope type="pp">
+                        <ptr target="#bib3094-1"/>46-47</biblScope>
+                </bibl>
+            </div>
+            <div>
+                <listRelation>
+                    <relation type="clerical" name="syriaca:LegalChargesAgainst" active="http://syriaca.org/person/anonymi1" passive="http://syriaca.org/person/2537"/>
+                </listRelation>
+                <bibl type="primary">
+                    <biblScope type="pp">
+                        <ptr target="#bib3094-1"/>46</biblScope>
                 </bibl>
             </div>
             </body>

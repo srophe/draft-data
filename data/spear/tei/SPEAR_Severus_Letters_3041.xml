@@ -107,6 +107,33 @@
                 </bibl>
             </div>
             <div>
+                <listRelation>
+                    <relation type="epistolary" name="syriaca:RecipientOfLetterFrom" active="http://syriaca.org/person/51" passive="http://syriaca.org/person/2553"/>
+                </listRelation>
+                <bibl type="primary">
+                    <biblScope type="pp">
+                        <ptr target="#bibl3041-1"/>60</biblScope>
+                </bibl>
+            </div>
+            <div>
+                <listRelation>
+                    <relation type="epistolary" name="syriaca:SenderOfLetterTo" active="http://syriaca.org/person/2553" passive="http://syriaca.org/person/anonymous1"/>
+                </listRelation>
+                <bibl type="primary">
+                    <biblScope type="pp">
+                        <ptr target="#bibl3041-1"/>60</biblScope>
+                </bibl>
+            </div>
+            <div>
+                <listRelation>
+                    <relation type="professional" name="snap:ProfessionalRelationship" mutual="http://syriaca.org/person/51 http://syriaca.org/person/anonymous1"/>
+                </listRelation>
+                <bibl type="primary">
+                    <biblScope type="pp">
+                        <ptr target="#bibl3041-1"/>60</biblScope>
+                </bibl>
+            </div>
+            <div>
                 <listPerson>
                     <person>
                         <persName ref="http://syriaca.org/person/2556">
@@ -178,13 +205,13 @@
                         <ptr target="#bibl3041-1"/>60</biblScope>
                 </bibl>
             </div>
-            <div>
+            <div><!-- I need to think about this. The only "name" we have is the description which is also the office. -->
                 <listPerson>
                     <person>
-                        <state type="vocation">
+                        <state type="office">
                             <desc>
                                 <persName ref="http://syriaca.org/person/anonymous1">
-                                    this man was a
+                                    This man was a
                                 </persName>
                                 lieutenant
                             </desc>
@@ -199,6 +226,15 @@
             <div>
                 <listRelation>
                     <relation type="family" name="snap:UncleOf" active="http://syriaca.org/person/anonymous1" passive="http://syriaca.org/person/2553"/>
+                </listRelation>
+                <bibl type="primary">
+                    <biblScope type="pp">
+                        <ptr target="#bib3041"/>60</biblScope>
+                </bibl>
+            </div>
+            <div>
+                <listRelation>
+                    <relation type="military" name="syriaca:UnderCommand" active="http://syriaca.org/person/anonymous1" passive="http://syriaca.org/person/2556"/>
                 </listRelation>
                 <bibl type="primary">
                     <biblScope type="pp">

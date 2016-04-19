@@ -108,30 +108,47 @@
                 <listPerson>
                     <personGrp>
                         <persName ref="http://syriaca.org/person/anonymi1">
-                            The devout clergymen of the holy church in the city of 
+                            The clergy of 
                             <placeName>
                                 Rhosus
                             </placeName>
-                            between 
+                            some time between 
                             <date notBefore="0513" notAfter="0518">A.D. 513-518</date>
+                            who submittted a petition to
+                            <persName ref="http://syriaca.org/person/51">
+                                Severus
+                            </persName>
                         </persName>
                     </personGrp>
                 </listPerson>
                 <bibl type="primary">
                     <biblScope type="pp">
                         <ptr target="#bibl3045-1"/>66</biblScope>
+                </bibl>
+            </div>
+            <div>
+                <listRelation>
+                    <relation type="clerical" name="syriaca:BishopOverClergy" active="http://syriaca.org/person/51" passive="http://syriaca.org/person/anonymi1"></relation>
+                </listRelation>
+                <bibl type="primary">
+                    <biblScope type="pp">
+                        <ptr target="#bibl3045-1"/>66-67</biblScope>
                 </bibl>
             </div>
             <div>
                 <listPerson>
                     <personGrp>
                         <persName ref="http://syriaca.org/person/anonymi2">
-                            The other inhabitants of the holy church in the city of 
+                            Residents of 
                             <placeName>
                                 Rhosus
                             </placeName>
                             between 
                             <date notBefore="0513" notAfter="0518">A.D. 513-518</date>
+                            who submittted a petition to
+                            <persName ref="http://syriaca.org/person/51">
+                                Severus
+                            </persName>
                         </persName>
                     </personGrp>
                 </listPerson>
@@ -141,10 +158,19 @@
                 </bibl>
             </div>
             <div>
+                <listRelation>
+                    <relation type="clerical" name="syriaca:BishopOver" active="http://syriaca.org/person/51" passive="http://syriaca.org/person/anonymi2"></relation>
+                </listRelation>
+                <bibl type="primary">
+                    <biblScope type="pp">
+                        <ptr target="#bibl3045-1"/>66-67</biblScope>
+                </bibl>
+            </div>
+            <div>
                 <listPerson>
                     <person>
                         <persName ref="http://syriaca.org/person/anonymous1">
-                            a man who has been nominated for the bishopric in
+                            A nominee for bishop of
                             <placeName>
                                 Rhosus
                             </placeName>

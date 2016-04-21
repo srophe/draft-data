@@ -58,8 +58,28 @@
                                 Apamea
                             </placeName>
                             in
-                            <date notBefore="0513" notAfter="0518">
-                                A.D. 513-518
+                            <date when="0515"><!-- Date from Honigman, p. 58. -->
+                                A.D. 515
+                            </date> 
+                        </persName>
+                    </personGrp>
+                </listPerson>
+                <bibl type="primary">
+                    <biblScope type="pp">
+                        <ptr target="#bib3048-1"/>70</biblScope>
+                </bibl>
+            </div>
+            <div>
+                <listPerson>
+                    <personGrp>
+                        <persName ref="http://syriaca.org/person/anonymi2">
+                            Bishops present at a synod in
+                            <placeName>
+                                Antioch
+                            </placeName>
+                            in
+                            <date when="0515"><!-- Date from Honigman, p. 58. -->
+                                A.D. 515
                             </date> 
                         </persName>
                     </personGrp>
@@ -71,92 +91,32 @@
             </div>
             <div> 
                 <listRelation>
-                    <relation type="epistolary" name="syriaca:RecipientOfLetterFrom" active="http://syriaca.org/person/anonymi1" passive="http://syriaca.org/person/51"/>
+                    <relation type="epistolary" name="syriaca:Epistolary" active="http://syriaca.org/person/anonymi2" passive="http://syriaca.org/person/anonymi1"/>
                 </listRelation>
                 <bibl type="primary">
                     <biblScope type="pp">
                         <ptr target="#bibl3048-1"/>70</biblScope>
                 </bibl>
             </div>
-            <div>
-                <listPerson>
-                    <person>
-                        <persName ref="http://syriaca.org/person/2265">
-                            The king who summoned bishops to
-                            <placeName>
-                                Antioch
-                            </placeName>
-                        </persName>
-                    </person>
-                </listPerson>
+            <div> 
+                <listRelation>
+                    <relation type="general" name="syriaca:MemberOfGroup" active="http://syriaca.org/person/51" passive="http://syriaca.org/person/anonymi2"/>
+                </listRelation>
                 <bibl type="primary">
                     <biblScope type="pp">
-                        <ptr target="#bib3048-1"/>70</biblScope>
+                        <ptr target="#bibl3048-1"/>70</biblScope>
                 </bibl>
             </div>
-            <div>
-                <listPerson>
-                    <person>
-                        <persName ref="http://syriaca.org/person/2265"/>
-                        <sex value="M">
-                            Male
-                        </sex>
-                    </person>
-                </listPerson>
+            <div> 
+                <listRelation>
+                    <relation type="general" name="syriaca:MemberOfGroup" active="http://syriaca.org/person/2514" passive="http://syriaca.org/person/anonymi2"/>
+                </listRelation>
                 <bibl type="primary">
                     <biblScope type="pp">
-                        <ptr target="#bib3048-1"/>70</biblScope>
+                        <ptr target="#bibl3048-1"/>70</biblScope>
                 </bibl>
             </div>
-            <div>
-                <listPerson>
-                    <person>
-                        <persName ref="http://syriaca.org/person/2514">
-                            Peter, Bishop of
-                            <placeName>
-                                Apamea
-                            </placeName>
-                        </persName>
-                    </person>
-                </listPerson>
-                <bibl type="primary">
-                    <biblScope type="pp">
-                        <ptr target="#bib3048-1"/>71</biblScope>
-                </bibl>
-            </div>
-            <div>
-                <listPerson>
-                    <person>
-                        <persName ref="http://syriaca.org/person/2514"/>
-                        <sex value="M">
-                            Male
-                        </sex>
-                    </person>
-                </listPerson>
-                <bibl type="primary">
-                    <biblScope type="pp">
-                        <ptr target="#bib3048-1"/>71</biblScope>
-                </bibl>
-            </div>
-            <div>
-                <listPerson>
-                    <person>
-                        <state type="vocation">
-                            <desc>
-                                <persName ref="http://syriaca.org/person/2514">
-                                    Peter 
-                                    </persName>
-                                was a bishop
-                                </desc>
-                        </state>
-                    </person>
-                </listPerson>
-                <bibl type="primary">
-                    <biblScope type="pp">
-                        <ptr target="#bib3048-1"/>71</biblScope>
-                </bibl>
-            </div>
-            <div> <!-- Would this be the correct relationship? -->
+            <div> <!-- Would this be the correct relationship? YES!-->
                 <listRelation>
                     <relation type="clerical" name="syriaca:BishopOverBishop" active="http://syriaca.org/person/2514" passive="http://syriaca.org/person/anonymi1"/>
                 </listRelation>
@@ -166,55 +126,25 @@
                 </bibl>
             </div>
             <div>
-                <listPerson>
-                    <person>
-                        <persName ref="http://syriaca.org/person/anonymous1">
-                            Patriarch of the  
-                            <persName ref="http://syriaca.org/person/anonymi2"><!--Should this group, which includes Peter of Apamea, Severus, the truant bishops, among others, be encoded separately as anonymi2?-->
-                            bishops of the East 
-                            </persName>
-                        </persName>
-                    </person>
-                </listPerson>
-                <bibl type="primary">
-                    <biblScope type="pp">
-                        <ptr target="#bib3048-1"/>71</biblScope>
-                </bibl>
-            </div>
-            <div>
-                <listPerson>
-                    <person>
-                        <persName ref="http://syriaca.org/person/anonymous1"/>
-                        <sex value="M">
-                            Male
-                        </sex>
-                    </person>
-                </listPerson>
-                <bibl type="primary">
-                    <biblScope type="pp">
-                        <ptr target="#bib3048-1"/>71</biblScope>
-                </bibl>
-            </div>
-            <div>
-                <listPerson>
-                    <personGrp>
-                        <persName ref="http://syriaca.org/person/anonymi2">
-                            Bishops of the East in
-                            <date notBefore="0513" notAfter="0518">
-                                A.D. 513-518
-                            </date> 
-                        </persName>
-                    </personGrp>
-                </listPerson>
-                <bibl type="primary">
-                    <biblScope type="pp">
-                        <ptr target="#bib3048-1"/>71</biblScope>
-                </bibl>
-            </div>
-            <div> 
                 <listRelation>
-                    <relation type="clerical" name="syriaca:BishopOverBishop" active="http://syriaca.org/person/anonymous1" passive="http://syriaca.org/person/anonymi2"/>
+                    <relation type="clerical" name="syriaca:BishopOverBishop" active="http://syriaca.org/person/51" passive="http://syriaca.org/person/2514"/>
                 </listRelation>
+                <bibl type="primary">
+                    <biblScope type="pp">
+                        <ptr target="#bibl3048-1"/>71</biblScope>
+                </bibl>
+            </div>
+            <div>
+                <listPerson>
+                    <person>
+                        <persName ref="http://syriaca.org/person/51">
+                            The saintly patriarch of the God-loving bishops of
+                            <placeName>
+                                the East
+                            </placeName>
+                        </persName>
+                    </person>
+                </listPerson>
                 <bibl type="primary">
                     <biblScope type="pp">
                         <ptr target="#bibl3048-1"/>71</biblScope>
@@ -226,7 +156,7 @@
                 </listRelation>
                 <bibl type="primary">
                     <biblScope type="pp">
-                        <ptr target="#bibl3048-1"/>71</biblScope>
+                        <ptr target="#bibl3048-1"/>71-72</biblScope>
                 </bibl>
             </div>
         </body>

@@ -55,7 +55,7 @@
                         <persName ref="http://syriaca.org/person/2532">
                             Stephen, Bishop of
                             <placeName>
-                                Tripolis
+                                Tripoli
                             </placeName>
                         </persName>
                     </person>
@@ -87,10 +87,10 @@
                               <persName ref="http://syriaca.org/person/2532">
                                   Stephen
                               </persName>
-                                was a bishop of
+                                was bishop of
                                 <placeName>
-                                    Tripolis
-                                </placeName>
+                                    Tripoli
+                                </placeName>.
                             </desc>
                         </state>
                     </person>
@@ -113,10 +113,7 @@
                 <listPerson>
                     <person>
                         <persName ref="http://syriaca.org/person/2533">
-                            Stephen, presbyter of
-                            <placeName>
-                               Tripolis
-                            </placeName>
+                            Stephen
                         </persName>
                     </person>
                 </listPerson>
@@ -145,12 +142,12 @@
                         <state type="vocation">
                             <desc>
                                 <persName ref="http://syriaca.org/person/2533">
-                                    Stephen of
-                                    <placeName>
-                                        Tripolis
-                                    </placeName>
+                                    Stephen
                                 </persName>
-                                was a presbyter
+                                was a presbyter of
+                                <placeName>
+                                    Tripoli
+                                </placeName>
                             </desc>
                         </state>
                     </person>
@@ -182,44 +179,9 @@
                         <ptr target="#bib3086-1"/>45</biblScope>
                 </bibl>
             </div>
-            <div>
-                <listPerson>
-                    <person>
-                        <persName ref="http://syriaca.org/person/430"/>
-                        <sex value="M">
-                            Male
-                        </sex>
-                    </person>
-                </listPerson>
-                <bibl type="primary">
-                    <biblScope type="pp">
-                        <ptr target="#bib3086-1"/>45</biblScope>
-                </bibl>
-            </div>
-            <div>
-                <listPerson>
-                    <person>
-                        <state type="vocation">
-                            <desc>
-                                <persName ref="http://syriaca.org/person/430">
-                                    Cyril 
-                                    </persName>
-                                was the Bishop of
-                                <placeName>
-                                    Alexandria
-                                </placeName>
-                            </desc>
-                        </state>
-                    </person>
-                </listPerson>
-                <bibl type="primary">
-                    <biblScope type="pp">
-                        <ptr target="#bib3086-1"/>45</biblScope>
-                </bibl>
-            </div>
             <div> 
                 <listRelation>
-                    <relation type="intellectual" name="syriaca:FollowerOf" ana="alleged" active="http://syriaca.org/person/51" passive="http://syriaca.org/person/430"/>
+                    <relation type="intellectual" name="syriaca:Citation" ana="pos" active="http://syriaca.org/person/51" passive="http://syriaca.org/person/430"/>
                 </listRelation>
                 <bibl type="primary">
                     <biblScope type="pp">
@@ -273,36 +235,11 @@
             </div>
             <div> 
                 <listRelation>
-                    <relation type="intellectual" name="syriaca:FollowerOf" ana="alleged" active="http://syriaca.org/person/51" passive="http://syriaca.org/person/2534"/>
+                    <relation type="epistolary" name="syriaca:EpistolaryReferenceTo" active="http://syriaca.org/person/51 http://syriaca.org/person/2532" passive="http://syriaca.org/person/2534"/>
                 </listRelation>
                 <bibl type="primary">
                     <biblScope type="pp">
                         <ptr target="#bibl3086-1"/>45</biblScope>
-                </bibl>
-            </div>
-            <div>
-                <listPerson>
-                    <personGrp>
-                        <persName ref="http://syriaca/person/anonymi1">
-                            the God-loving bishops under the apostolic throne in
-                            <date notBefore="0513" notAfter="0518">
-                                A.D. 513-518
-                            </date> 
-                        </persName>
-                    </personGrp>
-                </listPerson>
-                <bibl type="primary">
-                    <biblScope type="pp">
-                        <ptr target="#bib3086-1"/>46</biblScope>
-                </bibl>
-            </div>
-            <div>
-                <listRelation>
-                    <relation type="professional" name="snap:ProfessionalRelationship" mutual="http://syriaca.org/person/51 http://syriaca.org/person/anonymi1"/> 
-                </listRelation>
-                <bibl type="primary">
-                    <biblScope type="pp">
-                        <ptr target="#bibl3086-1"/>46</biblScope>
                 </bibl>
             </div>
             <div>
@@ -335,7 +272,7 @@
             <div>
                 <listPerson>
                     <person>
-                        <state type="occupation">
+                        <state type="office">
                             <desc>
                                 <persName ref="http://syriaca.org/person/2535">
                                     Theodore
@@ -353,7 +290,7 @@
             <div>
                 <listPerson>
                     <person>
-                        <state type="occupation">
+                        <state type="office">
                             <desc>
                                 <persName ref="http://syriaca.org/person/2535">
                                     Theodore
@@ -370,7 +307,7 @@
             </div>
             <div> 
                 <listRelation>
-                    <relation type="epistolary" name="syriaca:EpistolaryReferenceTo" active="http://syriaca.org/person/51" passive="http://syriaca.org/person/2535"/>
+                    <relation type="epistolary" name="syriaca:EpistolaryReferenceTo" active="http://syriaca.org/person/51 http://syriaca.org/person/2532" passive="http://syriaca.org/person/2535"/>
                 </listRelation>
                 <bibl type="primary">
                     <biblScope type="pp">

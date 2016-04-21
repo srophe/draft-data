@@ -53,7 +53,7 @@
                <listPerson>
                    <person>
                        <persName ref="http://syriaca.org/person/anonymous1">
-                           The Archimandrite of
+                           The Archimandrite of 
                            <placeName>
                                the monastery of Bassus
                            </placeName>
@@ -65,13 +65,78 @@
                         <ptr target="#bibl3035"/>47</biblScope>
                 </bibl>
             </div>
-            <div><!-- VOCATION -->
+            <div>
+                <listPerson>
+                    <person>
+                        <persName ref="http://syriaca.org/person/anonymous1"/>
+                        <sex value="M">Male</sex>
+                    </person>
+                </listPerson>
+                <bibl type="primary">
+                    <biblScope type="pp">
+                        <ptr target="#bibl3035"/>47</biblScope>
+                </bibl>
+            </div>
+            <div>
+                <listPerson>
+                    <person>
+                        <state type="vocation">
+                            <desc>
+                                <persName ref="http://syriaca.org/person/anonymous1"/>
+                                He was the archimandrite of
+                                <placeName>
+                                    the monastery of Bassus
+                                </placeName>.
+                            </desc>
+                        </state>
+                    </person>
+                </listPerson>
+                <bibl type="primary">
+                    <biblScope type="pp">
+                        <ptr target="#bibl3035"/>47</biblScope>
+                </bibl>
+            </div>
+            <div>
+                <listRelation>
+                    <relation type="epistolary" name="syriaca:Epistolary" active="http://syriaca.org/person/51" passive="http://syriaca.org/person/anonymous1"/>
+                </listRelation>
+                <bibl type="primary">
+                    <biblScope type="pp">
+                        <ptr target="#bibl3035"/>47</biblScope>
+                </bibl>
+            </div>
+            <div>
+                <listPerson>
+                    <person>
+                        <persName ref="http://syriaca.org/person/2539">
+                            Cosmos
+                        </persName>
+                    </person>
+                </listPerson>
+                <bibl type="primary">
+                    <biblScope type="pp">
+                        <ptr target="#bibl3035"/>47</biblScope>
+                </bibl>
+            </div>
+            <div>
+                <listPerson>
+                    <person>
+                        <persName ref="http://syriaca.org/person/2539"/>
+                        <sex value="M">Male</sex>
+                    </person>
+                </listPerson>
+                <bibl type="primary">
+                    <biblScope type="pp">
+                        <ptr target="#bibl3035"/>47</biblScope>
+                </bibl>
+            </div>
+            <div>
                 <listPerson>
                     <person>
                         <state type="vocation">
                             <desc>
                                 <persName ref="http://syriaca.org/person/2539">
-                                    The devout Cosmas
+                                    Cosmas
                                 </persName>
                                 was bishop of
                                 <placeName>
@@ -86,21 +151,9 @@
                       <ptr target="#bibl3035"/>47</biblScope>
                 </bibl>
             </div>
-            <div><!-- Sex: Male -->
-                <listPerson>
-                    <person>
-                        <persName ref="http://syriaca.org/person/2539"/>
-                        <sex value="M">Male</sex>
-                    </person>
-                </listPerson>
-                <bibl type="primary">
-                    <biblScope type="pp">
-                        <ptr target="#bibl3035"/>47</biblScope>
-                </bibl>
-            </div>
             <div>
                 <listRelation>
-                    <relation type="clerical" name="syriaca:BishopOverBishop" active="http://syriaca.org/person/51" passive="http://syriaca.org/person/2539"></relation>
+                    <relation type="clerical" name="syriaca:BishopOverBishop" active="http://syriaca.org/person/51" passive="http://syriaca.org/person/2539"/>
                 </listRelation>
                 <bibl type="primary">
                     <biblScope type="pp">
@@ -108,27 +161,22 @@
                 </bibl>
             </div>
             <div>
-                <listPerson>
-                    <person>
-                        <state type="vocation">
-                            <desc>
-                                <persName ref="http://syriaca.org/person/2540">
-                                    Theodore
-                                </persName>
-                                was a bishop.
-                            </desc>
-                        </state>
-                    </person>
-                </listPerson>
+                <listRelation>
+                    <relation type="personal" name="snap:EnmityFor" active="http://syriaca.org/person/51" passive="http://syriaca.org/person/2539"/>
+                </listRelation>
                 <bibl type="primary">
-                    <biblScope>
-                        <ptr target="#bibl3035"/>48</biblScope>
+                    <biblScope type="pp">
+                        <ptr target="#bibl3035"/>48-52</biblScope>
                 </bibl>
             </div>
             <div>
-                <listRelation>
-                    <relation type="epistolary" name="EpistolaryReferenceTo" active="http://syriaca.org/person/51 http://syriaca.org/person/anonymous1" passive="http://syriaca.org/person/2540"></relation>
-                </listRelation>
+                <listPerson>
+                    <person>
+                        <persName ref="http://syriaca.org/person/2540">
+                            Theodore
+                        </persName>
+                    </person>
+                </listPerson>
                 <bibl type="primary">
                     <biblScope>
                         <ptr target="#bibl3035"/>48</biblScope>
@@ -148,18 +196,47 @@
             </div>
             <div>
                 <listPerson>
-                    <personGrp>
-                        <persName ref="http://syriaca.org/person/anonymi1">
-                            Those who live in
-                            <placeName>
-                                Apamea
-                            </placeName>
-                            <date notBefore="0513" notAfter="0518">
-                                A.D. 513-518
-                            </date>
-                        </persName>
-                       </personGrp>
+                    <person>
+                        <state type="vocation">
+                            <desc>
+                                <persName ref="http://syriaca.org/person/2540">
+                                    Theodore
+                                </persName>
+                                was a presbyter of
+                                <placeName>
+                                    Antioch
+                                </placeName>.
+                            </desc>
+                        </state>
+                    </person>
                 </listPerson>
+                <bibl type="primary">
+                    <biblScope>
+                        <ptr target="#bibl3035"/>48</biblScope>
+                </bibl>
+            </div>
+            <div>
+                <listRelation>
+                    <relation type="epistolary" name="EpistolaryReferenceTo" active="http://syriaca.org/person/51 http://syriaca.org/person/anonymous1" passive="http://syriaca.org/person/2540"/>
+                </listRelation>
+                <bibl type="primary">
+                    <biblScope>
+                        <ptr target="#bibl3035"/>48</biblScope>
+                </bibl>
+            </div>
+            <div>
+                <listRelation>
+                    <relation type="clerical" name="BishopOverClergy" active="http://syriaca.org/person/51" passive="http://syriaca.org/person/2540"/>
+                </listRelation>
+                <bibl type="primary">
+                    <biblScope>
+                        <ptr target="#bibl3035"/>48</biblScope>
+                </bibl>
+            </div>
+            <div>
+                <listRelation>
+                    <relation type="epistolary" name="syriaca:Epistolary" active="http://syriaca.org/person/2540" passive="http://syriaca.org/person/2539"/>
+                </listRelation>
                 <bibl type="primary">
                     <biblScope type="pp">
                         <ptr target="#bibl3035"/>48</biblScope>
@@ -168,20 +245,55 @@
             <div>
                 <listPerson>
                     <personGrp>
-                        <persName ref="http://syriaca.org/person/anonymi2">
-                            The god loving bishops of
+                        <persName ref="http://syriaca.org/person/anonymi1">
+                            The bishops present in 
                             <placeName>
-                                Antioch in
-                                <date notBefore="0513" notAfter="0518">
-                                    A.D. 513-518
-                                </date> 
+                                Antioch
                             </placeName>
+                            for a synod of eastern bishops in
+                                <date when="0513"><!-- This date comes from Honigman, p. 15. Think about how best to cite. -->
+                                    A.D. 513
+                                </date>.
                         </persName>
                     </personGrp>
                 </listPerson>
                 <bibl type="primary">
                     <biblScope type="pp">
                         <ptr target="#bibl3035"/>48</biblScope>
+                </bibl>
+            </div>
+            <div>
+                <listRelation>
+                    <relation type="clerical" name="BishopOverBishop" active="http://syriaca.org/person/51" passive="http://syriaca.org/person/anonymi1"/>
+                </listRelation>
+                <bibl type="primary">
+                    <biblScope>
+                        <ptr target="#bibl3035"/>48</biblScope>
+                </bibl>
+            </div>
+            <div>
+                <listPerson>
+                    <person>
+                        <persName ref="http://syriaca.org/person/2514">
+                            The God-loving bishop Peter
+                        </persName>
+                    </person>
+                </listPerson>
+                <bibl type="primary">
+                    <biblScope>
+                        <ptr target="#bibl3035"/>49</biblScope>
+                </bibl>
+            </div>
+            <div>
+                <listPerson>
+                    <person>
+                        <persName ref="http://syriaca.org/person/2514"/>
+                        <sex value="M">Male</sex>
+                    </person>
+                </listPerson>
+                <bibl type="primary">
+                    <biblScope type="pp">
+                        <ptr target="#bibl3035"/>49</biblScope>
                 </bibl>
             </div>
             <div>
@@ -192,25 +304,16 @@
                                 <persName ref="http://syriaca.org/person/2514">
                                     Peter
                                 </persName>
-                                was a God loving bishop.
+                                was bishop of
+                                <placeName>
+                                    Apamea
+                                </placeName>.
                             </desc>
                         </state>
                     </person>
                 </listPerson>
                 <bibl type="primary">
                     <biblScope>
-                        <ptr target="#bibl3035"/>49</biblScope>
-                </bibl>
-            </div>
-            <div><!-- Sex: Male -->
-                <listPerson>
-                    <person>
-                        <persName ref="http://syriaca.org/person/2514"/>
-                        <sex value="M">Male</sex>
-                    </person>
-                </listPerson>
-                <bibl type="primary">
-                    <biblScope type="pp">
                         <ptr target="#bibl3035"/>49</biblScope>
                 </bibl>
             </div>
@@ -224,13 +327,9 @@
                 </bibl>
             </div>
             <div>
-                <listPerson>
-                    <person>
-                        <persName ref="http://syriaca.org/person/2539">
-                            Cosmas
-                        </persName>
-                    </person>
-                </listPerson>
+                <listRelation>
+                    <relation type="clerical" name="BishopOverBishop" active="http://syriaca.org/person/51" passive="http://syriaca.org/person/2514"/>
+                </listRelation>
                 <bibl type="primary">
                     <biblScope>
                         <ptr target="#bibl3035"/>49</biblScope>
@@ -238,44 +337,43 @@
             </div>
             <div>
                 <listPerson>
-                    <person>
-                        <persName ref="http://syriaca.org/person/2539"/>
-                        <sex value="M">Male</sex>
-                    </person>
+                    <personGrp>
+                        <persName ref="http://syriaca.org/person/anonymi2">
+                            The zealous brethren who urged
+                            <persName ref="http://syriaca.org/person/51">
+                                Severus
+                            </persName>
+                            to reconcile with 
+                            <persName ref="http://syriaca.org/person/2539">
+                                Cosmas
+                            </persName>
+                        </persName>
+                    </personGrp>
                 </listPerson>
                 <bibl type="primary">
-                    <biblScope type="pp">
+                    <biblScope>
                         <ptr target="#bibl3035"/>49</biblScope>
                 </bibl>
             </div>
             <div>
+                <listRelation>
+                    <relation type="professional" name="snap:ProfessionalRelationship" mutual="http://syriaca.org/person/51 http://syriaca.org/person/anonymi2"></relation>
+                </listRelation>
+            </div>
+            <div>
                 <listPerson>
                     <person>
-                        <state type="vocation">
-                            <desc>
-                                <persName ref="http://syriaca.org/person/2541">
-                                    Elijah
-                                </persName>
-                                was a deacon.
-                            </desc>
-                        </state>
+                        <persName ref="http://syriaca.org/person/2541">
+                            Father Elijah
+                        </persName>
                     </person>
                 </listPerson>
                 <bibl type="primary">
-                    <biblScope type="pp">
+                    <biblScope>
                         <ptr target="#bibl3035"/>50</biblScope>
                 </bibl>
             </div>
             <div>
-                <listRelation>
-                    <relation type="clerical" name="syriaca:ClergyUnderBishop" active="http://syriaca.org/person/2541" passive="http://syriaca.org/person/51"></relation>
-                </listRelation>
-                <bibl type="primary">
-                    <biblScope type="pp">
-                        <ptr target="#bibl3035"/>50</biblScope>
-                </bibl>
-            </div>
-            <div><!-- Sex: Male -->
                 <listPerson>
                     <person>
                         <persName ref="http://syriaca.org/person/2541"/>
@@ -288,28 +386,54 @@
                 </bibl>
             </div>
             <div>
+                <listPerson>
+                    <person>
+                        <state type="vocation">
+                            <desc>
+                                <persName ref="http://syriaca.org/person/2541">
+                                    Elijah
+                                </persName>
+                                was a deacon of 
+                                <placeName>
+                                    Antioch
+                                </placeName>.
+                            </desc>
+                        </state>
+                    </person>
+                </listPerson>
+                <bibl type="primary">
+                    <biblScope type="pp">
+                        <ptr target="#bibl3035"/>50</biblScope>
+                </bibl>
+            </div>
+            <div>
+                <listPerson>
+                    <person>
+                        <state type="vocation">
+                            <desc>
+                                <persName ref="http://syriaca.org/person/2541">
+                                    Elijah
+                                </persName>
+                                was a monk.
+                            </desc>
+                        </state>
+                    </person>
+                </listPerson>
+                <bibl type="primary">
+                    <biblScope type="pp">
+                        <ptr target="#bibl3035"/>50</biblScope>
+                </bibl>
+            </div>
+            <div>
                 <listRelation>
-                    <relation type="clerical" name="syriaca:ClergyUnderBishop" active="http://syriaca.org/person/2541" passive="http://syriaca.org/person/51"></relation>
+                    <relation type="clerical" name="syriaca:BishopOverClergy" active="http://syriaca.org/person/51" passive="http://syriaca.org/person/2541"/>
                 </listRelation>
                 <bibl type="primary">
                     <biblScope type="pp">
                         <ptr target="#bibl3035"/>50</biblScope>
                 </bibl>
             </div>
-            <div><!-- NAME VARIANT -->
-                <listPerson>
-                    <person>
-                        <persName>
-                            The Apostle
-                        </persName>
-                    </person>
-                </listPerson>
-                <bibl type="primary">
-                    <biblScope type="pp">
-                        <ptr target="#bibl3035"/>51</biblScope>
-                </bibl>
-            </div>
-        </body>    
+          </body>    
                 <bibl xml:id="bibl3035-1">
                     <title xml:lang="en">The Sixth Book of the Select Letters of Severus, Patriarch of Antioch in the Syriac Version of Athanasius of Nisibis</title>
                     <title type="sub">Translation, I.1 - II.3</title>

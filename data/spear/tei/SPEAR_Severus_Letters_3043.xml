@@ -51,7 +51,7 @@
         <body>
             <div>
                 <listRelation>
-                    <relation type="epistolary" name="syriaca:RecipientOfLetterFrom" active="http://syriaca.org/person/2553" passive="http://syriaca.org/person/51"/>
+                    <relation type="epistolary" name="syriaca:Epistolary" active="http://syriaca.org/person/51" passive="http://syriaca.org/person/2553"/>
                 </listRelation>
                 <bibl type="primary">
                     <biblScope type="pp">
@@ -88,15 +88,12 @@
             <div>
                 <listPerson>
                     <person>
-                        <state type="vocation">
+                        <state type="occupation">
                             <desc>
                                 <persName ref="http://syriaca.org/person/2525">
                                     John
                                 </persName>
-                                was a scholastic of
-                                <placeName>
-                                    Antioch
-                                </placeName>.
+                                was a scholastic.
                             </desc>
                         </state>
                     </person>
@@ -108,7 +105,7 @@
             </div>
             <div>
                 <listRelation>
-                    <relation type="epistolary" name="syriaca:CarrierOfLetterFrom" active="http://syriaca.org/person/2525" passive="http://syriaca.org/person/2553"/>
+                    <relation type="epistolary" name="syriaca:CarrierOfLetterBetween" active="http://syriaca.org/person/2525" passive="http://syriaca.org/person/2553 http://syriaca.org/person/51"/>
                 </listRelation>
                 <bibl type="primary">
                     <biblScope type="pp">
@@ -170,6 +167,41 @@
                     <biblScope type="pp">
                         <ptr target="#bib3043"/>62</biblScope>
                 </bibl>
+            </div>
+            <div>
+                <listRelation>
+                    <relation type="epistolary" name="syriaca:Epistolary" active="http://syriaca.org/person/2553" passive="http://syriaca.org/person/51"/>
+                </listRelation>
+                <bibl type="primary">
+                    <biblScope type="pp">
+                        <ptr target="#bibl3043-1"/>62</biblScope>
+                </bibl>
+            </div>
+            <div>
+                <listPerson>
+                    <personGrp>
+                        <persName ref="http://syriaca.org/person/anonymi1">
+                            Jews in the diocese of 
+                            <placeName>
+                                Berrhoea
+                            </placeName>
+                            whom 
+                            <persName ref="http://syriaca.org/person/2553">
+                                Antoninus
+                            </persName>
+                            accussed of an unspecified wrong against Christ
+                        </persName>
+                    </personGrp>
+                </listPerson>
+                <bibl type="primary">
+                    <biblScope type="pp">
+                        <ptr target="#bibl3043-1"/>62</biblScope>
+                </bibl>
+            </div>
+            <div>
+                <listRelation>
+                    <relation type="religious" name="snap:EnmityFor" active="http://syriaca.org/person/2553" passive="http://syriaca.org/person/anonymi1"></relation>
+                </listRelation>
             </div>
             </body>
         <back>

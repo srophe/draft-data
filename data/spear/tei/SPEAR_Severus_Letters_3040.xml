@@ -87,7 +87,10 @@
                                 <persName ref="http://syriaca.org/person/2553">
                                     Antoninus
                                 </persName>
-                                was a bishop
+                                was bishop of 
+                                <placeName>
+                                    Berrhoea
+                                </placeName>
                             </desc>
                         </state>
                     </person>
@@ -99,7 +102,7 @@
             </div>
             <div>
                 <listRelation>
-                    <relation type="epistolary" name="syriaca:RecipientOfLetterFrom" active="http://syriaca.org/person/2553" passive="http://syriaca.org/person/51"/>
+                    <relation type="epistolary" name="syriaca:Epistolary" active="http://syriaca.org/person/51" passive="http://syriaca.org/person/2553"/>
                 </listRelation>
                 <bibl type="primary">
                     <biblScope type="pp">
@@ -136,7 +139,7 @@
             <div>
                 <listPerson>
                     <person>
-                        <state type="vocation">
+                        <state type="office">
                             <desc>
                                 <persName ref="http://syriaca.org/person/2552">
                                     Antiochus
@@ -153,7 +156,7 @@
             </div>
             <div>
                 <listRelation>
-                    <relation type="epistolary" name="syriaca:CarrierOfLetterFrom" active="http://syriaca.org/person/2552" passive="http://syriaca.org/person/51"/>
+                    <relation type="professional" name="snap:ProfessionalRelationship" mutual="http://syriaca.org/person/2552 http://syriaca.org/person/51 http://syriaca.org/person/2553"/>
                 </listRelation>
                 <bibl type="primary">
                     <biblScope type="pp">
@@ -204,6 +207,11 @@
                     <biblScope type="pp">
                         <ptr target="#bib3040"/>57</biblScope>
                 </bibl>
+            </div>
+            <div>
+                <listRelation>
+                    <relation type="epistolary" name="syriaca:EpistolaryReferenceTo" active="http://syriaca.org/person/51 http://syriaca.org/person/2553" passive="http://syriaca.org/person/2587"></relation>
+                </listRelation>
             </div>
             <div>
                 <listPerson>
@@ -258,8 +266,52 @@
                 </bibl>
             </div>
             <div>
+                <listPerson>
+                    <person>
+                        <death>
+                            <date notAfter="0518">Before 0519</date>
+                        </death>
+                        <note type="desc">
+                            Simeon died sometime before A.D. 519
+                        </note>
+                    </person>
+                </listPerson>
+                <bibl type="primary">
+                    <biblScope type="pp">
+                        <ptr target="#bib3040"/>58</biblScope>
+                </bibl>
+            </div>
+            <div>
+                <listPerson>
+                    <person>
+                        <persName ref="http://syriaca.org/person/anonymi1">
+                            Those who managed
+                            <persName ref="http://syriaca.org/person/2554">
+                                Simeon, bishop of 
+                                <placeName>
+                                    Chalcis
+                                </placeName>
+                            </persName>
+                        </persName>
+                    </person>
+                </listPerson>
+                <bibl type="primary">
+                    <biblScope type="pp">
+                        <ptr target="#bib3040"/>58</biblScope>
+                </bibl>
+            </div>
+            <div>
                 <listRelation>
-                    <relation type="religious" name="snap:EnmityFor" ana="alleged" active="http://syriaca.org/person/51" passive="http://syriaca.org/person/2554"/>
+                    <relation type="professional" name="snap:ProfessionalRelationship" active="http://syriaca.org/person/anonymi1" passive="http://syriaca.org/person/2554"/>
+                </listRelation>
+                <bibl type="primary">
+                    <biblScope type="pp">
+                        <ptr target="#bibl3040-1"/>58</biblScope>
+                </bibl>
+            </div>
+            <div>
+                <listRelation>
+                    <relation type="religious" name="snap:EnmityFor" active="http://syriaca.org/person/51" passive="http://syriaca.org/person/anonymi1"/>
                 </listRelation>
                 <bibl type="primary">
                     <biblScope type="pp">
@@ -269,8 +321,34 @@
             <div>
                 <listPerson>
                     <person>
+                        <persName ref="http://syriaca.org/person/anonymi2">
+                            Persons ordained by
+                            <persName ref="http://syriaca.org/person/2553">
+                                Antoninus
+                            </persName>
+                            under questionable circumstances
+                        </persName>
+                    </person>
+                </listPerson>
+                <bibl type="primary">
+                    <biblScope type="pp">
+                        <ptr target="#bibl3040-1"/>58-59</biblScope>
+                </bibl>
+            </div>
+            <div>
+                <listRelation>
+                    <relation type="professional" name="snap:ProfessionalRelationship" mutual="http://syriaca.org/person/2553 http://syriaca.org/person/anonymi2"/>
+                </listRelation>
+                <bibl type="primary">
+                    <biblScope type="pp">
+                        <ptr target="#bibl3040-1"/>58-59</biblScope>
+                </bibl>
+            </div>
+            <div>
+                <listPerson>
+                    <person>
                         <persName ref="http://syriaca.org/person/2545">
-                            The God-loving Isidore, the Bishop of the men of 
+                            The God-loving Isidore, the Bishop of 
                             <placeName>
                                 Chalcis
                             </placeName>
@@ -304,7 +382,7 @@
                                 <persName ref="http://syriaca.org/person/2545">
                                     Isidore
                                 </persName>
-                                was a bishop of 
+                                was bishop of 
                                 <placeName>
                                     Chalcis.
                                 </placeName>
@@ -312,6 +390,24 @@
                         </state>
                     </person>
                 </listPerson>
+                <bibl type="primary">
+                    <biblScope type="pp">
+                        <ptr target="#bib3040"/>59</biblScope>
+                </bibl>
+            </div>
+            <div>
+                <listRelation>
+                    <relation type="professional" name="snap:ProfessionalRelationship" mutual="http://syriaca.org/person/51 http://syriaca.org/person/2545"/>
+                </listRelation>
+                <bibl type="primary">
+                    <biblScope type="pp">
+                        <ptr target="#bib3040"/>59</biblScope>
+                </bibl>
+            </div>
+            <div>
+                <listRelation>
+                    <relation type="epistolary" name="syriaca:EpistolaryReferenceTo" active="http://syriaca.org/person/51 http://syriaca.org/person/2553" passive="http://syriaca.org/person/2545"/>
+                </listRelation>
                 <bibl type="primary">
                     <biblScope type="pp">
                         <ptr target="#bib3040"/>59</biblScope>

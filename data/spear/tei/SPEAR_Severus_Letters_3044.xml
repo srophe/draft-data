@@ -96,7 +96,7 @@
             </div>
             <div>
                 <listRelation>
-                    <relation type="epistolary" name="syriaca:RecipientOfLetterFrom" active="http://syriaca.org/person/2558" passive="http://syriaca.org/person/51"/>
+                    <relation type="epistolary" name="syriaca:Epistolary" active="http://syriaca.org/person/51" passive="http://syriaca.org/person/2558"/>
                 </listRelation>
                 <bibl type="primary">
                     <biblScope type="pp">
@@ -106,8 +106,62 @@
             <div>
                 <listPerson>
                     <person>
+                        <persName ref="http://syriaca.org/person/anonymi1">
+                            The Oeconomi of the church of 
+                            <placeName>
+                                Antioch
+                            </placeName>
+                            under 
+                            <persName ref="http://syriaca.org/person/51">
+                                Severus
+                            </persName>
+                        </persName>
+                    </person>
+                </listPerson>
+                <bibl type="primary">
+                    <biblScope type="pp">
+                        <ptr target="#bib3044"/>65</biblScope>
+                </bibl>
+            </div>
+            <div>
+                <listPerson>
+                    <person>
+                        <state type="office">
+                            <desc>
+                                <persName ref="http://syriaca.org/person/anonymi1">
+                                    The Oeconmi
+                                </persName>
+                                were the stewards of the church of
+                                <placeName>
+                                    Antioch
+                                </placeName>
+                                under
+                                <persName ref="http://syriaca.org/person/51">
+                                    Severus
+                                </persName>.
+                            </desc>
+                        </state>
+                    </person>
+                </listPerson>
+                <bibl type="primary">
+                    <biblScope type="pp">
+                        <ptr target="#bib3044"/>65</biblScope>
+                </bibl>
+            </div>
+            <div>
+                <listRelation>
+                    <relation type="professional" name="snap:ProfessionalRelationship" mutual="http://syriaca.org/person/51 http://syriaca.org/person/anonymi1"></relation>
+                </listRelation>
+                <bibl type="primary">
+                    <biblScope type="pp">
+                        <ptr target="#bib3044"/>65</biblScope>
+                </bibl>
+            </div>
+            <div>
+                <listPerson>
+                    <person>
                         <persName ref="http://syriaca.org/person/2559">
-                            the glorious sacellar, the lord Eleutherius
+                            The glorious sacellar, the lord Eleutherius
                         </persName>
                     </person>
                 </listPerson>
@@ -138,7 +192,7 @@
                                 <persName ref="http://syriaca.org/person/2559">
                                     Eleutherius
                                 </persName>
-                                was a sacellarius
+                                was a sacellarius.
                             </desc>
                         </state>
                     </person>
@@ -155,6 +209,73 @@
                 <bibl type="primary">
                     <biblScope type="pp">
                         <ptr target="#bib3044"/>65-66</biblScope>
+                </bibl>
+            </div>
+            <div>
+                <listRelation>
+                    <relation type="epistolary" name="syriaca:Epistolary" active="http://syriaca.org/person/2559" passive="http://syriaca.org/person/51"/> 
+                </listRelation>
+                <bibl type="primary">
+                    <biblScope type="pp">
+                        <ptr target="#bib3044"/>65</biblScope>
+                </bibl>
+            </div>
+            <div>
+                <listPerson>
+                    <person>
+                        <persName ref="http://syriaca.org/person/anonymi2">
+                            Those who managed the apokriseis of 
+                            <persName ref="http://syriaca.org/person/51">
+                                Severus
+                            </persName>
+                        </persName>
+                    </person>
+                </listPerson>
+                <bibl type="primary">
+                    <biblScope type="pp">
+                        <ptr target="#bib3044"/>65</biblScope>
+                </bibl>
+            </div>
+            <div>
+                <listPerson>
+                    <person>
+                        <state type="office">
+                            <desc>
+                                <persName ref="http://syriaca.org/person/anonymi2">
+                                    Those who managed the apokriseis of 
+                                    <persName ref="http://syriaca.org/person/51">
+                                        Severus
+                                    </persName>
+                                </persName>
+                                were the ecclesiastical administrators of the church of
+                                <placeName>
+                                    Antioch
+                                </placeName>.
+                            </desc>
+                        </state>
+                    </person>
+                </listPerson>
+                <bibl type="primary">
+                    <biblScope type="pp">
+                        <ptr target="#bib3044"/>65</biblScope>
+                </bibl>
+            </div>
+            <div>
+                <listRelation>
+                    <relation type="epistolary" name="syriaca:Epistolary" active="http://syriaca.org/person/2559" passive="http://syriaca.org/person/anonymi2"/> 
+                </listRelation>
+                <bibl type="primary">
+                    <biblScope type="pp">
+                        <ptr target="#bib3044"/>65</biblScope>
+                </bibl>
+            </div>
+            <div>
+                <listRelation>
+                    <relation type="professional" name="snap:ProfessionalRelationship" mutual="http://syriaca.org/person/51 http://syriaca.org/person/anonymi2"/> 
+                </listRelation>
+                <bibl type="primary">
+                    <biblScope type="pp">
+                        <ptr target="#bib3044"/>65</biblScope>
                 </bibl>
             </div>
         </body>

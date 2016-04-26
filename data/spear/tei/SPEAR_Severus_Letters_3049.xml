@@ -52,7 +52,7 @@
             <div>
                 <listPerson>
                     <person>
-                        <persName ref="http://syriaca.org/person/anonymous1"><!-- No URL -->
+                        <persName ref="http://syriaca.org/person/2564">
                             Master of the Offices
                         </persName>
                     </person>
@@ -63,22 +63,8 @@
                 </bibl>
             </div>
             <div>
-                <listPerson>
-                    <person>
-                        <persName ref="http://syriaca.org/person/anonymous1"/>
-                            <sex value="M">
-                                Male
-                            </sex>
-                        </person>
-                </listPerson>
-                <bibl type="primary">
-                    <biblScope type="pp">
-                        <ptr target="bib3049"/>73</biblScope>
-                </bibl>
-            </div>
-            <div>
                 <listRelation>
-                    <relation type="epistolary" name="syriaca:RecipientOfLetterFrom" active="http://syriaca.org/person/anonymous1" passive="http://syriaca.org/person/51"></relation>
+                    <relation type="epistolary" name="syriaca:Epistolary" active="http://syriaca.org/person/51" passive="http://syriaca.org/person/2564"/>
                 </listRelation>
                 <bibl type="primary">
                     <biblScope type="pp">
@@ -111,18 +97,9 @@
                 </bibl>
             </div>
             <div>
-                <listPerson>
-                    <person>
-                        <state type="office">
-                            <desc>
-                                <persName ref="http://syriaca.org/person/2563">
-                                    Rufinus
-                                </persName>
-                                was a magistrian.
-                            </desc>
-                        </state>
-                    </person>
-                </listPerson>
+                <listRelation>
+                    <relation type="epistolary" name="syriaca:CarrierOfLetterBetween" active="http://syriaca.org/person/2563" passive="http://syriaca.org/person/2564 http://syriaca.org/person/51"/>
+                </listRelation>
                 <bibl type="primary">
                     <biblScope type="pp">
                         <ptr target="#bibl3049"/>73</biblScope>
@@ -130,7 +107,7 @@
             </div>
             <div>
                 <listRelation>
-                    <relation type="epistolary" name="syriaca:CarrierOfLetterFrom" active="http://syriaca.org/person/2563" passive="http://syriaca.org/person/51"/>
+                    <relation type="epistolary" name="syriaca:Epistolary" active="http://syriaca.org/person/2564" passive="http://syriaca.org/person/51"/>
                 </listRelation>
                 <bibl type="primary">
                     <biblScope type="pp">
@@ -163,26 +140,8 @@
                 </bibl>
             </div>
             <div>
-                <listPerson>
-                    <person>
-                        <state type="office">
-                            <desc>
-                                <persName ref="http://syriaca.org/person/2565">
-                                    Leontius
-                                </persName>
-                                was a magistrian.
-                            </desc>
-                        </state>
-                    </person>
-                </listPerson>
-                <bibl type="primary">
-                    <biblScope type="pp">
-                        <ptr target="#bibl3049"/>73</biblScope>
-                </bibl>
-            </div>
-            <div>
                 <listRelation>
-                    <relation type="epistolary" name="syriaca:CarrierOfLetterFrom" active="http://syriaca.org/person/2565" passive="http://syriaca.org/person/anonymous1"/>
+                    <relation type="epistolary" name="syriaca:CarrierOfLetterBetween" active="http://syriaca.org/person/2565" passive="http://syriaca.org/person/2564 http://syriaca.org/person/51"/>
                 </listRelation>
                 <bibl type="primary">
                     <biblScope type="pp">
@@ -193,12 +152,14 @@
                 <listPerson>
                     <personGrp>
                         <persName ref="http://syriaca.org/person/anonymi1">
-                            The God loving bishops of
+                            The God-loving bishops attending a synod in
                             <placeName>
-                                Antiochus
+                                Antioch
                             </placeName>
                             in
-                        <date notBefore="0514" notAfter="0518">A.D.514-518</date>
+                        <date when="0515">
+                            A.D. 515
+                        </date> <!-- Date from Alpi II, 80-81 -->
                         </persName>
                     </personGrp>
                 </listPerson>
@@ -208,19 +169,28 @@
                 </bibl>
             </div>
             <div>
+                <listRelation>
+                    <relation type="general" name="syriaca:MemberOfGroup" active="http://syriaca.org/person/51" passive="http://syriaca.org/person/anonymi1"/>
+                </listRelation>
+                <bibl type="primary">
+                    <biblScope type="pp">
+                        <ptr target="#bibl3049"/>73</biblScope>
+                </bibl>
+            </div>
+            <div>
                 <listPerson>
-                    <personGrp>
-                        <persName ref="http://syriaca.org/person/anonymi2">
-                            The bishops of
+                    <person>
+                        <persName ref="http://syriaca.org/person/anonymous1">
+                            The bishop of
                             <placeName>
                                 Epiphania 
                             </placeName>
                             in
-                            <date notBefore="0513" notAfter="0518">
-                                A.D. 513-518
-                            </date> 
+                            <date when="0515">
+                                A.D. 515
+                            </date> <!-- Date from Alpi II, 80-81 --> 
                         </persName>
-                        </personGrp>
+                        </person>
                 </listPerson>
                 <bibl type="primary">
                     <biblScope type="pp">
@@ -229,18 +199,18 @@
             </div>
             <div>
                 <listPerson>
-                    <personGrp>
-                        <persName ref="http://syriaca.org/person/anonymi3">
-                            The bishops of
+                    <person>
+                        <persName ref="http://syriaca.org/person/anonymous2">
+                            The bishop of
                             <placeName>
                                 Arethusa.
                             </placeName>
                             in
-                            <date notBefore="0513" notAfter="0518">
-                                A.D. 513-518
-                            </date> 
+                            <date when="0515">
+                                A.D. 515
+                            </date> <!-- Date from Alpi II, 80-81 -->
                         </persName>
-                        </personGrp>
+                        </person>
                 </listPerson>
                 <bibl type="primary">
                     <biblScope type="pp">
@@ -249,27 +219,75 @@
             </div>
             <div>
                 <listPerson>
-                    <personGrp>
-                        <persName ref="http://syriaca.org/person/anonymi4">
-                            The bishops of
+                    <person>
+                        <persName ref="http://syriaca.org/person/anonymous3">
+                            The bishop of
                             <placeName>
                                 Rhaphania
                             </placeName>
                             in
-                            <date notBefore="0513" notAfter="0518">
-                                A.D. 513-518
-                            </date> 
+                            <date when="0515">
+                                A.D. 515
+                            </date> <!-- Date from Alpi II, 80-81 --> 
                         </persName>
-                        </personGrp>
+                        </person>
                 </listPerson>
                 <bibl type="primary">
                     <biblScope type="pp">
                         <ptr target="#bibl3049"/>73</biblScope>
                 </bibl>
             </div>
-           </body>
-    </text>
-                <bibl xml:id="bibl3049-1">
+            <div>
+                <listPerson>
+                    <person>
+                        <persName ref="http://syriaca.org/person/anonymi2">
+                            The heads of monasteries in 
+                            <placeName>
+                                Syria Secunda
+                            </placeName>
+                            who urged their bishops to oppose 
+                            <persName ref="http://syiraca.org/person/51">
+                                Severus
+                            </persName>
+                        </persName>
+                    </person>
+                </listPerson>
+                <bibl type="primary">
+                    <biblScope type="pp">
+                        <ptr target="#bibl3049"/>73</biblScope>
+                </bibl>
+            </div>
+            <div>
+                <listRelation>
+                    <relation type="religious" name="snap:EnmityFor" active="http://syriaca.org/person/anonymi2 http://syriaca.org/person/anonymous1 http://syriaca.org/person/anonymous2 http://syriaca.org/person/anonymous3" passive="http://syriaca.org/person/anonymi1"/>
+                </listRelation>
+                <bibl type="primary">
+                    <biblScope type="pp">
+                        <ptr target="#bibl3049"/>73-74</biblScope>
+                </bibl>
+            </div>
+            <div>
+                <listRelation>
+                    <relation type="professional" name="snap:ProfessionalRelationship" mutual="http://syriaca.org/person/anonymi1 http://syriaca.org/person/anonymi2 http://syriaca.org/person/anonymous1 http://syriaca.org/person/anonymous2 http://syriaca.org/person/anonymous3"/>
+                </listRelation>
+                <bibl type="primary">
+                    <biblScope type="pp">
+                        <ptr target="#bibl3049"/>73-74</biblScope>
+                </bibl>
+            </div>
+            <div>
+                <listRelation>
+                    <relation type="religious" name="snap:EnmityFor" ana="alleged" active="http://syriaca.org/person/anonymi2 http://syriaca.org/person/anonymous1 http://syriaca.org/person/anonymous2 http://syriaca.org/person/anonymous3" passive="http://syriaca.org/person/2265"/>
+                </listRelation>
+                <bibl type="primary">
+                    <biblScope type="pp">
+                        <ptr target="#bibl3049"/>73-74</biblScope>
+                </bibl>
+            </div>
+         </body>
+    <back>
+        <div>
+            <bibl xml:id="bibl3049-1">
                     <title xml:lang="en">The Sixth Book of the Select Letters of Severus, Patriarch of Antioch in the Syriac Version of Athanasius of Nisibis</title>
                     <title type="sub">Translation, I.1 - II.3</title>
                     <editor>E. W. Brooks</editor>
@@ -313,6 +331,7 @@
                     <biblScope unit="vol">I</biblScope>
                     <biblScope unit="issue">II</biblScope>
                 </bibl>
+        </div>
         </back>
     </text>
 </TEI>

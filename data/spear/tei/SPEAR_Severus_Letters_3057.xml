@@ -99,15 +99,6 @@
                 </bibl>
             </div>
             <div>
-                <listRelation>
-                    <relation type="epistolary" name="syriaca:RecipientOfLetterFrom" active="http://syriaca.org/person/2571" passive="http://syriaca.org/person/51"></relation>
-                </listRelation>
-                <bibl type="primary">
-                    <biblScope type="pp">
-                        <ptr target="#bibl3057"/>87</biblScope>
-                </bibl>
-            </div>
-            <div>
                 <listPerson>
                     <person>
                         <persName ref="http://syriaca.org/person/2570">
@@ -158,7 +149,16 @@
             </div>
             <div>
                 <listRelation>
-                    <relation type="epistolary" name="syriaca:RecipientOfLetterFrom" active="http://syriaca.org/person/2570" passive="http://syriaca.org/person/51"></relation>
+                    <relation type="epistolary" name="syriaca:Epistolary" active="http://syriaca.org/person/51" passive="http://syriaca.org/person/2570 http://syriaca.org/person/2571"/>
+                </listRelation>
+                <bibl type="primary">
+                    <biblScope type="pp">
+                        <ptr target="#bibl3057"/>87</biblScope>
+                </bibl>
+            </div>
+            <div>
+                <listRelation>
+                    <relation type="personal" name="snap:IntimateRelationship" mutual="http://syriaca.org/person/2571 http://syriaca.org/person/2570"/>
                 </listRelation>
                 <bibl type="primary">
                     <biblScope type="pp">
@@ -169,9 +169,9 @@
                 <listPerson>
                     <personGrp>
                         <persName>
-                            The synod of the God-loving bishops of the East, in
-                            <date notBefore="0513" notAfter="0518">
-                                A.D. 513-518
+                            The synod of the God-loving bishops of the East that met 
+                            <date notBefore="0513-04-29" notAfter="0513-05-05"> <!-- Dates from Alpi II, 69 -->
+                                between 29 April and 5 May, A.D. 513
                             </date> 
                         </persName>
                     </personGrp>
@@ -232,7 +232,7 @@
             </div>
             <div>
                 <listRelation>
-                    <relation type="epistolary" name="syriaca:SenderOfLetterTo" active="http://syriaca.org/person/51" passive="http://syriaca.org/person/2572"></relation>
+                    <relation type="epistolary" name="syriaca:Epistolary" active="http://syriaca.org/person/51" passive="http://syriaca.org/person/2572"/>
                 </listRelation>
                 <bibl type="primary">
                     <biblScope type="pp">
@@ -302,7 +302,86 @@
             </div>
             <div>
                 <listRelation>
-                    <relation type="epistolary" name="syriaca:EpistolaryReferenceTo" active="http://syriaca.org/person/51" passive="http://syriaca.org/person/2573"></relation>
+                    <relation type="epistolary" name="syriaca:Epistolary" active="http://syriaca.org/person/2570 http://syriaca.org/person/2571" passive="http://syriaca.org/person/51"/>
+                </listRelation>
+                <bibl type="primary">
+                    <biblScope type="pp">
+                        <ptr target="#bibl3057"/>88</biblScope>
+                </bibl>
+            </div>
+            <div>
+                <listRelation>
+                    <relation type="religious" name="snap:EnmityFor" active="http://syriaca.org/person/51" passive="http://syriaca.org/person/2573"/>
+                </listRelation>
+                <bibl type="primary">
+                    <biblScope type="pp">
+                        <ptr target="#bibl3057"/>88-89</biblScope>
+                </bibl>
+            </div>
+            <div>
+                <listPerson>
+                    <personGrp>
+                        <persName ref="http://syriaca.org/person/anonymi1">
+                            Some poets who also served as clergy in 
+                            <placeName>
+                                Antioch
+                            </placeName>
+                            in
+                            <date when="0513">
+                                A.D. 513
+                            </date>
+                        </persName>
+                    </personGrp>
+                </listPerson>
+                <bibl type="primary">
+                    <biblScope type="pp">
+                        <ptr target="#bibl3057"/>88-89</biblScope>
+                </bibl>
+            </div>
+            <div>
+                <listPerson>
+                    <personGrp>
+                        <state type="vocation">
+                            <desc>
+                                <persName ref="http://syriaca.org/person/anonymi1"/>
+                                    These men were clerics.
+                            </desc>
+                        </state>
+                    </personGrp>
+                </listPerson>
+                <bibl type="primary">
+                    <biblScope type="pp">
+                        <ptr target="#bibl3057"/>88-89</biblScope>
+                </bibl>
+            </div>
+                <div>
+                    <listPerson>
+                        <personGrp>
+                            <state type="occupation">
+                                <desc>
+                                    <persName ref="http://syriaca.org/person/anonymi1"/>
+                                    These men were poets.
+                                </desc>
+                            </state>
+                        </personGrp>
+                    </listPerson>
+                    <bibl type="primary">
+                        <biblScope type="pp">
+                            <ptr target="#bibl3057"/>88-89</biblScope>
+                    </bibl>
+            </div>
+            <div>
+                <listRelation>
+                    <relation type="religious" name="snap:EnmityFor" active="http://syriaca.org/person/51" passive="http://syriaca.org/person/anonymi1"/>
+                </listRelation>
+                <bibl type="primary">
+                    <biblScope type="pp">
+                        <ptr target="#bibl3057"/>88-89</biblScope>
+                </bibl>
+            </div>
+            <div>
+                <listRelation>
+                    <relation type="personal" name="syriaca:IntimateRelationshipWith" mutual="http://syriaca.org/person/2570 http://syriaca.org/person/2571 http://syriaca.org/person/2573"/>
                 </listRelation>
                 <bibl type="primary">
                     <biblScope type="pp">
@@ -310,8 +389,9 @@
                 </bibl>
             </div>
         </body>
-    </text>
-                <bibl xml:id="bibl3057-1">
+    <back>
+                <div>
+                    <bibl xml:id="bibl3057-1">
                     <title xml:lang="en">The Sixth Book of the Select Letters of Severus, Patriarch of Antioch in the Syriac Version of Athanasius of Nisibis</title>
                     <title type="sub">Translation, I.1 - II.3</title>
                     <editor>E. W. Brooks</editor>
@@ -355,6 +435,7 @@
                     <biblScope unit="vol">I</biblScope>
                     <biblScope unit="issue">II</biblScope>
                 </bibl>
+                </div>
         </back>
     </text>
 </TEI>

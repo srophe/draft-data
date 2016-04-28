@@ -94,7 +94,7 @@
             </div>
             <div>
                 <listRelation>
-                    <relation type="epistolary" name="syriaca:RecipientOfLetterFrom" active="http://syriaca.org/person/2558" passive="http://syriaca.org/person/51"/>
+                    <relation type="epistolary" name="syriaca:Epistolary" active="http://syriaca.org/person/51" passive="http://syriaca.org/person/2558"/>
                 </listRelation>
                 <bibl type="primary">
                     <biblScope type="pp">
@@ -104,7 +104,7 @@
             <div>
                 <listPerson>
                     <person>
-                        <persName ref="http://syriaca.org/person/anonymous1"><!-- Unable to find URI -->
+                        <persName ref="http://syriaca.org/person/2588">
                             Ægilas
                             </persName>
                     </person>
@@ -117,7 +117,7 @@
             <div>
                 <listPerson>
                     <person>
-                        <persName ref="http://syriaca.org/person/anonymous1"/>
+                        <persName ref="http://syriaca.org/person/2588"/>
                         <sex value="M">
                             Male
                         </sex>
@@ -129,9 +129,18 @@
                 </bibl>
             </div>
             <div>
+                <listRelation>
+                    <relation type="religious" name="syriaca:EnmityFor" active="http://syriaca.org/person/2588" passive="http://syriaca.org/person/51"/>
+                </listRelation>
+                <bibl type="primary">
+                    <biblScope type="pp">
+                        <ptr target="#bib3042"/>459</biblScope>
+                </bibl>
+            </div>
+            <div>
                 <listPerson>
                     <person>
-                        <persName ref="http://syriaca.org/person/anonymous2"><!-- Not sure if this is person 2409 -->
+                        <persName ref="http://syriaca.org/person/2409">
                             Peter the prebyter
                         </persName>
                     </person>
@@ -144,7 +153,7 @@
             <div>
                 <listPerson>
                     <person>
-                        <persName ref="http://syriaca.org/person/anonymous2"/>
+                        <persName ref="http://syriaca.org/person/2409"/>
                         <sex value="M">
                             Male
                         </sex>
@@ -160,7 +169,7 @@
                     <person>
                         <state type="vocation">
                             <desc>
-                                <persName ref="http://syriaca.org/person/anonymous2">
+                                <persName ref="http://syriaca.org/person/2409">
                                     Peter 
                                 </persName>
                                 was a presbyter.
@@ -173,7 +182,108 @@
                         <ptr target="#bib3042"/>461</biblScope>
                 </bibl>
             </div>
-            </body>
+            <div>
+                <listRelation>
+                    <relation type="epistolary" name="syriaca:EpistolaryReferenceTo" active="http://syriaca.org/person/51 http://syriaca.org/person/2558" passive="http://syriaca.org/person/2409"/>
+                </listRelation>
+                <bibl type="primary">
+                    <biblScope type="pp">
+                        <ptr target="#bib3042"/>461</biblScope>
+                </bibl>
+            </div>
+            <div>
+                <listPerson>
+                    <person>
+                        <persName ref="http://syriaca.org/person/anonmyous1">
+                            A monk
+                            <date>
+                                during the time of the Arians
+                            </date>
+                        </persName>
+                    </person>
+                </listPerson>
+                <bibl type="primary">
+                    <biblScope type="pp">
+                        <ptr target="#bib3042"/>461-62</biblScope>
+                </bibl>
+            </div>
+            <div>
+                <listPerson>
+                    <person>
+                        <persName ref="http://syriaca.org/person/anonymous1"/>
+                        <sex value="M">
+                            Male
+                        </sex>
+                    </person>
+                </listPerson>
+                <bibl type="primary">
+                    <biblScope type="pp">
+                        <ptr target="#bib3042"/>461-62</biblScope>
+                </bibl>
+            </div>
+            <div>
+                <listPerson>
+                    <person>
+                        <state type="vocation">
+                            <desc>
+                                <persName ref="http://syriaca.org/person/anonymous1"/>
+                                    He was a presbyter.
+                            </desc>
+                        </state>
+                    </person>
+                </listPerson>
+                <bibl type="primary">
+                    <biblScope type="pp">
+                        <ptr target="#bib3042"/>461-62</biblScope>
+                </bibl>
+            </div>
+            <div>
+                <listPerson>
+                    <person>
+                        <persName ref="http://syriaca.org/person/anonymous2">
+                            A monk
+                            <date>
+                                during the time of the Arians
+                            </date>
+                        </persName>
+                    </person>
+                </listPerson>
+                <bibl type="primary">
+                    <biblScope type="pp">
+                        <ptr target="#bib3042"/>461-62</biblScope>
+                </bibl>
+            </div>
+            <div>
+                <listPerson>
+                    <person>
+                        <persName ref="http://syriaca.org/person/anonymous2"/>
+                        <sex value="M">
+                            Male
+                        </sex>
+                    </person>
+                </listPerson>
+                <bibl type="primary">
+                    <biblScope type="pp">
+                        <ptr target="#bib3042"/>461-62</biblScope>
+                </bibl>
+            </div>
+            <div>
+                <listPerson>
+                    <person>
+                        <state type="vocation">
+                            <desc>
+                                <persName ref="http://syriaca.org/person/anonymous2"/>
+                                He was a presbyter.
+                            </desc>
+                        </state>
+                    </person>
+                </listPerson>
+                <bibl type="primary">
+                    <biblScope type="pp">
+                        <ptr target="#bib3042"/>461-62</biblScope>
+                </bibl>
+            </div>
+        </body>
         <back>
             <div>
                 <bibl xml:id="bib3042-1"><!-- REPLACE THE #### WITH THE URI NUMBER OF THE ASSIGNED LETTER -->

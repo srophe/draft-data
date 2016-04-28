@@ -52,13 +52,15 @@
             <div>
                 <listPerson>
                     <personGrp>
-                        <persName ref="http://syriaca.org/person/anonymi1">
-                            the clergy of
+                        <persName ref="http://syriaca.org/person/anonymi1"><!-- See Letter I.30 #3059 -->
+                            The clergy of
                             <placeName>
                                 Apamea
                             </placeName>
                             in
-                            <date notBefore="0513" notAfter="0518">A.D. 513-518</date>
+                            <date when="0513">
+                                A.D. 513
+                            </date><!-- Alpi II, 68 -->
                         </persName>
                     </personGrp>
                 </listPerson>
@@ -69,7 +71,7 @@
             </div> 
             <div>
                 <listRelation>
-                    <relation type="epistolary" name="syriaca:RecipientOfLetterFrom" active="http://syriaca.org/person/anonymi1" passive="http://syriaca.org/person/51"/> 
+                    <relation type="epistolary" name="syriaca:Epistolary" active="http://syriaca.org/person/51" passive="http://syriaca.org/person/anonymi1"/> 
                 </listRelation>
                 <bibl type="primary">
                     <biblScope type="pp">
@@ -80,12 +82,14 @@
                 <listPerson>
                     <personGrp>
                         <persName ref="http://syriaca.org/person/anonymi2">
-                            the notables of 
+                            The notables of 
                             <placeName>
                                 Apamea
                             </placeName>
                             in
-                            <date notBefore="0513" notAfter="0518">A.D. 513-518</date>
+                            <date when="0513">
+                                A.D. 513
+                            </date><!-- Alpi II, 68 -->
                         </persName>
                     </personGrp>
                 </listPerson>
@@ -96,7 +100,7 @@
             </div>
             <div>
                 <listRelation>
-                    <relation type="epistolary" name="syriaca:RecipientOfLetterFrom" active="http://syriaca.org/person/anonymi2" passive="http://syriaca.org/person/51"/> 
+                    <relation type="epistolary" name="syriaca:Epistolary" active="http://syriaca.org/person/51" passive="http://syriaca.org/person/anonymi2"/> 
                 </listRelation>
                 <bibl type="primary">
                     <biblScope type="pp">
@@ -107,7 +111,7 @@
                 <listPerson>
                     <person>
                         <persName ref="http://syriaca.org/person/2539">
-                            presbyter Cosmas
+                            The devout presbyter Cosmas
                         </persName>
                     </person>
                 </listPerson>
@@ -134,9 +138,9 @@
                         <state type="vocation">
                             <desc>
                                 <persName ref="http://syriaca.org/person/2539"> 
-                                    Cosmas was a
+                                    Cosmas
                                 </persName>
-                                presbyter
+                                was a presbyter.
                             </desc>
                         </state>
                     </person>

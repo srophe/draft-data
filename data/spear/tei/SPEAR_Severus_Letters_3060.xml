@@ -58,7 +58,7 @@
                                 Phoenice
                             </placeName> 
                             in
-                            <date notBefore="0513" notAfter="0518">A.D. 513-518</date>
+                            <date notBefore="0515" notAfter="0518">A.D. 515-518</date>
                         </persName>    
                     </personGrp>
                 </listPerson>
@@ -69,7 +69,7 @@
             </div>
             <div>
                 <listRelation>
-                    <relation type="epistolary" name="syriaca:RecipientOfLetterFrom" active="http://syriaca.org/person/anonymi1" passive="http://syriaca.org/person/51"/>
+                    <relation type="epistolary" name="syriaca:Epistolary" active="http://syriaca.org/person/51" passive="http://syriaca.org/person/anonymi1"/>
                 </listRelation>
                 <bibl type="primary">
                     <biblScope type="pp">
@@ -109,7 +109,7 @@
                                 <persName ref="http://syriaca.org/person/2580">
                                     Epiphanius
                                 </persName>
-                                was the Bishop of
+                                was bishop of
                                 <placeName>
                                     Tyre
                                 </placeName>
@@ -181,7 +181,7 @@
             </div>
             <div>
                 <listRelation>
-                    <relation type="epistolary" name="syriaca:CarrierOfLetterFrom" active="http://syriaca.org/person/2586" passive="http://syriaca.org/person/anonymi1"/>
+                    <relation type="epistolary" name="syriaca:CarrierOfLetterBetween" active="http://syriaca.org/person/2586 http://syriaca.org/person/2579" passive="http://syriaca.org/person/51 http://syriaca.org/person/anonymi1"/>
                 </listRelation>
                 <bibl type="primary">
                     <biblScope type="pp">
@@ -236,16 +236,7 @@
                         <ptr target="#bib3060-1"/>97</biblScope>
                 </bibl>
             </div>
-            <div>
-                <listRelation>
-                    <relation type="epistolary" name="syriaca:CarrierOfLetterFrom" active="http://syriaca.org/person/2579" passive="http://syriaca.org/person/anonymi1"/>
-                </listRelation>
-                <bibl type="primary">
-                    <biblScope type="pp">
-                        <ptr target="#bibl3060-1"/>97-98</biblScope>
-                </bibl>
-            </div>
-            </body>
+        </body>
         <back>
             <div>
                 <bibl xml:id="bib3060-1"><!-- REPLACE THE #### WITH THE URI NUMBER OF THE ASSIGNED LETTER -->

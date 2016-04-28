@@ -85,12 +85,12 @@
                         <state type="vocation">
                             <desc>
                                 <persName ref="http://syriaca.org/person/2554">
-                                    Simeon of
-                                    <placeName>
-                                        Chalcis
-                                    </placeName>
+                                    Simeon 
                                 </persName>
-                                was a bishop
+                                was bishop of
+                                <placeName>
+                                    Chalcis
+                                </placeName>
                             </desc>
                         </state>
                     </person>
@@ -102,7 +102,7 @@
             </div>
             <div>
                 <listRelation>
-                    <relation type="epistolary" name="syriaca:RecipientOfLetterFrom" active="http://syriaca.org/person/2554" passive="http://syriaca.org/person/51"/>
+                    <relation type="epistolary" name="syriaca:Epistolary" active="http://syriaca.org/person/51" passive="http://syriaca.org/person/2554"/>
                 </listRelation>
                 <bibl type="primary">
                     <biblScope type="pp">
@@ -113,9 +113,13 @@
                 <listPerson>
                     <person>
                         <persName ref="http://syriaca.org/person/anonymous1">
-                            the devout monk who was removed from his monastery by 
+                            The devout monk who was removed from 
+                            <placeName>
+                                the monastery of ʿAkiba
+                            </placeName> 
+                            by the bishop
                             <persName ref="http://syriaca.org/person/2554">
-                                the Bishop Simeon
+                                Simeon
                             </persName>
                         </persName>
                     </person>
@@ -144,10 +148,8 @@
                     <person>
                         <state type="vocation">
                             <desc>
-                                <persName ref="http://syriaca.org/person/anonymous1"> 
-                                    This man is a 
-                                </persName> 
-                                monk 
+                                <persName ref="http://syriaca.org/person/anonymous1"/> 
+                                This man was a monk. 
                             </desc>
                         </state>
                     </person>
@@ -159,7 +161,16 @@
             </div>
             <div> 
                 <listRelation>
-                    <relation type="clerical" name="syriaca:ClergyUnderBishop" active="http://syriaca.org/person/anonymous1" passive="http://syriaca.org/person/2554"/>
+                    <relation type="clerical" name="syriaca:BishopOverClergy" active="http://syriaca.org/person/2554" passive="http://syriaca.org/person/anonymous1"/>
+                </listRelation>
+                <bibl type="primary">
+                    <biblScope type="pp">
+                        <ptr target="#bibl3071-1"/>104</biblScope>
+                </bibl>
+            </div>
+            <div> 
+                <listRelation>
+                    <relation type="legal" name="syriaca:Petitioned" active="http://syriaca.org/person/anonymous1" passive="http://syriaca.org/person/51"/>
                 </listRelation>
                 <bibl type="primary">
                     <biblScope type="pp">
@@ -169,10 +180,10 @@
             <div>
                 <listPerson>
                     <person>
-                        <persName ref="http://syriaca.org/person/anonymous2">
-                            the man who is chorepiscobus and also beriodeutes in the village of
+                        <persName ref="http://syriaca.org/person/anonymous2"><!-- See Letter I.38 #3072 -->
+                            The chorepiscopus and periodeutes in the village of
                             <placeName>
-                                Calenderis
+                                Thelhadin
                             </placeName>
                         </persName>
                     </person>
@@ -201,10 +212,24 @@
                     <person>
                         <state type="vocation">
                             <desc>
-                                <persName ref="http://syriaca.org/person/anonymous2"> 
-                                    This man is a 
-                                </persName> 
-                                member of the clergy 
+                                <persName ref="http://syriaca.org/person/anonymous2"/> 
+                                    This man was a chorepiscopos.
+                            </desc>
+                        </state>
+                    </person>
+                </listPerson>
+                <bibl type="primary">
+                    <biblScope type="pp">
+                        <ptr target="#bib3071-1"/>104</biblScope>
+                </bibl>
+            </div>
+            <div>
+                <listPerson>
+                    <person>
+                        <state type="vocation">
+                            <desc>
+                                <persName ref="http://syriaca.org/person/anonymous2"/> 
+                                This man was a periodeutes.
                             </desc>
                         </state>
                     </person>
@@ -216,7 +241,7 @@
             </div>
             <div>
                 <listRelation>
-                    <relation type="clerical" name="syriaca:ClergyUnderBishop" active="http://syriaca.org/person/anonymous2" passive="http://syriaca.org/person/51"/>
+                    <relation type="clerical" name="syriaca:BishopOverClergy" active="http://syriaca.org/person/51" passive="http://syriaca.org/person/anonymous2"/>
                 </listRelation>
                 <bibl type="primary">
                     <biblScope type="pp">
@@ -227,17 +252,13 @@
                 <listPerson>
                     <personGrp>
                         <persName ref="http://syriaca/person/anonymi1">
-                            the saintly bishops who joined 
-                            <persName ref="http://syriaca.org/person/51">
-                                Severus 
-                            </persName>
-                            in examining
-                            <persName ref="http://syriaca.org/person/anonymous2">
-                             the man who is chorepiscobus and also beriodeutes
-                            </persName>
-                            in
-                            <date notBefore="0513" notAfter="0518">
-                                A.D. 513-518
+                            The saintly bishops who assembled in 
+                            <placeName>
+                                Antioch
+                            </placeName>
+                            sometime between
+                            <date notBefore="0513" notAfter="0517">
+                                A.D. 513-517
                             </date> 
                         </persName>
                     </personGrp>
@@ -249,7 +270,16 @@
             </div>
             <div>
                 <listRelation>
-                    <relation type="professional" name="snap:ProfessionalRelationship" mutual="http://syriaca.org/person/51 http://syriaca.org/person/anonymi1"/> 
+                    <relation type="general" name="syriaca:MemberOfGroup" active="http://syriaca.org/person/51" passive="http://syriaca.org/person/anonymi1"/> 
+                </listRelation>
+                <bibl type="primary">
+                    <biblScope type="pp">
+                        <ptr target="#bibl3071-1"/>105</biblScope>
+                </bibl>
+            </div>
+            <div>
+                <listRelation>
+                    <relation type="legal" name="syriaca:Judged" active="http://syriaca.org/person/anonymi1" passive="http://syriaca.org/person/anonymous2"/> 
                 </listRelation>
                 <bibl type="primary">
                     <biblScope type="pp">
@@ -305,13 +335,13 @@
                 <listPerson>
                     <personGrp>
                         <persName ref="http://syriaca.org/person/anonymi2">
-                            Those of the house of
-                            <persName ref="http://syriaca.org/person/anonymous3">
-                                the God-loving Bishop Maron
-                            </persName>
-                            in
-                            <date notBefore="0513" notAfter="0518">
-                                A.D. 513-518
+                            The monks of 
+                            <placeName ref="http://syriaca.org/place/615">
+                                the house of the God-loving Bishop Maron
+                            </placeName>
+                            sometime between
+                            <date notBefore="0513" notAfter="0517">
+                                A.D. 513-517
                             </date> 
                         </persName>
                     </personGrp>
@@ -322,10 +352,19 @@
                 </bibl>
             </div>
             <div>
+                <listRelation>
+                    <relation type="epistolary" name="syriaca:CarrierOfLetterBetween" active="http://syriaca.org/person/anonymous1" passive="http://syriaca.org/person/51 http://syriaca.org/person/2554"/>
+                </listRelation>
+                <bibl type="primary">
+                    <biblScope type="pp">
+                        <ptr target="#bibl3071-1"/>106</biblScope>
+                </bibl>
+            </div>
+            <div>
                 <listPerson>
                     <person>
                         <persName ref="http:syriaca.org/person/2566">
-                            the devout deacon Stephen
+                            The devout deacon Stephen
                         </persName>
                     </person>
                 </listPerson>
@@ -366,7 +405,16 @@
                         <ptr target="#bib3071-1"/>106</biblScope>
                 </bibl>
             </div>
-            </body>
+            <div>
+                <listRelation>
+                    <relation type="professional" name="snap:ProfessionalRelationship" mutual="http://syriaca.org/person/2256 http://syriaca.org/person/51 http://syriaca.org/person/2554"/>
+                </listRelation>
+                <bibl type="primary">
+                    <biblScope type="pp">
+                        <ptr target="#bibl3071-1"/>106</biblScope>
+                </bibl>
+            </div>
+        </body>
         <back>
             <div>
                 <bibl xml:id="bib3071-1">

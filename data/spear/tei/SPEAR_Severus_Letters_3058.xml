@@ -53,7 +53,7 @@
                 <listPerson>
                     <person>
                         <persName ref="http://syriaca.org/person/anonymi1"><!-- Monks of the Monastery of Isaac -->
-                            the devout monks of the blessed Lord Isaac
+                            The devout monks of the blessed Lord Isaac
                         </persName>
                     </person>
                 </listPerson>
@@ -64,7 +64,7 @@
             </div>
             <div>
                 <listRelation>
-                    <relation type="epistolary" name="syriaca:RecipientOfLetterFrom" active="http://syriaca.org/person/anonymi1" passive="http://syriaca.org/person/51"/>
+                    <relation type="epistolary" name="syriaca:Epistolary" active="http://syriaca.org/person/51" passive="http://syriaca.org/person/anonymi1"/>
                 </listRelation>
                 <bibl type="primary">
                     <biblScope type="pp">
@@ -97,21 +97,12 @@
                 </bibl>
             </div>
             <div>
-                <listPerson>
-                    <person>
-                        <state type="office">
-                            <desc>
-                                <persName ref="http:/syriaca.org/person/2576">
-                                    Antipater
-                                </persName>
-                                was a megaloprepestatos
-                            </desc>
-                        </state>
-                    </person>
-                </listPerson>
+                <listRelation>
+                    <relation type="epistolary" name="syriaca:EpistolaryReferenceTo" active="http://syriaca.org/person/2576" passive="http://syriaca.org/person/51 http://syriaca.org/person/anonymi1"/>
+                </listRelation>
                 <bibl type="primary">
                     <biblScope type="pp">
-                        <ptr target="#bibl3058"/>90</biblScope>
+                        <ptr target="#bibl3058-1"/>90</biblScope>
                 </bibl>
             </div>
             <div>
@@ -122,8 +113,6 @@
                             <persName ref="http:/syriaca.org/person/2576">
                                 Antipater
                             </persName>
-                            in
-                            <date notBefore="0513" notAfter="0518">A.D. 513-518</date>
                         </persName>
                     </personGrp>
                 </listPerson>
@@ -133,18 +122,38 @@
                 </bibl>
             </div>
             <div>
+                <listRelation>
+                    <relation type="legal" name="syriaca:Judged" active="http://syriaca.org/person/anonymi2" passive="http://syriaca.org/person/2576"/>
+                </listRelation>
+                <bibl type="primary">
+                    <biblScope type="pp">
+                        <ptr target="#bibl3058-1"/>90</biblScope>
+                </bibl>
+            </div>
+            <div>
                 <listPerson>
                     <personGrp>
                         <persName ref="http://syriaca.org/person/anonymi3">
-                            The men of the camp of
+                            The inhabitants of
                             <placeName>
                                 Anasartha
                             </placeName>
-                            in
-                            <date notBefore="0513" notAfter="0518">A.D. 513-518</date>
+                            who proposed episcopal candidates to
+                            <persName ref="http://syriaca.org/person/51">
+                                Severus
+                            </persName>
                         </persName>
                     </personGrp>
                 </listPerson>
+                <bibl type="primary">
+                    <biblScope type="pp">
+                        <ptr target="#bibl3058-1"/>91</biblScope>
+                </bibl>
+            </div>
+            <div>
+                <listRelation>
+                    <relation type="clerical" name="syriaca:BishopOver" active="http://syriaca.org/person/51" passive="http://syriaca.org/person/anonymi3"/>
+                </listRelation>
                 <bibl type="primary">
                     <biblScope type="pp">
                         <ptr target="#bibl3058-1"/>91</biblScope>
@@ -194,24 +203,6 @@
                 </bibl>
             </div>
             <div>
-                <listPerson>
-                    <person>
-                        <state type="vocation">
-                            <desc>
-                                <persName ref="http://syriaca.org/person/2577"> 
-                                    Stephen 
-                                </persName>
-                                was bishop-designate
-                            </desc>
-                        </state>
-                    </person>
-                </listPerson>
-                <bibl type="primary">
-                    <biblScope type="pp">
-                        <ptr target="#bibl3058-1"/>91-92</biblScope>
-                </bibl>
-            </div>
-            <div>
                 <listRelation>
                     <relation type="clerical" name="syriaca:BishopOverMonk" active="http://syriaca.org/person/51" passive="http://syriaca.org/person/2557"/>
                 </listRelation>
@@ -226,7 +217,16 @@
                 </listRelation>
                 <bibl type="primary">
                     <biblScope type="pp">
-                        <ptr target="#bibl3058-1"/>91-92</biblScope>
+                        <ptr target="#bibl3058-1"/>90-92</biblScope>
+                </bibl>
+            </div>
+            <div>
+                <listRelation>
+                    <relation type="general" name="syriaca:MemberOfGroup" active="http://syriaca.org/person/2557" passive="http://syriaca.org/person/anonymi1"/>
+                </listRelation>
+                <bibl type="primary">
+                    <biblScope type="pp">
+                        <ptr target="#bibl3058-1"/>90-92</biblScope>
                 </bibl>
             </div>
             </body>

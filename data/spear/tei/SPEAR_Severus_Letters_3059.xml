@@ -52,13 +52,19 @@
             <div>
                 <listPerson>
                     <personGrp>
-                        <persName ref="http://syriaca.org/person/anonymi1">
-                            The clergy of the metropolis of
+                        <persName ref="http://syriaca.org/person/anonymi1"><!-- See Letter I.39 #3073 -->
+                            The clergy of
                             <placeName>
                                 Apamea
                             </placeName>
+                            following the death of the bishop
+                            <persName ref="http://syriaca.org/person/2578">
+                                Isaac
+                            </persName>
                             in
-                            <date notBefore="0513" notAfter="0518">A.D. 513-518</date>
+                            <date when="0513">
+                                A.D. 513
+                            </date><!-- Alpi II, 68 -->
                         </persName>
                     </personGrp>
                 </listPerson>
@@ -69,7 +75,56 @@
             </div>
             <div>
                 <listRelation>
-                    <relation type="epistolary" name="syriaca:RecipientOfLetterFrom" active="http://syriaca.org/person/anonymi1" passive="http://syriaca.org/person/51"/>
+                    <relation type="epistolary" name="syriaca:Epistolary" active="http://syriaca.org/person/51" passive="http://syriaca.org/person/anonymi1"/>
+                </listRelation>
+                <bibl type="primary">
+                    <biblScope type="pp">
+                        <ptr target="#bibl3059-1"/>92</biblScope>
+                </bibl>
+            </div>
+            <div>
+                <listRelation>
+                    <relation type="epistolary" name="syriaca:Epistolary" active="http://syriaca.org/person/anonymi1" passive="http://syriaca.org/person/51"/>
+                </listRelation>
+                <bibl type="primary">
+                    <biblScope type="pp">
+                        <ptr target="#bibl3059-1"/>92</biblScope>
+                </bibl>
+            </div>
+            <div>
+                <listPerson>
+                    <person>
+                        <persName ref="http://syriaca.org/person/anonymous1">
+                            The rhetor of Greece
+                        </persName>
+                    </person>
+                </listPerson>
+                <bibl type="primary">
+                    <biblScope type="pp">
+                        <ptr target="#bibl3059-1"/>92</biblScope>
+                </bibl>
+            </div>
+            <div>
+                <listPerson>
+                    <person>
+                        <state type="occupation">
+                            <desc>
+                                <persName ref="http://syriaca.org/person/anonymous1/"> 
+                                    He 
+                                </persName>
+                                was a rhetor.
+                            </desc>
+                        </state>
+                    </person>
+                </listPerson>
+                <bibl type="primary">
+                    <biblScope type="pp">
+                        <ptr target="#bibl3059-1"/>93-95</biblScope>
+                </bibl>
+            </div>
+            <div>
+                <listRelation>
+                    <relation type="intellectual" name="syriaca:Citation" active="http://syriaca.org/person/anonymi1" passive="http://syriaca.org/person/anonymous1"/>
                 </listRelation>
                 <bibl type="primary">
                     <biblScope type="pp">
@@ -109,7 +164,7 @@
                                 <persName ref="http://syriaca.org/person/2578"> 
                                     Isaac 
                                 </persName>
-                                was the Bishop of
+                                was bishop of
                                 <placeName>
                                     Apamea
                                 </placeName>
@@ -124,14 +179,123 @@
             </div>
             <div>
                 <listRelation>
-                    <relation type="clerical" name="syriaca:ClergyUnderBishop" active="http://syriaca.org/person/anonymi1" passive="http://syriaca.org/person/2578"/>
+                    <relation type="clerical" name="syriaca:BishopOverClergy" active="http://syriaca.org/person/2578" passive="http://syriaca.org/person/anonymi1"/>
                 </listRelation>
                 <bibl type="primary">
                     <biblScope type="pp">
                         <ptr target="#bibl3059-1"/>93-95</biblScope>
                 </bibl>
             </div>
-            </body>
+            <div>
+                <listPerson>
+                    <person>
+                        <persName ref="http://syriaca.org/person/anonymous2">
+                            The man given stewardship of the church property of 
+                            <placeName>
+                                Apamea
+                            </placeName>
+                            after the death of 
+                            <persName>
+                                Isaac
+                            </persName>
+                            in
+                            <date when="0513"><!-- Alpi II, 68 -->
+                                A.D. 513
+                            </date>
+                        </persName>
+                    </person>
+                </listPerson>
+                <bibl type="primary">
+                    <biblScope type="pp">
+                        <ptr target="#bibl3059-1"/>95-96</biblScope>
+                </bibl>
+            </div>
+            <div>
+                <listPerson>
+                    <person>
+                        <persName ref="http://syriaca.org/person/anonymous2"/>
+                        <sex value="M">Male</sex>
+                    </person>
+                </listPerson>
+                <bibl type="primary">
+                    <biblScope type="pp">
+                        <ptr target="#bibl3059-1"/>95-96</biblScope>
+                </bibl>
+            </div>
+            <div>
+                <listPerson>
+                    <person>
+                        <state type="occupation">
+                            <desc>
+                                <persName ref="http://syriaca.org/person/anonymous2"/> 
+                                    He was a steward of church property in
+                                <placeName>
+                                    Apamea
+                                </placeName>
+                            </desc>
+                        </state>
+                    </person>
+                </listPerson>
+                <bibl type="primary">
+                    <biblScope type="pp">
+                        <ptr target="#bibl3059-1"/>95-96</biblScope>
+                </bibl>
+            </div>
+            <div>
+                <listRelation>
+                    <relation type="clerical" name="syriaca:BishopOverClergy" active="http://syriaca.org/person/2578" passive="http://syriaca.org/person/anonymous2"/>
+                </listRelation>
+                <bibl type="primary">
+                    <biblScope type="pp">
+                        <ptr target="#bibl3059-1"/>95-96</biblScope>
+                </bibl>
+            </div>
+            <div>
+                <listPerson>
+                    <personGrp>
+                        <persName ref="http://syriaca.org/person/anonymi2">
+                            The men unlawfully given stewardship of the church property of 
+                            <placeName>
+                                Apamea
+                            </placeName>
+                            after the death of 
+                            <persName>
+                                Isaac
+                            </persName>
+                            in
+                            <date when="0513"><!-- Alpi II, 68 -->
+                                A.D. 513
+                            </date>
+                        </persName>
+                    </personGrp>
+                </listPerson>
+                <bibl type="primary">
+                    <biblScope type="pp">
+                        <ptr target="#bibl3059-1"/>95-96</biblScope>
+                </bibl>
+            </div>
+            <div>
+                <listPerson>
+                    <personGrp>
+                        <persName ref="http://syriaca.org/person/anonymi2"/>
+                        <sex value="M">Male</sex>
+                    </personGrp>
+                </listPerson>
+                <bibl type="primary">
+                    <biblScope type="pp">
+                        <ptr target="#bibl3059-1"/>95-96</biblScope>
+                </bibl>
+            </div>
+            <div>
+                <listRelation>
+                    <relation type="epistolary" name="syriaca:EpistolaryReferenceTo" active="http://syriaca.org/person/51 http://syriaca.org/person/2578" passive="http://syriaca.org/person/anonymi2"/>
+                </listRelation>
+                <bibl type="primary">
+                    <biblScope type="pp">
+                        <ptr target="#bibl3059-1"/>95-96</biblScope>
+                </bibl>
+            </div>
+        </body>
         <back>
             <div>
                 <bibl xml:id="bib3059-1"><!-- REPLACE THE #### WITH THE URI NUMBER OF THE ASSIGNED LETTER -->

@@ -4,8 +4,8 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title level="a" xml:lang="en">Antioch
-                                        — <foreign xml:lang="syr">ܐܢܛܝܘܟܝܐ</foreign>
+                <title level="a" xml:lang="en">Maprianate of Tagrit
+                                        — <foreign xml:lang="syr">ܬܓܪܝܬ</foreign>
                 </title>
                 <title level="m" xml:lang="en">The Syriac Gazetteer</title>
                 <sponsor>Syriaca.org: The Syriac Reference Portal</sponsor>
@@ -25,6 +25,10 @@
                     <name ref="http://syriaca.org/documentation/editors.xml#tcarlson">Thomas A. Carlson</name>
                 </respStmt>
                 <respStmt>
+                    <resp>Syriac description entry by</resp>
+                    <name ref="http://syriaca.org/documentation/editors.xml#raydin">Robert Aydin</name>
+                </respStmt>
+                <respStmt>
                     <resp>Wilmshurst index information entry by</resp>
                     <name ref="http://syriaca.org/documentation/editors.xml#adavis">Anthony Davis</name>
                 </respStmt>
@@ -34,7 +38,7 @@
             </editionStmt>
             <publicationStmt>
                 <authority>Syriaca.org: The Syriac Reference Portal</authority>
-                <idno type="URI">http://syriaca.org/place/2617/tei</idno>
+                <idno type="URI">http://syriaca.org/place/193/tei</idno>
                 <availability>
                     <licence target="http://creativecommons.org/licenses/by/3.0/">
                         <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
@@ -55,7 +59,7 @@
                         </p>
                     </licence>
                 </availability>
-                <date>2016-05-26-11:00</date>
+                <date>2016-05-26-04:00</date>
             </publicationStmt>
             <sourceDesc>
                 <p>Born digital.</p>
@@ -87,78 +91,101 @@
             </langUsage>
         </profileDesc>
         <revisionDesc status="published">
-            <change who=" http://syriaca.org/documentation/editors.xml#dmichelson" when="2016-05-26-11:00">CREATED: place</change>
+            <change who=" http://syriaca.org/documentation/editors.xml#dmichelson" when="2016-5-26-04:00">CREATED: place</change>
         </revisionDesc>
     </teiHeader>
     <text>
         <body>
             <listPlace>
                 <place xml:id="place-2617" type="diocese">
-                    <placeName xml:id="name2617-1" xml:lang="en" syriaca-tags="#syriaca-headword" source="#bib2617-2 #bib2617-5 #bib2617-6 #bib2617-7">Antioch</placeName>
-                    <placeName xml:id="name2617-2" xml:lang="en" source="#bib2617-2">Antakya</placeName>
-                    <placeName xml:id="name2617-3" xml:lang="syr" syriaca-tags="#syriaca-headword">ܐܢܛܝܘܟܝܐ</placeName>
-                    <placeName xml:id="name2617-4" xml:lang="syr-Syrj" source="#bib2617-3">ܐܰܢܛܝܘܟܝܰܐ</placeName>
-                    <placeName xml:id="name2617-5" xml:lang="ar" source="#bib2617-4">انطاكية</placeName>
-                    <placeName xml:id="name2617-6" xml:lang="ar" source="#bib2617-8">أَنطاكِيَة</placeName>
-                    <desc xml:id="abstract-en-2617" xml:lang="en">Patriarchal diocese centered on the city of <placeName ref="http://syriaca.org/place/10">Antioch</placeName>.</desc>
+                    <placeName xml:id="name2617-1" xml:lang="en" syriaca-tags="#syriaca-headword" source="#bib2617-2 #bib2617-9">Maphrianate of Tagrit</placeName>
+                    <placeName xml:id="name2617-9" xml:lang="en" source="#bib2617-9">Maphrianate of the East</placeName>
+                    <placeName xml:id="name2617-2" xml:lang="en" source="#bib2617-2">Tikrit</placeName>
+                    <placeName xml:id="name2617-3" xml:lang="en" source="#bib2617-2 #bib2617-5">Takrit</placeName>
+                    <placeName xml:id="name2617-4" xml:lang="syr" syriaca-tags="#syriaca-headword">ܬܓܪܝܬ</placeName>
+                    <placeName xml:id="name2617-5" xml:lang="syr-Syrj" source="#bib2617-3">ܬܰܓܪܝܬ</placeName>
+                    <placeName xml:id="name2617-6" xml:lang="ar" source="#bib2617-4">تكريت</placeName>
+                    <placeName xml:id="name2617-7" xml:lang="en" source="#bib2617-7">Tagrīt</placeName>
+                    <placeName xml:id="name2617-8" xml:lang="ar" source="#bib2617-8">تَكريت</placeName>
+                    <desc xml:lang="en">
+                        <quote source="#bib2617-1">532. Tagrit</quote>
+                    </desc>
+                    <desc xml:id="abstract-en-2617" xml:lang="en">
+                        <quote source="#bib2617-9">Maphrianate of Tagrit, also known as the Maphrianate of the East. It was established in the 7th. cent. in order to give the Miaphysite Syr. Orth. a hierarchy structure in <placeName ref="http://syriaca.org/place/150">the Persian empire</placeName>.</quote>
+                    </desc>
+                    <desc xml:lang="syr-Syrj">
+                        <quote source="#bib2617-3">ܡܕܺܝܢܬܐ ܕܒܶܝܬ ܒܓܕܕ ܠܡܰܘܨܠ ܐܰܬܛܰܒܒܬ ܗܘܳܬ ܒܕܳܪ̈ܐ ܕܰܥܒܰܪܘ ܒܟܘܽܪܣܝܳܐ ܕܡܰܦܪܝܢܘܬܐ ܕܡܰܕܢܚܐ ܡܶܢ ܫܢܰܬ 628 ܥܕܰܡܐ ܠܫܘܠܳܡܐ ܕܡܰܐܬܐ ܬܪܶܥܣܝܪܳܝܬܐ.</quote>
+                    </desc>
+                    <desc xml:lang="ar">
+                        <quote source="#bib2617-4">بلدة بين بغداد والموصل غربي دجلة كانت في العصور الذاهبة اشتهرت بكرسي مفارنة المشرق من سنة 628 م حتى منسلخ المئة الثانية عشرة</quote>
+                    </desc>
+                    <desc xml:lang="en">
+                        <quote source="#bib2617-5">west of the Tigris, between Baghdad and Mosul.... it was the seat of the Maphryonos of the East from 628 until the end of the twelfth century.</quote>
+                    </desc>
                     <location type="gps" source="#bib2617-2">
-                        <geo>36.2 36.15</geo>
+                        <geo>34.6 43.68333</geo>
                     </location>
-                    <state type="existence" from="0100" to="2013" syriaca-computed-end="2013-01-01">
-                        <precision match="@from" notAfter="0100"/>
-                        <precision match="@to" notBefore="2013" syriaca-computed-start="2013-01-01"/>
+                    <state type="existence" from="0628" to="1089" syriaca-computed-end="1089-01-01" syriaca-computed-start="0628-01-01">
+                        <precision match="@from" notAfter="0628" syriaca-computed-end="0628-01-01"/>
+                        <precision match="@to" notBefore="1089" syriaca-computed-start="1089-01-01"/>
                     </state>
                     <idno type="URI">http://syriaca.org/place/2617</idno>
                     <idno type="URI">
-                                            http://www.csc.org.il/db/browse.aspx?db=SB&amp;sL=A&amp;sK=Antioch&amp;sT=keywords
+                                            http://www.csc.org.il/db/browse.aspx?db=SB&amp;sL=T&amp;sK=Tagrit&amp;sT=keywords
                                         </idno>
                     <bibl xml:id="bib2617-1">
-                        <author>H.Takahashi</author>
-                        <title level="a" xml:lang="en">36. Antioch</title>
+                        <author>A. Harrak </author>
+                        <title level="a" xml:lang="en">532. Tagrit</title>
                         <title level="m" xml:lang="en">The Gorgias Encyclopedic Dictionary of the Syriac Heritage</title>
                         <ptr target="http://syriaca.org/bibl/1"/>
-                        <citedRange unit="pp">21-23</citedRange>
+                        <citedRange unit="pp">395-396</citedRange>
                     </bibl>
                     <bibl xml:id="bib2617-2">
                         <title xml:lang="en">The Gorgias Encyclopedic Dictionary of the Syriac Heritage</title>
                         <ptr target="http://syriaca.org/bibl/1"/>
-                        <citedRange unit="pp">5, 10, 14–15, 21–23, 37–38 (with fig. 9), 43, 44, 54, 60, 68, 72, 86, 99, 103–105, 107–108, 110, 125, 135–136, 145, 155, 173–174, 196, 207, 209–211 (with fig. 58), 213, 227, 229, 231, 236, 238, 240, 248–249, 258–259, 265, 269, 270–271, 280, 281, 283, 285, 288, 306, 307, 308, 317–318, 322–323, 332–333, 339, 347, 351, 366, 368, 377, 389, 393–394, 395, 401–402, 403, 410, 412, 418, 419, 427, 432, 443, 446, 447, 448</citedRange>
-                        <citedRange unit="maps">Map I A2, II A2</citedRange>
+                        <citedRange unit="pp">39–40 (with fig. 13), 71, 97, 104, 127, 199, 210, 249, 264, 273, 290, 300, 302, 313, 347, 386, 395–396 (with fig. 115), 407, 429</citedRange>
+                        <citedRange unit="maps">Map I C2, II C2</citedRange>
                     </bibl>
                     <bibl xml:id="bib2617-3">
                         <title xml:lang="syr">ܒܪ̈ܘܠܐ ܒܕܝܪ̈ܐ ܕܥܠ ܡܪܕܘܬ ܝܘܠܦܢ̈ܐ ܣܘܪ̈ܝܝܐ ܗܕܝܪ̈ܐ</title>
                         <ptr target="http://syriaca.org/bibl/3"/>
-                        <citedRange unit="pp">535</citedRange>
+                        <citedRange unit="pp">537</citedRange>
                     </bibl>
                     <bibl xml:id="bib2617-4">
                         <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب السريانية</title>
                         <ptr target="http://syriaca.org/bibl/2"/>
-                        <citedRange unit="pp">504</citedRange>
+                        <citedRange unit="pp">505</citedRange>
                     </bibl>
                     <bibl xml:id="bib2617-5">
                         <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and Sciences</title>
                         <ptr target="http://syriaca.org/bibl/4"/>
-                        <citedRange unit="pp">551</citedRange>
+                        <citedRange unit="pp">559</citedRange>
                     </bibl>
                     <bibl xml:id="bib2617-6">
                         <title xml:lang="en">The Comprehensive Bibliography on Syriac Christianity</title>
                         <ptr target="http://syriaca.org/bibl/5"/>
-                        <citedRange unit="entry" target="http://www.csc.org.il/db/browse.aspx?db=SB&amp;sL=A&amp;sK=Antioch&amp;sT=keywords">Antioch</citedRange>
+                        <citedRange unit="entry" target="http://www.csc.org.il/db/browse.aspx?db=SB&amp;sL=T&amp;sK=Tagrit&amp;sT=keywords">Tagrit</citedRange>
                     </bibl>
                     <bibl xml:id="bib2617-7">
                         <author>David Wilmshurst</author>
                         <title xml:lang="en">The Ecclesiastical Organisation of the Church of the East, 1318-1913</title>
-                        <citedRange unit="pp">65</citedRange>
+                        <citedRange unit="pp">19, 177, 178, 346</citedRange>
                         <ptr target="http://syriaca.org/bibl/9"/>
                     </bibl>
                     <bibl xml:id="bib2617-8">
                         <title xml:lang="en" level="m">Muʿjam al-buldān</title>
                         <author>Yāqūt al-Ḥamawī</author>
                         <ptr target="http://syriaca.org/bibl/636"/>
-                        <citedRange unit="pp">I:316</citedRange>
+                        <citedRange unit="pp">II:45</citedRange>
+                    </bibl>
+                    <bibl xml:id="bib2617-9">
+                        <author>G. A. Kiraz</author>
+                        <title level="a" xml:lang="en">Maphrian</title>
+                        <title level="m" xml:lang="en">The Gorgias Encyclopedic Dictionary of the Syriac Heritage</title>
+                        <ptr target="http://syriaca.org/bibl/1"/>
+                        <citedRange unit="pp">264-265</citedRange>
                     </bibl>
                 </place>
-                <relation name="share-a-name" mutual="#place-2617  http://syriaca.org/place/995 http://syriaca.org/place/10"/>
             </listPlace>
         </body>
     </text>

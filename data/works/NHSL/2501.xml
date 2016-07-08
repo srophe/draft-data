@@ -126,8 +126,10 @@
     <text>
         <body>
             <!-- using @type on bibl for lawd class -->
+            <!-- Think about whether the subject classification should be an element instead of attribute. -->
             <bibl xml:id="work-2501" type="lawd:ConceptualWork" ana="http://syriaca.org/documentation/work-subject-classifications.xml#history-universal">
-                <!--<title xml:id="name2501-1" xml:lang="syr" source="#bib2501-1 #bib2501-2" syriaca-tags="#syriaca-headword">ܡܟܬܒܢܘܬ ܙܒ̈ܢܐ</title>-->
+                <!-- Start working up the decision tree for choosing headword - see meeting notes. 
+                Possibly use a headword that has the Latin in parentheses when it's common parlance -->
                 <title xml:id="name2501-1" xml:lang="en" syriaca-tags="#syriaca-headword #syriaca-anglicized">Chronicle, Part 1</title>
                 <title xml:id="name2500-2" xml:lang="syr" source="#bib2501-2 #bib2501-9" syriaca-tags="#syriaca-headword">ܦܠܓܘܬܐ ܩܕܡܝܬܐ ܕܟܪܘܢܘܓܪܦܝܐ</title>
                 <title xml:id="name2501-3" xml:lang="la" source="#bib2501-8">Chronicon Syriacum</title>
@@ -136,9 +138,9 @@
                 <title xml:id="name2501-6" xml:lang="en" source="#bib2501-5">The First Part of the Chronography</title>
                 <title xml:id="name2501-7" xml:lang="syr-Syrj" source="#bib2501-13">ܡܰܟܬܒܢܽܘܬ ܙܰܒܢ̈ܶܐ ܕܥܠܡܐ</title>
                 <title xml:id="name2501-8" xml:lang="de" source="#bib2501-13">Weltgeschichte</title>
-                <author>
-                    <persName xml:lang="en"><forename sort="2">Gregorius</forename><addName type="family" sort="1">Bar Hebraeus</addName></persName> — 
-                    <persName xml:lang="syr"><forename sort="2">ܓܪܝܓܘܪܝܘܣ</forename><addName type="family" sort="1">ܒܪ ܥܒܪܝܐ</addName></persName>
+                <author ref="http://syriaca.org/person/239">
+                    <persName xml:lang="en">Gregorius Bar Hebraeus</persName> — 
+                    <persName xml:lang="syr">ܓܪܝܓܘܪܝܘܣ ܒܪ ܥܒܪܝܐ</persName>
                 </author>
                 <textLang mainLang="syr"/>
                 <!-- check date more precisely-->
@@ -150,10 +152,15 @@
                     <bibl><title>Chronicle</title><ptr target="http://syriaca.org/work/2500"/></bibl>; an account of secular history from the time of <persName ref="http://syriaca.org/person/1560">Adam</persName> until 
                     <persName ref="http://syriaca.org/person/239">Bar Hebraeus</persName>' own time (the 13th century).
                     Through the 12th century, it is largely an abridgement of <persName ref="http://syriaca.org/person/217">Michael the Syrian</persName>'s <bibl>Chronicle</bibl>.
-                This work should be distinguished from the Arabic <bibl>History of the Dynasties</bibl>, which reflects a similar structure but has significant differences, 
-                including some additions that may be from Islamic sources.</note>
+                </note>
                 
+                <note type="disambiguation">This work should be distinguished from the Arabic <bibl>History of the Dynasties</bibl>, which reflects a similar structure but has significant differences, 
+                    including some additions that may be from Islamic sources.</note>
                 
+                <!-- Scope and content notes are part of finding aid ... May overlap with abstract. Scope note could say this work is part of 
+                a larger work whcih also contains ... -->
+                
+                <!-- change this back to just using notes for each one instead of seg -->
                 <!--<note xml:lang="syr" type="prologue" source="#bib2501-1">
                     <quote>ܐܡܪ ܐܦܢ ܠܐ ܣܦܿܩ ܐܢܐ: ܐܫܬܥܐ ܐܦܢ ܠܐ ܡܘܦܐ ܐܢܐ.</quote>
                 </note>

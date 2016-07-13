@@ -128,13 +128,18 @@
             <!-- using @type on bibl for lawd class -->
             <bibl xml:id="work-2500" type="lawd:ConceptualWork" ana="http://syriaca.org/documentation/work-subject-classifications.xml#history-universal">
                 <!-- We should decide whetehr we want to use "kthaba d-" on the beginning of Syriac titles -->
-                <title xml:id="name2500-1" xml:lang="syr" source="#bib2500-1 #bib2500-2" syriaca-tags="#syriaca-headword">ܡܟܬܒܢܘܬ ܙܒ̈ܢܐ</title>
+                <title xml:id="name2500-1" xml:lang="syr" source="#bib2500-1 #bib2500-2 #bib2500-12" syriaca-tags="#syriaca-headword">ܡܟܬܒܢܘܬ ܙܒ̈ܢܐ</title>
                 <title xml:id="name2500-2" xml:lang="en" source="#bib2500-6 #bib2500-8" syriaca-tags="#syriaca-headword #syriaca-anglicized">Chronicle</title>
                 <title xml:id="name2500-3" xml:lang="en-x-gedsh" source="#bib2500-6">Maktbonut zabne</title>
                 <title xml:id="name2500-4" xml:lang="en" source="#bib2500-8">Maktbanuth zabne</title>
                 <title xml:id="name2500-5" xml:lang="en" source="#bib2500-9" syriaca-tags="#syriaca-anglicized">Chronography</title>
                 <title xml:id="name2500-6" xml:lang="syr" source="#bib2500-10">ܟܪܘܢܘܓܪܦܝܐ</title>
                 <title xml:id="name2500-7" xml:lang="en" source="#bib2500-9" syriaca-tags="#syriaca-anglicized">The Book of the Chronicle of the Generations [of Kings]</title>
+                <title xml:id="name2500-8" xml:lang="la" source="#bib2500-12 #bib2500-15">Chronicon Syriacum</title><!-- This is confusing, should we include it? -->
+                <title xml:id="name2500-9" xml:lang="la" source="#bib2500-12">Chronographia</title>
+                <title xml:id="name2500-10" xml:lang="de" source="#bib2500-13">Chronographie</title>
+                <!-- how should we code Baumstark transliterations? -->
+                <title xml:id="name2500-11" xml:lang="de-x-bmst" source="#bib2500-12">Mak(h)tĕb(h)ànût(h) zab(h)nē</title>
                 <author ref="http://syriaca.org/person/239">
                     <persName xml:lang="en"><forename sort="2">Gregorius</forename><addName type="family" sort="1">Bar Hebraeus</addName></persName> — 
                     <persName xml:lang="syr"><forename sort="2">ܓܪܝܓܘܪܝܘܣ</forename><addName type="family" sort="1">ܒܪ ܥܒܪܝܐ</addName></persName>
@@ -183,37 +188,63 @@
                 
                 
                 
-                <!-- I don't see a general lawd class for manuscripts - only lawd:AssembledWork or lawd:Hand
-                    Only in some cases will we be able to specify @type more specifically as one of these -->
-                <!--<bibl type="lawd:WrittenWork" xml:id="bib2500-6">
+                <bibl type="lawd:WrittenWork" xml:id="bib2500-11">
                     <msIdentifier>
-                        <country>Germany</country>
-                        <settlement>Berlin</settlement>
-                        <collection xml:lang="de">Königliche Bibliothek</collection>
-                        <idno type="URI">http://syriaca.org/manuscript/20001</idno>
+                        <settlement ref="http://syriaca.org/place/1449">Vatican City</settlement>
+<!--                        <institution>University of Oxford</institution>-->
+<!--                        <repository>Bodleian Libraries</repository>-->
+<!--                        <collection>Huntingdon</collection>-->
+                        <!--                        <idno type="URI">http://syriaca.org/manuscript/20001</idno>-->
+                        <idno type="URI">http://digi.vatlib.it/mss/detail/Vat.sir.166</idno>
                         <altIdentifier>
-                            <idno type="KB-Shelfmark">or. oct. 1257</idno>
-                            <note xml:lang="fr">Assfalg 27, olim Abbeloos, dein Bedjan, copié sur ms Diyarbakir, Archevêché chaldéen, cod. 96 [nunc Mardin, Évêché chaldéen, y vu en 1969]</note>
+                            <!-- Should we create an idno type for each repository and catalogue? -->
+                            <idno type="Vat-Shelfmark">Vat. sir. 166</idno><!-- From Wright's history. double-check repository -->
+                            <!-- How should we encode the following kind of catalog reference? -->
+                        </altIdentifier>
+                        <altIdentifier>
+                            <idno type="Vat-Shelfmark">Codd. Orientales, ab Andrea Scandar 24</idno><!-- ? Old shelfmark acc. to Hyvernat's concordance. -->
                         </altIdentifier>
                     </msIdentifier>
-                    <biblScope>
-                        <locus from="1" to="23">p. 1-23</locus>
-                        <idno type="URI">http://syriaca.org/manuscript/20001#a1</idno>
-                    </biblScope>
+                    <date notAfter="1357" source="#bib2500-13">before 1356/1357</date>                    
+                    <note>Described in 
+                        <bibl type="lawd:Citation" xml:id="bib2500-12">
+                            <title level="m" xml:lang="la">Bibliothecae apostolicae vaticanae codicum manuscriptorum catalogus</title>
+                            <idno type="zotero">747</idno>
+                            <citedRange unit="pp" from="338" to="341" target="https://archive.org/stream/AssemaniBAVI3/Assemani_BAV_I-3#page/n343">338-341</citedRange>
+                        </bibl>
+                    </note>
                 </bibl>
-                <bibl type="lawd:WrittenWork" xml:id="bib2500-9">
+                <bibl type="lawd:WrittenWork" xml:id="bib2500-14">
                     <msIdentifier>
-                        <collection>Vatican</collection>
-                        <idno type="URI">http://syriaca.org/manuscript/20002</idno>
+                        <country ref="http://syriaca.org/place/592">Italy</country>
+                        <settlement ref="http://syriaca.org/place/820">Florence</settlement>
+                        <!--                        <institution>University of Oxford</institution>-->
+                        <repository>Biblioteca Medicea Laurenziana</repository>
+                        <!--                        <collection>Huntingdon</collection>-->
+                        <!--                        <idno type="URI">http://syriaca.org/manuscript/20001</idno>-->
+                        <!-- Should we have a specific way of marking links to online ms images?  -->
+                        <idno type="URI">http://mss.bmlonline.it/s.aspx?Id=AVKpZgTlfJ8ZMCf2i5w5#/book</idno>
                         <altIdentifier>
-                            <idno type="VT-Shelfmark">Syr. 161</idno>
+                            <idno type="URI">http://www.e-corpus.org/eng/ref/163871/Firenze_BML_Or._366_[Assemani_118]/</idno>
+                        </altIdentifier>
+                        <altIdentifier>
+                            <idno type="BML">IT:FI0100_Or.366</idno>
+                        </altIdentifier>
+                        <altIdentifier>
+                            <idno type="BML-Shelfmark">Or.366</idno>
+                        </altIdentifier>
+                        <altIdentifier>
+                            <idno type="BMP-Shelfmark">Palat. Medic. 118</idno>
                         </altIdentifier>
                     </msIdentifier>
-                    <biblScope>
-                        <locus from="61" to="64v">ff. 61-64v</locus>
-                        <idno type="URI">http://syriaca.org/manuscript/20002#b1</idno>
-                    </biblScope>
-                </bibl>-->
+                    <note>Described in 
+                        <bibl type="lawd:Citation" xml:id="bib2500-15">
+                            <title level="m" xml:lang="la">Bibliothecae Mediceae Lavrentianae et Palatinae codicum mms. orientalium catalogus</title>
+                            <idno type="zotero">749</idno>
+                            <citedRange unit="pp" from="190" to="197" target="https://archive.org/stream/AssemaniBML/Assemani_BML#page/n323">190-197</citedRange>
+                        </bibl>
+                    </note>
+                </bibl>
                 
                 
                 
@@ -253,6 +284,11 @@
                     <idno type="zotero">736</idno>
                     <citedRange unit="pp" target="https://archive.org/stream/Bedjan1890GregoriiBarhebraeiChroniconSyriacum/Bedjan 1890_Gregorii Barhebraei Chronicon Syriacum#page/n608">1</citedRange>
                     <citedRange unit="pp" target="https://archive.org/stream/Bedjan1890GregoriiBarhebraeiChroniconSyriacum/Bedjan 1890_Gregorii Barhebraei Chronicon Syriacum#page/n606">3</citedRange>
+                </bibl>
+                <bibl type="lawd:Citation" xml:id="bib2500-13">
+                    <title level="m" xml:lang="de">Geschichte der syrischen Literatur mit Ausschluß der christlich-palästinensischen Texte</title>
+                    <ptr target="http://syriaca.org/bibl/638"/>
+                    <citedRange unit="pp" from="318" to="319">318-319</citedRange>
                 </bibl>
                     
                 

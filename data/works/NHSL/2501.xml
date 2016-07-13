@@ -137,7 +137,11 @@
                 <title xml:id="name2501-5" xml:lang="de" source="#bib2501-9">Syrische Chronik</title>
                 <title xml:id="name2501-6" xml:lang="en" source="#bib2501-5">The First Part of the Chronography</title>
                 <title xml:id="name2501-7" xml:lang="syr-Syrj" source="#bib2501-13">ܡܰܟܬܒܢܽܘܬ ܙܰܒܢ̈ܶܐ ܕܥܠܡܐ</title>
-                <title xml:id="name2501-8" xml:lang="de" source="#bib2501-13">Weltgeschichte</title>
+                <title xml:id="name2501-8" xml:lang="de" source="#bib2501-13 #bib2501-25">Weltgeschichte</title>
+                <title xml:id="name2501-9" xml:lang="en" source="#bib2501-22">Universal History, Part i.</title>
+                <title xml:id="name2501-10" xml:lang="en" source="#bib2501-22">History of the World</title>
+                <title xml:id="name2501-11" xml:lang="la" source="#bib2501-24">Pars Prima [Chronographiae]</title>
+                <title xml:id="name2501-12" xml:lang="la" source="#bib2501-33">Pars I. Chronicon Patrum, &amp; Regum</title>
                 <author ref="http://syriaca.org/person/239">
                     <persName xml:lang="en">Gregorius Bar Hebraeus</persName> — 
                     <persName xml:lang="syr">ܓܪܝܓܘܪܝܘܣ ܒܪ ܥܒܪܝܐ</persName>
@@ -226,6 +230,7 @@
                 
                 <!-- I don't see a general lawd class for manuscripts - only lawd:AssembledWork or lawd:Hand
                     Only in some cases will we be able to specify @type more specifically as one of these -->
+                <!-- We should mint mss URIs -->
                 <bibl type="lawd:WrittenWork" xml:id="bib2501-14">
                     <msIdentifier>
                         <country ref="http://syriaca.org/place/700">United Kingdom</country>
@@ -268,6 +273,173 @@
                         <locus from="1" to="188">ff. 1-188</locus>
 <!--                        <idno type="URI">http://syriaca.org/manuscript/20001#a1</idno>-->
                     </biblScope>
+                </bibl>
+                <bibl type="lawd:WrittenWork" xml:id="bib2501-23">
+                    <msIdentifier>
+                        <settlement ref="http://syriaca.org/place/1449">Vatican City</settlement>
+                        <!--                        <institution>University of Oxford</institution>-->
+                        <!--                        <repository>Bodleian Libraries</repository>-->
+                        <!--                        <collection>Huntingdon</collection>-->
+                        <!--                        <idno type="URI">http://syriaca.org/manuscript/20001</idno>-->
+                        <idno type="URI">http://digi.vatlib.it/mss/detail/Vat.sir.166</idno>
+                        <altIdentifier>
+                            <!-- Should we create an idno type for each repository and catalogue? -->
+                            <idno type="Vat-Shelfmark">Vat. sir. 166</idno>
+                        </altIdentifier>
+                        <altIdentifier>
+                            <idno type="Vat-Shelfmark">Codd. Orientales, ab Andrea Scandar 24</idno>
+                        </altIdentifier>
+                    </msIdentifier>
+                    <biblScope>
+                        <locus from="1" to="243b">ff. 1-243v.</locus>
+                        <!--                        <idno type="URI">http://syriaca.org/manuscript/20001#a1</idno>-->
+                    </biblScope>
+                    <!-- How should we encode the following kind of catalog reference? -->
+                    <note>Described in 
+                        <bibl type="lawd:Citation" xml:id="bib2501-24">
+                            <title level="m" xml:lang="la">Bibliothecae apostolicae vaticanae codicum manuscriptorum catalogus</title>
+                            <idno type="zotero">747</idno>
+                            <citedRange unit="pp" from="338" to="341" target="https://archive.org/stream/AssemaniBAVI3/Assemani_BAV_I-3#page/n343">338-341</citedRange>
+                        </bibl>
+                    </note>
+                </bibl>
+                <bibl type="lawd:WrittenWork" xml:id="bib2501-26">
+                    <msIdentifier>
+                        <settlement ref="http://syriaca.org/place/1449">Vatican City</settlement>
+                        <!--                        <institution>University of Oxford</institution>-->
+                        <!--                        <repository>Bodleian Libraries</repository>-->
+                        <!--                        <collection>Huntingdon</collection>-->
+                        <!--                        <idno type="URI">http://syriaca.org/manuscript/20001</idno>-->
+                        <idno type="URI">http://digi.vatlib.it/mss/detail/Vat.sir.383</idno>
+                        <altIdentifier>
+                            <!-- Should we create an idno type for each repository and catalogue? -->
+                            <idno type="Vat-Shelfmark">Vat. sir. 383</idno>
+                        </altIdentifier>
+                        <altIdentifier>
+                            <idno type="Vat-Shelfmark">Assemani 126</idno><!-- What is the official name of this collection? -->
+                        </altIdentifier>
+                    </msIdentifier>
+                    <!-- How should we encode the following kind of catalog reference? -->
+                    <note>Described in 
+                        <bibl type="lawd:Citation" xml:id="bib2501-27">
+                            <title level="m" xml:lang="la">Codices chaldaici sive syriaci Vaticani Assemaniani</title>
+                            <idno type="zotero">748</idno>
+                            <citedRange unit="pp" from="48" to="48" target="https://archive.org/stream/AssemaniAndAssemaniCodicesChaldaiciSiveSyriaciVaticaniAssemanianianotherVersion/assemani%20and%20assemani%20codices%20chaldaici%20sive%20syriaci%20vaticani%20assemaniani%20%28another%20version%29#page/n47">48</citedRange>
+                        </bibl>
+                    </note>
+                    <note>This manuscript contains the beginning of the chronicle through the year A.D. 1034 (A.G. 1346)</note>
+                </bibl>
+                <bibl type="lawd:WrittenWork" xml:id="bib2501-28">
+                    <msIdentifier>
+                        <settlement ref="http://syriaca.org/place/1449">Vatican City</settlement>
+                        <!--                        <institution>University of Oxford</institution>-->
+                        <!--                        <repository>Bodleian Libraries</repository>-->
+                        <!--                        <collection>Huntingdon</collection>-->
+                        <!--                        <idno type="URI">http://syriaca.org/manuscript/20001</idno>-->
+                        <idno type="URI">http://digi.vatlib.it/mss/detail/Vat.sir.384</idno>
+                        <altIdentifier>
+                            <!-- Should we create an idno type for each repository and catalogue? -->
+                            <idno type="Vat-Shelfmark">Vat. sir. 384</idno>
+                        </altIdentifier>
+                        <altIdentifier>
+                            <idno type="Vat-Shelfmark">Assemani 127</idno><!-- What is the official name of this collection? -->
+                        </altIdentifier>
+                    </msIdentifier>
+                    <!-- How should we encode the following kind of catalog reference? -->
+                    <note>Described in 
+                        <bibl type="lawd:Citation" xml:id="bib2501-29">
+                            <title level="m" xml:lang="la">Codices chaldaici sive syriaci Vaticani Assemaniani</title>
+                            <idno type="zotero">748</idno>
+                            <citedRange unit="pp" from="48" to="48" target="https://archive.org/stream/AssemaniAndAssemaniCodicesChaldaiciSiveSyriaciVaticaniAssemanianianotherVersion/assemani%20and%20assemani%20codices%20chaldaici%20sive%20syriaci%20vaticani%20assemaniani%20%28another%20version%29#page/n47">48</citedRange>
+                        </bibl>
+                    </note>
+                    <note>This manuscript is a continuation of Vat. sir. 383, from the years A.D. 1035 (A.G. 1347) to A.D. 1201 (A.G. 1513).</note>
+                </bibl>
+                <bibl type="lawd:WrittenWork" xml:id="bib2501-30">
+                    <msIdentifier>
+                        <settlement ref="http://syriaca.org/place/1449">Vatican City</settlement>
+                        <!--                        <institution>University of Oxford</institution>-->
+                        <!--                        <repository>Bodleian Libraries</repository>-->
+                        <!--                        <collection>Huntingdon</collection>-->
+                        <!--                        <idno type="URI">http://syriaca.org/manuscript/20001</idno>-->
+                        <idno type="URI">http://digi.vatlib.it/mss/detail/Vat.sir.385</idno>
+                        <altIdentifier>
+                            <!-- Should we create an idno type for each repository and catalogue? -->
+                            <idno type="Vat-Shelfmark">Vat. sir. 385</idno>
+                        </altIdentifier>
+                        <altIdentifier>
+                            <idno type="Vat-Shelfmark">Assemani 128</idno><!-- What is the official name of this collection? -->
+                        </altIdentifier>
+                    </msIdentifier>
+                    <!-- How should we encode the following kind of catalog reference? -->
+                    <note>Described in 
+                        <bibl type="lawd:Citation" xml:id="bib2501-31">
+                            <title level="m" xml:lang="la">Codices chaldaici sive syriaci Vaticani Assemaniani</title>
+                            <idno type="zotero">748</idno>
+                            <citedRange unit="pp" from="48" to="49" target="https://archive.org/stream/AssemaniAndAssemaniCodicesChaldaiciSiveSyriaciVaticaniAssemanianianotherVersion/assemani%20and%20assemani%20codices%20chaldaici%20sive%20syriaci%20vaticani%20assemaniani%20%28another%20version%29#page/n47">48</citedRange>
+                        </bibl>
+                    </note>
+                    <note>This manuscript is a continuation of Vat. sir. 384, from the years A.D. 1202 (A.G. 1514) to A.D. 1288 (A.G. 1600).</note>
+                    <!-- Continuations of chronicle are in Vat. sir. 385 -->
+                </bibl>
+                <bibl type="lawd:WrittenWork" xml:id="bib2501-32">
+                    <msIdentifier>
+                        <country ref="http://syriaca.org/place/592">Italy</country>
+                        <settlement ref="http://syriaca.org/place/820">Florence</settlement>
+                        <!--                        <institution>University of Oxford</institution>-->
+                        <repository>Biblioteca Medicea Laurenziana</repository>
+                        <!--                        <collection>Huntingdon</collection>-->
+                        <!--                        <idno type="URI">http://syriaca.org/manuscript/20001</idno>-->
+                        <!-- Should we have a specific way of marking links to online ms images?  -->
+                        <idno type="URI">http://mss.bmlonline.it/s.aspx?Id=AVKpZgTlfJ8ZMCf2i5w5#/book</idno>
+                        <altIdentifier>
+                            <idno type="URI">http://www.e-corpus.org/eng/ref/163871/Firenze_BML_Or._366_[Assemani_118]/</idno>
+                        </altIdentifier>
+                        <altIdentifier>
+                            <idno type="BML">IT:FI0100_Or.366</idno>
+                        </altIdentifier>
+                        <altIdentifier>
+                            <idno type="BML-Shelfmark">Or.366</idno>
+                        </altIdentifier>
+                        <altIdentifier>
+                            <idno type="BMP-Shelfmark">Palat. Medic. 118</idno>
+                        </altIdentifier>
+                    </msIdentifier>
+                    <note>Described in 
+                        <bibl type="lawd:Citation" xml:id="bib2501-33">
+                            <title level="m" xml:lang="la">Bibliothecae Mediceae Lavrentianae et Palatinae codicum mms. orientalium catalogus</title>
+                            <idno type="zotero">749</idno>
+                            <citedRange unit="pp" from="190" to="197" target="https://archive.org/stream/AssemaniBML/Assemani_BML#page/n323">190-197</citedRange>
+                        </bibl>
+                    </note>
+                    <note>Assemani does not mention which folios part 1 comprises.</note>
+                </bibl>
+                <bibl type="lawd:WrittenWork" xml:id="bib2501-34">
+                    <msIdentifier>
+                        <settlement ref="http://syriaca.org/place/1449">Vatican City</settlement>
+                        <!--                        <institution>University of Oxford</institution>-->
+                        <!--                        <repository>Bodleian Libraries</repository>-->
+                        <!--                        <collection>Huntingdon</collection>-->
+                        <!--                        <idno type="URI">http://syriaca.org/manuscript/20001</idno>-->
+                        <idno type="URI">http://digi.vatlib.it/mss/detail/Vat.sir.167</idno>
+                        <altIdentifier>
+                            <idno type="Vat-Shelfmark">Vat. sir. 167</idno>
+                        </altIdentifier>
+                        <altIdentifier>
+                            <idno type="Vat-Shelfmark">Prop. 14</idno>
+                        </altIdentifier>
+                    </msIdentifier>
+                    <biblScope>
+                        <locus from="1" to="161" target="http://mss.bmlonline.it/s.aspx?Id=AVKpZgTlfJ8ZMCf2i5w5#/oro/15">ff. 1-161</locus>
+                        <!--                        <idno type="URI">http://syriaca.org/manuscript/20001#a1</idno>-->
+                    </biblScope>
+                    <note>Described in 
+                        <bibl type="lawd:Citation" xml:id="bib2501-35">
+                            <title level="m" xml:lang="la">Bibliothecae apostolicae vaticanae codicum manuscriptorum catalogus</title>
+                            <idno type="zotero">747</idno>
+                            <citedRange unit="pp" from="341" to="342" target="https://archive.org/stream/AssemaniBAVI3/Assemani_BAV_I-3#page/n345">341-342</citedRange>
+                        </bibl>
+                    </note>
                 </bibl>
                 <!-- Vaticani = Berol. 343 Sachau -->
                 
@@ -315,12 +487,26 @@
                 <bibl type="lawd:Translation" xml:id="bib2501-19" source="#bib2501-7">
                     <lang>tr</lang>
                     <title level="m" xml:lang="tr">Abûʼl Farac tarı̇hı̇</title>
-                    <!--<idno type="zotero">743</idno>
-                    <note>A republication of Ishaq Armalet's translation in al-Mashriq, but starting at Bedjan, page 122 
-                        regarding Abū al-ʿAbbās and with an added introduction by Fiey.</note>-->
+                    <idno type="zotero">744</idno>
+                    <note>A translation of Budge's translation.</note>
+                </bibl>
+                <bibl type="lawd:Translation" xml:id="bib2501-20" source="#bib2501-7">
+                    <lang>ru</lang>
+                    <title level="m" xml:lang="ru">Сирийские источники XII-XIII вв. об Азербайджане</title>
+                    <idno type="zotero">745</idno>
+                    <citedRange unit="pp" from="61" to="83">61-83</citedRange>
+                    <note>Excerpts</note>
+                </bibl>
+                <bibl type="lawd:Translation" xml:id="bib2501-21" source="#bib2501-7">
+                    <lang>it</lang>
+                    <title level="m" xml:lang="it">Confronto tra il Taʾrīḫ muḫtaṣar ad-duwal e il Chonicon Syriacum di Abū l-Farağ Ibn al-ʿIbrī (Barebreo)</title>
+                    <idno type="zotero">746</idno>
+                    <citedRange unit="pp" from="53" to="166">53-166</citedRange>
+                    <note>Excerpts of parts corresponding to Bedjan 2633.25-408.2 (the period of 1097-1203)</note>
                 </bibl>
                 <!-- To what extent should we include excerpts? Perhaps only to the extent that we know they contribute something specific, 
                     like a different language and are sizeable? -->
+                <!-- Should we list forthcoming translations? -->
                 
                 
                 
@@ -357,6 +543,16 @@
                     <citedRange unit="entry">167</citedRange>
                     <citedRange unit="column" from="548" to="550">548-550</citedRange>
                 </bibl>
+                <bibl type="lawd:Citation" xml:id="bib2501-22">
+                    <title level="m" xml:lang="en">A Short History of Syriac Literature</title>
+                    <ptr target="http://syriaca.org/bibl/639"/>
+                    <citedRange unit="pp" from="278" to="279" target="https://archive.org/stream/shorthistoryofsy00wrig#page/278">278-279</citedRange>
+                </bibl>
+                <bibl type="lawd:Citation" xml:id="bib2500-25">
+                    <title level="m" xml:lang="de">Geschichte der syrischen Literatur mit Ausschluß der christlich-palästinensischen Texte</title>
+                    <ptr target="http://syriaca.org/bibl/638"/>
+                    <citedRange unit="pp" from="318" to="319">318-319</citedRange>
+                </bibl>
                 <!-- Is it OK to just put a note saying to see Takahashi for further lit? -->
                     
                 <!-- See Wilmshurst, xvii-xviii regarding continuations of Chronicle.
@@ -375,7 +571,9 @@
                         <desc>Facsimile.</desc>
                     </relation>
                     <relation type="mssWitnesses" active="#bib2501-13" ref="dct:source" passive="#bib2501-2" source="#bib2501-7"/><!-- How should we handle one edition using another? -->
+                    <relation type="translationSource" active="#bib2501-4" ref="dct:source" passive="#bib2501-1" source="#bib2501-7"/>
                     <relation type="translationSource" active="#bib2501-5 #bib2501-17 #bib2501-18" ref="dct:source" passive="#bib2501-2" source="#bib2501-7"/>
+                    <relation type="translationSource" active="#bib2501-19" ref="dct:source" passive="#bib2501-5" source="#bib2501-7"/>
                     <!--<relation type="editions" active="#bib2501-4 #bib2501-5" ref="lawd:embodies" passive="http://syriaca.org/work/2501" source="#bib2501-1"/>
                     <relation type="ancientVersion" active="#bib2501-14" ref="lawd:embodies" passive="http://syriaca.org/work/2501" source="#bib2501-1"/>
                     <relation type="mss" active="http://syriaca.org/manuscript/20001#a1 http://syriaca.org/manuscript/20002#b1" ref="lawd:embodies" passive="http://syriaca.org/work/2501" source="#bib2501-1"/>

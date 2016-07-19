@@ -514,13 +514,13 @@
                     <funder>The National Endowment for the Humanities</funder>
                     <principal>David A. Michelson</principal>
                     <editor role="general"
-                        ref="http://syriaca.org/documentation/editors.xml#jnmsaintlaurent"
+                        ref="http://syriaca.org/documentation/editors.xml#jnsaint-laurent"
                         >Jeanne-Nicole Mellon Saint-Laurent</editor>
                     <editor role="general"
                         ref="http://syriaca.org/documentation/editors.xml#dmichelson">David A.
                         Michelson</editor>
                     <editor role="creator"
-                        ref="http://syriaca.org/documentation/editors.xml#jnmsaintlaurent"
+                        ref="http://syriaca.org/documentation/editors.xml#jnsaint-laurent"
                         >Jeanne-Nicole Mellon Saint-Laurent</editor>
                     <editor role="creator"
                         ref="http://syriaca.org/documentation/editors.xml#dmichelson">David A.
@@ -532,7 +532,7 @@
                     <respStmt>
                         <resp>Editing, proofreading, data entry and revision by</resp>
                         <name type="person"
-                            ref="http://syriaca.org/documentation/editors.xml#jnmsaintlaurent"
+                            ref="http://syriaca.org/documentation/editors.xml#jnsaint-laurent"
                             >Jeanne-Nicole Mellon Saint-Laurent</name>
                     </respStmt>
                     <respStmt>
@@ -590,7 +590,7 @@
                 <seriesStmt>
                     <title level="s">Gateway to the Syriac Saints</title>
                     <editor role="general"
-                        ref="http://syriaca.org/documentation/editors.xml#jnmsaintlaurent"
+                        ref="http://syriaca.org/documentation/editors.xml#jnsaint-laurent"
                         >Jeanne-Nicole Mellon Saint-Laurent</editor>
                     <editor role="general"
                         ref="http://syriaca.org/documentation/editors.xml#dmichelson">David A.
@@ -598,7 +598,7 @@
                     <respStmt>
                         <resp>Edited by</resp>
                         <name type="person"
-                            ref="http://syriaca.org/documentation/editors.xml#jnmsaintlaurent"
+                            ref="http://syriaca.org/documentation/editors.xml#jnsaint-laurent"
                             >Jeanne-Nicole Mellon Saint-Laurent</name>
                     </respStmt>
                     <respStmt>

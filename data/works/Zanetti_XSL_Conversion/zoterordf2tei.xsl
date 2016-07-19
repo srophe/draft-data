@@ -263,7 +263,7 @@
                         ref="http://syriaca.org/documentation/editors.xml#ngibson">Nathan P.
                         Gibson</editor>
                     <editor role="associate"
-                        ref="http://syriaca.org/documentation/editors.xml#jnmsaintlaurent"
+                        ref="http://syriaca.org/documentation/editors.xml#jnsaint-laurent"
                         >Jeanne-Nicole Mellon Saint-Laurent</editor>
 
                     <!-- CREATOR -->
@@ -330,7 +330,7 @@
                     <seriesStmt>
                         <title level="s">Gateway to the Syriac Saints</title>
                         <editor role="general"
-                            ref="http://syriaca.org/documentation/editors.xml#jnmsaintlaurent"
+                            ref="http://syriaca.org/documentation/editors.xml#jnsaint-laurent"
                             >Jeanne-Nicole Mellon Saint-Laurent</editor>
                         <editor role="general"
                             ref="http://syriaca.org/documentation/editors.xml#dmichelson">David A.
@@ -338,7 +338,7 @@
                         <respStmt>
                             <resp>Edited by</resp>
                             <name type="person"
-                                ref="http://syriaca.org/documentation/editors.xml#jnmsaintlaurent"
+                                ref="http://syriaca.org/documentation/editors.xml#jnsaint-laurent"
                                 >Jeanne-Nicole Mellon Saint-Laurent</name>
                         </respStmt>
                         <respStmt>
@@ -363,7 +363,7 @@
                         ref="http://syriaca.org/documentation/editors.xml#ngibson">Nathan P.
                         Gibson</editor>
                     <editor role="associate"
-                        ref="http://syriaca.org/documentation/editors.xml#jnmsaintlaurent"
+                        ref="http://syriaca.org/documentation/editors.xml#jnsaint-laurent"
                         >Jeanne-Nicole Mellon Saint-Laurent</editor>
                     <respStmt>
                         <resp>Edited by</resp>
@@ -386,7 +386,7 @@
                     <respStmt>
                         <resp>Edited by</resp>
                         <name type="person"
-                            ref="http://syriaca.org/documentation/editors.xml#jnmsaintlaurent"
+                            ref="http://syriaca.org/documentation/editors.xml#jnsaint-laurent"
                             >Jeanne-Nicole Mellon Saint-Laurent</name>
                     </respStmt>
                     <!-- selects which vol. of SBD this record is contained in, depending on whether the person is a saint and/or author. 

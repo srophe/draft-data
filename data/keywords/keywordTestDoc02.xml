@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Title</title>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head xml:id="keyword-TEST" ana="subjectKeyword">
+            <term type="headword">
+               <term xml:lang="en" syriaca-tags="#syriaca-headword">TEST</term>
+               <term xml:lang="syr"/>
+               <term xml:lang="ar"/>
+               <term xml:lang="la"/>
+               <term xml:lang="gr"/>
+               <term xml:lang="fr"/>
+               <term xml:lang="de"/>
+               <term xml:lang="ru"/>
+            </term>
+            <gloss ana="relatedTerms">
+               <!-- We could break these down inside term elements and even include xml:lang
+                  attributes but I don't think we would gain much from doing so. Alternatively, the gloss 
+                  element nests inside of the term element and we could include a list of glosses according to language.  -->
+               Nunc, diam, tellus, convallis, et, mi, tincidunt, sodales, vestibulum, eros., Proin,
+               vel, imperdiet, augue., Sed, non, pretium, quam, id, luctus </gloss>
+            <note type="shortAbstract"> Lorem ipsum dolor sit amet </note><!-- We use the note element in Syriaca.org 
+               where the TEI guidelines would seem to prefer the desc element. Is there a reason and documentation on this? -->
+            <note type="longAbstract" source="#bibTEST-1">
+              <!-- This is about the only place I can imagine needing to refer to a bibliographic item. It could serve here to support 
+                 an argument for why a term was chosen, or something similar to that. We don't seem to have a way in Syriaca.org 
+                 to footnote a sentence inside of a running piece of prose. It is easy to footnote an entire note element but that seems odd.-->
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque mattis tellus
+             nisi, at interdum mi lobortis in. Suspendisse potenti. Vivamus iaculis tempor lacus
+             et pharetra. Aliquam semper cursus ante et tincidunt. Vivamus rutrum maximus enim id
+             placerat. Donec vulputate blandit ipsum, eget sagittis ante volutpat eu. In hendrerit
+             purus leo, eu accumsan augue bibendum a.
+            </note>
+            <idno type="URI">http://syriaca.org/keyword/TEST</idno>
+            <bibl xml:id="bibTEST-1">
+               <title level="m" xml:lang="la">Bibliotheca Orientalis Clementino-Vaticana</title>
+               <ptr target="http://syriaca.org/bibl/7"/>
+               <citedRange unit="pp">III:61</citedRange>
+            </bibl>
+         </head>
+         <div/>
+         <!-- The head element has to be the head of something and that something is meant to be the 
+            following sibling as far as I can tell. Having an empty div element seems silly but it validates. 
+            We could also just customize our schema here, we'll have to do it for the syriaca-tags attribute anyway. -->
+      </body>
+   </text>
+</TEI>

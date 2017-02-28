@@ -18,42 +18,66 @@
    </teiHeader>
    <text>
       <body>
-         <entryFree xml:id="keyword-TEST" type="concept">
+         <entryFree xml:id="subject-TEST" type="concept">
             <term type="headword" xml:lang="en" syriaca-tags="#syriaca-headword">TEST</term>
-            <term type="headword" xml:lang="en" syriaca-tags="#syriaca-headword"/>
-            <term type="headword" xml:lang="en" syriaca-tags="#syriaca-headword"/>
-            <gloss type="relatedTerms">
-               <term xml:lang="en">
-                  <term></term>
-               </term>
-               <term xml:lang="syr">
-                  <term></term>
-               </term>
-               
+            <term type="headword" xml:lang="syr" syriaca-tags="#syriaca-headword"/>
+            <term type="headword" xml:lang="ar" syriaca-tags="#syriaca-headword"/>
+            <term type="headword" xml:lang="gr" syriaca-tags="#syriaca-headword"/>
+            <term type="headword" xml:lang="la" syriaca-tags="#syriaca-headword"/>
+            <term type="headword" xml:lang="fr" syriaca-tags="#syriaca-headword"/>
+            <term type="headword" xml:lang="de" syriaca-tags="#syriaca-headword"/>
+            <term type="headword" xml:lang="ru" syriaca-tags="#syriaca-headword"/>
+            <gloss xml:lang="en">
+               <term>testing</term>
+               <term>one</term>
+               <term>two</term>
+               <term>three</term>
+               <term>can</term>
+               <term>you</term>
+               <term>hear</term>
+               <term>me</term>
             </gloss>
-            <note type="shortAbstract"> Lorem ipsum dolor sit amet </note><!-- We use the note element in Syriaca.org 
-               where the TEI guidelines would seem to prefer the desc element. Is there a reason and documentation on this? -->
-            <note type="longAbstract" source="#bibTEST-1">
-              <!-- This is about the only place I can imagine needing to refer to a bibliographic item. It could serve here to support 
-                 an argument for why a term was chosen, or something similar to that. We don't seem to have a way in Syriaca.org 
-                 to footnote a sentence inside of a running piece of prose. It is easy to footnote an entire note element but that seems odd.-->
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque mattis tellus
-             nisi, at interdum mi lobortis in. Suspendisse potenti. Vivamus iaculis tempor lacus
-             et pharetra. Aliquam semper cursus ante et tincidunt. Vivamus rutrum maximus enim id
+            <gloss xml:lang="syr">
+               <term></term>
+            </gloss>
+            <gloss xml:lang="ar">
+               <term></term>
+            </gloss>
+            <gloss xml:lang="gr">
+               <term></term>
+            </gloss>
+            <gloss xml:lang="la">
+               <term></term>
+            </gloss>
+            <gloss xml:lang="fr">
+               <term></term>
+            </gloss>
+            <gloss xml:lang="de">
+               <term></term>
+            </gloss>
+            <gloss xml:lang="ru">
+               <term></term>
+            </gloss>
+            <note type="Abstract"> Lorem ipsum dolor sit amet </note>
+            <note type="scopeNote">
+             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque mattis tellus
+             nisi, at interdum mi lobortis in. <ab source="#bibTEST-1">Suspendisse potenti. Vivamus iaculis tempor lacus
+             et pharetra. Aliquam semper cursus ante et tincidunt.</ab> Vivamus rutrum maximus enim id
              placerat. Donec vulputate blandit ipsum, eget sagittis ante volutpat eu. In hendrerit
              purus leo, eu accumsan augue bibendum a.
             </note>
-            <idno type="URI">http://syriaca.org/keyword/TEST</idno>
+            <listRelation>
+               <relation name="?"/>
+            </listRelation>
+            <idno type="URI">http://syriaca.org/subject/TEST</idno>
+            <idno type="URI">http://lccn.loc.gov/sh85006028</idno>
+            <idno type="URI">http://lccn.loc.gov/sh85006028</idno>
             <bibl xml:id="bibTEST-1">
                <title level="m" xml:lang="la">Bibliotheca Orientalis Clementino-Vaticana</title>
                <ptr target="http://syriaca.org/bibl/7"/>
                <citedRange unit="pp">III:61</citedRange>
             </bibl>
          </entryFree>
-         <div/>
-         <!-- The head element has to be the head of something and that something is meant to be the 
-            following sibling as far as I can tell. Having an empty div element seems silly but it validates. 
-            We could also just customize our schema here, we'll have to do it for the syriaca-tags attribute anyway. -->
       </body>
    </text>
 </TEI>

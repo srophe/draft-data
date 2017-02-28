@@ -18,23 +18,19 @@
    </teiHeader>
    <text>
       <body>
-         <div xml:id="keyword-TEST" type="concept">
-            <div type="headword">
-               <term xml:lang="en" syriaca-tags="#syriaca-headword">TEST</term>
-               <term xml:lang="syr"/>
-               <term xml:lang="ar"/>
-               <term xml:lang="la"/>
-               <term xml:lang="gr"/>
-               <term xml:lang="fr"/>
-               <term xml:lang="de"/>
-               <term xml:lang="ru"/>
-            </div>
-            <gloss ana="relatedTerms">
-               <!-- We could break these down inside term elements and even include xml:lang
-                  attributes but I don't think we would gain much from doing so. Alternatively, the gloss 
-                  element nests inside of the term element and we could include a list of glosses according to language.  -->
-               Nunc, diam, tellus, convallis, et, mi, tincidunt, sodales, vestibulum, eros., Proin,
-               vel, imperdiet, augue., Sed, non, pretium, quam, id, luctus </gloss>
+         <entryFree xml:id="keyword-TEST" type="concept">
+            <term type="headword" xml:lang="en" syriaca-tags="#syriaca-headword">TEST</term>
+            <term type="headword" xml:lang="en" syriaca-tags="#syriaca-headword"/>
+            <term type="headword" xml:lang="en" syriaca-tags="#syriaca-headword"/>
+            <gloss type="relatedTerms">
+               <term xml:lang="en">
+                  <term></term>
+               </term>
+               <term xml:lang="syr">
+                  <term></term>
+               </term>
+               
+            </gloss>
             <note type="shortAbstract"> Lorem ipsum dolor sit amet </note><!-- We use the note element in Syriaca.org 
                where the TEI guidelines would seem to prefer the desc element. Is there a reason and documentation on this? -->
             <note type="longAbstract" source="#bibTEST-1">
@@ -53,7 +49,7 @@
                <ptr target="http://syriaca.org/bibl/7"/>
                <citedRange unit="pp">III:61</citedRange>
             </bibl>
-         </div>
+         </entryFree>
          <div/>
          <!-- The head element has to be the head of something and that something is meant to be the 
             following sibling as far as I can tell. Having an empty div element seems silly but it validates. 

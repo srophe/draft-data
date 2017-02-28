@@ -18,8 +18,8 @@
    </teiHeader>
    <text>
       <body>
-         <head xml:id="keyword-TEST" ana="subjectKeyword">
-            <term type="headword">
+         <div xml:id="keyword-TEST" type="concept">
+            <div type="headword">
                <term xml:lang="en" syriaca-tags="#syriaca-headword">TEST</term>
                <term xml:lang="syr"/>
                <term xml:lang="ar"/>
@@ -28,7 +28,7 @@
                <term xml:lang="fr"/>
                <term xml:lang="de"/>
                <term xml:lang="ru"/>
-            </term>
+            </div>
             <gloss ana="relatedTerms">
                <!-- We could break these down inside term elements and even include xml:lang
                   attributes but I don't think we would gain much from doing so. Alternatively, the gloss 
@@ -53,7 +53,7 @@
                <ptr target="http://syriaca.org/bibl/7"/>
                <citedRange unit="pp">III:61</citedRange>
             </bibl>
-         </head>
+         </div>
          <div/>
          <!-- The head element has to be the head of something and that something is meant to be the 
             following sibling as far as I can tell. Having an empty div element seems silly but it validates. 

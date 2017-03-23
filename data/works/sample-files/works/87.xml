@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://syriaca.org/documentation/syriaca-tei-main.rnc" type="application/relax-ng-compact-syntax"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:tei="http://www.tei-c.org/ns/1.0"
+     xmlns:syriaca="http://syriaca.org"
+     xmlns:lawd="http://lawd.info/ontology/"
+     xmlns:dct="http://purl.org/dc/terms/"
+     xmlns:saxon="http://saxon.sf.net/"
+     xmlns:functx="http://www.functx.com"
+     xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="a" xml:lang="en">2 Timothy (Peshitta Version) — <foreign xml:lang="syr">ܐܓܪܬܐ ܕܦܘܠܘܣ ܕܠܘܬ ܛܝܡܬܐܘܣ ܕܬܪܬܝܢ</foreign>
+            </title>
+            <sponsor>Syriaca.org: The Syriac Reference Portal</sponsor>
+            <funder>The International Balzan Prize Foundation</funder>
+            <funder>The National Endowment for the Humanities</funder>
+            <principal>David A. Michelson</principal>
+            <editor role="general"
+                    ref="http://syriaca.org/documentation/editors.xml#ngibson">Nathan P. Gibson</editor>
+            <editor role="general"
+                    ref="http://syriaca.org/documentation/editors.xml#dmichelson">David A. Michelson</editor>
+            <editor role="creator"
+                    ref="http://syriaca.org/documentation/editors.xml#ngibson">Nathan P. Gibson</editor>
+            <editor role="creator"
+                    ref="http://syriaca.org/documentation/editors.xml#dmichelson">David A. Michelson</editor>
+            <respStmt>
+               <resp>Editing, data entry, and reconciling by</resp>
+               <name ref="http://syriaca.org/documentation/editors.xml#ngibson">Nathan P. Gibson</name>
+            </respStmt>
+            <respStmt>
+               <resp>Editing, proofreading, data architecture, and encoding by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#dmichelson">David A. Michelson</name>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition n="1.0"/>
+         </editionStmt>
+         <publicationStmt>
+            <authority>Syriaca.org: The Syriac Reference Portal</authority>
+            <idno type="URI">http://syriaca.org/work/87/tei</idno>
+            <availability>
+               <licence target="http://creativecommons.org/licenses/by/3.0/">
+                  <p>Distributed under a Creative Commons Attribution 3.0 Unported
+                                License.</p>
+               </licence>
+            </availability>
+            <date>2017-03-23+01:00</date>
+         </publicationStmt>
+         <seriesStmt>
+            <title level="s">New Handbook of Syriac Literature</title>
+            <editor role="general"
+                    ref="http://syriaca.org/documentation/editors.xml#ngibson">Nathan P. Gibson</editor>
+            <editor role="general"
+                    ref="http://syriaca.org/documentation/editors.xml#dmichelson">David A. Michelson</editor>
+            <respStmt>
+               <resp>Edited by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#ngibson">Nathan P. Gibson</name>
+            </respStmt>
+            <respStmt>
+               <resp>Edited by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#dmichelson">David A. Michelson</name>
+            </respStmt>
+            <idno type="URI">http://syriaca.org/nhsl</idno>
+            <biblScope unit="vol" from="2" to="2">
+               <title level="m">Clavis of Syriac Biblical Works</title>
+               <idno type="URI">http://syriaca.org/bible</idno>
+            </biblScope>
+         </seriesStmt>
+         <sourceDesc>
+            <p>Born digital.</p>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <editorialDecl>
+            <p>This record created following the Syriaca.org guidelines. Documentation
+                        available at: <ref target="http://syriaca.org/documentation">http://syriaca.org/documentation</ref>.</p>
+            <interpretation>
+               <p>Approximate dates described in terms of centuries or partial centuries
+                            have been interpreted as documented in <ref target="http://syriaca.org/documentation/dates.html">Syriaca.org
+                                Dates</ref>.</p>
+            </interpretation>
+         </editorialDecl>
+         <classDecl>
+            <taxonomy>
+               <category xml:id="syriaca-headword">
+                  <catDesc>The name used by Syriaca.org for document titles, citation, and
+                                disambiguation. These names have been created according to the
+                                Syriac.org guidelines for headwords: <ref target="http://syriaca.org/documentation/headwords.html">http://syriaca.org/documentation/headwords.html</ref>.</catDesc>
+               </category>
+               <category xml:id="syriaca-anglicized">
+                  <catDesc>An anglicized version of a name, included to facilitate
+                                searching.</catDesc>
+               </category>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="syr">Unvocalized Syriac of any variety or period</language>
+            <language ident="syr-Syrj">Vocalized West Syriac</language>
+            <language ident="syr-Syrn">Vocalized East Syriac</language>
+            <language ident="en">English</language>
+            <language ident="en-x-gedsh">Names or terms Romanized into English according to
+                        the standards adopted by the Gorgias Encyclopedic Dictionary of the Syriac
+                        Heritage</language>
+            <language ident="ar">Arabic</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+      </profileDesc>
+      <revisionDesc status="draft">
+         <change who="http://syriaca.org/documentation/editors.xml#ngibson"
+                 n="1.0"
+                 when="2017-03-23+01:00">CREATED: work</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <bibl xml:id="work-87" type="lawd:ConceptualWork">
+            <title xml:id="name87-1" xml:lang="en" syriaca-tags="#syriaca-headword">2 Timothy (Peshitta Version)</title>
+            <title xml:id="name87-2"
+                   xml:lang="syr"
+                   syriaca-tags="#syriaca-headword"
+                   source="#bib87-1">ܐܓܪܬܐ ܕܦܘܠܘܣ ܕܠܘܬ ܛܝܡܬܐܘܣ ܕܬܪܬܝܢ</title>
+            <title xml:id="name87-3" xml:lang="syr" source="#bib87-1">ܐܓܪܬܐ ܕܠܘܬ ܛܝܡܬܐܘܣ ܕܬܪ̈ܬܝܢ</title>
+            <title xml:id="name87-4"
+                   xml:lang="en"
+                   type="abbreviation"
+                   source="#bib87-5">2 Tim</title>
+            <title xml:id="name87-5" xml:lang="en" source="#bib87-5">2 Timothy</title>
+            <title xml:id="name87-6" xml:lang="syr-Syrj" source="#bib87-4">ܐܶܓܰܪܬܳܐ ܕܦܰܘܠܳܘܣ ܕܰܠܘܳܬ ܛܺܝܡܳܬܶܐܳܘܣ ܕܬܰܪܬܶܝܢ</title>
+            <idno type="URI">http://syriaca.org/work/87</idno>
+            <idno type="URI">https://en.wikipedia.org/wiki/Second_Epistle_to_Timothy</idno>
+            <idno type="URI">https://www.wikidata.org/wiki/Q131489</idno>
+            <textLang mainLang="syr"/>
+            <note xml:lang="syr" type="incipit" source="#bib87-3">ܦܿܘܠܘܣ ܫܠܝܚܐ ܕܿܝܫܘܼܥ ܡܫܝܚܐ܂ ܒܿܨܒܼܝܢܗ ܕܿܐܠܗܐ܂ ܘܒܼܡܘܼܠܟܿܢܐ ܕܿܚܝܐ̈ ܕܿܒܼܝܫܘܼܥ ܡܫܝܚܐ܃</note>
+            <bibl xml:id="bib87-1" type="lawd:Edition">
+               <title level="m">ܟܬܒܐ ܩܕܝ̈ܫܐ: ܟܬܒܐ ܕܕܝܬܩܐ ܥܛܝܼܩܬܐ ܘ ܚ̇ܕܬܐ</title>
+               <ptr target="http://syriaca.org/bibl/2335"/>
+               <citedRange unit="pp">283-286</citedRange>
+               <listRelation>
+                  <relation active="#bib87-1"
+                            ref="lawd:embodies"
+                            passive="http://syriaca.org/work/87"/>
+               </listRelation>
+            </bibl>
+            <bibl xml:id="bib87-2" type="lawd:Edition">
+               <title level="m">The Syriac Peshiṭta Bible with English Translation: Galatians–Philemon</title>
+               <title level="s">Surath Kthob</title>
+               <ptr target="http://syriaca.org/bibl/2362"/>
+               <listRelation>
+                  <relation active="#bib87-2"
+                            ref="lawd:embodies"
+                            passive="http://syriaca.org/work/87"/>
+               </listRelation>
+            </bibl>
+            <bibl xml:id="bib87-3" type="lawd:Edition">
+               <title level="m">Comprehensive Aramaic Lexicon</title>
+               <ptr target="http://syriaca.org/bibl/2439"/>
+               <citedRange unit="entry"
+                           target="http://cal1.cn.huc.edu/showsubtexts.php?subtext=62055&amp;cset=USyriac">62055</citedRange>
+               <citedRange unit="entry">2Tim</citedRange>
+               <listRelation>
+                  <relation active="#bib87-3" ref="dct:source" passive="#bib87-1"/>
+                  <relation active="#bib87-3"
+                            ref="lawd:embodies"
+                            passive="http://syriaca.org/work/87"/>
+               </listRelation>
+            </bibl>
+            <bibl xml:id="bib87-4" type="lawd:Edition">
+               <title level="m">ܟܬܵܒܸ̈ܐ ܩܲܕܹ̈ܝܫܸܐ ܗ̅ ܟܬܵܒܸ̈ܐ ܕܕܹܝܲܬܹܝܩܹܐ ܥܲܛܹܝܩܵܐ ܘܚܕܲܬܵܐ</title>
+               <ptr target="http://syriaca.org/bibl/2381"/>
+               <citedRange unit="pp">294-297</citedRange>
+               <listRelation>
+                  <relation active="#bib87-4"
+                            ref="lawd:embodies"
+                            passive="http://syriaca.org/work/87"/>
+               </listRelation>
+            </bibl>
+            <bibl xml:id="bib87-5" type="lawd:Citation">
+               <title level="m">The SBL Handbook of Style: For Biblical Studies and Related Disciplines</title>
+               <ptr target="http://syriaca.org/bibl/2432"/>
+            </bibl>
+            <listRelation>
+               <relation ref="skos:broadMatch"
+                         active="http://syriaca.org/work/87"
+                         passive="http://syriaca.org/work/9604"/>
+            </listRelation>
+         </bibl>
+      </body>
+   </text>
+</TEI>

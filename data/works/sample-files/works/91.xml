@@ -11,8 +11,7 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title level="a" xml:lang="en">James (Peshitta Version) — <foreign xml:lang="syr">ܐܓܪܬܐ ܕܝܥܩܘܒ ܫܠܝܚܐ</foreign>
-            </title>
+            <title level="a" xml:lang="en">James (Peshitta Version)</title>
             <sponsor>Syriaca.org: The Syriac Reference Portal</sponsor>
             <funder>The International Balzan Prize Foundation</funder>
             <funder>The National Endowment for the Humanities</funder>
@@ -47,7 +46,7 @@
                                 License.</p>
                </licence>
             </availability>
-            <date>2017-03-23+01:00</date>
+            <date>2017-04-19+02:00</date>
          </publicationStmt>
          <seriesStmt>
             <title level="s">New Handbook of Syriac Literature</title>
@@ -67,7 +66,7 @@
             </respStmt>
             <idno type="URI">http://syriaca.org/nhsl</idno>
             <biblScope unit="vol" from="2" to="2">
-               <title level="m">Clavis of Syriac Biblical Works</title>
+               <title level="m">A Guide to the Bible in Syriac</title>
                <idno type="URI">http://syriaca.org/bible</idno>
             </biblScope>
          </seriesStmt>
@@ -117,75 +116,42 @@
       <revisionDesc status="draft">
          <change who="http://syriaca.org/documentation/editors.xml#ngibson"
                  n="1.0"
-                 when="2017-03-23+01:00">CREATED: work</change>
+                 when="2017-04-19+02:00">CREATED: work</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <bibl xml:id="work-91" type="lawd:ConceptualWork">
             <title xml:id="name91-1" xml:lang="en" syriaca-tags="#syriaca-headword">James (Peshitta Version)</title>
-            <title xml:id="name91-2"
-                   xml:lang="syr"
-                   syriaca-tags="#syriaca-headword"
-                   source="#bib91-1">ܐܓܪܬܐ ܕܝܥܩܘܒ ܫܠܝܚܐ</title>
-            <title xml:id="name91-3"
-                   xml:lang="en"
-                   type="abbreviation"
-                   source="#bib91-5">Jas</title>
-            <title xml:id="name91-4" xml:lang="en" source="#bib91-5">James</title>
-            <title xml:id="name91-5" xml:lang="syr-Syrj" source="#bib91-4">ܐܶܓܰܪܬܳܐ ܕܝܰܥܩܘܽܒ ܫܠܺܝܚܳܐ</title>
             <idno type="URI">http://syriaca.org/work/91</idno>
-            <idno type="URI">https://en.wikipedia.org/wiki/Epistle_of_James</idno>
-            <idno type="URI">https://www.wikidata.org/wiki/Q131097</idno>
-            <idno type="URI">https://viaf.org/viaf/182251478</idno>
             <textLang mainLang="syr"/>
-            <note xml:lang="syr" type="incipit" source="#bib91-3">ܝܥܩܘܼܒܼ ܥܒܼܕܿܗ ܕܿܐܠܗܐ܃ ܘܕܼܡܪܢ ܝܫܘܼܥ ܡܫܝܚܐ܃ ܠܬܼܪܬܿܥܣܪܐ̈ ܫܪܒܼܢ̈ ܕܿܙܪܝܥܢ̈ ܒܿܥܡ̱ܡܐ̈܂ ܫܠܡ܀</note>
-            <bibl xml:id="bib91-1" type="lawd:Edition">
-               <title level="m">ܟܬܒܐ ܩܕܝ̈ܫܐ: ܟܬܒܐ ܕܕܝܬܩܐ ܥܛܝܼܩܬܐ ܘ ܚ̇ܕܬܐ</title>
-               <ptr target="http://syriaca.org/bibl/2335"/>
-               <citedRange unit="pp">303-308</citedRange>
+            <bibl xml:id="bib91-1" type="syriaca:Manuscript">
+               <title>Manchester, John Rylands University Library, Syriac 2 (=Crawford Syriac 2) (12th cent.?)</title>
+               <citedRange unit="fol">168b-172</citedRange>
                <listRelation>
                   <relation active="#bib91-1"
                             ref="lawd:embodies"
                             passive="http://syriaca.org/work/91"/>
                </listRelation>
             </bibl>
-            <bibl xml:id="bib91-2" type="lawd:Edition">
-               <title level="m">The Syriac Peshiṭta Bible with English Translation: Hebrews and the General Catholic Epistles</title>
-               <title level="s">Surath Kthob</title>
-               <ptr target="http://syriaca.org/bibl/2377"/>
+            <bibl xml:id="bib91-2" type="syriaca:Manuscript">
+               <title>Manchester, John Rylands University Library, Syriac 11 (=Harris Syriac 137) (1905)</title>
+               <citedRange unit="fol">38b-42</citedRange>
                <listRelation>
                   <relation active="#bib91-2"
                             ref="lawd:embodies"
                             passive="http://syriaca.org/work/91"/>
                </listRelation>
             </bibl>
-            <bibl xml:id="bib91-3" type="lawd:Edition">
-               <title level="m">Comprehensive Aramaic Lexicon</title>
-               <ptr target="http://syriaca.org/bibl/2439"/>
-               <citedRange unit="entry"
-                           target="http://cal1.cn.huc.edu/showsubtexts.php?subtext=62059&amp;cset=USyriac">62059</citedRange>
-               <citedRange unit="entry">Js (James)</citedRange>
+            <bibl xml:id="bib91-3" type="syriaca:Catalogue">
+               <title level="a">A Catalogue of the Syriac Manuscripts in the John Rylands Library</title>
+               <title level="j">Bulletin of the John Rylands Library</title>
+               <ptr target="http://syriaca.org/bibl/2430"/>
+               <citedRange unit="pp">118-119, 130-131</citedRange>
                <listRelation>
-                  <relation active="#bib91-3" ref="dct:source" passive="#bib91-1"/>
-                  <relation active="#bib91-3"
-                            ref="lawd:embodies"
-                            passive="http://syriaca.org/work/91"/>
+                  <relation active="#bib91-1" ref="lawd:hasCitation" passive="#bib91-3"/>
+                  <relation active="#bib91-2" ref="lawd:hasCitation" passive="#bib91-3"/>
                </listRelation>
-            </bibl>
-            <bibl xml:id="bib91-4" type="lawd:Edition">
-               <title level="m">ܟܬܵܒܸ̈ܐ ܩܲܕܹ̈ܝܫܸܐ ܗ̅ ܟܬܵܒܸ̈ܐ ܕܕܹܝܲܬܹܝܩܹܐ ܥܲܛܹܝܩܵܐ ܘܚܕܲܬܵܐ</title>
-               <ptr target="http://syriaca.org/bibl/2381"/>
-               <citedRange unit="pp">315-320</citedRange>
-               <listRelation>
-                  <relation active="#bib91-4"
-                            ref="lawd:embodies"
-                            passive="http://syriaca.org/work/91"/>
-               </listRelation>
-            </bibl>
-            <bibl xml:id="bib91-5" type="lawd:Citation">
-               <title level="m">The SBL Handbook of Style: For Biblical Studies and Related Disciplines</title>
-               <ptr target="http://syriaca.org/bibl/2432"/>
             </bibl>
             <listRelation>
                <relation ref="skos:broadMatch"

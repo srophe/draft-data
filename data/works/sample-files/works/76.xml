@@ -11,8 +11,7 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title level="a" xml:lang="en">Acts (Peshitta Version) — <foreign xml:lang="syr">ܦܪܟܣܣ ܕܫܠܝ̈ܚܐ</foreign>
-            </title>
+            <title level="a" xml:lang="en">Acts (Peshitta Version)</title>
             <sponsor>Syriaca.org: The Syriac Reference Portal</sponsor>
             <funder>The International Balzan Prize Foundation</funder>
             <funder>The National Endowment for the Humanities</funder>
@@ -47,7 +46,7 @@
                                 License.</p>
                </licence>
             </availability>
-            <date>2017-03-23+01:00</date>
+            <date>2017-04-19+02:00</date>
          </publicationStmt>
          <seriesStmt>
             <title level="s">New Handbook of Syriac Literature</title>
@@ -67,7 +66,7 @@
             </respStmt>
             <idno type="URI">http://syriaca.org/nhsl</idno>
             <biblScope unit="vol" from="2" to="2">
-               <title level="m">Clavis of Syriac Biblical Works</title>
+               <title level="m">A Guide to the Bible in Syriac</title>
                <idno type="URI">http://syriaca.org/bible</idno>
             </biblScope>
          </seriesStmt>
@@ -117,76 +116,43 @@
       <revisionDesc status="draft">
          <change who="http://syriaca.org/documentation/editors.xml#ngibson"
                  n="1.0"
-                 when="2017-03-23+01:00">CREATED: work</change>
+                 when="2017-04-19+02:00">CREATED: work</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <bibl xml:id="work-76" type="lawd:ConceptualWork">
             <title xml:id="name76-1" xml:lang="en" syriaca-tags="#syriaca-headword">Acts (Peshitta Version)</title>
-            <title xml:id="name76-2"
-                   xml:lang="syr"
-                   syriaca-tags="#syriaca-headword"
-                   source="#bib76-1">ܦܪܟܣܣ ܕܫܠܝ̈ܚܐ</title>
-            <title xml:id="name76-3" xml:lang="syr" source="#bib76-1">ܦܪܟܣܣ ܕܬܪܥܣܪ ܫܠܝ̈ܚܐ ܛܘܒ̈ܢܐ</title>
-            <title xml:id="name76-4" xml:lang="syr" source="#bib76-2">ܦܪܟܣܝܣ ܕܫܠܝܚ̈ܐ</title>
-            <title xml:id="name76-5"
-                   xml:lang="en"
-                   type="abbreviation"
-                   source="#bib76-5">Acts</title>
-            <title xml:id="name76-5" xml:lang="en" source="#bib76-5">Acts</title>
-            <title xml:id="name76-7" xml:lang="syr-Syrj" source="#bib76-4">ܟܬܳܒܳܐ ܕܰܦܪܰܟܣܺܝܣ</title>
             <idno type="URI">http://syriaca.org/work/76</idno>
-            <idno type="URI">https://en.wikipedia.org/wiki/Acts_of_the_Apostles</idno>
-            <idno type="URI">https://www.wikidata.org/wiki/Q40309</idno>
             <textLang mainLang="syr"/>
-            <note xml:lang="syr" type="incipit" source="#bib76-3">ܟܿܬܼܒܼܐ ܩܕܼܡܝܐ ܟܿܬܼܒܿܬܼ ܐܘ ܬܿܐܘܦܼܝܠܐ܃ ܥܠ ܟܿܠܗܝܢ ܐܝܠܝܢ ܕܿܫܪܝ ܡܪܢ ܝܫܘܼܥ ܡܫܝܚܐ ܠܡܥܒܿܕܼ ܘܠܡܠܦܼܘܼ܃</note>
-            <bibl xml:id="bib76-1" type="lawd:Edition">
-               <title level="m">ܟܬܒܐ ܩܕܝ̈ܫܐ: ܟܬܒܐ ܕܕܝܬܩܐ ܥܛܝܼܩܬܐ ܘ ܚ̇ܕܬܐ</title>
-               <ptr target="http://syriaca.org/bibl/2335"/>
-               <citedRange unit="pp">154-202</citedRange>
+            <bibl xml:id="bib76-1" type="syriaca:Manuscript">
+               <title>Manchester, John Rylands University Library, Syriac 2 (=Crawford Syriac 2) (12th cent.?)</title>
+               <citedRange unit="fol">134a-168</citedRange>
+               <note>Missing much of 8:11-10:12</note>
                <listRelation>
                   <relation active="#bib76-1"
                             ref="lawd:embodies"
                             passive="http://syriaca.org/work/76"/>
                </listRelation>
             </bibl>
-            <bibl xml:id="bib76-2" type="lawd:Edition">
-               <title level="m">The Syriac Peshiṭta Bible with English Translation: Acts</title>
-               <title level="s">Surath Kthob</title>
-               <ptr target="http://syriaca.org/bibl/2367"/>
+            <bibl xml:id="bib76-2" type="syriaca:Manuscript">
+               <title>Manchester, John Rylands University Library, Syriac 11 (=Harris Syriac 137) (1905)</title>
+               <citedRange unit="fol">1b-38b</citedRange>
                <listRelation>
                   <relation active="#bib76-2"
                             ref="lawd:embodies"
                             passive="http://syriaca.org/work/76"/>
                </listRelation>
             </bibl>
-            <bibl xml:id="bib76-3" type="lawd:Edition">
-               <title level="m">Comprehensive Aramaic Lexicon</title>
-               <ptr target="http://syriaca.org/bibl/2439"/>
-               <citedRange unit="entry"
-                           target="http://cal1.cn.huc.edu/showsubtexts.php?subtext=62044&amp;cset=USyriac">62044</citedRange>
-               <citedRange unit="entry">P Acts</citedRange>
+            <bibl xml:id="bib76-3" type="syriaca:Catalogue">
+               <title level="a">A Catalogue of the Syriac Manuscripts in the John Rylands Library</title>
+               <title level="j">Bulletin of the John Rylands Library</title>
+               <ptr target="http://syriaca.org/bibl/2430"/>
+               <citedRange unit="pp">118-119, 130-131</citedRange>
                <listRelation>
-                  <relation active="#bib76-3" ref="dct:source" passive="#bib76-1"/>
-                  <relation active="#bib76-3"
-                            ref="lawd:embodies"
-                            passive="http://syriaca.org/work/76"/>
+                  <relation active="#bib76-1" ref="lawd:hasCitation" passive="#bib76-3"/>
+                  <relation active="#bib76-2" ref="lawd:hasCitation" passive="#bib76-3"/>
                </listRelation>
-            </bibl>
-            <bibl xml:id="bib76-4" type="lawd:Edition">
-               <title level="m">ܟܬܵܒܸ̈ܐ ܩܲܕܹ̈ܝܫܸܐ ܗ̅ ܟܬܵܒܸ̈ܐ ܕܕܹܝܲܬܹܝܩܹܐ ܥܲܛܹܝܩܵܐ ܘܚܕܲܬܵܐ</title>
-               <ptr target="http://syriaca.org/bibl/2381"/>
-               <citedRange unit="pp">159-210</citedRange>
-               <listRelation>
-                  <relation active="#bib76-4"
-                            ref="lawd:embodies"
-                            passive="http://syriaca.org/work/76"/>
-               </listRelation>
-            </bibl>
-            <bibl xml:id="bib76-5" type="lawd:Citation">
-               <title level="m">The SBL Handbook of Style: For Biblical Studies and Related Disciplines</title>
-               <ptr target="http://syriaca.org/bibl/2432"/>
             </bibl>
             <listRelation>
                <relation ref="skos:broadMatch"

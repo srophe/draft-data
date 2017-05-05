@@ -11,8 +11,7 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title level="a" xml:lang="en">Colossians (Peshitta Version) — <foreign xml:lang="syr">ܐܓܪܬܐ ܕܦܘܠܘܣ ܕܠܘܬ ܩܘܠ̈ܣܝܐ</foreign>
-            </title>
+            <title level="a" xml:lang="en">Colossians (Peshitta Version)</title>
             <sponsor>Syriaca.org: The Syriac Reference Portal</sponsor>
             <funder>The International Balzan Prize Foundation</funder>
             <funder>The National Endowment for the Humanities</funder>
@@ -47,7 +46,7 @@
                                 License.</p>
                </licence>
             </availability>
-            <date>2017-03-23+01:00</date>
+            <date>2017-04-19+02:00</date>
          </publicationStmt>
          <seriesStmt>
             <title level="s">New Handbook of Syriac Literature</title>
@@ -67,7 +66,7 @@
             </respStmt>
             <idno type="URI">http://syriaca.org/nhsl</idno>
             <biblScope unit="vol" from="2" to="2">
-               <title level="m">Clavis of Syriac Biblical Works</title>
+               <title level="m">A Guide to the Bible in Syriac</title>
                <idno type="URI">http://syriaca.org/bible</idno>
             </biblScope>
          </seriesStmt>
@@ -117,76 +116,43 @@
       <revisionDesc status="draft">
          <change who="http://syriaca.org/documentation/editors.xml#ngibson"
                  n="1.0"
-                 when="2017-03-23+01:00">CREATED: work</change>
+                 when="2017-04-19+02:00">CREATED: work</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <bibl xml:id="work-83" type="lawd:ConceptualWork">
             <title xml:id="name83-1" xml:lang="en" syriaca-tags="#syriaca-headword">Colossians (Peshitta Version)</title>
-            <title xml:id="name83-2"
-                   xml:lang="syr"
-                   syriaca-tags="#syriaca-headword"
-                   source="#bib83-1">ܐܓܪܬܐ ܕܦܘܠܘܣ ܕܠܘܬ ܩܘܠ̈ܣܝܐ</title>
-            <title xml:id="name83-3" xml:lang="syr" source="#bib83-1">ܐܓܪܬܐ ܕܠܘܬ ܩܘܠܣܝ̈ܐ</title>
-            <title xml:id="name83-4"
-                   xml:lang="en"
-                   type="abbreviation"
-                   source="#bib83-5">Col</title>
-            <title xml:id="name83-5" xml:lang="en" source="#bib83-5">Colossians</title>
-            <title xml:id="name83-6" xml:lang="syr-Syrj" source="#bib83-4">ܐܶܓܰܪܬܳܐ ܕܦܰܘܠܳܘܣ ܕܰܠܘܳܬ ܩܘܽܠܰܣܳܝ̈ܶܐ</title>
             <idno type="URI">http://syriaca.org/work/83</idno>
-            <idno type="URI">https://en.wikipedia.org/wiki/Epistle_to_the_Colossians</idno>
-            <idno type="URI">https://www.wikidata.org/wiki/Q131095</idno>
-            <idno type="URI">https://viaf.org/viaf/182875824</idno>
             <textLang mainLang="syr"/>
-            <note xml:lang="syr" type="incipit" source="#bib83-3">ܦܿܘܠܘܣ ܫܠܝܚܐ ܕܿܝܫܘܼܥ ܡܫܝܚܐ ܒܿܨܒܼܝܢܗ ܕܿܐܠܗܐ܂ ܘܛܝܡܬܼܐܘܣ ܐܚܐ܃</note>
-            <bibl xml:id="bib83-1" type="lawd:Edition">
-               <title level="m">ܟܬܒܐ ܩܕܝ̈ܫܐ: ܟܬܒܐ ܕܕܝܬܩܐ ܥܛܝܼܩܬܐ ܘ ܚ̇ܕܬܐ</title>
-               <ptr target="http://syriaca.org/bibl/2335"/>
-               <citedRange unit="pp">267-271</citedRange>
+            <bibl xml:id="bib83-1" type="syriaca:Manuscript">
+               <title>Manchester, John Rylands University Library, Syriac 2 (=Crawford Syriac 2) (12th cent.?)</title>
+               <citedRange unit="fol">228b-231</citedRange>
                <listRelation>
                   <relation active="#bib83-1"
                             ref="lawd:embodies"
                             passive="http://syriaca.org/work/83"/>
                </listRelation>
             </bibl>
-            <bibl xml:id="bib83-2" type="lawd:Edition">
-               <title level="m">The Syriac Peshiṭta Bible with English Translation: Galatians–Philemon</title>
-               <title level="s">Surath Kthob</title>
-               <ptr target="http://syriaca.org/bibl/2362"/>
+            <bibl xml:id="bib83-2" type="syriaca:Manuscript">
+               <title>Manchester, John Rylands University Library, Syriac 11 (=Harris Syriac 137) (1905)</title>
+               <citedRange unit="fol">115a-118</citedRange>
+               <note>Includes introduction</note>
                <listRelation>
                   <relation active="#bib83-2"
                             ref="lawd:embodies"
                             passive="http://syriaca.org/work/83"/>
                </listRelation>
             </bibl>
-            <bibl xml:id="bib83-3" type="lawd:Edition">
-               <title level="m">Comprehensive Aramaic Lexicon</title>
-               <ptr target="http://syriaca.org/bibl/2439"/>
-               <citedRange unit="entry"
-                           target="http://cal1.cn.huc.edu/showsubtexts.php?subtext=62051&amp;cset=USyriac">62051</citedRange>
-               <citedRange unit="entry">Col</citedRange>
+            <bibl xml:id="bib83-3" type="syriaca:Catalogue">
+               <title level="a">A Catalogue of the Syriac Manuscripts in the John Rylands Library</title>
+               <title level="j">Bulletin of the John Rylands Library</title>
+               <ptr target="http://syriaca.org/bibl/2430"/>
+               <citedRange unit="pp">118-119, 130-131</citedRange>
                <listRelation>
-                  <relation active="#bib83-3" ref="dct:source" passive="#bib83-1"/>
-                  <relation active="#bib83-3"
-                            ref="lawd:embodies"
-                            passive="http://syriaca.org/work/83"/>
+                  <relation active="#bib83-1" ref="lawd:hasCitation" passive="#bib83-3"/>
+                  <relation active="#bib83-2" ref="lawd:hasCitation" passive="#bib83-3"/>
                </listRelation>
-            </bibl>
-            <bibl xml:id="bib83-4" type="lawd:Edition">
-               <title level="m">ܟܬܵܒܸ̈ܐ ܩܲܕܹ̈ܝܫܸܐ ܗ̅ ܟܬܵܒܸ̈ܐ ܕܕܹܝܲܬܹܝܩܹܐ ܥܲܛܹܝܩܵܐ ܘܚܕܲܬܵܐ</title>
-               <ptr target="http://syriaca.org/bibl/2381"/>
-               <citedRange unit="pp">278-282</citedRange>
-               <listRelation>
-                  <relation active="#bib83-4"
-                            ref="lawd:embodies"
-                            passive="http://syriaca.org/work/83"/>
-               </listRelation>
-            </bibl>
-            <bibl xml:id="bib83-5" type="lawd:Citation">
-               <title level="m">The SBL Handbook of Style: For Biblical Studies and Related Disciplines</title>
-               <ptr target="http://syriaca.org/bibl/2432"/>
             </bibl>
             <listRelation>
                <relation ref="skos:broadMatch"

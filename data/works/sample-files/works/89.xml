@@ -11,8 +11,7 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title level="a" xml:lang="en">Philemon (Peshitta Version) — <foreign xml:lang="syr">ܐܓܪܬܐ ܕܦܘܠܘܣ ܕܠܘܬ ܦܝܠܝܡܘܢ</foreign>
-            </title>
+            <title level="a" xml:lang="en">Philemon (Peshitta Version)</title>
             <sponsor>Syriaca.org: The Syriac Reference Portal</sponsor>
             <funder>The International Balzan Prize Foundation</funder>
             <funder>The National Endowment for the Humanities</funder>
@@ -47,7 +46,7 @@
                                 License.</p>
                </licence>
             </availability>
-            <date>2017-03-23+01:00</date>
+            <date>2017-04-19+02:00</date>
          </publicationStmt>
          <seriesStmt>
             <title level="s">New Handbook of Syriac Literature</title>
@@ -67,7 +66,7 @@
             </respStmt>
             <idno type="URI">http://syriaca.org/nhsl</idno>
             <biblScope unit="vol" from="2" to="2">
-               <title level="m">Clavis of Syriac Biblical Works</title>
+               <title level="m">A Guide to the Bible in Syriac</title>
                <idno type="URI">http://syriaca.org/bible</idno>
             </biblScope>
          </seriesStmt>
@@ -117,75 +116,44 @@
       <revisionDesc status="draft">
          <change who="http://syriaca.org/documentation/editors.xml#ngibson"
                  n="1.0"
-                 when="2017-03-23+01:00">CREATED: work</change>
+                 when="2017-04-19+02:00">CREATED: work</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <bibl xml:id="work-89" type="lawd:ConceptualWork">
             <title xml:id="name89-1" xml:lang="en" syriaca-tags="#syriaca-headword">Philemon (Peshitta Version)</title>
-            <title xml:id="name89-2"
-                   xml:lang="syr"
-                   syriaca-tags="#syriaca-headword"
-                   source="#bib89-1">ܐܓܪܬܐ ܕܦܘܠܘܣ ܕܠܘܬ ܦܝܠܝܡܘܢ</title>
-            <title xml:id="name89-3" xml:lang="syr" source="#bib89-1">ܐܓܪܬܐ ܕܠܘܬ ܦܝܠܡܘܢ</title>
-            <title xml:id="name89-4"
-                   xml:lang="en"
-                   type="abbreviation"
-                   source="#bib89-5">Phlm</title>
-            <title xml:id="name89-5" xml:lang="en" source="#bib89-5">Philemon</title>
-            <title xml:id="name89-6" xml:lang="syr-Syrj" source="#bib89-4">ܐܶܓܰܪܬܳܐ ܕܦܰܘܠܳܘܣ ܕܰܠܘܳܬ ܦܺܝܠܺܝܡܳܘܢ</title>
             <idno type="URI">http://syriaca.org/work/89</idno>
-            <idno type="URI">https://en.wikipedia.org/wiki/Epistle_to_Philemon</idno>
-            <idno type="URI">https://www.wikidata.org/wiki/Q131104</idno>
             <textLang mainLang="syr"/>
-            <note xml:lang="syr" type="incipit" source="#bib89-3">ܦܿܘܠܘܣ ܐܣܝܪܗ ܕܿܝܫܘܼܥ ܡܫܝܚܐ܂ ܘܛܝܡܬܼܐܘܣ ܐܚܐ܃ ܠܦܼܝܠܡܘܢ ܚܒܿܝܒܼܐ ܘܦܼܠܚܐ ܕܿܥܡܢ܂</note>
-            <bibl xml:id="bib89-1" type="lawd:Edition">
-               <title level="m">ܟܬܒܐ ܩܕܝ̈ܫܐ: ܟܬܒܐ ܕܕܝܬܩܐ ܥܛܝܼܩܬܐ ܘ ܚ̇ܕܬܐ</title>
-               <ptr target="http://syriaca.org/bibl/2335"/>
-               <citedRange unit="pp">289-290</citedRange>
+            <bibl xml:id="bib89-1" type="syriaca:Manuscript">
+               <title>Manchester, John Rylands University Library, Syriac 2 (=Crawford Syriac 2) (12th cent.?)</title>
+               <citedRange unit="fol">242a-242</citedRange>
+               <note>Missing part of 1:1</note>
                <listRelation>
                   <relation active="#bib89-1"
                             ref="lawd:embodies"
                             passive="http://syriaca.org/work/89"/>
                </listRelation>
             </bibl>
-            <bibl xml:id="bib89-2" type="lawd:Edition">
-               <title level="m">The Syriac Peshiṭta Bible with English Translation: Galatians–Philemon</title>
-               <title level="s">Surath Kthob</title>
-               <ptr target="http://syriaca.org/bibl/2362"/>
+            <bibl xml:id="bib89-2" type="syriaca:Manuscript">
+               <title>Manchester, John Rylands University Library, Syriac 11 (=Harris Syriac 137) (1905)</title>
+               <citedRange unit="fol">130b-133</citedRange>
+               <note>Includes introduction</note>
                <listRelation>
                   <relation active="#bib89-2"
                             ref="lawd:embodies"
                             passive="http://syriaca.org/work/89"/>
                </listRelation>
             </bibl>
-            <bibl xml:id="bib89-3" type="lawd:Edition">
-               <title level="m">Comprehensive Aramaic Lexicon</title>
-               <ptr target="http://syriaca.org/bibl/2439"/>
-               <citedRange unit="entry"
-                           target="http://cal1.cn.huc.edu/get_a_chapter.php?file=62057&amp;cset=U">62057</citedRange>
-               <citedRange unit="entry">Phile (Philemon)</citedRange>
+            <bibl xml:id="bib89-3" type="syriaca:Catalogue">
+               <title level="a">A Catalogue of the Syriac Manuscripts in the John Rylands Library</title>
+               <title level="j">Bulletin of the John Rylands Library</title>
+               <ptr target="http://syriaca.org/bibl/2430"/>
+               <citedRange unit="pp">118-119, 130-131</citedRange>
                <listRelation>
-                  <relation active="#bib89-3" ref="dct:source" passive="#bib89-1"/>
-                  <relation active="#bib89-3"
-                            ref="lawd:embodies"
-                            passive="http://syriaca.org/work/89"/>
+                  <relation active="#bib89-1" ref="lawd:hasCitation" passive="#bib89-3"/>
+                  <relation active="#bib89-2" ref="lawd:hasCitation" passive="#bib89-3"/>
                </listRelation>
-            </bibl>
-            <bibl xml:id="bib89-4" type="lawd:Edition">
-               <title level="m">ܟܬܵܒܸ̈ܐ ܩܲܕܹ̈ܝܫܸܐ ܗ̅ ܟܬܵܒܸ̈ܐ ܕܕܹܝܲܬܹܝܩܹܐ ܥܲܛܹܝܩܵܐ ܘܚܕܲܬܵܐ</title>
-               <ptr target="http://syriaca.org/bibl/2381"/>
-               <citedRange unit="pp">300-301</citedRange>
-               <listRelation>
-                  <relation active="#bib89-4"
-                            ref="lawd:embodies"
-                            passive="http://syriaca.org/work/89"/>
-               </listRelation>
-            </bibl>
-            <bibl xml:id="bib89-5" type="lawd:Citation">
-               <title level="m">The SBL Handbook of Style: For Biblical Studies and Related Disciplines</title>
-               <ptr target="http://syriaca.org/bibl/2432"/>
             </bibl>
             <listRelation>
                <relation ref="skos:broadMatch"

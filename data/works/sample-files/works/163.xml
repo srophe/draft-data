@@ -11,7 +11,7 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title level="a" xml:lang="en">Romans (Peshitta Version)</title>
+            <title level="a" xml:lang="en">Gospel of Mark (Harklensian Version)</title>
             <sponsor>Syriaca.org: The Syriac Reference Portal</sponsor>
             <funder>The International Balzan Prize Foundation</funder>
             <funder>The National Endowment for the Humanities</funder>
@@ -39,7 +39,7 @@
          </editionStmt>
          <publicationStmt>
             <authority>Syriaca.org: The Syriac Reference Portal</authority>
-            <idno type="URI">http://syriaca.org/work/77/tei</idno>
+            <idno type="URI">http://syriaca.org/work/163/tei</idno>
             <availability>
                <licence target="http://creativecommons.org/licenses/by/3.0/">
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported
@@ -121,43 +121,33 @@
    </teiHeader>
    <text>
       <body>
-         <bibl xml:id="work-77" type="lawd:ConceptualWork">
-            <title xml:id="name77-1" xml:lang="en" syriaca-tags="#syriaca-headword">Romans (Peshitta Version)</title>
-            <idno type="URI">http://syriaca.org/work/77</idno>
+         <bibl xml:id="work-163" type="lawd:ConceptualWork">
+            <title xml:id="name163-1" xml:lang="en" syriaca-tags="#syriaca-headword">Gospel of Mark (Harklensian Version)</title>
+            <idno type="URI">http://syriaca.org/work/163</idno>
             <textLang mainLang="syr"/>
-            <bibl xml:id="bib77-1" type="syriaca:Manuscript">
-               <title>Manchester, John Rylands University Library, Syriac 2 (=Crawford Syriac 2) (12th cent.?)</title>
-               <citedRange unit="fol">183a-196</citedRange>
+            <bibl xml:id="bib163-1" type="syriaca:Manuscript">
+               <title>Manchester, John Rylands University Library, Syriac 10 (=Harris Syriac 135) (1898)</title>
+               <citedRange unit="fol">107b-155a</citedRange>
+               <note>Includes commentary</note>
                <listRelation>
-                  <relation active="#bib77-1"
+                  <relation active="#bib163-1"
                             ref="lawd:embodies"
-                            passive="http://syriaca.org/work/77"/>
+                            passive="http://syriaca.org/work/163"/>
                </listRelation>
             </bibl>
-            <bibl xml:id="bib77-2" type="syriaca:Manuscript">
-               <title>Manchester, John Rylands University Library, Syriac 11 (=Harris Syriac 137) (1905)</title>
-               <citedRange unit="fol">66a-79</citedRange>
-               <note>Includes introduction</note>
-               <listRelation>
-                  <relation active="#bib77-2"
-                            ref="lawd:embodies"
-                            passive="http://syriaca.org/work/77"/>
-               </listRelation>
-            </bibl>
-            <bibl xml:id="bib77-3" type="syriaca:Catalogue">
+            <bibl xml:id="bib163-2" type="syriaca:Catalogue">
                <title level="a">A Catalogue of the Syriac Manuscripts in the John Rylands Library</title>
                <title level="j">Bulletin of the John Rylands Library</title>
                <ptr target="http://syriaca.org/bibl/2430"/>
-               <citedRange unit="pp">118-119, 130-131</citedRange>
+               <citedRange unit="pp">129-130</citedRange>
                <listRelation>
-                  <relation active="#bib77-1" ref="lawd:hasCitation" passive="#bib77-3"/>
-                  <relation active="#bib77-2" ref="lawd:hasCitation" passive="#bib77-3"/>
+                  <relation active="#bib163-1" ref="lawd:hasCitation" passive="#bib163-2"/>
                </listRelation>
             </bibl>
             <listRelation>
                <relation ref="skos:broadMatch"
-                         active="http://syriaca.org/work/77"
-                         passive="http://syriaca.org/work/9594"/>
+                         active="http://syriaca.org/work/163"
+                         passive="http://syriaca.org/work/9647"/>
             </listRelation>
          </bibl>
       </body>

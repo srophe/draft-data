@@ -11,8 +11,7 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title level="a" xml:lang="en">Titus (Peshitta Version) — <foreign xml:lang="syr">ܐܓܪܬܐ ܕܦܘܠܘܣ ܕܠܘܬ ܛܝܛܘܣ</foreign>
-            </title>
+            <title level="a" xml:lang="en">Titus (Peshitta Version)</title>
             <sponsor>Syriaca.org: The Syriac Reference Portal</sponsor>
             <funder>The International Balzan Prize Foundation</funder>
             <funder>The National Endowment for the Humanities</funder>
@@ -47,7 +46,7 @@
                                 License.</p>
                </licence>
             </availability>
-            <date>2017-03-23+01:00</date>
+            <date>2017-04-19+02:00</date>
          </publicationStmt>
          <seriesStmt>
             <title level="s">New Handbook of Syriac Literature</title>
@@ -67,7 +66,7 @@
             </respStmt>
             <idno type="URI">http://syriaca.org/nhsl</idno>
             <biblScope unit="vol" from="2" to="2">
-               <title level="m">Clavis of Syriac Biblical Works</title>
+               <title level="m">A Guide to the Bible in Syriac</title>
                <idno type="URI">http://syriaca.org/bible</idno>
             </biblScope>
          </seriesStmt>
@@ -117,75 +116,44 @@
       <revisionDesc status="draft">
          <change who="http://syriaca.org/documentation/editors.xml#ngibson"
                  n="1.0"
-                 when="2017-03-23+01:00">CREATED: work</change>
+                 when="2017-04-19+02:00">CREATED: work</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <bibl xml:id="work-88" type="lawd:ConceptualWork">
             <title xml:id="name88-1" xml:lang="en" syriaca-tags="#syriaca-headword">Titus (Peshitta Version)</title>
-            <title xml:id="name88-2"
-                   xml:lang="syr"
-                   syriaca-tags="#syriaca-headword"
-                   source="#bib88-1">ܐܓܪܬܐ ܕܦܘܠܘܣ ܕܠܘܬ ܛܝܛܘܣ</title>
-            <title xml:id="name88-3" xml:lang="syr" source="#bib88-1">ܐܓܪܬܐ ܕܠܘܬ ܛܛܘܣ</title>
-            <title xml:id="name88-4"
-                   xml:lang="en"
-                   type="abbreviation"
-                   source="#bib88-5">Titus</title>
-            <title xml:id="name88-4" xml:lang="en" source="#bib88-5">Titus</title>
-            <title xml:id="name88-6" xml:lang="syr-Syrj" source="#bib88-4">ܐܶܓܰܪܬܳܐ ܕܦܰܘܠܳܘܣ ܕܰܠܘܳܬ ܛܺܛܳܘܣ</title>
             <idno type="URI">http://syriaca.org/work/88</idno>
-            <idno type="URI">https://en.wikipedia.org/wiki/Epistle_to_Titus</idno>
-            <idno type="URI">https://www.wikidata.org/wiki/Q131493</idno>
             <textLang mainLang="syr"/>
-            <note xml:lang="syr" type="incipit" source="#bib88-3">ܦܿܘܠܘܣ ܥܒܼܕܿܗ ܕܿܐܠܗܐ܂ ܘܫܠܝܚܗ ܕܿܝܫܘܼܥ ܡܫܝܚܐ܂ ܒܿܗܝܡܢܘܼܬܼܐ ܕܿܓܼܒܼܝܐ̈ ܕܿܐܠܗܐ܂ ܘܝܕܼܥܬܼܐ ܕܿܫܪܪܐ ܕܿܒܼܕܼܚܠܬܼ ܐܠܗܐ܂</note>
-            <bibl xml:id="bib88-1" type="lawd:Edition">
-               <title level="m">ܟܬܒܐ ܩܕܝ̈ܫܐ: ܟܬܒܐ ܕܕܝܬܩܐ ܥܛܝܼܩܬܐ ܘ ܚ̇ܕܬܐ</title>
-               <ptr target="http://syriaca.org/bibl/2335"/>
-               <citedRange unit="pp">286-289</citedRange>
+            <bibl xml:id="bib88-1" type="syriaca:Manuscript">
+               <title>Manchester, John Rylands University Library, Syriac 2 (=Crawford Syriac 2) (12th cent.?)</title>
+               <citedRange unit="fol">241a-242</citedRange>
+               <note>Missing 1:15 - end</note>
                <listRelation>
                   <relation active="#bib88-1"
                             ref="lawd:embodies"
                             passive="http://syriaca.org/work/88"/>
                </listRelation>
             </bibl>
-            <bibl xml:id="bib88-2" type="lawd:Edition">
-               <title level="m">The Syriac Peshiṭta Bible with English Translation: Galatians–Philemon</title>
-               <title level="s">Surath Kthob</title>
-               <ptr target="http://syriaca.org/bibl/2362"/>
+            <bibl xml:id="bib88-2" type="syriaca:Manuscript">
+               <title>Manchester, John Rylands University Library, Syriac 11 (=Harris Syriac 137) (1905)</title>
+               <citedRange unit="fol">129b-130</citedRange>
+               <note>Includes introduction</note>
                <listRelation>
                   <relation active="#bib88-2"
                             ref="lawd:embodies"
                             passive="http://syriaca.org/work/88"/>
                </listRelation>
             </bibl>
-            <bibl xml:id="bib88-3" type="lawd:Edition">
-               <title level="m">Comprehensive Aramaic Lexicon</title>
-               <ptr target="http://syriaca.org/bibl/2439"/>
-               <citedRange unit="entry"
-                           target="http://cal1.cn.huc.edu/showsubtexts.php?subtext=62056&amp;cset=USyriac">62056</citedRange>
-               <citedRange unit="entry">Tit (Titus)</citedRange>
+            <bibl xml:id="bib88-3" type="syriaca:Catalogue">
+               <title level="a">A Catalogue of the Syriac Manuscripts in the John Rylands Library</title>
+               <title level="j">Bulletin of the John Rylands Library</title>
+               <ptr target="http://syriaca.org/bibl/2430"/>
+               <citedRange unit="pp">118-119, 130-131</citedRange>
                <listRelation>
-                  <relation active="#bib88-3" ref="dct:source" passive="#bib88-1"/>
-                  <relation active="#bib88-3"
-                            ref="lawd:embodies"
-                            passive="http://syriaca.org/work/88"/>
+                  <relation active="#bib88-1" ref="lawd:hasCitation" passive="#bib88-3"/>
+                  <relation active="#bib88-2" ref="lawd:hasCitation" passive="#bib88-3"/>
                </listRelation>
-            </bibl>
-            <bibl xml:id="bib88-4" type="lawd:Edition">
-               <title level="m">ܟܬܵܒܸ̈ܐ ܩܲܕܹ̈ܝܫܸܐ ܗ̅ ܟܬܵܒܸ̈ܐ ܕܕܹܝܲܬܹܝܩܹܐ ܥܲܛܹܝܩܵܐ ܘܚܕܲܬܵܐ</title>
-               <ptr target="http://syriaca.org/bibl/2381"/>
-               <citedRange unit="pp">297-300</citedRange>
-               <listRelation>
-                  <relation active="#bib88-4"
-                            ref="lawd:embodies"
-                            passive="http://syriaca.org/work/88"/>
-               </listRelation>
-            </bibl>
-            <bibl xml:id="bib88-5" type="lawd:Citation">
-               <title level="m">The SBL Handbook of Style: For Biblical Studies and Related Disciplines</title>
-               <ptr target="http://syriaca.org/bibl/2432"/>
             </bibl>
             <listRelation>
                <relation ref="skos:broadMatch"

@@ -11,8 +11,7 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title level="a" xml:lang="en">Hebrews (Peshitta Version) — <foreign xml:lang="syr">ܐܓܪܬܐ ܕܠܘܬ ܥܒܪ̈ܝܐ</foreign>
-            </title>
+            <title level="a" xml:lang="en">Hebrews (Peshitta Version)</title>
             <sponsor>Syriaca.org: The Syriac Reference Portal</sponsor>
             <funder>The International Balzan Prize Foundation</funder>
             <funder>The National Endowment for the Humanities</funder>
@@ -47,7 +46,7 @@
                                 License.</p>
                </licence>
             </availability>
-            <date>2017-03-23+01:00</date>
+            <date>2017-04-19+02:00</date>
          </publicationStmt>
          <seriesStmt>
             <title level="s">New Handbook of Syriac Literature</title>
@@ -67,7 +66,7 @@
             </respStmt>
             <idno type="URI">http://syriaca.org/nhsl</idno>
             <biblScope unit="vol" from="2" to="2">
-               <title level="m">Clavis of Syriac Biblical Works</title>
+               <title level="m">A Guide to the Bible in Syriac</title>
                <idno type="URI">http://syriaca.org/bible</idno>
             </biblScope>
          </seriesStmt>
@@ -117,74 +116,44 @@
       <revisionDesc status="draft">
          <change who="http://syriaca.org/documentation/editors.xml#ngibson"
                  n="1.0"
-                 when="2017-03-23+01:00">CREATED: work</change>
+                 when="2017-04-19+02:00">CREATED: work</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <bibl xml:id="work-90" type="lawd:ConceptualWork">
             <title xml:id="name90-1" xml:lang="en" syriaca-tags="#syriaca-headword">Hebrews (Peshitta Version)</title>
-            <title xml:id="name90-2"
-                   xml:lang="syr"
-                   syriaca-tags="#syriaca-headword"
-                   source="#bib90-1 #bib90-2">ܐܓܪܬܐ ܕܠܘܬ ܥܒܪ̈ܝܐ</title>
-            <title xml:id="name90-3"
-                   xml:lang="en"
-                   type="abbreviation"
-                   source="#bib90-5">Heb</title>
-            <title xml:id="name90-4" xml:lang="en" source="#bib90-5">Hebrews</title>
-            <title xml:id="name90-5" xml:lang="syr-Syrj" source="#bib90-4">ܐܶܓܰܪܬܳܐ ܕܰܠܘܳܬ ܥܶܒ̈ܪܳܝܶܐ</title>
             <idno type="URI">http://syriaca.org/work/90</idno>
-            <idno type="URI">https://en.wikipedia.org/wiki/Epistle_to_the_Hebrews</idno>
-            <idno type="URI">https://www.wikidata.org/wiki/Q128608</idno>
             <textLang mainLang="syr"/>
-            <note xml:lang="syr" type="incipit" source="#bib90-3">ܒܿܟܼܠ ܡܢܘܢ̈ ܘܒܼܟܼܠ ܕܿܡܘܢ̈܂ ܡܠܠ ܐܠܗܐ ܥܡ ܐܒܼܗܝܢ̈ ܒܿܢܒܼܝܐ̈ ܡܢ ܩܕܼܝܡ܂</note>
-            <bibl xml:id="bib90-1" type="lawd:Edition">
-               <title level="m">ܟܬܒܐ ܩܕܝ̈ܫܐ: ܟܬܒܐ ܕܕܝܬܩܐ ܥܛܝܼܩܬܐ ܘ ܚ̇ܕܬܐ</title>
-               <ptr target="http://syriaca.org/bibl/2335"/>
-               <citedRange unit="pp">290-303</citedRange>
+            <bibl xml:id="bib90-1" type="syriaca:Manuscript">
+               <title>Manchester, John Rylands University Library, Syriac 2 (=Crawford Syriac 2) (12th cent.?)</title>
+               <citedRange unit="fol">242b-249b</citedRange>
+               <note>Breaks off at 11:28</note>
                <listRelation>
                   <relation active="#bib90-1"
                             ref="lawd:embodies"
                             passive="http://syriaca.org/work/90"/>
                </listRelation>
             </bibl>
-            <bibl xml:id="bib90-2" type="lawd:Edition">
-               <title level="m">The Syriac Peshiṭta Bible with English Translation: Hebrews and the General Catholic Epistles</title>
-               <title level="s">Surath Kthob</title>
-               <ptr target="http://syriaca.org/bibl/2377"/>
+            <bibl xml:id="bib90-2" type="syriaca:Manuscript">
+               <title>Manchester, John Rylands University Library, Syriac 11 (=Harris Syriac 137) (1905)</title>
+               <citedRange unit="fol">133b-143b</citedRange>
+               <note>Includes introduction</note>
                <listRelation>
                   <relation active="#bib90-2"
                             ref="lawd:embodies"
                             passive="http://syriaca.org/work/90"/>
                </listRelation>
             </bibl>
-            <bibl xml:id="bib90-3" type="lawd:Edition">
-               <title level="m">Comprehensive Aramaic Lexicon</title>
-               <ptr target="http://syriaca.org/bibl/2439"/>
-               <citedRange unit="entry"
-                           target="http://cal1.cn.huc.edu/showsubtexts.php?subtext=62058&amp;cset=USyriac">62058</citedRange>
-               <citedRange unit="entry">Heb (Hebrews)</citedRange>
+            <bibl xml:id="bib90-3" type="syriaca:Catalogue">
+               <title level="a">A Catalogue of the Syriac Manuscripts in the John Rylands Library</title>
+               <title level="j">Bulletin of the John Rylands Library</title>
+               <ptr target="http://syriaca.org/bibl/2430"/>
+               <citedRange unit="pp">118-119, 130-131</citedRange>
                <listRelation>
-                  <relation active="#bib90-3" ref="dct:source" passive="#bib90-1"/>
-                  <relation active="#bib90-3"
-                            ref="lawd:embodies"
-                            passive="http://syriaca.org/work/90"/>
+                  <relation active="#bib90-1" ref="lawd:hasCitation" passive="#bib90-3"/>
+                  <relation active="#bib90-2" ref="lawd:hasCitation" passive="#bib90-3"/>
                </listRelation>
-            </bibl>
-            <bibl xml:id="bib90-4" type="lawd:Edition">
-               <title level="m">ܟܬܵܒܸ̈ܐ ܩܲܕܹ̈ܝܫܸܐ ܗ̅ ܟܬܵܒܸ̈ܐ ܕܕܹܝܲܬܹܝܩܹܐ ܥܲܛܹܝܩܵܐ ܘܚܕܲܬܵܐ</title>
-               <ptr target="http://syriaca.org/bibl/2381"/>
-               <citedRange unit="pp">301-315</citedRange>
-               <listRelation>
-                  <relation active="#bib90-4"
-                            ref="lawd:embodies"
-                            passive="http://syriaca.org/work/90"/>
-               </listRelation>
-            </bibl>
-            <bibl xml:id="bib90-5" type="lawd:Citation">
-               <title level="m">The SBL Handbook of Style: For Biblical Studies and Related Disciplines</title>
-               <ptr target="http://syriaca.org/bibl/2432"/>
             </bibl>
             <listRelation>
                <relation ref="skos:broadMatch"

@@ -2,7 +2,7 @@
 <?xml-stylesheet type="text/xsl" href="../../../srophe-xslt/works-spreadsheet2tei.xsl"?>
 <root>
     <row>
-        <New_URI>***URI</New_URI>
+        <New_URI>***</New_URI>
         <title_syriaca-headword.en>English Headword</title_syriaca-headword.en>
         <title_syriaca-headword.syr>Syriac Headword</title_syriaca-headword.syr>
         <title.Edition_1.syr>Syriac Title from Edition 1</title.Edition_1.syr>
@@ -37,9 +37,9 @@
         <Glossary_1></Glossary_1>
         <Glossary_2></Glossary_2>
         <lang.Glossary_1></lang.Glossary_1>
-        <Greek_editions_with_Syriac_evidence_1></Greek_editions_with_Syriac_evidence_1>
-        <Greek_editions_with_Syriac_evidence_2></Greek_editions_with_Syriac_evidence_2>
-        <Greek_editions_with_Syriac_evidence_3></Greek_editions_with_Syriac_evidence_3>
+        <OriginalWithSyriacEvidence_1></OriginalWithSyriacEvidence_1>
+        <OriginalWithSyriacEvidence_2></OriginalWithSyriacEvidence_2>
+        <OriginalWithSyriacEvidence_3></OriginalWithSyriacEvidence_3>
         <Apparatus_1></Apparatus_1>
         <Apparatus_2></Apparatus_2>
         <Apparatus_3></Apparatus_3>
@@ -77,7 +77,7 @@
         <extent.en></extent.en>
         <note_abstract.en></note_abstract.en>
         <relation_dct---isPartOf></relation_dct---isPartOf>
-        <relation_syriaca---isPartOfTradition></relation_syriaca---isPartOfTradition>
+        <relation_skos---broadMatch>Literary Tradition</relation_skos---broadMatch>
         <relation_possibly-identical></relation_possibly-identical>
         <idno_URI>VIAF URI</idno_URI>
         <idno_URI>Perseus Catalog URI</idno_URI>
@@ -121,9 +121,9 @@
         <Glossary_1></Glossary_1>
         <Glossary_2></Glossary_2>
         <lang.Glossary_1></lang.Glossary_1>
-        <Greek_editions_with_Syriac_evidence_1></Greek_editions_with_Syriac_evidence_1>
-        <Greek_editions_with_Syriac_evidence_2></Greek_editions_with_Syriac_evidence_2>
-        <Greek_editions_with_Syriac_evidence_3></Greek_editions_with_Syriac_evidence_3>
+        <OriginalWithSyriacEvidence_1></OriginalWithSyriacEvidence_1>
+        <OriginalWithSyriacEvidence_2></OriginalWithSyriacEvidence_2>
+        <OriginalWithSyriacEvidence_3></OriginalWithSyriacEvidence_3>
         <Apparatus_1></Apparatus_1>
         <Apparatus_2></Apparatus_2>
         <Apparatus_3></Apparatus_3>
@@ -161,7 +161,7 @@
         <extent.en>RECOMMENDED (text) Prose description of number of parts, sections, stanzas, etc.</extent.en>
         <note_abstract.en>HIGHLY RECOMMENDED. (text) A brief description that helps identify the work and distinguish it from other works that may be confused. Currently only &lt;note>s with @type="abstract" are supported in the conversion.</note_abstract.en>
         <relation_dct---isPartOf>OPTIONAL. (Syriaca.org URI) The URI of a Syriaca.org work which contains this work. Separate multiple URIs with commas. (If the URI contains commas [unlikely], replace them with "%2c".) The conversion automatically uses the value of the column name after "relation_" as the @ref of the &lt;relation>, but currently only "possibly-identical" is defined in the column-mapping template. Triple-hyphens (---) in the @ref values are converted to colons (:) to allow prefixed namespaces.</relation_dct---isPartOf>
-        <relation_syriaca---isPartOfTradition>OPTIONAL. (Syriaca.org URI) The URI of a Syriaca.org literary tradition which contains this work (e.g., "Alexandra (text)" is part of "Alexandra (literary tradition)" http://syriaca.org/work/2057). Separate multiple URIs with commas. (If the URI contains commas [unlikely], replace them with "%2c".) The conversion automatically uses the value of the column name after "relation_" as the @ref of the &lt;relation>, but currently only "possibly-identical" is defined in the column-mapping template. Triple-hyphens (---) in the @ref values are converted to colons (:) to allow prefixed namespaces.</relation_syriaca---isPartOfTradition>
+        <relation_skos---broadMatch>OPTIONAL. (Syriaca.org URI) The URI of a Syriaca.org literary tradition which contains this work (e.g., "Alexandra (text)" is part of "Alexandra (literary tradition)" http://syriaca.org/work/2057). Separate multiple URIs with commas. (If the URI contains commas [unlikely], replace them with "%2c".) The conversion automatically uses the value of the column name after "relation_" as the @ref of the &lt;relation>, but currently only "possibly-identical" is defined in the column-mapping template. Triple-hyphens (---) in the @ref values are converted to colons (:) to allow prefixed namespaces.</relation_skos---broadMatch>
         <relation_possibly-identical>OPTIONAL. (Syriaca.org URI) The URI of other Syriaca.org entities with which the work on this row has a relationship. This must be a full URL (including "http://...") if the entity is not a work. If there is more than one URI related to this work, you can separate the URIs with commas. (If the URI contains commas [unlikely], replace them with "%2c".) The conversion automatically uses the value of the column name after "relation_" as the @ref of the &lt;relation>, but currently only "possibly-identical" is defined in the column-mapping template. Triple-hyphens (---) in the @ref values are converted to colons (:) to allow prefixed namespaces.</relation_possibly-identical>
         <idno_URI>OPTIONAL. (e.g., a URI) An additional identifier for the work (such as a Pinakes, Wikipedia, or VIAF.org URI). The part of the column name after "idno_" automatically becomes the @type value for the &lt;idno>.</idno_URI>
         <idno_URI>OPTIONAL. (e.g., a URI) An additional identifier for the work (such as a Pinakes, Wikipedia, or VIAF.org URI). The part of the column name after "idno_" automatically becomes the @type value for the &lt;idno>.</idno_URI>
@@ -205,9 +205,9 @@
         <Glossary_1>2349</Glossary_1>
         <Glossary_2></Glossary_2>
         <lang.Glossary_1>grc, syr</lang.Glossary_1>
-        <Greek_editions_with_Syriac_evidence_1></Greek_editions_with_Syriac_evidence_1>
-        <Greek_editions_with_Syriac_evidence_2></Greek_editions_with_Syriac_evidence_2>
-        <Greek_editions_with_Syriac_evidence_3></Greek_editions_with_Syriac_evidence_3>
+        <OriginalWithSyriacEvidence_1></OriginalWithSyriacEvidence_1>
+        <OriginalWithSyriacEvidence_2></OriginalWithSyriacEvidence_2>
+        <OriginalWithSyriacEvidence_3></OriginalWithSyriacEvidence_3>
         <Apparatus_1>2350</Apparatus_1>
         <Apparatus_2></Apparatus_2>
         <Apparatus_3></Apparatus_3>
@@ -245,7 +245,7 @@
         <extent.en></extent.en>
         <note_abstract.en>An ancient work of cosmology originally written in Greek under the name of Aristotle and translated into several languages, including Latin, Syriac, and Arabic. It should be distinguished from the Aristotelian work On the Heavens (De Caelo).</note_abstract.en>
         <relation_dct---isPartOf></relation_dct---isPartOf>
-        <relation_syriaca---isPartOfTradition></relation_syriaca---isPartOfTradition>
+        <relation_skos---broadMatch></relation_skos---broadMatch>
         <relation_possibly-identical></relation_possibly-identical>
         <idno_URI>http://viaf.org/viaf/177838764</idno_URI>
         <idno_URI>http://catalog.perseus.org/catalog/urn:cts:greekLit:tlg0086.tlg028</idno_URI>
@@ -289,9 +289,9 @@
         <Glossary_1>2468</Glossary_1>
         <Glossary_2></Glossary_2>
         <lang.Glossary_1>grc, syr</lang.Glossary_1>
-        <Greek_editions_with_Syriac_evidence_1>2456</Greek_editions_with_Syriac_evidence_1>
-        <Greek_editions_with_Syriac_evidence_2>2466</Greek_editions_with_Syriac_evidence_2>
-        <Greek_editions_with_Syriac_evidence_3></Greek_editions_with_Syriac_evidence_3>
+        <OriginalWithSyriacEvidence_1>2456</OriginalWithSyriacEvidence_1>
+        <OriginalWithSyriacEvidence_2>2466</OriginalWithSyriacEvidence_2>
+        <OriginalWithSyriacEvidence_3></OriginalWithSyriacEvidence_3>
         <Apparatus_1>2487</Apparatus_1>
         <Apparatus_2>2477</Apparatus_2>
         <Apparatus_3></Apparatus_3>
@@ -329,13 +329,13 @@
         <extent.en></extent.en>
         <note_abstract.en></note_abstract.en>
         <relation_dct---isPartOf></relation_dct---isPartOf>
-        <relation_syriaca---isPartOfTradition></relation_syriaca---isPartOfTradition>
+        <relation_skos---broadMatch>9731</relation_skos---broadMatch>
         <relation_possibly-identical></relation_possibly-identical>
-        <idno_URI>http://viaf.org/viaf/186512058/#Aristotle._|_Categoriae</idno_URI>
-        <idno_URI>http://catalog.perseus.org/catalog/urn:cts:greekLit:tlg0086.tlg006</idno_URI>
-        <idno_URN>urn:cts:greekLit:tlg0086.tlg006</idno_URN>
-        <idno_Bekker>1a1–15b32</idno_Bekker>
-        <idno_URI>https://en.wikipedia.org/wiki/Categories_(Aristotle)</idno_URI>
+        <idno_URI></idno_URI>
+        <idno_URI></idno_URI>
+        <idno_URN></idno_URN>
+        <idno_Bekker></idno_Bekker>
+        <idno_URI></idno_URI>
     </row>
     <row>
         <New_URI>9725</New_URI>
@@ -373,9 +373,9 @@
         <Glossary_1>2486</Glossary_1>
         <Glossary_2>2468</Glossary_2>
         <lang.Glossary_1>grc, syr</lang.Glossary_1>
-        <Greek_editions_with_Syriac_evidence_1>2456</Greek_editions_with_Syriac_evidence_1>
-        <Greek_editions_with_Syriac_evidence_2>2466</Greek_editions_with_Syriac_evidence_2>
-        <Greek_editions_with_Syriac_evidence_3></Greek_editions_with_Syriac_evidence_3>
+        <OriginalWithSyriacEvidence_1>2456</OriginalWithSyriacEvidence_1>
+        <OriginalWithSyriacEvidence_2>2466</OriginalWithSyriacEvidence_2>
+        <OriginalWithSyriacEvidence_3></OriginalWithSyriacEvidence_3>
         <Apparatus_1>2486</Apparatus_1>
         <Apparatus_2>2468</Apparatus_2>
         <Apparatus_3>2477</Apparatus_3>
@@ -385,12 +385,12 @@
         <citedRange_vol.Apparatus_3>38-39</citedRange_vol.Apparatus_3>
         <citedRange_vol.Apparatus_4>12-17</citedRange_vol.Apparatus_4>
         <lang.Apparatus_1>grc, syr</lang.Apparatus_1>
-        <Ms_1>Paris Syr. 248</Ms_1>
+        <Ms_1>Paris, Bibliothèque nationale de France, Syr. 248</Ms_1>
         <citedRange_fol.Ms_1>11v–27v</citedRange_fol.Ms_1>
         <Catalogue_1>2476</Catalogue_1>
         <citedRange_vol.Catalogue_1></citedRange_vol.Catalogue_1>
         <citedRange_pp.Catalogue_1>201–202</citedRange_pp.Catalogue_1>
-        <Ms_2>Paris Syr. 354</Ms_2>
+        <Ms_2>Paris, Bibliothèque nationale de France, Syr. 354</Ms_2>
         <citedRange_fol.Ms_2>118v–137v</citedRange_fol.Ms_2>
         <Catalogue_2>2473</Catalogue_2>
         <citedRange_vol.Catalogue_2></citedRange_vol.Catalogue_2>
@@ -413,13 +413,13 @@
         <extent.en></extent.en>
         <note_abstract.en></note_abstract.en>
         <relation_dct---isPartOf></relation_dct---isPartOf>
-        <relation_syriaca---isPartOfTradition></relation_syriaca---isPartOfTradition>
+        <relation_skos---broadMatch>9731</relation_skos---broadMatch>
         <relation_possibly-identical></relation_possibly-identical>
-        <idno_URI>http://viaf.org/viaf/186512058/#Aristotle._|_Categoriae</idno_URI>
-        <idno_URI>http://catalog.perseus.org/catalog/urn:cts:greekLit:tlg0086.tlg006</idno_URI>
-        <idno_URN>urn:cts:greekLit:tlg0086.tlg006</idno_URN>
-        <idno_Bekker>1a1–15b32</idno_Bekker>
-        <idno_URI>https://en.wikipedia.org/wiki/Categories_(Aristotle)</idno_URI>
+        <idno_URI></idno_URI>
+        <idno_URI></idno_URI>
+        <idno_URN></idno_URN>
+        <idno_Bekker></idno_Bekker>
+        <idno_URI></idno_URI>
     </row>
     <row>
         <New_URI>9726</New_URI>
@@ -457,9 +457,9 @@
         <Glossary_1>2468</Glossary_1>
         <Glossary_2></Glossary_2>
         <lang.Glossary_1>grc, syr</lang.Glossary_1>
-        <Greek_editions_with_Syriac_evidence_1>2456</Greek_editions_with_Syriac_evidence_1>
-        <Greek_editions_with_Syriac_evidence_2>2466</Greek_editions_with_Syriac_evidence_2>
-        <Greek_editions_with_Syriac_evidence_3>2468</Greek_editions_with_Syriac_evidence_3>
+        <OriginalWithSyriacEvidence_1>2456</OriginalWithSyriacEvidence_1>
+        <OriginalWithSyriacEvidence_2>2466</OriginalWithSyriacEvidence_2>
+        <OriginalWithSyriacEvidence_3>2468</OriginalWithSyriacEvidence_3>
         <Apparatus_1>2468</Apparatus_1>
         <Apparatus_2></Apparatus_2>
         <Apparatus_3></Apparatus_3>
@@ -497,13 +497,13 @@
         <extent.en></extent.en>
         <note_abstract.en></note_abstract.en>
         <relation_dct---isPartOf></relation_dct---isPartOf>
-        <relation_syriaca---isPartOfTradition></relation_syriaca---isPartOfTradition>
+        <relation_skos---broadMatch>9731</relation_skos---broadMatch>
         <relation_possibly-identical></relation_possibly-identical>
-        <idno_URI>http://viaf.org/viaf/186512058/#Aristotle._|_Categoriae</idno_URI>
-        <idno_URI>http://catalog.perseus.org/catalog/urn:cts:greekLit:tlg0086.tlg006</idno_URI>
-        <idno_URN>urn:cts:greekLit:tlg0086.tlg006</idno_URN>
-        <idno_Bekker>1a1–15b32</idno_Bekker>
-        <idno_URI>https://en.wikipedia.org/wiki/Categories_(Aristotle)</idno_URI>
+        <idno_URI></idno_URI>
+        <idno_URI></idno_URI>
+        <idno_URN></idno_URN>
+        <idno_Bekker></idno_Bekker>
+        <idno_URI></idno_URI>
     </row>
     <row>
         <New_URI>9727</New_URI>
@@ -541,9 +541,9 @@
         <Glossary_1>2463</Glossary_1>
         <Glossary_2></Glossary_2>
         <lang.Glossary_1>grc, syr, ar</lang.Glossary_1>
-        <Greek_editions_with_Syriac_evidence_1>2456</Greek_editions_with_Syriac_evidence_1>
-        <Greek_editions_with_Syriac_evidence_2>2485</Greek_editions_with_Syriac_evidence_2>
-        <Greek_editions_with_Syriac_evidence_3>2474</Greek_editions_with_Syriac_evidence_3>
+        <OriginalWithSyriacEvidence_1>2456</OriginalWithSyriacEvidence_1>
+        <OriginalWithSyriacEvidence_2>2485</OriginalWithSyriacEvidence_2>
+        <OriginalWithSyriacEvidence_3>2474</OriginalWithSyriacEvidence_3>
         <Apparatus_1>2463</Apparatus_1>
         <Apparatus_2></Apparatus_2>
         <Apparatus_3></Apparatus_3>
@@ -581,13 +581,13 @@
         <extent.en></extent.en>
         <note_abstract.en></note_abstract.en>
         <relation_dct---isPartOf></relation_dct---isPartOf>
-        <relation_syriaca---isPartOfTradition></relation_syriaca---isPartOfTradition>
+        <relation_skos---broadMatch>9732</relation_skos---broadMatch>
         <relation_possibly-identical></relation_possibly-identical>
-        <idno_URI>http://viaf.org/viaf/186598616/#Aristotle._|_De_interpretatione</idno_URI>
-        <idno_URI>http://catalog.perseus.org/catalog/urn:cts:greekLit:tlg0086.tlg017</idno_URI>
-        <idno_URN>urn:cts:greekLit:tlg0086.tlg017</idno_URN>
-        <idno_Bekker>16a1–24b9</idno_Bekker>
-        <idno_URI>https://en.wikipedia.org/wiki/De_Interpretatione</idno_URI>
+        <idno_URI></idno_URI>
+        <idno_URI></idno_URI>
+        <idno_URN></idno_URN>
+        <idno_Bekker></idno_Bekker>
+        <idno_URI></idno_URI>
     </row>
     <row>
         <New_URI>9728</New_URI>
@@ -612,7 +612,7 @@
         <Edition_3></Edition_3>
         <citedRange_pp.Edition_1>23, 25, 27, 29–55 [up to 23b15]</citedRange_pp.Edition_1>
         <citedRange_pp.Edition_2>116–119 [23b16–24b9]</citedRange_pp.Edition_2>
-        <witnesses.Edition_1>Ms 1, ms 2</witnesses.Edition_1>
+        <witnesses.Edition_1>Ms 1, Ms 2</witnesses.Edition_1>
         <Translation_1></Translation_1>
         <citedRange_pp.Translation_1></citedRange_pp.Translation_1>
         <lang.Translation_1></lang.Translation_1>
@@ -625,9 +625,9 @@
         <Glossary_1>2463</Glossary_1>
         <Glossary_2>2462</Glossary_2>
         <lang.Glossary_1>grc, syr, ar</lang.Glossary_1>
-        <Greek_editions_with_Syriac_evidence_1>2456</Greek_editions_with_Syriac_evidence_1>
-        <Greek_editions_with_Syriac_evidence_2>2485</Greek_editions_with_Syriac_evidence_2>
-        <Greek_editions_with_Syriac_evidence_3>2474</Greek_editions_with_Syriac_evidence_3>
+        <OriginalWithSyriacEvidence_1>2456</OriginalWithSyriacEvidence_1>
+        <OriginalWithSyriacEvidence_2>2485</OriginalWithSyriacEvidence_2>
+        <OriginalWithSyriacEvidence_3>2474</OriginalWithSyriacEvidence_3>
         <Apparatus_1>2463</Apparatus_1>
         <Apparatus_2></Apparatus_2>
         <Apparatus_3></Apparatus_3>
@@ -637,12 +637,12 @@
         <citedRange_vol.Apparatus_3></citedRange_vol.Apparatus_3>
         <citedRange_vol.Apparatus_4></citedRange_vol.Apparatus_4>
         <lang.Apparatus_1>grc, syr</lang.Apparatus_1>
-        <Ms_1>Berlin, Petermann 9</Ms_1>
+        <Ms_1>Berlin, Staatsbibliothek zu Berlin, Petermann 9</Ms_1>
         <citedRange_fol.Ms_1>112v–123v</citedRange_fol.Ms_1>
         <Catalogue_1></Catalogue_1>
         <citedRange_vol.Catalogue_1></citedRange_vol.Catalogue_1>
         <citedRange_pp.Catalogue_1></citedRange_pp.Catalogue_1>
-        <Ms_2>Vat. Syr. 158</Ms_2>
+        <Ms_2>Vatican, Biblioteca Apostolica Vaticana, Vat. sir. 158</Ms_2>
         <citedRange_fol.Ms_2>63v–95r</citedRange_fol.Ms_2>
         <Catalogue_2>2290</Catalogue_2>
         <citedRange_vol.Catalogue_2>3</citedRange_vol.Catalogue_2>
@@ -665,13 +665,13 @@
         <extent.en></extent.en>
         <note_abstract.en></note_abstract.en>
         <relation_dct---isPartOf></relation_dct---isPartOf>
-        <relation_syriaca---isPartOfTradition></relation_syriaca---isPartOfTradition>
+        <relation_skos---broadMatch>9732</relation_skos---broadMatch>
         <relation_possibly-identical></relation_possibly-identical>
-        <idno_URI>http://viaf.org/viaf/186598616/#Aristotle._|_De_interpretatione</idno_URI>
-        <idno_URI>http://catalog.perseus.org/catalog/urn:cts:greekLit:tlg0086.tlg017</idno_URI>
-        <idno_URN>urn:cts:greekLit:tlg0086.tlg017</idno_URN>
-        <idno_Bekker>16a1–24b9</idno_Bekker>
-        <idno_URI>https://en.wikipedia.org/wiki/De_Interpretatione</idno_URI>
+        <idno_URI></idno_URI>
+        <idno_URI></idno_URI>
+        <idno_URN></idno_URN>
+        <idno_Bekker></idno_Bekker>
+        <idno_URI></idno_URI>
     </row>
     <row>
         <New_URI>9729</New_URI>
@@ -709,9 +709,9 @@
         <Glossary_1></Glossary_1>
         <Glossary_2></Glossary_2>
         <lang.Glossary_1></lang.Glossary_1>
-        <Greek_editions_with_Syriac_evidence_1></Greek_editions_with_Syriac_evidence_1>
-        <Greek_editions_with_Syriac_evidence_2></Greek_editions_with_Syriac_evidence_2>
-        <Greek_editions_with_Syriac_evidence_3></Greek_editions_with_Syriac_evidence_3>
+        <OriginalWithSyriacEvidence_1></OriginalWithSyriacEvidence_1>
+        <OriginalWithSyriacEvidence_2></OriginalWithSyriacEvidence_2>
+        <OriginalWithSyriacEvidence_3></OriginalWithSyriacEvidence_3>
         <Apparatus_1>2479</Apparatus_1>
         <Apparatus_2>2461</Apparatus_2>
         <Apparatus_3>2471</Apparatus_3>
@@ -721,17 +721,17 @@
         <citedRange_vol.Apparatus_3>114-129</citedRange_vol.Apparatus_3>
         <citedRange_vol.Apparatus_4></citedRange_vol.Apparatus_4>
         <lang.Apparatus_1>grc, syr</lang.Apparatus_1>
-        <Ms_1>Vat. Syr. 158</Ms_1>
+        <Ms_1>Vatican, Biblioteca Apostolica Vaticana, Vat. sir. 158</Ms_1>
         <citedRange_fol.Ms_1>95v–106v</citedRange_fol.Ms_1>
         <Catalogue_1>2290</Catalogue_1>
         <citedRange_vol.Catalogue_1>3</citedRange_vol.Catalogue_1>
         <citedRange_pp.Catalogue_1>304–307</citedRange_pp.Catalogue_1>
-        <Ms_2>Berlin, Petermann 9</Ms_2>
+        <Ms_2>Berlin, Staatsbibliothek zu Berlin, Petermann 9</Ms_2>
         <citedRange_fol.Ms_2>104r–112r</citedRange_fol.Ms_2>
         <Catalogue_2>1394</Catalogue_2>
         <citedRange_vol.Catalogue_2>1</citedRange_vol.Catalogue_2>
         <citedRange_pp.Catalogue_2>321–335</citedRange_pp.Catalogue_2>
-        <Ms_3>Paris Syr. 248</Ms_3>
+        <Ms_3>Paris, Bibliothèque nationale de France, Syr. 248</Ms_3>
         <citedRange_fol.Ms_3>43r–49r</citedRange_fol.Ms_3>
         <Catalogue_3>2476</Catalogue_3>
         <citedRange_vol.Catalogue_3></citedRange_vol.Catalogue_3>
@@ -749,13 +749,13 @@
         <extent.en></extent.en>
         <note_abstract.en></note_abstract.en>
         <relation_dct---isPartOf></relation_dct---isPartOf>
-        <relation_syriaca---isPartOfTradition></relation_syriaca---isPartOfTradition>
+        <relation_skos---broadMatch>9733</relation_skos---broadMatch>
         <relation_possibly-identical></relation_possibly-identical>
-        <idno_URI>http://viaf.org/viaf/178288408/#Aristotle._|_Prior_analytics</idno_URI>
-        <idno_URI>http://catalog.perseus.org/catalog/urn:cts:greekLit:tlg0086.tlg001</idno_URI>
-        <idno_URN>urn:cts:greekLit:tlg0086.tlg001</idno_URN>
-        <idno_Bekker>24a10–70b38</idno_Bekker>
-        <idno_URI>https://en.wikipedia.org/wiki/Prior_Analytics</idno_URI>
+        <idno_URI></idno_URI>
+        <idno_URI></idno_URI>
+        <idno_URN></idno_URN>
+        <idno_Bekker></idno_Bekker>
+        <idno_URI></idno_URI>
     </row>
     <row>
         <New_URI>9730</New_URI>
@@ -793,9 +793,9 @@
         <Glossary_1></Glossary_1>
         <Glossary_2></Glossary_2>
         <lang.Glossary_1></lang.Glossary_1>
-        <Greek_editions_with_Syriac_evidence_1>2457</Greek_editions_with_Syriac_evidence_1>
-        <Greek_editions_with_Syriac_evidence_2></Greek_editions_with_Syriac_evidence_2>
-        <Greek_editions_with_Syriac_evidence_3></Greek_editions_with_Syriac_evidence_3>
+        <OriginalWithSyriacEvidence_1>2457</OriginalWithSyriacEvidence_1>
+        <OriginalWithSyriacEvidence_2></OriginalWithSyriacEvidence_2>
+        <OriginalWithSyriacEvidence_3></OriginalWithSyriacEvidence_3>
         <Apparatus_1>2461</Apparatus_1>
         <Apparatus_2></Apparatus_2>
         <Apparatus_3></Apparatus_3>
@@ -833,9 +833,261 @@
         <extent.en></extent.en>
         <note_abstract.en></note_abstract.en>
         <relation_dct---isPartOf></relation_dct---isPartOf>
-        <relation_syriaca---isPartOfTradition></relation_syriaca---isPartOfTradition>
+        <relation_skos---broadMatch>9733</relation_skos---broadMatch>
         <relation_possibly-identical></relation_possibly-identical>
-        <idno_URI>http://viaf.org/viaf/178288408/#Aristotle._|_Prior_analytics</idno_URI>
+        <idno_URI></idno_URI>
+        <idno_URI></idno_URI>
+        <idno_URN></idno_URN>
+        <idno_Bekker></idno_Bekker>
+        <idno_URI></idno_URI>
+    </row>
+    <row>
+        <New_URI>9731</New_URI>
+        <title_syriaca-headword.en>Categories (literary tradition)</title_syriaca-headword.en>
+        <title_syriaca-headword.syr>ܩܛܝܓܘܪ̈ܝܣ</title_syriaca-headword.syr>
+        <title.Edition_1.syr></title.Edition_1.syr>
+        <title.grc>Κατηγορίαι</title.grc>
+        <title.la>Categoriae</title.la>
+        <author_ref>http://syriaca.org/person/342</author_ref>
+        <author_role></author_role>
+        <editor_ref></editor_ref>
+        <editor_role></editor_role>
+        <note_incipit.Edition_1.syr></note_incipit.Edition_1.syr>
+        <note_incipit.Version_1.grc></note_incipit.Version_1.grc>
+        <note_incipit.Translation_1.en></note_incipit.Translation_1.en>
+        <note_explicit.Edition_1.syr></note_explicit.Edition_1.syr>
+        <note_explicit.Version_1.grc></note_explicit.Version_1.grc>
+        <note_explicit.Translation_1.en></note_explicit.Translation_1.en>
+        <title_final-rubric.Edition_1.syr></title_final-rubric.Edition_1.syr>
+        <Edition_1></Edition_1>
+        <Edition_2></Edition_2>
+        <Edition_3></Edition_3>
+        <citedRange_pp.Edition_1></citedRange_pp.Edition_1>
+        <citedRange_pp.Edition_2></citedRange_pp.Edition_2>
+        <witnesses.Edition_1></witnesses.Edition_1>
+        <Translation_1></Translation_1>
+        <citedRange_pp.Translation_1></citedRange_pp.Translation_1>
+        <lang.Translation_1></lang.Translation_1>
+        <Translation_2></Translation_2>
+        <citedRange_pp.Translation_2></citedRange_pp.Translation_2>
+        <lang.Translation_2></lang.Translation_2>
+        <Version_1></Version_1>
+        <citedRange_pp.Version_1></citedRange_pp.Version_1>
+        <lang.Version_1></lang.Version_1>
+        <Glossary_1></Glossary_1>
+        <Glossary_2></Glossary_2>
+        <lang.Glossary_1></lang.Glossary_1>
+        <OriginalWithSyriacEvidence_1></OriginalWithSyriacEvidence_1>
+        <OriginalWithSyriacEvidence_2></OriginalWithSyriacEvidence_2>
+        <OriginalWithSyriacEvidence_3></OriginalWithSyriacEvidence_3>
+        <Apparatus_1></Apparatus_1>
+        <Apparatus_2></Apparatus_2>
+        <Apparatus_3></Apparatus_3>
+        <Apparatus_4></Apparatus_4>
+        <citedRange_vol.Apparatus_1></citedRange_vol.Apparatus_1>
+        <citedRange_vol.Apparatus_2></citedRange_vol.Apparatus_2>
+        <citedRange_vol.Apparatus_3></citedRange_vol.Apparatus_3>
+        <citedRange_vol.Apparatus_4></citedRange_vol.Apparatus_4>
+        <lang.Apparatus_1></lang.Apparatus_1>
+        <Ms_1></Ms_1>
+        <citedRange_fol.Ms_1></citedRange_fol.Ms_1>
+        <Catalogue_1></Catalogue_1>
+        <citedRange_vol.Catalogue_1></citedRange_vol.Catalogue_1>
+        <citedRange_pp.Catalogue_1></citedRange_pp.Catalogue_1>
+        <Ms_2></Ms_2>
+        <citedRange_fol.Ms_2></citedRange_fol.Ms_2>
+        <Catalogue_2></Catalogue_2>
+        <citedRange_vol.Catalogue_2></citedRange_vol.Catalogue_2>
+        <citedRange_pp.Catalogue_2></citedRange_pp.Catalogue_2>
+        <Ms_3></Ms_3>
+        <citedRange_fol.Ms_3></citedRange_fol.Ms_3>
+        <Catalogue_3></Catalogue_3>
+        <citedRange_vol.Catalogue_3></citedRange_vol.Catalogue_3>
+        <citedRange_pp.Catalogue_3></citedRange_pp.Catalogue_3>
+        <Source_1></Source_1>
+        <citedRange_pp.Source_1></citedRange_pp.Source_1>
+        <date.Source_1.en></date.Source_1.en>
+        <date_when.Source_1></date_when.Source_1>
+        <date_notBefore.Source_1></date_notBefore.Source_1>
+        <date_notAfter.Source_1></date_notAfter.Source_1>
+        <title.Source_2.syr></title.Source_2.syr>
+        <Source_2></Source_2>
+        <citedRange_pp.Source_2></citedRange_pp.Source_2>
+        <bibl_ana>http://syriaca.org/documentation/work-subject-classifications.xml#logic</bibl_ana>
+        <extent.en></extent.en>
+        <note_abstract.en></note_abstract.en>
+        <relation_dct---isPartOf></relation_dct---isPartOf>
+        <relation_skos---broadMatch></relation_skos---broadMatch>
+        <relation_possibly-identical></relation_possibly-identical>
+        <idno_URI>http://viaf.org/viaf/186512058</idno_URI>
+        <idno_URI>http://catalog.perseus.org/catalog/urn:cts:greekLit:tlg0086.tlg006</idno_URI>
+        <idno_URN>urn:cts:greekLit:tlg0086.tlg006</idno_URN>
+        <idno_Bekker>1a1–15b32</idno_Bekker>
+        <idno_URI>https://en.wikipedia.org/wiki/Categories_(Aristotle)</idno_URI>
+    </row>
+    <row>
+        <New_URI>9732</New_URI>
+        <title_syriaca-headword.en>On Interpretation (literary tradition)</title_syriaca-headword.en>
+        <title_syriaca-headword.syr>ܦܘܫܩܐ</title_syriaca-headword.syr>
+        <title.Edition_1.syr></title.Edition_1.syr>
+        <title.grc>Περὶ ἑρμηνείας</title.grc>
+        <title.la>De interpretatione</title.la>
+        <author_ref>http://syriaca.org/person/342</author_ref>
+        <author_role></author_role>
+        <editor_ref></editor_ref>
+        <editor_role></editor_role>
+        <note_incipit.Edition_1.syr></note_incipit.Edition_1.syr>
+        <note_incipit.Version_1.grc></note_incipit.Version_1.grc>
+        <note_incipit.Translation_1.en></note_incipit.Translation_1.en>
+        <note_explicit.Edition_1.syr></note_explicit.Edition_1.syr>
+        <note_explicit.Version_1.grc></note_explicit.Version_1.grc>
+        <note_explicit.Translation_1.en></note_explicit.Translation_1.en>
+        <title_final-rubric.Edition_1.syr></title_final-rubric.Edition_1.syr>
+        <Edition_1></Edition_1>
+        <Edition_2></Edition_2>
+        <Edition_3></Edition_3>
+        <citedRange_pp.Edition_1></citedRange_pp.Edition_1>
+        <citedRange_pp.Edition_2></citedRange_pp.Edition_2>
+        <witnesses.Edition_1></witnesses.Edition_1>
+        <Translation_1></Translation_1>
+        <citedRange_pp.Translation_1></citedRange_pp.Translation_1>
+        <lang.Translation_1></lang.Translation_1>
+        <Translation_2></Translation_2>
+        <citedRange_pp.Translation_2></citedRange_pp.Translation_2>
+        <lang.Translation_2></lang.Translation_2>
+        <Version_1></Version_1>
+        <citedRange_pp.Version_1></citedRange_pp.Version_1>
+        <lang.Version_1></lang.Version_1>
+        <Glossary_1></Glossary_1>
+        <Glossary_2></Glossary_2>
+        <lang.Glossary_1></lang.Glossary_1>
+        <OriginalWithSyriacEvidence_1></OriginalWithSyriacEvidence_1>
+        <OriginalWithSyriacEvidence_2></OriginalWithSyriacEvidence_2>
+        <OriginalWithSyriacEvidence_3></OriginalWithSyriacEvidence_3>
+        <Apparatus_1></Apparatus_1>
+        <Apparatus_2></Apparatus_2>
+        <Apparatus_3></Apparatus_3>
+        <Apparatus_4></Apparatus_4>
+        <citedRange_vol.Apparatus_1></citedRange_vol.Apparatus_1>
+        <citedRange_vol.Apparatus_2></citedRange_vol.Apparatus_2>
+        <citedRange_vol.Apparatus_3></citedRange_vol.Apparatus_3>
+        <citedRange_vol.Apparatus_4></citedRange_vol.Apparatus_4>
+        <lang.Apparatus_1></lang.Apparatus_1>
+        <Ms_1></Ms_1>
+        <citedRange_fol.Ms_1></citedRange_fol.Ms_1>
+        <Catalogue_1></Catalogue_1>
+        <citedRange_vol.Catalogue_1></citedRange_vol.Catalogue_1>
+        <citedRange_pp.Catalogue_1></citedRange_pp.Catalogue_1>
+        <Ms_2></Ms_2>
+        <citedRange_fol.Ms_2></citedRange_fol.Ms_2>
+        <Catalogue_2></Catalogue_2>
+        <citedRange_vol.Catalogue_2></citedRange_vol.Catalogue_2>
+        <citedRange_pp.Catalogue_2></citedRange_pp.Catalogue_2>
+        <Ms_3></Ms_3>
+        <citedRange_fol.Ms_3></citedRange_fol.Ms_3>
+        <Catalogue_3></Catalogue_3>
+        <citedRange_vol.Catalogue_3></citedRange_vol.Catalogue_3>
+        <citedRange_pp.Catalogue_3></citedRange_pp.Catalogue_3>
+        <Source_1></Source_1>
+        <citedRange_pp.Source_1></citedRange_pp.Source_1>
+        <date.Source_1.en></date.Source_1.en>
+        <date_when.Source_1></date_when.Source_1>
+        <date_notBefore.Source_1></date_notBefore.Source_1>
+        <date_notAfter.Source_1></date_notAfter.Source_1>
+        <title.Source_2.syr></title.Source_2.syr>
+        <Source_2></Source_2>
+        <citedRange_pp.Source_2></citedRange_pp.Source_2>
+        <bibl_ana>http://syriaca.org/documentation/work-subject-classifications.xml#logic</bibl_ana>
+        <extent.en></extent.en>
+        <note_abstract.en></note_abstract.en>
+        <relation_dct---isPartOf></relation_dct---isPartOf>
+        <relation_skos---broadMatch></relation_skos---broadMatch>
+        <relation_possibly-identical></relation_possibly-identical>
+        <idno_URI>http://viaf.org/viaf/186598616</idno_URI>
+        <idno_URI>http://catalog.perseus.org/catalog/urn:cts:greekLit:tlg0086.tlg017</idno_URI>
+        <idno_URN>urn:cts:greekLit:tlg0086.tlg017</idno_URN>
+        <idno_Bekker>16a1–24b9</idno_Bekker>
+        <idno_URI>https://en.wikipedia.org/wiki/De_Interpretatione</idno_URI>
+    </row>
+    <row>
+        <New_URI>9733</New_URI>
+        <title_syriaca-headword.en>Prior Analytics (literary tradition)</title_syriaca-headword.en>
+        <title_syriaca-headword.syr>ܐܢܘܠܘ̈ܛܝܩܐ</title_syriaca-headword.syr>
+        <title.Edition_1.syr></title.Edition_1.syr>
+        <title.grc>Ἀναλυτικὰ πρότερα</title.grc>
+        <title.la>Analytica priora</title.la>
+        <author_ref>http://syriaca.org/person/342</author_ref>
+        <author_role></author_role>
+        <editor_ref></editor_ref>
+        <editor_role></editor_role>
+        <note_incipit.Edition_1.syr></note_incipit.Edition_1.syr>
+        <note_incipit.Version_1.grc></note_incipit.Version_1.grc>
+        <note_incipit.Translation_1.en></note_incipit.Translation_1.en>
+        <note_explicit.Edition_1.syr></note_explicit.Edition_1.syr>
+        <note_explicit.Version_1.grc></note_explicit.Version_1.grc>
+        <note_explicit.Translation_1.en></note_explicit.Translation_1.en>
+        <title_final-rubric.Edition_1.syr></title_final-rubric.Edition_1.syr>
+        <Edition_1></Edition_1>
+        <Edition_2></Edition_2>
+        <Edition_3></Edition_3>
+        <citedRange_pp.Edition_1></citedRange_pp.Edition_1>
+        <citedRange_pp.Edition_2></citedRange_pp.Edition_2>
+        <witnesses.Edition_1></witnesses.Edition_1>
+        <Translation_1></Translation_1>
+        <citedRange_pp.Translation_1></citedRange_pp.Translation_1>
+        <lang.Translation_1></lang.Translation_1>
+        <Translation_2></Translation_2>
+        <citedRange_pp.Translation_2></citedRange_pp.Translation_2>
+        <lang.Translation_2></lang.Translation_2>
+        <Version_1></Version_1>
+        <citedRange_pp.Version_1></citedRange_pp.Version_1>
+        <lang.Version_1></lang.Version_1>
+        <Glossary_1></Glossary_1>
+        <Glossary_2></Glossary_2>
+        <lang.Glossary_1></lang.Glossary_1>
+        <OriginalWithSyriacEvidence_1></OriginalWithSyriacEvidence_1>
+        <OriginalWithSyriacEvidence_2></OriginalWithSyriacEvidence_2>
+        <OriginalWithSyriacEvidence_3></OriginalWithSyriacEvidence_3>
+        <Apparatus_1></Apparatus_1>
+        <Apparatus_2></Apparatus_2>
+        <Apparatus_3></Apparatus_3>
+        <Apparatus_4></Apparatus_4>
+        <citedRange_vol.Apparatus_1></citedRange_vol.Apparatus_1>
+        <citedRange_vol.Apparatus_2></citedRange_vol.Apparatus_2>
+        <citedRange_vol.Apparatus_3></citedRange_vol.Apparatus_3>
+        <citedRange_vol.Apparatus_4></citedRange_vol.Apparatus_4>
+        <lang.Apparatus_1></lang.Apparatus_1>
+        <Ms_1></Ms_1>
+        <citedRange_fol.Ms_1></citedRange_fol.Ms_1>
+        <Catalogue_1></Catalogue_1>
+        <citedRange_vol.Catalogue_1></citedRange_vol.Catalogue_1>
+        <citedRange_pp.Catalogue_1></citedRange_pp.Catalogue_1>
+        <Ms_2></Ms_2>
+        <citedRange_fol.Ms_2></citedRange_fol.Ms_2>
+        <Catalogue_2></Catalogue_2>
+        <citedRange_vol.Catalogue_2></citedRange_vol.Catalogue_2>
+        <citedRange_pp.Catalogue_2></citedRange_pp.Catalogue_2>
+        <Ms_3></Ms_3>
+        <citedRange_fol.Ms_3></citedRange_fol.Ms_3>
+        <Catalogue_3></Catalogue_3>
+        <citedRange_vol.Catalogue_3></citedRange_vol.Catalogue_3>
+        <citedRange_pp.Catalogue_3></citedRange_pp.Catalogue_3>
+        <Source_1></Source_1>
+        <citedRange_pp.Source_1></citedRange_pp.Source_1>
+        <date.Source_1.en></date.Source_1.en>
+        <date_when.Source_1></date_when.Source_1>
+        <date_notBefore.Source_1></date_notBefore.Source_1>
+        <date_notAfter.Source_1></date_notAfter.Source_1>
+        <title.Source_2.syr></title.Source_2.syr>
+        <Source_2></Source_2>
+        <citedRange_pp.Source_2></citedRange_pp.Source_2>
+        <bibl_ana>http://syriaca.org/documentation/work-subject-classifications.xml#logic</bibl_ana>
+        <extent.en></extent.en>
+        <note_abstract.en></note_abstract.en>
+        <relation_dct---isPartOf></relation_dct---isPartOf>
+        <relation_skos---broadMatch></relation_skos---broadMatch>
+        <relation_possibly-identical></relation_possibly-identical>
+        <idno_URI>http://viaf.org/viaf/178288408</idno_URI>
         <idno_URI>http://catalog.perseus.org/catalog/urn:cts:greekLit:tlg0086.tlg001</idno_URI>
         <idno_URN>urn:cts:greekLit:tlg0086.tlg001</idno_URN>
         <idno_Bekker>24a10–70b38</idno_Bekker>

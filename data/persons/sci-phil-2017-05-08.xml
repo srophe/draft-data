@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../srophe-xslt/persons-spreadsheet2tei.xsl"?>
+<root>
+    <row>
+        <New_URI>*** REQUIRED. Contains the new Syriaca.org URI to be assigned to each row.</New_URI>
+        <persName_syriaca-headword.en-x-gedsh>REQUIRED. (text) The display name used in Syriaca page titles, etc. Each row must have at least 1 cell with a "persName syriaca-headword" value, in either GEDSH transliteration ("en-x-gedsh") or Syriac ("syr"), preferably both. This can have a source but doesn't have to. (See http://syriaca.org/exist/apps/srophe/documentation/headwords.html)</persName_syriaca-headword.en-x-gedsh>
+        <persName_syriaca-headword.syr>REQUIRED. (text) The display name used in Syriaca page titles, etc. Each row must have at least 1 cell with a "persName syriaca-headword" value, in either GEDSH transliteration ("en-x-gedsh") or Syriac ("syr"), preferably both. This can have a source but doesn't have to. (See http://syriaca.org/exist/apps/srophe/documentation/headwords.html)</persName_syriaca-headword.syr>
+        <persName_anonymous-description.en>REQUIRED IF the person is unnamed. Give a short description here that will be used along with the person's number to provide a heading.</persName_anonymous-description.en>
+        <trait.en>OPTIONAL. (e.g., "anonymous") A personal quality (typically non-volitional) that is usually not limited to a specific timeframe. Used especially to mark persons as "anonymous".</trait.en>
+        <persName.Source_1.en>OPTIONAL. (text) The person's name in English, according to Source 1.</persName.Source_1.en>
+        <Source_1>REQUIRED IF any columns use this source. (Syriaca.org bibl number) The number (only) of the bibl record for this source. The converter adds "http://syriaca.org/bibl" automatically. For example, Select Letters of Severus 1.2 is "667".</Source_1>
+        <citedRange_pp.Source_1>REQUIRED IF any columns use Source 1. (e.g., page or section number) Whatever comes after "citedRange_" in the column name and before the dot (.) is put into the @unit attribute (e.g., "pp", "section", or "entry"). Accepts a URL linking to this location (as @target) inside square brackets. E.g., "21 [http://archive.org/...]" If there is no citedRange for a source, the source is not processed. Enter "none" if the source should be processed anyway.</citedRange_pp.Source_1>
+        <persName.Source_2.syr>OPTIONAL. (text) The person's name in Syriac, according to Source 2.</persName.Source_2.syr>
+        <Source_2>REQUIRED IF any columns use this source. (Syriaca.org bibl number) The number (only) of the bibl record for this source. The converter adds "http://syriaca.org/bibl" automatically. For example, Select Letters of Severus 1.2 is "667".</Source_2>
+        <citedRange_pp.Source_2>REQUIRED IF any columns use Source 2. (e.g., page or section number) Whatever comes after "citedRange_" in the column name and before the dot (.) is put into the @unit attribute (e.g., "pp", "section", or "entry"). Accepts a URL linking to this location (as @target) inside square brackets. E.g., "21 [http://archive.org/...]" If there is no citedRange for a source, the source is not processed. Enter "none" if the source should be processed anyway.</citedRange_pp.Source_2>
+        <person_ana>OPTIONAL ("#syriaca-author" or "#syriaca-saint") Designates the person as an author or saint, or both. If both, separate with a space.</person_ana>
+        <note_abstract.en>HIGHLY RECOMMENDED. (text) A brief description that helps identify the person and distinguish him/her from other persons with similar names. Currently only &lt;note>s with @type="abstract" are supported in the conversion.</note_abstract.en>
+        <sex.Source_1.en>OPTIONAL (e.g., "M" or "F") Whatever you put here will go into the @value of the &lt;sex> element. If the value is "M" or "F", then "male" or "female", respectively, will also be placed in the element content.</sex.Source_1.en>
+        <state_office.Source_1.en>OPTIONAL. (text) Describe's a person's office (e.g., "bishop"), which usually has a definite duration (TEI guidelines). This will be entered as a state type="office" with the content of this column in a "label" element. See the controlled vocabulary under http://syriaca.org/documentation.</state_office.Source_1.en>
+        <state_occupation.Source_1.en>OPTIONAL. (text) Describe's a person's occupation (e.g., "historian"), which usually has a definite duration (TEI guidelines). This will be entered as a state type="office" with the content of this column in a "label" element. See the controlled vocabulary under http://syriaca.org/documentation.</state_occupation.Source_1.en>
+        <state_saint.Source_1.en>OPTIONAL. (text) Describe's a person's saint type (e.g., "martyr"), which usually has a definite duration (TEI guidelines). This will be entered as a state type="office" with the content of this column in a "label" element. See the controlled vocabulary under http://syriaca.org/documentation.</state_saint.Source_1.en>
+        <relation_possibly-identical>OPTIONAL. (Syriaca.org URI) The URI of other Syriaca.org entities with which the person on this row has a relationship. This must be a full URL (including "http://...") if the entity is not a person. If there is more than one URI related to this person, you can separate the URIs with commas. (If the URI contains commas [unlikely], replace them with "%2c".) The conversion automatically uses the value of the column name after "relation_" as the @name of the &lt;relation>, but currently only "possibly-identical" is defined in the column-mapping template.</relation_possibly-identical>
+        <idno_URI>OPTIONAL. (e.g., a URI) An additional identifier for the person (such as a Wikipedia URI). The part of the column name after "idno_" automatically becomes the @type value for the &lt;idno>.</idno_URI>
+        <birth.Source_1.en>OPTIONAL. (a human readable date, e.g., "November 405" or "mid-4th cent.") If Google Sheets is wrongly converting your dates automatically, select this column and format the cells as "plain text."</birth.Source_1.en>
+        <birth_when.Source_1>REQUIRED IF the human-readable "birth" column has a precise date. (YYYY-MM-DD or YYYY-MM or YYYY) See "Machine-readable dates" in the Spreadsheet Rules tab. For approximate dates, use the notBefore and notAfter columns instead. Cells must be formatted as plain text.</birth_when.Source_1>
+        <birth_notBefore.Source_1>REQUIRED IF the human-readable "birth" column has a date range. (YYYY-MM-DD or YYYY-MM or YYYY). See "Machine-readable dates" in the Spreadsheet Rules tab. Use this column to specify the beinning of a specific date range, a terminus post quem (e.g., "after ..."), or the outer limit of an approximate date range. See http://syriaca.org/exist/apps/srophe/documentation/dates.html for more details about approximate dates. Cells must be formatted as "plain text."</birth_notBefore.Source_1>
+        <birth_notAfter.Source_1>REQUIRED IF the human-readable "birth" column has a date range. (YYYY-MM-DD or YYYY-MM or YYYY). See "Machine-readable dates" in the Spreadsheet Rules tab. Use this column to specify the end of a specific date range, a terminus ante quem (e.g., "before ..."), or the outer limit of an approximate date range. See http://syriaca.org/exist/apps/srophe/documentation/dates.html for more details about approximate dates.  Cells must be formatted as "plain text."</birth_notAfter.Source_1>
+        <death.Source_1.en>OPTIONAL. (a human readable date, e.g., "November 405" or "mid-4th cent.") If Google Sheets is wrongly converting your dates automatically, select this column and format the cells as "plain text."</death.Source_1.en>
+        <death_when.Source_1>REQUIRED IF the human-readable "death" column has a precise date. (YYYY-MM-DD or YYYY-MM or YYYY) See "Machine-readable dates" in the Spreadsheet Rules tab. For approximate dates, use the notBefore and notAfter columns instead. Cells must be formatted as plain text.</death_when.Source_1>
+        <death_notBefore.Source_1>REQUIRED IF the human-readable "death" column has a date range. (YYYY-MM-DD or YYYY-MM or YYYY). See "Machine-readable dates" in the Spreadsheet Rules tab. Use this column to specify the beinning of a specific date range, a terminus post quem (e.g., "after ..."), or the outer limit of an approximate date range. See http://syriaca.org/exist/apps/srophe/documentation/dates.html for more details about approximate dates. Cells must be formatted as "plain text."</death_notBefore.Source_1>
+        <death_notAfter.Source_1>REQUIRED IF the human-readable "death" column has a date range. (YYYY-MM-DD or YYYY-MM or YYYY). See "Machine-readable dates" in the Spreadsheet Rules tab. Use this column to specify the end of a specific date range, a terminus ante quem (e.g., "before ..."), or the outer limit of an approximate date range. See http://syriaca.org/exist/apps/srophe/documentation/dates.html for more details about approximate dates.  Cells must be formatted as "plain text."</death_notAfter.Source_1>
+        <floruit.Source_1.en>OPTIONAL. (a human readable date, e.g., "November 405" or "mid-4th cent.") If Google Sheets is wrongly converting your dates automatically, select this column and format the cells as "plain text."</floruit.Source_1.en>
+        <floruit_when.Source_1>REQUIRED IF the human-readable "floruit" column has a precise date. (YYYY-MM-DD or YYYY-MM or YYYY) See "Machine-readable dates" in the Spreadsheet Rules tab. For approximate dates, use the notBefore and notAfter columns instead. Cells must be formatted as plain text.</floruit_when.Source_1>
+        <floruit_notBefore.Source_1>REQUIRED IF the human-readable "floruit" column has a date range. (YYYY-MM-DD or YYYY-MM or YYYY). See "Machine-readable dates" in the Spreadsheet Rules tab. Use this column to specify the beinning of a specific date range, a terminus post quem (e.g., "after ..."), or the outer limit of an approximate date range. See http://syriaca.org/exist/apps/srophe/documentation/dates.html for more details about approximate dates. Cells must be formatted as "plain text."</floruit_notBefore.Source_1>
+        <floruit_notAfter.Source_1>REQUIRED IF the human-readable "floruit" column has a date range. (YYYY-MM-DD or YYYY-MM or YYYY). See "Machine-readable dates" in the Spreadsheet Rules tab. Use this column to specify the end of a specific date range, a terminus ante quem (e.g., "before ..."), or the outer limit of an approximate date range. See http://syriaca.org/exist/apps/srophe/documentation/dates.html for more details about approximate dates.  Cells must be formatted as "plain text."</floruit_notAfter.Source_1>
+    </row>
+    <row>
+        <New_URI>3272</New_URI>
+        <persName_syriaca-headword.en-x-gedsh>Anonymous 3272</persName_syriaca-headword.en-x-gedsh>
+        <persName_syriaca-headword.syr></persName_syriaca-headword.syr>
+        <persName_anonymous-description.en>Translator of Aristotle's Categories</persName_anonymous-description.en>
+        <trait.en>anonymous</trait.en>
+        <persName.Source_1.en></persName.Source_1.en>
+        <Source_1></Source_1>
+        <citedRange_pp.Source_1></citedRange_pp.Source_1>
+        <persName.Source_2.syr></persName.Source_2.syr>
+        <Source_2></Source_2>
+        <citedRange_pp.Source_2></citedRange_pp.Source_2>
+        <person_ana>#syriaca-author</person_ana>
+        <note_abstract.en>The anonymous translator of &lt;bibl>Categories (Aristotle), anonymous version&lt;ptr target="http://syriaca.org/work/9726">&lt;/bibl>.</note_abstract.en>
+        <sex.Source_1.en></sex.Source_1.en>
+        <state_office.Source_1.en></state_office.Source_1.en>
+        <state_occupation.Source_1.en></state_occupation.Source_1.en>
+        <state_saint.Source_1.en></state_saint.Source_1.en>
+        <relation_possibly-identical></relation_possibly-identical>
+        <idno_URI></idno_URI>
+        <birth.Source_1.en></birth.Source_1.en>
+        <birth_when.Source_1></birth_when.Source_1>
+        <birth_notBefore.Source_1></birth_notBefore.Source_1>
+        <birth_notAfter.Source_1></birth_notAfter.Source_1>
+        <death.Source_1.en></death.Source_1.en>
+        <death_when.Source_1></death_when.Source_1>
+        <death_notBefore.Source_1></death_notBefore.Source_1>
+        <death_notAfter.Source_1></death_notAfter.Source_1>
+        <floruit.Source_1.en></floruit.Source_1.en>
+        <floruit_when.Source_1></floruit_when.Source_1>
+        <floruit_notBefore.Source_1></floruit_notBefore.Source_1>
+        <floruit_notAfter.Source_1></floruit_notAfter.Source_1>
+    </row>
+    <row>
+        <New_URI>3273</New_URI>
+        <persName_syriaca-headword.en-x-gedsh>Anonymous 3273</persName_syriaca-headword.en-x-gedsh>
+        <persName_syriaca-headword.syr></persName_syriaca-headword.syr>
+        <persName_anonymous-description.en>Translator of Aristotle's Prior Analytics</persName_anonymous-description.en>
+        <trait.en>anonymous</trait.en>
+        <persName.Source_1.en></persName.Source_1.en>
+        <Source_1></Source_1>
+        <citedRange_pp.Source_1></citedRange_pp.Source_1>
+        <persName.Source_2.syr></persName.Source_2.syr>
+        <Source_2></Source_2>
+        <citedRange_pp.Source_2></citedRange_pp.Source_2>
+        <person_ana>#syriaca-author</person_ana>
+        <note_abstract.en>The anonymous translator of &lt;bibl>Prior Analytics (Aristotle), anonymous version&lt;ptr target="http://syriaca.org/work/9729">&lt;/bibl>.</note_abstract.en>
+        <sex.Source_1.en></sex.Source_1.en>
+        <state_office.Source_1.en></state_office.Source_1.en>
+        <state_occupation.Source_1.en></state_occupation.Source_1.en>
+        <state_saint.Source_1.en></state_saint.Source_1.en>
+        <relation_possibly-identical></relation_possibly-identical>
+        <idno_URI></idno_URI>
+        <birth.Source_1.en></birth.Source_1.en>
+        <birth_when.Source_1></birth_when.Source_1>
+        <birth_notBefore.Source_1></birth_notBefore.Source_1>
+        <birth_notAfter.Source_1></birth_notAfter.Source_1>
+        <death.Source_1.en></death.Source_1.en>
+        <death_when.Source_1></death_when.Source_1>
+        <death_notBefore.Source_1></death_notBefore.Source_1>
+        <death_notAfter.Source_1></death_notAfter.Source_1>
+        <floruit.Source_1.en></floruit.Source_1.en>
+        <floruit_when.Source_1></floruit_when.Source_1>
+        <floruit_notBefore.Source_1></floruit_notBefore.Source_1>
+        <floruit_notAfter.Source_1></floruit_notAfter.Source_1>
+    </row>
+</root>

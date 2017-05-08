@@ -174,11 +174,6 @@
                     </persName>
             </editor>
             <idno type="URI">http://syriaca.org/work/9728</idno>
-            <idno type="URI">http://viaf.org/viaf/186598616/#Aristotle._|_De_interpretatione</idno>
-            <idno type="URI">http://catalog.perseus.org/catalog/urn:cts:greekLit:tlg0086.tlg017</idno>
-            <idno type="URN">urn:cts:greekLit:tlg0086.tlg017</idno>
-            <idno type="Bekker">16a1–24b9</idno>
-            <idno type="URI">https://en.wikipedia.org/wiki/De_Interpretatione</idno>
             <textLang mainLang="syr"/>
             <note xml:lang="syr" type="incipit" source="#bib9728-1">ܩܕܡܝܬ ܙܿܕܩ ܕܢܬܼܚܸܡܼ܂ ܡܘܢ ܫܡܐܼ ܘܡܘܢ ܡܸܠܬܐ܂ ܒܬܪ ܟܢ ܡܘܢ ܐܝܬܝܗܲ܂ ܏ܩܛ܂ ܘܐ܏ܦܦܣ܂ ܘܐܦܘܦܢܣܝܣ ܘܡܐܡܪܐ.</note>
             <note xml:lang="grc" type="incipit" source="#bib9728-3">Πρῶτον δεῖ θέσθαι τί ὄνομα καὶ τί ῥῆμα, ἔπειτα τί ἐστιν ἀπόφασις καὶ κατάφασις καὶ ἀπόφανσις καὶ λόγος.</note>
@@ -189,7 +184,9 @@
                <ptr target="http://syriaca.org/bibl/2463"/>
                <citedRange unit="pp">23, 25, 27, 29–55 [up to 23b15]</citedRange>
                <listRelation>
-                  <relation active="#bib9728-1" ref="dct:source" passive="#bib9728-4 #bib9728-"/>
+                  <relation active="#bib9728-1"
+                            ref="dct:source"
+                            passive="#bib9728-4 #bib9728-5"/>
                   <relation active="#bib9728-1"
                             ref="lawd:embodies"
                             passive="http://syriaca.org/work/9728"/>
@@ -219,7 +216,7 @@
                </listRelation>
             </bibl>
             <bibl xml:id="bib9728-4" type="syriaca:Manuscript">
-               <title>Berlin, Petermann 9</title>
+               <title>Berlin, Staatsbibliothek zu Berlin, Petermann 9</title>
                <citedRange unit="fol">112v–123v</citedRange>
                <listRelation>
                   <relation active="#bib9728-4"
@@ -228,7 +225,7 @@
                </listRelation>
             </bibl>
             <bibl xml:id="bib9728-5" type="syriaca:Manuscript">
-               <title>Vat. Syr. 158</title>
+               <title>Vatican, Biblioteca Apostolica Vaticana, Vat. sir. 158</title>
                <citedRange unit="fol">63v–95r</citedRange>
                <listRelation>
                   <relation active="#bib9728-5"
@@ -262,6 +259,26 @@
                <citedRange unit="vol">3</citedRange>
                <citedRange unit="pp">304–307</citedRange>
             </bibl>
+            <bibl xml:id="bib9728-10" type="syriaca:OriginalWithSyriacEvidence">
+               <title level="m">Aristotelis Categoriae et Liber De Interpretatione</title>
+               <title level="s">Scriptorum Classicorum Bibliotheca Oxoniensis</title>
+               <ptr target="http://syriaca.org/bibl/2456"/>
+            </bibl>
+            <bibl xml:id="bib9728-11" type="syriaca:OriginalWithSyriacEvidence">
+               <title level="m">La sezione linguistica del Peri Hermeneias di Aristotele</title>
+               <title level="s">Studi e Testi</title>
+               <ptr target="http://syriaca.org/bibl/2485"/>
+            </bibl>
+            <bibl xml:id="bib9728-12" type="syriaca:OriginalWithSyriacEvidence">
+               <title level="m">Aristoteles. De interpretatione (ΠΕΡΙ ΕΡΜΗΝΕΙΑΣ)</title>
+               <title level="s">Bibliotheca Scriptorum Graecorum et Romanorum Teubneriana</title>
+               <ptr target="http://syriaca.org/bibl/2474"/>
+            </bibl>
+            <listRelation>
+               <relation ref="skos:broadMatch"
+                         active="http://syriaca.org/work/9728"
+                         passive="http://syriaca.org/work/9732"/>
+            </listRelation>
          </bibl>
       </body>
    </text>

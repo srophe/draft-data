@@ -176,11 +176,6 @@
                     </persName>
             </editor>
             <idno type="URI">http://syriaca.org/work/9725</idno>
-            <idno type="URI">http://viaf.org/viaf/186512058/#Aristotle._|_Categoriae</idno>
-            <idno type="URI">http://catalog.perseus.org/catalog/urn:cts:greekLit:tlg0086.tlg006</idno>
-            <idno type="URN">urn:cts:greekLit:tlg0086.tlg006</idno>
-            <idno type="Bekker">1a1–15b32</idno>
-            <idno type="URI">https://en.wikipedia.org/wiki/Categories_(Aristotle)</idno>
             <textLang mainLang="syr"/>
             <note xml:lang="syr" type="incipit" source="#bib9725-1">ܐܡܘ̈ܢܡܐ ܡܿܢ ܐܘܟܝܬ ܫܘ̈ܝܝ ܫܡܐ ܡܬܐܡܪܝܢ ܕܗܿܢܘܢ ܕܫܡܐ ܒܠܚܘܕ ܕܓܘܐ : ܡܠܬܐ ܕܝܢ ܕܐܘܣܝܐ ܗܿܝ ܕܒܗ ܒܫܡܐ ܐ̱ܚܪܬܐ ܗ̱ܝ.</note>
             <note xml:lang="grc" type="incipit" source="#bib9725-3">Ὁμώνυμα λέγεται ὧν ὄνομα μόνον κοινόν, ὁ δὲ κατὰ τοὔνομα λόγος τῆς οὐσίας ἕτερος κτλ.</note>
@@ -222,7 +217,7 @@
                </listRelation>
             </bibl>
             <bibl xml:id="bib9725-4" type="syriaca:Manuscript">
-               <title>Paris Syr. 248</title>
+               <title>Paris, Bibliothèque nationale de France, Syr. 248</title>
                <citedRange unit="fol">11v–27v</citedRange>
                <listRelation>
                   <relation active="#bib9725-4"
@@ -231,7 +226,7 @@
                </listRelation>
             </bibl>
             <bibl xml:id="bib9725-5" type="syriaca:Manuscript">
-               <title>Paris Syr. 354</title>
+               <title>Paris, Bibliothèque nationale de France, Syr. 354</title>
                <citedRange unit="fol">118v–137v</citedRange>
                <listRelation>
                   <relation active="#bib9725-5"
@@ -283,6 +278,21 @@
                <ptr target="http://syriaca.org/bibl/2473"/>
                <citedRange unit="pp">306–310</citedRange>
             </bibl>
+            <bibl xml:id="bib9725-14" type="syriaca:OriginalWithSyriacEvidence">
+               <title level="m">Aristotelis Categoriae et Liber De Interpretatione</title>
+               <title level="s">Scriptorum Classicorum Bibliotheca Oxoniensis</title>
+               <ptr target="http://syriaca.org/bibl/2456"/>
+            </bibl>
+            <bibl xml:id="bib9725-15" type="syriaca:OriginalWithSyriacEvidence">
+               <title level="m">Aristote. Catégories. Texte établi et traduit par Richard Bodéüs</title>
+               <title level="s">Collection des Universités de France</title>
+               <ptr target="http://syriaca.org/bibl/2466"/>
+            </bibl>
+            <listRelation>
+               <relation ref="skos:broadMatch"
+                         active="http://syriaca.org/work/9725"
+                         passive="http://syriaca.org/work/9731"/>
+            </listRelation>
          </bibl>
       </body>
    </text>

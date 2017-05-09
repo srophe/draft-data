@@ -9,20 +9,22 @@
                 <title level="a">Chronicle of Edessa</title>
                 <title level="m">SPEAR: Syriac Persons, Events, and Relations</title>
                 <funder>The National Endowment for the Humanities</funder>
-                <principal>David A. Michelson</principal>
-                <funder>Texas A&amp;M University</funder>
                 <principal>Daniel L. Schwartz</principal>
+                <principal>David A. Michelson</principal>
                 <editor role="general" ref="http://syriaca.org/documentation/editors.xml#dschwartz"
                     >Daniel L. Schwartz</editor>
-                <editor role="general" ref="http://syriaca.org/documentation/editors.xml#dmichelson"
-                    >David A. Michelson</editor>
                 <editor role="creator" ref="http://syriaca.org/documentation/editors.xml#dschwartz"
                     >Daniel L. Schwartz</editor>
+                <editor role="creator" ref=""></editor>
                 <respStmt>
                     <resp>Data architecture, data entry, editing, proofreading, and revision
                         by</resp>
                     <name ref="http://syriaca.org/documentation/editors.xml#dschwartz">Daniel L.
                         Schwartz</name>
+                </respStmt>
+                <respStmt>
+                    <resp>Data architecture and technical assistance by</resp>
+                    <name ref="http://syriaca.org/documentation/editors.xml#dmichelson">David A. Michelson</name>
                 </respStmt>
                 <respStmt>
                     <resp>Data entry and encoding by</resp>
@@ -35,13 +37,11 @@
             </editionStmt>
             <publicationStmt>
                 <authority>Syriaca.org: The Syriac Reference Portal</authority>
-                <idno type="URI">http://syriaca.org/spear/###OfWorkURI/tei</idno>
-                <!-- IS THIS CORRECT? -->
+                <idno type="URI">http://syriaca.org/spear/###OfWorkURI/tei</idno><!-- Insert SPEAR URI for this document -->
                 <availability>
                     <licence target="http://creativecommons.org/licenses/by/3.0/">
                         <p>Distributed under a Creative Commons Attribution 3.0 Unported
                             License.</p>
-                        <!-- SINCE EVERYTHING IS IN THE PUBLIC DOMAIN, GUESSING WE DON'T INCLUDE ANYTHING ABOUT COPYRIGHTED MATERIAL? -->
                     </licence>
                 </availability>
                 <date><!-- INPUT ONCE WE HAVE A "FINAL" DRAFT --></date>
@@ -54,13 +54,12 @@
             <editorialDecl>
                 <p>
                     The prosopographical data in this document was encoded from E. W. Brooks' edition and English translation of John of Ephesus’s Lives of the Eastern Saints,. Patrologia Orientalis, volumes 17, 18, and 19,
-                    1923–25. <!-- INCLUDE A MORE DETAILED OVERVIEW OF RELEVANT EDITORIAL PRINCIPLES AND PRACTICES AS WELL AS A STATEMENT ABOUT ORIGINAL DATA COLLECTION TAKING PLACE AT WORKSHOP.-->
+                    1923–25. 
                 </p>
             </editorialDecl>
             <classDecl>
                 <taxonomy>
                     <category xml:id="calculated">
-                        <!-- This is the only category that is still in use in the TEI below. It appears in @ana attributes.  -->
                         <catDesc> Used to denote a date calculated by the editor from a regnal year
                             given in the text. </catDesc>
                     </category>
@@ -68,7 +67,6 @@
             </classDecl>
         </encodingDesc>
         <profileDesc>
-            <!-- HAVE WE USED THIS CORRECTLY IN THE GAZETTEER? GUIDELINES HAVE NO EXAMPLE OF USE WITH A "BORN DIGITAL" DOC. ALL EXAMPLES DESCRIBE THE DOCUMENT ENCODED. -->
         </profileDesc>
         <revisionDesc>
             <change who="http://syriaca.org/documentation/editors.xml_____ http://syriaca.org/documentation/editors.xml_____ http://syriaca.org/documentation/editors.xml_____">Initial data collected by X, Y, Z at workshop.</change>
@@ -76,7 +74,7 @@
     </teiHeader>
     <text>
         <body>
-            <div/>
+            <div></div>
         </body>
     </text>
 </TEI>

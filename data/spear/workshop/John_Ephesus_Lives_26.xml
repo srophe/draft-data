@@ -6,7 +6,7 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title level="a">Chronicle of Edessa</title>
+                <title level="a">John of Ephesus, Thomas of Damascus, in The Lives of the Eastern Saints</title>
                 <title level="m">SPEAR: Syriac Persons, Events, and Relations</title>
                 <funder>The National Endowment for the Humanities</funder>
                 <principal>Daniel L. Schwartz</principal>
@@ -16,6 +16,18 @@
                     >Daniel L. Schwartz</editor>
                 <editor role="creator" ref="http://syriaca.org/documentation/editors.xml#dschwartz"
                     >Daniel L. Schwartz</editor>
+                <editor role="creator"
+                    ref="http://syriaca.org/documentation/editors.xml#dmichelson">David A. Michelson</editor>
+                <editor role="creator" ref="http://syriaca.org/documentation/editors.xml#mdebie"
+                    >Muriel Debie</editor>
+                <editor role="creator" ref="http://syriaca.org/documentation/editors.xml#egarret"
+                    >Eric Garret</editor>
+                <editor role="creator" ref="http://syriaca.org/documentation/editors.xml#sgross"
+                    >Simcha Gross</editor>
+                <editor role="creator" ref="http://syriaca.org/documentation/editors.xml#ekeogh"
+                    >Edward Keogh</editor>
+                <editor role="creator" ref="http://syriaca.org/documentation/editors.xml#upossekel"
+                    >Ute Possekel</editor>
                 <respStmt>
                     <resp>Data architecture, data entry, editing, proofreading, and revision
                         by</resp>
@@ -23,14 +35,34 @@
                         Schwartz</name>
                 </respStmt>
                 <respStmt>
-                    <resp>Data architecture and technical assistance by</resp>
+                    <resp>Data architecture, technical assistance, data entry, and encoding by</resp>
                     <name ref="http://syriaca.org/documentation/editors.xml#dmichelson">David A.
                         Michelson</name>
                 </respStmt>
                 <respStmt>
                     <resp>Data entry and encoding by</resp>
-                    <name ref="http://syriaca.org/documentation/editors.xml_____">Enter names of
-                        each person in encoding group in separate respStmt elements.</name>
+                    <name ref="http://syriaca.org/documentation/editors.xml#mdebie"
+                        >Muriel Debie</name>
+                </respStmt>
+                <respStmt>
+                    <resp>Data entry and encoding by</resp>
+                    <name ref="http://syriaca.org/documentation/editors.xml#egarret"
+                        >Eric Garret</name>
+                </respStmt>
+                <respStmt>
+                    <resp>Data entry and encoding by</resp>
+                    <name ref="http://syriaca.org/documentation/editors.xml#sgross"
+                        >Simcha Gross</name>
+                </respStmt>
+                <respStmt>
+                    <resp>Data entry and encoding by</resp>
+                    <name ref="http://syriaca.org/documentation/editors.xml#ekeogh"
+                        >Edward Keogh</name>
+                </respStmt>
+                <respStmt>
+                    <resp>Data entry and encoding by</resp>
+                    <name ref="http://syriaca.org/documentation/editors.xml#upossekel"
+                        >Ute Possekel</name>
                 </respStmt>
             </titleStmt>
             <editionStmt>
@@ -38,7 +70,7 @@
             </editionStmt>
             <publicationStmt>
                 <authority>Syriaca.org: The Syriac Reference Portal</authority>
-                <idno type="URI">http://syriaca.org/spear/###OfWorkURI/tei</idno>
+                <idno type="URI">http://syriaca.org/spear/818/tei</idno>
                 <!-- Insert SPEAR URI for this document -->
                 <availability>
                     <licence target="http://creativecommons.org/licenses/by/3.0/">
@@ -70,8 +102,11 @@
         <profileDesc> </profileDesc>
         <revisionDesc>
             <change
-                who="http://syriaca.org/documentation/editors.xml_____ http://syriaca.org/documentation/editors.xml_____ http://syriaca.org/documentation/editors.xml_____"
-                >Initial data collected by X, Y, Z at workshop.</change>
+                who="http://syriaca.org/documentation/editors.xml#dmichelson http://syriaca.org/documentation/editors.xml#ekeogh http://syriaca.org/documentation/editors.xml#egarret http://syriaca.org/documentation/editors.xml#mdebie http://syriaca.org/documentation/editors.xml#sgross http://syriaca.org/documentation/editors.xml #upossekel"
+                >Initial data collected by David A. Michelson, Muriel Debie,
+                Eric Garret, Simcha Gross, and Ute Possekel at "Mapping Ancient Lives &amp;
+                Social Networks: A Digital Workshop," held at Marquette University, 23-24 May
+                2017.</change>
         </revisionDesc>
     </teiHeader>
     <text>

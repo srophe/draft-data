@@ -172,6 +172,66 @@
 						<String>text/any</String>
 					</field>
 					<field name="unparsedInsertString">
+						<String>&lt;choice>
+    &lt;reg>
+        &lt;date when="xxxx" calendar="Gregorian">
+            [write date here]
+        &lt;/date>
+    &lt;/reg>
+    &lt;orig>
+        &lt;date when-custom="xxxx" datingMethod="Seleucid-SyriacMonths">
+            [write date here]
+        &lt;/date>
+    &lt;/orig>
+&lt;/choice></String>
+					</field>
+					<field name="descriptionString">
+						<String></String>
+					</field>
+					<field name="renderString">
+						<String>syr:date:nonGregorian</String>
+					</field>
+					<field name="enabled">
+						<Boolean>true</Boolean>
+					</field>
+					<field name="accelerator">
+						<null/>
+					</field>
+				</codeTemplateItem>
+				<codeTemplateItem>
+					<field name="contentType">
+						<String>text/any</String>
+					</field>
+					<field name="unparsedInsertString">
+						<String>&lt;choice>
+    &lt;reg>
+        &lt;date when="xxxx" calendar="Gregorian">[write date here]&lt;/date>
+        &lt;note ana="#calculated">This date was calculated from a regnal
+            year.&lt;/note>
+    &lt;/reg>
+    &lt;orig>
+        &lt;date datingMethod="regnalYear">[write regnal year  here]&lt;/date>
+    &lt;/orig>
+&lt;/choice> </String>
+					</field>
+					<field name="descriptionString">
+						<String></String>
+					</field>
+					<field name="renderString">
+						<String>syr:date:regnal</String>
+					</field>
+					<field name="enabled">
+						<Boolean>true</Boolean>
+					</field>
+					<field name="accelerator">
+						<null/>
+					</field>
+				</codeTemplateItem>
+				<codeTemplateItem>
+					<field name="contentType">
+						<String>text/any</String>
+					</field>
+					<field name="unparsedInsertString">
 						<String>&lt;div uri="http://syriaca.org/spear/9999-6" resp="">
     &lt;listPerson>
         &lt;person> 

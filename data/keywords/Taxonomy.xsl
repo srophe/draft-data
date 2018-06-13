@@ -213,9 +213,9 @@
                     <text>
                         <body>
                             <entryFree>
-                                <xsl:for-each select="$headings[$term]">
+                                <xsl:for-each select="$term">
                                     <xsl:variable name="lg" as="xs:string"
-                                        select="substring-after(current(), '.')"/>
+                                        select="substring-after($headings[current()], '.')"/>
                                     <xsl:if
                                         test="string-length(normalize-space($values[current()])) gt 0">
                                         <term xml:lang="{$lg}" syriaca-tags="#syriaca-headword">

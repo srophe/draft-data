@@ -1,12 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
     xmlns:xs="http://www.w3.org/2001/XMLSchema" exclude-result-prefixes="xs" version="3.0">
+    <!-- parse tsv into individual lines-->
     <xsl:variable name="tsv" as="xs:string+" select="unparsed-text-lines('Taxonomy.tsv')"/>
+
+    <!-- $headings is row 1
+        $subheadings, from row 3, is relevant only for idno, to distinguish URIs from non-URIs 
+        Column reference variables (all are of type xs:integer, with varying cardinality)
+            $title as xs:integer ('term syriaca-headword.en')
+            $filename as xs:integer ('New URI')
+            $gloss as xs:integer* ('gloss.xx', where 'xx' specifies a language)
+            $term as xs:integer* ('term syriaca-headword.xx', where 'xx' specifies a language)
+            $relation as xs:integer* ('relation skos broadMatch')
+                'skos' and "broadMatch' are separated in the header by three consecutive hyphens
+                we ignore subcategory information in rows 2 and 3
+            $idno-uri as xs:integer* ('idno URI' and subheading of either 'LOC' or 'DNB')
+            $idno-non-uri as xs:integer ('idno URI' and subheading of 'ISO Code')
+            $note as xs:integer? ('note abstract')
+    -->
+    <xsl:variable name="headings" as="xs:string+" select="tokenize($tsv[1], '\t')"/>
+    <xsl:variable name="subheadings" as="xs:string+" select="tokenize($tsv[3], '\t')"/>
+    <xsl:variable name="title" as="xs:integer"
+        select="index-of($headings, 'term syriaca-headword.en')"/>
+    <xsl:variable name="filename" as="xs:integer" select="index-of($headings, 'New URI')"/>
+
     <xsl:template match="/">
-        <xsl:variable name="headings" as="xs:string+" select="tokenize($tsv[1], '\t')"/>
+        <!-- data begin at row 4; set upper limit only for testing -->
         <xsl:for-each select="$tsv[position() gt 3 and position() lt 20]">
             <xsl:variable name="values" as="xs:string+" select="tokenize(current(), '\t')"/>
-            <xsl:variable name="URI" select="concat('http://syriaca.org/keyword/', $values[5])"/>
+            <xsl:variable name="URI" select="concat('http://syriaca.org/keyword/', $values[$filename])"/>
             <xsl:result-document method="xml" indent="yes" href="taxonomy/{$values[5]}.xml">
                 <xsl:processing-instruction name="xml-model">href="http://syriaca.org/documentation/syriaca-tei-main.rnc" type="application/relax-ng-compact-syntax"</xsl:processing-instruction>
                 <TEI xmlns="http://www.tei-c.org/ns/1.0"
@@ -177,11 +199,16 @@
                                         </gloss>
                                     </xsl:if>
                                 </xsl:for-each>
-                                <xsl:variable name="relationColumns" select="for $i in 1 to count($headings) return if (starts-with($headings[$i], 'relation')) then $i else ()"/>
-                                <xsl:message>
-                                    <xsl:value-of select="$relationColumns"/>
-                                </xsl:message>
-                                <xsl:if test="string-length(normalize-space(string-join($values[position() = $relationColumns]))) gt 0">
+                                <xsl:variable name="relationColumns"
+                                    select="
+                                        for $i in 1 to count($headings)
+                                        return
+                                            if (starts-with($headings[$i], 'relation')) then
+                                                $i
+                                            else
+                                                ()"/>
+                                <xsl:if
+                                    test="string-length(normalize-space(string-join($values[position() = $relationColumns]))) gt 0">
                                     <listRelation>
                                         <xsl:for-each select="$headings">
                                             <xsl:variable name="pos" as="xs:integer"

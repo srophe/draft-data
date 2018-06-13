@@ -4,11 +4,13 @@
     <xsl:variable name="tsv" as="xs:string+" select="unparsed-text-lines('Taxonomy.tsv')"/>
     <xsl:template match="/">
         <xsl:variable name="headings" as="xs:string+" select="tokenize($tsv[1], '\t')"/>
-        <xsl:for-each select="$tsv[position() gt 477 and position() lt 481]">
+        <xsl:for-each select="$tsv[position() gt 3 and position() lt 20]">
             <xsl:variable name="values" as="xs:string+" select="tokenize(current(), '\t')"/>
+            <xsl:variable name="URI" select="concat('http://syriaca.org/keyword/', $values[5])"/>
             <xsl:result-document method="xml" indent="yes" href="taxonomy/{$values[5]}.xml">
                 <xsl:processing-instruction name="xml-model">href="http://syriaca.org/documentation/syriaca-tei-main.rnc" type="application/relax-ng-compact-syntax"</xsl:processing-instruction>
-                <TEI xmlns="http://www.tei-c.org/ns/1.0">
+                <TEI xmlns="http://www.tei-c.org/ns/1.0"
+                    xmlns:skos="http://www.w3.org/2004/02/skos/core#">
                     <teiHeader>
                         <fileDesc>
                             <titleStmt>
@@ -152,16 +154,20 @@
                         <body>
                             <entryFree>
                                 <xsl:for-each select="$headings[starts-with(., 'term')]">
-                                    <xsl:variable name="pos" as="xs:integer" select="index-of($headings, current())"/>
-                                    <xsl:if test="string-length(normalize-space($values[$pos])) ne 0">
-                                        <term xml:lang="{substring-after(current(), '.')}" syriaca-tags="#syriaca-headword">
+                                    <xsl:variable name="pos" as="xs:integer"
+                                        select="index-of($headings, current())"/>
+                                    <xsl:if
+                                        test="string-length(normalize-space($values[$pos])) ne 0">
+                                        <term xml:lang="{substring-after(current(), '.')}"
+                                            syriaca-tags="#syriaca-headword">
                                             <xsl:value-of select="$values[$pos]"/>
                                         </term>
                                     </xsl:if>
                                 </xsl:for-each>
                                 <xsl:for-each select="$headings">
                                     <xsl:variable name="pos" as="xs:integer" select="position()"/>
-                                    <xsl:if test="starts-with(current(), 'gloss') and string-length(normalize-space($values[$pos])) ne 0">
+                                    <xsl:if
+                                        test="starts-with(current(), 'gloss') and string-length(normalize-space($values[$pos])) ne 0">
                                         <xsl:variable name="lg" as="xs:string"
                                             select="substring-after(current(), '.')"/>
                                         <gloss xml:lang="{$lg}">
@@ -171,9 +177,25 @@
                                         </gloss>
                                     </xsl:if>
                                 </xsl:for-each>
+                                <xsl:variable name="relationColumns" select="for $i in 1 to count($headings) return if (starts-with($headings[$i], 'relation')) then $i else ()"/>
+                                <xsl:message>
+                                    <xsl:value-of select="$relationColumns"/>
+                                </xsl:message>
+                                <xsl:if test="string-length(normalize-space(string-join($values[position() = $relationColumns]))) gt 0">
+                                    <listRelation>
+                                        <xsl:for-each select="$headings">
+                                            <xsl:variable name="pos" as="xs:integer"
+                                                select="position()"/>
+                                            <xsl:if
+                                                test="starts-with(current(), 'relation') and string-length(normalize-space($values[$pos])) ne 0">
+                                                <relation ref="skos:broadMatch" active="{$URI}"
+                                                  passive="{$values[$pos]}"/>
+                                            </xsl:if>
+                                        </xsl:for-each>
+                                    </listRelation>
+                                </xsl:if>
                                 <idno type="URI">
-                                    <xsl:value-of
-                                        select="concat('http://syriaca.org/keyword/', $values[5])"/>
+                                    <xsl:value-of select="$URI"/>
                                 </idno>
                                 <xsl:for-each select="6 to 7">
                                     <xsl:if

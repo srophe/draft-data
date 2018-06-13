@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://syriaca.org/documentation/syriaca-tei-main.rnc" type="application/relax-ng-compact-syntax"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -49,7 +50,7 @@
                                             Unported License.</p>
                </licence>
             </availability>
-            <date>2018-06-12-07:00</date>
+            <date>2018-06-12-05:00</date>
          </publicationStmt>
          <seriesStmt>
             <title level="s">A Taxonomy of Syriac Studies</title>
@@ -136,6 +137,17 @@
             <gloss xml:lang="grc">
                <term>στρατηλάτης</term>
             </gloss>
+            <listRelation>
+               <relation ref="skos:broadMatch"
+                         active="http://syriaca.org/keyword/magister-militum"
+                         passive="http://syriaca.org/keyword/administration"/>
+               <relation ref="skos:broadMatch"
+                         active="http://syriaca.org/keyword/magister-militum"
+                         passive="http://syriaca.org/keyword/occupations"/>
+               <relation ref="skos:broadMatch"
+                         active="http://syriaca.org/keyword/magister-militum"
+                         passive="http://syriaca.org/keyword/socioeconomic-status"/>
+            </listRelation>
             <idno type="URI">http://syriaca.org/keyword/magister-militum</idno>
          </entryFree>
       </body>

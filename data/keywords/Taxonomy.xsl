@@ -126,7 +126,7 @@
                             <publicationStmt>
                                 <authority>Syriaca.org: The Syriac Reference Portal</authority>
                                 <idno type="URI"
-                                    >http://syriaca.org/keyword/ephrem-influence/tei</idno>
+                                    ><xsl:value-of select="$URI"/>/tei</idno>
                                 <availability>
                                     <licence target="http://creativecommons.org/licenses/by/3.0/">
                                         <p>Distributed under a Creative Commons Attribution 3.0

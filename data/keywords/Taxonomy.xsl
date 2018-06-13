@@ -54,8 +54,8 @@
     <xsl:variable name="relation" as="xs:integer*"
         select="skos:index-of-starts-with($headings, 'relation')"/>
     <xsl:template match="/">
-        <!-- data begin at row 4; set upper limit only for testing -->
-        <xsl:for-each select="$tsv[position() gt 3 and position() lt 21]">
+        <!-- data begin at row 4; set upper limit for testing  with something like $tsv[position() ge 4 and position() l3 12]-->
+        <xsl:for-each select="$tsv[position() ge 4 and position() le 20]">
             <xsl:variable name="values" as="xs:string+" select="tokenize(current(), '\t')"/>
             <!-- $URI is used:
                 in the value of the @active attribute in <relation> attributes 
@@ -254,9 +254,12 @@
                                     </listRelation>
                                 </xsl:if>
                                 
+                                <!-- create new URI based on $filename -->
                                 <idno type="URI">
                                     <xsl:value-of select="$URI"/>
                                 </idno>
+                                
+                                <!-- existing URIs may be real URIs (LOC, DNB) or not (ISO Code)-->
                                 <xsl:for-each select="6 to 7">
                                     <xsl:if
                                         test="string-length(normalize-space($values[current()])) ne 0">
@@ -270,6 +273,8 @@
                                         <xsl:value-of select="$values[8]"/>
                                     </idno>
                                 </xsl:if>
+                                
+                                <note/>
                             </entryFree>
                         </body>
                     </text>

@@ -13,10 +13,10 @@
         <xsl:param name="substring" as="xs:string"/>
         <xsl:sequence
             select="
-                for $heading in $headings
+                for $pos in 1 to count($headings)
                 return
-                    if (starts-with($heading, $substring)) then
-                        index-of($headings, $heading)
+                    if (starts-with($headings[$pos], $substring)) then
+                        $pos
                     else
                         ()"
         />
@@ -55,7 +55,7 @@
         select="skos:index-of-starts-with($headings, 'relation')"/>
     <xsl:template match="/">
         <!-- data begin at row 4; set upper limit only for testing -->
-        <xsl:for-each select="$tsv[position() gt 3 and position() lt 9]">
+        <xsl:for-each select="$tsv[position() gt 3 and position() lt 21]">
             <xsl:variable name="values" as="xs:string+" select="tokenize(current(), '\t')"/>
             <!-- $URI is used:
                 in the value of the @active attribute in <relation> attributes 
@@ -213,6 +213,8 @@
                     <text>
                         <body>
                             <entryFree>
+
+                                <!-- there may be multiple terms in different languages -->
                                 <xsl:for-each select="$term">
                                     <xsl:variable name="lg" as="xs:string"
                                         select="substring-after($headings[current()], '.')"/>
@@ -223,41 +225,35 @@
                                         </term>
                                     </xsl:if>
                                 </xsl:for-each>
-                                <xsl:for-each select="$headings">
-                                    <xsl:variable name="pos" as="xs:integer" select="position()"/>
+
+                                <!-- there may be multiple glosses in different languages-->
+                                <xsl:for-each select="$gloss">
+                                    <xsl:variable name="lg" as="xs:string"
+                                        select="substring-after($headings[current()], '.')"/>
                                     <xsl:if
-                                        test="starts-with(current(), 'gloss') and string-length(normalize-space($values[$pos])) ne 0">
-                                        <xsl:variable name="lg" as="xs:string"
-                                            select="substring-after(current(), '.')"/>
+                                        test="string-length(normalize-space($values[current()])) gt 0">
                                         <gloss xml:lang="{$lg}">
                                             <term>
-                                                <xsl:value-of select="$values[$pos]"/>
+                                                <xsl:value-of select="$values[current()]"/>
                                             </term>
                                         </gloss>
                                     </xsl:if>
                                 </xsl:for-each>
-                                <xsl:variable name="relationColumns"
-                                    select="
-                                        for $i in 1 to count($headings)
-                                        return
-                                            if (starts-with($headings[$i], 'relation')) then
-                                                $i
-                                            else
-                                                ()"/>
+
+                                <!-- create <listRelation> only if there are relations (1 or more) -->
                                 <xsl:if
-                                    test="string-length(normalize-space(string-join($values[position() = $relationColumns]))) gt 0">
+                                    test="string-length(normalize-space(string-join($values[position() = $relation]))) gt 0">
                                     <listRelation>
-                                        <xsl:for-each select="$headings">
-                                            <xsl:variable name="pos" as="xs:integer"
-                                                select="position()"/>
+                                        <xsl:for-each select="$relation">
                                             <xsl:if
-                                                test="starts-with(current(), 'relation') and string-length(normalize-space($values[$pos])) ne 0">
+                                                test="string-length(normalize-space($values[current()])) gt 0">
                                                 <relation ref="skos:broadMatch" active="{$URI}"
-                                                  passive="{$values[$pos]}"/>
+                                                  passive="{$values[current()]}"/>
                                             </xsl:if>
                                         </xsl:for-each>
                                     </listRelation>
                                 </xsl:if>
+                                
                                 <idno type="URI">
                                     <xsl:value-of select="$URI"/>
                                 </idno>

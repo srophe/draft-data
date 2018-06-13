@@ -4,7 +4,7 @@
     <xsl:variable name="tsv" as="xs:string+" select="unparsed-text-lines('Taxonomy.tsv')"/>
     <xsl:template match="/">
         <xsl:variable name="headings" as="xs:string+" select="tokenize($tsv[1], '\t')"/>
-        <xsl:for-each select="$tsv[position() gt 478 and position() lt 480]">
+        <xsl:for-each select="$tsv[position() gt 477 and position() lt 481]">
             <xsl:variable name="values" as="xs:string+" select="tokenize(current(), '\t')"/>
             <xsl:result-document method="xml" indent="yes" href="taxonomy/{$values[5]}.xml">
                 <xsl:processing-instruction name="xml-model">href="http://syriaca.org/documentation/syriaca-tei-main.rnc" type="application/relax-ng-compact-syntax"</xsl:processing-instruction>

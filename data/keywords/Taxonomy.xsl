@@ -39,13 +39,11 @@
                 we ignore subcategory information in rows 2 and 3
             $idno as xs:integer* ('idno URI', may or may not be real URI, depending on subheading)
             $realURI as xs:integer* (index values of 'idno URI' subheadings, from row 3, that are really URIs)
-            $note as xs:integer? ('note abstract')
+            $note as xs:integer ('note abstract')
     -->
     <xsl:variable name="headings" as="xs:string+" select="tokenize($tsv[1], '\t')"/>
     <xsl:variable name="subheadings" as="xs:string+" select="tokenize($tsv[3], '\t')"/>
     <!-- TODO: the following should be moved to a function that accepts a list of needles -->
-    <xsl:variable name="realURI" as="xs:integer*"
-        select="index-of($subheadings, 'LOC'), index-of($subheadings, 'DNB')"/>
 
     <xsl:variable name="title" as="xs:integer"
         select="index-of($headings, 'term syriaca-headword.en')"/>
@@ -56,11 +54,15 @@
     <xsl:variable name="relation" as="xs:integer*"
         select="skos:index-of-starts-with($headings, 'relation')"/>
     <xsl:variable name="idno" as="xs:integer*" select="index-of($headings, 'idno URI')"/>
+    <xsl:variable name="realURI" as="xs:integer*"
+        select="index-of($subheadings, 'LOC'), index-of($subheadings, 'DNB')"/>
+    <xsl:variable name="note" as="xs:integer" select="index-of($headings, 'note abstract')"/>
 
     <xsl:template match="/">
         <!-- data begin at row 4; set upper limit for testing  with something like $tsv[position() ge 4 and position() l3 12]-->
-        <xsl:for-each select="$tsv[position() ge 4 and position() le 20]">
+        <xsl:for-each select="$tsv[position() ge 4]">
             <xsl:variable name="values" as="xs:string+" select="tokenize(current(), '\t')"/>
+            <xsl:message select="concat('Processing ', $values[$title])"/>
             <!-- $URI is used:
                 in the value of the @active attribute in <relation> attributes 
                 in the newly constructed <idno type="URI">
@@ -277,7 +279,12 @@
                                     </xsl:if>
                                 </xsl:for-each>
 
-                                <note/>
+                                <!-- <note> is optional -->
+                                <xsl:if test="string-length(normalize-space($values[$note])) gt 0">
+                                    <note>
+                                        <xsl:value-of select="$values[$note]"/>
+                                    </note>
+                                </xsl:if>
                             </entryFree>
                         </body>
                     </text>

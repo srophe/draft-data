@@ -37,13 +37,15 @@
             $relation as xs:integer* ('relation skos broadMatch')
                 'skos' and "broadMatch' are separated in the header by three consecutive hyphens
                 we ignore subcategory information in rows 2 and 3
-            $idno-uri as xs:integer* ('idno URI' and subheading of either 'LOC' or 'DNB')
-            $idno-non-uri as xs:integer ('idno URI' and subheading of 'ISO Code')
+            $idno as xs:integer* ('idno URI', may or may not be real URI, depending on subheading)
+            $realURI as xs:integer* (index values of 'idno URI' subheadings, from row 3, that are really URIs)
             $note as xs:integer? ('note abstract')
     -->
     <xsl:variable name="headings" as="xs:string+" select="tokenize($tsv[1], '\t')"/>
     <xsl:variable name="subheadings" as="xs:string+" select="tokenize($tsv[3], '\t')"/>
-
+    <!-- TODO: the following should be moved to a function that accepts a list of needles -->
+    <xsl:variable name="realURI" as="xs:integer*"
+        select="index-of($subheadings, 'LOC'), index-of($subheadings, 'DNB')"/>
 
     <xsl:variable name="title" as="xs:integer"
         select="index-of($headings, 'term syriaca-headword.en')"/>
@@ -53,6 +55,8 @@
         select="skos:index-of-starts-with($headings, 'gloss')"/>
     <xsl:variable name="relation" as="xs:integer*"
         select="skos:index-of-starts-with($headings, 'relation')"/>
+    <xsl:variable name="idno" as="xs:integer*" select="index-of($headings, 'idno URI')"/>
+
     <xsl:template match="/">
         <!-- data begin at row 4; set upper limit for testing  with something like $tsv[position() ge 4 and position() l3 12]-->
         <xsl:for-each select="$tsv[position() ge 4 and position() le 20]">
@@ -253,27 +257,26 @@
                                         </xsl:for-each>
                                     </listRelation>
                                 </xsl:if>
-                                
+
                                 <!-- create new URI based on $filename -->
                                 <idno type="URI">
                                     <xsl:value-of select="$URI"/>
                                 </idno>
-                                
+
                                 <!-- existing URIs may be real URIs (LOC, DNB) or not (ISO Code)-->
-                                <xsl:for-each select="6 to 7">
+                                <xsl:for-each select="$idno">
                                     <xsl:if
                                         test="string-length(normalize-space($values[current()])) ne 0">
-                                        <idno type="URI">
+                                        <idno>
+                                            <!-- create @type only if the idno is really a URI -->
+                                            <xsl:if test="current() = $realURI">
+                                                <xsl:attribute name="type" select="'URI'"/>
+                                            </xsl:if>
                                             <xsl:value-of select="$values[current()]"/>
                                         </idno>
                                     </xsl:if>
                                 </xsl:for-each>
-                                <xsl:if test="string-length(normalize-space($values[8])) ne 0">
-                                    <idno>
-                                        <xsl:value-of select="$values[8]"/>
-                                    </idno>
-                                </xsl:if>
-                                
+
                                 <note/>
                             </entryFree>
                         </body>

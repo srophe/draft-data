@@ -1,16 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
-    xmlns:xs="http://www.w3.org/2001/XMLSchema" exclude-result-prefixes="xs" version="3.0">
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    exclude-result-prefixes="xs" version="3.0">
+    <xsl:output method="xml" indent="yes"/>
+
+    <!-- skos:index-of-starts-with()
+        $headings as xs:string+ (sequence of heading values in row 1)
+        $substring as xs:string (offsets of headings that start with $substring are returned)
+    -->
+    <xsl:function name="skos:index-of-starts-with" as="xs:integer*">
+        <xsl:param name="headings" as="xs:string+"/>
+        <xsl:param name="substring" as="xs:string"/>
+        <xsl:sequence
+            select="
+                for $heading in $headings
+                return
+                    if (starts-with($heading, $substring)) then
+                        index-of($headings, $heading)
+                    else
+                        ()"
+        />
+    </xsl:function>
+
     <!-- parse tsv into individual lines-->
     <xsl:variable name="tsv" as="xs:string+" select="unparsed-text-lines('Taxonomy.tsv')"/>
 
     <!-- $headings is row 1
         $subheadings, from row 3, is relevant only for idno, to distinguish URIs from non-URIs 
-        Column reference variables (all are of type xs:integer, with varying cardinality)
+        Column reference variables
+                all are of type xs:integer, with varying cardinality
+                shape of documentation: $variableName as type ('header text' followed by optional notes)
             $title as xs:integer ('term syriaca-headword.en')
             $filename as xs:integer ('New URI')
-            $gloss as xs:integer* ('gloss.xx', where 'xx' specifies a language)
             $term as xs:integer* ('term syriaca-headword.xx', where 'xx' specifies a language)
+            $gloss as xs:integer* ('gloss.xx', where 'xx' specifies a language)
             $relation as xs:integer* ('relation skos broadMatch')
                 'skos' and "broadMatch' are separated in the header by three consecutive hyphens
                 we ignore subcategory information in rows 2 and 3
@@ -20,24 +43,39 @@
     -->
     <xsl:variable name="headings" as="xs:string+" select="tokenize($tsv[1], '\t')"/>
     <xsl:variable name="subheadings" as="xs:string+" select="tokenize($tsv[3], '\t')"/>
+
+
     <xsl:variable name="title" as="xs:integer"
         select="index-of($headings, 'term syriaca-headword.en')"/>
     <xsl:variable name="filename" as="xs:integer" select="index-of($headings, 'New URI')"/>
-
+    <xsl:variable name="term" as="xs:integer*" select="skos:index-of-starts-with($headings, 'term')"/>
+    <xsl:variable name="gloss" as="xs:integer*"
+        select="skos:index-of-starts-with($headings, 'gloss')"/>
+    <xsl:variable name="relation" as="xs:integer*"
+        select="skos:index-of-starts-with($headings, 'relation')"/>
     <xsl:template match="/">
         <!-- data begin at row 4; set upper limit only for testing -->
-        <xsl:for-each select="$tsv[position() gt 3 and position() lt 20]">
+        <xsl:for-each select="$tsv[position() gt 3 and position() lt 9]">
             <xsl:variable name="values" as="xs:string+" select="tokenize(current(), '\t')"/>
-            <xsl:variable name="URI" select="concat('http://syriaca.org/keyword/', $values[$filename])"/>
-            <xsl:result-document method="xml" indent="yes" href="taxonomy/{$values[5]}.xml">
+            <!-- $URI is used:
+                in the value of the @active attribute in <relation> attributes 
+                in the newly constructed <idno type="URI">
+            -->
+            <xsl:variable name="URI"
+                select="concat('http://syriaca.org/keyword/', $values[$filename])"/>
+
+            <xsl:result-document method="xml" indent="yes" href="taxonomy/{$values[$filename]}.xml">
+                <!-- link to the custom Syriaca schema -->
                 <xsl:processing-instruction name="xml-model">href="http://syriaca.org/documentation/syriaca-tei-main.rnc" type="application/relax-ng-compact-syntax"</xsl:processing-instruction>
+
                 <TEI xmlns="http://www.tei-c.org/ns/1.0"
                     xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+                    <!-- header information is all boilerplate except for titleStmt/title -->
                     <teiHeader>
                         <fileDesc>
                             <titleStmt>
                                 <title level="a" xml:lang="en">
-                                    <xsl:value-of select="$values[1]"/>
+                                    <xsl:value-of select="$values[$title]"/>
                                 </title>
                                 <sponsor>Syriaca.org: The Syriac Reference Portal</sponsor>
                                 <funder>The International Balzan Prize Foundation</funder>
@@ -175,14 +213,13 @@
                     <text>
                         <body>
                             <entryFree>
-                                <xsl:for-each select="$headings[starts-with(., 'term')]">
-                                    <xsl:variable name="pos" as="xs:integer"
-                                        select="index-of($headings, current())"/>
+                                <xsl:for-each select="$headings[$term]">
+                                    <xsl:variable name="lg" as="xs:string"
+                                        select="substring-after(current(), '.')"/>
                                     <xsl:if
-                                        test="string-length(normalize-space($values[$pos])) ne 0">
-                                        <term xml:lang="{substring-after(current(), '.')}"
-                                            syriaca-tags="#syriaca-headword">
-                                            <xsl:value-of select="$values[$pos]"/>
+                                        test="string-length(normalize-space($values[current()])) gt 0">
+                                        <term xml:lang="{$lg}" syriaca-tags="#syriaca-headword">
+                                            <xsl:value-of select="$values[current()]"/>
                                         </term>
                                     </xsl:if>
                                 </xsl:for-each>

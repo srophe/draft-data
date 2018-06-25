@@ -61,12 +61,6 @@
 
 
 
-        <!--I am marking this out because it was a mistake. Despite that, I want to save this bit of code for later use.
-        <sch:rule context="tei:div/@uri">
-            <sch:let name="target" value="concat('http://syriaca.org/spear/', //tei:sourceDesc//tei:relation/substring-after(@active,'work/'), '-')"/>
-            <sch:assert test="starts-with(., $target)"><sch:value-of select="."/></sch:assert>            
-        </sch:rule>
-        -->
-
+        
     </sch:pattern>
 </sch:schema>

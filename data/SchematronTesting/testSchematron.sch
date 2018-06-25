@@ -38,23 +38,27 @@
                 factoid URI ends with a hyphen followed by a number.</sch:report>
             <sch:assert test="matches(substring-after(., '-'), '\d')">A properly formatted SPEAR
                 factoid URI ends with a number.</sch:assert>
-            <sch:assert test="contains(., $docURIno)">SPEAR factoid divs must employ the same number
-                as the TEI document URI.</sch:assert><!-- This doesn't quite work properly. If the encoder applies a uri to the div that contains the 
-                TEI document uri but adds to it at the beginning or end, this satisfies the test. I don't want this to be possible.-->
-            <!--This works as intended but I've commented it out while I work on the test that ensures the spear factoid div uses the same number as the TEI doc URI.
-                <sch:assert test="distinct-values($divURIbaseNos) => count() eq 1">The base of the
-                numeric portion of the URI for SPEAR factoid divs (i.e., the number between 'spear/'
-                and '-') must be the same throughout the document.</sch:assert>-->
-            <!--I cannot for the life of me figure out why this doesn't work. I might need to ask.
-                <sch:assert test="count(distinct-values(.)) eq count(//tei:div)">The value of every @uri attribute value must be unique.</sch:assert>-->
-            
+            <sch:assert test="contains(., concat('/', $docURIno, '-'))"
+                >SPEAR factoid divs contain @uri attributes that must contain the number of the TEI document
+                URI, in this document: <sch:value-of select="$docURIno"/>.</sch:assert>
 
-            
+            <sch:assert test="count(distinct-values(//tei:div/@uri)) eq count(//tei:div/@uri)">Each
+                div @uri attribute must have a unique value.</sch:assert>
+            <!--
+                <sch:assert test="count(distinct-values(.)) = count(.)">Each div @uri attribute must have a unique value.</sch:assert>
+                <sch:assert test="count(distinct-values(.)) eq count(.)">Each div @uri attribute must have a unique value.</sch:assert>
+                <sch:report test="count(.) gt count(distinct-values(.))">Each div @uri attribute must have a unique value.</sch:report>
+                <sch:report test="count(distinct-values(.)) lt count(.)">Each div @uri attribute must have a unique value.</sch:report>
+                I tried all of these but none worked. They validate whether or not the count of uri attribute values is the same or 
+                greater than the number of unique uri attribute values. I couldn't figure out how this might be a namespace issue but 
+                tried the sch:assert above and it worked. I'm not sure why it worked where the others failed.
+            -->
+
+
+
+
         </sch:rule>
 
-        <!--<sch:rule context="//tei:publicationStmt/tei:idno[@type]">
-            <sch:assert test="contains(., substring-before($divURInos, '-'))">TEI document URI must employ the same number as the SPEAR factoid divs.</sch:assert>
-        </sch:rule>-->
 
 
         <!--I am marking this out because it was a mistake. Despite that, I want to save this bit of code for later use.

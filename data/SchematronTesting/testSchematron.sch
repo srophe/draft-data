@@ -3,12 +3,7 @@
     xmlns:sqf="http://www.schematron-quickfix.com/validator/process">
     <sch:ns uri="http://www.tei-c.org/ns/1.0" prefix="tei"/>
     <sch:pattern>
-        <sch:let name="docURIno"
-            value="//tei:publicationStmt/tei:idno[@type]/substring-after(substring-before(., '/tei'), 'spear/')"/>
-        <sch:let name="divURInos" value="//tei:div/@uri/substring-after(., 'spear/')"/>
-        <sch:let name="divURIbaseNos"
-            value="//tei:div/@uri/substring-after(substring-before(., '-'), 'spear/')"/>
-        <sch:let name="uniquePartDivURIs" value="//tei:div/@uri/substring-after(., '-')"/>
+        
 
         <sch:rule context="tei:persName/@ref">
             <sch:assert test="starts-with(., 'http://syriaca.org/person/')">@ref attributes must
@@ -31,6 +26,13 @@
         </sch:rule>
 
         <sch:rule context="tei:div/@uri">
+            <sch:let name="docURIno"
+                value="//tei:publicationStmt/tei:idno[@type]/substring-after(substring-before(., '/tei'), 'spear/')"/>
+            <sch:let name="divURInos" value="//tei:div/@uri/substring-after(., 'spear/')"/>
+            <sch:let name="divURIbaseNos"
+                value="//tei:div/@uri/substring-after(substring-before(., '-'), 'spear/')"/>
+            <sch:let name="uniquePartDivURIs" value="//tei:div/@uri/substring-after(., '-')"/>
+            
             <sch:assert test="starts-with(., 'http://syriaca.org/spear/')">@uri attributes must
                 contain a properly formatted SPEAR factoid div URI that starts with
                 http://syriaca.org/spear/.</sch:assert>
@@ -54,9 +56,29 @@
                 tried the sch:assert above and it worked. I'm not sure why it worked where the others failed.
             -->
 
-
-
-
+        </sch:rule>
+        
+        <sch:rule context="tei:note[parent::tei:birth and preceding-sibling::tei:placeName]">
+            <sch:assert test="tei:persName">The note in a birth place factoid must contain a persName element.</sch:assert>
+            <sch:assert test="tei:placeName">The note in a birth place factoid must contain a placeName element.</sch:assert>
+        </sch:rule>
+        <sch:rule context="tei:note[parent::tei:birth and preceding-sibling::tei:date]">
+            <sch:assert test="tei:persName">The note in a birth date factoid must contain a persName element.</sch:assert>
+        </sch:rule>
+        <sch:rule context="tei:note[parent::tei:nationality and preceding-sibling::tei:placeName]">
+            <sch:assert test="tei:persName">The note in a citizenship factoid must contain a persName element.</sch:assert>
+            <sch:assert test="tei:placeName">The note in a citizenship factoid must contain a placeName element.</sch:assert>
+        </sch:rule>
+        <sch:rule context="tei:note[parent::tei:death and preceding-sibling::tei:placeName]">
+            <sch:assert test="tei:persName">The note in a death place factoid must contain a persName element.</sch:assert>
+            <sch:assert test="tei:placeName">The note in a birth place factoid must contain a placeName element.</sch:assert>
+        </sch:rule>
+        <sch:rule context="tei:note[parent::tei:death and preceding-sibling::tei:date]">
+            <sch:assert test="tei:persName">The note in a death date factoid must contain a persName element.</sch:assert>
+        </sch:rule>
+        <sch:rule context="tei:note[parent::tei:education]">
+            <sch:assert test="tei:persName">The note in an education factoid must contain a persName element.</sch:assert>
+            <sch:assert test="@type['desc']">The note inside an education element must be type="desc".</sch:assert><!-- Figure out how to specify attribute values. This doesn't work! -->
         </sch:rule>
 
 

@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/srophe/srophe-eXist-app/dev/srophe-app/documentation/SPEARschema/out/odd_SPEAR.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="testSchematron.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Title</title>
+         </titleStmt>
+         <publicationStmt>
+            <authority>Syriaca.org: The Syriac Reference Portal</authority>
+            <idno type="URI">http://syriaca.org/spear/999/tei</idno>
+            <availability>
+               <licence target="http://creativecommons.org/licenses/by/3.0/">
+                  <p>Distributed under a Creative Commons Attribution 3.0 Unported
+                     License.</p>
+               </licence>
+            </availability>
+         </publicationStmt>
+         
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div uri="http://syriaca.org/spear/999-1" resp="#">
+            <listPerson>
+               <person>
+                  <persName ref="http://syriaca.org/person/999"/>
+                  <birth>
+                     <placeName ref="http://syriaca.org/place/999"/>
+                     <note type="desc">
+                        <persName ref="http://syriaca.org/person/999">[name]</persName> was born in
+                           <placeName ref="http://syriaca.org/place/999">[place]</placeName>.
+                     </note>
+                  </birth>
+               </person>
+            </listPerson>
+            <bibl type="primary">
+               <ptr target="http://syriaca.org/work/(URI for saint's life)"/>
+               <citedRange unit="pp">(page # in brackets)</citedRange>
+            </bibl>
+            <bibl type="primary">
+               <ptr target="http://syriaca.org/bibl/(PO Vol. #)"/>
+               <citedRange unit="pp">(page # not in brackets)</citedRange>
+            </bibl>
+         </div>
+         <div uri="http://syriaca.org/spear/999-2" resp="#">
+            <listPerson>
+               <person>
+                  <persName ref="http://syriaca.org/person/999"/>
+                  <birth>
+                     <date when="0001"/><!-- Could also be choice>reg-orig. -->
+                     <note type="desc">
+                        <persName ref="http://syriaca.org/person/999">[name]</persName> was born in
+                        A.D. xxxx. </note>
+                  </birth>
+               </person>
+            </listPerson>
+            <bibl type="primary">
+               <ptr target="http://syriaca.org/work/(URI for saint's life)"/>
+               <citedRange unit="pp">(page # in brackets)</citedRange>
+            </bibl>
+            <bibl type="primary">
+               <ptr target="http://syriaca.org/bibl/(PO Vol. #)"/>
+               <citedRange unit="pp">(page # not in brackets)</citedRange>
+            </bibl>
+         </div>
+
+         <div uri="http://syriaca.org/spear/999-3" resp="#">
+            <listPerson>
+               <person>
+                  <persName ref="http://syriaca.org/person/999"/>
+                  <nationality>
+                     <placeName ref="http://syriaca.org/place/999"/>
+                     <note type="desc">
+                        <persName ref="http://syriaca.org/person/999">[name]</persName> was a
+                        citizen of <placeName ref="http://syriaca.org/place/999"
+                        >[place]</placeName>. </note>
+                  </nationality>
+               </person>
+            </listPerson>
+            <bibl type="primary">
+               <ptr target="http://syriaca.org/work/(URI for saint's life)"/>
+               <citedRange unit="pp">(page # in brackets)</citedRange>
+            </bibl>
+            <bibl type="primary">
+               <ptr target="http://syriaca.org/bibl/(PO Vol. #)"/>
+               <citedRange unit="pp">(page # not in brackets)</citedRange>
+            </bibl>
+         </div>
+         <div uri="http://syriaca.org/spear/999-4" resp="#">
+            <listPerson>
+               <person>
+                  <persName ref="http://syriaca.org/person/999"/>
+                  <death>
+                     <date when="0001"/><!-- Could also be choice>reg-orig. -->
+                     <note type="desc">
+                        <persName ref="http://syriaca.org/person/999">[name]</persName> died in
+                        A.D. xxxx. </note>
+                  </death>
+               </person>
+            </listPerson>
+            <bibl type="primary">
+               <ptr target="http://syriaca.org/work/(URI for saint's life)"/>
+               <citedRange unit="pp">(page # in brackets)</citedRange>
+            </bibl>
+            <bibl type="primary">
+               <ptr target="http://syriaca.org/bibl/(PO Vol. #)"/>
+               <citedRange unit="pp">(page # not in brackets)</citedRange>
+            </bibl>
+         </div>
+         <div uri="http://syriaca.org/spear/999-5" resp="#">
+            <listPerson>
+               <person>
+                  <persName ref="http://syriaca.org/person/999"/>
+                  <death>
+                     <placeName ref="http://syriaca.org/place/999"/>
+                     <note type="desc">
+                        <persName ref="http://syriaca.org/person/999">[name]</persName> died in
+                           <placeName ref="http://syriaca.org/place/999">[place]</placeName>.
+                     </note>
+                  </death>
+               </person>
+            </listPerson>
+            <bibl type="primary">
+               <ptr target="http://syriaca.org/work/(URI for saint's life)"/>
+               <citedRange unit="pp">(page # in brackets)</citedRange>
+            </bibl>
+            <bibl type="primary">
+               <ptr target="http://syriaca.org/bibl/(PO Vol. #)"/>
+               <citedRange unit="pp">(page # not in brackets)</citedRange>
+            </bibl>
+         </div>
+         <div uri="http://syriaca.org/spear/999-6" resp="#">
+            <listPerson>
+               <person>
+                  <persName ref="http://syriaca.org/person/999"/>
+                  <education ref="http://syriaca.org/keyword/xxx"><!-- Use as many keywords as needed to describe content in note. -->
+                     <note type="desc">
+                        <persName ref="http://syriaca.org/person/999">[name]</persName> studied....
+                     </note><!-- Use placeName, orgName, and date elements as needed, with URIs whenever possible. -->
+                  </education>
+               </person>
+            </listPerson>
+            <bibl type="primary">
+               <ptr target="http://syriaca.org/work/(URI for saint's life)"/>
+               <citedRange unit="pp">(page # in brackets)</citedRange>
+            </bibl>
+            <bibl type="primary">
+               <ptr target="http://syriaca.org/bibl/(PO Vol. #)"/>
+               <citedRange unit="pp">(page # not in brackets)</citedRange>
+            </bibl>
+         </div>
+         <div uri="http://syriaca.org/spear/999-7" resp="#">
+            <listPerson>
+               <person>
+                  <persName ref="http://syriaca.org/person/999"/>
+                  <trait type="ethnicLabel" ref="http://syriaca.org/keyword/xxx">
+                     <!-- Find keyword/s in ethnicity category of Taxonomy module. -->
+                     <note type="desc">
+                        <persName ref="http://syriaca.org/person/999">[name]</persName> was....
+                     </note>
+                  </trait>
+               </person>
+            </listPerson>
+            <bibl type="primary">
+               <ptr target="http://syriaca.org/work/(URI for saint's life)"/>
+               <citedRange unit="pp">(page # in brackets)</citedRange>
+            </bibl>
+            <bibl type="primary">
+               <ptr target="http://syriaca.org/bibl/(PO Vol. #)"/>
+               <citedRange unit="pp">(page # not in brackets)</citedRange>
+            </bibl>
+         </div>
+         <div uri="http://syriaca.org/spear/999-8" resp="#">
+            <listEvent>
+               <event>
+                  <desc><!-- Use persName, placeName, orgName, and date elements as needed, with URIs whenever possible. -->
+                     [Insert Text Here] </desc>
+                  <ptr target="http://syriaca.org/keyword/xxx"/>
+                  <!-- Use as many keywords as needed to describe content in the description. -->
+               </event>
+            </listEvent>
+            <bibl type="primary">
+               <ptr target="http://syriaca.org/work/(URI for saint's life)"/>
+               <citedRange unit="pp">(page # in brackets)</citedRange>
+            </bibl>
+            <bibl type="primary">
+               <ptr target="http://syriaca.org/bibl/(PO Vol. #)"/>
+               <citedRange unit="pp">(page # not in brackets)</citedRange>
+            </bibl>
+         </div>
+         <div uri="http://syriaca.org/spear/999-9" resp="#">
+            <listPerson>
+               <person>
+                  <persName ref="http://syriaca.org/person/999"/>
+                  <trait type="gender" ref="http://syriaca.org/keyword/xxxx">
+                     <!-- Use as many keywords as needed to describe content in note. -->
+                     <note type="desc">
+                        <persName ref="http://syriaca.org/person/999">[name]</persName> was ....
+                     </note>
+                  </trait>
+               </person>
+            </listPerson>
+            <bibl type="primary">
+               <ptr target="http://syriaca.org/work/(URI for saint's life)"/>
+               <citedRange unit="pp">(page # in brackets)</citedRange>
+            </bibl>
+            <bibl type="primary">
+               <ptr target="http://syriaca.org/bibl/(PO Vol. #)"/>
+               <citedRange unit="pp">(page # not in brackets)</citedRange>
+            </bibl>
+         </div>
+         <div uri="http://syriaca.org/spear/999-10" resp="#">
+            <listPerson>
+               <person>
+                  <persName ref="http://syriaca.org/person/999"/>
+                  <langKnowledge>
+                     <langKnown ref="http://syriaca.org/keyword/xxxx"/>
+                     <!-- Find keyword in the Taxonomy module. You may also add a @level of "high," "medium," or "low."-->
+                     <note type="desc">
+                        <persName ref="http://syriaca.org/person/999">[name]</persName> knew
+                        [language]. </note>
+                  </langKnowledge>
+               </person>
+            </listPerson>
+            <bibl type="primary">
+               <ptr target="http://syriaca.org/work/(URI for saint's life)"/>
+               <citedRange unit="pp">(page # in brackets)</citedRange>
+            </bibl>
+            <bibl type="primary">
+               <ptr target="http://syriaca.org/bibl/(PO Vol. #)"/>
+               <citedRange unit="pp">(page # not in brackets)</citedRange>
+            </bibl>
+         </div>
+         <div uri="http://syriaca.org/spear/999-11" resp="#">
+            <listPerson>
+               <person>
+                  <persName ref="http://syriaca.org/person/999"/>
+                  <state type="mental" ref="http://syriaca.org/keyword/xxx">
+                     <!-- Use as many keywords as needed to describe content in note. -->
+                     <note type="desc">
+                        <persName ref="http://syriaca.org/person/999">[name]</persName> was ....
+                     </note>
+                  </state>
+               </person>
+            </listPerson>
+            <bibl type="primary">
+               <ptr target="http://syriaca.org/work/(URI for saint's life)"/>
+               <citedRange unit="pp">(page # in brackets)</citedRange>
+            </bibl>
+            <bibl type="primary">
+               <ptr target="http://syriaca.org/bibl/(PO Vol. #)"/>
+               <citedRange unit="pp">(page # not in brackets)</citedRange>
+            </bibl>
+         </div>
+         <div uri="http://syriaca.org/spear/999-12" resp="#">
+            <listPerson>
+               <person>
+                  <persName ref="http://syriaca.org/person/999"> [Add persName here] </persName>
+               </person>
+            </listPerson>
+            <bibl type="primary">
+               <ptr target="http://syriaca.org/work/(URI for saint's life)"/>
+               <citedRange unit="pp">(page # in brackets)</citedRange>
+            </bibl>
+            <bibl type="primary">
+               <ptr target="http://syriaca.org/bibl/(PO Vol. #)"/>
+               <citedRange unit="pp">(page # not in brackets)</citedRange>
+            </bibl>
+         </div>
+         <div uri="http://syriaca.org/spear/999-13" resp="#">
+            <listPerson>
+               <person>
+                  <persName ref="http://syriaca.org/person/999"/>
+                  <occupation ref="http://syriaca.org/keyword/xxxx"><!-- Use as many keywords as needed to describe content in note. -->
+                     <note type="desc">
+                        <persName ref="http://syriaca.org/person/999">[name]</persName> was a
+                        [occupation]. </note>
+                  </occupation>
+               </person>
+            </listPerson>
+            <bibl type="primary">
+               <ptr target="http://syriaca.org/work/(URI for saint's life)"/>
+               <citedRange unit="pp">(page # in brackets)</citedRange>
+            </bibl>
+            <bibl type="primary">
+               <ptr target="http://syriaca.org/bibl/(PO Vol. #)"/>
+               <citedRange unit="pp">(page # not in brackets)</citedRange>
+            </bibl>
+         </div>
+         <div uri="http://syriaca.org/spear/999-14" resp="#">
+            <listPerson>
+               <person>
+                  <persName ref="http://syriaca.org/person/999"/>
+                  <trait type="physical" ref="http://syriaca.org/keyword/xxxx">
+                     <!-- Use as many keywords as needed to describe content in note. -->
+                     <note type="desc">
+                        <persName ref="http://syriaca.org/person/999">[name]</persName> ....
+                     </note>
+                  </trait>
+               </person>
+            </listPerson>
+            <bibl type="primary">
+               <ptr target="http://syriaca.org/work/(URI for saint's life)"/>
+               <citedRange unit="pp">(page # in brackets)</citedRange>
+            </bibl>
+            <bibl type="primary">
+               <ptr target="http://syriaca.org/bibl/(PO Vol. #)"/>
+               <citedRange unit="pp">(page # not in brackets)</citedRange>
+            </bibl>
+         </div>
+         <div uri="http://syriaca.org/spear/999-15" resp="#">
+            <listRelation>
+               <relation ref="snap:AncestorOf"
+                  mutual="http://syriaca.org/person/999 http://syriaca.org/person/999"/>
+            </listRelation>
+            <bibl type="primary">
+               <ptr target="http://syriaca.org/work/(URI for saint's life)"/>
+               <citedRange unit="pp">(page # in brackets)</citedRange>
+            </bibl>
+            <bibl type="primary">
+               <ptr target="http://syriaca.org/bibl/(PO Vol. #)"/>
+               <citedRange unit="pp">(page # not in brackets)</citedRange>
+            </bibl>
+         </div>
+         <div uri="http://syriaca.org/spear/999-16" resp="#">
+            <listRelation>
+               <relation ref="snap:AncestorOf"
+                  active="http://syriaca.org/person/999" passive="http://syriaca.org/person/999"/>
+            </listRelation>
+            <bibl type="primary">
+               <ptr target="http://syriaca.org/work/(URI for saint's life)"/>
+               <citedRange unit="pp">(page # in brackets)</citedRange>
+            </bibl>
+            <bibl type="primary">
+               <ptr target="http://syriaca.org/bibl/(PO Vol. #)"/>
+               <citedRange unit="pp">(page # not in brackets)</citedRange>
+            </bibl>
+         </div>
+         <div uri="http://syriaca.org/spear/999-17" resp="#">
+            <listPerson>
+               <person>
+                  <persName ref="http://syriaca.org/person/999"/>
+                  <residence>
+                     <placeName ref="http://syriaca.org/place/999"/>
+                     <note type="desc">
+                        <persName ref="http://syriaca.org/person/999">[name]</persName> resided in
+                           <placeName ref="http://syriaca.org/place/999">[place]</placeName>.
+                     </note>
+                  </residence>
+               </person>
+            </listPerson>
+            <bibl type="primary">
+               <ptr target="http://syriaca.org/work/(URI for saint's life)"/>
+               <citedRange unit="pp">(page # in brackets)</citedRange>
+            </bibl>
+            <bibl type="primary">
+               <ptr target="http://syriaca.org/bibl/(PO Vol. #)"/>
+               <citedRange unit="pp">(page # not in brackets)</citedRange>
+            </bibl>
+         </div>
+         <div uri="http://syriaca.org/spear/999-18" resp="#">
+            <listPerson>
+               <person>
+                  <persName ref="http://syriaca.org/person/999"/>
+                  <state type="sanctity" ref="http://syriaca.org/keyword/xxxx">
+                     <!-- Use as many keywords as needed to describe content in note. -->
+                     <note type="desc">
+                        <persName ref="http://syriaca.org/person/999">[name]</persName> was a
+                        [saint/martyr/confessor]. </note>
+                  </state>
+               </person>
+            </listPerson>
+            <bibl type="primary">
+               <ptr target="http://syriaca.org/work/(URI for saint's life)"/>
+               <citedRange unit="pp">(page # in brackets)</citedRange>
+            </bibl>
+            <bibl type="primary">
+               <ptr target="http://syriaca.org/bibl/(PO Vol. #)"/>
+               <citedRange unit="pp">(page # not in brackets)</citedRange>
+            </bibl>
+         </div>
+         <div uri="http://syriaca.org/spear/999-19" resp="#">
+            <listPerson>
+               <person>
+                  <persName ref="http://syriaca.org/person/999"/>
+                  <sex value="M">[Male/Female]</sex>
+                  <!-- TEI uses sex for biological distinctions, see also the gender factoid. -->
+               </person>
+            </listPerson>
+            <bibl type="primary">
+               <ptr target="http://syriaca.org/work/(URI for saint's life)"/>
+               <citedRange unit="pp">(page # in brackets)</citedRange>
+            </bibl>
+            <bibl type="primary">
+               <ptr target="http://syriaca.org/bibl/(PO Vol. #)"/>
+               <citedRange unit="pp">(page # not in brackets)</citedRange>
+            </bibl>
+         </div>
+         <div uri="http://syriaca.org/spear/999-20" resp="#">
+            <listPerson>
+               <person>
+                  <persName ref="http://syriaca.org/person/999"/>
+                  <socecStatus ref="http://syriaca.org/keyword/xxx"><!-- Use as many keywords as needed to describe content in note. -->
+                     <note type="desc">
+                        <persName ref="http://syriaca.org/person/999">[name]</persName> was a
+                        [rank]. </note>
+                  </socecStatus>
+               </person>
+            </listPerson>
+            <bibl type="primary">
+               <ptr target="http://syriaca.org/work/(URI for saint's life)"/>
+               <citedRange unit="pp">(page # in brackets)</citedRange>
+            </bibl>
+            <bibl type="primary">
+               <ptr target="http://syriaca.org/bibl/(PO Vol. #)"/>
+               <citedRange unit="pp">(page # not in brackets)</citedRange>
+            </bibl>
+         </div>
+         <div uri="http://syriaca.org/spear/999-21" resp="#">
+            <!-- Just concerned with non-Gregorian dates. -->
+            <listEvent>
+               <event>
+                  <desc>
+                     <choice>
+                        <reg>
+                           <date when="0001" calendar="Gregorian"> [write date here] </date>
+                        </reg>
+                        <orig>
+                           <date when-custom="xxxx" datingMethod="Seleucid-SyriacMonths"> [write
+                              date here] </date>
+                        </orig>
+                     </choice>
+                  </desc>
+               </event>
+            </listEvent>
+            <bibl type="primary">
+               <ptr target=""/>
+            </bibl>
+         </div>
+         <div uri="http://syriaca.org/spear/999-22" resp="#">
+            <!-- Just concerned with regnal dates here. -->
+            <listEvent>
+               <event>
+                  <desc>
+                     <choice>
+                        <reg>
+                           <date when="0001" calendar="Gregorian">[write date here]</date>
+                           <note ana="#calculated">This date was calculated from a regnal
+                              year.</note>
+                        </reg>
+                        <orig>
+                           <date datingMethod="regnalYear">[write regnal year here]</date>
+                        </orig>
+                     </choice>
+                  </desc>
+               </event>
+            </listEvent>
+            <bibl type="primary">
+               <ptr target=""/>
+            </bibl>
+         </div>
+         <!-- Don't forget personGrp versions of most of the above! I'm hoping these won't be 
+            necessary and that the schematron rules can work without reference to person or personGrp elements in the divs-->
+
+
+
+
+
+
+
+
+      </body>
+   </text>
+</TEI>

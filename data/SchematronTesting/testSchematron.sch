@@ -10,9 +10,9 @@
                 persName element must contain a properly formatted Syriaca.org person URI that
                 starts with http://syriaca.org/person/.</sch:assert>
             <sch:report test="matches(substring-after(., 'person/'), '\D')">A properly formatted
-                person URI ends with a number.</sch:report>
+                Syriaca.org person URI ends with a number.</sch:report>
             <sch:assert test="matches(substring-after(., 'person/'), '\d')">A properly formatted
-                person URI ends with a number.</sch:assert>
+                Syriaca.org person URI ends with a number.</sch:assert>
         </sch:rule>
 
         <sch:rule context="tei:placeName/@ref">
@@ -20,19 +20,21 @@
                 placeName elements must contain a properly formatted Syriaca.org place URI that
                 starts with http://syriaca.org/place/.</sch:assert>
             <sch:report test="matches(substring-after(., 'place/'), '\D')">A properly formatted
-                place URI ends with a number.</sch:report>
+                Syriaca.org place URI ends with a number.</sch:report>
             <sch:assert test="matches(substring-after(., 'place/'), '\d')">A properly formatted
-                person URI ends with a number.</sch:assert>
+                Syriaca.org person URI ends with a number.</sch:assert>
         </sch:rule>
 
         <sch:rule context="tei:div/tei:note/@type">
             <sch:report test="contains(., 'desc')">Only notes of @type "incerta", "dubia", or
                 "errata" may appear as children of a div element.</sch:report>
         </sch:rule>
-        
+
         <sch:rule context="tei:div[ancestor::tei:body]">
-            <sch:assert test="@uri">Div elements within the body element require a @uri attribute.</sch:assert>
-            <sch:assert test="@resp">Div elements within the body element require a @resp attribute.</sch:assert>
+            <sch:assert test="@uri">Div elements within the body element require a @uri
+                attribute.</sch:assert>
+            <sch:assert test="@resp">Div elements within the body element require a @resp
+                attribute.</sch:assert>
         </sch:rule>
 
         <sch:rule context="tei:div/@uri">
@@ -211,6 +213,34 @@
         <sch:rule context="tei:note[parent::tei:reg and preceding-sibling::tei:date]">
             <sch:assert test="@ana">This note requires an @ana attribute.</sch:assert>
         </sch:rule>
+        <sch:rule context="tei:ptr[parent::tei:bibl]/@target">
+            <sch:assert
+                test="starts-with(., 'http://syriaca.org/bibl/') or starts-with(., 'http://syriaca.org/work/')"
+                >Inside of a bibl element, a ptr @target must contain a properly formatted
+                Syriaca.org URI that starts with either "http://syriaca.org/work/" or
+                "http://syriaca.org/bibl/".</sch:assert>
+        </sch:rule>
+        <sch:rule context="tei:ptr[parent::tei:bibl]/@target[contains(., 'work/')]">
+            <sch:report test="matches(substring-after(., 'work/'), '/D')">A properly formatted Syriaca.org work URI ends with a number.</sch:report>
+            <sch:assert test="matches(substring-after(., 'work/'), '/d')">A properly formatted Syriaca.org work URI ends with a number.</sch:assert>
+        </sch:rule><!-- This doesn't work but I'm not sure why. The Xpath to get to the right @target attributes works. The tests are copied from above where they work. Hmmm? -->
+
+
+        <!--
+        This isn't a rule I can use right now, but I'm saving this to build on later. I will eventually want to link this up to specific sections of the taxonomy.
+        
+        <sch:rule context="tei:trait[@type['ethnicLabel']]">
+            <sch:let name="ethnicLabelTaxonomy" value="doc('https://raw.github....')"/>
+            <sch:assert test="@ref[$ethnicLabelTaxonomy//div[@type[ethnicity]]//idno[@type[URI]]]">
+                @ref attributes here must be URIs from the Ethnicity section of Syriaca.org taxonomy: <sch:value-of select="$ethnicLabelTaxonomy"/>.
+            </sch:assert>
+        </sch:rule>
+        
+        Once I get a chance to revisit the taxonomy, I need to write an xslt that will produce a document stored on GitHub
+        That will allow me to produce a 'sch:let' like the one above. Then I should be able to point to that doc and drill down into it. 
+        This should allow me to create a subset of taxonomy URI values allowed in different contexts.
+        -->
+
 
 
 

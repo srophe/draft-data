@@ -3,12 +3,12 @@
     xmlns:sqf="http://www.schematron-quickfix.com/validator/process">
     <sch:ns uri="http://www.tei-c.org/ns/1.0" prefix="tei"/>
     <sch:pattern>
-        
+
 
         <sch:rule context="tei:persName/@ref">
-            <sch:assert test="starts-with(., 'http://syriaca.org/person/')">@ref attributes must
-                contain a properly formatted Syriaca.org person URI that starts with
-                http://syriaca.org/person/.</sch:assert>
+            <sch:assert test="starts-with(., 'http://syriaca.org/person/')">@ref attributes on a
+                persName element must contain a properly formatted Syriaca.org person URI that
+                starts with http://syriaca.org/person/.</sch:assert>
             <sch:report test="matches(substring-after(., 'person/'), '\D')">A properly formatted
                 person URI ends with a number.</sch:report>
             <sch:assert test="matches(substring-after(., 'person/'), '\d')">A properly formatted
@@ -16,13 +16,23 @@
         </sch:rule>
 
         <sch:rule context="tei:placeName/@ref">
-            <sch:assert test="starts-with(., 'http://syriaca.org/place/')">@ref attributes must
-                contain a properly formatted Syriaca.org place URI that starts with
-                http://syriaca.org/place/.</sch:assert>
+            <sch:assert test="starts-with(., 'http://syriaca.org/place/')">@ref attributes on
+                placeName elements must contain a properly formatted Syriaca.org place URI that
+                starts with http://syriaca.org/place/.</sch:assert>
             <sch:report test="matches(substring-after(., 'place/'), '\D')">A properly formatted
                 place URI ends with a number.</sch:report>
             <sch:assert test="matches(substring-after(., 'place/'), '\d')">A properly formatted
                 person URI ends with a number.</sch:assert>
+        </sch:rule>
+
+        <sch:rule context="tei:div/tei:note/@type">
+            <sch:report test="contains(., 'desc')">Only notes of @type "incerta", "dubia", or
+                "errata" may appear as children of a div element.</sch:report>
+        </sch:rule>
+        
+        <sch:rule context="tei:div[ancestor::tei:body]">
+            <sch:assert test="@uri">Div elements within the body element require a @uri attribute.</sch:assert>
+            <sch:assert test="@resp">Div elements within the body element require a @resp attribute.</sch:assert>
         </sch:rule>
 
         <sch:rule context="tei:div/@uri">
@@ -32,7 +42,7 @@
             <sch:let name="divURIbaseNos"
                 value="//tei:div/@uri/substring-after(substring-before(., '-'), 'spear/')"/>
             <sch:let name="uniquePartDivURIs" value="//tei:div/@uri/substring-after(., '-')"/>
-            
+
             <sch:assert test="starts-with(., 'http://syriaca.org/spear/')">@uri attributes must
                 contain a properly formatted SPEAR factoid div URI that starts with
                 http://syriaca.org/spear/.</sch:assert>
@@ -40,9 +50,9 @@
                 factoid URI ends with a hyphen followed by a number.</sch:report>
             <sch:assert test="matches(substring-after(., '-'), '\d')">A properly formatted SPEAR
                 factoid URI ends with a number.</sch:assert>
-            <sch:assert test="contains(., concat('/', $docURIno, '-'))"
-                >SPEAR factoid divs contain @uri attributes that must contain the number of the TEI document
-                URI, in this document: <sch:value-of select="$docURIno"/>.</sch:assert>
+            <sch:assert test="contains(., concat('/', $docURIno, '-'))">SPEAR factoid divs contain
+                @uri attributes that must contain the number of the TEI document URI, in this
+                document: <sch:value-of select="$docURIno"/>.</sch:assert>
 
             <sch:assert test="count(distinct-values(//tei:div/@uri)) eq count(//tei:div/@uri)">Each
                 div @uri attribute must have a unique value.</sch:assert>
@@ -57,32 +67,153 @@
             -->
 
         </sch:rule>
-        
+
         <sch:rule context="tei:note[parent::tei:birth and preceding-sibling::tei:placeName]">
-            <sch:assert test="tei:persName">The note in a birth place factoid must contain a persName element.</sch:assert>
-            <sch:assert test="tei:placeName">The note in a birth place factoid must contain a placeName element.</sch:assert>
+            <sch:assert test="tei:persName">The note in a birth place factoid must contain a
+                persName element.</sch:assert>
+            <sch:assert test="tei:placeName">The note in a birth place factoid must contain a
+                placeName element.</sch:assert>
         </sch:rule>
         <sch:rule context="tei:note[parent::tei:birth and preceding-sibling::tei:date]">
-            <sch:assert test="tei:persName">The note in a birth date factoid must contain a persName element.</sch:assert>
+            <sch:assert test="tei:persName">The note in a birth date factoid must contain a persName
+                element.</sch:assert>
+        </sch:rule>
+        <sch:rule context="tei:note[parent::tei:birth]/@type">
+            <sch:assert test="contains(., 'desc')">Note elements of @type "desc" are the only notes
+                allowed inside the birth element. Other types of notes ("incerta", "dubia", and
+                "errata") may appear as children of the div element as needed.</sch:assert>
         </sch:rule>
         <sch:rule context="tei:note[parent::tei:nationality and preceding-sibling::tei:placeName]">
-            <sch:assert test="tei:persName">The note in a citizenship factoid must contain a persName element.</sch:assert>
-            <sch:assert test="tei:placeName">The note in a citizenship factoid must contain a placeName element.</sch:assert>
+            <sch:assert test="tei:persName">The note in a citizenship factoid must contain a
+                persName element.</sch:assert>
+            <sch:assert test="tei:placeName">The note in a citizenship factoid must contain a
+                placeName element.</sch:assert>
+        </sch:rule>
+        <sch:rule context="tei:note[parent::tei:nationality]/@type">
+            <sch:assert test="contains(., 'desc')">Note elements of @type "desc" are the only notes
+                allowed inside the nationality element. Other types of notes ("incerta", "dubia",
+                and "errata") may appear as children of the div element as needed.</sch:assert>
         </sch:rule>
         <sch:rule context="tei:note[parent::tei:death and preceding-sibling::tei:placeName]">
-            <sch:assert test="tei:persName">The note in a death place factoid must contain a persName element.</sch:assert>
-            <sch:assert test="tei:placeName">The note in a birth place factoid must contain a placeName element.</sch:assert>
+            <sch:assert test="tei:persName">The note in a death place factoid must contain a
+                persName element.</sch:assert>
+            <sch:assert test="tei:placeName">The note in a birth place factoid must contain a
+                placeName element.</sch:assert>
         </sch:rule>
         <sch:rule context="tei:note[parent::tei:death and preceding-sibling::tei:date]">
-            <sch:assert test="tei:persName">The note in a death date factoid must contain a persName element.</sch:assert>
+            <sch:assert test="tei:persName">The note in a death date factoid must contain a persName
+                element.</sch:assert>
+        </sch:rule>
+        <sch:rule context="tei:note[parent::tei:death]/@type">
+            <sch:assert test="contains(., 'desc')">Note elements of @type "desc" are the only notes
+                allowed inside the death element. Other types of notes ("incerta", "dubia", and
+                "errata") may appear as children of the div element as needed.</sch:assert>
         </sch:rule>
         <sch:rule context="tei:note[parent::tei:education]">
-            <sch:assert test="tei:persName">The note in an education factoid must contain a persName element.</sch:assert>
-            <sch:assert test="@type['desc']">The note inside an education element must be type="desc".</sch:assert><!-- Figure out how to specify attribute values. This doesn't work! -->
+            <sch:assert test="tei:persName">The note in an education factoid must contain a persName
+                element.</sch:assert>
+        </sch:rule>
+        <sch:rule context="tei:note[parent::tei:education]/@type">
+            <sch:assert test="contains(., 'desc')">Note elements of @type "desc" are the only notes
+                allowed inside the education element. Other types of notes ("incerta", "dubia", and
+                "errata") may appear as children of the div element as needed.</sch:assert>
+        </sch:rule>
+        <sch:rule context="tei:note[parent::tei:occupation]">
+            <sch:assert test="tei:persName">The note in an occupation factoid must contain a
+                persName element.</sch:assert>
+        </sch:rule>
+        <sch:rule context="tei:note[parent::tei:occupation]/@type">
+            <sch:assert test="contains(., 'desc')">Note elements of @type "desc" are the only notes
+                allowed inside the occupation element. Other types of notes ("incerta", "dubia", and
+                "errata") may appear as children of the div element as needed.</sch:assert>
+        </sch:rule>
+        <sch:rule context="tei:note[parent::tei:residence and preceding-sibling::tei:placeName]">
+            <sch:assert test="tei:persName">The note in a residence factoid must contain a persName
+                element.</sch:assert>
+            <sch:assert test="tei:placeName">The note in a residence factoid must contain a
+                placeName element.</sch:assert>
+        </sch:rule>
+        <sch:rule context="tei:note[parent::tei:residence]/@type">
+            <sch:assert test="contains(., 'desc')">Note elements of @type "desc" are the only notes
+                allowed inside the residence element. Other types of notes ("incerta", "dubia", and
+                "errata") may appear as children of the div element as needed.</sch:assert>
+        </sch:rule>
+        <sch:rule context="tei:note[parent::tei:sex]">
+            <sch:assert test="tei:persName">The note in a biological sex factoid must contain a
+                persName element.</sch:assert>
+        </sch:rule>
+        <sch:rule context="tei:note[parent::tei:sex]/@type">
+            <sch:assert test="contains(., 'desc')">Note elements of @type "desc" are the only notes
+                allowed inside the sex element. Other types of notes ("incerta", "dubia", and
+                "errata") may appear as children of the div element as needed.</sch:assert>
+        </sch:rule>
+        <sch:rule context="tei:note[parent::tei:socecStatus]">
+            <sch:assert test="tei:persName">The note in a socioeconomic status factoid must contain
+                a persName element.</sch:assert>
+        </sch:rule>
+        <sch:rule context="tei:note[parent::tei:socecStatus]/@type">
+            <sch:assert test="contains(., 'desc')">Note elements of @type "desc" are the only notes
+                allowed inside the socecStatus element. Other types of notes ("incerta", "dubia",
+                and "errata") may appear as children of the div element as needed.</sch:assert>
+        </sch:rule>
+        <sch:rule context="tei:note[parent::tei:langKnowledge and preceding-sibling::tei:langKnown]">
+            <sch:assert test="tei:persName">The note in a language-known factoid must contain a
+                persName element.</sch:assert>
+        </sch:rule>
+        <sch:rule context="tei:note[parent::tei:langKnowledge]/@type">
+            <sch:assert test="contains(., 'desc')">Note elements of @type "desc" are the only notes
+                allowed inside the langKnowledge element. Other types of notes ("incerta", "dubia",
+                and "errata") may appear as children of the div element as needed.</sch:assert>
+        </sch:rule>
+        <sch:rule context="tei:note[parent::tei:trait]">
+            <sch:assert test="tei:persName">The note inside the trait element must contain a
+                persName element.</sch:assert>
+        </sch:rule>
+        <sch:rule context="tei:note[parent::tei:trait]/@type">
+            <sch:assert test="contains(., 'desc')">Note elements of @type "desc" are the only notes
+                allowed inside the trait element. Other types of notes ("incerta", "dubia", and
+                "errata") may appear as children of the div element as needed.</sch:assert>
+        </sch:rule>
+        <sch:rule context="tei:trait/@ref">
+            <sch:assert test="starts-with(., 'http://syriaca.org/keyword/')">@ref attributes on the
+                trait element must point to a Syriaca.org keyword
+                (http://syriaca.org/keyword/___).</sch:assert>
+        </sch:rule>
+        <sch:rule context="tei:note[parent::tei:state]">
+            <sch:assert test="tei:persName">The note inside the state element must contain a
+                persName element.</sch:assert>
+        </sch:rule>
+        <sch:rule context="tei:note[parent::tei:state]/@type">
+            <sch:assert test="contains(., 'desc')">Note elements of @type "desc" are the only notes
+                allowed inside the state element. Other types of notes ("incerta", "dubia", and
+                "errata") may appear as children of the div element as needed.</sch:assert>
+        </sch:rule>
+        <sch:rule context="tei:state/@ref">
+            <sch:assert test="starts-with(., 'http://syriaca.org/keyword/')">@ref attributes on the
+                state element must point to a Syriaca.org keyword
+                (http://syriaca.org/keyword/___).</sch:assert>
+        </sch:rule>
+        <sch:rule context="tei:ptr[parent::tei:event]/@target">
+            <sch:assert test="starts-with(., 'http://syriaca.org/keyword/')">@target attributes on
+                the ptr element in an event factoid must point to a Syriaca.org keyword
+                (http://syriaca.org/keyword/___).</sch:assert>
+        </sch:rule>
+        <sch:rule context="tei:date[parent::tei:reg]/@calendar">
+            <sch:assert test="contains(., 'Gregorian')">A date element inside a reg element must
+                have a @calendar attribute with a value of "Gregorian".</sch:assert>
+        </sch:rule>
+        <sch:rule context="tei:note[parent::tei:reg and preceding-sibling::tei:date]/@ana">
+            <sch:assert test="contains(., 'calculated')">The only acceptable value of this @ana
+                attribute is "calculated". This note is used to indicate that this regularized date
+                was calculated from a non-calendrical dating system such as regnal years,
+                etc.</sch:assert>
+        </sch:rule>
+        <sch:rule context="tei:note[parent::tei:reg and preceding-sibling::tei:date]">
+            <sch:assert test="@ana">This note requires an @ana attribute.</sch:assert>
         </sch:rule>
 
 
 
-        
+
     </sch:pattern>
 </sch:schema>

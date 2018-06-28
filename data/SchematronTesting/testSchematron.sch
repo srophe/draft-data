@@ -221,7 +221,7 @@
                 "http://syriaca.org/bibl/".</sch:assert>
         </sch:rule>
         <sch:rule context="tei:ptr[parent::tei:bibl]/@target[contains(., 'work/')]">
-            <sch:report test="matches(substring-after(., 'work/'), '/D')">A properly formatted Syriaca.org work URI ends with a number.</sch:report>
+            <sch:report test="matches(substring-after(//tei:ptr[parent::tei:bibl]/@target[contains(., 'work/')], 'work/'), '/D')">A properly formatted Syriaca.org work URI ends with a number.</sch:report>
             <sch:assert test="matches(substring-after(., 'work/'), '/d')">A properly formatted Syriaca.org work URI ends with a number.</sch:assert>
         </sch:rule><!-- This doesn't work but I'm not sure why. The Xpath to get to the right @target attributes works. The tests are copied from above where they work. Hmmm? -->
 

@@ -220,12 +220,23 @@
                 Syriaca.org URI that starts with either "http://syriaca.org/work/" or
                 "http://syriaca.org/bibl/".</sch:assert>
         </sch:rule>
-        <sch:rule context="tei:ptr[parent::tei:bibl]/@target[contains(., 'work/')]">
-            <sch:report test="matches(substring-after(//tei:ptr[parent::tei:bibl]/@target[contains(., 'work/')], 'work/'), '/D')">A properly formatted Syriaca.org work URI ends with a number.</sch:report>
-            <sch:assert test="matches(substring-after(., 'work/'), '/d')">A properly formatted Syriaca.org work URI ends with a number.</sch:assert>
-        </sch:rule><!-- This doesn't work but I'm not sure why. The Xpath to get to the right @target attributes works. The tests are copied from above where they work. Hmmm? -->
-
-
+        
+        <sch:rule context="//tei:div/tei:bibl/tei:ptr/@target[contains(., 'work/')]">
+            <sch:report test="matches(substring-after(., 'work/'), '/D')">A properly formatted
+                Syriaca.org work URI ends with a number.</sch:report>
+            <sch:assert test="matches(substring-after(., 'work/'), '/d')">A properly formatted
+                Syriaca.org work URI ends with a number.</sch:assert>
+        </sch:rule>
+        <!-- This doesn't work but I'm not sure why. The Xpath to get to the right @target attributes works. The tests are copied from above where they work. Hmmm? -->
+        <sch:rule context="tei:ptr[parent::tei:bibl]/@target[contains(., 'bibl/')]">
+            <sch:report test="matches(substring-after(., 'bibl/'), '/D')">A properly formatted
+                Syriaca.org work URI ends with a number.</sch:report>
+            <sch:assert test="matches(substring-after(., 'bibl/'), '/d')">A properly formatted
+                Syriaca.org work URI ends with a number.</sch:assert>
+        </sch:rule>
+        <!-- This doesn't work but I'm not sure why. The Xpath to get to the right @target attributes works. The tests are copied from above where they work. Hmmm? -->
+        
+        
         <!--
         This isn't a rule I can use right now, but I'm saving this to build on later. I will eventually want to link this up to specific sections of the taxonomy.
         

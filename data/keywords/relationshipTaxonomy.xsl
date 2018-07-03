@@ -70,7 +70,7 @@
             <xsl:variable name="URI"
                 select="concat('http://syriaca.org/keyword/', $values[$filename])"/>
 
-            <xsl:result-document method="xml" indent="yes" href="taxonomy/{$values[$filename]}.xml">
+            <xsl:result-document method="xml" indent="yes" href="relationshipsTaxonomy/{$values[$filename]}.xml">
                 <!-- link to the custom Syriaca schema -->
                 <xsl:processing-instruction name="xml-model">href="http://syriaca.org/documentation/syriaca-tei-main.rnc" type="application/relax-ng-compact-syntax"</xsl:processing-instruction>
 

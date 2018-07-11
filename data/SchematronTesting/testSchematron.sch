@@ -59,13 +59,13 @@
             <sch:assert test="count(distinct-values(//tei:div/@uri)) eq count(//tei:div/@uri)">Each
                 div @uri attribute must have a unique value.</sch:assert>
             <!--
+                I tried all of these but none worked. They validate whether or not the count of uri attribute values is the same or 
+                greater than the number of unique uri attribute values. I couldn't figure out how this might be a namespace issue but 
+                tried the sch:assert above and it worked. I'm not sure why it worked where the others failed.
                 <sch:assert test="count(distinct-values(.)) = count(.)">Each div @uri attribute must have a unique value.</sch:assert>
                 <sch:assert test="count(distinct-values(.)) eq count(.)">Each div @uri attribute must have a unique value.</sch:assert>
                 <sch:report test="count(.) gt count(distinct-values(.))">Each div @uri attribute must have a unique value.</sch:report>
                 <sch:report test="count(distinct-values(.)) lt count(.)">Each div @uri attribute must have a unique value.</sch:report>
-                I tried all of these but none worked. They validate whether or not the count of uri attribute values is the same or 
-                greater than the number of unique uri attribute values. I couldn't figure out how this might be a namespace issue but 
-                tried the sch:assert above and it worked. I'm not sure why it worked where the others failed.
             -->
 
         </sch:rule>
@@ -228,6 +228,7 @@
                 Syriaca.org work URI ends with a number.</sch:assert>
         </sch:rule>
         <!-- This doesn't work but I'm not sure why. The Xpath to get to the right @target attributes works. The tests are copied from above where they work. Hmmm? -->
+        
         <sch:rule context="tei:ptr[parent::tei:bibl]/@target[contains(., 'bibl/')]">
             <sch:report test="matches(substring-after(., 'bibl/'), '/D')">A properly formatted
                 Syriaca.org work URI ends with a number.</sch:report>
@@ -235,6 +236,8 @@
                 Syriaca.org work URI ends with a number.</sch:assert>
         </sch:rule>
         <!-- This doesn't work but I'm not sure why. The Xpath to get to the right @target attributes works. The tests are copied from above where they work. Hmmm? -->
+        
+        
         
         
         <!--

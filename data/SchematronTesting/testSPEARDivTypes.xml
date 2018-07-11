@@ -472,13 +472,12 @@
             </bibl>
          </div>
          <!-- 
-            I still need to work on schematron for relationships, both personal and event.
-            I still need to look at bibliography in divs. This will likely require tweaking the ODD. 
+            I still need to work on schematron for relationships: separate @ref value options for person and event factoids; require act/pass or mutual for different @ref values. 
+            I still need to look at bibliography in divs. This will likely require tweaking the ODD as ODD only allows bibl in div but not in back.
             I definitely need some rules that allow different bibliography in back elements.
             I need to add the definition of the xml:id for "#calculated" to all SPEAR files.
             If encoder uses multiple keywords, the current schematron rule only requires that the first one start with http://syriaca.org/keyword/. -FIX THIS-
-            Fix ODD to make @resp attribute optional now that it is required in the more limited context in the schematron.
-            Fix ODD to allow min 1 and max 1 value for ref attributes on person and place. This should also be the case for ptr @target but only in bibl and not in an event note.
+            I need to allow min 1 and max 1 value for ptr @target but only in bibl and not in an event note.
          -->
 
 

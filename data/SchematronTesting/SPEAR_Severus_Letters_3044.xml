@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://raw.githubusercontent.com/srophe/srophe-eXist-app/dev/srophe-app/documentation/SPEARschema/out/odd_SPEAR.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="testSchematron.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title level="a">Severus of Antioch, Letter, <title ref="http://syriaca.org/work/3044">To Misael the Chamberlain</title></title>
+                <title level="m">SPEAR: Syriac Persons, Events, and Relations</title>
+                <funder>The National Endowment for the Humanities</funder>
+                <principal>Daniel L. Schwartz</principal>
+                <funder>Texas A&amp;M University</funder>
+                <principal>Daniel L. Schwartz</principal>
+                <editor role="general" ref="http://syriaca.org/documentation/editors.xml#dschwartz">Daniel L. Schwartz</editor>
+                <editor role="general" ref="http://syriaca.org/documentation/editors.xml#dmichelson">David A. Michelson</editor>
+                <editor role="creator" ref="http://syriaca.org/documentation/editors.xml#dschwartz">Daniel L. Schwartz</editor>
+                <respStmt>
+                    <resp/>
+                    <name ref="http://syriaca.org/documentation/editors.xml#dschwartz">Daniel L. Schwartz</name>
+                </respStmt>
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0"/>
+            </editionStmt>
+            <publicationStmt>
+                <authority>Syriaca.org: The Syriac Reference Portal</authority>
+                <idno type="URI">http://syriaca.org/spear/3044/tei</idno>
+                <availability>
+                    <licence target="http://creativecommons.org/licenses/by/3.0/">
+                        <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
+                    </licence>
+                </availability>
+                <date/>
+            </publicationStmt>
+            <sourceDesc>
+                <p>
+                    This is a born digital prosopography containing data derived from Severus of Antioch's letter <title ref="http://syriaca.org/work/3044">To Misael the Chamberlain</title>.
+                </p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <editorialDecl>
+                <p>
+                </p>
+            </editorialDecl>
+        </encodingDesc>
+        <profileDesc>
+        </profileDesc>
+        <revisionDesc>
+            <change/>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div uri="http://syriaca.org/spear/3044-1" resp="#ktorabi #dschwartz">
+                <listPerson>
+                    <person>
+                        <persName ref="http://syriaca.org/person/2558">
+                            Misael, the Chamberlain
+                            </persName>
+                    </person>
+                </listPerson>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/bibl/666"/>
+                    <citedRange unit="part">1.17</citedRange>
+                    <citedRange unit="pp">63</citedRange>
+                </bibl>
+            </div>
+            <div uri="http://syriaca.org/spear/3044-2" resp="#ktorabi #dschwartz">
+                <listPerson>
+                    <person>
+                        <persName ref="http://syriaca.org/person/2558"/>
+                        <sex value="M">
+                                <note type="desc">Misael was male.</note>
+                            </sex>
+                    </person>
+                </listPerson>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/bibl/666"/>
+                    <citedRange unit="part">1.17</citedRange>
+                    <citedRange unit="pp">63</citedRange>
+                </bibl>
+            </div>
+            <div uri="http://syriaca.org/spear/3044-3" resp="#ktorabi #dschwartz">
+                <listPerson>
+                    <person>
+                        <persName ref="http://syriaca.org/person/2558"/>
+                        <occupation ref="http://syriaca.org/keyword/chamberlain">
+                            <note type="desc">Misael was a chamberlain.</note>
+                        </occupation>
+                    </person>
+                </listPerson>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/bibl/666"/>
+                    <citedRange unit="part">1.17</citedRange>
+                    <citedRange unit="pp">63</citedRange>
+                </bibl>
+            </div>
+            <div uri="http://syriaca.org/spear/3044-4" resp="#ktorabi #dschwartz">
+                <listRelation>
+                    <relation  ref="syriaca:Epistolary" active="http://syriaca.org/person/51" passive="http://syriaca.org/person/2558"/>
+                </listRelation>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/bibl/666"/>
+                    <citedRange unit="part">1.17</citedRange>
+                    <citedRange unit="pp">63</citedRange>
+                </bibl>
+            </div>
+            <div uri="http://syriaca.org/spear/3044-5" resp="#ktorabi #dschwartz">
+                <listPerson>
+                    <personGrp>
+                        <persName ref="http://syriaca.org/person/3060">
+                            The Oeconomi of the church of 
+                            <placeName><!-- URI needed for Antioch -->
+                                Antioch
+                            </placeName>
+                            under 
+                            <persName ref="http://syriaca.org/person/51">
+                                Severus
+                            </persName>
+                        </persName>
+                    </personGrp>
+                </listPerson>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/bibl/666"/>
+                    <citedRange unit="part">1.17</citedRange>
+                    <citedRange unit="pp">65</citedRange>
+                </bibl>
+            </div>
+            <div uri="http://syriaca.org/spear/3044-6" resp="#ktorabi #dschwartz">
+                <listPerson>
+                    <personGrp>
+                        <persName ref="http://syriaca.org/person/3060"/>
+                        <occupation ref="http://syriaca.org/keyword/steward">
+                            <note type="desc">The Oeconmi were the stewards of the church of Antioch under Severus.</note>
+                        </occupation>
+                    </personGrp>
+                </listPerson>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/bibl/666"/>
+                    <citedRange unit="part">1.17</citedRange>
+                    <citedRange unit="pp">65</citedRange>
+                </bibl>
+            </div>
+            <div uri="http://syriaca.org/spear/3044-7" resp="#ktorabi #dschwartz">
+                <listRelation>
+                    <relation  ref="snap:ProfessionalRelationship" mutual="http://syriaca.org/person/51 http://syriaca.org/person/3060"/>
+                </listRelation>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/bibl/666"/>
+                    <citedRange unit="part">1.17</citedRange>
+                    <citedRange unit="pp">65</citedRange>
+                </bibl>
+            </div>
+            <div uri="http://syriaca.org/spear/3044-8" resp="#ktorabi #dschwartz">
+                <listPerson>
+                    <person>
+                        <persName ref="http://syriaca.org/person/2559">
+                            The glorious sacellar, the lord Eleutherius
+                        </persName>
+                    </person>
+                </listPerson>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/bibl/666"/>
+                    <citedRange unit="part">1.17</citedRange>
+                    <citedRange unit="pp">65-66</citedRange>
+                </bibl>
+            </div>
+            <div uri="http://syriaca.org/spear/3044-9" resp="#ktorabi #dschwartz">
+                <listPerson>
+                    <person>
+                        <persName ref="http://syriaca.org/person/2559"/>
+                        <sex value="M">
+                                <note type="desc">Eleutherius was male.</note>
+                            </sex>
+                    </person>
+                </listPerson>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/bibl/666"/>
+                    <citedRange unit="part">1.17</citedRange>
+                    <citedRange unit="pp">65-66</citedRange>
+                </bibl>
+            </div>
+            <div uri="http://syriaca.org/spear/3044-10" resp="#ktorabi #dschwartz">
+                <listPerson>
+                    <person>
+                        <persName ref="http://syriaca.org/person/2559"/>
+                        <occupation ref="http://syriaca.org/keyword/sacellarius">
+                            <note type="desc">Eleutherius was a sacellarius.</note>
+                        </occupation>
+                    </person>
+                </listPerson>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/bibl/666"/>
+                    <citedRange unit="part">1.17</citedRange>
+                    <citedRange unit="pp">65-66</citedRange>
+                </bibl>
+            </div>
+            <div uri="http://syriaca.org/spear/3044-11" resp="#ktorabi #dschwartz">
+                <listRelation>
+                    <relation  ref="snap:ProfessionalRelationship" mutual="http://syriaca.org/person/51 http://syriaca.org/person/2559"/>
+                </listRelation>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/bibl/666"/>
+                    <citedRange unit="part">1.17</citedRange>
+                    <citedRange unit="pp">65-66</citedRange>
+                </bibl>
+            </div>
+            <div uri="http://syriaca.org/spear/3044-12" resp="#ktorabi #dschwartz">
+                <listRelation>
+                    <relation  ref="syriaca:Epistolary" active="http://syriaca.org/person/2559" passive="http://syriaca.org/person/51"/>
+                </listRelation>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/bibl/666"/>
+                    <citedRange unit="part">1.17</citedRange>
+                    <citedRange unit="pp">65</citedRange>
+                </bibl>
+            </div>
+            <div uri="http://syriaca.org/spear/3044-13" resp="#ktorabi #dschwartz">
+                <listPerson>
+                    <personGrp>
+                        <persName ref="http://syriaca.org/person/3061">
+                            Those who managed the apokriseis of 
+                            <persName ref="http://syriaca.org/person/51">
+                                Severus
+                            </persName>
+                        </persName>
+                    </personGrp>
+                </listPerson>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/bibl/666"/>
+                    <citedRange unit="part">1.17</citedRange>
+                    <citedRange unit="pp">65</citedRange>
+                </bibl>
+            </div>
+            <div uri="http://syriaca.org/spear/3044-14" resp="#ktorabi #dschwartz">
+                <listPerson>
+                    <personGrp>
+                        <persName ref="http://syriaca.org/person/3061"/>
+                        <occupation ref="http://syriaca.org/keyword/ecclesiasticaladministrators"><!-- I added the place name here, since it isn't mentioned in the name variant. Place names are not included in occupation divs in the examples in the Pers_Element_Testing file, so if this is incorrect I can delete the place name. Also we need a URI for Antioch -->
+                            <note type="desc">Those who managed the apokriseis of Severus were the ecclesiastical administrators of the church of>
+                            <placeName><!-- URI needed for Antioch -->
+                                Antioch
+                            </placeName>
+                            </note>
+                        </occupation>
+                    </personGrp>
+                </listPerson>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/bibl/666"/>
+                    <citedRange unit="part">1.17</citedRange>
+                    <citedRange unit="pp">65</citedRange>
+                </bibl>
+            </div>
+            <div uri="http://syriaca.org/spear/3044-15" resp="#ktorabi #dschwartz">
+                <listRelation>
+                    <relation  ref="syriaca:Epistolary" active="http://syriaca.org/person/2559" passive="http://syriaca.org/person/3061"/>
+                </listRelation>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/bibl/666"/>
+                    <citedRange unit="part">1.17</citedRange>
+                    <citedRange unit="pp">65</citedRange>
+                </bibl>
+            </div>
+            <div uri="http://syriaca.org/spear/3044-16" resp="#ktorabi #dschwartz">
+                <listRelation>
+                    <relation  ref="snap:ProfessionalRelationship" mutual="http://syriaca.org/person/51 http://syriaca.org/person/3061"/>
+                </listRelation>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/bibl/666"/>
+                    <citedRange unit="part">1.17</citedRange>
+                    <citedRange unit="pp">65</citedRange>
+                </bibl>
+            </div>
+        </body>
+        <back>
+            <div>
+                <bibl>
+                    <title xml:lang="en">The Sixth Book of the Select Letters of Severus, Patriarch of Antioch in the Syriac Version of Athanasius of Nisibis</title>
+                    <title type="sub">Translation, I.1 - II.3</title>
+                    <ptr target="http://syriaca.org/bibl/666"/>
+                </bibl>
+                <bibl>
+                    <title xml:lang="en">The Sixth Book of the Select Letters of Severus, Patriarch of Antioch in the Syriac Version of Athanasius of Nisibis</title>
+                    <title type="sub">Translation, III.1 - XI.1</title>
+                    <ptr target="http://syriaca.org/bibl/667"/>
+                </bibl>
+                <bibl>
+                    <title xml:lang="en">The Sixth Book of the Select Letters of Severus, Patriarch of Antioch in the Syriac Version of Athanasius of Nisibis</title>
+                    <title type="sub">Text, I.1 - II.3</title>
+                    <biblScope unit="issue">I</biblScope>
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                </bibl>
+                <bibl>
+                    <title xml:lang="en">The Sixth Book of the Select Letters of Severus, Patriarch of Antioch in the Syriac Version of Athanasius of Nisibis</title>
+                    <title type="sub">Text, III.1 - XI.1</title>
+                    <biblScope unit="issue">II</biblScope>
+                    <ptr target="http://syriaca.org/bibl/669"/>
+                </bibl>
+            </div>
+        </back>
+    </text>
+</TEI>

@@ -71,7 +71,7 @@
                     <person>
                         <persName ref="http://syriaca.org/person/2558"/>
                         <sex value="M">
-                                <note type="desc">Misael was male.</note>
+                            <note type="desc"><persName ref="http://syriaca.org/person/2558">Misael</persName> was male.</note>
                             </sex>
                     </person>
                 </listPerson>
@@ -86,7 +86,7 @@
                     <person>
                         <persName ref="http://syriaca.org/person/2558"/>
                         <occupation ref="http://syriaca.org/keyword/chamberlain">
-                            <note type="desc">Misael was a chamberlain.</note>
+                            <note type="desc"><persName ref="http://syriaca.org/person/2558">Misael</persName> was a chamberlain.</note>
                         </occupation>
                     </person>
                 </listPerson>
@@ -111,7 +111,7 @@
                     <personGrp>
                         <persName ref="http://syriaca.org/person/3060">
                             The Oeconomi of the church of 
-                            <placeName><!-- URI needed for Antioch -->
+                            <placeName ref="http://syriaca.org/place/9999"><!-- URI needed for Antioch -->
                                 Antioch
                             </placeName>
                             under 
@@ -132,7 +132,7 @@
                     <personGrp>
                         <persName ref="http://syriaca.org/person/3060"/>
                         <occupation ref="http://syriaca.org/keyword/steward">
-                            <note type="desc">The Oeconmi were the stewards of the church of Antioch under Severus.</note>
+                            <note type="desc"><persName ref="http://syriaca.org/person/3060">The Oeconmi</persName> were the stewards of the church of Antioch under Severus.</note>
                         </occupation>
                     </personGrp>
                 </listPerson>
@@ -171,7 +171,7 @@
                     <person>
                         <persName ref="http://syriaca.org/person/2559"/>
                         <sex value="M">
-                                <note type="desc">Eleutherius was male.</note>
+                            <note type="desc"><persName ref="http://syriaca.org/person/2559">Eleutherius</persName> was male.</note>
                             </sex>
                     </person>
                 </listPerson>
@@ -186,7 +186,7 @@
                     <person>
                         <persName ref="http://syriaca.org/person/2559"/>
                         <occupation ref="http://syriaca.org/keyword/sacellarius">
-                            <note type="desc">Eleutherius was a sacellarius.</note>
+                            <note type="desc"><persName ref="http://syriaca.org/person/2559">Eleutherius</persName> was a sacellarius.</note>
                         </occupation>
                     </person>
                 </listPerson>
@@ -238,8 +238,8 @@
                     <personGrp>
                         <persName ref="http://syriaca.org/person/3061"/>
                         <occupation ref="http://syriaca.org/keyword/ecclesiasticaladministrators"><!-- I added the place name here, since it isn't mentioned in the name variant. Place names are not included in occupation divs in the examples in the Pers_Element_Testing file, so if this is incorrect I can delete the place name. Also we need a URI for Antioch -->
-                            <note type="desc">Those who managed the apokriseis of Severus were the ecclesiastical administrators of the church of>
-                            <placeName><!-- URI needed for Antioch -->
+                            <note type="desc"><persName ref="http://syriaca.org/person/3061">Those who managed the apokriseis of Severus</persName> were the ecclesiastical administrators of the church of>
+                            <placeName ref="http://syriaca.org/place/999"><!-- URI needed for Antioch -->
                                 Antioch
                             </placeName>
                             </note>

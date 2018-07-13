@@ -113,12 +113,6 @@
                                         ref="http://syriaca.org/documentation/editors.xml#dschwartz"
                                         >Daniel L. Schwartz</name>
                                 </respStmt>
-                                <respStmt>
-                                    <resp>XSLT transform of spreadsheet data into TEI by</resp>
-                                    <name type="person"
-                                        ref="http://syriaca.org/documentation/editors.xml#ngibson"
-                                        >Nathan Gibson</name>
-                                </respStmt>
                             </titleStmt>
                             <editionStmt>
                                 <edition n="1.0"/>
@@ -212,13 +206,13 @@
                             </langUsage>
                         </profileDesc>
                         <revisionDesc status="draft">
-                            <change who="http://syriaca.org/documentation/editors.xml#ngibson"
+                            <change who="http://syriaca.org/documentation/editors.xml#dschwartz"
                                 n="1.0" when="2017-05-05-05:00">CREATED: keyword</change>
-                        </revisionDesc>
+                        </revisionDesc><!-- Fix this for future transformations. -->
                     </teiHeader>
                     <text>
                         <body>
-                            <entryFree>
+                            <entryFree type="skos:Concept">
 
                                 <!-- there may be multiple terms in different languages -->
                                 <xsl:for-each select="$term">

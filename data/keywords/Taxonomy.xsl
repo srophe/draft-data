@@ -57,9 +57,10 @@
     <xsl:variable name="realURI" as="xs:integer*"
         select="index-of($subheadings, 'LOC'), index-of($subheadings, 'DNB')"/>
     <xsl:variable name="note" as="xs:integer" select="index-of($headings, 'note abstract')"/>
+    
 
     <xsl:template match="/">
-        <!-- data begin at row 4; set upper limit for testing  with something like $tsv[position() ge 4 and position() l3 12]-->
+        <!-- data begin at row 4; set upper limit for testing  with something like $tsv[position() ge 4 and position() lt 12]-->
         <xsl:for-each select="$tsv[position() ge 4]">
             <xsl:variable name="values" as="xs:string+" select="tokenize(current(), '\t')"/>
             <xsl:message select="concat('Processing ', $values[$title])"/>
@@ -69,6 +70,7 @@
             -->
             <xsl:variable name="URI"
                 select="concat('http://syriaca.org/keyword/', $values[$filename])"/>
+            <xsl:variable name="xmlID" select="concat('keyword-', $values[$filename])"/>
 
             <xsl:result-document method="xml" indent="yes" href="taxonomy/{$values[$filename]}.xml">
                 <!-- link to the custom Syriaca schema -->
@@ -212,7 +214,7 @@
                     </teiHeader>
                     <text>
                         <body>
-                            <entryFree type="skos:Concept">
+                            <entryFree xml:id="{$xmlID}" type="skos:Concept">
 
                                 <!-- there may be multiple terms in different languages -->
                                 <xsl:for-each select="$term">

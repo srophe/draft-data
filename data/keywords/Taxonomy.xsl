@@ -60,7 +60,7 @@
 
     <xsl:template match="/">
         <!-- data begin at row 4; set upper limit for testing  with something like $tsv[position() ge 4 and position() l3 12]-->
-        <xsl:for-each select="$tsv[position() ge 4]">
+        <xsl:for-each select="$tsv[position() ge 4 and position() lt 12]">
             <xsl:variable name="values" as="xs:string+" select="tokenize(current(), '\t')"/>
             <xsl:message select="concat('Processing ', $values[$title])"/>
             <!-- $URI is used:
@@ -212,7 +212,7 @@
                     </teiHeader>
                     <text>
                         <body>
-                            <entryFree type="skos:Concept">
+                            <entryFree xml:id="concat('keyword', $values[$filename]" type="skos:Concept">
 
                                 <!-- there may be multiple terms in different languages -->
                                 <xsl:for-each select="$term">

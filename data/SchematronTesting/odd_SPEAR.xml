@@ -1185,6 +1185,22 @@
           <classes mode="replace">
             <memberOf key="model.ptrLike"/>
           </classes>
+          <constraintSpec ident="ptr-targets-in-context" scheme="schematron">
+            <constraint>
+              <sch:rule context="tei:ptr[parent::tei:event]/@target">
+                <sch:assert test="starts-with(., 'http://syriaca.org/keyword/')">@target attributes on
+                  the ptr element in an event factoid must point to a Syriaca.org keyword
+                  (http://syriaca.org/keyword/___).</sch:assert>
+              </sch:rule>
+              <sch:rule context="tei:ptr[parent::tei:bibl]/@target">
+                <sch:assert
+                  test="starts-with(., 'http://syriaca.org/bibl/') or starts-with(., 'http://syriaca.org/work/')"
+                  >Inside of a bibl element, a ptr @target must contain a properly formatted
+                  Syriaca.org URI that starts with either "http://syriaca.org/work/" or
+                  "http://syriaca.org/bibl/".</sch:assert>
+              </sch:rule>
+            </constraint>
+          </constraintSpec>
           <attList>
             <attDef ident="target" usage="req">
               <datatype>
@@ -1914,10 +1930,9 @@
                 </valItem>
               </valList>
             </attDef>
-            <attDef ident="ref" usage="req">
+            <attDef ident="ref" usage="req"><!-- I need to create rules that allow only subsets of keyword list for each of the @type values above.-->
               <datatype minOccurs="1">
                 <dataRef key="teidata.pointer"/>
-                <!-- I need to modify this to employ a controlled vocabulary from a subset of the keyword list. -->
               </datatype>
             </attDef>
           </attList>

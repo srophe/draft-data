@@ -210,11 +210,22 @@
                 state element must point to a Syriaca.org keyword
                 (http://syriaca.org/keyword/___).</sch:assert>
         </sch:rule>
+        
+        
         <sch:rule context="tei:ptr[parent::tei:event]/@target">
             <sch:assert test="starts-with(., 'http://syriaca.org/keyword/')">@target attributes on
                 the ptr element in an event factoid must point to a Syriaca.org keyword
                 (http://syriaca.org/keyword/___).</sch:assert>
         </sch:rule>
+        <sch:rule context="tei:ptr[parent::tei:bibl]/@target">
+            <sch:assert
+                test="starts-with(., 'http://syriaca.org/bibl/') or starts-with(., 'http://syriaca.org/work/')"
+                >Inside of a bibl element, a ptr @target must contain a properly formatted
+                Syriaca.org URI that starts with either "http://syriaca.org/work/" or
+                "http://syriaca.org/bibl/".</sch:assert>
+        </sch:rule>
+        
+        
         <sch:rule context="tei:date[parent::tei:reg]/@calendar">
             <sch:assert test="contains(., 'Gregorian')">A date element inside a reg element must
                 have a @calendar attribute with a value of "Gregorian".</sch:assert>
@@ -224,13 +235,6 @@
                 attribute is "calculated". This note is used to indicate that this regularized date
                 was calculated from a non-calendrical dating system such as regnal years,
                 etc.</sch:assert>
-        </sch:rule>
-        <sch:rule context="tei:ptr[parent::tei:bibl]/@target">
-            <sch:assert
-                test="starts-with(., 'http://syriaca.org/bibl/') or starts-with(., 'http://syriaca.org/work/')"
-                >Inside of a bibl element, a ptr @target must contain a properly formatted
-                Syriaca.org URI that starts with either "http://syriaca.org/work/" or
-                "http://syriaca.org/bibl/".</sch:assert>
         </sch:rule>
         
         <sch:rule context="//tei:div/tei:bibl/tei:ptr/@target[contains(., 'work/')]">

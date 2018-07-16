@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?xml-model href="out/odd_SPEAR.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="out/odd_SPEAR.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="testSchematron.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -455,8 +454,8 @@
                      <choice>
                         <reg>
                            <date when="0001" calendar="Gregorian">[write date here]</date>
-                           <note ana="#calculated">This date was calculated from a regnal
-                              year.</note>
+                           <note ana="calculated">This regularized date was calculated by the SPEAR editor from a 
+                              non-calendrical dating system such as regnal years, etc.</note>
                         </reg>
                         <orig>
                            <date datingMethod="regnalYear">[write regnal year here]</date>
@@ -476,7 +475,7 @@
             I definitely need some rules that allow different bibliography in back elements.
             I need to add the definition of the xml:id for "#calculated" to all SPEAR files.
             If encoder uses multiple keywords, the current schematron rule only requires that the first one start with http://syriaca.org/keyword/. -FIX THIS-
-            I need to allow min 1 and max 1 value for ptr @target but only in bibl and not in an event note.
+            I need to think through in more detail exactly what I will allow/require in choice/reg-orig for dates and write more rules.
          -->
 
 

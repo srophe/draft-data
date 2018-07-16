@@ -74,7 +74,7 @@
             </sch:rule>
         -->
 
-        
+
 
         <!--In ODD already
             <sch:rule context="tei:note[parent::tei:birth and preceding-sibling::tei:placeName]">
@@ -140,8 +140,8 @@
         <sch:rule context="tei:note[parent::tei:reg and preceding-sibling::tei:date]">
             <sch:assert test="@ana">This note requires an @ana attribute.</sch:assert>
         </sch:rule>-->
-        
-        
+
+
         <!--In ODD already
             <sch:rule context="tei:note[parent::tei:birth]/@type">
             <sch:assert test="contains(., 'desc')">Note elements of @type "desc" are the only notes
@@ -198,21 +198,10 @@
                 allowed inside the state element. Other types of notes ("incerta", "dubia", and
                 "errata") may appear as children of the div element as needed.</sch:assert>
         </sch:rule>-->
-        
-        
-        <sch:rule context="tei:trait/@ref">
-            <sch:assert test="starts-with(., 'http://syriaca.org/keyword/')">@ref attributes on the
-                trait element must point to a Syriaca.org keyword
-                (http://syriaca.org/keyword/___).</sch:assert>
-        </sch:rule>
-        <sch:rule context="tei:state/@ref">
-            <sch:assert test="starts-with(., 'http://syriaca.org/keyword/')">@ref attributes on the
-                state element must point to a Syriaca.org keyword
-                (http://syriaca.org/keyword/___).</sch:assert>
-        </sch:rule>
-        
-        
-        <sch:rule context="tei:ptr[parent::tei:event]/@target">
+
+        <!--In ODD already
+            <sch:rule context="tei:ptr[parent::tei:event]/@target">
+            <sch:let name="targetValues" value="tokenize(., ' ')"/>
             <sch:assert test="starts-with(., 'http://syriaca.org/keyword/')">@target attributes on
                 the ptr element in an event factoid must point to a Syriaca.org keyword
                 (http://syriaca.org/keyword/___).</sch:assert>
@@ -223,39 +212,47 @@
                 >Inside of a bibl element, a ptr @target must contain a properly formatted
                 Syriaca.org URI that starts with either "http://syriaca.org/work/" or
                 "http://syriaca.org/bibl/".</sch:assert>
+            <sch:report test="contains(., ' ')">The @target attribute on the ptr element can only
+                contain one value.</sch:report>
+        </sch:rule>-->
+
+
+        <!--In ODD already
+            <sch:rule context="tei:trait/@ref">
+            <sch:assert test="starts-with(., 'http://syriaca.org/keyword/')">@ref attributes on the
+                trait element must point to a Syriaca.org keyword
+                (http://syriaca.org/keyword/___).</sch:assert>
         </sch:rule>
-        
-        
-        <sch:rule context="tei:date[parent::tei:reg]/@calendar">
+        <sch:rule context="tei:state/@ref">
+            <sch:assert test="starts-with(., 'http://syriaca.org/keyword/')">@ref attributes on the
+                state element must point to a Syriaca.org keyword
+                (http://syriaca.org/keyword/___).</sch:assert>
+        </sch:rule>-->
+
+
+        <!--In ODD already
+            <sch:rule context="tei:date[parent::tei:reg]/@calendar">
             <sch:assert test="contains(., 'Gregorian')">A date element inside a reg element must
                 have a @calendar attribute with a value of "Gregorian".</sch:assert>
         </sch:rule>
-        <sch:rule context="tei:note[parent::tei:reg and preceding-sibling::tei:date]/@ana">
-            <sch:assert test="contains(., 'calculated')">The only acceptable value of this @ana
-                attribute is "calculated". This note is used to indicate that this regularized date
-                was calculated from a non-calendrical dating system such as regnal years,
-                etc.</sch:assert>
-        </sch:rule>
-        
-        <sch:rule context="//tei:div/tei:bibl/tei:ptr/@target[contains(., 'work/')]">
+        <sch:rule context="tei:note[parent::tei:reg and preceding-sibling::tei:date]">
+            <sch:assert
+                test="matches(normalize-space(.), normalize-space('This regularized date was calculated by the SPEAR editor from a non-calendrical dating system such as regnal years, etc.'))"
+                >The text node in this note must be "This regularized date was calculated by the SPEAR editor from a non-calendrical dating system such as regnal years, etc."</sch:assert>
+            <sch:assert test="starts-with(., 'This regularized')">The text node in this note must be "This regularized date was calculated by the SPEAR editor from a non-calendrical dating system such as regnal years, etc."</sch:assert>
+            <sch:assert test="ends-with(., 'years, etc.')">The text node in this note must be "This regularized date was calculated by the SPEAR editor from a non-calendrical dating system such as regnal years, etc."</sch:assert>
+        </sch:rule>-->
+
+        <!--NOT WORKING! NOT SURE WHY!!
+            <sch:rule context="tei:bibl/tei:ptr/@target">
             <sch:report test="matches(substring-after(., 'work/'), '/D')">A properly formatted
                 Syriaca.org work URI ends with a number.</sch:report>
             <sch:assert test="matches(substring-after(., 'work/'), '/d')">A properly formatted
                 Syriaca.org work URI ends with a number.</sch:assert>
-        </sch:rule>
-        <!-- This doesn't work but I'm not sure why. The Xpath to get to the right @target attributes works. The tests are copied from above where they work. Hmmm? -->
-        
-        <sch:rule context="tei:ptr[parent::tei:bibl]/@target[contains(., 'bibl/')]">
-            <sch:report test="matches(substring-after(., 'bibl/'), '/D')">A properly formatted
-                Syriaca.org work URI ends with a number.</sch:report>
-            <sch:assert test="matches(substring-after(., 'bibl/'), '/d')">A properly formatted
-                Syriaca.org work URI ends with a number.</sch:assert>
-        </sch:rule>
-        <!-- This doesn't work but I'm not sure why. The Xpath to get to the right @target attributes works. The tests are copied from above where they work. Hmmm? -->
+        </sch:rule>-->
         
         
-        
-        
+
         <!--
         This isn't a rule I can use right now, but I'm saving this to build on later. I will eventually want to link this up to specific sections of the taxonomy.
         

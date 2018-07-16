@@ -144,7 +144,14 @@
                 <listEvent>
                     <event>
                         <desc><!-- Use persName, placeName, orgName, and date elements as needed, with URIs whenever possible. -->
-                            <persName ref="http://syriaca.org/person/1536">Abbi</persName> became a monk in a community in the village of <placeName ref="http://syriaca.org/place/2796">Ḥzyn</placeName>.
+                            In <choice>
+                                <reg>
+                                    <date calendar="Gregorian" when="0503-02-17">Feb 17, 503</date>
+                                </reg>
+                                <orig>
+                                    <date calendar="Seleucid" when-custom="0222-02-17">x 17, 222</date>
+                                </orig>
+                            </choice><persName ref="http://syriaca.org/person/1536">Abbi</persName> became a monk in a community in the village of <placeName ref="http://syriaca.org/place/2796">Ḥzyn</placeName>.
                         </desc>
                         <ptr target="http://syriaca.org/keyword/exile"/><!-- Use as many keywords as needed to describe content in the description. -->
                     </event>
@@ -230,7 +237,71 @@
                     <citedRange unit="pp">216</citedRange>
                 </bibl>
             </div>
-            
+            <div uri="http://syriaca.org/spear/806-14" resp="#">
+                <listPerson>
+                    <person>
+                        <persName ref="http://syriaca.org/person/999"/>
+                        <trait type="physical" ref="http://syriaca.org/keyword/xxxx">
+                            <!-- Use as many keywords as needed to describe content in note. -->
+                            <note type="desc">
+                                <persName ref="http://syriaca.org/person/999">[name]</persName> ....
+                            </note>
+                        </trait>
+                    </person>
+                </listPerson>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/work/999"/>
+                    <citedRange unit="pp">9-10</citedRange>
+                </bibl>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/bibl/999"/>
+                    <citedRange unit="pp">9</citedRange>
+                </bibl>
+            </div>
+            <div uri="http://syriaca.org/spear/806-11" resp="#">
+                <listPerson>
+                    <person>
+                        <persName ref="http://syriaca.org/person/999"/>
+                        <state type="mental" ref="http://syriaca.org/keyword/xxx">
+                            <!-- Use as many keywords as needed to describe content in note. -->
+                            <note type="desc">
+                                <persName ref="http://syriaca.org/person/999">[name]</persName> was ....
+                            </note>
+                        </state>
+                    </person>
+                </listPerson>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/work/999"/>
+                    <citedRange unit="pp">9-10</citedRange>
+                </bibl>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/bibl/999"/>
+                    <citedRange unit="pp">9</citedRange>
+                </bibl>
+            </div>
+            <div uri="http://syriaca.org/spear/806-22" resp="#">
+                <!-- Just concerned with regnal dates here. -->
+                <listEvent>
+                    <event>
+                        <desc>
+                            <choice>
+                                <reg>
+                                    <date when="0001" calendar="Gregorian">[write date here]</date>
+                                    <note ana="calculated">This regularized date was calculated by the SPEAR editor from a 
+                                        non-calendrical dating system such as regnal years, etc.</note>
+                                </reg>
+                                <orig>
+                                    <date datingMethod="regnalYear">[write regnal year here]</date>
+                                </orig>
+                            </choice>
+                        </desc>
+                    </event>
+                </listEvent>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/work/999"/>
+                    <citedRange unit="pp">9-10</citedRange>
+                </bibl>
+            </div>
         </body>
         <back>
             <!-- Enter full bibl information here for the  bibl URIs contained in this document, n.b. the schema needs to be updated in order to allow this.-->

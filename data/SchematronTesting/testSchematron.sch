@@ -5,6 +5,30 @@
     <sch:pattern>
 
 
+        <sch:let name="urnBase" value="//tei:back/tei:listBibl/tei:bibl[@type='urn']/tei:ptr/@target"/>
+        <sch:rule context="tei:body/tei:div/tei:bibl[@type='urn']/tei:ptr/@target">
+            <sch:assert
+                test="starts-with(., '$urnBase')"
+                >URN in factoid bibl must begin with URN in back matter of TEI document: <sch:value-of select="$urnBase"/>.</sch:assert>
+        </sch:rule>
+        <!--<sch:rule context="tei:bibl[@type='primary']/tei:ptr/@target">
+            <sch:assert
+                test="starts-with(., 'http://syriaca.org/bibl/') or starts-with(., 'http://syriaca.org/work/')"
+                >"http://syriaca.org/work/" or "http://syriaca.org/bibl/" in bibl @type 'primary'.</sch:assert>
+            <sch:report test="contains(., ' ')">The @target attribute on the ptr element can
+                only contain one value.</sch:report>
+        </sch:rule>
+        <sch:rule context="tei:ptr[parent::tei:bibl]/@target">
+            <sch:assert
+                test="starts-with(., 'http://syriaca.org/bibl/') or starts-with(., 'http://syriaca.org/work/')"
+                >Inside of a bibl element, a ptr @target must contain a properly formatted
+                Syriaca.org URI that starts with either "http://syriaca.org/work/" or
+                "http://syriaca.org/bibl/".</sch:assert>
+            <sch:report test="contains(., ' ')">The @target attribute on the ptr element can only
+                contain one value.</sch:report>
+        </sch:rule>-->
+        
+        
         <!-- In ODD already
             <sch:rule context="tei:persName/@ref">
             <sch:assert test="starts-with(., 'http://syriaca.org/person/')">@ref attributes on a

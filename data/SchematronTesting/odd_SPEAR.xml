@@ -42,7 +42,7 @@
 
         <desc/>
         <moduleRef key="core"
-          include="author bibl biblScope choice citedRange corr date desc editor name note num orig p ptr publisher pubPlace ref reg resp respStmt sic title"/>
+          include="author bibl biblScope choice citedRange corr date desc editor listBibl name note num orig p ptr publisher pubPlace ref reg resp respStmt sic title"/>
         <moduleRef key="tei"/>
         <moduleRef key="header"/>
         <moduleRef key="textstructure" include="back body div TEI text"/>
@@ -424,7 +424,7 @@
                         <reg>
                           <date notBefore="0511-04-11" notAfter="0512-04-10" calendar="Gregorian">A.
                             D. 511/2</date>
-                          <note ana="#calculated">This date was calculated from a regnal
+                          <note ana="calculated">This date was calculated from a regnal
                             year.</note>
                         </reg>
                         <orig>

@@ -5,12 +5,65 @@
     <sch:pattern>
 
 
-        <sch:let name="urnBase" value="//tei:back/tei:listBibl/tei:bibl[@type='urn']/tei:ptr/@target"/>
-        <sch:rule context="tei:body/tei:div/tei:bibl[@type='urn']/tei:ptr/@target">
-            <sch:assert
-                test="starts-with(., '$urnBase')"
-                >URN in factoid bibl must begin with URN in back matter of TEI document: <sch:value-of select="$urnBase"/>.</sch:assert>
+
+
+
+
+        
+        
+        <!--In ODD already
+            <sch:rule context="//tei:sourceDesc/tei:listBibl">
+            <sch:assert test="tei:head">A listBibl element inside sourceDesc must contain a head element.</sch:assert>
         </sch:rule>
+        
+        <sch:rule context="//tei:sourceDesc//tei:head">
+            <sch:assert test="normalize-space(.) = 'Sources for the Data in this Born Digital Prosopography'">
+                A head element in the sourceDesc must read: "Sources for the Data in this Born Digital Prosopography".
+            </sch:assert>
+        </sch:rule>-->
+        
+        <!--In ODD already
+        <sch:rule context="//tei:body/tei:div/tei:bibl[@type = 'urn']/tei:ptr/@target">
+            <sch:let name="urnBase"
+                value="//tei:sourceDesc//tei:bibl[@type = 'urn']/tei:ptr/@target"/>
+            <sch:assert test="starts-with(., concat($urnBase, ':'))">URN in factoid bibl must begin with URN in
+                the sourceDesc element of the teiHeader: "<sch:value-of select="$urnBase"/>:".</sch:assert>
+        </sch:rule>-->
+
+
+
+        <!--In ODD already
+        <sch:rule context="//tei:body//tei:bibl[@type = 'primary']/tei:ptr/@target">
+            <sch:assert test=". = //tei:sourceDesc//tei:bibl[@type = 'primary']/tei:ptr/@target">
+                Ptr @target "<sch:value-of select="."/>" is not among the valid options contained in
+                the sourceDesc element of the teiHeader: (<sch:value-of
+                    select="string-join(//tei:sourceDesc//tei:bibl[@type = 'primary']/tei:ptr/@target, '; ')"
+                />) </sch:assert>
+        </sch:rule>-->
+
+
+
+
+        <!--In ODD already
+            <sch:rule context="tei:back//tei:bibl">
+            <sch:assert test="@xml:id">A bibl element in the back matter must contain an @xml:id
+                attribute.</sch:assert>
+        </sch:rule>
+        <sch:rule context="tei:back//tei:bibl/@xml:id">
+            <sch:let name="docURIno"
+                value="//tei:publicationStmt/tei:idno[@type]/substring-after(substring-before(., '/tei'), 'spear/')"/>
+            <sch:assert test="contains(., concat('bibl', $docURIno, '-'))">The @xml:id on the bibl
+                element in the back matter must take the following form: 'bibl' + '<sch:value-of
+                    select="$docURIno"/>' + '-' + a unique number.</sch:assert>
+            <sch:assert test="count(distinct-values(//tei:back//tei:bibl/@xml:id)) eq count(//tei:back//tei:bibl/@xml:id)">Each
+                bibl @xml:id attribute must have a unique value.</sch:assert>
+            <sch:report test="matches(substring-after(., '-'), '\D')">A properly formatted
+                Syriaca.org person URI ends with a number.</sch:report>
+            <sch:assert test="matches(substring-after(., '-'), '\d')">A properly formatted
+                Syriaca.org person URI ends with a number.</sch:assert>
+        </sch:rule>-->
+
+
         <!--<sch:rule context="tei:bibl[@type='primary']/tei:ptr/@target">
             <sch:assert
                 test="starts-with(., 'http://syriaca.org/bibl/') or starts-with(., 'http://syriaca.org/work/')"
@@ -27,8 +80,8 @@
             <sch:report test="contains(., ' ')">The @target attribute on the ptr element can only
                 contain one value.</sch:report>
         </sch:rule>-->
-        
-        
+
+
         <!-- In ODD already
             <sch:rule context="tei:persName/@ref">
             <sch:assert test="starts-with(., 'http://syriaca.org/person/')">@ref attributes on a
@@ -53,7 +106,7 @@
 
         <!--In ODD already
             <sch:rule context="tei:div/tei:note/@type">
-            <sch:report test="contains(., 'desc')">Only notes of @type "incerta", "dubia", or
+            <sch:report test=". = 'desc'">Only notes of @type "incerta", "dubia", or
                 "errata" may appear as children of a div element.</sch:report>
         </sch:rule>-->
 
@@ -256,15 +309,13 @@
 
         <!--In ODD already
             <sch:rule context="tei:date[parent::tei:reg]/@calendar">
-            <sch:assert test="contains(., 'Gregorian')">A date element inside a reg element must
+            <sch:assert test=". = 'Gregorian'">A date element inside a reg element must
                 have a @calendar attribute with a value of "Gregorian".</sch:assert>
         </sch:rule>
         <sch:rule context="tei:note[parent::tei:reg and preceding-sibling::tei:date]">
-            <sch:assert
-                test="matches(normalize-space(.), normalize-space('This regularized date was calculated by the SPEAR editor from a non-calendrical dating system such as regnal years, etc.'))"
-                >The text node in this note must be "This regularized date was calculated by the SPEAR editor from a non-calendrical dating system such as regnal years, etc."</sch:assert>
-            <sch:assert test="starts-with(., 'This regularized')">The text node in this note must be "This regularized date was calculated by the SPEAR editor from a non-calendrical dating system such as regnal years, etc."</sch:assert>
-            <sch:assert test="ends-with(., 'years, etc.')">The text node in this note must be "This regularized date was calculated by the SPEAR editor from a non-calendrical dating system such as regnal years, etc."</sch:assert>
+            <sch:assert test="normalize-space(.) = 'This regularized date was calculated by the SPEAR editor from a non-calendrical dating system such as regnal years, etc.'">
+                The only note allowed in this context must contain the following text: "This regularized date was calculated by the SPEAR editor from a non-calendrical dating system such as regnal years, etc."
+            </sch:assert>
         </sch:rule>-->
 
         <!--NOT WORKING! NOT SURE WHY!!
@@ -274,8 +325,8 @@
             <sch:assert test="matches(substring-after(., 'work/'), '/d')">A properly formatted
                 Syriaca.org work URI ends with a number.</sch:assert>
         </sch:rule>-->
-        
-        
+
+
 
         <!--
         This isn't a rule I can use right now, but I'm saving this to build on later. I will eventually want to link this up to specific sections of the taxonomy.

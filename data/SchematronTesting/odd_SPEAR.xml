@@ -42,7 +42,7 @@
 
         <desc/>
         <moduleRef key="core"
-          include="author bibl biblScope choice citedRange corr date desc editor listBibl name note num orig p ptr publisher pubPlace ref reg resp respStmt sic title"/>
+          include="author bibl biblScope choice citedRange corr date desc editor head listBibl name note num orig p ptr publisher pubPlace ref reg resp respStmt sic title"/>
         <moduleRef key="tei"/>
         <moduleRef key="header"/>
         <moduleRef key="textstructure" include="back body div TEI text"/>
@@ -141,29 +141,43 @@
         </elementSpec>
 
         <elementSpec ident="bibl" module="core" mode="change">
-          <classes mode="replace">
-            <memberOf key="model.biblLike" mode="add"/>
-            <memberOf key="model.biblPart" mode="add"/>
-          </classes>
           <content>
-            <alternate>
-              <sequence>
-                <elementRef key="ptr" minOccurs="1" maxOccurs="1"/>
-                <elementRef key="citedRange" minOccurs="1" maxOccurs="unbounded"/>
-              </sequence>
+            <sequence minOccurs="0" maxOccurs="1" preserveOrder="true">
+              <elementRef key="title" minOccurs="0" maxOccurs="2"/>
+              <elementRef key="author" minOccurs="0" maxOccurs="1"/>
+              <elementRef key="editor" minOccurs="0" maxOccurs="1"/>
+              <elementRef key="pubPlace" minOccurs="0" maxOccurs="1"/>
+              <elementRef key="publisher" minOccurs="0" maxOccurs="1"/>
+              <elementRef key="date" minOccurs="0" maxOccurs="1"/>
+              <elementRef key="biblScope" minOccurs="0" maxOccurs="2"/>
               <elementRef key="ptr" minOccurs="1" maxOccurs="1"/>
-            </alternate>
+              <elementRef key="citedRange" minOccurs="0" maxOccurs="3"/>
+            </sequence>
           </content>
+          <constraintSpec ident="id-in-back-bibl" scheme="schematron">
+            <constraint>
+              <sch:rule context="tei:back//tei:bibl">
+                <sch:assert test="@xml:id">A bibl element in the back matter must contain an @xml:id
+                  attribute.</sch:assert>
+              </sch:rule>
+              <sch:rule context="tei:back//tei:bibl/@xml:id">
+                <sch:let name="docURIno"
+                  value="//tei:publicationStmt/tei:idno[@type]/substring-after(substring-before(., '/tei'), 'spear/')"/>
+                <sch:assert test="contains(., concat('bibl', $docURIno, '-'))">The @xml:id on the
+                  bibl element in the back matter must take the following form: 'bibl' +
+                    '<sch:value-of select="$docURIno"/>' + '-' + a unique number.</sch:assert>
+                <sch:assert
+                  test="count(distinct-values(//tei:back//tei:bibl/@xml:id)) eq count(//tei:back//tei:bibl/@xml:id)"
+                  >Each bibl @xml:id attribute must have a unique value.</sch:assert>
+                <sch:report test="matches(substring-after(., '-'), '\D')">A properly formatted
+                  Syriaca.org person URI ends with a number.</sch:report>
+                <sch:assert test="matches(substring-after(., '-'), '\d')">A properly formatted
+                  Syriaca.org person URI ends with a number.</sch:assert>
+              </sch:rule>
+            </constraint>
+          </constraintSpec>
           <attList>
-            <attDef ident="xml:id" mode="add">
-              <datatype>
-                <dataRef key="ID"/>
-              </datatype>
-            </attDef>
             <attDef ident="type" mode="add" usage="req">
-              <datatype>
-                <dataRef key="teidata.enumerated"/>
-              </datatype>
               <valList type="closed">
                 <valItem ident="primary"/>
                 <valItem ident="secondary"/>
@@ -315,7 +329,7 @@
           <attList>
             <attDef ident="datingMethod" mode="change" usage="opt">
               <datatype>
-                <dataRef key="att.datable.custom"/>
+                <dataRef key="teidata.pointer"/>
               </datatype>
               <valList type="semi">
                 <valItem ident="Seleucid">
@@ -333,13 +347,13 @@
             </attDef>
             <attDef ident="calendar" mode="add" usage="opt">
               <datatype>
-                <dataRef key="att.datable"/>
+                <dataRef key="teidata.pointer"/>
               </datatype>
               <constraintSpec ident="Gregorian-in-reg-date" scheme="schematron">
                 <constraint>
                   <sch:rule context="tei:date[parent::tei:reg]/@calendar">
-                    <sch:assert test="contains(., 'Gregorian')">A date element inside a reg element must
-                      have a @calendar attribute with a value of "Gregorian".</sch:assert>
+                    <sch:assert test=". = 'Gregorian'">A date element inside a reg element must have
+                      a @calendar attribute with a value of "Gregorian".</sch:assert>
                   </sch:rule>
                 </constraint>
               </constraintSpec>
@@ -424,8 +438,7 @@
                         <reg>
                           <date notBefore="0511-04-11" notAfter="0512-04-10" calendar="Gregorian">A.
                             D. 511/2</date>
-                          <note ana="calculated">This date was calculated from a regnal
-                            year.</note>
+                          <note ana="calculated">This date was calculated from a regnal year.</note>
                         </reg>
                         <orig>
                           <date datingMethod="regnalYear">the 21st year of the reign of
@@ -900,11 +913,9 @@
           <constraintSpec ident="date-note-content" scheme="schematron">
             <constraint>
               <sch:rule context="tei:note[parent::tei:reg and preceding-sibling::tei:date]">
-                <sch:assert
-                  test="matches(normalize-space(.), normalize-space('This regularized date was calculated by the SPEAR editor from a non-calendrical dating system such as regnal years, etc.'))"
-                  >The text node in this note must be: "This regularized date was calculated by the SPEAR editor from a non-calendrical dating system such as regnal years, etc."</sch:assert>
-                <sch:assert test="starts-with(., 'This regularized')">The text node in this note must be: "This regularized date was calculated by the SPEAR editor from a non-calendrical dating system such as regnal years, etc."</sch:assert>
-                <sch:assert test="ends-with(., 'years, etc.')">The text node in this note must be: "This regularized date was calculated by the SPEAR editor from a non-calendrical dating system such as regnal years, etc."</sch:assert>
+                <sch:assert test="normalize-space(.) = 'This regularized date was calculated by the SPEAR editor from a non-calendrical dating system such as regnal years, etc.'">
+                  The only note allowed in this context must contain the following text: "This regularized date was calculated by the SPEAR editor from a non-calendrical dating system such as regnal years, etc."
+                </sch:assert>
               </sch:rule>
             </constraint>
           </constraintSpec>
@@ -926,69 +937,68 @@
               <constraintSpec ident="notes-type-desc" scheme="schematron">
                 <constraint>
                   <sch:rule context="tei:note[parent::tei:birth]/@type">
-                    <sch:assert test="contains(., 'desc')">Note elements of @type "desc" are the
-                      only notes allowed inside the birth element. Other types of notes ("incerta",
-                      "dubia", and "errata") may appear as children of the div element as
+                    <sch:assert test=". = 'desc'">Note elements of @type "desc" are the only notes
+                      allowed inside the birth element. Other types of notes ("incerta", "dubia",
+                      and "errata") may appear as children of the div element as
                       needed.</sch:assert>
                   </sch:rule>
                   <sch:rule context="tei:note[parent::tei:nationality]/@type">
-                    <sch:assert test="contains(., 'desc')">Note elements of @type "desc" are the
-                      only notes allowed inside the nationality element. Other types of notes
-                      ("incerta", "dubia", and "errata") may appear as children of the div element
-                      as needed.</sch:assert>
+                    <sch:assert test=". = 'desc'">Note elements of @type "desc" are the only notes
+                      allowed inside the nationality element. Other types of notes ("incerta",
+                      "dubia", and "errata") may appear as children of the div element as
+                      needed.</sch:assert>
                   </sch:rule>
                   <sch:rule context="tei:note[parent::tei:death]/@type">
-                    <sch:assert test="contains(., 'desc')">Note elements of @type "desc" are the
-                      only notes allowed inside the death element. Other types of notes ("incerta",
-                      "dubia", and "errata") may appear as children of the div element as
+                    <sch:assert test=". = 'desc'">Note elements of @type "desc" are the only notes
+                      allowed inside the death element. Other types of notes ("incerta", "dubia",
+                      and "errata") may appear as children of the div element as
                       needed.</sch:assert>
                   </sch:rule>
                   <sch:rule context="tei:note[parent::tei:education]/@type">
-                    <sch:assert test="contains(., 'desc')">Note elements of @type "desc" are the
-                      only notes allowed inside the education element. Other types of notes
-                      ("incerta", "dubia", and "errata") may appear as children of the div element
-                      as needed.</sch:assert>
-                  </sch:rule>
-                  <sch:rule context="tei:note[parent::tei:occupation]/@type">
-                    <sch:assert test="contains(., 'desc')">Note elements of @type "desc" are the
-                      only notes allowed inside the occupation element. Other types of notes
-                      ("incerta", "dubia", and "errata") may appear as children of the div element
-                      as needed.</sch:assert>
-                  </sch:rule>
-                  <sch:rule context="tei:note[parent::tei:residence]/@type">
-                    <sch:assert test="contains(., 'desc')">Note elements of @type "desc" are the
-                      only notes allowed inside the residence element. Other types of notes
-                      ("incerta", "dubia", and "errata") may appear as children of the div element
-                      as needed.</sch:assert>
-                  </sch:rule>
-                  <sch:rule context="tei:note[parent::tei:sex]/@type">
-                    <sch:assert test="contains(., 'desc')">Note elements of @type "desc" are the
-                      only notes allowed inside the sex element. Other types of notes ("incerta",
+                    <sch:assert test=". = 'desc'">Note elements of @type "desc" are the only notes
+                      allowed inside the education element. Other types of notes ("incerta",
                       "dubia", and "errata") may appear as children of the div element as
                       needed.</sch:assert>
                   </sch:rule>
+                  <sch:rule context="tei:note[parent::tei:occupation]/@type">
+                    <sch:assert test=". = 'desc'">Note elements of @type "desc" are the only notes
+                      allowed inside the occupation element. Other types of notes ("incerta",
+                      "dubia", and "errata") may appear as children of the div element as
+                      needed.</sch:assert>
+                  </sch:rule>
+                  <sch:rule context="tei:note[parent::tei:residence]/@type">
+                    <sch:assert test=". = 'desc'">Note elements of @type "desc" are the only notes
+                      allowed inside the residence element. Other types of notes ("incerta",
+                      "dubia", and "errata") may appear as children of the div element as
+                      needed.</sch:assert>
+                  </sch:rule>
+                  <sch:rule context="tei:note[parent::tei:sex]/@type">
+                    <sch:assert test=". = 'desc'">Note elements of @type "desc" are the only notes
+                      allowed inside the sex element. Other types of notes ("incerta", "dubia", and
+                      "errata") may appear as children of the div element as needed.</sch:assert>
+                  </sch:rule>
                   <sch:rule context="tei:note[parent::tei:socecStatus]/@type">
-                    <sch:assert test="contains(., 'desc')">Note elements of @type "desc" are the
-                      only notes allowed inside the socecStatus element. Other types of notes
-                      ("incerta", "dubia", and "errata") may appear as children of the div element
-                      as needed.</sch:assert>
+                    <sch:assert test=". = 'desc'">Note elements of @type "desc" are the only notes
+                      allowed inside the socecStatus element. Other types of notes ("incerta",
+                      "dubia", and "errata") may appear as children of the div element as
+                      needed.</sch:assert>
                   </sch:rule>
                   <sch:rule context="tei:note[parent::tei:langKnowledge]/@type">
-                    <sch:assert test="contains(., 'desc')">Note elements of @type "desc" are the
-                      only notes allowed inside the langKnowledge element. Other types of notes
-                      ("incerta", "dubia", and "errata") may appear as children of the div element
-                      as needed.</sch:assert>
+                    <sch:assert test=". = 'desc'">Note elements of @type "desc" are the only notes
+                      allowed inside the langKnowledge element. Other types of notes ("incerta",
+                      "dubia", and "errata") may appear as children of the div element as
+                      needed.</sch:assert>
                   </sch:rule>
                   <sch:rule context="tei:note[parent::tei:trait]/@type">
-                    <sch:assert test="contains(., 'desc')">Note elements of @type "desc" are the
-                      only notes allowed inside the trait element. Other types of notes ("incerta",
-                      "dubia", and "errata") may appear as children of the div element as
+                    <sch:assert test=". = 'desc'">Note elements of @type "desc" are the only notes
+                      allowed inside the trait element. Other types of notes ("incerta", "dubia",
+                      and "errata") may appear as children of the div element as
                       needed.</sch:assert>
                   </sch:rule>
                   <sch:rule context="tei:note[parent::tei:state]/@type">
-                    <sch:assert test="contains(., 'desc')">Note elements of @type "desc" are the
-                      only notes allowed inside the state element. Other types of notes ("incerta",
-                      "dubia", and "errata") may appear as children of the div element as
+                    <sch:assert test=". = 'desc'">Note elements of @type "desc" are the only notes
+                      allowed inside the state element. Other types of notes ("incerta", "dubia",
+                      and "errata") may appear as children of the div element as
                       needed.</sch:assert>
                   </sch:rule>
                 </constraint>
@@ -1239,14 +1249,18 @@
                   OR, I NEED TO SET UP MY INDEX OF KEYWORDS.
                 -->
                   </sch:rule>
-                  <sch:rule context="tei:ptr[parent::tei:bibl]/@target">
-                    <sch:assert
-                      test="starts-with(., 'http://syriaca.org/bibl/') or starts-with(., 'http://syriaca.org/work/')"
-                      >Inside of a bibl element, a ptr @target must contain a properly formatted
-                      Syriaca.org URI that starts with either "http://syriaca.org/work/" or
-                      "http://syriaca.org/bibl/".</sch:assert>
-                    <sch:report test="contains(., ' ')">The @target attribute on the ptr element can
-                      only contain one value.</sch:report>
+                  <sch:rule context="//tei:body/tei:div/tei:bibl[@type = 'urn']/tei:ptr/@target">
+                    <sch:let name="urnBase"
+                      value="//tei:sourceDesc//tei:bibl[@type = 'urn']/tei:ptr/@target"/>
+                    <sch:assert test="starts-with(., concat($urnBase, ':'))">URN in factoid bibl must begin with URN in
+                      the sourceDesc element of the teiHeader: "<sch:value-of select="$urnBase"/>:".</sch:assert>
+                  </sch:rule>
+                  <sch:rule context="//tei:body//tei:bibl[@type = 'primary']/tei:ptr/@target">
+                    <sch:assert test=". = //tei:sourceDesc//tei:bibl[@type = 'primary']/tei:ptr/@target">
+                      Ptr @target "<sch:value-of select="."/>" is not among the valid options contained in
+                      the sourceDesc element of the teiHeader: (<sch:value-of
+                        select="string-join(//tei:sourceDesc//tei:bibl[@type = 'primary']/tei:ptr/@target, '; ')"
+                      />) </sch:assert>
                   </sch:rule>
                 </constraint>
               </constraintSpec>
@@ -2030,6 +2044,38 @@
               requires a type attribute on the trait element and provides a closed list of values
               and limits the attribute values on the trait element to type and ref.</p>
           </remarks>
+        </elementSpec>
+        
+        <elementSpec ident="back" module="textstructure" mode="change">
+          <content>
+            <elementRef key="listBibl" minOccurs="1" maxOccurs="1"/>
+          </content>
+        </elementSpec>
+        
+        <elementSpec ident="listBibl" module="core" mode="change">
+          <content>
+            <elementRef key="head" minOccurs="0" maxOccurs="1"/>
+            <elementRef key="bibl" minOccurs="1" maxOccurs="unbounded"/>
+          </content>
+          <constraintSpec ident="head-in-sourceDesc-bibl" scheme="schematron">
+            <constraint>
+              <sch:rule context="//tei:sourceDesc/tei:listBibl">
+                <sch:assert test="tei:head">A listBibl element inside sourceDesc must contain a head element.</sch:assert>
+              </sch:rule>
+            </constraint>
+          </constraintSpec>
+        </elementSpec>
+        
+        <elementSpec ident="head" module="core" mode="change">
+          <constraintSpec ident="head-in-sourceDesc" scheme="schematron">
+            <constraint>
+              <sch:rule context="//tei:sourceDesc//tei:head">
+                <sch:assert test="normalize-space(.) = 'Sources for the Data in this Born Digital Prosopography'">
+                  A head element in the sourceDesc must read: "Sources for the Data in this Born Digital Prosopography".
+                </sch:assert>
+              </sch:rule>
+            </constraint>
+          </constraintSpec>
         </elementSpec>
 
         <elementSpec ident="state" module="namesdates" mode="replace">

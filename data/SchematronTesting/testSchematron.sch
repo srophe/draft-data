@@ -9,8 +9,47 @@
 
 
 
+
+        <!--I ended up not using these b/c there could be a need for more than one bibl URI and in some instances there won't be a urn at all.
+            <sch:rule context="//tei:sourceDesc//tei:bibl[1]/tei:ptr/@target">
+            <sch:assert test="contains(., 'work')">The first &lt;bibl&gt; element must contain a
+                &lt;ptr&gt; element whose @target attribute points to a Syriaca.org work
+                URI.</sch:assert>
+        </sch:rule>
+        <sch:rule context="//tei:sourceDesc//tei:bibl[2]/tei:ptr/@target">
+            <sch:assert test="contains(., 'bibl')">The second &lt;bibl&gt; element must contain a
+                &lt;ptr&gt; element whose @target attribute points to a Syriaca.org bibl
+                URI.</sch:assert>
+        </sch:rule>
+        <sch:rule context="//tei:sourceDesc//tei:bibl[3]/tei:ptr/@target">
+            <sch:assert test="contains(., 'urn')">The third &lt;bibl&gt; element must contain a
+                &lt;ptr&gt; element whose @target attribute points to a urn.</sch:assert>
+        </sch:rule>
+        <sch:rule context="//tei:sourceDesc//tei:bibl[4]">
+            <sch:report test=".">There cannot be more than three &lt;bibl&gt; elements in the &lt;sourceDesc&gt;.</sch:report>
+        </sch:rule>-->
         
-        
+
+        <!--In ODD already
+            <sch:let name="docURIno"
+            value="//tei:publicationStmt/tei:idno[@type]/substring-after(substring-before(., '/tei'), 'spear/')"/>
+        <sch:rule context="tei:sourceDesc//tei:bibl[@type = 'primary']/tei:ptr/@target">
+            <sch:assert
+                test=". = concat('http://syriaca.org/work/', $docURIno) or starts-with(., 'http://syriaca.org/bibl/')"
+                > The @target attribute on a &lt;ptr&gt; element inside a &lt;bibl&gt; element with @type="primary"
+                takes limited values. It either must be "http://syriaca.org/work/<sch:value-of
+                    select="$docURIno"/>" or "http://syriaca.org/bibl/" followed by the
+                corresponding Syriaca.org bibl URI number. </sch:assert>
+        </sch:rule>
+        <sch:rule context="tei:sourceDesc//tei:bibl[@type = 'urn']/tei:ptr/@target">
+            <sch:assert
+                test="starts-with(., concat('urn:cts:syriacLit:nhsl', $docURIno, '.syriacCorpus'))">
+                The @target attribute on a &lt;ptr&gt; element inside a &lt;bibl&gt; element with @type="urn" must
+                begin either with "urn:cts:syriacLit:nhsl<sch:value-of select="$docURIno"
+                />.syriacCorpus" followed by the corresponding Syriac Corpus URI number.
+            </sch:assert>
+        </sch:rule>-->
+
         <!--In ODD already
             <sch:rule context="//tei:sourceDesc/tei:listBibl">
             <sch:assert test="tei:head">A listBibl element inside sourceDesc must contain a head element.</sch:assert>
@@ -21,7 +60,7 @@
                 A head element in the sourceDesc must read: "Sources for the Data in this Born Digital Prosopography".
             </sch:assert>
         </sch:rule>-->
-        
+
         <!--In ODD already
         <sch:rule context="//tei:body/tei:div/tei:bibl[@type = 'urn']/tei:ptr/@target">
             <sch:let name="urnBase"

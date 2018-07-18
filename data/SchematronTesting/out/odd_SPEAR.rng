@@ -5,7 +5,7 @@
          xmlns:teix="http://www.tei-c.org/ns/Examples"
          datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"
          ns="http://www.tei-c.org/ns/1.0"><!--
-Schema generated from ODD source 2018-07-17T23:42:44Z. .
+Schema generated from ODD source 2018-07-18T20:23:22Z. .
 TEI Edition: Version 3.3.0. Last updated on
 	31st January 2018, revision f4d8439
 TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 3.3.0/
@@ -1994,8 +1994,8 @@ Suggested values include: 1] Gregorian; 2] Seleucid</a:documentation>
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       context="tei:date[parent::tei:reg]/@calendar">
-                    <sch:assert test=". = 'Gregorian'">A date element inside a reg element must have
-                      a @calendar attribute with a value of "Gregorian".</sch:assert>
+                    <sch:assert test=". = 'Gregorian'">A &lt;date&gt; element inside a &lt;reg&gt; element
+                      must have a @calendar attribute with a value of "Gregorian".</sch:assert>
                   </sch:rule>
          </pattern>
          <empty/>
@@ -2024,32 +2024,59 @@ attributes @target and @cRef may be supplied on <name/>.</report>
                   id="SPEAR-ptr-target-ptr-targets-in-context-constraint-rule-9">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
-                      context="tei:ptr[parent::tei:event]/@target">
-                    <sch:assert test="starts-with(., 'http://syriaca.org/keyword/')">@target
-                      attributes on the ptr element in an event factoid must point to a Syriaca.org
-                      keyword (http://syriaca.org/keyword/___).</sch:assert>
-                    
+                      context="tei:sourceDesc//tei:bibl[@type = 'primary']/tei:ptr/@target">
+                    <sch:let name="docURIno"
+                        value="//tei:publicationStmt/tei:idno[@type]/substring-after(substring-before(., '/tei'), 'spear/')"/>
+                    <sch:assert test=". = concat('http://syriaca.org/work/', $docURIno) or starts-with(., 'http://syriaca.org/bibl/')"> The @target attribute on a &lt;ptr&gt; element inside a &lt;bibl&gt; element with @type="primary"
+                      takes limited values. It either must be "http://syriaca.org/work/<sch:value-of select="$docURIno"/>" or "http://syriaca.org/bibl/" followed by the
+                      corresponding Syriaca.org bibl URI number. </sch:assert>
                   </sch:rule>
          </pattern> 
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   id="SPEAR-ptr-target-ptr-targets-in-context-constraint-rule-10">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
-                      context="//tei:body/tei:div/tei:bibl[@type = 'urn']/tei:ptr/@target">
-                    <sch:let name="urnBase"
-                        value="//tei:sourceDesc//tei:bibl[@type = 'urn']/tei:ptr/@target"/>
-                    <sch:assert test="starts-with(., concat($urnBase, ':'))">URN in factoid bibl must begin with URN in
-                      the sourceDesc element of the teiHeader: "<sch:value-of select="$urnBase"/>:".</sch:assert>
+                      context="tei:sourceDesc//tei:bibl[@type = 'urn']/tei:ptr/@target">
+                    <sch:let name="docURIno"
+                        value="//tei:publicationStmt/tei:idno[@type]/substring-after(substring-before(., '/tei'), 'spear/')"/>
+                    <sch:assert test="starts-with(., concat('urn:cts:syriacLit:nhsl', $docURIno, '.syriacCorpus'))">
+                      The @target attribute on a &lt;ptr&gt; element inside a &lt;bibl&gt; element with @type="urn" must
+                      begin either with "urn:cts:syriacLit:nhsl<sch:value-of select="$docURIno"/>.syriacCorpus" followed by the corresponding Syriac Corpus URI number.
+                    </sch:assert>
                   </sch:rule>
          </pattern> 
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   id="SPEAR-ptr-target-ptr-targets-in-context-constraint-rule-11">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                      context="tei:ptr[parent::tei:event]/@target">
+                    <sch:assert test="starts-with(., 'http://syriaca.org/keyword/')">@target
+                      attributes on &lt;ptr&gt; elements in an event factoid must point to a
+                      Syriaca.org keyword starting with "http://syriaca.org/keyword/".</sch:assert>
+                    
+                  </sch:rule>
+         </pattern> 
+         <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
+                  id="SPEAR-ptr-target-ptr-targets-in-context-constraint-rule-12">
+            <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
+                      xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                      context="//tei:body/tei:div/tei:bibl[@type = 'urn']/tei:ptr/@target">
+                    <sch:let name="urnBase"
+                        value="//tei:sourceDesc//tei:bibl[@type = 'urn']/tei:ptr/@target"/>
+                    <sch:assert test="starts-with(., concat($urnBase, ':'))">URN in a &lt;bibl&gt;
+                      element inside a SPEAR factoid must begin with URN in the &lt;sourceDesc&gt;
+                      element of the &lt;teiHeader&gt;: "<sch:value-of select="$urnBase"/>:".</sch:assert>
+                  </sch:rule>
+         </pattern> 
+         <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
+                  id="SPEAR-ptr-target-ptr-targets-in-context-constraint-rule-13">
+            <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
+                      xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       context="//tei:body//tei:bibl[@type = 'primary']/tei:ptr/@target">
-                    <sch:assert test=". = //tei:sourceDesc//tei:bibl[@type = 'primary']/tei:ptr/@target">
-                      Ptr @target "<sch:value-of select="."/>" is not among the valid options contained in
-                      the sourceDesc element of the teiHeader: (<sch:value-of select="string-join(//tei:sourceDesc//tei:bibl[@type = 'primary']/tei:ptr/@target, '; ')"/>) </sch:assert>
+                    <sch:assert test=". = //tei:sourceDesc//tei:bibl[@type = 'primary']/tei:ptr/@target"> The
+                      @target attribute on the &lt;ptr&gt; element, "<sch:value-of select="."/>," is not
+                      among the valid options contained in the &lt;sourceDesc&gt; element of the
+                      &lt;teiHeader&gt;: (<sch:value-of select="string-join(//tei:sourceDesc//tei:bibl[@type = 'primary']/tei:ptr/@target, '; ')"/>) </sch:assert>
                   </sch:rule>
          </pattern>
          <empty/>
@@ -2090,13 +2117,12 @@ attributes @target and @cRef may be supplied on <name/>.</report>
             </choice>
          </zeroOrMore>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="SPEAR-head-head-in-sourceDesc-constraint-rule-12">
+                  id="SPEAR-head-head-in-sourceDesc-constraint-rule-14">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       context="//tei:sourceDesc//tei:head">
-                <sch:assert test="normalize-space(.) = 'Sources for the Data in this Born Digital Prosopography'">
-                  A head element in the sourceDesc must read: "Sources for the Data in this Born Digital Prosopography".
-                </sch:assert>
+                <sch:assert test="normalize-space(.) = 'Sources for the Data in this Born Digital Prosopography'"> A &lt;head&gt; element inside the &lt;sourceDesc&gt; must contain the text node: "Sources for the Data in this Born
+                  Digital Prosopography". </sch:assert>
               </sch:rule>
          </pattern>
          <ref name="att.global.attributes"/>
@@ -2111,146 +2137,147 @@ attributes @target and @cRef may be supplied on <name/>.</report>
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">contains a note or annotation. [3.8.1. Notes and Simple Annotation 2.2.6. The Notes Statement 3.11.2.8. Notes and Statement of Language 9.3.5.4. Notes within Entries]</a:documentation>
          <ref name="macro.specialPara"/>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="SPEAR-note-note-children-in-context-constraint-rule-13">
-            <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
-                      xmlns:sch="http://purl.oclc.org/dsdl/schematron"
-                      context="tei:note[parent::tei:birth and preceding-sibling::tei:placeName]">
-                <sch:assert test="tei:persName">The note in a birth place factoid must contain a
-                  persName element.</sch:assert>
-                <sch:assert test="tei:placeName">The note in a birth place factoid must contain a
-                  placeName element.</sch:assert>
-              </sch:rule>
-         </pattern>
-         <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="SPEAR-note-note-children-in-context-constraint-rule-14">
-            <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
-                      xmlns:sch="http://purl.oclc.org/dsdl/schematron"
-                      context="tei:note[parent::tei:birth and preceding-sibling::tei:date]">
-                <sch:assert test="tei:persName">The note in a birth date factoid must contain a
-                  persName element.</sch:assert>
-              </sch:rule>
-         </pattern>
-         <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   id="SPEAR-note-note-children-in-context-constraint-rule-15">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
-                      context="tei:note[parent::tei:nationality and preceding-sibling::tei:placeName]">
-                <sch:assert test="tei:persName">The note in a citizenship factoid must contain a
-                  persName element.</sch:assert>
-                <sch:assert test="tei:placeName">The note in a citizenship factoid must contain a
-                  placeName element.</sch:assert>
+                      context="tei:note[parent::tei:birth and preceding-sibling::tei:placeName]">
+                <sch:assert test="tei:persName">The &lt;note&gt; element in a birth place factoid
+                  must contain a &lt;persName&gt; element.</sch:assert>
+                <sch:assert test="tei:placeName">The &lt;note&gt; element in a birth place factoid
+                  must contain a &lt;placeName&gt; element.</sch:assert>
               </sch:rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   id="SPEAR-note-note-children-in-context-constraint-rule-16">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
-                      context="tei:note[parent::tei:death and preceding-sibling::tei:placeName]">
-                <sch:assert test="tei:persName">The note in a death place factoid must contain a
-                  persName element.</sch:assert>
-                <sch:assert test="tei:placeName">The note in a birth place factoid must contain a
-                  placeName element.</sch:assert>
+                      context="tei:note[parent::tei:birth and preceding-sibling::tei:date]">
+                <sch:assert test="tei:persName">The &lt;note&gt; element in a birth date factoid
+                  must contain a &lt;persName&gt; element.</sch:assert>
               </sch:rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   id="SPEAR-note-note-children-in-context-constraint-rule-17">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
-                      context="tei:note[parent::tei:education]">
-                <sch:assert test="tei:persName">The note in an education factoid must contain a
-                  persName element.</sch:assert>
+                      context="tei:note[parent::tei:nationality and preceding-sibling::tei:placeName]">
+                <sch:assert test="tei:persName">The &lt;note&gt; element in a citizenship factoid
+                  must contain a &lt;persName&gt; element.</sch:assert>
+                <sch:assert test="tei:placeName">The &lt;note&gt; element in a citizenship factoid
+                  must contain a &lt;placeName&gt; element.</sch:assert>
               </sch:rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   id="SPEAR-note-note-children-in-context-constraint-rule-18">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
-                      context="tei:note[parent::tei:death and preceding-sibling::tei:date]">
-                <sch:assert test="tei:persName">The note in a death date factoid must contain a
-                  persName element.</sch:assert>
+                      context="tei:note[parent::tei:death and preceding-sibling::tei:placeName]">
+                <sch:assert test="tei:persName">The &lt;note&gt; element in a death place factoid
+                  must contain a &lt;persName&gt; element.</sch:assert>
+                <sch:assert test="tei:placeName">The &lt;note&gt; element in a birth place factoid
+                  must contain a &lt;placeName&gt; element.</sch:assert>
               </sch:rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   id="SPEAR-note-note-children-in-context-constraint-rule-19">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
-                      context="tei:note[parent::tei:occupation]">
-                <sch:assert test="tei:persName">The note in an occupation factoid must contain a
-                  persName element.</sch:assert>
+                      context="tei:note[parent::tei:education]">
+                <sch:assert test="tei:persName">The &lt;note&gt; element in an education factoid
+                  must contain a &lt;persName&gt; element.</sch:assert>
               </sch:rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   id="SPEAR-note-note-children-in-context-constraint-rule-20">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
-                      context="tei:note[parent::tei:residence and preceding-sibling::tei:placeName]">
-                <sch:assert test="tei:persName">The note in a residence factoid must contain a
-                  persName element.</sch:assert>
-                <sch:assert test="tei:placeName">The note in a residence factoid must contain a
-                  placeName element.</sch:assert>
+                      context="tei:note[parent::tei:death and preceding-sibling::tei:date]">
+                <sch:assert test="tei:persName">The &lt;note&gt; element in a death date factoid
+                  must contain a &lt;persName&gt; element.</sch:assert>
               </sch:rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   id="SPEAR-note-note-children-in-context-constraint-rule-21">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
-                      context="tei:note[parent::tei:sex]">
-                <sch:assert test="tei:persName">The note in a biological sex factoid must contain a
-                  persName element.</sch:assert>
+                      context="tei:note[parent::tei:occupation]">
+                <sch:assert test="tei:persName">The &lt;note&gt; element in an occupation factoid
+                  must contain a &lt;persName&gt; element.</sch:assert>
               </sch:rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   id="SPEAR-note-note-children-in-context-constraint-rule-22">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
-                      context="tei:note[parent::tei:socecStatus]">
-                <sch:assert test="tei:persName">The note in a socioeconomic status factoid must
-                  contain a persName element.</sch:assert>
+                      context="tei:note[parent::tei:residence and preceding-sibling::tei:placeName]">
+                <sch:assert test="tei:persName">The &lt;note&gt; element in a residence factoid must
+                  contain a &lt;persName&gt; element.</sch:assert>
+                <sch:assert test="tei:placeName">The &lt;note&gt; element in a residence factoid
+                  must contain a &lt;placeName&gt; element.</sch:assert>
               </sch:rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   id="SPEAR-note-note-children-in-context-constraint-rule-23">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
-                      context="tei:note[parent::tei:langKnowledge and preceding-sibling::tei:langKnown]">
-                <sch:assert test="tei:persName">The note in a language-known factoid must contain a
-                  persName element.</sch:assert>
+                      context="tei:note[parent::tei:sex]">
+                <sch:assert test="tei:persName">The &lt;note&gt; element in a biological sex factoid
+                  must contain a &lt;persName&gt; element.</sch:assert>
               </sch:rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   id="SPEAR-note-note-children-in-context-constraint-rule-24">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
-                      context="tei:note[parent::tei:trait]">
-                <sch:assert test="tei:persName">The note inside the trait element must contain a
-                  persName element.</sch:assert>
+                      context="tei:note[parent::tei:socecStatus]">
+                <sch:assert test="tei:persName">The &lt;note&gt; element in a socioeconomic status
+                  factoid must contain a &lt;persName&gt; element.</sch:assert>
               </sch:rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   id="SPEAR-note-note-children-in-context-constraint-rule-25">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
-                      context="tei:note[parent::tei:state]">
-                <sch:assert test="tei:persName">The note inside the state element must contain a
-                  persName element.</sch:assert>
+                      context="tei:note[parent::tei:langKnowledge and preceding-sibling::tei:langKnown]">
+                <sch:assert test="tei:persName">The &lt;note&gt; element in a language-known factoid
+                  must contain a &lt;persName&gt; element.</sch:assert>
               </sch:rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   id="SPEAR-note-note-children-in-context-constraint-rule-26">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
-                      context="tei:note[parent::tei:reg and preceding-sibling::tei:date]">
-                <sch:assert test="@ana">This note requires an @ana attribute.</sch:assert>
+                      context="tei:note[parent::tei:trait]">
+                <sch:assert test="tei:persName">The &lt;note&gt; element inside the &lt;trait&gt;
+                  element must contain a &lt;persName&gt; element.</sch:assert>
               </sch:rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="SPEAR-note-date-note-content-constraint-rule-27">
+                  id="SPEAR-note-note-children-in-context-constraint-rule-27">
+            <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
+                      xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                      context="tei:note[parent::tei:state]">
+                <sch:assert test="tei:persName">The &lt;note&gt; element inside the &lt;state&gt;
+                  element must contain a &lt;persName&gt; element.</sch:assert>
+              </sch:rule>
+         </pattern>
+         <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
+                  id="SPEAR-note-note-children-in-context-constraint-rule-28">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       context="tei:note[parent::tei:reg and preceding-sibling::tei:date]">
-                <sch:assert test="normalize-space(.) = 'This regularized date was calculated by the SPEAR editor from a non-calendrical dating system such as regnal years, etc.'">
-                  The only note allowed in this context must contain the following text: "This regularized date was calculated by the SPEAR editor from a non-calendrical dating system such as regnal years, etc."
-                </sch:assert>
+                <sch:assert test="@ana">This &lt;note&gt; element requires an @ana
+                  attribute.</sch:assert>
+              </sch:rule>
+         </pattern>
+         <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
+                  id="SPEAR-note-date-note-content-constraint-rule-29">
+            <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
+                      xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                      context="tei:note[parent::tei:reg and preceding-sibling::tei:date]">
+                <sch:assert test="normalize-space(.) = 'This regularized date was calculated by the SPEAR editor from a non-calendrical dating system such as regnal years, etc.'"> The only note allowed in this context must contain the following text: "This
+                  regularized date was calculated by the SPEAR editor from a non-calendrical dating
+                  system such as regnal years, etc." </sch:assert>
               </sch:rule>
          </pattern>
          <optional>
@@ -2269,132 +2296,133 @@ attributes @target and @cRef may be supplied on <name/>.</report>
             </attribute>
          </optional>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="SPEAR-note-type-type-note-child-div-constraint-rule-28">
+                  id="SPEAR-note-type-type-note-child-div-constraint-rule-30">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       context="tei:div/tei:note/@type">
                     <sch:report test="contains(., 'desc')">Only notes of @type "incerta", "dubia",
-                      or "errata" may appear as children of a div element.</sch:report>
+                      or "errata" may appear as children of a &lt;div&gt; element.</sch:report>
                   </sch:rule>
          </pattern>
-         <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="SPEAR-note-type-notes-type-desc-constraint-rule-29">
-            <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
-                      xmlns:sch="http://purl.oclc.org/dsdl/schematron"
-                      context="tei:note[parent::tei:birth]/@type">
-                    <sch:assert test=". = 'desc'">Note elements of @type "desc" are the only notes
-                      allowed inside the birth element. Other types of notes ("incerta", "dubia",
-                      and "errata") may appear as children of the div element as
-                      needed.</sch:assert>
-                  </sch:rule>
-         </pattern> 
-         <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="SPEAR-note-type-notes-type-desc-constraint-rule-30">
-            <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
-                      xmlns:sch="http://purl.oclc.org/dsdl/schematron"
-                      context="tei:note[parent::tei:nationality]/@type">
-                    <sch:assert test=". = 'desc'">Note elements of @type "desc" are the only notes
-                      allowed inside the nationality element. Other types of notes ("incerta",
-                      "dubia", and "errata") may appear as children of the div element as
-                      needed.</sch:assert>
-                  </sch:rule>
-         </pattern> 
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   id="SPEAR-note-type-notes-type-desc-constraint-rule-31">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
-                      context="tei:note[parent::tei:death]/@type">
-                    <sch:assert test=". = 'desc'">Note elements of @type "desc" are the only notes
-                      allowed inside the death element. Other types of notes ("incerta", "dubia",
-                      and "errata") may appear as children of the div element as
-                      needed.</sch:assert>
+                      context="tei:note[parent::tei:birth]/@type">
+                    <sch:assert test=". = 'desc'">Elements of type &lt;note&gt; that contain the
+                      attribute @type="desc" are the only notes allowed inside the &lt;birth&gt;
+                      element. Other types of notes ("incerta", "dubia", and "errata") may appear as
+                      children of the &lt;div&gt; element as needed.</sch:assert>
                   </sch:rule>
          </pattern> 
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   id="SPEAR-note-type-notes-type-desc-constraint-rule-32">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
-                      context="tei:note[parent::tei:education]/@type">
-                    <sch:assert test=". = 'desc'">Note elements of @type "desc" are the only notes
-                      allowed inside the education element. Other types of notes ("incerta",
-                      "dubia", and "errata") may appear as children of the div element as
-                      needed.</sch:assert>
+                      context="tei:note[parent::tei:nationality]/@type">
+                    <sch:assert test=". = 'desc'">Elements of type &lt;note&gt; that contain the
+                      attribute @type="desc" are the only notes allowed inside the &lt;nationality&gt;
+                      element. Other types of notes ("incerta", "dubia", and "errata") may appear as
+                      children of the &lt;div&gt; element as needed.</sch:assert>
                   </sch:rule>
          </pattern> 
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   id="SPEAR-note-type-notes-type-desc-constraint-rule-33">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
-                      context="tei:note[parent::tei:occupation]/@type">
-                    <sch:assert test=". = 'desc'">Note elements of @type "desc" are the only notes
-                      allowed inside the occupation element. Other types of notes ("incerta",
-                      "dubia", and "errata") may appear as children of the div element as
-                      needed.</sch:assert>
+                      context="tei:note[parent::tei:death]/@type">
+                    <sch:assert test=". = 'desc'">Elements of type &lt;note&gt; that contain the
+                      attribute @type="desc" are the only notes allowed inside the &lt;death&gt;
+                      element. Other types of notes ("incerta", "dubia", and "errata") may appear as
+                      children of the &lt;div&gt; element as needed.</sch:assert>
                   </sch:rule>
          </pattern> 
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   id="SPEAR-note-type-notes-type-desc-constraint-rule-34">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
-                      context="tei:note[parent::tei:residence]/@type">
-                    <sch:assert test=". = 'desc'">Note elements of @type "desc" are the only notes
-                      allowed inside the residence element. Other types of notes ("incerta",
-                      "dubia", and "errata") may appear as children of the div element as
-                      needed.</sch:assert>
+                      context="tei:note[parent::tei:education]/@type">
+                    <sch:assert test=". = 'desc'">Elements of type &lt;note&gt; that contain the
+                      attribute @type="desc" are the only notes allowed inside the &lt;education&gt;
+                      element. Other types of notes ("incerta", "dubia", and "errata") may appear as
+                      children of the &lt;div&gt; element as needed.</sch:assert>
                   </sch:rule>
          </pattern> 
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   id="SPEAR-note-type-notes-type-desc-constraint-rule-35">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
-                      context="tei:note[parent::tei:sex]/@type">
-                    <sch:assert test=". = 'desc'">Note elements of @type "desc" are the only notes
-                      allowed inside the sex element. Other types of notes ("incerta", "dubia", and
-                      "errata") may appear as children of the div element as needed.</sch:assert>
+                      context="tei:note[parent::tei:occupation]/@type">
+                    <sch:assert test=". = 'desc'">Elements of type &lt;note&gt; that contain the
+                      attribute @type="desc" are the only notes allowed inside the &lt;occupation&gt;
+                      element. Other types of notes ("incerta", "dubia", and "errata") may appear as
+                      children of the &lt;div&gt; element as needed.</sch:assert>
                   </sch:rule>
          </pattern> 
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   id="SPEAR-note-type-notes-type-desc-constraint-rule-36">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
-                      context="tei:note[parent::tei:socecStatus]/@type">
-                    <sch:assert test=". = 'desc'">Note elements of @type "desc" are the only notes
-                      allowed inside the socecStatus element. Other types of notes ("incerta",
-                      "dubia", and "errata") may appear as children of the div element as
-                      needed.</sch:assert>
+                      context="tei:note[parent::tei:residence]/@type">
+                    <sch:assert test=". = 'desc'">Elements of type &lt;note&gt; that contain the
+                      attribute @type="desc" are the only notes allowed inside the &lt;residence&gt;
+                      element. Other types of notes ("incerta", "dubia", and "errata") may appear as
+                      children of the &lt;div&gt; element as needed.</sch:assert>
                   </sch:rule>
          </pattern> 
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   id="SPEAR-note-type-notes-type-desc-constraint-rule-37">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
-                      context="tei:note[parent::tei:langKnowledge]/@type">
-                    <sch:assert test=". = 'desc'">Note elements of @type "desc" are the only notes
-                      allowed inside the langKnowledge element. Other types of notes ("incerta",
-                      "dubia", and "errata") may appear as children of the div element as
-                      needed.</sch:assert>
+                      context="tei:note[parent::tei:sex]/@type">
+                    <sch:assert test=". = 'desc'">Elements of type &lt;note&gt; that contain the
+                      attribute @type="desc" are the only notes allowed inside the &lt;sex&gt; element.
+                      Other types of notes ("incerta", "dubia", and "errata") may appear as children
+                      of the &lt;div&gt; element as needed.</sch:assert>
                   </sch:rule>
          </pattern> 
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   id="SPEAR-note-type-notes-type-desc-constraint-rule-38">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
-                      context="tei:note[parent::tei:trait]/@type">
-                    <sch:assert test=". = 'desc'">Note elements of @type "desc" are the only notes
-                      allowed inside the trait element. Other types of notes ("incerta", "dubia",
-                      and "errata") may appear as children of the div element as
-                      needed.</sch:assert>
+                      context="tei:note[parent::tei:socecStatus]/@type">
+                    <sch:assert test=". = 'desc'">Elements of type &lt;note&gt; that contain the
+                      attribute @type="desc" are the only notes allowed inside the &lt;socecStatus&gt;
+                      element. Other types of notes ("incerta", "dubia", and "errata") may appear as
+                      children of the &lt;div&gt; element as needed.</sch:assert>
                   </sch:rule>
          </pattern> 
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   id="SPEAR-note-type-notes-type-desc-constraint-rule-39">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                      context="tei:note[parent::tei:langKnowledge]/@type">
+                    <sch:assert test=". = 'desc'">Elements of type &lt;note&gt; that contain a the
+                      attribute @type="desc" are the only notes allowed inside the &lt;langKnowledge&gt;
+                      element. Other types of notes ("incerta", "dubia", and "errata") may appear as
+                      children of the &lt;div&gt; element as needed.</sch:assert>
+                  </sch:rule>
+         </pattern> 
+         <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
+                  id="SPEAR-note-type-notes-type-desc-constraint-rule-40">
+            <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
+                      xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                      context="tei:note[parent::tei:trait]/@type">
+                    <sch:assert test=". = 'desc'">Elements of type &lt;note&gt; that contain the
+                      attribute @type="desc" are the only notes allowed inside the &lt;trait&gt;
+                      element. Other types of notes ("incerta", "dubia", and "errata") may appear as
+                      children of the &lt;div&gt; element as needed.</sch:assert>
+                  </sch:rule>
+         </pattern> 
+         <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
+                  id="SPEAR-note-type-notes-type-desc-constraint-rule-41">
+            <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
+                      xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       context="tei:note[parent::tei:state]/@type">
-                    <sch:assert test=". = 'desc'">Note elements of @type "desc" are the only notes
-                      allowed inside the state element. Other types of notes ("incerta", "dubia",
-                      and "errata") may appear as children of the div element as
-                      needed.</sch:assert>
+                    <sch:assert test=". = 'desc'">Elements of type &lt;note&gt; that contain the
+                      attribute @type="desc" are the only notes allowed inside the &lt;state&gt;
+                      element. Other types of notes ("incerta", "dubia", and "errata") may appear as
+                      children of the &lt;div&gt; element as needed.</sch:assert>
                   </sch:rule>
          </pattern>
          <optional>
@@ -2653,25 +2681,26 @@ Sample values include: 1] main; 2] sub (subordinate) ; 3] alt (alternate) ; 4] s
             </group>
          </optional>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="SPEAR-bibl-id-in-back-bibl-constraint-rule-40">
+                  id="SPEAR-bibl-id-in-back-bibl-constraint-rule-42">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       context="tei:back//tei:bibl">
-                <sch:assert test="@xml:id">A bibl element in the back matter must contain an @xml:id
-                  attribute.</sch:assert>
+                <sch:assert test="@xml:id">A &lt;bibl&gt; element in the back matter must contain an
+                  @xml:id attribute.</sch:assert>
               </sch:rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="SPEAR-bibl-id-in-back-bibl-constraint-rule-41">
+                  id="SPEAR-bibl-id-in-back-bibl-constraint-rule-43">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       context="tei:back//tei:bibl/@xml:id">
                 <sch:let name="docURIno"
                         value="//tei:publicationStmt/tei:idno[@type]/substring-after(substring-before(., '/tei'), 'spear/')"/>
                 <sch:assert test="contains(., concat('bibl', $docURIno, '-'))">The @xml:id on the
-                  bibl element in the back matter must take the following form: 'bibl' +
+                  &lt;bibl&gt; element in the back matter must take the following form: 'bibl' +
                     '<sch:value-of select="$docURIno"/>' + '-' + a unique number.</sch:assert>
-                <sch:assert test="count(distinct-values(//tei:back//tei:bibl/@xml:id)) eq count(//tei:back//tei:bibl/@xml:id)">Each bibl @xml:id attribute must have a unique value.</sch:assert>
+                <sch:assert test="count(distinct-values(//tei:back//tei:bibl/@xml:id)) eq count(//tei:back//tei:bibl/@xml:id)">Each @xml:id attribute on a &lt;bibl&gt; element must have a unique
+                  value.</sch:assert>
                 <sch:report test="matches(substring-after(., '-'), '\D')">A properly formatted
                   Syriaca.org person URI ends with a number.</sch:report>
                 <sch:assert test="matches(substring-after(., '-'), '\d')">A properly formatted
@@ -2707,11 +2736,12 @@ Sample values include: 1] main; 2] sub (subordinate) ; 3] alt (alternate) ; 4] s
             <ref name="bibl"/>
          </oneOrMore>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="SPEAR-listBibl-head-in-sourceDesc-bibl-constraint-rule-42">
+                  id="SPEAR-listBibl-head-in-sourceDesc-bibl-constraint-rule-44">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       context="//tei:sourceDesc/tei:listBibl">
-                <sch:assert test="tei:head">A listBibl element inside sourceDesc must contain a head element.</sch:assert>
+                <sch:assert test="tei:head">A &lt;listBibl&gt; element inside the &lt;sourceDesc&gt; must contain a &lt;head&gt;
+                  element.</sch:assert>
               </sch:rule>
          </pattern>
          <ref name="att.global.attributes"/>
@@ -4157,14 +4187,14 @@ Suggested values include: 1] sent; 2] received; 3] transmitted; 4] redirected; 5
             </group>
          </choice>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="SPEAR-div-atts-on-factoidDiv-constraint-rule-43">
+                  id="SPEAR-div-atts-on-factoidDiv-constraint-rule-45">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       context="tei:div[ancestor::tei:body]">
-                <sch:assert test="@uri">Div elements within the body element require a @uri
-                  attribute.</sch:assert>
-                <sch:assert test="@resp">Div elements within the body element require a @resp
-                  attribute.</sch:assert>
+                <sch:assert test="@uri">Elements of type &lt;div&gt; within the &lt;body&gt; element require
+                  a @uri attribute.</sch:assert>
+                <sch:assert test="@resp">Elements of type &lt;div&gt; within the body element require a
+                  @resp attribute.</sch:assert>
               </sch:rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
@@ -4191,11 +4221,11 @@ Suggested values include: 1] sent; 2] received; 3] transmitted; 4] redirected; 5
             </attribute>
          </optional>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="SPEAR-div-uri-divFactoid-uris-constraint-assert-47">
+                  id="SPEAR-div-uri-divFactoid-uris-constraint-assert-49">
             <rule context="tei:div/@uri">
                <sch:assert xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                            test="starts-with(., 'http://syriaca.org/spear/')">@uri attributes
-                    must contain a properly formatted SPEAR factoid div URI that starts with
+                    must contain a properly formatted SPEAR factoid &lt;div&gt; URI that starts with
                     'http://syriaca.org/spear/'.</sch:assert>
             </rule>
          </pattern> 
@@ -4208,7 +4238,7 @@ Suggested values include: 1] sent; 2] received; 3] transmitted; 4] redirected; 5
             </rule>
          </pattern> 
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="SPEAR-div-uri-divFactoid-uris-constraint-assert-48">
+                  id="SPEAR-div-uri-divFactoid-uris-constraint-assert-50">
             <rule context="tei:div/@uri">
                <sch:assert xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                            test="matches(substring-after(., '-'), '\d')">A properly formatted
@@ -4216,18 +4246,18 @@ Suggested values include: 1] sent; 2] received; 3] transmitted; 4] redirected; 5
             </rule>
          </pattern> 
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="SPEAR-div-uri-divFactoid-uris-constraint-assert-49">
+                  id="SPEAR-div-uri-divFactoid-uris-constraint-assert-51">
             <rule context="tei:div/@uri">
                <sch:assert xmlns:sch="http://purl.oclc.org/dsdl/schematron"
-                           test="contains(., concat('/', //tei:publicationStmt/tei:idno[@type]/substring-after(substring-before(., '/tei'), 'spear/'), '-'))">SPEAR factoid divs contain @uri attributes that must include the number of the
-                    TEI document URI, in this document: "<sch:value-of select="//tei:publicationStmt/tei:idno[@type]/substring-after(substring-before(., '/tei'), 'spear/')"/>", followed by "-".</sch:assert>
+                           test="contains(., concat('/', //tei:publicationStmt/tei:idno[@type]/substring-after(substring-before(., '/tei'), 'spear/'), '-'))">SPEAR factoid &lt;div&gt; elements contain @uri attributes that must include the
+                    number of the TEI document URI, in this document: "<sch:value-of select="//tei:publicationStmt/tei:idno[@type]/substring-after(substring-before(., '/tei'), 'spear/')"/>", followed by "-".</sch:assert>
             </rule>
          </pattern> 
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="SPEAR-div-uri-divFactoid-uris-constraint-assert-50">
+                  id="SPEAR-div-uri-divFactoid-uris-constraint-assert-52">
             <rule context="tei:div/@uri">
                <sch:assert xmlns:sch="http://purl.oclc.org/dsdl/schematron"
-                           test="count(distinct-values(//tei:div/@uri)) eq count(//tei:div/@uri)">Each div @uri attribute must end with a unique number following the
+                           test="count(distinct-values(//tei:div/@uri)) eq count(//tei:div/@uri)">Each &lt;div&gt; element @uri attribute must end with a unique number following the
                     "-".</sch:assert>
             </rule>
          </pattern>
@@ -4494,13 +4524,13 @@ Suggested values include: 1] sent; 2] received; 3] transmitted; 4] redirected; 5
             <data type="anyURI"/>
          </attribute>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="SPEAR-persName-ref-ref-on-persName-constraint-assert-51">
+                  id="SPEAR-persName-ref-ref-on-persName-constraint-assert-53">
             <rule context="tei:persName/@ref">
                <sch:assert xmlns="http://www.tei-c.org/ns/1.0"
                            xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                            test="starts-with(., 'http://syriaca.org/person/')">@ref attributes on
-                    a persName element must contain a properly formatted Syriaca.org person URI that
-                    starts with 'http://syriaca.org/person/'.</sch:assert>
+                    &lt;persName&gt; elements must contain a properly formatted Syriaca.org person URI
+                    that starts with 'http://syriaca.org/person/'.</sch:assert>
             </rule>
          </pattern> 
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
@@ -4513,7 +4543,7 @@ Suggested values include: 1] sent; 2] received; 3] transmitted; 4] redirected; 5
             </rule>
          </pattern> 
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="SPEAR-persName-ref-ref-on-persName-constraint-assert-52">
+                  id="SPEAR-persName-ref-ref-on-persName-constraint-assert-54">
             <rule context="tei:persName/@ref">
                <sch:assert xmlns="http://www.tei-c.org/ns/1.0"
                            xmlns:sch="http://purl.oclc.org/dsdl/schematron"
@@ -4533,13 +4563,13 @@ Suggested values include: 1] sent; 2] received; 3] transmitted; 4] redirected; 5
             <data type="anyURI"/>
          </attribute>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="SPEAR-placeName-ref-ref-on-placeName-constraint-assert-53">
+                  id="SPEAR-placeName-ref-ref-on-placeName-constraint-assert-55">
             <rule context="tei:placeName/@ref">
                <sch:assert xmlns="http://www.tei-c.org/ns/1.0"
                            xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                            test="starts-with(., 'http://syriaca.org/place/')">@ref attributes on
-                    placeName elements must contain a properly formatted Syriaca.org place URI that
-                    starts with 'http://syriaca.org/place/'.</sch:assert>
+                    &lt;placeName&gt; elements must contain a properly formatted Syriaca.org place URI
+                    that starts with 'http://syriaca.org/place/'.</sch:assert>
             </rule>
          </pattern> 
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
@@ -4552,7 +4582,7 @@ Suggested values include: 1] sent; 2] received; 3] transmitted; 4] redirected; 5
             </rule>
          </pattern> 
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="SPEAR-placeName-ref-ref-on-placeName-constraint-assert-54">
+                  id="SPEAR-placeName-ref-ref-on-placeName-constraint-assert-56">
             <rule context="tei:placeName/@ref">
                <sch:assert xmlns="http://www.tei-c.org/ns/1.0"
                            xmlns:sch="http://purl.oclc.org/dsdl/schematron"
@@ -4872,7 +4902,7 @@ Suggested values include: 1] sent; 2] received; 3] transmitted; 4] redirected; 5
             <ref name="desc"/>
          </optional>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="SPEAR-relation-reforkeyorname-constraint-assert-55">
+                  id="SPEAR-relation-reforkeyorname-constraint-assert-57">
             <rule context="tei:relation">
                <assert xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                        test="@ref or @key or @name">One of the attributes  'name', 'ref' or 'key' must be supplied</assert>
@@ -5051,8 +5081,6 @@ Suggested values include: 1] sent; 2] received; 3] transmitted; 4] redirected; 5
                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
                <value>syriaca:SameEvent</value>
                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-               <value>dcterms:isPartOf</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
             </choice>
          </attribute>
          <choice>
@@ -5147,13 +5175,12 @@ Suggested values include: 1] sent; 2] received; 3] transmitted; 4] redirected; 5
             </list>
          </attribute>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="SPEAR-state-ref-ref-in-state-constraint-assert-56">
+                  id="SPEAR-state-ref-ref-in-state-constraint-assert-58">
             <rule context="tei:state/@ref">
                <sch:assert xmlns="http://www.tei-c.org/ns/1.0"
                            xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                            test="starts-with(., 'http://syriaca.org/keyword/')">@ref attributes
-                    on the trait element must point to a Syriaca.org keyword
-                    (http://syriaca.org/keyword/___).</sch:assert>
+                    on the &lt;trait&gt; element must point to a Syriaca.org keyword beginning with "http://syriaca.org/keyword/".</sch:assert>
             </rule>
          </pattern>
          <attribute name="type">
@@ -5192,13 +5219,13 @@ Suggested values include: 1] sent; 2] received; 3] transmitted; 4] redirected; 5
             </list>
          </attribute>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="SPEAR-trait-ref-ref-in-trait-constraint-assert-57">
+                  id="SPEAR-trait-ref-ref-in-trait-constraint-assert-59">
             <rule context="tei:trait/@ref">
                <sch:assert xmlns="http://www.tei-c.org/ns/1.0"
                            xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                            test="starts-with(., 'http://syriaca.org/keyword/')">@ref attributes
-                    on the trait element must point to a Syriaca.org keyword
-                    (http://syriaca.org/keyword/___).</sch:assert>
+                    on the &lt;trait&gt; element must point to a Syriaca.org keyword starting with
+                    "http://syriaca.org/keyword/".</sch:assert>
             </rule>
          </pattern>
          <empty/>

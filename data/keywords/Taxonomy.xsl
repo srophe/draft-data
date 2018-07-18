@@ -40,6 +40,7 @@
             $idno as xs:integer* ('idno URI', may or may not be real URI, depending on subheading)
             $realURI as xs:integer* (index values of 'idno URI' subheadings, from row 3, that are really URIs)
             $note as xs:integer ('note abstract')
+            $category as xs:integer ('***Category')
     -->
     <xsl:variable name="headings" as="xs:string+" select="tokenize($tsv[1], '\t')"/>
     <xsl:variable name="subheadings" as="xs:string+" select="tokenize($tsv[3], '\t')"/>
@@ -57,6 +58,7 @@
     <xsl:variable name="realURI" as="xs:integer*"
         select="index-of($subheadings, 'LOC'), index-of($subheadings, 'DNB')"/>
     <xsl:variable name="note" as="xs:integer" select="index-of($headings, 'note abstract')"/>
+    <xsl:variable name="category" as="xs:integer" select="index-of($headings, '***Categories')"/><!-- I should change this here and in the spreadsheet/tsv. -->
     
 
     <xsl:template match="/">
@@ -215,7 +217,12 @@
                     <text>
                         <body>
                             <entryFree xml:id="{$xmlID}" type="skos:Concept">
-
+                                <xsl:for-each select="$category">
+                                    <xsl:if test="string-length(normalize-space($values[current()])) ne 0">
+                                        <xsl:attribute name="subtype" select="'category'"/>
+                                    </xsl:if>
+                                </xsl:for-each>
+                                                            
                                 <!-- there may be multiple terms in different languages -->
                                 <xsl:for-each select="$term">
                                     <xsl:variable name="lg" as="xs:string"

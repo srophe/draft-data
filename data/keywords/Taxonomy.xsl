@@ -40,7 +40,7 @@
             $idno as xs:integer* ('idno URI', may or may not be real URI, depending on subheading)
             $realURI as xs:integer* (index values of 'idno URI' subheadings, from row 3, that are really URIs)
             $note as xs:integer ('note abstract')
-            $category as xs:integer ('***Category')
+            $category as xs:integer ('Categories')
     -->
     <xsl:variable name="headings" as="xs:string+" select="tokenize($tsv[1], '\t')"/>
     <xsl:variable name="subheadings" as="xs:string+" select="tokenize($tsv[3], '\t')"/>
@@ -58,7 +58,7 @@
     <xsl:variable name="realURI" as="xs:integer*"
         select="index-of($subheadings, 'LOC'), index-of($subheadings, 'DNB')"/>
     <xsl:variable name="note" as="xs:integer" select="index-of($headings, 'note abstract')"/>
-    <xsl:variable name="category" as="xs:integer" select="index-of($headings, '***Categories')"/><!-- I should change this here and in the spreadsheet/tsv. -->
+    <xsl:variable name="category" as="xs:integer" select="index-of($headings, 'Categories')"/>
     
 
     <xsl:template match="/">
@@ -179,7 +179,7 @@
                                     <category xml:id="syriaca-headword">
                                         <catDesc>The name used by Syriaca.org for document titles,
                                             citation, and disambiguation. These names have been
-                                            created according to the Syriac.org guidelines for
+                                            created according to the Syriaca.org guidelines for
                                             headwords: <ref
                                                 target="http://syriaca.org/documentation/headwords.html"
                                                 >http://syriaca.org/documentation/headwords.html</ref>.</catDesc>

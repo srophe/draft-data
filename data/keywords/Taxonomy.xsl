@@ -63,7 +63,7 @@
 
     <xsl:template match="/">
         <!-- data begin at row 4; set upper limit for testing  with something like $tsv[position() ge 4 and position() lt 12]-->
-        <xsl:for-each select="$tsv[position() ge 50 and position() lt 70]">
+        <xsl:for-each select="$tsv[position() ge 4]">
             <xsl:variable name="values" as="xs:string+" select="tokenize(current(), '\t')"/>
             <xsl:message select="concat('Processing ', $values[$title])"/>
             <!-- $URI is used:
@@ -227,7 +227,7 @@
                                 <xsl:for-each select="$term">
                                     <xsl:variable name="lg" as="xs:string"
                                         select="substring-after($headings[current()], '.')"/>
-                                    <xsl:variable name="id" as="xs:string" select="concat('name-', $values[$filename], '-')"/>
+                                    <xsl:variable name="id" as="xs:string" select="concat('name-', $values[$filename], '-', $lg)"/>
                                     <xsl:if
                                         test="string-length(normalize-space($values[current()])) gt 0">
                                         <term xml:lang="{$lg}" syriaca-tags="#syriaca-headword" xml:id="{$id}">

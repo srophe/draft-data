@@ -45,7 +45,7 @@
                                             Unported License.</p>
                </licence>
             </availability>
-            <date>2018-07-13-05:00</date>
+            <date>2018-07-19-05:00</date>
          </publicationStmt>
          <seriesStmt>
             <title level="s">A Taxonomy of Syriac Studies</title>
@@ -119,8 +119,12 @@
    </teiHeader>
    <text>
       <body>
-         <entryFree xml:id="keyword-traditional-religions" type="skos:Concept">
-            <term xml:lang="en" syriaca-tags="#syriaca-headword">Traditional religions</term>
+         <entryFree xml:id="keyword-traditional-religions"
+                    type="skos:Concept"
+                    subtype="category">
+            <term xml:lang="en"
+                  syriaca-tags="#syriaca-headword"
+                  xml:id="name-traditional-religions-en">Traditional religions</term>
             <gloss xml:lang="en">
                <term>paganism</term>
             </gloss>

@@ -40,6 +40,7 @@
             $idno as xs:integer* ('idno URI', may or may not be real URI, depending on subheading)
             $realURI as xs:integer* (index values of 'idno URI' subheadings, from row 3, that are really URIs)
             $note as xs:integer ('note abstract')
+            $category as xs:integer ('Categories')
     -->
     <xsl:variable name="headings" as="xs:string+" select="tokenize($tsv[1], '\t')"/>
     <xsl:variable name="subheadings" as="xs:string+" select="tokenize($tsv[3], '\t')"/>
@@ -57,6 +58,7 @@
     <xsl:variable name="realURI" as="xs:integer*"
         select="index-of($subheadings, 'LOC'), index-of($subheadings, 'DNB')"/>
     <xsl:variable name="note" as="xs:integer" select="index-of($headings, 'note abstract')"/>
+    <xsl:variable name="category" as="xs:integer" select="index-of($headings, 'Categories')"/>
     
 
     <xsl:template match="/">
@@ -177,7 +179,7 @@
                                     <category xml:id="syriaca-headword">
                                         <catDesc>The name used by Syriaca.org for document titles,
                                             citation, and disambiguation. These names have been
-                                            created according to the Syriac.org guidelines for
+                                            created according to the Syriaca.org guidelines for
                                             headwords: <ref
                                                 target="http://syriaca.org/documentation/headwords.html"
                                                 >http://syriaca.org/documentation/headwords.html</ref>.</catDesc>
@@ -215,14 +217,20 @@
                     <text>
                         <body>
                             <entryFree xml:id="{$xmlID}" type="skos:Concept">
-
+                                <xsl:for-each select="$category">
+                                    <xsl:if test="string-length(normalize-space($values[current()])) ne 0">
+                                        <xsl:attribute name="subtype" select="'category'"/>
+                                    </xsl:if>
+                                </xsl:for-each>
+                                                            
                                 <!-- there may be multiple terms in different languages -->
                                 <xsl:for-each select="$term">
                                     <xsl:variable name="lg" as="xs:string"
                                         select="substring-after($headings[current()], '.')"/>
+                                    <xsl:variable name="id" as="xs:string" select="concat('name-', $values[$filename], '-', $lg)"/>
                                     <xsl:if
                                         test="string-length(normalize-space($values[current()])) gt 0">
-                                        <term xml:lang="{$lg}" syriaca-tags="#syriaca-headword">
+                                        <term xml:lang="{$lg}" syriaca-tags="#syriaca-headword" xml:id="{$id}">
                                             <xsl:value-of select="$values[current()]"/>
                                         </term>
                                     </xsl:if>

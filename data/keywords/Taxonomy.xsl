@@ -60,7 +60,7 @@
     <xsl:variable name="SPEARrelation" as="xs:integer*" select="index-of($subheadings, 'SPEAR')"/>
     <xsl:variable name="note" as="xs:integer" select="index-of($headings, 'note abstract')"/>
     <xsl:variable name="category" as="xs:integer" select="index-of($headings, 'Categories')"/>
-    
+
 
     <xsl:template match="/">
         <!-- data begin at row 4; set upper limit for testing  with something like $tsv[position() ge 4 and position() lt 12]-->
@@ -77,7 +77,9 @@
 
             <xsl:result-document method="xml" indent="yes" href="taxonomy/{$values[$filename]}.xml">
                 <!-- link to the custom Syriaca schema -->
-                <xsl:processing-instruction name="xml-model">href="http://syriaca.org/documentation/syriaca-tei-main.rnc" type="application/relax-ng-compact-syntax"</xsl:processing-instruction>
+                <xsl:processing-instruction name="xml-model">href="https://raw.githubusercontent.com/srophe/srophe-eXist-app/dev/srophe-app/documentation/odd4Taxonomy/out/odd4Taxonomy.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"</xsl:processing-instruction>
+                <xsl:processing-instruction name="xml-model">href="https://raw.githubusercontent.com/srophe/srophe-eXist-app/dev/srophe-app/documentation/odd4Taxonomy/out/odd4Taxonomy.rng" schematypens="http://relaxng.org/ns/structure/1.0"</xsl:processing-instruction>
 
                 <TEI xmlns="http://www.tei-c.org/ns/1.0"
                     xmlns:skos="http://www.w3.org/2004/02/skos/core#">
@@ -124,8 +126,7 @@
                             </editionStmt>
                             <publicationStmt>
                                 <authority>Syriaca.org: The Syriac Reference Portal</authority>
-                                <idno type="URI"
-                                    ><xsl:value-of select="$URI"/>/tei</idno>
+                                <idno type="URI"><xsl:value-of select="$URI"/>/tei</idno>
                                 <availability>
                                     <licence target="http://creativecommons.org/licenses/by/3.0/">
                                         <p>Distributed under a Creative Commons Attribution 3.0
@@ -213,25 +214,29 @@
                         <revisionDesc status="draft">
                             <change who="http://syriaca.org/documentation/editors.xml#dschwartz"
                                 n="1.0" when="2017-05-05-05:00">CREATED: keyword</change>
-                        </revisionDesc><!-- Fix this for future transformations. -->
+                        </revisionDesc>
+                        <!-- Fix this for future transformations. -->
                     </teiHeader>
                     <text>
                         <body>
                             <entryFree xml:id="{$xmlID}" type="skos:Concept">
                                 <xsl:for-each select="$category">
-                                    <xsl:if test="string-length(normalize-space($values[current()])) ne 0">
+                                    <xsl:if
+                                        test="string-length(normalize-space($values[current()])) ne 0">
                                         <xsl:attribute name="subtype" select="'category'"/>
                                     </xsl:if>
                                 </xsl:for-each>
-                                                            
+
                                 <!-- there may be multiple terms in different languages -->
                                 <xsl:for-each select="$term">
                                     <xsl:variable name="lg" as="xs:string"
                                         select="substring-after($headings[current()], '.')"/>
-                                    <xsl:variable name="id" as="xs:string" select="concat('name-', $values[$filename], '-', $lg)"/>
+                                    <xsl:variable name="id" as="xs:string"
+                                        select="concat('name-', $values[$filename], '-', $lg)"/>
                                     <xsl:if
                                         test="string-length(normalize-space($values[current()])) gt 0">
-                                        <term xml:lang="{$lg}" syriaca-tags="#syriaca-headword" xml:id="{$id}">
+                                        <term xml:lang="{$lg}" syriaca-tags="#syriaca-headword"
+                                            xml:id="{$id}">
                                             <xsl:value-of select="$values[current()]"/>
                                         </term>
                                     </xsl:if>

@@ -57,6 +57,7 @@
     <xsl:variable name="idno" as="xs:integer*" select="index-of($headings, 'idno URI')"/>
     <xsl:variable name="realURI" as="xs:integer*"
         select="index-of($subheadings, 'LOC'), index-of($subheadings, 'DNB')"/>
+    <xsl:variable name="SPEARrelation" as="xs:integer" select="index-of($subheadings, 'SPEAR')"/>
     <xsl:variable name="note" as="xs:integer" select="index-of($headings, 'note abstract')"/>
     <xsl:variable name="category" as="xs:integer" select="index-of($headings, 'Categories')"/>
     
@@ -269,14 +270,18 @@
                                     <xsl:value-of select="$URI"/>
                                 </idno>
 
-                                <!-- existing URIs may be real URIs (LOC, DNB) or not (ISO Code)-->
+                                <!-- existing URIs may be real URIs (LOC, DNB) or not (ISO Code, SPEAR)-->
                                 <xsl:for-each select="$idno">
                                     <xsl:if
                                         test="string-length(normalize-space($values[current()])) ne 0">
                                         <idno>
-                                            <!-- create @type only if the idno is really a URI -->
+                                            <!-- create @type="URI" only if the idno is really a URI -->
                                             <xsl:if test="current() = $realURI">
                                                 <xsl:attribute name="type" select="'URI'"/>
+                                            </xsl:if>
+                                            <!-- create @type="SPEAR" only if the idno is a SPEAR relationship -->
+                                            <xsl:if test="current() = $SPEARrelation">
+                                                <xsl:attribute name="type" select="'SPEAR'"/>
                                             </xsl:if>
                                             <xsl:value-of select="$values[current()]"/>
                                         </idno>

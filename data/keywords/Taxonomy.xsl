@@ -57,7 +57,7 @@
     <xsl:variable name="idno" as="xs:integer*" select="index-of($headings, 'idno URI')"/>
     <xsl:variable name="realURI" as="xs:integer*"
         select="index-of($subheadings, 'LOC'), index-of($subheadings, 'DNB')"/>
-    <xsl:variable name="SPEARrelation" as="xs:integer" select="index-of($subheadings, 'SPEAR')"/>
+    <xsl:variable name="SPEARrelation" as="xs:integer*" select="index-of($subheadings, 'SPEAR')"/>
     <xsl:variable name="note" as="xs:integer" select="index-of($headings, 'note abstract')"/>
     <xsl:variable name="category" as="xs:integer" select="index-of($headings, 'Categories')"/>
     

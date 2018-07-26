@@ -60,6 +60,7 @@
     <xsl:variable name="SPEARrelation" as="xs:integer*" select="index-of($subheadings, 'SPEAR')"/>
     <xsl:variable name="note" as="xs:integer" select="index-of($headings, 'note abstract')"/>
     <xsl:variable name="category" as="xs:integer" select="index-of($headings, 'Categories')"/>
+    <xsl:variable name="relType" as="xs:integer" select="index-of($headings, 'relType')"/>
 
 
     <xsl:template match="/">
@@ -287,6 +288,12 @@
                                             <!-- create @type="SPEAR" only if the idno is a SPEAR relationship -->
                                             <xsl:if test="current() = $SPEARrelation">
                                                 <xsl:attribute name="type" select="'SPEAR'"/>
+                                            </xsl:if>
+                                            <!-- create @ana="reciprocal/mutual" if that relType is in the spreadsheet -->
+                                            <xsl:if
+                                                test="string-length(normalize-space($values[$relType])) ne 0">
+                                                <xsl:attribute name="ana" select="$values[$relType]"
+                                                />
                                             </xsl:if>
                                             <xsl:value-of select="$values[current()]"/>
                                         </idno>

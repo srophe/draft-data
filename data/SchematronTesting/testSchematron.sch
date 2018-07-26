@@ -9,6 +9,62 @@
 
 
 
+        
+        <sch:let name="ti"
+            value="doc('https://raw.githubusercontent.com/srophe/srophe-app-data/dev/data/subjects/taxonomyIndex.xml')"/>
+        <sch:let name="mutualURIs"
+            value="$ti//listURI[@ref = 'http://syriaca.org/keyword/relationships']//uri[@ana = 'mutual']"/>
+        <sch:let name="reciprocalURIs"
+            value="$ti//listURI[@ref = 'http://syriaca.org/keyword/relationships']//uri[@ana = 'reciprocal']"/>
+        <sch:rule context="tei:div/tei:listRelation/tei:relation[@ref = 'snap:SiblingOf']">
+            <sch:assert test="@mutual">Mutual relationships, where both parties occupy
+                an equivalent position, require a @mutual attribute on the &lt;relation&gt; element.
+                Mutual relationships include (<sch:value-of select="string-join($mutualURIs, '; ')"
+                />).</sch:assert>
+            <sch:report test="@active or @passive">Mutual relationships, where both parties occupy
+                an equivalent position, cannot contain @active or @passive attributes on the &lt;relation&gt; element.
+                Mutual relationships include (<sch:value-of select="string-join($mutualURIs, '; ')"
+                />).</sch:report>
+        </sch:rule>
+        <sch:rule context="tei:div/tei:listRelation/tei:relation[@ref = 'snap:AncestorOf']">
+            <sch:assert test="@active and @passive">Reciprocal relationships, where the parties occupy
+                different positions, require @active and @passive attributes on the &lt;relation&gt; element.
+                Reciprocal relationships include (<sch:value-of select="string-join($reciprocalURIs, '; ')"
+                />).</sch:assert>
+            <sch:report test="@mutual">Reciprocal relationships, where the parties occupy
+                different positions, cannot contain a @mutual attribute on the &lt;relation&gt; element.
+                Reciprocal relationships include (<sch:value-of select="string-join($reciprocalURIs, '; ')"
+                />).</sch:report>
+        </sch:rule>
+
+
+
+        <!--In ODD already
+            <sch:rule context="tei:div/tei:listEvent/tei:listRelation/tei:relation">
+            <sch:report test="@type">A &lt;relation&gt; element inside an event factoid cannot take a @type attribute.</sch:report>
+        </sch:rule>-->
+
+        <!--In ODD already
+            <sch:rule context="tei:div/tei:listRelation/tei:relation/@ref">
+            <sch:let name="ti"
+                value="doc('https://raw.githubusercontent.com/srophe/srophe-app-data/dev/data/subjects/taxonomyIndex.xml')"/>
+            <sch:assert
+                test=". = $ti//listURI[@ref = 'http://syriaca.org/keyword/relationships']//uri"
+                >Value must be one of the following: <sch:value-of
+                    select="string-join($ti//listURI[@ref = 'http://syriaca.org/keyword/relationships']//uri, '; ')"
+                />.</sch:assert>
+        </sch:rule>
+        <sch:rule context="tei:div/tei:listEvent/tei:listRelation/tei:relation/@ref">
+            <sch:let name="ti"
+                value="doc('https://raw.githubusercontent.com/srophe/srophe-app-data/dev/data/subjects/taxonomyIndex.xml')"/>
+            <sch:assert
+                test=". = $ti//listURI[@ref = 'http://syriaca.org/keyword/event-relationships']/uri"
+                >Value must be one of the following: <sch:value-of
+                    select="string-join($ti//listURI[@ref = 'http://syriaca.org/keyword/event-relationships']/uri, '; ')"
+                />.</sch:assert>
+        </sch:rule>-->
+
+
 
         <!--I ended up not using these b/c there could be a need for more than one bibl URI and in some instances there won't be a urn at all.
             <sch:rule context="//tei:sourceDesc//tei:bibl[1]/tei:ptr/@target">
@@ -28,7 +84,7 @@
         <sch:rule context="//tei:sourceDesc//tei:bibl[4]">
             <sch:report test=".">There cannot be more than three &lt;bibl&gt; elements in the &lt;sourceDesc&gt;.</sch:report>
         </sch:rule>-->
-        
+
 
         <!--In ODD already
             <sch:let name="docURIno"

@@ -9,34 +9,202 @@
 
 
 
-        
-        <sch:let name="ti"
-            value="doc('https://raw.githubusercontent.com/srophe/srophe-app-data/dev/data/subjects/taxonomyIndex.xml')"/>
-        <sch:let name="mutualURIs"
-            value="$ti//listURI[@ref = 'http://syriaca.org/keyword/relationships']//uri[@ana = 'mutual']"/>
-        <sch:let name="reciprocalURIs"
-            value="$ti//listURI[@ref = 'http://syriaca.org/keyword/relationships']//uri[@ana = 'reciprocal']"/>
-        <sch:rule context="tei:div/tei:listRelation/tei:relation[@ref = 'snap:SiblingOf']">
-            <sch:assert test="@mutual">Mutual relationships, where both parties occupy
-                an equivalent position, require a @mutual attribute on the &lt;relation&gt; element.
-                Mutual relationships include (<sch:value-of select="string-join($mutualURIs, '; ')"
-                />).</sch:assert>
-            <sch:report test="@active or @passive">Mutual relationships, where both parties occupy
-                an equivalent position, cannot contain @active or @passive attributes on the &lt;relation&gt; element.
-                Mutual relationships include (<sch:value-of select="string-join($mutualURIs, '; ')"
-                />).</sch:report>
-        </sch:rule>
-        <sch:rule context="tei:div/tei:listRelation/tei:relation[@ref = 'snap:AncestorOf']">
-            <sch:assert test="@active and @passive">Reciprocal relationships, where the parties occupy
-                different positions, require @active and @passive attributes on the &lt;relation&gt; element.
-                Reciprocal relationships include (<sch:value-of select="string-join($reciprocalURIs, '; ')"
-                />).</sch:assert>
-            <sch:report test="@mutual">Reciprocal relationships, where the parties occupy
-                different positions, cannot contain a @mutual attribute on the &lt;relation&gt; element.
-                Reciprocal relationships include (<sch:value-of select="string-join($reciprocalURIs, '; ')"
-                />).</sch:report>
-        </sch:rule>
 
+
+
+        
+        
+        <!--In ODD already
+            <sch:rule context="tei:trait[@type = 'ethnicLabel']" role="warning">
+            <sch:let name="ti"
+                value="doc('https://raw.githubusercontent.com/srophe/srophe-app-data/dev/data/subjects/taxonomyIndex.xml')"/>
+            <sch:let name="ethnicLabels"
+                value="$ti//listURI[@ref = 'http://syriaca.org/keyword/ethnicity']/uri"/>
+            <sch:assert test="@ref = $ethnicLabels">SPEAR has a strong preference for using
+                established URIs when possible but appropriate URIs are not always available in the
+                Syriaca.org taxonomy. Please consider the following options from the taxonomy before
+                using your own preferred descriptive: <sch:value-of
+                    select="string-join($ethnicLabels, ';  ')"/></sch:assert>
+        </sch:rule>-->
+        
+        <!--In ODD already
+            <sch:rule context="tei:state[@type = 'mental']" role="warning">
+            <sch:let name="ti"
+                value="doc('https://raw.githubusercontent.com/srophe/srophe-app-data/dev/data/subjects/taxonomyIndex.xml')"/>
+            <sch:let name="mentalStates"
+                value="$ti//listURI[@ref = 'http://syriaca.org/keyword/mental-states']/uri"/>
+            <sch:assert test="@ref = $mentalStates">SPEAR has a strong preference for using
+                established URIs when possible but appropriate URIs are not always available in the
+                Syriaca.org taxonomy. Please consider the following options from the taxonomy before
+                using your own preferred descriptive term: <sch:value-of
+                    select="string-join($mentalStates, ';  ')"/></sch:assert>
+        </sch:rule>
+        <sch:rule context="tei:state[@type = 'sanctity']" role="warning">
+            <sch:let name="ti"
+                value="doc('https://raw.githubusercontent.com/srophe/srophe-app-data/dev/data/subjects/taxonomyIndex.xml')"/>
+            <sch:let name="sanctity"
+                value="$ti//listURI[@ref = 'http://syriaca.org/keyword/sanctity']/uri"/>
+            <sch:assert test="@ref = $sanctity">SPEAR has a strong preference for using
+                established URIs when possible but appropriate URIs are not always available in the
+                Syriaca.org taxonomy. Please consider the following options from the taxonomy before
+                using your own preferred descriptive term: <sch:value-of
+                    select="string-join($sanctity, ';  ')"/></sch:assert>
+        </sch:rule>-->
+        
+        
+        <!--In ODD already
+            <sch:rule context="tei:education" role="warning">
+            <sch:let name="ti"
+                value="doc('https://raw.githubusercontent.com/srophe/srophe-app-data/dev/data/subjects/taxonomyIndex.xml')"/>
+            <sch:let name="fieldsOfStudy"
+                value="$ti//listURI[@ref = 'http://syriaca.org/keyword/fields-of-study']/uri"/>
+            <sch:assert test="@ref = $fieldsOfStudy">SPEAR has a strong preference for using
+                established URIs when possible but appropriate URIs are not always available in the
+                Syriaca.org taxonomy. Please consider the following options from the taxonomy before
+                using your own preferred descriptive term: <sch:value-of
+                    select="string-join($fieldsOfStudy, ';  ')"/></sch:assert>
+        </sch:rule>-->
+        
+        
+        <!--In ODD already
+            <sch:rule context="tei:langKnown" role="warning">
+            <sch:let name="ti"
+                value="doc('https://raw.githubusercontent.com/srophe/srophe-app-data/dev/data/subjects/taxonomyIndex.xml')"/>
+            <sch:let name="languages"
+                value="$ti//listURI[@ref = 'http://syriaca.org/keyword/languages']/uri"/>
+            <sch:assert test="@ref = $languages">SPEAR has a strong preference for using
+                established URIs when possible but appropriate URIs are not always available in the
+                Syriaca.org taxonomy. Please consider the following options from the taxonomy before
+                using your own preferred descriptive term: <sch:value-of
+                    select="string-join($languages, ';  ')"/></sch:assert>
+        </sch:rule>-->
+        
+        
+        <!--In ODD already
+            <sch:rule context="tei:occupation" role="warning">
+            <sch:let name="ti"
+                value="doc('https://raw.githubusercontent.com/srophe/srophe-app-data/dev/data/subjects/taxonomyIndex.xml')"/>
+            <sch:let name="occupations"
+                value="$ti//listURI[@ref = 'http://syriaca.org/keyword/occupations']/uri"/>
+            <sch:assert test="@ref = $occupations">SPEAR has a strong preference for using
+                established URIs when possible but appropriate URIs are not always available in the
+                Syriaca.org taxonomy. Please consider the following options from the taxonomy before
+                using your own preferred descriptive term: <sch:value-of
+                    select="string-join($occupations, ';  ')"/></sch:assert>
+        </sch:rule>-->
+
+
+        <!--In ODD already
+            <sch:rule context="tei:div/tei:listRelation/tei:relation">
+            <sch:let name="ti"
+                value="doc('https://raw.githubusercontent.com/srophe/srophe-app-data/dev/data/subjects/taxonomyIndex.xml')"/>
+            <sch:let name="mutual"
+                value="$ti//listURI[@ref = 'http://syriaca.org/keyword/relationships']//uri[@ana = 'mutual']"/>
+            <sch:let name="reciprocal"
+                value="$ti//listURI[@ref = 'http://syriaca.org/keyword/relationships']//uri[@ana = 'reciprocal']"/>
+            <sch:assert test=".[@ref = $mutual]/@mutual or .[@ref = $reciprocal]/@active">Elements
+                of type &lt;relation&gt; take either a @mutual attribute or both @active and
+                @passive attributes depending on the type of relationship described. Mutual
+                relationships include: <sch:value-of
+                    select="string-join($mutual, '; ')"/>. Reciprocal relationships include: <sch:value-of
+                    select="string-join($reciprocal, '; ')"/>.</sch:assert>
+            <sch:assert test=".[@ref = $mutual]/@mutual or .[@ref = $reciprocal]/@passive">Elements
+                of type &lt;relation&gt; take either a @mutual attribute or both @active and
+                @passive attributes depending on the type of relationship described. Mutual
+                relationships include: <sch:value-of
+                    select="string-join($mutual, '; ')"/>. Reciprocal relationships include: <sch:value-of
+                        select="string-join($reciprocal, '; ')"/>.</sch:assert>
+            <sch:report test=".[@mutual]/@active">A &lt;relation&gt; element cannot take both
+                @active and @mutual attributes.</sch:report>
+            <sch:report test=".[@mutual]/@passive">A &lt;relation&gt; element cannot take both
+                @passive and @mutual attributes.</sch:report>
+        </sch:rule>-->
+
+        <!--Not used
+            <sch:rule context="tei:div/tei:listRelation/tei:relation[@active]">
+            <sch:assert test="@passive">If @active then also @passive</sch:assert>
+        </sch:rule>
+        <sch:rule context="tei:div/tei:listRelation/tei:relation[@passive]">
+            <sch:assert test="@active">If @passive then also @active</sch:assert>
+        </sch:rule>
+        <sch:rule context="tei:div/tei:listRelation/tei:relation[@mutual]">
+            <sch:report test="@active">If @mutual then, neither @passive nor @active</sch:report>
+        </sch:rule>-->
+
+
+        <!--Not used
+            <sch:rule context="tei:div/tei:listRelation/tei:relation[@active]">
+            <sch:let name="ti"
+                value="doc('https://raw.githubusercontent.com/srophe/srophe-app-data/dev/data/subjects/taxonomyIndex.xml')"/>
+            <sch:let name="mutual"
+                value="$ti//listURI[@ref = 'http://syriaca.org/keyword/relationships']//uri[@ana = 'mutual']"/>
+            <sch:let name="reciprocal"
+                value="$ti//listURI[@ref = 'http://syriaca.org/keyword/relationships']//uri[@ana = 'reciprocal']"/>
+            <sch:assert test=".[@ref = $reciprocal]">An @active attribute on
+                the &lt;relation&gt; element is required with reciprocal relationships, i.e.
+                relationships where the parties occupy different positions. Reciprocal relationships
+                include (<sch:value-of select="string-join($reciprocal, '; ')"/>).</sch:assert>
+            <sch:report test=".[@ref = $mutual]">An @active attribute on the
+                &lt;relation&gt; element is not allowed with mutual relationships, i.e.
+                relationships where both parties occupy an equivalent position. Mutual relationships
+                include (<sch:value-of select="string-join($mutual, '; ')"/>).</sch:report>
+        </sch:rule>
+        <sch:rule context="tei:div/tei:listRelation/tei:relation[@passive]">
+            <sch:let name="ti"
+                value="doc('https://raw.githubusercontent.com/srophe/srophe-app-data/dev/data/subjects/taxonomyIndex.xml')"/>
+            <sch:let name="mutual"
+                value="$ti//listURI[@ref = 'http://syriaca.org/keyword/relationships']//uri[@ana = 'mutual']"/>
+            <sch:let name="reciprocal"
+                value="$ti//listURI[@ref = 'http://syriaca.org/keyword/relationships']//uri[@ana = 'reciprocal']"/>
+            <sch:assert test=".[@ref = $reciprocal]">A @passive attribute on
+                the &lt;relation&gt; element is required with reciprocal relationships, i.e.
+                relationships where the parties occupy different positions. Reciprocal relationships
+                include (<sch:value-of select="string-join($reciprocal, '; ')"/>).</sch:assert>
+            <sch:report test=".[@ref = $mutual]">A @passive attribute on the
+                &lt;relation&gt; element is not allowed with mutual relationships, i.e.
+                relationships where both parties occupy an equivalent position. Mutual relationships
+                include (<sch:value-of select="string-join($mutual, '; ')"/>).</sch:report>
+        </sch:rule>
+        <sch:rule context="tei:div/tei:listRelation/tei:relation[@mutual]">
+            <sch:let name="ti"
+                value="doc('https://raw.githubusercontent.com/srophe/srophe-app-data/dev/data/subjects/taxonomyIndex.xml')"/>
+            <sch:let name="mutual"
+                value="$ti//listURI[@ref = 'http://syriaca.org/keyword/relationships']//uri[@ana = 'mutual']"/>
+            <sch:let name="reciprocal"
+                value="$ti//listURI[@ref = 'http://syriaca.org/keyword/relationships']//uri[@ana = 'reciprocal']"/>
+            <sch:assert test=".[@ref = $mutual]">A @mutual attribute on the
+                &lt;relation&gt; element is required with mutual relationships, i.e. relationships
+                where both parties occupy an equivalent position. Mutual relationships include
+                (<sch:value-of select="string-join($mutual, '; ')"/>).</sch:assert>
+            <sch:report test=".[@ref = $reciprocal]">A @mutual attribute on the
+                &lt;relation&gt; element is not allowed on reciprocal relationships, i.e.
+                relationships where the parties occupy different positions. Reciprocal relationships
+                include (<sch:value-of select="string-join($reciprocal, '; ')"/>).</sch:report>
+        </sch:rule>-->
+
+        <!--Cannot use because it doesn't seem possible to call a variable from the @context attribute in sch:rule.
+            <sch:rule context="tei:div/tei:listRelation/tei:relation[@ref = $reciprocal]">
+            <sch:report test="./@mutual">Elements of type &lt;relation&gt; that contain a @ref
+                attribute indicating a reciprocal relationship, i.e. a relationship where the
+                parties occupy different positions, cannot contain a @mutual attribute. Reciprocal
+                relationships include (<sch:value-of select="string-join($reciprocal, '; ')"
+                />).</sch:report>
+            <sch:assert test="./@active">Elements of type &lt;relation&gt; that contain a @ref
+                attribute indicating a reciprocal relationship, i.e. relationships where the parties
+                occupy different positions, must contain an @active attribute.</sch:assert>
+            <sch:assert test="./@passive">Elements of type &lt;relation&gt; that contain a @ref
+                attribute indicating a reciprocal relationship, i.e. relationships where the parties
+                occupy different positions, must contain a @passive attribute.</sch:assert>
+        </sch:rule>
+        <sch:rule context="tei:div/tei:listRelation/tei:relation[@ref = $mutual]">
+            <sch:report test="./@active or @passive">Elements of type &lt;relation&gt; that contain a @ref
+                attribute indicating a mutual relationships, i.e. relationships where
+                both parties occupy an equivalent position, cannot contain @active or @passive
+                attributes. Mutual relationships include (<sch:value-of
+                    select="string-join($mutual, '; ')"/>).</sch:report>
+            <sch:assert test="./@mutual">Mutual relationships, i.e. relationships where both parties
+                occupy an equivalent position, must contain a @mutual attribute.</sch:assert>
+        </sch:rule>-->
 
 
         <!--In ODD already

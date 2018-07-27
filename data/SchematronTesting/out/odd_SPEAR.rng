@@ -5,10 +5,10 @@
          xmlns:teix="http://www.tei-c.org/ns/Examples"
          datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"
          ns="http://www.tei-c.org/ns/1.0"><!--
-Schema generated from ODD source 2018-07-18T20:23:22Z. .
-TEI Edition: Version 3.3.0. Last updated on
-	31st January 2018, revision f4d8439
-TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 3.3.0/
+Schema generated from ODD source 2018-07-27T21:32:56Z. .
+TEI Edition: Version 3.4.0. Last updated on
+	23rd July 2018, revision 1fa0b54
+TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 3.4.0/
   
 --><!--[http://creativecommons.org/licenses/by/3.0/] Distributed under a Creative Commons Attribution 3.0 Unported License.-->
    <define name="macro.paraContent">
@@ -201,7 +201,7 @@ TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 3.3.0/
    <define name="att.written.attribute.hand">
       <optional>
          <attribute name="hand">
-            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">points to a handNote element describing the hand considered responsible for the textual content of the element concerned.</a:documentation>
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">points to a handNote element describing the hand considered responsible for the content of the element concerned.</a:documentation>
             <data type="anyURI"/>
          </attribute>
       </optional>
@@ -354,6 +354,7 @@ TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 3.3.0/
       <sch:rule xmlns:rng="http://relaxng.org/ns/structure/1.0"
                 xmlns="http://www.tei-c.org/ns/1.0"
                 xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                xmlns:syriaca="http://syriaca.org/#schema"
                 context="tei:*[@when]">
         <sch:report test="@notBefore|@notAfter|@from|@to" role="nonfatal">The @when attribute cannot be used with any other att.datable.w3c attributes.</sch:report>
       </sch:rule>
@@ -363,6 +364,7 @@ TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 3.3.0/
       <sch:rule xmlns:rng="http://relaxng.org/ns/structure/1.0"
                 xmlns="http://www.tei-c.org/ns/1.0"
                 xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                xmlns:syriaca="http://syriaca.org/#schema"
                 context="tei:*[@from]">
         <sch:report test="@notBefore" role="nonfatal">The @from and @notBefore attributes cannot be used together.</sch:report>
       </sch:rule>
@@ -372,6 +374,7 @@ TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 3.3.0/
       <sch:rule xmlns:rng="http://relaxng.org/ns/structure/1.0"
                 xmlns="http://www.tei-c.org/ns/1.0"
                 xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                xmlns:syriaca="http://syriaca.org/#schema"
                 context="tei:*[@to]">
         <sch:report test="@notAfter" role="nonfatal">The @to and @notAfter attributes cannot be used together.</sch:report>
       </sch:rule>
@@ -396,6 +399,7 @@ TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 3.3.0/
       <sch:rule xmlns:rng="http://relaxng.org/ns/structure/1.0"
                 xmlns="http://www.tei-c.org/ns/1.0"
                 xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                xmlns:syriaca="http://syriaca.org/#schema"
                 context="tei:*[@calendar]">
             <sch:assert test="string-length(.) gt 0">
 @calendar indicates the system or calendar to which the date represented by the content of this element
@@ -888,6 +892,7 @@ Suggested values include: 1] below; 2] bottom; 3] margin; 4] top; 5] opposite; 6
       <sch:rule xmlns:rng="http://relaxng.org/ns/structure/1.0"
                 xmlns="http://www.tei-c.org/ns/1.0"
                 xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                xmlns:syriaca="http://syriaca.org/#schema"
                 context="tei:*[@subtype]">
         <sch:assert test="@type">The <sch:name/> element should not be categorized in detail with @subtype unless also categorized in general with @type</sch:assert>
       </sch:rule>
@@ -916,6 +921,7 @@ Suggested values include: 1] below; 2] bottom; 3] margin; 4] top; 5] opposite; 6
       <sch:rule xmlns:rng="http://relaxng.org/ns/structure/1.0"
                 xmlns="http://www.tei-c.org/ns/1.0"
                 xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                xmlns:syriaca="http://syriaca.org/#schema"
                 context="tei:*[not(self::tei:schemaSpec)][@targetLang]">
             <sch:assert test="@target">@targetLang should only be used on <sch:name/> if @target is specified.</sch:assert>
           </sch:rule>
@@ -1026,6 +1032,7 @@ Suggested values include: 1] below; 2] bottom; 3] margin; 4] top; 5] opposite; 6
       <sch:rule xmlns:rng="http://relaxng.org/ns/structure/1.0"
                 xmlns="http://www.tei-c.org/ns/1.0"
                 xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                xmlns:syriaca="http://syriaca.org/#schema"
                 context="tei:*[@schemeVersion]">
             <sch:assert test="@scheme and not(@scheme = 'free')">
               @schemeVersion can only be used if @scheme is specified.
@@ -1817,6 +1824,7 @@ Suggested values include: 1] page; 2] column; 3] line; 4] book; 5] poem; 6] cant
                   id="SPEAR-p-abstractModel-structure-p-constraint-report-4">
             <rule context="tei:p">
                <report xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                       xmlns:syriaca="http://syriaca.org/#schema"
                        test="not(ancestor::tei:floatingText) and (ancestor::tei:p or ancestor::tei:ab)          and not(parent::tei:exemplum                |parent::tei:item                |parent::tei:note                |parent::tei:q                |parent::tei:quote                |parent::tei:remarks                |parent::tei:said                |parent::tei:sp                |parent::tei:stage                |parent::tei:cell                |parent::tei:figure                )">
         Abstract model violation: Paragraphs may not occur inside other paragraphs or ab elements.
       </report>
@@ -1826,6 +1834,7 @@ Suggested values include: 1] page; 2] column; 3] line; 4] book; 5] poem; 6] cant
                   id="SPEAR-p-abstractModel-structure-l-constraint-report-5">
             <rule context="tei:p">
                <report xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                       xmlns:syriaca="http://syriaca.org/#schema"
                        test="ancestor::tei:l[not(.//tei:note//tei:p[. = current()])]">
         Abstract model violation: Lines may not contain higher-level structural elements such as div, p, or ab.
       </report>
@@ -1993,9 +2002,11 @@ Suggested values include: 1] Gregorian; 2] Seleucid</a:documentation>
                   id="SPEAR-date-calendar-Gregorian-in-reg-date-constraint-rule-8">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                      xmlns:syriaca="http://syriaca.org/#schema"
                       context="tei:date[parent::tei:reg]/@calendar">
-                    <sch:assert test=". = 'Gregorian'">A &lt;date&gt; element inside a &lt;reg&gt; element
-                      must have a @calendar attribute with a value of "Gregorian".</sch:assert>
+                    <sch:assert test=". = 'Gregorian'">A &lt;date&gt; element inside a &lt;reg&gt;
+                      element must have a @calendar attribute with a value of
+                      "Gregorian".</sch:assert>
                   </sch:rule>
          </pattern>
          <empty/>
@@ -2008,7 +2019,9 @@ Suggested values include: 1] Gregorian; 2] Seleucid</a:documentation>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   id="SPEAR-ptr-ptrAtts-constraint-report-6">
             <rule context="tei:ptr">
-               <report xmlns:sch="http://purl.oclc.org/dsdl/schematron" test="@target and @cRef">Only one of the
+               <report xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                       xmlns:syriaca="http://syriaca.org/#schema"
+                       test="@target and @cRef">Only one of the
 attributes @target and @cRef may be supplied on <name/>.</report>
             </rule>
          </pattern>
@@ -2024,35 +2037,40 @@ attributes @target and @cRef may be supplied on <name/>.</report>
                   id="SPEAR-ptr-target-ptr-targets-in-context-constraint-rule-9">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                      xmlns:syriaca="http://syriaca.org/#schema"
                       context="tei:sourceDesc//tei:bibl[@type = 'primary']/tei:ptr/@target">
                     <sch:let name="docURIno"
                         value="//tei:publicationStmt/tei:idno[@type]/substring-after(substring-before(., '/tei'), 'spear/')"/>
-                    <sch:assert test=". = concat('http://syriaca.org/work/', $docURIno) or starts-with(., 'http://syriaca.org/bibl/')"> The @target attribute on a &lt;ptr&gt; element inside a &lt;bibl&gt; element with @type="primary"
-                      takes limited values. It either must be "http://syriaca.org/work/<sch:value-of select="$docURIno"/>" or "http://syriaca.org/bibl/" followed by the
-                      corresponding Syriaca.org bibl URI number. </sch:assert>
+                    <sch:assert test=". = concat('http://syriaca.org/work/', $docURIno) or starts-with(., 'http://syriaca.org/bibl/')"> The @target attribute on a &lt;ptr&gt; element inside a &lt;bibl&gt; element
+                      with @type="primary" takes limited values. It either must be
+                        "http://syriaca.org/work/<sch:value-of select="$docURIno"/>" or
+                      "http://syriaca.org/bibl/" followed by the corresponding Syriaca.org bibl URI
+                      number. </sch:assert>
                   </sch:rule>
          </pattern> 
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   id="SPEAR-ptr-target-ptr-targets-in-context-constraint-rule-10">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                      xmlns:syriaca="http://syriaca.org/#schema"
                       context="tei:sourceDesc//tei:bibl[@type = 'urn']/tei:ptr/@target">
                     <sch:let name="docURIno"
                         value="//tei:publicationStmt/tei:idno[@type]/substring-after(substring-before(., '/tei'), 'spear/')"/>
-                    <sch:assert test="starts-with(., concat('urn:cts:syriacLit:nhsl', $docURIno, '.syriacCorpus'))">
-                      The @target attribute on a &lt;ptr&gt; element inside a &lt;bibl&gt; element with @type="urn" must
-                      begin either with "urn:cts:syriacLit:nhsl<sch:value-of select="$docURIno"/>.syriacCorpus" followed by the corresponding Syriac Corpus URI number.
-                    </sch:assert>
+                    <sch:assert test="starts-with(., concat('urn:cts:syriacLit:nhsl', $docURIno, '.syriacCorpus'))"> The @target attribute on a &lt;ptr&gt; element inside a &lt;bibl&gt; element
+                      with @type="urn" must begin either with "urn:cts:syriacLit:nhsl<sch:value-of select="$docURIno"/>.syriacCorpus" followed by the corresponding Syriac
+                      Corpus URI number. </sch:assert>
                   </sch:rule>
          </pattern> 
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   id="SPEAR-ptr-target-ptr-targets-in-context-constraint-rule-11">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                      xmlns:syriaca="http://syriaca.org/#schema"
                       context="tei:ptr[parent::tei:event]/@target">
                     <sch:assert test="starts-with(., 'http://syriaca.org/keyword/')">@target
                       attributes on &lt;ptr&gt; elements in an event factoid must point to a
                       Syriaca.org keyword starting with "http://syriaca.org/keyword/".</sch:assert>
+                    
                     
                   </sch:rule>
          </pattern> 
@@ -2060,6 +2078,7 @@ attributes @target and @cRef may be supplied on <name/>.</report>
                   id="SPEAR-ptr-target-ptr-targets-in-context-constraint-rule-12">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                      xmlns:syriaca="http://syriaca.org/#schema"
                       context="//tei:body/tei:div/tei:bibl[@type = 'urn']/tei:ptr/@target">
                     <sch:let name="urnBase"
                         value="//tei:sourceDesc//tei:bibl[@type = 'urn']/tei:ptr/@target"/>
@@ -2072,11 +2091,12 @@ attributes @target and @cRef may be supplied on <name/>.</report>
                   id="SPEAR-ptr-target-ptr-targets-in-context-constraint-rule-13">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                      xmlns:syriaca="http://syriaca.org/#schema"
                       context="//tei:body//tei:bibl[@type = 'primary']/tei:ptr/@target">
                     <sch:assert test=". = //tei:sourceDesc//tei:bibl[@type = 'primary']/tei:ptr/@target"> The
-                      @target attribute on the &lt;ptr&gt; element, "<sch:value-of select="."/>," is not
-                      among the valid options contained in the &lt;sourceDesc&gt; element of the
-                      &lt;teiHeader&gt;: (<sch:value-of select="string-join(//tei:sourceDesc//tei:bibl[@type = 'primary']/tei:ptr/@target, '; ')"/>) </sch:assert>
+                      @target attribute on the &lt;ptr&gt; element, "<sch:value-of select="."/>," is
+                      not among the valid options contained in the &lt;sourceDesc&gt; element of the
+                      &lt;teiHeader&gt;: (<sch:value-of select="string-join(//tei:sourceDesc//tei:bibl[@type = 'primary']/tei:ptr/@target, ';  ')"/>) </sch:assert>
                   </sch:rule>
          </pattern>
          <empty/>
@@ -2089,7 +2109,9 @@ attributes @target and @cRef may be supplied on <name/>.</report>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   id="SPEAR-ref-refAtts-constraint-report-7">
             <rule context="tei:ref">
-               <report xmlns:sch="http://purl.oclc.org/dsdl/schematron" test="@target and @cRef">Only one of the
+               <report xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                       xmlns:syriaca="http://syriaca.org/#schema"
+                       test="@target and @cRef">Only one of the
 	attributes @target' and @cRef' may be supplied on <name/>
                </report>
             </rule>
@@ -2120,9 +2142,10 @@ attributes @target and @cRef may be supplied on <name/>.</report>
                   id="SPEAR-head-head-in-sourceDesc-constraint-rule-14">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                      xmlns:syriaca="http://syriaca.org/#schema"
                       context="//tei:sourceDesc//tei:head">
-                <sch:assert test="normalize-space(.) = 'Sources for the Data in this Born Digital Prosopography'"> A &lt;head&gt; element inside the &lt;sourceDesc&gt; must contain the text node: "Sources for the Data in this Born
-                  Digital Prosopography". </sch:assert>
+                <sch:assert test="normalize-space(.) = 'Sources for the Data in this Born Digital Prosopography'"> A &lt;head&gt; element inside the &lt;sourceDesc&gt; must contain the text node:
+                  "Sources for the Data in this Born Digital Prosopography". </sch:assert>
               </sch:rule>
          </pattern>
          <ref name="att.global.attributes"/>
@@ -2140,6 +2163,7 @@ attributes @target and @cRef may be supplied on <name/>.</report>
                   id="SPEAR-note-note-children-in-context-constraint-rule-15">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                      xmlns:syriaca="http://syriaca.org/#schema"
                       context="tei:note[parent::tei:birth and preceding-sibling::tei:placeName]">
                 <sch:assert test="tei:persName">The &lt;note&gt; element in a birth place factoid
                   must contain a &lt;persName&gt; element.</sch:assert>
@@ -2151,6 +2175,7 @@ attributes @target and @cRef may be supplied on <name/>.</report>
                   id="SPEAR-note-note-children-in-context-constraint-rule-16">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                      xmlns:syriaca="http://syriaca.org/#schema"
                       context="tei:note[parent::tei:birth and preceding-sibling::tei:date]">
                 <sch:assert test="tei:persName">The &lt;note&gt; element in a birth date factoid
                   must contain a &lt;persName&gt; element.</sch:assert>
@@ -2160,6 +2185,7 @@ attributes @target and @cRef may be supplied on <name/>.</report>
                   id="SPEAR-note-note-children-in-context-constraint-rule-17">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                      xmlns:syriaca="http://syriaca.org/#schema"
                       context="tei:note[parent::tei:nationality and preceding-sibling::tei:placeName]">
                 <sch:assert test="tei:persName">The &lt;note&gt; element in a citizenship factoid
                   must contain a &lt;persName&gt; element.</sch:assert>
@@ -2171,6 +2197,7 @@ attributes @target and @cRef may be supplied on <name/>.</report>
                   id="SPEAR-note-note-children-in-context-constraint-rule-18">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                      xmlns:syriaca="http://syriaca.org/#schema"
                       context="tei:note[parent::tei:death and preceding-sibling::tei:placeName]">
                 <sch:assert test="tei:persName">The &lt;note&gt; element in a death place factoid
                   must contain a &lt;persName&gt; element.</sch:assert>
@@ -2182,6 +2209,7 @@ attributes @target and @cRef may be supplied on <name/>.</report>
                   id="SPEAR-note-note-children-in-context-constraint-rule-19">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                      xmlns:syriaca="http://syriaca.org/#schema"
                       context="tei:note[parent::tei:education]">
                 <sch:assert test="tei:persName">The &lt;note&gt; element in an education factoid
                   must contain a &lt;persName&gt; element.</sch:assert>
@@ -2191,6 +2219,7 @@ attributes @target and @cRef may be supplied on <name/>.</report>
                   id="SPEAR-note-note-children-in-context-constraint-rule-20">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                      xmlns:syriaca="http://syriaca.org/#schema"
                       context="tei:note[parent::tei:death and preceding-sibling::tei:date]">
                 <sch:assert test="tei:persName">The &lt;note&gt; element in a death date factoid
                   must contain a &lt;persName&gt; element.</sch:assert>
@@ -2200,6 +2229,7 @@ attributes @target and @cRef may be supplied on <name/>.</report>
                   id="SPEAR-note-note-children-in-context-constraint-rule-21">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                      xmlns:syriaca="http://syriaca.org/#schema"
                       context="tei:note[parent::tei:occupation]">
                 <sch:assert test="tei:persName">The &lt;note&gt; element in an occupation factoid
                   must contain a &lt;persName&gt; element.</sch:assert>
@@ -2209,6 +2239,7 @@ attributes @target and @cRef may be supplied on <name/>.</report>
                   id="SPEAR-note-note-children-in-context-constraint-rule-22">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                      xmlns:syriaca="http://syriaca.org/#schema"
                       context="tei:note[parent::tei:residence and preceding-sibling::tei:placeName]">
                 <sch:assert test="tei:persName">The &lt;note&gt; element in a residence factoid must
                   contain a &lt;persName&gt; element.</sch:assert>
@@ -2220,6 +2251,7 @@ attributes @target and @cRef may be supplied on <name/>.</report>
                   id="SPEAR-note-note-children-in-context-constraint-rule-23">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                      xmlns:syriaca="http://syriaca.org/#schema"
                       context="tei:note[parent::tei:sex]">
                 <sch:assert test="tei:persName">The &lt;note&gt; element in a biological sex factoid
                   must contain a &lt;persName&gt; element.</sch:assert>
@@ -2229,6 +2261,7 @@ attributes @target and @cRef may be supplied on <name/>.</report>
                   id="SPEAR-note-note-children-in-context-constraint-rule-24">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                      xmlns:syriaca="http://syriaca.org/#schema"
                       context="tei:note[parent::tei:socecStatus]">
                 <sch:assert test="tei:persName">The &lt;note&gt; element in a socioeconomic status
                   factoid must contain a &lt;persName&gt; element.</sch:assert>
@@ -2238,6 +2271,7 @@ attributes @target and @cRef may be supplied on <name/>.</report>
                   id="SPEAR-note-note-children-in-context-constraint-rule-25">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                      xmlns:syriaca="http://syriaca.org/#schema"
                       context="tei:note[parent::tei:langKnowledge and preceding-sibling::tei:langKnown]">
                 <sch:assert test="tei:persName">The &lt;note&gt; element in a language-known factoid
                   must contain a &lt;persName&gt; element.</sch:assert>
@@ -2247,6 +2281,7 @@ attributes @target and @cRef may be supplied on <name/>.</report>
                   id="SPEAR-note-note-children-in-context-constraint-rule-26">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                      xmlns:syriaca="http://syriaca.org/#schema"
                       context="tei:note[parent::tei:trait]">
                 <sch:assert test="tei:persName">The &lt;note&gt; element inside the &lt;trait&gt;
                   element must contain a &lt;persName&gt; element.</sch:assert>
@@ -2256,6 +2291,7 @@ attributes @target and @cRef may be supplied on <name/>.</report>
                   id="SPEAR-note-note-children-in-context-constraint-rule-27">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                      xmlns:syriaca="http://syriaca.org/#schema"
                       context="tei:note[parent::tei:state]">
                 <sch:assert test="tei:persName">The &lt;note&gt; element inside the &lt;state&gt;
                   element must contain a &lt;persName&gt; element.</sch:assert>
@@ -2265,6 +2301,7 @@ attributes @target and @cRef may be supplied on <name/>.</report>
                   id="SPEAR-note-note-children-in-context-constraint-rule-28">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                      xmlns:syriaca="http://syriaca.org/#schema"
                       context="tei:note[parent::tei:reg and preceding-sibling::tei:date]">
                 <sch:assert test="@ana">This &lt;note&gt; element requires an @ana
                   attribute.</sch:assert>
@@ -2274,6 +2311,7 @@ attributes @target and @cRef may be supplied on <name/>.</report>
                   id="SPEAR-note-date-note-content-constraint-rule-29">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                      xmlns:syriaca="http://syriaca.org/#schema"
                       context="tei:note[parent::tei:reg and preceding-sibling::tei:date]">
                 <sch:assert test="normalize-space(.) = 'This regularized date was calculated by the SPEAR editor from a non-calendrical dating system such as regnal years, etc.'"> The only note allowed in this context must contain the following text: "This
                   regularized date was calculated by the SPEAR editor from a non-calendrical dating
@@ -2299,8 +2337,9 @@ attributes @target and @cRef may be supplied on <name/>.</report>
                   id="SPEAR-note-type-type-note-child-div-constraint-rule-30">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                      xmlns:syriaca="http://syriaca.org/#schema"
                       context="tei:div/tei:note/@type">
-                    <sch:report test="contains(., 'desc')">Only notes of @type "incerta", "dubia",
+                    <sch:report test=". = 'desc'">Only notes of @type "incerta", "dubia",
                       or "errata" may appear as children of a &lt;div&gt; element.</sch:report>
                   </sch:rule>
          </pattern>
@@ -2308,6 +2347,7 @@ attributes @target and @cRef may be supplied on <name/>.</report>
                   id="SPEAR-note-type-notes-type-desc-constraint-rule-31">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                      xmlns:syriaca="http://syriaca.org/#schema"
                       context="tei:note[parent::tei:birth]/@type">
                     <sch:assert test=". = 'desc'">Elements of type &lt;note&gt; that contain the
                       attribute @type="desc" are the only notes allowed inside the &lt;birth&gt;
@@ -2319,17 +2359,20 @@ attributes @target and @cRef may be supplied on <name/>.</report>
                   id="SPEAR-note-type-notes-type-desc-constraint-rule-32">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                      xmlns:syriaca="http://syriaca.org/#schema"
                       context="tei:note[parent::tei:nationality]/@type">
                     <sch:assert test=". = 'desc'">Elements of type &lt;note&gt; that contain the
-                      attribute @type="desc" are the only notes allowed inside the &lt;nationality&gt;
-                      element. Other types of notes ("incerta", "dubia", and "errata") may appear as
-                      children of the &lt;div&gt; element as needed.</sch:assert>
+                      attribute @type="desc" are the only notes allowed inside the
+                      &lt;nationality&gt; element. Other types of notes ("incerta", "dubia", and
+                      "errata") may appear as children of the &lt;div&gt; element as
+                      needed.</sch:assert>
                   </sch:rule>
          </pattern> 
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   id="SPEAR-note-type-notes-type-desc-constraint-rule-33">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                      xmlns:syriaca="http://syriaca.org/#schema"
                       context="tei:note[parent::tei:death]/@type">
                     <sch:assert test=". = 'desc'">Elements of type &lt;note&gt; that contain the
                       attribute @type="desc" are the only notes allowed inside the &lt;death&gt;
@@ -2341,6 +2384,7 @@ attributes @target and @cRef may be supplied on <name/>.</report>
                   id="SPEAR-note-type-notes-type-desc-constraint-rule-34">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                      xmlns:syriaca="http://syriaca.org/#schema"
                       context="tei:note[parent::tei:education]/@type">
                     <sch:assert test=". = 'desc'">Elements of type &lt;note&gt; that contain the
                       attribute @type="desc" are the only notes allowed inside the &lt;education&gt;
@@ -2352,17 +2396,20 @@ attributes @target and @cRef may be supplied on <name/>.</report>
                   id="SPEAR-note-type-notes-type-desc-constraint-rule-35">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                      xmlns:syriaca="http://syriaca.org/#schema"
                       context="tei:note[parent::tei:occupation]/@type">
                     <sch:assert test=". = 'desc'">Elements of type &lt;note&gt; that contain the
-                      attribute @type="desc" are the only notes allowed inside the &lt;occupation&gt;
-                      element. Other types of notes ("incerta", "dubia", and "errata") may appear as
-                      children of the &lt;div&gt; element as needed.</sch:assert>
+                      attribute @type="desc" are the only notes allowed inside the
+                      &lt;occupation&gt; element. Other types of notes ("incerta", "dubia", and
+                      "errata") may appear as children of the &lt;div&gt; element as
+                      needed.</sch:assert>
                   </sch:rule>
          </pattern> 
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   id="SPEAR-note-type-notes-type-desc-constraint-rule-36">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                      xmlns:syriaca="http://syriaca.org/#schema"
                       context="tei:note[parent::tei:residence]/@type">
                     <sch:assert test=". = 'desc'">Elements of type &lt;note&gt; that contain the
                       attribute @type="desc" are the only notes allowed inside the &lt;residence&gt;
@@ -2374,39 +2421,45 @@ attributes @target and @cRef may be supplied on <name/>.</report>
                   id="SPEAR-note-type-notes-type-desc-constraint-rule-37">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                      xmlns:syriaca="http://syriaca.org/#schema"
                       context="tei:note[parent::tei:sex]/@type">
                     <sch:assert test=". = 'desc'">Elements of type &lt;note&gt; that contain the
-                      attribute @type="desc" are the only notes allowed inside the &lt;sex&gt; element.
-                      Other types of notes ("incerta", "dubia", and "errata") may appear as children
-                      of the &lt;div&gt; element as needed.</sch:assert>
+                      attribute @type="desc" are the only notes allowed inside the &lt;sex&gt;
+                      element. Other types of notes ("incerta", "dubia", and "errata") may appear as
+                      children of the &lt;div&gt; element as needed.</sch:assert>
                   </sch:rule>
          </pattern> 
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   id="SPEAR-note-type-notes-type-desc-constraint-rule-38">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                      xmlns:syriaca="http://syriaca.org/#schema"
                       context="tei:note[parent::tei:socecStatus]/@type">
                     <sch:assert test=". = 'desc'">Elements of type &lt;note&gt; that contain the
-                      attribute @type="desc" are the only notes allowed inside the &lt;socecStatus&gt;
-                      element. Other types of notes ("incerta", "dubia", and "errata") may appear as
-                      children of the &lt;div&gt; element as needed.</sch:assert>
+                      attribute @type="desc" are the only notes allowed inside the
+                      &lt;socecStatus&gt; element. Other types of notes ("incerta", "dubia", and
+                      "errata") may appear as children of the &lt;div&gt; element as
+                      needed.</sch:assert>
                   </sch:rule>
          </pattern> 
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   id="SPEAR-note-type-notes-type-desc-constraint-rule-39">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                      xmlns:syriaca="http://syriaca.org/#schema"
                       context="tei:note[parent::tei:langKnowledge]/@type">
                     <sch:assert test=". = 'desc'">Elements of type &lt;note&gt; that contain a the
-                      attribute @type="desc" are the only notes allowed inside the &lt;langKnowledge&gt;
-                      element. Other types of notes ("incerta", "dubia", and "errata") may appear as
-                      children of the &lt;div&gt; element as needed.</sch:assert>
+                      attribute @type="desc" are the only notes allowed inside the
+                      &lt;langKnowledge&gt; element. Other types of notes ("incerta", "dubia", and
+                      "errata") may appear as children of the &lt;div&gt; element as
+                      needed.</sch:assert>
                   </sch:rule>
          </pattern> 
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   id="SPEAR-note-type-notes-type-desc-constraint-rule-40">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                      xmlns:syriaca="http://syriaca.org/#schema"
                       context="tei:note[parent::tei:trait]/@type">
                     <sch:assert test=". = 'desc'">Elements of type &lt;note&gt; that contain the
                       attribute @type="desc" are the only notes allowed inside the &lt;trait&gt;
@@ -2418,6 +2471,7 @@ attributes @target and @cRef may be supplied on <name/>.</report>
                   id="SPEAR-note-type-notes-type-desc-constraint-rule-41">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                      xmlns:syriaca="http://syriaca.org/#schema"
                       context="tei:note[parent::tei:state]/@type">
                     <sch:assert test=". = 'desc'">Elements of type &lt;note&gt; that contain the
                       attribute @type="desc" are the only notes allowed inside the &lt;state&gt;
@@ -2567,6 +2621,7 @@ Sample values include: 1] main; 2] sub (subordinate) ; 3] alt (alternate) ; 4] s
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">provides the name of the organization responsible for the publication or distribution of a bibliographic item. [3.11.2.4. Imprint, Size of a Document, and Reprint Information 2.2.4. Publication, Distribution, Licensing, etc.]</a:documentation>
          <ref name="macro.phraseSeq"/>
          <ref name="att.global.attributes"/>
+         <ref name="att.canonical.attributes"/>
          <empty/>
       </element>
    </define>
@@ -2684,6 +2739,7 @@ Sample values include: 1] main; 2] sub (subordinate) ; 3] alt (alternate) ; 4] s
                   id="SPEAR-bibl-id-in-back-bibl-constraint-rule-42">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                      xmlns:syriaca="http://syriaca.org/#schema"
                       context="tei:back//tei:bibl">
                 <sch:assert test="@xml:id">A &lt;bibl&gt; element in the back matter must contain an
                   @xml:id attribute.</sch:assert>
@@ -2693,6 +2749,7 @@ Sample values include: 1] main; 2] sub (subordinate) ; 3] alt (alternate) ; 4] s
                   id="SPEAR-bibl-id-in-back-bibl-constraint-rule-43">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                      xmlns:syriaca="http://syriaca.org/#schema"
                       context="tei:back//tei:bibl/@xml:id">
                 <sch:let name="docURIno"
                         value="//tei:publicationStmt/tei:idno[@type]/substring-after(substring-before(., '/tei'), 'spear/')"/>
@@ -2739,9 +2796,10 @@ Sample values include: 1] main; 2] sub (subordinate) ; 3] alt (alternate) ; 4] s
                   id="SPEAR-listBibl-head-in-sourceDesc-bibl-constraint-rule-44">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                      xmlns:syriaca="http://syriaca.org/#schema"
                       context="//tei:sourceDesc/tei:listBibl">
-                <sch:assert test="tei:head">A &lt;listBibl&gt; element inside the &lt;sourceDesc&gt; must contain a &lt;head&gt;
-                  element.</sch:assert>
+                <sch:assert test="tei:head">A &lt;listBibl&gt; element inside the &lt;sourceDesc&gt;
+                  must contain a &lt;head&gt; element.</sch:assert>
               </sch:rule>
          </pattern>
          <ref name="att.global.attributes"/>
@@ -2942,6 +3000,7 @@ Sample values include: 1] main; 2] sub (subordinate) ; 3] alt (alternate) ; 4] s
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">supplies the name of a person or other agency responsible for the distribution of a text. [2.2.4. Publication, Distribution, Licensing, etc.]</a:documentation>
          <ref name="macro.phraseSeq"/>
          <ref name="att.global.attributes"/>
+         <ref name="att.canonical.attributes"/>
          <empty/>
       </element>
    </define>
@@ -2950,6 +3009,7 @@ Sample values include: 1] main; 2] sub (subordinate) ; 3] alt (alternate) ; 4] s
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(release authority) supplies the name of a person or other agency responsible for making a work available, other than a publisher or distributor. [2.2.4. Publication, Distribution, Licensing, etc.]</a:documentation>
          <ref name="macro.phraseSeq.limited"/>
          <ref name="att.global.attributes"/>
+         <ref name="att.canonical.attributes"/>
          <empty/>
       </element>
    </define>
@@ -3285,6 +3345,7 @@ Suggested values include: 1] ISBN; 2] ISSN; 3] DOI; 4] URI; 5] VIAF; 6] ESTC; 7]
                <report xmlns:xi="http://www.w3.org/2001/XInclude"
                        xmlns:rng="http://relaxng.org/ns/structure/1.0"
                        xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                       xmlns:syriaca="http://syriaca.org/#schema"
                        test="not(@marks) and not (tei:p)">
 On <name/>, either the @marks attribute should be used, or a paragraph of description provided</report>
             </rule>
@@ -4190,17 +4251,20 @@ Suggested values include: 1] sent; 2] received; 3] transmitted; 4] redirected; 5
                   id="SPEAR-div-atts-on-factoidDiv-constraint-rule-45">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                      xmlns:syriaca="http://syriaca.org/#schema"
                       context="tei:div[ancestor::tei:body]">
-                <sch:assert test="@uri">Elements of type &lt;div&gt; within the &lt;body&gt; element require
-                  a @uri attribute.</sch:assert>
-                <sch:assert test="@resp">Elements of type &lt;div&gt; within the body element require a
-                  @resp attribute.</sch:assert>
+                <sch:assert test="@uri">Elements of type &lt;div&gt; within the &lt;body&gt; element
+                  require a @uri attribute.</sch:assert>
+                <sch:assert test="@resp">Elements of type &lt;div&gt; within the body element
+                  require a @resp attribute.</sch:assert>
               </sch:rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   id="SPEAR-div-abstractModel-structure-l-constraint-report-11">
             <rule context="tei:div">
-               <report xmlns:sch="http://purl.oclc.org/dsdl/schematron" test="ancestor::tei:l">
+               <report xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                       xmlns:syriaca="http://syriaca.org/#schema"
+                       test="ancestor::tei:l">
         Abstract model violation: Lines may not contain higher-level structural elements such as div.
       </report>
             </rule>
@@ -4209,6 +4273,7 @@ Suggested values include: 1] sent; 2] received; 3] transmitted; 4] redirected; 5
                   id="SPEAR-div-abstractModel-structure-p-constraint-report-12">
             <rule context="tei:div">
                <report xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                       xmlns:syriaca="http://syriaca.org/#schema"
                        test="ancestor::tei:p or ancestor::tei:ab and not(ancestor::tei:floatingText)">
         Abstract model violation: p and ab may not contain higher-level structural elements such as div.
       </report>
@@ -4249,16 +4314,16 @@ Suggested values include: 1] sent; 2] received; 3] transmitted; 4] redirected; 5
                   id="SPEAR-div-uri-divFactoid-uris-constraint-assert-51">
             <rule context="tei:div/@uri">
                <sch:assert xmlns:sch="http://purl.oclc.org/dsdl/schematron"
-                           test="contains(., concat('/', //tei:publicationStmt/tei:idno[@type]/substring-after(substring-before(., '/tei'), 'spear/'), '-'))">SPEAR factoid &lt;div&gt; elements contain @uri attributes that must include the
-                    number of the TEI document URI, in this document: "<sch:value-of select="//tei:publicationStmt/tei:idno[@type]/substring-after(substring-before(., '/tei'), 'spear/')"/>", followed by "-".</sch:assert>
+                           test="contains(., concat('/', //tei:publicationStmt/tei:idno[@type]/substring-after(substring-before(., '/tei'), 'spear/'), '-'))">SPEAR factoid &lt;div&gt; elements contain @uri attributes that must include
+                    the number of the TEI document URI, in this document: "<sch:value-of select="//tei:publicationStmt/tei:idno[@type]/substring-after(substring-before(., '/tei'), 'spear/')"/>", followed by "-".</sch:assert>
             </rule>
          </pattern> 
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   id="SPEAR-div-uri-divFactoid-uris-constraint-assert-52">
             <rule context="tei:div/@uri">
                <sch:assert xmlns:sch="http://purl.oclc.org/dsdl/schematron"
-                           test="count(distinct-values(//tei:div/@uri)) eq count(//tei:div/@uri)">Each &lt;div&gt; element @uri attribute must end with a unique number following the
-                    "-".</sch:assert>
+                           test="count(distinct-values(//tei:div/@uri)) eq count(//tei:div/@uri)">Each &lt;div&gt; element @uri attribute must end with a unique number following
+                    the "-".</sch:assert>
             </rule>
          </pattern>
          <optional>
@@ -4528,9 +4593,10 @@ Suggested values include: 1] sent; 2] received; 3] transmitted; 4] redirected; 5
             <rule context="tei:persName/@ref">
                <sch:assert xmlns="http://www.tei-c.org/ns/1.0"
                            xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                           xmlns:syriaca="http://syriaca.org/#schema"
                            test="starts-with(., 'http://syriaca.org/person/')">@ref attributes on
-                    &lt;persName&gt; elements must contain a properly formatted Syriaca.org person URI
-                    that starts with 'http://syriaca.org/person/'.</sch:assert>
+                    &lt;persName&gt; elements must contain a properly formatted Syriaca.org person
+                    URI that starts with 'http://syriaca.org/person/'.</sch:assert>
             </rule>
          </pattern> 
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
@@ -4538,6 +4604,7 @@ Suggested values include: 1] sent; 2] received; 3] transmitted; 4] redirected; 5
             <rule context="tei:persName/@ref">
                <sch:report xmlns="http://www.tei-c.org/ns/1.0"
                            xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                           xmlns:syriaca="http://syriaca.org/#schema"
                            test="matches(substring-after(., 'person/'), '\D')">A properly
                     formatted Syriaca.org person URI ends with a number.</sch:report>
             </rule>
@@ -4547,6 +4614,7 @@ Suggested values include: 1] sent; 2] received; 3] transmitted; 4] redirected; 5
             <rule context="tei:persName/@ref">
                <sch:assert xmlns="http://www.tei-c.org/ns/1.0"
                            xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                           xmlns:syriaca="http://syriaca.org/#schema"
                            test="matches(substring-after(., 'person/'), '\d')">A properly
                     formatted Syriaca.org person URI ends with a number.</sch:assert>
             </rule>
@@ -4567,9 +4635,10 @@ Suggested values include: 1] sent; 2] received; 3] transmitted; 4] redirected; 5
             <rule context="tei:placeName/@ref">
                <sch:assert xmlns="http://www.tei-c.org/ns/1.0"
                            xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                           xmlns:syriaca="http://syriaca.org/#schema"
                            test="starts-with(., 'http://syriaca.org/place/')">@ref attributes on
-                    &lt;placeName&gt; elements must contain a properly formatted Syriaca.org place URI
-                    that starts with 'http://syriaca.org/place/'.</sch:assert>
+                    &lt;placeName&gt; elements must contain a properly formatted Syriaca.org place
+                    URI that starts with 'http://syriaca.org/place/'.</sch:assert>
             </rule>
          </pattern> 
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
@@ -4577,6 +4646,7 @@ Suggested values include: 1] sent; 2] received; 3] transmitted; 4] redirected; 5
             <rule context="tei:placeName/@ref">
                <sch:report xmlns="http://www.tei-c.org/ns/1.0"
                            xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                           xmlns:syriaca="http://syriaca.org/#schema"
                            test="matches(substring-after(., 'place/'), '\D')">A properly
                     formatted Syriaca.org place URI ends with a number.</sch:report>
             </rule>
@@ -4586,6 +4656,7 @@ Suggested values include: 1] sent; 2] received; 3] transmitted; 4] redirected; 5
             <rule context="tei:placeName/@ref">
                <sch:assert xmlns="http://www.tei-c.org/ns/1.0"
                            xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                           xmlns:syriaca="http://syriaca.org/#schema"
                            test="matches(substring-after(., 'place/'), '\d')">A properly
                     formatted Syriaca.org person URI ends with a number.</sch:assert>
             </rule>
@@ -4652,6 +4723,35 @@ Suggested values include: 1] sent; 2] received; 3] transmitted; 4] redirected; 5
             <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
             <data type="anyURI"/>
          </attribute>
+         <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
+                  id="SPEAR-education-ref-ref-in-education-constraint-assert-57">
+            <rule context="tei:education/@ref">
+               <sch:assert xmlns="http://www.tei-c.org/ns/1.0"
+                           xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                           xmlns:syriaca="http://syriaca.org/#schema"
+                           test="starts-with(., 'http://syriaca.org/keyword/')">@ref attributes
+                    on the &lt;education&gt; element must point to a Syriaca.org keyword beginning with
+                    "http://syriaca.org/keyword/".</sch:assert>
+            </rule>
+         </pattern> 
+         <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
+                  id="SPEAR-education-ref-ref-in-education-constraint-rule-46">
+            <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
+                      xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                      xmlns:syriaca="http://syriaca.org/#schema"
+                      context="tei:education"
+                      role="warning">
+                    <sch:let name="ti"
+                        value="doc('https://raw.githubusercontent.com/srophe/srophe-app-data/dev/data/subjects/taxonomyIndex.xml')"/>
+                    <sch:let name="fieldsOfStudy"
+                        value="$ti//listURI[@ref = 'http://syriaca.org/keyword/fields-of-study']/uri"/>
+                    <sch:assert test="@ref = $fieldsOfStudy">SPEAR has a strong preference for using
+                      established URIs when possible but appropriate URIs are not always available in the
+                      Syriaca.org taxonomy. Please consider the following options from the taxonomy before
+                      using your own preferred descriptive term: <sch:value-of select="string-join($fieldsOfStudy, ';  ')"/>
+               </sch:assert>
+                  </sch:rule>
+         </pattern>
          <empty/>
       </element>
    </define>
@@ -4697,6 +4797,35 @@ Suggested values include: 1] sent; 2] received; 3] transmitted; 4] redirected; 5
             <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
             <data type="anyURI"/>
          </attribute>
+         <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
+                  id="SPEAR-langKnown-ref-ref-in-langKnown-constraint-assert-59">
+            <rule context="tei:langKnown/@ref">
+               <sch:assert xmlns="http://www.tei-c.org/ns/1.0"
+                           xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                           xmlns:syriaca="http://syriaca.org/#schema"
+                           test="starts-with(., 'http://syriaca.org/keyword/')">@ref attributes
+                    on the &lt;education&gt; element must point to a Syriaca.org keyword beginning with
+                    "http://syriaca.org/keyword/".</sch:assert>
+            </rule>
+         </pattern> 
+         <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
+                  id="SPEAR-langKnown-ref-ref-in-langKnown-constraint-rule-47">
+            <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
+                      xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                      xmlns:syriaca="http://syriaca.org/#schema"
+                      context="tei:langKnown"
+                      role="warning">
+                    <sch:let name="ti"
+                        value="doc('https://raw.githubusercontent.com/srophe/srophe-app-data/dev/data/subjects/taxonomyIndex.xml')"/>
+                    <sch:let name="languages"
+                        value="$ti//listURI[@ref = 'http://syriaca.org/keyword/languages']/uri"/>
+                    <sch:assert test="@ref = $languages">SPEAR has a strong preference for using
+                      established URIs when possible but appropriate URIs are not always available in the
+                      Syriaca.org taxonomy. Please consider the following options from the taxonomy before
+                      using your own preferred descriptive term: <sch:value-of select="string-join($languages, ';  ')"/>
+               </sch:assert>
+                  </sch:rule>
+         </pattern>
          <empty/>
       </element>
    </define>
@@ -4738,6 +4867,35 @@ Suggested values include: 1] sent; 2] received; 3] transmitted; 4] redirected; 5
             <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
             <data type="anyURI"/>
          </attribute>
+         <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
+                  id="SPEAR-occupation-ref-ref-in-occupation-constraint-assert-61">
+            <rule context="tei:occupation/@ref">
+               <sch:assert xmlns="http://www.tei-c.org/ns/1.0"
+                           xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                           xmlns:syriaca="http://syriaca.org/#schema"
+                           test="starts-with(., 'http://syriaca.org/keyword/')">@ref attributes
+                    on the &lt;education&gt; element must point to a Syriaca.org keyword beginning with
+                    "http://syriaca.org/keyword/".</sch:assert>
+            </rule>
+         </pattern> 
+         <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
+                  id="SPEAR-occupation-ref-ref-in-occupation-constraint-rule-48">
+            <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
+                      xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                      xmlns:syriaca="http://syriaca.org/#schema"
+                      context="tei:occupation"
+                      role="warning">
+                    <sch:let name="ti"
+                        value="doc('https://raw.githubusercontent.com/srophe/srophe-app-data/dev/data/subjects/taxonomyIndex.xml')"/>
+                    <sch:let name="occupations"
+                        value="$ti//listURI[@ref = 'http://syriaca.org/keyword/occupations']/uri"/>
+                    <sch:assert test="@ref = $occupations">SPEAR has a strong preference for using
+                      established URIs when possible but appropriate URIs are not always available in the
+                      Syriaca.org taxonomy. Please consider the following options from the taxonomy before
+                      using your own preferred descriptive term: <sch:value-of select="string-join($occupations, ';  ')"/>
+               </sch:assert>
+                  </sch:rule>
+         </pattern>
          <empty/>
       </element>
    </define>
@@ -4902,26 +5060,53 @@ Suggested values include: 1] sent; 2] received; 3] transmitted; 4] redirected; 5
             <ref name="desc"/>
          </optional>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="SPEAR-relation-reforkeyorname-constraint-assert-57">
+                  id="SPEAR-relation-ref-mutual-act-pass-in-relation-constraint-rule-49">
+            <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
+                      xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                      xmlns:syriaca="http://syriaca.org/#schema"
+                      context="tei:div/tei:listRelation/tei:relation">
+                <sch:let name="ti"
+                        value="doc('https://raw.githubusercontent.com/srophe/srophe-app-data/dev/data/subjects/taxonomyIndex.xml')"/>
+                <sch:let name="mutual"
+                        value="$ti//listURI[@ref = 'http://syriaca.org/keyword/relationships']//uri[@ana = 'mutual']"/>
+                <sch:let name="reciprocal"
+                        value="$ti//listURI[@ref = 'http://syriaca.org/keyword/relationships']//uri[@ana = 'reciprocal']"/>
+                <sch:assert test=".[@ref = $mutual]/@mutual or .[@ref = $reciprocal]/@active">Elements of type &lt;relation&gt; take either a @mutual attribute with mutual
+                  relationship and both @active and @passive attributes with reciprocal
+                  relationships. Mutual relationships include: <sch:value-of select="string-join($mutual, ';  ')"/>. Reciprocal relationships include:
+                    <sch:value-of select="string-join($reciprocal, ';  ')"/>.</sch:assert>
+                <sch:assert test=".[@ref = $mutual]/@mutual or .[@ref = $reciprocal]/@passive">Elements of type &lt;relation&gt; take either a @mutual attribute with mutual
+                  relationship and both @active and @passive attributes with reciprocal
+                  relationships. Mutual relationships include: <sch:value-of select="string-join($mutual, ';  ')"/>. Reciprocal relationships include:
+                    <sch:value-of select="string-join($reciprocal, ';  ')"/>.</sch:assert>
+                <sch:report test=".[@mutual]/@active">A &lt;relation&gt; element cannot take both
+                  @active and @mutual attributes.</sch:report>
+                <sch:report test=".[@mutual]/@passive">A &lt;relation&gt; element cannot take both
+                  @passive and @mutual attributes.</sch:report>
+              </sch:rule>
+         </pattern>
+         <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
+                  id="SPEAR-relation-reforkeyorname-constraint-assert-65">
             <rule context="tei:relation">
                <assert xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                       xmlns:syriaca="http://syriaca.org/#schema"
                        test="@ref or @key or @name">One of the attributes  'name', 'ref' or 'key' must be supplied</assert>
             </rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="SPEAR-relation-activemutual-constraint-report-16">
+                  id="SPEAR-relation-activemutual-constraint-report-18">
             <rule context="tei:relation">
-               <report xmlns:sch="http://purl.oclc.org/dsdl/schematron" test="@active and @mutual">Only one of the attributes
-@active and @mutual may be supplied</report>
+               <report xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                       xmlns:syriaca="http://syriaca.org/#schema"
+                       test="@active and @mutual">Only one of the attributes @active and @mutual may be supplied</report>
             </rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="SPEAR-relation-activepassive-constraint-report-17">
+                  id="SPEAR-relation-activepassive-constraint-report-19">
             <rule context="tei:relation">
                <report xmlns:sch="http://purl.oclc.org/dsdl/schematron"
-                       test="@passive and not(@active)">the attribute 'passive'
-	may be supplied only if the attribute 'active' is
-	supplied</report>
+                       xmlns:syriaca="http://syriaca.org/#schema"
+                       test="@passive and not(@active)">the attribute 'passive' may be supplied only if the attribute 'active' is supplied</report>
             </rule>
          </pattern>
          <optional>
@@ -4952,137 +5137,94 @@ Suggested values include: 1] sent; 2] received; 3] transmitted; 4] redirected; 5
                         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
                         <value>syriaca:RitualKinship</value>
                         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                        <value>part</value>
-                        <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
                      </choice>
                   </oneOrMore>
                </list>
             </attribute>
          </optional>
+         <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
+                  id="SPEAR-relation-type-type-on-relation-constraint-rule-50">
+            <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
+                      xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                      xmlns:syriaca="http://syriaca.org/#schema"
+                      context="tei:div/tei:listEvent/tei:listRelation/tei:relation">
+                    <sch:report test="@type">A &lt;relation&gt; element inside an event factoid
+                      cannot take a @type attribute.</sch:report>
+                  </sch:rule>
+         </pattern>
          <optional>
             <attribute name="ana">
                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
                <list>
                   <zeroOrMore>
-                     <choice>
-                        <value>event</value>
-                        <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     </choice>
+                     <data type="token">
+                        <param name="pattern">(\p{L}|\p{N}|\p{P}|\p{S})+</param>
+                     </data>
                   </zeroOrMore>
                </list>
             </attribute>
          </optional>
+         <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
+                  id="SPEAR-relation-ana-ana-on-event-relation-constraint-rule-51">
+            <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
+                      xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                      xmlns:syriaca="http://syriaca.org/#schema"
+                      context="tei:div/tei:listEvent/tei:listRelation/tei:relation">
+                    <sch:assert test="@ana">A &lt;relation&gt; element inside an event factoid must
+                      have an @ana attribute.</sch:assert>
+                  </sch:rule>
+         </pattern> 
+         <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
+                  id="SPEAR-relation-ana-ana-on-event-relation-constraint-rule-52">
+            <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
+                      xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                      xmlns:syriaca="http://syriaca.org/#schema"
+                      context="tei:div/tei:listEvent/tei:listRelation/tei:relation/@ana">
+                    <sch:assert test=". = 'event'">A &lt;relation&gt; element inside an event
+                      factoid must have an @ana attribute with a value of "event".</sch:assert>
+                  </sch:rule>
+         </pattern> 
+         <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
+                  id="SPEAR-relation-ana-ana-on-event-relation-constraint-rule-53">
+            <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
+                      xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                      xmlns:syriaca="http://syriaca.org/#schema"
+                      context="tei:div/tei:listRelation/tei:relation">
+                    <sch:report test="@ana">The @ana attribute cannot appear in a relation factoid.
+                      It may only be used in a &lt;relation&gt; element describing a relationship
+                      between two events. </sch:report>
+                  </sch:rule>
+         </pattern>
          <attribute name="ref">
             <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-            <choice>
-               <value>snap:AllianceWith</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-               <value>snap:AncestorOf</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-               <value>snap:CasualIntimateRelationshipWith</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-               <value>snap:ChildOf</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-               <value>snap:ChildOfSiblingOf</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-               <value>snap:CousinOf</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-               <value>snap:descendantOf</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-               <value>snap:EnmityFor</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-               <value>snap:ExtendedFamilyOf</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-               <value>snap:ExtendedHouseholdOf</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-               <value>snap:FreedSlaveOf</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-               <value>snap:FriendshipFor</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-               <value>snap:GrandchildOf</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-               <value>snap:GrandparentOf</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-               <value>snap:GreatGrandparentOf</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-               <value>snap:HouseholdOf</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-               <value>snap:HouseSlaveOf</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-               <value>snap:IntimateRelationshipWith</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-               <value>snap:KinOf</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-               <value>snap:LegallyRecognisedRelationshipWith</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-               <value>snap:ParentOf</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-               <value>snap:ProfessionalRelationship</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-               <value>snap:SeriousIntimateRelationshipWith</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-               <value>snap:SiblingOf</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-               <value>snap:SiblingOfParentOf</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-               <value>snap:SlaveOf</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-               <value>snap:SpouseOf</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-               <value>syriaca:Baptism</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-               <value>syriaca:BishopOver</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-               <value>syriaca:BishopOverBishop</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-               <value>syriaca:BishopOverClergy</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-               <value>syriaca:BishopOverMonk</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-               <value>syriaca:CarrierOfLetterBetween</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-               <value>syriaca:Citation</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-               <value>syriaca:ClergyFor</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-               <value>syriaca:CommandOver</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-               <value>syriaca:Commemoration</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-               <value>syriaca:CommuneTogether</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-               <value>syriaca:EpistolaryReferenceTo</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-               <value>syriaca:FellowClergy</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-               <value>syriaca:FellowMonastics</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-               <value>syriaca:Epistolary</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-               <value>syriaca:FollowerOf</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-               <value>syriaca:Judged</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-               <value>syriaca:LegalChargesAgainst</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-               <value>syriaca:MemberOfGroup</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-               <value>syriaca:MonasticHeadOver</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-               <value>syriaca:Ordination</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-               <value>syriaca:PatronOf</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-               <value>syriaca:Petitioned</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-               <value>syriaca:StudentOf</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-               <value>syriaca:ProximateEvent</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-               <value>syriaca:SameEvent</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-            </choice>
+            <data type="token">
+               <param name="pattern">(\p{L}|\p{N}|\p{P}|\p{S})+</param>
+            </data>
          </attribute>
+         <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
+                  id="SPEAR-relation-ref-refs-in-context-constraint-rule-54">
+            <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
+                      xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                      xmlns:syriaca="http://syriaca.org/#schema"
+                      context="tei:div/tei:listRelation/tei:relation/@ref">
+                    <sch:let name="ti"
+                        value="doc('https://raw.githubusercontent.com/srophe/srophe-app-data/dev/data/subjects/taxonomyIndex.xml')"/>
+                    <sch:assert test=". = $ti//listURI[@ref = 'http://syriaca.org/keyword/relationships']//uri">Value must be one of the following from the Syriaca.org taxonomy:
+                        <sch:value-of select="string-join($ti//listURI[@ref = 'http://syriaca.org/keyword/relationships']//uri, ';  ')"/>.</sch:assert>
+                  </sch:rule>
+         </pattern> 
+         <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
+                  id="SPEAR-relation-ref-refs-in-context-constraint-rule-55">
+            <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
+                      xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                      xmlns:syriaca="http://syriaca.org/#schema"
+                      context="tei:div/tei:listEvent/tei:listRelation/tei:relation/@ref">
+                    <sch:let name="ti"
+                        value="doc('https://raw.githubusercontent.com/srophe/srophe-app-data/dev/data/subjects/taxonomyIndex.xml')"/>
+                    <sch:assert test=". = $ti//listURI[@ref = 'http://syriaca.org/keyword/event-relationships']/uri">Value must be one of the following from the Syriaca.org taxonomy:
+                        <sch:value-of select="string-join($ti//listURI[@ref = 'http://syriaca.org/keyword/event-relationships']/uri, ';  ')"/>.</sch:assert>
+                  </sch:rule>
+         </pattern>
          <choice>
             <optional>
                <attribute name="active">
@@ -5159,6 +5301,35 @@ Suggested values include: 1] sent; 2] received; 3] transmitted; 4] redirected; 5
             <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
             <data type="anyURI"/>
          </attribute>
+         <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
+                  id="SPEAR-socecStatus-ref-ref-in-socecStatus-constraint-assert-70">
+            <rule context="tei:socecStatus/@ref">
+               <sch:assert xmlns="http://www.tei-c.org/ns/1.0"
+                           xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                           xmlns:syriaca="http://syriaca.org/#schema"
+                           test="starts-with(., 'http://syriaca.org/keyword/')">@ref attributes
+                    on the &lt;education&gt; element must point to a Syriaca.org keyword beginning with
+                    "http://syriaca.org/keyword/".</sch:assert>
+            </rule>
+         </pattern> 
+         <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
+                  id="SPEAR-socecStatus-ref-ref-in-socecStatus-constraint-rule-56">
+            <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
+                      xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                      xmlns:syriaca="http://syriaca.org/#schema"
+                      context="tei:socecStatus"
+                      role="warning">
+                    <sch:let name="ti"
+                        value="doc('https://raw.githubusercontent.com/srophe/srophe-app-data/dev/data/subjects/taxonomyIndex.xml')"/>
+                    <sch:let name="socioeconomicStatus"
+                        value="$ti//listURI[@ref = 'http://syriaca.org/keyword/socioeconomic-status']/uri"/>
+                    <sch:assert test="@ref = $socioeconomicStatus">SPEAR has a strong preference for using
+                      established URIs when possible but appropriate URIs are not always available in the
+                      Syriaca.org taxonomy. Please consider the following options from the taxonomy before
+                      using your own preferred descriptive term: <sch:value-of select="string-join($socioeconomicStatus, ';  ')"/>
+               </sch:assert>
+                  </sch:rule>
+         </pattern>
          <empty/>
       </element>
    </define>
@@ -5175,13 +5346,51 @@ Suggested values include: 1] sent; 2] received; 3] transmitted; 4] redirected; 5
             </list>
          </attribute>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="SPEAR-state-ref-ref-in-state-constraint-assert-58">
+                  id="SPEAR-state-ref-ref-in-state-constraint-assert-72">
             <rule context="tei:state/@ref">
                <sch:assert xmlns="http://www.tei-c.org/ns/1.0"
                            xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                           xmlns:syriaca="http://syriaca.org/#schema"
                            test="starts-with(., 'http://syriaca.org/keyword/')">@ref attributes
-                    on the &lt;trait&gt; element must point to a Syriaca.org keyword beginning with "http://syriaca.org/keyword/".</sch:assert>
+                    on the &lt;trait&gt; element must point to a Syriaca.org keyword beginning with
+                    "http://syriaca.org/keyword/".</sch:assert>
             </rule>
+         </pattern> 
+         <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
+                  id="SPEAR-state-ref-ref-in-state-constraint-rule-57">
+            <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
+                      xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                      xmlns:syriaca="http://syriaca.org/#schema"
+                      context="tei:state[@type = 'mental']"
+                      role="warning">
+                    <sch:let name="ti"
+                        value="doc('https://raw.githubusercontent.com/srophe/srophe-app-data/dev/data/subjects/taxonomyIndex.xml')"/>
+                    <sch:let name="mentalStates"
+                        value="$ti//listURI[@ref = 'http://syriaca.org/keyword/mental-states']/uri"/>
+                    <sch:assert test="@ref = $mentalStates">SPEAR has a strong preference for using
+                      established URIs when possible but appropriate URIs are not always available in the
+                      Syriaca.org taxonomy. Please consider the following options from the taxonomy before
+                      using your own preferred descriptive term: <sch:value-of select="string-join($mentalStates, ';  ')"/>
+               </sch:assert>
+                  </sch:rule>
+         </pattern> 
+         <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
+                  id="SPEAR-state-ref-ref-in-state-constraint-rule-58">
+            <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
+                      xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                      xmlns:syriaca="http://syriaca.org/#schema"
+                      context="tei:state[@type = 'sanctity']"
+                      role="warning">
+                    <sch:let name="ti"
+                        value="doc('https://raw.githubusercontent.com/srophe/srophe-app-data/dev/data/subjects/taxonomyIndex.xml')"/>
+                    <sch:let name="sanctity"
+                        value="$ti//listURI[@ref = 'http://syriaca.org/keyword/sanctity']/uri"/>
+                    <sch:assert test="@ref = $sanctity">SPEAR has a strong preference for using
+                      established URIs when possible but appropriate URIs are not always available in the
+                      Syriaca.org taxonomy. Please consider the following options from the taxonomy before
+                      using your own preferred descriptive term: <sch:value-of select="string-join($sanctity, ';  ')"/>
+               </sch:assert>
+                  </sch:rule>
          </pattern>
          <attribute name="type">
             <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
@@ -5219,14 +5428,33 @@ Suggested values include: 1] sent; 2] received; 3] transmitted; 4] redirected; 5
             </list>
          </attribute>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="SPEAR-trait-ref-ref-in-trait-constraint-assert-59">
+                  id="SPEAR-trait-ref-ref-in-trait-constraint-assert-75">
             <rule context="tei:trait/@ref">
                <sch:assert xmlns="http://www.tei-c.org/ns/1.0"
                            xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                           xmlns:syriaca="http://syriaca.org/#schema"
                            test="starts-with(., 'http://syriaca.org/keyword/')">@ref attributes
                     on the &lt;trait&gt; element must point to a Syriaca.org keyword starting with
                     "http://syriaca.org/keyword/".</sch:assert>
             </rule>
+         </pattern> 
+         <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
+                  id="SPEAR-trait-ref-ref-in-trait-constraint-rule-59">
+            <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
+                      xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                      xmlns:syriaca="http://syriaca.org/#schema"
+                      context="tei:trait[@type = 'ethnicLabel']"
+                      role="warning">
+                    <sch:let name="ti"
+                        value="doc('https://raw.githubusercontent.com/srophe/srophe-app-data/dev/data/subjects/taxonomyIndex.xml')"/>
+                    <sch:let name="ethnicLabels"
+                        value="$ti//listURI[@ref = 'http://syriaca.org/keyword/ethnicity']/uri"/>
+                    <sch:assert test="@ref = $ethnicLabels">SPEAR has a strong preference for using
+                      established URIs when possible but appropriate URIs are not always available in the
+                      Syriaca.org taxonomy. Please consider the following options from the taxonomy before
+                      using your own preferred descriptive term: <sch:value-of select="string-join($ethnicLabels, ';  ')"/>
+               </sch:assert>
+                  </sch:rule>
          </pattern>
          <empty/>
       </element>

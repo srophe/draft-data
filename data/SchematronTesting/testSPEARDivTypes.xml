@@ -12,12 +12,11 @@
             <idno type="URI">http://syriaca.org/spear/999/tei</idno>
             <availability>
                <licence target="http://creativecommons.org/licenses/by/3.0/">
-                  <p>Distributed under a Creative Commons Attribution 3.0 Unported
-                     License.</p>
+                  <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
                </licence>
             </availability>
          </publicationStmt>
-         
+
          <sourceDesc>
             <listBibl>
                <head>Sources for the Data in this Born Digital Prosopography</head>
@@ -63,7 +62,8 @@
                <person>
                   <persName ref="http://syriaca.org/person/999"/>
                   <birth>
-                     <date when="0001"/><!-- Could also be choice>reg-orig. -->
+                     <date when="0001"/>
+                     <!-- Could also be choice>reg-orig. -->
                      <note type="desc">
                         <persName ref="http://syriaca.org/person/999">[name]</persName> was born in
                         A.D. xxxx. </note>
@@ -110,10 +110,11 @@
                <person>
                   <persName ref="http://syriaca.org/person/999"/>
                   <death>
-                     <date when="0001"/><!-- Could also be choice>reg-orig. -->
+                     <date when="0001"/>
+                     <!-- Could also be choice>reg-orig. -->
                      <note type="desc">
-                        <persName ref="http://syriaca.org/person/999">[name]</persName> died in
-                        A.D. xxxx. </note>
+                        <persName ref="http://syriaca.org/person/999">[name]</persName> died in A.D.
+                        xxxx. </note>
                   </death>
                </person>
             </listPerson>
@@ -152,10 +153,11 @@
             <listPerson>
                <person>
                   <persName ref="http://syriaca.org/person/999"/>
-                  <education ref="http://syriaca.org/keyword/xxx"><!-- Use as many keywords as needed to describe content in note. -->
+                  <education ref="http://syriaca.org/keyword/xxx">
+                     <!-- Use as many keywords as needed to describe content in note. -->
                      <note type="desc">
-                        <persName ref="http://syriaca.org/person/999">[name]</persName> studied....
-                     </note><!-- Use placeName, orgName, and date elements as needed, with URIs whenever possible. -->
+                        <persName ref="http://syriaca.org/person/999">[name]</persName> studied.... </note>
+                     <!-- Use placeName, orgName, and date elements as needed, with URIs whenever possible. -->
                   </education>
                </person>
             </listPerson>
@@ -187,7 +189,8 @@
             <listPerson>
                <person>
                   <persName ref="http://syriaca.org/person/999"/>
-                  <occupation ref="http://syriaca.org/keyword/xxxx"><!-- Use as many keywords as needed to describe content in note. -->
+                  <occupation ref="http://syriaca.org/keyword/xxxx">
+                     <!-- Use as many keywords as needed to describe content in note. -->
                      <note type="desc">
                         <persName ref="http://syriaca.org/person/999">[name]</persName> was a
                         [occupation]. </note>
@@ -211,7 +214,7 @@
                      <placeName ref="http://syriaca.org/place/999"/>
                      <note type="desc">
                         <persName ref="http://syriaca.org/person/999">[name]</persName> resided in
-                        <placeName ref="http://syriaca.org/place/999">[place]</placeName>.
+                           <placeName ref="http://syriaca.org/place/999">[place]</placeName>.
                      </note>
                   </residence>
                </person>
@@ -231,7 +234,8 @@
                   <persName ref="http://syriaca.org/person/999"/>
                   <sex value="M">
                      <note type="desc">
-                        <persName ref="http://syriaca.org/person/2302"> Severus </persName> was male.</note>
+                        <persName ref="http://syriaca.org/person/2302"> Severus </persName> was
+                        male.</note>
                   </sex>
                   <!-- TEI uses sex for biological distinctions, see also the gender factoid. -->
                </person>
@@ -249,7 +253,8 @@
             <listPerson>
                <person>
                   <persName ref="http://syriaca.org/person/999"/>
-                  <socecStatus ref="http://syriaca.org/keyword/xxx"><!-- Use as many keywords as needed to describe content in note. -->
+                  <socecStatus ref="http://syriaca.org/keyword/xxx">
+                     <!-- Use as many keywords as needed to describe content in note. -->
                      <note type="desc">
                         <persName ref="http://syriaca.org/person/999">[name]</persName> was a
                         [rank]. </note>
@@ -336,8 +341,7 @@
                   <trait type="physical" ref="http://syriaca.org/keyword/xxxx">
                      <!-- Use as many keywords as needed to describe content in note. -->
                      <note type="desc">
-                        <persName ref="http://syriaca.org/person/999">[name]</persName> ....
-                     </note>
+                        <persName ref="http://syriaca.org/person/999">[name]</persName> .... </note>
                   </trait>
                </person>
             </listPerson>
@@ -412,8 +416,8 @@
          </div>
          <div uri="http://syriaca.org/spear/999-15" resp="#">
             <listRelation>
-               <relation ref="snap:AncestorOf"
-                  mutual="http://syriaca.org/person/999 http://syriaca.org/person/999"/>
+               <relation ref="snap:SiblingOf"
+                  mutual="http://syriaca.org/person/999 http://syriaca.org/person/999" />
             </listRelation>
             <bibl type="primary">
                <ptr target="http://syriaca.org/work/999"/>
@@ -426,8 +430,8 @@
          </div>
          <div uri="http://syriaca.org/spear/999-16" resp="#">
             <listRelation>
-               <relation ref="snap:AncestorOf"
-                  active="http://syriaca.org/person/999" passive="http://syriaca.org/person/999"/>
+               <relation ref="snap:AncestorOf" active="http://syriaca.org/person/999"
+                  passive="http://syriaca.org/person/999"/>
             </listRelation>
             <bibl type="primary">
                <ptr target="http://syriaca.org/work/999"/>
@@ -446,7 +450,8 @@
                      <choice>
                         <reg>
                            <date when="0001" calendar="Gregorian"> [write date here] </date>
-                           <note>This regularized date was calculated by the SPEAR editor from a non-calendrical dating system such as regnal years, etc.</note>
+                           <note>This regularized date was calculated by the SPEAR editor from a
+                              non-calendrical dating system such as regnal years, etc.</note>
                         </reg>
                         <orig>
                            <date when-custom="xxxx" datingMethod="Seleucid-SyriacMonths"> [write
@@ -455,6 +460,10 @@
                      </choice>
                   </desc>
                </event>
+               <listRelation>
+                  <relation ref="syriaca:SameEvent" ana="event"
+                     mutual="http://syriaca.org/spear/8559-18 http://syriaca.org/spear/8559-7"/>
+               </listRelation>
             </listEvent>
             <bibl type="primary">
                <ptr target="http://syriaca.org/work/999"/>
@@ -469,8 +478,9 @@
                      <choice>
                         <reg>
                            <date when="0001" calendar="Gregorian">[write date here]</date>
-                           <note ana="calculated">This regularized date was calculated by the SPEAR editor from a 
-                              non-calendrical dating system such as regnal years, etc.</note>
+                           <note ana="calculated">This regularized date was calculated by the SPEAR
+                              editor from a non-calendrical dating system such as regnal years,
+                              etc.</note>
                         </reg>
                         <orig>
                            <date datingMethod="regnalYear">[write regnal year here]</date>

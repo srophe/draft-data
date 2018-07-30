@@ -5,15 +5,19 @@
     <sch:pattern>
 
 
+        <!--In ODD already
+            <sch:rule context="tei:trait[@type = 'gender']">
+            <sch:assert
+                test="@ref = 'http://syriaca.org/keyword/eunuch' or @ref = 'http://syriaca.org/keyword/female' or @ref = 'http://syriaca.org/keyword/male' or @ref = 'http://syriaca.org/keyword/nun-as-monk'"
+                >Preferred values for the @ref attribute on a &lt;trait&gt; element with a @type
+                attribute with the value "gender" are: "http://syriaca.org/keyword/eunuch";
+                "http://syriaca.org/keyword/female"; "http://syriaca.org/keyword/male"; and
+                "http://syriaca.org/keyword/nun-as-monk". Please use one of these if applicable.
+                Please use a descriptive term of your choosing if one of these does not
+                apply.</sch:assert>
+            <!-\- I need to update the taxonomy before I can use it to validate the corresponding @ref values. -\->
+        </sch:rule>-->
 
-
-
-
-
-
-
-        
-        
         <!--In ODD already
             <sch:rule context="tei:trait[@type = 'ethnicLabel']" role="warning">
             <sch:let name="ti"
@@ -26,7 +30,7 @@
                 using your own preferred descriptive: <sch:value-of
                     select="string-join($ethnicLabels, ';  ')"/></sch:assert>
         </sch:rule>-->
-        
+
         <!--In ODD already
             <sch:rule context="tei:state[@type = 'mental']" role="warning">
             <sch:let name="ti"
@@ -50,8 +54,8 @@
                 using your own preferred descriptive term: <sch:value-of
                     select="string-join($sanctity, ';  ')"/></sch:assert>
         </sch:rule>-->
-        
-        
+
+
         <!--In ODD already
             <sch:rule context="tei:education" role="warning">
             <sch:let name="ti"
@@ -64,8 +68,8 @@
                 using your own preferred descriptive term: <sch:value-of
                     select="string-join($fieldsOfStudy, ';  ')"/></sch:assert>
         </sch:rule>-->
-        
-        
+
+
         <!--In ODD already
             <sch:rule context="tei:langKnown" role="warning">
             <sch:let name="ti"
@@ -78,8 +82,8 @@
                 using your own preferred descriptive term: <sch:value-of
                     select="string-join($languages, ';  ')"/></sch:assert>
         </sch:rule>-->
-        
-        
+
+
         <!--In ODD already
             <sch:rule context="tei:occupation" role="warning">
             <sch:let name="ti"

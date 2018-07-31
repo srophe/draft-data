@@ -6,6 +6,78 @@
 
 
         <!--In ODD already
+            <sch:rule context="tei:div/tei:listRelation/tei:relation/@mutual">
+            <sch:assert test="every $i in (tokenize(., ' ')) satisfies starts-with($i, 'http://syriaca.org/person/')">@mutual attributes on
+                &lt;relation&gt; elements of relation factoids must contain a properly formatted
+                Syriaca.org person URI that starts with 'http://syriaca.org/person/'.</sch:assert>
+            <sch:report test="every $i in (tokenize(., ' ')) satisfies matches(substring-after($i, 'person/'), '\D')">A properly formatted
+                Syriaca.org person URI ends with a number.</sch:report>
+            <sch:assert test="every $i in (tokenize(., ' ')) satisfies matches(substring-after($i, 'person/'), '\d')">Z properly formatted
+                Syriaca.org person URI ends with a number.</sch:assert>
+        </sch:rule>-->
+        
+        <!--In ODD already
+            <sch:rule context="tei:div/tei:listRelation/tei:relation/@active">
+            <sch:assert test="every $i in (tokenize(., ' ')) satisfies starts-with($i, 'http://syriaca.org/person/')">@active attributes on
+                &lt;relation&gt; elements of relation factoids must contain a properly formatted
+                Syriaca.org person URI that starts with 'http://syriaca.org/person/'.</sch:assert>
+            <sch:report test="every $i in (tokenize(., ' ')) satisfies matches(substring-after($i, 'person/'), '\D')">A properly formatted
+                Syriaca.org person URI ends with a number.</sch:report>
+            <sch:assert test="every $i in (tokenize(., ' ')) satisfies matches(substring-after($i, 'person/'), '\d')">Z properly formatted
+                Syriaca.org person URI ends with a number.</sch:assert>
+        </sch:rule>-->
+        
+        <!--In ODD already
+            <sch:rule context="tei:div/tei:listRelation/tei:relation/@passive">
+            <sch:assert test="every $i in (tokenize(., ' ')) satisfies starts-with($i, 'http://syriaca.org/person/')">@passive attributes on
+                &lt;relation&gt; elements of relation factoids must contain a properly formatted
+                Syriaca.org person URI that starts with 'http://syriaca.org/person/'.</sch:assert>
+            <sch:report test="every $i in (tokenize(., ' ')) satisfies matches(substring-after($i, 'person/'), '\D')">A properly formatted
+                Syriaca.org person URI ends with a number.</sch:report>
+            <sch:assert test="every $i in (tokenize(., ' ')) satisfies matches(substring-after($i, 'person/'), '\d')">Z properly formatted
+                Syriaca.org person URI ends with a number.</sch:assert>
+        </sch:rule>-->
+
+        <!--<sch:rule context="tei:div/tei:listRelation/tei:relation/@active">
+            <sch:assert test="starts-with(., 'http://syriaca.org/person/')">@active attributes on
+                &lt;persName&gt; elements must contain a properly formatted Syriaca.org person URI
+                that starts with 'http://syriaca.org/person/'.</sch:assert>
+            <sch:report test="matches(substring-after(., 'person/'), '\D')">A properly formatted
+                Syriaca.org person URI ends with a number.</sch:report>
+            <sch:assert test="matches(substring-after(., 'person/'), '\d')">A properly formatted
+                Syriaca.org person URI ends with a number.</sch:assert>
+        </sch:rule>
+        
+        
+        <sch:rule context="tei:div/tei:listRelation/tei:relation/@passive">
+            <sch:assert test="starts-with(., 'http://syriaca.org/person/')">@passive attributes on
+                &lt;persName&gt; elements must contain a properly formatted Syriaca.org person URI
+                that starts with 'http://syriaca.org/person/'.</sch:assert>
+            <sch:report test="matches(substring-after(., 'person/'), '\D')">A properly formatted
+                Syriaca.org person URI ends with a number.</sch:report>
+            <sch:assert test="matches(substring-after(., 'person/'), '\d')">A properly formatted
+                Syriaca.org person URI ends with a number.</sch:assert>
+        </sch:rule>-->
+        
+        <!--In ODD already
+            <sch:rule
+            context="tei:div/tei:listEvent/tei:listRelation/tei:relation/@mutual">
+            <sch:assert test="starts-with(., 'http://syriaca.org/spear/')">@mutual attributes on
+                &lt;relation&gt; elements within an event factoid must contain a properly formatted
+                SPEAR factoid URI that starts with 'http://syriaca.org/spear/'.</sch:assert>
+            
+        </sch:rule>-->
+        <!--In ODD already
+            <sch:rule
+            context="tei:div/tei:listEvent/tei:listRelation/tei:relation">
+            <sch:assert test="@mutual">A @mutual attribute is required on &lt;relation&gt; elements within an event factoid.</sch:assert>
+            <sch:report test="@active">@active attributes are not allowed on &lt;relation&gt; elements within an event factoid.</sch:report>
+            <sch:report test="@passive">@passive attributes are not allowed on &lt;relation&gt; elements within an event factoid.</sch:report>
+        </sch:rule>-->
+
+        
+
+        <!--In ODD already
             <sch:rule context="tei:trait[@type = 'gender']">
             <sch:assert
                 test="@ref = 'http://syriaca.org/keyword/eunuch' or @ref = 'http://syriaca.org/keyword/female' or @ref = 'http://syriaca.org/keyword/male' or @ref = 'http://syriaca.org/keyword/nun-as-monk'"

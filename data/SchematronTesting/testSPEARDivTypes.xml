@@ -153,7 +153,7 @@
             <listPerson>
                <person>
                   <persName ref="http://syriaca.org/person/999"/>
-                  <education ref="http://syriaca.org/keyword/xxx">
+                  <education ref="http://syriaca.org/keyword/anthropology http://syriaca.org/keyword/archaeology">
                      <!-- Use as many keywords as needed to describe content in note. -->
                      <note type="desc">
                         <persName ref="http://syriaca.org/person/999">[name]</persName> studied.... </note>
@@ -189,7 +189,7 @@
             <listPerson>
                <person>
                   <persName ref="http://syriaca.org/person/999"/>
-                  <occupation ref="http://syriaca.org/keyword/xxxx">
+                  <occupation ref="http://syriaca.org/keyword/actors http://syriaca.org/keyword/anchorites">
                      <!-- Use as many keywords as needed to describe content in note. -->
                      <note type="desc">
                         <persName ref="http://syriaca.org/person/999">[name]</persName> was a
@@ -253,7 +253,7 @@
             <listPerson>
                <person>
                   <persName ref="http://syriaca.org/person/999"/>
-                  <socecStatus ref="http://syriaca.org/keyword/xxx">
+                  <socecStatus ref="http://syriaca.org/keyword/caesars http://syriaca.org/keyword/comes">
                      <!-- Use as many keywords as needed to describe content in note. -->
                      <note type="desc">
                         <persName ref="http://syriaca.org/person/999">[name]</persName> was a
@@ -275,7 +275,7 @@
                <person>
                   <persName ref="http://syriaca.org/person/999"/>
                   <langKnowledge>
-                     <langKnown ref="http://syriaca.org/keyword/xxxx"/>
+                     <langKnown ref="http://syriaca.org/keyword/arabic-language http://syriaca.org/keyword/ashitha"/>
                      <!-- Find keyword in the Taxonomy module. You may also add a @level of "high," "medium," or "low."-->
                      <note type="desc">
                         <persName ref="http://syriaca.org/person/999">[name]</persName> knew
@@ -296,7 +296,7 @@
             <listPerson>
                <person>
                   <persName ref="http://syriaca.org/person/999"/>
-                  <trait type="ethnicLabel" ref="http://syriaca.org/keyword/xxx">
+                  <trait type="ethnicLabel" ref="http://syriaca.org/keyword/arabs http://syriaca.org/keyword/assyrians">
                      <!-- Find keyword/s in ethnicity category of Taxonomy module. -->
                      <note type="desc">
                         <persName ref="http://syriaca.org/person/999">[name]</persName> was....
@@ -317,7 +317,7 @@
             <listPerson>
                <person>
                   <persName ref="http://syriaca.org/person/999"/>
-                  <trait type="gender" ref="http://syriaca.org/keyword/female">
+                  <trait type="gender" ref="http://syriaca.org/keyword/female http://syriaca.org/keyword/nun-as-monk">
                      <!-- Use as many keywords as needed to describe content in note. -->
                      <note type="desc">
                         <persName ref="http://syriaca.org/person/999">[name]</persName> was ....
@@ -358,7 +358,7 @@
             <listPerson>
                <person>
                   <persName ref="http://syriaca.org/person/999"/>
-                  <state type="mental" ref="http://syriaca.org/keyword/xxx">
+                  <state type="mental" ref="http://syriaca.org/keyword/emotions http://syriaca.org/keyword/free-will">
                      <!-- Use as many keywords as needed to describe content in note. -->
                      <note type="desc">
                         <persName ref="http://syriaca.org/person/999">[name]</persName> was ....
@@ -379,7 +379,7 @@
             <listPerson>
                <person>
                   <persName ref="http://syriaca.org/person/999"/>
-                  <state type="sanctity" ref="http://syriaca.org/keyword/xxxx">
+                  <state type="sanctity" ref="http://syriaca.org/keyword/martyrs http://syriaca.org/keyword/saints">
                      <!-- Use as many keywords as needed to describe content in note. -->
                      <note type="desc">
                         <persName ref="http://syriaca.org/person/999">[name]</persName> was a
@@ -416,7 +416,7 @@
          </div>
          <div uri="http://syriaca.org/spear/999-15" resp="#">
             <listRelation>
-               <relation ref="snap:SiblingOf"
+               <relation ref="snap:SiblingOf" type="snap:AdoptedFamilyRelationship syriaca:AllegedRelationship"
                   mutual="http://syriaca.org/person/999 http://syriaca.org/person/998"/>
             </listRelation>
             <bibl type="primary">

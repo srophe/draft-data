@@ -8,6 +8,15 @@
 
 
         <!--In ODD already
+            <sch:rule
+            context="tei:note[parent::tei:birth or parent::tei:death or parent::tei:education or parent::tei:langKnowledge or parent::tei:nationality or parent::occupation or parent::tei:residence or parent::tei:socecStatus or parent::tei:state or parent::tei:trait]">
+            <sch:assert test="@type = 'desc'">Elements of type &lt;note&gt; must contain the
+                attribute @type="desc" and other &lt;note&gt; types are not allowed in this context.
+                Other types of notes ("incerta", "dubia", and "errata") may appear as children of
+                the &lt;div&gt; element as needed.</sch:assert>
+        </sch:rule>-->
+
+        <!--In ODD already
             <sch:rule context="tei:state[@type = 'sanctity']/@ref" role="warning">
             <sch:let name="ti"
                 value="doc('https://raw.githubusercontent.com/srophe/srophe-app-data/dev/data/subjects/taxonomyIndex.xml')"/>

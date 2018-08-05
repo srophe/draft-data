@@ -1,0 +1,474 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://raw.githubusercontent.com/srophe/srophe-eXist-app/schema-4-spear-edits/srophe-app/documentation/SPEARschema/out/odd_SPEAR.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/srophe/srophe-eXist-app/schema-4-spear-edits/srophe-app/documentation/SPEARschema/out/odd_SPEAR.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title level="a">Severus of Antioch, Letter,<title ref="http://syriaca.org/work/3117">To Thecla the Countess</title></title>
+                <title level="m">SPEAR: Syriac Persons, Events, and Relations</title>
+                <funder>The National Endowment for the Humanities</funder>
+                <principal>Daniel L. Schwartz</principal>
+                <funder>Texas A&amp;M University</funder>
+                <principal>Daniel L. Schwartz</principal>
+                <editor role="general" ref="http://syriaca.org/documentation/editors.xml#dschwartz">Daniel L. Schwartz</editor>
+                <editor role="general" ref="http://syriaca.org/documentation/editors.xml#dmichelson">David A. Michelson</editor>
+                <editor role="creator" ref="http://syriaca.org/documentation/editors.xml#dschwartz">Daniel L. Schwartz</editor>
+                <respStmt>
+                    <resp></resp>
+                    <name ref="http://syriaca.org/documentation/editors.xml#dschwartz">Daniel L. Schwartz</name>
+                </respStmt>
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0"/>
+            </editionStmt>
+            <publicationStmt>
+                <authority>Syriaca.org: The Syriac Reference Portal</authority>
+                <idno type="URI">http://syriaca.org/spear/3117/tei</idno> <!-- REPLACE THE #### WITH THE URI NUMBER OF THE ASSIGNED LETTER -->
+                <availability>
+                    <licence target="http://creativecommons.org/licenses/by/3.0/">
+                        <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
+                    </licence>
+                </availability>
+                <date></date>
+            </publicationStmt>
+            <sourceDesc>
+                <listBibl>
+                    <head>Sources for the Data in this Born Digital Prosopography</head>
+                    <bibl type="primary">
+                        <title xml:lang="en">The Sixth Book of the Select Letters of Severus, Patriarch of Antioch in the Syriac Version of Athanasius of Nisibis</title>
+                        <title type="sub">Translation, III.1 - XI.1</title>
+                        <title type="part">To Thecla the Countess</title>
+                        <author><persName ref="http://syriaca.org/person/51">Severus of Antioch</persName></author>
+                        <editor><persName ref="http://syriaca.org/person/403">E. W. Brooks</persName></editor>
+                        <ptr target="http://syriaca.org/bibl/669"/>
+                    </bibl>
+                    <bibl type="primary">
+                        <title>To Thecla the Countess</title>
+                        <author><persName ref="http://syriaca.org/person/51"/>Severus of Antioch</author>
+                        <ptr target="http://syriaca.org/work/3117"/>
+                    </bibl>
+                </listBibl>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <editorialDecl>
+                <p>
+                </p>
+            </editorialDecl>
+        </encodingDesc>
+        <profileDesc>
+        </profileDesc>
+        <revisionDesc>
+            <change/>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div uri="http://syriaca.org/spear/3117-" resp="#ktorabi #dschwartz">
+                <listPerson>
+                    <person>
+                        <persName ref="http://syriaca.org/person/anonymous1"><!-- No URI for Countess Thecla-->
+                            Thecla the Countess
+                            </persName>
+                    </person>
+                </listPerson>
+                <bibl type="primary">
+                    <biblScope type="pp">
+                        <ptr target="#bib3117-1"/>423</biblScope>
+                </bibl>
+            </div>
+            <div uri="http://syriaca.org/spear/3117-" resp="#ktorabi #dschwartz">
+                <listPerson>
+                    <person>
+                        <persName ref="http://syriaca.org/person/anonymous1"/>
+                        <sex value="F">
+                            Female
+                        </sex>
+                    </person>
+                </listPerson>
+                <bibl type="primary">
+                    <biblScope type="pp">
+                        <ptr target="#bib3117-1"/>423</biblScope>
+                </bibl>
+            </div>
+            <div uri="http://syriaca.org/spear/3117-" resp="#ktorabi #dschwartz">
+                <listPerson>
+                    <person>
+                        <state type="office">
+                            <desc>
+                                <persName ref="http://syriaca.org/person/anonymous1">
+                                    Thecla
+                                </persName>
+                                was a Countess.
+                            </desc>
+                        </state>
+                    </person>
+                </listPerson>
+                <bibl type="primary">
+                    <biblScope type="pp">
+                        <ptr target="#bib3117-1"/>423</biblScope>
+                </bibl>
+            </div>
+            <div uri="http://syriaca.org/spear/3117-" resp="#ktorabi #dschwartz">
+                <listRelation>
+                        <relation type="epistolary" name="syriaca:SenderOfLetterTo" active="http://syriaca.org/person/51" passive="http://syriaca.org/person/anonymous1"/>
+                    </listRelation>
+                    <bibl type="primary">
+                        <biblScope type="pp">
+                            <ptr target="#bib3117-1"/>423</biblScope>
+                    </bibl>
+                </div> 
+            <div uri="http://syriaca.org/spear/3117-" resp="#ktorabi #dschwartz">
+                <listPerson>
+                    <person>
+                        <persName ref="http://syriaca.org/person/anonymous2"><!-- No URI for Stephen the grammarian -->
+                            The grammarian Stephen
+                        </persName>
+                    </person>
+                </listPerson>
+                <bibl type="primary">
+                    <biblScope type="pp">
+                        <ptr target="#bib3117-1"/>423</biblScope>
+                </bibl>
+            </div>
+            <div uri="http://syriaca.org/spear/3117-" resp="#ktorabi #dschwartz">
+                <listPerson>
+                    <person>
+                        <persName ref="http://syriaca.org/person/anonymou2"/>
+                        <sex value="M">
+                            Male
+                        </sex>
+                    </person>
+                </listPerson>
+                <bibl type="primary">
+                    <biblScope type="pp">
+                        <ptr target="#bib3117-1"/>423</biblScope>
+                </bibl>
+            </div>
+            <div uri="http://syriaca.org/spear/3117-" resp="#ktorabi #dschwartz">
+                <listPerson>
+                    <person>
+                        <state type="occupation">
+                            <desc>
+                                <persName ref="http://syriaca.org/person/anonymous2">
+                                    Stephen
+                                </persName>
+                                was a grammarian.
+                            </desc>
+                        </state>
+                    </person>
+                </listPerson>
+                <bibl type="primary">
+                    <biblScope type="pp">
+                        <ptr target="#bib3117-1"/>423</biblScope>
+                </bibl>
+            </div>
+            <div uri="http://syriaca.org/spear/3117-" resp="#ktorabi #dschwartz">
+                <listRelation>
+                    <relation type="epistolary" name="syriaca:SenderOfLetterTo" active="http://syriaca.org/person/anonymous1" passive="http://syriaca.org/person/anonymous2"/>
+                </listRelation>
+                <bibl type="primary">
+                    <biblScope type="pp">
+                        <ptr target="#bib3117-1"/>423-424</biblScope>
+                </bibl>
+            </div> 
+            <div uri="http://syriaca.org/spear/3117-" resp="#ktorabi #dschwartz">
+                <listPerson>
+                    <person>
+                        <persName ref="http://syriaca.org/person/2568">
+                            Theotecnus the presbyter
+                        </persName>
+                    </person>
+                </listPerson>
+                <bibl type="primary">
+                    <biblScope type="pp">
+                        <ptr target="#bib3117-1"/>424</biblScope>
+                </bibl>
+            </div>
+            <div uri="http://syriaca.org/spear/3117-" resp="#ktorabi #dschwartz">
+                <listPerson>
+                    <person>
+                        <persName ref="http://syriaca.org/person/2568"/>
+                        <sex value="M">
+                            Male
+                        </sex>
+                    </person>
+                </listPerson>
+                <bibl type="primary">
+                    <biblScope type="pp">
+                        <ptr target="#bib3117-1"/>424</biblScope>
+                </bibl>
+            </div>
+            <div uri="http://syriaca.org/spear/3117-" resp="#ktorabi #dschwartz">
+                <listPerson>
+                    <person>
+                        <state type="vocation">
+                            <desc>
+                                <persName ref="http://syriaca.org/person/2568">
+                                    Theotecnus
+                                </persName>
+                                was a presbyter.
+                            </desc>
+                        </state>
+                    </person>
+                </listPerson>
+                <bibl type="primary">
+                    <biblScope type="pp">
+                        <ptr target="#bib3117-1"/>424</biblScope>
+                </bibl>
+            </div>
+            <div uri="http://syriaca.org/spear/3117-" resp="#ktorabi #dschwartz">
+                <listRelation>
+                    <relation type="epistolary" name="syriaca:SenderOfLetterTo" active="http://syriaca.org/person/51" passive="http://syriaca.org/person/2568"/>
+                </listRelation>
+                <bibl type="primary">
+                    <biblScope type="pp">
+                        <ptr target="#bib3117-1"/>424</biblScope>
+                </bibl>
+            </div> 
+            <div uri="http://syriaca.org/spear/3117-" resp="#ktorabi #dschwartz">
+                <listPerson>
+                    <person>
+                        <persName ref="http://syriaca.org/person/anonymous3">
+                            A certain baby seized with severe illness
+                        </persName>
+                    </person>
+                </listPerson>
+                <bibl type="primary">
+                    <biblScope type="pp">
+                        <ptr target="#bib3117-1"/>425</biblScope>
+                </bibl>
+            </div>
+            <div uri="http://syriaca.org/spear/3117-" resp="#ktorabi #dschwartz">
+                <listPerson>
+                    <person>
+                        <persName ref="http://syriaca.org/person/anonymous3"/>
+                        <sex value="M">
+                            Male
+                        </sex>
+                    </person>
+                </listPerson>
+                <bibl type="primary">
+                    <biblScope type="pp">
+                        <ptr target="#bib3117-1"/>425</biblScope>
+                </bibl>
+            </div>
+            <div uri="http://syriaca.org/spear/3117-" resp="#ktorabi #dschwartz">
+                <listPerson>
+                    <person>
+                        <persName ref="http://syriaca.org/person/anonymous4"><!-- I do not think that this presbyter is Theotecnus, mentioned earlier in the letter -->
+                            a presbyter
+                        </persName>
+                    </person>
+                </listPerson>
+                <bibl type="primary">
+                    <biblScope type="pp">
+                        <ptr target="#bib3117-1"/>425</biblScope>
+                </bibl>
+            </div>
+            <div uri="http://syriaca.org/spear/3117-" resp="#ktorabi #dschwartz">
+                <listPerson>
+                    <person>
+                        <persName ref="http://syriaca.org/person/anonymous4"/>
+                        <sex value="M">
+                            Male
+                        </sex>
+                    </person>
+                </listPerson>
+                <bibl type="primary">
+                    <biblScope type="pp">
+                        <ptr target="#bib3117-1"/>425</biblScope>
+                </bibl>
+            </div>
+            <div uri="http://syriaca.org/spear/3117-" resp="#ktorabi #dschwartz">
+                <listPerson>
+                    <person>
+                        <state type="vocation">
+                            <desc>
+                                <persName ref="http://syriaca.org/person/anonymous4">
+                                    This man  
+                                </persName>
+                                was a presbyter.
+                            </desc>
+                        </state>
+                    </person>
+                </listPerson>
+                <bibl type="primary">
+                    <biblScope type="pp">
+                        <ptr target="#bib3117-1"/>425</biblScope>
+                </bibl>
+            </div>
+            <div uri="http://syriaca.org/spear/3117-" resp="#ktorabi #dschwartz">
+                <listPerson>
+                    <person>
+                        <persName ref="http://syriaca.org/person/anonymous5">
+                            a deacon, who in the absence of the
+                            <persName ref="http://syriaca.org/person/anonymous4">
+                                presbyter  
+                            </persName>
+                            baptized the
+                        </persName>
+                        <persName ref="http://syriaca.org/person/anonymous3">
+                            baby seized with severe illness
+                        </persName>
+                    </person>
+                </listPerson>
+                <bibl type="primary">
+                    <biblScope type="pp">
+                        <ptr target="#bib3117-1"/>425</biblScope>
+                </bibl>
+            </div>
+            <div uri="http://syriaca.org/spear/3117-" resp="#ktorabi #dschwartz">
+                <listPerson>
+                    <person>
+                        <persName ref="http://syriaca.org/person/anonymous5"/>
+                        <sex value="M">
+                            Male
+                        </sex>
+                    </person>
+                </listPerson>
+                <bibl type="primary">
+                    <biblScope type="pp">
+                        <ptr target="#bib3117-1"/>425</biblScope>
+                </bibl>
+            </div>
+            <div uri="http://syriaca.org/spear/3117-" resp="#ktorabi #dschwartz">
+                <listPerson>
+                    <person>
+                        <state type="vocation">
+                            <desc>
+                                <persName ref="http://syriaca.org/person/anonymous5">
+                                    This man
+                                </persName>
+                                was a deacon.
+                            </desc>
+                        </state>
+                    </person>
+                </listPerson>
+                <bibl type="primary">
+                    <biblScope type="pp">
+                        <ptr target="#bib3117-1"/>425</biblScope>
+                </bibl>
+            </div>
+            <div uri="http://syriaca.org/spear/3117-" resp="#ktorabi #dschwartz">
+                <listRelation>
+                    <relation type="professional" name="snap:ProfessionalRelationship" mutual="http://syriaca.org/person/anonymous4 http://syriaca.org/person/anonymous5"/>
+                </listRelation>
+                <bibl type="primary">
+                    <biblScope type="pp">
+                        <ptr target="#bib3117-1"/>425</biblScope>
+                </bibl>
+            </div> 
+            <div uri="http://syriaca.org/spear/3117-" resp="#ktorabi #dschwartz">
+                <listPerson>
+                    <person>
+                        <persName ref="http://syriaca.org/person/anonymous6">
+                            A strange and unknown boy who could not repeat any mystic symbol
+                        </persName>
+                    </person>
+                </listPerson>
+                <bibl type="primary">
+                    <biblScope type="pp">
+                        <ptr target="#bib3117-1"/>426</biblScope>
+                </bibl>
+            </div>
+            <div uri="http://syriaca.org/spear/3117-" resp="#ktorabi #dschwartz">
+                <listPerson>
+                    <person>
+                        <persName ref="http://syriaca.org/person/anonymous6"/>
+                        <sex value="M">
+                            Male
+                        </sex>
+                    </person>
+                </listPerson>
+                <bibl type="primary">
+                    <biblScope type="pp">
+                        <ptr target="#bib3117-1"/>426</biblScope>
+                </bibl>
+            </div>
+            <div uri="http://syriaca.org/spear/3117-" resp="#ktorabi #dschwartz">
+                <listPerson>
+                    <person>
+                        <persName ref="http://syriaca.org/person/2439">
+                            Theodore, the Bishop of 
+                            <placeName>
+                                Olba
+                            </placeName>
+                            in
+                            <placeName>
+                                Isauria
+                            </placeName>
+                        </persName>
+                    </person>
+                </listPerson>
+                <bibl type="primary">
+                    <biblScope type="pp">
+                        <ptr target="#bib3117-1"/>427</biblScope>
+                </bibl>
+            </div>
+            <div uri="http://syriaca.org/spear/3117-" resp="#ktorabi #dschwartz">
+                <listPerson>
+                    <person>
+                        <persName ref="http://syriaca.org/person/2439"/>
+                        <sex value="M">
+                            Male
+                        </sex>
+                    </person>
+                </listPerson>
+                <bibl type="primary">
+                    <biblScope type="pp">
+                        <ptr target="#bibl3117-1"/>427</biblScope>
+                </bibl>
+            </div>
+            <div uri="http://syriaca.org/spear/3117-" resp="#ktorabi #dschwartz">
+                <listPerson>
+                    <person>
+                        <state type="vocation">
+                            <desc>
+                                <persName ref="http://syriaca.org/person/2439"> 
+                                    Theodore
+                                </persName> 
+                                was Bishop of 
+                                <placeName>
+                                    Olba 
+                                </placeName>
+                                in
+                                <placeName>
+                                    Isauria.
+                                </placeName>
+                            </desc>
+                        </state>
+                    </person>
+                </listPerson>
+                <bibl type="primary">
+                    <biblScope type="pp">
+                        <ptr target="#bib3117-1"/>427</biblScope>
+                </bibl>
+            </div>
+            <div uri="http://syriaca.org/spear/3117-" resp="#ktorabi #dschwartz">
+                <listRelation>
+                    <relation type="epistolary" name="syriaca:SenderOfLetterTo" active="http://syriaca.org/person/51" passive="http://syriaca.org/person/2439"></relation>
+                </listRelation>
+                <bibl type="primary">
+                    <biblScope type="pp">
+                        <ptr target="#bibl3117"/>427</biblScope>
+                </bibl>
+            </div>
+        </body>
+        <back>                      
+            <listBibl>
+                <head>Works Cited</head>
+                <bibl type="primary" xml:id="bibl3117-1">
+                    <title xml:lang="en">The Sixth Book of the Select Letters of Severus, Patriarch of Antioch in the Syriac Version of Athanasius of Nisibis</title>
+                    <title type="sub">Translation, III.1 - XI.1</title>
+                    <title type="part">To Thecla the Countess</title>
+                    <author><persName ref="http://syriaca.org/person/51">Severus of Antioch</persName></author>
+                    <editor><persName ref="http://syriaca.org/person/403">E. W. Brooks</persName></editor>
+                    <ptr target="http://syriaca.org/bibl/669"/>
+                </bibl>
+            </listBibl>
+        </back>
+    </text>
+</TEI>

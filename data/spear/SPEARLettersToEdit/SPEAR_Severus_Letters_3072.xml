@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://raw.githubusercontent.com/srophe/srophe-eXist-app/schema-4-spear-edits/srophe-app/documentation/SPEARschema/out/odd_SPEAR.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/srophe/srophe-eXist-app/schema-4-spear-edits/srophe-app/documentation/SPEARschema/out/odd_SPEAR.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title level="a">Severus of Antioch, Letter,<title ref="http://syriaca.org/work/3072">To Simeon, Bishop of Chalcis</title></title>
+                <title level="m">SPEAR: Syriac Persons, Events, and Relations</title>
+                <funder>The National Endowment for the Humanities</funder>
+                <principal>Daniel L. Schwartz</principal>
+                <funder>Texas A&amp;M University</funder>
+                <principal>Daniel L. Schwartz</principal>
+                <editor role="general" ref="http://syriaca.org/editors.xml#dschwartz">Daniel L. Schwartz</editor>
+                <editor role="general" ref="http://syriaca.org/editors.xml#dmichelson">David A. Michelson</editor>
+                <editor role="creator" ref="http://syriaca.org/editors.xml#dschwartz">Daniel L. Schwartz</editor>
+                <respStmt>
+                    <resp></resp>
+                    <name ref="http://syriaca.org/editors.xml#dschwartz">Daniel L. Schwartz</name>
+                </respStmt>
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0"/>
+            </editionStmt>
+            <publicationStmt>
+                <authority>Syriaca.org: The Syriac Reference Portal</authority>
+                <idno type="URI">http://syriaca.org/spear/3072/tei</idno> <!-- REPLACE THE #### WITH THE URI NUMBER OF THE ASSIGNED LETTER -->
+                <availability>
+                    <licence target="http://creativecommons.org/licenses/by/3.0/">
+                        <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
+                    </licence>
+                </availability>
+                <date></date>
+            </publicationStmt>
+            <sourceDesc>
+                <listBibl>
+                    <head>Sources for the Data in this Born Digital Prosopography</head>
+                    <bibl type="primary">
+                        <title xml:lang="en">The Sixth Book of the Select Letters of Severus, Patriarch of Antioch in the Syriac Version of Athanasius of Nisibis</title>
+                        <title type="sub">Translation, I.1 - II.3</title>
+                        <title type="part">To Simeon, Bishop of Chalcis</title>
+                        <author><persName ref="http://syriaca.org/person/51">Severus of Antioch</persName></author>
+                        <editor><persName ref="http://syriaca.org/person/403">E. W. Brooks</persName></editor>
+                        <ptr target="http://syriaca.org/bibl/668"/>
+                    </bibl>
+                    <bibl type="primary">
+                        <title>To Simeon, Bishop of Chalcis</title>
+                        <author><persName ref="http://syriaca.org/person/51"/>Severus of Antioch</author>
+                        <ptr target="http://syriaca.org/work/3072"/>
+                    </bibl>
+                </listBibl>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <editorialDecl>
+                <p>
+                </p>
+            </editorialDecl>
+        </encodingDesc>
+        <profileDesc>
+        </profileDesc>
+        <revisionDesc>
+            <change/>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div uri="http://syriaca.org/spear/3072-" resp="#ktorabi #dschwartz">
+                <listPerson>
+                    <person>
+                        <persName ref="http://syriaca.org/person/2554">
+                            Simeon, Bishop of  
+                            <placeName>
+                                Chalcis
+                            </placeName>
+                        </persName>
+                    </person>
+                </listPerson>
+                <bibl type="primary">
+                    <biblScope type="pp">
+                        <ptr target="#bib3072-1"/>106</biblScope>
+                </bibl>
+            </div>
+            <div uri="http://syriaca.org/spear/3072-" resp="#ktorabi #dschwartz">
+                <listPerson>
+                    <person>
+                        <persName ref="http://syriaca.org/person/2554"/>
+                        <sex value="M">Male</sex>
+                    </person>
+                </listPerson>
+                <bibl type="primary">
+                    <biblScope type="pp">
+                        <ptr target="#bib3072"/>106</biblScope>
+                </bibl>
+            </div>
+            <div uri="http://syriaca.org/spear/3072-" resp="#ktorabi #dschwartz">
+                <listPerson>
+                    <person>
+                        <state type="vocation">
+                            <desc>
+                                <persName ref="http://syriaca.org/person/2554">
+                                    Simeon
+                                </persName>
+                                was a bishop of
+                                <placeName>
+                                    Chalcis
+                                </placeName>
+                                in
+                                <placeName>
+                                    Syria
+                                </placeName>
+                            </desc>
+                        </state>
+                    </person>
+                </listPerson>
+                <bibl type="primary">
+                    <biblScope type="pp">
+                        <ptr target="#bib3072"/>106</biblScope>
+                </bibl>
+            </div>
+            <div uri="http://syriaca.org/spear/3072-" resp="#ktorabi #dschwartz">
+                <listRelation>
+                    <relation type="epistolary" name="syriaca:RecipientOfLetterFrom" active="http://syriaca.org/person/2554" passive="http://syriaca.org/person/51"/>
+                </listRelation>
+                <bibl type="primary">
+                    <biblScope type="pp">
+                        <ptr target="#bib3072-1"/>106</biblScope>
+                </bibl>
+            </div>
+            <div uri="http://syriaca.org/spear/3072-" resp="#ktorabi #dschwartz">
+                <listPerson>
+                    <personGrp>
+                        <persName><persName ref="http://syriaca.org/person/anonymi1"/>
+                            the men from the village of
+                            <placeName>
+                                Thelhadin
+                            </placeName>
+                            in
+                            <date notBefore="0513" notAfter="0518">
+                                A.D. 513-518
+                            </date>
+                        </persName>
+                    </personGrp>
+                </listPerson>
+                <bibl type="primary">
+                    <biblScope type="pp">
+                        <ptr target="#bib3072-1"/>106</biblScope>
+                </bibl>
+            </div>
+            <div uri="http://syriaca.org/spear/3072-" resp="#ktorabi #dschwartz">
+                <listPerson>
+                    <person>
+                        <persName ref="http://syriaca.org/person/2406">
+                            the devout presbyter Ignatius  
+                            </persName>
+                    </person>
+                </listPerson>
+                <bibl type="primary">
+                    <biblScope type="pp">
+                        <ptr target="#bib3072-1"/>107</biblScope>
+                </bibl>
+            </div>
+            <div uri="http://syriaca.org/spear/3072-" resp="#ktorabi #dschwartz">
+                <listPerson>
+                    <person>
+                        <persName ref="http://syriaca.org/person/2406"/>
+                        <sex value="M">Male</sex>
+                    </person>
+                </listPerson>
+                <bibl type="primary">
+                    <biblScope type="pp">
+                        <ptr target="#bib3072"/>107</biblScope>
+                </bibl>
+            </div>
+            <div uri="http://syriaca.org/spear/3072-" resp="#ktorabi #dschwartz">
+                <listPerson>
+                    <person>
+                        <state type="vocation">
+                            <desc>
+                                <persName ref="http://syriaca.org/person/2406">
+                                    Ignatius
+                                </persName>
+                                was a presbyter
+                                </desc>
+                        </state>
+                    </person>
+                </listPerson>
+                <bibl type="primary">
+                    <biblScope type="pp">
+                        <ptr target="#bib3072"/>107</biblScope>
+                </bibl>
+            </div>
+            <div uri="http://syriaca.org/spear/3072-" resp="#ktorabi #dschwartz">
+                <listPerson>
+                    <person>
+                        <persName ref="http://syriaca.org/person/anonymous1">
+                            the periodeutes  
+                        </persName>
+                    </person>
+                </listPerson>
+                <bibl type="primary">
+                    <biblScope type="pp">
+                        <ptr target="#bib3072-1"/>107</biblScope>
+                </bibl>
+            </div>
+            <div uri="http://syriaca.org/spear/3072-" resp="#ktorabi #dschwartz">
+                <listPerson>
+                    <person>
+                        <persName ref="http://syriaca.org/person/anonymous1"/>
+                        <sex value="M">Male</sex>
+                    </person>
+                </listPerson>
+                <bibl type="primary">
+                    <biblScope type="pp">
+                        <ptr target="#bib3072"/>107</biblScope>
+                </bibl>
+            </div>
+            <div uri="http://syriaca.org/spear/3072-" resp="#ktorabi #dschwartz">
+                <listPerson>
+                    <person>
+                        <state type="vocation">
+                            <desc>
+                                <persName ref="http://syriaca.org/person/anonymous1">
+                                    the periodeutes
+                                </persName>
+                                was a visiting priest
+                            </desc>
+                        </state>
+                    </person>
+                </listPerson>
+                <bibl type="primary">
+                    <biblScope type="pp">
+                        <ptr target="#bib3072"/>107</biblScope>
+                </bibl>
+            </div>
+            <div uri="http://syriaca.org/spear/3072-" resp="#ktorabi #dschwartz">
+                <listRelation>
+                    <relation type="professional" name="snap:ProfessionalRelationship" mutual="http://syriaca.org/person/51 http://syriaca.org/person/2406 http://syriaca.org/person/anonymous1"/>
+                </listRelation>
+                <bibl type="primary">
+                    <biblScope type="pp">
+                        <ptr target="#bib3072-1"/>107</biblScope>
+                </bibl>
+            </div>
+            <div uri="http://syriaca.org/spear/3072-" resp="#ktorabi #dschwartz">
+                <listRelation>
+                    <relation type="religious" name="snap:EnmityFor" ana="alleged" active="http://syriaca.org/person/51" passive="http://syriaca.org/person/anonymous1"/>
+                </listRelation>
+                <bibl type="primary">
+                    <biblScope type="pp">
+                        <ptr target="#bib3072-1"/>108</biblScope>
+                </bibl>
+            </div>
+            <div uri="http://syriaca.org/spear/3072-" resp="#ktorabi #dschwartz">
+                <listPerson>
+                    <person>
+                        <persName ref="http://syriaca.org/person/2408">
+                            Sergius 
+                        </persName>
+                    </person>
+                </listPerson>
+                <bibl type="primary">
+                    <biblScope type="pp">
+                        <ptr target="#bib3072-1"/>108</biblScope>
+                </bibl>
+            </div>
+            <div uri="http://syriaca.org/spear/3072-" resp="#ktorabi #dschwartz">
+                <listPerson>
+                    <person>
+                        <persName ref="http://syriaca.org/person/2408"/>
+                        <sex value="M">Male</sex>
+                    </person>
+                </listPerson>
+                <bibl type="primary">
+                    <biblScope type="pp">
+                        <ptr target="#bib3072"/>108</biblScope>
+                </bibl>
+            </div>
+            <div uri="http://syriaca.org/spear/3072-" resp="#ktorabi #dschwartz">
+                <listPerson>
+                    <person>
+                        <state type="vocation">
+                            <desc>
+                                <persName ref="http://syriaca.org/person/2408">
+                                    Sergius
+                                </persName>
+                                was a the Bishop of
+                                <placeName>
+                                    Cyrrhus
+                                </placeName>
+                            </desc>
+                        </state>
+                    </person>
+                </listPerson>
+                <bibl type="primary">
+                    <biblScope type="pp">
+                        <ptr target="#bib3072"/>108</biblScope>
+                </bibl>
+            </div>
+            <div uri="http://syriaca.org/spear/3072-" resp="#ktorabi #dschwartz">
+                <listPerson>
+                    <person>
+                        <persName ref="http://syriaca.org/person/2407">
+                            Marion 
+                        </persName>
+                    </person>
+                </listPerson>
+                <bibl type="primary">
+                    <biblScope type="pp">
+                        <ptr target="#bib3072-1"/>108</biblScope>
+                </bibl>
+            </div>
+            <div uri="http://syriaca.org/spear/3072-" resp="#ktorabi #dschwartz">
+                <listPerson>
+                    <person>
+                        <persName ref="http://syriaca.org/person/2407"/>
+                        <sex value="M">Male</sex>
+                    </person>
+                </listPerson>
+                <bibl type="primary">
+                    <biblScope type="pp">
+                        <ptr target="#bib3072"/>108</biblScope>
+                </bibl>
+            </div>
+            <div uri="http://syriaca.org/spear/3072-" resp="#ktorabi #dschwartz">
+                <listPerson>
+                    <person>
+                        <state type="vocation">
+                            <desc>
+                                <persName ref="http://syriaca.org/person/2407">
+                                    Marion
+                                </persName>
+                                was a the Bishop of
+                                <placeName>
+                                    Sura
+                                </placeName>
+                            </desc>
+                        </state>
+                    </person>
+                </listPerson>
+                <bibl type="primary">
+                    <biblScope type="pp">
+                        <ptr target="#bib3072"/>108</biblScope>
+                </bibl>
+            </div>
+            <div uri="http://syriaca.org/spear/3072-" resp="#ktorabi #dschwartz"> 
+                <listPerson>
+                    <person>
+                        <persName ref="http://syriaca.org/person/2544">
+                            presbyter Cosmas
+                        </persName>
+                    </person>
+                </listPerson>
+                <bibl type="primary">
+                    <biblScope type="pp">
+                        <ptr target="#bib3072-1"/>109</biblScope>
+                </bibl>
+            </div>
+            <div uri="http://syriaca.org/spear/3072-" resp="#ktorabi #dschwartz"> 
+                <listPerson>
+                    <person>
+                        <persName ref="http://syriaca.org/person/2544"/>
+                        <sex value="M">Male</sex>
+                    </person>
+                </listPerson>
+                <bibl type="primary">
+                    <biblScope type="pp">
+                        <ptr target="#bib3072-1"/>109</biblScope>
+                </bibl>
+            </div>
+            <div uri="http://syriaca.org/spear/3072-" resp="#ktorabi #dschwartz"> 
+                <listPerson>
+                    <person>
+                        <state type="vocation">
+                            <desc>
+                                <persName ref="http://syriaca.org/person/2544"> 
+                                    Cosmas was a
+                                </persName>
+                                presbyter of
+                                <placeName>
+                                    Chalcis 
+                                </placeName>
+                                in
+                                <placeName>
+                                    Syria
+                                </placeName>
+                                </desc>
+                        </state>
+                    </person>
+                </listPerson>
+                <bibl type="primary">
+                    <biblScope type="pp">
+                        <ptr target="#bib3072-1"/>109</biblScope>
+                </bibl>
+            </div>
+            <div uri="http://syriaca.org/spear/3072-" resp="#ktorabi #dschwartz">
+                <listRelation>
+                    <relation type="clerical" name="syriaca:ClergyUnderBishop" active="http://syriaca.org/person/2544" passive="http://syriaca.org/person/2554"/>
+                </listRelation>
+                <bibl type="primary">
+                    <biblScope type="pp">
+                        <ptr target="#bib3072-1"/>109</biblScope>
+                </bibl>
+            </div>
+        </body>
+        <back>
+            <listBibl>
+                <head>Works Cited</head>
+                <bibl type="primary" xml:id="bibl3072-1">
+                    <title xml:lang="en">The Sixth Book of the Select Letters of Severus, Patriarch of Antioch in the Syriac Version of Athanasius of Nisibis</title>
+                    <title type="sub">Translation, I.1 - II.3</title>
+                    <title type="part">To Simeon, Bishop of Chalcis</title>
+                    <author><persName ref="http://syriaca.org/person/51">Severus of Antioch</persName></author>
+                    <editor><persName ref="http://syriaca.org/person/403">E. W. Brooks</persName></editor>
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                </bibl>
+            </listBibl>
+        </back>
+    </text>
+</TEI>

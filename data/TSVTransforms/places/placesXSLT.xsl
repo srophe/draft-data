@@ -61,7 +61,14 @@
         select="syriaca:index-of-starts-with($headings, 'name')"/>
     <xsl:variable name="headword" as="xs:integer*"
         select="syriaca:index-of-starts-with($headings, 'nameHeadword')"/>
-
+    <xsl:variable name="name1" as="xs:integer*" select="syriaca:index-of-starts-with($headings, 'name1')"/>
+    <xsl:variable name="name2" as="xs:integer*" select="syriaca:index-of-starts-with($headings, 'name2')"/>
+    <xsl:variable name="name3" as="xs:integer*" select="syriaca:index-of-starts-with($headings, 'name3')"/>
+    <xsl:variable name="name4" as="xs:integer*" select="syriaca:index-of-starts-with($headings, 'name4')"/>
+    <xsl:variable name="name5" as="xs:integer*" select="syriaca:index-of-starts-with($headings, 'name5')"/>
+    <xsl:variable name="name6" as="xs:integer*" select="syriaca:index-of-starts-with($headings, 'name6')"/>
+    <xsl:variable name="name7" as="xs:integer*" select="syriaca:index-of-starts-with($headings, 'name7')"/>
+    <xsl:variable name="name8" as="xs:integer*" select="syriaca:index-of-starts-with($headings, 'name8')"/>
     <xsl:variable name="source1" as="xs:integer*" select="index-of($headings, 'sourceURI.name1')"/>
     <xsl:variable name="source2" as="xs:integer*" select="index-of($headings, 'sourceURI.name2')"/>
     <xsl:variable name="source3" as="xs:integer*" select="index-of($headings, 'sourceURI.name3')"/>
@@ -80,7 +87,7 @@
     <xsl:variable name="pages8" as="xs:integer*" select="index-of($headings, 'pages.name8')"/>
     <xsl:variable name="abstract" as="xs:integer"
         select="syriaca:index-of-starts-with($headings, 'abstract')"/>
-    <xsl:variable name="SourceAbsEn" as="xs:integer*"
+    <xsl:variable name="sourceAbsEn" as="xs:integer*"
         select="index-of($headings, 'sourceURI.abstract.en')"/>
     <xsl:variable name="PagesAbsEn" as="xs:integer*"
         select="index-of($headings, 'pages.abstract.en')"/>
@@ -110,7 +117,7 @@
             <xsl:variable name="URI" select="concat('http://syriaca.org/place/', $values[$uriNo])"/>
             <xsl:variable name="xmlID" select="concat('place-', $values[$uriNo])"/>
             <xsl:variable name="biblAbsEn" as="xs:string"
-                select="concat(normalize-space($values[$SourceAbsEn]), '*', normalize-space($values[$PagesAbsEn]))"/>
+                select="concat(normalize-space($values[$sourceAbsEn]), '*', normalize-space($values[$PagesAbsEn]))"/>
             <xsl:variable name="biblName1" as="xs:string"
                 select="concat(normalize-space($values[$source1]), '*', normalize-space($values[$pages1]))"/>
             <xsl:variable name="biblName2" as="xs:string"
@@ -153,7 +160,6 @@
                                 <sponsor>Syriaca.org: The Syriac Reference Portal</sponsor>
                                 <funder>The National Endowment for the Humanities</funder>
                                 <funder>The International Balzan Prize Foundation</funder>
-                                <funder>Qatar National Research Foundation</funder>
                                 <principal>David A. Michelson</principal>
                                 <editor role="general"
                                     ref="http://syriaca.org/documentation/editors.xml#tcarlson"
@@ -283,6 +289,30 @@
                                                   <xsl:attribute name="syriaca-tags"
                                                   select="'#syriaca-headword'"/>
                                                 </xsl:if>
+                                                <xsl:if test="current() = $name1">
+                                                    <xsl:attribute name="source" select="$biblName1"></xsl:attribute>
+                                                </xsl:if>
+                                                <xsl:if test="current() = $name2">
+                                                    <xsl:attribute name="source" select="$biblName2"></xsl:attribute>
+                                                </xsl:if>
+                                                <xsl:if test="current() = $name3">
+                                                    <xsl:attribute name="source" select="$biblName3"></xsl:attribute>
+                                                </xsl:if>
+                                                <xsl:if test="current() = $name4">
+                                                    <xsl:attribute name="source" select="$biblName4"></xsl:attribute>
+                                                </xsl:if>
+                                                <xsl:if test="current() = $name5">
+                                                    <xsl:attribute name="source" select="$biblName5"></xsl:attribute>
+                                                </xsl:if>
+                                                <xsl:if test="current() = $name6">
+                                                    <xsl:attribute name="source" select="$biblName6"></xsl:attribute>
+                                                </xsl:if>
+                                                <xsl:if test="current() = $name6">
+                                                    <xsl:attribute name="source" select="$biblName7"></xsl:attribute>
+                                                </xsl:if>
+                                                <xsl:if test="current() = $name8">
+                                                    <xsl:attribute name="source" select="$biblName8"></xsl:attribute>
+                                                </xsl:if>
                                                 <xsl:value-of select="$values[current()]"/>
                                             </placeName>
                                         </xsl:if>
@@ -300,6 +330,7 @@
                                                 <xsl:value-of select="$values[current()]"/>
                                             </desc>
                                         </xsl:if>
+                                        
                                     </xsl:for-each>
 
                                     <state type="existence"/>

@@ -15,7 +15,6 @@
             <sponsor>Syriaca.org: The Syriac Reference Portal</sponsor>
             <funder>The National Endowment for the Humanities</funder>
             <funder>The International Balzan Prize Foundation</funder>
-            <funder>Qatar National Research Foundation</funder>
             <principal>David A. Michelson</principal>
             <editor role="general"
                     ref="http://syriaca.org/documentation/editors.xml#tcarlson">Thomas A. Carlson</editor>
@@ -114,23 +113,29 @@
       <body>
          <listPlace>
             <place xml:id="place-2610" type="diocese">
-               <placeName xml:id="name2610-" xml:lang="en" syriaca-tags="#syriaca-headword">Antioch</placeName>
-               <placeName xml:id="name2610-" xml:lang="syr" syriaca-tags="#syriaca-headword">ܐܢܛܝܘܟܝܐ</placeName>
-               <placeName xml:id="name2610-" xml:lang="en">Antioch</placeName>
-               <placeName xml:id="name2610-" xml:lang="syr">ܐܢܛܝܘܟܝܐ</placeName>
-               <placeName xml:id="name2610-" xml:lang="syr">ܐܢܛܝܟܝܐ</placeName>
+               <placeName xml:id="name2610-1" xml:lang="en" syriaca-tags="#syriaca-headword">Antioch</placeName>
+               <placeName xml:id="name2610-2" xml:lang="syr" syriaca-tags="#syriaca-headword">ܐܢܛܝܘܟܝܐ</placeName>
+               <placeName xml:id="name2610-3"
+                          xml:lang="en"
+                          source="#bib2610-1">Antioch</placeName>
+               <placeName xml:id="name2610-4"
+                          xml:lang="syr"
+                          source="bib2610-2">ܐܢܛܝܘܟܝܐ</placeName>
+               <placeName xml:id="name2610-5"
+                          xml:lang="syr"
+                          source="#bib2610-3">ܐܢܛܝܟܝܐ</placeName>
                <desc xml:id="abstract-en-2610" xml:lang="en">The diocese associated with the city of Antioch</desc>
                <state type="existence"/>
                <idno type="URI">http://syriaca.org/place/2610</idno>
-               <bibl xml:id="bib2610-">
+               <bibl xml:id="bib2610-1">
                   <ptr target="http://syriaca.org/bibl/668"/>
                   <citedRange unit="pp">223</citedRange>
                </bibl>
-               <bibl xml:id="bib2610-">
+               <bibl xml:id="bib2610-2">
                   <ptr target="http://syriaca.org/bibl/666"/>
                   <citedRange unit="pp">249</citedRange>
                </bibl>
-               <bibl xml:id="bib2610-">
+               <bibl xml:id="bib2610-3">
                   <ptr target="http://syriaca.org/bibl/659"/>
                   <citedRange unit="pp">12</citedRange>
                </bibl>

@@ -117,27 +117,27 @@
             <xsl:variable name="URI" select="concat('http://syriaca.org/place/', $values[$uriNo])"/>
             <xsl:variable name="xmlID" select="concat('place-', $values[$uriNo])"/>
             <xsl:variable name="biblAbsEn" as="xs:string"
-                select="concat(normalize-space($values[$sourceAbsEn]), '*', normalize-space($values[$PagesAbsEn]))"/>
+                select="concat(normalize-space($values[$sourceAbsEn]), '$', normalize-space($values[$PagesAbsEn]))"/>
             <xsl:variable name="biblName1" as="xs:string"
-                select="concat(normalize-space($values[$source1]), '*', normalize-space($values[$pages1]))"/>
+                select="concat(normalize-space($values[$source1]), '$', normalize-space($values[$pages1]))"/>
             <xsl:variable name="biblName2" as="xs:string"
-                select="concat(normalize-space($values[$source2]), '*', normalize-space($values[$pages2]))"/>
+                select="concat(normalize-space($values[$source2]), '$', normalize-space($values[$pages2]))"/>
             <xsl:variable name="biblName3" as="xs:string"
-                select="concat(normalize-space($values[$source3]), '*', normalize-space($values[$pages3]))"/>
+                select="concat(normalize-space($values[$source3]), '$', normalize-space($values[$pages3]))"/>
             <xsl:variable name="biblName4" as="xs:string"
-                select="concat(normalize-space($values[$source4]), '*', normalize-space($values[$pages4]))"/>
+                select="concat(normalize-space($values[$source4]), '$', normalize-space($values[$pages4]))"/>
             <xsl:variable name="biblName5" as="xs:string"
-                select="concat(normalize-space($values[$source5]), '*', normalize-space($values[$pages5]))"/>
+                select="concat(normalize-space($values[$source5]), '$', normalize-space($values[$pages5]))"/>
             <xsl:variable name="biblName6" as="xs:string"
-                select="concat(normalize-space($values[$source6]), '*', normalize-space($values[$pages6]))"/>
+                select="concat(normalize-space($values[$source6]), '$', normalize-space($values[$pages6]))"/>
             <xsl:variable name="biblName7" as="xs:string"
-                select="concat(normalize-space($values[$source7]), '*', normalize-space($values[$pages7]))"/>
+                select="concat(normalize-space($values[$source7]), '$', normalize-space($values[$pages7]))"/>
             <xsl:variable name="biblName8" as="xs:string"
-                select="concat(normalize-space($values[$source8]), '*', normalize-space($values[$pages8]))"/>
+                select="concat(normalize-space($values[$source8]), '$', normalize-space($values[$pages8]))"/>
             <xsl:variable name="allBibls" as="xs:string*"
                 select="$biblAbsEn, $biblName1, $biblName2, $biblName3, $biblName4, $biblName5, $biblName6, $biblName7, $biblName8"/>
             <xsl:variable name="distinctBibls" as="xs:string*" select="distinct-values($allBibls)"/>
-            <xsl:variable name="count" select="position()"/>
+            
 
             <xsl:result-document method="xml" indent="yes" href="tei/{$values[$uriNo]}.xml">
                 <!-- link to the custom Syriaca schema -->
@@ -193,9 +193,9 @@
                                                     <xsl:variable name="id"
                                                         select="concat('#bib', $values[$uriNo], '-')"/>
                                                     <xsl:variable name="target" as="xs:string"
-                                                        select="substring-before(., '*')"/>
+                                                        select="substring-before(., '$')"/>
                                                     <xsl:variable name="range" as="xs:string"
-                                                        select="substring-after(., '*')"/>
+                                                        select="substring-after(., '$')"/>
                                                     <xsl:if test="starts-with(., 'http://syriaca.org/')">
                                                         <bibl>
                                                             <ptr target="{$id}"/>
@@ -358,14 +358,16 @@
                                         </xsl:if>
                                     </xsl:for-each>
 
+
+                                    <!-- This should create a bibl element for each distinct bibl. -->
                                     <xsl:for-each select="$distinctBibls">
                                         <xsl:variable name="id"
                                             select="concat('bib', $values[$uriNo], '-')"/>
                                         <xsl:variable name="target" as="xs:string"
-                                            select="substring-before(., '*')"/>
+                                            select="substring-before(., '$')"/>
                                         <xsl:variable name="range" as="xs:string"
-                                            select="substring-after(., '*')"/>
-                                        <xsl:if test="starts-with(., 'http://syriaca.org/')">
+                                            select="substring-after(., '$')"/>
+                                        <xsl:if test="starts-with(., 'http://syriaca.org/')"><!-- This is not creating a bibl for non-syriaca sources, i.e. pleiades, etc. Try the following: test="string-length(normalize-space()) Also, test whether there is something following the $ before creating the citedRange element-->
                                             <bibl xml:id="{$id}">
                                                 <ptr target="{$target}"/>
                                                 <citedRange unit="pp">

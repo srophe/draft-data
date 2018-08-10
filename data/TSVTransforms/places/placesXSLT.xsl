@@ -365,7 +365,7 @@
                                     </xsl:for-each>
 
 
-                                    <!-- This should create a bibl element for each distinct bibl. -->
+                                    <!-- This creates a bibl element for each distinct bibl. -->
                                     <xsl:for-each select="$distinctBibls">
                                         <xsl:variable name="id"
                                             select="concat('bib', $values[$uriNo], '-')"/>
@@ -373,15 +373,13 @@
                                             select="substring-before(., '$')"/>
                                         <xsl:variable name="range" as="xs:string"
                                             select="substring-after(., '$')"/>
+                                        <xsl:variable name="ana" as="xs:string" select="concat($target, '$', $range)"/>
                                         <xsl:if test="starts-with(., 'http')">
-                                            <bibl xml:id="{$id}">
+                                            <bibl xml:id="{$id}" ana="{$ana}">
                                                 <ptr target="{$target}"/>
                                                 <citedRange unit="pp">
                                                   <xsl:value-of select="$range"/>
                                                 </citedRange>
-                                                <note>
-                                                    <xsl:attribute name='n' select="concat($target, '$', $range)"/>
-                                                </note>
                                             </bibl>
                                         </xsl:if>
                                     </xsl:for-each>

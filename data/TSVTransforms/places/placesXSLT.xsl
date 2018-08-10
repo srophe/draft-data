@@ -87,6 +87,7 @@
     <xsl:variable name="pages8" as="xs:integer*" select="index-of($headings, 'pages.name8')"/>
     <xsl:variable name="abstract" as="xs:integer"
         select="syriaca:index-of-starts-with($headings, 'abstract')"/>
+    <xsl:variable name="abstractEn" as="xs:integer" select="index-of($headings, 'abstract.en')"/><!-- Additional variables would be needed if spreadsheet included abstracts in different languages. -->
     <xsl:variable name="sourceAbsEn" as="xs:integer*"
         select="index-of($headings, 'sourceURI.abstract.en')"/>
     <xsl:variable name="PagesAbsEn" as="xs:integer*"
@@ -327,6 +328,9 @@
                                         <xsl:if
                                             test="string-length(normalize-space($values[current()])) gt 0">
                                             <desc xml:id="{$id}" xml:lang="{$lg}">
+                                                <xsl:if test="current() = $abstractEn">
+                                                    <xsl:attribute name="source" select="$biblAbsEn"></xsl:attribute>
+                                                </xsl:if>
                                                 <xsl:value-of select="$values[current()]"/>
                                             </desc>
                                         </xsl:if>
@@ -367,19 +371,19 @@
                                             select="substring-before(., '$')"/>
                                         <xsl:variable name="range" as="xs:string"
                                             select="substring-after(., '$')"/>
-                                        <xsl:if test="starts-with(., 'http://syriaca.org/')"><!-- This is not creating a bibl for non-syriaca sources, i.e. pleiades, etc. Try the following: test="string-length(normalize-space()) Also, test whether there is something following the $ before creating the citedRange element-->
+                                        <xsl:if test="string-length(normalize-space()) gt 3"><!-- This is a bit clumsy. Since I add the '$' I set this to 3 to avoid empty data appearing here.-->
                                             <bibl xml:id="{$id}">
                                                 <ptr target="{$target}"/>
                                                 <citedRange unit="pp">
                                                   <xsl:value-of select="$range"/>
                                                 </citedRange>
+                                                <note>
+                                                    <xsl:attribute name='n' select="concat($target, '$', $range)"/>
+                                                </note>
                                             </bibl>
                                         </xsl:if>
                                     </xsl:for-each>
                                     
-                                    
-
-
                                 </place>
                             </listPlace>
                         </body>

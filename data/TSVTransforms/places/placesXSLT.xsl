@@ -329,7 +329,9 @@
                                             test="string-length(normalize-space($values[current()])) gt 0">
                                             <desc xml:id="{$id}" xml:lang="{$lg}">
                                                 <xsl:if test="current() = $abstractEn">
-                                                    <xsl:attribute name="source" select="$biblAbsEn"></xsl:attribute>
+                                                    <xsl:if test="starts-with($biblAbsEn, 'http')">
+                                                        <xsl:attribute name="source" select="$biblAbsEn"/>
+                                                    </xsl:if>
                                                 </xsl:if>
                                                 <xsl:value-of select="$values[current()]"/>
                                             </desc>
@@ -371,7 +373,7 @@
                                             select="substring-before(., '$')"/>
                                         <xsl:variable name="range" as="xs:string"
                                             select="substring-after(., '$')"/>
-                                        <xsl:if test="string-length(normalize-space()) gt 3"><!-- This is a bit clumsy. Since I add the '$' I set this to 3 to avoid empty data appearing here.-->
+                                        <xsl:if test="starts-with(., 'http')">
                                             <bibl xml:id="{$id}">
                                                 <ptr target="{$target}"/>
                                                 <citedRange unit="pp">
@@ -392,4 +394,14 @@
             </xsl:result-document>
         </xsl:for-each>
     </xsl:template>
+    <!--Putting this here and hoping it would work was a longshot. But at least I've got some useable code.
+        <xsl:template match="place/placeName">
+        <xsl:variable name="position">
+            <xsl:number format="1" level="any"/>
+        </xsl:variable>
+        <xsl:variable name="nameNo" select="concat(@xml:id, $position)"></xsl:variable>
+        <placeName>
+            <xsl:attribute name="xml:id" select="$nameNo"/>
+        </placeName>
+    </xsl:template>-->
 </xsl:stylesheet>

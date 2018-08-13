@@ -4,12 +4,12 @@
     exclude-result-prefixes="xs" version="3.0" xmlns:syriaca="http://syriaca.org">
     <xsl:output method="xml" indent="yes"/>
 
-    
+
     <!-- NEEDS WORK!
         I can create all of the data needed for a record but I cannot yet link up the correct elements with the correct bibls.
         I will do this manually for now and come back to this when I have more time.
     -->
-    
+
     <!-- syriaca:index-of-starts-with()
         $headings as xs:string+ (sequence of heading values in row 1)
         $substring as xs:string (offsets of headings that start with $substring are returned)
@@ -61,14 +61,22 @@
         select="syriaca:index-of-starts-with($headings, 'name')"/>
     <xsl:variable name="headword" as="xs:integer*"
         select="syriaca:index-of-starts-with($headings, 'nameHeadword')"/>
-    <xsl:variable name="name1" as="xs:integer*" select="syriaca:index-of-starts-with($headings, 'name1')"/>
-    <xsl:variable name="name2" as="xs:integer*" select="syriaca:index-of-starts-with($headings, 'name2')"/>
-    <xsl:variable name="name3" as="xs:integer*" select="syriaca:index-of-starts-with($headings, 'name3')"/>
-    <xsl:variable name="name4" as="xs:integer*" select="syriaca:index-of-starts-with($headings, 'name4')"/>
-    <xsl:variable name="name5" as="xs:integer*" select="syriaca:index-of-starts-with($headings, 'name5')"/>
-    <xsl:variable name="name6" as="xs:integer*" select="syriaca:index-of-starts-with($headings, 'name6')"/>
-    <xsl:variable name="name7" as="xs:integer*" select="syriaca:index-of-starts-with($headings, 'name7')"/>
-    <xsl:variable name="name8" as="xs:integer*" select="syriaca:index-of-starts-with($headings, 'name8')"/>
+    <xsl:variable name="name1" as="xs:integer*"
+        select="syriaca:index-of-starts-with($headings, 'name1')"/>
+    <xsl:variable name="name2" as="xs:integer*"
+        select="syriaca:index-of-starts-with($headings, 'name2')"/>
+    <xsl:variable name="name3" as="xs:integer*"
+        select="syriaca:index-of-starts-with($headings, 'name3')"/>
+    <xsl:variable name="name4" as="xs:integer*"
+        select="syriaca:index-of-starts-with($headings, 'name4')"/>
+    <xsl:variable name="name5" as="xs:integer*"
+        select="syriaca:index-of-starts-with($headings, 'name5')"/>
+    <xsl:variable name="name6" as="xs:integer*"
+        select="syriaca:index-of-starts-with($headings, 'name6')"/>
+    <xsl:variable name="name7" as="xs:integer*"
+        select="syriaca:index-of-starts-with($headings, 'name7')"/>
+    <xsl:variable name="name8" as="xs:integer*"
+        select="syriaca:index-of-starts-with($headings, 'name8')"/>
     <xsl:variable name="source1" as="xs:integer*" select="index-of($headings, 'sourceURI.name1')"/>
     <xsl:variable name="source2" as="xs:integer*" select="index-of($headings, 'sourceURI.name2')"/>
     <xsl:variable name="source3" as="xs:integer*" select="index-of($headings, 'sourceURI.name3')"/>
@@ -87,7 +95,8 @@
     <xsl:variable name="pages8" as="xs:integer*" select="index-of($headings, 'pages.name8')"/>
     <xsl:variable name="abstract" as="xs:integer"
         select="syriaca:index-of-starts-with($headings, 'abstract')"/>
-    <xsl:variable name="abstractEn" as="xs:integer" select="index-of($headings, 'abstract.en')"/><!-- Additional variables would be needed if spreadsheet included abstracts in different languages. -->
+    <xsl:variable name="abstractEn" as="xs:integer" select="index-of($headings, 'abstract.en')"/>
+    <!-- Additional variables would be needed if spreadsheet included abstracts in different languages. -->
     <xsl:variable name="sourceAbsEn" as="xs:integer*"
         select="index-of($headings, 'sourceURI.abstract.en')"/>
     <xsl:variable name="PagesAbsEn" as="xs:integer*"
@@ -112,7 +121,7 @@
         oXygen needs the / to make the xslt fire. The command line needs this name attribute to fire. "Parsing unprocessed text", i.e. non xml.-->
 
         <!-- data begin at row 2; set upper limit for testing  with something like $tsv[position() ge 2 and position() lt 12]-->
-        <xsl:for-each select="$tsv[position() ge 2]">
+        <xsl:for-each select="$tsv[position() ge 2 and position() lt 12]">
             <xsl:variable name="values" as="xs:string+" select="tokenize(current(), '\t')"/>
             <xsl:message select="concat('Processing ', $values[$uriNo])"/>
             <xsl:variable name="URI" select="concat('http://syriaca.org/place/', $values[$uriNo])"/>
@@ -138,7 +147,7 @@
             <xsl:variable name="allBibls" as="xs:string*"
                 select="$biblAbsEn, $biblName1, $biblName2, $biblName3, $biblName4, $biblName5, $biblName6, $biblName7, $biblName8"/>
             <xsl:variable name="distinctBibls" as="xs:string*" select="distinct-values($allBibls)"/>
-            
+
 
             <xsl:result-document method="xml" indent="yes" href="tei/{$values[$uriNo]}.xml">
                 <!-- link to the custom Syriaca schema -->
@@ -191,17 +200,18 @@
                                         <p>This entry incorporates copyrighted material from the
                                             following work(s): <listBibl>
                                                 <xsl:for-each select="$distinctBibls">
-                                                    <xsl:variable name="id"
-                                                        select="concat('#bib', $values[$uriNo], '-')"/>
-                                                    <xsl:variable name="target" as="xs:string"
-                                                        select="substring-before(., '$')"/>
-                                                    <xsl:variable name="range" as="xs:string"
-                                                        select="substring-after(., '$')"/>
-                                                    <xsl:if test="starts-with(., 'http://syriaca.org/')">
-                                                        <bibl>
-                                                            <ptr target="{$id}"/>
-                                                        </bibl>
-                                                    </xsl:if>
+                                                  <xsl:variable name="id"
+                                                  select="concat('#bib', $values[$uriNo], '-')"/>
+                                                  <xsl:variable name="target" as="xs:string"
+                                                  select="substring-before(., '$')"/>
+                                                  <xsl:variable name="range" as="xs:string"
+                                                  select="substring-after(., '$')"/>
+                                                  <xsl:if
+                                                  test="starts-with(., 'http://syriaca.org/')">
+                                                  <bibl>
+                                                  <ptr target="{$id}"/>
+                                                  </bibl>
+                                                  </xsl:if>
                                                 </xsl:for-each>
                                             </listBibl>
                                             <note>used under a Creative Commons Attribution license
@@ -291,28 +301,28 @@
                                                   select="'#syriaca-headword'"/>
                                                 </xsl:if>
                                                 <xsl:if test="current() = $name1">
-                                                    <xsl:attribute name="source" select="$biblName1"></xsl:attribute>
+                                                  <xsl:attribute name="source" select="$biblName1"/>
                                                 </xsl:if>
                                                 <xsl:if test="current() = $name2">
-                                                    <xsl:attribute name="source" select="$biblName2"></xsl:attribute>
+                                                  <xsl:attribute name="source" select="$biblName2"/>
                                                 </xsl:if>
                                                 <xsl:if test="current() = $name3">
-                                                    <xsl:attribute name="source" select="$biblName3"></xsl:attribute>
+                                                  <xsl:attribute name="source" select="$biblName3"/>
                                                 </xsl:if>
                                                 <xsl:if test="current() = $name4">
-                                                    <xsl:attribute name="source" select="$biblName4"></xsl:attribute>
+                                                  <xsl:attribute name="source" select="$biblName4"/>
                                                 </xsl:if>
                                                 <xsl:if test="current() = $name5">
-                                                    <xsl:attribute name="source" select="$biblName5"></xsl:attribute>
+                                                  <xsl:attribute name="source" select="$biblName5"/>
                                                 </xsl:if>
                                                 <xsl:if test="current() = $name6">
-                                                    <xsl:attribute name="source" select="$biblName6"></xsl:attribute>
+                                                  <xsl:attribute name="source" select="$biblName6"/>
                                                 </xsl:if>
                                                 <xsl:if test="current() = $name6">
-                                                    <xsl:attribute name="source" select="$biblName7"></xsl:attribute>
+                                                  <xsl:attribute name="source" select="$biblName7"/>
                                                 </xsl:if>
                                                 <xsl:if test="current() = $name8">
-                                                    <xsl:attribute name="source" select="$biblName8"></xsl:attribute>
+                                                  <xsl:attribute name="source" select="$biblName8"/>
                                                 </xsl:if>
                                                 <xsl:value-of select="$values[current()]"/>
                                             </placeName>
@@ -329,14 +339,14 @@
                                             test="string-length(normalize-space($values[current()])) gt 0">
                                             <desc xml:id="{$id}" xml:lang="{$lg}">
                                                 <xsl:if test="current() = $abstractEn">
-                                                    <xsl:if test="starts-with($biblAbsEn, 'http')">
-                                                        <xsl:attribute name="source" select="$biblAbsEn"/>
-                                                    </xsl:if>
+                                                  <xsl:if test="starts-with($biblAbsEn, 'http')">
+                                                  <xsl:attribute name="source" select="$biblAbsEn"/>
+                                                  </xsl:if>
                                                 </xsl:if>
                                                 <xsl:value-of select="$values[current()]"/>
                                             </desc>
                                         </xsl:if>
-                                        
+
                                     </xsl:for-each>
 
                                     <state type="existence"/>
@@ -373,33 +383,51 @@
                                             select="substring-before(., '$')"/>
                                         <xsl:variable name="range" as="xs:string"
                                             select="substring-after(., '$')"/>
-                                        <xsl:variable name="ana" as="xs:string" select="concat($target, '$', $range)"/>
+                                        <xsl:variable name="ana" as="xs:string"
+                                            select="concat($target, '$', $range)"/>
                                         <xsl:if test="starts-with(., 'http')">
                                             <bibl xml:id="{$id}" ana="{$ana}">
                                                 <ptr target="{$target}"/>
-                                                <citedRange unit="pp">
+                                                <xsl:if
+                                                  test="string-length(normalize-space($range)) gt 0"><!-- There might be no range, as in a citation to Pleiades. -->
+                                                  <citedRange unit="pp">
                                                   <xsl:value-of select="$range"/>
-                                                </citedRange>
+                                                  </citedRange>
+                                                </xsl:if>
                                             </bibl>
                                         </xsl:if>
                                     </xsl:for-each>
-                                    
                                 </place>
                             </listPlace>
                         </body>
                     </text>
                 </TEI>
+                <!--I don't know how I can do this in one xslt. I don't think I can shift from operating on the data in the spreadsheet to operating on the result document.
+                    Perhaps I can create strings for all combinations of data/source/range, then create a bibl and xml:id for each source/range portion, then create data with links to the bibl xml:id.
+                    I'll give it a try when I get the time.
+                <xsl:for-each select="place/placeName">
+                    <xsl:variable name="position">
+                        <xsl:number format="1"/>
+                    </xsl:variable>
+                    <xsl:variable name="nameNo" select="concat(@xml:id, $position)"/>
+                    <placeName>
+                        <xsl:attribute name="xml:id" select="$nameNo"/>
+                        <xsl:attribute name="xml:lang" select="@xml:lang"/>
+                        <xsl:attribute name="source" select="@source"/>
+                        <xsl:apply-templates/>
+                    </placeName>
+                </xsl:for-each>
+                <xsl:for-each select="place/bibl">
+                    <xsl:variable name="position">
+                        <xsl:number format="1"/>
+                    </xsl:variable>
+                    <xsl:variable name="biblNo" select="concat(@xml:id, $position)"/>
+                    <bibl>
+                        <xsl:attribute name="xml:id" select="$biblNo"/>
+                        <xsl:apply-templates/>
+                    </bibl>
+                </xsl:for-each>-->
             </xsl:result-document>
         </xsl:for-each>
     </xsl:template>
-    <!--Putting this here and hoping it would work was a longshot. But at least I've got some useable code.
-        <xsl:template match="place/placeName">
-        <xsl:variable name="position">
-            <xsl:number format="1" level="any"/>
-        </xsl:variable>
-        <xsl:variable name="nameNo" select="concat(@xml:id, $position)"></xsl:variable>
-        <placeName>
-            <xsl:attribute name="xml:id" select="$nameNo"/>
-        </placeName>
-    </xsl:template>-->
 </xsl:stylesheet>

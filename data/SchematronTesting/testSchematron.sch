@@ -8,6 +8,36 @@
 
 
         <!--In ODD already
+            <sch:rule context="tei:event/tei:ptr/@target">
+            <sch:assert test="count(distinct-values(tokenize(., ' '))) = count(tokenize(., ' '))">
+                The same keyword URI may not appear twice as the value of the @type attribute. </sch:assert>
+            <sch:assert
+                test="
+                    every $i in (tokenize(., ' '))
+                        satisfies starts-with($i, 'http://syriaca.org/keyword/')"
+                >@target attributes on the &lt;ptr&gt; element must contain a properly formatted
+                Syriaca.org keyword URI that starts with 'http://syriaca.org/keyword/'.</sch:assert>
+        </sch:rule>-->
+
+
+        <!--In ODD already
+            <sch:rule context="tei:event/tei:ptr/@target" role="warning">
+            <sch:let name="ti"
+                value="doc('https://raw.githubusercontent.com/srophe/srophe-app-data/dev/data/subjects/taxonomyIndex.xml')"/>
+            <sch:let name="taxonomyAllURIs" value="$ti//listURI[@type = 'taxonomyAllURIs']/uri"/>
+            <sch:let name="distintURIs" value="tokenize(., ' ')"/>
+            <sch:assert
+                test="
+                    every $i in $distintURIs
+                        satisfies $i = $taxonomyAllURIs"
+                >SPEAR has a strong preference for using established URIs when possible but
+                appropriate URIs are not always available in the Syriaca.org taxonomy. For the
+                @target attribute on a &lt;ptr&gt; element within an event factoid, please look for
+                the appropriate keyword(s) in the Syriaca.org Taxonomy. If you cannot find an
+                appropriate term, apply a preferred term of your choosing.</sch:assert>
+        </sch:rule>-->
+
+        <!--In ODD already
             <sch:rule
             context="tei:note[parent::tei:birth or parent::tei:death or parent::tei:education or parent::tei:langKnowledge or parent::tei:nationality or parent::occupation or parent::tei:residence or parent::tei:socecStatus or parent::tei:state or parent::tei:trait]">
             <sch:assert test="@type = 'desc'">Elements of type &lt;note&gt; must contain the

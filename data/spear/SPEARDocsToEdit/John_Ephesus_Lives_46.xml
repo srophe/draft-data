@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+<?xml-model href="https://raw.githubusercontent.com/srophe/srophe-eXist-app/schema-4-spear-edits/srophe-app/documentation/SPEARschema/out/odd_SPEAR.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/srophe/srophe-eXist-app/schema-4-spear-edits/srophe-app/documentation/SPEARschema/out/odd_SPEAR.rng" type="application/xml"
 	schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<?xml-model href="https://raw.githubusercontent.com/srophe/srophe-eXist-app/dev/srophe-app/documentation/SPEARschema/out/odd_SPEAR.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader>
         <fileDesc>
@@ -222,7 +222,7 @@
                         <desc>
                             <persName ref="http://syriaca.org/person/1977">Paul, patriarch of
                                 Antioch</persName> used to take <persName
-                                ref="http://syriaca.org/person/3531">poor, old, and sick
+                                ref="http://syriaca.org/person/3649">poor, old, and sick
                                 people</persName> at night and bathe and anoint them, mend and
                             change the clothes of the needy, provide them drink and small coins, and
                             them take them back to their place.</desc>
@@ -247,7 +247,7 @@
                         <desc>
                             <persName ref="http://syriaca.org/person/1977">Paul, patriarch of
                                 Antioch</persName> taught <persName
-                                ref="http://syriaca.org/person/3535">Anonymi 3535</persName> to care
+                                ref="http://syriaca.org/person/3652">Anonymi 3652</persName> to care
                             for the poor, aged, and sick by carrying things with them from their
                             houses or work produce. Many of these became enthusiastic about this
                             labor.</desc>
@@ -269,14 +269,14 @@
             <div uri="http://syriaca.org/spear/837-8" resp="#ngibson">
                 <listEvent>
                     <event>
-                        <desc> Many of the great and eminent men of <placeName
-                                ref="http://syriaca.org/place/10">Antioch</placeName> disguised
+                        <desc> Many of <persName ref="http://syriaca.org/person/3653">the great and eminent men of <placeName
+                                ref="http://syriaca.org/place/10">Antioch</placeName></persName> disguised
                             themselves in poor apparel, carried the chairs of the sick and poor, and
                             provided for them according to their ability. </desc>
                         <ptr
                             target="http://syriaca.org/keyword/dress http://syriaca.org/keyword/disguise http://syriaca.org/keyword/poor 
-                            http://syriaca.org/keyword/illness http://syriaca.org/keyword/alms http://syriaca.org/keyword/care"/>
-                        <!-- new keywords: disguise -->
+                            http://syriaca.org/keyword/illness http://syriaca.org/keyword/charity http://syriaca.org/keyword/care"/>
+                        
                     </event>
                 </listEvent>
                 <bibl type="primary">
@@ -491,6 +491,27 @@
                     <citedRange unit="pp">676</citedRange>
                 </bibl>
             </div>
+            <div uri="http://syriaca.org/spear/837-18" resp="#dschwartz">
+                <listPerson>
+                    <person>
+                        <persName ref="http://syriaca.org/person/3653"/>
+                        <socecStatus ref="http://syriaca.org/keyword/upper-class">
+                            <note type="desc">
+                                <persName ref="http://syriaca.org/person/3653">Anonymi 3653</persName> was elite.
+                            </note>
+                        </socecStatus>
+                    </person>
+                </listPerson>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/work/837"/>
+                    <citedRange unit="pp">471</citedRange>
+                </bibl>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/bibl/2032"/>
+                    <citedRange unit="pp">673</citedRange>
+                </bibl>
+            </div>
+            
         </body>
         <back>
             <!-- Enter full bibl information here for the  bibl URIs contained in this document, n.b. the schema needs to be updated in order to allow this.-->

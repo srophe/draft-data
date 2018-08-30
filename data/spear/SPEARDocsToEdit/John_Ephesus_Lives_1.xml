@@ -6,7 +6,7 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title level="a">John of Ephesus, Theodore Castrensis, in the Lives of the Eastern Saints</title>
+                <title level="a">John of Ephesus, Habib, in the Lives of the Eastern Saints</title>
                 <title level="m">SPEAR: Syriac Persons, Events, and Relations</title>
                 <funder>The National Endowment for the Humanities</funder>
                 <principal>Daniel L. Schwartz</principal>
@@ -51,7 +51,28 @@
                 <date><!-- INPUT ONCE WE HAVE A "FINAL" DRAFT --></date>
             </publicationStmt>
             <sourceDesc>
-                <p>Born digital.</p>
+                <listBibl>
+                    <head>Sources for the Data in this Born Digital Prosopography</head>
+                    <bibl type="primary">
+                        <title>Lives of the Eastern Saints I</title>
+                        <title>Addai the Chorepiscopus</title>
+                        <author><persName ref="http://syriaca.org/person/74">John of
+                            Ephesus</persName></author>
+                        <editor><persName ref="http://syriaca.org/person/403">E. W.
+                            Brooks</persName></editor>
+                        <ptr target="http://syriaca.org/bibl/1409"/>
+                    </bibl>
+                    <bibl type="primary">
+                        <title>Addai the Chorepiscopus</title>
+                        <author><persName ref="http://syriaca.org/person/74">John of
+                            Ephesus</persName></author>
+                        <ptr target="http://syriaca.org/work/793"/>
+                    </bibl>
+                </listBibl>
+                <listRelation>
+                    <relation type="part" active="http://syriaca.org/work/793"
+                        ref="dcterms:isPartOf" passive="http://syriaca.org/work/9501"/>
+                </listRelation>
             </sourceDesc>
         </fileDesc>
         <encodingDesc>
@@ -195,7 +216,7 @@
             <div uri="http://syriaca.org/spear/793-7" resp="#syoung">
                 <listPerson>
                     <person>
-                        <persName ref="http:syriaca.org/person/3503"/>
+                        <persName ref="http://syriaca.org/person/3503"/>
                         <birth>
                             <placeName ref="http://syriaca.org/place/2778"/>
                             <note type="desc">
@@ -217,7 +238,7 @@
             <div uri="http://syriaca.org/spear/793-8" resp="#syoung">
                 <listPerson>
                     <person>
-                        <persName ref="http:syriaca.org/person/3203"/>
+                        <persName ref="http://syriaca.org/person/3203"/>
                         <birth>
                             <placeName ref="http://syriaca.org/place/2778"/>
                             <note type="desc">
@@ -349,7 +370,7 @@
                 <listEvent>
                     <event>
                         <desc>
-                            After <persName ref="http://syriaca.org/person/3503">Bar Nbyl</persName> lived 90 years, he died, leaving the monastary at <placeName ref="http:syriaca.org/place/2779">Fytr</placeName>to <persName ref="http://syriaca.org/person/1260">Habib</persName>.
+                            After <persName ref="http://syriaca.org/person/3503">Bar Nbyl</persName> lived 90 years, he died, leaving the monastary at <placeName ref="http://syriaca.org/place/2779">Fytr</placeName>to <persName ref="http://syriaca.org/person/1260">Habib</persName>.
                         </desc>
                         <ptr target="http://syriaca.org/keyword/monasteries http://syriaca.org/keyword/monastic-heads http://syriaca.org/keyword/monks http://syriaca.org/keyword/death http://syriaca.org/keyword/succession"/>
                     </event>
@@ -669,5 +690,25 @@
                 </bibl>
             </div>
         </body>
+        <back>
+            <listBibl>
+                <head>Works Cited</head>
+                <bibl type="primary" xml:id="bibl793-1">
+                    <title>Lives of the Eastern Saints I</title>
+                    <title>Addai the Chorepiscopus</title>
+                    <author><persName ref="http://syriaca.org/person/74">John of
+                        Ephesus</persName></author>
+                    <editor><persName ref="http://syriaca.org/person/403">E. W.
+                        Brooks</persName></editor>
+                    <ptr target="http://syriaca.org/bibl/1409"/>
+                </bibl>
+                <bibl type="primary" xml:id="bibl793-2">
+                    <title>Addai the Chorepiscopus</title>
+                    <author><persName ref="http://syriaca.org/person/74">John of
+                        Ephesus</persName></author>
+                    <ptr target="http://syriaca.org/work/793"/>
+                </bibl>
+            </listBibl>
+        </back>
     </text>  
 </TEI>

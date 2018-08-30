@@ -88,7 +88,28 @@
                 <date><!-- INPUT ONCE WE HAVE A "FINAL" DRAFT --></date>
             </publicationStmt>
             <sourceDesc>
-                <p>Born digital.</p>
+                <listBibl>
+                    <head>Sources for the Data in this Born Digital Prosopography</head>
+                    <bibl type="primary">
+                        <title>Lives of the Eastern Saints II</title>
+                        <title>Abraham the Presbyter</title>
+                        <author><persName ref="http://syriaca.org/person/74">John of
+                            Ephesus</persName></author>
+                        <editor><persName ref="http://syriaca.org/person/403">E. W.
+                            Brooks</persName></editor>
+                        <ptr target="http://syriaca.org/bibl/2032"/>
+                    </bibl>
+                    <bibl type="primary">
+                        <title>Abraham the Presbyter</title>
+                        <author><persName ref="http://syriaca.org/person/74">John of
+                            Ephesus</persName></author>
+                        <ptr target="http://syriaca.org/work/831"/>
+                    </bibl>
+                </listBibl>
+                <listRelation>
+                    <relation type="part" active="http://syriaca.org/work/831"
+                        ref="dcterms:isPartOf" passive="http://syriaca.org/work/9501"/>
+                </listRelation>
             </sourceDesc>
         </fileDesc>
         <encodingDesc>
@@ -181,8 +202,6 @@
                             <note type="desc">
                                 <persName ref="http://syriaca.org/person/1554">Abraham Sr.</persName> was born in <placeName ref="http://syriaca.org/place/493">Sophanene</placeName>, in the village of <placeName ref="http://syriaca.org/place/2756">Beth Rwmnt'</placeName>.
                             </note>
-                            
-
                         </birth>
                     </person>
                 </listPerson>
@@ -201,9 +220,7 @@
                     <citedRange unit= "pp"> 661</citedRange>
                 </bibl>
                 </note>
-                
             </div>
-            
             <div uri="http://syriaca.org/spear/831-3" resp="#sgross #egibes #ekeogh">
                 <listPerson>
                     <person>
@@ -308,8 +325,6 @@
                     <citedRange unit="pp">647</citedRange>
                 </bibl>
             </div>
-            
-            
             <div uri="http://syriaca.org/spear/831-6" resp="#sgross #egibes #ekeogh">
              <listRelation>
                  <relation ana="family" ref="snap:ChildOfSiblingOf" active="http://syriaca.org/person/1554" passive="http://syriaca.org/person/3204"/>
@@ -326,7 +341,7 @@
             <div uri="http://syriaca.org/spear/831-7" resp="#sgross #egibes #ekeogh">
                 <listEvent>
                     <event>
-                        <desc><!-- Use persName, placeName, orgName, and date elements as needed, with URIs whenever possible. -->
+                        <desc>
                             <persName ref="http://syriaca.org/person/1554">Abraham Sr.</persName> comes to <placeName ref="http://syriaca.org/place/586">Constantinople</placeName> to petition <persName ref="http://syriaca.org/person/74">John of Ephesus</persName> to become a monk. He experiences a period of probation before being accepted.  
                         </desc>
                         <ptr target="http://syriaca.org/keyword/monks http://syriaca.org/keyword/ascetism http://syriaca.org/keyword/monasticism http://syriaca.org/keyword/probation"/>
@@ -362,10 +377,10 @@
           <div uri="http://syriaca.org/spear/831-16" resp="#sgross #ekeogh">
               <listEvent>
                   <event>
-                      <desc><!-- Use persName, placeName, orgName, and date elements as needed, with URIs whenever possible. -->
+                      <desc>
                           <persName ref="http://syriaca.org/person/1554">Abraham Sr.</persName> and <persName ref="http://syriaca.org/person/3270">Abraham Jr.</persName> and <persName ref="http://syriaca.org/person/3204">Daniel</persName> and <persName ref="http://syriaca.org/person/1533">Aaron</persName> and <persName ref="http://syriaca.org/person/1853">Leontius</persName> missionize in the district of <placeName ref="http://syriaca.org/place/2747">Asia</placeName>.
                       </desc>
-                      <ptr target="http://syriaca.org/keyword/Mission"/><!-- Use as many keywords as needed to describe content in the description. -->
+                      <ptr target="http://syriaca.org/keyword/Mission"/>
                   </event>
               </listEvent>
               <bibl type="primary">
@@ -422,10 +437,10 @@
             <div uri="http://syriaca.org/spear/831-15" resp="#sgross #ekeogh">
                 <listEvent>
                     <event>
-                        <desc><!-- Use persName, placeName, orgName, and date elements as needed, with URIs whenever possible. -->
+                        <desc>
                             <persName ref="http://syriaca.org/person/3270">Abraham Jr.</persName> is promoted to Presbyter
                         </desc>
-                        <ptr target="http://syriaca.org/keyword/presbyters"/><!-- Use as many keywords as needed to describe content in the description. -->
+                        <ptr target="http://syriaca.org/keyword/presbyters"/>
                     </event>
                 </listEvent>
                 <bibl type="primary">
@@ -440,10 +455,10 @@
             <div uri="http://syriaca.org/spear/831-14" resp="#sgross #ekeogh">
                 <listEvent>
                     <event>
-                        <desc><!-- Use persName, placeName, orgName, and date elements as needed, with URIs whenever possible. -->
+                        <desc>
                             Abraham Jr. restores the martyr chapel
                         </desc>
-                        <ptr target="http://syriaca.org/keyword/architecture"/><!-- Use as many keywords as needed to describe content in the description. -->
+                        <ptr target="http://syriaca.org/keyword/architecture"/>
                     </event>
                 </listEvent>
                 <bibl type="primary">
@@ -478,7 +493,24 @@
             </div>
              </body>
         <back>
-            <!-- Enter full bibl information here for the  bibl URIs contained in this document, n.b. the schema needs to be updated in order to allow this.-->
+            <listBibl>
+                <head>Works Cited</head>
+                <bibl type="primary" xml:id="bibl831-1">
+                    <title>Lives of the Eastern Saints II</title>
+                    <title>Abraham the Presbyter</title>
+                    <author><persName ref="http://syriaca.org/person/74">John of
+                        Ephesus</persName></author>
+                    <editor><persName ref="http://syriaca.org/person/403">E. W.
+                        Brooks</persName></editor>
+                    <ptr target="http://syriaca.org/bibl/2032"/>
+                </bibl>
+                <bibl type="primary" xml:id="bibl831-2">
+                    <title>Abraham the Presbyter</title>
+                    <author><persName ref="http://syriaca.org/person/74">John of
+                        Ephesus</persName></author>
+                    <ptr target="http://syriaca.org/work/831"/>
+                </bibl>
+            </listBibl>
         </back>
     </text>
 </TEI>

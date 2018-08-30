@@ -6,7 +6,7 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title level="a">John of Ephesus, Theodore Castrensis, in the Lives of the Eastern Saints</title>
+                <title level="a">John of Ephesus, Elijah and Theodore, in the Lives of the Eastern Saints</title>
                 <title level="m">SPEAR: Syriac Persons, Events, and Relations</title>
                 <funder>The National Endowment for the Humanities</funder>
                 <principal>Daniel L. Schwartz</principal>
@@ -51,7 +51,28 @@
                 <date><!-- INPUT ONCE WE HAVE A "FINAL" DRAFT --></date>
             </publicationStmt>
             <sourceDesc>
-                <p>Born digital.</p>
+                <listBibl>
+                    <head>Sources for the Data in this Born Digital Prosopography</head>
+                    <bibl type="primary">
+                        <title>Lives of the Eastern Saints II</title>
+                        <title>Elijah and Theodore</title>
+                        <author><persName ref="http://syriaca.org/person/74">John of
+                            Ephesus</persName></author>
+                        <editor><persName ref="http://syriaca.org/person/403">E. W.
+                            Brooks</persName></editor>
+                        <ptr target="http://syriaca.org/bibl/2032"/>
+                    </bibl>
+                    <bibl type="primary">
+                        <title>Hala</title>
+                        <author><persName ref="http://syriaca.org/person/74">John of
+                            Ephesus</persName></author>
+                        <ptr target="http://syriaca.org/work/823"/>
+                    </bibl>
+                </listBibl>
+                <listRelation>
+                    <relation type="part" active="http://syriaca.org/work/823"
+                        ref="dcterms:isPartOf" passive="http://syriaca.org/work/9501"/>
+                </listRelation>
             </sourceDesc>
         </fileDesc>
         <encodingDesc>
@@ -111,7 +132,7 @@
             <div uri="http://syriaca.org/spear/823-3" resp="#syoung">
                 <listPerson>
                     <person>
-                        <persName ref="http://syriaca.org/1705"/>
+                        <persName ref="http://syriaca.org/person/1705"/>
                         <occupation ref="http://syriaca.org/keyword/merchants">
                             <note type="desc">
                                 <persName ref="http://syriaca.org/person/1705">Elijah</persName>was a trader in <placeName ref="http://syriaca.org/place/526">Persia</placeName>.
@@ -131,7 +152,7 @@
             <div uri="http://syriaca.org/spear/823-4" resp="#syoung">
                 <listPerson>
                     <person>
-                        <persName ref="http://syriaca.org/3140"/>
+                        <persName ref="http://syriaca.org/person/3140"/>
                         <occupation ref="http://syriaca.org/keyword/merchants">
                             <note type="desc">
                                 <persName ref="http://syriaca.org/person/3140">Theodore</persName>was a trader in <placeName ref="http://syriaca.org/place/526">Persia</placeName>.
@@ -367,5 +388,25 @@
                 </bibl>
             </div>
         </body>
+        <back>
+            <listBibl>
+                <head>Works Cited</head>
+                <bibl type="primary" xml:id="bibl823-1">
+                    <title>Lives of the Eastern Saints II</title>
+                    <title>Elijah and Theodore</title>
+                    <author><persName ref="http://syriaca.org/person/74">John of
+                        Ephesus</persName></author>
+                    <editor><persName ref="http://syriaca.org/person/403">E. W.
+                        Brooks</persName></editor>
+                    <ptr target="http://syriaca.org/bibl/2032"/>
+                </bibl>
+                <bibl type="primary" xml:id="bibl823-2">
+                    <title>Hala</title>
+                    <author><persName ref="http://syriaca.org/person/74">John of
+                        Ephesus</persName></author>
+                    <ptr target="http://syriaca.org/work/823"/>
+                </bibl>
+            </listBibl>
+        </back>
     </text>
 </TEI>

@@ -6,7 +6,7 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title level="a">John of Ephesus, Lives of the Eastern Saints: </title>
+                <title level="a">John of Ephesus, A Monk from the Same Monastery as Zacharias, in the Lives of the Eastern Saints: </title>
                 <title level="m">SPEAR: Syriac Persons, Events, and Relations</title>
                 <funder>The National Endowment for the Humanities</funder>
                 <principal>Daniel L. Schwartz</principal>
@@ -31,7 +31,7 @@
             </editionStmt>
             <publicationStmt>
                 <authority>Syriaca.org: The Syriac Reference Portal</authority>
-                <idno type="URI">http://syriaca.org/spear/xxx/tei</idno><!-- Add URI -->
+                <idno type="URI">http://syriaca.org/spear/812/tei</idno>
                 <availability>
                     <licence target="http://creativecommons.org/licenses/by/3.0/">
                         <p>Distributed under a Creative Commons Attribution 3.0 Unported
@@ -41,7 +41,28 @@
                 <date><!-- INPUT ONCE WE HAVE A "FINAL" DRAFT --></date>
             </publicationStmt>
             <sourceDesc>
-                <p>Born digital.</p>
+                <listBibl>
+                    <head>Sources for the Data in this Born Digital Prosopography</head>
+                    <bibl type="primary">
+                        <title>Lives of the Eastern Saints I</title>
+                        <title>A Monk from the Same Monastery as Zacharias</title>
+                        <author><persName ref="http://syriaca.org/person/74">John of
+                            Ephesus</persName></author>
+                        <editor><persName ref="http://syriaca.org/person/403">E. W.
+                            Brooks</persName></editor>
+                        <ptr target="http://syriaca.org/bibl/1409"/>
+                    </bibl>
+                    <bibl type="primary">
+                        <title>A Monk from the Same Monastery as Zacharias</title>
+                        <author><persName ref="http://syriaca.org/person/74">John of
+                            Ephesus</persName></author>
+                        <ptr target="http://syriaca.org/work/812"/>
+                    </bibl>
+                </listBibl>
+                <listRelation>
+                    <relation type="part" active="http://syriaca.org/work/812"
+                        ref="dcterms:isPartOf" passive="http://syriaca.org/work/9501"/>
+                </listRelation>
             </sourceDesc>
         </fileDesc>
         <encodingDesc>
@@ -69,12 +90,11 @@
             <div uri="http://syriaca.org/spear/812-1" resp="#jnsaint-laurent, #tbaillargeon, #tmcneir, #syoung, #rtrupiano">
                 <listEvent>
                     <event>
-                        <desc><!-- Use persName, placeName, orgName, and date elements as needed, with URIs whenever possible. -->
+                        <desc>
                             A pre-emminent monk was fervently praying with his eyes toward the heaven while bouncing on the soles of his
                             feet.
                         </desc>
                         <ptr target="http://syriaca.org/keyword/liturgics, http://syriaca.org/keyword/prayer, http://syriaca.org/keyword/monasticism"/>
-                        "    /><!-- Use as many keywords as needed to describe content in the description. -->
                     </event>
                 </listEvent>
                 <bibl type="primary">
@@ -202,14 +222,13 @@
                 </bibl>
             </div>
             
-            <div uri="http://syriaca.org/spear/810-8" resp="#jnsaint-laurent, #tbaillargeon, #tmcneir, #syoung, #rtrupiano">
+            <div uri="http://syriaca.org/spear/812-8" resp="#jnsaint-laurent, #tbaillargeon, #tmcneir, #syoung, #rtrupiano">
                 <listEvent>
                     <event>
                         <desc><!-- Use persName, placeName, orgName, and date elements as needed, with URIs whenever possible. -->
                             The monks go through a thirty day waiting period before they can enter the monastery.
                         </desc>
-                        <ptr target="http://syriaca.org/keyword/monks, http://syriaca.org/keyword/monasticism, http://syriaca.org/keyword/monasteries, http://syriaca.org/keyword/discernment,
-                            http://syriaca.org/keyword/monastic-heads"/><!-- Use as many keywords as needed to describe content in the description. -->
+                        <ptr target="http://syriaca.org/keyword/monks http://syriaca.org/keyword/monasticism http://syriaca.org/keyword/monasteries http://syriaca.org/keyword/discernment http://syriaca.org/keyword/monastic-heads"/>
                     </event>
                 </listEvent>
                 <bibl type="primary">
@@ -246,8 +265,7 @@
                         <desc><!-- Use persName, placeName, orgName, and date elements as needed, with URIs whenever possible. -->
                             Penitents will need to cleanse their souls of worldly foulness for three years.
                         </desc>
-                        <ptr target="http://syriaca.org/keyword/sin, "http://syriaca.org/keyword/fasting, "http://syriaca.org/keyword/celibacy, 
-                            "http://syriaca.org/keyword/souls"/><!-- Use as many keywords as needed to describe content in the description. -->
+                        <ptr target="http://syriaca.org/keyword/sin http://syriaca.org/keyword/fasting http://syriaca.org/keyword/celibacy http://syriaca.org/keyword/souls"/>
                     </event>
                 </listEvent>
                 <bibl type="primary">
@@ -279,14 +297,14 @@
                 </bibl>
             </div>
             
-            <div uri="http://syriaca.org/spear/812-12" resp="">
+            <div uri="http://syriaca.org/spear/812-12" resp="#jnsaint-laurent, #tbaillargeon, #tmcneir, #syoung, #rtrupiano">
                 <listEvent>
                     <event>
                         <desc><!-- Use persName, placeName, orgName, and date elements as needed, with URIs whenever possible. -->
                             If the penitent is still earnest, half of his head will be shaved and after a year, he will complete the tonsure and will be given
                             tunic of straw.  
                         </desc>
-                        <ptr target="http://syriaca.org/keyword/dress, http://syriaca.org/keyword/monasticism, http://syriaca.org/keyword/clergy"/><!-- Use as many keywords as needed to describe content in the description. -->
+                        <ptr target="http://syriaca.org/keyword/dress, http://syriaca.org/keyword/monasticism, http://syriaca.org/keyword/clergy"/>
                     </event>
                 </listEvent>
                 <bibl type="primary">
@@ -301,7 +319,7 @@
             <div uri="http://syriaca.org/spear/812-13" resp="#jnsaint-laurent, #tbaillargeon, #tmcneir, #syoung, #rtrupiano">
                 <listEvent>
                     <event>
-                        <desc><!-- Use persName, placeName, orgName, and date elements as needed, with URIs whenever possible. -->
+                        <desc>
                             After another three years, the penitent will be given a habit.
                         </desc>
                         <ptr target="http://syriaca.org/keyword/monasticism, http://syriaca.org/keyword/dress"/><!-- Use as many keywords as needed to describe content in the description. -->
@@ -316,13 +334,26 @@
                     <citedRange unit="pp">282</citedRange>
                 </bibl>
             </div>
-            
-            
-        </body>
+          </body>
         <back>
-            <!-- Enter full bibl information here for the  
-                
-               URIs contained in this document, n.b. the schema needs to be updated in order to allow this.-->
+            <listBibl>
+                <head>Works Cited</head>
+                <bibl type="primary" xml:id="bibl812-1">
+                    <title>Lives of the Eastern Saints I</title>
+                    <title>A Monk from the Same Monastery as Zacharias</title>
+                    <author><persName ref="http://syriaca.org/person/74">John of
+                        Ephesus</persName></author>
+                    <editor><persName ref="http://syriaca.org/person/403">E. W.
+                        Brooks</persName></editor>
+                    <ptr target="http://syriaca.org/bibl/1409"/>
+                </bibl>
+                <bibl type="primary" xml:id="bibl812-2">
+                    <title>A Monk from the Same Monastery as Zacharias</title>
+                    <author><persName ref="http://syriaca.org/person/74">John of
+                        Ephesus</persName></author>
+                    <ptr target="http://syriaca.org/work/812"/>
+                </bibl>
+            </listBibl>
         </back>
     </text>
 </TEI>

@@ -6,7 +6,7 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title level="a">John of Ephesus, Theodore Castrensis, in the Lives of the Eastern Saints</title>
+                <title level="a">John of Ephesus, Thomas the Armenian, in the Lives of the Eastern Saints</title>
                 <title level="m">SPEAR: Syriac Persons, Events, and Relations</title>
                 <funder>The National Endowment for the Humanities</funder>
                 <principal>Daniel L. Schwartz</principal>
@@ -41,7 +41,7 @@
             </editionStmt>
             <publicationStmt>
                 <authority>Syriaca.org: The Syriac Reference Portal</authority>
-                <idno type="URI">http://syriaca.org/spear/816/tei</idno>
+                <idno type="URI">http://syriaca.org/spear/813/tei</idno>
                 <availability>
                     <licence target="http://creativecommons.org/licenses/by/3.0/">
                         <p>Distributed under a Creative Commons Attribution 3.0 Unported
@@ -51,7 +51,28 @@
                 <date><!-- INPUT ONCE WE HAVE A "FINAL" DRAFT --></date>
             </publicationStmt>
             <sourceDesc>
-                <p>Born digital.</p>
+                <listBibl>
+                    <head>Sources for the Data in this Born Digital Prosopography</head>
+                    <bibl type="primary">
+                        <title>Lives of the Eastern Saints I</title>
+                        <title>Thomas the Armenian</title>
+                        <author><persName ref="http://syriaca.org/person/74">John of
+                            Ephesus</persName></author>
+                        <editor><persName ref="http://syriaca.org/person/403">E. W.
+                            Brooks</persName></editor>
+                        <ptr target="http://syriaca.org/bibl/1409"/>
+                    </bibl>
+                    <bibl type="primary">
+                        <title>Thomas the Armenian</title>
+                        <author><persName ref="http://syriaca.org/person/74">John of
+                            Ephesus</persName></author>
+                        <ptr target="http://syriaca.org/work/813"/>
+                    </bibl>
+                </listBibl>
+                <listRelation>
+                    <relation type="part" active="http://syriaca.org/work/813"
+                        ref="dcterms:isPartOf" passive="http://syriaca.org/work/9501"/>
+                </listRelation>
             </sourceDesc>
         </fileDesc>
         <encodingDesc>
@@ -266,7 +287,7 @@
                 <listEvent>
                     <event>
                         <desc>
-                            Unlike <persName ref="http://syriaca.org/person">Šnq</persName>who was cruel and rapacious, <persName ref="http://syriaca.org/person/2126">Thomas</persName>devoted his life to the poor, sick, widowed, and orphaned.
+                            Unlike <persName ref="http://syriaca.org/person/">Šnq</persName>who was cruel and rapacious, <persName ref="http://syriaca.org/person/2126">Thomas</persName>devoted his life to the poor, sick, widowed, and orphaned.
                         </desc>
                         <ptr target="http://syriaca.org/keyword/poverty http://syriaca.org/keyword/justice http://syriaca.org/keyword/alms http://syriaca.org/keyword/illness http://syriaca.org/keyword/widows"/>
                     </event>
@@ -540,7 +561,7 @@
                     <citedRange unit="pp">297</citedRange>
                 </bibl>
             </div>
-            <div uri="http://syriaca.org/spear/813-27" resp="#syoung">
+            <div uri="http://syriaca.org/spear/813-28" resp="#syoung">
                 <listEvent>
                     <event>
                         <desc>
@@ -558,7 +579,7 @@
                     <citedRange unit="pp">298</citedRange>
                 </bibl>
             </div>
-            <div uri="http://syriaca.org/spear/813-28" resp="#syoung">
+            <div uri="http://syriaca.org/spear/813-29" resp="#syoung">
                 <listRelation>
                     <relation ref="snap:EnmityFor" active="http://syriaca.org/person/3226" passive="http://syriaca.org/person/2126"/>
                 </listRelation>
@@ -572,5 +593,25 @@
                 </bibl>
             </div>
         </body>
+        <back>
+            <listBibl>
+                <head>Works Cited</head>
+                <bibl type="primary" xml:id="bibl813-1">
+                    <title>Lives of the Eastern Saints I</title>
+                    <title>Thomas the Armenian</title>
+                    <author><persName ref="http://syriaca.org/person/74">John of
+                        Ephesus</persName></author>
+                    <editor><persName ref="http://syriaca.org/person/403">E. W.
+                        Brooks</persName></editor>
+                    <ptr target="http://syriaca.org/bibl/1409"/>
+                </bibl>
+                <bibl type="primary" xml:id="bibl813-2">
+                    <title>Thomas the Armenian</title>
+                    <author><persName ref="http://syriaca.org/person/74">John of
+                        Ephesus</persName></author>
+                    <ptr target="http://syriaca.org/work/813"/>
+                </bibl>
+            </listBibl>
+        </back>
     </text>
 </TEI>

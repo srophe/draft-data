@@ -6,7 +6,7 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title level="a">John of Ephesus, Theodore Castrensis, in the Lives of the Eastern Saints</title>
+                <title level="a">John of Ephesus, Addai the Chorepiscopus, in the Lives of the Eastern Saints</title>
                 <title level="m">SPEAR: Syriac Persons, Events, and Relations</title>
                 <funder>The National Endowment for the Humanities</funder>
                 <principal>Daniel L. Schwartz</principal>
@@ -34,7 +34,6 @@
                     <name ref="http://syriaca.org/documentation/editors.xml#syoung"
                         >Samuel Young</name>
                 </respStmt>
-               
             </titleStmt>
             <editionStmt>
                 <edition n="1.0"/>
@@ -51,7 +50,28 @@
                 <date><!-- INPUT ONCE WE HAVE A "FINAL" DRAFT --></date>
             </publicationStmt>
             <sourceDesc>
-                <p>Born digital.</p>
+                <listBibl>
+                    <head>Sources for the Data in this Born Digital Prosopography</head>
+                    <bibl type="primary">
+                        <title>Lives of the Eastern Saints I</title>
+                        <title>Addai the Chorepiscopus</title>
+                        <author><persName ref="http://syriaca.org/person/74">John of
+                            Ephesus</persName></author>
+                        <editor><persName ref="http://syriaca.org/person/403">E. W.
+                            Brooks</persName></editor>
+                        <ptr target="http://syriaca.org/bibl/1409"/>
+                    </bibl>
+                    <bibl type="primary">
+                        <title>Addai the Chorepiscopus</title>
+                        <author><persName ref="http://syriaca.org/person/74">John of
+                            Ephesus</persName></author>
+                        <ptr target="http://syriaca.org/work/800"/>
+                    </bibl>
+                </listBibl>
+                <listRelation>
+                    <relation type="part" active="http://syriaca.org/work/800"
+                        ref="dcterms:isPartOf" passive="http://syriaca.org/work/9501"/>
+                </listRelation>
             </sourceDesc>
         </fileDesc>
         <encodingDesc>
@@ -137,7 +157,7 @@
                         <desc>
                             <date notBefore="0451" calendar="Gregorian">Sometime after 451</date><persName ref="http://syriaca.org/person/1116">Addai</persName>was deposed by those attempting to enforce the heresy of the Council of <placeName ref="http://syriaca.org/place/622">Chalcedon</placeName>. <persName ref="http://syriaca.org/person/1116">He</persName>exhorted the brothers to remember the poor, and retreated to his exile in the mountains east of <placeName ref="http://syriaca.org/place/2758">Anzetene</placeName>.
                         </desc>
-                        <ptr target="http://syriaca.org/keyword/monks http://syriaca.org/keyword/exile http://syriaca.org/keyword/council-of-chacledon-451 http://syriaca.org/keyword/apostasy http://syriaca.org/keyword/bishops "/>
+                        <ptr target="http://syriaca.org/keyword/monks http://syriaca.org/keyword/exile http://syriaca.org/keyword/council-of-chacledon-451 http://syriaca.org/keyword/apostasy http://syriaca.org/keyword/bishops"/>
                     </event>
                 </listEvent>
                 <bibl type="primary">
@@ -173,7 +193,7 @@
                         <desc>
                             Though <persName ref="http://syriaca.org/person/1116">Habib</persName>remained reclusive, <persName ref="http://syriaca.org/person/76">John</persName>and one of the brothers discovered where he would be. As the men approached, <persName ref="http://syriaca.org/person/1116">Habib</persName>fled. <persName ref="http://syriaca.org/person/76">John</persName>returned to the monastery to rest. They met <persName ref="http://syriaca.org/person/1116">Addai</persName>the next day. Perceiving that <persName ref="http://syriaca.org/person/1116">Addai</persName>wanted his privacy, <persName ref="http://syriaca.org/person/76">John</persName>stopped pestering him, but simply asked for a blessing and a prayer. 
                         </desc>
-                        <ptr target="http://syriaca.org/keyword/monks http://syriaca.org/keyword/wine http://syriaca.org/keyword/prayer http://syriaca.org/keyword/blessing "/>
+                        <ptr target="http://syriaca.org/keyword/monks http://syriaca.org/keyword/wine http://syriaca.org/keyword/prayer http://syriaca.org/keyword/blessing"/>
                     </event>
                 </listEvent>
                 <bibl type="primary">
@@ -220,5 +240,25 @@
                 </bibl>
             </div>
         </body>
+        <back>
+            <listBibl>
+                <head>Works Cited</head>
+                <bibl type="primary" xml:id="bibl800-1">
+                    <title>Lives of the Eastern Saints I</title>
+                    <title>Addai the Chorepiscopus</title>
+                    <author><persName ref="http://syriaca.org/person/74">John of
+                        Ephesus</persName></author>
+                    <editor><persName ref="http://syriaca.org/person/403">E. W.
+                        Brooks</persName></editor>
+                    <ptr target="http://syriaca.org/bibl/1409"/>
+                </bibl>
+                <bibl type="primary" xml:id="bibl800-2">
+                    <title>Addai the Chorepiscopus</title>
+                    <author><persName ref="http://syriaca.org/person/74">John of
+                        Ephesus</persName></author>
+                    <ptr target="http://syriaca.org/work/800"/>
+                </bibl>
+            </listBibl>
+        </back>
     </text>
 </TEI>

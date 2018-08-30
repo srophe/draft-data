@@ -8,7 +8,7 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title level="a">John of Ephesus, Lives of the Eastern Saints: 49. James</title>
+                <title level="a">John of Ephesus, James, in the Lives of the Eastern Saints</title>
                 <title level="m">SPEAR: Syriac Persons, Events, and Relations</title>
                 <funder>The National Endowment for the Humanities</funder>
                 <principal>Daniel L. Schwartz</principal>
@@ -58,476 +58,241 @@
                         >Jeanne-Nicole Mellon Saint-Laurent</name>
                 </respStmt>
                 <respStmt>
-
                     <resp>Data entry and encoding by</resp>
-
                     <name ref="http://syriaca.org/documentation/editors.xml#cjohnson">Christopher D.
                         L. Johnson</name>
-
                 </respStmt>
-
-
                 <respStmt>
-
                     <resp>Data entry and encoding by</resp>
-
                     <name ref="http://syriaca.org/documentation/editors.xml#dkiger">David
                         Kiger</name>
-
                 </respStmt>
-
-
                 <respStmt>
-
                     <resp>Data entry and encoding by</resp>
-
                     <name ref="http://syriaca.org/documentation/editors.xml#ekwoalik">Eric
                         Kowalik</name>
-
                 </respStmt>
-
             </titleStmt>
-
-
             <editionStmt>
-
                 <edition n="1.0"/>
-
             </editionStmt>
-
-
             <publicationStmt>
-
                 <authority>Syriaca.org: The Syriac Reference Portal</authority>
-
-                <idno type="URI">http://syriaca.org/spear/814/tei</idno>
-
-
+                <idno type="URI">http://syriaca.org/spear/840/tei</idno>
                 <availability>
-
-
                     <licence target="http://creativecommons.org/licenses/by/3.0/">
                         <p>Distributed under a Creative Commons Attribution 3.0 Unported
                             License.</p>
                     </licence>
-
                 </availability>
-
-
                 <date>
                     <!-- INPUT ONCE WE HAVE A "FINAL" DRAFT -->
                 </date>
-
             </publicationStmt>
-
-
             <sourceDesc>
-
-                <p>Born digital.</p>
-
+                <listBibl>
+                    <head>Sources for the Data in this Born Digital Prosopography</head>
+                    <bibl type="primary">
+                        <title>Lives of the Eastern Saints II</title>
+                        <title>Two Antiochenes</title>
+                        <author><persName ref="http://syriaca.org/person/74">John of
+                                Ephesus</persName></author>
+                        <editor><persName ref="http://syriaca.org/person/403">E. W.
+                                Brooks</persName></editor>
+                        <ptr target="http://syriaca.org/bibl/2032"/>
+                    </bibl>
+                    <bibl type="primary">
+                        <title>Two Antiochenes</title>
+                        <author><persName ref="http://syriaca.org/person/74">John of
+                                Ephesus</persName></author>
+                        <ptr target="http://syriaca.org/work/840"/>
+                    </bibl>
+                </listBibl>
+                <listRelation>
+                    <relation type="part" active="http://syriaca.org/work/840"
+                        ref="dcterms:isPartOf" passive="http://syriaca.org/work/9501"/>
+                </listRelation>
             </sourceDesc>
-
         </fileDesc>
-
-
         <encodingDesc>
-
-
             <editorialDecl>
-
                 <p>The prosopographical data in this document was encoded from E. W. Brooks' edition
                     and English translation of John of Ephesus’s Lives of the Eastern Saints,
                     Patrologia Orientalis, volume 17, 1923. </p>
-
             </editorialDecl>
-
-
             <classDecl>
-
-
                 <taxonomy>
-
-
                     <category xml:id="calculated">
-
                         <catDesc> Used to denote a date calculated by the editor from a regnal year
                             given in the text. </catDesc>
-
                     </category>
-
                 </taxonomy>
-
             </classDecl>
-
         </encodingDesc>
-
         <profileDesc> </profileDesc>
-
-
         <revisionDesc>
-
             <change
                 who="http://syriaca.org/documentation/editors.xml #ayousif http://syriaca.org/documentation/editors.xml #mdoerfler http://syriaca.org/documentation/editors.xml#jnsaint-laurent http://syriaca.org/documentation/editors.xml#ekwoalik http://syriaca.org/documentation/editors.xml#jmcmanaway http://syriaca.org/documentation/editors.xml#nelder"
                 >Initial data collected by Jeanne-Nicole Mellon Saint-Laurent, Maria E Doerfler,
                 Nick Elder, Eric Kowalik, Joshua McManaway, Taylor McNeir, Elizabeth Andrejasich
                 Gibes and Ashoor Yousif at "Mapping Ancient Lives &amp; Social Networks: A Digital
                 Workshop," held at Marquette University, 23-24 May 2017.</change>
-
         </revisionDesc>
-
     </teiHeader>
-
-
     <text>
-
-
         <body>
-
-
             <div resp="#ekowalik #tb" uri="http://syriaca.org/spear/840-1">
-
-
                 <listPerson>
-
-
                     <person>
-
                         <persName ref="http://syriaca.org/person/69"> James the Bishop </persName>
-
                     </person>
-
                 </listPerson>
-
-
                 <bibl type="primary">
-
                     <ptr target="http://syriaca.org/work/840"/>
-
                     <citedRange unit="pp">488</citedRange>
-
                 </bibl>
-
-
                 <bibl type="primary">
-
                     <ptr target="http://syriaca.org/bibl/2032"/>
-
                     <citedRange unit="pp">690</citedRange>
-
                 </bibl>
-
             </div>
-
-
             <div resp="#ekowalik #tb" uri="http://syriaca.org/spear/840-2">
-
-
                 <listPerson>
-
-
                     <person>
-
                         <persName ref="http://syriaca.org/person/69"/>
-
-
                         <birth>
-
                             <placeName ref="http://syriaca.org/place/2848"/>
-
-
                             <note type="desc">
                                 <persName ref="http://syriaca.org/person/69">James</persName> was
                                 born in <placeName ref="http://syriaca.org/place/2848"
                                     >Thella</placeName> . </note>
-
                         </birth>
-
                     </person>
-
                 </listPerson>
-
-
                 <bibl type="primary">
-
                     <ptr target="http://syriaca.org/work/840"/>
-
                     <citedRange unit="pp">488</citedRange>
-
                 </bibl>
-
-
                 <bibl type="primary">
-
                     <ptr target="http://syriaca.org/bibl/2032"/>
-
                     <citedRange unit="pp">690</citedRange>
-
                 </bibl>
-
             </div>
-
-
             <div resp="#calculated" uri="http://syriaca.org/spear/840-3">
-
-
                 <listPerson>
-
-
                     <person>
-
                         <persName ref="http://syriaca.org/person/69"/>
-
                         <sex value="M/F">Male=</sex>
-
-                        <!-- TEI uses sex for biological distinctions, see also the gender factoid. -->
-
-
                     </person>
-
                 </listPerson>
-
-
                 <bibl type="primary">
-
                     <ptr target="http://syriaca.org/work/840"/>
-
                     <citedRange unit="pp">488</citedRange>
-
                 </bibl>
-
-
                 <bibl type="primary">
-
                     <ptr target="http://syriaca.org/bibl/2032"/>
-
                     <citedRange unit="pp">690</citedRange>
-
                 </bibl>
-
             </div>
-
-
             <div resp="#calculated" uri="http://syriaca.org/spear/840-4">
-
-
                 <listPerson>
-
-
                     <person>
-
                         <persName ref="http://syriaca.org/person/69"/>
-
-
                         <occupation ref="http://syriaca.org/keyword/bishops">
-
-                            <!-- Use as many keywords as needed to describe content in note. -->
-
-
-
                             <note type="desc">
                                 <persName ref="http://syriaca.org/person/69">James</persName> was a
                                 bishop. </note>
-
                         </occupation>
-
                     </person>
-
                 </listPerson>
-
-
                 <bibl type="primary">
-
                     <ptr target="http://syriaca.org/work/840"/>
-
                     <citedRange unit="pp">488</citedRange>
-
                 </bibl>
-
-
                 <bibl type="primary">
-
                     <ptr target="http://syriaca.org/bibl/2032"/>
-
                     <citedRange unit="pp">690</citedRange>
-
                 </bibl>
-
             </div>
-
-
             <div resp="#calculated" uri="http://syriaca.org/spear/840-5">
-
-
                 <listPerson>
-
-
                     <person>
-
                         <persName ref="http://syriaca.org/person/69"/>
-
-
                         <education ref="http://syriaca.org/keyword/monasteries">
-
                             <!-- Use as many keywords as needed to describe content in note. -->
-
-
-
                             <note type="desc">
                                 <persName ref="http://syriaca.org/person/69">James</persName>
                                 studied at <placeName ref="http://syriaca.org/place/373"
                                     >Fsiltha</placeName> . </note>
-
-                            <!-- Use placeName, orgName, and date elements as needed, with URIs whenever possible. -->
-
-
                         </education>
-
                     </person>
-
                 </listPerson>
-
-
                 <bibl type="primary">
-
                     <ptr target="http://syriaca.org/work/840"/>
-
                     <citedRange unit="pp">488</citedRange>
-
                 </bibl>
-
-
                 <bibl type="primary">
-
                     <ptr target="http://syriaca.org/bibl/2032"/>
-
                     <citedRange unit="pp">690</citedRange>
-
                 </bibl>
-
             </div>
-
-
             <div resp="#calculated" uri="http://syriaca.org/spear/840-6">
-
-
                 <listRelation>
-
                     <relation ref="syriaca:FellowClergy"
                         mutual="http://syriaca.org/person/3258 http://syriaca.org/person/69"
                         ana="clerical"/>
-
                 </listRelation>
-
-
                 <bibl type="primary">
-
                     <ptr target="http://syriaca.org/work/840"/>
-
                     <citedRange unit="pp">489</citedRange>
-
                 </bibl>
-
-
                 <bibl type="primary">
-
                     <ptr target="http://syriaca.org/bibl/2032"/>
-
                     <citedRange unit="pp">691</citedRange>
-
                 </bibl>
-
             </div>
-
-
             <div resp="#calculated" uri="http://syriaca.org/spear/840-7">
-
-
                 <listEvent>
-
-
                     <event>
-
-
                         <desc>
                             <!-- Use persName, placeName, orgName, and date elements as needed, with URIs whenever possible. -->
                             <persName ref="http://syriaca.org/person/69">James</persName> and
                                 <persName ref="http://syriaca.org/person/3258">Sergius</persName>
                             traveled to the <placeName ref="http://syriaca.org/place/586">royal
                                 city</placeName> . </desc>
-
                         <ptr target="http://syriaca.org/keyword/travel"/>
-
-                        <!-- Use as many keywords as needed to describe content in the description. -->
-
-
                     </event>
-
                 </listEvent>
-
-
                 <bibl type="primary">
-
                     <ptr target="http://syriaca.org/work/840"/>
-
                     <citedRange unit="pp">489</citedRange>
-
                 </bibl>
-
-
                 <bibl type="primary">
-
                     <ptr target="http://syriaca.org/bibl/2032"/>
-
                     <citedRange unit="pp">691</citedRange>
-
                 </bibl>
-
             </div>
-
-
             <div resp="#calculated" uri="http://syriaca.org/spear/840-8">
-
-
                 <listEvent>
-
-
                     <event>
-
-
                         <desc>
                             <!-- Use persName, placeName, orgName, and date elements as needed, with URIs whenever possible. -->
                             <persName ref="http://syriaca.org/person/69">James</persName> and
                                 <persName ref="http://syriaca.org/person/3258">Sergius</persName>
                             were guests of the <persName ref="http://syriaca.org/person/779"
                                 >queen</persName> . </desc>
-
                         <ptr target="http://syriaca.org/keyword/patronage"/>
-
                         <!-- Use as many keywords as needed to describe content in the description. -->
-
-
                     </event>
-
                 </listEvent>
-
-
                 <bibl type="primary">
-
                     <ptr target="http://syriaca.org/work/840"/>
-
                     <citedRange unit="pp">489</citedRange>
-
                 </bibl>
-
-
                 <bibl type="primary">
-
                     <ptr target="http://syriaca.org/bibl/2032"/>
-
                     <citedRange unit="pp">691</citedRange>
-
                 </bibl>
-
             </div>
             <div uri="http://syriaca.org/spear/840-9" resp="">
                 <listPerson>
@@ -542,20 +307,12 @@
                     </person>
                 </listPerson>
                 <bibl type="primary">
-
                     <ptr target="http://syriaca.org/work/840"/>
-
                     <citedRange unit="pp">489</citedRange>
-
                 </bibl>
-
-
                 <bibl type="primary">
-
                     <ptr target="http://syriaca.org/bibl/2032"/>
-
                     <citedRange unit="pp">691</citedRange>
-
                 </bibl>
             </div>
             <div uri="http://syriaca.org/spear/840-10" resp="">
@@ -571,23 +328,14 @@
                     </personGrp>
                 </listPerson>
                 <bibl type="primary">
-
                     <ptr target="http://syriaca.org/work/840"/>
-
                     <citedRange unit="pp">489</citedRange>
-
                 </bibl>
-
-
                 <bibl type="primary">
-
                     <ptr target="http://syriaca.org/bibl/2032"/>
-
                     <citedRange unit="pp">691</citedRange>
-
                 </bibl>
             </div>
-
             <div uri="http://syriaca.org/spear/840-11" resp="">
                 <listPerson>
                     <person>
@@ -610,27 +358,18 @@
                     <citedRange unit="pp">692</citedRange>
                 </bibl>
             </div>
-
             <div uri="http://syriaca.org/spear/840-12" resp="">
                 <listRelation>
                     <relation ana="clerical" ref="syriaca:fellowclergy"
                         mutual="http://syriaca.org/person/69 http://syriaca.org/person/3266"/>
                 </listRelation>
                 <bibl type="primary">
-
                     <ptr target="http://syriaca.org/work/840"/>
-
                     <citedRange unit="pp">489</citedRange>
-
                 </bibl>
-
-
                 <bibl type="primary">
-
                     <ptr target="http://syriaca.org/bibl/2032"/>
-
                     <citedRange unit="pp">691</citedRange>
-
                 </bibl>
             </div>
             <div uri="http://syriaca.org/spear/840-13" resp="">
@@ -647,11 +386,8 @@
                     </person>
                 </listPerson>
                 <bibl type="primary">
-
                     <ptr target="http://syriaca.org/work/840"/>
-
                     <citedRange unit="pp">489</citedRange>
-
                 </bibl>
                 <div uri="http://syriaca.org/spear/840-15" resp="">
                     <listEvent>
@@ -678,23 +414,31 @@
                         <citedRange unit="pp">692</citedRange>
                     </bibl>
                 </div>
-
                 <bibl type="primary">
-
                     <ptr target="http://syriaca.org/bibl/2032"/>
-
                     <citedRange unit="pp">691</citedRange>
-
                 </bibl>
             </div>
-
         </body>
-
-
         <back>
-            <!-- Enter full bibl information here for the bibl URIs contained in this document, n.b. the schema needs to be updated in order to allow this.-->
+            <listBibl>
+                <head>Works Cited</head>
+                <bibl type="primary" xml:id="bibl840-1">
+                    <title>Lives of the Eastern Saints II</title>
+                    <title>Two Antiochenes</title>
+                    <author><persName ref="http://syriaca.org/person/74">John of
+                        Ephesus</persName></author>
+                    <editor><persName ref="http://syriaca.org/person/403">E. W.
+                        Brooks</persName></editor>
+                    <ptr target="http://syriaca.org/bibl/2032"/>
+                </bibl>
+                <bibl type="primary" xml:id="bibl840-2">
+                    <title>Two Antiochenes</title>
+                    <author><persName ref="http://syriaca.org/person/74">John of
+                        Ephesus</persName></author>
+                    <ptr target="http://syriaca.org/work/840"/>
+                </bibl>
+            </listBibl>
         </back>
-
     </text>
-
 </TEI>

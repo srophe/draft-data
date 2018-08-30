@@ -6,7 +6,7 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title level="a">John of Ephesus, Lives of the Eastern Saints: </title>
+                <title level="a">John of Ephesus, Hala, in the Lives of the Eastern Saints</title>
                 <title level="m">SPEAR: Syriac Persons, Events, and Relations</title>
                 <funder>The National Endowment for the Humanities</funder>
                 <principal>Daniel L. Schwartz</principal>
@@ -31,7 +31,7 @@
             </editionStmt>
             <publicationStmt>
                 <authority>Syriaca.org: The Syriac Reference Portal</authority>
-                <idno type="URI">http://syriaca.org/spear/xxx/tei</idno><!-- Add URI -->
+                <idno type="URI">http://syriaca.org/spear/825/tei</idno>
                 <availability>
                     <licence target="http://creativecommons.org/licenses/by/3.0/">
                         <p>Distributed under a Creative Commons Attribution 3.0 Unported
@@ -41,7 +41,28 @@
                 <date><!-- INPUT ONCE WE HAVE A "FINAL" DRAFT --></date>
             </publicationStmt>
             <sourceDesc>
-                <p>Born digital.</p>
+                <listBibl>
+                    <head>Sources for the Data in this Born Digital Prosopography</head>
+                    <bibl type="primary">
+                        <title>Lives of the Eastern Saints II</title>
+                        <title>Hala</title>
+                        <author><persName ref="http://syriaca.org/person/74">John of
+                            Ephesus</persName></author>
+                        <editor><persName ref="http://syriaca.org/person/403">E. W.
+                            Brooks</persName></editor>
+                        <ptr target="http://syriaca.org/bibl/2032"/>
+                    </bibl>
+                    <bibl type="primary">
+                        <title>Hala</title>
+                        <author><persName ref="http://syriaca.org/person/74">John of
+                            Ephesus</persName></author>
+                        <ptr target="http://syriaca.org/work/825"/>
+                    </bibl>
+                </listBibl>
+                <listRelation>
+                    <relation type="part" active="http://syriaca.org/work/825"
+                        ref="dcterms:isPartOf" passive="http://syriaca.org/work/9501"/>
+                </listRelation>
             </sourceDesc>
         </fileDesc>
         <encodingDesc>
@@ -100,7 +121,7 @@
                      <citedRange unit="pp">390</citedRange>
                  </bibl>
                  <bibl type="primary">
-                     <ptr target="http://syriaca.org/bibl/825"/>
+                     <ptr target="http://syriaca.org/bibl/2032"/>
                      <citedRange unit="pp">592</citedRange>
                  </bibl>
             </div>
@@ -239,7 +260,7 @@
                         <desc><!-- Use persName, placeName, orgName, and date elements as needed, with URIs whenever possible. -->
                             The persecution came and the convents had all their poroperty taken from them, so <persName ref="http://syriaca.org/person/1769">Hala</persName> could no longer assist the poor.
                         </desc>
-                        <ptr target="http://syriaca.org/keyword/persecution, http://syriaca.org/keyword/material culture, http://syriaca.org/keyword/monks, http://syriaca.org/keyword/monastery"/><!-- Use as many keywords as needed to describe content in the description. -->
+                        <ptr target="http://syriaca.org/keyword/persecution http://syriaca.org/keyword/material-culture http://syriaca.org/keyword/monks http://syriaca.org/keyword/monastery"/>
                     </event>
                 </listEvent>
                 <bibl type="primary">
@@ -333,12 +354,26 @@
                <citedRange unit="pp">601</citedRange>
            </bibl>
        </div>
-            
-            
-            
-            
-        </body>
-        
-        
+   </body>
+   <back>
+       <listBibl>
+           <head>Works Cited</head>
+           <bibl type="primary" xml:id="bibl825-1">
+               <title>Lives of the Eastern Saints II</title>
+               <title>Hala</title>
+               <author><persName ref="http://syriaca.org/person/74">John of
+                   Ephesus</persName></author>
+               <editor><persName ref="http://syriaca.org/person/403">E. W.
+                   Brooks</persName></editor>
+               <ptr target="http://syriaca.org/bibl/2032"/>
+           </bibl>
+           <bibl type="primary" xml:id="bibl825-2">
+               <title>Hala</title>
+               <author><persName ref="http://syriaca.org/person/74">John of
+                   Ephesus</persName></author>
+               <ptr target="http://syriaca.org/work/825"/>
+           </bibl>
+       </listBibl>
+   </back>        
     </text>
 </TEI>

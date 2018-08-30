@@ -84,7 +84,28 @@
                 <date><!-- INPUT ONCE WE HAVE A "FINAL" DRAFT --></date>
             </publicationStmt>
             <sourceDesc>
-                <p>Born digital.</p>
+                <listBibl>
+                    <head>Sources for the Data in this Born Digital Prosopography</head>
+                    <bibl type="primary">
+                        <title>Lives of the Eastern Saints II</title>
+                        <title>Paul of Antioch</title>
+                        <author><persName ref="http://syriaca.org/person/74">John of
+                            Ephesus</persName></author>
+                        <editor><persName ref="http://syriaca.org/person/403">E. W.
+                            Brooks</persName></editor>
+                        <ptr target="http://syriaca.org/bibl/2032"/>
+                    </bibl>
+                    <bibl type="primary">
+                        <title>Two Antiochenes</title>
+                        <author><persName ref="http://syriaca.org/person/74">John of
+                            Ephesus</persName></author>
+                        <ptr target="http://syriaca.org/work/837"/>
+                    </bibl>
+                </listBibl>
+                <listRelation>
+                    <relation type="part" active="http://syriaca.org/work/837"
+                        ref="dcterms:isPartOf" passive="http://syriaca.org/work/9501"/>
+                </listRelation>
             </sourceDesc>
         </fileDesc>
         <encodingDesc>
@@ -154,7 +175,7 @@
                     <citedRange unit="pp">671-672</citedRange>
                 </bibl>
             </div>
-            <div uri="http://syriaca.org/spear/836-3" resp="#ngibson">
+            <div uri="http://syriaca.org/spear/837-3" resp="#ngibson">
                 <listPerson>
                     <person>
                         <persName ref="http://syriaca.org/person/1977"/>
@@ -226,9 +247,7 @@
                                 people</persName> at night and bathe and anoint them, mend and
                             change the clothes of the needy, provide them drink and small coins, and
                             them take them back to their place.</desc>
-                        <ptr
-                            target="http://syriaca.org/keyword/poor http://syriaca.org/keyword/illness http://syriaca.org/keyword/old-age 
-                            http://syriaca.org/keyword/washing http://syriaca.org/keyword/alms http://syriaca.org/keyword/dress http://syriaca.org/keyword/care"/>
+                        <ptr target="http://syriaca.org/keyword/poor http://syriaca.org/keyword/illness http://syriaca.org/keyword/old-age http://syriaca.org/keyword/washing http://syriaca.org/keyword/alms http://syriaca.org/keyword/dress http://syriaca.org/keyword/care"/>
                         <!-- New keywords: washing, care. -->
                     </event>
                 </listEvent>
@@ -251,9 +270,7 @@
                             for the poor, aged, and sick by carrying things with them from their
                             houses or work produce. Many of these became enthusiastic about this
                             labor.</desc>
-                        <ptr
-                            target="http://syriaca.org/keyword/poor http://syriaca.org/keyword/old-age
-                            http://syriaca.org/keyword/illness http://syriaca.org/keyword/alms http://syriaca.org/keyword/care"
+                        <ptr target="http://syriaca.org/keyword/poor http://syriaca.org/keyword/old-age http://syriaca.org/keyword/illness http://syriaca.org/keyword/alms http://syriaca.org/keyword/care"
                         />
                     </event>
                 </listEvent>
@@ -514,7 +531,24 @@
             
         </body>
         <back>
-            <!-- Enter full bibl information here for the  bibl URIs contained in this document, n.b. the schema needs to be updated in order to allow this.-->
+            <listBibl>
+                <head>Works Cited</head>
+                <bibl type="primary" xml:id="bibl837-1">
+                    <title>Lives of the Eastern Saints II</title>
+                    <title>Paul of Antioch</title>
+                    <author><persName ref="http://syriaca.org/person/74">John of
+                        Ephesus</persName></author>
+                    <editor><persName ref="http://syriaca.org/person/403">E. W.
+                        Brooks</persName></editor>
+                    <ptr target="http://syriaca.org/bibl/2032"/>
+                </bibl>
+                <bibl type="primary" xml:id="bibl837-2">
+                    <title>Two Antiochenes</title>
+                    <author><persName ref="http://syriaca.org/person/74">John of
+                        Ephesus</persName></author>
+                    <ptr target="http://syriaca.org/work/837"/>
+                </bibl>
+            </listBibl>
         </back>
     </text>
 </TEI>

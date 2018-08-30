@@ -6,7 +6,7 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title level="a">John of Ephesus, Theodore Castrensis, in the Lives of the Eastern Saints</title>
+                <title level="a">John of Ephesus, Mare the Solitary, in the Lives of the Eastern Saints</title>
                 <title level="m">SPEAR: Syriac Persons, Events, and Relations</title>
                 <funder>The National Endowment for the Humanities</funder>
                 <principal>Daniel L. Schwartz</principal>
@@ -51,7 +51,28 @@
                 <date><!-- INPUT ONCE WE HAVE A "FINAL" DRAFT --></date>
             </publicationStmt>
             <sourceDesc>
-                <p>Born digital.</p>
+                <listBibl>
+                    <head>Sources for the Data in this Born Digital Prosopography</head>
+                    <bibl type="primary">
+                        <title>Lives of the Eastern Saints II</title>
+                        <title>Mare the Solitary</title>
+                        <author><persName ref="http://syriaca.org/person/74">John of
+                            Ephesus</persName></author>
+                        <editor><persName ref="http://syriaca.org/person/403">E. W.
+                            Brooks</persName></editor>
+                        <ptr target="http://syriaca.org/bibl/2032"/>
+                    </bibl>
+                    <bibl type="primary">
+                        <title>Mare the Solitary</title>
+                        <author><persName ref="http://syriaca.org/person/74">John of
+                            Ephesus</persName></author>
+                        <ptr target="http://syriaca.org/work/828"/>
+                    </bibl>
+                </listBibl>
+                <listRelation>
+                    <relation type="part" active="http://syriaca.org/work/828"
+                        ref="dcterms:isPartOf" passive="http://syriaca.org/work/9501"/>
+                </listRelation>
             </sourceDesc>
         </fileDesc>
         <encodingDesc>
@@ -275,7 +296,7 @@
                         <desc>
                             After spending five years with<persName ref="http://syriaca.org/person/1980">Paul</persName>,<persName ref="http://syriaca.org/person/1875">Mare</persName>exceeded his teacher in prayer, asceticism, and moderation. Many criticized<persName ref="http://syriaca.org/person/1875">Mare</persName>for the severity of his practices.
                         </desc>
-                        <ptr target="http://syriaca.org/keyword/anchorites http://syriaca.org/keyword/monasticism http://syriaca.org/keyword/monks http://syriaca.org/keyword/tears http://syriaca.org/keyword/humility http://syriaca.org/keyword/fasting http://syriaca.org/keyword/prayer http://syriaca.org/keyword/labor http://syriaca.org/keyword/religion http://syriaca.org/keyword/asceticism "/>
+                        <ptr target="http://syriaca.org/keyword/anchorites http://syriaca.org/keyword/monasticism http://syriaca.org/keyword/monks http://syriaca.org/keyword/tears http://syriaca.org/keyword/humility http://syriaca.org/keyword/fasting http://syriaca.org/keyword/prayer http://syriaca.org/keyword/labor http://syriaca.org/keyword/religion http://syriaca.org/keyword/asceticism"/>
                     </event>
                 </listEvent>
                 <bibl type="primary">
@@ -432,7 +453,7 @@
                 <listEvent>
                     <event>
                         <desc>
-                            Observing the holiness of<persName ref="http://syriaca.org/person/1875">the man</persName>, Satan encouraged robbers to abuse him, under the impression that<persName ref="http://syriaca.org/person/799">the queen's</persName>chamberlains were bringing him gold.<persName ref="http://syriaca.org/1875">Mare</persName>overtook his assailants by stealing their weapons and attacking them. A chamberlain brought the weapons to <persName ref="http://syriaca.org/person/2284">Justinian</persName>and<persName ref="http://syriaca.org/person/779">Theodora</persName>.
+                            Observing the holiness of<persName ref="http://syriaca.org/person/1875">the man</persName>, Satan encouraged robbers to abuse him, under the impression that<persName ref="http://syriaca.org/person/799">the queen's</persName>chamberlains were bringing him gold.<persName ref="http://syriaca.org/person/1875">Mare</persName>overtook his assailants by stealing their weapons and attacking them. A chamberlain brought the weapons to <persName ref="http://syriaca.org/person/2284">Justinian</persName>and<persName ref="http://syriaca.org/person/779">Theodora</persName>.
                         </desc>
                         <ptr target="http://syriaca.org/keyword/anchorites http://syriaca.org/keyword/violence http://syriaca.org/keyword/wealth http://syriaca.org/keyword/justice http://syriaca.org/keyword/demonology"/>
                     </event>
@@ -519,5 +540,25 @@
                 </bibl>
             </div>
         </body>
+        <back>
+            <listBibl>
+                <head>Works Cited</head>
+                <bibl type="primary" xml:id="bibl828-1">
+                    <title>Lives of the Eastern Saints II</title>
+                    <title>Mare the Solitary</title>
+                    <author><persName ref="http://syriaca.org/person/74">John of
+                        Ephesus</persName></author>
+                    <editor><persName ref="http://syriaca.org/person/403">E. W.
+                        Brooks</persName></editor>
+                    <ptr target="http://syriaca.org/bibl/2032"/>
+                </bibl>
+                <bibl type="primary" xml:id="bibl828-2">
+                    <title>Mare the Solitary</title>
+                    <author><persName ref="http://syriaca.org/person/74">John of
+                        Ephesus</persName></author>
+                    <ptr target="http://syriaca.org/work/828"/>
+                </bibl>
+            </listBibl>
+        </back>
     </text>
 </TEI>

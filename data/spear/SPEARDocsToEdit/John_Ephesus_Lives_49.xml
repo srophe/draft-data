@@ -178,11 +178,13 @@
                     <citedRange unit="pp">690</citedRange>
                 </bibl>
             </div>
-            <div resp="#calculated" uri="http://syriaca.org/spear/840-3">
+            <div resp="#ekowalik #tb" uri="http://syriaca.org/spear/840-3">
                 <listPerson>
                     <person>
                         <persName ref="http://syriaca.org/person/69"/>
-                        <sex value="M/F">Male=</sex>
+                        <trait type="gender" ref="http://syriaca.org/keyword/male">
+                            <note type="desc"><persName ref="http://syriaca.org/person/69">James</persName> was male.</note>
+                        </trait>
                     </person>
                 </listPerson>
                 <bibl type="primary">
@@ -194,7 +196,7 @@
                     <citedRange unit="pp">690</citedRange>
                 </bibl>
             </div>
-            <div resp="#calculated" uri="http://syriaca.org/spear/840-4">
+            <div resp="#ekowalik #tb" uri="http://syriaca.org/spear/840-4">
                 <listPerson>
                     <person>
                         <persName ref="http://syriaca.org/person/69"/>
@@ -214,12 +216,11 @@
                     <citedRange unit="pp">690</citedRange>
                 </bibl>
             </div>
-            <div resp="#calculated" uri="http://syriaca.org/spear/840-5">
+            <div resp="#ekowalik #tb" uri="http://syriaca.org/spear/840-5">
                 <listPerson>
                     <person>
                         <persName ref="http://syriaca.org/person/69"/>
-                        <education ref="http://syriaca.org/keyword/monasteries">
-                            <!-- Use as many keywords as needed to describe content in note. -->
+                        <education ref="">
                             <note type="desc">
                                 <persName ref="http://syriaca.org/person/69">James</persName>
                                 studied at <placeName ref="http://syriaca.org/place/373"
@@ -236,11 +237,9 @@
                     <citedRange unit="pp">690</citedRange>
                 </bibl>
             </div>
-            <div resp="#calculated" uri="http://syriaca.org/spear/840-6">
+            <div resp="#ekowalik #tb" uri="http://syriaca.org/spear/840-6">
                 <listRelation>
-                    <relation ref="syriaca:FellowClergy"
-                        mutual="http://syriaca.org/person/3258 http://syriaca.org/person/69"
-                        ana="clerical"/>
+                    <relation ref="syriaca:FellowClergy" mutual="http://syriaca.org/person/3258 http://syriaca.org/person/69"/>
                 </listRelation>
                 <bibl type="primary">
                     <ptr target="http://syriaca.org/work/840"/>
@@ -251,11 +250,10 @@
                     <citedRange unit="pp">691</citedRange>
                 </bibl>
             </div>
-            <div resp="#calculated" uri="http://syriaca.org/spear/840-7">
+            <div resp="#ekowalik #tb" uri="http://syriaca.org/spear/840-7">
                 <listEvent>
                     <event>
                         <desc>
-                            <!-- Use persName, placeName, orgName, and date elements as needed, with URIs whenever possible. -->
                             <persName ref="http://syriaca.org/person/69">James</persName> and
                                 <persName ref="http://syriaca.org/person/3258">Sergius</persName>
                             traveled to the <placeName ref="http://syriaca.org/place/586">royal
@@ -272,17 +270,15 @@
                     <citedRange unit="pp">691</citedRange>
                 </bibl>
             </div>
-            <div resp="#calculated" uri="http://syriaca.org/spear/840-8">
+            <div resp="#ekowalik #tb" uri="http://syriaca.org/spear/840-8">
                 <listEvent>
                     <event>
                         <desc>
-                            <!-- Use persName, placeName, orgName, and date elements as needed, with URIs whenever possible. -->
                             <persName ref="http://syriaca.org/person/69">James</persName> and
                                 <persName ref="http://syriaca.org/person/3258">Sergius</persName>
                             were guests of the <persName ref="http://syriaca.org/person/779"
                                 >queen</persName> . </desc>
                         <ptr target="http://syriaca.org/keyword/patronage"/>
-                        <!-- Use as many keywords as needed to describe content in the description. -->
                     </event>
                 </listEvent>
                 <bibl type="primary">
@@ -294,12 +290,11 @@
                     <citedRange unit="pp">691</citedRange>
                 </bibl>
             </div>
-            <div uri="http://syriaca.org/spear/840-9" resp="">
+            <div uri="http://syriaca.org/spear/840-9" resp="#ekowalik #tb">
                 <listPerson>
                     <person>
                         <persName ref="http://syriaca.org/person/69"/>
                         <occupation ref="http://syriaca.org/keyword/asceticism">
-                            <!-- Use as many keywords as needed to describe content in note. -->
                             <note type="desc">
                                 <persName ref="http://syriaca.org/person/69">James</persName> was an
                                 ascetic for fifteen years. </note>
@@ -315,12 +310,11 @@
                     <citedRange unit="pp">691</citedRange>
                 </bibl>
             </div>
-            <div uri="http://syriaca.org/spear/840-10" resp="">
+            <div uri="http://syriaca.org/spear/840-10" resp="#ekowalik #tb">
                 <listPerson>
                     <personGrp>
                         <persName ref="http://syriaca.org/person/3258"/>
                         <occupation ref="http://syriaca.org/keyword/bishops">
-                            <!-- Use as many keywords as needed to describe content in note. -->
                             <note type="desc">
                                 <persName ref="http://syriaca.org/person/3258">Sergius </persName>
                                 was a bishop. </note>
@@ -336,7 +330,7 @@
                     <citedRange unit="pp">691</citedRange>
                 </bibl>
             </div>
-            <div uri="http://syriaca.org/spear/840-11" resp="">
+            <div uri="http://syriaca.org/spear/840-11" resp="#ekowalik #tb">
                 <listPerson>
                     <person>
                         <persName ref="http://syriaca.org/person/3266"/>
@@ -354,14 +348,13 @@
                     <citedRange unit="pp">490</citedRange>
                 </bibl>
                 <bibl type="primary">
-                    <ptr target="http://syriaca.org/bibl/(PO Vol. #)"/>
+                    <ptr target="http://syriaca.org/bibl/2032"/>
                     <citedRange unit="pp">692</citedRange>
                 </bibl>
             </div>
-            <div uri="http://syriaca.org/spear/840-12" resp="">
+            <div uri="http://syriaca.org/spear/840-12" resp="#ekowalik #tb">
                 <listRelation>
-                    <relation ana="clerical" ref="syriaca:fellowclergy"
-                        mutual="http://syriaca.org/person/69 http://syriaca.org/person/3266"/>
+                    <relation ref="syriaca:FellowClergy" mutual="http://syriaca.org/person/69 http://syriaca.org/person/3266"/>
                 </listRelation>
                 <bibl type="primary">
                     <ptr target="http://syriaca.org/work/840"/>
@@ -372,7 +365,7 @@
                     <citedRange unit="pp">691</citedRange>
                 </bibl>
             </div>
-            <div uri="http://syriaca.org/spear/840-13" resp="">
+            <div uri="http://syriaca.org/spear/840-13" resp="#ekowalik #tb">
                 <listPerson>
                     <person>
                         <persName ref="http://syriaca.org/person/3266"/>
@@ -389,34 +382,33 @@
                     <ptr target="http://syriaca.org/work/840"/>
                     <citedRange unit="pp">489</citedRange>
                 </bibl>
-                <div uri="http://syriaca.org/spear/840-15" resp="">
-                    <listEvent>
-                        <event>
-                            <desc><!-- Use persName, placeName, orgName, and date elements as needed, with URIs whenever possible. -->
-                                James travels to the frontier of <placeName
-                                    ref="http://syriaca.org/place/526">Persia</placeName>,
-                                    <placeName ref="http://syriaca.org/place/586"
-                                    >Constantinople</placeName> and <placeName
-                                    ref="http://syriaca.org/place/572">Alexandria</placeName>
-                                ordaining <persGroup ref="http://syriaca.org/xxx/xx"
-                                    >clergy</persGroup>.
-                                <!-- We are requesting a new URI for this persGroup -->
-                            </desc>
-                            <ptr target="http://syriaca.org/keyword/xxx"/>
-                        </event>
-                    </listEvent>
-                    <bibl type="primary">
-                        <ptr target="http://syriaca.org/work/(URI for saint's life)"/>
-                        <citedRange unit="pp">491</citedRange>
-                    </bibl>
-                    <bibl type="primary">
-                        <ptr target="http://syriaca.org/bibl/(PO Vol. #)"/>
-                        <citedRange unit="pp">692</citedRange>
-                    </bibl>
-                </div>
                 <bibl type="primary">
                     <ptr target="http://syriaca.org/bibl/2032"/>
                     <citedRange unit="pp">691</citedRange>
+                </bibl>
+            </div>
+            <div uri="http://syriaca.org/spear/840-14" resp="#ekowalik #tb">
+                <listEvent>
+                    <event>
+                        <desc>
+                            James travels to the frontier of <placeName
+                                ref="http://syriaca.org/place/526">Persia</placeName>,
+                            <placeName ref="http://syriaca.org/place/586"
+                                >Constantinople</placeName> and <placeName
+                                    ref="http://syriaca.org/place/572">Alexandria</placeName>
+                            ordaining <persGroup ref="http://syriaca.org/xxx/xx"
+                                >clergy</persGroup>.
+                        </desc>
+                        <ptr target="http://syriaca.org/keyword/ordination http://syriaca.org/keyword/travel"/>
+                    </event>
+                </listEvent>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/work/840"/>
+                    <citedRange unit="pp">491</citedRange>
+                </bibl>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/bibl/2032"/>
+                    <citedRange unit="pp">692</citedRange>
                 </bibl>
             </div>
         </body>

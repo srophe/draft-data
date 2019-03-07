@@ -129,7 +129,9 @@
                 <listPerson>
                     <person>
                         <persName ref="http://syriaca.org/person/1933"/>
-                        <sex value="M/F">Male</sex><!-- TEI uses sex for biological distinctions, see also the gender factoid. -->
+                        <trait type="gender" ref="http://syriaca.org/keyword/male">
+                            <note type="desc"><persName ref="http://syriaca.org/person/1933">James</persName> was male.</note>
+                        </trait>
                     </person>
                 </listPerson>
                 <bibl type="primary">
@@ -145,7 +147,7 @@
                 <listPerson>
                     <person>
                         <persName ref="http://syriaca.org/person/1933"/>
-                        <state type="sanctity" ref="http://syriaca.org/keyword/asceticism"><!-- Use as many keywords as needed to describe content in note. -->
+                        <state type="sanctity" ref="http://syriaca.org/keyword/ascetic">
                             <note type="desc">
                                 <persName ref="http://syriaca.org/person/1933">James</persName> was an ascetic.
                             </note>
@@ -165,7 +167,7 @@
                 <listPerson>
                     <person>
                         <persName ref="http://syriaca.org/person/1933"/>
-                        <occupation ref="http://syriaca.org/keyword/asceticism">
+                        <occupation ref="http://syriaca.org/keyword/ascetic">
                             <note type="desc">
                                 <persName ref="http://syriaca.org/person/1933">James</persName> practiced asceticism. 
                             </note>
@@ -289,7 +291,7 @@
                         <desc> 
                             Demons wake <persName ref="http://syriaca.org/person/1933">James</persName> and lead him to the martyrs' chapel, and he was terrified.
                         </desc>
-                        <ptr target="http://syriaca.org/keyword/demonology   http://syriaca.org/keyword/churches http://syriaca.org/martyrs"/>
+                        <ptr target="http://syriaca.org/keyword/demonology http://syriaca.org/keyword/churches http://syriaca.org/martyrs"/>
                     </event>
                 </listEvent>
             </div>

@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/srophe/srophe-eXist-app/schema-4-spear-edits/srophe-app/documentation/SPEARschema/out/odd_SPEAR.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/srophe/srophe-eXist-app/schema-4-spear-edits/srophe-app/documentation/SPEARschema/out/odd_SPEAR.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg">
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title level="a">The Letters of Severus of Antioch</title> <!-- How to title each individual letter? -->
+                <title level="a">Severus of Antioch, Letter,<title ref="http://syriaca.org/work/3107">To John and John the Presbyters</title></title>
                 <title level="m">SPEAR: Syriac Persons, Events, and Relations</title>
                 <funder>The National Endowment for the Humanities</funder>
                 <principal>Daniel L. Schwartz</principal>
@@ -23,7 +25,7 @@
             </editionStmt>
             <publicationStmt>
                 <authority>Syriaca.org: The Syriac Reference Portal</authority>
-                <idno type="URI">http://syriaca.org/spear/3036/tei</idno> <!-- REPLACE THE 3036 WITH THE NUMBER OF THE ASSIGNED LETTER -->
+                <idno type="URI">http://syriaca.org/spear/3107/tei</idno> 
                 <availability>
                     <licence target="http://creativecommons.org/licenses/by/3.0/">
                         <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
@@ -32,7 +34,22 @@
                 <date></date>
             </publicationStmt>
             <sourceDesc>
-                <p></p>
+                <listBibl>
+                    <head>Sources for the Data in this Born Digital Prosopography</head>
+                    <bibl type="primary">
+                        <title xml:lang="en">The Sixth Book of the Select Letters of Severus, Patriarch of Antioch in the Syriac Version of Athanasius of Nisibis</title>
+                        <title type="sub">Translation, I.1 - II.3</title>
+                        <title type="part">To the Syrian Bishops at Alexandria</title>
+                        <author><persName ref="http://syriaca.org/person/51">Severus of Antioch</persName></author>
+                        <editor><persName ref="http://syriaca.org/person/403">E. W. Brooks</persName></editor>
+                        <ptr target="http://syriaca.org/bibl/668"/>
+                    </bibl>
+                    <bibl type="primary">
+                        <title>To the Syrian Bishops at Alexandria</title>
+                        <author><persName ref="http://syriaca.org/person/51">Severus of Antioch</persName></author>
+                        <ptr target="http://syriaca.org/work/3107"/>
+                    </bibl>
+                </listBibl>
             </sourceDesc>
         </fileDesc>
         <encodingDesc>
@@ -49,7 +66,7 @@
     </teiHeader>
     <text>
         <body>
-            <div>
+            <div uri="http://syriaca.org/spear/3107-" resp="#ktorabi #dschwartz">
                 <listPerson>
                     <person>
                         <persName ref="http://syriaca.org/person/2427">
@@ -58,8 +75,8 @@
                     </person>
                 </listPerson>
                 <bibl type="primary">
-                    <biblScope type="pp">
-                        <ptr target="#bib3107-1"/>148</biblScope>
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="pp">148</citedRange>
                 </bibl>
             </div>
             <div>
@@ -72,8 +89,8 @@
                     </person>
                 </listPerson>
                 <bibl type="primary">
-                    <biblScope type="pp">
-                        <ptr target="#bibl3107-1"/>148</biblScope>
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="pp">148</citedRange>
                 </bibl>
             </div>
             <div>
@@ -90,8 +107,8 @@
                     </person>
                 </listPerson>
                 <bibl type="primary">
-                    <biblScope type="pp">
-                        <ptr target="#bibl3107"/>148</biblScope>
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="pp">148</citedRange>
                 </bibl>
             </div>
             <div>
@@ -108,8 +125,8 @@
                     </person>
                 </listPerson>
                 <bibl type="primary">
-                    <biblScope type="pp">
-                        <ptr target="#bibl3107"/>148</biblScope>
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="pp">148</citedRange>
                 </bibl>
             </div>
             <div>
@@ -117,8 +134,8 @@
                     <relation type="epistolary" name="syriaca:RecipientOfLetterFrom" active="http://syriaca.org/person/2427" passive="http://syriaca.org/person/51"></relation>
                 </listRelation>
                 <bibl type="primary">
-                    <biblScope type="pp">
-                        <ptr target="#bibl3107"/>148</biblScope>
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="pp">148</citedRange>
                 </bibl>
             </div>
             <div>
@@ -130,8 +147,8 @@
                     </person>
                 </listPerson>
                 <bibl type="primary">
-                    <biblScope type="pp">
-                        <ptr target="#bib3107-1"/>148</biblScope>
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="pp">148</citedRange>
                 </bibl>
             </div>
             <div>
@@ -144,8 +161,8 @@
                     </person>
                 </listPerson>
                 <bibl type="primary">
-                    <biblScope type="pp">
-                        <ptr target="#bibl3107-1"/>148</biblScope>
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="pp">148</citedRange>
                 </bibl>
             </div>
             <div>
@@ -162,8 +179,8 @@
                     </person>
                 </listPerson>
                 <bibl type="primary">
-                    <biblScope type="pp">
-                        <ptr target="#bibl3107"/>148</biblScope>
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="pp">148</citedRange>
                 </bibl>
             </div>
             <div>
@@ -180,8 +197,8 @@
                     </person>
                 </listPerson>
                 <bibl type="primary">
-                    <biblScope type="pp">
-                        <ptr target="#bibl3107"/>148</biblScope>
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="pp">148</citedRange>
                 </bibl>
             </div>
             <div>
@@ -189,8 +206,8 @@
                     <relation type="epistolary" name="syriaca:RecipientOfLetterFrom" active="http://syriaca.org/person/2428" passive="http://syriaca.org/person/51"></relation>
                 </listRelation>
                 <bibl type="primary">
-                    <biblScope type="pp">
-                        <ptr target="#bibl3107"/>148</biblScope>
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="pp">148</citedRange>
                 </bibl>
             </div>
             <div>
@@ -208,8 +225,8 @@
                     </personGrp>
                 </listPerson>
                 <bibl type="primary">
-                    <biblScope type="pp">
-                        <ptr target="#bibl3107"/>148</biblScope>
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="pp">148</citedRange>
                 </bibl>
             </div>
             <div>
@@ -224,8 +241,8 @@
                     </person>
                 </listPerson>
                 <bibl type="primary">
-                    <biblScope type="pp">
-                        <ptr target="#bib3107-1"/>148</biblScope>
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="pp">148</citedRange>
                 </bibl>
             </div>
             <div>
@@ -236,8 +253,8 @@
                     </person>
                 </listPerson>
                 <bibl type="primary">
-                    <biblScope type="pp">
-                        <ptr target="#bibl3107"/>148</biblScope>
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="pp">148</citedRange>
                 </bibl>
             </div>
             <div>
@@ -245,8 +262,8 @@
                     <relation type="slavery" name="snap:SlaveOf" active="http://syriaca.org/person/anonymous1" passive="http://syriaca.org/person/anonymi1"></relation>
                 </listRelation>
                 <bibl type="primary">
-                    <biblScope type="pp">
-                        <ptr target="#bibl3107"/>148</biblScope>
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="pp">148</citedRange>
                 </bibl>
             </div>
             <div>
@@ -265,8 +282,8 @@
                     </person>
                 </listPerson>
                 <bibl type="primary">
-                    <biblScope type="pp">
-                        <ptr target="#bib3107-1"/>148</biblScope>
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="pp">148</citedRange>
                 </bibl>
             </div>
             <div>
@@ -279,8 +296,8 @@
                     </person>
                 </listPerson>
                 <bibl type="primary">
-                    <biblScope type="pp">
-                        <ptr target="#bibl3107-1"/>148</biblScope>
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="pp">148</citedRange>
                 </bibl>
             </div>
             <div>
@@ -304,8 +321,8 @@
                     </person>
                 </listPerson>
                 <bibl type="primary">
-                    <biblScope type="pp">
-                        <ptr target="#bib3107-1"/>148</biblScope>
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="pp">148</citedRange>
                 </bibl>
             </div>
             <div>
@@ -313,8 +330,8 @@
                     <relation type="epistolary" name="syriaca:SenderOfLetterTo" active="http://syriaca.org/person/51" passive="http://syriaca.org/person/2439"></relation>
                 </listRelation>
                 <bibl type="primary">
-                    <biblScope type="pp">
-                        <ptr target="#bibl3107"/>148</biblScope>
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="pp">148</citedRange>
                 </bibl>
             </div>
             <div>
@@ -332,8 +349,8 @@
                     </personGrp>
                 </listPerson>
                 <bibl type="primary">
-                    <biblScope type="pp">
-                    <ptr target="#bibl3107"/>149</biblScope>
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="pp">149</citedRange>
                 </bibl>
             </div>
             <div>
@@ -348,8 +365,8 @@
                     </personGrp>
                 </listPerson>
                 <bibl type="primary">
-                    <biblScope type="pp">
-                    <ptr target="#bibl3107"/>149</biblScope>
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="pp">149</citedRange>
                 </bibl>
             </div>
             <div>
@@ -361,8 +378,8 @@
                     </person>
                 </listPerson>
                 <bibl type="primary">
-                    <biblScope type="pp">
-                        <ptr target="#bib3107-1"/>150</biblScope>
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="pp">150</citedRange>
                 </bibl>
             </div>
             <div>
@@ -375,8 +392,8 @@
                     </person>
                 </listPerson>
                 <bibl type="primary">
-                    <biblScope type="pp">
-                        <ptr target="#bibl3107-1"/>150</biblScope>
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="pp">150</citedRange>
                 </bibl>
             </div>
             <div>
@@ -396,8 +413,8 @@
                     </person>
                 </listPerson>
                 <bibl type="primary">
-                    <biblScope type="pp">
-                        <ptr target="#bibl3107"/>150</biblScope>
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="pp">150</citedRange>
                 </bibl>
             </div>
             <div>
@@ -405,8 +422,8 @@
                     <relation type="personal" name="snap:EnmityFor" ana="alleged" active="http://syriaca.org/person/51" passive="http://syriaca.org/person/2442"></relation>
                 </listRelation>
                 <bibl type="primary">
-                    <biblScope type="pp">
-                        <ptr target="#bibl3107"/>150</biblScope>
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="pp">150</citedRange>
                 </bibl>
             </div>
             <div>
@@ -424,8 +441,8 @@
                         </personGrp>
                 </listPerson>
                 <bibl type="primary">
-                    <biblScope type="pp">
-                        <ptr target="#bibl3107"/>150</biblScope>
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="pp">150</citedRange>
                 </bibl>
             </div>
             <div>
@@ -447,8 +464,8 @@
                     </personGrp>
                 </listPerson>
                 <bibl type="primary">
-                    <biblScope type="pp">
-                        <ptr target="#bibl3107"/>150</biblScope>
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="pp">150</citedRange>
                 </bibl>
             </div>
             <div>
@@ -460,8 +477,8 @@
                     </person>
                 </listPerson>
                 <bibl type="primary">
-                    <biblScope type="pp">
-                        <ptr target="#bib3107-1"/>150</biblScope>
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="pp">150</citedRange>
                 </bibl>
             </div>
             <div>
@@ -472,8 +489,8 @@
                     </person>
                 </listPerson>
                 <bibl type="primary">
-                    <biblScope type="pp">
-                        <ptr target="#bibl3107"/>150</biblScope>
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="pp">150</citedRange>
                 </bibl>
             </div>
             <div>
@@ -490,8 +507,8 @@
                     </person>
                 </listPerson>
                 <bibl type="primary">
-                    <biblScope type="pp">
-                    <ptr target="#bibl3107"/>150</biblScope>
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="pp">150</citedRange>
                 </bibl>
             </div>
             <div>
@@ -503,8 +520,8 @@
                     </person>
                 </listPerson>
                 <bibl type="primary">
-                    <biblScope type="pp">
-                        <ptr target="#bib3107-1"/>150</biblScope>
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="pp">150</citedRange>
                 </bibl>
             </div>
             <div>
@@ -515,8 +532,8 @@
                     </person>
                 </listPerson>
                 <bibl type="primary">
-                    <biblScope type="pp">
-                        <ptr target="#bibl3107"/>150</biblScope>
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="pp">150</citedRange>
                 </bibl>
             </div>
             <div>
@@ -536,8 +553,8 @@
                     </person>
                 </listPerson>
                 <bibl type="primary">
-                    <biblScope type="pp">
-                    <ptr target="#bibl3107"/>150</biblScope>
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="pp">150</citedRange>
                 </bibl>
             </div>
             <div>
@@ -545,8 +562,8 @@
                     <relation type="professional" name="snap:ProfessionalRelationship" mutual="http://syriaca.org/person/2441 http://syriaca.org/person/2515"></relation>
                 </listRelation>
                 <bibl type="primary">
-                    <biblScope type="pp">
-                        <ptr target="#bibl3107"/>150</biblScope>
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="pp">150</citedRange>
                 </bibl>
             </div>
             <div>
@@ -558,8 +575,8 @@
                     </person>
                 </listPerson>
                 <bibl type="primary">
-                    <biblScope type="pp">
-                        <ptr target="#bib3107-1"/>150</biblScope>
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="pp">150</citedRange>
                 </bibl>
             </div>
             <div>
@@ -570,8 +587,8 @@
                     </person>
                 </listPerson>
                 <bibl type="primary">
-                    <biblScope type="pp">
-                        <ptr target="#bibl3107"/>150</biblScope>
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="pp">150</citedRange>
                 </bibl>
             </div>
             <div>
@@ -588,8 +605,8 @@
                     </person>
                 </listPerson>
                 <bibl type="primary">
-                    <biblScope type="pp">
-                        <ptr target="#bibl3107"/>150</biblScope>
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="pp">150</citedRange>
                 </bibl>
             </div>
             <div>
@@ -597,8 +614,8 @@
                     <relation type="epistolary" name="syriaca:SenderOfLetterTo" active="http://syriaca.org/person/2441" passive="http://syriaca.org/person/2431"></relation>
                 </listRelation>
                 <bibl type="primary">
-                    <biblScope type="pp">
-                        <ptr target="#bibl3107"/>150</biblScope>
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="pp">150</citedRange>
                 </bibl>
             </div>
             <div>
@@ -613,8 +630,8 @@
                     </person>
                 </listPerson>
                 <bibl type="primary">
-                    <biblScope type="pp">
-                        <ptr target="#bib3107-1"/>150</biblScope>
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="pp">150</citedRange>
                 </bibl>
             </div>
             <div>
@@ -625,8 +642,8 @@
                     </person>
                 </listPerson>
                 <bibl type="primary">
-                    <biblScope type="pp">
-                        <ptr target="#bibl3107"/>150</biblScope>
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="pp">150</citedRange>
                 </bibl>
             </div>
             <div>
@@ -650,56 +667,23 @@
                     </person>
                 </listPerson>
                 <bibl type="primary">
-                    <biblScope type="pp">
-                        <ptr target="#bibl3107"/>150</biblScope>
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="pp">150</citedRange>
                 </bibl>
             </div>
           </body>
-                <bibl xml:id="bib3107-1">
-                    <title xml:lang="en">The Sixth Book of the Select Letters of Severus, Patriarch of Antioch in the Syriac Version of Athanasius of Nisibis</title>
-                    <title type="sub">Translation, I.1 - II.3</title>
-                    <editor>E. W. Brooks</editor>
-                    <editor role="translator">E. W. Brooks</editor>
-                    <pubPlace>London and Oxford</pubPlace>
-                    <publisher>Williams and Norgate</publisher>
-                    <date when="1903">1903</date>
-                    <biblScope unit="vol">II</biblScope>
-                    <biblScope unit="issue">I</biblScope>
-                </bibl>
-                <bibl xml:id="bibl3107-2">
-                    <title xml:lang="en">The Sixth Book of the Select Letters of Severus, Patriarch of Antioch in the Syriac Version of Athanasius of Nisibis</title>
-                    <title type="sub">Translation, III.1 - XI.1</title>
-                    <editor>E. W. Brooks</editor>
-                    <editor role="translator">E. W. Brooks</editor>
-                    <pubPlace>London and Oxford</pubPlace>
-                    <publisher>Williams and Norgate</publisher>
-                    <date when="1904">1904</date>
-                    <biblScope unit="vol">II</biblScope>
-                    <biblScope unit="issue">II</biblScope>
-                </bibl>
-                <bibl xml:id="bibl3107-3">
-                    <title xml:lang="en">The Sixth Book of the Select Letters of Severus, Patriarch of Antioch in the Syriac Version of Athanasius of Nisibis</title>
-                    <title type="sub">Text, I.1 - II.3</title>
-                    <editor>E. W. Brooks</editor>
-                    <editor role="translator">E. W. Brooks</editor>
-                    <pubPlace>London and Oxford</pubPlace>
-                    <publisher>Williams and Norgate</publisher>
-                    <date when="1902">1902</date>
-                    <biblScope unit="vol">I</biblScope>
-                    <biblScope unit="issue">I</biblScope>
-                </bibl>
-                <bibl xml:id="bibl3107-4">
-                    <title xml:lang="en">The Sixth Book of the Select Letters of Severus, Patriarch of Antioch in the Syriac Version of Athanasius of Nisibis</title>
-                    <title type="sub">Text, III.1 - XI.1</title>
-                    <editor>E. W. Brooks</editor>
-                    <editor role="translator">E. W. Brooks</editor>
-                    <pubPlace>London and Oxford</pubPlace>
-                    <publisher>Williams and Norgate</publisher>
-                    <date when="1904">1904</date>
-                    <biblScope unit="vol">I</biblScope>
-                    <biblScope unit="issue">II</biblScope>
-                </bibl>
-            </div>
-        </back>
+          <back>
+              <listBibl>
+                  <head>Works Cited</head>
+                  <bibl type="primary" xml:id="bibl3107-1">
+                      <title xml:lang="en">The Sixth Book of the Select Letters of Severus, Patriarch of Antioch in the Syriac Version of Athanasius of Nisibis</title>
+                      <title type="sub">Translation, I.1 - II.3</title>
+                      <title type="part">To John and John the Presbyters</title>
+                      <author><persName ref="http://syriaca.org/person/51">Severus of Antioch</persName></author>
+                      <editor><persName ref="http://syriaca.org/person/403">E. W. Brooks</persName></editor>
+                      <ptr target="http://syriaca.org/bibl/668"/>
+                  </bibl>
+              </listBibl>
+          </back>
     </text>
 </TEI>

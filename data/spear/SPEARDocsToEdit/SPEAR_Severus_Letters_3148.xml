@@ -72,11 +72,8 @@
                         <persName ref="http://syriaca.org/person/anonymous1">
                             Recipient of a letter from
                             <persName ref="http://syriaca.org/person/51">
-                                Severus of 
-                            </persName>
-                            <placeName>
-                                Antioch
-                                </placeName>
+                                Severus 
+                            </persName>.
                         </persName>
                     </person>
                 </listPerson>
@@ -87,7 +84,7 @@
             </div>
             <div uri="http://syriaca.org/spear/3148-2" resp="#ktorabi #dschwartz">
                 <listRelation>
-                    <relation type="epistolary" name="syriaca:RecipientOfLetterFrom" active="http://syriaca.org/person/anonymous1" passive="http://syriaca.org/person/51"/>
+                    <relation ref="syriaca:SenderOfLetterTo" active="http://syriaca.org/person/51" passive="http://syriaca.org/person/anonymous1"/>
                 </listRelation>
                 <bibl type="primary">
                     <ptr target="http://syriaca.org/bibl/668"/>
@@ -111,9 +108,9 @@
                 <listPerson>
                     <person>
                         <persName ref="http://syriaca.org/person/2453"/>
-                        <sex value="M">
-                            Male
-                        </sex>
+                        <trait type="gender" ref="http://syriaca.org/keyword/male">
+                            <persName ref="http://syriaca.org/person/2453">Patrick</persName> was male.
+                        </trait>
                     </person>
                 </listPerson>
                 <bibl type="primary">
@@ -124,14 +121,15 @@
             <div uri="http://syriaca.org/spear/3148-5" resp="#ktorabi #dschwartz">
                 <listPerson>
                     <person>
-                        <state type="vocation">
-                            <desc>
+                        <persName ref="http://syriaca.org/person/2453"/>
+                        <occupation ref="http://syriaca.org/keyword/priests">
+                            <note type="desc">
                                 <persName ref="http://syriaca.org/person/2453">
                                     Patrick 
                                 </persName>
-                                was a presbyter
-                            </desc>
-                        </state>
+                                was a presbyter.
+                            </note>
+                        </occupation>
                     </person>
                 </listPerson>
                 <bibl type="primary">
@@ -142,14 +140,15 @@
             <div uri="http://syriaca.org/spear/3148-6" resp="#ktorabi #dschwartz">
                 <listPerson>
                     <person>
-                        <state type="vocation">
-                            <desc>
+                        <persName ref="http://syriaca.org/person/2453"/>
+                        <occupation ref="http://syriaca.org/keyword/monks">
+                            <note type="desc">
                                 <persName ref="http://syriaca.org/person/2453">
                                     Patrick 
                                 </persName>
-                                was a monk
-                            </desc>
-                        </state>
+                                was a monk.
+                            </note>
+                        </occupation>
                     </person>
                 </listPerson>
                 <bibl type="primary">
@@ -157,12 +156,12 @@
                     <citedRange unit="pp">162</citedRange>
                 </bibl>
             </div>
-            <div uri="http://syriaca.org/spear/3148-7" resp="#ktorabi #dschwartz">
+            <div uri="http://syriaca.org/spear/3148-7?" resp="#ktorabi #dschwartz">
                 <listPerson>
                     <personGrp>
                         <persName ref="http://syriaca.org/person/anonymi1">
                             believers in 
-                            <placeName>
+                            <placeName ref="http://syriaca.org/place/10">
                                 Antioch
                             </placeName> 
                             between
@@ -180,7 +179,7 @@
             </div>
             <div uri="http://syriaca.org/spear/3148-8" resp="#ktorabi #dschwartz">
                 <listRelation><!-- I'm not sure if this is appropriately encoded as EnmityFor, as Severus's feelings for anonymi1 seems to be contempt, rather than hatred -->
-                    <relation type="religious" name="snap:EnmityFor" ana="alleged" active="http://syriaca.org/person/51" passive="http://syriaca.org/person/anonymi1"/> 
+                    <relation ref="snap:EnmityFor" active="http://syriaca.org/person/51" passive="http://syriaca.org/person/anonymi1"/> 
                 </listRelation>
                 <bibl type="primary">
                     <ptr target="http://syriaca.org/bibl/668"/>
@@ -220,9 +219,11 @@
                 <listPerson>
                     <person>
                         <persName ref="http://syriaca.org/person/2454"/>
-                        <sex value="M">
-                            Male
-                        </sex>
+                        <trait type="gender" ref="http://syriaca.org/keyword/male">
+                            <note type="desc">
+                                <persName ref="http://syriaca.org/person/2454">Eustochius</persName> was male.
+                            </note>
+                        </trait>
                     </person>
                 </listPerson>
                 <bibl type="primary">
@@ -233,17 +234,18 @@
             <div uri="http://syriaca.org/spear/3148-12" resp="#ktorabi #dschwartz">
                 <listPerson>
                     <person>
-                        <state type="vocation">
-                            <desc>
+                        <persName ref="http://syriaca.org/person/2454"/>
+                        <occupation ref="http://syriaca.org/keyword/deacons">
+                            <note type="desc">
                                 <persName ref="http://syriaca.org/person/2454">
                                     Eustochius 
                                 </persName>
                                 was a deacon of
-                                <placeName>
+                                <placeName ref="http://syriaca.org/place/2620">
                                     Alexandria
                                 </placeName>
-                            </desc>
-                        </state>
+                            </note>
+                        </occupation>
                     </person>
                 </listPerson>
                 <bibl type="primary">
@@ -253,7 +255,7 @@
             </div>
             <div uri="http://syriaca.org/spear/3148-13" resp="#ktorabi #dschwartz">
                 <listRelation>
-                    <relation type="epistolary" name="syriaca:EpistolaryReferenceTo" active="http://syriaca.org/person/51" passive="http://syriaca.org/person/2454 http://syriaca.org/person/anonymi1"/> 
+                    <relation ref="syriaca:EpistolaryReferenceTo" active="http://syriaca.org/person/51" passive="http://syriaca.org/person/2454 http://syriaca.org/person/anonymi1"/> 
                 </listRelation>
                 <bibl type="primary">
                     <ptr target="http://syriaca.org/bibl/668"/>
@@ -290,14 +292,15 @@
             <div uri="http://syriaca.org/spear/3148-16" resp="#ktorabi #dschwartz">
                 <listPerson>
                     <person>
-                        <state type="vocation">
-                            <desc>
+                        <persName ref="http://syriaca.org/person/2437"/>
+                        <occupation ref="http://syriaca.org/keyword/priests">
+                            <note type="desc">
                                 <persName ref="http://syriaca.org/person/2437">
                                     Philip 
                                 </persName>
-                                was a presbyter
-                                </desc>
-                        </state>
+                                was a presbyter.
+                                </note>
+                        </occupation>
                     </person>
                 </listPerson>
                 <bibl type="primary">

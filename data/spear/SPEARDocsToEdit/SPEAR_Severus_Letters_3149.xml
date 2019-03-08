@@ -253,7 +253,7 @@
             </div>
             <div uri="http://syriaca.org/spear/3149-13" resp="#ktorabi #dschwartz">
                 <listRelation>
-                    <relation type="epistolary" name="syriaca:EpistolaryReferenceTo" active="http://syriaca.org/person/51" passive="http://syriaca.org/person/2477 http://syriaca.org/person/2476 http://syriaca.org/person/2475"/>
+                    <relation ref="syriaca:EpistolaryReferenceTo" active="http://syriaca.org/person/51" passive="http://syriaca.org/person/2477 http://syriaca.org/person/2476 http://syriaca.org/person/2475"/>
                 </listRelation>
                 <bibl type="primary">
                     <ptr target="http://syriaca.org/bibl/668"/>
@@ -277,9 +277,11 @@
                 <listPerson>
                     <person>
                         <persName ref="http://syriaca.org/person/2443"/>
-                        <sex value="M">
-                            Male
-                        </sex>
+                        <trait type="gender" ref="http://syriaca.org/keyword/male">
+                            <note type="desc">
+                                <persName ref="http://syriaca.org/person/2443">Constantine</persName> was male.
+                            </note>
+                        </trait>
                     </person>
                 </listPerson>
                 <bibl type="primary">
@@ -290,21 +292,22 @@
             <div uri="http://syriaca.org/spear/3149-16" resp="#ktorabi #dschwartz">
                 <listPerson>
                     <person>
-                        <state type="vocation">
-                            <desc>
+                        <persName ref="http://syriaca.org/person/2443"/>
+                        <occupation ref="http://syriaca.org/keyword/bishops">
+                            <note type="desc">
                                 <persName ref="http://syriaca.org/person/2443">
                                     Constantine
                                 </persName>
                                 was the Bishop of
-                                <placeName>
+                                <placeName ref="http://syriaca.org/place/2809">
                                     Laodicea
                                 </placeName>
                                 in
-                                <placeName>
+                                <placeName ref="http://syriaca.org/place/486">
                                     Syria
                                 </placeName>
-                            </desc>
-                        </state>
+                            </note>
+                        </occupation>
                     </person>
                 </listPerson>
                 <bibl type="primary">
@@ -329,9 +332,11 @@
                 <listPerson>
                     <person>
                         <persName ref="http://syriaca.org/person/2479"/>
-                        <sex value="M">
-                            Male
-                        </sex>
+                        <trait type="gender" ref="http://syriaca.org/keyword/male">
+                            <note type="desc">
+                                <persName ref="http://syriaca.org/person/2479">Victor</persName> was male. 
+                            </note>
+                        </trait>
                     </person>
                 </listPerson>
                 <bibl type="primary">
@@ -342,21 +347,22 @@
             <div uri="http://syriaca.org/spear/3149-19" resp="#ktorabi #dschwartz">
                 <listPerson>
                     <person>
-                        <state type="vocation">
-                            <desc>
+                        <persName ref="http://syriaca.org/person/2479"/>
+                        <occupation ref="http://syriaca.org/keyword/bishops">
+                            <note type="desc">
                                 <persName ref="http://syriaca.org/person/2479">
                                     Victor
                                 </persName>
                                 was the Bishop of
-                                <placeName>
+                                <placeName ref="http://syriaca.org/place/2704">
                                     Philadelphia
                                 </placeName>
                                 in
-                                <placeName>
+                                <placeName ref="http://syriaca.org/place/2799">
                                     Isauria
                                 </placeName>
-                            </desc>
-                        </state>
+                            </note>
+                        </occupation>
                     </person>
                 </listPerson>
                 <bibl type="primary">
@@ -366,7 +372,7 @@
             </div>
             <div uri="http://syriaca.org/spear/3149-20" resp="#ktorabi #dschwartz">
                 <listRelation>
-                    <relation type="epistolary" name="syriaca:SenderOfLetterTo" active="http://syriaca.org/person/anonymous1" passive="http://syriaca.org/person/2479 http://syriaca.org/person/2443"/>
+                    <relation ref="syriaca:SenderOfLetterTo" active="http://syriaca.org/person/anonymous1" passive="http://syriaca.org/person/2479 http://syriaca.org/person/2443"/>
                 </listRelation>
                 <bibl type="primary">
                     <ptr target="http://syriaca.org/bibl/668"/>
@@ -377,7 +383,7 @@
                 <listPerson>
                     <person>
                         <persName ref="http://syriaca.org/person/2478">
-                            the Deaconess and Archimandritess, Heracliana
+                            The Deaconess and Archimandritess, Heracliana
                         </persName>
                     </person>
                 </listPerson>
@@ -390,9 +396,11 @@
                 <listPerson>
                     <person>
                         <persName ref="http://syriaca.org/person/2478"/>
-                        <sex value="F">
-                            Female
-                        </sex>
+                        <trait type="gender" ref="http://syriaca.org/keyword/female">
+                            <note type="desc">
+                                <persName ref="http://syriaca.org/person/2478">Heracliana</persName> was female.
+                            </note>
+                        </trait>
                     </person>
                 </listPerson>
                 <bibl type="primary">
@@ -403,14 +411,15 @@
             <div uri="http://syriaca.org/spear/3149-23" resp="#ktorabi #dschwartz">
                 <listPerson>
                     <person>
-                        <state type="vocation">
-                            <desc>
+                        <persName ref="http://syriaca.org/person/2478"/>
+                        <occupation ref="http://syriaca.org/keyword/deacons">
+                            <note type="desc">
                                 <persName ref="http://syriaca.org/person/2478">
                                     Heracliana
                                 </persName>
-                                was a deaconess
-                                </desc>
-                        </state>
+                                was a deaconess.
+                            </note>
+                        </occupation>
                     </person>
                 </listPerson>
                 <bibl type="primary">
@@ -421,14 +430,15 @@
             <div uri="http://syriaca.org/spear/3149-24" resp="#ktorabi #dschwartz">
                 <listPerson>
                     <person>
-                        <state type="vocation">
-                            <desc>
+                        <persName ref="http://syriaca.org/person/2478"/>
+                        <occupation ref="http://syriaca.org/keyword/monastic-heads">
+                            <note type="desc">
                                 <persName ref="http://syriaca.org/person/2478">
                                     Heracliana
                                 </persName>
-                                was an archimandritess
-                            </desc>
-                        </state>
+                                was a deaconess.
+                            </note>
+                        </occupation>
                     </person>
                 </listPerson>
                 <bibl type="primary">
@@ -438,7 +448,7 @@
             </div>
             <div uri="http://syriaca.org/spear/3149-25" resp="#ktorabi #dschwartz">
                 <listRelation><!-- From the information in this letter, it seems that the addressee's conflict with Heracliana, her monastic sisters, and John is of a personal nature. He removed the sisters from the monastery because of the insults that he felt were directed toward him by those individuals. Anonymous1 dislikes these individuals and they seem to dislike him, but I'm not sure if these feelings rise to the level of "enmity" This may not be the best way to encode these relationships  -->
-                    <relation type="personal" name="snap:EnmityFor" ana="alleged" active="http://syriaca.org/person/anomymous1" passive="http://syriaca.org/person/2478"/>
+                    <relation ref="snap:EnmityFor" active="http://syriaca.org/person/anomymous1" passive="http://syriaca.org/person/2478"/>
                 </listRelation>
                 <bibl type="primary">
                     <ptr target="http://syriaca.org/bibl/668"/>
@@ -447,7 +457,7 @@
             </div>
             <div uri="http://syriaca.org/spear/3149-26" resp="#ktorabi #dschwartz">
                 <listRelation><!-- From the information in this letter, it seems that the addressee's conflict with Heracliana, her monastic sisters, and John is of a personal nature. He removed the sisters from the monastery because of the insults that he felt were directed toward him by those individuals. Anonymous1 dislikes these individuals and they seem to dislike him, but I'm not sure if these feelings rise to the level of "enmity" This may not be the best way to encode these relationships  -->
-                    <relation type="personal" name="snap:EnmityFor" ana="alleged" active="http://syriaca.org/person/2478" passive="http://syriaca.org/person/anonymous1"/>
+                    <relation ref="snap:EnmityFor" active="http://syriaca.org/person/2478" passive="http://syriaca.org/person/anonymous1"/>
                 </listRelation>
                 <bibl type="primary">
                     <ptr target="http://syriaca.org/bibl/668"/>
@@ -476,7 +486,7 @@
             </div>
             <div uri="http://syriaca.org/spear/3149-28" resp="#ktorabi #dschwartz">
                 <listRelation><!-- From the information in this letter, it seems that the addressee's conflict with Heracliana, her monastic sisters, and John is of a personal nature. He removed the sisters from the monastery because of the insults that he felt were directed toward him by those individuals. Anonymous1 dislikes these individuals and they seem to dislike him, but I'm not sure if these feelings rise to the level of "enmity" This may not be the best way to encode these relationships  -->
-                    <relation type="personal" name="snap:EnmityFor" ana="alleged" active="http://syriaca.org/person/anonymi1" passive="http://syriaca.org/person/anonymous1"/>
+                    <relation ref="snap:EnmityFor" active="http://syriaca.org/person/anonymi1" passive="http://syriaca.org/person/anonymous1"/>
                 </listRelation>
                 <bibl type="primary">
                     <ptr target="http://syriaca.org/bibl/668"/>
@@ -485,7 +495,7 @@
             </div>
             <div uri="http://syriaca.org/spear/3149-29" resp="#ktorabi #dschwartz">
                 <listRelation><!-- From the information in this letter, it seems that the addressee's conflict with Heracliana, her monastic sisters, and John is of a personal nature. He removed the sisters from the monastery because of the insults that he felt were directed toward him by those individuals. Anonymous1 dislikes these individuals and they seem to dislike him, but I'm not sure if these feelings rise to the level of "enmity" This may not be the best way to encode these relationships  -->
-                    <relation type="personal" name="snap:EnmityFor" ana="alleged" active="http://syriaca.org/person/anonymous1" passive="http://syriaca.org/person/anonymi1"/>
+                    <relation ref="snap:EnmityFor" active="http://syriaca.org/person/anonymous1" passive="http://syriaca.org/person/anonymi1"/>
                 </listRelation>
                 <bibl type="primary">
                     <ptr target="http://syriaca.org/bibl/668"/>
@@ -494,7 +504,7 @@
             </div>
             <div uri="http://syriaca.org/spear/3149-30" resp="#ktorabi #dschwartz">
                 <listRelation>
-                    <relation type="monastic" name="syriaca:MonasticHeadOver" active="http://syriaca.org/person/2478" passive="http://syriaca.org/person/anonymi1"/>
+                    <relation ref="syriaca:MonasticHeadOver" active="http://syriaca.org/person/2478" passive="http://syriaca.org/person/anonymi1"/>
                 </listRelation>
                 <bibl type="primary">
                     <ptr target="http://syriaca.org/bibl/668"/>
@@ -503,7 +513,7 @@
             </div>
             <div uri="http://syriaca.org/spear/3149-31" resp="#ktorabi #dschwartz">
                 <listRelation><!-- From the information in this letter, it seems that the addressee's conflict with Heracliana, her monastic sisters, and John is of a personal nature. He removed the sisters from the monastery because of the insults that he felt were directed toward him by those individuals. Anonymous1 dislikes these individuals and they seem to dislike him, but I'm not sure if these feelings rise to the level of "enmity" This may not be the best way to encode these relationships  -->
-                    <relation type="personal" name="snap:EnmityFor" ana="alleged" active="http://syriaca.org/person/anomymous1" passive="http://syriaca.org/person/2477"/>
+                    <relation ref="snap:EnmityFor" active="http://syriaca.org/person/anomymous1" passive="http://syriaca.org/person/2477"/>
                 </listRelation>
                 <bibl type="primary">
                     <ptr target="http://syriaca.org/bibl/668"/>
@@ -512,7 +522,7 @@
             </div>
             <div uri="http://syriaca.org/spear/3149-32" resp="#ktorabi #dschwartz">
                 <listRelation><!-- From the information in this letter, it seems that the addressee's conflict with Heracliana, her monastic sisters, and John is of a personal nature. He removed the sisters from the monastery because of the insults that he felt were directed toward him by those individuals. Anonymous1 dislikes these individuals and they seem to dislike him, but I'm not sure if these feelings rise to the level of "enmity" This may not be the best way to encode these relationships  -->
-                    <relation type="personal" name="snap:EnmityFor" ana="alleged" active="http://syriaca.org/person/2477" passive="http://syriaca.org/person/anonymous1"/>
+                    <relation ref="snap:EnmityFor" active="http://syriaca.org/person/2477" passive="http://syriaca.org/person/anonymous1"/>
                 </listRelation>
                 <bibl type="primary">
                     <ptr target="http://syriaca.org/bibl/668"/>

@@ -66,7 +66,7 @@
     </teiHeader>
     <text>
         <body>
-            <div uri="http://syriaca.org/spear/3149-" resp="#ktorabi #dschwartz">
+            <div uri="http://syriaca.org/spear/3149-1" resp="#ktorabi #dschwartz">
                 <listPerson>
                     <person>
                         <persName ref="http://syriaca.org/person/anonymous1">
@@ -85,21 +85,21 @@
                     <citedRange unit="pp">191</citedRange>
                 </bibl>
             </div>
-            <div uri="http://syriaca.org/spear/3149-" resp="#ktorabi #dschwartz">
+            <div uri="http://syriaca.org/spear/3149-2" resp="#ktorabi #dschwartz">
                 <listRelation>
-                    <relation type="epistolary" name="syriaca:RecipientOfLetterFrom" active="http://syriaca.org/person/anonymous1" passive="http://syriaca.org/person/51"/>
+                    <relation ref="syriaca:SenderOfLetterTo" active="http://syriaca.org/person/51" passive="http://syriaca.org/person/anonymous1"/>
                 </listRelation>
                 <bibl type="primary">
                     <ptr target="http://syriaca.org/bibl/668"/>
                     <citedRange unit="pp">191</citedRange>
                 </bibl>
             </div>
-            <div uri="http://syriaca.org/spear/3149-" resp="#ktorabi #dschwartz">
+            <div uri="http://syriaca.org/spear/3149-3" resp="#ktorabi #dschwartz">
                 <listPerson>
                     <person><!-- The information about this individual is drawn from a fragment of this letter and is incomplete -->
                         <persName ref="http://syriaca.org/person/anonymous2">
                             he who has just received the high-priestly chrism upon the crown of his head
-                            </persName>
+                        </persName>
                     </person>
                 </listPerson>
                 <bibl type="primary">
@@ -107,7 +107,7 @@
                     <citedRange unit="pp">191</citedRange>
                 </bibl>
             </div>
-            <div uri="http://syriaca.org/spear/3149-" resp="#ktorabi #dschwartz">
+            <div uri="http://syriaca.org/spear/3149-4" resp="#ktorabi #dschwartz">
                 <listPerson>
                     <person>
                         <persName ref="http://syriaca.org/person/2475">
@@ -120,13 +120,15 @@
                     <citedRange unit="pp">191</citedRange>
                 </bibl>
             </div>
-            <div uri="http://syriaca.org/spear/3149-" resp="#ktorabi #dschwartz">
+            <div uri="http://syriaca.org/spear/3149-5" resp="#ktorabi #dschwartz">
                 <listPerson>
                     <person>
                         <persName ref="http://syriaca.org/person/2475"/>
-                        <sex value="M">
-                            Male
-                        </sex>
+                        <trait type="gender" ref="http://syriaca.org/keyword/male">
+                            <note type="desc">
+                                <persName ref="http://syriaca.org/person/2475">Joesph</persName> was male.
+                            </note>
+                        </trait>
                     </person>
                 </listPerson>
                 <bibl type="primary">
@@ -134,17 +136,18 @@
                     <citedRange unit="pp">191</citedRange>
                 </bibl>
             </div>
-            <div uri="http://syriaca.org/spear/3149-" resp="#ktorabi #dschwartz">
+            <div uri="http://syriaca.org/spear/3149-6" resp="#ktorabi #dschwartz">
                 <listPerson>
                     <person>
-                        <state type="vocation">
-                            <desc>
+                        <persName ref="http://syriaca.org/person/2475"/>
+                        <occupation ref="http://syriaca.org/keyword/monks">
+                            <note type="desc">
                                 <persName ref="http://syriaca.org/person/2475">
                                     Joseph
                                 </persName>
-                                was a monk
-                                </desc>
-                        </state>
+                                was a monk.
+                            </note>
+                        </occupation>
                     </person>
                 </listPerson>
                 <bibl type="primary">
@@ -152,7 +155,7 @@
                     <citedRange unit="pp">191</citedRange>
                 </bibl>
             </div>
-            <div uri="http://syriaca.org/spear/3149-" resp="#ktorabi #dschwartz">
+            <div uri="http://syriaca.org/spear/3149-7" resp="#ktorabi #dschwartz">
                 <listPerson>
                     <person>
                         <persName ref="http://syriaca.org/person/2477">
@@ -165,13 +168,15 @@
                     <citedRange unit="pp">191</citedRange>
                 </bibl>
             </div>
-            <div uri="http://syriaca.org/spear/3149-" resp="#ktorabi #dschwartz">
+            <div uri="http://syriaca.org/spear/3149-8" resp="#ktorabi #dschwartz">
                 <listPerson>
                     <person>
                         <persName ref="http://syriaca.org/person/2477"/>
-                        <sex value="M">
-                            Male
-                        </sex>
+                        <trait type="gender" ref="http://syriaca.org/keyword/male">
+                            <note type="desc">
+                                <persName ref="http://syriaca.org/person/2477">John</persName> was male.
+                            </note>
+                        </trait>
                     </person>
                 </listPerson>
                 <bibl type="primary">
@@ -179,17 +184,18 @@
                     <citedRange unit="pp">191</citedRange>
                 </bibl>
             </div>
-            <div uri="http://syriaca.org/spear/3149-" resp="#ktorabi #dschwartz">
+            <div uri="http://syriaca.org/spear/3149-9" resp="#ktorabi #dschwartz">
                 <listPerson>
                     <person>
-                        <state type="vocation">
-                            <desc>
+                        <persName ref="http://syriaca.org/person/2477"/>
+                        <occupation ref="http://syriaca.org/keyword/monks">
+                            <note type="desc">
                                 <persName ref="http://syriaca.org/person/2477">
                                     John
                                 </persName>
-                                was a monk
-                            </desc>
-                        </state>
+                                was a monk.
+                            </note>
+                        </occupation>
                     </person>
                 </listPerson>
                 <bibl type="primary">
@@ -197,7 +203,7 @@
                     <citedRange unit="pp">191</citedRange>
                 </bibl>
             </div>
-            <div uri="http://syriaca.org/spear/3149-" resp="#ktorabi #dschwartz">
+            <div uri="http://syriaca.org/spear/3149-10" resp="#ktorabi #dschwartz">
                 <listPerson>
                     <person>
                         <persName ref="http://syriaca.org/person/2476">
@@ -210,13 +216,15 @@
                     <citedRange unit="pp">191</citedRange>
                 </bibl>
             </div>
-            <div uri="http://syriaca.org/spear/3149-" resp="#ktorabi #dschwartz">
+            <div uri="http://syriaca.org/spear/3149-11" resp="#ktorabi #dschwartz">
                 <listPerson>
                     <person>
                         <persName ref="http://syriaca.org/person/2476"/>
-                        <sex value="M">
-                            Male
-                        </sex>
+                        <trait type="gender" ref="http://syriaca.org/keyword/male">
+                            <note type="desc">
+                                <persName ref="http://syriaca.org/person/2476">Zacharias</persName> was male.
+                            </note>
+                        </trait>
                     </person>
                 </listPerson>
                 <bibl type="primary">
@@ -224,17 +232,18 @@
                     <citedRange unit="pp">191</citedRange>
                 </bibl>
             </div>
-            <div uri="http://syriaca.org/spear/3149-" resp="#ktorabi #dschwartz">
+            <div uri="http://syriaca.org/spear/3149-12" resp="#ktorabi #dschwartz">
                 <listPerson>
                     <person>
-                        <state type="vocation">
-                            <desc>
+                        <persName ref="http://syriaca.org/person/2476"/>
+                        <occupation ref="http://syriaca.org/keyword/monks">
+                            <note type="desc">
                                 <persName ref="http://syriaca.org/person/2476">
                                     Zacharias
                                 </persName>
-                                was a monk
-                            </desc>
-                        </state>
+                                was a monk.
+                            </note>
+                        </occupation>
                     </person>
                 </listPerson>
                 <bibl type="primary">
@@ -242,7 +251,7 @@
                     <citedRange unit="pp">191</citedRange>
                 </bibl>
             </div>
-            <div uri="http://syriaca.org/spear/3149-" resp="#ktorabi #dschwartz">
+            <div uri="http://syriaca.org/spear/3149-13" resp="#ktorabi #dschwartz">
                 <listRelation>
                     <relation type="epistolary" name="syriaca:EpistolaryReferenceTo" active="http://syriaca.org/person/51" passive="http://syriaca.org/person/2477 http://syriaca.org/person/2476 http://syriaca.org/person/2475"/>
                 </listRelation>
@@ -251,7 +260,7 @@
                     <citedRange unit="pp">191</citedRange>
                 </bibl>
             </div>
-            <div uri="http://syriaca.org/spear/3149-" resp="#ktorabi #dschwartz">
+            <div uri="http://syriaca.org/spear/3149-14" resp="#ktorabi #dschwartz">
                 <listPerson>
                     <person>
                         <persName ref="http://syriaca.org/person/2443">
@@ -264,7 +273,7 @@
                     <citedRange unit="pp">192</citedRange>
                 </bibl>
             </div>
-            <div uri="http://syriaca.org/spear/3149-" resp="#ktorabi #dschwartz">
+            <div uri="http://syriaca.org/spear/3149-15" resp="#ktorabi #dschwartz">
                 <listPerson>
                     <person>
                         <persName ref="http://syriaca.org/person/2443"/>
@@ -278,7 +287,7 @@
                     <citedRange unit="pp">192</citedRange>
                 </bibl>
             </div>
-            <div uri="http://syriaca.org/spear/3149-" resp="#ktorabi #dschwartz">
+            <div uri="http://syriaca.org/spear/3149-16" resp="#ktorabi #dschwartz">
                 <listPerson>
                     <person>
                         <state type="vocation">
@@ -303,7 +312,7 @@
                     <citedRange unit="pp">192</citedRange>
                 </bibl>
             </div>
-        <div uri="http://syriaca.org/spear/3149-" resp="#ktorabi #dschwartz">
+        <div uri="http://syriaca.org/spear/3149-17" resp="#ktorabi #dschwartz">
                 <listPerson>
                     <person>
                         <persName ref="http://syriaca.org/person/2479">
@@ -316,7 +325,7 @@
                 <citedRange unit="pp">192</citedRange>
             </bibl>
             </div>
-            <div uri="http://syriaca.org/spear/3149-" resp="#ktorabi #dschwartz">
+            <div uri="http://syriaca.org/spear/3149-18" resp="#ktorabi #dschwartz">
                 <listPerson>
                     <person>
                         <persName ref="http://syriaca.org/person/2479"/>
@@ -330,7 +339,7 @@
                     <citedRange unit="pp">192</citedRange>
                 </bibl>
             </div>
-            <div uri="http://syriaca.org/spear/3149-" resp="#ktorabi #dschwartz">
+            <div uri="http://syriaca.org/spear/3149-19" resp="#ktorabi #dschwartz">
                 <listPerson>
                     <person>
                         <state type="vocation">
@@ -355,7 +364,7 @@
                     <citedRange unit="pp">192</citedRange>
                 </bibl>
             </div>
-            <div uri="http://syriaca.org/spear/3149-" resp="#ktorabi #dschwartz">
+            <div uri="http://syriaca.org/spear/3149-20" resp="#ktorabi #dschwartz">
                 <listRelation>
                     <relation type="epistolary" name="syriaca:SenderOfLetterTo" active="http://syriaca.org/person/anonymous1" passive="http://syriaca.org/person/2479 http://syriaca.org/person/2443"/>
                 </listRelation>
@@ -364,7 +373,7 @@
                     <citedRange unit="pp">192</citedRange>
                 </bibl>
             </div>
-            <div uri="http://syriaca.org/spear/3149-" resp="#ktorabi #dschwartz">
+            <div uri="http://syriaca.org/spear/3149-21" resp="#ktorabi #dschwartz">
                 <listPerson>
                     <person>
                         <persName ref="http://syriaca.org/person/2478">
@@ -377,7 +386,7 @@
                     <citedRange unit="pp">192</citedRange>
                 </bibl>
             </div>
-            <div uri="http://syriaca.org/spear/3149-" resp="#ktorabi #dschwartz">
+            <div uri="http://syriaca.org/spear/3149-22" resp="#ktorabi #dschwartz">
                 <listPerson>
                     <person>
                         <persName ref="http://syriaca.org/person/2478"/>
@@ -391,7 +400,7 @@
                     <citedRange unit="pp">192</citedRange>
                 </bibl>
             </div>
-            <div uri="http://syriaca.org/spear/3149-" resp="#ktorabi #dschwartz">
+            <div uri="http://syriaca.org/spear/3149-23" resp="#ktorabi #dschwartz">
                 <listPerson>
                     <person>
                         <state type="vocation">
@@ -409,7 +418,7 @@
                     <citedRange unit="pp">192</citedRange>
                 </bibl>
             </div>
-            <div uri="http://syriaca.org/spear/3149-" resp="#ktorabi #dschwartz">
+            <div uri="http://syriaca.org/spear/3149-24" resp="#ktorabi #dschwartz">
                 <listPerson>
                     <person>
                         <state type="vocation">
@@ -427,7 +436,7 @@
                     <citedRange unit="pp">192</citedRange>
                 </bibl>
             </div>
-            <div uri="http://syriaca.org/spear/3149-" resp="#ktorabi #dschwartz">
+            <div uri="http://syriaca.org/spear/3149-25" resp="#ktorabi #dschwartz">
                 <listRelation><!-- From the information in this letter, it seems that the addressee's conflict with Heracliana, her monastic sisters, and John is of a personal nature. He removed the sisters from the monastery because of the insults that he felt were directed toward him by those individuals. Anonymous1 dislikes these individuals and they seem to dislike him, but I'm not sure if these feelings rise to the level of "enmity" This may not be the best way to encode these relationships  -->
                     <relation type="personal" name="snap:EnmityFor" ana="alleged" active="http://syriaca.org/person/anomymous1" passive="http://syriaca.org/person/2478"/>
                 </listRelation>
@@ -436,7 +445,7 @@
                     <citedRange unit="pp">192</citedRange>
                 </bibl>
             </div>
-            <div uri="http://syriaca.org/spear/3149-" resp="#ktorabi #dschwartz">
+            <div uri="http://syriaca.org/spear/3149-26" resp="#ktorabi #dschwartz">
                 <listRelation><!-- From the information in this letter, it seems that the addressee's conflict with Heracliana, her monastic sisters, and John is of a personal nature. He removed the sisters from the monastery because of the insults that he felt were directed toward him by those individuals. Anonymous1 dislikes these individuals and they seem to dislike him, but I'm not sure if these feelings rise to the level of "enmity" This may not be the best way to encode these relationships  -->
                     <relation type="personal" name="snap:EnmityFor" ana="alleged" active="http://syriaca.org/person/2478" passive="http://syriaca.org/person/anonymous1"/>
                 </listRelation>
@@ -445,7 +454,7 @@
                     <citedRange unit="pp">192</citedRange>
                 </bibl>
             </div>
-            <div uri="http://syriaca.org/spear/3149-" resp="#ktorabi #dschwartz">
+            <div uri="http://syriaca.org/spear/3149-27" resp="#ktorabi #dschwartz">
                 <listPerson>
                     <personGrp>
                         <persName ref="http://syriaca.org/person/anonymi1">
@@ -465,7 +474,7 @@
                     <citedRange unit="pp">192</citedRange>
                 </bibl>
             </div>
-            <div uri="http://syriaca.org/spear/3149-" resp="#ktorabi #dschwartz">
+            <div uri="http://syriaca.org/spear/3149-28" resp="#ktorabi #dschwartz">
                 <listRelation><!-- From the information in this letter, it seems that the addressee's conflict with Heracliana, her monastic sisters, and John is of a personal nature. He removed the sisters from the monastery because of the insults that he felt were directed toward him by those individuals. Anonymous1 dislikes these individuals and they seem to dislike him, but I'm not sure if these feelings rise to the level of "enmity" This may not be the best way to encode these relationships  -->
                     <relation type="personal" name="snap:EnmityFor" ana="alleged" active="http://syriaca.org/person/anonymi1" passive="http://syriaca.org/person/anonymous1"/>
                 </listRelation>
@@ -474,7 +483,7 @@
                     <citedRange unit="pp">192</citedRange>
                 </bibl>
             </div>
-            <div uri="http://syriaca.org/spear/3149-" resp="#ktorabi #dschwartz">
+            <div uri="http://syriaca.org/spear/3149-29" resp="#ktorabi #dschwartz">
                 <listRelation><!-- From the information in this letter, it seems that the addressee's conflict with Heracliana, her monastic sisters, and John is of a personal nature. He removed the sisters from the monastery because of the insults that he felt were directed toward him by those individuals. Anonymous1 dislikes these individuals and they seem to dislike him, but I'm not sure if these feelings rise to the level of "enmity" This may not be the best way to encode these relationships  -->
                     <relation type="personal" name="snap:EnmityFor" ana="alleged" active="http://syriaca.org/person/anonymous1" passive="http://syriaca.org/person/anonymi1"/>
                 </listRelation>
@@ -483,7 +492,7 @@
                     <citedRange unit="pp">192</citedRange>
                 </bibl>
             </div>
-            <div uri="http://syriaca.org/spear/3149-" resp="#ktorabi #dschwartz">
+            <div uri="http://syriaca.org/spear/3149-30" resp="#ktorabi #dschwartz">
                 <listRelation>
                     <relation type="monastic" name="syriaca:MonasticHeadOver" active="http://syriaca.org/person/2478" passive="http://syriaca.org/person/anonymi1"/>
                 </listRelation>
@@ -492,7 +501,7 @@
                     <citedRange unit="pp">192</citedRange>
                 </bibl>
             </div>
-            <div uri="http://syriaca.org/spear/3149-" resp="#ktorabi #dschwartz">
+            <div uri="http://syriaca.org/spear/3149-31" resp="#ktorabi #dschwartz">
                 <listRelation><!-- From the information in this letter, it seems that the addressee's conflict with Heracliana, her monastic sisters, and John is of a personal nature. He removed the sisters from the monastery because of the insults that he felt were directed toward him by those individuals. Anonymous1 dislikes these individuals and they seem to dislike him, but I'm not sure if these feelings rise to the level of "enmity" This may not be the best way to encode these relationships  -->
                     <relation type="personal" name="snap:EnmityFor" ana="alleged" active="http://syriaca.org/person/anomymous1" passive="http://syriaca.org/person/2477"/>
                 </listRelation>
@@ -501,7 +510,7 @@
                     <citedRange unit="pp">192-193</citedRange>
                 </bibl>
             </div>
-            <div uri="http://syriaca.org/spear/3149-" resp="#ktorabi #dschwartz">
+            <div uri="http://syriaca.org/spear/3149-32" resp="#ktorabi #dschwartz">
                 <listRelation><!-- From the information in this letter, it seems that the addressee's conflict with Heracliana, her monastic sisters, and John is of a personal nature. He removed the sisters from the monastery because of the insults that he felt were directed toward him by those individuals. Anonymous1 dislikes these individuals and they seem to dislike him, but I'm not sure if these feelings rise to the level of "enmity" This may not be the best way to encode these relationships  -->
                     <relation type="personal" name="snap:EnmityFor" ana="alleged" active="http://syriaca.org/person/2477" passive="http://syriaca.org/person/anonymous1"/>
                 </listRelation>

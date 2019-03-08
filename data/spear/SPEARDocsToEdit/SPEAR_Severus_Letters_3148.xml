@@ -109,7 +109,9 @@
                     <person>
                         <persName ref="http://syriaca.org/person/2453"/>
                         <trait type="gender" ref="http://syriaca.org/keyword/male">
-                            <persName ref="http://syriaca.org/person/2453">Patrick</persName> was male.
+                            <note type="desc">
+                                <persName ref="http://syriaca.org/person/2453">Patrick</persName> was male.
+                            </note>
                         </trait>
                     </person>
                 </listPerson>
@@ -279,9 +281,11 @@
                 <listPerson>
                     <person>
                         <persName ref="http://syriaca.org/person/2437"/>
-                        <sex value="M">
-                            Male
-                        </sex>
+                        <trait type="gender" ref="http://syriaca.org/keyword/male">
+                            <note type="desc">
+                                <persName ref="http://syriaca.org/person/2437">Philip</persName> was male.
+                            </note>
+                        </trait>
                     </person>
                 </listPerson>
                 <bibl type="primary">

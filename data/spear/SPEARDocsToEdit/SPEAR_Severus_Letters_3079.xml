@@ -13,7 +13,6 @@
                 <funder>Texas A&amp;M University</funder>
                 <principal>Daniel L. Schwartz</principal>
                 <editor role="general" ref="http://syriaca.org/editors.xml#dschwartz">Daniel L. Schwartz</editor>
-                <editor role="general" ref="http://syriaca.org/editors.xml#dmichelson">David A. Michelson</editor>
                 <editor role="creator" ref="http://syriaca.org/editors.xml#dschwartz">Daniel L. Schwartz</editor>
                 <respStmt>
                     <resp></resp>
@@ -113,7 +112,7 @@
             </div>
             <div uri="http://syriaca.org/spear/3079-4" resp="#ktorabi #dschwartz">
                 <listRelation>
-                    <relation type="epistolary" name="syriaca:RecipientOfLetterFrom" active="http://syriaca.org/person/2556" passive="http://syriaca.org/person/51"/>
+                    <relation ref="syriaca:RecipientOfLetterFrom" active="http://syriaca.org/person/2556" passive="http://syriaca.org/person/51"/>
                 </listRelation>
                 <bibl type="primary">
                     <ptr target="http://syriaca.org/bibl/668"/>
@@ -212,7 +211,7 @@
             </div>
             <div uri="http://syriaca.org/spear/3079-10" resp="#ktorabi #dschwartz">
                 <listRelation>
-                    <relation type="legal" name="syriaca:LegalChargesAgainst" active="http://syriaca.org/person/anonymi1" passive="http://syriaca.org/person/2410 http://syriaca.org/person/anonymi2"/>
+                    <relation ref="syriaca:LegalChargesAgainst" active="http://syriaca.org/person/anonymi1" passive="http://syriaca.org/person/2410 http://syriaca.org/person/anonymi2"/>
                 </listRelation>
                 <bibl type="primary">
                     <ptr target="http://syriaca.org/bibl/668"/>
@@ -318,7 +317,7 @@
             </div>
             <div uri="http://syriaca.org/spear/3079-16" resp="#ktorabi #dschwartz">
                 <listRelation>
-                    <relation type="family" name="snap:BrotherOf" mutual="http://syriaca.org/person/2412 http://syriaca.org/person/2410"/>
+                    <relation ref="snap:BrotherOf" mutual="http://syriaca.org/person/2412 http://syriaca.org/person/2410"/>
                 </listRelation>
                 <bibl type="primary">
                     <ptr target="http://syriaca.org/bibl/668"/>
@@ -372,7 +371,7 @@
             </div>
             <div uri="http://syriaca.org/spear/3079-20" resp="#ktorabi #dschwartz"><!-- It is my understanding that a curator is an official in charge of various departments of public works; therefore, I encoded the relationship between Hypatius and Heliodorus as CommanderOver. -->
                 <listRelation>
-                    <relation type="military" name="syriaca:CommanderOver" active="http://syriaca.org/person/2556" passive="http://syriaca.org/person/2411"/>
+                    <relation ref="syriaca:CommanderOver" active="http://syriaca.org/person/2556" passive="http://syriaca.org/person/2411"/>
                 </listRelation>
                 <bibl type="primary">
                     <ptr target="http://syriaca.org/bibl/668"/>

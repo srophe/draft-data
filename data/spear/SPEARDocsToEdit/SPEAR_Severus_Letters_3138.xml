@@ -13,7 +13,6 @@
                 <funder>Texas A&amp;M University</funder>
                 <principal>Daniel L. Schwartz</principal>
                 <editor role="general" ref="http://syriaca.org/documentation/editors.xml#dschwartz">Daniel L. Schwartz</editor>
-                <editor role="general" ref="http://syriaca.org/documentation/editors.xml#dmichelson">David A. Michelson</editor>
                 <editor role="creator" ref="http://syriaca.org/documentation/editors.xml#dschwartz">Daniel L. Schwartz</editor>
                 <respStmt>
                     <resp></resp>
@@ -69,9 +68,9 @@
             <div uri="http://syriaca.org/spear/3138-1" resp="#ktorabi #dschwartz">
                 <listPerson>
                     <person>
-                        <persName ref="http://syriaca.org/person/anonymous1"><!-- No URI for Isidora -->
+                        <persName ref="http://syriaca.org/person/2664">
                             Isidora
-                            </persName>
+                        </persName>
                     </person>
                 </listPerson>
                 <bibl type="primary">
@@ -82,10 +81,10 @@
             <div uri="http://syriaca.org/spear/3138-2" resp="#ktorabi #dschwartz">
                 <listPerson>
                     <person>
-                        <persName ref="http://syriaca.org/person/anonymous1"/>
-                        <sex value="F">
-                            Female
-                        </sex>
+                        <persName ref="http://syriaca.org/person/2664"/>
+                        <trait type="gender" ref="http://syriaca.org/keyword/female">
+                            <note type="desc"><persName ref="http://syriaca.org/person/2664">Isidora</persName> was female.</note>
+                        </trait>
                     </person>
                 </listPerson>
                 <bibl type="primary">
@@ -95,7 +94,7 @@
             </div>
             <div uri="http://syriaca.org/spear/3138-3" resp="#ktorabi #dschwartz">
                 <listRelation>
-                    <relation type="epistolary" name="syriaca:SenderOfLetterTo" active="http://syriaca.org/person/51" passive="http://syriaca.org/person/anonymous1"/>
+                    <relation ref="syriaca:SenderOfLetterTo" active="http://syriaca.org/person/51" passive="http://syriaca.org/person/2664"/>
                 </listRelation>
                 <bibl type="primary">
                     <ptr target="http://syriaca.org/bibl/669"/>
@@ -104,7 +103,7 @@
                 </div> 
             <div uri="http://syriaca.org/spear/3138-4" resp="#ktorabi #dschwartz">
                 <listRelation>
-                    <relation type="epistolary" name="syriaca:SenderOfLetterTo" active="http://syriaca.org/person/anonymous1" passive="http://syriaca.org/person/51"/>
+                    <relation ref="syriaca:SenderOfLetterTo" active="http://syriaca.org/person/2664" passive="http://syriaca.org/person/51"/>
                 </listRelation>
                 <bibl type="primary">
                     <ptr target="http://syriaca.org/bibl/669"/>
@@ -116,7 +115,7 @@
                     <person>
                         <persName ref="http://syriaca.org/person/anonymi2"><!-- This may be referring to the sisters under Isidora, but it is not clear from the letter what position Isidora holds in the Church. -->
                             our common children
-                            </persName>
+                        </persName>
                     </person>
                 </listPerson>
                 <bibl type="primary">
@@ -141,9 +140,9 @@
                 <listPerson>
                     <person>
                         <persName ref="http://syriaca.org/person/anonymous2"/>
-                        <sex value="F">
-                            Female
-                        </sex>
+                        <trait type="gender" ref="http://syriaca.org/keyword/female">
+                            <note type="desc"><persName ref="http://syriaca.org/person/anonymous2">Anonymous </persName> was female.</note>
+                        </trait>
                     </person>
                 </listPerson>
                 <bibl type="primary">
@@ -153,7 +152,7 @@
             </div>
             <div uri="http://syriaca.org/spear/3138-8" resp="#ktorabi #dschwartz">
                 <listRelation>
-                    <relation type="epistolary" name="syriaca:EpistolaryReferenceTo" active="http://syriaca.org/person/51 http://syriaca.org/person/anonymous1" passive="http://syriaca.org/person/anonymous2"/>
+                    <relation ref="syriaca:EpistolaryReferenceTo" active="http://syriaca.org/person/51 http://syriaca.org/person/anonymous1" passive="http://syriaca.org/person/anonymous2"/>
                 </listRelation>
                 <bibl type="primary">
                     <ptr target="http://syriaca.org/bibl/669"/>
@@ -163,7 +162,7 @@
             <div uri="http://syriaca.org/spear/3138-9" resp="#ktorabi #dschwartz">
                 <listPerson>
                     <person>
-                        <persName ref="http://syriaca.org/person/anonymous3"><!-- No URI for father Poemen -->
+                        <persName ref="http://syriaca.org/person/2739">
                             Father Poemen
                         </persName>
                     </person>
@@ -176,10 +175,10 @@
             <div uri="http://syriaca.org/spear/3138-10" resp="#ktorabi #dschwartz">
                 <listPerson>
                     <person>
-                        <persName ref="http://syriaca.org/person/anonymous3"/>
-                        <sex value="M">
-                            Male
-                        </sex>
+                        <persName ref="http://syriaca.org/person/2739"/>
+                        <trait type="gender" ref="http://syriaca.org/keyword/male">
+                            <note type="desc"><persName ref="http://syriaca.org/person/2739">Poemen</persName> was male.</note>
+                        </trait>
                     </person>
                 </listPerson>
                 <bibl type="primary">
@@ -190,14 +189,15 @@
             <div uri="http://syriaca.org/spear/3138-11" resp="#ktorabi #dschwartz">
                 <listPerson>
                     <person>
-                        <state type="vocation">
-                            <desc>
-                                <persName ref="http://syriaca.org/person/anonymous3">
+                        <persName ref="http://syriaca.org/person/2739"/>
+                        <occupation ref="http://syriaca.org/keyword/monks">
+                            <note type="desc">
+                                <persName ref="http://syriaca.org/person/2739">
                                     Father Poemen
                                 </persName>
                                 was a monk.
-                            </desc>
-                        </state>
+                            </note>
+                        </occupation>
                     </person>
                 </listPerson>
                 <bibl type="primary">
@@ -208,14 +208,12 @@
             <div uri="http://syriaca.org/spear/3138-12" resp="#ktorabi #dschwartz">
                 <listPerson>
                     <personGrp>
-                    <person>
-                        <persName ref="http://syriaca.org/person/anonymi2">
-                            Father Poemen's brothers 
-                        <date notBefore="0340" notAfter="0450">
-                            A.D. 340-450
-                        </date> 
+                       <persName ref="http://syriaca.org/person/anonymi2">
+                           Father Poemen's brothers 
+                           <date notBefore="0340" notAfter="0450">
+                               between A.D. 340-450
+                           </date> 
                        </persName> 
-                    </person>
                     </personGrp>
                 </listPerson>
                 <bibl type="primary">
@@ -224,8 +222,8 @@
                 </bibl>
             </div>
             <div uri="http://syriaca.org/spear/3138-13" resp="#ktorabi #dschwartz">
-                <listRelation>
-                    <relation type="clerical" name="syriaca:FellowClergy" mutual="http://syriaca.org/person/anonymous3 http://syriaca.org/person/anonymi2"/>
+                <listRelation><!-- Check fellowClergy or fellowMonastics -->
+                    <relation ref="syriaca:FellowClergy" mutual="http://syriaca.org/person/anonymous3 http://syriaca.org/person/anonymi2"/>
                 </listRelation>
                 <bibl type="primary">
                     <ptr target="http://syriaca.org/bibl/669"/>
@@ -249,9 +247,11 @@
                 <listPerson>
                     <person>
                         <persName ref="http://syriaca.org/person/anonymous4"/>
-                        <sex value="F">
-                            Female
-                        </sex>
+                        <trait type="gender" ref="http://syriaca.org/keyword/female">
+                            <note type="desc">
+                                <persName ref="http://syriaca.org/person/anonymous4"/> was female.
+                            </note>
+                        </trait>
                     </person>
                 </listPerson>
                 <bibl type="primary">
@@ -261,7 +261,7 @@
             </div>
             <div uri="http://syriaca.org/spear/3138-16" resp="#ktorabi #dschwartz">
                 <listRelation>
-                    <relation type="family" name="snap:MotherOf" active="http://syriaca.org/person/anonymous4" passive="http://syriaca.org/person/anonymous3"/>
+                    <relation ref="snap:ParentOf" active="http://syriaca.org/person/anonymous4" passive="http://syriaca.org/person/anonymous3"/>
                 </listRelation>
                 <bibl type="primary">
                     <ptr target="http://syriaca.org/bibl/669"/>
@@ -273,7 +273,7 @@
                     <person>
                         <persName ref="http://syriaca.org/person/anonymous5"><!-- This may be the same person as anonymous2 -->
                             That blessed God-loving virgin
-                            </persName> 
+                        </persName> 
                     </person>
                 </listPerson>
                 <bibl type="primary">
@@ -284,10 +284,12 @@
             <div uri="http://syriaca.org/spear/3138-18" resp="#ktorabi #dschwartz">
                 <listPerson>
                     <person>
-                        <persName ref="http://syriaca.org/person/anonymous5"/>
-                        <sex value="F">
-                            Female
-                        </sex>
+                        <persName ref="http://syriaca.org/person/anonymous5"/><!-- This may be the same person as anonymous2 -->
+                        <trait type="gender" ref="http://syriaca.org/keyword/female">
+                            <note type="desc">
+                                <persName ref="http://syriaca.org/person/anonymous5"/> was female.
+                            </note>
+                        </trait>
                     </person>
                 </listPerson>
                 <bibl type="primary">

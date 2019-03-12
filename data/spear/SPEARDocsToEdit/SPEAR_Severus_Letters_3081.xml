@@ -13,7 +13,6 @@
                 <funder>Texas A&amp;M University</funder>
                 <principal>Daniel L. Schwartz</principal>
                 <editor role="general" ref="http://syriaca.org/editors.xml#dschwartz">Daniel L. Schwartz</editor>
-                <editor role="general" ref="http://syriaca.org/editors.xml#dmichelson">David A. Michelson</editor>
                 <editor role="creator" ref="http://syriaca.org/editors.xml#dschwartz">Daniel L. Schwartz</editor>
                 <respStmt>
                     <resp></resp>
@@ -116,7 +115,7 @@
             </div>
             <div uri="http://syriaca.org/spear/3081-4" resp="#ktorabi #dschwartz">
                 <listRelation>
-                    <relation type="epistolary" name="syriaca:RecipientOfLetterFrom" active="http://syriaca.org/person/anonymous1" passive="http://syriaca.org/person/51"/>
+                    <relation ref="syriaca:RecipientOfLetterFrom" active="http://syriaca.org/person/anonymous1" passive="http://syriaca.org/person/51"/>
                 </listRelation>
                 <bibl type="primary">
                     <ptr target="http://syriaca.org/bibl/668"/>
@@ -173,7 +172,7 @@
             </div>
             <div uri="http://syriaca.org/spear/3081-8" resp="#ktorabi #dschwartz">
                 <listRelation>
-                    <relation type="monastic" name="syriaca:MonasticUnderHead" active="http://syriaca.org/person/2418" passive="http://syriaca.org/person/anonymous1"/> 
+                    <relation ref="syriaca:MonasticUnderHead" active="http://syriaca.org/person/2418" passive="http://syriaca.org/person/anonymous1"/> 
                 </listRelation>
                 <bibl type="primary">
                     <ptr target="http://syriaca.org/bibl/668"/>
@@ -198,7 +197,7 @@
             </div>
             <div uri="http://syriaca.org/spear/3081-10" resp="#ktorabi #dschwartz">
                 <listRelation><!-- Nonnus is under an injunction by the ekklesiekdikoi. Is this the best way to encode that relationship?  -->
-                    <relation type="legal" name="syriaca:LegalChargesAgainst" active="http://syriaca.org/person/anonymi1" passive="http://syriaca.org/person/2418"/>
+                    <relation ref="syriaca:LegalChargesAgainst" active="http://syriaca.org/person/anonymi1" passive="http://syriaca.org/person/2418"/>
                 </listRelation>
                 <bibl type="primary">
                     <ptr target="http://syriaca.org/bibl/668"/>
@@ -227,7 +226,7 @@
             </div>
             <div uri="http://syriaca.org/spear/3081-12" resp="#ktorabi #dschwartz">
                 <listRelation>
-                    <relation type="legal" name="snap:LegallyRecognizedRelationshipWith" mutual="http://syriaca.org/person/anonymi2 http://syriaca.org/person/2418"/>
+                    <relation ref="snap:LegallyRecognizedRelationshipWith" mutual="http://syriaca.org/person/anonymi2 http://syriaca.org/person/2418"/>
                 </listRelation>
                 <bibl type="primary">
                     <ptr target="http://syriaca.org/bibl/668"/>
@@ -340,7 +339,7 @@
             </div>
             <div uri="http://syriaca.org/spear/3081-18" resp="#ktorabi #dschwartz">
                 <listRelation>
-                    <relation type="clerical" name="syriaca:ClergyUnderBishop" active="http://syriaca.org/person/2419" passive="http://syriaca.org/person/51"/> 
+                    <relation ref="syriaca:ClergyUnderBishop" active="http://syriaca.org/person/2419" passive="http://syriaca.org/person/51"/> 
                 </listRelation>
                 <bibl type="primary">
                     <ptr target="http://syriaca.org/bibl/668"/>

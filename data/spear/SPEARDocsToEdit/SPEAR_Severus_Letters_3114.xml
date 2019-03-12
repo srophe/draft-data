@@ -13,7 +13,6 @@
                 <funder>Texas A&amp;M University</funder>
                 <principal>Daniel L. Schwartz</principal>
                 <editor role="general" ref="http://syriaca.org/editors.xml#dschwartz">Daniel L. Schwartz</editor>
-                <editor role="general" ref="http://syriaca.org/editors.xml#dmichelson">David A. Michelson</editor>
                 <editor role="creator" ref="http://syriaca.org/editors.xml#dschwartz">Daniel L. Schwartz</editor>
                 <respStmt>
                     <resp></resp>
@@ -70,10 +69,7 @@
                 <listPerson>
                     <person>
                         <persName ref="http://syriaca.org/person/2569">
-                            Proclus, the Bishop of
-                            <placeName>
-                                Colonia
-                            </placeName>
+                            Proclus, the bishop
                         </persName>
                     </person>
                 </listPerson>
@@ -86,9 +82,11 @@
                 <listPerson>
                     <person>
                         <persName ref="http://syriaca.org/person/2569"/>
-                        <sex value="M">
-                            Male
-                        </sex>
+                        <trait type="gender" ref="http://syriaca.org/keyword/male">
+                            <note type="desc">
+                                <persName ref="http://syriaca.org/person/2569">Proclus</persName> was male.
+                            </note>
+                        </trait>
                     </person>
                 </listPerson>
                 <bibl type="primary">
@@ -99,17 +97,18 @@
             <div uri="http://syriaca.org/spear/3114-3" resp="#ktorabi #dschwartz">
                 <listPerson>
                     <person>
-                        <state type="vocation">
-                            <desc>
+                        <persName ref="http://syriaca.org/person/2569"/>
+                        <occupation ref="http://syriaca.org/keyword/bishops">
+                            <note type="desc">
                                 <persName ref="http://syriaca.org/person/2569">
                                     Proclus
                                 </persName>
-                                was the Bishop of
-                                <placeName>
+                                was the bishop of
+                                <placeName ref="">
                                     Colonia
                                 </placeName>
-                            </desc>
-                        </state>
+                            </note>
+                        </occupation>
                     </person>
                 </listPerson>
                 <bibl type="primary">
@@ -119,7 +118,7 @@
             </div>
             <div uri="http://syriaca.org/spear/3114-4" resp="#ktorabi #dschwartz">
                 <listRelation>
-                    <relation type="epistolary" name="syriaca:RecipientOfLetterFrom" active="http://syriaca.org/person/2569" passive="http://syriaca.org/person/51"/>
+                    <relation ref="syriaca:SenderOfLetterTo" active="http://syriaca.org/person/51" passive="http://syriaca.org/person/2569"/>
                 </listRelation>
                 <bibl type="primary">
                     <ptr target="http://syriaca.org/bibl/668"/>
@@ -130,10 +129,7 @@
                 <listPerson>
                     <person>
                         <persName ref="http://syriaca.org/person/2456">
-                            Dionysius, the Bishop of 
-                            <placeName>
-                                Alexandria
-                            </placeName>
+                            Dionysius
                         </persName>
                     </person>
                 </listPerson>
@@ -146,9 +142,11 @@
                 <listPerson>
                     <person>
                         <persName ref="http://syriaca.org/person/2456"/>
-                        <sex value="M">
-                            Male
-                        </sex>
+                        <trait type="gender" ref="http://syriaca.org/keyword/male">
+                            <note type="desc">
+                                <persName ref="http://syriaca.org/person/2456"/> was male.
+                            </note>
+                        </trait>
                     </person>
                 </listPerson>
                 <bibl type="primary">
@@ -159,17 +157,18 @@
             <div uri="http://syriaca.org/spear/3114-7" resp="#ktorabi #dschwartz">
                 <listPerson>
                     <person>
-                        <state type="vocation">
-                            <desc>
+                        <persName ref="http://syriaca.org/person/2456"/>
+                        <occupation ref="http://syriaca.org/keyword/bishops">
+                            <note type="desc">
                                 <persName ref="http://syriaca.org/person/2456">
                                     Dionysius
                                 </persName>
-                                was the Bishop of
-                                <placeName>
+                                was the bishop of
+                                <placeName ref="http://syriaca.org/place/2620">
                                     Alexandria
                                 </placeName>
-                            </desc>
-                        </state>
+                            </note>
+                        </occupation>
                     </person>
                 </listPerson>
                 <bibl type="primary">
@@ -181,8 +180,8 @@
                 <listPerson>
                     <person>
                         <persName ref="http://syriaca.org/person/2457">
-                            Fabius, the Bishop of
-                            <placeName>
+                            Fabius bishop of
+                            <placeName ref="http://syriaca.org/place/2610">
                                 Antioch
                             </placeName>
                         </persName>
@@ -197,9 +196,11 @@
                 <listPerson>
                     <person>
                         <persName ref="http://syriaca.org/person/2457"/>
-                        <sex value="M">
-                            Male
-                        </sex>
+                        <trait type="gender" ref="http://syriaca.org/keyword/male">
+                            <note type="desc">
+                                <persName ref="http://syriaca.org/person/2457">Fabius</persName> was male.
+                            </note>
+                        </trait>
                     </person>
                 </listPerson>
                 <bibl type="primary">
@@ -210,17 +211,18 @@
             <div uri="http://syriaca.org/spear/3114-10" resp="#ktorabi #dschwartz">
                 <listPerson>
                     <person>
-                        <state type="vocation">
-                            <desc>
+                        <persName ref="http://syriaca.org/person/2457"/>
+                        <occupation ref="http://syriaca.org/keyword/bishops">
+                            <note type="desc">
                                 <persName ref="http://syriaca.org/person/2457">
                                     Fabius
                                 </persName>
-                                was the Bishop of
-                                <placeName>
+                                was the bishop of
+                                <placeName ref="http://syriaca.org/place/2610">
                                     Antioch
                                 </placeName>
-                            </desc>
-                        </state>
+                            </note>
+                        </occupation>
                     </person>
                 </listPerson>
                 <bibl type="primary">
@@ -230,7 +232,7 @@
             </div>
             <div uri="http://syriaca.org/spear/3114-11" resp="#ktorabi #dschwartz">
                 <listRelation>
-                    <relation type="epistolary" name="syriaca:SenderOfLetterTo" active="http://syriaca.org/person/2456" passive="http://syriaca.org/person/2457"/>
+                    <relation ref="syriaca:SenderOfLetterTo" active="http://syriaca.org/person/2456" passive="http://syriaca.org/person/2457"/>
                 </listRelation>
                 <bibl type="primary">
                     <ptr target="http://syriaca.org/bibl/668"/>
@@ -242,7 +244,7 @@
                     <person>
                         <persName ref="http://syriaca.org/person/2461">
                             Decius
-                            </persName>
+                        </persName>
                     </person>
                 </listPerson>
                 <bibl type="primary">
@@ -254,9 +256,11 @@
                 <listPerson>
                     <person>
                         <persName ref="http://syriaca.org/person/2461"/>
-                        <sex value="M">
-                            Male
-                        </sex>
+                        <trait type="gender" ref="http://syriaca.org/keyword/male">
+                            <note type="desc">
+                                <persName ref="http://syriaca.org/person/2461">Decius</persName> was male.
+                            </note>
+                        </trait>
                     </person>
                 </listPerson>
                 <bibl type="primary">
@@ -267,14 +271,15 @@
             <div uri="http://syriaca.org/spear/3114-14" resp="#ktorabi #dschwartz">
                 <listPerson>
                     <person>
-                        <state type="office">
-                            <desc>
+                        <persName ref="http://syriaca.org/person/2461"/>
+                        <occupation ref="http://syriaca.org/keyword/emperors">
+                            <note type="desc">
                                 <persName ref="http://syriaca.org/person/2461">
                                     Decius
                                 </persName>
-                                was the Emperor
-                                </desc>
-                        </state>
+                                was the Emperor.
+                            </note>
+                        </occupation>
                     </person>
                 </listPerson>
                 <bibl type="primary">
@@ -284,7 +289,7 @@
             </div>
             <div uri="http://syriaca.org/spear/3114-15" resp="#ktorabi #dschwartz">
                 <listRelation>
-                    <relation type="epistolary" name="syriaca:EpistolaryReferenceTo" active="http://syriaca.org/person/2456" passive="http://syriaca.org/person/2461"/>
+                    <relation ref="syriaca:EpistolaryReferenceTo" active="http://syriaca.org/person/2456" passive="http://syriaca.org/person/2461"/>
                 </listRelation>
                 <bibl type="primary">
                     <ptr target="http://syriaca.org/bibl/668"/>
@@ -296,7 +301,7 @@
                     <person><!-- I'm not sure how to encode this as a name variant.  This person appears to be Proclus's wayward daugther; however, Severus only refers to her in this section of the fragmented letter by the pronouns "her" and "she" -->
                         <persName ref="http://syriaca.org/person/anonymous1">
                             a woman
-                            </persName>
+                        </persName>
                     </person>
                 </listPerson>
                 <bibl type="primary">
@@ -308,9 +313,11 @@
                 <listPerson>
                     <person>
                         <persName ref="http://syriaca.org/person/anonymous1"/>
-                        <sex value="F">
-                            Female
-                        </sex>
+                        <trait type="gender" ref="http://syriaca.org/keyword/female">
+                            <note type="desc">
+                                <persName ref="http://syriaca.org/person/anonymous1"/> was female.
+                            </note>
+                        </trait>
                     </person>
                 </listPerson>
                 <bibl type="primary">
@@ -320,7 +327,7 @@
             </div>
             <div uri="http://syriaca.org/spear/3114-18" resp="#ktorabi #dschwartz">
                 <listRelation>
-                    <relation type="family" name="snap:DaughterOf" active="http://syriaca.org/person/anonymous1" passive="http://syriaca.org/person/2569"/>
+                    <relation ref="snap:ChildOf" active="http://syriaca.org/person/anonymous1" passive="http://syriaca.org/person/2569"/><!-- Check this relationship. -->
                 </listRelation>
                 <bibl type="primary">
                     <ptr target="http://syriaca.org/bibl/668"/>

@@ -13,7 +13,6 @@
                 <funder>Texas A&amp;M University</funder>
                 <principal>Daniel L. Schwartz</principal>
                 <editor role="general" ref="http://syriaca.org/editors.xml#dschwartz">Daniel L. Schwartz</editor>
-                <editor role="general" ref="http://syriaca.org/editors.xml#dmichelson">David A. Michelson</editor>
                 <editor role="creator" ref="http://syriaca.org/editors.xml#dschwartz">Daniel L. Schwartz</editor>
                 <respStmt>
                     <resp></resp>
@@ -68,7 +67,7 @@
         <body>
             <div uri="http://syriaca.org/spear/3026-1" resp="#ktorabi #dschwartz">
                     <listRelation>
-                        <relation type="epistolary" name="syriaca:RecipientOfLetterFrom" active="http://syriaca.org/person/2417" passive="http://syriaca.org/person/51"/>
+                        <relation ref="syriaca:RecipientOfLetterFrom" active="http://syriaca.org/person/2417" passive="http://syriaca.org/person/51"/>
                     </listRelation>
                 <bibl type="primary">
                     <ptr target="http://syriaca.org/bibl/668"/>
@@ -77,7 +76,7 @@
             </div>
             <div uri="http://syriaca.org/spear/3026-2" resp="#ktorabi #dschwartz">
                 <listRelation>
-                    <relation type="religious" name="snap:EnmityFor" ana="alleged" active="http://syriaca.org/person/51" passive="http://syriaca.org/person/2460"/><!-- I encoded Severus's feelings for Musonius in letter 3052 as a personal enmity and I m now encoding it as religious enmity, because his complaint against Musonius here focuses on his violation of religious practices. -->
+                    <relation ref="snap:EnmityFor" active="http://syriaca.org/person/51" passive="http://syriaca.org/person/2460"/><!-- I encoded Severus's feelings for Musonius in letter 3052 as a personal enmity and I m now encoding it as religious enmity, because his complaint against Musonius here focuses on his violation of religious practices. -->
                 </listRelation>
                 <bibl type="primary">
                     <ptr target="http://syriaca.org/bibl/668"/>
@@ -134,7 +133,7 @@
             </div>
             <div uri="http://syriaca.org/spear/3026-6" resp="#ktorabi #dschwartz">
                 <listRelation>
-                    <relation type="clerical" name="syriaca:ClergyUnderBishop" active="http://syriaca.org/person/2510" passive="http://syriaca.org/person/51"/>
+                    <relation ref="syriaca:ClergyUnderBishop" active="http://syriaca.org/person/2510" passive="http://syriaca.org/person/51"/>
                 </listRelation>
                 <bibl type="primary">
                     <ptr target="http://syriaca.org/bibl/668"/>
@@ -191,7 +190,7 @@
             </div>
             <div uri="http://syriaca.org/spear/3026-10" resp="#ktorabi #dschwartz">
                 <listRelation>
-                    <relation type="clerical" name="syriaca:ClergyUnderBishop" active="http://syriaca.org/person/2511" passive="http://syriaca.org/person/51"/>
+                    <relation ref="syriaca:ClergyUnderBishop" active="http://syriaca.org/person/2511" passive="http://syriaca.org/person/51"/>
                 </listRelation>
                 <bibl type="primary">
                     <ptr target="http://syriaca.org/bibl/668"/>
@@ -200,7 +199,7 @@
             </div>
             <div uri="http://syriaca.org/spear/3026-11" resp="#ktorabi #dschwartz"> 
                 <listRelation>
-                    <relation type="epistolary" name="syriaca:SenderOfLetterTo" active="http://syriaca.org/person/2460" passive="http://syriaca.org/person/2511"/>
+                    <relation ref="syriaca:SenderOfLetterTo" active="http://syriaca.org/person/2460" passive="http://syriaca.org/person/2511"/>
                 </listRelation>
                 <bibl type="primary">
                     <ptr target="http://syriaca.org/bibl/668"/>
@@ -305,7 +304,7 @@
             </div>
             <div uri="http://syriaca.org/spear/3026-18" resp="#ktorabi #dschwartz">
                 <listRelation>
-                    <relation type="religious" name="snap:EnmityFor" ana="alleged" active="http://syriaca.org/person/51" passive="http://syriaca.org/person/2512"/>
+                    <relation ref="snap:EnmityFor" active="http://syriaca.org/person/51" passive="http://syriaca.org/person/2512"/>
                 </listRelation>
                 <bibl type="primary">
                     <ptr target="http://syriaca.org/bibl/668"/>
@@ -314,7 +313,7 @@
             </div>
             <div uri="http://syriaca.org/spear/3026-19" resp="#ktorabi #dschwartz">
                 <listRelation>
-                    <relation type="religious" name="snap:EnmityFor" ana="alleged" active="http://syriaca.org/person/51" passive="http://syriaca.org/person/2468"/>
+                    <relation ref="snap:EnmityFor" active="http://syriaca.org/person/51" passive="http://syriaca.org/person/2468"/>
                 </listRelation>
                 <bibl type="primary">
                     <ptr target="http://syriaca.org/bibl/668"/>
@@ -323,7 +322,7 @@
             </div>
             <div uri="http://syriaca.org/spear/3026-20" resp="#ktorabi #dschwartz"> 
                 <listRelation>
-                    <relation type="epistolary" name="syriaca:EpistolaryReferenceTo" active="http://syriaca.org/person/51" passive="http://syriaca.org/person/2458"/>
+                    <relation ref="syriaca:EpistolaryReferenceTo" active="http://syriaca.org/person/51" passive="http://syriaca.org/person/2458"/>
                 </listRelation>
                 <bibl type="primary">
                     <ptr target="http://syriaca.org/bibl/668"/>
@@ -332,7 +331,7 @@
             </div>
             <div uri="http://syriaca.org/spear/3026-21" resp="#ktorabi #dschwartz">
                 <listRelation>
-                    <relation type="religious" name="snap:EnmityFor" ana="alleged" active="http://syriaca.org/person/2460" passive="http://syriaca.org/person/2468"/>
+                    <relation ref="snap:EnmityFor" active="http://syriaca.org/person/2460" passive="http://syriaca.org/person/2468"/>
                 </listRelation>
                 <bibl type="primary">
                     <ptr target="http://syriaca.org/bibl/668"/>
@@ -357,7 +356,7 @@
             </div>
             <div uri="http://syriaca.org/spear/3026-23" resp="#ktorabi #dschwartz">
                 <listRelation>
-                    <relation type="legal" name="syriaca:LegalChargesAgainst" active="http://syriaca.org/person/2460" passive="http://syriaca.org/person/2459"/>
+                    <relation ref="syriaca:LegalChargesAgainst" active="http://syriaca.org/person/2460" passive="http://syriaca.org/person/2459"/>
                 </listRelation>
                 <bibl type="primary">
                     <ptr target="http://syriaca.org/bibl/668"/>

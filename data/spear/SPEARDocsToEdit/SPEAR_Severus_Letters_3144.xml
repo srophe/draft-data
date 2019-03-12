@@ -13,7 +13,6 @@
                 <funder>Texas A&amp;M University</funder>
                 <principal>Daniel L. Schwartz</principal>
                 <editor role="general" ref="http://syriaca.org/documentation/editors.xml#dschwartz">Daniel L. Schwartz</editor>
-                <editor role="general" ref="http://syriaca.org/documentation/editors.xml#dmichelson">David A. Michelson</editor>
                 <editor role="creator" ref="http://syriaca.org/documentation/editors.xml#dschwartz">Daniel L. Schwartz</editor>
                 <respStmt>
                     <resp></resp>
@@ -83,9 +82,9 @@
                     <listPerson>
                         <person>
                             <persName ref="http://syriaca.org/person/2620"/>
-                            <sex value="F">
-                                Female
-                            </sex>
+                            <trait type="gender" ref="http://syriaca.org/keyword/female">
+                                <note type="desc"><persName ref="http://syriaca.org/person/2620">Caesaria</persName> was female.</note>
+                            </trait>
                         </person>
                     </listPerson>
                     <bibl type="primary">
@@ -96,14 +95,15 @@
                 <div uri="http://syriaca.org/spear/3144-3" resp="#ktorabi #dschwartz">
                     <listPerson>
                         <person>
-                            <state type="office">
-                                <desc>
+                            <persName ref="http://syriaca.org/person/2620"/>
+                            <socecStatus ref="http://syriaca.org/keyword/nobles">
+                                <note type="desc">
                                     <persName ref="http://syriaca.org/person/2620"> 
                                         Caesaria 
                                     </persName> 
                                     was a hypatissa. 
-                                    </desc>
-                            </state>
+                                </note>
+                            </socecStatus>
                         </person>
                     </listPerson>
                     <bibl type="primary">
@@ -113,7 +113,7 @@
                 </div>
                 <div uri="http://syriaca.org/spear/3144-4" resp="#ktorabi #dschwartz">
                     <listRelation>
-                        <relation type="epistolary" name="syriaca:SenderOfLetterTo" active="http://syriaca.org/person/51" passive="http://syriaca.org/person/2620"/>
+                        <relation ref="syriaca:SenderOfLetterTo" active="http://syriaca.org/person/51" passive="http://syriaca.org/person/2620"/>
                     </listRelation>
                     <bibl type="primary">
                         <ptr target="http://syriaca.org/bibl/669"/>
@@ -122,7 +122,7 @@
                 </div> 
             <div uri="http://syriaca.org/spear/3144-5" resp="#ktorabi #dschwartz">
                 <listRelation>
-                    <relation type="epistolary" name="syriaca:SenderOfLetterTo" active="http://syriaca.org/person/2620" passive="http://syriaca.org/person/51"/>
+                    <relation ref="syriaca:SenderOfLetterTo" active="http://syriaca.org/person/2620" passive="http://syriaca.org/person/51"/>
                 </listRelation>
                 <bibl type="primary">
                     <ptr target="http://syriaca.org/bibl/669"/>

@@ -68,8 +68,8 @@
             <div uri="http://syriaca.org/spear/3006-1" resp="#ktorabi #dschwartz">
                 <listPerson>
                     <personGrp>
-                        <persName ref="http://syriaca.org/person/anonymi1">
-                            the Patricians
+                        <persName ref="http://syriaca.org/person/anonymi1"><!-- This is tricky. Who are these patricians. The senate? See index p. 470 where "Patricians" has the following pages, 11, 60, 125, 199, 200, 203-->
+                            The Patricians
                             <date notBefore="0465" notAfter="0513">
                                 A.D. 465-513
                             </date>                           
@@ -99,47 +99,11 @@
             </div>
             <div uri="http://syriaca.org/spear/3006-3" resp="#ktorabi #dschwartz">
                 <listRelation>
-                    <relation ref="syriaca:RecipientOfLetterFrom" active="http://syriaca.org/person/anonymi1" passive="http://syriaca.org/person/51"/>
+                    <relation ref="syriaca:SenderOfLetterTo" active="http://syriaca.org/person/51" passive="http://syriaca.org/person/anonymi1"/>
                 </listRelation>
                 <bibl type="primary">
                     <ptr target="http://syriaca.org/bibl/668"/>
                     <citedRange unit="pp">199-200</citedRange>
-                </bibl>
-            </div>
-            <div uri="http://syriaca.org/spear/3006-4" resp="#ktorabi #dschwartz">
-                <listPerson>
-                    <personGrp>
-                        <persName ref="http://syriaca.org/person/anonymi2">
-                            men accused of carrying out priestly functions without having been ordained, between
-                            <date notBefore="0465" notAfter="0513">
-                                A.D. 465-513
-                            </date>
-                            </persName>
-                    </personGrp>
-                </listPerson>
-                <bibl type="primary">
-                    <ptr target="http://syriaca.org/bibl/668"/>
-                    <citedRange unit="pp">200</citedRange>
-                </bibl>
-            </div>
-            <div uri="http://syriaca.org/spear/3006-5" resp="#ktorabi #dschwartz">
-                <listPerson>
-                    <personGrp>
-                        <persName ref="http://syriaca.org/person/anonymi3">
-                            Slanderers, who between
-                            <date notBefore="0465" notAfter="0513">
-                                A.D. 465-513
-                            </date>
-                            accused  
-                            <persName ref="http://syriaca.org/person/anonymi2">
-                                certain men of carrying out priestly functions without having been ordained
-                            </persName>
-                        </persName>
-                    </personGrp>
-                </listPerson>
-                <bibl type="primary">
-                    <ptr target="http://syriaca.org/bibl/668"/>
-                    <citedRange unit="pp">200</citedRange>
                 </bibl>
             </div>
         </body>

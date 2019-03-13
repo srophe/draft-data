@@ -69,8 +69,8 @@
                 <listPerson>
                     <person>
                         <persName ref="http://syriaca.org/person/2554">
-                            Simeon, Bishop of  
-                            <placeName>
+                            Simeon, bishop of  
+                            <placeName ref="http://syriaca.org/place/2642">
                                 Chalcis
                             </placeName>
                         </persName>
@@ -85,7 +85,14 @@
                 <listPerson>
                     <person>
                         <persName ref="http://syriaca.org/person/2554"/>
-                        <sex value="M">Male</sex>
+                        <trait type="gender" ref="http://syriaca.org/keyword/male">
+                            <note type="desc">
+                                <persName ref="http://syriaca.org/person/2554">
+                                    Simeon
+                                </persName>
+                                was male.
+                            </note>
+                        </trait>
                     </person>
                 </listPerson>
                 <bibl type="primary">
@@ -96,21 +103,18 @@
             <div uri="http://syriaca.org/spear/3072-3" resp="#ktorabi #dschwartz">
                 <listPerson>
                     <person>
-                        <state type="vocation">
-                            <desc>
+                        <persName ref="http://syriaca.org/person/2554"/>
+                        <occupation ref="http://syriaca.org/keyword/bishops">
+                            <note type="desc">
                                 <persName ref="http://syriaca.org/person/2554">
                                     Simeon
                                 </persName>
-                                was a bishop of
-                                <placeName>
+                                was the bishop of 
+                                <placeName ref="http://syriaca.org/place/2642">
                                     Chalcis
-                                </placeName>
-                                in
-                                <placeName>
-                                    Syria
-                                </placeName>
-                            </desc>
-                        </state>
+                                </placeName>.
+                            </note>
+                        </occupation>
                     </person>
                 </listPerson>
                 <bibl type="primary">
@@ -120,7 +124,7 @@
             </div>
             <div uri="http://syriaca.org/spear/3072-4" resp="#ktorabi #dschwartz">
                 <listRelation>
-                    <relation ref="syriaca:RecipientOfLetterFrom" active="http://syriaca.org/person/2554" passive="http://syriaca.org/person/51"/>
+                    <relation ref="syriaca:SenderOfLetterTo" active="http://syriaca.org/person/51" passive="http://syriaca.org/person/2554"/>
                 </listRelation>
                 <bibl type="primary">
                     <ptr target="http://syriaca.org/bibl/668"/>
@@ -130,9 +134,9 @@
             <div uri="http://syriaca.org/spear/3072-5" resp="#ktorabi #dschwartz">
                 <listPerson>
                     <personGrp>
-                        <persName><persName ref="http://syriaca.org/person/anonymi1"/>
-                            the men from the village of
-                            <placeName>
+                        <persName ref="http://syriaca.org/person/anonymi1">
+                            The men from the village of
+                            <placeName ref="http://syriaca.org/place/3046">
                                 Thelhadin
                             </placeName>
                             in
@@ -151,8 +155,8 @@
                 <listPerson>
                     <person>
                         <persName ref="http://syriaca.org/person/2406">
-                            the devout presbyter Ignatius  
-                            </persName>
+                            The devout presbyter Ignatius  
+                        </persName>
                     </person>
                 </listPerson>
                 <bibl type="primary">
@@ -164,7 +168,14 @@
                 <listPerson>
                     <person>
                         <persName ref="http://syriaca.org/person/2406"/>
-                        <sex value="M">Male</sex>
+                        <trait type="gender" ref="http://syriaca.org/keyword/male">
+                            <note type="desc">
+                                <persName ref="http://syriaca.org/person/2406">
+                                    Ignatius
+                                </persName>
+                                was male.
+                            </note>
+                        </trait>
                     </person>
                 </listPerson>
                 <bibl type="primary">
@@ -175,14 +186,15 @@
             <div uri="http://syriaca.org/spear/3072-8" resp="#ktorabi #dschwartz">
                 <listPerson>
                     <person>
-                        <state type="vocation">
-                            <desc>
+                        <persName ref="http://syriaca.org/person/2406"/>
+                        <occupation ref="http://syriaca.org/keyword/priests">
+                            <note type="desc">
                                 <persName ref="http://syriaca.org/person/2406">
                                     Ignatius
                                 </persName>
-                                was a presbyter
-                                </desc>
-                        </state>
+                                was a presbyter.
+                            </note>
+                        </occupation>
                     </person>
                 </listPerson>
                 <bibl type="primary">
@@ -194,7 +206,7 @@
                 <listPerson>
                     <person>
                         <persName ref="http://syriaca.org/person/anonymous1">
-                            the periodeutes  
+                            The periodeutes  
                         </persName>
                     </person>
                 </listPerson>
@@ -207,7 +219,12 @@
                 <listPerson>
                     <person>
                         <persName ref="http://syriaca.org/person/anonymous1"/>
-                        <sex value="M">Male</sex>
+                        <trait type="gender" ref="http://syriaca.org/keyword/male">
+                            <note type="desc">
+                                <persName ref="http://syriaca.org/person/anonymous1"/>
+                                was male.
+                            </note>
+                        </trait>
                     </person>
                 </listPerson>
                 <bibl type="primary">
@@ -218,14 +235,13 @@
             <div uri="http://syriaca.org/spear/3072-11" resp="#ktorabi #dschwartz">
                 <listPerson>
                     <person>
-                        <state type="vocation">
-                            <desc>
-                                <persName ref="http://syriaca.org/person/anonymous1">
-                                    the periodeutes
-                                </persName>
-                                was a visiting priest
-                            </desc>
-                        </state>
+                        <persName ref="http://syriaca.org/person/anonymous1"/>
+                        <occupation ref="http://syriaca.org/keyword/priests">
+                            <note type="desc">
+                                <persName ref="http://syriaca.org/person/anonymous1"/>
+                                was a visiting priest.
+                            </note>
+                        </occupation>
                     </person>
                 </listPerson>
                 <bibl type="primary">
@@ -235,7 +251,7 @@
             </div>
             <div uri="http://syriaca.org/spear/3072-12" resp="#ktorabi #dschwartz">
                 <listRelation>
-                    <relation ref="snap:ProfessionalRelationship" mutual="http://syriaca.org/person/51 http://syriaca.org/person/2406 http://syriaca.org/person/anonymous1"/>
+                    <relation ref="snap:ProfessionalRelationship" mutual="http://syriaca.org/person/51 http://syriaca.org/person/2406 http://syriaca.org/person/anonymous1"/><!-- Fix anonymous1 and fix schema. -->
                 </listRelation>
                 <bibl type="primary">
                     <ptr target="http://syriaca.org/bibl/668"/>
@@ -268,7 +284,14 @@
                 <listPerson>
                     <person>
                         <persName ref="http://syriaca.org/person/2408"/>
-                        <sex value="M">Male</sex>
+                        <trait type="gender" ref="http://syriaca.org/keyword/male">
+                            <note type="desc">
+                                <persName ref="http://syriaca.org/person/2408">
+                                    Sergius
+                                </persName>
+                                was male.
+                            </note>
+                        </trait>
                     </person>
                 </listPerson>
                 <bibl type="primary">
@@ -279,17 +302,18 @@
             <div uri="http://syriaca.org/spear/3072-16" resp="#ktorabi #dschwartz">
                 <listPerson>
                     <person>
-                        <state type="vocation">
-                            <desc>
+                        <persName ref="http://syriaca.org/person/2408"/>
+                        <occupation ref="http://syriaca.org/keyword/bishops">
+                            <note type="desc">
                                 <persName ref="http://syriaca.org/person/2408">
                                     Sergius
                                 </persName>
-                                was a the Bishop of
-                                <placeName>
+                                was the bishop of 
+                                <placeName ref="http://syriaca.org/place/2660">
                                     Cyrrhus
-                                </placeName>
-                            </desc>
-                        </state>
+                                </placeName>.
+                            </note>
+                        </occupation>
                     </person>
                 </listPerson>
                 <bibl type="primary">
@@ -314,7 +338,14 @@
                 <listPerson>
                     <person>
                         <persName ref="http://syriaca.org/person/2407"/>
-                        <sex value="M">Male</sex>
+                        <trait type="gender" ref="http://syriaca.org/keyword/male">
+                            <note type="desc">
+                                <persName ref="http://syriaca.org/person/2407">
+                                    Marion
+                                </persName>
+                                was male.
+                            </note>
+                        </trait>
                     </person>
                 </listPerson>
                 <bibl type="primary">
@@ -325,17 +356,18 @@
             <div uri="http://syriaca.org/spear/3072-19" resp="#ktorabi #dschwartz">
                 <listPerson>
                     <person>
-                        <state type="vocation">
-                            <desc>
+                        <persName ref="http://syriaca.org/person/2407"/>
+                        <occupation ref="http://syriaca.org/keyword/bishops">
+                            <note type="desc">
                                 <persName ref="http://syriaca.org/person/2407">
                                     Marion
                                 </persName>
-                                was a the Bishop of
-                                <placeName>
+                                was the bishop of 
+                                <placeName ref="http://syriaca.org/place/2720">
                                     Sura
-                                </placeName>
-                            </desc>
-                        </state>
+                                </placeName>.
+                            </note>
+                        </occupation>
                     </person>
                 </listPerson>
                 <bibl type="primary">
@@ -347,7 +379,7 @@
                 <listPerson>
                     <person>
                         <persName ref="http://syriaca.org/person/2544">
-                            presbyter Cosmas
+                            Presbyter Cosmas
                         </persName>
                     </person>
                 </listPerson>
@@ -360,7 +392,14 @@
                 <listPerson>
                     <person>
                         <persName ref="http://syriaca.org/person/2544"/>
-                        <sex value="M">Male</sex>
+                        <trait type="gender" ref="http://syriaca.org/keyword/male">
+                            <note type="desc">
+                                <persName ref="http://syriaca.org/person/2544">
+                                    Cosmas
+                                </persName>
+                                was male.
+                            </note>
+                        </trait>
                     </person>
                 </listPerson>
                 <bibl type="primary">
@@ -371,21 +410,18 @@
             <div uri="http://syriaca.org/spear/3072-22" resp="#ktorabi #dschwartz"> 
                 <listPerson>
                     <person>
-                        <state type="vocation">
-                            <desc>
-                                <persName ref="http://syriaca.org/person/2544"> 
-                                    Cosmas was a
+                        <persName ref="http://syriaca.org/person/2544"/>
+                        <occupation ref="http://syriaca.org/keyword/priests">
+                            <note type="desc">
+                                <persName ref="http://syriaca.org/person/2544">
+                                    Cosmas
                                 </persName>
-                                presbyter of
-                                <placeName>
+                                was a presbyter of
+                                <placeName ref="http://syriaca.org/place/2642">
                                     Chalcis 
-                                </placeName>
-                                in
-                                <placeName>
-                                    Syria
-                                </placeName>
-                                </desc>
-                        </state>
+                                </placeName>.
+                            </note>
+                        </occupation>
                     </person>
                 </listPerson>
                 <bibl type="primary">
@@ -395,7 +431,7 @@
             </div>
             <div uri="http://syriaca.org/spear/3072-23" resp="#ktorabi #dschwartz">
                 <listRelation>
-                    <relation ref="syriaca:ClergyUnderBishop" active="http://syriaca.org/person/2544" passive="http://syriaca.org/person/2554"/>
+                    <relation ref="syriaca:BishopOverClergy" active="http://syriaca.org/person/2554" passive="http://syriaca.org/person/2544"/>
                 </listRelation>
                 <bibl type="primary">
                     <ptr target="http://syriaca.org/bibl/668"/>

@@ -68,9 +68,9 @@
             <div uri="http://syriaca.org/spear/3050-1" resp="#ktorabi #dschwartz">
                 <listPerson>
                     <personGrp>
-                        <persName><persName ref="http://syriaca.org/person/anonymi1"/>
+                        <persName ref="http://syriaca.org/person/anonymi1">
                             The fathers 
-                            </persName>
+                        </persName>
                     </personGrp>
                 </listPerson>
                 <bibl type="primary">
@@ -80,7 +80,7 @@
             </div>
             <div uri="http://syriaca.org/spear/3050-2" resp="#ktorabi #dschwartz">
                 <listRelation>
-                    <relation ref="syriaca:RecipientOfLetterFrom" active="http://syriaca.org/person/anonymi1" passive="http://syriaca.org/person/51"/>
+                    <relation ref="syriaca:SenderOfLettersTo" active="http://syriaca.org/person/51" passive="http://syriaca.org/person/anonymi1"/>
                 </listRelation>
                 <bibl type="primary">
                     <ptr target="http://syriaca.org/bibl/668"/>
@@ -90,11 +90,8 @@
             <div uri="http://syriaca.org/spear/3050-3" resp="#ktorabi #dschwartz">
                 <listPerson>
                     <personGrp>
-                        <persName><persName ref="http://syriaca.org/person/anonymi2"/>
-                            all the holy fathers in
-                            <date notBefore="0513" notAfter="0518">
-                                A.D. 513-518
-                            </date>
+                        <persName ref="http://syriaca.org/person/anonymi1">
+                            All the holy fathers
                         </persName>
                     </personGrp>
                    </listPerson>
@@ -107,7 +104,7 @@
                 <listPerson>
                     <person>
                         <persName ref="http://syriaca.org/person/2566">
-                            the devout deacon Stephen 
+                            The devout deacon Stephen 
                         </persName>
                     </person>
                 </listPerson>
@@ -120,9 +117,14 @@
                 <listPerson>
                     <person>
                         <persName ref="http://syriaca.org/person/2566"/>
-                        <sex value="M">
-                            Male
-                        </sex>
+                        <trait type="gender" ref="http://syriaca.org/keyword/male">
+                            <note type="desc">
+                                <persName ref="http://syriaca.org/person/2566">
+                                    Stephen
+                                </persName>
+                                was male.
+                            </note>
+                        </trait>
                     </person>
                 </listPerson>
                 <bibl type="primary">
@@ -130,17 +132,18 @@
                     <citedRange unit="pp">76</citedRange>
                 </bibl>
             </div>
-            <div uri="http://syriaca.org/spear/30506-" resp="#ktorabi #dschwartz">
+            <div uri="http://syriaca.org/spear/3050-6" resp="#ktorabi #dschwartz">
                 <listPerson>
                     <person>
-                        <state type="vocation">
-                            <desc>
+                        <persName ref="http://syriaca.org/person/2566"/>
+                        <occupation ref="http://syriaca.org/keyword/deacons">
+                            <note type="desc">
                                 <persName ref="http://syriaca.org/person/2566">
                                     Stephen
                                 </persName>
-                                was a deacon
-                            </desc>
-                        </state>
+                                was a deacon.
+                            </note>
+                        </occupation>
                     </person>
                 </listPerson>
                 <bibl type="primary">
@@ -160,8 +163,8 @@
             <div uri="http://syriaca.org/spear/3050-8" resp="#ktorabi #dschwartz">
                 <listPerson>
                     <personGrp>
-                        <persName><persName ref="http://syriaca.org/person/anonymi3"/>
-                            the bishops, whom in
+                        <persName ref="http://syriaca.org/person/anonymi3">
+                            The bishops, whom in
                             <date notBefore="0513" notAfter="0518">
                                 A.D. 513-518
                             </date>

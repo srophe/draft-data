@@ -70,8 +70,8 @@
                         <person>
                             <persName ref="http://syriaca.org/person/anonymous1"><!-- No URI for Simeon in letter 43. I'm assumiming Simeon is just the name of the monastery and not a bishop or head of that monastery -->
                                 The archimandrite of 
-                                <placeName>
-                                    the monastery of of the holy lord Simeon  
+                                <placeName ref="http://syriaca.org/place/635">
+                                    the monastery of the holy lord Simeon  
                                 </placeName>
                                 </persName>
                         </person>
@@ -85,9 +85,12 @@
                 <listPerson>
                     <person>
                         <persName ref="http://syriaca.org/person/anonymous1"/>
-                        <sex value="M">
-                            Male
-                        </sex>
+                        <trait type="gender" ref="http://syriaca.org/keyword/male">
+                            <note type="desc">
+                                <persName ref="http://syriaca.org/person/anonymous1"/>
+                                was male.
+                            </note>
+                        </trait>
                     </person>
                 </listPerson>
                 <bibl type="primary">
@@ -98,14 +101,13 @@
             <div uri="http://syriaca.org/spear/3081-3" resp="#ktorabi #dschwartz">
                 <listPerson>
                     <person>
-                        <state type="vocation">
-                            <desc>
-                                <persName ref="http://syriaca.org/person/anonymous1"> 
-                                    this man
-                                </persName> 
-                                was an archimandrite
-                                </desc>
-                        </state>
+                        <persName ref="http://syriaca.org/person/anonymous1"/>
+                        <occupation ref="http://syriaca.org/keyword/monastic-heads">
+                            <note type="desc">
+                                <persName ref="http://syriaca.org/person/anonymous1"/>
+                                was an archimandrite.
+                            </note>
+                        </occupation>
                     </person>
                 </listPerson>
                 <bibl type="primary">
@@ -115,7 +117,7 @@
             </div>
             <div uri="http://syriaca.org/spear/3081-4" resp="#ktorabi #dschwartz">
                 <listRelation>
-                    <relation ref="syriaca:RecipientOfLetterFrom" active="http://syriaca.org/person/anonymous1" passive="http://syriaca.org/person/51"/>
+                    <relation ref="syriaca:SenderOfLetterTo" active="http://syriaca.org/person/51" passive="http://syriaca.org/person/anonymous1"/>
                 </listRelation>
                 <bibl type="primary">
                     <ptr target="http://syriaca.org/bibl/668"/>
@@ -127,7 +129,7 @@
                     <person>
                         <persName ref="http://syriaca.org/person/2418">
                             Nonnus 
-                            </persName>
+                        </persName>
                     </person>
                 </listPerson>
                 <bibl type="primary">
@@ -139,9 +141,14 @@
                 <listPerson>
                     <person>
                         <persName ref="http://syriaca.org/person/2418"/>
-                        <sex value="M">
-                            Male
-                        </sex>
+                        <trait type="gender" ref="http://syriaca.org/keyword/male">
+                            <note type="desc">
+                                <persName ref="http://syriaca.org/person/2418">
+                                    Nonnus
+                                </persName>
+                                was male.
+                            </note>
+                        </trait>
                     </person>
                 </listPerson>
                 <bibl type="primary">
@@ -152,17 +159,18 @@
             <div uri="http://syriaca.org/spear/3081-7" resp="#ktorabi #dschwartz">
                 <listPerson>
                     <person>
-                        <state type="vocation">
-                            <desc>
-                                <persName ref="http://syriaca.org/person/2418"> 
+                        <persName ref="http://syriaca.org/person/2418"/>
+                        <occupation ref="http://syriaca.org/keyword/monks">
+                            <note type="desc">
+                                <persName ref="http://syriaca.org/person/2418">
                                     Nonnus
-                                </persName> 
+                                </persName>
                                 was a monk of
-                                <placeName>
+                                <placeName ref="http://syriaca.org/place/635">
                                     the Monastery of Simeon
-                                </placeName>
-                            </desc>
-                        </state>
+                                </placeName>.
+                            </note>
+                        </occupation>
                     </person>
                 </listPerson>
                 <bibl type="primary">
@@ -172,21 +180,22 @@
             </div>
             <div uri="http://syriaca.org/spear/3081-8" resp="#ktorabi #dschwartz">
                 <listRelation>
-                    <relation ref="syriaca:MonasticUnderHead" active="http://syriaca.org/person/2418" passive="http://syriaca.org/person/anonymous1"/> 
+                    <relation ref="syriaca:MonasticHeadOver" active="http://syriaca.org/person/anonymous1" passive="http://syriaca.org/person/2418"/> 
                 </listRelation>
                 <bibl type="primary">
                     <ptr target="http://syriaca.org/bibl/668"/>
                     <citedRange unit="pp">120</citedRange>
                 </bibl>
             </div>
-            <div uri="http://syriaca.org/spear/3081-9" resp="#ktorabi #dschwartz">
+            <div uri="http://syriaca.org/spear/3081-9" resp="#ktorabi #dschwartz"><!-- Make sure to include an event with keyword ekklesiekdidoi -->
                 <listPerson>
                     <personGrp>
                         <persName ref="http://syriaca.org/person/anonymi1">
-                            the God-loving ekklesiekdikoi in
-                            <date notBefore="0513" notAfter="0518">
-                                A.D. 513-518
-                            </date> 
+                            The God-loving ekklesiekdikoi who placed 
+                            <persName ref="http://syriaca.org/person/2418">
+                                Nonnus
+                            </persName>
+                            under injunction.
                         </persName>
                     </personGrp>
                 </listPerson>
@@ -208,7 +217,7 @@
                 <listPerson>
                     <personGrp>
                         <persName ref="http://syriaca.org/person/anonymi2">
-                            the saintly bishops in
+                            The saintly bishops in
                             <date notBefore="0513" notAfter="0518">
                                 A.D. 513-518
                             </date> 
@@ -237,8 +246,8 @@
                 <listPerson>
                     <personGrp>
                         <persName ref="http://syriaca.org/person/anonymi3">
-                            the glorious notables of
-                            <placeName>
+                            The glorious notables of
+                            <placeName ref="http://syriaca.org/place/10">
                                 Antioch
                             </placeName>
                             whom
@@ -247,8 +256,8 @@
                             </persName>
                             notified of 
                             <persName ref="http://syriaca.org/person/2418"> 
-                                Nonnus's
-                            </persName>
+                                Nonnus
+                            </persName>'s
                             refusal to be tried in
                             <date notBefore="0513" notAfter="0518">
                                 A.D. 513-518
@@ -261,12 +270,28 @@
                     <citedRange unit="pp">122</citedRange>
                 </bibl>
             </div>
-            <div uri="http://syriaca.org/spear/3081-14" resp="#ktorabi #dschwartz">
+            <div uri="http://syriaca.org/spear/3081-14" resp="#dschwartz">
+                <listPerson>
+                    <personGrp>
+                        <persName ref="http://syriaca.org/person/anonymi3"/>
+                        <socecStatus ref="http://syriaca.org/keyword/upper-social-group">
+                            <note type="desc">
+                                <persName ref="http://syriaca.org/person/anonymi3"/> were notables.
+                            </note>
+                        </socecStatus>
+                    </personGrp>
+                </listPerson>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="pp">122</citedRange>
+                </bibl>
+            </div>
+            <div uri="http://syriaca.org/spear/3081-15" resp="#ktorabi #dschwartz">
                 <listPerson>
                     <personGrp>
                         <persName ref="http://syriaca.org/person/anonymi4">
-                            some of the learned rhetors of
-                            <placeName>
+                            The learned rhetors of
+                            <placeName ref="http://syriaca.org/place/10">
                                 Antioch
                             </placeName>
                             whom
@@ -289,7 +314,23 @@
                     <citedRange unit="pp">122</citedRange>
                 </bibl>
             </div>
-            <div uri="http://syriaca.org/spear/3081-15" resp="#ktorabi #dschwartz">
+            <div uri="http://syriaca.org/spear/3081-16" resp="#dschwartz">
+                <listPerson>
+                    <personGrp>
+                        <persName ref="http://syriaca.org/person/anonymi4"/>
+                        <occupation ref="http://syriaca.org/keyword/rhetors">
+                            <note type="desc">
+                                <persName ref="http://syriaca.org/person/anonymi4"/> were rhetors.
+                            </note>
+                        </occupation>
+                    </personGrp>
+                </listPerson>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="pp">122</citedRange>
+                </bibl>
+            </div>
+            <div uri="http://syriaca.org/spear/3081-17" resp="#ktorabi #dschwartz">
                 <listPerson>
                     <person>
                         <persName ref="http://syriaca.org/person/2419">
@@ -302,13 +343,18 @@
                     <citedRange unit="pp">123</citedRange>
                 </bibl>
             </div>
-            <div uri="http://syriaca.org/spear/3081-16" resp="#ktorabi #dschwartz">
+            <div uri="http://syriaca.org/spear/3081-18" resp="#ktorabi #dschwartz">
                 <listPerson>
                     <person>
                         <persName ref="http://syriaca.org/person/2419"/>
-                        <sex value="M">
-                            Male
-                        </sex>
+                        <trait type="gender" ref="http://syriaca.org/keyword/male">
+                            <note type="desc">
+                                <persName ref="http://syriaca.org/person/2419">
+                                    Eusebius
+                                </persName>
+                                was male.
+                            </note>
+                        </trait>
                     </person>
                 </listPerson>
                 <bibl type="primary">
@@ -316,20 +362,21 @@
                     <citedRange unit="pp">123</citedRange>
                 </bibl>
             </div>
-            <div uri="http://syriaca.org/spear/3081-17" resp="#ktorabi #dschwartz">
+            <div uri="http://syriaca.org/spear/3081-19" resp="#ktorabi #dschwartz">
                 <listPerson>
                     <person>
-                        <state type="vocation">
-                            <desc>
-                                <persName ref="http://syriaca.org/person/2419"> 
+                        <persName ref="http://syriaca.org/person/2419"/>
+                        <occupation ref="http://syriaca.org/keyword/deacons">
+                            <note type="desc">
+                                <persName ref="http://syriaca.org/person/2419">
                                     Eusebius
-                                </persName> 
-                                was a deacon of
-                                <placeName>
+                                </persName>
+                                was a deacon of 
+                                <placeName ref="http://syriaca.org/place/10">
                                     Antioch
-                                </placeName>
-                            </desc>
-                        </state>
+                                </placeName>.
+                            </note>
+                        </occupation>
                     </person>
                 </listPerson>
                 <bibl type="primary">
@@ -337,9 +384,9 @@
                     <citedRange unit="pp">120</citedRange>
                 </bibl>
             </div>
-            <div uri="http://syriaca.org/spear/3081-18" resp="#ktorabi #dschwartz">
+            <div uri="http://syriaca.org/spear/3081-20" resp="#ktorabi #dschwartz">
                 <listRelation>
-                    <relation ref="syriaca:ClergyUnderBishop" active="http://syriaca.org/person/2419" passive="http://syriaca.org/person/51"/> 
+                    <relation ref="syriaca:BishopOverClergy" active="http://syriaca.org/person/51" passive="http://syriaca.org/person/2419"/> 
                 </listRelation>
                 <bibl type="primary">
                     <ptr target="http://syriaca.org/bibl/668"/>

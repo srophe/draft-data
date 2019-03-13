@@ -70,7 +70,7 @@
                     <person>
                         <persName ref="http://syriaca.org/person/anonymous1">
                             A certain woman
-                            </persName>
+                        </persName>
                     </person>
                 </listPerson>
                 <bibl type="primary">
@@ -82,9 +82,12 @@
                 <listPerson>
                     <person>
                         <persName ref="http://syriaca.org/person/anonymous1"/>
-                        <sex value="F">
-                            Female
-                        </sex>
+                        <trait type="gender" ref="http://syriaca.org/keyword/female">
+                            <note type="desc">
+                                <persName ref="http://syriaca.org/person/anonymous1"/>
+                                was female.
+                            </note>
+                        </trait>
                     </person>
                 </listPerson>
                 <bibl type="primary">
@@ -113,21 +116,8 @@
             <div uri="http://syriaca.org/spear/3002-5" resp="#ktorabi #dschwartz">
                 <listPerson>
                     <person>
-                        <persName ref="http://syriaca.org/person/anonymous2"><!-- No URI for Father Abba and no information about the specific title he held in the Church-->
+                        <persName ref="http://syriaca.org/person/2582">
                             Father Abba
-                        </persName>
-                    </person>
-                </listPerson>
-                <bibl type="primary">
-                    <ptr target="http://syriaca.org/bibl/669"/>
-                    <citedRange unit="pp">433</citedRange>
-                </bibl>
-            </div>
-            <div uri="http://syriaca.org/spear/3002-6" resp="#ktorabi #dschwartz">
-                <listPerson>
-                    <person>
-                        <persName ref="http://syriaca.org/person/anonymous2">
-                            our holy father
                         </persName>
                     </person>
                 </listPerson>
@@ -139,10 +129,13 @@
             <div uri="http://syriaca.org/spear/3002-7" resp="#ktorabi #dschwartz">
                 <listPerson>
                     <person>
-                        <persName ref="http://syriaca.org/person/anonymous2"/>
-                        <sex value="M">
-                            Male
-                        </sex>
+                        <persName ref="http://syriaca.org/person/2582"/>
+                        <trait type="gender" ref="http://syriaca.org/keyword/male">
+                            <note type="desc">
+                                <persName ref="http://syriaca.org/person/2582">Abba</persName>
+                                was male.
+                            </note>
+                        </trait>
                     </person>
                 </listPerson>
                 <bibl type="primary">
@@ -152,7 +145,7 @@
             </div>
             <div uri="http://syriaca.org/spear/3002-8" resp="#ktorabi #dschwartz">
                 <listRelation>
-                    <relation ref="syriaca:SenderOfLetterTo" active="http://syriaca.org/person/51" passive="http://syriaca.org/person/anonymous2"/>
+                    <relation ref="syriaca:SenderOfLetterTo" active="http://syriaca.org/person/51" passive="http://syriaca.org/person/2582"/>
                 </listRelation>
                 <bibl type="primary">
                     <ptr target="http://syriaca.org/bibl/669"/>
@@ -161,7 +154,7 @@
             </div> 
             <div uri="http://syriaca.org/spear/3002-9" resp="#ktorabi #dschwartz">
                 <listRelation>
-                    <relation ref="syriaca:SenderOfLetterTo" active="http://syriaca.org/person/anonymous2" passive="http://syriaca.org/person/51"/>
+                    <relation ref="syriaca:SenderOfLetterTo" active="http://syriaca.org/person/2582" passive="http://syriaca.org/person/51"/>
                 </listRelation>
                 <bibl type="primary">
                     <ptr target="http://syriaca.org/bibl/669"/>
@@ -171,7 +164,7 @@
             <div uri="http://syriaca.org/spear/3002-10" resp="#ktorabi #dschwartz">
                 <listPerson>
                     <person>
-                        <persName ref="http://syriaca.org/person/anonymous3"><!-- No URI for Brother Maximus -->
+                        <persName ref="http://syriaca.org/person/2722">
                             Brother Maximus
                         </persName>
                     </person>
@@ -184,10 +177,15 @@
             <div uri="http://syriaca.org/spear/3002-11" resp="#ktorabi #dschwartz">
                 <listPerson>
                     <person>
-                        <persName ref="http://syriaca.org/person/anonymous3"/>
-                        <sex value="M">
-                            Male
-                        </sex>
+                        <persName ref="http://syriaca.org/person/2722"/>
+                        <trait type="gender" ref="http://syriaca.org/keyword/male">
+                            <note type="desc">
+                                <persName ref="http://syriaca.org/person/2722">
+                                    Maximus
+                                </persName>
+                                was male.
+                            </note>
+                        </trait>
                     </person>
                 </listPerson>
                 <bibl type="primary">
@@ -197,7 +195,7 @@
             </div>
             <div uri="http://syriaca.org/spear/3002-12" resp="#ktorabi #dschwartz">
                 <listRelation>
-                    <relation ref="snap:ProfessionalRelationship" mutual="http://syriaca.org/person/anonymous2 http://syriaca.org/person/51 http://syriaca.org/person/anonymous3"/>
+                    <relation ref="snap:ProfessionalRelationship" mutual="http://syriaca.org/person/2582 http://syriaca.org/person/51 http://syriaca.org/person/2722"/>
                 </listRelation>
                 <bibl type="primary">
                     <ptr target="http://syriaca.org/bibl/669"/>

@@ -5,7 +5,7 @@
          xmlns:teix="http://www.tei-c.org/ns/Examples"
          datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"
          ns="http://www.tei-c.org/ns/1.0"><!--
-Schema generated from ODD source 2019-03-25T16:17:23Z. .
+Schema generated from ODD source 2019-03-26T20:58:39Z. .
 TEI Edition: Version 3.5.0. Last updated on
 	29th January 2019, revision 3c0c64ec4
 TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 3.5.0/
@@ -1883,9 +1883,11 @@ Suggested values include: 1] below; 2] bottom; 3] margin; 4] top; 5] opposite; 6
                 <sch:let name="docURIno"
                         value="//tei:publicationStmt/tei:idno/substring-before(substring-after(substring-after(., 'http://syriaca.org/'), '/'), '/tei')"/>
                 <sch:assert test="matches (., concat('abstract', $docURIno, '-', '\d+'))">
-                  The @xml:id must be 'abstract<sch:value-of select="$docURIno"/>-{/d+}'.
+                  The @xml:id must be 'abstract<sch:value-of select="$docURIno"/>-{\d+}'.
                 </sch:assert>
-                <sch:report test="matches(substring-after(., '-'), '\D')">The @xml:id must end with a number.</sch:report>
+                <sch:report test="matches(substring-after(., '-'), '\D')">
+                  The @xml:id must be 'abstract<sch:value-of select="$docURIno"/>-{\d+}'.
+                </sch:report>
               </sch:rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
@@ -2144,23 +2146,30 @@ attributes @target and @cRef may be supplied on <name/>.</report>
             </choice>
          </zeroOrMore>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="syriacaPlacesTEI-note-xmlID-on-note-constraint-rule-14">
+                  id="syriacaPlacesTEI-note-target-on-note-constraint-rule-14">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
-                      context="//body//tei:note[@type='deprecation']">
-                <sch:assert test="./@xml:id">
-                  A &lt;note&gt; element of @type="deprecation" must have an @xml:id attribute.
+                      context="//tei:body//tei:note[@type='deprecation']">
+                <sch:assert test="./@target">
+                  A &lt;note&gt; element of @type="deprecation" must have a @target attribute.
                 </sch:assert>
               </sch:rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="syriacaPlacesTEI-note-xmlID-on-note-constraint-rule-15">
+                  id="syriacaPlacesTEI-note-target-on-note-constraint-report-10">
+            <rule context="tei:note">
+               <sch:report xmlns:sch="http://purl.oclc.org/dsdl/schematron" test="./@xml:id">
+                A &lt;note&gt; element of @type="deprecation" should not have an @xml:id attribute.
+              </sch:report>
+            </rule>
+         </pattern>
+         <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
+                  id="syriacaPlacesTEI-note-target-on-note-constraint-rule-15">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
-                      context="//body//tei:note[@type='deprecation']/@xml:id">
-                <sch:let name="availableIDs" value="//@xml:id[not(note)]"/>
-                <sch:let name="IDvalues"
-                        value="for $i in $availableIDs return concat($i, '-deprecation')"/>
+                      context="//tei:body//tei:note[@type='deprecation']/@target">
+                <sch:let name="nameIDs" value="//tei:place/tei:placeName/@xml:id"/>
+                <sch:let name="IDvalues" value="for $i in $nameIDs return concat('#', $i)"/>
                 <sch:assert test="                   every $i in .                   satisfies $i = $IDvalues">
                   Acceptable values for the @xml:id attribute on a &lt;note&gt; element of @type="deprecation" include: 
                   <sch:value-of select="string-join($IDvalues, ';  ')"/>.
@@ -3451,10 +3460,10 @@ Sample values include: 1] approved; 2] candidate; 3] cleared; 4] deprecated; 5] 
                 <sch:let name="docURIno"
                         value="//tei:publicationStmt/tei:idno/substring-before(substring-after(substring-after(., 'http://syriaca.org/'), '/'), '/tei')"/>
                 <sch:assert test="matches(., concat('name', $docURIno, '-', '\d+'))">
-                  The @xml:id must be 'name<sch:value-of select="$docURIno"/>-{/d+}'.
+                  The @xml:id must be 'name<sch:value-of select="$docURIno"/>-{\d+}'.
                 </sch:assert>
                 <sch:report test="matches(substring-after(., '-'), '\D')">
-                  The @xml:id must end with a number.
+                  The @xml:id must be 'name<sch:value-of select="$docURIno"/>-{\d+}'.
                 </sch:report>
               </sch:rule>
          </pattern>
@@ -4019,20 +4028,88 @@ Sample values include: 1] approved; 2] candidate; 3] cleared; 4] deprecated; 5] 
             <ref name="desc"/>
          </optional>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="syriacaPlacesTEI-relation-reforkeyorname-constraint-assert-38">
+                  id="syriacaPlacesTEI-relation-act-pass-mut-on-relation-constraint-rule-44">
+            <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
+                      xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                      context="//tei:relation/@active">
+                
+                <sch:assert test="                   every $i in (tokenize(., ' '))                   satisfies matches($i, concat('http://syriaca.org/place/', '\d+'))">
+                  The @active attribute on a &lt;relation&gt; element with @name="share-a-name" should contain one or more properly formatted 
+                  Syriaca.org place URIs ('http://syriaca.org/place/{\d+}').
+                </sch:assert>
+                <sch:report test="                   every $i in (tokenize(., ' '))                   satisfies matches(substring-after($i, 'http://syriaca.org/place/'), '\D')">
+                  The @active attribute on a &lt;relation&gt; element with @name="share-a-name" should contain one or more properly formatted 
+                  Syriaca.org place URIs ('http://syriaca.org/place/{\d+}').
+                </sch:report>
+              </sch:rule>
+         </pattern>
+         <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
+                  id="syriacaPlacesTEI-relation-act-pass-mut-on-relation-constraint-rule-45">
+            <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
+                      xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                      context="//tei:relation/@passive">
+                
+                <sch:assert test="                   every $i in (tokenize(., ' '))                   satisfies matches($i, concat('http://syriaca.org/place/', '\d+'))">
+                  The @passive attribute on a &lt;relation&gt; element with @name="share-a-name" should contain one or more properly formatted 
+                  Syriaca.org place URIs ('http://syriaca.org/place/{\d+}').
+                </sch:assert>
+                <sch:report test="                   every $i in (tokenize(., ' '))                   satisfies matches(substring-after($i, 'http://syriaca.org/place/'), '\D')">
+                  The @passive attribute on a &lt;relation&gt; element with @name="share-a-name" should contain one or more properly formatted 
+                  Syriaca.org place URIs ('http://syriaca.org/place/{\d+}').
+                </sch:report>
+              </sch:rule>
+         </pattern>
+         <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
+                  id="syriacaPlacesTEI-relation-act-pass-mut-on-relation-constraint-rule-46">
+            <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
+                      xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                      context="//tei:relation[@active]">
+                
+                <sch:let name="docURI"
+                        value="//tei:publicationStmt/tei:idno/substring-before(., '/tei')"/>
+                <sch:assert test="contains(@active, $docURI) or contains(@passive, $docURI)">
+                  With @active and @passive attributes on a &lt;relation&gt; element, one of them must contain the URI for this document's place: <sch:value-of select="$docURI"/>. 
+                </sch:assert>
+                <sch:report test="contains(@active, $docURI) and contains(@passive, $docURI)">
+                  The @active and @passive attributes on a &lt;relation&gt; element may not both contain the URI for this document's place: <sch:value-of select="$docURI"/>. 
+                </sch:report>
+              </sch:rule>
+         </pattern>
+         <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
+                  id="syriacaPlacesTEI-relation-act-pass-mut-on-relation-constraint-rule-47">
+            <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
+                      xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                      context="//tei:relation/@mutual">
+                <sch:let name="docURI"
+                        value="//tei:publicationStmt/tei:idno/substring-before(., '/tei')"/>
+                <sch:assert test="                   every $i in (tokenize(., ' '))                   satisfies matches($i, concat('http://syriaca.org/place/', '\d+'))">
+                  The @mutual attribute on a &lt;relation&gt; element with @name="share-a-name" should contain one or more properly formatted 
+                  Syriaca.org place URIs ('http://syriaca.org/place/{\d+}').
+                </sch:assert>
+                <sch:report test="                   every $i in (tokenize(., ' '))                   satisfies matches(substring-after($i, 'http://syriaca.org/place/'), '\D')">
+                  The @mutual attribute on a &lt;relation&gt; element with @name="share-a-name" should contain one or more properly formatted 
+                  Syriaca.org place URIs ('http://syriaca.org/place/{\d+}').
+                </sch:report>
+                <sch:assert test="contains(., $docURI)">
+                  One on the values of the @mutual attribute must be the URI for this document's place: <sch:value-of select="$docURI"/>.
+                </sch:assert>
+              </sch:rule>
+         </pattern>
+         <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
+                  id="syriacaPlacesTEI-relation-reforkeyorname-constraint-assert-43">
             <rule context="tei:relation">
                <assert xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                        test="@ref or @key or @name">One of the attributes  'name', 'ref' or 'key' must be supplied</assert>
             </rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="syriacaPlacesTEI-relation-activemutual-constraint-report-19">
+                  id="syriacaPlacesTEI-relation-activemutual-constraint-report-24">
             <rule context="tei:relation">
                <report xmlns:sch="http://purl.oclc.org/dsdl/schematron" test="@active and @mutual">Only one of the attributes @active and @mutual may be supplied</report>
             </rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="syriacaPlacesTEI-relation-activepassive-constraint-report-20">
+                  id="syriacaPlacesTEI-relation-activepassive-constraint-report-25">
             <rule context="tei:relation">
                <report xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                        test="@passive and not(@active)">the attribute 'passive' may be supplied only if the attribute 'active' is supplied</report>
@@ -4100,22 +4177,22 @@ Sample values include: 1] approved; 2] candidate; 3] cleared; 4] deprecated; 5] 
             <ref name="precision"/>
          </zeroOrMore>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="syriacaPlacesTEI-state-xmlID-on-state-constraint-rule-44">
+                  id="syriacaPlacesTEI-state-xmlID-on-state-constraint-rule-48">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       context="//tei:text//tei:state[@type='confession']/@xml:id">
                 <sch:let name="docURIno"
                         value="//tei:publicationStmt/tei:idno/substring-before(substring-after(substring-after(., 'http://syriaca.org/'), '/'), '/tei')"/>
                 <sch:assert test="matches(., concat('confession', $docURIno, '-', '\d'))">
-                  The @xml:id must be 'confession<sch:value-of select="$docURIno"/>-{/d+}'.
+                  The @xml:id must be 'confession<sch:value-of select="$docURIno"/>-{\d+}'.
                 </sch:assert>
                 <sch:report test="matches(substring-after(., '-'), '\D')">
-                  The @xml:id must end with a number.
+                  The @xml:id must be 'confession<sch:value-of select="$docURIno"/>-{\d+}'.
                 </sch:report>
               </sch:rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="syriacaPlacesTEI-state-xmlID-on-state-constraint-rule-45">
+                  id="syriacaPlacesTEI-state-xmlID-on-state-constraint-rule-49">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       context="//tei:text//tei:state[@type='confession']">
@@ -4213,7 +4290,7 @@ Sample values include: 1] TEI; 2] DBK (docbook); 3] XX (unknown); 4] Schematron;
       </choice>
    </start>
    <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-            id="syriacaPlacesTEI-source-att-constraint-rule-46">
+            id="syriacaPlacesTEI-source-att-constraint-rule-50">
       <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                 xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                 context="//tei:body//@source">

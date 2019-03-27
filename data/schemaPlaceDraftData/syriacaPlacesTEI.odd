@@ -1859,7 +1859,7 @@
         <elementSpec ident="desc" module="core" mode="change">
           <constraintSpec ident="xmlID-on-desc" scheme="schematron">
             <constraint>
-              <sch:rule context="//tei:body//tei:desc[@type='abstract']/@xml:id">
+              <sch:rule context="//tei:body//tei:desc/@xml:id">
                 <sch:let name="docURIno" value="//tei:publicationStmt/tei:idno/substring-before(substring-after(substring-after(., 'http://syriaca.org/'), '/'), '/tei')"/>
                 <sch:assert test="matches (., concat('abstract', $docURIno, '-', '\d+'))">
                   The @xml:id must be 'abstract<sch:value-of select="$docURIno"/>-{\d+}'.
@@ -1873,6 +1873,11 @@
                 <sch:let name="countIDs" value="count(distinct-values(//tei:text//tei:desc[@type='abstract']/@xml:id))"/>
                 <sch:assert test="$countElement = $countIDs">
                   Each @xml:id on a &lt;desc&gt; element of @type="abstract" must have a unique value.
+                </sch:assert>
+              </sch:rule>
+              <sch:rule context="//tei:text//tei:desc[@xml:id]">
+                <sch:assert test="./@type='abstract' ">
+                  An @xml:id attribute is only allowed on a &lt;desc&gt; element when it also has @type="abstract".
                 </sch:assert>
               </sch:rule>
             </constraint>
@@ -1895,11 +1900,13 @@
             </constraint>
           </constraintSpec>
           <attList>
-            <attDef ident="type" mode="change" usage="opt">
-              <valList type="closed">
-                <valItem ident="abstract"/>
-              </valList>
-            </attDef>
+            
+              <attDef ident="type" mode="replace">
+                <valList type="closed">
+                  <valItem ident="abstract"/>
+                </valList>
+              </attDef>
+            
           </attList>
         </elementSpec>
         

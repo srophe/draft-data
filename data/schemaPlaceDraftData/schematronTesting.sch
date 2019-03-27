@@ -5,12 +5,21 @@
     <sch:pattern>
         
         
-        
+        <sch:rule context="//tei:text//tei:desc[@xml:id]">
+            <sch:assert test="./@type='abstract' ">
+                An @xml:id attribute is only allowed on a &lt;desc&gt; element @type="abstract".
+            </sch:assert>
+        </sch:rule>
         
         
         
         <!--This is incorporated into the ODD.
         
+        <sch:rule context="//tei:text//tei:desc[@xml:id]">
+            <sch:assert test="./@type">
+                A &lt;desc&gt; element with an @xml:id attribute must also contain a @type attribute.
+            </sch:assert>
+        </sch:rule>
         
         <sch:rule context="//tei:relation[@active]">
             <sch:let name="docURI" value="//tei:publicationStmt/tei:idno/substring-before(., '/tei')"/>

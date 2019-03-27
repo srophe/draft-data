@@ -4,6 +4,14 @@
     <sch:ns uri="http://www.tei-c.org/ns/1.0" prefix="tei"/>
     <sch:pattern>
         
+        
+        
+        
+        
+        
+        <!--This is incorporated into the ODD.
+        
+        
         <sch:rule context="//tei:relation[@active]">
             <sch:let name="docURI" value="//tei:publicationStmt/tei:idno/substring-before(., '/tei')"/>
             <sch:assert test="contains(@active, $docURI) or contains(@passive, $docURI)">
@@ -21,7 +29,7 @@
                 every $i in (tokenize(., ' '))
                 satisfies matches($i, concat('http://syriaca.org/place/', '\d+'))"
                 >
-                The @mutual attribute on a &lt;relation&gt; element with @name="share-a-name" should contain one or more properly formatted 
+                The @mutual attribute on a &lt;relation&gt; element should contain two or more properly formatted 
                 Syriaca.org place URIs ('http://syriaca.org/place/{\d+}').
             </sch:assert>
             <sch:report
@@ -29,7 +37,7 @@
                 every $i in (tokenize(., ' '))
                 satisfies matches(substring-after($i, 'http://syriaca.org/place/'), '\D')"
                 >
-                The @mutual attribute on a &lt;relation&gt; element with @name="share-a-name" should contain one or more properly formatted 
+                The @mutual attribute on a &lt;relation&gt; element should contain two or more properly formatted 
                 Syriaca.org place URIs ('http://syriaca.org/place/{\d+}').
             </sch:report>
             <sch:assert test="contains(., $docURI)">
@@ -38,10 +46,6 @@
         </sch:rule>
         
                 
-        
-        <!--This is incorporated into the ODD.
-        
-        
         <sch:rule context="//tei:body//@source">
             <sch:let name="biblIDs" value="//tei:body//tei:bibl/@xml:id"/>
             <sch:let name="sourceValues" value="for $i in $biblIDs return concat('#', $i)"/>

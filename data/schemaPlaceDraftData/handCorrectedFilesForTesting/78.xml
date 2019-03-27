@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../../out/syriacaPlacesTEI.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="../../out/syriacaPlacesTEI.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../out/syriacaPlacesTEI.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../out/syriacaPlacesTEI.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader>
         <fileDesc>
@@ -10,7 +10,6 @@
                 <sponsor>Syriaca.org: The Syriac Reference Portal</sponsor>
                 <funder>The National Endowment for the Humanities</funder>
                 <funder>The International Balzan Prize Foundation</funder>
-                <principal>David A. Michelson</principal>
                 <editor role="creator" ref="http://syriaca.org/documentation/editors.xml#tcarlson">Thomas A. Carlson</editor>
                 <editor role="creator" ref="http://syriaca.org/documentation/editors.xml#dmichelson">David A. Michelson</editor>
                 <respStmt>
@@ -63,7 +62,7 @@
                 <date>2014-06-30-04:00</date>
             </publicationStmt>
             <seriesStmt>
-                <title level="m" xml:lang="en">The Syriac Gazetteer</title>
+                <title level="s" xml:lang="en">The Syriac Gazetteer</title>
                 <editor role="general" ref="http://syriaca.org/documentation/editors.xml#tcarlson">Thomas A. Carlson</editor>
                 <editor role="general" ref="http://syriaca.org/documentation/editors.xml#dmichelson">David A. Michelson</editor>
             </seriesStmt>
@@ -348,8 +347,8 @@
                     </bibl>
                 </place>
                 <listRelation>
-                    <relation name="contained" active="http://syriaca.org/place/145 http://syriaca.org/place/166" passive="http://syriaca.org/place/78" source="#bib78-1" to="0641"/>
-                    <relation name="share-a-name" mutual="http://syriaca.org/place/145http://syriaca.org/place/166 http://syriaca.org/place/78"/>
+                    <relation name="contained" active="http://syriaca.org/place/145 http://syriaca.org/place/166" passive="http://syriaca.org/place/78 http://syriaca.org/place/166" source="#bib78-1" to="0641"/>
+                    <relation name="share-a-name" mutual="http://syriaca.org/place/145 http://syriaca.org/place/166 http://syriaca.org/place/78"/>
                 </listRelation>
             </listPlace>
         </body>

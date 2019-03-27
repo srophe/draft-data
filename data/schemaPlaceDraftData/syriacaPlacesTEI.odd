@@ -23,11 +23,11 @@
         <moduleRef key="tei"/>
         <moduleRef key="certainty" include="precision"/>
         <moduleRef key="core"
-          include="author bibl citedRange date desc editor foreign label listBibl measure name note p ptr quote ref resp respStmt title"/>
+          include="author bibl biblScope citedRange date desc editor foreign label listBibl measure name note p ptr quote ref resp respStmt title"/>
         <moduleRef key="header"
           include="authority availability catDesc category change classDecl edition editionStmt editorialDecl encodingDesc fileDesc funder idno langUsage licence principal profileDesc publicationStmt revisionDesc seriesStmt sourceDesc sponsor taxonomy teiHeader titleStmt"/>
         <moduleRef key="linking" include="link"/>
-        <moduleRef key="namesdates" include="country event geo listPlace listRelation location offset persName place placeName region relation state"/>
+        <moduleRef key="namesdates" include="country event geo listPlace listRelation location offset persName place placeName region relation settlement state"/>
         <moduleRef key="tagdocs" include="gi"/>
         <moduleRef key="textstructure" include="TEI body text"/>
         
@@ -310,7 +310,6 @@
               <elementRef key="title" minOccurs="1" maxOccurs="unbounded"/>
               <elementRef key="sponsor" minOccurs="1" maxOccurs="unbounded"/>
               <elementRef key="funder" maxOccurs="unbounded"/>
-              <elementRef key="principal" minOccurs="1" maxOccurs="unbounded"/>
               <elementRef key="editor" minOccurs="1" maxOccurs="unbounded"/>
               <elementRef key="respStmt" minOccurs="1" maxOccurs="unbounded"/>
             </sequence>
@@ -537,17 +536,16 @@
         <elementSpec ident="seriesStmt" module="header" mode="change">
           <!-- seriesStmt needs to be checked over. -->
           <content>
-            <sequence>
-              <alternate minOccurs="0" maxOccurs="unbounded">
-                <elementRef key="title" minOccurs="1" maxOccurs="1"/>
-                <elementRef key="editor" minOccurs="1" maxOccurs="unbounded"/>
-                <elementRef key="respStmt" minOccurs="0" maxOccurs="unbounded"/>
-                <elementRef key="idno" minOccurs="1" maxOccurs="1"/>
-                <elementRef key="biblScope" minOccurs="1" maxOccurs="1"/>
-                <!-- biblScope in serieStmt? Waiting on answer from Dave. -->
-              </alternate>
-            </sequence>
+            <sequence minOccurs="0" maxOccurs="unbounded">
+              <elementRef key="title" minOccurs="1" maxOccurs="1"/>
+              <elementRef key="editor" minOccurs="1" maxOccurs="unbounded"/>
+              <elementRef key="respStmt" minOccurs="0" maxOccurs="unbounded"/>
+              <elementRef key="idno" minOccurs="1" maxOccurs="1"/>
+              <elementRef key="biblScope" minOccurs="0" maxOccurs="unbounded"/>
+              <!-- biblScope in serieStmt? Waiting on answer from Dave. -->
+            </sequence>  
           </content>
+          
           <exemplum>
             <egXML xmlns="http://www.tei-c.org/ns/Examples">
               
@@ -1301,7 +1299,7 @@
                   satisfies matches($i, concat('http://syriaca.org/place/', '\d+'))"
                   >
                   The @active attribute on a &lt;relation&gt; element with @name="share-a-name" should contain one or more properly formatted 
-                  Syriaca.org place URIs ('http://syriaca.org/place/{\d+}').
+                  Syriaca.org place URIs ('http://syriaca.org/place/{\d+}') separated by a blank space.
                 </sch:assert>
                 <sch:report
                   test="
@@ -1309,7 +1307,7 @@
                   satisfies matches(substring-after($i, 'http://syriaca.org/place/'), '\D')"
                   >
                   The @active attribute on a &lt;relation&gt; element with @name="share-a-name" should contain one or more properly formatted 
-                  Syriaca.org place URIs ('http://syriaca.org/place/{\d+}').
+                  Syriaca.org place URIs ('http://syriaca.org/place/{\d+}') separated by a blank space.
                 </sch:report>
               </sch:rule>
               <sch:rule context="//tei:relation/@passive">
@@ -1320,7 +1318,7 @@
                   satisfies matches($i, concat('http://syriaca.org/place/', '\d+'))"
                   >
                   The @passive attribute on a &lt;relation&gt; element with @name="share-a-name" should contain one or more properly formatted 
-                  Syriaca.org place URIs ('http://syriaca.org/place/{\d+}').
+                  Syriaca.org place URIs ('http://syriaca.org/place/{\d+}') separated by a blank space.
                 </sch:assert>
                 <sch:report
                   test="
@@ -1328,7 +1326,7 @@
                   satisfies matches(substring-after($i, 'http://syriaca.org/place/'), '\D')"
                   >
                   The @passive attribute on a &lt;relation&gt; element with @name="share-a-name" should contain one or more properly formatted 
-                  Syriaca.org place URIs ('http://syriaca.org/place/{\d+}').
+                  Syriaca.org place URIs ('http://syriaca.org/place/{\d+}') separated by a blank space.
                 </sch:report>
               </sch:rule>
               <sch:rule context="//tei:relation[@active]">
@@ -1342,7 +1340,6 @@
                 </sch:report>
               </sch:rule>
               <sch:rule context="//tei:relation/@mutual">
-                <!-- Needs testing. Something here doesn't seem to be working properly. -->
                 <sch:let name="docURI" value="//tei:publicationStmt/tei:idno/substring-before(., '/tei')"/>
                 <sch:assert
                   test="
@@ -1350,15 +1347,16 @@
                   satisfies matches($i, concat('http://syriaca.org/place/', '\d+'))"
                   >
                   The @mutual attribute on a &lt;relation&gt; element with @name="share-a-name" should contain two or more properly formatted 
-                  Syriaca.org place URIs ('http://syriaca.org/place/{\d+}').
+                  Syriaca.org place URIs ('http://syriaca.org/place/{\d+}') separated by a blank space.
                 </sch:assert>
                 <sch:report
                   test="
                   every $i in (tokenize(., ' '))
                   satisfies matches(substring-after($i, 'http://syriaca.org/place/'), '\D')"
                   >
+                  <!-- Needs testing. Something here doesn't seem to be working properly. -->
                   The @mutual attribute on a &lt;relation&gt; element with @name="share-a-name" should contain two or more properly formatted 
-                  Syriaca.org place URIs ('http://syriaca.org/place/{\d+}').
+                  Syriaca.org place URIs ('http://syriaca.org/place/{\d+}') separated by a blank space.
                 </sch:report>
                 <sch:assert test="contains(., $docURI)">
                   One on the values of the @mutual attribute must be the URI for this document's place: <sch:value-of select="$docURI"/>.

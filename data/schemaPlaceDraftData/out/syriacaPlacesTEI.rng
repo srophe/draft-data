@@ -5,7 +5,7 @@
          xmlns:teix="http://www.tei-c.org/ns/Examples"
          datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"
          ns="http://www.tei-c.org/ns/1.0"><!--
-Schema generated from ODD source 2019-03-27T16:20:16Z. .
+Schema generated from ODD source 2019-03-27T18:53:50Z. .
 TEI Edition: Version 3.5.0. Last updated on
 	29th January 2019, revision 3c0c64ec4
 TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 3.5.0/
@@ -1516,6 +1516,7 @@ Suggested values include: 1] volume; 2] issue; 3] page; 4] line; 5] chapter; 6] 
    <define name="model.placeNamePart">
       <choice>
          <ref name="placeName"/>
+         <ref name="bloc"/>
          <ref name="country"/>
          <ref name="region"/>
          <ref name="settlement"/>
@@ -1524,6 +1525,7 @@ Suggested values include: 1] volume; 2] issue; 3] page; 4] line; 5] chapter; 6] 
    <define name="model.placeNamePart_alternation">
       <choice>
          <ref name="placeName"/>
+         <ref name="bloc"/>
          <ref name="country"/>
          <ref name="region"/>
          <ref name="settlement"/>
@@ -1531,6 +1533,7 @@ Suggested values include: 1] volume; 2] issue; 3] page; 4] line; 5] chapter; 6] 
    </define>
    <define name="model.placeNamePart_sequence">
       <ref name="placeName"/>
+      <ref name="bloc"/>
       <ref name="country"/>
       <ref name="region"/>
       <ref name="settlement"/>
@@ -1538,6 +1541,9 @@ Suggested values include: 1] volume; 2] issue; 3] page; 4] line; 5] chapter; 6] 
    <define name="model.placeNamePart_sequenceOptional">
       <optional>
          <ref name="placeName"/>
+      </optional>
+      <optional>
+         <ref name="bloc"/>
       </optional>
       <optional>
          <ref name="country"/>
@@ -1554,6 +1560,9 @@ Suggested values include: 1] volume; 2] issue; 3] page; 4] line; 5] chapter; 6] 
          <ref name="placeName"/>
       </zeroOrMore>
       <zeroOrMore>
+         <ref name="bloc"/>
+      </zeroOrMore>
+      <zeroOrMore>
          <ref name="country"/>
       </zeroOrMore>
       <zeroOrMore>
@@ -1566,6 +1575,9 @@ Suggested values include: 1] volume; 2] issue; 3] page; 4] line; 5] chapter; 6] 
    <define name="model.placeNamePart_sequenceRepeatable">
       <oneOrMore>
          <ref name="placeName"/>
+      </oneOrMore>
+      <oneOrMore>
+         <ref name="bloc"/>
       </oneOrMore>
       <oneOrMore>
          <ref name="country"/>
@@ -3665,6 +3677,17 @@ Sample values include: 1] approved; 2] candidate; 3] cleared; 4] deprecated; 5] 
          <empty/>
       </element>
    </define>
+   <define name="bloc">
+      <element name="bloc">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">contains the name of a geo-political unit consisting of two or more nation states or countries. [13.2.3. Place Names]</a:documentation>
+         <ref name="macro.phraseSeq"/>
+         <ref name="att.global.attributes"/>
+         <ref name="att.naming.attributes"/>
+         <ref name="att.typed.attributes"/>
+         <ref name="att.datable.attributes"/>
+         <empty/>
+      </element>
+   </define>
    <define name="country">
       <element name="country">
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">contains the name of a geo-political unit, such as a nation, country, colony, or commonwealth, larger than or administratively superior to a region and smaller than a bloc. [13.2.3. Place Names]</a:documentation>
@@ -3824,21 +3847,17 @@ Sample values include: 1] approved; 2] candidate; 3] cleared; 4] deprecated; 5] 
    <define name="location">
       <element name="location">
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">defines the location of a place as a set of geographical coordinates, in terms of other named geo-political entities, or as an address. [13.3.4. Places]</a:documentation>
-         <zeroOrMore>
-            <choice>
-               <text/>
-               <optional>
-                  <ref name="geo"/>
-               </optional>
-               <zeroOrMore>
+         <choice>
+            <ref name="geo"/>
+            <zeroOrMore>
+               <choice>
+                  <text/>
                   <ref name="placeName"/>
-               </zeroOrMore>
-               <zeroOrMore>
                   <ref name="measure"/>
-               </zeroOrMore>
-               <zeroOrMore>
                   <ref name="offset"/>
-               </zeroOrMore>
+               </choice>
+            </zeroOrMore>
+            <group>
                <optional>
                   <ref name="settlement"/>
                </optional>
@@ -3848,18 +3867,18 @@ Sample values include: 1] approved; 2] candidate; 3] cleared; 4] deprecated; 5] 
                <zeroOrMore>
                   <ref name="country"/>
                </zeroOrMore>
-            </choice>
-         </zeroOrMore>
+               <zeroOrMore>
+                  <ref name="bloc"/>
+               </zeroOrMore>
+            </group>
+         </choice>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   id="syriacaPlacesTEI-location-location-children-constraint-rule-40">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       context="//tei:location[@type='gps']">
-                <sch:report test="./tei:placeName or ./tei:measure or ./tei:offset or ./tei:district or ./tei:settlement or ./tei:region or ./tei:country">
-                  A &lt;location&gt; element of @type="gps" may only contain a child &lt;geo&gt; element.
-                </sch:report>
                 <sch:assert test="./tei:geo">
-                  A &lt;location&gt; element of @type="gps" must contain a child &lt;geo&gt; element.
+                  A &lt;location&gt; element of @type="gps" requires a child element &lt;geo&gt;.
                 </sch:assert>
               </sch:rule>
          </pattern>
@@ -3869,7 +3888,7 @@ Sample values include: 1] approved; 2] candidate; 3] cleared; 4] deprecated; 5] 
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       context="//tei:location[@type='nested']">
                 <sch:report test="./tei:placeName or ./tei:measure or ./tei:offset or ./tei:geo">
-                  A &lt;location&gt; element of @type="nested" may only contain a child elements &lt;country&gt;, &lt;district&gt;, &lt;region&gt;, or &lt;settlement&gt;.
+                  A &lt;location&gt; element of @type="nested" may only contain a child elements &lt;district&gt;, &lt;settlement&gt;, &lt;region&gt;, &lt;country&gt; or &lt;bloc&gt;.
                 </sch:report>
               </sch:rule>
          </pattern>
@@ -3878,8 +3897,8 @@ Sample values include: 1] approved; 2] candidate; 3] cleared; 4] deprecated; 5] 
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       context="//tei:location[@type='relative']">
-                <sch:report test="./tei:district or ./tei:settlement or ./tei:region or ./tei:country or ./tei:geo">
-                  A &lt;location&gt; element of @type="relative" may only contain a child elements &lt;placeName&gt;, &lt;measure&gt;, or &lt;offset&gt;.
+                <sch:report test="./tei:district or ./tei:settlement or ./tei:region or ./tei:country or ./tei:geo or ./bloc">
+                  A &lt;location&gt; element of @type="relative" may only contain text and child elements: &lt;placeName&gt;, &lt;measure&gt;, or &lt;offset&gt;.
                 </sch:report>
               </sch:rule>
          </pattern>
@@ -3914,19 +3933,17 @@ Sample values include: 1] approved; 2] candidate; 3] cleared; 4] deprecated; 5] 
                </oneOrMore>
             </list>
          </attribute>
-         <optional>
-            <attribute name="type">
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">characterizes the element in some sense, using any convenient classification scheme or typology.</a:documentation>
-               <choice>
-                  <value>gps</value>
-                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                  <value>nested</value>
-                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                  <value>relative</value>
-                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-               </choice>
-            </attribute>
-         </optional>
+         <attribute name="type">
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">characterizes the element in some sense, using any convenient classification scheme or typology.</a:documentation>
+            <choice>
+               <value>gps</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>nested</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>relative</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+            </choice>
+         </attribute>
          <optional>
             <attribute name="subtype">
                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">provides a sub-categorization of the element, if needed</a:documentation>
@@ -4191,13 +4208,13 @@ Sample values include: 1] approved; 2] candidate; 3] cleared; 4] deprecated; 5] 
             </rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="syriacaPlacesTEI-relation-activemutual-constraint-report-26">
+                  id="syriacaPlacesTEI-relation-activemutual-constraint-report-25">
             <rule context="tei:relation">
                <report xmlns:sch="http://purl.oclc.org/dsdl/schematron" test="@active and @mutual">Only one of the attributes @active and @mutual may be supplied</report>
             </rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="syriacaPlacesTEI-relation-activepassive-constraint-report-27">
+                  id="syriacaPlacesTEI-relation-activepassive-constraint-report-26">
             <rule context="tei:relation">
                <report xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                        test="@passive and not(@active)">the attribute 'passive' may be supplied only if the attribute 'active' is supplied</report>

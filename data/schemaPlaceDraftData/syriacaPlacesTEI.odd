@@ -27,7 +27,7 @@
         <moduleRef key="header"
           include="authority availability catDesc category change classDecl edition editionStmt editorialDecl encodingDesc fileDesc funder idno langUsage licence principal profileDesc publicationStmt revisionDesc seriesStmt sourceDesc sponsor taxonomy teiHeader titleStmt"/>
         <moduleRef key="linking" include="link"/>
-        <moduleRef key="namesdates" include="country event geo listPlace listRelation location offset persName place placeName region relation settlement state"/>
+        <moduleRef key="namesdates" include="bloc country event geo listPlace listRelation location offset persName place placeName region relation settlement state"/>
         <moduleRef key="tagdocs" include="gi"/>
         <moduleRef key="textstructure" include="TEI body text"/>
         
@@ -1905,44 +1905,48 @@
         
         <elementSpec ident="location" module="namesdates" mode="change">
           <content>
-            <sequence>
-              <alternate minOccurs="0" maxOccurs="unbounded">
-                <textNode/>
-                <elementRef key="geo" minOccurs="0" maxOccurs="1"/>
-                <elementRef key="placeName" minOccurs="0" maxOccurs="unbounded"/>
-                <elementRef key="measure" minOccurs="0" maxOccurs="unbounded"/>
-                <elementRef key="offset" minOccurs="0" maxOccurs="unbounded"/>
+            <alternate>
+              <sequence>
+                <elementRef key="geo"/>
+              </sequence>
+              <sequence preserveOrder="false">
+                <alternate minOccurs="0" maxOccurs="unbounded">
+                  <textNode/>
+                  <elementRef key="placeName"/>
+                  <elementRef key="measure"/>
+                  <elementRef key="offset"/>
+                </alternate>
+              </sequence>
+              <sequence preserveOrder="true">
                 <elementRef key="district" minOccurs="0" maxOccurs="unbounded"/>
                 <elementRef key="settlement" minOccurs="0" maxOccurs="1"/>
                 <elementRef key="region" minOccurs="0" maxOccurs="unbounded"/>   
                 <elementRef key="country" minOccurs="0" maxOccurs="unbounded"/>
-              </alternate>
-            </sequence>
+                <elementRef key="bloc" minOccurs="0" maxOccurs="unbounded"/>
+              </sequence>
+            </alternate>
           </content>
           <constraintSpec ident="location-children" scheme="schematron">
             <constraint>
               <sch:rule context="//tei:location[@type='gps']">
-                <sch:report test="./tei:placeName or ./tei:measure or ./tei:offset or ./tei:district or ./tei:settlement or ./tei:region or ./tei:country">
-                  A &lt;location&gt; element of @type="gps" may only contain a child &lt;geo&gt; element.
-                </sch:report>
                 <sch:assert test="./tei:geo">
-                  A &lt;location&gt; element of @type="gps" must contain a child &lt;geo&gt; element.
+                  A &lt;location&gt; element of @type="gps" requires a child element &lt;geo&gt;.
                 </sch:assert>
               </sch:rule>
               <sch:rule context="//tei:location[@type='nested']">
                 <sch:report test="./tei:placeName or ./tei:measure or ./tei:offset or ./tei:geo">
-                  A &lt;location&gt; element of @type="nested" may only contain a child elements &lt;country&gt;, &lt;district&gt;, &lt;region&gt;, or &lt;settlement&gt;.
+                  A &lt;location&gt; element of @type="nested" may only contain a child elements &lt;district&gt;, &lt;settlement&gt;, &lt;region&gt;, &lt;country&gt; or &lt;bloc&gt;.
                 </sch:report>
               </sch:rule>
               <sch:rule context="//tei:location[@type='relative']">
-                <sch:report test="./tei:district or ./tei:settlement or ./tei:region or ./tei:country or ./tei:geo">
-                  A &lt;location&gt; element of @type="relative" may only contain a child elements &lt;placeName&gt;, &lt;measure&gt;, or &lt;offset&gt;.
+                <sch:report test="./tei:district or ./tei:settlement or ./tei:region or ./tei:country or ./tei:geo or ./bloc">
+                  A &lt;location&gt; element of @type="relative" may only contain text and child elements: &lt;placeName&gt;, &lt;measure&gt;, or &lt;offset&gt;.
                 </sch:report>
               </sch:rule>
             </constraint>
           </constraintSpec>
           <attList>
-            <attDef ident="type" mode="change">
+            <attDef ident="type" mode="change" usage="req">
               <valList mode="change" type="closed">
                 <valItem ident="gps"/>
                 <valItem ident="nested"/>

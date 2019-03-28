@@ -5,15 +5,32 @@
     <sch:pattern>
         
         
-        <sch:rule context="//tei:text//tei:desc[@xml:id]">
-            <sch:assert test="./@type='abstract' ">
-                An @xml:id attribute is only allowed on a &lt;desc&gt; element @type="abstract".
-            </sch:assert>
+        
+        
+        <sch:rule context="//tei:seriesStmt/tei:respStmt">
+            <sch:report test="preceding-sibling::tei:title[@level='s']">
+                A &lt;respStmt&gt; element may not appear in a &lt;seriesStmt&gt; that also has a &lt;title&gt; of @type="s". 
+            </sch:report>
+        </sch:rule>
+        <sch:rule context="//tei:seriesStmt/tei:biblScope">
+            <sch:report test="preceding-sibling::tei:title[@level='s']">
+                A &lt;biblScope&gt; element may not appear in a &lt;seriesStmt&gt; that also has a &lt;title&gt; of @type="s". 
+            </sch:report>
+        </sch:rule>
+        <sch:rule context="//tei:seriesStmt[tei:title/@type='m']/tei:biblScope/tei:idno">
+            <!-- This doesn't work -->
+            <sch:assert test="matches(., preceding-sibling::tei:seriesStmt[tei:title/@type='s']/tei:idno)">boo</sch:assert>
         </sch:rule>
         
         
         
         <!--This is incorporated into the ODD.
+        
+        <sch:rule context="//tei:text//tei:desc[@xml:id]">
+            <sch:assert test="./@type='abstract' ">
+                An @xml:id attribute is only allowed on a &lt;desc&gt; element @type="abstract".
+            </sch:assert>
+        </sch:rule>
         
         <sch:rule context="//tei:text//tei:desc[@xml:id]">
             <sch:assert test="./@type">

@@ -16,6 +16,24 @@
             <sch:report test="preceding-sibling::tei:title[@level='s']">
                 A &lt;biblScope&gt; element may not appear in a &lt;seriesStmt&gt; that also has a &lt;title&gt; of @type="s". 
             </sch:report>
+            <sch:assert test="./@unit='volume'">
+                The attribute @unit="volume" is required.
+            </sch:assert>
+            <sch:assert test="./@n">
+                An @n attribute is required with the correct volume number for the &lt;title&gt; element @level="m"
+                within the series (&lt;title&gt; element @level="s").
+            </sch:assert>
+            <sch:assert test="./tei:title">
+                A &lt;title&gt; element is required inside this &lt;biblScope&gt;.
+            </sch:assert>
+            <sch:assert test="./tei:idno">
+                A &lt;idno&gt; element is required this &lt;biblScope&gt;.
+            </sch:assert>
+        </sch:rule>
+        <sch:rule context="//tei:seriesStmt//tei:title">
+            <sch:assert test="following-sibling::tei:idno">
+                A &lt;title&gt; element inside &lt;seriesStmt&gt; requires a sibling &lt;idno&gt; element.  
+            </sch:assert>
         </sch:rule>
         <sch:rule context="//tei:seriesStmt//tei:title[@level='s']">
             <sch:assert test="matches(., 'The Syriac Gazetteer')">
@@ -23,13 +41,13 @@
                 The text node of this &lt;title&gt; element must be "The Syriac Gazetteer". 
             </sch:assert>
         </sch:rule>
-        <sch:rule context="//tei:seriesStmt[tei:title='The Syriac Gazetteer']/tei:idno">
-            <!-- Add additional rules with appropriate contexts when adding additional series values above. -->
+        <sch:rule context="//tei:seriesStmt[tei:title[child::text()='The Syriac Gazetteer']]/tei:idno">
+            <!-- Add additional rules/asserts with appropriate contexts when adding additional series values above. -->
             <sch:assert test="matches(., 'http://syriaca.org/geo')">
                 The text node of this &lt;idno&gt; element must be "http://syriaca.org/geo'. 
             </sch:assert>
         </sch:rule>
-        <sch:rule context="//tei:seriesStmt/tei:title[@level='m']">
+        <sch:rule context="//tei:seriesStmt//tei:title[@level='m']">
             <sch:assert test="matches(., 'Beth Qaṭraye Gazetteer')">
                 <!-- Add additional monograph values with an "or" operator as needed. -->
                 The text node of this &lt;title&gt; element must be "Beth Qaṭraye Gazetteer". 
@@ -48,36 +66,26 @@
                 'monograph' (&lt;title&gt; element @level="m") is a part.
             </sch:assert>
         </sch:rule>
-        <sch:rule context="//tei:seriesStmt/tei:biblScope">
-            <!-- nothing I do on biblScope will work. Can't figure out why. -->
-            <sch:assert test="./@unit='volume'">
-                The attribute @unit="volume" is required.
-            </sch:assert>
-            <sch:assert test="./@n">
-                An @n attribute is required with the correct volume number for the &lt;title&gt; element @level="m"
-                within the series (&lt;title&gt; element @level="s").
-            </sch:assert>
-            <sch:assert test="./tei:title">
-                A &lt;title&gt; element is required inside this &lt;biblScope&gt;.
-            </sch:assert>
-            <sch:assert test="./tei:idno">
-                A &lt;idno&gt; element is required this &lt;biblScope&gt;.
-            </sch:assert>
-        </sch:rule>
         <sch:rule context="//tei:seriesStmt/tei:biblScope/tei:title">
-            <sch:let name="seriesTitles" value="//tei:seriesStmt/tei:title[@type='s']"/>
             <sch:assert test="./@level='s'">
                 This &lt;biblScope&gt; element must contain a &lt;title&gt; element @level="s". It is used 
                 to indicate the series (&lt;title&gt; element @level="s") of which the 'monograph' (&lt;title&gt; element @level="m") 
                 in this &lt;seriesStmt&gt; is a part. 
             </sch:assert>
-            <sch:assert test="matches(., 'The Syriac Gazetteer')">
-                The text node of this &lt;title&gt; element must be "The Syriac Gazetteer".
+        </sch:rule>
+        <sch:rule context="//tei:seriesStmt[tei:title='Beth Qaṭraye Gazetteer']/tei:biblScope/tei:title">
+            <!-- This is not working! Once I get it working, I need to add rule using a similar context assign the correct volume number to biblScope  -->
+            <sch:assert test=". = 'The Syriac Gazetteer'">
+                This &lt;biblScope&gt; element is used to indicate the series (&lt;title&gt; element @level="s") of 
+                which the 'monograph' (&lt;title&gt; element @level="m") in this &lt;seriesStmt&gt; is a part. Since the 
+                Beth Qaṭraye Gazetteer is part of The Syriac Gazetteer, the text node of this &lt;title&gt; element
+                must be "The Syriac Gazetteer".
             </sch:assert>
         </sch:rule>
-        <sch:rule context="//tei:seriesStmt/tei:biblScope/tei:idno">
+        <sch:rule context="//tei:seriesStmt[tei:title='Beth Qaṭraye Gazetteer']/tei:biblScope/tei:idno">
+            <!-- This works even though the above does not. Strange. Double-check context attributes for duplicates -->
             <sch:assert test="matches(., 'http://syriaca.org/geo')">
-                The text node of this &lt;idno&gt; element must be "http://syriaca.org/geo'. 
+                
             </sch:assert>
         </sch:rule>
         

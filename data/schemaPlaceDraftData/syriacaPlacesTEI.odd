@@ -64,10 +64,6 @@
                   <desc>An anglicized version of a name created by Syriaca.org used to facilitate
                     searching in English.</desc>
                 </valItem>
-                <valItem ident="#canonical">
-                  <desc>Indicates the content is canonical, i.e., widely agreed upon. Abbreviations
-                    of work titles are primarily in view.</desc>
-                </valItem>
                 <valItem ident="#ektobe-headword">
                   <desc>The name used by e-Ktobe as a standardized name form.</desc>
                 </valItem>
@@ -534,7 +530,7 @@
         
         
         <elementSpec ident="seriesStmt" module="header" mode="change">
-          <!-- seriesStmt needs to be checked over. -->
+          <!-- The following is more complicated than it needs to be. However, I did it this way to set things up for person data. -->
           <content>
             <sequence minOccurs="0" maxOccurs="unbounded">
               <elementRef key="title" minOccurs="1" maxOccurs="1"/>
@@ -606,7 +602,6 @@
         </elementSpec>
         
         <elementSpec ident="biblScope" module="core" mode="change">
-          <!-- I need to test this to ensure that the n attribute allows any number but nothing else. -->
           <content>
             <elementRef key="title"/>
             <elementRef key="idno"/>
@@ -625,6 +620,15 @@
           <content>
             <elementRef key="p" minOccurs="1" maxOccurs="1"/>
           </content>
+          <constraintSpec ident="sourceDesc" scheme="schematron">
+            <constraint>
+              <sch:rule context="//tei:sourceDesc/tei:p">
+                <sch:assert test=". = 'Born digital.'">
+                  The &lt;sourceDesc&gt; must contain a &lt;p&gt; element with the text node: "Born digital.". 
+                </sch:assert>
+              </sch:rule>
+            </constraint>
+          </constraintSpec>
           <exemplum>
             <egXML xmlns="http://www.tei-c.org/ns/Examples">
               <sourceDesc>
@@ -1342,13 +1346,19 @@
         <elementSpec ident="relation" module="namesdates" mode="change">
           <constraintSpec ident="atts-on-relation" scheme="schematron">
             <constraint>
-              <sch:rule context="//tei:relation/@name">
-                <sch:assert test="matches(., 'share-a-name')">
-                  The @name attribute must be "share-a-name".
+              <sch:rule context="//tei:body//tei:relation">
+                <sch:assert test="@mutual">
+                  A &lt;relation&gt; element requires a @mutual attribute.
+                </sch:assert>
+                <sch:assert test="@name='share-a-name'">
+                  A &lt;relation&gt; element requires a @name attribute with value "share-a-name".
                 </sch:assert>
               </sch:rule>
-              <sch:rule context="//tei:relation/@mutual">
+              <sch:rule context="//tei:body//tei:relation/@mutual">
                 <sch:let name="docURI" value="//tei:publicationStmt/tei:idno/substring-before(., '/tei')"/>
+                <sch:assert test="contains(., ' ')">
+                  The @mutual attribute on a &lt;relation&gt; element must contain two or more values.
+                </sch:assert>
                 <sch:assert
                   test="
                   every $i in (tokenize(., ' '))
@@ -1373,17 +1383,10 @@
             </constraint>
           </constraintSpec>
           <attList>
-            <attDef ident="name" mode="change" usage="req"/>
-            <attDef ident="mutual" mode="change" usage="req">
-              <remarks versionDate="2019-04">
-                <p>
-                  The <att>mutual</att> attribute on the <gi>relation</gi> element is only used when <gi>relation</gi> has a <att>name</att>
-                  attribute "share-a-name". The <att>mutual</att> attribute includes full Syriaca.org place URIs (http://syriaca.org/place/{\d+})
-                  for two or more places that share a name. One of these URIs must be the URI for the place of the current document.
-                </p>
-              </remarks>
-            </attDef>
-            <!-- delete active and passive -->
+            <attDef ident="ref" mode="delete"/>
+            <attDef ident="key" mode="delete"/>
+            <attDef ident="active" mode="delete"/>
+            <attDef ident="passive" mode="delete"/>
           </attList>
           <exemplum versionDate="2016-11-24">
             <egXML xmlns="http://www.tei-c.org/ns/Examples">
@@ -1907,7 +1910,6 @@
                 <elementRef key="region" minOccurs="0" maxOccurs="unbounded"/>   
                 <elementRef key="country" minOccurs="0" maxOccurs="unbounded"/>
                 <elementRef key="bloc" minOccurs="0" maxOccurs="unbounded"/>
-                <!-- Confirm the addition of bloc. -->
               </sequence>
             </alternate>
           </content>

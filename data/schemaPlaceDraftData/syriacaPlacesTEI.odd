@@ -27,7 +27,7 @@
         <moduleRef key="header"
           include="authority availability catDesc category change classDecl edition editionStmt editorialDecl encodingDesc fileDesc funder idno langUsage licence principal profileDesc publicationStmt revisionDesc seriesStmt sourceDesc sponsor taxonomy teiHeader titleStmt"/>
         <moduleRef key="linking" include="link"/>
-        <moduleRef key="namesdates" include="bloc country event geo listPlace listRelation location offset persName place placeName region relation settlement state"/>
+        <moduleRef key="namesdates" include="bloc country district event geo listPlace listRelation location offset persName place placeName region relation settlement state"/>
         <moduleRef key="tagdocs" include="gi"/>
         <moduleRef key="textstructure" include="TEI body text"/>
         
@@ -382,15 +382,15 @@
                 ... 
                 <respStmt>
                   <resp>Initial Barsoum entry creation by</resp>
-                  <name ref="http://syriaca.org/editors.xml#dmichelson"> David A. Michelson</name>
+                  <name ref="http://syriaca.org/documentation/editors.xml#dmichelson"> David A. Michelson</name>
                 </respStmt>
                 <respStmt>
                   <resp>Data merging, Pleiades and Wikipedia linking, and XML by</resp>
-                  <name ref="http://syriaca.org/editors.xml#tcarlson"> Thomas A. Carlson</name>
+                  <name ref="http://syriaca.org/documentation/editors.xml#tcarlson"> Thomas A. Carlson</name>
                 </respStmt>
                 <respStmt>
                   <resp>Syriac description entry by</resp>
-                  <name ref="http://syriaca.org/editors.xml#raydin"> Robert Aydin</name>
+                  <name ref="http://syriaca.org/documentation/editors.xml#raydin"> Robert Aydin</name>
                 </respStmt> 
                 ... 
               </titleStmt>
@@ -423,6 +423,28 @@
               the file, for example by entering Syriac or Arabic text, can be given additional
                 <gi>respStmt</gi> entries. </p>
           </remarks>
+        </elementSpec>
+        
+        <elementSpec ident="name" module="namesdates" mode="change">
+          <constraintSpec ident="ref-on-name" scheme="schematron">
+            <constraint>
+              <sch:rule context="//tei:teiHeader//tei:name">
+                <sch:assert test="./@ref">A @ref attribute is required on the &lt;name&gt; element inside &lt;teiHeader&gt;.</sch:assert>
+              </sch:rule>
+              <sch:rule context="//tei:teiHeader//tei:name/@ref">
+                <sch:let name="edsDoc"
+                  value="doc('https://raw.githubusercontent.com/srophe/srophe-eXist-app/master/documentation/editors.xml')"/>
+                <sch:let name="eds" value="$edsDoc//tei:text/tei:body/tei:listPerson/tei:person/@xml:id"/>
+                <sch:let name="refValues" value="for $i in $eds return concat('http://syriaca.org/documentation/editors.xml#', $i)"/>
+                <sch:assert test="
+                  every $i in .
+                  satisfies $i = $refValues">
+                  Acceptable values for the @ref attribute on a &lt;name&gt; element inside the &lt;teiHeader&gt; include: 
+                  <sch:value-of select="$refValues"/>.
+                </sch:assert>
+              </sch:rule>
+            </constraint>
+          </constraintSpec>
         </elementSpec>
 
         <elementSpec ident="editionStmt" module="header" mode="change">
@@ -669,7 +691,7 @@
               <encodingDesc>
                 <editorialDecl>
                   <p>This record created following the Syriaca.org guidelines. Documentation available at: <ref target="http://syriaca.org/documentation">
-                    http://syriaca.org/documentation</ref>.</p>
+                 http://syriaca.org/documentation</ref>.</p>
                   <p>The capitalization of names from GEDSH (<idno type="URI">http://syriaca.org/bibl/1</idno>) was normalized (i.e. names in ALL-CAPS were replaced by Proper-noun capitalization).</p>
                   <p>The unchanging parts of alternate names from Barsoum (<idno type="URI">http://syriaca.org/bibl/2</idno>, <idno type="URI">http://syriaca.org/bibl/3</idno>, or <idno type="URI">http://syriaca.org/bibl/4</idno>) have been supplied to each alternate.</p>
                   <p>Names from the English translation of Barsoum (<idno type="URI">http://syriaca.org/bibl/4</idno>) were put in sentence word order rather than fronting a dictionary headword.  Any commas in the Barsoum name in English were removed.</p>
@@ -865,8 +887,8 @@
           <exemplum>
             <egXML xmlns="http://www.tei-c.org/ns/Examples">
               <revisionDesc status="published">
-                <change who=" http://syriaca.org/documentation/editors.xml#wsalesky" when="2014-01-14">ADDED: syriaca-computed-start and syriaca-computed-end attributes for searching</change>
-                <change who=" http://syriaca.org/documentation/editors.xml#tcarlson" when="2013-12-18-05:00">CREATED: place</change>
+                <change who="http://syriaca.org/documentation/editors.xml#wsalesky" when="2014-01-14">ADDED: syriaca-computed-start and syriaca-computed-end attributes for searching</change>
+                <change who="http://syriaca.org/documentation/editors.xml#tcarlson" when="2013-12-18-05:00">CREATED: place</change>
               </revisionDesc>
             </egXML>
           </exemplum>
@@ -878,6 +900,22 @@
         </elementSpec>
         
         <elementSpec ident="change" module="header" mode="change">
+          <constraintSpec ident="who-on-change" scheme="schematron">
+            <constraint>
+              <sch:rule context="//tei:revisionDesc//tei:change/@who">
+                <sch:let name="edsDoc"
+                  value="doc('https://raw.githubusercontent.com/srophe/srophe-eXist-app/master/documentation/editors.xml')"/>
+                <sch:let name="eds" value="$edsDoc//tei:text/tei:body/tei:listPerson/tei:person/@xml:id"/>
+                <sch:let name="refValues" value="for $i in $eds return concat('http://syriaca.org/documentation/editors.xml#', $i)"/>
+                <sch:assert test="
+                  every $i in .
+                  satisfies $i = $refValues">
+                  Acceptable values for the @who attribute on a &lt;change&gt; element inside the &lt;revisionDesc&gt; include: 
+                  <sch:value-of select="$refValues"/>.
+                </sch:assert>
+              </sch:rule>
+            </constraint>
+          </constraintSpec>
           <attList>
             <attDef ident="when" mode="change" usage="req"/>
             <attDef ident="who" mode="change" usage="req"/>
@@ -886,15 +924,15 @@
           <exemplum>
             <egXML xmlns="http://www.tei-c.org/ns/Examples">
               <revisionDesc>
-                <change when="2013-04-15" who="http://syriaca.org/editors.xml#ngibson" n="1.1">
+                <change when="2013-04-15" who="http://syriaca.org/documentation/editors.xml#ngibson" n="1.1">
                   ADDED: Pleiades coordinates</change>
-                <change when="2013-04-01" who="http://syriaca.org/editors.xml#dmichelson">
+                <change when="2013-04-01" who="http://syriaca.org/documentation/editors.xml#dmichelson">
                   FIXED: Ufra to Urfa</change>
-                <change when="2013-03-16" who="http://syriaca.org/editors.xml#tcarlson" n="1.0">
+                <change when="2013-03-16" who="http://syriaca.org/documentation/editors.xml#tcarlson" n="1.0">
                   ADDED: teiHeader/revisionDesc</change>
-                <change when="2013-03-15" who="http://syriaca.org/editors.xml#tcarlson">
+                <change when="2013-03-15" who="http://syriaca.org/documentation/editors.xml#tcarlson">
                   ADDED: teiHeader</change>
-                <change when="2013-03-01" who="http://syriaca.org/editors.xml#tcarlson" n="0.1">
+                <change when="2013-03-01" who="http://syriaca.org/documentation/editors.xml#tcarlson" n="0.1">
                   CREATED: place</change>
               </revisionDesc>
             </egXML>
@@ -902,7 +940,7 @@
           <remarks>
             <p>The <gi>change</gi> element takes attributes <att>when</att> and <att>who</att> which indicate the date of the 
               change and the person who made the change. The value of <att>when</att> is a date in "yyyy-mm-dd" format, whereas 
-              <att>who</att> will have the value of an <att>xml:id</att> attribute from "http://syriaca.org/editors.xml" - the list 
+              <att>who</att> will have the value of an <att>xml:id</att> attribute from "http://syriaca.org/documentation/editors.xml" - the list 
               of editors. An optional <att>n</att> attribute whose value is a version number can indicate that this change advanced 
               the version number (given in the <gi>editionStmt</gi> within the <gi>fileDesc</gi> element). The contents of the 
               <gi>change</gi> element describe the revision that was made.</p>
@@ -1103,10 +1141,10 @@
             </attDef>
             <attDef ident="role" mode="change">
               <desc>Specifies the connection of the editor to the work, selected from
-                http://syriaca.org/documentation/author-editor-roles.xml . The attribute value
+             http://syriaca.org/documentation/author-editor-roles.xml . The attribute value
                 should contain the above URL followed by a hash (#) and the <att>xml:id</att> of the
                 role. For example,
-                http://syriaca.org/documentation/author-editor-roles.xml#translator . This is
+             http://syriaca.org/documentation/author-editor-roles.xml#translator . This is
                 recommended, but not required if the type of connection is unknown.</desc>
               <valList type="closed">
                 <valItem ident="associate">
@@ -1571,10 +1609,10 @@
               <sch:rule context="//tei:text//tei:state[@type='confession']/@xml:id">
                 <sch:let name="docURIno" value="//tei:publicationStmt/tei:idno/substring-before(substring-after(substring-after(., 'http://syriaca.org/'), '/'), '/tei')"/>
                 <sch:assert test="matches(., concat('confession', $docURIno, '-', '\d'))">
-                  The @xml:id must be 'confession<sch:value-of select="$docURIno"/>-{\d+}'.
+                  The @xml:id must be 'confession<sch:value-of select="$docURIno"/>-{\d+}' (where {\d+} is a number).
                 </sch:assert>
                 <sch:report test="matches(substring-after(., '-'), '\D')">
-                  The @xml:id must be 'confession<sch:value-of select="$docURIno"/>-{\d+}'.
+                  This @xml:id must end with a number.
                 </sch:report>
               </sch:rule>
               <sch:rule context="//tei:text//tei:state[@type='confession']">
@@ -1786,10 +1824,10 @@
               <sch:rule context="//tei:text/tei:body/tei:listPlace/tei:place/tei:placeName/@xml:id">
                 <sch:let name="docURIno" value="//tei:publicationStmt/tei:idno/substring-before(substring-after(substring-after(., 'http://syriaca.org/'), '/'), '/tei')"/>
                 <sch:assert test="matches(., concat('name', $docURIno, '-', '\d+'))">
-                  The @xml:id must be 'name<sch:value-of select="$docURIno"/>-{\d+}'.
+                  The @xml:id must be 'name<sch:value-of select="$docURIno"/>-{\d+}' (where {\d+} is a number).
                 </sch:assert>
                 <sch:report test="matches(substring-after(., '-'), '\D')">
-                  The @xml:id must be 'name<sch:value-of select="$docURIno"/>-{\d+}'.
+                  This @xml:id must end with a number.
                 </sch:report>
               </sch:rule>
               <sch:rule context="//tei:text/tei:body/tei:listPlace/tei:place/tei:placeName">
@@ -1844,10 +1882,10 @@
               <sch:rule context="//tei:body//tei:desc/@xml:id">
                 <sch:let name="docURIno" value="//tei:publicationStmt/tei:idno/substring-before(substring-after(substring-after(., 'http://syriaca.org/'), '/'), '/tei')"/>
                 <sch:assert test="matches (., concat('abstract', $docURIno, '-', '\d+'))">
-                  The @xml:id must be 'abstract<sch:value-of select="$docURIno"/>-{\d+}'.
+                  The @xml:id must be 'abstract<sch:value-of select="$docURIno"/>-{\d+}' (where {\d+} is a number).
                 </sch:assert>
                 <sch:report test="matches(substring-after(., '-'), '\D')">
-                  The @xml:id must be 'abstract<sch:value-of select="$docURIno"/>-{\d+}'.
+                  This @xml:id must end with a number.
                 </sch:report>
               </sch:rule>
               <sch:rule context="//tei:text//tei:desc[@type='abstract']">
@@ -1949,23 +1987,113 @@
           </attList>
         </elementSpec>
         
+        <elementSpec ident="district" module="namesdates" mode="change">
+          <constraintSpec ident="ref-on-district" scheme="schematron">
+            <constraint>
+              <sch:rule context="//tei:location/tei:district/@ref">
+                <sch:assert test="matches(., concat('http://syriaca.org/place/', '\d+'))">
+                  The @ref attribute on a &lt;district&gt; element must be a Syriaca.org place URI - 'http://syriaca.org/place/{\d+}' (where {\d+} is a number).
+                </sch:assert>
+                <sch:report test="matches(substring-after(., 'http://syriaca.org/place/'), '\D')">
+                  This @ref attribute must end with a number.
+                </sch:report>
+              </sch:rule>
+            </constraint>
+          </constraintSpec>
+          <attList>
+            <attDef ident="ref" mode="change" usage="req"/>
+          </attList>
+        </elementSpec>
+        
+        <elementSpec ident="settlement" module="namesdates" mode="change">
+          <constraintSpec ident="ref-on-settlement" scheme="schematron">
+            <constraint>
+              <sch:rule context="//tei:location/tei:settlement/@ref">
+                <sch:assert test="matches(., concat('http://syriaca.org/place/', '\d+'))">
+                  The @ref attribute on a &lt;settlement&gt; element must be a Syriaca.org place URI - 'http://syriaca.org/place/{\d+}' (where {\d+} is a number).
+                </sch:assert>
+                <sch:report test="matches(substring-after(., 'http://syriaca.org/place/'), '\D')">
+                  This @ref attribute must end with a number.
+                </sch:report>
+              </sch:rule>
+            </constraint>
+          </constraintSpec>
+          <attList>
+            <attDef ident="ref" mode="change" usage="req"/>
+          </attList>
+        </elementSpec>
+        
+        <elementSpec ident="region" module="namesdates" mode="change">
+          <constraintSpec ident="ref-on-region" scheme="schematron">
+            <constraint>
+              <sch:rule context="//tei:location/tei:region/@ref">
+                <sch:assert test="matches(., concat('http://syriaca.org/place/', '\d+'))">
+                  The @ref attribute on a &lt;region&gt; element must be a Syriaca.org place URI - 'http://syriaca.org/place/{\d+}' (where {\d+} is a number).
+                </sch:assert>
+                <sch:report test="matches(substring-after(., 'http://syriaca.org/place/'), '\D')">
+                  This @ref attribute must end with a number.
+                </sch:report>
+              </sch:rule>
+            </constraint>
+          </constraintSpec>
+          <attList>
+            <attDef ident="ref" mode="change" usage="req"/>
+          </attList>
+        </elementSpec>
+        
+        <elementSpec ident="country" module="namesdates" mode="change">
+          <constraintSpec ident="ref-on-country" scheme="schematron">
+            <constraint>
+              <sch:rule context="//tei:location/tei:country/@ref">
+                <sch:assert test="matches(., concat('http://syriaca.org/place/', '\d+'))">
+                  The @ref attribute on a &lt;country&gt; element must be a Syriaca.org place URI - 'http://syriaca.org/place/{\d+}' (where {\d+} is a number).
+                </sch:assert>
+                <sch:report test="matches(substring-after(., 'http://syriaca.org/place/'), '\D')">
+                  This @ref attribute must end with a number.
+                </sch:report>
+              </sch:rule>
+            </constraint>
+          </constraintSpec>
+          <attList>
+            <attDef ident="ref" mode="change" usage="req"/>
+          </attList>
+        </elementSpec>
+        
+        <elementSpec ident="bloc" module="namesdates" mode="change">
+          <constraintSpec ident="ref-on-bloc" scheme="schematron">
+            <constraint>
+              <sch:rule context="//tei:location/tei:bloc/@ref">
+                <sch:assert test="matches(., concat('http://syriaca.org/place/', '\d+'))">
+                  The @ref attribute on a &lt;bloc&gt; element must be a Syriaca.org place URI - 'http://syriaca.org/place/{\d+}' (where {\d+} is a number).
+                </sch:assert>
+                <sch:report test="matches(substring-after(., 'http://syriaca.org/place/'), '\D')">
+                  This @ref attribute must end with a number.
+                </sch:report>
+              </sch:rule>
+            </constraint>
+          </constraintSpec>
+          <attList>
+            <attDef ident="ref" mode="change" usage="req"/>
+          </attList>
+        </elementSpec>
+        
         <elementSpec ident="ptr" module="linking" mode="change">
           <constraintSpec ident="target-in-ptr" scheme="schematron">
             <constraint>
               <sch:rule context="//tei:place/tei:bibl/tei:ptr/@target" role="warning">
                 <sch:assert test="matches(., concat('http://syriaca.org/bibl/', '\d+'))">
-                  Under most circumstances, the @target attribute on a &lt;ptr&gt; element should be a properly formatted Syriaca.org bibliography URI ('http://syriaca.org/bibl/' followed by a number).
-                  However, when the &lt;ptr&gt; element indicates an external website (i.e. http://pleiades.stoa.org/places/922698), the @target should indicate
-                  the correct URL for that resource.
+                  Under most circumstances, the @target attribute on a &lt;ptr&gt; element should be a properly formatted Syriaca.org bibliography URI 
+                  ('http://syriaca.org/bibl/{\d+}' - where {\d+} is a number). However, when the &lt;ptr&gt; element indicates an external web address 
+                  (i.e. http://pleiades.stoa.org/places/922698), the @target should indicate the correct URL for that resource.
                 </sch:assert>
-                <sch:report test="matches(substring-after(., 'http://syriaca.org/bibl/'), '\D')">The @target attribute on a &lt;ptr&gt; element must end with a number.</sch:report>
+                <sch:report test="matches(substring-after(., 'http://syriaca.org/bibl/'), '\D')">This @target attribute must end with a number.</sch:report>
               </sch:rule>
             </constraint>
           </constraintSpec>
           <remarks>
             <p>
               Contained within the <gi>bibl</gi> element is a <gi>ptr</gi> element whose <att>target</att> attribute has the value of a URI pointing to the bibliographic item.
-              This URI must be formatted as follows: 'http://syriaca.org/bibl/{\d+}'.
+              This URI must be formatted as follows: 'http://syriaca.org/bibl/{\d+}' (where {\d+} is a number).
             </p>
           </remarks>
         </elementSpec>

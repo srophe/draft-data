@@ -260,8 +260,8 @@
                 satisfies $i = $sourceValues"
                 >
                 A @source attribute must point to an @xml:id attribute on a &lt;bibl&gt; element. 
-                Multiple values are allow and must be separated by a blank space. Acceptable values include: 
-                <sch:value-of select="string-join($sourceValues, ';  ')"/>.
+                Multiple values are allowed and must be separated by a blank space. Acceptable values include: 
+                <sch:value-of select="string-join($sourceValues, ' | ')"/>.
               </sch:assert>
             </sch:rule>
           </constraint>
@@ -440,7 +440,7 @@
                   every $i in .
                   satisfies $i = $refValues">
                   Acceptable values for the @ref attribute on a &lt;name&gt; element inside the &lt;teiHeader&gt; include: 
-                  <sch:value-of select="$refValues"/>.
+                  <sch:value-of select="string-join($refValues, ' | ')"/>.
                 </sch:assert>
               </sch:rule>
             </constraint>
@@ -911,7 +911,7 @@
                   every $i in .
                   satisfies $i = $refValues">
                   Acceptable values for the @who attribute on a &lt;change&gt; element inside the &lt;revisionDesc&gt; include: 
-                  <sch:value-of select="$refValues"/>.
+                  <sch:value-of select="string-join($refValues, ' | ')"/>.
                 </sch:assert>
               </sch:rule>
             </constraint>
@@ -1063,7 +1063,9 @@
               <sch:rule context="//tei:publicationStmt/tei:idno[@type='URI']">
                 <sch:let name="fileNo" value="replace(document-uri(/), '[\D]', '')"/>
                 <sch:let name="docURIno" value="//tei:publicationStmt/tei:idno/substring-before(substring-after(substring-after(., 'http://syriaca.org/'), '/'), '/tei')"/>
-                <sch:assert test="$fileNo eq $docURIno">The number portion of the &lt;idno&gt; element must be the same as the URI number in the file name: <sch:value-of select="$fileNo"/></sch:assert>
+                <sch:assert test="$fileNo eq $docURIno">
+                  The number portion of the &lt;idno&gt; element must be the same as the URI number in the file name: <sch:value-of select="$fileNo"/>
+                </sch:assert>
               </sch:rule>
             </constraint>
           </constraintSpec>
@@ -1126,7 +1128,7 @@
                   every $i in .
                   satisfies $i = $refValues">
                   Acceptable values for the @ref attribute on an &lt;editor&gt; element inside the &lt;teiHeader&gt; include: 
-                  <sch:value-of select="$refValues"/>.
+                  <sch:value-of select="string-join($refValues, ' | ')"/>.
                 </sch:assert>
               </sch:rule>
               <sch:rule context="//tei:body//tei:editor">
@@ -1270,7 +1272,7 @@
                   every $i in .
                   satisfies $i = $IDvalues">
                   Acceptable values for the @xml:id attribute on a &lt;note&gt; element of @type="deprecation" include: 
-                  <sch:value-of select="string-join($IDvalues, ';  ')"/>.
+                  <sch:value-of select="string-join($IDvalues, ' | ')"/>.
                 </sch:assert>
               </sch:rule>
             </constraint>
@@ -1374,7 +1376,7 @@
                   every $i in (tokenize(., ' '))
                   satisfies $i = $targetVals"
                   >A &lt;link&gt; element takes a @target attribute with two or more of the following values: 
-                  <sch:value-of select="string-join($targetVals, ';  ')"/>.
+                  <sch:value-of select="string-join($targetVals, ' | ')"/>.
                 </sch:assert>
               </sch:rule>
             </constraint>
@@ -1527,11 +1529,13 @@
                 context="//tei:text//tei:bibl[parent::tei:place]/@xml:id">
                 <sch:let name="URIno"
                   value="//tei:publicationStmt/tei:idno/replace(., '[\D]+', '')"/>
-                <sch:assert test="matches(., concat('bib', $URIno, '-', '\d'))"> The @xml:id
-                  must begin with 'bib', followed by the same number as the URI number of the
-                  entity, followed by '-': bib<sch:value-of select="$URIno"/>-. </sch:assert>
-                <sch:report test="matches(substring-after(., '-'), '\D')"> The @xml:id must end
-                  with a number. </sch:report>
+                <sch:assert test="matches(., concat('bib', $URIno, '-', '\d'))">
+                  The @xml:id must begin with 'bib', followed by the same number as the URI number of the
+                  entity, followed by '-': bib<sch:value-of select="$URIno"/>-. 
+                </sch:assert>
+                <sch:report test="matches(substring-after(., '-'), '\D')">
+                  The @xml:id must end with a number.
+                </sch:report>
               </sch:rule>
               <sch:rule context="//tei:text//tei:bibl[parent::tei:place]">
                 <sch:let name="countElement" value="count(//tei:text//tei:bibl[parent::tei:place])"/>
@@ -1565,11 +1569,13 @@
             <constraint>
               <sch:rule context="//tei:text//tei:event[@type='attestation']/@xml:id">
                 <sch:let name="URIno" value="//tei:publicationStmt/tei:idno/replace(., '[\D]+', '')"/>
-                <sch:assert test="matches(., concat('attestation', $URIno, '-', '\d'))"> The @xml:id
-                  must begin with 'attestation', followed by the same number as the URI number of
-                  the entity, followed by '-': attestation<sch:value-of select="$URIno"/>-. </sch:assert>
-                <sch:report test="matches(substring-after(., '-'), '\D')"> The @xml:id must end with
-                  a number. </sch:report>
+                <sch:assert test="matches(., concat('attestation', $URIno, '-', '\d'))">
+                  The @xml:id must begin with 'attestation', followed by the same number as the URI number of
+                  the entity, followed by '-': attestation<sch:value-of select="$URIno"/>-. 
+                </sch:assert>
+                <sch:report test="matches(substring-after(., '-'), '\D')">
+                  This @xml:id must end with a number.
+                </sch:report>
               </sch:rule>
               <sch:rule context="//tei:text//tei:event[@type='attestation']">
                 <sch:let name="countElement" value="count(//tei:text//tei:event[@type='attestation'])"/>

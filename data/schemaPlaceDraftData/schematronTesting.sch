@@ -7,26 +7,66 @@
         
         
         
+        
+        
+        
+        <!--
+        
+        <sch:rule context="//tei:place/tei:desc[@type='abstract']">
+            <!-\-<sch:let name="docURIno" value="//tei:publicationStmt/tei:idno/substring-before(substring-after(substring-after(., 'http://syriaca.org/'), '/'), '/tei')"/>-\->
+            <sch:let name="IDno" value=".[preceding-sibling::tei:desc[@type='abstract']]/@xml:id/number(substring-after(., '-'))"/>
+            <sch:let name="precedingIDno" value="./preceding-sibling::tei:desc[@type='abstract']/@xml:id/number(substring-after(., '-'))"/>
+            <sch:assert test="./@xml:id">
+                An @xml:id attribute is required.
+            </sch:assert>
+            <!-\-<sch:assert test="matches(./@xml:id, concat('abstract', $docURIno, '-', '\d+'))">
+                The @xml:id must be 'abstract<sch:value-of select="$docURIno"/>-{\d+}' (where {\d+} is a number).
+            </sch:assert>-\->
+            <sch:assert test="
+                every $i in $IDno - 1
+                satisfies $i = $precedingIDno">
+                The @xml:id must be 'abstract9999-{\d+}' where the {\d+} sequentially numbers the @xml:id attributes.
+            </sch:assert>
+        </sch:rule>
+        <sch:rule context="//tei:place/tei:desc[@type='abstract'][1]/@xml:id">
+            <!-\-<sch:let name="docURIno" value="//tei:publicationStmt/tei:idno/substring-before(substring-after(substring-after(., 'http://syriaca.org/'), '/'), '/tei')"/>-\->
+            <sch:assert test="./number(substring-after(., '-')) = 1">
+                The @xml:id on the first &lt;desc&gt; element of @type="abstract" must be 'abstract9999-1'.
+            </sch:assert>
+        </sch:rule>
+        
+        <sch:rule context="//tei:place/tei:placeName[1]/@xml:id">
+            <sch:assert test="number(substring-after(., '-')) = 1">must eq 1</sch:assert>
+        </sch:rule>
+        
+        
+        <sch:rule context="//tei:place/tei:placeName">
+            <sch:let name="subIDno" value=".[preceding-sibling::tei:placeName]/@xml:id/number(substring-after(., '-'))"/>
+            <sch:let name="precedingIDno" value="./preceding-sibling::tei:placeName/@xml:id/number(substring-after(., '-'))"/>
+            <sch:assert test="
+                every $i in $subIDno - 1
+                satisfies $i = $precedingIDno">
+                sequential numbers
+            </sch:assert>
+        </sch:rule>
+        
         <sch:rule context="//tei:seriesStmt/tei:respStmt">
             <sch:report test="preceding-sibling::tei:title[@level='s']">
                 A &lt;respStmt&gt; element may not appear in a &lt;seriesStmt&gt; that also has a &lt;title&gt; of @type="s". 
             </sch:report>
         </sch:rule>
         <sch:rule context="//tei:seriesStmt//tei:title[@level='s']">
-            <!-- Add additional values with an "or" operator if there are multiple series levels associated with a document. -->
             <sch:assert test="matches(., 'The Syriac Gazetteer')">
                 The text node of this &lt;title&gt; element must be "The Syriac Gazetteer". 
             </sch:assert>
         </sch:rule>
         <sch:rule context="//tei:seriesStmt//tei:title[node() = 'The Syriac Gazetteer']">
-            <!-- Add additional rules with appropriate contexts when adding additional monograph values above. -->
             <sch:assert test="./following-sibling::tei:idno/node() = 'http://syriaca.org/geo'">
                 A &lt;title&gt; containing "The Syriac Gazetteer" requires a following sibling &lt;idno&gt; element containing "http://syriaca.org/geo'. 
             </sch:assert>
         </sch:rule>
         <sch:rule context="//tei:seriesStmt/tei:title[@level='m']">
             <sch:assert test="matches(., 'Beth Qaṭraye Gazetteer')">
-                <!-- Add additional monograph values with an "or" operator as needed. -->
                 The text node of this &lt;title&gt; element must be "Beth Qaṭraye Gazetteer". 
             </sch:assert>
             <sch:assert test="./following-sibling::tei:biblScope">
@@ -36,7 +76,6 @@
             </sch:assert>
         </sch:rule>
         <sch:rule context="//tei:seriesStmt[tei:title='Beth Qaṭraye Gazetteer']/tei:idno">
-            <!-- Add additional rules with appropriate contexts when adding additional monograph values above. -->
             <sch:assert test="matches(., 'http://syriaca.org/bethqatraye')">
                 The text node of this &lt;idno&gt; element must be "http://syriaca.org/bethqatraye'. 
             </sch:assert>
@@ -52,7 +91,6 @@
             </sch:assert>
         </sch:rule>
         <sch:rule context="//tei:seriesStmt[tei:title='Beth Qaṭraye Gazetteer']/tei:biblScope/@n">
-            <!-- Add an additional rule with appropriate context/assert if there are multiple monographs. -->
             <sch:assert test=". = '1'">
                 The @n attribute must be "1" since the Beth Qaṭraye Gazetteer is volume 1 of The Syriac Gazetteer.
             </sch:assert>
@@ -63,7 +101,7 @@
         
         
         
-        <!--<sch:rule context="//tei:seriesStmt[tei:title/@level='m']/tei:biblScope/tei:title/@level">
+        <sch:rule context="//tei:seriesStmt[tei:title/@level='m']/tei:biblScope/tei:title/@level">
             <sch:let name="seriesTitles" value="//tei:seriesStmt/tei:title[@type='s']"/>
             <sch:let name="seriesIdnos" value="//tei:seriesStmt[tei:title/@type='s']/tei:idno"/>
             <sch:assert test="matches(., 's')">

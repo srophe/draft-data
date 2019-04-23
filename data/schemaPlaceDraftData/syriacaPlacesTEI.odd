@@ -305,7 +305,7 @@
             <sequence minOccurs="1" maxOccurs="1" preserveOrder="true">
               <elementRef key="title" minOccurs="1" maxOccurs="unbounded"/>
               <elementRef key="sponsor" minOccurs="1" maxOccurs="unbounded"/>
-              <elementRef key="funder" maxOccurs="unbounded"/>
+              <elementRef key="funder" minOccurs="0" maxOccurs="unbounded"/>
               <elementRef key="editor" minOccurs="1" maxOccurs="unbounded"/>
               <elementRef key="respStmt" minOccurs="1" maxOccurs="unbounded"/>
             </sequence>
@@ -524,6 +524,13 @@
             <egXML xmlns="http://www.tei-c.org/ns/Examples">
               <license target="http://creativecommons.org/licenses/by/3.0/">
                 <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
+              </license>
+            </egXML>
+          </exemplum>
+          <exemplum>
+            <egXML xmlns="http://www.tei-c.org/ns/Examples">
+              <license target="http://creativecommons.org/licenses/by/3.0/">
+                <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
                 <p>This entry incorporates copyrighted material from the following work(s):
                   <listBibl>
                     <bibl>
@@ -540,7 +547,7 @@
                     <ref target="http://creativecommons.org/licenses/by/3.0/"/>
                   </note>
                 </p>
-                </license>
+              </license>
             </egXML>
           </exemplum>
           <remarks>

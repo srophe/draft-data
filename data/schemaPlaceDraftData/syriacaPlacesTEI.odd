@@ -302,13 +302,15 @@
 
         <elementSpec ident="titleStmt" module="header" mode="change">
           <content>
-            <sequence minOccurs="1" maxOccurs="1" preserveOrder="true">
-              <elementRef key="title" minOccurs="1" maxOccurs="unbounded"/>
-              <elementRef key="sponsor" minOccurs="1" maxOccurs="unbounded"/>
-              <elementRef key="funder" minOccurs="0" maxOccurs="unbounded"/>
-              <elementRef key="editor" minOccurs="1" maxOccurs="unbounded"/>
-              <elementRef key="respStmt" minOccurs="1" maxOccurs="unbounded"/>
-            </sequence>
+            <alternate>
+              <sequence minOccurs="1" maxOccurs="1" preserveOrder="true">
+                <elementRef key="title" minOccurs="1" maxOccurs="unbounded"/>
+                <elementRef key="sponsor" minOccurs="1" maxOccurs="unbounded"/>
+                <elementRef key="funder" minOccurs="0" maxOccurs="unbounded"/>
+                <elementRef key="editor" minOccurs="1" maxOccurs="unbounded"/>
+                <elementRef key="respStmt" minOccurs="1" maxOccurs="unbounded"/>
+              </sequence>
+            </alternate>
           </content>
         </elementSpec>
 

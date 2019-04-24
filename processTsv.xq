@@ -110,12 +110,14 @@ else
 (: ----------------------------------------- :)
 
 (: This part of the script loads the data from GitHub and creates a mapping between the column header strings and the elements in the data XML:)
-let $configDirectoryUrl := ''
-let $url := "https://raw.githubusercontent.com/srophe/draft-data/master/data/TSVTransformsXQuery/placesToTransform.tsv"
+let $configDirectoryUrl := 'https://raw.githubusercontent.com/baskaufs/draft-data/master/'
+let $localConfig := doc($configDirectoryUrl||'configLocal.xml')
+let $projectConfig := doc($configDirectoryUrl||'configProject.xml')
+let $url := $localConfig/configuration/inputFileUrl/text()  (: URL of TSV file to be processed :)
 let $delimiter := '&#9;' (: tab character, change if a different delimiter like comma is used :)
-let $baseLanguage := 'en'
-let $fileOrConsole := 'console'  (: use 'file' to output to file(s) in $path, use 'console' to output to the console :)
-let $path := 'temp/syriaca/'  (: on Mac this seems to default to subdirectories of the home directory.   Specifying '~' isn't recognaized :)
+let $baseLanguage := $projectConfig/configuration/baseLanguage/text()  (: base language tag, e.g. "en" :)
+let $fileOrConsole := $localConfig/configuration/outputTo/text()  (: value is 'file' to output to file(s) in $path and 'console' to output to the console :)
+let $path := $localConfig/configuration/localPath/text()  (: path to save files; on Mac this seems to default to subdirectories of the home directory.   Specifying '~' isn't recognaized :)
 (: NOTE: line x226x controls whether a single record is output or if all records are output.  Comment it out for all records :)
 
 (: This is no longer being included in the output:
@@ -238,13 +240,6 @@ let $availability :=
   <availability xmlns="http://www.tei-c.org/ns/1.0">
       <licence target="http://creativecommons.org/licenses/by/3.0/">
           <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
-(: exclude this section from the output:
-          <p>This entry incorporates copyrighted material from the following work(s):
-          $listBibl
-              <note>used under a Creative Commons Attribution license <ref target="http://creativecommons.org/licenses/by/3.0/"/>
-              </note>
-          </p>
-:)
       </licence>
   </availability>
 

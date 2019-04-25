@@ -114,7 +114,7 @@ let $configDirectoryUrl := 'https://raw.githubusercontent.com/baskaufs/draft-dat
 let $localConfig := doc($configDirectoryUrl||'configLocal.xml')
 let $projectConfig := doc($configDirectoryUrl||'configProject.xml')
 let $url := $localConfig/configuration/inputFileUrl/text()  (: URL of TSV file to be processed :)
-let $delimiter := '&#9;' (: tab character, change if a different delimiter like comma is used :)
+let $delimiter := $projectConfig/configuration/delimiter/text() (: delimiter character from config file :)
 let $baseLanguage := $projectConfig/configuration/baseLanguage/text()  (: base language tag, e.g. "en" :)
 let $fileOrConsole := $localConfig/configuration/outputTo/text()  (: value is 'file' to output to file(s) in $path and 'console' to output to the console :)
 let $path := $localConfig/configuration/localPath/text()  (: path to save files; on Mac this seems to default to subdirectories of the home directory.   Specifying '~' isn't recognaized :)
@@ -282,10 +282,10 @@ let $titleStatement :=
       <sponsor>Syriaca.org: The Syriac Reference Portal</sponsor>,
       <funder>The National Endowment for the Humanities</funder>,
       <funder>The International Balzan Prize Foundation</funder>,
-      <editor role="creator" ref="{$projectConfig/configuration/editorUri/text()}">{$projectConfig/configuration/editorString/text()}</editor>,
+      <editor role="creator" ref="{$projectConfig/*:configuration/*:editorUri/text()}">{$projectConfig/*:configuration/*:editorString/text()}</editor>,
       <respStmt>
           <resp>URI minted and initial data collected by</resp>
-          <name ref="{$localConfig/configuration/mintedUri/text()}">{$localConfig/configuration/mintedString/text()}</name>
+          <name ref="{$localConfig/*:configuration/*:mintedUri/text()}">{$localConfig/*:configuration/*:mintedString/text()}</name>
       </respStmt>
   }</titleStmt>
 
@@ -330,7 +330,7 @@ let $header :=
           </langUsage>
       </profileDesc>,
       <revisionDesc status="draft">
-          <change who="{$localConfig/configuration/mintedString/text()}" when="{$date}">CREATED: place</change>
+          <change who="{$localConfig/*:configuration/*:mintedString/text()}" when="{$date}">CREATED: place</change>
       </revisionDesc>
 
   }</teiHeader>       

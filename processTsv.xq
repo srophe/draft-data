@@ -282,10 +282,10 @@ let $titleStatement :=
       <sponsor>Syriaca.org: The Syriac Reference Portal</sponsor>,
       <funder>The National Endowment for the Humanities</funder>,
       <funder>The International Balzan Prize Foundation</funder>,
-      <editor role="creator" ref="http://syriaca.org/documentation/editors.xml#dschwartz">Daniel L. Schwartz</editor>,
+      <editor role="creator" ref="{$projectConfig/configuration/editorUri/text()}">{$projectConfig/configuration/editorString/text()}</editor>,
       <respStmt>
           <resp>URI minted and initial data collected by</resp>
-          <name ref="http://syriaca.org/documentation/editors.xml#dschwartz">Daniel L. Schwartz</name>
+          <name ref="{$localConfig/configuration/mintedUri/text()}">{$localConfig/configuration/mintedString/text()}</name>
       </respStmt>
   }</titleStmt>
 
@@ -325,14 +325,12 @@ let $header :=
       </encodingDesc>,
       <profileDesc>
           <langUsage>
-              <p>
-                  Languages codes used in this record follow the Syriaca.org guidelines. Documentation available at: 
-                  <ref target="http://syriaca.org/documentation/langusage.xml">http://syriaca.org/documentation/langusage.xml</ref>
-              </p>
+              <p>Language codes used in this record follow the Syriaca.org guidelines. Documentation available at: 
+                  <ref target="http://syriaca.org/documentation/langusage.xml">http://syriaca.org/documentation/langusage.xml</ref></p>
           </langUsage>
       </profileDesc>,
       <revisionDesc status="draft">
-          <change who="http://syriaca.org/documentation/editors.xml#dschwartz" when="{$date}">CREATED: place</change>
+          <change who="{$localConfig/configuration/mintedString/text()}" when="{$date}">CREATED: place</change>
       </revisionDesc>
 
   }</teiHeader>       

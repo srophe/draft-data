@@ -110,9 +110,10 @@ else
 (: ----------------------------------------- :)
 
 (: This part of the script loads the data from GitHub and creates a mapping between the column header strings and the elements in the data XML:)
-let $configDirectoryUrl := 'https://raw.githubusercontent.com/baskaufs/draft-data/master/'
-let $localConfig := doc($configDirectoryUrl||'configLocal.xml')
-let $projectConfig := doc($configDirectoryUrl||'configProject.xml')
+let $localConfigDirectoryUrl := 'https://raw.githubusercontent.com/baskaufs/draft-data/master/'
+let $projectConfigDirectoryUrl := 'https://raw.githubusercontent.com/baskaufs/draft-data/master/'
+let $localConfig := doc($localConfigDirectoryUrl||'configLocal.xml')
+let $projectConfig := doc($projectConfigDirectoryUrl||'configProject.xml')
 let $url := $localConfig/configuration/inputFileUrl/text()  (: URL of TSV file to be processed :)
 let $delimiter := $projectConfig/configuration/delimiter/text() (: delimiter character from config file :)
 let $baseLanguage := $projectConfig/configuration/baseLanguage/text()  (: base language tag, e.g. "en" :)

@@ -110,7 +110,11 @@ else
 (: ----------------------------------------- :)
 
 (: This part of the script loads the data from GitHub and creates a mapping between the column header strings and the elements in the data XML:)
-let $localConfigDirectoryUrl := 'https://raw.githubusercontent.com/srophe/draft-data/master/'
+
+(: NOTE: line 236 controls whether a single record is output or if all records are output.  Uncomment it to test with a single record :)
+
+let $localConfigDirectoryUrl := 'https://raw.githubusercontent.com/srophe/draft-data/master/' (: ultimately, this is probably the only line in the code that the user will have to modify before running the program. :)
+
 let $projectConfigDirectoryUrl := 'https://raw.githubusercontent.com/srophe/draft-data/master/'
 let $localConfig := doc($localConfigDirectoryUrl||'configLocal.xml')
 let $projectConfig := doc($projectConfigDirectoryUrl||'configProject.xml')
@@ -119,7 +123,6 @@ let $delimiter := $projectConfig/configuration/delimiter/text() (: delimiter cha
 let $baseLanguage := $projectConfig/configuration/baseLanguage/text()  (: base language tag, e.g. "en" :)
 let $fileOrConsole := $localConfig/configuration/outputTo/text()  (: value is 'file' to output to file(s) in $path and 'console' to output to the console :)
 let $path := $localConfig/configuration/localPath/text()  (: path to save files; on Mac this seems to default to subdirectories of the home directory.   Specifying '~' isn't recognaized :)
-(: NOTE: line x226x controls whether a single record is output or if all records are output.  Comment it out for all records :)
 
 (: This is no longer being included in the output:
 
@@ -230,7 +233,7 @@ let $abstractIndex := local:createAbstractIndex($headerMap) (: find and process 
 (: set up the loop that generates an output document for each row in the TSV file :)
 
 for $document at $row in $data
-where $row = 6  (: outputs a single row instead of all of them. Comment out this line when testing is done :)
+(: where $row = 6  outputs a single row instead of all of them. Uncomment this line for testing :)
 
 (: ----------------------------------------- :)
 (: This part of the script builds the TEI header element from inner parts outward :)

@@ -114,7 +114,7 @@
             <change who="http://syriaca.org/documentation/editors.xml#wsalesky"
                  when="2014-01-14">ADDED: latitude and longitude from Pleiades</change>
             <change who="http://syriaca.org/documentation/editors.xml#wsalesky"
-                 when="2014-01-14">ADDED: syriaca-computed-start and syriaca-computed-end attributes for searching</change>
+                 when="2014-01-14">ADDED: syriaca:computed-start and syriaca:computed-end attributes for searching</change>
             <change who="http://syriaca.org/documentation/editors.xml#tcarlson"
                  when="2013-12-18-05:00">CREATED: place</change>
         </revisionDesc>
@@ -125,12 +125,12 @@
             <place type="region">
                <placeName xml:id="name84-1"
                           xml:lang="en"
-                          syriaca-tags="#syriaca-headword"
+                          syriaca:tags="#syriaca-headword"
                           source="#bib84-2">Fars</placeName>
                <placeName xml:id="name84-2" xml:lang="en" source="#bib84-3">Fārs</placeName>
                <placeName xml:id="name84-3"
                           xml:lang="ar"
-                          syriaca-tags="#syriaca-headword"
+                          syriaca:tags="#syriaca-headword"
                           source="#bib84-5 #bib84-6">فارس</placeName>
                <desc type="abstract" xml:id="abstract84-1" xml:lang="en">
                         <quote source="#bib84-1">A region in southwestern Iran, often identified as the heartland of the Iranian people.</quote>
@@ -146,8 +146,8 @@
                       notBefore="1224"
                       notAfter="1228"
                       source="#bib84-5"
-                      syriaca-computed-start="1224-01-01"
-                      syriaca-computed-end="1228-01-01">
+                      syriaca:computed-start="1224-01-01"
+                      syriaca:computed-end="1228-01-01">
                         <p xml:lang="en">Attestation of name <foreign xml:lang="ar">فارس</foreign> in the <title xml:lang="en" level="m">Muʿjam al-buldān</title> of <persName>Yāqūt al-Ḥamawī</persName>.</p>
                         <link target="#name84-3 #attestation84-1"/>
                     </event>
@@ -162,9 +162,9 @@
                <state type="existence"
                       from="-0300"
                       to="2013"
-                      syriaca-computed-end="2013-01-01">
+                      syriaca:computed-end="2013-01-01">
                         <precision match="@from" notAfter="-0300"/>
-                        <precision match="@to" notBefore="2013" syriaca-computed-start="2013-01-01"/>
+                        <precision match="@to" notBefore="2013" syriaca:computed-start="2013-01-01"/>
                     </state>
                <idno type="URI">http://syriaca.org/place/84</idno>
                <idno type="URI">http://pleiades.stoa.org/places/922698</idno>

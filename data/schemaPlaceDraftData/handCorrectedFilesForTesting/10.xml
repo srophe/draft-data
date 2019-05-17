@@ -143,7 +143,7 @@
             <change who="http://syriaca.org/documentation/editors.xml#wsalesky"
                  when="2014-01-14">ADDED: relation element with shares-name-with attribute for all place headwords that share names</change>
             <change who="http://syriaca.org/documentation/editors.xml#wsalesky"
-                 when="2014-01-14">ADDED: syriaca:computed-start and syriaca:computed-end attributes for searching</change>
+                 when="2014-01-14">ADDED: srophe:computed-start and srophe:computed-end attributes for searching</change>
             <change who="http://syriaca.org/documentation/editors.xml#tcarlson"
                  when="2013-12-18-05:00">CREATED: place</change>
         </revisionDesc>
@@ -178,8 +178,8 @@
                       notBefore="1224"
                       notAfter="1228"
                       source="#bib10-8"
-                      syriaca:computed-start="1224-01-01"
-                      syriaca:computed-end="1228-01-01">
+                      srophe:computed-start="1224-01-01"
+                      srophe:computed-end="1228-01-01">
                         <p xml:lang="en">Attestation of name <foreign xml:lang="ar">أَنطاكِيَة</foreign> in the <title xml:lang="en" level="m">Muʿjam al-buldān</title> of <persName>Yāqūt al-Ḥamawī</persName>.</p>
                         <link target="#name10-6 #attestation10-1"/>
                     </event>
@@ -195,9 +195,9 @@
                <state type="existence"
                       from="-0300"
                       to="2013"
-                      syriaca:computed-end="2013-01-01">
+                      srophe:computed-end="2013-01-01">
                         <precision match="@from" notAfter="-0300"/>
-                        <precision match="@to" notBefore="2013" syriaca:computed-start="2013-01-01"/>
+                        <precision match="@to" notBefore="2013" srophe:computed-start="2013-01-01"/>
                     </state>
                <idno type="URI">http://syriaca.org/place/10</idno>
                <idno type="URI">http://pleiades.stoa.org/places/658381</idno>

@@ -95,7 +95,7 @@
         <revisionDesc status="published">
             <change who="http://syriaca.org/documentation/editors.xml#tcarlson" when="2014-02-06">ADDED <gi>quote</gi> elements around Syriac text in <gi>note</gi> of type="corrigenda".</change>
             <change who="http://syriaca.org/documentation/editors.xml#wsalesky" when="2014-01-14">ADDED: relation element with shares-name-with attribute for all place headwords that share names</change>
-            <change who="http://syriaca.org/documentation/editors.xml#wsalesky" when="2014-01-14">ADDED: syriaca:computed-start and syriaca:computed-end attributes for searching</change>
+            <change who="http://syriaca.org/documentation/editors.xml#wsalesky" when="2014-01-14">ADDED: srophe:computed-start and srophe:computed-end attributes for searching</change>
             <change who="http://syriaca.org/documentation/editors.xml#tcarlson" when="2013-12-18-05:00">CREATED: place</change>
         </revisionDesc>
     </teiHeader>
@@ -126,9 +126,9 @@
                     <location type="gps" source="#bib76-1">
                         <geo>36.866667 43</geo>
                     </location>
-                    <state type="existence" from="1599" to="2013" syriaca:computed-end="2013-01-01" syriaca:computed-start="1599-01-01">
-                        <precision match="@from" notAfter="1599" syriaca:computed-end="1599-01-01"/>
-                        <precision match="@to" notBefore="2013" syriaca:computed-start="2013-01-01"/>
+                    <state type="existence" from="1599" to="2013" srophe:computed-end="2013-01-01" srophe:computed-start="1599-01-01">
+                        <precision match="@from" notAfter="1599" srophe:computed-end="1599-01-01"/>
+                        <precision match="@to" notBefore="2013" srophe:computed-start="2013-01-01"/>
                     </state>
                     <note type="corrigenda" xml:lang="en">In Dolabani's translation of Barsoum's description <quote xml:lang="syr-Syrj">ܘܡܰܬܶܐܡܰܪ</quote> should read <quote xml:lang="syr-Syrj">ܘܡܶܬܶܐܡܰܪ</quote>.</note>
                     <idno type="URI">http://syriaca.org/place/76</idno>

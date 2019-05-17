@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="../out/syriacaPlacesTEI.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="../out/syriacaPlacesTEI.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:srophe="http://srophe.app">
     <teiHeader>
         <fileDesc>
             <titleStmt>
@@ -100,8 +100,8 @@
         <body>
             <listPlace>
                 <place type="settlement">
-                    <placeName xml:id="name75-1" xml:lang="en" syriaca:tags="#syriaca-headword" source="#bib75-1 #bib75-4">Doliche</placeName>
-                    <placeName xml:id="name75-2" xml:lang="syr" syriaca:tags="#syriaca-headword" resp="http://syriaca.org">ܕܠܘܟ</placeName>
+                    <placeName xml:id="name75-1" xml:lang="en" srophe:tags="#syriaca-headword" source="#bib75-1 #bib75-4">Doliche</placeName>
+                    <placeName xml:id="name75-2" xml:lang="syr" srophe:tags="#syriaca-headword" resp="http://syriaca.org">ܕܠܘܟ</placeName>
                     <placeName xml:id="name75-3" xml:lang="syr-Syrj" source="#bib75-2">ܕܰܠܘܟ</placeName>
                     <placeName xml:id="name75-4" xml:lang="ar" source="#bib75-3 #bib75-6">دُلوك</placeName>
                     <placeName xml:id="name75-5" xml:lang="en" source="#bib75-4">Dulūk</placeName>

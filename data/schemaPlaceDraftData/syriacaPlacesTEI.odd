@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_customization.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" xmlns:srophe="http://srophe.app">
+<TEI 
+  xmlns="http://www.tei-c.org/ns/1.0" 
+  xmlns:sch="http://purl.oclc.org/dsdl/schematron" 
+  xmlns:srophe="https://srophe.app">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -35,19 +38,19 @@
         
         <classSpec ident="att.global" mode="change" module="tei" type="atts">
           <attList>
-            <attDef ident="srophe:computed-start" mode="add">
+            <attDef ident="computed-start" ns="srophe" mode="add">
               <desc>start date</desc>
               <datatype maxOccurs="unbounded" minOccurs="1">
                 <rng:text xmlns:rng="http://relaxng.org/ns/structure/1.0"/>
               </datatype>
             </attDef>
-            <attDef ident="srophe:computed-end" mode="add">
+            <attDef ident="computed-end" ns="srophe" mode="add">
               <desc>End date</desc>
               <datatype maxOccurs="unbounded" minOccurs="1">
                 <rng:text xmlns:rng="http://relaxng.org/ns/structure/1.0"/>
               </datatype>
             </attDef>
-            <attDef ident="srophe:tags" mode="add">
+            <attDef ident="tags" ns="srophe" mode="add">
               <desc>tags usable</desc>
               <datatype maxOccurs="unbounded" minOccurs="1">
                 <rng:text xmlns:rng="http://relaxng.org/ns/structure/1.0"/>

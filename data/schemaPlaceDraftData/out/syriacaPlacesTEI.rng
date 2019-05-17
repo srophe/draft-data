@@ -5,7 +5,7 @@
          xmlns:teix="http://www.tei-c.org/ns/Examples"
          datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"
          ns="http://www.tei-c.org/ns/1.0"><!--
-Schema generated from ODD source 2019-05-17T16:54:15Z. .
+Schema generated from ODD source 2019-05-17T17:17:59Z. .
 TEI Edition: Version 3.5.0. Last updated on
 	29th January 2019, revision 3c0c64ec4
 TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 3.5.0/
@@ -360,7 +360,7 @@ Sample values include: 1] all; 2] most; 3] range</a:documentation>
       <sch:rule xmlns:rng="http://relaxng.org/ns/structure/1.0"
                 xmlns="http://www.tei-c.org/ns/1.0"
                 xmlns:sch="http://purl.oclc.org/dsdl/schematron"
-                xmlns:srophe="http://srophe.app"
+                xmlns:srophe="https://srophe.app"
                 context="tei:*[@when]">
         <sch:report test="@notBefore|@notAfter|@from|@to" role="nonfatal">The @when attribute cannot be used with any other att.datable.w3c attributes.</sch:report>
       </sch:rule>
@@ -370,7 +370,7 @@ Sample values include: 1] all; 2] most; 3] range</a:documentation>
       <sch:rule xmlns:rng="http://relaxng.org/ns/structure/1.0"
                 xmlns="http://www.tei-c.org/ns/1.0"
                 xmlns:sch="http://purl.oclc.org/dsdl/schematron"
-                xmlns:srophe="http://srophe.app"
+                xmlns:srophe="https://srophe.app"
                 context="tei:*[@from]">
         <sch:report test="@notBefore" role="nonfatal">The @from and @notBefore attributes cannot be used together.</sch:report>
       </sch:rule>
@@ -380,7 +380,7 @@ Sample values include: 1] all; 2] most; 3] range</a:documentation>
       <sch:rule xmlns:rng="http://relaxng.org/ns/structure/1.0"
                 xmlns="http://www.tei-c.org/ns/1.0"
                 xmlns:sch="http://purl.oclc.org/dsdl/schematron"
-                xmlns:srophe="http://srophe.app"
+                xmlns:srophe="https://srophe.app"
                 context="tei:*[@to]">
         <sch:report test="@notAfter" role="nonfatal">The @to and @notAfter attributes cannot be used together.</sch:report>
       </sch:rule>
@@ -405,7 +405,7 @@ Sample values include: 1] all; 2] most; 3] range</a:documentation>
       <sch:rule xmlns:rng="http://relaxng.org/ns/structure/1.0"
                 xmlns="http://www.tei-c.org/ns/1.0"
                 xmlns:sch="http://purl.oclc.org/dsdl/schematron"
-                xmlns:srophe="http://srophe.app"
+                xmlns:srophe="https://srophe.app"
                 context="tei:*[@calendar]">
             <sch:assert test="string-length(.) gt 0">
 @calendar indicates the system or calendar to which the date represented by the content of this element
@@ -633,34 +633,34 @@ Suggested values include: 1] internal; 2] external; 3] conjecture</a:documentati
       <ref name="att.global.linking.attributes"/>
       <ref name="att.global.responsibility.attributes"/>
       <ref name="att.global.source.attributes"/>
-      <ref name="att.global.attribute.srophecomputed-start"/>
-      <ref name="att.global.attribute.srophecomputed-end"/>
-      <ref name="att.global.attribute.srophetags"/>
+      <ref name="att.global.attribute.computed-start"/>
+      <ref name="att.global.attribute.computed-end"/>
+      <ref name="att.global.attribute.tags"/>
       <ref name="att.global.attribute.xmlid"/>
       <ref name="att.global.attribute.n"/>
       <ref name="att.global.attribute.xmllang"/>
       <ref name="att.global.attribute.xmlbase"/>
       <ref name="att.global.attribute.xmlspace"/>
    </define>
-   <define name="att.global.attribute.srophecomputed-start">
+   <define name="att.global.attribute.computed-start">
       <optional>
-         <attribute name="srophe:computed-start">
+         <attribute name="computed-start" ns="srophe">
             <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">start date</a:documentation>
             <text/>
          </attribute>
       </optional>
    </define>
-   <define name="att.global.attribute.srophecomputed-end">
+   <define name="att.global.attribute.computed-end">
       <optional>
-         <attribute name="srophe:computed-end">
+         <attribute name="computed-end" ns="srophe">
             <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">End date</a:documentation>
             <text/>
          </attribute>
       </optional>
    </define>
-   <define name="att.global.attribute.srophetags">
+   <define name="att.global.attribute.tags">
       <optional>
-         <attribute name="srophe:tags">
+         <attribute name="tags" ns="srophe">
             <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">tags usable
 Suggested values include: 1] #syriaca-headword; 2] #syriaca-anglicized; 3] #ektobe-headword</a:documentation>
             <choice>
@@ -1015,7 +1015,7 @@ Suggested values include: 1] below; 2] bottom; 3] margin; 4] top; 5] opposite; 6
       <sch:rule xmlns:rng="http://relaxng.org/ns/structure/1.0"
                 xmlns="http://www.tei-c.org/ns/1.0"
                 xmlns:sch="http://purl.oclc.org/dsdl/schematron"
-                xmlns:srophe="http://srophe.app"
+                xmlns:srophe="https://srophe.app"
                 context="tei:*[@subtype]">
         <sch:assert test="@type">The <sch:name/> element should not be categorized in detail with @subtype unless also categorized in general with @type</sch:assert>
       </sch:rule>
@@ -1045,7 +1045,7 @@ Suggested values include: 1] below; 2] bottom; 3] margin; 4] top; 5] opposite; 6
       <sch:rule xmlns:rng="http://relaxng.org/ns/structure/1.0"
                 xmlns="http://www.tei-c.org/ns/1.0"
                 xmlns:sch="http://purl.oclc.org/dsdl/schematron"
-                xmlns:srophe="http://srophe.app"
+                xmlns:srophe="https://srophe.app"
                 context="tei:*[not(self::tei:schemaSpec)][@targetLang]">
             <sch:assert test="@target">@targetLang should only be used on <sch:name/> if @target is specified.</sch:assert>
           </sch:rule>
@@ -1866,7 +1866,7 @@ Suggested values include: 1] below; 2] bottom; 3] margin; 4] top; 5] opposite; 6
                   id="syriacaPlacesTEI-p-lang-on-p-in-body-constraint-rule-7">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
-                      xmlns:srophe="http://srophe.app"
+                      xmlns:srophe="https://srophe.app"
                       context="//tei:text//tei:p">
                 <sch:assert test="./@xml:lang">A &lt;p&gt; element in the text body must have an @xml:lang attribute.</sch:assert>
               </sch:rule>
@@ -1875,7 +1875,7 @@ Suggested values include: 1] below; 2] bottom; 3] margin; 4] top; 5] opposite; 6
                   id="syriacaPlacesTEI-p-abstractModel-structure-p-constraint-report-4">
             <rule context="tei:p">
                <report xmlns:sch="http://purl.oclc.org/dsdl/schematron"
-                       xmlns:srophe="http://srophe.app"
+                       xmlns:srophe="https://srophe.app"
                        test="not(ancestor::tei:floatingText) and (ancestor::tei:p or ancestor::tei:ab)          and not(parent::tei:exemplum                |parent::tei:item                |parent::tei:note                |parent::tei:q                |parent::tei:quote                |parent::tei:remarks                |parent::tei:said                |parent::tei:sp                |parent::tei:stage                |parent::tei:cell                |parent::tei:figure                )">
         Abstract model violation: Paragraphs may not occur inside other paragraphs or ab elements.
       </report>
@@ -1885,7 +1885,7 @@ Suggested values include: 1] below; 2] bottom; 3] margin; 4] top; 5] opposite; 6
                   id="syriacaPlacesTEI-p-abstractModel-structure-l-constraint-report-5">
             <rule context="tei:p">
                <report xmlns:sch="http://purl.oclc.org/dsdl/schematron"
-                       xmlns:srophe="http://srophe.app"
+                       xmlns:srophe="https://srophe.app"
                        test="ancestor::tei:l[not(.//tei:note//tei:p[. = current()])]">
         Abstract model violation: Lines may not contain higher-level structural elements such as div, p, or ab.
       </report>
@@ -1925,7 +1925,7 @@ Suggested values include: 1] below; 2] bottom; 3] margin; 4] top; 5] opposite; 6
             <sch:rule xmlns:rng="http://relaxng.org/ns/structure/1.0"
                       xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
-                      xmlns:srophe="http://srophe.app"
+                      xmlns:srophe="https://srophe.app"
                       context="//tei:place/tei:desc[@type='abstract']">
                 <sch:let name="docURIno"
                         value="//tei:publicationStmt/tei:idno/substring-before(substring-after(substring-after(., 'http://syriaca.org/'), '/'), '/tei')"/>
@@ -1946,7 +1946,7 @@ Suggested values include: 1] below; 2] bottom; 3] margin; 4] top; 5] opposite; 6
             <sch:rule xmlns:rng="http://relaxng.org/ns/structure/1.0"
                       xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
-                      xmlns:srophe="http://srophe.app"
+                      xmlns:srophe="https://srophe.app"
                       context="//tei:place/tei:desc[@type='abstract'][1]/@xml:id">
                 <sch:let name="docURIno"
                         value="//tei:publicationStmt/tei:idno/substring-before(substring-after(substring-after(., 'http://syriaca.org/'), '/'), '/tei')"/>
@@ -1960,7 +1960,7 @@ Suggested values include: 1] below; 2] bottom; 3] margin; 4] top; 5] opposite; 6
             <sch:rule xmlns:rng="http://relaxng.org/ns/structure/1.0"
                       xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
-                      xmlns:srophe="http://srophe.app"
+                      xmlns:srophe="https://srophe.app"
                       context="//tei:body//tei:desc">
                 <sch:assert test="./@xml:lang">
                   All &lt;desc&gt; elements must have an @xml:lang attribute.
@@ -1972,7 +1972,7 @@ Suggested values include: 1] below; 2] bottom; 3] margin; 4] top; 5] opposite; 6
             <sch:rule xmlns:rng="http://relaxng.org/ns/structure/1.0"
                       xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
-                      xmlns:srophe="http://srophe.app"
+                      xmlns:srophe="https://srophe.app"
                       context="//tei:text//tei:desc[@type='abstract']">
                 <sch:let name="countAbs" value="count(//tei:text//tei:desc[@type='abstract'])"/>
                 <sch:let name="countLangs"
@@ -1988,7 +1988,7 @@ Suggested values include: 1] below; 2] bottom; 3] margin; 4] top; 5] opposite; 6
             <sch:rule xmlns:rng="http://relaxng.org/ns/structure/1.0"
                       xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
-                      xmlns:srophe="http://srophe.app"
+                      xmlns:srophe="https://srophe.app"
                       context="tei:desc[ @type eq 'deprecationInfo']">
 	              <sch:assert test="../@validUntil">Information about a
 	deprecation should only be present in a specification element
@@ -2020,7 +2020,7 @@ Suggested values include: 1] below; 2] bottom; 3] margin; 4] top; 5] opposite; 6
                   id="syriacaPlacesTEI-name-ref-on-name-constraint-rule-13">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
-                      xmlns:srophe="http://srophe.app"
+                      xmlns:srophe="https://srophe.app"
                       context="//tei:teiHeader//tei:name">
                 <sch:assert test="./@ref">A @ref attribute is required on the &lt;name&gt; element inside &lt;teiHeader&gt;.</sch:assert>
               </sch:rule>
@@ -2029,7 +2029,7 @@ Suggested values include: 1] below; 2] bottom; 3] margin; 4] top; 5] opposite; 6
                   id="syriacaPlacesTEI-name-ref-on-name-constraint-rule-14">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
-                      xmlns:srophe="http://srophe.app"
+                      xmlns:srophe="https://srophe.app"
                       context="//tei:teiHeader//tei:name/@ref">
                 <sch:let name="edsDoc"
                         value="doc('https://raw.githubusercontent.com/srophe/srophe-eXist-app/master/documentation/editors.xml')"/>
@@ -2156,7 +2156,7 @@ Measures]</a:documentation>
                   id="syriacaPlacesTEI-ptr-target-in-ptr-constraint-rule-15">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
-                      xmlns:srophe="http://srophe.app"
+                      xmlns:srophe="https://srophe.app"
                       context="//tei:place/tei:bibl/tei:ptr/@target"
                       role="warning">
                 <sch:assert test="matches(., concat('http://syriaca.org/bibl/', '\d+'))">
@@ -2171,7 +2171,7 @@ Measures]</a:documentation>
                   id="syriacaPlacesTEI-ptr-ptrAtts-constraint-report-7">
             <rule context="tei:ptr">
                <report xmlns:sch="http://purl.oclc.org/dsdl/schematron"
-                       xmlns:srophe="http://srophe.app"
+                       xmlns:srophe="https://srophe.app"
                        test="@target and @cRef">Only one of the
 attributes @target and @cRef may be supplied on <name/>.</report>
             </rule>
@@ -2193,7 +2193,7 @@ attributes @target and @cRef may be supplied on <name/>.</report>
                   id="syriacaPlacesTEI-ref-refAtts-constraint-report-8">
             <rule context="tei:ref">
                <report xmlns:sch="http://purl.oclc.org/dsdl/schematron"
-                       xmlns:srophe="http://srophe.app"
+                       xmlns:srophe="https://srophe.app"
                        test="@target and @cRef">Only one of the
 	attributes @target' and @cRef' may be supplied on <name/>
                </report>
@@ -2235,7 +2235,7 @@ attributes @target and @cRef may be supplied on <name/>.</report>
                   id="syriacaPlacesTEI-note-target-on-note-constraint-rule-16">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
-                      xmlns:srophe="http://srophe.app"
+                      xmlns:srophe="https://srophe.app"
                       context="//tei:body//tei:note[@type='deprecation']">
                 <sch:assert test="./@target">
                   A &lt;note&gt; element of @type="deprecation" must have a @target attribute.
@@ -2254,7 +2254,7 @@ attributes @target and @cRef may be supplied on <name/>.</report>
                   id="syriacaPlacesTEI-note-target-on-note-constraint-rule-17">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
-                      xmlns:srophe="http://srophe.app"
+                      xmlns:srophe="https://srophe.app"
                       context="//tei:body//tei:note[@type='deprecation']/@target">
                 <sch:let name="nameIDs" value="//tei:place/tei:placeName/@xml:id"/>
                 <sch:let name="IDvalues" value="for $i in $nameIDs return concat('#', $i)"/>
@@ -2268,7 +2268,7 @@ attributes @target and @cRef may be supplied on <name/>.</report>
                   id="syriacaPlacesTEI-note-lang-in-note-constraint-rule-18">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
-                      xmlns:srophe="http://srophe.app"
+                      xmlns:srophe="https://srophe.app"
                       context="//tei:body//tei:note">
                 <sch:assert test="./@xml:lang">
                   All &lt;note&gt; elements in the &lt;body&gt; must have an @xml:lang attribute.
@@ -2279,7 +2279,7 @@ attributes @target and @cRef may be supplied on <name/>.</report>
                   id="syriacaPlacesTEI-note-type-on-note-constraint-rule-19">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
-                      xmlns:srophe="http://srophe.app"
+                      xmlns:srophe="https://srophe.app"
                       context="//tei:body//tei:note">
                 <sch:assert test="./@xml:lang">
                   All &lt;note&gt; elements in the &lt;body&gt; must have a @type attribute.
@@ -2370,7 +2370,7 @@ attributes @target and @cRef may be supplied on <name/>.</report>
                   id="syriacaPlacesTEI-editor-role-on-editor-constraint-rule-20">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
-                      xmlns:srophe="http://srophe.app"
+                      xmlns:srophe="https://srophe.app"
                       context="//tei:teiHeader//tei:editor">
                 <sch:assert test="./@role">A @role attribute is required on the &lt;editor&gt; element inside &lt;teiHeader&gt;.</sch:assert>
               </sch:rule>
@@ -2379,7 +2379,7 @@ attributes @target and @cRef may be supplied on <name/>.</report>
                   id="syriacaPlacesTEI-editor-role-on-editor-constraint-rule-21">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
-                      xmlns:srophe="http://srophe.app"
+                      xmlns:srophe="https://srophe.app"
                       context="//tei:teiHeader//tei:titleStmt//@role">
                 <sch:assert test=". = 'creator' or . = 'code-author' or . = 'content-author' or . = 'contributor'">
                   The acceptable attribute values for @role on the &lt;editor&gt; element inside the &lt;titleStmt&gt; are: 
@@ -2391,7 +2391,7 @@ attributes @target and @cRef may be supplied on <name/>.</report>
                   id="syriacaPlacesTEI-editor-role-on-editor-constraint-rule-22">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
-                      xmlns:srophe="http://srophe.app"
+                      xmlns:srophe="https://srophe.app"
                       context="//tei:teiHeader//tei:seriesStmt//@role">
                 <sch:assert test=". = 'associate' or . = 'general'">
                   The acceptable attribute values for @role on the &lt;editor&gt; element inside the &lt;seriesStmt&gt; are: 
@@ -2403,7 +2403,7 @@ attributes @target and @cRef may be supplied on <name/>.</report>
                   id="syriacaPlacesTEI-editor-role-on-editor-constraint-rule-23">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
-                      xmlns:srophe="http://srophe.app"
+                      xmlns:srophe="https://srophe.app"
                       context="//tei:body//tei:editor/@role">
                 <sch:assert test=". = 'editor' or . = 'general' or . = 'translator'">
                   The acceptable attribute values for @role on the &lt;editor&gt; element inside the &lt;body&gt; are: 
@@ -2415,7 +2415,7 @@ attributes @target and @cRef may be supplied on <name/>.</report>
                   id="syriacaPlacesTEI-editor-ref-on-editor-constraint-rule-24">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
-                      xmlns:srophe="http://srophe.app"
+                      xmlns:srophe="https://srophe.app"
                       context="//tei:teiHeader//tei:editor">
                 <sch:assert test="./@ref">A @ref attribute is required on the &lt;editor&gt; element inside &lt;teiHeader&gt;.</sch:assert>
               </sch:rule>
@@ -2424,7 +2424,7 @@ attributes @target and @cRef may be supplied on <name/>.</report>
                   id="syriacaPlacesTEI-editor-ref-on-editor-constraint-rule-25">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
-                      xmlns:srophe="http://srophe.app"
+                      xmlns:srophe="https://srophe.app"
                       context="//tei:teiHeader//tei:editor/@ref">
                 <sch:let name="edsDoc"
                         value="doc('https://raw.githubusercontent.com/srophe/srophe-eXist-app/master/documentation/editors.xml')"/>
@@ -2442,7 +2442,7 @@ attributes @target and @cRef may be supplied on <name/>.</report>
                   id="syriacaPlacesTEI-editor-ref-on-editor-constraint-rule-26">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
-                      xmlns:srophe="http://srophe.app"
+                      xmlns:srophe="https://srophe.app"
                       context="//tei:body//tei:editor">
                 <sch:report test="./@ref">A @ref attribute is not allowed on the &lt;editor&gt; element inside &lt;body&gt;.</sch:report>
               </sch:rule>
@@ -2508,7 +2508,7 @@ attributes @target and @cRef may be supplied on <name/>.</report>
                   id="syriacaPlacesTEI-title-lang-on-title-in-body-constraint-rule-27">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
-                      xmlns:srophe="http://srophe.app"
+                      xmlns:srophe="https://srophe.app"
                       context="//tei:text//tei:bibl/tei:title">
                 <sch:assert test="./@xml:lang or ./contains(., 'http://') or ./contains(., 'https://')">A &lt;title&gt; element in a &lt;bibl&gt; 
                   element within the text body must have an @xml:lang attribute unless the content of the text node is a URL 
@@ -2520,7 +2520,7 @@ attributes @target and @cRef may be supplied on <name/>.</report>
                   id="syriacaPlacesTEI-title-title-in-titleStmt-constraint-rule-28">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
-                      xmlns:srophe="http://srophe.app"
+                      xmlns:srophe="https://srophe.app"
                       context="//tei:titleStmt/tei:title">
                 <sch:assert test="matches(@level, 'a')">A &lt;title&gt; element of @level="a" is the only title allowed in
                   the &lt;titleStmt&gt;.</sch:assert>
@@ -2530,7 +2530,7 @@ attributes @target and @cRef may be supplied on <name/>.</report>
                   id="syriacaPlacesTEI-title-title-in-seriesStmt-constraint-rule-29">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
-                      xmlns:srophe="http://srophe.app"
+                      xmlns:srophe="https://srophe.app"
                       context="//tei:seriesStmt//tei:title">
                 <sch:assert test="matches(@level, 'm') or matches(@level, 's')">Only &lt;title&gt; elements of @level="m" or "s"
                   are allowed in the &lt;seriesStmt&gt;.
@@ -2587,9 +2587,9 @@ Suggested values include: 1] main; 2] sub (subordinate); 3] alt (alternate); 4] 
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(scope of bibliographic reference) defines the scope of a bibliographic reference, for example as a list of page numbers, or a named subdivision of a larger work. [3.11.2.5. Scopes and Ranges in Bibliographic Citations]</a:documentation>
          <ref name="title"/>
          <ref name="idno"/>
-         <ref name="att.global.attribute.srophecomputed-start"/>
-         <ref name="att.global.attribute.srophecomputed-end"/>
-         <ref name="att.global.attribute.srophetags"/>
+         <ref name="att.global.attribute.computed-start"/>
+         <ref name="att.global.attribute.computed-end"/>
+         <ref name="att.global.attribute.tags"/>
          <ref name="att.global.attribute.xmlid"/>
          <ref name="att.global.attribute.xmllang"/>
          <ref name="att.global.attribute.xmlbase"/>
@@ -2690,7 +2690,7 @@ Suggested values include: 1] volume; 2] issue; 3] page; 4] line; 5] chapter; 6] 
                   id="syriacaPlacesTEI-bibl-xmlID-on-bibl-constraint-rule-30">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
-                      xmlns:srophe="http://srophe.app"
+                      xmlns:srophe="https://srophe.app"
                       context="//tei:place/tei:bibl">
                 <sch:let name="docURIno"
                         value="//tei:publicationStmt/tei:idno/substring-before(substring-after(substring-after(., 'http://syriaca.org/'), '/'), '/tei')"/>
@@ -2710,7 +2710,7 @@ Suggested values include: 1] volume; 2] issue; 3] page; 4] line; 5] chapter; 6] 
                   id="syriacaPlacesTEI-bibl-xmlID-on-bibl-constraint-rule-31">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
-                      xmlns:srophe="http://srophe.app"
+                      xmlns:srophe="https://srophe.app"
                       context="//tei:place/tei:bibl[1]/@xml:id">
                 <sch:let name="docURIno"
                         value="//tei:publicationStmt/tei:idno/substring-before(substring-after(substring-after(., 'http://syriaca.org/'), '/'), '/tei')"/>
@@ -2915,7 +2915,7 @@ Suggested values include: 1] volume; 2] issue; 3] page; 4] line; 5] chapter; 6] 
                       xmlns:rng="http://relaxng.org/ns/structure/1.0"
                       xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
-                      xmlns:srophe="http://srophe.app"
+                      xmlns:srophe="https://srophe.app"
                       context="//tei:publicationStmt/tei:authority">
                 <sch:assert test="matches(., 'Syriaca.org: The Syriac Reference Portal')">
                   The &lt;authority&gt; element should contain the text: "Syriaca.org: The Syriac Reference Portal."
@@ -2943,7 +2943,7 @@ Suggested values include: 1] volume; 2] issue; 3] page; 4] line; 5] chapter; 6] 
                       xmlns:rng="http://relaxng.org/ns/structure/1.0"
                       xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
-                      xmlns:srophe="http://srophe.app"
+                      xmlns:srophe="https://srophe.app"
                       context="//tei:publicationStmt/tei:idno[@type='URI']">
                 <sch:let name="fileNo" value="replace(document-uri(/), '[\D]', '')"/>
                 <sch:let name="docURIno"
@@ -3042,7 +3042,7 @@ Suggested values include: 1] volume; 2] issue; 3] page; 4] line; 5] chapter; 6] 
                       xmlns:rng="http://relaxng.org/ns/structure/1.0"
                       xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
-                      xmlns:srophe="http://srophe.app"
+                      xmlns:srophe="https://srophe.app"
                       context="//tei:seriesStmt/tei:respStmt">
                 <sch:report test="preceding-sibling::tei:title[@level='s']">
                   A &lt;respStmt&gt; element may not appear in a &lt;seriesStmt&gt; that also has a &lt;title&gt; of @type="s". 
@@ -3055,7 +3055,7 @@ Suggested values include: 1] volume; 2] issue; 3] page; 4] line; 5] chapter; 6] 
                       xmlns:rng="http://relaxng.org/ns/structure/1.0"
                       xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
-                      xmlns:srophe="http://srophe.app"
+                      xmlns:srophe="https://srophe.app"
                       context="//tei:seriesStmt//tei:title[@level='s']">
                 
                 <sch:assert test="matches(., 'The Syriac Gazetteer')">
@@ -3069,7 +3069,7 @@ Suggested values include: 1] volume; 2] issue; 3] page; 4] line; 5] chapter; 6] 
                       xmlns:rng="http://relaxng.org/ns/structure/1.0"
                       xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
-                      xmlns:srophe="http://srophe.app"
+                      xmlns:srophe="https://srophe.app"
                       context="//tei:seriesStmt//tei:title[node() = 'The Syriac Gazetteer']">
                 
                 <sch:assert test="./following-sibling::tei:idno/node() = 'http://syriaca.org/geo'">
@@ -3083,7 +3083,7 @@ Suggested values include: 1] volume; 2] issue; 3] page; 4] line; 5] chapter; 6] 
                       xmlns:rng="http://relaxng.org/ns/structure/1.0"
                       xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
-                      xmlns:srophe="http://srophe.app"
+                      xmlns:srophe="https://srophe.app"
                       context="//tei:seriesStmt/tei:title[@level='m']">
                 <sch:assert test="matches(., 'Beth Qaṭraye Gazetteer')">
                   
@@ -3102,7 +3102,7 @@ Suggested values include: 1] volume; 2] issue; 3] page; 4] line; 5] chapter; 6] 
                       xmlns:rng="http://relaxng.org/ns/structure/1.0"
                       xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
-                      xmlns:srophe="http://srophe.app"
+                      xmlns:srophe="https://srophe.app"
                       context="//tei:seriesStmt[tei:title='Beth Qaṭraye Gazetteer']/tei:idno">
                 
                 <sch:assert test="matches(., 'http://syriaca.org/bethqatraye')">
@@ -3116,7 +3116,7 @@ Suggested values include: 1] volume; 2] issue; 3] page; 4] line; 5] chapter; 6] 
                       xmlns:rng="http://relaxng.org/ns/structure/1.0"
                       xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
-                      xmlns:srophe="http://srophe.app"
+                      xmlns:srophe="https://srophe.app"
                       context="//tei:seriesStmt/tei:biblScope">
                 <sch:report test="preceding-sibling::tei:title[@level='s']">
                   A &lt;biblScope&gt; element may not appear in a &lt;seriesStmt&gt; that also has a &lt;title&gt; of @type="s". 
@@ -3134,7 +3134,7 @@ Suggested values include: 1] volume; 2] issue; 3] page; 4] line; 5] chapter; 6] 
                       xmlns:rng="http://relaxng.org/ns/structure/1.0"
                       xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
-                      xmlns:srophe="http://srophe.app"
+                      xmlns:srophe="https://srophe.app"
                       context="//tei:seriesStmt[tei:title='Beth Qaṭraye Gazetteer']/tei:biblScope/@n">
                 
                 <sch:assert test=". = '1'">
@@ -3156,7 +3156,7 @@ Suggested values include: 1] volume; 2] issue; 3] page; 4] line; 5] chapter; 6] 
                       xmlns:rng="http://relaxng.org/ns/structure/1.0"
                       xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
-                      xmlns:srophe="http://srophe.app"
+                      xmlns:srophe="https://srophe.app"
                       context="//tei:sourceDesc/tei:p">
                 <sch:assert test=". = 'Born digital.'">
                   The &lt;sourceDesc&gt; must contain a &lt;p&gt; element with the text node: "Born digital.". 
@@ -3278,7 +3278,7 @@ Sample values include: 1] approved; 2] candidate; 3] cleared; 4] deprecated; 5] 
                       xmlns:rng="http://relaxng.org/ns/structure/1.0"
                       xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
-                      xmlns:srophe="http://srophe.app"
+                      xmlns:srophe="https://srophe.app"
                       context="//tei:revisionDesc//tei:change/@who">
                 <sch:let name="edsDoc"
                         value="doc('https://raw.githubusercontent.com/srophe/srophe-eXist-app/master/documentation/editors.xml')"/>
@@ -3311,9 +3311,9 @@ Sample values include: 1] approved; 2] candidate; 3] cleared; 4] deprecated; 5] 
          <ref name="att.datable.custom.attribute.datingPoint"/>
          <ref name="att.datable.custom.attribute.datingMethod"/>
          <ref name="att.docStatus.attributes"/>
-         <ref name="att.global.attribute.srophecomputed-start"/>
-         <ref name="att.global.attribute.srophecomputed-end"/>
-         <ref name="att.global.attribute.srophetags"/>
+         <ref name="att.global.attribute.computed-start"/>
+         <ref name="att.global.attribute.computed-end"/>
+         <ref name="att.global.attribute.tags"/>
          <ref name="att.global.attribute.xmlid"/>
          <ref name="att.global.attribute.xmllang"/>
          <ref name="att.global.attribute.xmlbase"/>
@@ -3472,7 +3472,7 @@ Sample values include: 1] approved; 2] candidate; 3] cleared; 4] deprecated; 5] 
             <sch:rule xmlns:rng="http://relaxng.org/ns/structure/1.0"
                       xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
-                      xmlns:srophe="http://srophe.app"
+                      xmlns:srophe="https://srophe.app"
                       context="//tei:link/@target">
                 <sch:let name="allIDs" value="//@xml:id"/>
                 <sch:let name="targetVals" value="for $i in $allIDs return concat('#', $i)"/>
@@ -3735,7 +3735,7 @@ Sample values include: 1] approved; 2] candidate; 3] cleared; 4] deprecated; 5] 
                   id="syriacaPlacesTEI-placeName-atts-on-placeName-constraint-rule-44">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
-                      xmlns:srophe="http://srophe.app"
+                      xmlns:srophe="https://srophe.app"
                       context="//tei:place/tei:placeName">
                 <sch:assert test="attribute::source or attribute::resp">
                   The &lt;placeName&gt; element must have either a @source attribute (preferred when available) or a @resp attribute.
@@ -3749,7 +3749,7 @@ Sample values include: 1] approved; 2] candidate; 3] cleared; 4] deprecated; 5] 
                   id="syriacaPlacesTEI-placeName-xmlID-on-placeName-constraint-rule-45">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
-                      xmlns:srophe="http://srophe.app"
+                      xmlns:srophe="https://srophe.app"
                       context="//tei:place/tei:placeName">
                 <sch:let name="docURIno"
                         value="//tei:publicationStmt/tei:idno/substring-before(substring-after(substring-after(., 'http://syriaca.org/'), '/'), '/tei')"/>
@@ -3769,7 +3769,7 @@ Sample values include: 1] approved; 2] candidate; 3] cleared; 4] deprecated; 5] 
                   id="syriacaPlacesTEI-placeName-xmlID-on-placeName-constraint-rule-46">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
-                      xmlns:srophe="http://srophe.app"
+                      xmlns:srophe="https://srophe.app"
                       context="//tei:place/tei:placeName[1]/@xml:id">
                 <sch:let name="docURIno"
                         value="//tei:publicationStmt/tei:idno/substring-before(substring-after(substring-after(., 'http://syriaca.org/'), '/'), '/tei')"/>
@@ -3782,16 +3782,16 @@ Sample values include: 1] approved; 2] candidate; 3] cleared; 4] deprecated; 5] 
                   id="syriacaPlacesTEI-placeName-xmlLang-on-placeName-constraint-rule-47">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
-                      xmlns:srophe="http://srophe.app"
+                      xmlns:srophe="https://srophe.app"
                       context="//tei:text//tei:place/tei:placeName">
                 <sch:assert test="./@xml:lang">A &lt;placeName&gt; element that is the direct child of the &lt;place&gt; element must have an @xml:lang attribute.</sch:assert>
               </sch:rule>
          </pattern>
          <ref name="att.datable.attributes"/>
          <ref name="att.editLike.attributes"/>
-         <ref name="att.global.attribute.srophecomputed-start"/>
-         <ref name="att.global.attribute.srophecomputed-end"/>
-         <ref name="att.global.attribute.srophetags"/>
+         <ref name="att.global.attribute.computed-start"/>
+         <ref name="att.global.attribute.computed-end"/>
+         <ref name="att.global.attribute.tags"/>
          <ref name="att.global.attribute.n"/>
          <ref name="att.global.attribute.xmlbase"/>
          <ref name="att.global.attribute.xmlspace"/>
@@ -3926,7 +3926,7 @@ Sample values include: 1] approved; 2] candidate; 3] cleared; 4] deprecated; 5] 
                   id="syriacaPlacesTEI-bloc-ref-on-bloc-constraint-rule-48">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
-                      xmlns:srophe="http://srophe.app"
+                      xmlns:srophe="https://srophe.app"
                       context="//tei:location/tei:bloc/@ref">
                 <sch:assert test="matches(., concat('http://syriaca.org/place/', '\d+'))">
                   The @ref attribute on a &lt;bloc&gt; element must be a Syriaca.org place URI - 'http://syriaca.org/place/{\d+}' (where {\d+} is a number).
@@ -3961,7 +3961,7 @@ Sample values include: 1] approved; 2] candidate; 3] cleared; 4] deprecated; 5] 
                   id="syriacaPlacesTEI-country-ref-on-country-constraint-rule-49">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
-                      xmlns:srophe="http://srophe.app"
+                      xmlns:srophe="https://srophe.app"
                       context="//tei:location/tei:country/@ref">
                 <sch:assert test="matches(., concat('http://syriaca.org/place/', '\d+'))">
                   The @ref attribute on a &lt;country&gt; element must be a Syriaca.org place URI - 'http://syriaca.org/place/{\d+}' (where {\d+} is a number).
@@ -3996,7 +3996,7 @@ Sample values include: 1] approved; 2] candidate; 3] cleared; 4] deprecated; 5] 
                   id="syriacaPlacesTEI-region-ref-on-region-constraint-rule-50">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
-                      xmlns:srophe="http://srophe.app"
+                      xmlns:srophe="https://srophe.app"
                       context="//tei:location/tei:region/@ref">
                 <sch:assert test="matches(., concat('http://syriaca.org/place/', '\d+'))">
                   The @ref attribute on a &lt;region&gt; element must be a Syriaca.org place URI - 'http://syriaca.org/place/{\d+}' (where {\d+} is a number).
@@ -4031,7 +4031,7 @@ Sample values include: 1] approved; 2] candidate; 3] cleared; 4] deprecated; 5] 
                   id="syriacaPlacesTEI-settlement-ref-on-settlement-constraint-rule-51">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
-                      xmlns:srophe="http://srophe.app"
+                      xmlns:srophe="https://srophe.app"
                       context="//tei:location/tei:settlement/@ref">
                 <sch:assert test="matches(., concat('http://syriaca.org/place/', '\d+'))">
                   The @ref attribute on a &lt;settlement&gt; element must be a Syriaca.org place URI - 'http://syriaca.org/place/{\d+}' (where {\d+} is a number).
@@ -4066,7 +4066,7 @@ Sample values include: 1] approved; 2] candidate; 3] cleared; 4] deprecated; 5] 
                   id="syriacaPlacesTEI-district-ref-on-district-constraint-rule-52">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
-                      xmlns:srophe="http://srophe.app"
+                      xmlns:srophe="https://srophe.app"
                       context="//tei:location/tei:district/@ref">
                 <sch:assert test="matches(., concat('http://syriaca.org/place/', '\d+'))">
                   The @ref attribute on a &lt;district&gt; element must be a Syriaca.org place URI - 'http://syriaca.org/place/{\d+}' (where {\d+} is a number).
@@ -4120,7 +4120,7 @@ Sample values include: 1] approved; 2] candidate; 3] cleared; 4] deprecated; 5] 
                   id="syriacaPlacesTEI-event-xmlID-on-event-constraint-rule-53">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
-                      xmlns:srophe="http://srophe.app"
+                      xmlns:srophe="https://srophe.app"
                       context="//tei:text//tei:event[@type='attestation']/@xml:id">
                 <sch:let name="URIno"
                         value="//tei:publicationStmt/tei:idno/replace(., '[\D]+', '')"/>
@@ -4137,7 +4137,7 @@ Sample values include: 1] approved; 2] candidate; 3] cleared; 4] deprecated; 5] 
                   id="syriacaPlacesTEI-event-xmlID-on-event-constraint-rule-54">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
-                      xmlns:srophe="http://srophe.app"
+                      xmlns:srophe="https://srophe.app"
                       context="//tei:text//tei:event[@type='attestation']">
                 <sch:let name="countElement"
                         value="count(//tei:text//tei:event[@type='attestation'])"/>
@@ -4152,7 +4152,7 @@ Sample values include: 1] approved; 2] candidate; 3] cleared; 4] deprecated; 5] 
                   id="syriacaPlacesTEI-event-xmlID-on-event-constraint-rule-55">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
-                      xmlns:srophe="http://srophe.app"
+                      xmlns:srophe="https://srophe.app"
                       context="//tei:place/tei:event[@type='attestation']">
                 <sch:let name="docURIno"
                         value="//tei:publicationStmt/tei:idno/substring-before(substring-after(substring-after(., 'http://syriaca.org/'), '/'), '/tei')"/>
@@ -4172,7 +4172,7 @@ Sample values include: 1] approved; 2] candidate; 3] cleared; 4] deprecated; 5] 
                   id="syriacaPlacesTEI-event-xmlID-on-event-constraint-rule-56">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
-                      xmlns:srophe="http://srophe.app"
+                      xmlns:srophe="https://srophe.app"
                       context="//tei:place/tei:event[@type='attestation'][1]/@xml:id">
                 <sch:let name="docURIno"
                         value="//tei:publicationStmt/tei:idno/substring-before(substring-after(substring-after(., 'http://syriaca.org/'), '/'), '/tei')"/>
@@ -4181,9 +4181,9 @@ Sample values include: 1] approved; 2] candidate; 3] cleared; 4] deprecated; 5] 
                 </sch:assert>
               </sch:rule>
          </pattern>
-         <ref name="att.global.attribute.srophecomputed-start"/>
-         <ref name="att.global.attribute.srophecomputed-end"/>
-         <ref name="att.global.attribute.srophetags"/>
+         <ref name="att.global.attribute.computed-start"/>
+         <ref name="att.global.attribute.computed-end"/>
+         <ref name="att.global.attribute.tags"/>
          <ref name="att.global.attribute.xmlid"/>
          <ref name="att.global.attribute.n"/>
          <ref name="att.global.attribute.xmllang"/>
@@ -4288,7 +4288,7 @@ Sample values include: 1] approved; 2] candidate; 3] cleared; 4] deprecated; 5] 
                   id="syriacaPlacesTEI-location-location-children-constraint-rule-57">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
-                      xmlns:srophe="http://srophe.app"
+                      xmlns:srophe="https://srophe.app"
                       context="//tei:location[@type='gps']">
                 <sch:assert test="./tei:geo">
                   A &lt;location&gt; element of @type="gps" requires a child element &lt;geo&gt;.
@@ -4299,7 +4299,7 @@ Sample values include: 1] approved; 2] candidate; 3] cleared; 4] deprecated; 5] 
                   id="syriacaPlacesTEI-location-location-children-constraint-rule-58">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
-                      xmlns:srophe="http://srophe.app"
+                      xmlns:srophe="https://srophe.app"
                       context="//tei:location[@type='nested']">
                 <sch:report test="./tei:placeName or ./tei:measure or ./tei:offset or ./tei:geo">
                   A &lt;location&gt; element of @type="nested" may only contain a child elements &lt;district&gt;, &lt;settlement&gt;, &lt;region&gt;, &lt;country&gt; or &lt;bloc&gt;.
@@ -4310,16 +4310,16 @@ Sample values include: 1] approved; 2] candidate; 3] cleared; 4] deprecated; 5] 
                   id="syriacaPlacesTEI-location-location-children-constraint-rule-59">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
-                      xmlns:srophe="http://srophe.app"
+                      xmlns:srophe="https://srophe.app"
                       context="//tei:location[@type='relative']">
                 <sch:report test="./tei:district or ./tei:settlement or ./tei:region or ./tei:country or ./tei:geo or ./bloc">
                   A &lt;location&gt; element of @type="relative" may only contain text and child elements: &lt;placeName&gt;, &lt;measure&gt;, or &lt;offset&gt;.
                 </sch:report>
               </sch:rule>
          </pattern>
-         <ref name="att.global.attribute.srophecomputed-start"/>
-         <ref name="att.global.attribute.srophecomputed-end"/>
-         <ref name="att.global.attribute.srophetags"/>
+         <ref name="att.global.attribute.computed-start"/>
+         <ref name="att.global.attribute.computed-end"/>
+         <ref name="att.global.attribute.tags"/>
          <ref name="att.global.attribute.xmlid"/>
          <ref name="att.global.attribute.n"/>
          <ref name="att.global.attribute.xmllang"/>
@@ -4429,16 +4429,16 @@ Sample values include: 1] approved; 2] candidate; 3] cleared; 4] deprecated; 5] 
                   id="syriacaPlacesTEI-place-abstract-in-place-constraint-rule-60">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
-                      xmlns:srophe="http://srophe.app"
+                      xmlns:srophe="https://srophe.app"
                       context="//tei:body//tei:place">
                 <sch:report test="count(//tei:desc[@type='abstract']) lt 1">
                   Every &lt;place&gt; element must have at least one &lt;desc&gt; element with @type="abstract".
                 </sch:report>
               </sch:rule>
          </pattern>
-         <ref name="att.global.attribute.srophecomputed-start"/>
-         <ref name="att.global.attribute.srophecomputed-end"/>
-         <ref name="att.global.attribute.srophetags"/>
+         <ref name="att.global.attribute.computed-start"/>
+         <ref name="att.global.attribute.computed-end"/>
+         <ref name="att.global.attribute.tags"/>
          <ref name="att.global.attribute.n"/>
          <ref name="att.global.attribute.xmllang"/>
          <ref name="att.global.attribute.xmlbase"/>
@@ -4524,7 +4524,7 @@ Sample values include: 1] approved; 2] candidate; 3] cleared; 4] deprecated; 5] 
                   id="syriacaPlacesTEI-relation-atts-on-relation-constraint-rule-61">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
-                      xmlns:srophe="http://srophe.app"
+                      xmlns:srophe="https://srophe.app"
                       context="//tei:body//tei:relation">
                 <sch:assert test="@mutual">
                   A &lt;relation&gt; element requires a @mutual attribute.
@@ -4538,7 +4538,7 @@ Sample values include: 1] approved; 2] candidate; 3] cleared; 4] deprecated; 5] 
                   id="syriacaPlacesTEI-relation-atts-on-relation-constraint-rule-62">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
-                      xmlns:srophe="http://srophe.app"
+                      xmlns:srophe="https://srophe.app"
                       context="//tei:body//tei:relation/@mutual">
                 <sch:let name="docURI"
                         value="//tei:publicationStmt/tei:idno/substring-before(., '/tei')"/>
@@ -4563,7 +4563,7 @@ Sample values include: 1] approved; 2] candidate; 3] cleared; 4] deprecated; 5] 
                   id="syriacaPlacesTEI-relation-reforkeyorname-constraint-assert-64">
             <rule context="tei:relation">
                <assert xmlns:sch="http://purl.oclc.org/dsdl/schematron"
-                       xmlns:srophe="http://srophe.app"
+                       xmlns:srophe="https://srophe.app"
                        test="@ref or @key or @name">One of the attributes  'name', 'ref' or 'key' must be supplied</assert>
             </rule>
          </pattern>
@@ -4571,7 +4571,7 @@ Sample values include: 1] approved; 2] candidate; 3] cleared; 4] deprecated; 5] 
                   id="syriacaPlacesTEI-relation-activemutual-constraint-report-24">
             <rule context="tei:relation">
                <report xmlns:sch="http://purl.oclc.org/dsdl/schematron"
-                       xmlns:srophe="http://srophe.app"
+                       xmlns:srophe="https://srophe.app"
                        test="@active and @mutual">Only one of the attributes @active and @mutual may be supplied</report>
             </rule>
          </pattern>
@@ -4579,7 +4579,7 @@ Sample values include: 1] approved; 2] candidate; 3] cleared; 4] deprecated; 5] 
                   id="syriacaPlacesTEI-relation-activepassive-constraint-report-25">
             <rule context="tei:relation">
                <report xmlns:sch="http://purl.oclc.org/dsdl/schematron"
-                       xmlns:srophe="http://srophe.app"
+                       xmlns:srophe="https://srophe.app"
                        test="@passive and not(@active)">the attribute 'passive' may be supplied only if the attribute 'active' is supplied</report>
             </rule>
          </pattern>
@@ -4633,7 +4633,7 @@ Sample values include: 1] approved; 2] candidate; 3] cleared; 4] deprecated; 5] 
                   id="syriacaPlacesTEI-state-xmlID-on-state-constraint-rule-63">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
-                      xmlns:srophe="http://srophe.app"
+                      xmlns:srophe="https://srophe.app"
                       context="//tei:text//tei:state[@type='confession']/@xml:id">
                 <sch:let name="docURIno"
                         value="//tei:publicationStmt/tei:idno/substring-before(substring-after(substring-after(., 'http://syriaca.org/'), '/'), '/tei')"/>
@@ -4649,7 +4649,7 @@ Sample values include: 1] approved; 2] candidate; 3] cleared; 4] deprecated; 5] 
                   id="syriacaPlacesTEI-state-xmlID-on-state-constraint-rule-64">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
-                      xmlns:srophe="http://srophe.app"
+                      xmlns:srophe="https://srophe.app"
                       context="//tei:text//tei:state[@type='confession']">
                 <sch:let name="countElement"
                         value="count(//tei:text//tei:state[@type='confession'])"/>
@@ -4748,7 +4748,7 @@ Sample values include: 1] TEI; 2] DBK (docbook); 3] XX (unknown); 4] Schematron;
             id="syriacaPlacesTEI-source-att-constraint-rule-65">
       <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                 xmlns:sch="http://purl.oclc.org/dsdl/schematron"
-                xmlns:srophe="http://srophe.app"
+                xmlns:srophe="https://srophe.app"
                 context="//tei:body//@source">
               <sch:let name="biblIDs" value="//tei:body//tei:bibl/@xml:id"/>
               <sch:let name="sourceValues" value="for $i in $biblIDs return concat('#', $i)"/>

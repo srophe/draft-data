@@ -35,19 +35,19 @@
         
         <classSpec ident="att.global" mode="change" module="tei" type="atts">
           <attList>
-            <attDef ident="syriaca-computed-start" mode="add">
+            <attDef ident="srophe:computed-start" mode="add">
               <desc>start date</desc>
               <datatype maxOccurs="unbounded" minOccurs="1">
                 <rng:text xmlns:rng="http://relaxng.org/ns/structure/1.0"/>
               </datatype>
             </attDef>
-            <attDef ident="syriaca-computed-end" mode="add">
+            <attDef ident="srophe:computed-end" mode="add">
               <desc>End date</desc>
               <datatype maxOccurs="unbounded" minOccurs="1">
                 <rng:text xmlns:rng="http://relaxng.org/ns/structure/1.0"/>
               </datatype>
             </attDef>
-            <attDef ident="syriaca-tags" mode="add">
+            <attDef ident="srophe:tags" mode="add">
               <desc>tags usable</desc>
               <datatype maxOccurs="unbounded" minOccurs="1">
                 <rng:text xmlns:rng="http://relaxng.org/ns/structure/1.0"/>

@@ -5,7 +5,7 @@
          xmlns:teix="http://www.tei-c.org/ns/Examples"
          datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"
          ns="http://www.tei-c.org/ns/1.0"><!--
-Schema generated from ODD source 2019-04-23T19:39:28Z. .
+Schema generated from ODD source 2019-05-17T16:34:13Z. .
 TEI Edition: Version 3.5.0. Last updated on
 	29th January 2019, revision 3c0c64ec4
 TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 3.5.0/
@@ -155,7 +155,7 @@ TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 3.5.0/
    <define name="att.ranging.attribute.confidence">
       <optional>
          <attribute name="confidence">
-            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">specifies the degree of statistical confidence (between zero and one) that a value falls within the range specified by min and max, or the proportion of observed values that fall within that range.</a:documentation>
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">specifies the degree of statistical confidence (between zero and one) that a value falls within the range specified by <code xmlns="http://www.w3.org/1999/xhtml">@min</code> and <code xmlns="http://www.w3.org/1999/xhtml">@max</code>, or the proportion of observed values that fall within that range.</a:documentation>
             <data type="double"/>
          </attribute>
       </optional>
@@ -247,7 +247,7 @@ Sample values include: 1] all; 2] most; 3] range</a:documentation>
    <define name="att.written.attribute.hand">
       <optional>
          <attribute name="hand">
-            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">points to a handNote element describing the hand considered responsible for the content of the element concerned.</a:documentation>
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">points to a <code xmlns="http://www.w3.org/1999/xhtml">&lt;handNote&gt;</code> element describing the hand considered responsible for the content of the element concerned.</a:documentation>
             <data type="anyURI"/>
          </attribute>
       </optional>
@@ -258,7 +258,7 @@ Sample values include: 1] all; 2] most; 3] range</a:documentation>
    <define name="att.cReferencing.attribute.cRef">
       <optional>
          <attribute name="cRef">
-            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(canonical reference) specifies the destination of the pointer by supplying a canonical reference expressed using the scheme defined in a refsDecl element in the TEI header</a:documentation>
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(canonical reference) specifies the destination of the pointer by supplying a canonical reference expressed using the scheme defined in a <code xmlns="http://www.w3.org/1999/xhtml">&lt;refsDecl&gt;</code> element in the TEI header</a:documentation>
             <data type="string"/>
          </attribute>
       </optional>
@@ -629,39 +629,40 @@ Suggested values include: 1] internal; 2] external; 3] conjecture</a:documentati
       <ref name="att.global.linking.attributes"/>
       <ref name="att.global.responsibility.attributes"/>
       <ref name="att.global.source.attributes"/>
-      <ref name="att.global.attribute.syriaca-computed-start"/>
-      <ref name="att.global.attribute.syriaca-computed-end"/>
-      <ref name="att.global.attribute.syriaca-tags"/>
+      <ref name="att.global.attribute.srophecomputed-start"/>
+      <ref name="att.global.attribute.srophecomputed-end"/>
+      <ref name="att.global.attribute.srophetags"/>
       <ref name="att.global.attribute.xmlid"/>
       <ref name="att.global.attribute.n"/>
       <ref name="att.global.attribute.xmllang"/>
       <ref name="att.global.attribute.xmlbase"/>
       <ref name="att.global.attribute.xmlspace"/>
    </define>
-   <define name="att.global.attribute.syriaca-computed-start">
+   <define name="att.global.attribute.srophecomputed-start">
       <optional>
-         <attribute name="syriaca-computed-start">
+         <attribute name="srophe:computed-start">
             <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">start date</a:documentation>
             <text/>
          </attribute>
       </optional>
    </define>
-   <define name="att.global.attribute.syriaca-computed-end">
+   <define name="att.global.attribute.srophecomputed-end">
       <optional>
-         <attribute name="syriaca-computed-end">
+         <attribute name="srophe:computed-end">
             <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">End date</a:documentation>
             <text/>
          </attribute>
       </optional>
    </define>
-   <define name="att.global.attribute.syriaca-tags">
+   <define name="att.global.attribute.srophetags">
       <optional>
-         <attribute name="syriaca-tags">
+         <attribute name="srophe:tags">
             <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">tags usable
 Suggested values include: 1] #syriaca-headword; 2] #syriaca-anglicized; 3] #ektobe-headword</a:documentation>
             <choice>
                <value>#syriaca-headword</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The name used by Syriaca.org for document titles, citation, and disambiguation. These names have been created according to the Syriaca.org guidelines for headwords: http://syriaca.org/documentation/headwords.html.</a:documentation>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The name used by Syriaca.org for document titles, citation, and disambiguation. These names have been created according to the Syriaca.org guidelines for headwords: <a xmlns="http://www.w3.org/1999/xhtml"
+                     href="http://syriaca.org/documentation/headwords.html">http://syriaca.org/documentation/headwords.html</a>.</a:documentation>
                <value>#syriaca-anglicized</value>
                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">An anglicized version of a name created by Syriaca.org used to facilitate searching in English.</a:documentation>
                <value>#ektobe-headword</value>
@@ -690,7 +691,8 @@ Suggested values include: 1] #syriaca-headword; 2] #syriaca-anglicized; 3] #ekto
    <define name="att.global.attribute.xmllang">
       <optional>
          <attribute name="xml:lang">
-            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(language) indicates the language of the element content using a tag generated according to BCP 47.</a:documentation>
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(language) indicates the language of the element content using a tag generated according to <a xmlns="http://www.w3.org/1999/xhtml"
+                  href="http://www.rfc-editor.org/rfc/bcp/bcp47.txt">BCP 47</a>.</a:documentation>
             <choice>
                <value>ar</value>
                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Arabic) Arabic of any variety or period</a:documentation>
@@ -1021,7 +1023,8 @@ Suggested values include: 1] below; 2] bottom; 3] margin; 4] top; 5] opposite; 6
    <define name="att.pointing.attribute.targetLang">
       <optional>
          <attribute name="targetLang">
-            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">specifies the language of the content to be found at the destination referenced by target, using a language tag generated according to BCP 47.</a:documentation>
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">specifies the language of the content to be found at the destination referenced by <code xmlns="http://www.w3.org/1999/xhtml">@target</code>, using a language tag generated according to <a xmlns="http://www.w3.org/1999/xhtml"
+                  href="http://www.rfc-editor.org/rfc/bcp/bcp47.txt">BCP 47</a>.</a:documentation>
             <choice>
                <data type="language"/>
                <choice>
@@ -1087,7 +1090,7 @@ Suggested values include: 1] below; 2] bottom; 3] margin; 4] top; 5] opposite; 6
    <define name="att.scoping.attribute.match">
       <optional>
          <attribute name="match">
-            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">supplies an arbitrary XPath expression using the syntax defined in  which identifies a set of nodes, selected within the context identified by the target attribute if this is supplied, or within the context of the parent element if it is not.</a:documentation>
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">supplies an arbitrary XPath expression using the syntax defined in  which identifies a set of nodes, selected within the context identified by the <code xmlns="http://www.w3.org/1999/xhtml">@target</code> attribute if this is supplied, or within the context of the parent element if it is not.</a:documentation>
             <text/>
          </attribute>
       </optional>
@@ -1128,7 +1131,7 @@ Suggested values include: 1] below; 2] bottom; 3] margin; 4] top; 5] opposite; 6
    <define name="att.citing.attribute.from">
       <optional>
          <attribute name="from">
-            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">specifies the starting point of the range of units indicated by the unit attribute.</a:documentation>
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">specifies the starting point of the range of units indicated by the <code xmlns="http://www.w3.org/1999/xhtml">@unit</code> attribute.</a:documentation>
             <data type="token">
                <param name="pattern">(\p{L}|\p{N}|\p{P}|\p{S})+</param>
             </data>
@@ -1138,7 +1141,7 @@ Suggested values include: 1] below; 2] bottom; 3] margin; 4] top; 5] opposite; 6
    <define name="att.citing.attribute.to">
       <optional>
          <attribute name="to">
-            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">specifies the end-point of the range of units indicated by the unit attribute.</a:documentation>
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">specifies the end-point of the range of units indicated by the <code xmlns="http://www.w3.org/1999/xhtml">@unit</code> attribute.</a:documentation>
             <data type="token">
                <param name="pattern">(\p{L}|\p{N}|\p{P}|\p{S})+</param>
             </data>
@@ -2318,7 +2321,7 @@ attributes @target and @cRef may be supplied on <name/>.</report>
          <ref name="att.canonical.attribute.key"/>
          <optional>
             <attribute name="ref">
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(reference) Should contain the URI of the author from the Syriac Biographical Dictionary, unless no record yet exists for the author.</a:documentation>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(reference) Should contain the URI of the author from the <a xmlns="http://www.w3.org/1999/xhtml" href="http://syriaca.org/persons">Syriac Biographical Dictionary</a>, unless no record yet exists for the author.</a:documentation>
                <list>
                   <oneOrMore>
                      <data type="anyURI"/>
@@ -2417,7 +2420,7 @@ attributes @target and @cRef may be supplied on <name/>.</report>
          <ref name="att.canonical.attribute.key"/>
          <optional>
             <attribute name="role">
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Specifies the connection of the editor to the work, selected from http://syriaca.org/documentation/author-editor-roles.xml . The attribute value should contain the above URL followed by a hash (#) and the xml:id of the role. For example, http://syriaca.org/documentation/author-editor-roles.xml#translator . This is recommended, but not required if the type of connection is unknown.</a:documentation>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Specifies the connection of the editor to the work, selected from http://syriaca.org/documentation/author-editor-roles.xml . The attribute value should contain the above URL followed by a hash (#) and the <code xmlns="http://www.w3.org/1999/xhtml">@xml:id</code> of the role. For example, http://syriaca.org/documentation/author-editor-roles.xml#translator . This is recommended, but not required if the type of connection is unknown.</a:documentation>
                <list>
                   <oneOrMore>
                      <data type="token">
@@ -2429,7 +2432,8 @@ attributes @target and @cRef may be supplied on <name/>.</report>
          </optional>
          <optional>
             <attribute name="ref">
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(reference) Should contain the URI of a Syriaca.org editor from this list.</a:documentation>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(reference) Should contain the URI of a Syriaca.org editor from <a xmlns="http://www.w3.org/1999/xhtml"
+                     href="http://syriaca.org/documentation/editors">this list</a>.</a:documentation>
                <list>
                   <oneOrMore>
                      <data type="anyURI"/>
@@ -2548,9 +2552,9 @@ Suggested values include: 1] main; 2] sub (subordinate); 3] alt (alternate); 4] 
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(scope of bibliographic reference) defines the scope of a bibliographic reference, for example as a list of page numbers, or a named subdivision of a larger work. [3.11.2.5. Scopes and Ranges in Bibliographic Citations]</a:documentation>
          <ref name="title"/>
          <ref name="idno"/>
-         <ref name="att.global.attribute.syriaca-computed-start"/>
-         <ref name="att.global.attribute.syriaca-computed-end"/>
-         <ref name="att.global.attribute.syriaca-tags"/>
+         <ref name="att.global.attribute.srophecomputed-start"/>
+         <ref name="att.global.attribute.srophecomputed-end"/>
+         <ref name="att.global.attribute.srophetags"/>
          <ref name="att.global.attribute.xmlid"/>
          <ref name="att.global.attribute.xmllang"/>
          <ref name="att.global.attribute.xmlbase"/>
@@ -2734,7 +2738,7 @@ Suggested values include: 1] volume; 2] issue; 3] page; 4] line; 5] chapter; 6] 
          <ref name="att.datable.attributes"/>
          <optional>
             <attribute name="precision">
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">characterizes the precision of the element or attribute pointed to by the precision element.</a:documentation>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">characterizes the precision of the element or attribute pointed to by the <code xmlns="http://www.w3.org/1999/xhtml">&lt;precision&gt;</code> element.</a:documentation>
                <choice>
                   <value>high</value>
                   <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
@@ -2915,10 +2919,12 @@ Suggested values include: 1] volume; 2] issue; 3] page; 4] line; 5] chapter; 6] 
          <ref name="att.datable.attributes"/>
          <ref name="att.typed.attribute.subtype"/>
          <attribute name="type">
-            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The type attribute on idno defines the kind of identifier contained in the text value. In the Gazetteer, the only type of idno used is "URI".</a:documentation>
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The <code xmlns="http://www.w3.org/1999/xhtml">@type</code> attribute on <code xmlns="http://www.w3.org/1999/xhtml">&lt;idno&gt;</code> defines the kind of identifier contained in the text value. In the Gazetteer, the only type of <code xmlns="http://www.w3.org/1999/xhtml">&lt;idno&gt;</code> used is "URI".</a:documentation>
             <choice>
                <value>ISBN</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">International Standard Book Number: a 13- or (if assigned prior to 2007) 10-digit identifying number assigned by the publishing industry to a published book or similar item, registered with the International ISBN Agency.</a:documentation>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">International Standard Book Number: a 13- or (if assigned prior to 2007) 10-digit identifying number assigned by the publishing industry to a published book or similar item, registered with the <a xmlns="http://www.w3.org/1999/xhtml"
+                     href="https://www.isbn-international.org"> International ISBN Agency.</a>
+               </a:documentation>
                <value>ISSN</value>
                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">International Standard Serial Number: an eight-digit number to uniquely identify a serial publication.</a:documentation>
                <value>DOI</value>
@@ -3167,7 +3173,7 @@ Suggested values include: 1] volume; 2] issue; 3] page; 4] line; 5] chapter; 6] 
    </define>
    <define name="catDesc">
       <element name="catDesc">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(category description) describes some category within a taxonomy or text typology, either in the form of a brief prose description or in terms of the situational parameters used by the TEI formal textDesc. [2.3.7. The Classification Declaration]</a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(category description) describes some category within a taxonomy or text typology, either in the form of a brief prose description or in terms of the situational parameters used by the TEI formal <code xmlns="http://www.w3.org/1999/xhtml">&lt;textDesc&gt;</code>. [2.3.7. The Classification Declaration]</a:documentation>
          <zeroOrMore>
             <choice>
                <text/>
@@ -3257,9 +3263,9 @@ Sample values include: 1] approved; 2] candidate; 3] cleared; 4] deprecated; 5] 
          <ref name="att.datable.custom.attribute.datingPoint"/>
          <ref name="att.datable.custom.attribute.datingMethod"/>
          <ref name="att.docStatus.attributes"/>
-         <ref name="att.global.attribute.syriaca-computed-start"/>
-         <ref name="att.global.attribute.syriaca-computed-end"/>
-         <ref name="att.global.attribute.syriaca-tags"/>
+         <ref name="att.global.attribute.srophecomputed-start"/>
+         <ref name="att.global.attribute.srophecomputed-end"/>
+         <ref name="att.global.attribute.srophetags"/>
          <ref name="att.global.attribute.xmlid"/>
          <ref name="att.global.attribute.xmllang"/>
          <ref name="att.global.attribute.xmlbase"/>
@@ -3530,7 +3536,7 @@ Sample values include: 1] approved; 2] candidate; 3] cleared; 4] deprecated; 5] 
    <define name="att.datable.custom.attribute.datingMethod">
       <optional>
          <attribute name="datingMethod">
-            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">supplies a pointer to a calendar element or other means of interpreting the values of the custom dating attributes.</a:documentation>
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">supplies a pointer to a <code xmlns="http://www.w3.org/1999/xhtml">&lt;calendar&gt;</code> element or other means of interpreting the values of the custom dating attributes.</a:documentation>
             <data type="anyURI"/>
          </attribute>
       </optional>
@@ -3730,9 +3736,9 @@ Sample values include: 1] approved; 2] candidate; 3] cleared; 4] deprecated; 5] 
          </pattern>
          <ref name="att.datable.attributes"/>
          <ref name="att.editLike.attributes"/>
-         <ref name="att.global.attribute.syriaca-computed-start"/>
-         <ref name="att.global.attribute.syriaca-computed-end"/>
-         <ref name="att.global.attribute.syriaca-tags"/>
+         <ref name="att.global.attribute.srophecomputed-start"/>
+         <ref name="att.global.attribute.srophecomputed-end"/>
+         <ref name="att.global.attribute.srophetags"/>
          <ref name="att.global.attribute.n"/>
          <ref name="att.global.attribute.xmlbase"/>
          <ref name="att.global.attribute.xmlspace"/>
@@ -3753,13 +3759,14 @@ Sample values include: 1] approved; 2] candidate; 3] cleared; 4] deprecated; 5] 
          <ref name="att.typed.attributes"/>
          <optional>
             <attribute name="xml:id">
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(identifier) The placeName element requires an xml:id attribute whose value is the concatenation of "name", the Syriaca.org ID number of this place (i.e. the last element of the URI), a ‘-’, and the number of this name element in order.</a:documentation>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(identifier) The <code xmlns="http://www.w3.org/1999/xhtml">&lt;placeName&gt;</code> element requires an <code xmlns="http://www.w3.org/1999/xhtml">@xml:id</code> attribute whose value is the concatenation of "name", the Syriaca.org ID number of this place (i.e. the last element of the URI), a ‘-’, and the number of this name element in order.</a:documentation>
                <data type="ID"/>
             </attribute>
          </optional>
          <optional>
             <attribute name="xml:lang">
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(language) The language of the name should be indicated in an xml:lang attribute of the placeName element, whose value is derived from the the ISO-639-1 or ISO-639-2 standards. In particular, "en" should be used for "English", "ar" for "Arabic", and "syr" for Syriac. Syriaca.org is not using "syc" for Syriac to avoid the judgment of what constitutes "classical." In the case of vocalized Syriac, the xml:lang attribute should be augmented with a script indication: either "-Syrj" to indicate West Syrian vocalization or "-Syrn" to indicate East Syrian vocalization. Thus the xml:lang attribute will have a value of "syr-Syrj" for vocalized Western Syriac and "syr-Syrn" for vocalized Eastern Syriac. The xml:lang attribute for an unvocalized Syriac name form, such as Syriaca.org’s headword form, should be simply "syr".</a:documentation>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(language) The language of the name should be indicated in an <code xmlns="http://www.w3.org/1999/xhtml">@xml:lang</code> attribute of the <code xmlns="http://www.w3.org/1999/xhtml">&lt;placeName&gt;</code> element, whose value is derived from the the <a xmlns="http://www.w3.org/1999/xhtml"
+                     href="http://www.loc.gov/standards/iso639-2/php/code_list.php">ISO-639-1 or ISO-639-2 standards</a>. In particular, "en" should be used for "English", "ar" for "Arabic", and "syr" for Syriac. Syriaca.org is not using "syc" for Syriac to avoid the judgment of what constitutes "classical." In the case of vocalized Syriac, the <code xmlns="http://www.w3.org/1999/xhtml">@xml:lang</code> attribute should be augmented with a script indication: either "-Syrj" to indicate West Syrian vocalization or "-Syrn" to indicate East Syrian vocalization. Thus the <code xmlns="http://www.w3.org/1999/xhtml">@xml:lang</code> attribute will have a value of "syr-Syrj" for vocalized Western Syriac and "syr-Syrn" for vocalized Eastern Syriac. The <code xmlns="http://www.w3.org/1999/xhtml">@xml:lang</code> attribute for an unvocalized Syriac name form, such as Syriaca.org’s headword form, should be simply "syr".</a:documentation>
                <choice>
                   <value>ar</value>
                   <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Arabic) Arabic of any variety or period</a:documentation>
@@ -3844,7 +3851,7 @@ Sample values include: 1] approved; 2] candidate; 3] cleared; 4] deprecated; 5] 
          </optional>
          <optional>
             <attribute name="resp">
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(responsible party) Most placeName elements will have a source attribute pointing to the bibl element that is the source of that name. In instances where a place name is generated by Syriaca.org for consistency of transcription but is not attested in a print or online source, a resp is used with a value of 'http://syriaca.org'.</a:documentation>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(responsible party) Most <code xmlns="http://www.w3.org/1999/xhtml">&lt;placeName&gt;</code> elements will have a <code xmlns="http://www.w3.org/1999/xhtml">@source</code> attribute pointing to the <code xmlns="http://www.w3.org/1999/xhtml">&lt;bibl&gt;</code> element that is the source of that name. In instances where a place name is generated by Syriaca.org for consistency of transcription but is not attested in a print or online source, a <code xmlns="http://www.w3.org/1999/xhtml">@resp</code> is used with a value of 'http://syriaca.org'.</a:documentation>
                <list>
                   <oneOrMore>
                      <choice>
@@ -4112,9 +4119,9 @@ Sample values include: 1] approved; 2] candidate; 3] cleared; 4] deprecated; 5] 
                 </sch:assert>
               </sch:rule>
          </pattern>
-         <ref name="att.global.attribute.syriaca-computed-start"/>
-         <ref name="att.global.attribute.syriaca-computed-end"/>
-         <ref name="att.global.attribute.syriaca-tags"/>
+         <ref name="att.global.attribute.srophecomputed-start"/>
+         <ref name="att.global.attribute.srophecomputed-end"/>
+         <ref name="att.global.attribute.srophetags"/>
          <ref name="att.global.attribute.xmlid"/>
          <ref name="att.global.attribute.n"/>
          <ref name="att.global.attribute.xmllang"/>
@@ -4139,7 +4146,7 @@ Sample values include: 1] approved; 2] candidate; 3] cleared; 4] deprecated; 5] 
          <ref name="att.naming.attributes"/>
          <ref name="att.sortable.attributes"/>
          <attribute name="source">
-            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The event element requires a source attribute.</a:documentation>
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The <code xmlns="http://www.w3.org/1999/xhtml">&lt;event&gt;</code> element requires a <code xmlns="http://www.w3.org/1999/xhtml">@source</code> attribute.</a:documentation>
             <list>
                <oneOrMore>
                   <data type="anyURI"/>
@@ -4147,14 +4154,14 @@ Sample values include: 1] approved; 2] candidate; 3] cleared; 4] deprecated; 5] 
             </list>
          </attribute>
          <attribute name="type">
-            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The event element requires a type attribute.</a:documentation>
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The <code xmlns="http://www.w3.org/1999/xhtml">&lt;event&gt;</code> element requires a <code xmlns="http://www.w3.org/1999/xhtml">@type</code> attribute.</a:documentation>
             <data type="token">
                <param name="pattern">(\p{L}|\p{N}|\p{P}|\p{S})+</param>
             </data>
          </attribute>
          <optional>
             <attribute name="where">
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">indicates the location of an event by pointing to a place element</a:documentation>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">indicates the location of an event by pointing to a <code xmlns="http://www.w3.org/1999/xhtml">&lt;place&gt;</code> element</a:documentation>
                <data type="anyURI"/>
             </attribute>
          </optional>
@@ -4245,9 +4252,9 @@ Sample values include: 1] approved; 2] candidate; 3] cleared; 4] deprecated; 5] 
                 </sch:report>
               </sch:rule>
          </pattern>
-         <ref name="att.global.attribute.syriaca-computed-start"/>
-         <ref name="att.global.attribute.syriaca-computed-end"/>
-         <ref name="att.global.attribute.syriaca-tags"/>
+         <ref name="att.global.attribute.srophecomputed-start"/>
+         <ref name="att.global.attribute.srophecomputed-end"/>
+         <ref name="att.global.attribute.srophetags"/>
          <ref name="att.global.attribute.xmlid"/>
          <ref name="att.global.attribute.n"/>
          <ref name="att.global.attribute.xmllang"/>
@@ -4363,9 +4370,9 @@ Sample values include: 1] approved; 2] candidate; 3] cleared; 4] deprecated; 5] 
                 </sch:report>
               </sch:rule>
          </pattern>
-         <ref name="att.global.attribute.syriaca-computed-start"/>
-         <ref name="att.global.attribute.syriaca-computed-end"/>
-         <ref name="att.global.attribute.syriaca-tags"/>
+         <ref name="att.global.attribute.srophecomputed-start"/>
+         <ref name="att.global.attribute.srophecomputed-end"/>
+         <ref name="att.global.attribute.srophetags"/>
          <ref name="att.global.attribute.n"/>
          <ref name="att.global.attribute.xmllang"/>
          <ref name="att.global.attribute.xmlbase"/>
@@ -4609,7 +4616,7 @@ Sample values include: 1] TEI; 2] DBK (docbook); 3] XX (unknown); 4] Schematron;
    </define>
    <define name="TEI">
       <element name="TEI">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(TEI document) contains a single TEI-conformant document, combining a single TEI header with one or more members of the model.resourceLike class. Multiple TEI elements may be combined to form a teiCorpus element. [4. Default Text Structure 15.1. Varieties of Composite Text]</a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(TEI document) contains a single TEI-conformant document, combining a single TEI header with one or more members of the model.resourceLike class. Multiple <code xmlns="http://www.w3.org/1999/xhtml">&lt;TEI&gt;</code> elements may be combined to form a <code xmlns="http://www.w3.org/1999/xhtml">&lt;teiCorpus&gt;</code> element. [4. Default Text Structure 15.1. Varieties of Composite Text]</a:documentation>
          <group>
             <ref name="teiHeader"/>
             <oneOrMore>

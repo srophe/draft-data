@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_customization.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" xmlns:srophe="http://srophe.app">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -685,7 +685,7 @@
           <remarks>
             <p>The <gi>encodingDesc</gi> element of the <gi>teiHeader</gi> is used for indicating aspects of the process of encoding 
               the text. Although our person and place data are "born digital," they nevertheless have certain editorial decisions 
-              regarding how they have used data derived from print resources, and certain tags available for use in our <att>syriaca-tags</att> 
+              regarding how they have used data derived from print resources, and certain tags available for use in our <att>srophe:tags</att> 
               attribute. Those sorts of details are encoded here.</p>
           </remarks>
         </elementSpec>
@@ -888,7 +888,7 @@
                 <change who="http://syriaca.org/documentation/editors.xml#wsalesky" when="2016-08-17-04:00">Update persName texts nodes from new headwords.</change>
                 <change who="http://syriaca.org/documentation/editors.xml#wsalesky" when="2016-07-08-05:00">Create English headword from Gedesh headword.</change>
                 <change who="http://syriaca.org/documentation/editors.xml#wsalesky" when="2014-10-15-04:00">ADDED: Renumbered bibl xml:id attributes and source references to be sequential.</change>
-                <change who="http://syriaca.org/documentation/editors.xml#wsalesky" when="2014-10-15-04:00">ADDED: syriaca-computed-end for elements with date attributes</change>
+                <change who="http://syriaca.org/documentation/editors.xml#wsalesky" when="2014-10-15-04:00">ADDED: srophe:computed-end for elements with date attributes</change>
                 <change who="http://syriaca.org/documentation/editors.xml#tcarlson" n="1.0" when="2014-07-31-05:00"> CREATED: person </change>
               </revisionDesc>
             </egXML>
@@ -896,7 +896,7 @@
           <exemplum>
             <egXML xmlns="http://www.tei-c.org/ns/Examples">
               <revisionDesc status="published">
-                <change who="http://syriaca.org/documentation/editors.xml#wsalesky" when="2014-01-14">ADDED: syriaca-computed-start and syriaca-computed-end attributes for searching</change>
+                <change who="http://syriaca.org/documentation/editors.xml#wsalesky" when="2014-01-14">ADDED: srophe:computed-start and srophe:computed-end attributes for searching</change>
                 <change who="http://syriaca.org/documentation/editors.xml#tcarlson" when="2013-12-18-05:00">CREATED: place</change>
               </revisionDesc>
             </egXML>
@@ -1041,12 +1041,12 @@
           </attList>
           <exemplum versionDate="2017-03-23">
             <egXML xmlns="http://www.tei-c.org/ns/Examples">
-              <title xml:id="name1-1" xml:lang="en" syriaca-tags="#syriaca-headword">Genesis
+              <title xml:id="name1-1" xml:lang="en" srophe:tags="#syriaca-headword">Genesis
                 (Peshitta Version)</title>
-              <title xml:id="name1-2" xml:lang="syr" syriaca-tags="#syriaca-headword"
+              <title xml:id="name1-2" xml:lang="syr" srophe:tags="#syriaca-headword"
                 source="#bib1-1">ܣܦܪܐ ܕܒܪܝܫܝܬ</title>
               <title xml:id="name1-3" xml:lang="syr" source="#bib1-1">ܣܦܪܐ ܕܒܪܝܬܐ</title>
-              <title xml:id="name1-4" xml:lang="en" type="abbreviation" syriaca-tags="#canonical"
+              <title xml:id="name1-4" xml:lang="en" type="abbreviation" srophe:tags="#canonical"
                 source="#bib1-9">Gen</title>
               <title xml:id="name1-5" xml:lang="en" source="#bib1-9">Genesis</title>
               <title xml:id="name1-6" xml:lang="syr" source="#bib1-1">ܐܣ̣ܬܝܟ ܣܦ̣ܪܐ ܗܢܐ ܩܕܡܝܐ ܕܐܘܪܝܬܐ

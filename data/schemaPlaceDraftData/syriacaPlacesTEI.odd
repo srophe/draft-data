@@ -38,19 +38,19 @@
         
         <classSpec ident="att.global" mode="change" module="tei" type="atts">
           <attList>
-            <attDef ident="computed-start" ns="srophe" mode="add">
+            <attDef ident="srophe:computed-start" ns="http://srophe.app" mode="add">
               <desc>start date</desc>
               <datatype maxOccurs="unbounded" minOccurs="1">
                 <rng:text xmlns:rng="http://relaxng.org/ns/structure/1.0"/>
               </datatype>
             </attDef>
-            <attDef ident="computed-end" ns="srophe" mode="add">
+            <attDef ident="srophe:computed-end" ns="http://srophe.app" mode="add">
               <desc>End date</desc>
               <datatype maxOccurs="unbounded" minOccurs="1">
                 <rng:text xmlns:rng="http://relaxng.org/ns/structure/1.0"/>
               </datatype>
             </attDef>
-            <attDef ident="tags" ns="srophe" mode="add">
+            <attDef ident="srophe:tags" ns="http://srophe.app" mode="add">
               <desc>tags usable</desc>
               <datatype maxOccurs="unbounded" minOccurs="1">
                 <rng:text xmlns:rng="http://relaxng.org/ns/structure/1.0"/>

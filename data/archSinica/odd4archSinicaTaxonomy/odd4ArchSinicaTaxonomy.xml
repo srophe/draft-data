@@ -34,7 +34,7 @@
 
       <schemaSpec ident="taxonomy" source="tei:current" start="TEI">
 
-        <moduleRef key="core" include="bibl date editor gloss listBibl name note p ref resp respStmt term title"/>
+        <moduleRef key="core" include="bibl date editor foreign gloss listBibl name note p ref resp respStmt term title"/>
         <moduleRef key="tei"/>
         <moduleRef key="header"/>
         <moduleRef key="textstructure" include="body div TEI text"/>
@@ -54,6 +54,7 @@
               <valList type="closed">
                 <valItem ident="en"/>
                 <valItem ident="zh"/>
+                <valItem ident="zh-Hant"></valItem>
               </valList>
             </attDef>
           </attList>

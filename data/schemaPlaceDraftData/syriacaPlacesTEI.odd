@@ -1536,6 +1536,10 @@
             </sequence>
           </content>
           <constraintSpec ident="xmlID-on-bibl" scheme="schematron">
+            <!-- listBibl
+              Add option of using bibl or listBibl in cases where you want more than one bibl in a footnote: 
+              https://docs.google.com/document/d/1fVb9ByB9L03YGk_E-hX_u1ucPMdwKGMpk901UQJfz0Y/edit#heading=h.95atzxjnq386. 
+            -->
             <constraint>
               <sch:rule context="//tei:place/tei:bibl">
                 <sch:let name="docURIno" value="//tei:publicationStmt/tei:idno/substring-before(substring-after(substring-after(., 'http://syriaca.org/'), '/'), '/tei')"/>

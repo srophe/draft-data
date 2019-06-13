@@ -1396,6 +1396,9 @@
         </elementSpec>
 
         <elementSpec ident="relation" module="namesdates" mode="change">
+          <content>
+            <elementRef key="desc" minOccurs="0" maxOccurs="1"/>
+          </content>
           <constraintSpec ident="atts-on-relation" scheme="schematron">
             <constraint>
               <sch:rule context="//tei:body//tei:relation">

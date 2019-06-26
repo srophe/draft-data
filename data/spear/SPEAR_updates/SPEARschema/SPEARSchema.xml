@@ -49,25 +49,6 @@
         <moduleRef key="namesdates"
           include="birth death education event langKnowledge langKnown listEvent listPerson listRelation nationality occupation orgName persName person personGrp placeName relation residence socecStatus state trait"/>
 
-        <classSpec ident="att.global" type="atts" mode="change" module="tei">
-          <attList>
-            <attDef ident="uri" mode="add">
-              <gloss>Provides a URI that identifies the data contained inside the element</gloss>
-              <desc>Syriaca.org's robust use of URIs requires the ability to apply stable W3C
-                compliant coolURIs to discrete sections of a TEI document. The @xml:id is not sufficient
-                for this purpose. This attribute is designed to accomplish this task.</desc>
-              <datatype>
-                <dataRef key="teidata.pointer"/>
-                <!-- remove @uri customization
-                  I should be using an @xml:id here. Conceptually speaking, a full URI in a attribute would indicate that the div = the factoid.
-                  Instead, the div is a textual expression of the factoid, a conceptual entity.
-                  I need to use an @xml:id with the value "spear-[workURI#]-#". 
-                -->
-              </datatype>
-            </attDef>
-          </attList>
-        </classSpec>
-
         <classSpec ident="att.datable.w3c" type="atts" mode="change" module="tei">
           <attList>
             <attDef ident="syriaca-computed-start" mode="add"><!-- CHANGE THIS AND DATA TO SROPHE:COMPUTED-START -->
@@ -97,9 +78,7 @@
           </attList>
         </classSpec>
 
-        <!--@ana
-          For the longest time I needed to add this. All of a sudden, I don't. 2019.06.24
-          -->
+        
         <classSpec type="atts" ident="att.global.analytic" mode="add">
           <desc>I have needed to include this because it somehow disappeared from this
             customization. I do not know why this was necessary.</desc>
@@ -428,14 +407,8 @@
         </elementSpec>
 
         <elementSpec ident="biblScope" module="core" mode="change">
-          <classes mode="replace">
-            <memberOf key="model.imprintPart"/>
-          </classes>
           <attList>
-            <attDef ident="unit" mode="add" usage="req">
-              <datatype>
-                <dataRef key="teidata.enumerated"/>
-              </datatype>
+            <attDef ident="unit" usage="req" mode="change">
               <valList type="closed">
                 <valItem ident="pp">
                   <desc>the element contains a page number or page range.</desc>

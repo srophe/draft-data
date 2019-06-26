@@ -287,7 +287,7 @@
           <!-- This could be more constrained. See Gazetteer ODD. -->
           <content>
             <sequence minOccurs="0" maxOccurs="unbounded">
-              <elementRef key="title" minOccurs="1" maxOccurs="1"/>
+              <elementRef key="title" minOccurs="1" maxOccurs="2"/>
               <elementRef key="editor" minOccurs="1" maxOccurs="unbounded"/>
               <elementRef key="respStmt" minOccurs="0" maxOccurs="unbounded"/>
               <elementRef key="idno" minOccurs="1" maxOccurs="1"/>
@@ -450,7 +450,7 @@
                 <valItem ident="column">
                   <desc>the element identifies a column.</desc>
                 </valItem>
-                <valItem ident="vol"/>
+                <valItem ident="volume"/>
               </valList>
             </attDef>
           </attList>

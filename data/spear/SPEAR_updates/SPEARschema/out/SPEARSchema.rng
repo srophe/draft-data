@@ -1,11 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <grammar xmlns="http://relaxng.org/ns/structure/1.0"
          xmlns:xlink="http://www.w3.org/1999/xlink"
          xmlns:tei="http://www.tei-c.org/ns/1.0"
          xmlns:teix="http://www.tei-c.org/ns/Examples"
          datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"
          ns="http://www.tei-c.org/ns/1.0"><!--
-Schema generated from ODD source 2019-06-26T20:50:51Z. .
+Schema generated from ODD source 2019-06-26T20:57:44Z. .
 TEI Edition: Version 3.5.0. Last updated on
 	29th January 2019, revision 3c0c64ec4
 TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 3.5.0/
@@ -356,6 +356,7 @@ TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 3.5.0/
                 xmlns="http://www.tei-c.org/ns/1.0"
                 xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                 xmlns:syriaca="http://syriaca.org/#schema"
+                xmlns:srophe="https://srophe.app"
                 context="tei:*[@when]">
         <sch:report test="@notBefore|@notAfter|@from|@to" role="nonfatal">The @when attribute cannot be used with any other att.datable.w3c attributes.</sch:report>
       </sch:rule>
@@ -366,6 +367,7 @@ TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 3.5.0/
                 xmlns="http://www.tei-c.org/ns/1.0"
                 xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                 xmlns:syriaca="http://syriaca.org/#schema"
+                xmlns:srophe="https://srophe.app"
                 context="tei:*[@from]">
         <sch:report test="@notBefore" role="nonfatal">The @from and @notBefore attributes cannot be used together.</sch:report>
       </sch:rule>
@@ -376,6 +378,7 @@ TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 3.5.0/
                 xmlns="http://www.tei-c.org/ns/1.0"
                 xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                 xmlns:syriaca="http://syriaca.org/#schema"
+                xmlns:srophe="https://srophe.app"
                 context="tei:*[@to]">
         <sch:report test="@notAfter" role="nonfatal">The @to and @notAfter attributes cannot be used together.</sch:report>
       </sch:rule>
@@ -401,6 +404,7 @@ TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 3.5.0/
                 xmlns="http://www.tei-c.org/ns/1.0"
                 xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                 xmlns:syriaca="http://syriaca.org/#schema"
+                xmlns:srophe="https://srophe.app"
                 context="tei:*[@calendar]">
             <sch:assert test="string-length(.) gt 0">
 @calendar indicates the system or calendar to which the date represented by the content of this element
@@ -895,6 +899,7 @@ Suggested values include: 1] below; 2] bottom; 3] margin; 4] top; 5] opposite; 6
                 xmlns="http://www.tei-c.org/ns/1.0"
                 xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                 xmlns:syriaca="http://syriaca.org/#schema"
+                xmlns:srophe="https://srophe.app"
                 context="tei:*[@subtype]">
         <sch:assert test="@type">The <sch:name/> element should not be categorized in detail with @subtype unless also categorized in general with @type</sch:assert>
       </sch:rule>
@@ -925,6 +930,7 @@ Suggested values include: 1] below; 2] bottom; 3] margin; 4] top; 5] opposite; 6
                 xmlns="http://www.tei-c.org/ns/1.0"
                 xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                 xmlns:syriaca="http://syriaca.org/#schema"
+                xmlns:srophe="https://srophe.app"
                 context="tei:*[not(self::tei:schemaSpec)][@targetLang]">
             <sch:assert test="@target">@targetLang should only be used on <sch:name/> if @target is specified.</sch:assert>
           </sch:rule>
@@ -1036,6 +1042,7 @@ Suggested values include: 1] below; 2] bottom; 3] margin; 4] top; 5] opposite; 6
                 xmlns="http://www.tei-c.org/ns/1.0"
                 xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                 xmlns:syriaca="http://syriaca.org/#schema"
+                xmlns:srophe="https://srophe.app"
                 context="tei:*[@schemeVersion]">
             <sch:assert test="@scheme and not(@scheme = 'free')">
               @schemeVersion can only be used if @scheme is specified.
@@ -1780,6 +1787,7 @@ Suggested values include: 1] page; 2] column; 3] line; 4] book; 5] poem; 6] cant
             <rule context="tei:p">
                <report xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                        xmlns:syriaca="http://syriaca.org/#schema"
+                       xmlns:srophe="https://srophe.app"
                        test="not(ancestor::tei:floatingText) and (ancestor::tei:p or ancestor::tei:ab)          and not(parent::tei:exemplum                |parent::tei:item                |parent::tei:note                |parent::tei:q                |parent::tei:quote                |parent::tei:remarks                |parent::tei:said                |parent::tei:sp                |parent::tei:stage                |parent::tei:cell                |parent::tei:figure                )">
         Abstract model violation: Paragraphs may not occur inside other paragraphs or ab elements.
       </report>
@@ -1790,6 +1798,7 @@ Suggested values include: 1] page; 2] column; 3] line; 4] book; 5] poem; 6] cant
             <rule context="tei:p">
                <report xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                        xmlns:syriaca="http://syriaca.org/#schema"
+                       xmlns:srophe="https://srophe.app"
                        test="ancestor::tei:l[not(.//tei:note//tei:p[. = current()])]">
         Abstract model violation: Lines may not contain higher-level structural elements such as div, p, or ab.
       </report>
@@ -1830,6 +1839,7 @@ Suggested values include: 1] page; 2] column; 3] line; 4] book; 5] poem; 6] cant
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       xmlns:syriaca="http://syriaca.org/#schema"
+                      xmlns:srophe="https://srophe.app"
                       context="tei:desc">
                 <sch:report test="not(*) and string-length(normalize-space(.)) eq 0">Element of type
                   &lt;desc&gt; cannot be empty.</sch:report>
@@ -1840,6 +1850,7 @@ Suggested values include: 1] page; 2] column; 3] line; 4] book; 5] poem; 6] cant
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       xmlns:syriaca="http://syriaca.org/#schema"
+                      xmlns:srophe="https://srophe.app"
                       context="tei:desc"
                       role="warning">
                 <sch:assert test="./tei:persName or tei:placeName">The &lt;desc&gt; element should
@@ -1981,6 +1992,7 @@ Suggested values include: 1] Gregorian; 2] Seleucid</a:documentation>
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       xmlns:syriaca="http://syriaca.org/#schema"
+                      xmlns:srophe="https://srophe.app"
                       context="tei:date[parent::tei:reg]/@calendar">
                     <sch:assert test=". = 'Gregorian'">A &lt;date&gt; element inside a &lt;reg&gt;
                       element must have a @calendar attribute with a value of
@@ -1999,6 +2011,7 @@ Suggested values include: 1] Gregorian; 2] Seleucid</a:documentation>
             <rule context="tei:ptr">
                <report xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                        xmlns:syriaca="http://syriaca.org/#schema"
+                       xmlns:srophe="https://srophe.app"
                        test="@target and @cRef">Only one of the
 attributes @target and @cRef may be supplied on <name/>.</report>
             </rule>
@@ -2016,6 +2029,7 @@ attributes @target and @cRef may be supplied on <name/>.</report>
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       xmlns:syriaca="http://syriaca.org/#schema"
+                      xmlns:srophe="https://srophe.app"
                       context="tei:sourceDesc//tei:bibl[@type = 'primary']/tei:ptr/@target">
                     <sch:let name="docURIno"
                         value="//tei:publicationStmt/tei:idno[@type]/substring-after(substring-before(., '/tei'), 'spear/')"/>
@@ -2031,6 +2045,7 @@ attributes @target and @cRef may be supplied on <name/>.</report>
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       xmlns:syriaca="http://syriaca.org/#schema"
+                      xmlns:srophe="https://srophe.app"
                       context="tei:sourceDesc//tei:bibl[@type = 'urn']/tei:ptr/@target">
                     <sch:let name="docURIno"
                         value="//tei:publicationStmt/tei:idno[@type]/substring-after(substring-before(., '/tei'), 'spear/')"/>
@@ -2044,6 +2059,7 @@ attributes @target and @cRef may be supplied on <name/>.</report>
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       xmlns:syriaca="http://syriaca.org/#schema"
+                      xmlns:srophe="https://srophe.app"
                       context="//tei:body/tei:div/tei:bibl[@type = 'urn']/tei:ptr/@target">
                     <sch:let name="urnBase"
                         value="//tei:sourceDesc//tei:bibl[@type = 'urn']/tei:ptr/@target"/>
@@ -2057,6 +2073,7 @@ attributes @target and @cRef may be supplied on <name/>.</report>
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       xmlns:syriaca="http://syriaca.org/#schema"
+                      xmlns:srophe="https://srophe.app"
                       context="//tei:body//tei:bibl[@type = 'primary']/tei:ptr/@target">
                     <sch:assert test=". = //tei:sourceDesc//tei:bibl[@type = 'primary']/tei:ptr/@target"> The
                       @target attribute on the &lt;ptr&gt; element, "<sch:value-of select="."/>," is
@@ -2076,6 +2093,7 @@ attributes @target and @cRef may be supplied on <name/>.</report>
             <rule context="tei:ref">
                <report xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                        xmlns:syriaca="http://syriaca.org/#schema"
+                       xmlns:srophe="https://srophe.app"
                        test="@target and @cRef">Only one of the
 	attributes @target' and @cRef' may be supplied on <name/>
                </report>
@@ -2108,6 +2126,7 @@ attributes @target and @cRef may be supplied on <name/>.</report>
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       xmlns:syriaca="http://syriaca.org/#schema"
+                      xmlns:srophe="https://srophe.app"
                       context="tei:sourceDesc//tei:head">
                 <sch:assert test="normalize-space(.) = 'Sources for the Data in this Born Digital Prosopography'"> A &lt;head&gt; element inside the &lt;sourceDesc&gt; must contain the text node:
                   "Sources for the Data in this Born Digital Prosopography". </sch:assert>
@@ -2118,6 +2137,7 @@ attributes @target and @cRef may be supplied on <name/>.</report>
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       xmlns:syriaca="http://syriaca.org/#schema"
+                      xmlns:srophe="https://srophe.app"
                       context="tei:back//tei:head">
                 <sch:assert test="normalize-space(.) = 'Works Cited'"> A &lt;head&gt; element inside
                   the &lt;back&gt; must contain the text node: "Works Cited". </sch:assert>
@@ -2139,6 +2159,7 @@ attributes @target and @cRef may be supplied on <name/>.</report>
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       xmlns:syriaca="http://syriaca.org/#schema"
+                      xmlns:srophe="https://srophe.app"
                       context="tei:note[parent::tei:birth and preceding-sibling::tei:placeName]">
                 <sch:assert test="tei:persName">The &lt;note&gt; element in a birth place factoid
                   must contain a &lt;persName&gt; element.</sch:assert>
@@ -2151,6 +2172,7 @@ attributes @target and @cRef may be supplied on <name/>.</report>
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       xmlns:syriaca="http://syriaca.org/#schema"
+                      xmlns:srophe="https://srophe.app"
                       context="tei:note[parent::tei:birth and preceding-sibling::tei:date]">
                 <sch:assert test="tei:persName">The &lt;note&gt; element in a birth date factoid
                   must contain a &lt;persName&gt; element.</sch:assert>
@@ -2161,6 +2183,7 @@ attributes @target and @cRef may be supplied on <name/>.</report>
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       xmlns:syriaca="http://syriaca.org/#schema"
+                      xmlns:srophe="https://srophe.app"
                       context="tei:note[parent::tei:nationality and preceding-sibling::tei:placeName]">
                 <sch:assert test="tei:persName">The &lt;note&gt; element in a citizenship factoid
                   must contain a &lt;persName&gt; element.</sch:assert>
@@ -2173,6 +2196,7 @@ attributes @target and @cRef may be supplied on <name/>.</report>
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       xmlns:syriaca="http://syriaca.org/#schema"
+                      xmlns:srophe="https://srophe.app"
                       context="tei:note[parent::tei:death and preceding-sibling::tei:placeName]">
                 <sch:assert test="tei:persName">The &lt;note&gt; element in a death place factoid
                   must contain a &lt;persName&gt; element.</sch:assert>
@@ -2185,6 +2209,7 @@ attributes @target and @cRef may be supplied on <name/>.</report>
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       xmlns:syriaca="http://syriaca.org/#schema"
+                      xmlns:srophe="https://srophe.app"
                       context="tei:note[parent::tei:education]">
                 <sch:assert test="tei:persName">The &lt;note&gt; element in an education factoid
                   must contain a &lt;persName&gt; element.</sch:assert>
@@ -2195,6 +2220,7 @@ attributes @target and @cRef may be supplied on <name/>.</report>
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       xmlns:syriaca="http://syriaca.org/#schema"
+                      xmlns:srophe="https://srophe.app"
                       context="tei:note[parent::tei:death and preceding-sibling::tei:date]">
                 <sch:assert test="tei:persName">The &lt;note&gt; element in a death date factoid
                   must contain a &lt;persName&gt; element.</sch:assert>
@@ -2205,6 +2231,7 @@ attributes @target and @cRef may be supplied on <name/>.</report>
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       xmlns:syriaca="http://syriaca.org/#schema"
+                      xmlns:srophe="https://srophe.app"
                       context="tei:note[parent::tei:occupation]">
                 <sch:assert test="tei:persName">The &lt;note&gt; element in an occupation factoid
                   must contain a &lt;persName&gt; element.</sch:assert>
@@ -2215,6 +2242,7 @@ attributes @target and @cRef may be supplied on <name/>.</report>
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       xmlns:syriaca="http://syriaca.org/#schema"
+                      xmlns:srophe="https://srophe.app"
                       context="tei:note[parent::tei:residence and preceding-sibling::tei:placeName]">
                 <sch:assert test="tei:persName">The &lt;note&gt; element in a residence factoid must
                   contain a &lt;persName&gt; element.</sch:assert>
@@ -2227,6 +2255,7 @@ attributes @target and @cRef may be supplied on <name/>.</report>
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       xmlns:syriaca="http://syriaca.org/#schema"
+                      xmlns:srophe="https://srophe.app"
                       context="tei:note[parent::tei:socecStatus]">
                 <sch:assert test="tei:persName">The &lt;note&gt; element in a socioeconomic status
                   factoid must contain a &lt;persName&gt; element.</sch:assert>
@@ -2237,6 +2266,7 @@ attributes @target and @cRef may be supplied on <name/>.</report>
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       xmlns:syriaca="http://syriaca.org/#schema"
+                      xmlns:srophe="https://srophe.app"
                       context="tei:note[parent::tei:langKnowledge and preceding-sibling::tei:langKnown]">
                 <sch:assert test="tei:persName">The &lt;note&gt; element in a language-known factoid
                   must contain a &lt;persName&gt; element.</sch:assert>
@@ -2247,6 +2277,7 @@ attributes @target and @cRef may be supplied on <name/>.</report>
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       xmlns:syriaca="http://syriaca.org/#schema"
+                      xmlns:srophe="https://srophe.app"
                       context="tei:note[parent::tei:trait]">
                 <sch:assert test="tei:persName">The &lt;note&gt; element inside the &lt;trait&gt;
                   element must contain a &lt;persName&gt; element.</sch:assert>
@@ -2257,6 +2288,7 @@ attributes @target and @cRef may be supplied on <name/>.</report>
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       xmlns:syriaca="http://syriaca.org/#schema"
+                      xmlns:srophe="https://srophe.app"
                       context="tei:note[parent::tei:state]">
                 <sch:assert test="tei:persName">The &lt;note&gt; element inside the &lt;state&gt;
                   element must contain a &lt;persName&gt; element.</sch:assert>
@@ -2267,6 +2299,7 @@ attributes @target and @cRef may be supplied on <name/>.</report>
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       xmlns:syriaca="http://syriaca.org/#schema"
+                      xmlns:srophe="https://srophe.app"
                       context="tei:note[parent::tei:reg and preceding-sibling::tei:date]">
                 <sch:assert test="@ana">This &lt;note&gt; element requires an @ana
                   attribute.</sch:assert>
@@ -2277,6 +2310,7 @@ attributes @target and @cRef may be supplied on <name/>.</report>
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       xmlns:syriaca="http://syriaca.org/#schema"
+                      xmlns:srophe="https://srophe.app"
                       context="tei:note[parent::tei:reg and preceding-sibling::tei:date]">
                 <sch:assert test="normalize-space(.) = 'This regularized date was calculated by the SPEAR editor from a non-calendrical dating system such as regnal years, etc.'"> The only note allowed in this context must contain the following text: "This
                   regularized date was calculated by the SPEAR editor from a non-calendrical dating
@@ -2303,6 +2337,7 @@ attributes @target and @cRef may be supplied on <name/>.</report>
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       xmlns:syriaca="http://syriaca.org/#schema"
+                      xmlns:srophe="https://srophe.app"
                       context="tei:div/tei:note">
                     <sch:assert test="@type = 'incerta' or 'dubia' or 'errata'">Only notes of @type "incerta", "dubia", or
                       "errata" may appear as children of a &lt;div&gt; element.</sch:assert>
@@ -2313,6 +2348,7 @@ attributes @target and @cRef may be supplied on <name/>.</report>
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       xmlns:syriaca="http://syriaca.org/#schema"
+                      xmlns:srophe="https://srophe.app"
                       context="tei:note[parent::tei:birth or parent::tei:death or parent::tei:education or parent::tei:langKnowledge or parent::tei:nationality or parent::occupation or parent::tei:residence or parent::tei:socecStatus or parent::tei:state or parent::tei:trait]">
                     <sch:assert test="@type = 'desc'">Elements of type &lt;note&gt; must contain the
                       attribute @type="desc" and other &lt;note&gt; types are not allowed in this context.
@@ -2581,6 +2617,7 @@ Sample values include: 1] main; 2] sub (subordinate); 3] alt (alternate); 4] sho
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       xmlns:syriaca="http://syriaca.org/#schema"
+                      xmlns:srophe="https://srophe.app"
                       context="tei:back//tei:bibl">
                 <sch:assert test="@xml:id">A &lt;bibl&gt; element in the back matter must contain an
                   @xml:id attribute.</sch:assert>
@@ -2591,6 +2628,7 @@ Sample values include: 1] main; 2] sub (subordinate); 3] alt (alternate); 4] sho
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       xmlns:syriaca="http://syriaca.org/#schema"
+                      xmlns:srophe="https://srophe.app"
                       context="tei:back//tei:bibl/@xml:id">
                 <sch:let name="docURIno"
                         value="//tei:publicationStmt/tei:idno[@type]/substring-after(substring-before(., '/tei'), 'spear/')"/>
@@ -2768,6 +2806,7 @@ Sample values include: 1] main; 2] sub (subordinate); 3] alt (alternate); 4] sho
                       xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       xmlns:syriaca="http://syriaca.org/#schema"
+                      xmlns:srophe="https://srophe.app"
                       context="//tei:publicationStmt/tei:authority">
                 <sch:assert test="matches(., 'Syriaca.org: The Syriac Reference Portal')">
                   The &lt;authority&gt; element should contain the text: "Syriaca.org: The Syriac Reference Portal."
@@ -2796,6 +2835,7 @@ Sample values include: 1] main; 2] sub (subordinate); 3] alt (alternate); 4] sho
                       xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       xmlns:syriaca="http://syriaca.org/#schema"
+                      xmlns:srophe="https://srophe.app"
                       context="tei:div[ancestor::tei:body]/tei:idno">
                 <sch:assert test="@type='URI'">An &lt;idno&gt; elements inside a factoid &lt;div&gt;
                   requires a @type attribute with the value "URI".</sch:assert>
@@ -2808,6 +2848,7 @@ Sample values include: 1] main; 2] sub (subordinate); 3] alt (alternate); 4] sho
                       xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       xmlns:syriaca="http://syriaca.org/#schema"
+                      xmlns:srophe="https://srophe.app"
                       context="//tei:publicationStmt/tei:idno[@type='URI']">
                 <sch:let name="fileNo" value="replace(document-uri(/), '[\D]', '')"/>
                 <sch:assert test=". = concat('http://syriaca.org/spear/', $fileNo, '/tei')">
@@ -2822,6 +2863,7 @@ Sample values include: 1] main; 2] sub (subordinate); 3] alt (alternate); 4] sho
                       xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       xmlns:syriaca="http://syriaca.org/#schema"
+                      xmlns:srophe="https://srophe.app"
                       context="tei:div[ancestor::tei:body]/tei:idno">
                 <sch:let name="factoidNo"
                         value="parent::tei:div/@xml:id/substring-after(., 'factoid')"/>
@@ -2877,6 +2919,7 @@ Sample values include: 1] main; 2] sub (subordinate); 3] alt (alternate); 4] sho
                       xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       xmlns:syriaca="http://syriaca.org/#schema"
+                      xmlns:srophe="https://srophe.app"
                       context="//tei:licence">
                 <sch:assert test="matches(/tei:p, 'Distributed under a Creative Commons Attribution 3.0 Unported License.')">
                   The &lt;licence&gt; element must contain a &lt;p&gt; element with the text: "Distributed under a Creative Commons Attribution 3.0 Unported License."
@@ -2947,6 +2990,7 @@ Sample values include: 1] main; 2] sub (subordinate); 3] alt (alternate); 4] sho
                       xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       xmlns:syriaca="http://syriaca.org/#schema"
+                      xmlns:srophe="https://srophe.app"
                       context="//tei:sourceDesc">
                 <sch:assert test="matches(/tei:listBibl/tei:head, 'Sources for the Data in this Born Digital Prosopography'">
                   The &lt;soruceDesc&gt; element must contain a &lt;listBibl&gt; element containing a &lt;head&gt; element with the text: "Sources for the Data in this Born Digital Prosopography"
@@ -3138,6 +3182,7 @@ Sample values include: 1] main; 2] sub (subordinate); 3] alt (alternate); 4] sho
                        xmlns:rng="http://relaxng.org/ns/structure/1.0"
                        xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                        xmlns:syriaca="http://syriaca.org/#schema"
+                       xmlns:srophe="https://srophe.app"
                        test="not(@marks) and not (tei:p)">
 On <name/>, either the @marks attribute should be used, or a paragraph of description provided</report>
             </rule>
@@ -4035,6 +4080,7 @@ Suggested values include: 1] sent; 2] received; 3] transmitted; 4] redirected; 5
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       xmlns:syriaca="http://syriaca.org/#schema"
+                      xmlns:srophe="https://srophe.app"
                       context="tei:div[ancestor::tei:body]">
                 <sch:assert test="@xml:id">Elements of type &lt;div&gt; within the &lt;body&gt; element
                   require an @xml:id attribute.</sch:assert>
@@ -4049,6 +4095,7 @@ Suggested values include: 1] sent; 2] received; 3] transmitted; 4] redirected; 5
             <rule context="tei:div">
                <report xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                        xmlns:syriaca="http://syriaca.org/#schema"
+                       xmlns:srophe="https://srophe.app"
                        test="ancestor::tei:l">
         Abstract model violation: Lines may not contain higher-level structural elements such as div.
       </report>
@@ -4059,6 +4106,7 @@ Suggested values include: 1] sent; 2] received; 3] transmitted; 4] redirected; 5
             <rule context="tei:div">
                <report xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                        xmlns:syriaca="http://syriaca.org/#schema"
+                       xmlns:srophe="https://srophe.app"
                        test="ancestor::tei:p or ancestor::tei:ab and not(ancestor::tei:floatingText)">
         Abstract model violation: p and ab may not contain higher-level structural elements such as div.
       </report>
@@ -4378,6 +4426,7 @@ Suggested values include: 1] sent; 2] received; 3] transmitted; 4] redirected; 5
                <sch:assert xmlns="http://www.tei-c.org/ns/1.0"
                            xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                            xmlns:syriaca="http://syriaca.org/#schema"
+                           xmlns:srophe="https://srophe.app"
                            test="starts-with(., 'http://syriaca.org/person/')">@ref attributes on
                     &lt;persName&gt; elements must contain a properly formatted Syriaca.org person
                     URI that starts with 'http://syriaca.org/person/'.</sch:assert>
@@ -4389,6 +4438,7 @@ Suggested values include: 1] sent; 2] received; 3] transmitted; 4] redirected; 5
                <sch:report xmlns="http://www.tei-c.org/ns/1.0"
                            xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                            xmlns:syriaca="http://syriaca.org/#schema"
+                           xmlns:srophe="https://srophe.app"
                            test="matches(substring-after(., 'person/'), '\D')">A properly
                     formatted Syriaca.org person URI cannot end with anything other than a
                     number.</sch:report>
@@ -4400,6 +4450,7 @@ Suggested values include: 1] sent; 2] received; 3] transmitted; 4] redirected; 5
                <sch:assert xmlns="http://www.tei-c.org/ns/1.0"
                            xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                            xmlns:syriaca="http://syriaca.org/#schema"
+                           xmlns:srophe="https://srophe.app"
                            test="matches(substring-after(., 'person/'), '\d')">A properly
                     formatted Syriaca.org person URI ends with a number.</sch:assert>
             </rule>
@@ -4421,6 +4472,7 @@ Suggested values include: 1] sent; 2] received; 3] transmitted; 4] redirected; 5
                <sch:assert xmlns="http://www.tei-c.org/ns/1.0"
                            xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                            xmlns:syriaca="http://syriaca.org/#schema"
+                           xmlns:srophe="https://srophe.app"
                            test="starts-with(., 'http://syriaca.org/place/')">@ref attributes on
                     &lt;placeName&gt; elements must contain a properly formatted Syriaca.org place
                     URI that starts with 'http://syriaca.org/place/'.</sch:assert>
@@ -4432,6 +4484,7 @@ Suggested values include: 1] sent; 2] received; 3] transmitted; 4] redirected; 5
                <sch:report xmlns="http://www.tei-c.org/ns/1.0"
                            xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                            xmlns:syriaca="http://syriaca.org/#schema"
+                           xmlns:srophe="https://srophe.app"
                            test="matches(substring-after(., 'place/'), '\D')">A properly
                     formatted Syriaca.org place URI ends with a number.</sch:report>
             </rule>
@@ -4442,6 +4495,7 @@ Suggested values include: 1] sent; 2] received; 3] transmitted; 4] redirected; 5
                <sch:assert xmlns="http://www.tei-c.org/ns/1.0"
                            xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                            xmlns:syriaca="http://syriaca.org/#schema"
+                           xmlns:srophe="https://srophe.app"
                            test="matches(substring-after(., 'place/'), '\d')">A properly
                     formatted Syriaca.org person URI ends with a number.</sch:assert>
             </rule>
@@ -4518,6 +4572,7 @@ Suggested values include: 1] sent; 2] received; 3] transmitted; 4] redirected; 5
                <sch:assert xmlns="http://www.tei-c.org/ns/1.0"
                            xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                            xmlns:syriaca="http://syriaca.org/#schema"
+                           xmlns:srophe="https://srophe.app"
                            test="starts-with(., 'http://syriaca.org/keyword/')">An @ana attribute
                     on the &lt;education&gt; element must point to a Syriaca.org keyword beginning
                     with "http://syriaca.org/keyword/".</sch:assert>
@@ -4528,6 +4583,7 @@ Suggested values include: 1] sent; 2] received; 3] transmitted; 4] redirected; 5
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       xmlns:syriaca="http://syriaca.org/#schema"
+                      xmlns:srophe="https://srophe.app"
                       context="tei:education/@ana"
                       role="warning">
                     <sch:let name="ti"
@@ -4552,6 +4608,7 @@ Suggested values include: 1] sent; 2] received; 3] transmitted; 4] redirected; 5
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       xmlns:syriaca="http://syriaca.org/#schema"
+                      xmlns:srophe="https://srophe.app"
                       context="tei:event/@ana">
                 <sch:assert test="count(distinct-values(tokenize(., ' '))) = count(tokenize(., ' '))">
                   The same keyword URI may not appear twice as the value of the @ana attribute. </sch:assert>
@@ -4592,6 +4649,7 @@ Suggested values include: 1] sent; 2] received; 3] transmitted; 4] redirected; 5
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       xmlns:syriaca="http://syriaca.org/#schema"
+                      xmlns:srophe="https://srophe.app"
                       context="tei:langKnown/@ana"
                       role="warning">
                 <sch:let name="ti"
@@ -4675,6 +4733,7 @@ Suggested values include: 1] sent; 2] received; 3] transmitted; 4] redirected; 5
                <sch:assert xmlns="http://www.tei-c.org/ns/1.0"
                            xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                            xmlns:syriaca="http://syriaca.org/#schema"
+                           xmlns:srophe="https://srophe.app"
                            test="starts-with(., 'http://syriaca.org/keyword/')">An @ana attribute
                     on the &lt;education&gt; element must point to a Syriaca.org keyword beginning
                     with "http://syriaca.org/keyword/".</sch:assert>
@@ -4685,6 +4744,7 @@ Suggested values include: 1] sent; 2] received; 3] transmitted; 4] redirected; 5
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       xmlns:syriaca="http://syriaca.org/#schema"
+                      xmlns:srophe="https://srophe.app"
                       context="tei:occupation/@ana"
                       role="warning">
                     <sch:let name="ti"
@@ -4870,6 +4930,7 @@ Suggested values include: 1] sent; 2] received; 3] transmitted; 4] redirected; 5
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       xmlns:syriaca="http://syriaca.org/#schema"
+                      xmlns:srophe="https://srophe.app"
                       context="tei:div/tei:listRelation/tei:relation">
                 <sch:let name="ti"
                         value="doc('https://raw.githubusercontent.com/srophe/srophe-app-data/dev/data/subjects/taxonomyIndex.xml')"/>
@@ -4896,6 +4957,7 @@ Suggested values include: 1] sent; 2] received; 3] transmitted; 4] redirected; 5
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       xmlns:syriaca="http://syriaca.org/#schema"
+                      xmlns:srophe="https://srophe.app"
                       context="tei:div/tei:listEvent/tei:listRelation/tei:relation">
                 <sch:assert test="@mutual">A @mutual attribute is required on &lt;relation&gt;
                   elements in event factoids.</sch:assert>
@@ -4910,6 +4972,7 @@ Suggested values include: 1] sent; 2] received; 3] transmitted; 4] redirected; 5
             <rule context="tei:relation">
                <assert xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                        xmlns:syriaca="http://syriaca.org/#schema"
+                       xmlns:srophe="https://srophe.app"
                        test="@ref or @key or @name">One of the attributes  'name', 'ref' or 'key' must be supplied</assert>
             </rule>
          </pattern>
@@ -4918,6 +4981,7 @@ Suggested values include: 1] sent; 2] received; 3] transmitted; 4] redirected; 5
             <rule context="tei:relation">
                <report xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                        xmlns:syriaca="http://syriaca.org/#schema"
+                       xmlns:srophe="https://srophe.app"
                        test="@active and @mutual">Only one of the attributes @active and @mutual may be supplied</report>
             </rule>
          </pattern>
@@ -4926,6 +4990,7 @@ Suggested values include: 1] sent; 2] received; 3] transmitted; 4] redirected; 5
             <rule context="tei:relation">
                <report xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                        xmlns:syriaca="http://syriaca.org/#schema"
+                       xmlns:srophe="https://srophe.app"
                        test="@passive and not(@active)">the attribute 'passive' may be supplied only if the attribute 'active' is supplied</report>
             </rule>
          </pattern>
@@ -4946,6 +5011,7 @@ Suggested values include: 1] sent; 2] received; 3] transmitted; 4] redirected; 5
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       xmlns:syriaca="http://syriaca.org/#schema"
+                      xmlns:srophe="https://srophe.app"
                       context="tei:div/tei:listEvent/tei:listRelation/tei:relation">
                     <sch:report test="@type">A &lt;relation&gt; element inside an event factoid
                       cannot take a @type attribute.</sch:report>
@@ -4956,6 +5022,7 @@ Suggested values include: 1] sent; 2] received; 3] transmitted; 4] redirected; 5
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       xmlns:syriaca="http://syriaca.org/#schema"
+                      xmlns:srophe="https://srophe.app"
                       context="tei:div/tei:listRelation/tei:relation/@type">
                     <sch:let name="ti"
                         value="doc('https://raw.githubusercontent.com/srophe/srophe-app-data/dev/data/subjects/taxonomyIndex.xml')"/>
@@ -4970,6 +5037,7 @@ Suggested values include: 1] sent; 2] received; 3] transmitted; 4] redirected; 5
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       xmlns:syriaca="http://syriaca.org/#schema"
+                      xmlns:srophe="https://srophe.app"
                       context="tei:sourceDesc/tei:listRelation/tei:relation/@type">
                     <sch:assert test=". = 'part'">This @type attribute must have the value
                       "part".</sch:assert>
@@ -4992,6 +5060,7 @@ Suggested values include: 1] sent; 2] received; 3] transmitted; 4] redirected; 5
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       xmlns:syriaca="http://syriaca.org/#schema"
+                      xmlns:srophe="https://srophe.app"
                       context="tei:div/tei:listEvent/tei:listRelation/tei:relation">
                     <sch:assert test="@ana">A &lt;relation&gt; element inside an event factoid must
                       have an @ana attribute.</sch:assert>
@@ -5002,6 +5071,7 @@ Suggested values include: 1] sent; 2] received; 3] transmitted; 4] redirected; 5
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       xmlns:syriaca="http://syriaca.org/#schema"
+                      xmlns:srophe="https://srophe.app"
                       context="tei:div/tei:listEvent/tei:listRelation/tei:relation/@ana">
                     <sch:assert test=". = 'event'">A &lt;relation&gt; element inside an event
                       factoid must have an @ana attribute with a value of "event".</sch:assert>
@@ -5012,6 +5082,7 @@ Suggested values include: 1] sent; 2] received; 3] transmitted; 4] redirected; 5
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       xmlns:syriaca="http://syriaca.org/#schema"
+                      xmlns:srophe="https://srophe.app"
                       context="tei:div/tei:listRelation/tei:relation">
                     <sch:report test="@ana">The @ana attribute cannot appear in a relation factoid.
                       It may only be used in a &lt;relation&gt; element describing a relationship
@@ -5029,6 +5100,7 @@ Suggested values include: 1] sent; 2] received; 3] transmitted; 4] redirected; 5
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       xmlns:syriaca="http://syriaca.org/#schema"
+                      xmlns:srophe="https://srophe.app"
                       context="tei:div/tei:listRelation/tei:relation/@ref">
                     <sch:let name="ti"
                         value="doc('https://raw.githubusercontent.com/srophe/srophe-app-data/dev/data/subjects/taxonomyIndex.xml')"/>
@@ -5041,6 +5113,7 @@ Suggested values include: 1] sent; 2] received; 3] transmitted; 4] redirected; 5
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       xmlns:syriaca="http://syriaca.org/#schema"
+                      xmlns:srophe="https://srophe.app"
                       context="tei:div/tei:listEvent/tei:listRelation/tei:relation/@ref">
                     <sch:let name="ti"
                         value="doc('https://raw.githubusercontent.com/srophe/srophe-app-data/dev/data/subjects/taxonomyIndex.xml')"/>
@@ -5127,6 +5200,7 @@ Suggested values include: 1] sent; 2] received; 3] transmitted; 4] redirected; 5
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       xmlns:syriaca="http://syriaca.org/#schema"
+                      xmlns:srophe="https://srophe.app"
                       context="tei:div/tei:listRelation/tei:relation/@passive">
                     <sch:assert test="every $i in (tokenize(., ' ')) satisfies starts-with($i, 'http://syriaca.org/person/')">@passive attributes on &lt;relation&gt; elements of relation factoids must
                       contain a properly formatted Syriaca.org person URI that starts with
@@ -5168,6 +5242,7 @@ Suggested values include: 1] sent; 2] received; 3] transmitted; 4] redirected; 5
                <sch:assert xmlns="http://www.tei-c.org/ns/1.0"
                            xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                            xmlns:syriaca="http://syriaca.org/#schema"
+                           xmlns:srophe="https://srophe.app"
                            test="starts-with(., 'http://syriaca.org/keyword/')">An @ana attribute
                     on the &lt;education&gt; element must point to a Syriaca.org keyword beginning
                     with "http://syriaca.org/keyword/".</sch:assert>
@@ -5178,6 +5253,7 @@ Suggested values include: 1] sent; 2] received; 3] transmitted; 4] redirected; 5
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       xmlns:syriaca="http://syriaca.org/#schema"
+                      xmlns:srophe="https://srophe.app"
                       context="tei:socecStatus/@ana"
                       role="warning">
                     <sch:let name="ti"
@@ -5211,6 +5287,7 @@ Suggested values include: 1] sent; 2] received; 3] transmitted; 4] redirected; 5
                <sch:assert xmlns="http://www.tei-c.org/ns/1.0"
                            xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                            xmlns:syriaca="http://syriaca.org/#schema"
+                           xmlns:srophe="https://srophe.app"
                            test="starts-with(., 'http://syriaca.org/keyword/')">An @ana attribute
                     on the &lt;state&gt; element must point to a Syriaca.org keyword beginning with
                     "http://syriaca.org/keyword/".</sch:assert>
@@ -5221,6 +5298,7 @@ Suggested values include: 1] sent; 2] received; 3] transmitted; 4] redirected; 5
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       xmlns:syriaca="http://syriaca.org/#schema"
+                      xmlns:srophe="https://srophe.app"
                       context="tei:state[@type = 'mental']/@ana"
                       role="warning">
                     <sch:let name="ti"
@@ -5238,6 +5316,7 @@ Suggested values include: 1] sent; 2] received; 3] transmitted; 4] redirected; 5
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       xmlns:syriaca="http://syriaca.org/#schema"
+                      xmlns:srophe="https://srophe.app"
                       context="tei:state[@type = 'sanctity']/@ana"
                       role="warning">
                     <sch:let name="ti"
@@ -5291,6 +5370,7 @@ Suggested values include: 1] sent; 2] received; 3] transmitted; 4] redirected; 5
                <sch:assert xmlns="http://www.tei-c.org/ns/1.0"
                            xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                            xmlns:syriaca="http://syriaca.org/#schema"
+                           xmlns:srophe="https://srophe.app"
                            test="starts-with(., 'http://syriaca.org/keyword/')">An @ana attribute
                     on the &lt;trait&gt; element must point to a Syriaca.org keyword starting with
                     "http://syriaca.org/keyword/".</sch:assert>
@@ -5301,6 +5381,7 @@ Suggested values include: 1] sent; 2] received; 3] transmitted; 4] redirected; 5
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       xmlns:syriaca="http://syriaca.org/#schema"
+                      xmlns:srophe="https://srophe.app"
                       context="tei:trait[@type = 'ethnicLabel']/@ana"
                       role="warning">
                     <sch:let name="ti"
@@ -5318,6 +5399,7 @@ Suggested values include: 1] sent; 2] received; 3] transmitted; 4] redirected; 5
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       xmlns:syriaca="http://syriaca.org/#schema"
+                      xmlns:srophe="https://srophe.app"
                       context="tei:trait[@type = 'gender']/@ana"
                       role="warning">
                     <sch:assert test="                       every $i in (tokenize(., ' '))                       satisfies $i = 'http://syriaca.org/keyword/eunuch' or $i = 'http://syriaca.org/keyword/female' or $i = 'http://syriaca.org/keyword/male' or $i = 'http://syriaca.org/keyword/nun-as-monk'">Preferred values for the @ana attribute on a &lt;trait&gt; element

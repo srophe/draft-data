@@ -407,6 +407,13 @@
         </elementSpec>
 
         <elementSpec ident="biblScope" module="core" mode="change">
+          <content>
+            <sequence minOccurs="0" maxOccurs="1">
+              <textNode/>
+              <elementRef key="title" minOccurs="0" maxOccurs="1"/>
+              <elementRef key="idno" minOccurs="0" maxOccurs="1"/>
+            </sequence>
+          </content>
           <attList>
             <attDef ident="unit" usage="req" mode="change">
               <valList type="closed">
@@ -427,12 +434,6 @@
               </valList>
             </attDef>
           </attList>
-          <remarks>
-            <p>This customization removes the &lt;biblScope&gt; element from all attribute classes
-              and requires the @unit attribute with a closed list of values. It also requires that
-              the &lt;biblscope&gt; element contain a &lt;ptr&gt; element.</p>
-            <!-- I need to look into this again because we use the unit value "pp" instead of the recommended "page" which I don't understand. -->
-          </remarks>
         </elementSpec>
 
         <elementSpec ident="citedRange" module="core" mode="replace">

@@ -7,11 +7,7 @@
             <titleStmt>
                 <title level="a">John of Ephesus, Paul the Mourner, in the Lives of the Eastern
                     Saints</title>
-                <title level="m">SPEAR: Syriac Persons, Events, and Relations</title>
-                <funder>The National Endowment for the Humanities</funder>
-                <principal>Daniel L. Schwartz</principal>
-                <funder>Texas A&amp;M University</funder>
-                <principal>Daniel L. Schwartz</principal>
+                <title type="sub">A SPEAR Prosopography</title>
                 <editor role="general" ref="http://syriaca.org/documentation/editors.xml#dschwartz"
                     >Daniel L. Schwartz</editor>
                 <editor role="creator" ref="http://syriaca.org/documentation/editors.xml#dschwartz"
@@ -77,15 +73,30 @@
             <publicationStmt>
                 <authority>Syriaca.org: The Syriac Reference Portal</authority>
                 <idno type="URI">http://syriaca.org/spear/798/tei</idno>
-                <availability default="false">
-                    <licence target="http://creativecommons.org/licenses/by/3.0/"><p part="N"
+                <availability>
+                    <licence target="http://creativecommons.org/licenses/by/3.0/"><p
                             >Distributed under a Creative Commons Attribution 3.0 Unported
                             License.</p></licence>
                 </availability>
                 <date><!-- INPUT ONCE WE HAVE A "FINAL" DRAFT --></date>
             </publicationStmt>
-            <sourceDesc default="false">
-                <listBibl default="false">
+            <seriesStmt>
+                <title level="s">SPEAR: Syriac Persons, Events, and Relations</title>
+                <editor role="general" ref="http://syriaca.org/documentation/editors.xml#dschwartz"
+                    >Daniel L. Schwartz</editor>
+                <idno type="URI">http://syriaca.org/spear</idno>
+            </seriesStmt>
+            <seriesStmt>
+                <title level="m" xml:lang="en">The Lives of the Eastern Saints</title>
+                <title type="sub">A SPEAR Prosopography</title>
+                <idno type="URI">http://syriaca.org/spear/livesEasternSaints</idno>
+                <biblScope unit="volume">
+                    <title level="s">SPEAR: Syriac Persons, Events, and Relations</title>
+                    <idno type="URI">http://syriaca.org/spear</idno>
+                </biblScope>
+            </seriesStmt>
+            <sourceDesc>
+                <listBibl>
                     <head>Sources for the Data in this Born Digital Prosopography</head>
                     <bibl type="primary"><title>Lives of the Eastern Saints I</title><title>Paul the
                             Mourner</title><author><persName ref="http://syriaca.org/person/74">John
@@ -105,8 +116,8 @@
             </sourceDesc>
         </fileDesc>
         <encodingDesc>
-            <editorialDecl default="false">
-                <p part="N">The prosopographical data in this document was encoded from E. W.
+            <editorialDecl>
+                <p>The prosopographical data in this document was encoded from E. W.
                     Brooks' edition and English translation of John of Ephesus’s Lives of the
                     Eastern Saints, Patrologia Orientalis, volume 17, 1923. </p>
             </editorialDecl>
@@ -271,7 +282,7 @@
             </div>
         </body>
         <back>
-            <listBibl default="false">
+            <listBibl>
                 <head>Works Cited</head>
                 <bibl type="primary" xml:id="bibl798-1"><title>Lives of the Eastern Saints
                         I</title><title>Paul the Mourner</title><author><persName

@@ -9,19 +9,14 @@
                 <title level="a">Severus of Antioch, Letter,<title
                         ref="http://syriaca.org/work/3013">To Jania, Deaconess and
                         Archimandrite</title></title>
-                <title level="m">SPEAR: Syriac Persons, Events, and Relations</title>
-                <funder>The National Endowment for the Humanities</funder>
-                <principal>Daniel L. Schwartz</principal>
-                <funder>Texas A&amp;M University</funder>
-                <principal>Daniel L. Schwartz</principal>
+                <title type="sub">A SPEAR Prosopography</title>
                 <editor role="general" ref="http://syriaca.org/documentation/editors.xml#dschwartz"
                     >Daniel L. Schwartz</editor>
-                <editor role="general" ref="http://syriaca.org/documentation/editors.xml#dmichelson"
-                    >David A. Michelson</editor>
                 <editor role="creator" ref="http://syriaca.org/documentation/editors.xml#dschwartz"
                     >Daniel L. Schwartz</editor>
                 <respStmt>
-                    <resp/>
+                    <resp>Data architecture, data entry, editing, proofreading, and revision
+                        by</resp>
                     <name ref="http://syriaca.org/documentation/editors.xml#dschwartz">Daniel L.
                         Schwartz</name>
                 </respStmt>
@@ -32,15 +27,30 @@
             <publicationStmt>
                 <authority>Syriaca.org: The Syriac Reference Portal</authority>
                 <idno type="URI">http://syriaca.org/spear/3013/tei</idno>
-                <availability default="false">
-                    <licence target="http://creativecommons.org/licenses/by/3.0/"><p part="N"
+                <availability>
+                    <licence target="http://creativecommons.org/licenses/by/3.0/"><p
                             >Distributed under a Creative Commons Attribution 3.0 Unported
                             License.</p></licence>
                 </availability>
                 <date/>
             </publicationStmt>
-            <sourceDesc default="false">
-                <listBibl default="false">
+            <seriesStmt>
+                <title level="s">SPEAR: Syriac Persons, Events, and Relations</title>
+                <editor role="general" ref="http://syriaca.org/documentation/editors.xml#dschwartz"
+                    >Daniel L. Schwartz</editor>
+                <idno type="URI">http://syriaca.org/spear</idno>
+            </seriesStmt>
+            <seriesStmt>
+                <title level="m" xml:lang="en">The Letters of Severus of Antioch</title>
+                <title type="sub">A SPEAR Prosopography</title>
+                <idno type="URI">http://syriaca.org/spear/lettersSeverus</idno>
+                <biblScope unit="volume">
+                    <title level="s">SPEAR: Syriac Persons, Events, and Relations</title>
+                    <idno type="URI">http://syriaca.org/spear</idno>
+                </biblScope>
+            </seriesStmt>
+            <sourceDesc>
+                <listBibl>
                     <head>Sources for the Data in this Born Digital Prosopography</head>
                     <bibl type="primary"><title xml:lang="en">The Sixth Book of the Select Letters
                             of Severus, Patriarch of Antioch in the Syriac Version of Athanasius of
@@ -60,8 +70,8 @@
             </sourceDesc>
         </fileDesc>
         <encodingDesc>
-            <editorialDecl default="false">
-                <p part="N"/>
+            <editorialDecl>
+                <p/>
             </editorialDecl>
         </encodingDesc>
         <profileDesc/>
@@ -303,7 +313,7 @@
             </div>
         </body>
         <back>
-            <listBibl default="false">
+            <listBibl>
                 <head>Works Cited</head>
                 <bibl type="primary" xml:id="bibl3013-1"><title xml:lang="en">The Sixth Book of the
                         Select Letters of Severus, Patriarch of Antioch in the Syriac Version of

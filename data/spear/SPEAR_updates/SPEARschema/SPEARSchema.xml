@@ -141,7 +141,7 @@
           </content>
         </elementSpec>
         
-        <elementSpec ident="sponsor" module="header" mode="change">
+        <elementSpec ident="sponsor" module="header" mode="change"><!-- text node should not validate if blank -->
           <exemplum>
             <egXML xmlns="http://www.tei-c.org/ns/Examples">
               <titleStmt> 
@@ -284,7 +284,7 @@
             <constraint>
               <sch:rule context="//tei:sourceDesc">
                 <sch:assert test="matches(/tei:listBibl/tei:head, 'Sources for the Data in this Born Digital Prosopography')">
-                  The &lt;soruceDesc&gt; element must contain a &lt;listBibl&gt; element containing a &lt;head&gt; element with the text: "Sources for the Data in this Born Digital Prosopography"
+                  The &lt;sourceDesc&gt; element must contain a &lt;listBibl&gt; element containing a &lt;head&gt; element with the text: "Sources for the Data in this Born Digital Prosopography"
                 </sch:assert>
               </sch:rule>
             </constraint>

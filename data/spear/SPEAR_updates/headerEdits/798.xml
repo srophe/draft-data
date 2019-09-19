@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-model href="../SPEARschema/out/SPEARSchema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="../SPEARschema/out/SPEARSchema.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../SPEARschema/out/SPEAR.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../SPEARschema/out/SPEAR.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader>
         <fileDesc>
@@ -8,6 +8,7 @@
                 <title level="m" type="main">John of Ephesus, Paul the Mourner, in the Lives of the Eastern
                     Saints</title>
                 <title type="sub">A SPEAR Prosopography</title>
+                <sponsor>Syriaca.org: The Syriac Reference Portal</sponsor>
                 <editor role="general" ref="http://syriaca.org/documentation/editors.xml#dschwartz"
                     >Daniel L. Schwartz</editor>
                 <editor role="creator" ref="http://syriaca.org/documentation/editors.xml#dschwartz"
@@ -74,9 +75,11 @@
                 <authority>Syriaca.org: The Syriac Reference Portal</authority>
                 <idno type="URI">http://syriaca.org/spear/798/tei</idno>
                 <availability default="false">
-                    <licence target="http://creativecommons.org/licenses/by/3.0/"><p part="N"
-                            >Distributed under a Creative Commons Attribution 3.0 Unported
-                            License.</p></licence>
+                    <licence target="http://creativecommons.org/licenses/by/3.0/">
+                        <p>
+                            Distributed under a Creative Commons Attribution 3.0 Unported License.
+                        </p>
+                    </licence>
                 </availability>
                 <date><!-- INPUT ONCE WE HAVE A "FINAL" DRAFT --></date>
             </publicationStmt>
@@ -88,8 +91,8 @@
                     >Daniel L. Schwartz</editor>
                 <idno type="URI">http://syriaca.org/spear</idno>
             </seriesStmt>
-            <sourceDesc default="false">
-                <listBibl default="false">
+            <sourceDesc>
+                <listBibl>
                     <head>Sources for the Data in this Born Digital Prosopography</head>
                     <bibl type="primary">
                         <title>Lives of the Eastern Saints I</title>

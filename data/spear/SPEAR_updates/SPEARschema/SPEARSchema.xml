@@ -89,12 +89,7 @@
           </attList>
         </classSpec>
         
-        <!-- HEADER: THERE IS NOTHING HERE REGARDING THE HEADER.
-          The titleStmt should only allow one title. 
-          That title should be level="m" type="main"
-          Also, title type="sub"
-          A seriesStmt should be used for SPEAR: title level="s", editor role="general" ref="#me", editor role="creator" ref="#me", idno type="URI"
-        -->
+        
 
         <elementSpec ident="teiHeader" module="header" mode="change">
           <content>
@@ -130,18 +125,46 @@
         </elementSpec>
         
         <elementSpec ident="titleStmt" module="header" mode="change">
+          <!-- Children could be constrained further. -->
           <content>
             <sequence minOccurs="1" maxOccurs="1" preserveOrder="true">
-              <elementRef key="title" minOccurs="1" maxOccurs="unbounded"/>
+              <elementRef key="title" minOccurs="2" maxOccurs="2"/>
               <elementRef key="sponsor" minOccurs="1" maxOccurs="unbounded"/>
               <elementRef key="funder" minOccurs="0" maxOccurs="unbounded"/>
               <elementRef key="editor" minOccurs="1" maxOccurs="unbounded"/>
               <elementRef key="respStmt" minOccurs="1" maxOccurs="unbounded"/>
             </sequence>
           </content>
+          <constraintSpec ident="titleInTitleStmt" scheme="schematron">
+            <constraint>
+              <sch:rule context="//tei:titleStmt/tei:title[1]">
+                <sch:assert test="@level='m'">
+                  The first &lt;title&gt; element under a &lt;titleStmt&gt; element must have 
+                  @level attribute with a value of "m".
+                </sch:assert>
+                <sch:assert test="@type='main'">
+                  The first &lt;title&gt; element under a &lt;titleStmt&gt; element must have 
+                  @type attribute with a value of "main".
+                </sch:assert>
+              </sch:rule>
+              <sch:rule context="//tei:titleStmt/tei:title[2]">
+                <sch:assert test="@type='sub'">
+                  The second &lt;title&gt; element under a &lt;titleStmt&gt; element must have 
+                  @type attribute with a value of "sub".
+                </sch:assert>
+                <sch:assert test="normalize-space(.) = 'A SPEAR Prosopography'">
+                  The text node of this subtitle must be "A SPEAR Prosopography".
+                </sch:assert>
+              </sch:rule>
+            </constraint>
+          </constraintSpec>
         </elementSpec>
         
+               
         <elementSpec ident="sponsor" module="header" mode="change"><!-- text node should not validate if blank -->
+          <content>
+            <textNode/>
+          </content>
           <exemplum>
             <egXML xmlns="http://www.tei-c.org/ns/Examples">
               <titleStmt> 
@@ -156,11 +179,14 @@
               is responsible for this TEI file. Since <gi>author</gi> is typically used for the
               author of a print or manuscript text which was then encoded in TEI, we avoid the use
               of the <gi>author</gi> element. Instead, we identify Syriaca.org as the sponsoring
-              institution, </p>
+              institution.</p>
           </remarks>
         </elementSpec>
         
         <elementSpec ident="funder" module="header" mode="change">
+          <content>
+            <textNode/>
+          </content>
           <exemplum>
             <egXML xmlns="http://www.tei-c.org/ns/Examples">
               <titleStmt> 
@@ -220,7 +246,7 @@
           <constraintSpec ident="authorityText" scheme="schematron">
             <constraint>
               <sch:rule context="//tei:publicationStmt/tei:authority">
-                <sch:assert test="matches(., 'Syriaca.org: The Syriac Reference Portal')">
+                <sch:assert test="normalize-space(.) = 'Syriaca.org: The Syriac Reference Portal'">
                   The &lt;authority&gt; element should contain the text: "Syriaca.org: The Syriac Reference Portal."
                 </sch:assert>
               </sch:rule>
@@ -262,6 +288,10 @@
               indicated in the <gi>license</gi> element. </p>
           </remarks>
         </elementSpec>
+        
+        <!-- HEADER:
+          A seriesStmt should be used for SPEAR: title level="s", editor role="general" ref="#me", editor role="creator" ref="#me", idno type="URI"
+        -->
         
         <elementSpec ident="seriesStmt" module="header" mode="change">
           <!-- This could be more constrained. See Gazetteer ODD. -->
@@ -692,7 +722,7 @@
                 <valItem ident="translator"/>
               </valList>
             </attDef>
-            <attDef ident="ref" mode="add" usage="opt">
+            <attDef ident="ref" mode="add" usage="req">
               <datatype minOccurs="1">
                 <dataRef key="teidata.pointer"/>
               </datatype>

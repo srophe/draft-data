@@ -5,11 +5,27 @@
     <sch:pattern>
 
 
-   <sch:rule context="//tei:licence/tei:p">
-       <sch:assert test="matches(., 'Distributed under a Creative Commons Attribution 3.0 Unported License.')">
-           Must contain this text
+   <!--In ODD already
+       <sch:rule context="//tei:titleStmt/tei:title[1]">
+       <sch:assert test="@level='m'">
+           The first &lt;title&gt; element under a &lt;titleStmt&gt; element must have 
+           @level attribute with a value of "m".
+       </sch:assert>
+       <sch:assert test="@type='main'">
+           The first &lt;title&gt; element under a &lt;titleStmt&gt; element must have 
+           @type attribute with a value of "main".
        </sch:assert>
    </sch:rule>
+   <sch:rule context="//tei:titleStmt/tei:title[2]">
+       <sch:assert test="@type='sub'">
+           The second &lt;title&gt; element under a &lt;titleStmt&gt; element must have 
+           @type attribute with a value of "sub".
+       </sch:assert>
+       <sch:assert test="normalize-space(.) = 'A SPEAR Prosopography'">
+           The text node of this subtitle must be "A SPEAR Prosopography".
+       </sch:assert>
+   </sch:rule>-->
+   
 
 
 

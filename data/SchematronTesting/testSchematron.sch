@@ -5,6 +5,29 @@
     <sch:pattern>
 
 
+        
+        
+        <!--In ODD already
+            <sch:rule context="//tei:sourceDesc/tei:listRelation/tei:relation/@active">
+            <sch:let name="docURIno"
+                value="//tei:publicationStmt/tei:idno[@type='URI']/substring-after(substring-before(., '/tei'), 'spear/')"/>
+            <sch:assert test="matches(., concat('http://syriaca.org/work/', $docURIno))">
+                The @active attribute muar be "http://syriaca.org/work/<sch:value-of select="$docURIno"/>".
+            </sch:assert>
+        </sch:rule>
+        
+        <sch:rule context="//tei:sourceDesc/tei:listRelation/tei:relation/@passive">
+            <sch:assert test="matches(., concat('http://syriaca.org/work/', '\d+'))">
+                This @active attribute must contain a properly formatted 
+                Syriaca.org work URI ('http://syriaca.org/work/{\d+}').
+            </sch:assert>
+            <sch:report test="matches(substring-after(., 'http://syriaca.org/work/'), '\D+')">
+                Report: This @active attribute must contain a properly formatted 
+                Syriaca.org work URI ('http://syriaca.org/work/{\d+}').
+            </sch:report>
+        </sch:rule>-->
+
+
    <!--In ODD already
        <sch:rule context="//tei:titleStmt/tei:title[1]">
        <sch:assert test="@level='m'">

@@ -237,10 +237,13 @@
         </elementSpec>
         
         <elementSpec ident="licence" module="header" mode="change">
+          <content>
+            <elementRef key="p" minOccurs="1" maxOccurs="1"/>
+          </content>
           <constraintSpec ident="licence" scheme="schematron">
             <constraint>
-              <sch:rule context="//tei:licence">
-                <sch:assert test="matches(/tei:p, 'Distributed under a Creative Commons Attribution 3.0 Unported License.')">
+              <sch:rule context="//tei:licence/tei:p">
+                <sch:assert test="normalize-space(.) = 'Distributed under a Creative Commons Attribution 3.0 Unported License.'">
                   The &lt;licence&gt; element must contain a &lt;p&gt; element with the text: "Distributed under a Creative Commons Attribution 3.0 Unported License."
                 </sch:assert>
               </sch:rule>
@@ -280,15 +283,6 @@
               <elementRef key="listRelation" minOccurs="0" maxOccurs="unbounded"/>
             </sequence>
           </content>
-          <constraintSpec ident="tei:sourceDesc" scheme="schematron">
-            <constraint>
-              <sch:rule context="//tei:sourceDesc">
-                <sch:assert test="matches(/tei:listBibl/tei:head, 'Sources for the Data in this Born Digital Prosopography')">
-                  The &lt;sourceDesc&gt; element must contain a &lt;listBibl&gt; element containing a &lt;head&gt; element with the text: "Sources for the Data in this Born Digital Prosopography"
-                </sch:assert>
-              </sch:rule>
-            </constraint>
-          </constraintSpec>
         </elementSpec>
         
         <elementSpec ident="body" module="textstructure" mode="change">

@@ -5,6 +5,12 @@
     <sch:pattern>
 
 
+   <sch:rule context="//tei:licence/tei:p">
+       <sch:assert test="matches(., 'Distributed under a Creative Commons Attribution 3.0 Unported License.')">
+           Must contain this text
+       </sch:assert>
+   </sch:rule>
+
 
 
         <!--In ODD already

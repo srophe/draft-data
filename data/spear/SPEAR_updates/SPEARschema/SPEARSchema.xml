@@ -432,7 +432,7 @@
             <elementRef key="catDesc" minOccurs="1" maxOccurs="1"/>
           </content>
           <attList>
-            <attDef ident="xml:id">
+            <attDef ident="xml:id" mode="change">
               <valList type="closed">
                 <valItem ident="calculated"/>
               </valList>
@@ -451,7 +451,7 @@
             <elementRef key="change" minOccurs="0" maxOccurs="unbounded"/>
           </content>
           <attList>
-            <attDef ident="status">
+            <attDef ident="status" mode="change">
               <valList type="closed">
                 <valItem ident="draft"/>
                 <valItem ident="published"/>

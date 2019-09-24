@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?> 
 <?xml-model href="https://raw.githubusercontent.com/srophe/srophe-eXist-app/master/documentation/SPEARschema/out/SPEAR.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?> 
 <?xml-model href="https://raw.githubusercontent.com/srophe/srophe-eXist-app/master/documentation/SPEARschema/out/SPEAR.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:srophe="https://srophe.app">
     <teiHeader>
         <fileDesc>
             <titleStmt>
@@ -94,7 +94,7 @@
                 <title type="sub">A SPEAR Prosopography</title>
                 <editor role="general" ref="http://syriaca.org/documentation/editors.xml#dschwartz"
                     >Daniel L. Schwartz</editor>
-                <idno type="URI">http://syriaca.org/spear/livesEasternSaints</idno>
+                <idno type="URI">http://syriaca.org/spear/lives-eastern-saints</idno>
                 <biblScope unit="volume">
                     <title level="s">SPEAR: Syriac Persons, Events, and Relations</title>
                     <idno type="URI">http://syriaca.org/spear</idno>
@@ -123,15 +123,13 @@
         </fileDesc>
         <encodingDesc>
             <editorialDecl>
-                <p>The prosopographical data in this document was encoded from E. W.
-                    Brooks' edition and English translation of John of Ephesus’s Lives of the
-                    Eastern Saints, Patrologia Orientalis, volume 18, 1924. </p>
+                <p><!-- POINT USERS TO WIKI DOCUMENTATION WHEN COMPLETED. --></p>
             </editorialDecl>
             <classDecl>
                 <taxonomy>
                     <category xml:id="calculated">
                         <catDesc> Used to denote a date calculated by the editor from a regnal year
-                            given in the text. </catDesc>
+                            or some other dating method given in the text. </catDesc>
                     </category>
                 </taxonomy>
             </classDecl>
@@ -205,7 +203,7 @@
                         unit="pp">655</citedRange></bibl>
             </div>
             <div type="factoid" xml:id="factoid-5"
-                resp="jwalters #syoung #tmcneir #tbaillargeon #jdaccache">
+                resp="#jwalters #syoung #tmcneir #tbaillargeon #jdaccache">
                 <idno type="URI">http://syriaca.org/spear/833-5</idno>
                 <listPerson>
                     <person>
@@ -218,7 +216,7 @@
                         unit="pp">655</citedRange></bibl>
             </div>
             <div type="factoid" xml:id="factoid-6"
-                resp="jwalters #syoung #tmcneir #tbaillargeon #jdaccache">
+                resp="#jwalters #syoung #tmcneir #tbaillargeon #jdaccache">
                 <idno type="URI">http://syriaca.org/spear/833-6</idno>
                 <listRelation>
                     <relation ref="syriaca:StudentOf" active="http://syriaca.org/person/1876"

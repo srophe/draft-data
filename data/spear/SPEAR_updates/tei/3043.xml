@@ -46,7 +46,9 @@
             <seriesStmt>
                 <title level="m" xml:lang="en">The Letters of Severus of Antioch</title>
                 <title type="sub">A SPEAR Prosopography</title>
-                <idno type="URI">http://syriaca.org/spear/lettersSeverus</idno>
+                <editor role="general" ref="http://syriaca.org/documentation/editors.xml#dschwartz"
+                    >Daniel L. Schwartz</editor>
+                <idno type="URI">http://syriaca.org/spear/letters-severus</idno>
                 <biblScope unit="volume">
                     <title level="s">SPEAR: Syriac Persons, Events, and Relations</title>
                     <idno type="URI">http://syriaca.org/spear</idno>
@@ -73,8 +75,16 @@
         </fileDesc>
         <encodingDesc>
             <editorialDecl>
-                <p/>
+                <p><!-- POINT USERS TO WIKI DOCUMENTATION WHEN COMPLETED. --></p>
             </editorialDecl>
+            <classDecl>
+                <taxonomy>
+                    <category xml:id="calculated">
+                        <catDesc> Used to denote a date calculated by the editor from a regnal year
+                            or some other dating method given in the text. </catDesc>
+                    </category>
+                </taxonomy>
+            </classDecl>
         </encodingDesc>
         <profileDesc/>
         <revisionDesc status="draft">

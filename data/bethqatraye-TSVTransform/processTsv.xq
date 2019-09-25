@@ -113,9 +113,9 @@ else
 
 (: NOTE: line 236 controls whether a single record is output or if all records are output.  Uncomment it to test with a single record :)
 
-let $localConfigDirectoryUrl := 'https://raw.githubusercontent.com/srophe/draft-data/master/' (: ultimately, this is probably the only line in the code that the user will have to modify before running the program. :)
+let $localConfigDirectoryUrl := 'https://raw.githubusercontent.com/wlpotter/draft-data/master/data/bethqatraye-TSVTransform/' (: ultimately, this is probably the only line in the code that the user will have to modify before running the program. :)
 
-let $projectConfigDirectoryUrl := 'https://raw.githubusercontent.com/srophe/draft-data/master/'
+let $projectConfigDirectoryUrl := 'https://raw.githubusercontent.com/wlpotter/draft-data/master/data/bethqatraye-TSVTransform/'
 let $localConfig := doc($localConfigDirectoryUrl||'configLocal.xml')
 let $projectConfig := doc($projectConfigDirectoryUrl||'configProject.xml')
 let $url := $localConfig/configuration/inputFileUrl/text()  (: URL of TSV file to be processed :)

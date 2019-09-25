@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+<?xml-model href="https://raw.githubusercontent.com/srophe/srophe-eXist-app/schema-4-spear-edits/srophe-app/documentation/SPEARschema/out/odd_SPEAR.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/srophe/srophe-eXist-app/schema-4-spear-edits/srophe-app/documentation/SPEARschema/out/odd_SPEAR.rng" type="application/xml"
 	schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<?xml-model href="https://raw.githubusercontent.com/srophe/srophe-eXist-app/dev/srophe-app/documentation/SPEARschema/out/odd_SPEAR.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title level="a">John of Ephesus, Theodore Castrensis, in the Lives of the Eastern Saints</title>
+                <title level="a">John of Ephesus, A Stranger who Would not Give his Name, in the Lives of the Eastern Saints</title>
                 <title level="m">SPEAR: Syriac Persons, Events, and Relations</title>
                 <funder>The National Endowment for the Humanities</funder>
                 <principal>Daniel L. Schwartz</principal>
@@ -51,7 +51,28 @@
                 <date><!-- INPUT ONCE WE HAVE A "FINAL" DRAFT --></date>
             </publicationStmt>
             <sourceDesc>
-                <p>Born digital.</p>
+                <listBibl>
+                    <head>Sources for the Data in this Born Digital Prosopography</head>
+                    <bibl type="primary">
+                        <title>Lives of the Eastern Saints I</title>
+                        <title>A Stranger who Would not Give his Name</title>
+                        <author><persName ref="http://syriaca.org/person/74">John of
+                            Ephesus</persName></author>
+                        <editor><persName ref="http://syriaca.org/person/403">E. W.
+                            Brooks</persName></editor>
+                        <ptr target="http://syriaca.org/bibl/1409"/>
+                    </bibl>
+                    <bibl type="primary">
+                        <title>A Stranger who Would not Give his Name</title>
+                        <author><persName ref="http://syriaca.org/person/74">John of
+                            Ephesus</persName></author>
+                        <ptr target="http://syriaca.org/work/809"/>
+                    </bibl>
+                </listBibl>
+                <listRelation>
+                    <relation type="part" active="http://syriaca.org/work/809"
+                        ref="dcterms:isPartOf" passive="http://syriaca.org/work/9501"/>
+                </listRelation>
             </sourceDesc>
         </fileDesc>
         <encodingDesc>
@@ -78,7 +99,7 @@
     </teiHeader>
     <text>
         <body>
-            <div uri="http://syriaca.org/spear/809-1" resp="#syoung">
+            <div type="factoid" uri="http://syriaca.org/spear/809-1" resp="#syoung">
                 <listPerson>
                     <person>
                         <persName ref="http://syriaca.org/person/76">John</persName>
@@ -93,7 +114,7 @@
                     <citedRange unit="pp">249</citedRange>
                 </bibl>
             </div>
-            <div uri="http://syriaca.org/spear/809-2" resp="#syoung">
+            <div type="factoid" uri="http://syriaca.org/spear/809-2" resp="#syoung">
                 <listPerson>
                     <person>
                         <persName ref="http://syriaca.org/person/76"/>
@@ -114,7 +135,7 @@
                     <citedRange unit="pp">250</citedRange>
                 </bibl>
             </div>
-            <div uri="http://syriaca.org/spear/809-3" resp="#syoung">
+            <div type="factoid" uri="http://syriaca.org/spear/809-3" resp="#syoung">
                 <listEvent>
                     <event>
                         <desc>
@@ -132,7 +153,7 @@
                     <citedRange unit="pp">250</citedRange>
                 </bibl>
             </div>
-            <div uri="http://syriaca.org/spear/809-4" resp="#syoung">
+            <div type="factoid" uri="http://syriaca.org/spear/809-4" resp="#syoung">
                 <listPerson>
                     <person>
                         <persName ref="http://syriaca.org/person/1988">a certain old man, poor and a stranger</persName>
@@ -147,7 +168,7 @@
                     <citedRange unit="pp">250</citedRange>
                 </bibl>
             </div>
-            <div uri="http://syriaca.org/spear/809-5" resp="#syoung">
+            <div type="factoid" uri="http://syriaca.org/spear/809-5" resp="#syoung">
                 <listEvent>
                     <event>
                         <desc>
@@ -165,7 +186,7 @@
                     <citedRange unit="pp">251</citedRange>
                 </bibl>
             </div>
-            <div uri="http://syriaca.org/spear/809-6" resp="#syoung">
+            <div type="factoid" uri="http://syriaca.org/spear/809-6" resp="#syoung">
                 <listEvent>
                     <event>
                         <desc>
@@ -183,7 +204,7 @@
                     <citedRange unit="pp">252</citedRange>
                 </bibl>
             </div>
-            <div uri="http://syriaca.org/spear/809-7" resp="#syoung">
+            <div type="factoid" uri="http://syriaca.org/spear/809-7" resp="#syoung">
                 <listEvent>
                     <event>
                         <desc>
@@ -201,7 +222,7 @@
                     <citedRange unit="pp">254</citedRange>
                 </bibl>
             </div>
-            <div uri="http://syriaca.org/spear/809-8" resp="#syoung">
+            <div type="factoid" uri="http://syriaca.org/spear/809-8" resp="#syoung">
                 <listPerson>
                     <person>
                         <persName ref="http://syriaca.org/person/1988"/>
@@ -221,13 +242,13 @@
                     <citedRange unit="pp">255</citedRange>
                 </bibl>
             </div>
-            <div uri="http:syriaca.org/spear/809-9" resp="#syoung">
+            <div type="factoid" uri="http://syriaca.org/spear/809-9" resp="#syoung">
                 <listEvent>
                     <event>
                         <desc>
-                            <persName ref="http://syriaca.org/person/1988">The old man</persName>continuously asked the archimandrite of <persName ref="http://syriaca.org/place/2736">the Amida convent</persName>for a dismissal. Curious, <persName ref="http://syriaca.org/person/76">John</persName>asks the man about his eating, sleeping, and prayer habits. <persName ref="http://syriaca.org/person/1988">He</persName>eats and prays the way he does out of recognition of human sinfulness. 
+                            <persName ref="http://syriaca.org/person/1988">The old man</persName>continuously asked the archimandrite of <placeName ref="http://syriaca.org/place/2736">the Amida convent</placeName>for a dismissal. Curious, <persName ref="http://syriaca.org/person/76">John</persName>asks the man about his eating, sleeping, and prayer habits. <persName ref="http://syriaca.org/person/1988">He</persName>eats and prays the way he does out of recognition of human sinfulness. 
                         </desc>
-                        <ptr target="http://syriaca.org/keyword/sin http://syriaca.org/keyword/prayer http://syriaca.org/keyword/prayer http://syriaca.org/keyword/monks http://syriaca.org/keyword/monasticism http://syriaca.org/keyword/monasteries http://syriaca.org/keyword/sleep http://syriaca.org/keyword/food http://syriaca.org/keyword/wine"/>
+                        <ptr target="http://syriaca.org/keyword/sin http://syriaca.org/keyword/prayer http://syriaca.org/keyword/monks http://syriaca.org/keyword/monasticism http://syriaca.org/keyword/monasteries http://syriaca.org/keyword/sleep http://syriaca.org/keyword/food http://syriaca.org/keyword/wine"/>
                     </event>
                 </listEvent>
                 <bibl type="primary">
@@ -239,7 +260,7 @@
                     <citedRange unit="pp">256</citedRange>
                 </bibl>
             </div>
-            <div uri="http://syriaca.org/spear/809-10" resp="#syoung">
+            <div type="factoid" uri="http://syriaca.org/spear/809-10" resp="#syoung">
                 <listEvent>
                     <event>
                         <desc>
@@ -257,7 +278,7 @@
                     <citedRange unit="pp">257</citedRange>
                 </bibl>
             </div>
-            <div uri="http://syriaca.org/spear/809-11" resp="#syoung">
+            <div type="factoid" uri="http://syriaca.org/spear/809-11" resp="#syoung">
                 <listEvent>
                     <event>
                         <desc>
@@ -275,7 +296,7 @@
                     <citedRange unit="pp">259</citedRange>
                 </bibl>
             </div>
-            <div uri="http://syriaca.org/spear/809-12" resp="#syoung">
+            <div type="factoid" uri="http://syriaca.org/spear/809-12" resp="#syoung">
                 <listPerson>
                     <person>
                         <persName ref="http://syriaca.org/person/1988"/>
@@ -296,5 +317,25 @@
                 </bibl>
             </div>
         </body>
+        <back>
+            <listBibl>
+                <head>Works Cited</head>
+                <bibl type="primary" xml:id="bibl809-1">
+                    <title>Lives of the Eastern Saints I</title>
+                    <title>A Stranger who Would not Give his Name</title>
+                    <author><persName ref="http://syriaca.org/person/74">John of
+                        Ephesus</persName></author>
+                    <editor><persName ref="http://syriaca.org/person/403">E. W.
+                        Brooks</persName></editor>
+                    <ptr target="http://syriaca.org/bibl/1409"/>
+                </bibl>
+                <bibl type="primary" xml:id="bibl809-2">
+                    <title>A Stranger who Would not Give his Name</title>
+                    <author><persName ref="http://syriaca.org/person/74">John of
+                        Ephesus</persName></author>
+                    <ptr target="http://syriaca.org/work/809"/>
+                </bibl>
+            </listBibl>
+        </back>
     </text>
 </TEI>

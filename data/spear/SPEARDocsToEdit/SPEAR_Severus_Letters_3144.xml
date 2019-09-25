@@ -13,7 +13,6 @@
                 <funder>Texas A&amp;M University</funder>
                 <principal>Daniel L. Schwartz</principal>
                 <editor role="general" ref="http://syriaca.org/documentation/editors.xml#dschwartz">Daniel L. Schwartz</editor>
-                <editor role="general" ref="http://syriaca.org/documentation/editors.xml#dmichelson">David A. Michelson</editor>
                 <editor role="creator" ref="http://syriaca.org/documentation/editors.xml#dschwartz">Daniel L. Schwartz</editor>
                 <respStmt>
                     <resp></resp>
@@ -25,7 +24,7 @@
             </editionStmt>
             <publicationStmt>
                 <authority>Syriaca.org: The Syriac Reference Portal</authority>
-                <idno type="URI">http://syriaca.org/spear/3144/tei</idno> <!-- REPLACE THE #### WITH THE URI NUMBER OF THE ASSIGNED LETTER -->
+                <idno type="URI">http://syriaca.org/spear/3144/tei</idno> 
                 <availability>
                     <licence target="http://creativecommons.org/licenses/by/3.0/">
                         <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
@@ -66,7 +65,7 @@
     </teiHeader>
     <text>
         <body>
-            <div uri="http://syriaca.org/spear/3144-" resp="#ktorabi #dschwartz">
+            <div type="factoid" uri="http://syriaca.org/spear/3144-1" resp="#ktorabi #dschwartz">
                 <listPerson>
                         <person>
                             <persName ref="http://syriaca.org/person/2620"><!-- Not sure if this is the correct URI for Caesaria -->
@@ -74,59 +73,60 @@
                                 </persName>
                         </person>
                     </listPerson>
-                    <bibl type="primary">
-                        <biblScope type="pp">
-                            <ptr target="#bib3144-1"/>272</biblScope>
-                    </bibl>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/bibl/669"/>
+                    <citedRange unit="pp">272</citedRange>
+                </bibl>
                 </div>
-                <div uri="http://syriaca.org/spear/3144-" resp="#ktorabi #dschwartz">
+                <div type="factoid" uri="http://syriaca.org/spear/3144-2" resp="#ktorabi #dschwartz">
                     <listPerson>
                         <person>
                             <persName ref="http://syriaca.org/person/2620"/>
-                            <sex value="F">
-                                Female
-                            </sex>
+                            <trait type="gender" ref="http://syriaca.org/keyword/female">
+                                <note type="desc"><persName ref="http://syriaca.org/person/2620">Caesaria</persName> was female.</note>
+                            </trait>
                         </person>
                     </listPerson>
                     <bibl type="primary">
-                        <biblScope type="pp">
-                            <ptr target="#bib3144-1"/>272</biblScope>
+                        <ptr target="http://syriaca.org/bibl/669"/>
+                        <citedRange unit="pp">272</citedRange>
                     </bibl>
                 </div>
-                <div uri="http://syriaca.org/spear/3144-" resp="#ktorabi #dschwartz">
+                <div type="factoid" uri="http://syriaca.org/spear/3144-3" resp="#ktorabi #dschwartz">
                     <listPerson>
                         <person>
-                            <state type="office">
-                                <desc>
+                            <persName ref="http://syriaca.org/person/2620"/>
+                            <socecStatus ref="http://syriaca.org/keyword/nobles">
+                                <note type="desc">
                                     <persName ref="http://syriaca.org/person/2620"> 
                                         Caesaria 
                                     </persName> 
                                     was a hypatissa. 
-                                    </desc>
-                            </state>
+                                </note>
+                            </socecStatus>
                         </person>
                     </listPerson>
                     <bibl type="primary">
-                        <biblScope type="pp">
-                            <ptr target="#bib3144-1"/>272</biblScope>
+                        <ptr target="http://syriaca.org/bibl/669"/>
+                        <citedRange unit="pp">272</citedRange>
                     </bibl>
                 </div>
-                <div uri="http://syriaca.org/spear/3144-" resp="#ktorabi #dschwartz">
+                <div type="factoid" uri="http://syriaca.org/spear/3144-4" resp="#ktorabi #dschwartz">
                     <listRelation>
-                        <relation type="epistolary" name="syriaca:SenderOfLetterTo" active="http://syriaca.org/person/51" passive="http://syriaca.org/person/2620"/>
+                        <relation ref="syriaca:SenderOfLetterTo" active="http://syriaca.org/person/51" passive="http://syriaca.org/person/2620"/>
                     </listRelation>
                     <bibl type="primary">
-                        <biblScope type="pp">
-                            <ptr target="#bib3144-1"/>272</biblScope>
+                        <ptr target="http://syriaca.org/bibl/669"/>
+                        <citedRange unit="pp">272</citedRange>
                     </bibl>
                 </div> 
-            <div uri="http://syriaca.org/spear/3144-" resp="#ktorabi #dschwartz">
+            <div type="factoid" uri="http://syriaca.org/spear/3144-5" resp="#ktorabi #dschwartz">
                 <listRelation>
-                    <relation type="epistolary" name="syriaca:SenderOfLetterTo" active="http://syriaca.org/person/2620" passive="http://syriaca.org/person/51"/>
+                    <relation ref="syriaca:SenderOfLetterTo" active="http://syriaca.org/person/2620" passive="http://syriaca.org/person/51"/>
                 </listRelation>
                 <bibl type="primary">
-                    <biblScope type="pp">
-                        <ptr target="#bib3144-1"/>272</biblScope>
+                    <ptr target="http://syriaca.org/bibl/669"/>
+                    <citedRange unit="pp">272</citedRange>
                 </bibl>
             </div> 
         </body>

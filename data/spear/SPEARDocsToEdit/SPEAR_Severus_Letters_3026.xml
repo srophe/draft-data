@@ -13,7 +13,6 @@
                 <funder>Texas A&amp;M University</funder>
                 <principal>Daniel L. Schwartz</principal>
                 <editor role="general" ref="http://syriaca.org/editors.xml#dschwartz">Daniel L. Schwartz</editor>
-                <editor role="general" ref="http://syriaca.org/editors.xml#dmichelson">David A. Michelson</editor>
                 <editor role="creator" ref="http://syriaca.org/editors.xml#dschwartz">Daniel L. Schwartz</editor>
                 <respStmt>
                     <resp></resp>
@@ -25,7 +24,7 @@
             </editionStmt>
             <publicationStmt>
                 <authority>Syriaca.org: The Syriac Reference Portal</authority>
-                <idno type="URI">http://syriaca.org/spear/3026/tei</idno> <!-- REPLACE THE #### WITH THE URI NUMBER OF THE ASSIGNED LETTER -->
+                <idno type="URI">http://syriaca.org/spear/3026/tei</idno> 
                 <availability>
                     <licence target="http://creativecommons.org/licenses/by/3.0/">
                         <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
@@ -66,25 +65,25 @@
     </teiHeader>
     <text>
         <body>
-            <div uri="http://syriaca.org/spear/3026-" resp="#ktorabi #dschwartz">
+            <div type="factoid" uri="http://syriaca.org/spear/3026-1" resp="#ktorabi #dschwartz">
                     <listRelation>
-                        <relation type="epistolary" name="syriaca:RecipientOfLetterFrom" active="http://syriaca.org/person/2417" passive="http://syriaca.org/person/51"/>
+                        <relation ref="syriaca:SenderOfLetterTo" active="http://syriaca.org/person/51" passive="http://syriaca.org/person/2417"/>
                     </listRelation>
-                    <bibl type="primary">
-                        <biblScope type="pp">
-                            <ptr target="#bib3026-1"/>23</biblScope>
-                    </bibl>
-                </div>
-            <div uri="http://syriaca.org/spear/3026-" resp="#ktorabi #dschwartz">
-                <listRelation>
-                    <relation type="religious" name="snap:EnmityFor" ana="alleged" active="http://syriaca.org/person/51" passive="http://syriaca.org/person/2460"/><!-- I encoded Severus's feelings for Musonius in letter 3052 as a personal enmity and I m now encoding it as religious enmity, because his complaint against Musonius here focuses on his violation of religious practices. -->
-                </listRelation>
                 <bibl type="primary">
-                    <biblScope type="pp">
-                        <ptr target="#bib3026-1"/>23</biblScope>
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="pp">23</citedRange>
                 </bibl>
             </div>
-            <div uri="http://syriaca.org/spear/3026-" resp="#ktorabi #dschwartz">
+            <div type="factoid" uri="http://syriaca.org/spear/3026-2" resp="#ktorabi #dschwartz">
+                <listRelation>
+                    <relation ref="snap:EnmityFor" active="http://syriaca.org/person/51" passive="http://syriaca.org/person/2460"/>
+                </listRelation>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="pp">23</citedRange>
+                </bibl>
+            </div>
+            <div type="factoid" uri="http://syriaca.org/spear/3026-3" resp="#ktorabi #dschwartz">
                 <listPerson>
                     <person>
                         <persName ref="http://syriaca.org/person/2510">
@@ -93,55 +92,61 @@
                     </person>
                 </listPerson>
                 <bibl type="primary">
-                    <biblScope type="pp">
-                        <ptr target="#bib3026-1"/>25</biblScope>
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="pp">25</citedRange>
                 </bibl>
             </div>
-            <div uri="http://syriaca.org/spear/3026-" resp="#ktorabi #dschwartz">
+            <div type="factoid" uri="http://syriaca.org/spear/3026-4" resp="#ktorabi #dschwartz">
                 <listPerson>
                     <person>
                         <persName ref="http://syriaca.org/person/2510"/>
-                        <sex value="M">
-                            Male
-                        </sex>
+                        <trait type="gender" ref="http://syriaca.org/keyword/male">
+                            <note type="desc">
+                                <persName ref="http://syriaca.org/person/2510">
+                                    Hesychius
+                                </persName>
+                                was male.
+                            </note>
+                        </trait>
                     </person>
                 </listPerson>
                 <bibl type="primary">
-                    <biblScope type="pp">
-                        <ptr target="#bib3026-1"/>25</biblScope>
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="pp">25</citedRange>
                 </bibl>
             </div>
-            <div uri="http://syriaca.org/spear/3026-" resp="#ktorabi #dschwartz">
+            <div type="factoid" uri="http://syriaca.org/spear/3026-5" resp="#ktorabi #dschwartz">
                 <listPerson>
                     <person>
-                        <state type="vocation">
-                            <desc>
-                                <persName ref="http://syriaca.org/person/2510"> 
-                                    Hesychius 
-                                </persName> 
-                                was a presbyter of
-                                <placeName>
+                        <persName ref="http://syriaca.org/person/2510"/>
+                        <occupation ref="http://syriaca.org/keyword/priests">
+                            <note type="desc">
+                                <persName ref="http://syriaca.org/person/2510">
+                                    Hesychius
+                                </persName>
+                                was presbyter of
+                                <placeName ref="http://syriaca.org/place/2610">
                                     Antioch
-                                </placeName>
-                            </desc>
-                        </state>
+                                </placeName>.
+                            </note>
+                        </occupation>
                     </person>
                 </listPerson>
                 <bibl type="primary">
-                    <biblScope type="pp">
-                        <ptr target="#bib3026-1"/>25</biblScope>
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="pp">25</citedRange>
                 </bibl>
             </div>
-            <div uri="http://syriaca.org/spear/3026-" resp="#ktorabi #dschwartz">
+            <div type="factoid" uri="http://syriaca.org/spear/3026-6" resp="#ktorabi #dschwartz">
                 <listRelation>
-                    <relation type="clerical" name="syriaca:ClergyUnderBishop" active="http://syriaca.org/person/2510" passive="http://syriaca.org/person/51"/>
+                    <relation ref="syriaca:BishopOverClergy" active="http://syriaca.org/person/51" passive="http://syriaca.org/person/2510"/>
                 </listRelation>
                 <bibl type="primary">
-                    <biblScope type="pp">
-                        <ptr target="#bib3026-1"/>25</biblScope>
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="pp">25</citedRange>
                 </bibl>
             </div>
-            <div uri="http://syriaca.org/spear/3026-" resp="#ktorabi #dschwartz">
+            <div type="factoid" uri="http://syriaca.org/spear/3026-7" resp="#ktorabi #dschwartz">
                 <listPerson>
                     <person>
                         <persName ref="http://syriaca.org/person/2511">
@@ -150,64 +155,70 @@
                     </person>
                 </listPerson>
                 <bibl type="primary">
-                    <biblScope type="pp">
-                        <ptr target="#bib3026-1"/>25-26</biblScope>
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="pp">25-26</citedRange>
                 </bibl>
             </div>
-            <div uri="http://syriaca.org/spear/3026-" resp="#ktorabi #dschwartz">
+            <div type="factoid" uri="http://syriaca.org/spear/3026-8" resp="#ktorabi #dschwartz">
                 <listPerson>
                     <person>
                         <persName ref="http://syriaca.org/person/2511"/>
-                        <sex value="M">
-                            Male
-                        </sex>
+                        <trait type="gender" ref="http://syriaca.org/keyword/male">
+                            <note type="desc">
+                                <persName ref="http://syriaca.org/person/2511">
+                                    Longinus
+                                </persName>
+                                was male.
+                            </note>
+                        </trait>
                     </person>
                 </listPerson>
                 <bibl type="primary">
-                    <biblScope type="pp">
-                        <ptr target="#bib3026-1"/>25-26</biblScope>
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="pp">25-26</citedRange>
                 </bibl>
             </div>
-            <div uri="http://syriaca.org/spear/3026-" resp="#ktorabi #dschwartz">
+            <div type="factoid" uri="http://syriaca.org/spear/3026-9" resp="#ktorabi #dschwartz">
                 <listPerson>
                     <person>
-                        <state type="vocation">
-                            <desc>
-                                <persName ref="http://syriaca.org/person/2511"> 
-                                    Longinus 
-                                </persName> 
+                        <persName ref="http://syriaca.org/person/2511"/>
+                        <occupation ref="http://syriaca.org/keyword/priests">
+                            <note type="desc">
+                                <persName ref="http://syriaca.org/person/2511">
+                                    Longinus
+                                </persName>
                                 was a presbyter of
-                                <placeName>
+                                <placeName ref="http://syriaca.org/place/2610">
                                     Antioch
-                                </placeName>
-                            </desc>
-                        </state>
+                                </placeName>.
+                            </note>
+                        </occupation>
                     </person>
                 </listPerson>
                 <bibl type="primary">
-                    <biblScope type="pp">
-                        <ptr target="#bib3026-1"/>25-26</biblScope>
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="pp">25-26</citedRange>
                 </bibl>
             </div>
-            <div uri="http://syriaca.org/spear/3026-" resp="#ktorabi #dschwartz">
+            <div type="factoid" uri="http://syriaca.org/spear/3026-10" resp="#ktorabi #dschwartz">
                 <listRelation>
-                    <relation type="clerical" name="syriaca:ClergyUnderBishop" active="http://syriaca.org/person/2511" passive="http://syriaca.org/person/51"/>
+                    <relation ref="syriaca:BishopOverClergy" active="http://syriaca.org/person/51" passive="http://syriaca.org/person/2511"/>
                 </listRelation>
                 <bibl type="primary">
-                    <biblScope type="pp">
-                        <ptr target="#bib3026-1"/>25-26</biblScope>
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="pp">25-26</citedRange>
                 </bibl>
             </div>
-            <div uri="http://syriaca.org/spear/3026-" resp="#ktorabi #dschwartz"> 
+            <div type="factoid" uri="http://syriaca.org/spear/3026-11" resp="#ktorabi #dschwartz"> 
                 <listRelation>
-                    <relation type="epistolary" name="syriaca:SenderOfLetterTo" active="http://syriaca.org/person/2460" passive="http://syriaca.org/person/2511"/>
+                    <relation ref="syriaca:SenderOfLetterTo" active="http://syriaca.org/person/2460" passive="http://syriaca.org/person/2511"/>
                 </listRelation>
                 <bibl type="primary">
-                    <biblScope type="pp">
-                        <ptr target="#bib3026-1"/>25</biblScope>
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="pp">25</citedRange>
                 </bibl>
             </div>
-            <div uri="http://syriaca.org/spear/3026-" resp="#ktorabi #dschwartz">
+            <div type="factoid" uri="http://syriaca.org/spear/3026-12" resp="#ktorabi #dschwartz">
                 <listPerson>
                     <person>
                         <persName ref="http://syriaca.org/person/2530">
@@ -216,134 +227,146 @@
                     </person>
                 </listPerson>
                 <bibl type="primary">
-                    <biblScope type="pp">
-                        <ptr target="#bib3026-1"/>26</biblScope>
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="pp">26</citedRange>
                 </bibl>
             </div>
-            <div uri="http://syriaca.org/spear/3026-" resp="#ktorabi #dschwartz">
+            <div type="factoid" uri="http://syriaca.org/spear/3026-13" resp="#ktorabi #dschwartz">
                 <listPerson>
                     <person>
                         <persName ref="http://syriaca.org/person/2530"/>
-                        <sex value="M">
-                            Male
-                        </sex>
+                        <trait type="gender" ref="http://syriaca.org/keyword/male">
+                            <note type="desc">
+                                <persName ref="http://syriaca.org/person/2530">
+                                    Flavian
+                                </persName>
+                                was male.
+                            </note>
+                        </trait>
                     </person>
                 </listPerson>
                 <bibl type="primary">
-                    <biblScope type="pp">
-                        <ptr target="#bib3026-1"/>26</biblScope>
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="pp">26</citedRange>
                 </bibl>
             </div>
-            <div uri="http://syriaca.org/spear/3026-" resp="#ktorabi #dschwartz">
+            <div type="factoid" uri="http://syriaca.org/spear/3026-14" resp="#ktorabi #dschwartz">
                 <listPerson>
                     <person>
-                        <state type="vocation">
-                            <desc>
-                                <persName ref="http://syriaca.org/person/2530"> 
+                        <persName ref="http://syriaca.org/person/2530"/>
+                        <occupation ref="http://syriaca.org/keyword/bishops">
+                            <note type="desc">
+                                <persName ref="http://syriaca.org/person/2530">
                                     Flavian
-                                </persName> 
-                                was a bishop of
-                                <placeName>
+                                </persName>
+                                was the bishop of 
+                                <placeName ref="http://syriaca.org/place/2610">
                                     Antioch
-                                </placeName>
-                            </desc>
-                        </state>
+                                </placeName>.
+                            </note>
+                        </occupation>
                     </person>
                 </listPerson>
                 <bibl type="primary">
-                    <biblScope type="pp">
-                        <ptr target="#bib3026-1"/>26</biblScope>
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="pp">26</citedRange>
                 </bibl>
             </div>
-            <div uri="http://syriaca.org/spear/3026-" resp="#ktorabi #dschwartz">
+            <div type="factoid" uri="http://syriaca.org/spear/3026-15" resp="#ktorabi #dschwartz">
                 <listPerson>
                     <person>
                         <persName ref="http://syriaca.org/person/2512">
-                            the unholy Bisula
+                            The unholy Bisula
                         </persName>
                     </person>
                 </listPerson>
                 <bibl type="primary">
-                    <biblScope type="pp">
-                        <ptr target="#bib3026-1"/>26</biblScope>
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="pp">26</citedRange>
                 </bibl>
             </div>
-            <div uri="http://syriaca.org/spear/3026-" resp="#ktorabi #dschwartz">
+            <div type="factoid" uri="http://syriaca.org/spear/3026-16" resp="#ktorabi #dschwartz">
                 <listPerson>
                     <person>
                         <persName ref="http://syriaca.org/person/2512"/>
-                        <sex value="M">
-                            Male
-                        </sex>
+                        <trait type="gender" ref="http://syriaca.org/keyword/male">
+                            <note type="desc">
+                                <persName ref="http://syriaca.org/person/2512">
+                                    Bisula
+                                </persName>
+                                was male.
+                            </note>
+                        </trait>
                     </person>
                 </listPerson>
                 <bibl type="primary">
-                    <biblScope type="pp">
-                        <ptr target="#bib3026-1"/>26</biblScope>
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="pp">26</citedRange>
                 </bibl>
             </div>
-            <div uri="http://syriaca.org/spear/3026-" resp="#ktorabi #dschwartz">
+            <div type="factoid" uri="http://syriaca.org/spear/3026-17" resp="#ktorabi #dschwartz">
                 <listPerson>
                     <person>
-                        <state type="vocation">
-                            <desc>
-                                <persName ref="http://syriaca.org/person/2512"> 
+                        <persName ref="http://syriaca.org/person/2512"/>
+                        <occupation ref="http://syriaca.org/keyword/bishops">
+                            <note type="desc">
+                                <persName ref="http://syriaca.org/person/2512">
                                     Bisula
-                                </persName> 
-                                was a bishop of
-                                <placeName>
+                                </persName>
+                                was the bishop of
+                                <placeName ref="http://syriaca.org/place/2671">
                                     Germanicupolis
-                                </placeName>
-                            </desc>
-                        </state>
+                                </placeName>.
+                            </note>
+                        </occupation>
                     </person>
                 </listPerson>
                 <bibl type="primary">
-                    <biblScope type="pp">
-                        <ptr target="#bib3026-1"/>26</biblScope>
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="pp">26</citedRange>
                 </bibl>
             </div>
-            <div uri="http://syriaca.org/spear/3026-" resp="#ktorabi #dschwartz">
+            <div type="factoid" uri="http://syriaca.org/spear/3026-18" resp="#ktorabi #dschwartz">
                 <listRelation>
-                    <relation type="religious" name="snap:EnmityFor" ana="alleged" active="http://syriaca.org/person/51" passive="http://syriaca.org/person/2512"/>
+                    <relation ref="snap:EnmityFor" active="http://syriaca.org/person/51" passive="http://syriaca.org/person/2512"/>
                 </listRelation>
                 <bibl type="primary">
-                    <biblScope type="pp">
-                        <ptr target="#bib3026-1"/>26</biblScope>
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="pp">26</citedRange>
                 </bibl>
             </div>
-            <div uri="http://syriaca.org/spear/3026-" resp="#ktorabi #dschwartz">
+            <div type="factoid" uri="http://syriaca.org/spear/3026-19" resp="#ktorabi #dschwartz">
                 <listRelation>
-                    <relation type="religious" name="snap:EnmityFor" ana="alleged" active="http://syriaca.org/person/51" passive="http://syriaca.org/person/2468"/>
+                    <relation ref="snap:EnmityFor" active="http://syriaca.org/person/51" passive="http://syriaca.org/person/2468"/>
                 </listRelation>
                 <bibl type="primary">
-                    <biblScope type="pp">
-                        <ptr target="#bib3026-1"/>27</biblScope>
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="pp">27</citedRange>
                 </bibl>
             </div>
-            <div uri="http://syriaca.org/spear/3026-" resp="#ktorabi #dschwartz"> 
+            <div type="factoid" uri="http://syriaca.org/spear/3026-20" resp="#ktorabi #dschwartz"> 
                 <listRelation>
-                    <relation type="epistolary" name="syriaca:EpistolaryReferenceTo" active="http://syriaca.org/person/51" passive="http://syriaca.org/person/2458"/>
+                    <relation ref="syriaca:EpistolaryReferenceTo" active="http://syriaca.org/person/51" passive="http://syriaca.org/person/2458"/>
                 </listRelation>
                 <bibl type="primary">
-                    <biblScope type="pp">
-                        <ptr target="#bib3026-1"/>27</biblScope>
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="pp">27</citedRange>
                 </bibl>
             </div>
-            <div uri="http://syriaca.org/spear/3026-" resp="#ktorabi #dschwartz">
+            <div type="factoid" uri="http://syriaca.org/spear/3026-21" resp="#ktorabi #dschwartz">
                 <listRelation>
-                    <relation type="religious" name="snap:EnmityFor" ana="alleged" active="http://syriaca.org/person/2460" passive="http://syriaca.org/person/2468"/>
+                    <relation ref="snap:EnmityFor" active="http://syriaca.org/person/2460" passive="http://syriaca.org/person/2468"/>
                 </listRelation>
                 <bibl type="primary">
-                    <biblScope type="pp">
-                        <ptr target="#bib3026-1"/>28-29</biblScope>
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="pp">28-29</citedRange>
                 </bibl>
             </div>
-            <div uri="http://syriaca.org/spear/3026-" resp="#ktorabi #dschwartz">
+            <div type="factoid" uri="http://syriaca.org/spear/3026-22" resp="#ktorabi #dschwartz">
                 <listPerson>
                     <personGrp>
                         <persName ref="http://syriaca.org/person/anonymi1">
-                            the bishops in each of the provinces in
+                            The bishops in each of the provinces in
                             <date notBefore="0513" notAfter="0518">
                                 A.D. 513-518
                             </date>                           
@@ -351,17 +374,17 @@
                     </personGrp>
                 </listPerson>
                 <bibl type="primary">
-                    <biblScope type="pp">
-                        <ptr target="#bib3026"/>30</biblScope>
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="pp">30</citedRange>
                 </bibl>
             </div>
-            <div uri="http://syriaca.org/spear/3026-" resp="#ktorabi #dschwartz">
+            <div type="factoid" uri="http://syriaca.org/spear/3026-23" resp="#ktorabi #dschwartz">
                 <listRelation>
-                    <relation type="legal" name="syriaca:LegalChargesAgainst" active="http://syriaca.org/person/2460" passive="http://syriaca.org/person/2459"/>
+                    <relation ref="syriaca:LegalChargesAgainst" active="http://syriaca.org/person/2460" passive="http://syriaca.org/person/2459"/>
                 </listRelation>
                 <bibl type="primary">
-                    <biblScope type="pp">
-                        <ptr target="#bib3026-1"/>31</biblScope>
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="pp">31</citedRange>
                 </bibl>
             </div>
         </body>

@@ -13,7 +13,6 @@
                 <funder>Texas A&amp;M University</funder>
                 <principal>Daniel L. Schwartz</principal>
                 <editor role="general" ref="http://syriaca.org/documentation/editors.xml#dschwartz">Daniel L. Schwartz</editor>
-                <editor role="general" ref="http://syriaca.org/documentation/editors.xml#dmichelson">David A. Michelson</editor>
                 <editor role="creator" ref="http://syriaca.org/documentation/editors.xml#dschwartz">Daniel L. Schwartz</editor>
                 <respStmt>
                     <resp></resp>
@@ -25,7 +24,7 @@
             </editionStmt>
             <publicationStmt>
                 <authority>Syriaca.org: The Syriac Reference Portal</authority>
-                <idno type="URI">http://syriaca.org/spear/3137/tei</idno> <!-- REPLACE THE #### WITH THE URI NUMBER OF THE ASSIGNED LETTER -->
+                <idno type="URI">http://syriaca.org/spear/3137/tei</idno> 
                 <availability>
                     <licence target="http://creativecommons.org/licenses/by/3.0/">
                         <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
@@ -66,7 +65,7 @@
     </teiHeader>
     <text>
         <body>
-            <div uri="http://syriaca.org/spear/3137-" resp="#ktorabi #dschwartz">
+            <div type="factoid" uri="http://syriaca.org/spear/3137-1" resp="#ktorabi #dschwartz">
                 <listPerson>
                         <person>
                             <persName ref="http://syriaca.org/person/2620"><!-- I am not sure if this is the correct URI for Caesaria -->
@@ -74,53 +73,40 @@
                                 </persName>
                         </person>
                     </listPerson>
-                    <bibl type="primary">
-                        <biblScope type="pp">
-                            <ptr target="#bib3137-1"/>244</biblScope>
-                    </bibl>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/bibl/669"/>
+                    <citedRange unit="pp">244</citedRange>
+                </bibl>
                 </div>
-                <div uri="http://syriaca.org/spear/3137-" resp="#ktorabi #dschwartz">
-                    <listPerson>
-                        <person>
-                            <persName ref="http://syriaca.org/person/2620"/>
-                            <sex value="F">
-                                Female
-                            </sex>
-                        </person>
-                    </listPerson>
-                    <bibl type="primary">
-                        <biblScope type="pp">
-                            <ptr target="#bib3137-1"/>244</biblScope>
-                    </bibl>
-                </div>
-                <div uri="http://syriaca.org/spear/3137-" resp="#ktorabi #dschwartz">
-                    <listPerson>
-                        <person>
-                            <state type="office">
-                                <desc>
-                                    <persName ref="http://syriaca.org/person/2620"> 
-                                        Caesaria 
-                                    </persName> 
-                                    was a hypatissa. 
-                                    </desc>
-                            </state>
-                        </person>
-                    </listPerson>
-                    <bibl type="primary">
-                        <biblScope type="pp">
-                            <ptr target="#bib3137-1"/>244</biblScope>
-                    </bibl>
-                </div>
-                <div uri="http://syriaca.org/spear/3137-" resp="#ktorabi #dschwartz">
-                    <listRelation>
-                        <relation type="epistolary" name="syriaca:SenderOfLetterTo" active="http://syriaca.org/person/51" passive="http://syriaca.org/person/2620"/>
-                    </listRelation>
-                    <bibl type="primary">
-                        <biblScope type="pp">
-                            <ptr target="#bib3137-1"/>244</biblScope>
-                    </bibl>
-                </div> 
-            <div uri="http://syriaca.org/spear/3137-" resp="#ktorabi #dschwartz">
+            <div type="factoid" uri="http://syriaca.org/spear/3137-3" resp="#ktorabi #dschwartz">
+                <listPerson>
+                    <person>
+                        <persName ref="http://syriaca.org/person/2620"/>
+                        <socecStatus ref="http://syriaca.org/keyword/nobles">
+                            <note type="desc">
+                                <persName ref="http://syriaca.org/person/2620"> 
+                                    Caesaria 
+                                </persName> 
+                                was a hypatissa. 
+                            </note>
+                        </socecStatus>
+                    </person>
+                </listPerson>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/bibl/669"/>
+                    <citedRange unit="pp">244</citedRange>
+                </bibl>
+            </div>
+            <div type="factoid" uri="http://syriaca.org/spear/3137-4" resp="#ktorabi #dschwartz">
+                <listRelation>
+                    <relation ref="syriaca:SenderOfLetterTo" active="http://syriaca.org/person/51" passive="http://syriaca.org/person/2620"/>
+                </listRelation>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/bibl/669"/>
+                    <citedRange unit="pp">244</citedRange>
+                </bibl>
+            </div> 
+            <div type="factoid" uri="http://syriaca.org/spear/3137-5" resp="#ktorabi #dschwartz">
                 <listPerson>
                     <person>
                         <persName ref="http://syriaca.org/person/2558">
@@ -129,112 +115,120 @@
                     </person>
                 </listPerson>
                 <bibl type="primary">
-                    <biblScope type="pp">
-                        <ptr target="#bib3137-1"/>246</biblScope>
+                    <ptr target="http://syriaca.org/bibl/669"/>
+                    <citedRange unit="pp">246</citedRange>
                 </bibl>
             </div>
-            <div uri="http://syriaca.org/spear/3137-" resp="#ktorabi #dschwartz">
+            <div type="factoid" uri="http://syriaca.org/spear/3137-6" resp="#ktorabi #dschwartz">
                 <listPerson>
                     <person>
                         <persName ref="http://syriaca.org/person/2558"/>
-                        <sex value="M">
-                            Male
-                        </sex>
+                        <trait type="gender" ref="http://syriaca.org/keyword/male">
+                            <note type="desc">
+                                <persName ref="http://syriaca.org/person/2558">Misael</persName> was male.
+                            </note>
+                        </trait>
                     </person>
                 </listPerson>
                 <bibl type="primary">
-                    <biblScope type="pp">
-                        <ptr target="#bib3137-1"/>246</biblScope>
+                    <ptr target="http://syriaca.org/bibl/669"/>
+                    <citedRange unit="pp">246</citedRange>
                 </bibl>
             </div>
-            <div uri="http://syriaca.org/spear/3137-" resp="#ktorabi #dschwartz">
+            <div type="factoid" uri="http://syriaca.org/spear/3137-7" resp="#ktorabi #dschwartz">
                 <listPerson>
                     <person>
-                        <state type="vocation">
-                            <desc>
+                        <persName ref="http://syriaca.org/person/2558"/>
+                        <occupation ref="http://syriaca.org/keyword/deacons">
+                            <note type="desc">
                                 <persName ref="http://syriaca.org/person/2558"> 
                                     Misael 
                                 </persName> 
                                 was a deacon. 
-                            </desc>
-                        </state>
+                            </note>
+                        </occupation>
                     </person>
                 </listPerson>
                 <bibl type="primary">
-                    <biblScope type="pp">
-                        <ptr target="#bib3137-1"/>246</biblScope>
+                    <ptr target="http://syriaca.org/bibl/669"/>
+                    <citedRange unit="pp">246</citedRange>
                 </bibl>
             </div>
-            <div uri="http://syriaca.org/spear/3137-" resp="#ktorabi #dschwartz">
+            <div type="factoid" uri="http://syriaca.org/spear/3137-8" resp="#ktorabi #dschwartz">
                 <listPerson>
                     <person>
-                        <persName ref="http://syriaca.org/person/anonymous1"><!-- No URI for Ammian and no information about his job title in the church  -->
+                        <persName ref="http://syriaca.org/person/2593">
                             Brother Ammian
                         </persName>
                     </person>
                 </listPerson>
                 <bibl type="primary">
-                    <biblScope type="pp">
-                        <ptr target="#bib3137-1"/>246</biblScope>
+                    <ptr target="http://syriaca.org/bibl/669"/>
+                    <citedRange unit="pp">246</citedRange>
                 </bibl>
             </div>
-            <div uri="http://syriaca.org/spear/3137-" resp="#ktorabi #dschwartz">
+            <div type="factoid" uri="http://syriaca.org/spear/3137-9" resp="#ktorabi #dschwartz">
                 <listPerson>
                     <person>
-                        <persName ref="http://syriaca.org/person/anonymous1"/>
-                        <sex value="M">
-                            Male
-                        </sex>
+                        <persName ref="http://syriaca.org/person/2593"/>
+                        <trait type="gender" ref="http://syriaca.org/keyword/male">
+                            <note type="desc">
+                                <persName ref="http://syriaca.org/person/2593">Ammian</persName> was male.
+                            </note>
+                        </trait>
                     </person>
                 </listPerson>
                 <bibl type="primary">
-                    <biblScope type="pp">
-                        <ptr target="#bib3137-1"/>246</biblScope>
+                    <ptr target="http://syriaca.org/bibl/669"/>
+                    <citedRange unit="pp">246</citedRange>
                 </bibl>
             </div>
-            <div uri="http://syriaca.org/spear/3137-" resp="#ktorabi #dschwartz">
+            <div type="factoid" uri="http://syriaca.org/spear/3137-10" resp="#ktorabi #dschwartz">
                 <listPerson>
                     <person>
-                        <persName ref="http://syriaca.org/person/anonymous2"><!-- No URI for Epagathus and no information about his job title in the church -->
+                        <persName ref="http://syriaca.org/person/2642"><!-- No URI for Epagathus and no information about his job title in the church -->
                             Brother Epagathus
                         </persName>
                     </person>
                 </listPerson>
                 <bibl type="primary">
-                    <biblScope type="pp">
-                        <ptr target="#bib3137-1"/>246</biblScope>
+                    <ptr target="http://syriaca.org/bibl/669"/>
+                    <citedRange unit="pp">246</citedRange>
                 </bibl>
             </div>
-            <div uri="http://syriaca.org/spear/3137-" resp="#ktorabi #dschwartz">
+            <div type="factoid" uri="http://syriaca.org/spear/3137-11" resp="#ktorabi #dschwartz">
                 <listPerson>
                     <person>
-                        <persName ref="http://syriaca.org/person/anonymous2"/>
-                        <sex value="M">
-                            Male
-                        </sex>
+                        <persName ref="http://syriaca.org/person/2642"/>
+                        <trait type="gender" ref="http://syriaca.org/keyword/male">
+                            <note type="desc">
+                                <persName ref="http://syriaca.org/person/2642">Epagathus</persName> was male.
+                            </note>
+                        </trait>
                     </person>
                 </listPerson>
                 <bibl type="primary">
-                    <biblScope type="pp">
-                        <ptr target="#bib3137-1"/>246</biblScope>
+                    <ptr target="http://syriaca.org/bibl/669"/>
+                    <citedRange unit="pp">246</citedRange>
                 </bibl>
             </div>
-            <div uri="http://syriaca.org/spear/3137-" resp="#ktorabi #dschwartz">
+            <div type="factoid" uri="http://syriaca.org/spear/3137-12" resp="#ktorabi #dschwartz">
                 <listRelation><!-- It is not clear whether Misael AND the brothers Ammian and Epagathus asked Severus for communion in a box or if it was just the brothers Ammian and Epagathus who made the request-->
-                    <relation type="epistolary" name="syriaca:SenderOfLetterTo" active="http://syriaca.org/person/2558 http://syriaca.org/person/anonymous1 http://syriaca.org/person/anonymous2" passive="http://syriaca.org/person/51"/>
+                    <relation ref="syriaca:SenderOfLetterTo" active="http://syriaca.org/person/2558 http://syriaca.org/person/2593 http://syriaca.org/person/2642" passive="http://syriaca.org/person/51"/>
+                    <!-- Schema seems to allow illegal URI as a option for the active attribute value provided it is not the first value. I need to fix this. -->
                 </listRelation>
                 <bibl type="primary">
-                    <biblScope type="pp">
-                        <ptr target="#bib3137-1"/>246</biblScope>
+                    <ptr target="http://syriaca.org/bibl/669"/>
+                    <citedRange unit="pp">246</citedRange>
                 </bibl>
             </div> 
-            <div uri="http://syriaca.org/spear/3137-" resp="#ktorabi #dschwartz">
+            <div type="factoid" uri="http://syriaca.org/spear/3137-13" resp="#ktorabi #dschwartz">
                 <listRelation><!-- It is not clear whether Misael AND the brothers Ammian and Epagathus asked Severus for communion in a box or if it was just the brothers Ammian and Epagathus who made the request -->
-                    <relation type="epistolary" name="syriaca:SenderOfLetterTo" active="http://syriaca.org/person/51" passive="http://syriaca.org/person/2558 http://syriaca.org/person/anonymous1 http://syriaca.org/person/anonymous2"/>
+                    <relation ref="syriaca:SenderOfLetterTo" active="http://syriaca.org/person/51" passive="http://syriaca.org/person/2558 http://syriaca.org/person/2593 http://syriaca.org/person/2642"/>
                 </listRelation>
                 <bibl type="primary">
-                    <biblScope type="pp">
-                        <ptr target="#bib3137-1"/>246</biblScope>
+                    <ptr target="http://syriaca.org/bibl/669"/>
+                    <citedRange unit="pp">246</citedRange>
                 </bibl>
             </div> 
         </body>

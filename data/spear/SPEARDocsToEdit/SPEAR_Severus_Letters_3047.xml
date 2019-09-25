@@ -13,7 +13,6 @@
                 <funder>Texas A&amp;M University</funder>
                 <principal>Daniel L. Schwartz</principal>
                 <editor role="general" ref="http://syriaca.org/documentation/editors.xml#dschwartz">Daniel L. Schwartz</editor>
-                <editor role="general" ref="http://syriaca.org/documentation/editors.xml#dmichelson">David A. Michelson</editor>
                 <editor role="creator" ref="http://syriaca.org/documentation/editors.xml#dschwartz">Daniel L. Schwartz</editor>
                 <respStmt>
                     <resp></resp>
@@ -25,7 +24,7 @@
             </editionStmt>
             <publicationStmt>
                 <authority>Syriaca.org: The Syriac Reference Portal</authority>
-                <idno type="URI">http://syriaca.org/spear/3047/tei</idno> <!-- REPLACE THE #### WITH THE URI NUMBER OF THE ASSIGNED LETTER -->
+                <idno type="URI">http://syriaca.org/spear/3047/tei</idno> 
                 <availability>
                     <licence target="http://creativecommons.org/licenses/by/3.0/">
                         <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
@@ -66,227 +65,238 @@
     </teiHeader>
     <text>
         <body>
-            <div uri="http://syriaca.org/spear/3047-" resp="#ktorabi #dschwartz">
+            <div type="factoid" uri="http://syriaca.org/spear/3047-1" resp="#ktorabi #dschwartz">
                 <listPerson>
                     <person>
                         <persName ref="http://syriaca.org/person/2479">
-                            Victor, Bishop of
-                            <placeName>
+                            Victor bishop of
+                            <placeName ref="http://syriaca.org/place/2704">
                                 Philadelphia
-                            </placeName>
-                            in
-                            <placeName>
-                                Isauria
                             </placeName>
                         </persName>
                     </person>
                 </listPerson>
                 <bibl type="primary">
-                    <biblScope type="pp">
-                        <ptr target="#bib3047-1"/>378</biblScope>
+                    <ptr target="http://syriaca.org/bibl/669"/>
+                    <citedRange unit="pp">378</citedRange>
                 </bibl>
             </div>
-            <div uri="http://syriaca.org/spear/3047-" resp="#ktorabi #dschwartz">
+            <div type="factoid" uri="http://syriaca.org/spear/3047-2" resp="#ktorabi #dschwartz">
                 <listPerson>
                     <person>
                         <persName ref="http://syriaca.org/person/2479"/>
-                        <sex value="M">
-                            Male
-                        </sex>
-                    </person>
-                </listPerson>
-                <bibl type="primary">
-                    <biblScope type="pp">
-                        <ptr target="#bib3047-1"/>378</biblScope>
-                </bibl>
-            </div>
-            <div uri="http://syriaca.org/spear/3047-" resp="#ktorabi #dschwartz">
-                <listPerson>
-                    <person>
-                        <state type="vocation">
-                            <desc>
+                        <trait type="gender" ref="http://syriaca.org/keyword/male">
+                            <note type="desc">
                                 <persName ref="http://syriaca.org/person/2479">
                                     Victor
                                 </persName>
-                                was the Bishop of
-                                <placeName>
-                                    Philadelphia
-                                </placeName>
-                                in
-                                <placeName>
-                                    Isauria.
-                                </placeName>
-                            </desc>
-                        </state>
+                                was male.
+                            </note>
+                        </trait>
                     </person>
                 </listPerson>
                 <bibl type="primary">
-                    <biblScope type="pp">
-                        <ptr target="#bib3047-1"/>378</biblScope>
+                    <ptr target="http://syriaca.org/bibl/669"/>
+                    <citedRange unit="pp">378</citedRange>
                 </bibl>
             </div>
-            <div uri="http://syriaca.org/spear/3047-" resp="#ktorabi #dschwartz">
+            <div type="factoid" uri="http://syriaca.org/spear/3047-3" resp="#ktorabi #dschwartz">
+                <listPerson>
+                    <person>
+                        <persName ref="http://syriaca.org/person/2479"/>
+                        <occupation ref="http://syriaca.org/keyword/bishops">
+                            <note type="desc">
+                                <persName ref="http://syriaca.org/person/2479">
+                                    Victor
+                                </persName>
+                                was the bishop of
+                                <placeName ref="http://syriaca.org/place/2704">
+                                    Philadelphia
+                                </placeName>.
+                            </note>
+                        </occupation>
+                    </person>
+                </listPerson>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/bibl/669"/>
+                    <citedRange unit="pp">378</citedRange>
+                </bibl>
+            </div>
+            <div type="factoid" uri="http://syriaca.org/spear/3047-4" resp="#ktorabi #dschwartz">
                 <listRelation>
-                        <relation type="epistolary" name="syriaca:SenderOfLetterTo" active="http://syriaca.org/person/51" passive="http://syriaca.org/person/2479"/>
-                    </listRelation>
-                    <bibl type="primary">
-                        <biblScope type="pp">
-                            <ptr target="#bib3047-1"/>378</biblScope>
-                    </bibl>
+                        <relation ref="syriaca:SenderOfLetterTo" active="http://syriaca.org/person/51" passive="http://syriaca.org/person/2479"/>
+                </listRelation>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/bibl/669"/>
+                    <citedRange unit="pp">378</citedRange>
+                </bibl>
                 </div> 
-            <div uri="http://syriaca.org/spear/3047-" resp="#ktorabi #dschwartz">
+            <div type="factoid" uri="http://syriaca.org/spear/3047-5" resp="#ktorabi #dschwartz">
                 <listPerson>
                     <person>
                         <persName ref="http://syriaca.org/person/2400">
                             John
-                            </persName>
+                        </persName>
                     </person>
                 </listPerson>
                 <bibl type="primary">
-                    <biblScope type="pp">
-                        <ptr target="#bib3047-1"/>378</biblScope>
+                    <ptr target="http://syriaca.org/bibl/669"/>
+                    <citedRange unit="pp">378</citedRange>
                 </bibl>
             </div>
-            <div uri="http://syriaca.org/spear/3047-" resp="#ktorabi #dschwartz">
+            <div type="factoid" uri="http://syriaca.org/spear/3047-6" resp="#ktorabi #dschwartz">
                 <listPerson>
                     <person>
                         <persName ref="http://syriaca.org/person/2400"/>
-                        <sex value="M">
-                            Male
-                        </sex>
+                        <trait type="gender" ref="http://syriaca.org/keyword/male">
+                            <note type="desc">
+                                <persName ref="http://syriaca.org/person/2400">
+                                    John
+                                </persName>
+                                was male.
+                            </note>
+                        </trait>
                     </person>
                 </listPerson>
                 <bibl type="primary">
-                    <biblScope type="pp">
-                        <ptr target="#bib3047-1"/>378</biblScope>
+                    <ptr target="http://syriaca.org/bibl/669"/>
+                    <citedRange unit="pp">378</citedRange>
                 </bibl>
             </div>
-            <div uri="http://syriaca.org/spear/3047-" resp="#ktorabi #dschwartz">
+            <div type="factoid" uri="http://syriaca.org/spear/3047-7" resp="#ktorabi #dschwartz">
                 <listPerson>
                     <person>
-                        <state type="vocation">
-                            <desc>
+                        <persName ref="http://syriaca.org/person/2400"/>
+                        <occupation ref="http://syriaca.org/keyword/monks">
+                            <note type="desc">
                                 <persName ref="http://syriaca.org/person/2400">
                                     John
                                 </persName>
                                 was a monk.
-                                </desc>
-                        </state>
+                            </note>
+                        </occupation>
                     </person>
                 </listPerson>
                 <bibl type="primary">
-                    <biblScope type="pp">
-                        <ptr target="#bib3047-1"/>378</biblScope>
+                    <ptr target="http://syriaca.org/bibl/669"/>
+                    <citedRange unit="pp">378</citedRange>
                 </bibl>
             </div>
-            <div uri="http://syriaca.org/spear/3047-" resp="#ktorabi #dschwartz">
+            <div type="factoid" uri="http://syriaca.org/spear/3047-8" resp="#ktorabi #dschwartz">
                 <listPerson>
                     <person>
-                        <state type="vocation">
-                            <desc>
+                        <persName ref="http://syriaca.org/person/2400"/>
+                        <occupation ref="http://syriaca.org/keyword/deacons">
+                            <note type="desc">
                                 <persName ref="http://syriaca.org/person/2400">
                                     John
                                 </persName>
                                 was a deacon.
-                            </desc>
-                        </state>
+                            </note>
+                        </occupation>
                     </person>
                 </listPerson>
                 <bibl type="primary">
-                    <biblScope type="pp">
-                        <ptr target="#bib3047-1"/>378</biblScope>
+                    <ptr target="http://syriaca.org/bibl/669"/>
+                    <citedRange unit="pp">378</citedRange>
                 </bibl>
             </div>
-            <div uri="http://syriaca.org/spear/3047-" resp="#ktorabi #dschwartz">
+            <div type="factoid" uri="http://syriaca.org/spear/3047-9" resp="#ktorabi #dschwartz">
                 <listRelation>
-                    <relation type="clerical" name="syriaca:BishopOverClergy" active="http://syriaca.org/person/2479" passive="http://syriaca.org/person/2400"/>
+                    <relation ref="syriaca:BishopOverClergy" active="http://syriaca.org/person/2479" passive="http://syriaca.org/person/2400"/>
                 </listRelation>
                 <bibl type="primary">
-                    <biblScope type="pp">
-                        <ptr target="#bib3047-1"/>378</biblScope>
+                    <ptr target="http://syriaca.org/bibl/669"/>
+                    <citedRange unit="pp">378</citedRange>
                 </bibl>
             </div> 
-            <div uri="http://syriaca.org/spear/3047-" resp="#ktorabi #dschwartz">
+            <div type="factoid" uri="http://syriaca.org/spear/3047-10" resp="#ktorabi #dschwartz">
                 <listPerson>
                     <person>
-                        <persName ref="http://syriaca.org/person/anonymous1"><!-- No URI for Aelian -->
+                        <persName ref="http://syriaca.org/person/2589">
                             The presbyter Aelian
                         </persName>
                     </person>
                 </listPerson>
                 <bibl type="primary">
-                    <biblScope type="pp">
-                        <ptr target="#bib3047-1"/>378</biblScope>
+                    <ptr target="http://syriaca.org/bibl/669"/>
+                    <citedRange unit="pp">378</citedRange>
                 </bibl>
             </div>
-            <div uri="http://syriaca.org/spear/3047-" resp="#ktorabi #dschwartz">
+            <div type="factoid" uri="http://syriaca.org/spear/3047-11" resp="#ktorabi #dschwartz">
                 <listPerson>
                     <person>
-                        <persName ref="http://syriaca.org/person/anonymous1"/>
-                        <sex value="M">
-                            Male
-                        </sex>
+                        <persName ref="http://syriaca.org/person/2589"/>
+                        <trait type="gender" ref="http://syriaca.org/keyword/male">
+                            <note type="desc">
+                                <persName ref="http://syriaca.org/person/2589">
+                                    Aelian
+                                </persName>
+                                was male.
+                            </note>
+                        </trait>
                     </person>
                 </listPerson>
                 <bibl type="primary">
-                    <biblScope type="pp">
-                        <ptr target="#bib3047-1"/>378</biblScope>
+                    <ptr target="http://syriaca.org/bibl/669"/>
+                    <citedRange unit="pp">378</citedRange>
                 </bibl>
             </div>
-            <div uri="http://syriaca.org/spear/3047-" resp="#ktorabi #dschwartz">
+            <div type="factoid" uri="http://syriaca.org/spear/3047-12" resp="#ktorabi #dschwartz">
                 <listPerson>
                     <person>
-                        <state type="vocation">
-                            <desc>
-                                <persName ref="http://syriaca.org/person/anonymous1">
+                        <persName ref="http://syriaca.org/person/2589"/>
+                        <occupation ref="http://syriaca.org/keyword/priests">
+                            <note type="desc">
+                                <persName ref="http://syriaca.org/person/2589">
                                     Aelian
                                 </persName>
                                 was a presbyter.
-                            </desc>
-                        </state>
+                            </note>
+                        </occupation>
                     </person>
                 </listPerson>
                 <bibl type="primary">
-                    <biblScope type="pp">
-                        <ptr target="#bib3047-1"/>378</biblScope>
+                    <ptr target="http://syriaca.org/bibl/669"/>
+                    <citedRange unit="pp">378</citedRange>
                 </bibl>
             </div>
-            <div uri="http://syriaca.org/spear/3047-" resp="#ktorabi #dschwartz">
+            <div type="factoid" uri="http://syriaca.org/spear/3047-13" resp="#ktorabi #dschwartz">
                 <listRelation>
-                    <relation type="professional" name="snap:ProfessionalRelationship" mutual="http://syriaca.org/person/2400 http://syriaca.org/person/anonymous1"/>
+                    <relation ref="snap:ProfessionalRelationship" mutual="http://syriaca.org/person/2400 http://syriaca.org/person/2589"/>
                 </listRelation>
                 <bibl type="primary">
-                    <biblScope type="pp">
-                        <ptr target="#bib3047-1"/>378</biblScope>
+                    <ptr target="http://syriaca.org/bibl/669"/>
+                    <citedRange unit="pp">378</citedRange>
                 </bibl>
             </div> 
-            <div uri="http://syriaca.org/spear/3047-" resp="#ktorabi #dschwartz">
+            <div type="factoid" uri="http://syriaca.org/spear/3047-14" resp="#ktorabi #dschwartz">
                 <listPerson>
                     <personGrp>
                         <persName ref="http://syriaca.org/person/anonymi1">
-                            Our holy fathers of 
-                            <placeName>
+                            Holy fathers of 
+                            <placeName ref="http://syriaca.org/place/3034">
                                 the house of the Saintly John and Theodore
                             </placeName>
-                            who are aware of the evil repute of 
+                            who are aware of the evil reputation of 
                             <persName ref="http://syriaca.org/person/2400">
                                 John
                             </persName>
-                           </persName>
+                       </persName>
                     </personGrp>
                 </listPerson>
                 <bibl type="primary">
-                    <biblScope type="pp">
-                        <ptr target="#bibl3047-1"/>379</biblScope>
+                    <ptr target="http://syriaca.org/bibl/669"/>
+                    <citedRange unit="pp">379</citedRange>
                 </bibl>
             </div>
-            <div uri="http://syriaca.org/spear/3047-" resp="#ktorabi #dschwartz">
+            <div type="factoid" uri="http://syriaca.org/spear/3047-15" resp="#ktorabi #dschwartz">
                 <listRelation>
-                    <relation type="epistolary" name="syriaca:SenderOfLetterTo" active="http://syriaca.org/person/anonymi1" passive="http://syriaca.org/person/51"/>
+                    <relation ref="syriaca:SenderOfLetterTo" active="http://syriaca.org/person/anonymi1" passive="http://syriaca.org/person/51"/>
                 </listRelation>
                 <bibl type="primary">
-                    <biblScope type="pp">
-                        <ptr target="#bib3047-1"/>379</biblScope>
+                    <ptr target="http://syriaca.org/bibl/669"/>
+                    <citedRange unit="pp">379</citedRange>
                 </bibl>
             </div> 
         </body>

@@ -13,7 +13,6 @@
                 <funder>Texas A&amp;M University</funder>
                 <principal>Daniel L. Schwartz</principal>
                 <editor role="general" ref="http://syriaca.org/documentation/editors.xml#dschwartz">Daniel L. Schwartz</editor>
-                <editor role="general" ref="http://syriaca.org/documentation/editors.xml#dmichelson">David A. Michelson</editor>
                 <editor role="creator" ref="http://syriaca.org/documentation/editors.xml#dschwartz">Daniel L. Schwartz</editor>
                 <respStmt>
                     <resp></resp>
@@ -25,7 +24,7 @@
             </editionStmt>
             <publicationStmt>
                 <authority>Syriaca.org: The Syriac Reference Portal</authority>
-                <idno type="URI">http://syriaca.org/spear/3082/tei</idno> <!-- REPLACE THE #### WITH THE URI NUMBER OF THE ASSIGNED LETTER -->
+                <idno type="URI">http://syriaca.org/spear/3082/tei</idno> 
                 <availability>
                     <licence target="http://creativecommons.org/licenses/by/3.0/">
                         <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
@@ -66,106 +65,125 @@
     </teiHeader>
     <text>
         <body>
-            <div uri="http://syriaca.org/spear/3082-" resp="#ktorabi #dschwartz">
+            <div type="factoid" uri="http://syriaca.org/spear/3082-1" resp="#ktorabi #dschwartz">
                 <listPerson>
                     <person>
                         <persName ref="http://syriaca.org/person/anonymous1"><!-- No URI for Wife of Calliopius -->
-                            Wife of
-                            <persName ref="http://syriaca.org/person/anonymous2"><!-- No URI for Calliopius -->
+                            The wife of
+                            <persName ref="http://syriaca.org/person/2622">
                                 Calliopius, the patrician
                             </persName>
-                            </persName>
+                        </persName>
                     </person>
                 </listPerson>
                 <bibl type="primary">
-                    <biblScope type="pp">
-                        <ptr target="#bib3082-1"/>382</biblScope>
+                    <ptr target="http://syriaca.org/bibl/669"/>
+                    <citedRange unit="pp">382</citedRange>
                 </bibl>
             </div>
-            <div uri="http://syriaca.org/spear/3082-" resp="#ktorabi #dschwartz">
+            <div type="factoid" uri="http://syriaca.org/spear/3082-2" resp="#ktorabi #dschwartz">
                 <listPerson>
                     <person>
                         <persName ref="http://syriaca.org/person/anonymous1"/>
-                        <sex value="F">
-                            Female
-                        </sex>
+                        <trait type="gender" ref="http://syriaca.org/keyword/female">
+                            <note type="desc">
+                                <persName ref="http://syriaca.org/person/anonymous1"/>
+                                was female.
+                            </note>
+                        </trait>
                     </person>
                 </listPerson>
                 <bibl type="primary">
-                    <biblScope type="pp">
-                        <ptr target="#bib3082-1"/>382</biblScope>
+                    <ptr target="http://syriaca.org/bibl/669"/>
+                    <citedRange unit="pp">382</citedRange>
                 </bibl>
             </div>
-            <div uri="http://syriaca.org/spear/3082-" resp="#ktorabi #dschwartz">
+            <div type="factoid" uri="http://syriaca.org/spear/3082-3" resp="#ktorabi #dschwartz">
                 <listRelation>
-                        <relation type="epistolary" name="syriaca:SenderOfLetterTo" active="http://syriaca.org/person/51" passive="http://syriaca.org/person/anonymous1"/>
+                        <relation ref="syriaca:SenderOfLetterTo" active="http://syriaca.org/person/51" passive="http://syriaca.org/person/anonymous1"/>
                     </listRelation>
-                    <bibl type="primary">
-                        <biblScope type="pp">
-                            <ptr target="#bib3082-1"/>382</biblScope>
-                    </bibl>
-                </div> 
-            <div uri="http://syriaca.org/spear/3082-" resp="#ktorabi #dschwartz">
-                <listRelation>
-                    <relation type="epistolary" name="syriaca:SenderOfLetterTo" active="http://syriaca.org/person/anonymous1" passive="http://syriaca.org/person/51"/>
-                </listRelation>
                 <bibl type="primary">
-                    <biblScope type="pp">
-                        <ptr target="#bib3082-1"/>382</biblScope>
+                    <ptr target="http://syriaca.org/bibl/669"/>
+                    <citedRange unit="pp">382</citedRange>
                 </bibl>
             </div> 
-            <div uri="http://syriaca.org/spear/3082-" resp="#ktorabi #dschwartz">
+            <div type="factoid" uri="http://syriaca.org/spear/3082-4" resp="#ktorabi #dschwartz">
+                <listRelation>
+                    <relation ref="syriaca:SenderOfLetterTo" active="http://syriaca.org/person/anonymous1" passive="http://syriaca.org/person/51"/>
+                </listRelation>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/bibl/669"/>
+                    <citedRange unit="pp">382</citedRange>
+                </bibl>
+            </div> 
+            <div type="factoid" uri="http://syriaca.org/spear/3082-5" resp="#ktorabi #dschwartz">
                 <listPerson>
                     <person>
-                        <persName ref="http://syriaca.org/person/anonymous2">
+                        <persName ref="http://syriaca.org/person/2622">
                             Calliopius, the patrician
-                            </persName>
+                        </persName>
                     </person>
                 </listPerson>
                 <bibl type="primary">
-                    <biblScope type="pp">
-                        <ptr target="#bib3082-1"/>382</biblScope>
+                    <ptr target="http://syriaca.org/bibl/669"/>
+                    <citedRange unit="pp">382</citedRange>
                 </bibl>
             </div>
-            <div uri="http://syriaca.org/spear/3082-" resp="#ktorabi #dschwartz">
+            <div type="factoid" uri="http://syriaca.org/spear/3082-6" resp="#ktorabi #dschwartz">
                 <listPerson>
                     <person>
-                        <persName ref="http://syriaca.org/person/anonymou2"/>
-                        <sex value="M">
-                            Male
-                        </sex>
+                        <persName ref="http://syriaca.org/person/2622"/>
+                        <trait type="gender" ref="http://syriaca.org/keyword/male">
+                            <note type="desc">
+                                <persName ref="http://syriaca.org/person/2622">
+                                    Calliopius
+                                </persName>
+                                was male.
+                            </note>
+                        </trait>
                     </person>
                 </listPerson>
                 <bibl type="primary">
-                    <biblScope type="pp">
-                        <ptr target="#bib3082-1"/>382</biblScope>
+                    <ptr target="http://syriaca.org/bibl/669"/>
+                    <citedRange unit="pp">382</citedRange>
                 </bibl>
             </div>
-            <div uri="http://syriaca.org/spear/3082-" resp="#ktorabi #dschwartz">
+            <div type="factoid" uri="http://syriaca.org/spear/3082-7" resp="#ktorabi #dschwartz">
                 <listPerson>
                     <person>
-                        <state type="office">
-                            <desc>
-                                <persName ref="http://syriaca.org/person/anonymous2">
+                        <persName ref="http://syriaca.org/person/2622"/>
+                        <socecStatus ref="http://syriaca.org/keyword/patricians">
+                            <note type="desc">
+                                <persName ref="http://syriaca.org/person/2622">
                                     Calliopius
                                 </persName>
                                 was a patrician.
-                                </desc>
-                        </state>
+                            </note>
+                        </socecStatus>
                     </person>
                 </listPerson>
                 <bibl type="primary">
-                    <biblScope type="pp">
-                        <ptr target="#bib3082-1"/>382</biblScope>
+                    <ptr target="http://syriaca.org/bibl/669"/>
+                    <citedRange unit="pp">382</citedRange>
                 </bibl>
             </div>
-            <div uri="http://syriaca.org/spear/3082-" resp="#ktorabi #dschwartz">
+            <div type="factoid" uri="http://syriaca.org/spear/3082-8" resp="#ktorabi #dschwartz"><!-- Not sure if this should be mutual or act/pass? -->
                 <listRelation>
-                    <relation type="family" name="snap:WifeOf" active="http://syriaca.org/person/anonymous1" passive="http://syriaca.org/person/anonymous2"/>
+                    <relation ref="snap:SpouseOf" active="http://syriaca.org/person/anonymous1" passive="http://syriaca.org/person/2622"/>
                 </listRelation>
                 <bibl type="primary">
-                    <biblScope type="pp">
-                        <ptr target="#bib3082-1"/>382</biblScope>
+                    <ptr target="http://syriaca.org/bibl/669"/>
+                    <citedRange unit="pp">382</citedRange>
+                </bibl>
+            </div> 
+            <div type="factoid" uri="http://syriaca.org/spear/3082-9" resp="#ktorabi #dschwartz">
+                <listRelation>
+                    <relation ref="snap:SpouseOf" mutual=" http://syriaca.org/person/anonymous1 http://syriaca.org/person/2622"/>
+                    <!-- SCHEMA: attribute value requirements on mutual not working properly. -->
+                </listRelation>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/bibl/669"/>
+                    <citedRange unit="pp">382</citedRange>
                 </bibl>
             </div> 
             </body>

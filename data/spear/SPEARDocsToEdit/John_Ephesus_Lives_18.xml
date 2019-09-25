@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+<?xml-model href="https://raw.githubusercontent.com/srophe/srophe-eXist-app/schema-4-spear-edits/srophe-app/documentation/SPEARschema/out/odd_SPEAR.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/srophe/srophe-eXist-app/schema-4-spear-edits/srophe-app/documentation/SPEARschema/out/odd_SPEAR.rng" type="application/xml"
 	schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<?xml-model href="https://raw.githubusercontent.com/srophe/srophe-eXist-app/dev/srophe-app/documentation/SPEARschema/out/odd_SPEAR.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader>
         <fileDesc>
@@ -84,7 +83,28 @@
                 <date><!-- INPUT ONCE WE HAVE A "FINAL" DRAFT --></date>
             </publicationStmt>
             <sourceDesc>
-                <p>Born digital.</p>
+                <listBibl>
+                    <head>Sources for the Data in this Born Digital Prosopography</head>
+                    <bibl type="primary">
+                        <title>Lives of the Eastern Saints I</title>
+                        <title>A Monk who Left the Monastery</title>
+                        <author><persName ref="http://syriaca.org/person/74">John of
+                            Ephesus</persName></author>
+                        <editor><persName ref="http://syriaca.org/person/403">E. W.
+                            Brooks</persName></editor>
+                        <ptr target="http://syriaca.org/bibl/1409"/>
+                    </bibl>
+                    <bibl type="primary">
+                        <title>A Monk who Left the Monastery</title>
+                        <author><persName ref="http://syriaca.org/person/74">John of
+                            Ephesus</persName></author>
+                        <ptr target="http://syriaca.org/work/810"/>
+                    </bibl>
+                </listBibl>
+                <listRelation>
+                    <relation type="part" active="http://syriaca.org/work/810"
+                        ref="dcterms:isPartOf" passive="http://syriaca.org/work/9501"/>
+                </listRelation>
             </sourceDesc>
         </fileDesc>
         <encodingDesc>
@@ -113,7 +133,7 @@
     </teiHeader>
     <text>
         <body>
-            <div uri="http://syriaca.org/spear/810-1" resp="#jnsaint-laurent, #tbaillargeon, #tmcneir, #syoung, #rtrupiano">
+            <div type="factoid" uri="http://syriaca.org/spear/810-1" resp="#jnsaint-laurent, #tbaillargeon, #tmcneir, #syoung, #rtrupiano">
                 <listPerson>
                     <person>
                         <persName ref="http://syriaca.org/person/1932">
@@ -130,11 +150,11 @@
                     <citedRange unit="pp">260</citedRange>
                 </bibl>
             </div>
-            <div uri="http://syriaca.org/spear/810-2" resp="#jnsaint-laurent, #tbaillargeon, #tmcneir, #syoung, #rtrupiano">
+            <div type="factoid" uri="http://syriaca.org/spear/810-2" resp="#jnsaint-laurent, #tbaillargeon, #tmcneir, #syoung, #rtrupiano">
                 <listEvent>
                     <event>
                         <desc><!-- Use persName, placeName, orgName, and date elements as needed, with URIs whenever possible. -->
-                            A group exiled of monks welcome everyone in the village of <placeName ref="http://www.syriaca.org/place/2796.html">Hzyn</placeName>.
+                            A group exiled of monks welcome everyone in the village of <placeName ref="http://syriaca.org/place/2796">Hzyn</placeName>.
                         </desc>
                         <ptr target="http://syriaca.org/keyword/exile, http://syriaca.org/keyword/monastery"/><!-- Use as many keywords as needed to describe content in the description. -->
                     </event>
@@ -148,11 +168,11 @@
                     <citedRange unit="pp">260</citedRange>
                 </bibl>
             </div>
-            <div uri="http://syriaca.org/spear/810-3" resp="#jnsaint-laurent, #tbaillargeon, #tmcneir, #syoung, #rtrupiano">
+            <div type="factoid" uri="http://syriaca.org/spear/810-3" resp="#jnsaint-laurent, #tbaillargeon, #tmcneir, #syoung, #rtrupiano">
                 <listEvent>
                     <event>
                         <desc><!-- Use persName, placeName, orgName, and date elements as needed, with URIs whenever possible. -->
-                            A <persName ref="http://syriaca.org/person/1932.html">blessed man</persName> enters the monastery. 
+                            A <persName ref="http://syriaca.org/person/1932">blessed man</persName> enters the monastery. 
                         </desc>
                         <ptr target="http://syriaca.org/keyword/monastery, http://syriaca.org/keyword/asceticism"/><!-- Use as many keywords as needed to describe content in the description. -->
                     </event>
@@ -166,7 +186,7 @@
                     <citedRange unit="pp">261</citedRange>
                 </bibl>
             </div>
-            <div uri="http://syriaca.org/spear/810-4" resp="#jnsaint-laurent, #tbaillargeon, #tmcneir, #syoung, #rtrupiano">
+            <div type="factoid" uri="http://syriaca.org/spear/810-4" resp="#jnsaint-laurent, #tbaillargeon, #tmcneir, #syoung, #rtrupiano">
                 <listEvent>
                     <event>
                         <desc><!-- Use persName, placeName, orgName, and date elements as needed, with URIs whenever possible. -->
@@ -184,11 +204,11 @@
                     <citedRange unit="pp">261</citedRange>
                 </bibl>
             </div>
-            <div uri="http://syriaca.org/spear/810-5" resp="#jnsaint-laurent, #tbaillargeon, #tmcneir, #syoung, #rtrupiano">
+            <div type="factoid" uri="http://syriaca.org/spear/810-5" resp="#jnsaint-laurent, #tbaillargeon, #tmcneir, #syoung, #rtrupiano">
                 <listEvent>
                     <event>
                         <desc><!-- Use persName, placeName, orgName, and date elements as needed, with URIs whenever possible. -->
-                            The <persName ref="http://syriaca.org/person/1932.html">blessed man</persName> was suffering and in great pain from a curse.
+                            The <persName ref="http://syriaca.org/person/1932">blessed man</persName> was suffering and in great pain from a curse.
                         </desc>
                         <ptr target="http://syriaca.org/keyword/suffering"/><!-- Use as many keywords as needed to describe content in the description. -->
                     </event>
@@ -203,11 +223,11 @@
                 </bibl>
             </div>
             
-            <div uri="http://syriaca.org/spear/810-6" resp="#jnsaint-laurent, #tbaillargeon, #tmcneir, #syoung, #rtrupiano">
+            <div type="factoid" uri="http://syriaca.org/spear/810-6" resp="#jnsaint-laurent, #tbaillargeon, #tmcneir, #syoung, #rtrupiano">
                 <listEvent>
                     <event>
                         <desc><!-- Use persName, placeName, orgName, and date elements as needed, with URIs whenever possible. -->
-                            A group of monks prayed over the<persName ref="http://syriaca.org/person/1932.html">blessed man</persName> and held vigil for ten days.
+                            A group of monks prayed over the<persName ref="http://syriaca.org/person/1932">blessed man</persName> and held vigil for ten days.
                         </desc>
                         <ptr target="http://syriaca.org/keyword/prayer, http://syriaca.org/keyword/incense, http://syriaca.org/keyword/relics, http://syriaca.org/keyword/fasting"/><!-- Use as many keywords as needed to describe content in the description. -->
                     </event>
@@ -222,11 +242,11 @@
                 </bibl>
             </div>
             
-            <div uri="http://syriaca.org/spear/810-7" resp="#jnsaint-laurent, #tbaillargeon, #tmcneir, #syoung, #rtrupiano">
+            <div type="factoid" uri="http://syriaca.org/spear/810-7" resp="#jnsaint-laurent, #tbaillargeon, #tmcneir, #syoung, #rtrupiano">
                 <listEvent>
                     <event>
                         <desc><!-- Use persName, placeName, orgName, and date elements as needed, with URIs whenever possible. -->
-                            The<persName ref="http://syriaca.org/person/1932.html">blessed man</persName>dies.
+                            The<persName ref="http://syriaca.org/person/1932">blessed man</persName>dies.
                         </desc>
                         <ptr target="http://syriaca.org/keyword/death"/><!-- Use as many keywords as needed to describe content in the description. -->
                     </event>
@@ -240,14 +260,25 @@
                     <citedRange unit="pp">265</citedRange>
                 </bibl>
             </div>
-            
-            
-            
-            
-            
         </body>
         <back>
-            <!-- Enter full bibl information here for the  bibl URIs contained in this document, n.b. the schema needs to be updated in order to allow this.-->
-        </back>
+            <listBibl>
+                <head>Works Cited</head>
+                <bibl type="primary" xml:id="bibl810-1">
+                    <title>Lives of the Eastern Saints I</title>
+                    <title>A Monk who Left the Monastery</title>
+                    <author><persName ref="http://syriaca.org/person/74">John of
+                        Ephesus</persName></author>
+                    <editor><persName ref="http://syriaca.org/person/403">E. W.
+                        Brooks</persName></editor>
+                    <ptr target="http://syriaca.org/bibl/1409"/>
+                </bibl>
+                <bibl type="primary" xml:id="bibl810-2">
+                    <title>A Monk who Left the Monastery</title>
+                    <author><persName ref="http://syriaca.org/person/74">John of
+                        Ephesus</persName></author>
+                    <ptr target="http://syriaca.org/work/810"/>
+                </bibl>
+            </listBibl>        </back>
     </text>
 </TEI>

@@ -13,7 +13,6 @@
                 <funder>Texas A&amp;M University</funder>
                 <principal>Daniel L. Schwartz</principal>
                 <editor role="general" ref="http://syriaca.org/editors.xml#dschwartz">Daniel L. Schwartz</editor>
-                <editor role="general" ref="http://syriaca.org/editors.xml#dmichelson">David A. Michelson</editor>
                 <editor role="creator" ref="http://syriaca.org/editors.xml#dschwartz">Daniel L. Schwartz</editor>
                 <respStmt>
                     <resp></resp>
@@ -25,7 +24,7 @@
             </editionStmt>
             <publicationStmt>
                 <authority>Syriaca.org: The Syriac Reference Portal</authority>
-                <idno type="URI">http://syriaca.org/spear/3149/tei</idno> <!-- REPLACE THE #### WITH THE URI NUMBER OF THE ASSIGNED LETTER -->
+                <idno type="URI">http://syriaca.org/spear/3149/tei</idno> 
                 <availability>
                     <licence target="http://creativecommons.org/licenses/by/3.0/">
                         <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
@@ -66,48 +65,48 @@
     </teiHeader>
     <text>
         <body>
-            <div uri="http://syriaca.org/spear/3149-" resp="#ktorabi #dschwartz">
+            <div type="factoid" uri="http://syriaca.org/spear/3149-1" resp="#ktorabi #dschwartz">
                 <listPerson>
                     <person>
                         <persName ref="http://syriaca.org/person/anonymous1">
                             Recipient of a letter from
                             <persName ref="http://syriaca.org/person/51">
                                 Severus of 
-                            </persName>
-                            <placeName>
+                            <placeName ref="http://syriaca.org/place/10">
                                 Antioch
-                                </placeName>
+                            </placeName>
+                            </persName>
                         </persName>
                     </person>
                 </listPerson>
                 <bibl type="primary">
-                    <biblScope type="pp">
-                        <ptr target="#bib3149-1"/>191</biblScope>
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="pp">191</citedRange>
                 </bibl>
             </div>
-            <div uri="http://syriaca.org/spear/3149-" resp="#ktorabi #dschwartz">
+            <div type="factoid" uri="http://syriaca.org/spear/3149-2" resp="#ktorabi #dschwartz">
                 <listRelation>
-                    <relation type="epistolary" name="syriaca:RecipientOfLetterFrom" active="http://syriaca.org/person/anonymous1" passive="http://syriaca.org/person/51"/>
+                    <relation ref="syriaca:SenderOfLetterTo" active="http://syriaca.org/person/51" passive="http://syriaca.org/person/anonymous1"/>
                 </listRelation>
                 <bibl type="primary">
-                    <biblScope type="pp">
-                        <ptr target="#bib3149-1"/>191</biblScope>
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="pp">191</citedRange>
                 </bibl>
             </div>
-            <div uri="http://syriaca.org/spear/3149-" resp="#ktorabi #dschwartz">
+            <div type="factoid" uri="http://syriaca.org/spear/3149-3" resp="#ktorabi #dschwartz">
                 <listPerson>
                     <person><!-- The information about this individual is drawn from a fragment of this letter and is incomplete -->
                         <persName ref="http://syriaca.org/person/anonymous2">
                             he who has just received the high-priestly chrism upon the crown of his head
-                            </persName>
+                        </persName>
                     </person>
                 </listPerson>
                 <bibl type="primary">
-                    <biblScope type="pp">
-                        <ptr target="#bib3149-1"/>191</biblScope>
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="pp">191</citedRange>
                 </bibl>
             </div>
-            <div uri="http://syriaca.org/spear/3149-" resp="#ktorabi #dschwartz">
+            <div type="factoid" uri="http://syriaca.org/spear/3149-4" resp="#ktorabi #dschwartz">
                 <listPerson>
                     <person>
                         <persName ref="http://syriaca.org/person/2475">
@@ -116,43 +115,46 @@
                     </person>
                 </listPerson>
                 <bibl type="primary">
-                    <biblScope type="pp">
-                        <ptr target="#bib3149-1"/>191</biblScope>
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="pp">191</citedRange>
                 </bibl>
             </div>
-            <div uri="http://syriaca.org/spear/3149-" resp="#ktorabi #dschwartz">
+            <div type="factoid" uri="http://syriaca.org/spear/3149-5" resp="#ktorabi #dschwartz">
                 <listPerson>
                     <person>
                         <persName ref="http://syriaca.org/person/2475"/>
-                        <sex value="M">
-                            Male
-                        </sex>
+                        <trait type="gender" ref="http://syriaca.org/keyword/male">
+                            <note type="desc">
+                                <persName ref="http://syriaca.org/person/2475">Joesph</persName> was male.
+                            </note>
+                        </trait>
                     </person>
                 </listPerson>
                 <bibl type="primary">
-                    <biblScope type="pp">
-                        <ptr target="#bib3149-1"/>191</biblScope>
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="pp">191</citedRange>
                 </bibl>
             </div>
-            <div uri="http://syriaca.org/spear/3149-" resp="#ktorabi #dschwartz">
+            <div type="factoid" uri="http://syriaca.org/spear/3149-6" resp="#ktorabi #dschwartz">
                 <listPerson>
                     <person>
-                        <state type="vocation">
-                            <desc>
+                        <persName ref="http://syriaca.org/person/2475"/>
+                        <occupation ref="http://syriaca.org/keyword/monks">
+                            <note type="desc">
                                 <persName ref="http://syriaca.org/person/2475">
                                     Joseph
                                 </persName>
-                                was a monk
-                                </desc>
-                        </state>
+                                was a monk.
+                            </note>
+                        </occupation>
                     </person>
                 </listPerson>
                 <bibl type="primary">
-                    <biblScope type="pp">
-                        <ptr target="#bib3149-1"/>191</biblScope>
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="pp">191</citedRange>
                 </bibl>
             </div>
-            <div uri="http://syriaca.org/spear/3149-" resp="#ktorabi #dschwartz">
+            <div type="factoid" uri="http://syriaca.org/spear/3149-7" resp="#ktorabi #dschwartz">
                 <listPerson>
                     <person>
                         <persName ref="http://syriaca.org/person/2477">
@@ -161,43 +163,46 @@
                     </person>
                 </listPerson>
                 <bibl type="primary">
-                    <biblScope type="pp">
-                        <ptr target="#bib3149-1"/>191</biblScope>
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="pp">191</citedRange>
                 </bibl>
             </div>
-            <div uri="http://syriaca.org/spear/3149-" resp="#ktorabi #dschwartz">
+            <div type="factoid" uri="http://syriaca.org/spear/3149-8" resp="#ktorabi #dschwartz">
                 <listPerson>
                     <person>
                         <persName ref="http://syriaca.org/person/2477"/>
-                        <sex value="M">
-                            Male
-                        </sex>
+                        <trait type="gender" ref="http://syriaca.org/keyword/male">
+                            <note type="desc">
+                                <persName ref="http://syriaca.org/person/2477">John</persName> was male.
+                            </note>
+                        </trait>
                     </person>
                 </listPerson>
                 <bibl type="primary">
-                    <biblScope type="pp">
-                        <ptr target="#bib3149-1"/>191</biblScope>
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="pp">191</citedRange>
                 </bibl>
             </div>
-            <div uri="http://syriaca.org/spear/3149-" resp="#ktorabi #dschwartz">
+            <div type="factoid" uri="http://syriaca.org/spear/3149-9" resp="#ktorabi #dschwartz">
                 <listPerson>
                     <person>
-                        <state type="vocation">
-                            <desc>
+                        <persName ref="http://syriaca.org/person/2477"/>
+                        <occupation ref="http://syriaca.org/keyword/monks">
+                            <note type="desc">
                                 <persName ref="http://syriaca.org/person/2477">
                                     John
                                 </persName>
-                                was a monk
-                            </desc>
-                        </state>
+                                was a monk.
+                            </note>
+                        </occupation>
                     </person>
                 </listPerson>
                 <bibl type="primary">
-                    <biblScope type="pp">
-                        <ptr target="#bib3149-1"/>191</biblScope>
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="pp">191</citedRange>
                 </bibl>
             </div>
-            <div uri="http://syriaca.org/spear/3149-" resp="#ktorabi #dschwartz">
+            <div type="factoid" uri="http://syriaca.org/spear/3149-10" resp="#ktorabi #dschwartz">
                 <listPerson>
                     <person>
                         <persName ref="http://syriaca.org/person/2476">
@@ -206,52 +211,55 @@
                     </person>
                 </listPerson>
                 <bibl type="primary">
-                    <biblScope type="pp">
-                        <ptr target="#bib3149-1"/>191</biblScope>
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="pp">191</citedRange>
                 </bibl>
             </div>
-            <div uri="http://syriaca.org/spear/3149-" resp="#ktorabi #dschwartz">
+            <div type="factoid" uri="http://syriaca.org/spear/3149-11" resp="#ktorabi #dschwartz">
                 <listPerson>
                     <person>
                         <persName ref="http://syriaca.org/person/2476"/>
-                        <sex value="M">
-                            Male
-                        </sex>
+                        <trait type="gender" ref="http://syriaca.org/keyword/male">
+                            <note type="desc">
+                                <persName ref="http://syriaca.org/person/2476">Zacharias</persName> was male.
+                            </note>
+                        </trait>
                     </person>
                 </listPerson>
                 <bibl type="primary">
-                    <biblScope type="pp">
-                        <ptr target="#bib3149-1"/>191</biblScope>
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="pp">191</citedRange>
                 </bibl>
             </div>
-            <div uri="http://syriaca.org/spear/3149-" resp="#ktorabi #dschwartz">
+            <div type="factoid" uri="http://syriaca.org/spear/3149-12" resp="#ktorabi #dschwartz">
                 <listPerson>
                     <person>
-                        <state type="vocation">
-                            <desc>
+                        <persName ref="http://syriaca.org/person/2476"/>
+                        <occupation ref="http://syriaca.org/keyword/monks">
+                            <note type="desc">
                                 <persName ref="http://syriaca.org/person/2476">
                                     Zacharias
                                 </persName>
-                                was a monk
-                            </desc>
-                        </state>
+                                was a monk.
+                            </note>
+                        </occupation>
                     </person>
                 </listPerson>
                 <bibl type="primary">
-                    <biblScope type="pp">
-                        <ptr target="#bib3149-1"/>191</biblScope>
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="pp">191</citedRange>
                 </bibl>
             </div>
-            <div uri="http://syriaca.org/spear/3149-" resp="#ktorabi #dschwartz">
+            <div type="factoid" uri="http://syriaca.org/spear/3149-13" resp="#ktorabi #dschwartz">
                 <listRelation>
-                    <relation type="epistolary" name="syriaca:EpistolaryReferenceTo" active="http://syriaca.org/person/51" passive="http://syriaca.org/person/2477 http://syriaca.org/person/2476 http://syriaca.org/person/2475"/>
+                    <relation ref="syriaca:EpistolaryReferenceTo" active="http://syriaca.org/person/51" passive="http://syriaca.org/person/2477 http://syriaca.org/person/2476 http://syriaca.org/person/2475"/>
                 </listRelation>
                 <bibl type="primary">
-                    <biblScope type="pp">
-                        <ptr target="#bib3149-1"/>191</biblScope>
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="pp">191</citedRange>
                 </bibl>
             </div>
-            <div uri="http://syriaca.org/spear/3149-" resp="#ktorabi #dschwartz">
+            <div type="factoid" uri="http://syriaca.org/spear/3149-14" resp="#ktorabi #dschwartz">
                 <listPerson>
                     <person>
                         <persName ref="http://syriaca.org/person/2443">
@@ -260,50 +268,53 @@
                     </person>
                 </listPerson>
                 <bibl type="primary">
-                    <biblScope type="pp">
-                        <ptr target="#bib3149-1"/>192</biblScope>
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="pp">192</citedRange>
                 </bibl>
             </div>
-            <div uri="http://syriaca.org/spear/3149-" resp="#ktorabi #dschwartz">
+            <div type="factoid" uri="http://syriaca.org/spear/3149-15" resp="#ktorabi #dschwartz">
                 <listPerson>
                     <person>
                         <persName ref="http://syriaca.org/person/2443"/>
-                        <sex value="M">
-                            Male
-                        </sex>
+                        <trait type="gender" ref="http://syriaca.org/keyword/male">
+                            <note type="desc">
+                                <persName ref="http://syriaca.org/person/2443">Constantine</persName> was male.
+                            </note>
+                        </trait>
                     </person>
                 </listPerson>
                 <bibl type="primary">
-                    <biblScope type="pp">
-                        <ptr target="#bib3149-1"/>192</biblScope>
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="pp">192</citedRange>
                 </bibl>
             </div>
-            <div uri="http://syriaca.org/spear/3149-" resp="#ktorabi #dschwartz">
+            <div type="factoid" uri="http://syriaca.org/spear/3149-16" resp="#ktorabi #dschwartz">
                 <listPerson>
                     <person>
-                        <state type="vocation">
-                            <desc>
+                        <persName ref="http://syriaca.org/person/2443"/>
+                        <occupation ref="http://syriaca.org/keyword/bishops">
+                            <note type="desc">
                                 <persName ref="http://syriaca.org/person/2443">
                                     Constantine
                                 </persName>
                                 was the Bishop of
-                                <placeName>
+                                <placeName ref="http://syriaca.org/place/2809">
                                     Laodicea
                                 </placeName>
                                 in
-                                <placeName>
+                                <placeName ref="http://syriaca.org/place/486">
                                     Syria
                                 </placeName>
-                            </desc>
-                        </state>
+                            </note>
+                        </occupation>
                     </person>
                 </listPerson>
                 <bibl type="primary">
-                    <biblScope type="pp">
-                        <ptr target="#bib3149-1"/>192</biblScope>
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="pp">192</citedRange>
                 </bibl>
             </div>
-        <div uri="http://syriaca.org/spear/3149-" resp="#ktorabi #dschwartz">
+        <div type="factoid" uri="http://syriaca.org/spear/3149-17" resp="#ktorabi #dschwartz">
                 <listPerson>
                     <person>
                         <persName ref="http://syriaca.org/person/2479">
@@ -311,141 +322,148 @@
                             </persName>
                     </person>
                 </listPerson>
-                <bibl type="primary">
-                    <biblScope type="pp">
-                        <ptr target="#bib3149-1"/>192</biblScope>
-                </bibl>
+            <bibl type="primary">
+                <ptr target="http://syriaca.org/bibl/668"/>
+                <citedRange unit="pp">192</citedRange>
+            </bibl>
             </div>
-            <div uri="http://syriaca.org/spear/3149-" resp="#ktorabi #dschwartz">
+            <div type="factoid" uri="http://syriaca.org/spear/3149-18" resp="#ktorabi #dschwartz">
                 <listPerson>
                     <person>
                         <persName ref="http://syriaca.org/person/2479"/>
-                        <sex value="M">
-                            Male
-                        </sex>
+                        <trait type="gender" ref="http://syriaca.org/keyword/male">
+                            <note type="desc">
+                                <persName ref="http://syriaca.org/person/2479">Victor</persName> was male. 
+                            </note>
+                        </trait>
                     </person>
                 </listPerson>
                 <bibl type="primary">
-                    <biblScope type="pp">
-                        <ptr target="#bib3149-1"/>192</biblScope>
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="pp">192</citedRange>
                 </bibl>
             </div>
-            <div uri="http://syriaca.org/spear/3149-" resp="#ktorabi #dschwartz">
+            <div type="factoid" uri="http://syriaca.org/spear/3149-19" resp="#ktorabi #dschwartz">
                 <listPerson>
                     <person>
-                        <state type="vocation">
-                            <desc>
+                        <persName ref="http://syriaca.org/person/2479"/>
+                        <occupation ref="http://syriaca.org/keyword/bishops">
+                            <note type="desc">
                                 <persName ref="http://syriaca.org/person/2479">
                                     Victor
                                 </persName>
                                 was the Bishop of
-                                <placeName>
+                                <placeName ref="http://syriaca.org/place/2704">
                                     Philadelphia
                                 </placeName>
                                 in
-                                <placeName>
+                                <placeName ref="http://syriaca.org/place/2799">
                                     Isauria
                                 </placeName>
-                            </desc>
-                        </state>
+                            </note>
+                        </occupation>
                     </person>
                 </listPerson>
                 <bibl type="primary">
-                    <biblScope type="pp">
-                        <ptr target="#bib3149-1"/>192</biblScope>
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="pp">192</citedRange>
                 </bibl>
             </div>
-            <div uri="http://syriaca.org/spear/3149-" resp="#ktorabi #dschwartz">
+            <div type="factoid" uri="http://syriaca.org/spear/3149-20" resp="#ktorabi #dschwartz">
                 <listRelation>
-                    <relation type="epistolary" name="syriaca:SenderOfLetterTo" active="http://syriaca.org/person/anonymous1" passive="http://syriaca.org/person/2479 http://syriaca.org/person/2443"/>
+                    <relation ref="syriaca:SenderOfLetterTo" active="http://syriaca.org/person/anonymous1" passive="http://syriaca.org/person/2479 http://syriaca.org/person/2443"/>
                 </listRelation>
                 <bibl type="primary">
-                    <biblScope type="pp">
-                        <ptr target="#bib3149-1"/>192</biblScope>
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="pp">192</citedRange>
                 </bibl>
             </div>
-            <div uri="http://syriaca.org/spear/3149-" resp="#ktorabi #dschwartz">
+            <div type="factoid" uri="http://syriaca.org/spear/3149-21" resp="#ktorabi #dschwartz">
                 <listPerson>
                     <person>
                         <persName ref="http://syriaca.org/person/2478">
-                            the Deaconess and Archimandritess, Heracliana
+                            The Deaconess and Archimandritess, Heracliana
                         </persName>
                     </person>
                 </listPerson>
                 <bibl type="primary">
-                    <biblScope type="pp">
-                        <ptr target="#bib3149-1"/>192</biblScope>
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="pp">192</citedRange>
                 </bibl>
             </div>
-            <div uri="http://syriaca.org/spear/3149-" resp="#ktorabi #dschwartz">
+            <div type="factoid" uri="http://syriaca.org/spear/3149-22" resp="#ktorabi #dschwartz">
                 <listPerson>
                     <person>
                         <persName ref="http://syriaca.org/person/2478"/>
-                        <sex value="F">
-                            Female
-                        </sex>
+                        <trait type="gender" ref="http://syriaca.org/keyword/female">
+                            <note type="desc">
+                                <persName ref="http://syriaca.org/person/2478">Heracliana</persName> was female.
+                            </note>
+                        </trait>
                     </person>
                 </listPerson>
                 <bibl type="primary">
-                    <biblScope type="pp">
-                        <ptr target="#bib3149-1"/>192</biblScope>
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="pp">192</citedRange>
                 </bibl>
             </div>
-            <div uri="http://syriaca.org/spear/3149-" resp="#ktorabi #dschwartz">
+            <div type="factoid" uri="http://syriaca.org/spear/3149-23" resp="#ktorabi #dschwartz">
                 <listPerson>
                     <person>
-                        <state type="vocation">
-                            <desc>
+                        <persName ref="http://syriaca.org/person/2478"/>
+                        <occupation ref="http://syriaca.org/keyword/deacons">
+                            <note type="desc">
                                 <persName ref="http://syriaca.org/person/2478">
                                     Heracliana
                                 </persName>
-                                was a deaconess
-                                </desc>
-                        </state>
+                                was a deaconess.
+                            </note>
+                        </occupation>
                     </person>
                 </listPerson>
                 <bibl type="primary">
-                    <biblScope type="pp">
-                        <ptr target="#bib3149-1"/>192</biblScope>
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="pp">192</citedRange>
                 </bibl>
             </div>
-            <div uri="http://syriaca.org/spear/3149-" resp="#ktorabi #dschwartz">
+            <div type="factoid" uri="http://syriaca.org/spear/3149-24" resp="#ktorabi #dschwartz">
                 <listPerson>
                     <person>
-                        <state type="vocation">
-                            <desc>
+                        <persName ref="http://syriaca.org/person/2478"/>
+                        <occupation ref="http://syriaca.org/keyword/monastic-heads">
+                            <note type="desc">
                                 <persName ref="http://syriaca.org/person/2478">
                                     Heracliana
                                 </persName>
-                                was an archimandritess
-                            </desc>
-                        </state>
+                                was a deaconess.
+                            </note>
+                        </occupation>
                     </person>
                 </listPerson>
                 <bibl type="primary">
-                    <biblScope type="pp">
-                        <ptr target="#bib3149-1"/>192</biblScope>
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="pp">192</citedRange>
                 </bibl>
             </div>
-            <div uri="http://syriaca.org/spear/3149-" resp="#ktorabi #dschwartz">
+            <div type="factoid" uri="http://syriaca.org/spear/3149-25" resp="#ktorabi #dschwartz">
                 <listRelation><!-- From the information in this letter, it seems that the addressee's conflict with Heracliana, her monastic sisters, and John is of a personal nature. He removed the sisters from the monastery because of the insults that he felt were directed toward him by those individuals. Anonymous1 dislikes these individuals and they seem to dislike him, but I'm not sure if these feelings rise to the level of "enmity" This may not be the best way to encode these relationships  -->
-                    <relation type="personal" name="snap:EnmityFor" ana="alleged" active="http://syriaca.org/person/anomymous1" passive="http://syriaca.org/person/2478"/>
+                    <relation ref="snap:EnmityFor" active="http://syriaca.org/person/anomymous1" passive="http://syriaca.org/person/2478"/>
                 </listRelation>
                 <bibl type="primary">
-                    <biblScope type="pp">
-                        <ptr target="#bib3149-1"/>192</biblScope>
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="pp">192</citedRange>
                 </bibl>
             </div>
-            <div uri="http://syriaca.org/spear/3149-" resp="#ktorabi #dschwartz">
+            <div type="factoid" uri="http://syriaca.org/spear/3149-26" resp="#ktorabi #dschwartz">
                 <listRelation><!-- From the information in this letter, it seems that the addressee's conflict with Heracliana, her monastic sisters, and John is of a personal nature. He removed the sisters from the monastery because of the insults that he felt were directed toward him by those individuals. Anonymous1 dislikes these individuals and they seem to dislike him, but I'm not sure if these feelings rise to the level of "enmity" This may not be the best way to encode these relationships  -->
-                    <relation type="personal" name="snap:EnmityFor" ana="alleged" active="http://syriaca.org/person/2478" passive="http://syriaca.org/person/anonymous1"/>
+                    <relation ref="snap:EnmityFor" active="http://syriaca.org/person/2478" passive="http://syriaca.org/person/anonymous1"/>
                 </listRelation>
                 <bibl type="primary">
-                    <biblScope type="pp">
-                        <ptr target="#bib3149-1"/>192</biblScope>
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="pp">192</citedRange>
                 </bibl>
             </div>
-            <div uri="http://syriaca.org/spear/3149-" resp="#ktorabi #dschwartz">
+            <div type="factoid" uri="http://syriaca.org/spear/3149-27" resp="#ktorabi #dschwartz">
                 <listPerson>
                     <personGrp>
                         <persName ref="http://syriaca.org/person/anonymi1">
@@ -461,60 +479,59 @@
                     </personGrp>
                 </listPerson>
                 <bibl type="primary">
-                    <biblScope type="pp">
-                        <ptr target="#bib3149"/>192</biblScope>
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="pp">192</citedRange>
                 </bibl>
             </div>
-            <div uri="http://syriaca.org/spear/3149-" resp="#ktorabi #dschwartz">
+            <div type="factoid" uri="http://syriaca.org/spear/3149-28" resp="#ktorabi #dschwartz">
                 <listRelation><!-- From the information in this letter, it seems that the addressee's conflict with Heracliana, her monastic sisters, and John is of a personal nature. He removed the sisters from the monastery because of the insults that he felt were directed toward him by those individuals. Anonymous1 dislikes these individuals and they seem to dislike him, but I'm not sure if these feelings rise to the level of "enmity" This may not be the best way to encode these relationships  -->
-                    <relation type="personal" name="snap:EnmityFor" ana="alleged" active="http://syriaca.org/person/anonymi1" passive="http://syriaca.org/person/anonymous1"/>
+                    <relation ref="snap:EnmityFor" active="http://syriaca.org/person/anonymi1" passive="http://syriaca.org/person/anonymous1"/>
                 </listRelation>
                 <bibl type="primary">
-                    <biblScope type="pp">
-                        <ptr target="#bib3149-1"/>192</biblScope>
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="pp">192</citedRange>
                 </bibl>
             </div>
-            <div uri="http://syriaca.org/spear/3149-" resp="#ktorabi #dschwartz">
+            <div type="factoid" uri="http://syriaca.org/spear/3149-29" resp="#ktorabi #dschwartz">
                 <listRelation><!-- From the information in this letter, it seems that the addressee's conflict with Heracliana, her monastic sisters, and John is of a personal nature. He removed the sisters from the monastery because of the insults that he felt were directed toward him by those individuals. Anonymous1 dislikes these individuals and they seem to dislike him, but I'm not sure if these feelings rise to the level of "enmity" This may not be the best way to encode these relationships  -->
-                    <relation type="personal" name="snap:EnmityFor" ana="alleged" active="http://syriaca.org/person/anonymous1" passive="http://syriaca.org/person/anonymi1"/>
+                    <relation ref="snap:EnmityFor" active="http://syriaca.org/person/anonymous1" passive="http://syriaca.org/person/anonymi1"/>
                 </listRelation>
                 <bibl type="primary">
-                    <biblScope type="pp">
-                        <ptr target="#bib3149-1"/>192</biblScope>
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="pp">192</citedRange>
                 </bibl>
             </div>
-            <div uri="http://syriaca.org/spear/3149-" resp="#ktorabi #dschwartz">
+            <div type="factoid" uri="http://syriaca.org/spear/3149-30" resp="#ktorabi #dschwartz">
                 <listRelation>
-                    <relation type="monastic" name="syriaca:MonasticHeadOver" active="http://syriaca.org/person/2478" passive="http://syriaca.org/person/anonymi1"/>
+                    <relation ref="syriaca:MonasticHeadOver" active="http://syriaca.org/person/2478" passive="http://syriaca.org/person/anonymi1"/>
                 </listRelation>
                 <bibl type="primary">
-                    <biblScope type="pp">
-                        <ptr target="#bib3149-1"/>192</biblScope>
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="pp">192</citedRange>
                 </bibl>
             </div>
-            <div uri="http://syriaca.org/spear/3149-" resp="#ktorabi #dschwartz">
+            <div type="factoid" uri="http://syriaca.org/spear/3149-31" resp="#ktorabi #dschwartz">
                 <listRelation><!-- From the information in this letter, it seems that the addressee's conflict with Heracliana, her monastic sisters, and John is of a personal nature. He removed the sisters from the monastery because of the insults that he felt were directed toward him by those individuals. Anonymous1 dislikes these individuals and they seem to dislike him, but I'm not sure if these feelings rise to the level of "enmity" This may not be the best way to encode these relationships  -->
-                    <relation type="personal" name="snap:EnmityFor" ana="alleged" active="http://syriaca.org/person/anomymous1" passive="http://syriaca.org/person/2477"/>
+                    <relation ref="snap:EnmityFor" active="http://syriaca.org/person/anomymous1" passive="http://syriaca.org/person/2477"/>
                 </listRelation>
                 <bibl type="primary">
-                    <biblScope type="pp">
-                        <ptr target="#bib3149-1"/>192-193</biblScope>
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="pp">192-193</citedRange>
                 </bibl>
             </div>
-            <div uri="http://syriaca.org/spear/3149-" resp="#ktorabi #dschwartz">
+            <div type="factoid" uri="http://syriaca.org/spear/3149-32" resp="#ktorabi #dschwartz">
                 <listRelation><!-- From the information in this letter, it seems that the addressee's conflict with Heracliana, her monastic sisters, and John is of a personal nature. He removed the sisters from the monastery because of the insults that he felt were directed toward him by those individuals. Anonymous1 dislikes these individuals and they seem to dislike him, but I'm not sure if these feelings rise to the level of "enmity" This may not be the best way to encode these relationships  -->
-                    <relation type="personal" name="snap:EnmityFor" ana="alleged" active="http://syriaca.org/person/2477" passive="http://syriaca.org/person/anonymous1"/>
+                    <relation ref="snap:EnmityFor" active="http://syriaca.org/person/2477" passive="http://syriaca.org/person/anonymous1"/>
                 </listRelation>
                 <bibl type="primary">
-                    <biblScope type="pp">
-                        <ptr target="#bib3149-1"/>192-193</biblScope>
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="pp">192-193</citedRange>
                 </bibl>
             </div>
             </body>
         <back>
             <listBibl>
                 <head>Works Cited</head>
-                <head>Sources for the Data in this Born Digital Prosopography</head>
                 <bibl type="primary" xml:id="bibl3149-1">
                     <title xml:lang="en">The Sixth Book of the Select Letters of Severus, Patriarch of Antioch in the Syriac Version of Athanasius of Nisibis</title>
                     <title type="sub">Translation, I.1 - II.3</title>

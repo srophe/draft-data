@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+<?xml-model href="https://raw.githubusercontent.com/srophe/srophe-eXist-app/schema-4-spear-edits/srophe-app/documentation/SPEARschema/out/odd_SPEAR.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/srophe/srophe-eXist-app/schema-4-spear-edits/srophe-app/documentation/SPEARschema/out/odd_SPEAR.rng" type="application/xml"
 	schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<?xml-model href="https://raw.githubusercontent.com/srophe/srophe-eXist-app/dev/srophe-app/documentation/SPEARschema/out/odd_SPEAR.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title level="a">John of Ephesus, Theodore Castrensis, in the Lives of the Eastern Saints</title>
+                <title level="a">John of Ephesus, Elijah and Theodore, in the Lives of the Eastern Saints</title>
                 <title level="m">SPEAR: Syriac Persons, Events, and Relations</title>
                 <funder>The National Endowment for the Humanities</funder>
                 <principal>Daniel L. Schwartz</principal>
@@ -51,7 +51,28 @@
                 <date><!-- INPUT ONCE WE HAVE A "FINAL" DRAFT --></date>
             </publicationStmt>
             <sourceDesc>
-                <p>Born digital.</p>
+                <listBibl>
+                    <head>Sources for the Data in this Born Digital Prosopography</head>
+                    <bibl type="primary">
+                        <title>Lives of the Eastern Saints II</title>
+                        <title>Elijah and Theodore</title>
+                        <author><persName ref="http://syriaca.org/person/74">John of
+                            Ephesus</persName></author>
+                        <editor><persName ref="http://syriaca.org/person/403">E. W.
+                            Brooks</persName></editor>
+                        <ptr target="http://syriaca.org/bibl/2032"/>
+                    </bibl>
+                    <bibl type="primary">
+                        <title>Hala</title>
+                        <author><persName ref="http://syriaca.org/person/74">John of
+                            Ephesus</persName></author>
+                        <ptr target="http://syriaca.org/work/823"/>
+                    </bibl>
+                </listBibl>
+                <listRelation>
+                    <relation type="part" active="http://syriaca.org/work/823"
+                        ref="dcterms:isPartOf" passive="http://syriaca.org/work/9501"/>
+                </listRelation>
             </sourceDesc>
         </fileDesc>
         <encodingDesc>
@@ -78,7 +99,7 @@
     </teiHeader>
     <text>
         <body>
-            <div uri="http://syriaca.org/spear/823-1" resp="#syoung">
+            <div type="factoid" uri="http://syriaca.org/spear/823-1" resp="#syoung">
                 <listPerson>
                     <person>
                         <persName ref="http://syriaca.org/person/1705">Elijah</persName>
@@ -93,7 +114,7 @@
                     <citedRange unit="pp">576</citedRange>
                 </bibl>
             </div>
-            <div uri="http://syriaca.org/spear/823-2" resp="#syoung">
+            <div type="factoid" uri="http://syriaca.org/spear/823-2" resp="#syoung">
                 <listPerson>
                     <person>
                         <persName ref="http://syriaca.org/person/3140">Theodore</persName>
@@ -108,10 +129,10 @@
                     <citedRange unit="pp">576</citedRange>
                 </bibl>
             </div>
-            <div uri="http://syriaca.org/spear/823-3" resp="#syoung">
+            <div type="factoid" uri="http://syriaca.org/spear/823-3" resp="#syoung">
                 <listPerson>
                     <person>
-                        <persName ref="http://syriaca.org/1705"/>
+                        <persName ref="http://syriaca.org/person/1705"/>
                         <occupation ref="http://syriaca.org/keyword/merchants">
                             <note type="desc">
                                 <persName ref="http://syriaca.org/person/1705">Elijah</persName>was a trader in <placeName ref="http://syriaca.org/place/526">Persia</placeName>.
@@ -128,10 +149,10 @@
                     <citedRange unit="pp">576</citedRange>
                 </bibl>
             </div>
-            <div uri="http://syriaca.org/spear/823-4" resp="#syoung">
+            <div type="factoid" uri="http://syriaca.org/spear/823-4" resp="#syoung">
                 <listPerson>
                     <person>
-                        <persName ref="http://syriaca.org/3140"/>
+                        <persName ref="http://syriaca.org/person/3140"/>
                         <occupation ref="http://syriaca.org/keyword/merchants">
                             <note type="desc">
                                 <persName ref="http://syriaca.org/person/3140">Theodore</persName>was a trader in <placeName ref="http://syriaca.org/place/526">Persia</placeName>.
@@ -148,7 +169,7 @@
                     <citedRange unit="pp">576</citedRange>
                 </bibl>
             </div>
-            <div uri="http://syriaca.org/spear/823-5" resp="#syoung">
+            <div type="factoid" uri="http://syriaca.org/spear/823-5" resp="#syoung">
                 <listEvent>
                     <event>
                         <desc>
@@ -166,7 +187,7 @@
                     <citedRange unit="pp">577</citedRange>
                 </bibl>
             </div>
-            <div uri="http://syriaca.org/spear/823-6" resp="#syoung">
+            <div type="factoid" uri="http://syriaca.org/spear/823-6" resp="#syoung">
                 <listEvent>
                     <event>
                         <desc>
@@ -184,7 +205,7 @@
                     <citedRange unit="pp">578</citedRange>
                 </bibl>
             </div>
-            <div uri="http://syriaca.org/spear/823-7" resp="#syoung">
+            <div type="factoid" uri="http://syriaca.org/spear/823-7" resp="#syoung">
                 <listEvent>
                     <event>
                         <desc>
@@ -202,7 +223,7 @@
                     <citedRange unit="pp">579</citedRange>
                 </bibl>
             </div>
-            <div uri="http://syriaca.org/spear/823-8" resp="#syoung">
+            <div type="factoid" uri="http://syriaca.org/spear/823-8" resp="#syoung">
                 <listPerson>
                     <person>
                         <persName ref="http://syriaca.org/person/3504">two sisters</persName>
@@ -217,7 +238,7 @@
                     <citedRange unit="pp">579</citedRange>
                 </bibl>
             </div>
-            <div uri="http://syriaca.org/spear/823-9" resp="#syoung">
+            <div type="factoid" uri="http://syriaca.org/spear/823-9" resp="#syoung">
                 <listPerson>
                     <person>
                         <persName ref="http://syriaca.org/person/3504"/>
@@ -237,7 +258,7 @@
                     <citedRange unit="pp">579</citedRange>
                 </bibl>
             </div>
-            <div uri="http://syriaca.org/spear/823-10" resp="#syoung">
+            <div type="factoid" uri="http://syriaca.org/spear/823-10" resp="#syoung">
                 <listRelation>
                     <relation ref="snap:SiblingOf" mutual="http://syriaca.org/person/3140 http://syriaca.org/person/1705"/>
                 </listRelation>
@@ -250,7 +271,7 @@
                     <citedRange unit="pp">576</citedRange>
                 </bibl>
             </div>
-            <div uri="http://syriaca.org/spear/823-11" resp="#syoung">
+            <div type="factoid" uri="http://syriaca.org/spear/823-11" resp="#syoung">
                 <listRelation>
                     <relation ref="snap:SiblingOf" mutual="http://syriaca.org/person/3140 http://syriaca.org/person/3504"/>
                 </listRelation>
@@ -263,7 +284,7 @@
                     <citedRange unit="pp">579</citedRange>
                 </bibl>
             </div>
-            <div uri="http://syriaca.org/spear/823-12" resp="#syoung">
+            <div type="factoid" uri="http://syriaca.org/spear/823-12" resp="#syoung">
                 <listRelation>
                     <relation ref="snap:SiblingOf" mutual="http://syriaca.org/person/1705 http://syriaca.org/person/3504"/>
                 </listRelation>
@@ -276,7 +297,7 @@
                     <citedRange unit="pp">579</citedRange>
                 </bibl>
             </div>
-            <div uri="http://syriaca.org/spear/823-13" resp="#syoung">
+            <div type="factoid" uri="http://syriaca.org/spear/823-13" resp="#syoung">
                 <listEvent>
                     <event>
                         <desc>
@@ -294,7 +315,7 @@
                     <citedRange unit="pp">579</citedRange>
                 </bibl>
             </div>
-            <div uri="http://syriaca.org/spear/823-14" resp="#syoung">
+            <div type="factoid" uri="http://syriaca.org/spear/823-14" resp="#syoung">
                 <listEvent>
                     <event>
                         <desc>
@@ -312,7 +333,7 @@
                     <citedRange unit="pp">579</citedRange>
                 </bibl>
             </div>
-            <div uri="http://syriaca.org/spear/823-15" resp="#syoung">
+            <div type="factoid" uri="http://syriaca.org/spear/823-15" resp="#syoung">
                 <listEvent>
                     <event>
                         <desc>
@@ -330,7 +351,7 @@
                     <citedRange unit="pp">582</citedRange>
                 </bibl>
             </div>
-            <div uri="http://syriaca.org/spear/823-16" resp="#syoung">
+            <div type="factoid" uri="http://syriaca.org/spear/823-16" resp="#syoung">
                 <listEvent>
                     <event>
                         <desc>
@@ -348,11 +369,11 @@
                     <citedRange unit="pp">585</citedRange>
                 </bibl>
             </div>
-            <div uri="http://syriaca.org/spear/823-17" resp="#syoung">
+            <div type="factoid" uri="http://syriaca.org/spear/823-17" resp="#syoung">
                 <listEvent>
                     <event>
                         <desc>
-                            <persName ref="http://syriaca.org/person/1705">Elijah</persName>died before becoming a monk, but his wife and daughter joined a convent in<placeName ref="http://syriaca.org/place/2812">Mabbug</placeName>.<persName ref="http://syriaca.org/person/3504">The sisters</persName>presided over a <placeName ref="http://syriaca.org/person/2828">monastery</placeName>in<placeName ref="http://syriaca.org/place/2827">N'ns</placeName>, in the region of<placeName ref="http://syriaca.org/place/2758">Anzetene</placeName>.
+                            <persName ref="http://syriaca.org/person/1705">Elijah</persName>died before becoming a monk, but his wife and daughter joined a convent in<placeName ref="http://syriaca.org/place/2812">Mabbug</placeName>. <persName ref="http://syriaca.org/person/3504">The sisters</persName>presided over a <placeName ref="http://syriaca.org/place/2828">monastery</placeName>in<placeName ref="http://syriaca.org/place/2827">N'ns</placeName>, in the region of<placeName ref="http://syriaca.org/place/2758">Anzetene</placeName>.
                         </desc>
                         <ptr target="http://syriaca.org/keyword/death http://syriaca.org/keyword/monasticism http://syriaca.org/keyword/monks http://syriaca.org/keyword/monastic-heads"/>
                     </event>
@@ -367,5 +388,25 @@
                 </bibl>
             </div>
         </body>
+        <back>
+            <listBibl>
+                <head>Works Cited</head>
+                <bibl type="primary" xml:id="bibl823-1">
+                    <title>Lives of the Eastern Saints II</title>
+                    <title>Elijah and Theodore</title>
+                    <author><persName ref="http://syriaca.org/person/74">John of
+                        Ephesus</persName></author>
+                    <editor><persName ref="http://syriaca.org/person/403">E. W.
+                        Brooks</persName></editor>
+                    <ptr target="http://syriaca.org/bibl/2032"/>
+                </bibl>
+                <bibl type="primary" xml:id="bibl823-2">
+                    <title>Hala</title>
+                    <author><persName ref="http://syriaca.org/person/74">John of
+                        Ephesus</persName></author>
+                    <ptr target="http://syriaca.org/work/823"/>
+                </bibl>
+            </listBibl>
+        </back>
     </text>
 </TEI>

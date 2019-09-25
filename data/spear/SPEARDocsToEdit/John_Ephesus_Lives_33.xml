@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+<?xml-model href="https://raw.githubusercontent.com/srophe/srophe-eXist-app/schema-4-spear-edits/srophe-app/documentation/SPEARschema/out/odd_SPEAR.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/srophe/srophe-eXist-app/schema-4-spear-edits/srophe-app/documentation/SPEARschema/out/odd_SPEAR.rng" type="application/xml"
 	schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<?xml-model href="https://raw.githubusercontent.com/srophe/srophe-eXist-app/dev/srophe-app/documentation/SPEARschema/out/odd_SPEAR.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title level="a">John of Ephesus, Lives of the Eastern Saints: </title>
+                <title level="a">John of Ephesus, Hala, in the Lives of the Eastern Saints</title>
                 <title level="m">SPEAR: Syriac Persons, Events, and Relations</title>
                 <funder>The National Endowment for the Humanities</funder>
                 <principal>Daniel L. Schwartz</principal>
@@ -31,7 +31,7 @@
             </editionStmt>
             <publicationStmt>
                 <authority>Syriaca.org: The Syriac Reference Portal</authority>
-                <idno type="URI">http://syriaca.org/spear/xxx/tei</idno><!-- Add URI -->
+                <idno type="URI">http://syriaca.org/spear/825/tei</idno>
                 <availability>
                     <licence target="http://creativecommons.org/licenses/by/3.0/">
                         <p>Distributed under a Creative Commons Attribution 3.0 Unported
@@ -41,14 +41,35 @@
                 <date><!-- INPUT ONCE WE HAVE A "FINAL" DRAFT --></date>
             </publicationStmt>
             <sourceDesc>
-                <p>Born digital.</p>
+                <listBibl>
+                    <head>Sources for the Data in this Born Digital Prosopography</head>
+                    <bibl type="primary">
+                        <title>Lives of the Eastern Saints II</title>
+                        <title>Hala</title>
+                        <author><persName ref="http://syriaca.org/person/74">John of
+                            Ephesus</persName></author>
+                        <editor><persName ref="http://syriaca.org/person/403">E. W.
+                            Brooks</persName></editor>
+                        <ptr target="http://syriaca.org/bibl/2032"/>
+                    </bibl>
+                    <bibl type="primary">
+                        <title>Hala</title>
+                        <author><persName ref="http://syriaca.org/person/74">John of
+                            Ephesus</persName></author>
+                        <ptr target="http://syriaca.org/work/825"/>
+                    </bibl>
+                </listBibl>
+                <listRelation>
+                    <relation type="part" active="http://syriaca.org/work/825"
+                        ref="dcterms:isPartOf" passive="http://syriaca.org/work/9501"/>
+                </listRelation>
             </sourceDesc>
         </fileDesc>
         <encodingDesc>
             <editorialDecl>
                 <p>The prosopographical data in this document was encoded from E. W. Brooks'
                     edition and English translation of John of Ephesus’s Lives of the Eastern
-                    Saints, Patrologia Orientalis, volume 17, 1923. </p><!-- Fix volume number -->
+                    Saints, Patrologia Orientalis, volume 18, 1923. </p>
             </editorialDecl>
             <classDecl>
                 <taxonomy>
@@ -61,13 +82,12 @@
         </encodingDesc>
         <profileDesc> </profileDesc>
         <revisionDesc> 
-            <change> 
-            </change> 
+            <change/>
         </revisionDesc>
     </teiHeader>
     <text>
         <body>
-            <div uri="http://syriaca.org/spear/825-1" resp="#tmcneir, #rtrupiano, #syoung, #egibes, #jnsaint-laurent">
+            <div type="factoid" uri="http://syriaca.org/spear/825-1" resp="#tmcneir, #rtrupiano, #syoung, #egibes, #jnsaint-laurent">
                 <listPerson>
                     <person>
                         <persName ref="http://syriaca.org/person/1769">
@@ -84,7 +104,7 @@
                     <citedRange unit="pp">592</citedRange>
                 </bibl>
             </div>   
-            <div uri="http://syriaca.org/spear/825-2" resp="#tmcneir, #rtrupiano, #syoung, #egibes, #jnsaint-laurent">
+            <div type="factoid" uri="http://syriaca.org/spear/825-2" resp="#tmcneir, #rtrupiano, #syoung, #egibes, #jnsaint-laurent">
                 <listPerson>
                     <person>
                         <persName ref="http://syriaca.org/person/1769"/>
@@ -100,11 +120,11 @@
                      <citedRange unit="pp">390</citedRange>
                  </bibl>
                  <bibl type="primary">
-                     <ptr target="http://syriaca.org/bibl/825"/>
+                     <ptr target="http://syriaca.org/bibl/2032"/>
                      <citedRange unit="pp">592</citedRange>
                  </bibl>
             </div>
-            <div uri="http://syriaca.org/spear/825-3" resp="#tmcneir, #rtrupiano, #syoung, #egibes, #jnsaint-laurent">
+            <div type="factoid" uri="http://syriaca.org/spear/825-3" resp="#tmcneir, #rtrupiano, #syoung, #egibes, #jnsaint-laurent">
                 <listPerson>
                     <person>
                         <persName ref="http://syriaca.org/person/1769"/>
@@ -124,10 +144,10 @@
                     <citedRange unit="pp">593-594</citedRange>
                  </bibl>
             </div>
-            <div uri="http://syriaca.org/spear/825-4" resp="#tmcneir, #rtrupiano, #syoung, #egibes, #jnsaint-laurent">
+            <div type="factoid" uri="http://syriaca.org/spear/825-4" resp="#tmcneir, #rtrupiano, #syoung, #egibes, #jnsaint-laurent">
                 <listEvent>
                     <event>
-                        <desc><!-- Use persName, placeName, orgName, and date elements as needed, with URIs whenever possible. -->
+                        <desc>
                             <persName ref="http://syriaca.org/person/1769">Hala</persName> cleaned latrines, picked lentils from the garden, and cooked from food waste and wine for the poor by the gates. 
                         </desc>
                         <ptr target="http://syriaca.org/keyword/wine, http://syriaca.org/keyword/cooks, http://syriaca.org/keyword/food, http://syriaca.org/keyword/poor, http://syriaca.org/keyword/charity"/><!-- Use as many keywords as needed to describe content in the description. -->
@@ -142,10 +162,10 @@
                     <citedRange unit="pp">596</citedRange>
                 </bibl>
             </div>
-            <div uri="http://syriaca.org/spear/825-5" resp="#tmcneir, #rtrupiano, #syoung, #egibes, #jnsaint-laurent">
+            <div type="factoid" uri="http://syriaca.org/spear/825-5" resp="#tmcneir, #rtrupiano, #syoung, #egibes, #jnsaint-laurent">
                 <listEvent>
                     <event>
-                        <desc><!-- Use persName, placeName, orgName, and date elements as needed, with URIs whenever possible. -->
+                        <desc>
                             <persName ref="http://syriaca.org/person/1769">Hala</persName> kept silence except when he prayed the psalms and the liturgy and read scripture without interruption and taught his disciples throughout the night. 
                         </desc>
                         <ptr target="http://syriaca.org/keyword/liturgy, http://syriaca.org/keyword/prayer, http://syriaca.org/keyword/hours, http://syriaca.org/keyword/bible, http://syriaca.org/keyword/silence, http://syriaca.org/keyword/sleep, http://syriaca.org/keyword/discipleship"/><!-- Use as many keywords as needed to describe content in the description. -->
@@ -160,10 +180,10 @@
                     <citedRange unit="pp">596</citedRange>
                 </bibl>
             </div>
-            <div uri="http://syriaca.org/spear/825-6" resp="#tmcneir, #rtrupiano, #syoung, #egibes, #jnsaint-laurent">
+            <div type="factoid" uri="http://syriaca.org/spear/825-6" resp="#tmcneir, #rtrupiano, #syoung, #egibes, #jnsaint-laurent">
                 <listEvent>
                     <event>
-                        <desc><!-- Use persName, placeName, orgName, and date elements as needed, with URIs whenever possible. -->
+                        <desc>
                           Monastery authorities were becoming resentful of <persName ref="http://syriaca.org/person/1769">Hala</persName> giving to the poor.
                         </desc>
                         <ptr target="http://syriaca.org/keyword/poverty, http://syriaca.org/keyword/alms, http://syriaca.org/keyword/monks, http://syriaca.org/keyword/monasticism, http://syriaca.org/keyword/clergy"/><!-- Use as many keywords as needed to describe content in the description. -->
@@ -178,13 +198,13 @@
                     <citedRange unit="pp">597</citedRange>
                 </bibl>
             </div>
-            <div uri="http://syriaca.org/spear/825-7" resp="#tmcneir, #rtrupiano, #syoung, #egibes, #jnsaint-laurent">
+            <div type="factoid" uri="http://syriaca.org/spear/825-7" resp="#tmcneir, #rtrupiano, #syoung, #egibes, #jnsaint-laurent">
                 <listEvent>
                     <event>
-                        <desc><!-- Use persName, placeName, orgName, and date elements as needed, with URIs whenever possible. -->
+                        <desc>
                             Monastery authorities heaped indignation and abuse upon <persName ref="http://syriaca.org/person/1769">Hala</persName> and threw his cups and plates to the ground.
                         </desc>
-                        <ptr target="http://syriaca.org/keyword/"/><!-- Use as many keywords as needed to describe content in the description. -->
+                        <ptr target="http://syriaca.org/keyword/insults"/>
                     </event>
                 </listEvent>
                 <bibl type="primary">
@@ -197,13 +217,13 @@
                 </bibl>
             </div>
           
-            <div uri="http://syriaca.org/spear/825-8" resp="#tmcneir, #rtrupiano, #syoung, #egibes, #jnsaint-laurent">
+            <div type="factoid" uri="http://syriaca.org/spear/825-8" resp="#tmcneir, #rtrupiano, #syoung, #egibes, #jnsaint-laurent">
                 <listEvent>
                     <event>
-                        <desc><!-- Use persName, placeName, orgName, and date elements as needed, with URIs whenever possible. -->
+                        <desc>
                             When strangers came to the monastery <persName ref="http://syriaca.org/person/1769">Hala</persName> would wash and annoint them.
                         </desc>
-                        <ptr target="http://syriaca.org/keyword/dress, http://syriaca.org/keyword/water, http://syriaca.org/keyword/annointing, http://syriaca.org/keyword/monasticism"/><!-- Use as many keywords as needed to describe content in the description. -->
+                        <ptr target="http://syriaca.org/keyword/dress http://syriaca.org/keyword/water http://syriaca.org/keyword/annointing http://syriaca.org/keyword/monasticism"/>
                     </event>
                 </listEvent>
                 <bibl type="primary">
@@ -215,15 +235,14 @@
                     <citedRange unit="pp">598</citedRange>
                 </bibl>
             </div>
-            <div uri="http://syriaca.org/spear/825-9" resp="#tmcneir, #rtrupiano, #syoung, #egibes, #jnsaint-laurent">
-                <listEvent>
-                    <event>
-                        <desc><!-- Use persName, placeName, orgName, and date elements as needed, with URIs whenever possible. -->
-                            The strangers would refer to <persName ref="http://syriaca.org/person/1769">Hala</persName> as "Mar so-and-so the Zealous."
-                        </desc>
-                        <ptr target="http://syriaca.org/keyword/monasticism"/><!-- Use as many keywords as needed to describe content in the description. -->
-                    </event>
-                </listEvent>
+            <div type="factoid" uri="http://syriaca.org/spear/825-9" resp="#dschwartz #tmcneir, #rtrupiano, #syoung, #egibes, #jnsaint-laurent">
+                <listPerson>
+                    <person>
+                        <persName ref="http://syriaca.org/person/1769">
+                            Mar so-and-so the Zealous
+                        </persName>
+                    </person>
+                </listPerson>
                 <bibl type="primary">
                     <ptr target="http://syriaca.org/work/825"/>
                     <citedRange unit="pp">396</citedRange>
@@ -233,13 +252,13 @@
                     <citedRange unit="pp">598</citedRange>
                 </bibl>
             </div>
-            <div uri="http://syriaca.org/spear/825-10" resp="#tmcneir, #rtrupiano, #syoung, #egibes, #jnsaint-laurent">
+            <div type="factoid" uri="http://syriaca.org/spear/825-10" resp="#tmcneir, #rtrupiano, #syoung, #egibes, #jnsaint-laurent">
                 <listEvent>
                     <event>
-                        <desc><!-- Use persName, placeName, orgName, and date elements as needed, with URIs whenever possible. -->
+                        <desc>
                             The persecution came and the convents had all their poroperty taken from them, so <persName ref="http://syriaca.org/person/1769">Hala</persName> could no longer assist the poor.
                         </desc>
-                        <ptr target="http://syriaca.org/keyword/persecution, http://syriaca.org/keyword/material culture, http://syriaca.org/keyword/monks, http://syriaca.org/keyword/monastery"/><!-- Use as many keywords as needed to describe content in the description. -->
+                        <ptr target="http://syriaca.org/keyword/persecution http://syriaca.org/keyword/material-culture http://syriaca.org/keyword/monks http://syriaca.org/keyword/monastery"/>
                     </event>
                 </listEvent>
                 <bibl type="primary">
@@ -251,11 +270,11 @@
                     <citedRange unit="pp">598-599</citedRange>
                 </bibl>
             </div>
-            <div uri="http://syriaca.org/spear/825-11" resp="#tmcneir, #rtrupiano, #syoung, #egibes, #jnsaint-laurent">
+            <div type="factoid" uri="http://syriaca.org/spear/825-11" resp="#tmcneir, #rtrupiano, #syoung, #egibes, #jnsaint-laurent">
                 <listPerson>
                     <person>
                         <persName ref="http://syriaca.org/person/1769"/>
-                        <trait type="physical" ref="http://syriaca.org/keyword/illness, http://syriaca.org/keyword/asceticism"><!-- Use as many keywords as needed to describe content in note. -->
+                        <trait type="physical" ref="http://syriaca.org/keyword/illness, http://syriaca.org/keyword/asceticism">
                             <note type="desc">
                                 <persName ref="http://syriaca.org/person/1769">Hala</persName> was feeble and fell into a serious illness caused by his asceticism.
                             </note>
@@ -271,15 +290,15 @@
                     <citedRange unit="pp">600</citedRange>
                 </bibl>
             </div>
-            <div uri="http://syriaca.org/spear/825-13" resp="#tmcneir, #rtrupiano, #syoung, #egibes, #jnsaint-laurent">
+            <div type="factoid" uri="http://syriaca.org/spear/825-13" resp="#tmcneir, #rtrupiano, #syoung, #egibes, #jnsaint-laurent">
                 <listEvent>
                     <event>
-                        <desc><!-- Use persName, placeName, orgName, and date elements as needed, with URIs whenever possible. -->
+                        <desc>
                             <persName ref="http://syriaca.org/person/1769">Hala</persName> was brought to a community gathered by the 
                             <persName ref="http://syriaca.org/person/779">queen</persName>at her palace called 
-                            <placeName ref="http://syriaca.org/place/2793">Hormisda.</placeName></desc>
-                        
-                            <ptr target="http://syriaca.org/keyword/monks, http://syriaca.org/keyword/hospitality"></ptr><!-- Use as many keywords as needed to describe content in the description. -->
+                            <placeName ref="http://syriaca.org/place/2793">Hormisda.</placeName>
+                        </desc>
+                        <ptr target="http://syriaca.org/keyword/monks http://syriaca.org/keyword/hospitality"/>
                     </event>
                 </listEvent>
                 <bibl type="primary">
@@ -292,11 +311,11 @@
                 </bibl>
             </div>
            
-            <div uri="http://syriaca.org/spear/825-14" resp="#tmcneir, #rtrupiano, #syoung, #egibes, #jnsaint-laurent">
+            <div type="factoid" uri="http://syriaca.org/spear/825-14" resp="#tmcneir, #rtrupiano, #syoung, #egibes, #jnsaint-laurent">
                <listPerson>
                    <person>
                        <persName ref="http://syriaca.org/person/1769"/>
-                       <state type="mental" ref="http://syriaca.org/keyword/charity"><!-- Use as many keywords as needed to describe content in note. -->
+                       <state type="mental" ref="http://syriaca.org/keyword/charity">
                            <note type="desc">
                                <persName ref="http://syriaca.org/person/1769">Hala</persName> was excited to continue charity towards the community.
                            </note>
@@ -313,11 +332,11 @@
                </bibl>
            </div>
             
-            <div uri="http://syriaca.org/spear/825-15" resp="#tmcneir, #rtrupiano, #syoung, #egibes, #jnsaint-laurent">
+            <div type="factoid" uri="http://syriaca.org/spear/825-15" resp="#tmcneir, #rtrupiano, #syoung, #egibes, #jnsaint-laurent">
            <listPerson>
                <person>
                    <persName ref="http://syriaca.org/person/1769"/>
-                   <occupation ref="http://syriaca.org/keyword/clergy"><!-- Use as many keywords as needed to describe content in note. -->
+                   <occupation ref="http://syriaca.org/keyword/clergy">
                        <note type="desc">
                            <persName ref="http://syriaca.org/person/1769">Hala</persName> was a presbyter.
                        </note>
@@ -333,12 +352,26 @@
                <citedRange unit="pp">601</citedRange>
            </bibl>
        </div>
-            
-            
-            
-            
-        </body>
-        
-        
+   </body>
+   <back>
+       <listBibl>
+           <head>Works Cited</head>
+           <bibl type="primary" xml:id="bibl825-1">
+               <title>Lives of the Eastern Saints II</title>
+               <title>Hala</title>
+               <author><persName ref="http://syriaca.org/person/74">John of
+                   Ephesus</persName></author>
+               <editor><persName ref="http://syriaca.org/person/403">E. W.
+                   Brooks</persName></editor>
+               <ptr target="http://syriaca.org/bibl/2032"/>
+           </bibl>
+           <bibl type="primary" xml:id="bibl825-2">
+               <title>Hala</title>
+               <author><persName ref="http://syriaca.org/person/74">John of
+                   Ephesus</persName></author>
+               <ptr target="http://syriaca.org/work/825"/>
+           </bibl>
+       </listBibl>
+   </back>        
     </text>
 </TEI>

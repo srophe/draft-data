@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+<?xml-model href="https://raw.githubusercontent.com/srophe/srophe-eXist-app/schema-4-spear-edits/srophe-app/documentation/SPEARschema/out/odd_SPEAR.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/srophe/srophe-eXist-app/schema-4-spear-edits/srophe-app/documentation/SPEARschema/out/odd_SPEAR.rng" type="application/xml"
 	schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<?xml-model href="https://raw.githubusercontent.com/srophe/srophe-eXist-app/dev/srophe-app/documentation/SPEARschema/out/odd_SPEAR.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title level="a">John of Ephesus, Theodore Castrensis, in the Lives of the Eastern Saints</title>
+                <title level="a">John of Ephesus, Addai the Chorepiscopus, in the Lives of the Eastern Saints</title>
                 <title level="m">SPEAR: Syriac Persons, Events, and Relations</title>
                 <funder>The National Endowment for the Humanities</funder>
                 <principal>Daniel L. Schwartz</principal>
@@ -34,7 +34,6 @@
                     <name ref="http://syriaca.org/documentation/editors.xml#syoung"
                         >Samuel Young</name>
                 </respStmt>
-               
             </titleStmt>
             <editionStmt>
                 <edition n="1.0"/>
@@ -51,7 +50,28 @@
                 <date><!-- INPUT ONCE WE HAVE A "FINAL" DRAFT --></date>
             </publicationStmt>
             <sourceDesc>
-                <p>Born digital.</p>
+                <listBibl>
+                    <head>Sources for the Data in this Born Digital Prosopography</head>
+                    <bibl type="primary">
+                        <title>Lives of the Eastern Saints I</title>
+                        <title>Addai the Chorepiscopus</title>
+                        <author><persName ref="http://syriaca.org/person/74">John of
+                            Ephesus</persName></author>
+                        <editor><persName ref="http://syriaca.org/person/403">E. W.
+                            Brooks</persName></editor>
+                        <ptr target="http://syriaca.org/bibl/1409"/>
+                    </bibl>
+                    <bibl type="primary">
+                        <title>Addai the Chorepiscopus</title>
+                        <author><persName ref="http://syriaca.org/person/74">John of
+                            Ephesus</persName></author>
+                        <ptr target="http://syriaca.org/work/800"/>
+                    </bibl>
+                </listBibl>
+                <listRelation>
+                    <relation type="part" active="http://syriaca.org/work/800"
+                        ref="dcterms:isPartOf" passive="http://syriaca.org/work/9501"/>
+                </listRelation>
             </sourceDesc>
         </fileDesc>
         <encodingDesc>
@@ -78,7 +98,7 @@
     </teiHeader>
     <text>
         <body>
-            <div uri="http://syriaca.org/spear/800-1" resp="#syoung">
+            <div type="factoid" uri="http://syriaca.org/spear/800-1" resp="#syoung">
                 <listPerson>
                     <person>
                         <persName ref="http://syriaca.org/person/1116">Addai</persName>
@@ -93,7 +113,7 @@
                     <citedRange unit="pp">125</citedRange>
                 </bibl>
             </div>
-            <div uri="http://syriaca.org/spear/800-2" resp="#syoung">
+            <div type="factoid" uri="http://syriaca.org/spear/800-2" resp="#syoung">
                 <listPerson>
                     <person>
                         <persName ref="http://syriaca.org/person/1116"/>
@@ -113,7 +133,7 @@
                     <citedRange unit="pp">125</citedRange>
                 </bibl>
             </div>
-            <div uri="http://syriaca.org/spear/800-3" resp="#syoung">
+            <div type="factoid" uri="http://syriaca.org/spear/800-3" resp="#syoung">
                 <listEvent>
                     <event>
                         <desc>
@@ -131,13 +151,13 @@
                     <citedRange unit="pp">126</citedRange>
                 </bibl>
             </div>
-            <div uri="http://syriaca.org/spear/800-4" resp="#syoung">
+            <div type="factoid" uri="http://syriaca.org/spear/800-4" resp="#syoung">
                 <listEvent>
                     <event>
                         <desc>
                             <date notBefore="0451" calendar="Gregorian">Sometime after 451</date><persName ref="http://syriaca.org/person/1116">Addai</persName>was deposed by those attempting to enforce the heresy of the Council of <placeName ref="http://syriaca.org/place/622">Chalcedon</placeName>. <persName ref="http://syriaca.org/person/1116">He</persName>exhorted the brothers to remember the poor, and retreated to his exile in the mountains east of <placeName ref="http://syriaca.org/place/2758">Anzetene</placeName>.
                         </desc>
-                        <ptr target="http://syriaca.org/keyword/monks http://syriaca.org/keyword/exile http://syriaca.org/keyword/council-of-chacledon-451 http://syriaca.org/keyword/apostasy http://syriaca.org/keyword/bishops "/>
+                        <ptr target="http://syriaca.org/keyword/monks http://syriaca.org/keyword/exile http://syriaca.org/keyword/council-of-chacledon-451 http://syriaca.org/keyword/apostasy http://syriaca.org/keyword/bishops"/>
                     </event>
                 </listEvent>
                 <bibl type="primary">
@@ -149,7 +169,7 @@
                     <citedRange unit="pp">128</citedRange>
                 </bibl>
             </div>
-            <div uri="http://syriaca.org/spear/800-5" resp="#syoung">
+            <div type="factoid" uri="http://syriaca.org/spear/800-5" resp="#syoung">
                 <listEvent>
                     <event>
                         <desc>
@@ -167,13 +187,13 @@
                     <citedRange unit="pp">130</citedRange>
                 </bibl>
             </div>
-            <div uri="http://syriaca.org/spear/800-6" resp="#syoung">
+            <div type="factoid" uri="http://syriaca.org/spear/800-6" resp="#syoung">
                 <listEvent>
                     <event>
                         <desc>
                             Though <persName ref="http://syriaca.org/person/1116">Habib</persName>remained reclusive, <persName ref="http://syriaca.org/person/76">John</persName>and one of the brothers discovered where he would be. As the men approached, <persName ref="http://syriaca.org/person/1116">Habib</persName>fled. <persName ref="http://syriaca.org/person/76">John</persName>returned to the monastery to rest. They met <persName ref="http://syriaca.org/person/1116">Addai</persName>the next day. Perceiving that <persName ref="http://syriaca.org/person/1116">Addai</persName>wanted his privacy, <persName ref="http://syriaca.org/person/76">John</persName>stopped pestering him, but simply asked for a blessing and a prayer. 
                         </desc>
-                        <ptr target="http://syriaca.org/keyword/monks http://syriaca.org/keyword/wine http://syriaca.org/keyword/prayer http://syriaca.org/keyword/blessing "/>
+                        <ptr target="http://syriaca.org/keyword/monks http://syriaca.org/keyword/wine http://syriaca.org/keyword/prayer http://syriaca.org/keyword/blessing"/>
                     </event>
                 </listEvent>
                 <bibl type="primary">
@@ -185,7 +205,7 @@
                     <citedRange unit="pp">133</citedRange>
                 </bibl>
             </div>
-            <div uri="http://syriaca.org/spear/800-7" resp="#syoung">
+            <div type="factoid" uri="http://syriaca.org/spear/800-7" resp="#syoung">
                 <listPerson>
                     <person>
                         <persName ref="http://syriaca.org/person/76">John</persName>
@@ -200,7 +220,7 @@
                     <citedRange unit="pp">131</citedRange>
                 </bibl>
             </div>
-            <div uri="http://syriaca.org/spear/800-8" resp="#syoung">
+            <div type="factoid" uri="http://syriaca.org/spear/800-8" resp="#syoung">
                 <listPerson>
                     <person>
                         <persName ref="http://syriaca.org/person/1116"/>
@@ -220,5 +240,25 @@
                 </bibl>
             </div>
         </body>
+        <back>
+            <listBibl>
+                <head>Works Cited</head>
+                <bibl type="primary" xml:id="bibl800-1">
+                    <title>Lives of the Eastern Saints I</title>
+                    <title>Addai the Chorepiscopus</title>
+                    <author><persName ref="http://syriaca.org/person/74">John of
+                        Ephesus</persName></author>
+                    <editor><persName ref="http://syriaca.org/person/403">E. W.
+                        Brooks</persName></editor>
+                    <ptr target="http://syriaca.org/bibl/1409"/>
+                </bibl>
+                <bibl type="primary" xml:id="bibl800-2">
+                    <title>Addai the Chorepiscopus</title>
+                    <author><persName ref="http://syriaca.org/person/74">John of
+                        Ephesus</persName></author>
+                    <ptr target="http://syriaca.org/work/800"/>
+                </bibl>
+            </listBibl>
+        </back>
     </text>
 </TEI>

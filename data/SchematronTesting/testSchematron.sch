@@ -5,7 +5,82 @@
     <sch:pattern>
 
 
+        
+        
+        <!--In ODD already
+            <sch:rule context="//tei:sourceDesc/tei:listRelation/tei:relation/@active">
+            <sch:let name="docURIno"
+                value="//tei:publicationStmt/tei:idno[@type='URI']/substring-after(substring-before(., '/tei'), 'spear/')"/>
+            <sch:assert test="matches(., concat('http://syriaca.org/work/', $docURIno))">
+                The @active attribute muar be "http://syriaca.org/work/<sch:value-of select="$docURIno"/>".
+            </sch:assert>
+        </sch:rule>
+        
+        <sch:rule context="//tei:sourceDesc/tei:listRelation/tei:relation/@passive">
+            <sch:assert test="matches(., concat('http://syriaca.org/work/', '\d+'))">
+                This @active attribute must contain a properly formatted 
+                Syriaca.org work URI ('http://syriaca.org/work/{\d+}').
+            </sch:assert>
+            <sch:report test="matches(substring-after(., 'http://syriaca.org/work/'), '\D+')">
+                Report: This @active attribute must contain a properly formatted 
+                Syriaca.org work URI ('http://syriaca.org/work/{\d+}').
+            </sch:report>
+        </sch:rule>-->
 
+
+   <!--In ODD already
+       <sch:rule context="//tei:titleStmt/tei:title[1]">
+       <sch:assert test="@level='m'">
+           The first &lt;title&gt; element under a &lt;titleStmt&gt; element must have 
+           @level attribute with a value of "m".
+       </sch:assert>
+       <sch:assert test="@type='main'">
+           The first &lt;title&gt; element under a &lt;titleStmt&gt; element must have 
+           @type attribute with a value of "main".
+       </sch:assert>
+   </sch:rule>
+   <sch:rule context="//tei:titleStmt/tei:title[2]">
+       <sch:assert test="@type='sub'">
+           The second &lt;title&gt; element under a &lt;titleStmt&gt; element must have 
+           @type attribute with a value of "sub".
+       </sch:assert>
+       <sch:assert test="normalize-space(.) = 'A SPEAR Prosopography'">
+           The text node of this subtitle must be "A SPEAR Prosopography".
+       </sch:assert>
+   </sch:rule>-->
+   
+
+
+
+        <!--In ODD already
+            <sch:rule context="tei:event/tei:ptr/@target">
+            <sch:assert test="count(distinct-values(tokenize(., ' '))) = count(tokenize(., ' '))">
+                The same keyword URI may not appear twice as the value of the @type attribute. </sch:assert>
+            <sch:assert
+                test="
+                    every $i in (tokenize(., ' '))
+                        satisfies starts-with($i, 'http://syriaca.org/keyword/')"
+                >@target attributes on the &lt;ptr&gt; element must contain a properly formatted
+                Syriaca.org keyword URI that starts with 'http://syriaca.org/keyword/'.</sch:assert>
+        </sch:rule>-->
+
+
+        <!--In ODD already
+            <sch:rule context="tei:event/tei:ptr/@target" role="warning">
+            <sch:let name="ti"
+                value="doc('https://raw.githubusercontent.com/srophe/srophe-app-data/dev/data/subjects/taxonomyIndex.xml')"/>
+            <sch:let name="taxonomyAllURIs" value="$ti//listURI[@type = 'taxonomyAllURIs']/uri"/>
+            <sch:let name="distintURIs" value="tokenize(., ' ')"/>
+            <sch:assert
+                test="
+                    every $i in $distintURIs
+                        satisfies $i = $taxonomyAllURIs"
+                >SPEAR has a strong preference for using established URIs when possible but
+                appropriate URIs are not always available in the Syriaca.org taxonomy. For the
+                @target attribute on a &lt;ptr&gt; element within an event factoid, please look for
+                the appropriate keyword(s) in the Syriaca.org Taxonomy. If you cannot find an
+                appropriate term, apply a preferred term of your choosing.</sch:assert>
+        </sch:rule>-->
 
         <!--In ODD already
             <sch:rule

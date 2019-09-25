@@ -13,7 +13,6 @@
                 <funder>Texas A&amp;M University</funder>
                 <principal>Daniel L. Schwartz</principal>
                 <editor role="general" ref="http://syriaca.org/editors.xml#dschwartz">Daniel L. Schwartz</editor>
-                <editor role="general" ref="http://syriaca.org/editors.xml#dmichelson">David A. Michelson</editor>
                 <editor role="creator" ref="http://syriaca.org/editors.xml#dschwartz">Daniel L. Schwartz</editor>
                 <respStmt>
                     <resp></resp>
@@ -66,7 +65,7 @@
     </teiHeader>
     <text>
         <body>
-            <div uri="http://syriaca.org/spear/3116-" resp="#ktorabi #dschwartz">
+            <div type="factoid" uri="http://syriaca.org/spear/3116-1" resp="#ktorabi #dschwartz">
                 <listPerson>
                     <person>
                         <persName ref="http://syriaca.org/person/2462">
@@ -75,101 +74,106 @@
                     </person>
                 </listPerson>
                 <bibl type="primary">
-                    <biblScope type="pp">
-                        <ptr target="#bib3116-1"/>171</biblScope>
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="pp">171</citedRange>
                 </bibl>
             </div>
-            <div uri="http://syriaca.org/spear/3116-" resp="#ktorabi #dschwartz">
+            <div type="factoid" uri="http://syriaca.org/spear/3116-2" resp="#ktorabi #dschwartz">
                 <listPerson>
                     <person>
                         <persName ref="http://syriaca.org/person/2462"/>
-                        <sex value="M">
-                            Male
-                        </sex>
+                        <trait type="gender" ref="http://syriaca.org/keyword/male"><!-- Schema: The ref on trait should throw up an error message if the value does not start with "<http://syriaca.org/keyword/".-->
+                            <note type="desc">
+                                <persName ref="http://syriaca.org/person/2462">
+                                    Didymus 
+                                </persName>
+                                was male.
+                            </note>
+                        </trait>
                     </person>
                 </listPerson>
                 <bibl type="primary">
-                    <biblScope type="pp">
-                        <ptr target="#bib3116-1"/>171</biblScope>
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="pp">171</citedRange>
                 </bibl>
             </div>
-            <div uri="http://syriaca.org/spear/3116-" resp="#ktorabi #dschwartz">
+            <div type="factoid" uri="http://syriaca.org/spear/3116-3" resp="#ktorabi #dschwartz">
                 <listPerson>
                     <person>
-                        <state type="vocation">
-                            <desc>
+                        <persName ref="http://syriaca.org/person/2462"/>
+                        <occupation ref="http://syriaca.org/keyword/bishops">
+                            <note type="desc">
                                 <persName ref="http://syriaca.org/person/2462">
                                     Didymus
                                 </persName>
-                                was a bishop
-                                </desc>
-                        </state>
+                                was a bishop.
+                            </note>
+                        </occupation>
                     </person>
                 </listPerson>
                 <bibl type="primary">
-                    <biblScope type="pp">
-                        <ptr target="#bib3116-1"/>171</biblScope>
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="pp">171</citedRange>
                 </bibl>
             </div>
-            <div uri="http://syriaca.org/spear/3116-" resp="#ktorabi #dschwartz">
+            <div type="factoid" uri="http://syriaca.org/spear/3116-4" resp="#ktorabi #dschwartz">
                 <listRelation>
-                    <relation type="epistolary" name="syriaca:RecipientOfLetterFrom" active="http://syriaca.org/person/2462" passive="http://syriaca.org/person/51"/>
+                    <relation ref="syriaca:SenderOfLetterTo" active="http://syriaca.org/person/51" passive="http://syriaca.org/person/2462"/>
+                    <!-- Schema: The @type attribute on relation needs to have a closed list of values. -->
                 </listRelation>
                 <bibl type="primary">
-                    <biblScope type="pp">
-                        <ptr target="#bib3116-1"/>171</biblScope>
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="pp">171</citedRange>
                 </bibl>
             </div>
-            <div uri="http://syriaca.org/spear/3116-" resp="#ktorabi #dschwartz">
+            <div type="factoid" uri="http://syriaca.org/spear/3116-5" resp="#ktorabi #dschwartz">
                 <listPerson>
                     <personGrp>
                         <persName ref="http://syriaca.org/person/anonymi1">
-                            those who live in the neighborhoood of
+                            Those who live in the neighborhoood of
                             <persName ref="http://syriaca.org/person/2462">
-                                Didymus, the Bishop 
+                                Didymus
                             </persName>
-                            between
                             <date notBefore="0518" notAfter="0538">
-                                A.D. 518-538
+                                between A.D. 518-538
                             </date>                           
                         </persName>
                     </personGrp>
                 </listPerson>
                 <bibl type="primary">
-                    <biblScope type="pp">
-                        <ptr target="#bib3116"/>171</biblScope>
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="pp">171</citedRange>
                 </bibl>
             </div>
-            <div uri="http://syriaca.org/spear/3116-" resp="#ktorabi #dschwartz">
+            <div type="factoid" uri="http://syriaca.org/spear/3116-6" resp="#ktorabi #dschwartz">
                 <listPerson>
                     <personGrp>
                         <persName ref="http://syriaca.org/person/anonymi2">
-                            the barbarians who attacked the neighborhood of
+                            The barbarians who attacked the neighborhood of
                             <persName ref="http://syriaca.org/person/2462">
-                                    Didymus, the Bishop 
-                                </persName>
-                            between
+                                Didymus 
+                            </persName>
                             <date notBefore="0518" notAfter="0538">
-                                A.D. 518-538
-                            </date>                           
+                                between A.D. 518-538
+                            </date>                          
                         </persName>
                     </personGrp>
                 </listPerson>
                 <bibl type="primary">
-                    <biblScope type="pp">
-                        <ptr target="#bib3116"/>171</biblScope>
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="pp">171</citedRange>
                 </bibl>
             </div>
-            <div uri="http://syriaca.org/spear/3116-" resp="#ktorabi #dschwartz">
+            <div type="factoid" uri="http://syriaca.org/spear/3116-7" resp="#ktorabi #dschwartz">
                 <listRelation>
-                    <relation type="epistolary" name="syriaca:EpistolaryReferenceTo" active="http://syriaca.org/person/51" passive="http://syriaca.org/person/anonymi1 http://syriaca.org/person/anonymi2"/>
+                    <relation ref="syriaca:EpistolaryReferenceTo" active="http://syriaca.org/person/51" passive="http://syriaca.org/person/anonymi1 http://syriaca.org/person/anonymi2"/>
                 </listRelation>
                 <bibl type="primary">
-                    <biblScope type="pp">
-                        <ptr target="#bib3116-1"/>171</biblScope>
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="pp">171</citedRange>
                 </bibl>
             </div>
-            <div uri="http://syriaca.org/spear/3116-" resp="#ktorabi #dschwartz">
+            <div type="factoid" uri="http://syriaca.org/spear/3116-8" resp="#ktorabi #dschwartz">
                 <listPerson>
                     <person>
                         <persName ref="http://syriaca.org/person/544">
@@ -178,11 +182,11 @@
                     </person>
                 </listPerson>
                 <bibl type="primary">
-                    <biblScope type="pp">
-                        <ptr target="#bib3116-1"/>174</biblScope>
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="pp">174</citedRange>
                 </bibl>
             </div>
-            <div uri="http://syriaca.org/spear/3116-" resp="#ktorabi #dschwartz">
+            <div type="factoid" uri="http://syriaca.org/spear/3116-9" resp="#ktorabi #dschwartz">
                 <listPerson>
                     <person>
                         <persName ref="http://syriaca.org/person/544">
@@ -191,159 +195,160 @@
                     </person>
                 </listPerson>
                 <bibl type="primary">
-                    <biblScope type="pp">
-                        <ptr target="#bib3116-1"/>174</biblScope>
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="pp">174</citedRange>
                 </bibl>
             </div>
-            <div uri="http://syriaca.org/spear/3116-" resp="#ktorabi #dschwartz">
+            <div type="factoid" uri="http://syriaca.org/spear/3116-10" resp="#ktorabi #dschwartz">
                 <listPerson>
                     <person>
                         <persName ref="http://syriaca.org/person/544"/>
-                        <sex value="M">
-                            Male
-                        </sex>
+                        <trait type="gender" ref="http://syriaca.org/keyword/male">
+                            <note type="desc">
+                                <persName ref="http://syriaca.org/person/544">Ignatius</persName> was male.
+                            </note>
+                        </trait>
                     </person>
                 </listPerson>
                 <bibl type="primary">
-                    <biblScope type="pp">
-                        <ptr target="#bib3116-1"/>174</biblScope>
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="pp">174</citedRange>
                 </bibl>
             </div>
-            <div uri="http://syriaca.org/spear/3116-" resp="#ktorabi #dschwartz">
+            <div type="factoid" uri="http://syriaca.org/spear/3116-11" resp="#ktorabi #dschwartz">
                 <listPerson>
                     <person>
-                        <state type="vocation">
-                            <desc>
+                        <persName ref="http://syriaca.org/person/544"/>
+                        <occupation ref="http://syriaca.org/keyword/bishops">
+                            <note type="desc">
                                 <persName ref="http://syriaca.org/person/544">
                                     Ignatius
                                 </persName>
-                                was the Bishop of
-                                <placeName>
+                                was the bishop of
+                                <placeName ref="http://syriaca.org/place/2610">
                                     Antioch
                                 </placeName>
-                            </desc>
-                        </state>
+                            </note>
+                        </occupation>
                     </person>
                 </listPerson>
                 <bibl type="primary">
-                    <biblScope type="pp">
-                        <ptr target="#bib3116-1"/>174</biblScope>
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="pp">174</citedRange>
                 </bibl>
             </div>
-            <div uri="http://syriaca.org/spear/3116-" resp="#ktorabi #dschwartz">
+            <div type="factoid" uri="http://syriaca.org/spear/3116-12" resp="#ktorabi #dschwartz">
                 <listPerson>
                     <person>
-                        <state type="vocation">
-                            <desc>
+                        <persName ref="http://syriaca.org/person/544"/>
+                        <state type="sanctity" ref="http://syriaca.org/keyword/martyrs">
+                            <note type="desc">
                                 <persName ref="http://syriaca.org/person/544">
                                     Ignatius
                                 </persName>
-                                was a martyr
-                                </desc>
+                                was a martyr.
+                           </note>
                         </state>
                     </person>
                 </listPerson>
                 <bibl type="primary">
-                    <biblScope type="pp">
-                        <ptr target="#bib3116-1"/>174</biblScope>
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="pp">174</citedRange>
                 </bibl>
             </div>
-            <div uri="http://syriaca.org/spear/3116-" resp="#ktorabi #dschwartz">
+            <div type="factoid" uri="http://syriaca.org/spear/3116-13" resp="#ktorabi #dschwartz">
                 <listPerson>
                     <personGrp>
                         <persName ref="http://syriaca.org/person/anonymi3">
-                            the men of 
-                            <placeName>
+                            The men of 
+                            <placeName ref="http://syriaca.org/place/2718">
                                 Smyrna
                             </placeName>
                             who received a letter from 
                             <persName ref="http://syriaca.org/person/544">
-                                the Bishop Ignatius 
+                                Ignatius 
                             </persName>
-                            between
                             <date notBefore="0035" notAfter="0108">
-                                A.D. 35-108
+                                between A.D. 35-108
                             </date>                           
                         </persName>
                     </personGrp>
                 </listPerson>
                 <bibl type="primary">
-                    <biblScope type="pp">
-                        <ptr target="#bib3116"/>174</biblScope>
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="pp">174</citedRange>
                 </bibl>
             </div>
-            <div uri="http://syriaca.org/spear/3116-" resp="#ktorabi #dschwartz">
+            <div type="factoid" uri="http://syriaca.org/spear/3116-14" resp="#ktorabi #dschwartz">
                 <listRelation>
-                    <relation type="epistolary" name="syriaca:SenderOfLetterTo" active="http://syriaca.org/person/544" passive="http://syriaca.org/person/anonymi3"/>
+                    <relation ref="syriaca:SenderOfLetterTo" active="http://syriaca.org/person/544" passive="http://syriaca.org/person/anonymi3"/>
                 </listRelation>
                 <bibl type="primary">
-                    <biblScope type="pp">
-                        <ptr target="#bib3116-1"/>174</biblScope>
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="pp">174</citedRange>
                 </bibl>
             </div>
-            <div uri="http://syriaca.org/spear/3116-" resp="#ktorabi #dschwartz">
+            <div type="factoid" uri="http://syriaca.org/spear/3116-15" resp="#ktorabi #dschwartz">
                 <listPerson>
                     <personGrp>
                         <persName ref="http://syriaca.org/person/anonymi4">
                             Those at  
-                            <placeName>
+                            <placeName ref="http://syriaca.org/place/1476">
                                 Philadelphia
                             </placeName>
                             who received a letter from 
                             <persName ref="http://syriaca.org/person/544">
-                                the Bishop Ignatius 
+                                Ignatius 
                             </persName>
-                            between
                             <date notBefore="0035" notAfter="0108">
-                                A.D. 35-108
+                                between A.D. 35-108
                             </date>                           
                         </persName>
                     </personGrp>
                 </listPerson>
                 <bibl type="primary">
-                    <biblScope type="pp">
-                        <ptr target="#bib3116"/>174</biblScope>
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="pp">174</citedRange>
                 </bibl>
             </div>
-            <div uri="http://syriaca.org/spear/3116-" resp="#ktorabi #dschwartz">
+            <div type="factoid" uri="http://syriaca.org/spear/3116-16" resp="#ktorabi #dschwartz">
                 <listRelation>
-                    <relation type="epistolary" name="syriaca:SenderOfLetterTo" active="http://syriaca.org/person/544" passive="http://syriaca.org/person/anonymi4"/>
+                    <relation ref="syriaca:SenderOfLetterTo" active="http://syriaca.org/person/544" passive="http://syriaca.org/person/anonymi4"/>
                 </listRelation>
                 <bibl type="primary">
-                    <biblScope type="pp">
-                        <ptr target="#bib3116-1"/>174</biblScope>
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="pp">174</citedRange>
                 </bibl>
             </div>
-            <div uri="http://syriaca.org/spear/3116-" resp="#ktorabi #dschwartz">
+            <div type="factoid" uri="http://syriaca.org/spear/3116-17" resp="#ktorabi #dschwartz">
                 <listPerson>
                     <personGrp>
                         <persName ref="http://syriaca.org/person/anonymi5">
-                            the Ephesians, who received a letter from 
+                           Tthe Ephesians who received a letter from 
                             <persName ref="http://syriaca.org/person/544">
-                                the Bishop Ignatius 
+                                Ignatius 
                             </persName>
-                            between
                             <date notBefore="0035" notAfter="0108">
-                                A.D. 35-108
+                                between A.D. 35-108
                             </date>                           
                         </persName>
                     </personGrp>
                 </listPerson>
                 <bibl type="primary">
-                    <biblScope type="pp">
-                        <ptr target="#bib3116"/>174</biblScope>
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="pp">174</citedRange>
                 </bibl>
             </div>
-            <div uri="http://syriaca.org/spear/3116-" resp="#ktorabi #dschwartz">
+            <div type="factoid" uri="http://syriaca.org/spear/3116-18" resp="#ktorabi #dschwartz">
                 <listRelation>
-                    <relation type="epistolary" name="syriaca:SenderOfLetterTo" active="http://syriaca.org/person/544" passive="http://syriaca.org/person/anonymi5"/>
+                    <relation ref="syriaca:SenderOfLetterTo" active="http://syriaca.org/person/544" passive="http://syriaca.org/person/anonymi5"/>
                 </listRelation>
                 <bibl type="primary">
-                    <biblScope type="pp">
-                        <ptr target="#bib3116-1"/>174</biblScope>
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="pp">174</citedRange>
                 </bibl>
             </div>
-            <div uri="http://syriaca.org/spear/3116-" resp="#ktorabi #dschwartz">
+            <div type="factoid" uri="http://syriaca.org/spear/3116-19" resp="#ktorabi #dschwartz">
                     <listPerson>
                         <person>
                             <persName ref="http://syriaca.org/person/2463">
@@ -351,116 +356,127 @@
                             </persName>
                         </person>
                     </listPerson>
-                    <bibl type="primary">
-                        <biblScope type="pp">
-                            <ptr target="#bib3116-1"/>175</biblScope>
-                    </bibl>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="pp">175</citedRange>
+                </bibl>
                 </div>
-                <div uri="http://syriaca.org/spear/3116-" resp="#ktorabi #dschwartz">
-                    <listPerson>
-                        <person>
-                            <persName ref="http://syriaca.org/person/2463"/>
-                            <sex value="M">
-                                Male
-                            </sex>
-                        </person>
-                    </listPerson>
-                    <bibl type="primary">
-                        <biblScope type="pp">
-                            <ptr target="#bib3116-1"/>175</biblScope>
-                    </bibl>
-                </div>
-                <div uri="http://syriaca.org/spear/3116-" resp="#ktorabi #dschwartz">
-                    <listPerson>
-                        <person>
-                            <state type="vocation">
-                                <desc>
-                                    <persName ref="http://syriaca.org/person/2463">
-                                        Irenaeus
-                                    </persName>
-                                    was the Bishop of
-                                    <placeName>
-                                        Lyons
-                                    </placeName>
-                                </desc>
-                            </state>
-                        </person>
-                    </listPerson>
-                    <bibl type="primary">
-                        <biblScope type="pp">
-                            <ptr target="#bib3116-1"/>175</biblScope>
-                    </bibl>
-                </div>
-            <div uri="http://syriaca.org/spear/3116-" resp="#ktorabi #dschwartz">
+            <div type="factoid" uri="http://syriaca.org/spear/3116-20" resp="#ktorabi #dschwartz">
+                <listPerson>
+                    <person>
+                        <persName ref="http://syriaca.org/person/2463"/>
+                        <trait type="gender" ref="http://syriaca.org/keyword/male">
+                            <note type="desc">
+                                <persName ref="http://syriaca.org/person/2463">
+                                    Irenaeus 
+                                </persName>
+                                was male.
+                            </note>
+                        </trait>
+                    </person>
+                </listPerson>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="pp">175</citedRange>
+                </bibl>
+            </div>
+            <div type="factoid" uri="http://syriaca.org/spear/3116-21" resp="#ktorabi #dschwartz">
+                <listPerson>
+                    <person>
+                        <persName ref="http://syriaca.org/person/2463"/>
+                        <occupation ref="http://syriaca.org/keyword/bishops">
+                            <note type="desc">
+                                <persName ref="http://syriaca.org/person/2463">
+                                    Irenaeus
+                                </persName>
+                                was the bishop of
+                                <placeName ref="http://syriaca.org/place/2680">
+                                    Lyons
+                                </placeName>
+                            </note>
+                        </occupation>
+                    </person>
+                </listPerson>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="pp">175</citedRange>
+                </bibl>
+            </div>
+            <div type="factoid" uri="http://syriaca.org/spear/3116-22" resp="#ktorabi #dschwartz">
                 <listPerson>
                     <person>
                         <persName ref="http://syriaca.org/person/2464">
                             Polycarp, Bishop of
-                            <placeName>
+                            <placeName ref="http://syriaca.org/place/2719">
                                 Smyrna
                             </placeName>
                         </persName>
                     </person>
                 </listPerson>
                 <bibl type="primary">
-                    <biblScope type="pp">
-                        <ptr target="#bib3116-1"/>175</biblScope>
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="pp">175</citedRange>
                 </bibl>
             </div>
-            <div uri="http://syriaca.org/spear/3116-" resp="#ktorabi #dschwartz">
+            <div type="factoid" uri="http://syriaca.org/spear/3116-23" resp="#ktorabi #dschwartz">
                 <listPerson>
                     <person>
                         <persName ref="http://syriaca.org/person/2464"/>
-                        <sex value="M">
-                            Male
-                        </sex>
+                        <trait type="gender" ref="http://syriaca.org/keyword/male">
+                            <note type="desc">
+                                <persName ref="http://syriaca.org/person/2464">Polycarp</persName> was male.
+                            </note>
+                        </trait>
                     </person>
                 </listPerson>
                 <bibl type="primary">
-                    <biblScope type="pp">
-                        <ptr target="#bib3116-1"/>175</biblScope>
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="pp">175</citedRange>
                 </bibl>
             </div>
-            <div uri="http://syriaca.org/spear/3116-" resp="#ktorabi #dschwartz">
+            <div type="factoid" uri="http://syriaca.org/spear/3116-24" resp="#ktorabi #dschwartz">
                 <listPerson>
                     <person>
-                        <state type="vocation">
-                            <desc>
+                        <persName ref="http://syriaca.org/person/2464"/>
+                        <occupation ref="http://syriaca.org/keyword/bishops">
+                            <note type="desc">
                                 <persName ref="http://syriaca.org/person/2464">
                                     Polycarp
                                 </persName>
-                                was the Bishop of
-                                <placeName>
+                                was the bishop of
+                                <placeName ref="http://syriaca.org/place/2719">
                                     Smyrna
-                                </placeName>
-                            </desc>
-                        </state>
+                                </placeName>.
+                            </note>
+                        </occupation>
                     </person>
                 </listPerson>
                 <bibl type="primary">
-                    <biblScope type="pp">
-                        <ptr target="#bib3116-1"/>175</biblScope>
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="pp">175</citedRange>
                 </bibl>
             </div>
-            <div uri="http://syriaca.org/spear/3116-" resp="#ktorabi #dschwartz">
+            <div type="factoid" uri="http://syriaca.org/spear/3116-25" resp="#ktorabi #dschwartz">
                 <listPerson>
                     <person>
-                        <state type="vocation">
-                            <desc>
+                        <persName ref="http://syriaca.org/person/2464"/>
+                        <state type="sanctity" ref="http://syriaca.org/keyword/martyrs">
+                            <note type="desc">
                                 <persName ref="http://syriaca.org/person/2464">
                                     Polycarp
                                 </persName>
-                                was a martyr
-                                </desc>
+                                was a martyr.
+                            </note>
                         </state>
                     </person>
                 </listPerson>
                 <bibl type="primary">
-                    <biblScope type="pp">
-                        <ptr target="#bib3116-1"/>175</biblScope>
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="pp">175</citedRange>
                 </bibl>
             </div>
         </body>
+        <back>
             <listBibl>
                 <head>Works Cited</head>
                 <bibl type="primary" xml:id="bibl3116-1">
@@ -471,6 +487,7 @@
                     <editor><persName ref="http://syriaca.org/person/403">E. W. Brooks</persName></editor>
                     <ptr target="http://syriaca.org/bibl/668"/>
                 </bibl>
-        </listBibl>
+            </listBibl>
+        </back>
     </text>
 </TEI>

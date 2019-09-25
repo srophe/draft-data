@@ -1,0 +1,412 @@
+General
+All div elements have an xml:id with the uri stated in an idno element
+All div elements have a @resp attribute. It would be great to see the name on the factoid page
+In person factoids, the persName directly nested under person indicates the subject even if other person URIs appear elsewhere
+Person factoids can be about individuals person or groups personGrp
+Any factoid may contain a URN in bibl but not all do. We should pull the primary text in when we can.
+
+Name variants (person and personGrp)
+            <div type="factoid" xml:id="factoid-40" resp="#ktorabi">
+                <idno type="URI">http://syriaca.org/spear/10510-40</idno>
+                <listPerson>
+                    <personGrp>
+                        <persName ref="http://syriaca.org/person/3669"> The monks who resided in
+                                <placeName ref="http://syriaca.org/place/399"> the Convent of John
+                                Urtaya in <placeName ref="http://syriaca.org/place/8"
+                                    >Amida</placeName></placeName></persName>
+                    </personGrp>
+                </listPerson>
+                <bibl type="primary"><ptr target="http://syriaca.org/work/10510"/><citedRange
+                        unit="pp">555</citedRange></bibl>
+                <bibl type="primary"><ptr target="http://syriaca.org/bibl/2033"/><citedRange
+                        unit="pp">209</citedRange></bibl>
+            </div>
+
+
+            <div type="factoid" xml:id="factoid-17" resp="#ktorabi">
+                <idno type="URI">http://syriaca.org/spear/10510-17</idno>
+                <listPerson>
+                    <person>
+                        <persName ref="http://syriaca.org/person/3192"> Mar Afwrsm </persName>
+                    </person>
+                </listPerson>
+                <bibl type="primary"><ptr target="http://syriaca.org/work/10510"/><citedRange
+                        unit="pp">554</citedRange></bibl>
+                <bibl type="primary"><ptr target="http://syriaca.org/bibl/2033"/><citedRange
+                        unit="pp">208</citedRange></bibl>
+            </div>
+
+
+Person factoid: birth date 
+            <div type="factoid" xml:id="factoid-55" resp="#dschwartz">
+                <idno type="URI">http://syriaca.org/spear/8559-55</idno>
+                <listPerson>
+                    <person>
+                        <persName ref="http://syriaca.org/person/2245"/>
+                        <birth>
+                            <choice>
+                                <reg><date notBefore="-0003-10" notAfter="-0002-09"
+                                        calendar="Gregorian" srophe:computed-start="-0003-10-01"
+                                        srophe:computed-end="-0002-09-01">3/2 B.C.</date></reg>
+                                <orig><date when-custom="0309" datingMethod="Seleucid">A. Gr.
+                                        309</date></orig>
+                            </choice>
+                            <note type="desc"> Jesus was born in 3/2 B.C. </note>
+                        </birth>
+                    </person>
+                </listPerson>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/bibl/633"/>
+                    <citedRange unit="pp">3</citedRange>
+                </bibl>
+                <bibl type="urn">
+                    <ptr target="urn:cts:syriacLit:nhsl8559.syriacCorpus57:4"/>
+                </bibl>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/bibl/657"/>
+                    <citedRange unit="part">3</citedRange>
+                </bibl>
+            </div>
+
+
+Person factoid: death date 
+            <div type="factoid" xml:id="factoid-215" resp="#ktorabi">
+                <idno type="URI">http://syriaca.org/spear/10510-215</idno>
+                <listPerson>
+                    <person>
+                        <persName ref="http://syriaca.org/person/3263"/>
+                        <death><date when="0529"/><note type="desc"><persName
+                                    ref="http://syriaca.org/person/3263">Symy</persName> died in
+                                529. </note></death>
+                    </person>
+                </listPerson>
+                <bibl type="primary"><ptr target="http://syriaca.org/work/10510"/><citedRange
+                        unit="pp">569</citedRange></bibl>
+                <bibl type="primary"><ptr target="http://syriaca.org/bibl/2033"/><citedRange
+                        unit="pp">233</citedRange></bibl>
+            </div>
+
+
+
+Person factoid: death place 
+         <div type="factoid" xml:id="factoid-11" resp="#rbarczok #kgibson">
+            <idno type="URI">http://syriaca.org/spear/836-11</idno>
+            <listPerson>
+               <person>
+                  <persName ref="http://syriaca.org/person/1788"/>
+                  <death><placeName ref="http://syriaca.org/place/586"/><note type="desc"><persName
+                           ref="http://syriaca.org/person/1788">Isaac of Dara</persName> died in
+                           <placeName ref="http://syriaca.org/place/586">Constantinople</placeName>.
+                     </note></death>
+               </person>
+            </listPerson>
+            <bibl type="primary"><ptr target="http://syriaca.org/work/836"/><citedRange unit="pp"
+                  >469</citedRange></bibl>
+            <bibl type="primary"><ptr target="http://syriaca.org/bibl/2032"/><citedRange unit="pp"
+                  >671</citedRange></bibl>
+         </div>
+
+
+
+Person factoid: birth place 
+            <div type="factoid" xml:id="factoid-3" resp="#jwickes">
+                <idno type="URI">http://syriaca.org/spear/842-3</idno>
+                <listPerson>
+                    <person>
+                        <persName ref="http://syriaca.org/person/2032"/>
+                        <birth><placeName ref="http://syriaca.org/place/2865"/><note type="desc"
+                                    ><persName ref="http://syriaca.org/person/2032"
+                                    >Kashish</persName> was born in <placeName
+                                    ref="http://syriaca.org/place/2865">ʿAina da Frakha which is
+                                    beyond <placeName ref="http://syriaca.org/place/2825">Nirba d
+                                        Škwš</placeName>.</placeName></note></birth>
+                    </person>
+                </listPerson>
+                <bibl type="primary"><ptr target="http://syriaca.org/work/842"/><citedRange
+                        unit="pp">505</citedRange></bibl>
+                <bibl type="primary"><ptr target="http://syriaca.org/bibl/2033"/><citedRange
+                        unit="pp">159</citedRange></bibl>
+            </div>
+
+
+Person factoid: education
+            <div type="factoid" xml:id="factoid-5" resp="#jwickes">
+                <idno type="URI">http://syriaca.org/spear/842-5</idno>
+                <listPerson>
+                    <person>
+                        <persName ref="http://syriaca.org/person/2032"/>
+                        <education ana="http://syriaca.org/keyword/bible http://syriaca.org/keyword/exegesis"><note type="desc"
+                                    ><persName ref="http://syriaca.org/person/2032"
+                                    >Kashish</persName> studied the reading of the Holy Scriptures
+                                at the <placeName ref="http://syriaca.org/place/399"> Monastery of
+                                    John Urtraya </placeName> in the city of <placeName
+                                    ref="http://syriaca.org/place/8"> Amida.
+                            </placeName></note></education>
+                    </person>
+                </listPerson>
+                <bibl type="primary"><ptr target="http://syriaca.org/work/842"/><citedRange
+                        unit="pp">505</citedRange></bibl>
+                <bibl type="primary"><ptr target="http://syriaca.org/bibl/2033"/><citedRange
+                        unit="pp">159</citedRange></bibl>
+            </div>
+
+
+Person factoid: language knowledge
+            <div type="factoid" xml:id="factoid-22" resp="#ktorabi">
+                <idno type="URI">http://syriaca.org/spear/10510-22</idno>
+                <listPerson>
+                    <person>
+                        <persName ref="http://syriaca.org/person/3218"/>
+                        <langKnowledge>
+                            <langKnown ana="http://syriaca.org/keyword/urtaye"/>
+                            <note type="desc"><persName ref="http://syriaca.org/person/3218"
+                                    >John</persName>spoke Urtaye.</note>
+                        </langKnowledge>
+                    </person>
+                </listPerson>
+                <bibl type="primary"><ptr target="http://syriaca.org/work/10510"/><citedRange
+                        unit="pp">554</citedRange></bibl>
+                <bibl type="primary"><ptr target="http://syriaca.org/bibl/2033"/><citedRange
+                        unit="pp">208</citedRange></bibl>
+            </div>
+
+
+
+Person factoid: nationality
+            <div type="factoid" xml:id="factoid-39" resp="#ktorabi #dschwartz">
+                <idno type="URI">http://syriaca.org/spear/3004-39</idno>
+                <listPerson>
+                    <person>
+                        <persName ref="http://syriaca.org/person/2562"/>
+                        <nationality><placeName ref="http://syriaca.org/place/1469"/><note
+                                type="desc"><persName ref="http://syriaca.org/person/2562"
+                                    >Epiphanius</persName> was a citizen of <placeName
+                                    ref="http://syriaca.org/place/1469">Perga</placeName>.
+                            </note></nationality>
+                    </person>
+                </listPerson>
+                <bibl type="primary"><ptr target="http://syriaca.org/bibl/668"/><citedRange
+                        unit="part">1.01</citedRange><citedRange unit="pp">7</citedRange></bibl>
+            </div>
+
+
+Person factoid: occupation
+            <div type="factoid" xml:id="factoid-3" resp="#ktorabi #dschwartz">
+                <idno type="URI">http://syriaca.org/spear/3020-3</idno>
+                <listPerson>
+                    <person>
+                        <persName ref="http://syriaca.org/person/2606"/>
+                        <occupation ana="http://syriaca.org/keyword/readers"><note type="desc"
+                                    ><persName ref="http://syriaca.org/person/2606"
+                                    >Archelaus</persName> was a reader in <placeName
+                                    ref="http://syriaca.org/place/195"
+                            >Tyre</placeName>.</note></occupation>
+                    </person>
+                </listPerson>
+                <bibl type="primary"><ptr target="http://syriaca.org/bibl/669"/><citedRange
+                        unit="part">6.02</citedRange><citedRange unit="pp">363</citedRange></bibl>
+            </div>
+
+
+
+Person factoid: residence
+            <div type="factoid" xml:id="factoid-179" resp="#ktorabi">
+                <idno type="URI">http://syriaca.org/spear/10510-179</idno>
+                <listPerson>
+                    <person>
+                        <persName ref="http://syriaca.org/person/3183"/>
+                        <residence><placeName ref="http://syriaca.org/place/2826"/><note type="desc"
+                                    ><persName ref="http://syriaca.org/person/3183">Abba</persName>
+                                resided in the <placeName ref="http://syriaca.org/place/2826"
+                                    >Convent of Nut</placeName>. </note></residence>
+                    </person>
+                </listPerson>
+                <bibl type="primary"><ptr target="http://syriaca.org/work/10510"/><citedRange
+                        unit="pp">570</citedRange></bibl>
+                <bibl type="primary"><ptr target="http://syriaca.org/bibl/2033"/><citedRange
+                        unit="pp">224</citedRange></bibl>
+            </div>
+
+
+Person Factoid: socio-economic status
+            <div type="factoid" xml:id="factoid-9" resp="#ktorabi #dschwartz">
+                <idno type="URI">http://syriaca.org/spear/3069-9</idno>
+                <listPerson>
+                    <person>
+                        <persName ref="http://syriaca.org/person/2400"/>
+                        <socecStatus ana="http://syriaca.org/keyword/slaves">
+                            <note type="desc">
+                                <persName ref="http://syriaca.org/person/2400">John</persName>
+                                was a slave.
+                            </note>
+                        </socecStatus>
+                    </person>
+                </listPerson>
+                <bibl type="primary"><ptr target="http://syriaca.org/bibl/668"/><citedRange
+                        unit="part">1.35</citedRange><citedRange unit="pp">102</citedRange></bibl>
+            </div>
+
+
+Person factoid: state (used for sanctity)
+            <div type="factoid" xml:id="factoid-4" resp="#ktorabi">
+                <idno type="URI">http://syriaca.org/spear/794-4</idno>
+                <listPerson>
+                    <person>
+                        <persName ref="http://syriaca.org/person/1524"/>
+                        <state type="sanctity" ana="http://syriaca.org/keyword/saints">
+                            <note type="desc"><persName ref="http://syriaca.org/person/1524"
+                                    >Zeʿora</persName> was a saint.</note>
+                        </state>
+                    </person>
+                </listPerson>
+                <bibl type="primary"><ptr target="http://syriaca.org/work/794"/><citedRange
+                        unit="pp">18</citedRange></bibl>
+                <bibl type="primary"><ptr target="http://syriaca.org/bibl/1409"/><citedRange
+                        unit="pp">18</citedRange></bibl>
+            </div>
+
+Person factoid: trait (used for gender)
+            <div type="factoid" xml:id="factoid-7" resp="#ktorabi #dschwartz">
+                <idno type="URI">http://syriaca.org/spear/3012-7</idno>
+                <listPerson>
+                    <person>
+                        <persName ref="http://syriaca.org/person/2416"/>
+                        <trait type="gender" ana="http://syriaca.org/keyword/female">
+                            <note type="desc"><persName ref="http://syriaca.org/person/2416"
+                                    >Thecla</persName> was female.</note>
+                        </trait>
+                    </person>
+                </listPerson>
+                <bibl type="primary"><ptr target="http://syriaca.org/bibl/668"/><citedRange
+                        unit="part">1.02</citedRange><citedRange unit="pp">12</citedRange></bibl>
+            </div>
+
+Person factoid: trait (used for physical traits)		
+            <div type="factoid" xml:id="factoid-51" resp="#ktorabi">
+                <idno type="URI">http://syriaca.org/spear/797-51</idno>
+                <listPerson>
+                    <person>
+                        <persName ref="http://syriaca.org/person/3154"/>
+                        <trait type="physical" ana="http://syriaca.org/keyword/hair">
+                            <note type="desc"><persName ref="http://syriaca.org/person/3154"
+                                    >Sergius</persName> had long hair that marked his ascetic
+                                profession and wore a habit that marked him as an anchorite. </note>
+                        </trait>
+                    </person>
+                </listPerson>
+                <bibl type="primary"><ptr target="http://syriaca.org/work/797"/><citedRange
+                        unit="pp">104</citedRange></bibl>
+                <bibl type="primary"><ptr target="http://syriaca.org/bibl/1409"/><citedRange
+                        unit="pp">104</citedRange></bibl>
+            </div>
+                                                
+Person factoid: trait (used for ethnic labels)
+            <div type="factoid" xml:id="factoid-23" resp="#ktorabi">
+                <idno type="URI">http://syriaca.org/spear/10510-23</idno>
+                <listPerson>
+                    <person>
+                        <persName ref="http://syriaca.org/person/3218"/>
+                        <trait type="ethnicLabel" ana="http://syriaca.org/keyword/syrian">
+                            <note type="desc"><persName ref="http://syriaca.org/person/3218">John
+                                    Urtaya</persName>was Syrian.</note>
+                        </trait>
+                    </person>
+                </listPerson>
+                <bibl type="primary"><ptr target="http://syriaca.org/work/10510"/><citedRange
+                        unit="pp">554</citedRange></bibl>
+                <bibl type="primary"><ptr target="http://syriaca.org/bibl/2033"/><citedRange
+                        unit="pp">208</citedRange></bibl>
+            </div>
+
+
+
+Event factoid: 
+note the listRelation for linking this factoid to another
+note that any factoid may contain a URN in the bibl 
+            <div type="factoid" xml:id="factoid-545" resp="#dschwartz">
+                <idno type="URI">http://syriaca.org/spear/8559-545</idno>
+                <listEvent>
+                    <event ana="http://syriaca.org/keyword/natural-disasters">
+                        <desc> The first time the walls of <placeName
+                                ref="http://syriaca.org/place/78"> Edessa </placeName> were broken
+                            down was in <choice>
+                                <reg><date when="0201-11" calendar="Gregorian"
+                                        srophe:computed-start="0201-11-01">November A. D.
+                                        201</date></reg>
+                                <orig><date when-custom="0513-02"
+                                        datingMethod="Seleucid-SyriacMonths">Teshri II A. Gr.
+                                        513</date></orig>
+                            </choice></desc>
+                    </event>
+                    <listRelation>
+                        <relation ref="syriaca:SameEvent" ana="event"
+                            mutual="http://syriaca.org/spear/8559-18 http://syriaca.org/spear/8559-545"
+                        />
+                    </listRelation>
+                </listEvent>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/bibl/633"/>
+                    <citedRange unit="pp">13</citedRange>
+                </bibl>
+                <bibl type="urn">
+                    <ptr target="urn:cts:syriacLit:nhsl8559.syriacCorpus57:106"/>
+                </bibl>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/bibl/657"/>
+                    <citedRange unit="part">106</citedRange>
+                </bibl>
+            </div>
+
+Relation factoid: mutual
+We've avoided using a note element for a prose description of the relation element. Let me know if that is still workable.
+            <div type="factoid" xml:id="factoid-3" resp="#mdoerfler #jnsaint-laurent">
+                <idno type="URI">http://syriaca.org/spear/814-3</idno>
+                <listRelation>
+                    <relation ref="snap:SiblingOf"
+                        type="snap:MaternalFamilyRelationship snap:HalfFamilyRelationship"
+                        mutual="http://syriaca.org/person/1117 http://syriaca.org/person/1548"/>
+                </listRelation>
+                <bibl type="primary"><ptr target="http://syriaca.org/work/814"/><citedRange
+                        unit="pp">299</citedRange></bibl>
+                <bibl type="primary"><ptr target="http://syriaca.org/work/814"/><citedRange
+                        unit="pp">299</citedRange></bibl>
+                <bibl type="primary"><ptr target="http://syriaca.org/bibl/1409"/><citedRange
+                        unit="pp">299</citedRange></bibl>
+            </div>
+			
+
+Relation factoid: reciprocal
+            <div type="factoid" xml:id="factoid-52" resp="#ktorabi">
+                <idno type="URI">http://syriaca.org/spear/10510-52</idno>
+                <listRelation>
+                    <relation ref="syriaca:MonasticHeadOver" active="http://syriaca.org/person/3227"
+                        passive="http://syriaca.org/person/3669"/>
+                </listRelation>
+                <bibl type="primary"><ptr target="http://syriaca.org/work/10510"/><citedRange
+                        unit="pp">556</citedRange></bibl>
+                <bibl type="primary"><ptr target="http://syriaca.org/bibl/2033"/><citedRange
+                        unit="pp">210</citedRange></bibl>
+            </div>
+
+
+
+Discursive notes
+These can nest directly under the div element 
+They are similar to a footnote. We might need to think a bit about how to display this information.
+            <div type="factoid" xml:id="factoid-25" resp="#ktorabi #dschwartz">
+                <idno type="URI">http://syriaca.org/spear/3038-25</idno>
+                <listPerson>
+                    <personGrp>
+                        <persName ref="http://syriaca.org/person/3051"> Those attending the synod at
+                            Commanus in <placeName ref="http://syriaca.org/place/576"> Armenia
+                            </placeName> in <date when="0458"> 458 </date></persName>
+                    </personGrp>
+                </listPerson>
+                <bibl type="primary"><ptr target="http://syriaca.org/bibl/668"/><citedRange
+                        unit="part">1.13</citedRange><citedRange unit="pp">55</citedRange></bibl>
+                <note> This date comes from Honigman. <bibl type="secondary"><ptr
+                            target="http://syriaca.org/bibl/1379"/><citedRange unit="pp"
+                            >119</citedRange></bibl></note>
+            </div>
+
+

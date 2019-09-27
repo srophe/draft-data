@@ -80,7 +80,7 @@ else
  ()
 };
 
-declare function local:createAbstractIndex($headerMap)
+declare function local:createAbstractIndex($headerMap) (:This is where we would need to change if altering our columns to call them 'desc's. We would likely want to rename functions and variables if that is the case. :)
 {
 for $nameColumn in $headerMap
 let $columnString := $nameColumn/string/string()
@@ -418,7 +418,7 @@ let $abstracts :=
     for $abstract at $number in $abstractIndex
     let $text := local:trim($document/*[name() = $abstract/labelColumnElementName/text()]/text()) (: look up the abstract from that column :)
     where $text != ''   (: skip the abstract columns that are empty :)
-    let $nameUri := local:trim($document/*[name() = $abstract/sourceUriElementName/text()]/text())  (: look up the URI that goes with the abstract column :)
+    let $nameUri := local:trim($document/*[name() = $abstract/sourceUriElementName/text()]/text())  (: look up the URI that goes with the abstract column :) (: Trouble HERE :)
     let $namePg := local:trim($document/*[name() = $abstract/pagesElementName/text()]/text())  (: look up the page that goes with the name column :)
     let $sourceAttribute := 
         if ($nameUri != '')

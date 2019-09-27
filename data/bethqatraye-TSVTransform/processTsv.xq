@@ -602,6 +602,7 @@ let $text :=
             $headwordNames,
             $names,
             $abstracts,
+            $descriptions,
             $incerta,
             $disambiguation,
             $location,

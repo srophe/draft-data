@@ -104,6 +104,29 @@ else
  ()
 };
 
+declare function local:createDescIndex($headerMap)
+{
+for $nameColumn in $headerMap
+let $columnString := $nameColumn/string/string()
+let $leftOfDot := tokenize($columnString,'\.')[1]
+let $langCode := tokenize($columnString,'\.')[2]
+return if (substring(tokenize($columnString,'\.')[1],1,8) = 'desc') then
+  <desc>{
+    <langCode>{$langCode}</langCode>,
+    <labelColumnElementName>{$nameColumn/name/string()}</labelColumnElementName>,
+
+    for $uriColumn in $headerMap   (: find the element name of the sourceURI column :)
+    return if ($uriColumn/string/string() = 'sourceURI.'||$leftOfDot||'.'||$langCode)
+           then <sourceUriElementName>{$uriColumn/name/string()}</sourceUriElementName>
+           else (),
+    for $pagesColumn in $headerMap   (: find the element name of the sourceURI column :)
+    return if ($pagesColumn/string/string() = 'pages.'||$leftOfDot||'.'||$langCode)
+           then <pagesElementName>{$pagesColumn/name/string()}</pagesElementName>
+           else ()
+  }</desc>
+else 
+ ()
+};
 
 (: ----------------------------------------- :)
 (: Start of script :)
@@ -228,7 +251,19 @@ $abstractIndex is a sequence looks like this:
 In the current system, there is only one English abstract, but this allows for a different language or multiple abstracts in different languages
 :)
 let $abstractIndex := local:createAbstractIndex($headerMap) (: find and process the abstracts columns :)
+(:
+$descIndex is a sequence looks like this:
 
+<desc>
+  <langCode>en</langCode>
+  <labelColumnElementName>abstract.en</labelColumnElementName>
+  <sourceUriElementName>sourceURI.abstract.en</sourceUriElementName>
+  <pagesElementName>pages.abstract.en</pagesElementName>
+</desc>
+
+There should be only one true abstract, but this allows for a different language or multiple abstracts in different languages which are encoded as <desc> elements
+:)
+let $descIndex := local:createDescIndex($headerMap) (: find and process the descriptions columns :)
 (: ----------------------------------------- :)
 (: set up the loop that generates an output document for each row in the TSV file :)
 
@@ -434,9 +469,28 @@ let $abstracts :=
         else ()
     return
         if ($nameUri = '')
-        then <desc xmlns = "http://www.tei-c.org/ns/1.0" xml:id="{ 'abstract'||$uriLocalName||'-'||$number }" xml:lang="{ $abstract/*:langCode/text() }">{$text}</desc>
-        else <desc xmlns = "http://www.tei-c.org/ns/1.0" xml:id="{ 'abstract'||$uriLocalName||'-'||$number }" xml:lang="{ $abstract/*:langCode/text() }"><quote source="{$sourceAttribute}">{$text}</quote></desc>
+        then <desc xmlns = "http://www.tei-c.org/ns/1.0" type ="abstract" xml:id="{ 'abstract'||$uriLocalName||'-'||$number }" xml:lang="{ $abstract/*:langCode/text() }">{$text}</desc>
+        else <desc xmlns = "http://www.tei-c.org/ns/1.0" type="abstract" xml:id="{ 'abstract'||$uriLocalName||'-'||$number }" xml:lang="{ $abstract/*:langCode/text() }" source="{$sourceAttribute}">{$text}</desc>
 
+(: create the description elements.  In the current table model there are only Engilsh ones, but this will still work if abstracts are added in other languages :)
+let $descriptions :=
+    for $desc at $number in $descIndex
+    let $text := local:trim($document/*[name() = $desc/labelColumnElementName/text()]/text()) (: look up the description from that column :)
+    where $text != ''   (: skip the description columns that are empty :)
+    let $nameUri := local:trim($document/*[name() = $desc/sourceUriElementName/text()]/text())  (: look up the URI that goes with the description column :)
+    let $namePg := local:trim($document/*[name() = $desc/pagesElementName/text()]/text())  (: look up the page that goes with the name column :)
+    let $sourceAttribute := 
+        if ($nameUri != '')
+        then
+            for $src at $srcNumber in $sources  (: step through the source index :)
+            where  $nameUri = $src/uri/text() and $namePg = $src/pg/text()  (: URI and page from columns must match with iterated item in the source index ISSUE: does not add a value for @source if the page field is empty. I believe because it doesn't find a match in the source index. :)
+            return '#bib'||$uriLocalName||'-'||$srcNumber    (: create the last part of the source attribute :)
+        else ()
+    return
+        if ($nameUri = '')
+        then <desc xmlns = "http://www.tei-c.org/ns/1.0" xml:id="{ 'abstract'||$uriLocalName||'-'||$number }" xml:lang="{ $desc/*:langCode/text() }">{$text}</desc>
+        else <desc xmlns = "http://www.tei-c.org/ns/1.0" xml:id="{ 'abstract'||$uriLocalName||'-'||$number }" xml:lang="{ $desc/*:langCode/text() }"><quote source="{$sourceAttribute}">{$text}</quote></desc>
+        
 (: create the disambiguation element. It's a bit unclear whether there can be multiple values or multiple languages, or if source is required. :)
 let $disambiguation := 
     for $dis in $headerMap 

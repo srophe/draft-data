@@ -473,7 +473,6 @@ let $abstracts :=
         else <desc xmlns = "http://www.tei-c.org/ns/1.0" type="abstract" xml:id="{ 'abstract'||$uriLocalName||'-'||$number }" xml:lang="{ $abstract/*:langCode/text() }" source="{$sourceAttribute}">{$text}</desc>
 
 (: create the description elements.  In the current table model there are only Engilsh ones, but this will still work if abstracts are added in other languages :)
-let $numberAbstracts := count($abstracts)  (: need to add this to the description index to generate last number at end of id attribute :)
 let $descriptions :=
     for $desc at $number in $descIndex
     let $text := local:trim($document/*[name() = $desc/labelColumnElementName/text()]/text()) (: look up the description from that column :)
@@ -489,8 +488,8 @@ let $descriptions :=
         else ()
     return
         if ($nameUri = '')
-        then <desc xmlns = "http://www.tei-c.org/ns/1.0" xml:id="{ 'abstract'||$uriLocalName||'-'||($number+$numberAbstracts) }" xml:lang="{ $desc/*:langCode/text() }">{$text}</desc>
-        else <desc xmlns = "http://www.tei-c.org/ns/1.0" xml:id="{ 'abstract'||$uriLocalName||'-'||($number+$numberAbstracts) }" xml:lang="{ $desc/*:langCode/text() }"><quote source="{$sourceAttribute}">{$text}</quote></desc>
+        then <desc xmlns = "http://www.tei-c.org/ns/1.0" xml:lang="{ $desc/*:langCode/text() }">{$text}</desc>
+        else <desc xmlns = "http://www.tei-c.org/ns/1.0" xml:lang="{ $desc/*:langCode/text() }"><quote source="{$sourceAttribute}">{$text}</quote></desc>
         
 (: create the disambiguation element. It's a bit unclear whether there can be multiple values or multiple languages, or if source is required. :)
 let $disambiguation := 

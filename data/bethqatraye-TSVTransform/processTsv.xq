@@ -424,13 +424,13 @@ let $abstracts :=
         if ($nameUri != '')
         then
             for $src at $srcNumber in $sources  (: step through the source index :)
-            where  $nameUri = $src/uri/text() and $namePg = $src/pg/text()  (: URI and page from columns must match with iterated item in the source index :)
+            where  $nameUri = $src/uri/text() and $namePg = $src/pg/text()  (: URI and page from columns must match with iterated item in the source index ISSUE: does not add a value for @source if the page field is empty. I believe because it doesn't find a match in the source index. :)
             return '#bib'||$uriLocalName||'-'||$srcNumber    (: create the last part of the source attribute :)
         else ()
     return
         if ($nameUri = '')
-        then <desc xmlns = "http://www.tei-c.org/ns/1.0" type="abstract" xml:id="{ 'abstract'||$uriLocalName||'-'||$number }" xml:lang="{ $abstract/*:langCode/text() }">{$text}</desc>
-        else <desc xmlns = "http://www.tei-c.org/ns/1.0" type="abstract" xml:id="{ 'abstract'||$uriLocalName||'-'||$number }" xml:lang="{ $abstract/*:langCode/text() }" source="{$sourceAttribute}">{$text}</desc>
+        then <desc xmlns = "http://www.tei-c.org/ns/1.0" xml:id="{ 'abstract'||$uriLocalName||'-'||$number }" xml:lang="{ $abstract/*:langCode/text() }">{$text}</desc>
+        else <desc xmlns = "http://www.tei-c.org/ns/1.0" xml:id="{ 'abstract'||$uriLocalName||'-'||$number }" xml:lang="{ $abstract/*:langCode/text() }"><quote source="{$sourceAttribute}">{$text}</quote></desc>
 
 (: create the disambiguation element. It's a bit unclear whether there can be multiple values or multiple languages, or if source is required. :)
 let $disambiguation := 

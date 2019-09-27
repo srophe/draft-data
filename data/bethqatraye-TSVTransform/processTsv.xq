@@ -334,7 +334,7 @@ let $header :=
           </langUsage>
       </profileDesc>,
       <revisionDesc status="draft">
-          <change who="{$localConfig/*:configuration/*:mintedString/text()}" when="{$date}">CREATED: place</change>
+          <change who="{$localConfig/*:configuration/*:mintedUri/text()}" when="{$date}">CREATED: place</change>
       </revisionDesc>
 
   }</teiHeader>       
@@ -364,7 +364,7 @@ let $sources := local:distinct-deep($redundantSources)
 let $bibl :=
     for $source at $number in $sources
     return
-    if ($source/*:pg/text()=0) (: This is a bit of a workaround that allows the source to be included in abstracts and names even if it is a non-paginated source. The citedRange element appears in the output only if the page range is not zero. :)
+    if ($source/*:pg/text()=0) (: This is a bit of a workaround that allows the source to be included in abstracts and names even if it is a non-paginated source. The citedRange element appears in the output only if the page range is not zero. Note that this does require the data to have 0 in the page range columns. :)
     then <bibl xmlns="http://www.tei-c.org/ns/1.0" xml:id="bib{$uriLocalName}-{$number}">
         <ptr target="{$source/*:uri/text()}"/>
         </bibl>

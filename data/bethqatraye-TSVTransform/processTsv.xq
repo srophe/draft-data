@@ -110,7 +110,7 @@ for $nameColumn in $headerMap
 let $columnString := $nameColumn/string/string()
 let $leftOfDot := tokenize($columnString,'\.')[1]
 let $langCode := tokenize($columnString,'\.')[2]
-return if (substring(tokenize($columnString,'\.')[1],1,8) = 'desc') then
+return if (substring(tokenize($columnString,'\.')[1],1,4) = 'desc') then
   <desc>{
     <langCode>{$langCode}</langCode>,
     <labelColumnElementName>{$nameColumn/name/string()}</labelColumnElementName>,
@@ -256,9 +256,9 @@ $descIndex is a sequence looks like this:
 
 <desc>
   <langCode>en</langCode>
-  <labelColumnElementName>abstract.en</labelColumnElementName>
-  <sourceUriElementName>sourceURI.abstract.en</sourceUriElementName>
-  <pagesElementName>pages.abstract.en</pagesElementName>
+  <labelColumnElementName>desc.en</labelColumnElementName>
+  <sourceUriElementName>sourceURI.desc.en</sourceUriElementName>
+  <pagesElementName>pages.desc.en</pagesElementName>
 </desc>
 
 There should be only one true abstract, but this allows for a different language or multiple abstracts in different languages which are encoded as <desc> elements

@@ -364,6 +364,11 @@ let $sources := local:distinct-deep($redundantSources)
 let $bibl :=
     for $source at $number in $sources
     return
+    if ($source/*:pg/text()=0) (: This is a bit of a workaround that allows the source to be included in abstracts and names even if it is a non-paginated source. The citedRange element appears in the output only if the page range is not zero. :)
+    then <bibl xmlns="http://www.tei-c.org/ns/1.0" xml:id="bib{$uriLocalName}-{$number}">
+        <ptr target="{$source/*:uri/text()}"/>
+        </bibl>
+    else
     <bibl xmlns="http://www.tei-c.org/ns/1.0" xml:id="bib{$uriLocalName}-{$number}">
         <ptr target="{$source/*:uri/text()}"/>
         <citedRange unit="pp">{$source/*:pg/text()}</citedRange>
@@ -418,7 +423,7 @@ let $abstracts :=
     for $abstract at $number in $abstractIndex
     let $text := local:trim($document/*[name() = $abstract/labelColumnElementName/text()]/text()) (: look up the abstract from that column :)
     where $text != ''   (: skip the abstract columns that are empty :)
-    let $nameUri := local:trim($document/*[name() = $abstract/sourceUriElementName/text()]/text())  (: look up the URI that goes with the abstract column :) (: Trouble HERE :)
+    let $nameUri := local:trim($document/*[name() = $abstract/sourceUriElementName/text()]/text())  (: look up the URI that goes with the abstract column :)
     let $namePg := local:trim($document/*[name() = $abstract/pagesElementName/text()]/text())  (: look up the page that goes with the name column :)
     let $sourceAttribute := 
         if ($nameUri != '')

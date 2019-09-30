@@ -392,8 +392,15 @@ let $redundantSources :=
       let $sourcePage := local:trim($document/*[name() = $sourcePgColumnName]/text())
       return (<source><uri>{$sourceUri}</uri>,<pg>{$sourcePage}</pg></source>)
 
-(: remove redundant sources :)
+(: remove redundant sources.  :)
 let $sources := local:distinct-deep($redundantSources)
+
+(: Need an added step where we collate the references with the same URI into a single element with the numbers separated by comma. the output should look like this:
+
+<bibl xml:id="bib78-7">
+    <ptr target="http://syriaca.org/bibl/9"/>
+    <citedRange unit="pp">53, 65, 361, 362</citedRange>
+</bibl>:)
 
 (: build the bibl elements :)
 let $bibl :=
@@ -429,6 +436,9 @@ let $headwordNames :=
     let $text := local:trim($document/*[name() = $headword/labelColumnElementName/text()]/text()) (: look up the headword for that language :)
     where $text != '' (: skip the headword columns that are empty :)
     let $langAttrib := local:trim($headword/langCode/text())
+    (: put the source lookup here 
+    let $headwordUri := local:trim($document/*[name() = $headword/sourceUriElementName/text()]/text())
+    let $headwordPages := :)
     return <placeName xmlns="http://www.tei-c.org/ns/1.0" xml:id="{'name'||$uriLocalName}-{$number}" xml:lang="{$langAttrib}" syriaca-tags="#syriaca-headword" resp="http://syriaca.org">{$text}</placeName>
 
 (: for this row, find only the names columns that have values.  This avoids skipping numbers in placeName ids :)

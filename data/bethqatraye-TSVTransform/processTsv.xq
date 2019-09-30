@@ -448,9 +448,10 @@ let $headwordNames :=
     (: let $headwordPages := :)
     let $sourceFragId := 
         for $src at $srcNumber in $sources  (: step through the source index :)
-        where  $headwordUri = $src/uri/text()  (: URI and page from columns must match with iterated item in the source index :)
+        where  $headwordUri = $src/uri/text()  (: URI from columns must match with iterated item in the source index. This same process is used in getting names, abstracts, and descriptions. Perhaps turn into a function :)
         return $uriLocalName||'-'||$srcNumber    (: create the last part of the source attribute :)
-    return <placeName xmlns="http://www.tei-c.org/ns/1.0" xml:id="{'name'||$uriLocalName}-{$number}" xml:lang="{$langAttrib}" syriaca-tags="#syriaca-headword" resp="http://syriaca.org" source="#bibl{$sourceFragId}">{$text}</placeName>
+    return if($headwordUri != '') then <placeName xmlns="http://www.tei-c.org/ns/1.0" xml:id="{'name'||$uriLocalName}-{$number}" xml:lang="{$langAttrib}" syriaca-tags="#syriaca-headword" resp="http://syriaca.org" source="#bib{$sourceFragId}">{$text}</placeName>
+    else <placeName xmlns="http://www.tei-c.org/ns/1.0" xml:id="{'name'||$uriLocalName}-{$number}" xml:lang="{$langAttrib}" syriaca-tags="#syriaca-headword" resp="http://syriaca.org">{$text}</placeName>
 
 (: for this row, find only the names columns that have values.  This avoids skipping numbers in placeName ids :)
 let $lineNamesIndex :=
@@ -469,7 +470,7 @@ let $names :=
     let $namePg := local:trim($document/*[name() = $name/pagesElementName/text()]/text())  (: look up the page that goes with the name column :)
     let $sourceFragId := 
         for $src at $srcNumber in $sources  (: step through the source index :)
-        where  $nameUri = $src/uri/text() and $namePg = $src/pg/text()  (: URI and page from columns must match with iterated item in the source index :)
+        where  $nameUri = $src/uri/text() and $namePg = $src/pg/text()  (: URI and page from columns must match with iterated item in the source index FIX to just require URI lookup? :)
         return $uriLocalName||'-'||$srcNumber    (: create the last part of the source attribute :)
     let $langAttrib := local:trim($name/langCode/text())
     return <placeName xmlns="http://www.tei-c.org/ns/1.0" xml:id="name{$uriLocalName}-{$number + $numberHeadwords}" xml:lang="{$langAttrib}" source="#bib{$sourceFragId}">{$text}</placeName>

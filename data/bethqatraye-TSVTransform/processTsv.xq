@@ -444,10 +444,13 @@ let $headwordNames :=
     let $text := local:trim($document/*[name() = $headword/labelColumnElementName/text()]/text()) (: look up the headword for that language :)
     where $text != '' (: skip the headword columns that are empty :)
     let $langAttrib := local:trim($headword/langCode/text())
-    (: put the source lookup here 
     let $headwordUri := local:trim($document/*[name() = $headword/sourceUriElementName/text()]/text())
-    let $headwordPages := :)
-    return <placeName xmlns="http://www.tei-c.org/ns/1.0" xml:id="{'name'||$uriLocalName}-{$number}" xml:lang="{$langAttrib}" syriaca-tags="#syriaca-headword" resp="http://syriaca.org">{$text}</placeName>
+    (: let $headwordPages := :)
+    let $sourceFragId := 
+        for $src at $srcNumber in $sources  (: step through the source index :)
+        where  $headwordUri = $src/uri/text()  (: URI and page from columns must match with iterated item in the source index :)
+        return $uriLocalName||'-'||$srcNumber    (: create the last part of the source attribute :)
+    return <placeName xmlns="http://www.tei-c.org/ns/1.0" xml:id="{'name'||$uriLocalName}-{$number}" xml:lang="{$langAttrib}" syriaca-tags="#syriaca-headword" resp="http://syriaca.org" source="#bibl{$sourceFragId}">{$text}</placeName>
 
 (: for this row, find only the names columns that have values.  This avoids skipping numbers in placeName ids :)
 let $lineNamesIndex :=

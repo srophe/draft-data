@@ -74,7 +74,7 @@ let $langCode := tokenize($columnString,'\.')[2]
 return if (substring(tokenize($columnString,'\.')[1],1,12) = 'nameHeadword') then
   <headword>{
     <langCode>{$langCode}</langCode>,
-    <labelColumnElementName>{$nameColumn/name/string()}</labelColumnElementName>
+    <labelColumnElementName>{$nameColumn/name/string()}</labelColumnElementName>,
     for $uriColumn in $headerMap   (: find the element name of the sourceURI column :)
     return if ($uriColumn/string/string() = 'sourceURI.'||$leftOfDot)
            then <sourceUriElementName>{$uriColumn/name/string()}</sourceUriElementName>

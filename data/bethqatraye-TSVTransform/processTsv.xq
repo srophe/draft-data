@@ -76,11 +76,11 @@ return if (substring(tokenize($columnString,'\.')[1],1,12) = 'nameHeadword') the
     <langCode>{$langCode}</langCode>,
     <labelColumnElementName>{$nameColumn/name/string()}</labelColumnElementName>,
     for $uriColumn in $headerMap   (: find the element name of the sourceURI column :)
-    return if ($uriColumn/string/string() = 'sourceURI.'||$leftOfDot)
+    return if ($uriColumn/string/string() = 'sourceURI.'||$leftOfDot||'.'||$langCode)
            then <sourceUriElementName>{$uriColumn/name/string()}</sourceUriElementName>
            else (),
     for $pagesColumn in $headerMap   (: find the element name of the sourceURI column :)
-    return if ($pagesColumn/string/string() = 'pages.'||$leftOfDot)
+    return if ($pagesColumn/string/string() = 'pages.'||$leftOfDot||'.'||$langCode)
            then <pagesElementName>{$pagesColumn/name/string()}</pagesElementName>
            else ()
   }</headword>

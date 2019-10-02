@@ -414,7 +414,7 @@ let $sources := local:distinct-deep($redundantSources)
 let $bibl :=
     for $source at $number in $sources
     return
-    if ($source/*:pg/text()=0) (: This is a bit of a workaround that allows the source to be included in abstracts and names even if it is a non-paginated source. The citedRange element appears in the output only if the page range is not zero. Note that this does require the data to have 0 in the page range columns. :)
+    if (fn:lower-case($source/*:pg/text())='')
     then <bibl xmlns="http://www.tei-c.org/ns/1.0" xml:id="bib{$uriLocalName}-{$number}">
         <ptr target="{$source/*:uri/text()}"/>
         </bibl>
@@ -445,10 +445,10 @@ let $headwordNames :=
     where $text != '' (: skip the headword columns that are empty :)
     let $langAttrib := local:trim($headword/langCode/text())
     let $headwordUri := local:trim($document/*[name() = $headword/sourceUriElementName/text()]/text())
-    (: let $headwordPages := :)
+    let $headwordPg := local:trim($document/*[name() = $headword/pagesElementName/text()]/text())
     let $sourceFragId := 
         for $src at $srcNumber in $sources  (: step through the source index :)
-        where  $headwordUri = $src/uri/text()  (: URI from columns must match with iterated item in the source index. This same process is used in getting names, abstracts, and descriptions. Perhaps turn into a function :)
+        where  $headwordUri = $src/uri/text() and ($headwordPg = $src/pg/text() or $headwordPg = '') (: URI from columns must match with iterated item in the source index. This same process is used in getting names, abstracts, and descriptions. Perhaps turn into a function :)
         return $uriLocalName||'-'||$srcNumber    (: create the last part of the source attribute :)
     return if($headwordUri != '') then <placeName xmlns="http://www.tei-c.org/ns/1.0" xml:id="{'name'||$uriLocalName}-{$number}" xml:lang="{$langAttrib}" syriaca-tags="#syriaca-headword" resp="http://syriaca.org" source="#bib{$sourceFragId}">{$text}</placeName>
     else <placeName xmlns="http://www.tei-c.org/ns/1.0" xml:id="{'name'||$uriLocalName}-{$number}" xml:lang="{$langAttrib}" syriaca-tags="#syriaca-headword" resp="http://syriaca.org">{$text}</placeName>
@@ -470,7 +470,7 @@ let $names :=
     let $namePg := local:trim($document/*[name() = $name/pagesElementName/text()]/text())  (: look up the page that goes with the name column :)
     let $sourceFragId := 
         for $src at $srcNumber in $sources  (: step through the source index :)
-        where  $nameUri = $src/uri/text() and $namePg = $src/pg/text()  (: URI and page from columns must match with iterated item in the source index FIX to just require URI lookup? :)
+        where  $nameUri = $src/uri/text() and ($namePg = $src/pg/text() or $namePg = '')  (: URI and page from columns must match with iterated item in the source index FIX to just require URI lookup? :)
         return $uriLocalName||'-'||$srcNumber    (: create the last part of the source attribute :)
     let $langAttrib := local:trim($name/langCode/text())
     return <placeName xmlns="http://www.tei-c.org/ns/1.0" xml:id="name{$uriLocalName}-{$number + $numberHeadwords}" xml:lang="{$langAttrib}" source="#bib{$sourceFragId}">{$text}</placeName>
@@ -480,36 +480,36 @@ let $abstracts :=
     for $abstract at $number in $abstractIndex
     let $text := local:trim($document/*[name() = $abstract/labelColumnElementName/text()]/text()) (: look up the abstract from that column :)
     where $text != ''   (: skip the abstract columns that are empty :)
-    let $nameUri := local:trim($document/*[name() = $abstract/sourceUriElementName/text()]/text())  (: look up the URI that goes with the abstract column :)
-    let $namePg := local:trim($document/*[name() = $abstract/pagesElementName/text()]/text())  (: look up the page that goes with the name column :)
+    let $abstractUri := local:trim($document/*[name() = $abstract/sourceUriElementName/text()]/text())  (: look up the URI that goes with the abstract column :)
+    let $abstractPg := local:trim($document/*[name() = $abstract/pagesElementName/text()]/text())  (: look up the page that goes with the name column :)
     let $sourceAttribute := 
-        if ($nameUri != '')
+        if ($abstractUri != '')
         then
             for $src at $srcNumber in $sources  (: step through the source index :)
-            where  $nameUri = $src/uri/text() and $namePg = $src/pg/text()  (: URI and page from columns must match with iterated item in the source index ISSUE: does not add a value for @source if the page field is empty. I believe because it doesn't find a match in the source index. :)
+            where  $abstractUri = $src/uri/text() and ($abstractPg = $src/pg/text() or $abstractPg = '') (: URI and page from columns must match with iterated item in the source index :)
             return '#bib'||$uriLocalName||'-'||$srcNumber    (: create the last part of the source attribute :)
         else ()
     return
-        if ($nameUri = '')
+        if ($abstractUri = '')
         then <desc xmlns = "http://www.tei-c.org/ns/1.0" type ="abstract" xml:id="{ 'abstract'||$uriLocalName||'-'||$number }" xml:lang="{ $abstract/*:langCode/text() }">{$text}</desc>
-        else <desc xmlns = "http://www.tei-c.org/ns/1.0" type="abstract" xml:id="{ 'abstract'||$uriLocalName||'-'||$number }" xml:lang="{ $abstract/*:langCode/text() }" source="{$sourceAttribute}">{$text}</desc>
+        else <desc xmlns = "http://www.tei-c.org/ns/1.0" type="abstract" xml:id="{ 'abstract'||$uriLocalName||'-'||$number }" xml:lang="{ $abstract/*:langCode/text() }" ><quote source="{$sourceAttribute}">{$text}</quote></desc>
 
 (: create the description elements.  In the current table model there are only Engilsh ones, but this will still work if abstracts are added in other languages :)
 let $descriptions :=
     for $desc at $number in $descIndex
     let $text := local:trim($document/*[name() = $desc/labelColumnElementName/text()]/text()) (: look up the description from that column :)
     where $text != ''   (: skip the description columns that are empty :)
-    let $nameUri := local:trim($document/*[name() = $desc/sourceUriElementName/text()]/text())  (: look up the URI that goes with the description column :)
-    let $namePg := local:trim($document/*[name() = $desc/pagesElementName/text()]/text())  (: look up the page that goes with the name column :)
+    let $descUri := local:trim($document/*[name() = $desc/sourceUriElementName/text()]/text())  (: look up the URI that goes with the description column :)
+    let $descPg := local:trim($document/*[name() = $desc/pagesElementName/text()]/text())  (: look up the page that goes with the name column :)
     let $sourceAttribute := 
-        if ($nameUri != '')
+        if ($descUri != '')
         then
             for $src at $srcNumber in $sources  (: step through the source index :)
-            where  $nameUri = $src/uri/text() and $namePg = $src/pg/text()  (: URI and page from columns must match with iterated item in the source index ISSUE: does not add a value for @source if the page field is empty. I believe because it doesn't find a match in the source index. :)
+            where  $descUri = $src/uri/text() and ($descPg = $src/pg/text() or $descPg = '')  (: URI and page from columns must match with iterated item in the source index; allows for there to be a URI but no page number :)
             return '#bib'||$uriLocalName||'-'||$srcNumber    (: create the last part of the source attribute :)
         else ()
     return
-        if ($nameUri = '')
+        if ($descUri = '')
         then <desc xmlns = "http://www.tei-c.org/ns/1.0" xml:lang="{ $desc/*:langCode/text() }">{$text}</desc>
         else <desc xmlns = "http://www.tei-c.org/ns/1.0" xml:lang="{ $desc/*:langCode/text() }"><quote source="{$sourceAttribute}">{$text}</quote></desc>
         

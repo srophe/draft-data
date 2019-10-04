@@ -327,8 +327,7 @@ let $titleStatement :=
   <titleStmt xmlns="http://www.tei-c.org/ns/1.0">{
       $title,
       <sponsor>Syriaca.org: The Syriac Reference Portal</sponsor>,
-      <funder>The National Endowment for the Humanities</funder>,
-      <funder>The International Balzan Prize Foundation</funder>,
+      $localConfig/configuration/funderList
       <editor role="creator" ref="{$projectConfig/*:configuration/*:editorUri/text()}">{$projectConfig/*:configuration/*:editorString/text()}</editor>,
       <respStmt>
           <resp>URI minted and initial data collected by</resp>

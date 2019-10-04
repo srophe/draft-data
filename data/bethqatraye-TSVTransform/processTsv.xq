@@ -362,6 +362,17 @@ let $titleStatement :=
       </respStmt>
   }</titleStmt>
 
+let $seriesStmt :=
+    <seriesStmt xmlns="http://www.tei-c.org/ns/1.0">
+        <title level="s" xml:lang="{$localConfig/*:configuration/*:seriesInfo/*:titleLangCode/text()}">{$localConfig/*:configuration/*:seriesInfo/*:titleString/text()}</title>
+        {
+        for $editor in $localConfig/*:configuration/*:seriesInfo/*:editor
+            return if ($editor != '') then <editor role="{$editor/*:editorRole/text()}" ref="{$editor/*:editorUri/text()}">{$editor/*:editorString/text()}</editor>
+            else ()
+        }
+        <idno type="{$localConfig/*:configuration/*:seriesInfo/*:idnoType/text()}">{$localConfig/*:configuration/*:seriesInfo/*:idnoString/text()}</idno>
+    </seriesStmt>
+    
 let $fileDesc := 
   <fileDesc xmlns="http://www.tei-c.org/ns/1.0">{
       $titleStatement,
@@ -369,12 +380,7 @@ let $fileDesc :=
           <edition n="1.0"/>
       </editionStmt>,
       $pubStatement,
-      <seriesStmt>
-          <title level="s" xml:lang="en">The Syriac Gazetteer</title>
-          <editor role="general" ref="http://syriaca.org/documentation/editors.xml#tcarlson">Thomas A. Carlson</editor>
-          <editor role="general" ref="http://syriaca.org/documentation/editors.xml#dmichelson">David A. Michelson</editor>
-          <idno type="URI">http://syriaca.org/geo</idno>
-      </seriesStmt>,
+      $seriesStmt,
       <sourceDesc>
           <p>Born digital.</p>
       </sourceDesc>

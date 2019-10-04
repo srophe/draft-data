@@ -330,6 +330,13 @@ let $sponsorList :=
 let $funderList :=
     for $funder in $localConfig/*:configuration/*:funderList/*:funder/text()
     return <funder xmlns="http://www.tei-c.org/ns/1.0">{$funder}</funder>
+
+let $editorList :=
+    for $editor in $localConfig/*:configuration/*:editorList/*:editor
+    let $editorString := $editor/*:editorString/text()
+    let $editorUri := $editor/*:editorUri/text()
+    let $editorRole := $editor/*:editorRole/text()
+    return <editor xmlns="http://www.tei-c.org/ns/1.0" role="{$editorRole}" ref="{$editorUri}">{$editorString}</editor>
     
 let $titleStatement := 
   <titleStmt xmlns="http://www.tei-c.org/ns/1.0">{
@@ -337,7 +344,8 @@ let $titleStatement :=
       $sponsorList,
       $funderList,
       <principal>{$localConfig/*:configuration/*:principal/text()}</principal>,
-      <editor role="creator" ref="{$projectConfig/*:configuration/*:editorUri/text()}">{$projectConfig/*:configuration/*:editorString/text()}</editor>,
+      $editorList,
+      <editor role="creator" ref="{$projectConfig/*:configuration/*:editorUri/text()}">{$projectConfig/*:configuration/*:editorString/text()}</editor>, (:Should we keep this distinction between creators and general editors? :)
       <respStmt>
           <resp>URI minted and initial data collected by</resp>
           <name ref="{$localConfig/*:configuration/*:mintedUri/text()}">{$localConfig/*:configuration/*:mintedString/text()}</name>

@@ -337,7 +337,16 @@ let $editorList :=
     let $editorUri := $editor/*:editorUri/text()
     let $editorRole := $editor/*:editorRole/text()
     return <editor xmlns="http://www.tei-c.org/ns/1.0" role="{$editorRole}" ref="{$editorUri}">{$editorString}</editor>
-    
+
+let $respStmtList := 
+    for $respStmt in $localConfig/*:configuration/*:respStmtList/*:respStmt
+    let $respString := $respStmt/*:respString/text()
+    let $nameString := $respStmt/*:nameString/text()
+    let $nameUri := $respStmt/*:nameUri/text()
+    return if ($respString != '')
+    then <respStmt xmlns="http://www.tei-c.org/ns/1.0"><resp>{$respString}</resp><name ref="{$nameUri}">{$nameString}</name></respStmt>
+    else ()
+
 let $titleStatement := 
   <titleStmt xmlns="http://www.tei-c.org/ns/1.0">{
       $title,
@@ -346,6 +355,7 @@ let $titleStatement :=
       <principal>{$localConfig/*:configuration/*:principal/text()}</principal>,
       $editorList,
       <editor role="creator" ref="{$projectConfig/*:configuration/*:editorUri/text()}">{$projectConfig/*:configuration/*:editorString/text()}</editor>, (:Should we keep this distinction between creators and general editors? :)
+      $respStmtList,
       <respStmt>
           <resp>URI minted and initial data collected by</resp>
           <name ref="{$localConfig/*:configuration/*:mintedUri/text()}">{$localConfig/*:configuration/*:mintedString/text()}</name>

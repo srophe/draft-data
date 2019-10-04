@@ -322,12 +322,16 @@ let $title :=
             )
           else ()
         }</title>
+
+let $funderList :=
+    for $funder in $localConfig/configuration/funderList/funder/text()
+    return <funder xmlns="http://www.tei-c.org/ns/1.0">{$funder}</funder>
     
 let $titleStatement := 
   <titleStmt xmlns="http://www.tei-c.org/ns/1.0">{
       $title,
       <sponsor>Syriaca.org: The Syriac Reference Portal</sponsor>,
-      {$localConfig/configuration/funderList}
+      $funderList,
       <editor role="creator" ref="{$projectConfig/*:configuration/*:editorUri/text()}">{$projectConfig/*:configuration/*:editorString/text()}</editor>,
       <respStmt>
           <resp>URI minted and initial data collected by</resp>

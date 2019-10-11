@@ -325,18 +325,27 @@ let $title :=
 
 let $sponsorList :=
     for $sponsor in $localConfig/*:configuration/*:sponsorList/*:sponsor/text()
-    return <sponsor xmlns="http://www.tei-c.org/ns/1.0">{$sponsor}</sponsor>
+    return if ($sponsor != '')
+    then 
+        <sponsor xmlns="http://www.tei-c.org/ns/1.0">{$sponsor}</sponsor>
+    else ()
     
 let $funderList :=
     for $funder in $localConfig/*:configuration/*:funderList/*:funder/text()
-    return <funder xmlns="http://www.tei-c.org/ns/1.0">{$funder}</funder>
+    return if ($funder != '')
+    then
+        <funder xmlns="http://www.tei-c.org/ns/1.0">{$funder}</funder>
+    else ()
 
 let $editorList :=
     for $editor in $localConfig/*:configuration/*:editorList/*:editor
     let $editorString := $editor/*:editorString/text()
     let $editorUri := $editor/*:editorUri/text()
     let $editorRole := $editor/*:editorRole/text()
-    return <editor xmlns="http://www.tei-c.org/ns/1.0" role="{$editorRole}" ref="{$editorUri}">{$editorString}</editor>
+    return if($editor != '')
+    then 
+        <editor xmlns="http://www.tei-c.org/ns/1.0" role="{$editorRole}" ref="{$editorUri}">{$editorString}</editor>
+    else ()
 
 let $respStmtList := 
     for $respStmt in $localConfig/*:configuration/*:respStmtList/*:respStmt
@@ -344,7 +353,8 @@ let $respStmtList :=
     let $nameString := $respStmt/*:nameString/text()
     let $nameUri := $respStmt/*:nameUri/text()
     return if ($respString != '')
-    then <respStmt xmlns="http://www.tei-c.org/ns/1.0"><resp>{$respString}</resp><name ref="{$nameUri}">{$nameString}</name></respStmt>
+    then 
+        <respStmt xmlns="http://www.tei-c.org/ns/1.0"><resp>{$respString}</resp><name ref="{$nameUri}">{$nameString}</name></respStmt>
     else ()
 
 let $titleStatement := 

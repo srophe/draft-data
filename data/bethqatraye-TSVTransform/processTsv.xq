@@ -367,7 +367,7 @@ let $titleStatement :=
       <editor role="creator" ref="{$projectConfig/*:configuration/*:editorUri/text()}">{$projectConfig/*:configuration/*:editorString/text()}</editor>, (:Should we keep this distinction between creators and general editors? :)
       $respStmtList,
       <respStmt>
-          <resp>URI minted and initial data collected by</resp>
+          <resp>URI minted and initial data encoding by</resp>
           <name ref="{$localConfig/*:configuration/*:mintedUri/text()}">{$localConfig/*:configuration/*:mintedString/text()}</name>
       </respStmt>
   }</titleStmt>

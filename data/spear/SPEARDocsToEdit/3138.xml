@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://raw.githubusercontent.com/srophe/srophe-eXist-app/master/documentation/SPEARschema/out/SPEAR.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/srophe/srophe-eXist-app/master/documentation/SPEARschema/out/SPEAR.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title level="a">Severus of Antioch, Letter,<title ref="http://syriaca.org/work/3138">To Isidora</title></title>
+                <title level="m">SPEAR: Syriac Persons, Events, and Relations</title>
+                <funder>The National Endowment for the Humanities</funder>
+                <principal>Daniel L. Schwartz</principal>
+                <funder>Texas A&amp;M University</funder>
+                <principal>Daniel L. Schwartz</principal>
+                <editor role="general" ref="http://syriaca.org/documentation/editors.xml#dschwartz">Daniel L. Schwartz</editor>
+                <editor role="creator" ref="http://syriaca.org/documentation/editors.xml#dschwartz">Daniel L. Schwartz</editor>
+                <respStmt>
+                    <resp></resp>
+                    <name ref="http://syriaca.org/documentation/editors.xml#dschwartz">Daniel L. Schwartz</name>
+                </respStmt>
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0"/>
+            </editionStmt>
+            <publicationStmt>
+                <authority>Syriaca.org: The Syriac Reference Portal</authority>
+                <idno type="URI">http://syriaca.org/spear/3138/tei</idno> 
+                <availability>
+                    <licence target="http://creativecommons.org/licenses/by/3.0/">
+                        <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
+                    </licence>
+                </availability>
+                <date></date>
+            </publicationStmt>
+            <sourceDesc>
+                <listBibl>
+                    <head>Sources for the Data in this Born Digital Prosopography</head>
+                    <bibl type="primary">
+                        <title xml:lang="en">The Sixth Book of the Select Letters of Severus, Patriarch of Antioch in the Syriac Version of Athanasius of Nisibis</title>
+                        <title type="sub">Translation, III.1 - XI.1</title>
+                        <title type="part">To Isidora</title>
+                        <author><persName ref="http://syriaca.org/person/51">Severus of Antioch</persName></author>
+                        <editor><persName ref="http://syriaca.org/person/403">E. W. Brooks</persName></editor>
+                        <ptr target="http://syriaca.org/bibl/669"/>
+                    </bibl>
+                    <bibl type="primary">
+                        <title>To Isidora</title>
+                        <author><persName ref="http://syriaca.org/person/51"/>Severus of Antioch</author>
+                        <ptr target="http://syriaca.org/work/3138"/>
+                    </bibl>
+                </listBibl>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <editorialDecl>
+                <p>
+                </p>
+            </editorialDecl>
+        </encodingDesc>
+        <profileDesc>
+        </profileDesc>
+        <revisionDesc>
+            <change/>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="factoid" uri="http://syriaca.org/spear/3138-1" resp="#ktorabi #dschwartz">
+                <listPerson>
+                    <person>
+                        <persName ref="http://syriaca.org/person/2664">
+                            Isidora
+                        </persName>
+                    </person>
+                </listPerson>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/bibl/669"/>
+                    <citedRange unit="pp">386</citedRange>
+                </bibl>
+            </div>
+            <div type="factoid" uri="http://syriaca.org/spear/3138-2" resp="#ktorabi #dschwartz">
+                <listPerson>
+                    <person>
+                        <persName ref="http://syriaca.org/person/2664"/>
+                        <trait type="gender" ref="http://syriaca.org/keyword/female">
+                            <note type="desc"><persName ref="http://syriaca.org/person/2664">Isidora</persName> was female.</note>
+                        </trait>
+                    </person>
+                </listPerson>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/bibl/669"/>
+                    <citedRange unit="pp">386</citedRange>
+                </bibl>
+            </div>
+            <div type="factoid" uri="http://syriaca.org/spear/3138-3" resp="#ktorabi #dschwartz">
+                <listRelation>
+                    <relation ref="syriaca:SenderOfLetterTo" active="http://syriaca.org/person/51" passive="http://syriaca.org/person/2664"/>
+                </listRelation>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/bibl/669"/>
+                    <citedRange unit="pp">386</citedRange>
+                </bibl>
+                </div> 
+            <div type="factoid" uri="http://syriaca.org/spear/3138-4" resp="#ktorabi #dschwartz">
+                <listRelation>
+                    <relation ref="syriaca:SenderOfLetterTo" active="http://syriaca.org/person/2664" passive="http://syriaca.org/person/51"/>
+                </listRelation>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/bibl/669"/>
+                    <citedRange unit="pp">386</citedRange>
+                </bibl>
+            </div> 
+            <div type="factoid" uri="http://syriaca.org/spear/3138-5" resp="#ktorabi #dschwartz">
+                <listPerson>
+                    <person>
+                        <persName ref="http://syriaca.org/person/anonymi2"><!-- This may be referring to the sisters under Isidora, but it is not clear from the letter what position Isidora holds in the Church. -->
+                            our common children
+                        </persName>
+                    </person>
+                </listPerson>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/bibl/669"/>
+                    <citedRange unit="pp">387</citedRange>
+                </bibl>
+            </div>
+            <div type="factoid" uri="http://syriaca.org/spear/3138-6" resp="#ktorabi #dschwartz">
+                <listPerson>
+                    <person>
+                        <persName ref="http://syriaca.org/person/anonymous2">
+                            She who is blessed because of her departure
+                        </persName>
+                    </person>
+                </listPerson>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/bibl/669"/>
+                    <citedRange unit="pp">387</citedRange>
+                </bibl>
+            </div>
+            <div type="factoid" uri="http://syriaca.org/spear/3138-7" resp="#ktorabi #dschwartz">
+                <listPerson>
+                    <person>
+                        <persName ref="http://syriaca.org/person/anonymous2"/>
+                        <trait type="gender" ref="http://syriaca.org/keyword/female">
+                            <note type="desc"><persName ref="http://syriaca.org/person/anonymous2">Anonymous </persName> was female.</note>
+                        </trait>
+                    </person>
+                </listPerson>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/bibl/669"/>
+                    <citedRange unit="pp">387</citedRange>
+                </bibl>
+            </div>
+            <div type="factoid" uri="http://syriaca.org/spear/3138-8" resp="#ktorabi #dschwartz">
+                <listRelation>
+                    <relation ref="syriaca:EpistolaryReferenceTo" active="http://syriaca.org/person/51 http://syriaca.org/person/anonymous1" passive="http://syriaca.org/person/anonymous2"/>
+                </listRelation>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/bibl/669"/>
+                    <citedRange unit="pp">387</citedRange>
+                </bibl>
+            </div> 
+            <div type="factoid" uri="http://syriaca.org/spear/3138-9" resp="#ktorabi #dschwartz">
+                <listPerson>
+                    <person>
+                        <persName ref="http://syriaca.org/person/2739">
+                            Father Poemen
+                        </persName>
+                    </person>
+                </listPerson>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/bibl/669"/>
+                    <citedRange unit="pp">387</citedRange>
+                </bibl>
+            </div>
+            <div type="factoid" uri="http://syriaca.org/spear/3138-10" resp="#ktorabi #dschwartz">
+                <listPerson>
+                    <person>
+                        <persName ref="http://syriaca.org/person/2739"/>
+                        <trait type="gender" ref="http://syriaca.org/keyword/male">
+                            <note type="desc"><persName ref="http://syriaca.org/person/2739">Poemen</persName> was male.</note>
+                        </trait>
+                    </person>
+                </listPerson>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/bibl/669"/>
+                    <citedRange unit="pp">387</citedRange>
+                </bibl>
+            </div>
+            <div type="factoid" uri="http://syriaca.org/spear/3138-11" resp="#ktorabi #dschwartz">
+                <listPerson>
+                    <person>
+                        <persName ref="http://syriaca.org/person/2739"/>
+                        <occupation ref="http://syriaca.org/keyword/monks">
+                            <note type="desc">
+                                <persName ref="http://syriaca.org/person/2739">
+                                    Father Poemen
+                                </persName>
+                                was a monk.
+                            </note>
+                        </occupation>
+                    </person>
+                </listPerson>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/bibl/669"/>
+                    <citedRange unit="pp">387</citedRange>
+                </bibl>
+            </div>
+            <div type="factoid" uri="http://syriaca.org/spear/3138-12" resp="#ktorabi #dschwartz">
+                <listPerson>
+                    <personGrp>
+                       <persName ref="http://syriaca.org/person/anonymi2">
+                           Father Poemen's brothers 
+                           <date notBefore="0340" notAfter="0450">
+                               between A.D. 340-450
+                           </date> 
+                       </persName> 
+                    </personGrp>
+                </listPerson>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/bibl/669"/>
+                    <citedRange unit="pp">387</citedRange>
+                </bibl>
+            </div>
+            <div type="factoid" uri="http://syriaca.org/spear/3138-13" resp="#ktorabi #dschwartz">
+                <listRelation><!-- Check fellowClergy or fellowMonastics -->
+                    <relation ref="syriaca:FellowClergy" mutual="http://syriaca.org/person/anonymous3 http://syriaca.org/person/anonymi2"/>
+                </listRelation>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/bibl/669"/>
+                    <citedRange unit="pp">387</citedRange>
+                </bibl>
+            </div> 
+            <div type="factoid" uri="http://syriaca.org/spear/3138-14" resp="#ktorabi #dschwartz">
+                <listPerson>
+                    <person>
+                        <persName ref="http://syriaca.org/person/anonymous4">
+                            Father Poemen's mother
+                        </persName>
+                    </person>
+                </listPerson>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/bibl/669"/>
+                    <citedRange unit="pp">387</citedRange>
+                </bibl>
+            </div>
+            <div type="factoid" uri="http://syriaca.org/spear/3138-15" resp="#ktorabi #dschwartz">
+                <listPerson>
+                    <person>
+                        <persName ref="http://syriaca.org/person/anonymous4"/>
+                        <trait type="gender" ref="http://syriaca.org/keyword/female">
+                            <note type="desc">
+                                <persName ref="http://syriaca.org/person/anonymous4"/> was female.
+                            </note>
+                        </trait>
+                    </person>
+                </listPerson>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/bibl/669"/>
+                    <citedRange unit="pp">387</citedRange>
+                </bibl>
+            </div>
+            <div type="factoid" uri="http://syriaca.org/spear/3138-16" resp="#ktorabi #dschwartz">
+                <listRelation>
+                    <relation ref="snap:ParentOf" active="http://syriaca.org/person/anonymous4" passive="http://syriaca.org/person/anonymous3"/>
+                </listRelation>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/bibl/669"/>
+                    <citedRange unit="pp">387</citedRange>
+                </bibl>
+            </div> 
+            <div type="factoid" uri="http://syriaca.org/spear/3138-17" resp="#ktorabi #dschwartz">
+                <listPerson>
+                    <person>
+                        <persName ref="http://syriaca.org/person/anonymous5"><!-- This may be the same person as anonymous2 -->
+                            That blessed God-loving virgin
+                        </persName> 
+                    </person>
+                </listPerson>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/bibl/669"/>
+                    <citedRange unit="pp">389</citedRange>
+                </bibl>
+            </div>
+            <div type="factoid" uri="http://syriaca.org/spear/3138-18" resp="#ktorabi #dschwartz">
+                <listPerson>
+                    <person>
+                        <persName ref="http://syriaca.org/person/anonymous5"/><!-- This may be the same person as anonymous2 -->
+                        <trait type="gender" ref="http://syriaca.org/keyword/female">
+                            <note type="desc">
+                                <persName ref="http://syriaca.org/person/anonymous5"/> was female.
+                            </note>
+                        </trait>
+                    </person>
+                </listPerson>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/bibl/669"/>
+                    <citedRange unit="pp">389</citedRange>
+                </bibl>
+            </div>
+        </body>
+        <back>                      
+            <listBibl>
+                <head>Works Cited</head>
+                <bibl type="primary" xml:id="bibl3138-1">
+                    <title xml:lang="en">The Sixth Book of the Select Letters of Severus, Patriarch of Antioch in the Syriac Version of Athanasius of Nisibis</title>
+                    <title type="sub">Translation, III.1 - XI.1</title>
+                    <title type="part">To Isidora</title>
+                    <author><persName ref="http://syriaca.org/person/51">Severus of Antioch</persName></author>
+                    <editor><persName ref="http://syriaca.org/person/403">E. W. Brooks</persName></editor>
+                    <ptr target="http://syriaca.org/bibl/669"/>
+                </bibl>
+            </listBibl>
+        </back>
+    </text>
+</TEI>

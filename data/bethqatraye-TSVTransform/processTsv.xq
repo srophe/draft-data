@@ -380,7 +380,13 @@ let $seriesStmt :=
             return if ($editor != '') then <editor role="{$editor/*:editorRole/text()}" ref="{$editor/*:editorUri/text()}">{$editor/*:editorString/text()}</editor>
             else ()
         }
-        <idno type="{$localConfig/*:configuration/*:seriesInfo/*:idnoType/text()}">{$localConfig/*:configuration/*:seriesInfo/*:idnoString/text()}</idno>
+        {
+            if ($localConfig/*:configuration/*:seriesInfo/*:idnoString/text() != '')
+            then 
+                <idno type="{$localConfig/*:configuration/*:seriesInfo/*:idnoType/text()}">{$localConfig/*:configuration/*:seriesInfo/*:idnoString/text()}</idno>
+            else ()
+        }
+        
     </seriesStmt>
     
 let $fileDesc := 

@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://raw.githubusercontent.com/srophe/srophe-eXist-app/master/documentation/SPEARschema/out/SPEAR.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/srophe/srophe-eXist-app/master/documentation/SPEARschema/out/SPEAR.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+
+
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title level="a">John of Ephesus, James, in the Lives of the Eastern Saints</title>
+                <title level="m">SPEAR: Syriac Persons, Events, and Relations</title>
+                <funder>The National Endowment for the Humanities</funder>
+                <principal>Daniel L. Schwartz</principal>
+                <funder>Texas A&amp;M University</funder>
+                <principal>Daniel L. Schwartz</principal>
+                <editor role="general" ref="http://syriaca.org/documentation/editors.xml#dschwartz"
+                    >Daniel L. Schwartz</editor>
+                <editor role="creator" ref="http://syriaca.org/documentation/editors.xml#dschwartz"
+                    >Daniel L. Schwartz</editor>
+                <editor role="creator"
+                    ref="http://syriaca.org/documentation/editors.xml#jnsaint-laurent">Jeanne-Nicole
+                    Mellon Saint-Laurent</editor>
+                <editor role="creator" ref="http://syriaca.org/documentation/editors.xml#mdoerfler"
+                    >Maria E. Doerfler</editor>
+                <editor role="creator" ref="http://syriaca.org/documentation/editors.xml#cjohnson"
+                    >Christopher D. L. Johnson</editor>
+                <editor role="creator" ref="http://syriaca.org/documentation/editors.xml#dkiger"
+                    >David Kiger</editor>
+                <editor role="creator" ref="http://syriaca.org/documentation/editors.xml#ayousif"
+                    >Ashoor Yousif</editor>
+                <editor role="creator" ref="http://syriaca.org/documentation/editors.xml#ekowalik"
+                    >Eric Kowalik</editor>
+                <respStmt>
+                    <resp>Data architecture, data entry, editing, proofreading, and revision
+                        by</resp>
+                    <name ref="http://syriaca.org/documentation/editors.xml#dschwartz">Daniel L.
+                        Schwartz</name>
+                </respStmt>
+                <respStmt>
+                    <resp>Data architecture and technical assistance by</resp>
+                    <name ref="http://syriaca.org/documentation/editors.xml#dmichelson">David A.
+                        Michelson</name>
+                </respStmt>
+                <respStmt>
+                    <resp>Data entry and encoding by</resp>
+                    <name ref="http://syriaca.org/documentation/editors.xml#ayousif">Ashoor
+                        Yousif</name>
+                </respStmt>
+                <respStmt>
+                    <resp>Data entry and encoding by</resp>
+                    <name ref="http://syriaca.org/documentation/editors.xml#mdoerfler">Maria E.
+                        Doerfler</name>
+                </respStmt>
+                <respStmt>
+                    <resp>Data entry and encoding by</resp>
+                    <name ref="http://syriaca.org/documentation/editors.xml#jnsaint-laurent"
+                        >Jeanne-Nicole Mellon Saint-Laurent</name>
+                </respStmt>
+                <respStmt>
+                    <resp>Data entry and encoding by</resp>
+                    <name ref="http://syriaca.org/documentation/editors.xml#cjohnson">Christopher D.
+                        L. Johnson</name>
+                </respStmt>
+                <respStmt>
+                    <resp>Data entry and encoding by</resp>
+                    <name ref="http://syriaca.org/documentation/editors.xml#dkiger">David
+                        Kiger</name>
+                </respStmt>
+                <respStmt>
+                    <resp>Data entry and encoding by</resp>
+                    <name ref="http://syriaca.org/documentation/editors.xml#ekwoalik">Eric
+                        Kowalik</name>
+                </respStmt>
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0"/>
+            </editionStmt>
+            <publicationStmt>
+                <authority>Syriaca.org: The Syriac Reference Portal</authority>
+                <idno type="URI">http://syriaca.org/spear/840/tei</idno>
+                <availability>
+                    <licence target="http://creativecommons.org/licenses/by/3.0/">
+                        <p>Distributed under a Creative Commons Attribution 3.0 Unported
+                            License.</p>
+                    </licence>
+                </availability>
+                <date>
+                    <!-- INPUT ONCE WE HAVE A "FINAL" DRAFT -->
+                </date>
+            </publicationStmt>
+            <sourceDesc>
+                <listBibl>
+                    <head>Sources for the Data in this Born Digital Prosopography</head>
+                    <bibl type="primary">
+                        <title>Lives of the Eastern Saints II</title>
+                        <title>Two Antiochenes</title>
+                        <author><persName ref="http://syriaca.org/person/74">John of
+                                Ephesus</persName></author>
+                        <editor><persName ref="http://syriaca.org/person/403">E. W.
+                                Brooks</persName></editor>
+                        <ptr target="http://syriaca.org/bibl/2032"/>
+                    </bibl>
+                    <bibl type="primary">
+                        <title>Two Antiochenes</title>
+                        <author><persName ref="http://syriaca.org/person/74">John of
+                                Ephesus</persName></author>
+                        <ptr target="http://syriaca.org/work/840"/>
+                    </bibl>
+                </listBibl>
+                <listRelation>
+                    <relation type="part" active="http://syriaca.org/work/840"
+                        ref="dcterms:isPartOf" passive="http://syriaca.org/work/9501"/>
+                </listRelation>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <editorialDecl>
+                <p>The prosopographical data in this document was encoded from E. W. Brooks' edition
+                    and English translation of John of Ephesus’s Lives of the Eastern Saints,
+                    Patrologia Orientalis, volume 17, 1923. </p>
+            </editorialDecl>
+            <classDecl>
+                <taxonomy>
+                    <category xml:id="calculated">
+                        <catDesc> Used to denote a date calculated by the editor from a regnal year
+                            given in the text. </catDesc>
+                    </category>
+                </taxonomy>
+            </classDecl>
+        </encodingDesc>
+        <profileDesc> </profileDesc>
+        <revisionDesc>
+            <change
+                who="http://syriaca.org/documentation/editors.xml #ayousif http://syriaca.org/documentation/editors.xml #mdoerfler http://syriaca.org/documentation/editors.xml#jnsaint-laurent http://syriaca.org/documentation/editors.xml#ekwoalik http://syriaca.org/documentation/editors.xml#jmcmanaway http://syriaca.org/documentation/editors.xml#nelder"
+                >Initial data collected by Jeanne-Nicole Mellon Saint-Laurent, Maria E Doerfler,
+                Nick Elder, Eric Kowalik, Joshua McManaway, Taylor McNeir, Elizabeth Andrejasich
+                Gibes and Ashoor Yousif at "Mapping Ancient Lives &amp; Social Networks: A Digital
+                Workshop," held at Marquette University, 23-24 May 2017.</change>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div resp="#ekowalik #tb" uri="http://syriaca.org/spear/840-1">
+                <listPerson>
+                    <person>
+                        <persName ref="http://syriaca.org/person/69"> James the Bishop </persName>
+                    </person>
+                </listPerson>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/work/840"/>
+                    <citedRange unit="pp">488</citedRange>
+                </bibl>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/bibl/2032"/>
+                    <citedRange unit="pp">690</citedRange>
+                </bibl>
+            </div>
+            <div resp="#ekowalik #tb" uri="http://syriaca.org/spear/840-2">
+                <listPerson>
+                    <person>
+                        <persName ref="http://syriaca.org/person/69"/>
+                        <birth>
+                            <placeName ref="http://syriaca.org/place/2848"/>
+                            <note type="desc">
+                                <persName ref="http://syriaca.org/person/69">James</persName> was
+                                born in <placeName ref="http://syriaca.org/place/2848"
+                                    >Thella</placeName> . </note>
+                        </birth>
+                    </person>
+                </listPerson>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/work/840"/>
+                    <citedRange unit="pp">488</citedRange>
+                </bibl>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/bibl/2032"/>
+                    <citedRange unit="pp">690</citedRange>
+                </bibl>
+            </div>
+            <div resp="#ekowalik #tb" uri="http://syriaca.org/spear/840-3">
+                <listPerson>
+                    <person>
+                        <persName ref="http://syriaca.org/person/69"/>
+                        <trait type="gender" ref="http://syriaca.org/keyword/male">
+                            <note type="desc"><persName ref="http://syriaca.org/person/69">James</persName> was male.</note>
+                        </trait>
+                    </person>
+                </listPerson>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/work/840"/>
+                    <citedRange unit="pp">488</citedRange>
+                </bibl>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/bibl/2032"/>
+                    <citedRange unit="pp">690</citedRange>
+                </bibl>
+            </div>
+            <div resp="#ekowalik #tb" uri="http://syriaca.org/spear/840-4">
+                <listPerson>
+                    <person>
+                        <persName ref="http://syriaca.org/person/69"/>
+                        <occupation ref="http://syriaca.org/keyword/bishops">
+                            <note type="desc">
+                                <persName ref="http://syriaca.org/person/69">James</persName> was a
+                                bishop. </note>
+                        </occupation>
+                    </person>
+                </listPerson>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/work/840"/>
+                    <citedRange unit="pp">488</citedRange>
+                </bibl>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/bibl/2032"/>
+                    <citedRange unit="pp">690</citedRange>
+                </bibl>
+            </div>
+            <div resp="#ekowalik #tb" uri="http://syriaca.org/spear/840-5">
+                <listPerson>
+                    <person>
+                        <persName ref="http://syriaca.org/person/69"/>
+                        <education ref="">
+                            <note type="desc">
+                                <persName ref="http://syriaca.org/person/69">James</persName>
+                                studied at <placeName ref="http://syriaca.org/place/373"
+                                    >Fsiltha</placeName> . </note>
+                        </education>
+                    </person>
+                </listPerson>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/work/840"/>
+                    <citedRange unit="pp">488</citedRange>
+                </bibl>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/bibl/2032"/>
+                    <citedRange unit="pp">690</citedRange>
+                </bibl>
+            </div>
+            <div resp="#ekowalik #tb" uri="http://syriaca.org/spear/840-6">
+                <listRelation>
+                    <relation ref="syriaca:FellowClergy" mutual="http://syriaca.org/person/3258 http://syriaca.org/person/69"/>
+                </listRelation>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/work/840"/>
+                    <citedRange unit="pp">489</citedRange>
+                </bibl>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/bibl/2032"/>
+                    <citedRange unit="pp">691</citedRange>
+                </bibl>
+            </div>
+            <div resp="#ekowalik #tb" uri="http://syriaca.org/spear/840-7">
+                <listEvent>
+                    <event>
+                        <desc>
+                            <persName ref="http://syriaca.org/person/69">James</persName> and
+                                <persName ref="http://syriaca.org/person/3258">Sergius</persName>
+                            traveled to the <placeName ref="http://syriaca.org/place/586">royal
+                                city</placeName> . </desc>
+                        <ptr target="http://syriaca.org/keyword/travel"/>
+                    </event>
+                </listEvent>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/work/840"/>
+                    <citedRange unit="pp">489</citedRange>
+                </bibl>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/bibl/2032"/>
+                    <citedRange unit="pp">691</citedRange>
+                </bibl>
+            </div>
+            <div resp="#ekowalik #tb" uri="http://syriaca.org/spear/840-8">
+                <listEvent>
+                    <event>
+                        <desc>
+                            <persName ref="http://syriaca.org/person/69">James</persName> and
+                                <persName ref="http://syriaca.org/person/3258">Sergius</persName>
+                            were guests of the <persName ref="http://syriaca.org/person/779"
+                                >queen</persName> . </desc>
+                        <ptr target="http://syriaca.org/keyword/patronage"/>
+                    </event>
+                </listEvent>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/work/840"/>
+                    <citedRange unit="pp">489</citedRange>
+                </bibl>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/bibl/2032"/>
+                    <citedRange unit="pp">691</citedRange>
+                </bibl>
+            </div>
+            <div type="factoid" uri="http://syriaca.org/spear/840-9" resp="#ekowalik #tb">
+                <listPerson>
+                    <person>
+                        <persName ref="http://syriaca.org/person/69"/>
+                        <occupation ref="http://syriaca.org/keyword/asceticism">
+                            <note type="desc">
+                                <persName ref="http://syriaca.org/person/69">James</persName> was an
+                                ascetic for fifteen years. </note>
+                        </occupation>
+                    </person>
+                </listPerson>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/work/840"/>
+                    <citedRange unit="pp">489</citedRange>
+                </bibl>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/bibl/2032"/>
+                    <citedRange unit="pp">691</citedRange>
+                </bibl>
+            </div>
+            <div type="factoid" uri="http://syriaca.org/spear/840-10" resp="#ekowalik #tb">
+                <listPerson>
+                    <personGrp>
+                        <persName ref="http://syriaca.org/person/3258"/>
+                        <occupation ref="http://syriaca.org/keyword/bishops">
+                            <note type="desc">
+                                <persName ref="http://syriaca.org/person/3258">Sergius </persName>
+                                was a bishop. </note>
+                        </occupation>
+                    </personGrp>
+                </listPerson>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/work/840"/>
+                    <citedRange unit="pp">489</citedRange>
+                </bibl>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/bibl/2032"/>
+                    <citedRange unit="pp">691</citedRange>
+                </bibl>
+            </div>
+            <div type="factoid" uri="http://syriaca.org/spear/840-11" resp="#ekowalik #tb">
+                <listPerson>
+                    <person>
+                        <persName ref="http://syriaca.org/person/3266"/>
+                        <occupation ref="http://syriaca.org/keyword/bishops">
+                            <note type="desc">
+                                <persName ref="http://syriaca.org/person/3266">Theodore</persName>
+                                was a bishop in <placeName ref="http://syriaca.org/place/716"
+                                    >Arabia.</placeName>
+                            </note>
+                        </occupation>
+                    </person>
+                </listPerson>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/work/840"/>
+                    <citedRange unit="pp">490</citedRange>
+                </bibl>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/bibl/2032"/>
+                    <citedRange unit="pp">692</citedRange>
+                </bibl>
+            </div>
+            <div type="factoid" uri="http://syriaca.org/spear/840-12" resp="#ekowalik #tb">
+                <listRelation>
+                    <relation ref="syriaca:FellowClergy" mutual="http://syriaca.org/person/69 http://syriaca.org/person/3266"/>
+                </listRelation>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/work/840"/>
+                    <citedRange unit="pp">489</citedRange>
+                </bibl>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/bibl/2032"/>
+                    <citedRange unit="pp">691</citedRange>
+                </bibl>
+            </div>
+            <div type="factoid" uri="http://syriaca.org/spear/840-13" resp="#ekowalik #tb">
+                <listPerson>
+                    <person>
+                        <persName ref="http://syriaca.org/person/3266"/>
+                        <birth>
+                            <placeName ref="http://syriaca.org/place/716"/>
+                            <note type="desc">
+                                <persName ref="http://syriaca.org/person/3266">Theodore</persName>
+                                was from<placeName ref="http://syriaca.org/place/716"
+                                    >Arabia</placeName>. </note>
+                        </birth>
+                    </person>
+                </listPerson>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/work/840"/>
+                    <citedRange unit="pp">489</citedRange>
+                </bibl>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/bibl/2032"/>
+                    <citedRange unit="pp">691</citedRange>
+                </bibl>
+            </div>
+            <div type="factoid" uri="http://syriaca.org/spear/840-14" resp="#ekowalik #tb">
+                <listEvent>
+                    <event>
+                        <desc>
+                            James travels to the frontier of <placeName
+                                ref="http://syriaca.org/place/526">Persia</placeName>,
+                            <placeName ref="http://syriaca.org/place/586"
+                                >Constantinople</placeName> and <placeName
+                                    ref="http://syriaca.org/place/572">Alexandria</placeName>
+                            ordaining <persGroup ref="http://syriaca.org/xxx/xx"
+                                >clergy</persGroup>.
+                        </desc>
+                        <ptr target="http://syriaca.org/keyword/ordination http://syriaca.org/keyword/travel"/>
+                    </event>
+                </listEvent>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/work/840"/>
+                    <citedRange unit="pp">491</citedRange>
+                </bibl>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/bibl/2032"/>
+                    <citedRange unit="pp">692</citedRange>
+                </bibl>
+            </div>
+        </body>
+        <back>
+            <listBibl>
+                <head>Works Cited</head>
+                <bibl type="primary" xml:id="bibl840-1">
+                    <title>Lives of the Eastern Saints II</title>
+                    <title>Two Antiochenes</title>
+                    <author><persName ref="http://syriaca.org/person/74">John of
+                        Ephesus</persName></author>
+                    <editor><persName ref="http://syriaca.org/person/403">E. W.
+                        Brooks</persName></editor>
+                    <ptr target="http://syriaca.org/bibl/2032"/>
+                </bibl>
+                <bibl type="primary" xml:id="bibl840-2">
+                    <title>Two Antiochenes</title>
+                    <author><persName ref="http://syriaca.org/person/74">John of
+                        Ephesus</persName></author>
+                    <ptr target="http://syriaca.org/work/840"/>
+                </bibl>
+            </listBibl>
+        </back>
+    </text>
+</TEI>

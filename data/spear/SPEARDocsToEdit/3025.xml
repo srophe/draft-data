@@ -1,0 +1,705 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://raw.githubusercontent.com/srophe/srophe-eXist-app/master/documentation/SPEARschema/out/SPEAR.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/srophe/srophe-eXist-app/master/documentation/SPEARschema/out/SPEAR.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title level="a">Severus of Antioch, Letter,<title ref="http://syriaca.org/work/3025">To Solon, Bishop of Seleucia in Isauria</title></title>
+                <title level="m">SPEAR: Syriac Persons, Events, and Relations</title>
+                <funder>The National Endowment for the Humanities</funder>
+                <principal>Daniel L. Schwartz</principal>
+                <funder>Texas A&amp;M University</funder>
+                <principal>Daniel L. Schwartz</principal>
+                <editor role="general" ref="http://syriaca.org/editors.xml#dschwartz">Daniel L. Schwartz</editor>
+                <editor role="creator" ref="http://syriaca.org/editors.xml#dschwartz">Daniel L. Schwartz</editor>
+                <respStmt>
+                    <resp></resp>
+                    <name ref="http://syriaca.org/editors.xml#dschwartz">Daniel L. Schwartz</name>
+                </respStmt>
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0"/>
+            </editionStmt>
+            <publicationStmt>
+                <authority>Syriaca.org: The Syriac Reference Portal</authority>
+                <idno type="URI">http://syriaca.org/spear/3025/tei</idno> 
+                <availability>
+                    <licence target="http://creativecommons.org/licenses/by/3.0/">
+                        <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
+                    </licence>
+                </availability>
+                <date></date>
+            </publicationStmt>
+            <sourceDesc>
+                <listBibl>
+                    <head>Sources for the Data in this Born Digital Prosopography</head>
+                    <bibl type="primary">
+                        <title xml:lang="en">The Sixth Book of the Select Letters of Severus, Patriarch of Antioch in the Syriac Version of Athanasius of Nisibis</title>
+                        <title type="sub">Translation, I.1 - II.3</title>
+                        <title type="part">To Solon, Bishop of Seleucia in Isauria</title>
+                        <author><persName ref="http://syriaca.org/person/51">Severus of Antioch</persName></author>
+                        <editor><persName ref="http://syriaca.org/person/403">E. W. Brooks</persName></editor>
+                        <ptr target="http://syriaca.org/bibl/668"/>
+                    </bibl>
+                    <bibl type="primary">
+                        <title>To Solon, Bishop of Seleucia in Isauria</title>
+                        <author><persName ref="http://syriaca.org/person/51"/>Severus of Antioch</author>
+                        <ptr target="http://syriaca.org/work/3025"/>
+                    </bibl>
+                </listBibl>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <editorialDecl>
+                <p>
+                </p>
+            </editorialDecl>
+        </encodingDesc>
+        <profileDesc>
+        </profileDesc>
+        <revisionDesc>
+            <change/>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="factoid" uri="http://syriaca.org/spear/3025-1" resp="#ktorabi #dschwartz">
+                    <listPerson>
+                        <person>
+                            <persName ref="http://syriaca.org/person/2417">
+                                Solon, bishop and metropolitan of 
+                                <placeName ref="http://syriaca.org/place/2714">
+                                    Seleucia
+                                </placeName>
+                                in
+                                <placeName ref="http://syriaca.org/place/99">
+                                    Isauria
+                                </placeName>
+                            </persName>
+                        </person>
+                    </listPerson>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="pp">16</citedRange>
+                </bibl>
+            </div>
+            <div type="factoid" uri="http://syriaca.org/spear/3025-2" resp="#ktorabi #dschwartz">
+                <listPerson>
+                    <person>
+                        <persName ref="http://syriaca.org/person/2417"/>
+                        <trait type="gender" ref="http://syriaca.org/keyword/male">
+                            <note type="desc">
+                                <persName ref="http://syriaca.org/person/2417">
+                                    Solon
+                                </persName>
+                                was male.
+                            </note>
+                        </trait>
+                    </person>
+                </listPerson>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="pp">16</citedRange>
+                </bibl>
+            </div>
+            <div type="factoid" uri="http://syriaca.org/spear/3025-3" resp="#ktorabi #dschwartz">
+                <listPerson>
+                    <person>
+                        <persName ref="http://syriaca.org/person/2417"/>
+                        <occupation ref="http://syriaca.org/keyword/bishops">
+                            <note type="desc">
+                                <persName ref="http://syriaca.org/person/2417">
+                                    Solon
+                                </persName>
+                                was the metropolican bishop of
+                                <placeName ref="http://syriaca.org/place/2714">
+                                    Seleucia
+                                </placeName>
+                                in
+                                <placeName ref="http://syriaca.org/place/99">
+                                    Isauria
+                                </placeName>.
+                            </note>
+                        </occupation>
+                    </person>
+                </listPerson>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="pp">16</citedRange>
+                </bibl>
+            </div>
+            <div type="factoid" uri="http://syriaca.org/spear/3025-4" resp="#ktorabi #dschwartz">
+                <listRelation>
+                    <relation ref="syriaca:SenderOfLetterTo" active="http://syriaca.org/person/51" passive="http://syriaca.org/person/2417"/>
+                </listRelation>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="pp">16</citedRange>
+                </bibl>
+            </div>
+            <div type="factoid" uri="http://syriaca.org/spear/3025-5" resp="#ktorabi #dschwartz">
+                    <listPerson>
+                        <person>
+                            <persName ref="http://syriaca.org/person/2459">
+                                Callistus, the archdeacon
+                            </persName>
+                        </person>
+                    </listPerson>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="pp">17</citedRange>
+                </bibl>
+                </div>
+            <div type="factoid" uri="http://syriaca.org/spear/3025-6" resp="#ktorabi #dschwartz">
+                <listPerson>
+                    <person>
+                        <persName ref="http://syriaca.org/person/2459"/>
+                        <trait type="gender" ref="http://syriaca.org/keyword/male">
+                            <note type="desc">
+                                <persName ref="http://syriaca.org/person/2459">
+                                    Callistus
+                                </persName>
+                                was male.
+                            </note>
+                        </trait>
+                    </person>
+                </listPerson>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="pp">17</citedRange>
+                </bibl>
+            </div>
+            <div type="factoid" uri="http://syriaca.org/spear/3025-7" resp="#ktorabi #dschwartz">
+                <listPerson>
+                    <person>
+                        <persName ref="http://syriaca.org/person/2459"/>
+                        <occupation ref="http://syriaca.org/keyword/archdeacons">
+                            <note type="desc">
+                                <persName ref="http://syriaca.org/person/2459">
+                                    Callistus
+                                </persName>
+                                was an archdeacon.
+                            </note>
+                        </occupation>
+                    </person>
+                </listPerson>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="pp">17</citedRange>
+                </bibl>
+            </div>
+            <div type="factoid" uri="http://syriaca.org/spear/3025-8" resp="#dschwartz">
+                <listPerson>
+                    <personGrp>
+                        <persName ref="http://syriaca.org/person/anonymi1">
+                            The part of 
+                            <persName ref="http://syriaca.org/person/2458">
+                                Hilarian
+                            </persName>
+                            and
+                            <persName ref="http://syriaca.org/person/2460">
+                                Musonius
+                            </persName>
+                        </persName>
+                    </personGrp>
+                </listPerson>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="pp">17</citedRange>
+                </bibl>
+            </div>
+            <div type="factoid" uri="http://syriaca.org/spear/3025-9" resp="#dschwartz">
+                <listRelation>
+                    <relation ref="syriaca:MemberOfGroup" active="http://syriaca.org/person/2458 http://syriaca.org/person/2460" passive="http://syriaca.org/person/anonymi1"/>
+                </listRelation>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="pp">17</citedRange>
+                </bibl>
+            </div>
+            
+            <div type="factoid" uri="http://syriaca.org/spear/3025-11" resp="#ktorabi #dschwartz">
+                <listRelation>
+                    <relation ref="syriaca:LegalChargesAgainst" active="http://syriaca.org/person/anonymi1" passive="http://syriaca.org/person/2459"/>
+                </listRelation>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="pp">17</citedRange>
+                </bibl>
+            </div>
+            <div type="factoid" uri="http://syriaca.org/spear/3025-12" resp="#ktorabi #dschwartz">
+                <listRelation>
+                    <relation ref="syriaca:LegalChargesAgainst" active="http://syriaca.org/person/2460" passive="http://syriaca.org/person/2459"/>
+                </listRelation>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="pp">17</citedRange>
+                </bibl>
+            </div>
+            <div type="factoid" uri="http://syriaca.org/spear/3025-13" resp="#ktorabi #dschwartz">
+                <listPerson>
+                    <person>
+                        <persName ref="http://syriaca.org/person/2468">
+                            Paul, the God-loving Bishop of 
+                            <placeName ref="http://syriaca.org/place/146">
+                                the city of the Olbians
+                            </placeName>
+                        </persName>
+                    </person>
+                </listPerson>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="pp">18</citedRange>
+                </bibl>
+            </div>
+            <div type="factoid" uri="http://syriaca.org/spear/3025-14" resp="#ktorabi #dschwartz">
+                <listPerson>
+                    <person>
+                        <persName ref="http://syriaca.org/person/2468"/>
+                        <trait type="gender" ref="http://syriaca.org/keyword/male">
+                            <note type="desc">
+                                <persName ref="http://syriaca.org/person/2468">
+                                    Paul
+                                </persName>
+                                was male.
+                            </note>
+                        </trait>
+                    </person>
+                </listPerson>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="pp">18</citedRange>
+                </bibl>
+            </div>
+            <div type="factoid" uri="http://syriaca.org/spear/3025-15" resp="#ktorabi #dschwartz">
+                <listPerson>
+                    <person>
+                        <persName ref="http://syriaca.org/person/2468"/>
+                        <occupation ref="http://syriaca.org/keyword/bishops">
+                            <note type="desc">
+                                <persName ref="http://syriaca.org/person/2468">
+                                    Paul
+                                </persName>
+                                was the bishop of 
+                                <placeName ref="http://syriaca.org/place/2698">
+                                    Olba 
+                                </placeName>.
+                            </note>
+                        </occupation>
+                    </person>
+                </listPerson>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="pp">18</citedRange>
+                </bibl>
+            </div>
+            <div type="factoid" uri="http://syriaca.org/spear/3025-16" resp="#ktorabi #dschwartz">
+                <listRelation>
+                    <relation ref="syriaca:SenderOfLetterTo" active="http://syriaca.org/person/2468" passive="http://syriaca.org/person/51"/>
+                </listRelation>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="pp">18-19</citedRange>
+                </bibl>
+            </div>
+            <div type="factoid" uri="http://syriaca.org/spear/3025-17" resp="#ktorabi #dschwartz">
+                <listPerson>
+                    <person>
+                        <persName ref="http://syriaca.org/person/2474">
+                            Peter
+                        </persName>
+                    </person>
+                </listPerson>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="pp">19</citedRange>
+                </bibl>
+            </div>
+            <div type="factoid" uri="http://syriaca.org/spear/3025-18" resp="#ktorabi #dschwartz">
+                <listPerson>
+                    <person>
+                        <persName ref="http://syriaca.org/person/2474"/>
+                        <trait type="gender" ref="http://syriaca.org/keyword/male">
+                            <note type="desc">
+                                <persName ref="http://syriaca.org/person/2474">
+                                    Peter
+                                </persName>
+                                was male.
+                            </note>
+                        </trait>
+                    </person>
+                </listPerson>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="pp">19</citedRange>
+                </bibl>
+            </div>
+            <div type="factoid" uri="http://syriaca.org/spear/3025-19" resp="#ktorabi #dschwartz">
+                <listPerson>
+                    <person>
+                        <persName ref="http://syriaca.org/person/2474"/>
+                        <occupation ref="http://syriaca.org/keyword/bishops">
+                            <note type="desc">
+                                <persName ref="http://syriaca.org/person/2474">
+                                    Peter
+                                </persName>
+                                was the bishop of 
+                                <placeName ref="http://syriaca.org/place/2610">
+                                    Antioch 
+                                </placeName>.
+                            </note>
+                        </occupation>
+                    </person>
+                </listPerson>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="pp">19</citedRange>
+                </bibl>
+            </div>
+            <div type="factoid" uri="http://syriaca.org/spear/3025-20" resp="#ktorabi #dschwartz">
+                <listPerson>
+                    <person>
+                        <persName ref="http://syriaca.org/person/2473">
+                            Palladius
+                        </persName>
+                    </person>
+                </listPerson>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="pp">19</citedRange>
+                </bibl>
+            </div>
+            <div type="factoid" uri="http://syriaca.org/spear/3025-21" resp="#ktorabi #dschwartz">
+                <listPerson>
+                    <person>
+                        <persName ref="http://syriaca.org/person/2473"/>
+                        <trait type="gender" ref="http://syriaca.org/keyword/male">
+                            <note type="desc">
+                                <persName ref="http://syriaca.org/person/2473">
+                                    Palladius
+                                </persName>
+                                was male.
+                            </note>
+                        </trait>
+                    </person>
+                </listPerson>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="pp">19</citedRange>
+                </bibl>
+            </div>
+            <div type="factoid" uri="http://syriaca.org/spear/3025-22" resp="#ktorabi #dschwartz">
+                <listPerson>
+                    <person>
+                        <persName ref="http://syriaca.org/person/2473"/>
+                        <occupation ref="http://syriaca.org/keyword/bishops">
+                            <note type="desc">
+                                <persName ref="http://syriaca.org/person/2473">
+                                    Palladius
+                                </persName>
+                                was the bishop of
+                                <placeName ref="http://syriaca.org/place/2610">
+                                    Antioch 
+                                </placeName>.
+                            </note>
+                        </occupation>
+                    </person>
+                </listPerson>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="pp">19</citedRange>
+                </bibl>
+            </div>
+            <div type="factoid" uri="http://syriaca.org/spear/3025-24" resp="#ktorabi #dschwartz">
+                <listPerson>
+                    <person>
+                        <persName ref="http://syriaca.org/person/2001">
+                            The God-loving Bishop of 
+                            <placeName ref="http://syriaca.org/place/122">
+                                the City of the Hierapolitans
+                            </placeName>
+                        </persName>
+                    </person>
+                </listPerson>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="pp">19</citedRange>
+                </bibl>
+            </div>
+            <div type="factoid" uri="http://syriaca.org/spear/3025-29" resp="#ktorabi #dschwartz">
+                <listPerson>
+                    <person>
+                        <persName ref="http://syriaca.org/person/2513">
+                            Constantine 
+                        </persName>
+                    </person>
+                </listPerson>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="pp">19</citedRange>
+                </bibl>
+            </div>
+            <div type="factoid" uri="http://syriaca.org/spear/3025-30" resp="#ktorabi #dschwartz">
+                <listPerson>
+                    <person>
+                        <persName ref="http://syriaca.org/person/2513"/>
+                        <trait type="gender" ref="http://syriaca.org/keyword/male">
+                            <note type="desc">
+                                <persName ref="http://syriaca.org/person/2513">
+                                    Constantine
+                                </persName>
+                                was male.
+                            </note>
+                        </trait>
+                    </person>
+                </listPerson>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="pp">19</citedRange>
+                </bibl>
+            </div>
+            <div type="factoid" uri="http://syriaca.org/spear/3025-32" resp="#ktorabi #dschwartz">
+                <listPerson>
+                    <person>
+                        <persName ref="http://syriaca.org/person/anonymous1"><!-- Unable to identify this person -->
+                            The governor of the province 
+                        </persName>
+                    </person>
+                </listPerson>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="pp">19</citedRange>
+                </bibl>
+            </div>
+            <div type="factoid" uri="http://syriaca.org/spear/3025-33" resp="#ktorabi #dschwartz">
+                <listPerson>
+                    <person>
+                        <persName ref="http://syriaca.org/person/anonymous1"/>
+                        <trait type="gender" ref="http://syriaca.org/keyword/male">
+                            <note type="desc">
+                                <persName ref="http://syriaca.org/person/anonymous1"/>
+                                was male.
+                            </note>
+                        </trait>
+                    </person>
+                </listPerson>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="pp">19</citedRange>
+                </bibl>
+            </div>
+            <div type="factoid" uri="http://syriaca.org/spear/3025-34" resp="#ktorabi #dschwartz">
+                <listPerson>
+                    <person>
+                        <persName ref="http://syriaca.org/person/anonymous1"/>
+                        <occupation ref="http://syriaca.org/keyword/governors">
+                            <note type="desc">
+                                <persName ref="http://syriaca.org/person/anonymous1"/>
+                                was the governor of a province.
+                            </note>
+                        </occupation>
+                    </person>
+                </listPerson>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="pp">19</citedRange>
+                </bibl>
+            </div>
+            <div type="factoid" uri="http://syriaca.org/spear/3025-35" resp="#ktorabi #dschwartz">
+                <listPerson>
+                    <person>
+                        <persName ref="http://syriaca.org/person/2488">
+                            The God-loving Mammian bishop of  
+                            <placeName ref="http://syriaca.org/place/66">
+                                the city of the Damascenes
+                            </placeName>
+                        </persName>
+                    </person>
+                </listPerson>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="pp">20</citedRange>
+                </bibl>
+            </div>
+            <div type="factoid" uri="http://syriaca.org/spear/3025-36" resp="#ktorabi #dschwartz">
+                <listPerson>
+                    <person>
+                        <persName ref="http://syriaca.org/person/2488"/>
+                        <trait type="gender" ref="http://syriaca.org/keyword/male">
+                            <note type="desc">
+                                <persName ref="http://syriaca.org/person/2488">
+                                    Mammian
+                                </persName>
+                                was male.
+                            </note>
+                        </trait>
+                    </person>
+                </listPerson>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="pp">20</citedRange>
+                </bibl>
+            </div>
+            <div type="factoid" uri="http://syriaca.org/spear/3025-37" resp="#ktorabi #dschwartz">
+                <listPerson>
+                    <person>
+                        <persName ref="http://syriaca.org/person/2488"/>
+                        <occupation ref="http://syriaca.org/keyword/bishops">
+                            <note type="desc">
+                                <persName ref="http://syriaca.org/person/2488">
+                                    Mammian
+                                </persName>
+                                was the bishop of 
+                                <placeName ref="http://syriaca.org/place/diocese">
+                                    Damascus
+                                </placeName>.
+                            </note>
+                        </occupation>
+                    </person>
+                </listPerson>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="pp">20</citedRange>
+                </bibl>
+            </div>
+            <div type="factoid" uri="http://syriaca.org/spear/3025-38" resp="#ktorabi #dschwartz">
+                <listPerson>
+                    <person>
+                        <persName ref="http://syriaca.org/person/2497">
+                            Eustace  
+                        </persName>
+                    </person>
+                </listPerson>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="pp">21</citedRange>
+                </bibl>
+            </div>
+            <div type="factoid" uri="http://syriaca.org/spear/3025-39" resp="#ktorabi #dschwartz">
+                <listPerson>
+                    <person>
+                        <persName ref="http://syriaca.org/person/2497"/>
+                        <trait type="gender" ref="http://syriaca.org/keyword/male">
+                            <note type="desc">
+                                <persName ref="http://syriaca.org/person/2497">
+                                    Eustace
+                                </persName>
+                                was male.
+                            </note>
+                        </trait>
+                    </person>
+                </listPerson>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="pp">21</citedRange>
+                </bibl>
+            </div>
+            <div type="factoid" uri="http://syriaca.org/spear/3025-40" resp="#ktorabi #dschwartz">
+                <listPerson>
+                    <person>
+                        <persName ref="http://syriaca.org/person/2497"/>
+                        <occupation ref="http://syriaca.org/keyword/clergy">
+                            <note type="desc">
+                                <persName ref="http://syriaca.org/person/2497">
+                                    Eustace
+                                </persName>
+                                was a cleric.
+                            </note>
+                        </occupation>
+                    </person>
+                </listPerson>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="pp">21</citedRange>
+                </bibl>
+            </div>
+            <div type="factoid" uri="http://syriaca.org/spear/3025-41" resp="#ktorabi #dschwartz"><!-- The letter states: "But your love of God ought also to reflect upon the accusations that Musonius and Hilarian brought in the case of the devout Eustace, and how we for our part dealt with the affair in a proper way and in a seemly fashion..." It is not clear whether Hilarian and Musonius brought charges against Eustace. -->
+                <listRelation>
+                    <relation ref="syriaca:LegalChargesAgainst" active="http://syriaca.org/person/2460 http://syriaca.org/person/2458" passive="http://syriaca.org/person/2497"/>
+                </listRelation>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="pp">21</citedRange>
+                </bibl>
+            </div>
+            <div type="factoid" uri="http://syriaca.org/spear/3025-42" resp="#ktorabi #dschwartz">
+                <listPerson>
+                    <person>
+                        <persName ref="http://syriaca.org/person/2503">
+                            The devout Stephen 
+                        </persName>
+                    </person>
+                </listPerson>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="pp">22</citedRange>
+                </bibl>
+            </div>
+            <div type="factoid" uri="http://syriaca.org/spear/3025-43" resp="#ktorabi #dschwartz">
+                <listPerson>
+                    <person>
+                        <persName ref="http://syriaca.org/person/2503"/>
+                        <trait type="gender" ref="http://syriaca.org/keyword/male">
+                            <note type="desc">
+                                <persName ref="http://syriaca.org/person/2503">
+                                    Stephen
+                                </persName>
+                                was male.
+                            </note>
+                        </trait>
+                    </person>
+                </listPerson>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="pp">22</citedRange>
+                </bibl>
+            </div>
+            <div type="factoid" uri="http://syriaca.org/spear/3025-44" resp="#ktorabi #dschwartz">
+                <listPerson>
+                    <person>
+                        <persName ref="http://syriaca.org/person/2503"/>
+                        <occupation ref="http://syriaca.org/keyword/priests">
+                            <note type="desc">
+                                <persName ref="http://syriaca.org/person/2503">
+                                    Stephen
+                                </persName>
+                                was a presbyter of
+                                <placeName ref="http://syriaca.org/place/2610">
+                                    Antioch
+                                </placeName>.
+                            </note>
+                        </occupation>
+                    </person>
+                </listPerson>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="pp">22</citedRange>
+                </bibl>
+            </div>
+            <div type="factoid" uri="http://syriaca.org/spear/3025-45" resp="#ktorabi #dschwartz">
+                <listRelation>
+                    <relation ref="syriaca:BishopOverClergy" active="http://syriaca.org/person/51" passive="http://syriaca.org/person/2503"/>
+                </listRelation>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="pp">22</citedRange>
+                </bibl>
+            </div>
+        </body>
+        <back>
+            <listBibl>
+                <head>Works Cited</head>
+                <bibl type="primary" xml:id="bibl3025-1">
+                    <title xml:lang="en">The Sixth Book of the Select Letters of Severus, Patriarch of Antioch in the Syriac Version of Athanasius of Nisibis</title>
+                    <title type="sub">Translation, I.1 - II.3</title>
+                    <title type="part">To Solon, Bishop of Seleucia in Isauria</title>
+                    <author><persName ref="http://syriaca.org/person/51">Severus of Antioch</persName></author>
+                    <editor><persName ref="http://syriaca.org/person/403">E. W. Brooks</persName></editor>
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                </bibl>
+            </listBibl>
+        </back>
+    </text>
+</TEI>

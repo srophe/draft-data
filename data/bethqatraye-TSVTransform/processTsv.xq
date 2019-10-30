@@ -413,13 +413,13 @@ let $header :=
       $fileDesc,
       <encodingDesc>
           <editorialDecl>
-              <p>This record created following the Syriaca.org guidelines. Documentation available at: <ref target="http://syriaca.org/documentation">http://syriaca.org/documentation</ref>.</p>
+              <p>This record created following the guidelines for TEI encoding established by Syriaca.org. Documentation available at: <ref target="http://syriaca.org/documentation">http://syriaca.org/documentation</ref>.</p>
               <p>The <gi>state</gi> element of @type="existence" indicates the period for which this place was in use as a place of its indicated type (e.g. an inhabited settlement, a functioning monastery or church, an administrative province).  Natural features always in existence have no <gi>state</gi> element of @type="existence".</p>
           </editorialDecl>
           <classDecl>
               <taxonomy>
-                  <category xml:id="syriaca-headword">
-                      <catDesc>The name used by Syriaca.org for document titles, citation, and disambiguation. These names have been created according to the Syriac.org guidelines for headwords: <ref target="http://syriaca.org/documentation/headwords.html">http://syriaca.org/documentation/headwords.html</ref>.</catDesc>
+                  <category xml:id="srophe-headword">
+                      <catDesc>The name used by the Srophé App for document titles, citation, and disambiguation. These names have been created according to the Syriac.org guidelines for headwords: <ref target="http://syriaca.org/documentation/headwords.html">http://syriaca.org/documentation/headwords.html</ref>.</catDesc>
                   </category>
               </taxonomy>
           </classDecl>

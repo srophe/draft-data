@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://raw.githubusercontent.com/srophe/draft-data/master/data/schemaPlaceDraftData/out/syriacaPlacesTEI.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/srophe/draft-data/master/data/schemaPlaceDraftData/out/syriacaPlacesTEI.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title level="a" xml:lang="en">al-Qairawān - <foreign xml:lang="ar">القيروان</foreign>
+        </title>
+        <title level="m" xml:lang="en">The  Beth Qaṭraye Gazetteer</title>
+        <sponsor>Beth Mardutho: The Syriac Institute</sponsor>
+        <funder>Qatar National Research Foundation</funder>
+        <principal>Haya Al Thani</principal>
+        <editor role="general" ref="http://syriaca.org/documentation/editors.xml#halthani">Haya Al Thani</editor>
+        <editor role="general" ref="http://syriaca.org/documentation/editors.xml#sal-murikhi">Saif al-Murikhi</editor>
+        <editor role="general" ref="http://syriaca.org/documentation/editors.xml#aabu-husayn">Abdulrahim Abu-Husayn</editor>
+        <editor role="general" ref="http://syriaca.org/documentation/editors.xml#achamseddine">Abdul Rahman Chamseddine</editor>
+        <editor role="general" ref="http://syriaca.org/documentation/editors.xml#mkozah">Mario Kozah</editor>
+        <editor role="general" ref="http://syriaca.org/documentation/editors.xml#tcarlson">Thomas A. Carlson</editor>
+        <editor role="technical" ref="http://syriaca.org/documentation/editors.xml#dmichelson">David A. Michelson</editor>
+        <editor role="technical" ref="http://syriaca.org/documentation/editors.xml#wpotter">William L. Potter</editor>
+        <editor role="creator" xml:id="http://syriaca.org/documentation/editors.xml#">Tobias Scheunchen</editor>
+        <editor role="creator" xml:id="http://syriaca.org/documentation/editors.xml#">Tobias Scheunchen</editor>
+        <respStmt>
+          <resp>Al-Muqaddasī data collection by</resp>
+          <name ref="http://syriaca.org/documentation/editors.xml#aabu-husayn">Abdulrahim Abu-Husayn</name>
+        </respStmt>
+        <respStmt>
+          <resp>Al-Muqaddasī data collection by</resp>
+          <name ref="http://syriaca.org/documentation/editors.xml#archamseddine">Abdul Rahman Chamseddine</name>
+        </respStmt>
+        <respStmt>
+          <resp>Ibn Ḥawqal data collection by</resp>
+          <name ref="http://syriaca.org/documentation/editors.xml#aabu-husayn">Abdulrahim Abu-Husayn</name>
+        </respStmt>
+        <respStmt>
+          <resp>Ibn Ḥawqal data collection by</resp>
+          <name ref="http://syriaca.org/documentation/editors.xml#archamseddine">Abdul Rahman Chamseddine</name>
+        </respStmt>
+        <respStmt>
+          <resp>Data merging and XML by</resp>
+          <name ref="http://syriaca.org/documentation/editors.xml#wpotter">William L. Potter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition n="1.0"/>
+      </editionStmt>
+      <publicationStmt>
+        <authority>Beth Mardutho: The Syriac Institute</authority>
+        <idno type="URI">http://bqgazetteer.bethmardutho.org/place/5089/tei</idno>
+        <availability>
+          <licence target="http://creativecommons.org/licenses/by/3.0/">
+            <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
+          </licence>
+        </availability>
+        <date>2019-10-30-05:00</date>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Born digital.</p>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <editorialDecl>
+        <p>This record created following the guidelines for TEI encoding established by Syriaca.org. Documentation available at: <ref target="http://syriaca.org/documentation">http://syriaca.org/documentation</ref>.</p>
+        <p>The <gi>state</gi> element of @type="existence" indicates the period for which this place was in use as a place of its indicated type (e.g. an inhabited settlement, a functioning monastery or church, an administrative province).  Natural features always in existence have no <gi>state</gi> element of @type="existence".</p>
+      </editorialDecl>
+      <classDecl>
+        <taxonomy>
+          <category xml:id="srophe-headword">
+            <catDesc>The name used by the Srophé App for document titles, citation, and disambiguation. These names have been created according to the Syriac.org guidelines for headwords: <ref target="http://syriaca.org/documentation/headwords.html">http://syriaca.org/documentation/headwords.html</ref>.</catDesc>
+          </category>
+        </taxonomy>
+      </classDecl>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <p>Language codes used in this record follow the Syriaca.org guidelines. Documentation available at: 
+                  <ref target="http://syriaca.org/documentation/langusage.xml">http://syriaca.org/documentation/langusage.xml</ref>
+        </p>
+      </langUsage>
+    </profileDesc>
+    <revisionDesc status="draft">
+      <change who="http://syriaca.org/documentation/editors.xml#wpotter" when="2019-10-30-05:00">CREATED: place</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <listPlace>
+        <place type="settlement">
+          <placeName xml:id="name5089-1" xml:lang="en" syriaca-tags="#syriaca-headword" resp="http://syriaca.org">al-Qairawān</placeName>
+          <placeName xml:id="name5089-2" xml:lang="ar" syriaca-tags="#syriaca-headword" resp="http://syriaca.org">القيروان</placeName>
+          <placeName xml:id="name5089-3" xml:lang="en">al-Qayrawān</placeName>
+          <desc type="abstract" xml:id="abstract5089-1" xml:lang="en">A city south of Tunis to the west of al-Mahdiyya.</desc>
+          <desc xml:lang="ar">
+            <quote source="#bib5089-1">فالامصار سمرقند ايرانشهر شهرستان اردبيل همذان الاهواز شيراز السيرجان المنصورة زبيد مكة بغداد الموصل دمشق الفسطاط القيروان قرطبة#وان شئت فخذ من القيروان الى سطيف 10 مراحل (...) وتاخذ من القيروان الى زويلة شهرا، وتاخذ من القيروان الى سجلماسة في البرية 30 مرحلة وفي العمارة 50، وتاخذ من القيروان الى تونس 3 مراحل (...) وتاخذ من القيروان الى قابس او الى نفطة او الى قرنة او الى سبيبة او الى مدينة القصور او الى المهدية مرحلتين مرحلتين، وتاخذ من القيروان الى لافس او الى الجزيرة او الى ابة او الى مرسى الخرر ثلاث مراحل ثلاث مراحل، وتاخذ من القيروان الى قابس او الى قصر الافريقي او الى مجانة خمسا خمسا (...)</quote>
+          </desc>
+          <desc xml:lang="ar">
+            <quote source="#bib5089-2">ثم ذكرت المغرب ورسمته في وجهين وبدأت بذكر ما حاد منه ارض مصر الى المهدية والقيروان وما في براريها من المدن وان قلت واعقبتها بباقى صورته من القيروان والمهدية الى ارض طنجة وأزيلى</quote>
+          </desc>
+          <idno type="URI">http://syriaca.org/place/5089</idno>
+          <idno type="URI">http://www.geonames.org/2473449/kairouan.html</idno>
+          <bibl xml:id="bib5089-1">
+            <ptr target="http://syriaca.org/bibl/Q7SV98GA"/>
+            <citedRange unit="pp">47#238</citedRange>
+          </bibl>
+          <bibl xml:id="bib5089-2">
+            <ptr target="http://syriaca.org/bibl/GZIUD38F"/>
+            <citedRange unit="pp">7</citedRange>
+          </bibl>
+        </place>
+      </listPlace>
+    </body>
+  </text>
+</TEI>

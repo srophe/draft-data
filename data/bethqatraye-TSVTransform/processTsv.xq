@@ -277,7 +277,6 @@ let $descIndex := local:createDescIndex($headerMap) (: find and process the desc
 
 for $document at $row in $data
 (: where $row = 6  outputs a single row instead of all of them. Uncomment this line for testing :)
-
 (: ----------------------------------------- :)
 (: This part of the script builds the TEI header element from inner parts outward :)
 
@@ -310,6 +309,7 @@ let $uniqueSourceUris := local:distinct-deep($sourceUris)
         
 let $date := current-date()
 let $uriLocalName := local:trim($document/uri/text())
+let $fileName := local:trim($document/fileName/text())
 
 let $availability :=
   <availability xmlns="http://www.tei-c.org/ns/1.0">
@@ -725,7 +725,7 @@ let $document:= (
 
 (: If output is to be written to files, hard-code the file location as $path :)
 let $nothing := file:create-dir($path)    (: creates the directory if it doesn't already exist, does nothing if it exists :)
-let $fileName := $document/fileName/text()
+
 return
   if ($fileOrConsole = 'file')
   then file:write($path||$fileName||'.xml',  $document, map { 'omit-xml-declaration': 'no'})

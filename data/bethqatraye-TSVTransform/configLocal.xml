@@ -57,6 +57,42 @@
       <editorRole>technical</editorRole>
     </editor>
   </editorList>
+  <!-- The below structures are parsed based on their associated URI. If a given URI appears in this list, the associated editor and respStmt information will be used-->
+  <additionalCredits>
+    <sourceSpecificCredits>
+      <sourceUri>http://syriaca.org/bibl/7777</sourceUri>
+      <editor>
+        <editorString>William L. Potter</editorString>
+        <editorUri>http://syriaca.org/documentation/editors.xml#wpotter</editorUri>
+        <editorRole>creator</editorRole>
+      </editor>
+      <respStmtList>
+        <respStmt>
+          <respString>Al-Muqaddasī data collection by</respString>
+          <nameString>Abdulrahim Abu-Husayn</nameString>
+          <nameUri>http://syriaca.org/documentation/editors.xml#aabu-husayn</nameUri>
+        </respStmt>
+        <respStmt>
+          <respString>Al-Muqaddasī data collection by</respString>
+          <nameString>Abdul Rahman Chamseddine</nameString>
+          <nameUri>http://syriaca.org/documentation/editors.xml#archamseddine</nameUri>
+        </respStmt>
+      </respStmtList>
+    </sourceSpecificCredits>
+    <sourceSpecificCredits>
+      <sourceUri>http://dx.doi.org/10.1163/1573-3912_islam_SIM_4503</sourceUri>
+      <editor><editorString>David A. Michelson</editorString>
+        <editorUri>http://syriaca.org/documentation/editors.xml#dmichelson</editorUri>
+        <editorRole>technical</editorRole></editor>
+      <respStmtList>
+        <respStmt>
+          <respString>Al-Muqaddasī data collection by</respString>
+          <nameString>Abdul Rahman Chamseddine</nameString>
+          <nameUri>http://syriaca.org/documentation/editors.xml#archamseddine</nameUri>
+        </respStmt>
+      </respStmtList>
+    </sourceSpecificCredits>
+  </additionalCredits>
   <respStmtList> <!-- Fix, based on data source -->
     <respStmt>
       <respString>Al-Muqaddasī data collection by</respString>

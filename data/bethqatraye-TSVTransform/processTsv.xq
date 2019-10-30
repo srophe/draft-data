@@ -280,6 +280,27 @@ for $document at $row in $data
 
 (: ----------------------------------------- :)
 (: This part of the script builds the TEI header element from inner parts outward :)
+
+(: Find every possible reference in the row and add it to a sequence. This is needed to build the respStmt list. :)
+let $redundantSources :=
+    for $source in $headerMap  (: loop through each item in the header map sequence :)
+      let $sourceUriColumnName := $source/name/text()  (: get the XML element name :)
+      let $sourceUri := local:trim($document/*[name() = $sourceUriColumnName]/text())  (: find the value for that column :)
+      where substring($source/string/text(),1,9) = 'sourceURI' and $sourceUri != '' (: screen for right header string and skip over empty elements :)
+      let $lastPartColString := substring($source/string/text(),10)  (: find the last part of the sourceUri column header label :)
+      let $sourcePgColumnString := 'pages'||$lastPartColString  (: construct the column label for the page source :)
+      let $sourcePgColumnName :=
+          for $sourcePage in $headerMap    (: find the column string that matches the constructed on :)
+          where $sourcePgColumnString = $sourcePage/string/text()
+          return $sourcePage/name/text()     (: return the XML tag name for the matching column string :)
+      let $sourcePage := local:trim($document/*[name() = $sourcePgColumnName]/text())
+      return (<source><uri>{$sourceUri}</uri>,<pg>{$sourcePage}</pg></source>)
+
+(: remove redundant sources.  :)
+let $sources := local:distinct-deep($redundantSources)
+
+(: Need to add a step that removes sources if they the URI is repeated but not the page number :)
+
 let $date := current-date()
 let $uriLocalName := local:trim($document/uri/text())
 
@@ -392,7 +413,6 @@ let $seriesStmt :=
                 <idno type="{$localConfig/*:configuration/*:seriesInfo/*:idnoType/text()}">{$localConfig/*:configuration/*:seriesInfo/*:idnoString/text()}</idno>
             else ()
         }
-        
     </seriesStmt>
     else()
     
@@ -440,32 +460,8 @@ let $header :=
 (: ----------------------------------------- :)
 (: This part of the script builds the text element from inner parts outward :)
 
-(: Find every possible reference in the row and add it to a sequence :)
-let $redundantSources :=
-    for $source in $headerMap  (: loop through each item in the header map sequence :)
-      let $sourceUriColumnName := $source/name/text()  (: get the XML element name :)
-      let $sourceUri := local:trim($document/*[name() = $sourceUriColumnName]/text())  (: find the value for that column :)
-      where substring($source/string/text(),1,9) = 'sourceURI' and $sourceUri != '' (: screen for right header string and skip over empty elements :)
-      let $lastPartColString := substring($source/string/text(),10)  (: find the last part of the sourceUri column header label :)
-      let $sourcePgColumnString := 'pages'||$lastPartColString  (: construct the column label for the page source :)
-      let $sourcePgColumnName :=
-          for $sourcePage in $headerMap    (: find the column string that matches the constructed on :)
-          where $sourcePgColumnString = $sourcePage/string/text()
-          return $sourcePage/name/text()     (: return the XML tag name for the matching column string :)
-      let $sourcePage := local:trim($document/*[name() = $sourcePgColumnName]/text())
-      return (<source><uri>{$sourceUri}</uri>,<pg>{$sourcePage}</pg></source>)
 
-(: remove redundant sources.  :)
-let $sources := local:distinct-deep($redundantSources)
-
-(: Need an added step where we collate the references with the same URI into a single element with the numbers separated by comma?. the output should look like this:
-
-<bibl xml:id="bib78-7">
-    <ptr target="http://syriaca.org/bibl/9"/>
-    <citedRange unit="pp">53, 65, 361, 362</citedRange>
-</bibl>:)
-
-(: build the bibl elements :)
+(: build the bibl elements. The source list has already been created above for use with the respStmts :)
 let $bibl :=
     for $source at $number in $sources
     return

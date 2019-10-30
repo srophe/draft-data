@@ -389,14 +389,20 @@ let $additionalEditorList :=
         return $includedEditors
 
 let $respStmtList := 
-    for $respStmt in $localConfig/*:configuration/*:respStmtList/*:respStmt
+    for $srcUri in $uniqueSourceUris
+        let $includedRespStmts := 
+            for $addCredit in $localConfig/*:configuration/*:additionalCredits/*:sourceSpecificCredits
+            where $addCredit/*:sourceUri/text() = $srcUri/text()
+            return $addCredit/*:respStmtList
+        return $includedRespStmts
+    (:for $respStmt in $localConfig/*:configuration/*:respStmtList/*:respStmt
     let $respString := $respStmt/*:respString/text()
     let $nameString := $respStmt/*:nameString/text()
     let $nameUri := $respStmt/*:nameUri/text()
     return if ($respString != '')
     then 
         <respStmt xmlns="http://www.tei-c.org/ns/1.0"><resp>{$respString}</resp><name ref="{$nameUri}">{$nameString}</name></respStmt>
-    else ()
+    else ():)
 
 let $titleStatement := 
   <titleStmt xmlns="http://www.tei-c.org/ns/1.0">{

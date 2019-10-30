@@ -299,7 +299,14 @@ let $redundantSources :=
 (: remove redundant sources.  :)
 let $sources := local:distinct-deep($redundantSources)
 
-(: Need to add a step that removes sources if they the URI is repeated but not the page number :)
+(: Generate a list of just the URIs:)
+let $sourceUris := 
+    for $src in $sources
+    let $uri := $src/*:uri/text()
+    return <uri>{$uri}</uri>
+
+(: remove redundant URIs from URI list :)
+let $uniqueSourceUris := local:distinct-deep($sourceUris)
 
 let $date := current-date()
 let $uriLocalName := local:trim($document/uri/text())

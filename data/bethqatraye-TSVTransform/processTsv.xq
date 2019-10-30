@@ -547,7 +547,8 @@ let $names :=
         where  $nameUri = $src/uri/text() and ($namePg = $src/pg/text() or $namePg = '')  (: URI and page from columns must match with iterated item in the source index FIX to just require URI lookup? :)
         return $uriLocalName||'-'||$srcNumber    (: create the last part of the source attribute :)
     let $langAttrib := local:trim($name/langCode/text())
-    return <placeName xmlns="http://www.tei-c.org/ns/1.0" xml:id="name{$uriLocalName}-{$number + $numberHeadwords}" xml:lang="{$langAttrib}" source="#bib{$sourceFragId}">{$text}</placeName>
+    return if($nameUri != '') then <placeName xmlns="http://www.tei-c.org/ns/1.0" xml:id="name{$uriLocalName}-{$number + $numberHeadwords}" xml:lang="{$langAttrib}" source="#bib{$sourceFragId}">{$text}</placeName>
+    else <placeName xmlns="http://www.tei-c.org/ns/1.0" xml:id="name{$uriLocalName}-{$number + $numberHeadwords}" xml:lang="{$langAttrib}">{$text}</placeName>
 
 (: create the abstract elements.  In the current table model there are only Engilsh ones, but this will still work if abstracts are added in other languages :)
 let $abstracts :=

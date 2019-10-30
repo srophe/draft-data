@@ -379,7 +379,7 @@ let $titleStatement :=
   }</titleStmt>
 
 let $seriesStmt :=
-    <seriesStmt xmlns="http://www.tei-c.org/ns/1.0">
+    if($localConfig/*:configuration/*:seriesInfo != '') then <seriesStmt xmlns="http://www.tei-c.org/ns/1.0">
         <title level="s" xml:lang="{$localConfig/*:configuration/*:seriesInfo/*:titleLangCode/text()}">{$localConfig/*:configuration/*:seriesInfo/*:titleString/text()}</title>
         {
         for $editor in $localConfig/*:configuration/*:seriesInfo/*:editor
@@ -394,6 +394,7 @@ let $seriesStmt :=
         }
         
     </seriesStmt>
+    else()
     
 let $fileDesc := 
   <fileDesc xmlns="http://www.tei-c.org/ns/1.0">{

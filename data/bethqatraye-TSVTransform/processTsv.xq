@@ -388,21 +388,23 @@ let $additionalEditorList :=
             return <editor xmlns="http://www.tei-c.org/ns/1.0" role="{$addCredit/*:editor/*:editorRole/text()}" xml:id="{$addCredit/*:editor/*:editorUri/text()}">{$addCredit/*:editor/*:editorString/text()}</editor>
         return $includedEditors
 
-let $respStmtList := 
+let $compiledRespStmts := 
     for $srcUri in $uniqueSourceUris
         let $includedRespStmts := 
             for $addCredit in $localConfig/*:configuration/*:additionalCredits/*:sourceSpecificCredits
             where $addCredit/*:sourceUri/text() = $srcUri/text()
-            return $addCredit/*:respStmtList
+            return $addCredit/*:respStmtList/*:respStmt
         return $includedRespStmts
-    (:for $respStmt in $localConfig/*:configuration/*:respStmtList/*:respStmt
-    let $respString := $respStmt/*:respString/text()
-    let $nameString := $respStmt/*:nameString/text()
-    let $nameUri := $respStmt/*:nameUri/text()
-    return if ($respString != '')
-    then 
-        <respStmt xmlns="http://www.tei-c.org/ns/1.0"><resp>{$respString}</resp><name ref="{$nameUri}">{$nameString}</name></respStmt>
-    else ():)
+
+let $respStmtList :=
+    for $respStmt in $compiledRespStmts
+        let $respString := $respStmt/*:respString/text()
+        let $nameString := $respStmt/*:nameString/text()
+        let $nameUri := $respStmt/*:nameUri/text()
+        return if ($respString != '')
+        then 
+            <respStmt xmlns="http://www.tei-c.org/ns/1.0"><resp>{$respString}</resp><name ref="{$nameUri}">{$nameString}</name></respStmt>
+        else ()
 
 let $titleStatement := 
   <titleStmt xmlns="http://www.tei-c.org/ns/1.0">{

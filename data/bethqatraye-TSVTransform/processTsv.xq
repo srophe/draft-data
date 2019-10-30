@@ -398,7 +398,6 @@ let $titleStatement :=
       $funderList,
       <principal>{$localConfig/*:configuration/*:principal/text()}</principal>,
       $editorList,
-      <editor role="creator" ref="{$projectConfig/*:configuration/*:editorUri/text()}">{$projectConfig/*:configuration/*:editorString/text()}</editor>, (:Should we keep this distinction between creators and general editors? :)
       $respStmtList,
       <respStmt>
           <resp>URI minted and initial data encoding by</resp>

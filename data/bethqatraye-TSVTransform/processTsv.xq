@@ -307,14 +307,6 @@ let $sourceUris :=
 
 (: remove redundant URIs from URI list :)
 let $uniqueSourceUris := local:distinct-deep($sourceUris)
-
-let $additionalEditorList := 
-    for $srcUri in $uniqueSourceUris
-        let $includedEditors := 
-            for $addCredit in $localConfig/*:configuration/*:additionalCredits/*:sourceSpecificCredits
-            where $addCredit/*:sourceUri/text() = $srcUri/text()
-            return <editor xmlns="http://www.tei-c.org/ns/1.0" role="{$addCredit/*:editor/*:editorRole/text()}" xml:id="{$addCredit/*:editor/*:editorUri/text()}">{$addCredit/*:editor/*:editorString/text()}</editor>
-        return $includedEditors
         
 let $date := current-date()
 let $uriLocalName := local:trim($document/uri/text())
@@ -387,7 +379,14 @@ let $editorList :=
     then 
         <editor xmlns="http://www.tei-c.org/ns/1.0" role="{$editorRole}" ref="{$editorUri}">{$editorString}</editor>
     else ()
-    
+
+let $additionalEditorList := 
+    for $srcUri in $uniqueSourceUris
+        let $includedEditors := 
+            for $addCredit in $localConfig/*:configuration/*:additionalCredits/*:sourceSpecificCredits
+            where $addCredit/*:sourceUri/text() = $srcUri/text()
+            return <editor xmlns="http://www.tei-c.org/ns/1.0" role="{$addCredit/*:editor/*:editorRole/text()}" xml:id="{$addCredit/*:editor/*:editorUri/text()}">{$addCredit/*:editor/*:editorString/text()}</editor>
+        return $includedEditors
 
 let $respStmtList := 
     for $respStmt in $localConfig/*:configuration/*:respStmtList/*:respStmt

@@ -325,7 +325,7 @@ let $title :=
 
 let $monoTitle := 
     if($localConfig/*:configuration/*:monographTitle/*:titleString/text() != '') then
-        <title xmlns="http://www.tei-c.org/ns/1.0" level="m" xml:lang="{$localConfig/*:configuration/*:monographTitle/*:titleString/text()}">{$localConfig/*:configuration/*:monographTitle/*:titleLang/text()}</title>
+        <title xmlns="http://www.tei-c.org/ns/1.0" level="m" xml:lang="{$localConfig/*:configuration/*:monographTitle/*:titleLang/text()}">{$localConfig/*:configuration/*:monographTitle/*:titleString/text()}</title>
     else ()
     
 let $sponsorList :=

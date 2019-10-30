@@ -293,7 +293,7 @@ let $availability :=
 let $pubStatement :=
   <publicationStmt xmlns="http://www.tei-c.org/ns/1.0">
       <authority>{$localConfig/*:configuration/*:publicationInfo/*:authority/text()}</authority>
-      <idno type="URI">{$localConfig/*:configuration/*:publicationInfo/*:authority/text()}{$uriLocalName}/tei</idno>
+      <idno type="URI">{$localConfig/*:configuration/*:publicationInfo/*:idno/text()}{$uriLocalName}/tei</idno>
       {$availability}
       <date>{$date}</date>
   </publicationStmt>

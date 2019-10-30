@@ -417,7 +417,7 @@ let $titleStatement :=
       $additionalEditorList,
       $respStmtList,
       <respStmt>
-          <resp>URI minted and initial data encoding by</resp>
+          <resp>Data merging and XML by</resp>
           <name ref="{$localConfig/*:configuration/*:mintedUri/text()}">{$localConfig/*:configuration/*:mintedString/text()}</name>
       </respStmt>
   }</titleStmt>

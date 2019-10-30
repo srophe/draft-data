@@ -323,6 +323,11 @@ let $title :=
           else ()
         }</title>
 
+let $monoTitle := 
+    if($localConfig/*:configuration/*:monographTitle/*:titleString/text() != '') then
+        <title xmlns="http://www.tei-c.org/ns/1.0" level="m" xml:lang="{$localConfig/*:configuration/*:monographTitle/*:titleString/text()}">{$localConfig/*:configuration/*:monographTitle/*:titleLang/text()}</title>
+    else ()
+    
 let $sponsorList :=
     for $sponsor in $localConfig/*:configuration/*:sponsorList/*:sponsor/text()
     return if ($sponsor != '')
@@ -360,6 +365,7 @@ let $respStmtList :=
 let $titleStatement := 
   <titleStmt xmlns="http://www.tei-c.org/ns/1.0">{
       $title,
+      $monoTitle,
       $sponsorList,
       $funderList,
       <principal>{$localConfig/*:configuration/*:principal/text()}</principal>,

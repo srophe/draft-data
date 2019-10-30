@@ -1,39 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<configuration> <inputFileUrl>https://raw.githubusercontent.com/wlpotter/draft-data/master/data/bethqatraye-TSVTransform/placesToTransformBethQatraye.csv</inputFileUrl>
+<configuration>
+  <inputFileUrl>https://raw.githubusercontent.com/wlpotter/draft-data/master/data/bethqatraye-TSVTransform/placesToTransformBethQatraye.csv</inputFileUrl>
   <localPath>temp/syriaca/</localPath>
   <outputTo>console</outputTo>
   <mintedString>William L. Potter</mintedString>
   <mintedUri>http://syriaca.org/documentation/editors.xml#wpotter</mintedUri>
   <sponsorList>
-    <sponsor>Syriaca.org: The Syriac Reference Portal</sponsor>
+    <sponsor>Beth Mardutho: The Syriac Institute</sponsor>
   </sponsorList>
   <funderList>
     <funder>Qatar National Research Foundation</funder>
   </funderList>
-  <principal>David A. Michelson</principal><!--Can there be multiple principal elements? There can be multiple principal researchers...-->
+  <principal>Haya Al Thani</principal>
   <editorList>
     <editor>
-      <editorString>Thomas A. Carlson</editorString>
-      <editorUri>http://syriaca.org/documentation/editors.xml#tcarlson</editorUri>
+      <editorString>Haya Al Thani</editorString>
+      <editorUri>http://syriaca.org/documentation/editors.xml#halthani</editorUri>
       <editorRole>general</editorRole>
     </editor>
     <editor>
-      <editorString>David A. Michelson</editorString>
-      <editorUri>http://syriaca.org/documentation/editors.xml#dmichelson</editorUri>
+      <editorString>Saif al-Murikhi</editorString>
+      <editorUri>http://syriaca.org/documentation/editors.xml#sal-murikhi</editorUri>
       <editorRole>general</editorRole>
     </editor>
     <editor>
-      <editorString>Tobias Scheunchen</editorString>
-      <editorUri>http://syriaca.org/documentation/editors.xml#tscheunchen</editorUri>
-      <editorRole>contributor</editorRole>
-    </editor>    
+      <editorString>Abdulrahim Abu-Husayn</editorString>
+      <editorUri>http://syriaca.org/documentation/editors.xml#aabu-husayn</editorUri>
+      <editorRole>general</editorRole>
+    </editor>
+    <editor>
+      <editorString>Abdul Rahman Chamseddine</editorString>
+      <editorUri>http://syriaca.org/documentation/editors.xml#</editorUri> <!-- Add URI -->
+      <editorRole>general</editorRole>
+    </editor>
     <editor>
       <editorString>Mario Kozah</editorString>
       <editorUri>http://syriaca.org/documentation/editors.xml#mkozah</editorUri>
       <editorRole>general</editorRole>
     </editor>
+    <editor>
+      <!-- Keep? -->
+      <editorString>Thomas A. Carlson</editorString>
+      <editorUri>http://syriaca.org/documentation/editors.xml#tcarlson</editorUri>
+      <editorRole>general</editorRole>
+    </editor>
+      <editorString>David A. Michelson</editorString>
+      <editorUri>http://syriaca.org/documentation/editors.xml#dmichelson</editorUri>
+      <editorRole>technical</editorRole>
+    <editor>
+      <editorString>William L. Potter</editorString>
+      <editorUri>http://syriaca.org/documentation/editors.xml#wpotter</editorUri>
+      <editorRole>technical</editorRole>
+    </editor>
   </editorList>
-  <respStmtList>
+  <respStmtList> <!-- Fix, based on data source -->
     <respStmt>
       <respString>Al-Muqaddasī data collection by</respString>
       <nameString>Abdulrahim Abu-Husayn</nameString>

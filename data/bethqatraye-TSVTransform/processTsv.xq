@@ -292,8 +292,8 @@ let $availability :=
 
 let $pubStatement :=
   <publicationStmt xmlns="http://www.tei-c.org/ns/1.0">
-      <authority>Syriaca.org: The Syriac Reference Portal</authority>
-      <idno type="URI">http://syriaca.org/place/{$uriLocalName}/tei</idno>
+      <authority>{$localConfig/*:configuration/*:publicationInfo/*:authority/text()}</authority>
+      <idno type="URI">{$localConfig/*:configuration/*:publicationInfo/*:authority/text()}{$uriLocalName}/tei</idno>
       {$availability}
       <date>{$date}</date>
   </publicationStmt>
@@ -451,7 +451,7 @@ let $redundantSources :=
 (: remove redundant sources.  :)
 let $sources := local:distinct-deep($redundantSources)
 
-(: Need an added step where we collate the references with the same URI into a single element with the numbers separated by comma. the output should look like this:
+(: Need an added step where we collate the references with the same URI into a single element with the numbers separated by comma?. the output should look like this:
 
 <bibl xml:id="bib78-7">
     <ptr target="http://syriaca.org/bibl/9"/>

@@ -724,8 +724,8 @@ let $document:= (
 
 (: If output is to be written to files, hard-code the file location as $path :)
 let $nothing := file:create-dir($path)    (: creates the directory if it doesn't already exist, does nothing if it exists :)
-
+let $fileName := $document/fileName/text()
 return
   if ($fileOrConsole = 'file')
-  then file:write($path||$uriLocalName||'.xml',  $document, map { 'omit-xml-declaration': 'no'})
+  then file:write($path||$fileName||'.xml',  $document, map { 'omit-xml-declaration': 'no'})
   else $document

@@ -729,5 +729,6 @@ let $nothing := file:create-dir($path)    (: creates the directory if it doesn't
 
 return
   if ($fileOrConsole = 'file')
-  then file:write($path||$fileName||'.xml',  $document, map { 'omit-xml-declaration': 'no'})
+  (:Change $uriLocalName to $fileName when running script on potential duplicates :)
+  then file:write($path||$uriLocalName||'.xml',  $document, map { 'omit-xml-declaration': 'no'})
   else $document

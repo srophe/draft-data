@@ -703,6 +703,7 @@ let $text :=
             $incerta,
             $disambiguation,
             $location,
+            <idno type="URI">http://bqgazetteer.bethmardutho.org/place/{$uriLocalName}</idno>,
             <idno type="URI">http://syriaca.org/place/{$uriLocalName}</idno>,
             $idnos,
             $bibl

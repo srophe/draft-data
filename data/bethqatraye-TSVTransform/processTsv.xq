@@ -47,7 +47,7 @@ for $nameColumn in $headerMap
 let $columnString := $nameColumn/string/string()
 let $leftOfDot := tokenize($columnString,'\.')[1]
 let $langCode := tokenize($columnString,'\.')[2]
-return if (string-length($leftOfDot) = 5 and substring(tokenize($columnString,'\.')[1],1,4) = 'name') then
+return if ((string-length($leftOfDot) = 5 or string-length($leftOfDot) = 6) and substring(tokenize($columnString,'\.')[1],1,4) = 'name') then
   <name>{
     <langCode>{$langCode}</langCode>,
     <labelColumnElementName>{$nameColumn/name/string()}</labelColumnElementName>,

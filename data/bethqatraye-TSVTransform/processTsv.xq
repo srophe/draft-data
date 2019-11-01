@@ -524,8 +524,8 @@ let $headwordNames :=
         for $src at $srcNumber in $sources  (: step through the source index :)
         where  $headwordUri = $src/uri/text() and ($headwordPg = $src/pg/text() or $headwordPg = '') (: URI from columns must match with iterated item in the source index. This same process is used in getting names, abstracts, and descriptions. Perhaps turn into a function :)
         return $uriLocalName||'-'||$srcNumber    (: create the last part of the source attribute :)
-    return if($headwordUri != '') then <placeName xmlns="http://www.tei-c.org/ns/1.0" xml:id="{'name'||$uriLocalName}-{$number}" xml:lang="{$langAttrib}" syriaca-tags="#syriaca-headword" resp="http://syriaca.org" source="#bib{$sourceFragId}">{$text}</placeName>
-    else <placeName xmlns="http://www.tei-c.org/ns/1.0" xml:id="{'name'||$uriLocalName}-{$number}" xml:lang="{$langAttrib}" syriaca-tags="#syriaca-headword" resp="http://syriaca.org">{$text}</placeName>
+    return if($headwordUri != '') then <placeName xmlns="http://www.tei-c.org/ns/1.0" xml:id="{'name'||$uriLocalName}-{$number}" xml:lang="{$langAttrib}" syriaca-tags="#syriaca-headword" source="#bib{$sourceFragId}">{$text}</placeName>
+    else <placeName xmlns="http://www.tei-c.org/ns/1.0" xml:id="{'name'||$uriLocalName}-{$number}" xml:lang="{$langAttrib}" syriaca-tags="#syriaca-headword" resp="http://bqgazetteer.bethmardutho.org">{$text}</placeName>
 
 (: for this row, find only the names columns that have values.  This avoids skipping numbers in placeName ids :)
 let $lineNamesIndex :=

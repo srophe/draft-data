@@ -386,7 +386,7 @@ let $additionalEditorList :=
             for $addCredit in $localConfig/*:configuration/*:additionalCredits/*:sourceSpecificCredits
             where $addCredit/*:sourceUri/text() = $srcUri/text()
             return <editor xmlns="http://www.tei-c.org/ns/1.0" role="{$addCredit/*:editor/*:editorRole/text()}" xml:id="{$addCredit/*:editor/*:editorUri/text()}">{$addCredit/*:editor/*:editorString/text()}</editor>
-        return $includedEditors
+        return local:distinct-deep($includedEditors)
 
 let $compiledRespStmts := 
     for $srcUri in $uniqueSourceUris

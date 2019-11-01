@@ -385,7 +385,7 @@ let $additionalEditorList :=
         let $includedEditors := 
             for $addCredit in $localConfig/*:configuration/*:additionalCredits/*:sourceSpecificCredits
             where $addCredit/*:sourceUri/text() = $srcUri/text()
-            return <editor xmlns="http://www.tei-c.org/ns/1.0" role="{$addCredit/*:editor/*:editorRole/text()}" xml:id="{$addCredit/*:editor/*:editorUri/text()}">{$addCredit/*:editor/*:editorString/text()}</editor>
+            return <editor xmlns="http://www.tei-c.org/ns/1.0" role="{$addCredit/*:editor/*:editorRole/text()}" ref="{$addCredit/*:editor/*:editorUri/text()}">{$addCredit/*:editor/*:editorString/text()}</editor>
         return $includedEditors
 
 let $compiledRespStmts := 

@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title ref="http://syriaca.org/work/">To John and John Presbyters and
+               Archimandrites and the Rest</title>
+            <author ref="http://syriaca.org/person/51">Severus of Antioch</author>
+            <sponsor>Center of Digital Humanities Research, Texas A&amp;M University</sponsor>
+            <principal>Daniel L. Schwartz</principal>
+            <editor role="editor" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</editor>
+            <respStmt>
+               <resp>XML created by</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</name>
+            </respStmt>
+            <respStmt>
+               <resp>Based on the work of</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#ewbrooks">E. W. Brooks</name>
+            </respStmt>
+            <respStmt>
+               <resp>OCR corrected by</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</name>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition n="1"/>
+         </editionStmt>
+         <publicationStmt>
+            <distributor>
+               <placeName>Center of Digital Humanities Research, College Station, TX, USA</placeName>
+            </distributor>
+            <authority/><!-- FILL IN AFTER DECIDING ON NAME -->
+            <idno/><!-- FILL IN AFTER DECIDING ON URI/URL FORMAT -->
+            <availability>
+               <licence target="http://creativecommons.org/licenses/by/4.0/">
+                  <p>Creative Commons — Attribution 4.0 International — CC BY 4.0</p>
+                  <p>https://creativecommons.org/licenses/by/4.0/</p>
+               </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <editor ref="http://syriaca.org/person/403">
+                     <persName xml:lang="en">
+                        <forename>E. W.</forename>
+                        <surname>Brooks</surname>
+                     </persName>
+                  </editor>
+                  <title type="main" xml:lang="en" level="m">
+                     The Sixth Book of the Select Letters of
+                     <persName ref="http://syriaca.org/person/51">Severus Patriarch of Antioch</persName>
+                     in the Syriac Version of
+                     <persName ref="http://syriaca.org/person/1014">Athanasius of Nisibis</persName>
+                  </title>
+                  <title type="sub" xml:lang="en" level="m">Vol. II (Translation) Part I</title>
+                  <idno type="URI">http://syriaca.org/bibl/668</idno>
+                  <imprint>
+                     <publisher xml:lang="en">Williams and Norgate</publisher>
+                     <pubPlace ref="http://syriaca.org/place/861">Oxford</pubPlace>
+                     <date>1903</date>
+                  </imprint>
+                  <extent>Vol. 3 of 4</extent>
+                  <biblScope unit="vol">2.1</biblScope>
+                  <biblScope unit="page">132-40</biblScope>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <editorialDecl>
+            <p/><!-- FILL IN -->
+         </editorialDecl>
+      </encodingDesc>
+      <profileDesc>
+         <creation>
+            <origDate type="composition"/><!-- FILL IN. La Route Royale dates are probably preferable to Brooks' dates. -->
+         </creation>
+      </profileDesc>
+      <revisionDesc status="draft">
+         <change when="2019-11" who="http://syriaca.org/person.xml#dschwartz">Created file</change>
+      </revisionDesc>
+   </teiHeader>
+  <text>
+      <body>
+         <div type="letter" n="1.49">
+            <head type="main" resp="#compiler">Of the same to John and John presbyters and
+               archimandrites and the rest.</head>
+            <head type="sub" resp="#compiler">From those after banishment, from the 1st book the 55th,
+               53rd letter.</head>
+            <p> I am glad and rejoice greatly whenever I write an epistle to your holinesses, and,
+               if one may so say, fancy myself speaking to you as if you were close by me.
+               <add><emph>And after other things.</emph></add> For do not think of me that my
+               concern for the church of the Alexandrines is different from my concern for that of
+               the Antiochenes; I shall not be lying even though I say it is much greater. In fact
+               both the party of the learned Hippocrates, to whom I referred a short time ago, and a
+               very large number of other well-known and distinguished men, who have always
+               concerned themselves about their own salvation and about the strict observance of the
+               orthodox faith, and those who followed these, through the efforts and endeavours <pb
+                  n="133"/> (to speak with God's permission) of my wretched miserable self joined
+               the catholic and orthodox church in Egypt; men who as you know for a long time had
+               not communicated but were satisfied by the minutes of the records? drawn up by the
+               blessed Dioscorus who a short time ago departed to God, of which you no doubt have an
+               <foreign>ison</foreign> or copy, and are not ignorant of the purport of the things
+               contained in them: since, after the sacred old man had received the epistle written
+               by my meanness, in answer to his synodical letter, with hands and feet, as the saying
+               goes, and as far as was possible he complied with my advice and satisfied those who
+               were separated; who often wrote to me in their letters (although it is in folly that
+               I speak), "It is because we have confidence in your reputation that we have
+               communicated." How then can neglect such men? or how can it be said that I must not
+               both "in season and out of season" as the divine Apostle says search even into small
+               matters, and cut away every cause of stumbling, and remove the stones and cast them
+               out [of] the way that leads [...] or to satisfy so-and-so and so-and-so individually,
+               so that all these and men like them were scandalized in that a door for vain speaking
+               was being opened to the contentious. For neither are this time and that alike, nor
+               yet can you on your part avoid doing everything in the capacity of my
+               representatives. For, what you do, <pb n="134"/> that men will justly reckon to me;
+               for all, both brothers and strangers, both friends and enemies, know clearly that I
+               and you are one, as in fact we are. Accordingly, if any man owing to his imperfect
+               intelligence needs to be directed by pilotage, being carried about like some ship by
+               troubled thoughts, let him be so directed and controlled as not to rouse any storm or
+               tempest against the great ships. Let not your sanctities think that this is the first
+               time that I have been moved to this action. Even while I was living in Antiochus'
+               city, I used to hear it said of the presbyter father Theodore of saintly memory that,
+               when many came to Egypt and asked him whether they ought to communicate, he would
+               answer and say plainly to them, "If you have been satisfied, communicate": and other
+               things that are like this and resemble it, And I endured because it was a time of
+               endurance, and because none of the bishops in the East heard anything of the kind,
+               but the reports were confined to yourselves, and did no great harm. For a man who is
+               doing anything in accordance with God's purpose never halts and hesitates in his
+               action: but he stands firm and steadfast, and increases what he has begun; like the
+               gift of the talents in the gospels. <add><emph>And after other things.</emph></add>
+               As to the devout and beloved brother Epimachus, you know how distinct the apostolic
+               statute is through which I also was prevented from laying my hands upon this man,
+               when he came to Antiochus' city, in order that he might conduct my
+               <foreign>apokriseis</foreign> in the royal among cities, in conjunction <pb
+                  n="135"/> with the presbyter Peter of blessed memory, my brother. And, being
+               afraid of the strictness of the canon, I restrained my desire: and this though I
+               loved the man, I mean the devout Epimachus, not out of human favour, but on account
+               of his devout and modest conduct in the monastic. life, and his venerable age and
+               old-fashioned mind. For I saw that the canon of the church everywhere "requires
+               blamelessness"; and at the same time also I was in the habit of proclaiming to
+               everyone in Antiochus' city, "No man who has been twice married or labours under any
+               disqualification similar [to this] can [receive] ordination from me." [...] Therefore
+               take the course of which our Lord shall satisfy you." Accordingly it would not have
+               been right for us, when the thing has been made public, to advance him now to
+               ordination, and let him be a blot in our ministry, as the very wise Paul says, us who
+               endeavour with God's help to do everything as far as we can without cause for blame.
+               For we cannot in fact say that the man by his monastic habit and the long life that
+               he has passed in this is able to mitigate the strictness of the canon, seeing that it
+               nowhere in actual words makes any such further provision about the twice-married, and
+               seeing that "what is rare is not a law of the church," as the Theologian Gregory
+               somewhere says. The ninth canon of the three hundred and <pb n="136"/> eighteen holy
+               fathers also plainly says that presbyters who have been put forward without
+               examination shall be set aside, even though it is after ordination that their sin
+               which violates the canon is confessed. The twice-married have also a certain definite
+               time provided in the same canons, during which they are excluded from communion,"
+               because these men ought to devote themselves to fastings and prayers. Hence it is
+               very plain that devout conduct after the second marriage is of assistance to them
+               only in the way of penitence, and does not besides this also assist them in.
+               obtaining admission to the clergy. We know also the letter written by the saintly
+               archbishop and martyr Dioscorus concerning Irenaeus the twice-married, and the order
+               of Theodosius of truly pious and God-loving memory concerning this man. These things
+               then being so, it rests with you and with those who disputed with you to consider
+               whether one can extend the application of the fifty-third canon and compel it to
+               cover the case of a man who, having contracted a second marriage, is ordained without
+               examination, and to come to an agreement with one another on this point and settle
+               your dispute and doubt. The canon itself is as follows: "If a presbyter be promoted
+               after having previously sinned with his body, and confess that he sinned before
+               ordination, he shall not offer: but he shall retain the rest of his functions on
+               account of his zeal in other respects, For in the case of other sins <pb n="137"/>
+               many have said that they are remitted by the mere fact of the laying on of hands.
+               But, if he do not himself confess, and it is not possible for him to be manifestly
+               convicted, the discretion shall rest with himself." Consider therefore whether the
+               devout Epimachus also ought to communicate in the prayers and other things only. But
+               even this I say as an indulgence, not as a command. For the principles laid down by
+               the canon do not refer to an open and notorious second marriage, but to other bodily
+               sins that are secret. But for your part, since it is upon you that the burden of
+               judgment is laid, choose the course that seems to you good: my feebleness cannot
+               write about this: in fact for my part whatever have given if I have given anything I
+               have given for your sakes as the representative of Christ. However it is with much
+               sorrow and sighing that I have written this (I speak with God as witness), seeing
+               that even to the devout Epimachus himself that which is thought an honour is being
+               turned into a shame, and I too am being driven by the divine precepts to break out
+               into grievous and bitter words. For what we are to say upon the point in question is
+               laid down for us as a law by others. There is another thing that, as upon brief
+               consideration appears to my meanness, would have been just and proper, I mean if you
+               had asked me first and taken my advice, especially since it is now a kind of
+               beginning of our state of banishment. You are not unaware that in <pb n="138"/> the
+               case of the man of holy memory also, I mean Peter the bishop, even when he was not
+               ordaining anyone, those who were ordaining took his advice. Timothy too, who bravely
+               endured in the contests of piety, when he was at a distance and was living somewhere
+               far away beyond the boundaries, used to regulate all these things by epistle, and
+               they were carried into effect. However you may allege in defence that I was in hiding
+               and that you did not even know where I am, and that you were in a hurry to satisfy
+               your need, which it would not have been certainly possible to do when you wanted.
+               Another matter, I confess, was very displeasing to me, I mean the fact that certain
+               other men also who rejoice in two disciples only, and those boys, have presented
+               those who are living with them for ordination, so that they are led astray from the
+               very fact of living with them. Fora boy who is admitted to an honour which passes his
+               measure exposes himself to shame, while he has for the time brought no small blame on
+               the community. Your remark that the God-loving Isidore the bishop ought not on
+               account of the persecution to have again laid his hand on those who were ordained
+               deacons by me is lukewarm and cold: for these regulations apply to deacons enrolled
+               in the churches: and to monasteries round about that parish. But to extend this to
+               those who are in a province beyond the boundaries and are united with us in respect
+               of the right faith it is not <pb n="139"/> a fitting season. In the same fashion also
+               the practice of devout women living in their houses being ordained deaconesses is
+               very usual and is diffused, if may so say, over the whole world. Again the fact that
+               in previous times Palestine also was subject to the apostolic see of the city of the
+               Antiochenes is in no doubt. However I and the God-loving bishop Isidore make up one
+               person, and I myself say that his love of God performed the ordination on my behalf;
+               therefore let all question and dispute cease. The quality of the person who ordained
+               causes no detriment whatever, such that the ordination that has been performed should
+               be thought to be uncanonical. But you, who are wise in the Lord, ought not to have
+               dropped the religious presbyter Victor out of your consideration: seeing that he
+               would often introduce some useful action before the event itself, or that after
+               consenting to what you did he was thenceforward ashamed to go against his own
+               consent; and seeing that many find it hard to endure neglect. But that he was your
+               friend not only I but everyone is aware. I know, I know clearly that it was with
+               judgment that you put forward your devout brothers: but the reason that you yielded
+               to certain men who were putting forward boys was, as it seems, that you might not
+               excite disturbance against you. These things I have written to you by <pb n="140"/>
+               way of admonition, and privately. For indeed I know how to admonish such men as you,
+               but to find fault with those who are so exalted in virtue I have not learned, far
+               less to. rebuke them, as you write. I know my measure, even though the fact of the
+               office and the spiritual honour that has been given me through the benignance of God
+               tends to exaltation, a thing that to the unintelligent and foolish gives occasion for
+               vanity and pride, but in those who do not deceive themselves and know that they are
+               sinners implants endurance in contests and fear of the judgment, in which we shall
+               give account even for honours that are so high, when the Judge shall give judgment,
+               as is threatened in the prophets, against those that are "clothed in other men's
+               apparel." </p>
+            <trailer>The end.</trailer>
+         </div>
+      </body>
+  </text>
+</TEI>

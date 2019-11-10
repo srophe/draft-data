@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title ref="http://syriaca.org/work/">To John and John the Brethren, Presbyters
+               and Archimandrites</title><!-- FILL IN TITLE AND WORK URI -->
+            <author ref="http://syriaca.org/person/51">Severus of Antioch</author>
+            <sponsor>Center of Digital Humanities Research, Texas A&amp;M University</sponsor>
+            <principal>Daniel L. Schwartz</principal>
+            <editor role="editor" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</editor>
+            <respStmt>
+               <resp>XML created by</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</name>
+            </respStmt>
+            <respStmt>
+               <resp>Based on the work of</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#ewbrooks">E. W. Brooks</name>
+            </respStmt>
+            <respStmt>
+               <resp>OCR corrected by</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</name>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition n="1"/>
+         </editionStmt>
+         <publicationStmt>
+            <distributor>
+               <placeName>Center of Digital Humanities Research, College Station, TX, USA</placeName>
+            </distributor>
+            <authority/><!-- FILL IN AFTER DECIDING ON NAME -->
+            <idno/><!-- FILL IN AFTER DECIDING ON URI/URL FORMAT -->
+            <availability>
+               <licence target="http://creativecommons.org/licenses/by/4.0/">
+                  <p>Creative Commons — Attribution 4.0 International — CC BY 4.0</p>
+                  <p>https://creativecommons.org/licenses/by/4.0/</p>
+               </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <editor ref="http://syriaca.org/person/403">
+                     <persName xml:lang="en">
+                        <forename>E. W.</forename>
+                        <surname>Brooks</surname>
+                     </persName>
+                  </editor>
+                  <title type="main" xml:lang="en" level="m">
+                     The Sixth Book of the Select Letters of
+                     <persName ref="http://syriaca.org/person/51">Severus Patriarch of Antioch</persName>
+                     in the Syriac Version of
+                     <persName ref="http://syriaca.org/person/1014">Athanasius of Nisibis</persName>
+                  </title>
+                  <title type="sub" xml:lang="en" level="m">Vol. II (Translation) Part II</title>
+                  <idno type="URI">http://syriaca.org/bibl/669</idno>
+                  <imprint>
+                     <publisher xml:lang="en">Williams and Norgate</publisher>
+                     <pubPlace ref="http://syriaca.org/place/861">Oxford</pubPlace>
+                     <date>1903</date>
+                  </imprint>
+                  <extent>Vol. 4 of 4</extent>
+                  <biblScope unit="vol">2.2</biblScope>
+                  <biblScope unit="page">337-42</biblScope>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <editorialDecl>
+            <p/><!-- FILL IN -->
+         </editorialDecl>
+      </encodingDesc>
+      <profileDesc>
+         <creation>
+            <origDate type="composition"/><!-- FILL IN. La Route Royale dates are probably preferable to Brooks' dates. -->
+         </creation>
+      </profileDesc>
+      <revisionDesc status="draft">
+         <change when="2019-11" who="http://syriaca.org/person.xml#dschwartz">Created file</change>
+      </revisionDesc>
+   </teiHeader>
+  <text>
+      <body>
+         <div type="letter" n="5.12">
+            <head type="main" resp="#compiler">Of the same to John and John the brethren, presbyters
+               and archimandrites.</head>
+            <head type="sub" resp="#compiler">From those after banishment, from the 2nd book the 72nd
+               letter.</head>
+            <p> Truly I say, and you ought certainly to believe me when I say, that it is not as the
+               result of effort or of cogitation that I proceed to utter praises of you whenever I
+               write an epistle to you, but out of the abundance of my heart according to the Lord's
+               saying that does not lie my mouth is opened to speak. Wherefore, as soon as I reflect
+               upon your actions, I find it hard to draw myself away from them and I continue to
+               think of them, and I cannot bear to keep silence. I am in the same state as men who
+               happen upon the <pb n="338"/> sight of a lovely body, and then, before they have
+               sated themselves with the beauty or sufficiently gazed at it, are separated from it
+               by force by someone. In order to explain to you the. astringent and instructive
+               character of the salt that is in you, I will say this much only. You are honoured men
+               and capable after the manner of great stars that shine and give light, such as were
+               our Peter and Isaiah the renowned men, seeing that you do not remain hid, but with
+               them give forth rays that are like theirs, or else in a small degree inferior, and
+               give light to "them that sit in darkness and in the shadow of death "as it is
+               written: but now the scarceness and lack of such men makes you more honoured and
+               causes you to be more highly reputed than they. Do not therefore behave haughtily to
+               us in our hunger. It is your actions that we want, not you. Remain in the flesh. In
+               fact not only when writing an epistle, but also when engaged in any ordinary
+               conversation, if I ever do converse with anyone, I bring forward the mention of you
+               like some pleasant odour, and I please both myself and those that hear. Do not
+               therefore think that the words written are as you say the words of a scribe who has
+               scattered "things old and things new," but the words of love and of need only: since
+               neither am I among those who praise at random, nor are you among those who delight in
+               praises, and the subject of the letter itself is not concerned with praises. <pb
+                  n="339"/> I incurred a great debt of gratitude to our God and Saviour Christ when
+               I learned that you the saintly presbyter had been restored to health after the deadly
+               sickness, and that you are in tangible reality officiating in the rational
+               sacrifices. I am much surprised that you say that yow were in doubt about the letter
+               that was written by the saintly bishops who are settled here. It was in fact free
+               from all misunderstanding: especially in the matter of giving authority to the
+               believers there and in particular to the solitary order to receive or not receive
+               those who wish truly to repent: and, what is very important, that the forgiveness
+               should await the assent of everyone, so that it should also require the unanimous
+               opinion of the bishops who are absent. When all these things are put together, they
+               both make those who made answer to the question blameless, and, when the precepts
+               contained in the letter have been carried out, the reconciliation of all remains to
+               be accomplished. I do not mention that the authors of the epistle followed the
+               regulations of Timothy? of holy memory in all points. I do not say these things as if
+               I had myself given counsel upon the: matter. No man has known our place of abode:at
+               all or where we are, except only those whom we informed for the sake of the necessary
+               requirements of our life. However the devout presbyter Thomas, having been invited by
+               the bishops, in order that he might not be thought to be a haughty <pb n="340"/> and
+               unsociable man, heard and answered them, and in proportion to the power that is in
+               him often sowed the seed of caution in those that were willing. As to the sign that
+               was seen in the sky, it was seen here also in the same way and for many days. Among
+               wise men outside an appearance of this kind consisting in the rising of an unusual
+               star is called a <foreign>dokias</foreign> or <foreign>krinthiya</foreign>: and, as
+               thought even by those who have attained knowledge in such things, it betokens a
+               change in affairs. In accordance with the purport of the divine words, the aforesaid
+               star presented the shape of a rod: thus leading us, so to speak, to remember Him who
+               says, "If they profane my statutes and keep not my commandments, I will visit their
+               lawlessnesses with a rod, and their iniquities with stripes." Pray therefore that the
+               other statement may be also added and applied upon our repentance, "But my grace will
+               I not remove from them, nor will I do iniquity in my truth." Let your sanctities know
+               that there was also an earthquake here on the fourteenth of October: a thing which in
+               general rarely happens in the regions of Egypt; and no ordinary earthquake, but
+               violent enough to shake buildings and cause them to tremble for a long space of time,
+               passing over the small ones only, while everyone so to speak felt it. In certain
+               cities of Egypt, especially in Athrib, a pestilence and plague has also been reported
+               to have occurred. The books that were sent me by the presbyter <pb n="341"/> Stephen
+               of God-loving memory I have not been able to look through, by reason of the shifting
+               of the places in which necessity causes me to be. Indeed, as soon as I read some
+               part, and think that I have collected some part towards the dissertation against the
+               heretics at which I am working, often some report reaches me and makes me remove
+               elsewhere, and what has been collected is annihilated. I am in the same state as
+               Israel, when it was once under the hand of Midian: and as soon as they had sown
+               warriors used to come up against them and encamp against them, as is written, and
+               destroy the produce of the earth! Therefore it is necessary for me like Gideon to
+               collect a few grains of wheat now and a few later, and pound these because I do not
+               dare to thresh, since I flee from before the face of Midian; for this also I will add
+               from the same scripture. As to what you say has happened in the city of Cyrrhus, this
+               news has come to us too; indeed the minute has also been sent in which he who in a
+               Jewish spirit holds the presidency of that city made a confession to the effect that
+               Diodorus and Theodore and the detestable gang of Nestorius differ in no way from the
+               Chalcedonian synod, which like a seed is justly and truly traced to those who sowed
+               tares upon <pb n="342"/> the good seed. And this the minister of falsehood rightly
+               confessed. Whereas, when you wrote before about Ascalon, I did not write any reply,
+               being interrupted by constant anxieties, do not think to yourselves that any action
+               taken by you is displeasing to me: for I am glad that there also you have again begun
+               to plant a good plantation of faith, Even though the Philistines when they see us
+               say, "Behold! the Hebrews come forth out of their holes where they hid themselves,"
+               we like Jonathan will say, "Come up because the Lord hath delivered them into the
+               hands of Israel." If therefore it shall at any time happen that we remain silent
+               upon receiving anything written by you, do not think that it is because it is
+               displeasing to us that we have remained silent. All things done by you are pleasing,
+               and very pleasing. </p>
+            <trailer>The end.</trailer>
+         </div>      
+      </body>
+  </text>
+</TEI>

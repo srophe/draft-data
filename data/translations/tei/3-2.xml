@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title ref="http://syriaca.org/work/">To Amman and Epagathus</title><!-- FILL IN TITLE AND WORK URI -->
+            <author ref="http://syriaca.org/person/51">Severus of Antioch</author>
+            <sponsor>Center of Digital Humanities Research, Texas A&amp;M University</sponsor>
+            <principal>Daniel L. Schwartz</principal>
+            <editor role="editor" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</editor>
+            <respStmt>
+               <resp>XML created by</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</name>
+            </respStmt>
+            <respStmt>
+               <resp>Based on the work of</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#ewbrooks">E. W. Brooks</name>
+            </respStmt>
+            <respStmt>
+               <resp>OCR corrected by</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</name>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition n="1"/>
+         </editionStmt>
+         <publicationStmt>
+            <distributor>
+               <placeName>Center of Digital Humanities Research, College Station, TX, USA</placeName>
+            </distributor>
+            <authority/><!-- FILL IN AFTER DECIDING ON NAME -->
+            <idno/><!-- FILL IN AFTER DECIDING ON URI/URL FORMAT -->
+            <availability>
+               <licence target="http://creativecommons.org/licenses/by/4.0/">
+                  <p>Creative Commons — Attribution 4.0 International — CC BY 4.0</p>
+                  <p>https://creativecommons.org/licenses/by/4.0/</p>
+               </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <editor ref="http://syriaca.org/person/403">
+                     <persName xml:lang="en">
+                        <forename>E. W.</forename>
+                        <surname>Brooks</surname>
+                     </persName>
+                  </editor>
+                  <title type="main" xml:lang="en" level="m">
+                     The Sixth Book of the Select Letters of
+                     <persName ref="http://syriaca.org/person/51">Severus Patriarch of Antioch</persName>
+                     in the Syriac Version of
+                     <persName ref="http://syriaca.org/person/1014">Athanasius of Nisibis</persName>
+                  </title>
+                  <title type="sub" xml:lang="en" level="m">Vol. II (Translation) Part II</title>
+                  <idno type="URI">http://syriaca.org/bibl/669</idno>
+                  <imprint>
+                     <publisher xml:lang="en">Williams and Norgate</publisher>
+                     <pubPlace ref="http://syriaca.org/place/861">Oxford</pubPlace>
+                     <date>1903</date>
+                  </imprint>
+                  <extent>Vol. 4 of 4</extent>
+                  <biblScope unit="vol">2.2</biblScope>
+                  <biblScope unit="page">233-36</biblScope>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <editorialDecl>
+            <p/><!-- FILL IN -->
+         </editorialDecl>
+      </encodingDesc>
+      <profileDesc>
+         <creation>
+            <origDate type="composition"/><!-- FILL IN. La Route Royale dates are probably preferable to Brooks' dates. -->
+         </creation>
+      </profileDesc>
+      <revisionDesc status="draft">
+         <change when="2019-11" who="http://syriaca.org/person.xml#dschwartz">Created file</change>
+      </revisionDesc>
+   </teiHeader>
+  <text>
+      <body>
+         <div type="letter" n="3.2">
+            <pb n="233"/>
+            <head type="main" resp="#compiler">Of the same to Amman and Epagathus.</head>
+            <head type="sub" resp="#compiler">from those after banishment, from the 7th book the 29th
+               letter.</head>
+            <p> I am astonished at the extent of your admirable goodness, that after such expenses
+               on my behalf, who am not worthy of anything of the kind, expenses which you have
+               incurred from love of God, you have considered it right to bestow these things upon
+               me even when I am at a distance in greater abundance and with greater generosity.
+               <add><emph>And after other things.</emph></add> But I rejoiced greatly, and
+               offered prayers of thanksgiving to Christ who is God and the giver of all good, who
+               has willed that a male child should be born to you the Christ-loving Ammian beyond
+               all human hope. Since you have submitted the choice of his name to my judgment, out
+               of the abundance of faith that you possess, and make me bold by urging me to say and
+               do things above the measure that belongs to me, I have judged it to be a good and
+               fitting thing that he should be named John: since the holy Baptist and Forerunner
+               also was born to his parents beyond hope and expectation; and I believe that through
+               his intercession he will live and reach the due length of life and advanced old age.
+               Indeed on the very day on which I received your welcome letter that notified <pb
+                  n="234"/> his birth to me I placed it on the holy mysteries: and, when I was about
+               to communicate after my custom in the divine communion (for it was a day of
+               assembly), after the other lessons and the sacred song of Alleluia, I began to read
+               the revered gospel: and I found the appointed lesson to be the story of the holy
+               Forerunner and Baptist, and his divine martyrdom and consummation, when he was
+               beheaded for the sake of God's law; and from the fact that it happened so I concluded
+               that Jesus also the God of the sacred Gospels had sanctioned and approved the method
+               of naming the boy which I had chosen, I beseech you not to delay even for the space
+               of one day: but to seize the favourable opportunity tat has been given us by God, and
+               present the boy to the God-loving father <choice>
+                  <reg>Zʿura</reg>
+                  <orig>Z'ura</orig>
+               </choice>, for the divine laver of regeneration. But, when you enjoy such freedom
+               from restraint, how can it be anything but a very unreasonable action, and such as to
+               provoke Christ our Redeemer and God, to ask for the communion or oblation to be sent
+               you by my meanness? Those persons to whom it is necessary to send it are those who
+               are wholly deprived of divine communion: for, when the faith is one, the holy
+               communion also is assuredly one, not something different and diverse, even if one of
+               the offering priests have a heavenly and high, and the other a degraded and low
+               character. It is not the man who offers the sacrifice, but Christ completes it
+               through the words uttered by the offerer, and changes the bread into flesh and the
+               cup into blood, by the power, inspiration, <pb n="235"/> and grace of His Spirit. For
+               this reason too it happened once that, when a famine had extended over the whole
+               land, and Elijah the prophet was living in the torrent-bed called that of Cherith, by
+               God's command ravens brought him every day bread in the morning and flesh in the
+               evening, the narrative signifying that, though certain men be unclean like ravens,
+               they are mediators through whom the divine food is given and imparted to us, and they
+               do not inflict any injurious stain on those who partake, nor does the uncleanness and
+               loose character of those who administer the divine grace cause any detriment to those
+               who are fed, provided of course that their faith is orthodox and sound (you are not
+               unaware that the law inserts the raven among the unclean kinds of birds). Gregory the
+               Theologian also, who was bishop of Nazianzus and teacher of all that is under heaven,
+               in the discourse on holy baptism teaches that there is no difference whatever between
+               the divine laver of regeneration performed by a priest of lax character and that
+               which is given by a priest eminent for asceticism and the other virtues: explaining
+               the matter by the following image and simile. As two seals, he says, of which one is
+               made of pure unalloyed gold, and the other of lead, if they bear one and the same
+               signet without difference in any point graven upon themselves, will both impress one
+               and the same likeness upon wax without variation in any point, and <pb n="236"/> no
+               one who has not seen them can discern from the wax which is the signet that was made
+               by the golden seal, and which by the leaden, so, though one priest be a man of gold
+               by reason of the purity of his character, and the other one that has the darkness and
+               worthlessness of lead by reason of the remissness of his life, so long as they
+               possess the one seal of the orthodox faith alike in all points, and in no way
+               adulterated by heretical doctrine, both perform one baptism and one oblation, of the
+               same power and glory, and nothing inferior in any point whatever. Therefore your
+               intelligences in the Lord must with all assurance approach the divine communion of
+               the saintly bishops who are living among you and of the God-loving presbyters who
+               confess the same faith as we in all points and proclaim it with boldness, and do not
+               shrink from fear, nor craftily adulterate it, as the Apostle says: for men such as
+               these one ought to shun as manifest heretics. But, to speak with God's permission,
+               you have plenty both of bishops and of presbyters that are genuine and have no
+               adulteration about them. </p>
+            <trailer>Not the end.</trailer>
+         </div>      </body>
+  </text>
+</TEI>

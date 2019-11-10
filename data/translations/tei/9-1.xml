@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title ref="http://syriaca.org/work/">To the Fathers</title><!-- FILL IN TITLE AND WORK URI -->
+            <author ref="http://syriaca.org/person/51">Severus of Antioch</author>
+            <sponsor>Center of Digital Humanities Research, Texas A&amp;M University</sponsor>
+            <principal>Daniel L. Schwartz</principal>
+            <editor role="editor" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</editor>
+            <respStmt>
+               <resp>XML created by</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</name>
+            </respStmt>
+            <respStmt>
+               <resp>Based on the work of</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#ewbrooks">E. W. Brooks</name>
+            </respStmt>
+            <respStmt>
+               <resp>OCR corrected by</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</name>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition n="1"/>
+         </editionStmt>
+         <publicationStmt>
+            <distributor>
+               <placeName>Center of Digital Humanities Research, College Station, TX, USA</placeName>
+            </distributor>
+            <authority/><!-- FILL IN AFTER DECIDING ON NAME -->
+            <idno/><!-- FILL IN AFTER DECIDING ON URI/URL FORMAT -->
+            <availability>
+               <licence target="http://creativecommons.org/licenses/by/4.0/">
+                  <p>Creative Commons — Attribution 4.0 International — CC BY 4.0</p>
+                  <p>https://creativecommons.org/licenses/by/4.0/</p>
+               </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <editor ref="http://syriaca.org/person/403">
+                     <persName xml:lang="en">
+                        <forename>E. W.</forename>
+                        <surname>Brooks</surname>
+                     </persName>
+                  </editor>
+                  <title type="main" xml:lang="en" level="m">
+                     The Sixth Book of the Select Letters of
+                     <persName ref="http://syriaca.org/person/51">Severus Patriarch of Antioch</persName>
+                     in the Syriac Version of
+                     <persName ref="http://syriaca.org/person/1014">Athanasius of Nisibis</persName>
+                  </title>
+                  <title type="sub" xml:lang="en" level="m">Vol. II (Translation) Part II</title>
+                  <idno type="URI">http://syriaca.org/bibl/669</idno>
+                  <imprint>
+                     <publisher xml:lang="en">Williams and Norgate</publisher>
+                     <pubPlace ref="http://syriaca.org/place/861">Oxford</pubPlace>
+                     <date>1903</date>
+                  </imprint>
+                  <extent>Vol. 4 of 4</extent>
+                  <biblScope unit="vol">2.2</biblScope>
+                  <biblScope unit="page">417-20</biblScope>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <editorialDecl>
+            <p/><!-- FILL IN -->
+         </editorialDecl>
+      </encodingDesc>
+      <profileDesc>
+         <creation>
+            <origDate type="composition"/><!-- FILL IN. La Route Royale dates are probably preferable to Brooks' dates. -->
+         </creation>
+      </profileDesc>
+      <revisionDesc status="draft">
+         <change when="2019-11" who="http://syriaca.org/person.xml#dschwartz">Created file</change>
+      </revisionDesc>
+   </teiHeader>
+  <text>
+      <body>
+         <div type="letter" n="9.1">
+            <head type="main" resp="#compiler">Of the same to the fathers.</head>
+            <head type="sub" resp="#compiler">From those during episcopacy, from the 6th book the 4th
+               letter.</head>
+            <p> Aeneas and Zacharias the devout deacons, and Elijah the devout monk, who have
+               obtained a testimonial from you, of which I also was not unaware, have been admitted
+               by the Holy Spirit, the two former to the honour and second seat of the presbyterate,
+               the last to the rank of the deacons, and to the status of the diaconate. I would that
+               all were like these, men who are advanced to this position with a good <pb n="418"/>
+               and sound testimonial, and because they are called by reason of being needed, and do
+               not put themselves voluntarily forward out of unseemly ambition and self-will.
+               <add><emph>And after other things.</emph></add> But those who received the name
+               of clergymen from Gregory the follower of Theodotus the Re-anointer must in all
+               points and by all means be reckoned among laymen. However, in the case of those who
+               have been admitted to baptism by them, let no one say that they must be enrolled
+               among the unbaptized. In fact we hear that. many when beset by a storm at sea, or by
+               other pressing circumstances of a similar kind, in order not to miss the invocation,
+               have conferred baptism upon themselves, either with their own hands or with the
+               assistance of others who however were laymen, the rite being made complete for them
+               by the invocation, and the anointing with the holy chrism being added afterwards:
+               although it is a matter of presumption for us to say anything decisive in such cases,
+               and not to speak by way of investigation and consideration. As to the follower of
+               Isaiah the Armenian, let him not even be named, a man who like Dathan and Abiram rose
+               not against Moses but against the high-priestly chrism, and wished not so much to be
+               as to be called that which he also coveted. About him one might find many things to
+               say, a man who, besides. his illegal pretence in contravention of the canons, <pb
+                  n="419"/> has also committed the very serious sin of oath-breaking, not once but
+               twice also and thrice and many times, and instead of the character of oath-keeping
+               has gained that of oath-breaking. And no wonder. In fact in the times of the holy
+               Timothy also they say that Cyrus the simple thus arose suddenly and out of self-will
+               and fatuously pretended to hold the high-priesthood, and perished together with this
+               drunken supposition. <add><emph>And again after other things.</emph></add> You write
+               also about the bishop of the city of the men of Berytus, finding fault with the
+               indiscriminating character of his clergymen; and you are unaware that he has in fact
+               fallen into the nets of Eutyches and of Valentine, and of those who have contracted
+               the disease of the phantasy and deny the true Incarnation. He has had the infirmity
+               latent in him all this long time, and I do not know how it is that he has now brought
+               it to light. For this reason also I have sent the religious presbyter and steward
+               Eusebius and the God-loving presbyter and entertainer of strangers Victor to the said
+               city of the men of Berytus, in order to convert the man who has erred if he accepts
+               correction, or if he is contentious expose him by refutation, and subject him to the
+               canons. This same man also admitted the man who was prelate of Scythopolis to honour
+               after his decease, a man who was scarcely even a Christian as you yourselves also
+               know, thus committing a deed full of all folly and without discrimination. <pb
+                  n="420"/> Wherefore also I meet with daily deaths, since I fight and strive with
+               greater severity with those who are thought to be catholics than with those outside.
+               For everyone who sins and receives any kind of admonition arms himself for strife and
+               battle. <add><emph>And again after other things.</emph></add> But I beg that the
+               letter be also read as usual to the saintly presbyter Zoninus and Irenaeus and
+               Zenobius and Eubulus and the rest. Through the persons mentioned, who appropriate the
+               superscription, this epistle was addressed to their love of God also; and through you
+               I greet all the God-loving fathers and brothers who are with you, and I ask to have
+               your God-beseeming prayers, given with great earnestness. </p>
+            <trailer>The end.</trailer>
+         </div>      
+      </body>
+  </text>
+</TEI>

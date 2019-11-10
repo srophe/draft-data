@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title ref="http://syriaca.org/work/">To the Believers in Antioch</title><!-- FILL IN TITLE AND WORK URI -->
+            <author ref="http://syriaca.org/person/51">Severus of Antioch</author>
+            <sponsor>Center of Digital Humanities Research, Texas A&amp;M University</sponsor>
+            <principal>Daniel L. Schwartz</principal>
+            <editor role="editor" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</editor>
+            <respStmt>
+               <resp>XML created by</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</name>
+            </respStmt>
+            <respStmt>
+               <resp>Based on the work of</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#ewbrooks">E. W. Brooks</name>
+            </respStmt>
+            <respStmt>
+               <resp>OCR corrected by</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</name>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition n="1"/>
+         </editionStmt>
+         <publicationStmt>
+            <distributor>
+               <placeName>Center of Digital Humanities Research, College Station, TX, USA</placeName>
+            </distributor>
+            <authority/><!-- FILL IN AFTER DECIDING ON NAME -->
+            <idno/><!-- FILL IN AFTER DECIDING ON URI/URL FORMAT -->
+            <availability>
+               <licence target="http://creativecommons.org/licenses/by/4.0/">
+                  <p>Creative Commons — Attribution 4.0 International — CC BY 4.0</p>
+                  <p>https://creativecommons.org/licenses/by/4.0/</p>
+               </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <editor ref="http://syriaca.org/person/403">
+                     <persName xml:lang="en">
+                        <forename>E. W.</forename>
+                        <surname>Brooks</surname>
+                     </persName>
+                  </editor>
+                  <title type="main" xml:lang="en" level="m">
+                     The Sixth Book of the Select Letters of
+                     <persName ref="http://syriaca.org/person/51">Severus Patriarch of Antioch</persName>
+                     in the Syriac Version of
+                     <persName ref="http://syriaca.org/person/1014">Athanasius of Nisibis</persName>
+                  </title>
+                  <title type="sub" xml:lang="en" level="m">Vol. II (Translation) Part II</title>
+                  <idno type="URI">http://syriaca.org/bibl/669</idno>
+                  <imprint>
+                     <publisher xml:lang="en">Williams and Norgate</publisher>
+                     <pubPlace ref="http://syriaca.org/place/861">Oxford</pubPlace>
+                     <date>1903</date>
+                  </imprint>
+                  <extent>Vol. 4 of 4</extent>
+                  <biblScope unit="vol">2.2</biblScope>
+                  <biblScope unit="page">268-70</biblScope>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <editorialDecl>
+            <p/><!-- FILL IN -->
+         </editorialDecl>
+      </encodingDesc>
+      <profileDesc>
+         <creation>
+            <origDate type="composition"/><!-- FILL IN. La Route Royale dates are probably preferable to Brooks' dates. -->
+         </creation>
+      </profileDesc>
+      <revisionDesc status="draft">
+         <change when="2019-11" who="http://syriaca.org/person.xml#dschwartz">Created file</change>
+      </revisionDesc>
+   </teiHeader>
+  <text>
+      <body>
+         <div type="letter" n="4.8">
+            <head type="main" resp="#compiler">Of the same to the believers in Antioch.</head>
+            <head type="sub" resp="#compiler">From those after banishment, from the 2nd book the 9th
+               letter.</head>
+            <p> To the holy church of God in Antioch, the devout clergymen and those that are among
+               the people, Severus greeting in the Lord. Neither at an earlier time when I left your
+               Christ-loving city did you omit——. <add><emph>And after other things.</emph></add>
+               And to others again, showing how great are the benefits of sufferings for Christ's
+               sake, he wrote in an epistle, "Unto you it was given not only to believe on Christ,
+               but also to suffer for His sake," calling it a gift given by God that they should
+               suffer in the cause of piety. Fitly therefore and as beseems your intelligence and
+               the earnestness of your character you are searching and inquiring both as to the
+               exact nature of the right faith, and as to the way to observe this with carefulness.
+               For a man to be polluted by the communion of heretics ruins all the labours and <pb
+                  n="269"/> toils even of the solitary life, and leads to hell and final
+               destruction: from which the divine John the Evangelist also tried to hinder men,
+               writing thus: [Here follows the citation given on p. 263] The God-clad Basil too, the
+               great doctor of the church, wrote in an epistle to a certain monk named Urbicius,
+               saying: [Here follows the citation given on p. 259] In the letter to count Terence
+               also he speaks thus: "But, even if a man come from heaven itself, but is not in
+               accord with the sound word of faith, I cannot reckon him a communicator in the
+               sacraments." And in writing to the same Terence's daughters who were deaconesses he
+               repeats the same things in a terrifying form, because the Arians and Fighters against
+               the Spirit were disturbing the churches of God and were surging against them
+               tyrannically: "But they who speak of either the Son or the Spirit as a creature, or
+               reduce Him in any way to a subsidiary and servile office, are far from the truth:
+               whose communion one should shun and from whose words one should turn away as being
+               destructive of souls." And to Patrophilus the bishop he wrote thus: "If these things
+               seem to you a fit subject for grief, impute the separation to those who were the
+               cause. But, if you judge them indifferent, pardon us when we do not consent to be of
+               the leaven of those who teach other things." Gregory also the Theologian wrote thus
+               about the Arians who were in power at that time, as <pb n="270"/> I said, and
+               compelled the orthodox to communicate with them against their will: "Having made this
+               one charge only, that they did not assent to the impiety and were not polluted by the
+               communion; which we shun as serpent's poison, that does not hurt the body but
+               blackens the depths of the soul." Let no one therefore cause you to depart from that
+               which is right. For "in a very little while He that cometh will come and will not
+               tarry": and "He will render to every man according to his deeds." For it is in very
+               truth "a fearful thing to fall into the hands of the living God." </p>
+            <trailer>Not the end.</trailer>
+         </div>      
+      </body>
+  </text>
+</TEI>

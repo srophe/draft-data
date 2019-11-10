@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title ref="http://syriaca.org/work/">To Philip the Presbyter</title>
+            <author ref="http://syriaca.org/person/51">Severus of Antioch</author>
+            <sponsor>Center of Digital Humanities Research, Texas A&amp;M University</sponsor>
+            <principal>Daniel L. Schwartz</principal>
+            <editor role="editor" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</editor>
+            <respStmt>
+               <resp>XML created by</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</name>
+            </respStmt>
+            <respStmt>
+               <resp>Based on the work of</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#ewbrooks">E. W. Brooks</name>
+            </respStmt>
+            <respStmt>
+               <resp>OCR corrected by</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</name>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition n="1"/>
+         </editionStmt>
+         <publicationStmt>
+            <distributor>
+               <placeName>Center of Digital Humanities Research, College Station, TX, USA</placeName>
+            </distributor>
+            <authority/><!-- FILL IN AFTER DECIDING ON NAME -->
+            <idno/><!-- FILL IN AFTER DECIDING ON URI/URL FORMAT -->
+            <availability>
+               <licence target="http://creativecommons.org/licenses/by/4.0/">
+                  <p>Creative Commons — Attribution 4.0 International — CC BY 4.0</p>
+                  <p>https://creativecommons.org/licenses/by/4.0/</p>
+               </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <editor ref="http://syriaca.org/person/403">
+                     <persName xml:lang="en">
+                        <forename>E. W.</forename>
+                        <surname>Brooks</surname>
+                     </persName>
+                  </editor>
+                  <title type="main" xml:lang="en" level="m">
+                     The Sixth Book of the Select Letters of
+                     <persName ref="http://syriaca.org/person/51">Severus Patriarch of Antioch</persName>
+                     in the Syriac Version of
+                     <persName ref="http://syriaca.org/person/1014">Athanasius of Nisibis</persName>
+                  </title>
+                  <title type="sub" xml:lang="en" level="m">Vol. II (Translation) Part I</title>
+                  <idno type="URI">http://syriaca.org/bibl/668</idno>
+                  <imprint>
+                     <publisher xml:lang="en">Williams and Norgate</publisher>
+                     <pubPlace ref="http://syriaca.org/place/861">Oxford</pubPlace>
+                     <date>1903</date>
+                  </imprint>
+                  <extent>Vol. 3 of 4</extent>
+                  <biblScope unit="vol">2.1</biblScope>
+                  <biblScope unit="page">145-48</biblScope>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <editorialDecl>
+            <p/><!-- FILL IN -->
+         </editorialDecl>
+      </encodingDesc>
+      <profileDesc>
+         <creation>
+            <origDate type="composition"/><!-- FILL IN. La Route Royale dates are probably preferable to Brooks' dates. -->
+         </creation>
+      </profileDesc>
+      <revisionDesc status="draft">
+         <change when="2019-11" who="http://syriaca.org/person.xml#dschwartz">Created file</change>
+      </revisionDesc>
+   </teiHeader>
+  <text>
+      <body>
+         <div type="letter" n="1.51">
+            <head type="main" resp="#compiler">Of the same to Philip the presbyter.</head>
+            <head type="sub" resp="#compiler">From those after banishment, from the 2nd book the 40th
+               letter.</head>
+            <p> I have read the words written by your religiousness, not without sorrow, but with
+               sympathy: not like a stranger but like a brother: not as one who is above law, but as
+               one who is subject to law. Wherefore I am writing to you that you may rejoice, not
+               that you may be distressed: that you may know yourself, not that you may despair. Do
+               not think that what you have written needs a refutation of the same length. You
+               perhaps made your letter so long from a desire to incline the reader to pity and draw
+               attention to your purpose: but I listen to the sacred writings rather than to you:
+               and in submission to the precise declaration of the Spirit I quote to you the
+               ordinance of Koheleth which ordains that "there is a time for everything," and with
+               the other things says this also, "A time to weep and a time to laugh, a time to mourn
+               and a time to dance." At the proper time, as you say, you confessed the sins of your
+               youth to the common and holy fathers. But to me you made the confession at an
+               improper time and after the fitting season; for I acquiesce in your written statement
+               in order that you <pb n="146"/> may know that, as the sacred text somewhere says, it
+               is right to obey God under all circumstances. But perhaps you will say that even now
+               you have not missed the proper time, seeing that the canons admit the confession of
+               great sins even after ordination, and exclude those who confess them from the sacred
+               ministry, and allow them to share only the privileges and the name of the priesthood.
+               Know that I too am not unaware of this statute. But what can the effect upon me be
+               when the Apostle cries, "The covenant which was before confirmed by God the law which
+               was afterwards does not annul?" I describe as the covenant of God the testimony given
+               by our common teacher and father John, the great man of God, when he presented you
+               for ordination, and I heartily confirm it. It seems to me therefore great presumption
+               for me to annul the testimony of a father of this character and such as he, or to add
+               anything to this and give orders that go beyond it. For we all know that that man was
+               not a doer of his own will, nor presumptuous in actions, but one who, if any other
+               man besides, makes the blessing his own which is promised to those who "fear
+               everything through devoutness." Wherefore also I assuredly know that after the
+               confession which you made of your sins, unless he had received confirmation by
+               inspiration from above, he would not have advanced you to this rank. Whenever
+               therefore any of the lapses that you committed in youth troubles your memory, recall
+               <pb n="147"/> your thoughts to him who gave you the testimony and forget yourself,
+               and be "turned into another man," and boldly perform the duties proper to the sacred
+               ministry: and do not show yourself excessive in devoutness and trust yourself to the
+               pronouncements of the thoughts, lest you hear the sacred scripture reproving you and
+               saying, "Be not righteous overmuch, neither make thyself over wise lest thou be
+               astonied." Whereas you are here, there, and everywhere representing second marriage
+               as a thing that is less serious than the greatest sins and yet is excluded from
+               priestly functions, know that such a conception falls outside the range of spiritual
+               interpretation. A second marriage was granted by way of indulgence, as a support of
+               weakness: and he who has resorted to this of his own will and by deliberate judgment
+               has enrolled himself among those that are weak and have been granted an indulgence
+               and are in the second order, and are not raised to the first sacred rank. It is
+               therefore manifest presumption, and contempt of the sacred laws, for a man to enrol
+               himself among those that are weak and objects of indulgence, and to do this with the
+               law's aid and openly, and then strive to rise to the first sacred rank, which is
+               composed of those who are sound. But a man who-has sinned in the times of his youth
+               has not fallen under sin because he judged it lawful to sin, but has committed an
+               involuntary lapse, insomuch that he may be purified by penitence. I do not say this
+               in <pb n="148"/> order to show a second marriage to be a sin (far be it!); it is
+               rather a support for weakness, that does not place those who are married outside the
+               company of those who are saved, but assigns them a low rank. Incline your ear
+               therefore to the divine law, and when it bids you perform priestly functions say the
+               words that are written, "Speak, Lord, for thy bondsman heareth." However, if for the
+               present you shrink from offering the perfect sacrifice, I will allow you to abstain
+               for a time, but not to go so far as to bind yourself under such an inhibition. But in
+               all other functions you shall not be restrained in any way whatever. </p>
+            <trailer>The end.</trailer>
+         </div>
+      </body>
+  </text>
+</TEI>

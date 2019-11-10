@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title ref="http://syriaca.org/work/">To Constantine the Bishop</title><!-- FILL IN TITLE AND WORK URI -->
+            <author ref="http://syriaca.org/person/51">Severus of Antioch</author>
+            <sponsor>Center of Digital Humanities Research, Texas A&amp;M University</sponsor>
+            <principal>Daniel L. Schwartz</principal>
+            <editor role="editor" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</editor>
+            <respStmt>
+               <resp>XML created by</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</name>
+            </respStmt>
+            <respStmt>
+               <resp>Based on the work of</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#ewbrooks">E. W. Brooks</name>
+            </respStmt>
+            <respStmt>
+               <resp>OCR corrected by</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</name>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition n="1"/>
+         </editionStmt>
+         <publicationStmt>
+            <distributor>
+               <placeName>Center of Digital Humanities Research, College Station, TX, USA</placeName>
+            </distributor>
+            <authority/><!-- FILL IN AFTER DECIDING ON NAME -->
+            <idno/><!-- FILL IN AFTER DECIDING ON URI/URL FORMAT -->
+            <availability>
+               <licence target="http://creativecommons.org/licenses/by/4.0/">
+                  <p>Creative Commons — Attribution 4.0 International — CC BY 4.0</p>
+                  <p>https://creativecommons.org/licenses/by/4.0/</p>
+               </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <editor ref="http://syriaca.org/person/403">
+                     <persName xml:lang="en">
+                        <forename>E. W.</forename>
+                        <surname>Brooks</surname>
+                     </persName>
+                  </editor>
+                  <title type="main" xml:lang="en" level="m">
+                     The Sixth Book of the Select Letters of
+                     <persName ref="http://syriaca.org/person/51">Severus Patriarch of Antioch</persName>
+                     in the Syriac Version of
+                     <persName ref="http://syriaca.org/person/1014">Athanasius of Nisibis</persName>
+                  </title>
+                  <title type="sub" xml:lang="en" level="m">Vol. II (Translation) Part I</title>
+                  <idno type="URI">http://syriaca.org/bibl/668</idno>
+                  <imprint>
+                     <publisher xml:lang="en">Williams and Norgate</publisher>
+                     <pubPlace ref="http://syriaca.org/place/861">Oxford</pubPlace>
+                     <date>1903</date>
+                  </imprint>
+                  <extent>Vol. 3 of 4</extent>
+                  <biblScope unit="vol">2.1</biblScope>
+                  <biblScope unit="page">3-11</biblScope>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <editorialDecl>
+            <p/><!-- FILL IN -->
+         </editorialDecl>
+      </encodingDesc>
+      <profileDesc>
+         <creation>
+            <origDate type="composition"/><!-- FILL IN. La Route Royale dates are probably preferable to Brooks' dates. -->
+         </creation>
+      </profileDesc>
+      <revisionDesc status="draft">
+         <change when="2019-11" who="http://syriaca.org/person.xml#dschwartz">Created file</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div type="letter" n="1.1">
+            <pb n="3"/>
+            <head type="main" resp="#compiler">To Constantine the bishop.</head>
+            <head type="sub" resp="#compiler">From those before episcopacy, from the 2nd book the 12th
+               letter.</head>
+            <p> The contents of your sanctity's former epistle to me are as far from applying to my
+               vileness as the heaven is far from the earth, to use the words of the prophet. For
+               you thought fit to recite to me the passage of the Song of Songs, I mean, "Thou art
+               all fair, my neighbour, and there is no spot [in thee." ...]. I [am turned] into
+               another man, as it is written and prophesy, and that not one of all your words shall
+               fall <pb n="4"/> to the ground. For he is faithful who said to you high priests, "Ye
+               shall call my name upon the sons of Israel, and I the Lord will hallow them."!
+               However, let these things be so. But know, father ours, that, after the holy Asterius
+               the bishop and those with him came here, many various [...] will cast those that are
+               deceived into a pit of destruction. But all, so to speak, have the one object only,
+               to bring to naught the <foreign>typos</foreign> or formula of satisfaction which
+               seemed good to the pious king, which he also sent to Flavian, the prelate of the city
+               of Antiochus, and either altogether to remove and abolish it, or to cut away some of
+               its exactitude, because they do not intend to drink the still water, as says Ezekiel,
+               but strive to foul it with their own feet, in order that the sheep which have learned
+               to hear the voice of the Good Shepherd, and to drink "the water of Shiloah that goeth
+               softly," may not be able to avoid the pollution of the drink. Which John of
+               Claudiupolis also tried to do when he came here. When he received me in the house of
+               the glorious Patrick, the Master of the Soldiers, and conversed with me by order of
+               our pious king, he said, "There ought to be introduced into the formula of
+               satisfaction <pb n="5"/> this statement, 'We receive the synod at Chalcedon, not as a
+               definition of faith, but as a rejection of Nestorius and of Eutyches.' Thus both
+               those that are pleased with the Synod will not be angry, and you will receive
+               contentment in that the doctrines which offend you are rejected." But I said, "This
+               argument is silly, and the offspring of a drunken mind. Who is there among
+               right-minded persons who will accept and praise us on account of this disturbance and
+               confusion? If the Synod of Chalcedon introduced the doctrine of Nestorius into the
+               churches, though it called Nestorius 'of small intelligence' in order to entice and
+               deceive those that are more simple, how can we say that it rejected the opinion of
+               Nestorius? But, if the formula of satisfaction in so many words rejects the doctrines
+               of the Synod and of the impious Tome of Leo, which are the life blood of the
+               abomination of Nestorius, how can we honestly say that we accept this synod as
+               against Nestorius? [...] rather we shall be tripped up as by [...]" "What then? Were
+               not those at Chalcedon rightly moved against Eutyches? why, [if] you accept them on
+               this point, do you think them fit [...] an anathema?" [But] I said, "What I am about to
+               say is strange, but nevertheless true. It is especially for this reason that we say
+               that they are men that deserve anathema, because they unnecessarily extended the <pb
+                  n="6"/> heresy of Eutyches. Owing to the fact that they wished to heal the
+               disorder in an unintelligent way by means of an opposite infection, mean by the evil
+               impiety of Nestorius, thenceforward those who were infected with the belief in a
+               phantasy, seeing that they were inviting them to man-worship, recoiled from this
+               vicious remedy, and thought themselves all the more pious, and carried their own
+               corruption further. But, if they had been cured and healed by means of right
+               doctrines, they would perhaps have abandoned their infection. [If] we accept those
+               [who] met together [at] Chalcedon as being adversaries [of] the heresy of Eutyches,
+               and praise them on the ground that they spoke well up to a certain point, and do not
+               rather blame them, it is time for us to accept also the Arian heresy, which contends
+               against the evil opinion of Sabellius, and agrees up to a certain point with the
+               right doctrines of the Church, in that it glorifies God the unbegotten Father, and in
+               that it does not confound the three substances, but confines them within their own
+               attributes or persons. But we do not extol it on this account, nor do we judge it to
+               deserve a partial anathema. But, because it calls the Son and the Holy Spirit
+               creatures, and degrades them to a servile position, on this account it is utterly
+               repudiated by the orthodox doctors of the Church. This same trick we find practised
+               by the other heresies also. By displaying a certain part of the sound faith as a
+               decoy and mixing with this the vanity of their <pb n="7"/> own profane words they
+               thus appear plausible to those that are more innocent and simple; but we do not, on
+               account of the sound part, hold back and shrink from repudiating them, but we
+               anathematize them with all our power." When the good and excellent John had heard
+               these things, he betook himself to another topic. He asked me whether Epiphanius the
+               bishop," who is among the saints, performed our ordinations fitly and in accordance
+               with the canon. But I said, "Very well and most properly," and "after the pattern of
+               the doctors and stablishers of the word of the orthodox faith. For he in his boyhood
+               was brought up in monasteries, and practised a virginity modelled on the angelic and
+               unembodied life, being a citizen of Perga: a man of no ignoble city, as it is
+               written, yes, and a man of noble birth also, if these things are not small to the
+               citizens of Jerusalem above. Having been advanced to the bishopric of Magydum (this
+               also is a city in Pamphylia) at the time of the Encyclical which repudiated the
+               impiety that was confirmed at Chalcedon, under which Timothy, who was sent into exile
+               for piety's sake, returned to Alexander's city, and received back the presidency of
+               the flock of Mark the Evangelist, which before was unrighteously tended by wolves and
+               torn, when he saw that the bishops had changed, and that they had overthrown the
+               Encyclical by a contrary <pb n="8"/> document, and had gone back to the Synod of
+               Chalcedon and its hateful doctrines, he left his throne and Pamphylia, the land of
+               his fathers, and the blessed man came as a fugitive to Alexander's city, and embraced
+               communion with the saintly Timothy, the champion of the right faith, having taken
+               joyfully upon him the spoiling of his goods, and knowing that he had in heaven a
+               better and enduring inheritance, as the wise Paul says. But, when Timothy of holy
+               memory had finished his course and kept his faith? and departed to God, the zealots
+               of the orthodox faith were again persecuted in Alexander's city, and the correct word
+               was perturbed by certain men's mixture. Then therefore the blessed Epiphanius
+               withdrew to Palestine, the stranger on the earth, who did not know any city of his
+               own, or rather knew that only as his own in which God over all is purely worshipped.
+               And, having associated with Peter of Iberia of holy memory, the God-clad man, who was
+               bishop of one of the cities in Palestine, and with the other holy fathers and
+               orthodox peoples, he was persuaded by them and ordained priests, not going beyond the
+               meaning of the sacred canons (far be it!) The canon that forbids a bishop to perform
+               an ordination in provinces or parishes which do not belong to him comes into play in
+               cases where he forces himself upon other men's countries in a disorderly fashion and
+               without an invita<pb n="9"/>tion from anyone, not when he is persuaded to ordain by
+               the bishop of the country or city and by the orthodox clergymen, especially in time
+               of persecution. We may find such instances also if we study church histories. In the
+               times of the Arians, when the servants of piety were persecuted and suffered every
+               kind of evil, Eusebius the bishop of Samosata (this is one of the cities of
+               Mesopotamia) went about the cities and deserts and villages, and travelled to
+               countries outside the boundaries, wearing a soldier's dress and having his head
+               covered by a hood, and applied his sacred hand and confirmed priests for places that
+               were in need; who also put on a crown of martyrdom, having his head crushed by a
+               stone by the heterodox, and migrated in saintly fashion to Jesus who longed for him,
+               and was admitted to the heavenly mansions. These things are clearly stated by
+               Theodoret in his church history. The great light of the Cappadocians also, or rather
+               of the whole world, Basil the bishop, the pillar of the church, the 'sure foundation'
+               (for these words of the apostle fit him more than any man, as fine raiment a bride),
+               was raised to the throne of the bishopric, receiving ordination to the episcopacy, by
+               bishops outside the boundaries. This Gregory the Theologian says in the funeral
+               discourse on Basil himself, writing thus: 'He is raised to the high throne of the
+               bishopric, not without toil nor without envy and contention on <pb n="10"/> the part
+               of the prelates of the country, and of the worst men of the city who ranged
+               themselves with these; however, the Holy Spirit was bound to conquer: yes, and it
+               does conquer, gaining an easy victory. For from outside the boundaries it stirs up
+               men to anoint, men distinguished and zealous in the matter of piety.' But, if Basil,
+               the teacher of orthodoxy and rule and law of all church discipline, was anointed and
+               received ordination (for this is the anointing of a high-priest) from those outside
+               the boundaries, because the people of the country or province were jealous of him, on
+               account of the Arian heresy or for other human reasons, which is a very small thing,
+               how can we say that the ordinations that were performed among us by a man outside the
+               boundaries, when the transgression of Chalcedon and the Nestorian heresy bare rule
+               and prevailed, are not to be approved? and we have such great and wonderful instances
+               of holy men and such as these, whose zeal is resembled by ours. But what shall we for
+               our part say of the ordinations that are now performed in the churches? What canon
+               respecting these is not trampled upon? Are not high-priesthoods now everywhere for
+               sale, as we see in the case of civil governorship of cities (the other things I pass
+               over, lest by falling into evil speaking or backbiting and saying things suited to
+               other men I be thought to be choosing for myself matters that do not concern me)?"
+               While I was saying these things, the <pb n="11"/> gentle John covered his face. But
+               since perhaps, even after he has returned to you, he will again circulate the same
+               suggestions (for this. is the habit of those who cause confusion), I have thought it
+               right to make known to your sanctity the details of our honest and lawful discussion
+               of this matter in this royal city. As to the state of our affairs, I think the
+               religious presbyter Peter has once already given you information by letter upon each
+               several point. Still it is a matter for your saintly prayers that the Lord, as is
+               said in the Psalms, after we have "passed through fire and water" may 'bring us out
+               into a place of refreshment." But you as watchful shepherds and strict disciples of
+               the chief shepherd Jesus, who brought us up with Him from among the dead by the blood
+               of the everlasting covenant, "stand fast in the faith, quit you like men, and be
+               strong. Let all your things be done with" orthodoxy or the right opinions. For you
+               have "chosen the good part, which shall not be taken away from" you. And we believe
+               that the whole lump also will coalesce with your holy first fruit and be kneaded: for
+               through your prayers we have in all our troubles gained experience of the help of
+               God, and the comfort of hopes of success has not departed from us. </p>
+            <trailer>The end.</trailer>
+            <note resp="#compiler">Letters like this, of the same tenour, were written to the
+               patricians also, and to Oecumenius.</note>
+         </div>
+      </body>
+   </text>
+</TEI>

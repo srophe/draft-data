@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title ref="http://syriaca.org/work/">To Stephen, Bishop of Tripolis</title><!-- FILL IN TITLE AND WORK URI -->
+            <author ref="http://syriaca.org/person/51">Severus of Antioch</author>
+            <sponsor>Center of Digital Humanities Research, Texas A&amp;M University</sponsor>
+            <principal>Daniel L. Schwartz</principal>
+            <editor role="editor" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</editor>
+            <respStmt>
+               <resp>XML created by</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</name>
+            </respStmt>
+            <respStmt>
+               <resp>Based on the work of</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#ewbrooks">E. W. Brooks</name>
+            </respStmt>
+            <respStmt>
+               <resp>OCR corrected by</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</name>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition n="1"/>
+         </editionStmt>
+         <publicationStmt>
+            <distributor>
+               <placeName>Center of Digital Humanities Research, College Station, TX, USA</placeName>
+            </distributor>
+            <authority/><!-- FILL IN AFTER DECIDING ON NAME -->
+            <idno/><!-- FILL IN AFTER DECIDING ON URI/URL FORMAT -->
+            <availability>
+               <licence target="http://creativecommons.org/licenses/by/4.0/">
+                  <p>Creative Commons — Attribution 4.0 International — CC BY 4.0</p>
+                  <p>https://creativecommons.org/licenses/by/4.0/</p>
+               </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <editor ref="http://syriaca.org/person/403">
+                     <persName xml:lang="en">
+                        <forename>E. W.</forename>
+                        <surname>Brooks</surname>
+                     </persName>
+                  </editor>
+                  <title type="main" xml:lang="en" level="m">
+                     The Sixth Book of the Select Letters of
+                     <persName ref="http://syriaca.org/person/51">Severus Patriarch of Antioch</persName>
+                     in the Syriac Version of
+                     <persName ref="http://syriaca.org/person/1014">Athanasius of Nisibis</persName>
+                  </title>
+                  <title type="sub" xml:lang="en" level="m">Vol. II (Translation) Part I</title>
+                  <idno type="URI">http://syriaca.org/bibl/668</idno>
+                  <imprint>
+                     <publisher xml:lang="en">Williams and Norgate</publisher>
+                     <pubPlace ref="http://syriaca.org/place/861">Oxford</pubPlace>
+                     <date>1903</date>
+                  </imprint>
+                  <extent>Vol. 3 of 4</extent>
+                  <biblScope unit="vol">2.1</biblScope>
+                  <biblScope unit="page">44-46</biblScope>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <editorialDecl>
+            <p/><!-- FILL IN -->
+         </editorialDecl>
+      </encodingDesc>
+      <profileDesc>
+         <creation>
+            <origDate type="composition"/><!-- FILL IN. La Route Royale dates are probably preferable to Brooks' dates. -->
+         </creation>
+      </profileDesc>
+      <revisionDesc status="draft">
+         <change when="2019-11" who="http://syriaca.org/person.xml#dschwartz">Created file</change>
+      </revisionDesc>
+   </teiHeader>
+  <text>
+      <body>
+         <div type="letter" n="1.9">
+            <head type="main" resp="#compiler">Of the same to Stephen, bishop of Tripolis.</head>
+            <head type="sub" resp="#compiler">From those during episcopacy, from the 8th book the
+               276th, 277th letter.</head>
+            <p> Sinful and vile man though we are, nothing pleases us so much as to try to do
+               everything that we wish to do with reason. Wherefore also we accept and praise your
+               love of God for having been in doubt with regard to one of the paragraphs that were
+               written by us: regarding which we must by all means make a canonical answer; for it
+               is written, "The lips of a priest shall keep knowledge, and they shall ask for law
+               from his mouth." What is the question which you ask because you were in doubt?
+               Whether the devout presbyter Stephen ought to be reckoned among the holy clergy of
+               the holy church in Tripolis, when he does not bring with him a dimissory letter from
+               him who ordained him. <pb n="45"/> Now in the first place we hear that the man was
+               ordained by force, and that he recoiled from or objected to an ordination outside the
+               bounds, because he cannot live in a strange city which is not his own. And in the
+               second place, even if this which we have stated is not the fact, we ought to know
+               that those who do not hold to the orthodox faith, and therefore to the pure communion
+               of our apostolic throne, have no share in strict canonical form, and we ought not to
+               seek a dimissory letter from these, as if it were something necessary and required by
+               law, or any other canonical requisite, when men flee from association with these, and
+               come over to the sound teaching. This we may learn easily and without trouble from
+               the epistle of the holy Cyril (every utterance of whom one would say is a law of the
+               church) to Nestorius, in which he asserted himself to be in communion with all who
+               had been separated by him, and had received from him either a ban of excommunication
+               or a decree of deprivation, in these words: "But we are all in communion with all who
+               have been separated by your devoutness and deprived on account of the faith, laymen
+               and clergymen." Do therefore the things which have been decided by us to be right
+               without any doubt or hesitation, and know clearly that, if we had not taken much
+               account of the saintly memory of Severus the presbyter whose is the lot of the
+               saints, we should not perhaps have written to you any such thing. For your love of
+               <pb n="46"/> God must be assured that it is our earnest endeavour and desire not
+               to write anything at all to the God-loving bishops under the apostolic throne about
+               ordination, or about the enrolling of individuals in the order of the clergy, unless
+               perhaps some just cause somewhere arise, as we see to be the case in the present
+               instance also to which we are now referring. As to the venerable cross remaining
+               fixed before the house of Theodore the illustrious governor and
+               <foreign>vindex</foreign> after the former fashion, let your sanctity make it your
+               earnest concern that it do so. It is the duty of bishops like you to cut short and to
+               restrain any unregulated movements of the mob, if they should indeed occur, and to
+               set themselves to maintain all good order in the cities, and to keep watch over the
+               peaceful manners and customs of those who are fed by them. </p>
+            <trailer>The end.</trailer>
+         </div>
+      </body>
+  </text>
+</TEI>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title ref="http://syriaca.org/work/">To Stephen Bishop of Apamea</title><!-- FILL IN TITLE AND WORK URI -->
+            <author ref="http://syriaca.org/person/51">Severus of Antioch</author>
+            <sponsor>Center of Digital Humanities Research, Texas A&amp;M University</sponsor>
+            <principal>Daniel L. Schwartz</principal>
+            <editor role="editor" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</editor>
+            <respStmt>
+               <resp>XML created by</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</name>
+            </respStmt>
+            <respStmt>
+               <resp>Based on the work of</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#ewbrooks">E. W. Brooks</name>
+            </respStmt>
+            <respStmt>
+               <resp>OCR corrected by</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</name>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition n="1"/>
+         </editionStmt>
+         <publicationStmt>
+            <distributor>
+               <placeName>Center of Digital Humanities Research, College Station, TX, USA</placeName>
+            </distributor>
+            <authority/><!-- FILL IN AFTER DECIDING ON NAME -->
+            <idno/><!-- FILL IN AFTER DECIDING ON URI/URL FORMAT -->
+            <availability>
+               <licence target="http://creativecommons.org/licenses/by/4.0/">
+                  <p>Creative Commons — Attribution 4.0 International — CC BY 4.0</p>
+                  <p>https://creativecommons.org/licenses/by/4.0/</p>
+               </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <editor ref="http://syriaca.org/person/403">
+                     <persName xml:lang="en">
+                        <forename>E. W.</forename>
+                        <surname>Brooks</surname>
+                     </persName>
+                  </editor>
+                  <title type="main" xml:lang="en" level="m">
+                     The Sixth Book of the Select Letters of
+                     <persName ref="http://syriaca.org/person/51">Severus Patriarch of Antioch</persName>
+                     in the Syriac Version of
+                     <persName ref="http://syriaca.org/person/1014">Athanasius of Nisibis</persName>
+                  </title>
+                  <title type="sub" xml:lang="en" level="m">Vol. II (Translation) Part II</title>
+                  <idno type="URI">http://syriaca.org/bibl/669</idno>
+                  <imprint>
+                     <publisher xml:lang="en">Williams and Norgate</publisher>
+                     <pubPlace ref="http://syriaca.org/place/861">Oxford</pubPlace>
+                     <date>1903</date>
+                  </imprint>
+                  <extent>Vol. 4 of 4</extent>
+                  <biblScope unit="vol">2.2</biblScope>
+                  <biblScope unit="page">380-82</biblScope>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <editorialDecl>
+            <p/><!-- FILL IN -->
+         </editorialDecl>
+      </encodingDesc>
+      <profileDesc>
+         <creation>
+            <origDate type="composition"/><!-- FILL IN. La Route Royale dates are probably preferable to Brooks' dates. -->
+         </creation>
+      </profileDesc>
+      <revisionDesc status="draft">
+         <change when="2019-11" who="http://syriaca.org/person.xml#dschwartz">Created file</change>
+      </revisionDesc>
+   </teiHeader>
+  <text>
+      <body>
+         <div type="letter" n="7.6">
+            <head type="main" resp="#compiler">Of the same to Stephen bishop of Apamea.</head>
+            <head type="sub" resp="#compiler">From those during episcopacy, from. the 1h book the
+               106th Letter.</head>
+            <p> I have thought it necessary to commend to your love of God the man who brings you
+               this letter, and to <pb n="381"/> state the reason for which he has come to you. The
+               magnificent and Christ-loving Marinus wrote to me to say that the man is his kinsman,
+               and that he is in need of some assistance, as many say; and that by reason of his
+               retiring character he would not consent to throw himself into political affairs and
+               obtain relief from that source: but he thought it suited to his habits to be included
+               among the clergy of the city of the Apamenes: for he is in fact also from that same
+               country. Therefore he asked in his letter that this might be carried out for him in
+               actual fact. And I after investigating the man's mode of life found, as far as was
+               possible for men, that he had not neglected modesty of conduct. But do you also with
+               men fitted for this purpose examine the man further, and you will know that he is not
+               one unworthy of such a favour. This presupposed, we shall be paying a very just debt
+               to the magnificent and Christ-loving Marinus, who concerns himself much about our
+               affairs, if we include the man among the clergy of the holy church of the Apamenes,
+               and admit him to the order of the diaconate. So much for this matter. As to the
+               circumstances of the time, I beg you to remember our humble admonitions, and do all
+               things with discretion, and reckon all other things second to the integrity of the
+               orthodox faith, in order that you may appear perfect and say like Paul, "I can do all
+               things, in Christ which strengtheneth me." <pb n="382"/> The men of the blessed <choice>
+                  <reg>ʿAkiba</reg>
+                  <orig>'Akiba</orig>
+               </choice> have written to me about John the monk, who has betaken himself to a
+               temporary retirement with you, to the effect that it was not by their counsel that he
+               removed from their monastery, but also that here too he sought to be ordained on his
+               own authority (I must use their words); and this they explained not only by their
+               letter, but also by sending devout monks here. Accordingly I beg you not to lay a
+               daring hand upon him until his archimandrite gives his consent; lest we be found to
+               be incurring blame, as breaking the holy ordinances of the churches and of the
+               monasteries. </p>
+            <trailer>The end.</trailer>
+         </div>      
+      </body>
+  </text>
+</TEI>

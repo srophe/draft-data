@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title ref="http://syriaca.org/work/">To Ammonius a Presbyter of Alexandria</title><!-- FILL IN TITLE AND WORK URI -->
+            <author ref="http://syriaca.org/person/51">Severus of Antioch</author>
+            <sponsor>Center of Digital Humanities Research, Texas A&amp;M University</sponsor>
+            <principal>Daniel L. Schwartz</principal>
+            <editor role="editor" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</editor>
+            <respStmt>
+               <resp>XML created by</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</name>
+            </respStmt>
+            <respStmt>
+               <resp>Based on the work of</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#ewbrooks">E. W. Brooks</name>
+            </respStmt>
+            <respStmt>
+               <resp>OCR corrected by</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</name>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition n="1"/>
+         </editionStmt>
+         <publicationStmt>
+            <distributor>
+               <placeName>Center of Digital Humanities Research, College Station, TX, USA</placeName>
+            </distributor>
+            <authority/><!-- FILL IN AFTER DECIDING ON NAME -->
+            <idno/><!-- FILL IN AFTER DECIDING ON URI/URL FORMAT -->
+            <availability>
+               <licence target="http://creativecommons.org/licenses/by/4.0/">
+                  <p>Creative Commons — Attribution 4.0 International — CC BY 4.0</p>
+                  <p>https://creativecommons.org/licenses/by/4.0/</p>
+               </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <editor ref="http://syriaca.org/person/403">
+                     <persName xml:lang="en">
+                        <forename>E. W.</forename>
+                        <surname>Brooks</surname>
+                     </persName>
+                  </editor>
+                  <title type="main" xml:lang="en" level="m">
+                     The Sixth Book of the Select Letters of
+                     <persName ref="http://syriaca.org/person/51">Severus Patriarch of Antioch</persName>
+                     in the Syriac Version of
+                     <persName ref="http://syriaca.org/person/1014">Athanasius of Nisibis</persName>
+                  </title>
+                  <title type="sub" xml:lang="en" level="m">Vol. II (Translation) Part II</title>
+                  <idno type="URI">http://syriaca.org/bibl/669</idno>
+                  <imprint>
+                     <publisher xml:lang="en">Williams and Norgate</publisher>
+                     <pubPlace ref="http://syriaca.org/place/861">Oxford</pubPlace>
+                     <date>1903</date>
+                  </imprint>
+                  <extent>Vol. 4 of 4</extent>
+                  <biblScope unit="vol">2.2</biblScope>
+                  <biblScope unit="page">253-57</biblScope>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <editorialDecl>
+            <p/><!-- FILL IN -->
+         </editorialDecl>
+      </encodingDesc>
+      <profileDesc>
+         <creation>
+            <origDate type="composition"/><!-- FILL IN. La Route Royale dates are probably preferable to Brooks' dates. -->
+         </creation>
+      </profileDesc>
+      <revisionDesc status="draft">
+         <change when="2019-11" who="http://syriaca.org/person.xml#dschwartz">Created file</change>
+      </revisionDesc>
+   </teiHeader>
+  <text>
+      <body>
+         <div type="letter" n="4.2">
+            <head type="main" resp="#compiler">Of the same to Ammonius a presbyter of Alexandria, in
+               which he gave him information as to the mention of Peter who was bishop of
+               Alexandria.</head>
+            <head type="sub" resp="#compiler">From those during episcopacy, from the 1st book the 22nd
+               letter.</head>
+            <p> You bear witness to a wisdom in us which we do not possess, and you call yourself
+               weak in comparison with this, as if we were inviting you to a wrestling-arena or a
+               contest: but for my part I will in due season use the words of Job who says, "But
+               where was wisdom found? and what is the place of understanding? Man knoweth not the
+               way thereof, neither is it found among men." Wherefore I looked to the Giver of
+               wisdom, and to Him I yielded abundance of <pb n="254"/> understanding thoughts, and I
+               do not come to your brotherly person with many words, but: use as few words as
+               possible. For I think that either you have forgotten what I wrote to you before, or
+               you are purposely turning your mind away from it. For what else ought I to have done
+               but communicate with you when the mention of Peter was inserted in the sacred
+               tablets, without raising any objection but I ought not also to be required to praise
+               and call distinguished a man who is not at heart so regarded by me, although you are
+               otherwise minded. <add><emph>And after other things.</emph></add> Whereas you say of
+               Peter who was bishop of your city that he wrote to those who were at one time and
+               another bishops of the city of Antiochus, and openly anathematized the things done at
+               Chalcedon against the right faith, and the impious Tome of Leo, know that we too are
+               not unaware of this: but we express blame on the ground that he embraced the
+               communion of those who did not write the same things as he did. Indeed not a single
+               man among those outside in the epistles that he addressed to him can be shown to have
+               anathematized those who spoke or speak of two natures after the union, let alone the
+               Chalcedonian Synod, or the blasphemous Tome of Leo. Tell me: if now also upon our
+               writing to the prelate of the royal city maybe, and anathematizing the things that we
+               actually anathematize he were to draw up a trimming letter, containing only a
+               confession of the right faith, but not further an anathema of the offending <pb
+                  n="255"/> things also, would this suffice for a pure, sincere, firm conjunction?
+               Not in the least. For instance, when Timothy was instituted after the expulsion of
+               Macedonius, and sent a synodical letter to the saintly John, archbishop of the city
+               of the Alexandrines, with nothing satisfactory about it, his holiness both wrote an
+               epistle in answer, and through some method of mediation required him to remove the
+               offending things by anathema; for he had held his peace, and had adopted the
+               reprehensible course of silence. But the party of Dioscorus and Chaeremon, having
+               always been hirelings and hucksters of piety, were not contented with this only, but
+               also caused a letter to be drawn up by the pious king, addressed to the saintly John,
+               archbishop of your city, which contained no small complaints, on the ground that he
+               had not been contented with the Henotikon only, as Peter and Athanasius and John who
+               succeeded the latter had been, without requiring: reference to be made in actual
+               words to the impious things done at Chalcedon or to the impious Tome of Leo. And they
+               induced the illustrious king for the purpose of proof to include in his pious letter
+               a copy of the letters; the letters that Peter, Athanasius, and John addressed to the
+               bishops who were outside: which had been produced at an earlier time also in the city
+               of the Sidonians, when the synod of bishops was assembled there, and cast great shame
+               upon us who were combating on behalf of orthodoxy, and nothing else was left to us
+               <pb n="256"/> except only to hide ourselves and yield to manifest refutations. To
+               these was also attached a letter of the pious John the archbishop written to
+               Dioscorus and Chaeremon, to the effect that he did not ask for anything beyond the
+               Henotikon only with no further addition. Do not therefore tell me that Peter wrote
+               this and that to those who in earlier times occupied the throne of Antiochus' city:
+               but show that they ever took upon themselves to write things agreeing with Peter's
+               statements. Or, if you do not show this, he will be clearly convicted of having
+               communicated with those who did not say and think the same as he did. How then did
+               you bring yourself, and that though you are firm on all points, to write this
+               assertion: "We for our part have done nothing new or great in anathematizing the
+               Synod of Chalcedon and the impious Tome of Leo" The analogy of the dead man, who
+               defiles or does not defile water, and the difficulty arising from it you must not
+               take in this way, subjecting the mind to bodily conceptions, and restricting
+               pollution to the effect of a multitude of bodies. In the mind of those who examine
+               with intelligence, a mention whether one or many of men who have committed impiety
+               causes the same abomination: which nothing else can extinguish except an abundance as
+               I have said of the water of right faith, copiously poured upon everyone, <pb n="257"
+               /> and a loyal anathema of the offending things, like much water which covers the sea
+               according to the expression of the prophet. </p>
+            <trailer>Not the end.</trailer>
+         </div>      
+      </body>
+  </text>
+</TEI>

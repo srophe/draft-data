@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title ref="http://syriaca.org/work/">To John and Philoxenus and Thomas the
+               Bishops, Confessors on the Hill of Marde</title><!-- FILL IN TITLE AND WORK URI -->
+            <author ref="http://syriaca.org/person/51">Severus of Antioch</author>
+            <sponsor>Center of Digital Humanities Research, Texas A&amp;M University</sponsor>
+            <principal>Daniel L. Schwartz</principal>
+            <editor role="editor" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</editor>
+            <respStmt>
+               <resp>XML created by</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</name>
+            </respStmt>
+            <respStmt>
+               <resp>Based on the work of</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#ewbrooks">E. W. Brooks</name>
+            </respStmt>
+            <respStmt>
+               <resp>OCR corrected by</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</name>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition n="1"/>
+         </editionStmt>
+         <publicationStmt>
+            <distributor>
+               <placeName>Center of Digital Humanities Research, College Station, TX, USA</placeName>
+            </distributor>
+            <authority/><!-- FILL IN AFTER DECIDING ON NAME -->
+            <idno/><!-- FILL IN AFTER DECIDING ON URI/URL FORMAT -->
+            <availability>
+               <licence target="http://creativecommons.org/licenses/by/4.0/">
+                  <p>Creative Commons — Attribution 4.0 International — CC BY 4.0</p>
+                  <p>https://creativecommons.org/licenses/by/4.0/</p>
+               </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <editor ref="http://syriaca.org/person/403">
+                     <persName xml:lang="en">
+                        <forename>E. W.</forename>
+                        <surname>Brooks</surname>
+                     </persName>
+                  </editor>
+                  <title type="main" xml:lang="en" level="m">
+                     The Sixth Book of the Select Letters of
+                     <persName ref="http://syriaca.org/person/51">Severus Patriarch of Antioch</persName>
+                     in the Syriac Version of
+                     <persName ref="http://syriaca.org/person/1014">Athanasius of Nisibis</persName>
+                  </title>
+                  <title type="sub" xml:lang="en" level="m">Vol. II (Translation) Part II</title>
+                  <idno type="URI">http://syriaca.org/bibl/669</idno>
+                  <imprint>
+                     <publisher xml:lang="en">Williams and Norgate</publisher>
+                     <pubPlace ref="http://syriaca.org/place/861">Oxford</pubPlace>
+                     <date>1903</date>
+                  </imprint>
+                  <extent>Vol. 4 of 4</extent>
+                  <biblScope unit="vol">2.2</biblScope>
+                  <biblScope unit="page">345-50</biblScope>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <editorialDecl>
+            <p/><!-- FILL IN -->
+         </editorialDecl>
+      </encodingDesc>
+      <profileDesc>
+         <creation>
+            <origDate type="composition"/><!-- FILL IN. La Route Royale dates are probably preferable to Brooks' dates. -->
+         </creation>
+      </profileDesc>
+      <revisionDesc status="draft">
+         <change when="2019-11" who="http://syriaca.org/person.xml#dschwartz">Created file</change>
+      </revisionDesc>
+   </teiHeader>
+  <text>
+      <body>
+         <div type="letter" n="5.14">
+            <head type="main" resp="#compiler">Of the same to John and Philoxenus and Thomas the
+               bishops, confessors on the hill of Marde.</head>
+            <head type="sub" resp="#compiler">From those after banishment, from the 4th book the 21st
+               letter.</head>
+            <p> On reading your sanctities' letter I thought of Elijah the Tishbite prophet, who
+               when persecuted by impiety betook himself to the hill of Horeb, and as a reward for
+               his tribulation gained the privilege of seeing and conversing with God, so far as is
+               possible <pb n="346"/> for men. When He that knows all things before they are as it
+               is written approached him like a father, and assumed the appearance of ignorance in
+               order to comfort him, like a father who comforts his beloved son by playing with him,
+               and in order to lighten the weariness and distress that he had incurred from the long
+               journey, and said to him, "What doest thou here, Elijah?", he stirred up the zeal
+               that was blazing in him and answered very hotly (and that though speaking to Him who
+               knows all things and whom nothing escapes), "I have been zealous for the Lord the
+               All-Ruler, because the sons of Israel have forsaken thee. Thine altars they have
+               thrown down: and thy prophets they have slain with the sword. And I only am left: and
+               they seek my life to take it away." And He put fresh heart in him by revealing
+               Himself to him in mightier fashion and initiating him in more perfect knowledge.
+               Therefore I am convinced and assured that your love of God also, who have imitated
+               the same pattern of zeal, and walk in the footsteps of a like mode of life, who
+               engage as combatants not only in the contest of confession after the manner of
+               martyrs, but also in the patient labours of the ascetic life, will also be gratified
+               with the conversation and sight of God, and that you will render the hill called in
+               the tongue of the country Marde no meaner than the hill of Horeb, but even more
+               glorious than that. For by drawing to you companies of holy monks, and <pb n="347"/>
+               of men who are living the coenobitic life while cleaving to orthodoxy, and by
+               recalling and healing like shepherds and fathers at the same time those who have
+               transgressed or otherwise become remiss and been swept away to follow the violence of
+               the time you have also appropriated to your hill the glory of another higher and
+               holier hill that is situated in Jerusalem, I mean on the corner-stone of Zion, the
+               watch-house that is higher than all the earth, which you have surpassed by making
+               more peculiar to yourselves in a higher sense the grace and title of the episcopate
+               also, which were given you already by the Spirit, but are confirmed by works every
+               day, as the Apostle says. Indeed I see many running and hastening to the summit of
+               your hill also, even as to that hill, and saying the words of the prophecy that have
+               been carried out in actual deeds, "Come let us go up to the hill of the Lord and to
+               the house of the God of Jacob, and He will show us His way and we will walk in it."
+               And I have confidence in saying that they will not be disappointed of their hope. For
+               you teach those who stand to keep the orthodox faith, and to practise a devout and
+               just life: while to those who have been led away to error you teach the way of
+               repentance by giving them forgiveness canonical and legal. Wherefore also, showing
+               humility in this point too, you ask <pb n="348"/> our meanness how those who have
+               been baptized by this heresy that now prevails ought to be received. To this I made
+               answer in writing at an earlier time also when I was living in the city of the
+               Antiochenes, because certain persons in unthinking fervour had supposed that these
+               ought to be perfected by chrism, just as the custom is for Arians and Fighters
+               against the Spirit to be received. I think that the religious presbyter and
+               archimandrite John also, who sent me your revered letter, has with him the treatise
+               that was written by me on this point. But I will now also in the same way tell your
+               sanctities in a few words a thing of which you too are not unaware: that at the holy
+               oecumenical synod that assembled at Ephesus and effected the deposition of Nestorius,
+               who raised the heresy of this Diphysite man-worship to a higher position, when
+               Charisius a presbyter who came from the province of the Lydians, and registered his
+               fathers' house at Philadelphia, with many others who had been swept into the error of
+               that heresy, presented petitions to it and exposed the creed previously concocted by
+               the impious Theodore of Mopsuestia, it both received him and admitted him to
+               clemency, not making any canonical pronouncement in their case about chrism or about
+               anything else of this kind: but it lawfully decided that they were to renounce the
+               heresy itself in writing and condemn it by anathema, and so be received and become
+               members of Christ's flock. <pb n="349"/> And all from that time to the present day
+               have been received on these terms by the orthodox bishops who lived at different
+               times; who did not do anything further with regard to them, nor abrogate the covenant
+               confirmed by the fathers, or lay down any additional commandment beyond what were
+               laid down, as Paul somewhere says in writing to the Galatians. Whence also a certain
+               Theodotus, one of the bishops of Palestine, because he presumed to anoint certain
+               persons, was repudiated and expelled, both by Timothy of holy memory, archbishop of
+               the city of the Alexandrines, and by all who shared his opinions and were zealous
+               with zeal that is "according to knowledge" and is pleasing to God. To remove in any
+               matter whatsoever the landmarks that our fathers set up is wholly unlawful, even if a
+               man is deceived by considerations that seem to be rather on the right side. Upon this
+               point these things are sufficient for your perfection in Christ. But I beg you also
+               to extend your diligent watchfulness which becomes shepherds to the God-loving
+               archimandrites and devout solitaries, those that are near you and those that are
+               geographically far from you, and not allow anyone to disturb those that are more
+               simple, in the matter of the question about. the incorruptibility of the body of our
+               Lord and God and Saviour Jesus Christ, which was stirred up among us by Julian who
+               wantonly became impious, and has departed from the life here, but <pb n="350"/> shall
+               answer for his blasphemy and evil belief to the Judge of all, and shall then regret
+               that he was not converted to a right state of mind by the warnings that he received,
+               and this though he was admonished in a gentle and brotherly manner, as your
+               sanctities also who saw what was written will bear witness. It has come to my
+               knowledge that certain men who do not perform any service as is written except things
+               that are vain have torn away an occasional line or two from what I wrote, and have
+               tried to lead astray those that are easily cheated. And no wonder, when even about
+               the wise Paul's epistles Peter the divine, who was instigated by the same Spirit of
+               concord and apostleship, wrote, "which the unlearned and unstable wrest to their
+               destruction, as they do also the other scriptures." Therefore you will do an act
+               worthy of you if you write a common letter to all who have been driven from the holy
+               cloisters, condemning the unlawful statements, and warning them to adhere to the
+               teachings of the holy fathers which our meanness has cited. </p>
+            <trailer>The end.</trailer>
+         </div>      
+      </body>
+  </text>
+</TEI>

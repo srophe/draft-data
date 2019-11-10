@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title ref="http://syriaca.org/work/">To Dionysius Bishop of Tarsus</title><!-- FILL IN TITLE AND WORK URI -->
+            <author ref="http://syriaca.org/person/51">Severus of Antioch</author>
+            <sponsor>Center of Digital Humanities Research, Texas A&amp;M University</sponsor>
+            <principal>Daniel L. Schwartz</principal>
+            <editor role="editor" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</editor>
+            <respStmt>
+               <resp>XML created by</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</name>
+            </respStmt>
+            <respStmt>
+               <resp>Based on the work of</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#ewbrooks">E. W. Brooks</name>
+            </respStmt>
+            <respStmt>
+               <resp>OCR corrected by</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</name>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition n="1"/>
+         </editionStmt>
+         <publicationStmt>
+            <distributor>
+               <placeName>Center of Digital Humanities Research, College Station, TX, USA</placeName>
+            </distributor>
+            <authority/><!-- FILL IN AFTER DECIDING ON NAME -->
+            <idno/><!-- FILL IN AFTER DECIDING ON URI/URL FORMAT -->
+            <availability>
+               <licence target="http://creativecommons.org/licenses/by/4.0/">
+                  <p>Creative Commons — Attribution 4.0 International — CC BY 4.0</p>
+                  <p>https://creativecommons.org/licenses/by/4.0/</p>
+               </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <editor ref="http://syriaca.org/person/403">
+                     <persName xml:lang="en">
+                        <forename>E. W.</forename>
+                        <surname>Brooks</surname>
+                     </persName>
+                  </editor>
+                  <title type="main" xml:lang="en" level="m">
+                     The Sixth Book of the Select Letters of
+                     <persName ref="http://syriaca.org/person/51">Severus Patriarch of Antioch</persName>
+                     in the Syriac Version of
+                     <persName ref="http://syriaca.org/person/1014">Athanasius of Nisibis</persName>
+                  </title>
+                  <title type="sub" xml:lang="en" level="m">Vol. II (Translation) Part II</title>
+                  <idno type="URI">http://syriaca.org/bibl/669</idno>
+                  <imprint>
+                     <publisher xml:lang="en">Williams and Norgate</publisher>
+                     <pubPlace ref="http://syriaca.org/place/861">Oxford</pubPlace>
+                     <date>1903</date>
+                  </imprint>
+                  <extent>Vol. 4 of 4</extent>
+                  <biblScope unit="vol">2.2</biblScope>
+                  <biblScope unit="page">290-94</biblScope>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <editorialDecl>
+            <p/><!-- FILL IN -->
+         </editorialDecl>
+      </encodingDesc>
+      <profileDesc>
+         <creation>
+            <origDate type="composition"/><!-- FILL IN. La Route Royale dates are probably preferable to Brooks' dates. -->
+         </creation>
+      </profileDesc>
+      <revisionDesc status="draft">
+         <change when="2019-11" who="http://syriaca.org/person.xml#dschwartz">Created file</change>
+      </revisionDesc>
+   </teiHeader>
+  <text>
+      <body>
+         <div type="letter" n="5.5">
+            <head type="main" resp="#compiler">Of the same to Dionysius bishop of Tarsus.</head>
+            <head type="sub" resp="#compiler">From those during episcopacy, the 6th book the 178th
+               letter.</head>
+            <p> Having by many circuitous and roundabout methods succeeded in mastering the various
+               aspects of the case of the devout monk and presbyter Mark, and having considered all
+               the circumstances that had come to my knowledge, and finding that he is repeatedly
+               changing, I remembered Him who speaks through Jeremiah the prophet and says to Israel
+               who had sinned, "Behold! I will enter into judgment with thee when thou sayest, 'I
+               have not sinned'; because thou hast been very scornful so as to repeat thy ways"; and
+               again, "if a man put away his wife, and she go from him and become another man's,
+               shall she return to him again?"; and again, "Lift up thine eyes to uprightness and
+               see where thou hast not been defiled." But the same may be seen holding forth the
+               broad path of repentance and saying through Isaiah the gracious words, "I held forth
+               my hands all the day unto a disobedient and gainsaying people, who walk in a way that
+               is not good but after their sins"; and the day is the whole of this life according to
+               Paul the Apostle who says, "Exhort yourselves daily while it is called to-day, that
+               none of <pb n="291"/> you may be hardened by the deceitfulness of sin." Therefore my
+               conclusion and judgment is that an opportunity for penitence be given to the said
+               devout presbyter and monk Mark, in order that he may anathematize in writing the
+               heresies in which he has shared, viz., that of those who divide our one Lord and God
+               Jesus Christ into two natures after the union, and that also of the Massalians with
+               the persons themselves and the doctrines, as we also here caused him to draw up a
+               form of satisfaction? here in writing. For indeed we find certain men in the times of
+               the Arians who removed themselves from the communion of the holy fathers and fell
+               away to the error of the heretics, and were again converted and were not repelled.
+               However the devout Mark must henceforth be cautious and know clearly that it is not
+               possible for him to retain our communion and that of those who do not think the same
+               as we do, seeing that Paul who had Christ speaking in him warns us to shun even
+               communications with such men, saying, [Here follows the citation given on p. 264].
+               And John the speaker of divine things writing an epistle and holding the same opinion
+               speaks thus; [ Here follows the citation given on p. 263]. And Basil, who was moved
+               by the same Spirit as these, and is an accurate teacher of the sacred laws, wrote in
+               the letter to Urbicius the monk as follows; [Here follows the citation given on p.
+               259]. If the circumstances of the present case concerned <pb n="292"/> only the
+               person of the devout presbyter and monk Mark, I would perhaps have closed the letter
+               with these texts. But, since it is a habitation of many brethren, and a headship of
+               rational souls that have taken upon them the philosophic life, in singing of the
+               comeliness of which and the pleasure that it gives to God and in chanting those
+               harmonious spiritual songs the prophet David sang crying, "Behold! what is good and
+               what beautiful except that brethren should dwell together, as Ointment upon the head
+               that runs down upon the beard, the beard of Aaron?", it is your sanctity's duty to
+               look at the number of the brethren dwelling in the monastery, and to comply with the
+               opinion of those who are the majority, provided firstly that the often-mentioned
+               devout Mark did not intrude himself by force and violence, and secondly that he is
+               not by his association disturbing and dissolving the bond of unity, to speak in the
+               language of the Apostle, and the concord of those who are living a life that has no
+               association with the world's confusions, and is beautiful and lovely and resembles
+               ointment. Repentance is not a thing of the same kind as the spiritual headship and
+               superintendence of a monastery. Such men must be of approved character, and men who
+               have walked in all virtue, according to the utterance of the Lord which says in the
+               Gospels, "Who then is the faithful and wise bondman, whom his lord set over his house
+               to give them the food in due season? blessed is the bondman <pb n="293"/> whom his
+               lord shall come and find so doing." I therefore upon the devout monk and presbyter
+               Mark showing penitence in canonical form and confessing his sin have opened to him
+               the door of repentance. But it rests with you, as I said, to determine the question
+               of the headship and superintendence of the monastery, according to the opinion of the
+               brothers who form the majority: because in such cases it is the more fitting course
+               to acquiesce in the wish of the greater number. This I say because I have received a
+               written petition pleading for the devout presbyter and monk Mark, and containing
+               signatures given by the devout clergymen and monks of the same said monastery, which
+               are in number ten only. Therefore, since it was not my part, being at a distance, to
+               give a judgment upon the details of such a question, I have of necessity committed to
+               your holiness the duty of making a detailed investigation of the matter. Considering
+               therefore both points, I mean the superintendence of the cloister, and the gain or
+               loss in regard to the brothers themselves, give a proper decision upon the disputed
+               questions with help and inspiration and grace from above, without which it is
+               impossible for any right action to be done. As to the devout presbyter Julian, the
+               brother of the God-loving bishop Serenus, I forbear to say anything, being convinced
+               that after such an experience he would never have dared to convey false <pb n="294"/>
+               information to the pious ears of our serene Christ-loving king. If in addition to
+               what has already been done he have presumed to do this also, he falls by divine and
+               human laws, from which there is no possibility of escape. </p>
+            <trailer>The end.</trailer>
+         </div>      
+      </body>
+  </text>
+</TEI>

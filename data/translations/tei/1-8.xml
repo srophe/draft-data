@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title ref="http://syriaca.org/work/">To Timostratus</title><!-- FILL IN TITLE AND WORK URI -->
+            <author ref="http://syriaca.org/person/51">Severus of Antioch</author>
+            <sponsor>Center of Digital Humanities Research, Texas A&amp;M University</sponsor>
+            <principal>Daniel L. Schwartz</principal>
+            <editor role="editor" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</editor>
+            <respStmt>
+               <resp>XML created by</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</name>
+            </respStmt>
+            <respStmt>
+               <resp>Based on the work of</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#ewbrooks">E. W. Brooks</name>
+            </respStmt>
+            <respStmt>
+               <resp>OCR corrected by</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</name>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition n="1"/>
+         </editionStmt>
+         <publicationStmt>
+            <distributor>
+               <placeName>Center of Digital Humanities Research, College Station, TX, USA</placeName>
+            </distributor>
+            <authority/><!-- FILL IN AFTER DECIDING ON NAME -->
+            <idno/><!-- FILL IN AFTER DECIDING ON URI/URL FORMAT -->
+            <availability>
+               <licence target="http://creativecommons.org/licenses/by/4.0/">
+                  <p>Creative Commons — Attribution 4.0 International — CC BY 4.0</p>
+                  <p>https://creativecommons.org/licenses/by/4.0/</p>
+               </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <editor ref="http://syriaca.org/person/403">
+                     <persName xml:lang="en">
+                        <forename>E. W.</forename>
+                        <surname>Brooks</surname>
+                     </persName>
+                  </editor>
+                  <title type="main" xml:lang="en" level="m">
+                     The Sixth Book of the Select Letters of
+                     <persName ref="http://syriaca.org/person/51">Severus Patriarch of Antioch</persName>
+                     in the Syriac Version of
+                     <persName ref="http://syriaca.org/person/1014">Athanasius of Nisibis</persName>
+                  </title>
+                  <title type="sub" xml:lang="en" level="m">Vol. II (Translation) Part I</title>
+                  <idno type="URI">http://syriaca.org/bibl/668</idno>
+                  <imprint>
+                     <publisher xml:lang="en">Williams and Norgate</publisher>
+                     <pubPlace ref="http://syriaca.org/place/861">Oxford</pubPlace>
+                     <date>1903</date>
+                  </imprint>
+                  <extent>Vol. 3 of 4</extent>
+                  <biblScope unit="vol">2.1</biblScope>
+                  <biblScope unit="page">4-44</biblScope>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <editorialDecl>
+            <p/><!-- FILL IN -->
+         </editorialDecl>
+      </encodingDesc>
+      <profileDesc>
+         <creation>
+            <origDate type="composition"/><!-- FILL IN. La Route Royale dates are probably preferable to Brooks' dates. -->
+         </creation>
+      </profileDesc>
+      <revisionDesc status="draft">
+         <change when="2019-11" who="http://syriaca.org/person.xml#dschwartz">Created file</change>
+      </revisionDesc>
+   </teiHeader>
+  <text>
+      <body>
+         <div type="letter" n="1.8">
+            <head type="main" resp="#compiler">Of the same to Timostratus the duke.</head>
+            <head type="sub" resp="#compiler">From those during episcopacy, from the 3rd book the
+               256th 258th letter.</head>
+            <p> To me it appears something to be prayed for and desirable to communicate with your
+               greatness by letter: and to return the greeting that is owed to you as if it were
+               some necessary debt, and not make this the accidental result of causes about which I
+               am even <pb n="42"/> ashamed to write. Though I was glad to see your magnificence's
+               recent epistle, it was in sorrow that I ceased the reading of it. For I found the
+               cause or subject of the letter to be grievous when tested by the divine purpose, and
+               difficult and impossible and "after the flesh" to speak in the language of scripture,
+               and one that is sensually judged. Whereas the divine apostle, or rather Christ who
+               speaks in him, limits and restricts the gift of ordination under a certain threat,
+               and says, "Lay thine hand suddenly on no man, neither be partaker of other men's
+               sins; keep thyself in purity," by many the thing is considered as one of the ordinary
+               trades, that of a smith let us say or a carpenter, or as some office that brings with
+               it the gift of sustenance, and an occasion of <foreign>dapane</foreign> or expense
+               and a relief for need; as if it were not permissible for us to acquire the means of
+               life from any other source than this. And the good men do not know that a man must
+               pass through all the degrees of the church, and obtain some kind of previous training
+               for priestly functions, and thus be admitted to ordination as presbyter or as deacon:
+               and this because the thing is a matter of difficulty and rarely to be undertaken in
+               accordance with the previously cited statute which says, "Lay a hand suddenly on no
+               man, neither be partaker of other men's sins," and yet further enacts, "Keep thyself
+               in purity"; and each of the additions declares the awfulness of the Statute, and
+               shows that the hand should in some way <pb n="43"/> be drawn to the head of those who
+               are ordained under great necessity and unwillingly. In order to explain the first
+               reason for which ordination is a formidable matter, these few words are enough for
+               us. But I will add also a second reason, which is concerned with material
+               considerations. This is that our holy church is very poor and needy, and that it is
+               so much distressed and laden by the weight of interest, that it is hardly able even
+               to hold up its head, but debts upon debts are added to its account, and interest upon
+               interest is piled up against it. Of this all who live in the great city of Antiochus
+               are witnesses: and think there are not many even among those beyond its bounds who
+               have not heard of the fact. And nevertheless certain persons in the royal city, and
+               others in its neighbourhood, being worried by certain persons, do not cease every day
+               so to speak writing to our meanness and asking for ordinations; and they think that
+               this is not a matter to excite anger. And so foolish did this desire make some men,
+               that they even made a show of desiring the dress of the priesthood only, and not
+               seeking further to receive sustenance also: and, having once obtained their object,
+               when the time of distribution came, they so to speak held out their hands before all
+               the others: so that not only were those who made a mockery of divine things laughed
+               at for the guile and treachery, but we also who were fraudulently deceived. These
+               things I have been compelled to write to your magnificence, because suffer in myself,
+               and because I know that my <pb n="44"/> letter is addressed to a Christian, and to
+               one who is capable of sympathizing with me and is perhaps also able to hold out a
+               hand to me who am wearied and stupefied like a man who is being strangled by
+               creditors, and am compelled to find sustenance for need without sufficient incomes
+               and revenues, considering the immoderate extent of a demand that is pious indeed, but
+               still difficult to satisfy on account of its frequency. </p>
+            <trailer>The end.</trailer>
+         </div>
+      </body>
+  </text>
+</TEI>

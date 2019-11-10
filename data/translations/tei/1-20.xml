@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title ref="http://syriaca.org/work/">A letter of Summons in the Name of a Synod to the
+               Bishops under the Metropolis of Apamea</title>
+            <author ref="http://syriaca.org/person/51">Severus of Antioch</author>
+            <sponsor>Center of Digital Humanities Research, Texas A&amp;M University</sponsor>
+            <principal>Daniel L. Schwartz</principal>
+            <editor role="editor" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</editor>
+            <respStmt>
+               <resp>XML created by</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</name>
+            </respStmt>
+            <respStmt>
+               <resp>Based on the work of</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#ewbrooks">E. W. Brooks</name>
+            </respStmt>
+            <respStmt>
+               <resp>OCR corrected by</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</name>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition n="1"/>
+         </editionStmt>
+         <publicationStmt>
+            <distributor>
+               <placeName>Center of Digital Humanities Research, College Station, TX, USA</placeName>
+            </distributor>
+            <authority/><!-- FILL IN AFTER DECIDING ON NAME -->
+            <idno/><!-- FILL IN AFTER DECIDING ON URI/URL FORMAT -->
+            <availability>
+               <licence target="http://creativecommons.org/licenses/by/4.0/">
+                  <p>Creative Commons — Attribution 4.0 International — CC BY 4.0</p>
+                  <p>https://creativecommons.org/licenses/by/4.0/</p>
+               </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <editor ref="http://syriaca.org/person/403">
+                     <persName xml:lang="en">
+                        <forename>E. W.</forename>
+                        <surname>Brooks</surname>
+                     </persName>
+                  </editor>
+                  <title type="main" xml:lang="en" level="m">
+                     The Sixth Book of the Select Letters of
+                     <persName ref="http://syriaca.org/person/51">Severus Patriarch of Antioch</persName>
+                     in the Syriac Version of
+                     <persName ref="http://syriaca.org/person/1014">Athanasius of Nisibis</persName>
+                  </title>
+                  <title type="sub" xml:lang="en" level="m">Vol. II (Translation) Part I</title>
+                  <idno type="URI">http://syriaca.org/bibl/668</idno>
+                  <imprint>
+                     <publisher xml:lang="en">Williams and Norgate</publisher>
+                     <pubPlace ref="http://syriaca.org/place/861">Oxford</pubPlace>
+                     <date>1903</date>
+                  </imprint>
+                  <extent>Vol. 3 of 4</extent>
+                  <biblScope unit="vol">2.1</biblScope>
+                  <biblScope unit="page">70-73</biblScope>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <editorialDecl>
+            <p/><!-- FILL IN -->
+         </editorialDecl>
+      </encodingDesc>
+      <profileDesc>
+         <creation>
+            <origDate type="composition"/><!-- FILL IN. La Route Royale dates are probably preferable to Brooks' dates. -->
+         </creation>
+      </profileDesc>
+      <revisionDesc status="draft">
+         <change when="2019-11" who="http://syriaca.org/person.xml#dschwartz">Created file</change>
+      </revisionDesc>
+   </teiHeader>
+  <text>
+      <body>
+         <div type="letter" n="1.20">
+            <head type="main" resp="#compiler">A letter of summons in the name of a synod to the
+               bishops under the metropolis of Apamea.</head>
+            <head type="sub" resp="#compiler">From those during episcopacy, from the 4th book the
+               187th letter.</head>
+            <p> Having been summoned by the grace of God and by the behest of our pious king, we
+               assembled before <pb n="71"/> the evangelical throne of the great Christ-loving city
+               of Antiochus for the purpose of carrying into act whatever seemed good to his
+               serenity's God-loving sovereignty: and one among those who assembled with us was
+               Peter the saintly bishop of the illustrious metropolis of the Apamenes; and, being
+               moved by an affectionate disposition, we were induced to ask his love of God how it
+               was that not one of you was with him, as was in fact the case with the other bishops
+               of the resplendent metropolitan cities. But he said that he wondered whether it was
+               in ignorance of what had happened that we were putting such a question. He was
+               sighing, but still he related how you separated yourselves from the common communion
+               of us all (for it was not from his), and that he left no method of inviting you to
+               concord untried. And, having included a few of the things that were done as he said
+               in a petition, he presented it to the saintly patriarch of the God-loving bishops of
+               the East, asking his beatitude to take canonical steps against the offences committed
+               against him by you, or rather against the common union of the holy churches. For we
+               were in fact all met together in accordance with fair adornment and ecclesiastical
+               order. And, when we had heard the petition, the serious character of the things that
+               have been done called for a decision suited to the circumstances to be put forth: for
+               the above-mentioned <pb n="72"/> God-loving bishop of the metropolis of the Apamenes
+               made certain of the charges themselves almost stand before every man's eyes without
+               needing testimony from without. But we, considering that we are ministers of peace,
+               and that, as we are one body, it is our duty to travel along every path that does not
+               tend towards schism, but summons those who have fallen away to sin to repent,
+               believed it to be right that we should summon you canonically, and should urge you to
+               make a defence for the sins that have been committed, and should give time for
+               repentance, and to say farewell to thoughts that lead to division, and with fitness
+               to cry out to you also the words of the prophet which say, "Stand upon the ways and
+               see and ask for the paths of the Lord that have been from everlasting, and see which
+               is the good way and walk therein, and ye shall find holiness for your souls." For a
+               man to sin is human. But after he has once sinned not to listen to the admonition of
+               friends, who summon him to them in a manner befitting priests, gives occasion for the
+               apostolic distinction that says, "Behold therefore the mildness and severity of God,
+               on them which fell severity, but on thee the mildness of God, if thou continue in
+               mildness: and if not then shalt thou also be cut off." For it is in fact not obscure,
+               especially to those to whose lot it has fallen to feed churches, that the authority
+               of the holy canons cannot remain a dead letter in such things, seeing that <pb n="73"
+               /> "the catholic and apostolic church requires blamelessness." </p>
+            <trailer>The end.</trailer>
+         </div>
+      </body>
+  </text>
+</TEI>

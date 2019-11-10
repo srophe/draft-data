@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title ref="http://syriaca.org/work/">To Hypatius the Master of the
+               Soldiers</title>
+            <author ref="http://syriaca.org/person/51">Severus of Antioch</author>
+            <sponsor>Center of Digital Humanities Research, Texas A&amp;M University</sponsor>
+            <principal>Daniel L. Schwartz</principal>
+            <editor role="editor" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</editor>
+            <respStmt>
+               <resp>XML created by</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</name>
+            </respStmt>
+            <respStmt>
+               <resp>Based on the work of</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#ewbrooks">E. W. Brooks</name>
+            </respStmt>
+            <respStmt>
+               <resp>OCR corrected by</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</name>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition n="1"/>
+         </editionStmt>
+         <publicationStmt>
+            <distributor>
+               <placeName>Center of Digital Humanities Research, College Station, TX, USA</placeName>
+            </distributor>
+            <authority/><!-- FILL IN AFTER DECIDING ON NAME -->
+            <idno/><!-- FILL IN AFTER DECIDING ON URI/URL FORMAT -->
+            <availability>
+               <licence target="http://creativecommons.org/licenses/by/4.0/">
+                  <p>Creative Commons — Attribution 4.0 International — CC BY 4.0</p>
+                  <p>https://creativecommons.org/licenses/by/4.0/</p>
+               </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <editor ref="http://syriaca.org/person/403">
+                     <persName xml:lang="en">
+                        <forename>E. W.</forename>
+                        <surname>Brooks</surname>
+                     </persName>
+                  </editor>
+                  <title type="main" xml:lang="en" level="m">
+                     The Sixth Book of the Select Letters of
+                     <persName ref="http://syriaca.org/person/51">Severus Patriarch of Antioch</persName>
+                     in the Syriac Version of
+                     <persName ref="http://syriaca.org/person/1014">Athanasius of Nisibis</persName>
+                  </title>
+                  <title type="sub" xml:lang="en" level="m">Vol. II (Translation) Part I</title>
+                  <idno type="URI">http://syriaca.org/bibl/668</idno>
+                  <imprint>
+                     <publisher xml:lang="en">Williams and Norgate</publisher>
+                     <pubPlace ref="http://syriaca.org/place/861">Oxford</pubPlace>
+                     <date>1903</date>
+                  </imprint>
+                  <extent>Vol. 3 of 4</extent>
+                  <biblScope unit="vol">2.1</biblScope>
+                  <biblScope unit="page">113-15</biblScope>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <editorialDecl>
+            <p/><!-- FILL IN -->
+         </editorialDecl>
+      </encodingDesc>
+      <profileDesc>
+         <creation>
+            <origDate type="composition"/><!-- FILL IN. La Route Royale dates are probably preferable to Brooks' dates. -->
+         </creation>
+      </profileDesc>
+      <revisionDesc status="draft">
+         <change when="2019-11" who="http://syriaca.org/person.xml#dschwartz">Created file</change>
+      </revisionDesc>
+   </teiHeader>
+  <text>
+      <body>
+         <div type="letter" n="1.40">
+            <pb n="113"/>
+            <head type="main" resp="#compiler">Of the same to Hypatius the Master of the
+               Soldiers.</head>
+            <head type="sub" resp="#compiler">From those during episcopacy, from the 7th book the
+               458th, 465th letter.</head>
+            <p> Your excellency's exalted letters I for my part receive with all affection and
+               pleasure. Though you are so exalted and have so much glory, to which the Lord brought
+               you, you encourage even humble men like me to inform you of things that are the
+               truth, since you place nothing before this. Wherefore I also will truthfully inform
+               your highness of the reason for which i have now composed this mean letter. It was
+               not the devout presbyter Julian only who was accused by the holy church of the
+               Tarsians of detaining property that belonged of right to it, but many others also
+               with him; and in connexion with such accusations those who made the charge and those
+               who were under the charge often wished to have recourse to the apostolic throne of
+               the city that belongs to the Antiochenes and to you. And, since it is my habit not to
+               cause trouble to anyone, but as far as possible to remove the complications arising
+               from affairs, and not to inflict the burden of heavy expense upon men who are
+               compelled to take so long a journey, and at such grievous cost to discuss the points
+               on which they are in doubt, I determined that all the saintly bishops of First
+               Cilicia should sit in conjunction with the eloquent <pb n="114"/> scholastics whom I
+               certainly knew to be of good reputation, and who are well reported of both now and
+               from their former life in Berytus, and discuss the details of the case of each of the
+               persons who are said to be devouring church property. I also provided that two
+               religious presbyters of the apostolic see, men versed in affairs and of minute
+               experience in such matters, should be associated with them in the hearing of the said
+               questions, with the book of the revered and holy gospels also laid in the midst. And
+               after every point had been discussed in due order, and each of them had accepted the
+               judgments given (how could they do otherwise?), the devout Julian only, being
+               afflicted with covetousness, dared to treat the verdict? of the bishops with contempt
+               contrary to the canons and the intention of the rightly-enacted laws, and to drag the
+               hearing before a civil court, in so much as to incur indignation and the punishment
+               prescribed by the canons. And upon his brother the God-loving Syrian, bishop of the
+               city of Augusta, using many entreaties and promising to induce him to keep quiet his
+               punishment was remitted, since I am in fact naturally inclined to the milder course.
+               Indeed he tried by the use of deception to make the illustrious Heliodorus your
+               curator also an accomplice in his plot by giving him false information: and upon your
+               highness obtaining previous information of his proceedings all his plan was
+               shattered. And now again, as if <pb n="115"/> dealing with a new matter he has set
+               himself to entreat your highness, and to seem to be making a moderate request, that
+               he may plead his cause before civil magistrates, after the examination and decision
+               of the apostolic see and of the whole synod, the reversal of a decision of which is
+               not permitted him by any authority, either by the holy canons or by the civil laws.
+               Therefore by his words which are moderate and have a supplicatory appearance he is
+               trying by means of his tricks to suppress things which have passed in order and been
+               brought to a conclusion in this way. And his thoughts are, as one of the prophets
+               said, "a pondering of iniquity, and his sin is hid." For how did he expect to get
+               anything of this kind from you who are very just, seeing that everyone who has made
+               havoc of the property of the church would have imitated his example, and reversed
+               judgments rightly given, and transferred ecclesiastical causes to a magisterial
+               tribunal, and that after judgment had been given and they had received an ending
+               consonant to the laws and to the intention of the divine canons? Therefore I beg and
+               entreat your excellency not to give him an opportunity of appealing to your
+               friendship, and arming himself against the ordinances of the holy church, and
+               destroying all discipline, of which you both are and ever will be a guardian and a
+               protector, so long as you are preserved through your whole life. </p>
+            <trailer>The end.</trailer>
+         </div>
+      </body>
+  </text>
+</TEI>

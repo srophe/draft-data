@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title ref="http://syriaca.org/work/">To the Master of the Offices</title>
+            <author ref="http://syriaca.org/person/51">Severus of Antioch</author>
+            <sponsor>Center of Digital Humanities Research, Texas A&amp;M University</sponsor>
+            <principal>Daniel L. Schwartz</principal>
+            <editor role="editor" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</editor>
+            <respStmt>
+               <resp>XML created by</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</name>
+            </respStmt>
+            <respStmt>
+               <resp>Based on the work of</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#ewbrooks">E. W. Brooks</name>
+            </respStmt>
+            <respStmt>
+               <resp>OCR corrected by</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</name>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition n="1"/>
+         </editionStmt>
+         <publicationStmt>
+            <distributor>
+               <placeName>Center of Digital Humanities Research, College Station, TX, USA</placeName>
+            </distributor>
+            <authority/><!-- FILL IN AFTER DECIDING ON NAME -->
+            <idno/><!-- FILL IN AFTER DECIDING ON URI/URL FORMAT -->
+            <availability>
+               <licence target="http://creativecommons.org/licenses/by/4.0/">
+                  <p>Creative Commons — Attribution 4.0 International — CC BY 4.0</p>
+                  <p>https://creativecommons.org/licenses/by/4.0/</p>
+               </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <editor ref="http://syriaca.org/person/403">
+                     <persName xml:lang="en">
+                        <forename>E. W.</forename>
+                        <surname>Brooks</surname>
+                     </persName>
+                  </editor>
+                  <title type="main" xml:lang="en" level="m">
+                     The Sixth Book of the Select Letters of
+                     <persName ref="http://syriaca.org/person/51">Severus Patriarch of Antioch</persName>
+                     in the Syriac Version of
+                     <persName ref="http://syriaca.org/person/1014">Athanasius of Nisibis</persName>
+                  </title>
+                  <title type="sub" xml:lang="en" level="m">Vol. II (Translation) Part I</title>
+                  <idno type="URI">http://syriaca.org/bibl/668</idno>
+                  <imprint>
+                     <publisher xml:lang="en">Williams and Norgate</publisher>
+                     <pubPlace ref="http://syriaca.org/place/861">Oxford</pubPlace>
+                     <date>1903</date>
+                  </imprint>
+                  <extent>Vol. 3 of 4</extent>
+                  <biblScope unit="vol">2.1</biblScope>
+                  <biblScope unit="page">73-75</biblScope>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <editorialDecl>
+            <p/><!-- FILL IN -->
+         </editorialDecl>
+      </encodingDesc>
+      <profileDesc>
+         <creation>
+            <origDate type="composition"/><!-- FILL IN. La Route Royale dates are probably preferable to Brooks' dates. -->
+         </creation>
+      </profileDesc>
+      <revisionDesc status="draft">
+         <change when="2019-11" who="http://syriaca.org/person.xml#dschwartz">Created file</change>
+      </revisionDesc>
+   </teiHeader>
+  <text>
+      <body>
+         <div type="letter" n="1.21">
+            <head type="main" resp="#compiler">Of the same to the Master of the Offices.</head>
+            <head type="sub" resp="#compiler">From those during episcopacy, from the 4th book the
+               189th letter.</head>
+            <p> The illustrious Rufinus, the well-tried servant of your high eminence, when he
+               brought to our meanness your revered and pious letter, which summoned us to the city
+               of the men of Heraclea, was unable to receive our mean answer, because he was
+               detained by a disease of the eyes; which answer was a short time ago brought to your
+               glory by the resplendent Leontius, who is also one of your slaves. But, now that he
+               is about to go up to the royal city, in payment of my debt I greet your highness. And
+               I report and announce to you that the God-loving bishops residing in this city
+               thought it a right thing to warn those who were bishops in Second Syria, of Epiphania
+               I mean and of Arethusa and of Rhaphania, by a letter of summons, and summon them to
+               them, in order that they might be detached from the disorderliness of those who are
+               heads of the monasteries in those parts, and have unreasonably broken away from
+               communion with us, and that they might either convince the others or be willing to
+               yield to what is right. And some of those who rejoice in schisms and divisions, <pb
+                  n="74"/> and have often conspired and plotted against my mean self also, and do
+               not escape the knowledge of anyone, though they themselves desire to do so, persuaded
+               them not only to pay no attention to their summonses, but even to compose an
+               insulting and unlawful document against the holy synod of God-loving bishops, a
+               document that contains blasphemous expressions against God and against the dress of
+               the priesthood. These things the afore-mentioned saintly bishops discussed with the
+               sacred and venerable book of the gospels laid before them, as well as the other sins
+               committed by them at different times, and they found them to be madly excited (?)
+               against the holy canons and church discipline and against our pious king, as the
+               transactions in their case in fact show; and they laid them under sentence of
+               deprivation: knowing clearly that, if such offences were to be left without reproof,
+               the ordinances of the Spirit would be trampled upon, and any man who is a hearer
+               would rise in opposition to those to whose lot it has fallen to be heads of churches:
+               and, as in the case censured by the divine Paul, disorder would prevail, and the foot
+               would say, "Because I am not the hand I am not of the body," and the ear, "Because I
+               am not the eye I am not of the body," and each of the limbs would renounce its proper
+               place. For there is a canon which says thus; "Bishops who are summoned to a synod
+               should not treat the summons with contempt, <pb n="75"/> but should go and teach or
+               be taught for the purpose of reforming the church and the rest. But, if they treat it
+               with contempt, such a man will be bringing an accusation against himself, unless
+               perhaps he stay away on account of illness." But these gentle persons under.
+               consideration not only set this statute at naught, but also insulted with unlawful
+               expressions the God-loving bishops who are assembled in the great city of Antiochus
+               which after God is yours. They thought fit to call them "no bishops at all," and in
+               unmeasured arrogance they uttered yet other fatuous words which I shrink even from
+               taking upon my tongue. It rests therefore with your excellency not by negligence to
+               allow us to be trampled upon by such men, and be calumniated by men who are seeking
+               their own interests, but to report the truth to the pious Christ-loving ears of our
+               pious king, and extend to us sinners, who pray for your salvation, the just help that
+               you extend to all who suffer wrong. </p>
+            <trailer>The end.</trailer>
+         </div>
+      </body>
+  </text>
+</TEI>

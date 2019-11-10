@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title ref="http://syriaca.org/work/">To the Fathers</title>
+            <author ref="http://syriaca.org/person/51">Severus of Antioch</author>
+            <sponsor>Center of Digital Humanities Research, Texas A&amp;M University</sponsor>
+            <principal>Daniel L. Schwartz</principal>
+            <editor role="editor" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</editor>
+            <respStmt>
+               <resp>XML created by</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</name>
+            </respStmt>
+            <respStmt>
+               <resp>Based on the work of</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#ewbrooks">E. W. Brooks</name>
+            </respStmt>
+            <respStmt>
+               <resp>OCR corrected by</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</name>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition n="1"/>
+         </editionStmt>
+         <publicationStmt>
+            <distributor>
+               <placeName>Center of Digital Humanities Research, College Station, TX, USA</placeName>
+            </distributor>
+            <authority/><!-- FILL IN AFTER DECIDING ON NAME -->
+            <idno/><!-- FILL IN AFTER DECIDING ON URI/URL FORMAT -->
+            <availability>
+               <licence target="http://creativecommons.org/licenses/by/4.0/">
+                  <p>Creative Commons — Attribution 4.0 International — CC BY 4.0</p>
+                  <p>https://creativecommons.org/licenses/by/4.0/</p>
+               </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <editor ref="http://syriaca.org/person/403">
+                     <persName xml:lang="en">
+                        <forename>E. W.</forename>
+                        <surname>Brooks</surname>
+                     </persName>
+                  </editor>
+                  <title type="main" xml:lang="en" level="m">
+                     The Sixth Book of the Select Letters of
+                     <persName ref="http://syriaca.org/person/51">Severus Patriarch of Antioch</persName>
+                     in the Syriac Version of
+                     <persName ref="http://syriaca.org/person/1014">Athanasius of Nisibis</persName>
+                  </title>
+                  <title type="sub" xml:lang="en" level="m">Vol. II (Translation) Part I</title>
+                  <idno type="URI">http://syriaca.org/bibl/668</idno>
+                  <imprint>
+                     <publisher xml:lang="en">Williams and Norgate</publisher>
+                     <pubPlace ref="http://syriaca.org/place/861">Oxford</pubPlace>
+                     <date>1903</date>
+                  </imprint>
+                  <extent>Vol. 3 of 4</extent>
+                  <biblScope unit="vol">2.1</biblScope>
+                  <biblScope unit="page">119-20</biblScope>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <editorialDecl>
+            <p/><!-- FILL IN -->
+         </editorialDecl>
+      </encodingDesc>
+      <profileDesc>
+         <creation>
+            <origDate type="composition"/><!-- FILL IN. La Route Royale dates are probably preferable to Brooks' dates. -->
+         </creation>
+      </profileDesc>
+      <revisionDesc status="draft">
+         <change when="2019-11" who="http://syriaca.org/person.xml#dschwartz">Created file</change>
+      </revisionDesc>
+   </teiHeader>
+  <text>
+      <body>
+         <div type="letter" n="1.42">
+            <pb n="119"/>
+            <head type="main" resp="#compiler">Of the same to the fathers.</head>
+            <head type="sub" resp="#compiler">From those during episcopacy, from the 4th book the 64th
+               letter.</head>
+            <p> Of the circumstances in which we are placed I notified your holinesses before when I
+               sent the letter through the holy monastery at Aphthoria. If you have received this
+               letter, please let me know this by a missive of your own. <add><emph>And after other
+                  things.</emph></add> But Philip, the devout monk from Isauria, who was ordained
+               deacon by me, deceived by avaricious thoughts, in truth yielded to some deceivers and
+               conceived the idea of digging and bringing up treasure. And he incurred blame from me
+               on this account, and was expelled from the chapel of the forty holy martyrs, and was
+               ordered to visit himself with labours of repentance. If therefore he is living in the
+               holy monastery of father Romanus of holy memory, you are acting rightly in allowing
+               him to communicate in the oblation, but excluding him from the deacons' ministry,
+               until he shows fruits of repentance for a certain period of time. As to him who holds
+               the prelacy of the city of the men of Jerusalem, no news has reached us personally as
+               to his reconciliation. But that the man is utterly unstable and weak, seeing that
+               from the very beginning he has lived such a confused and inconstant life, and has
+               thus been raised to the position that he now holds, all who know <pb n="120"/> him
+               are well aware, and I have no need of words on this point. I was glad to see the
+               God-loving presbyter father Apaphon, as I said before, and I thought the man's coming
+               a great blessing, and you may be sure that I would have bought this at a high price;
+               and I have incurred a debt of thanks to Christ our Saviour and God in that I received
+               this pleasure for nothing through your saintly prayers. The sum of gold that was
+               spent by him upon the well, I mean the sum of fifty darics, we paid to him out of a
+               certain God-loving loan. For, believe me, we have not a <foreign>mina</foreign>: and
+               this is the only way in which we are relieved in poverty: while in our other pursuits
+               we distress God and do nothing at all that is pleasing to Him. </p>
+            <trailer>The end.</trailer>
+         </div>
+      </body>
+  </text>
+</TEI>

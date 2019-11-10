@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title ref="http://syriaca.org/work/">To the Fathers</title>
+            <author ref="http://syriaca.org/person/51">Severus of Antioch</author>
+            <sponsor>Center of Digital Humanities Research, Texas A&amp;M University</sponsor>
+            <principal>Daniel L. Schwartz</principal>
+            <editor role="editor" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</editor>
+            <respStmt>
+               <resp>XML created by</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</name>
+            </respStmt>
+            <respStmt>
+               <resp>Based on the work of</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#ewbrooks">E. W. Brooks</name>
+            </respStmt>
+            <respStmt>
+               <resp>OCR corrected by</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</name>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition n="1"/>
+         </editionStmt>
+         <publicationStmt>
+            <distributor>
+               <placeName>Center of Digital Humanities Research, College Station, TX, USA</placeName>
+            </distributor>
+            <authority/><!-- FILL IN AFTER DECIDING ON NAME -->
+            <idno/><!-- FILL IN AFTER DECIDING ON URI/URL FORMAT -->
+            <availability>
+               <licence target="http://creativecommons.org/licenses/by/4.0/">
+                  <p>Creative Commons — Attribution 4.0 International — CC BY 4.0</p>
+                  <p>https://creativecommons.org/licenses/by/4.0/</p>
+               </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <editor ref="http://syriaca.org/person/403">
+                     <persName xml:lang="en">
+                        <forename>E. W.</forename>
+                        <surname>Brooks</surname>
+                     </persName>
+                  </editor>
+                  <title type="main" xml:lang="en" level="m">
+                     The Sixth Book of the Select Letters of
+                     <persName ref="http://syriaca.org/person/51">Severus Patriarch of Antioch</persName>
+                     in the Syriac Version of
+                     <persName ref="http://syriaca.org/person/1014">Athanasius of Nisibis</persName>
+                  </title>
+                  <title type="sub" xml:lang="en" level="m">Vol. II (Translation) Part I</title>
+                  <idno type="URI">http://syriaca.org/bibl/668</idno>
+                  <imprint>
+                     <publisher xml:lang="en">Williams and Norgate</publisher>
+                     <pubPlace ref="http://syriaca.org/place/861">Oxford</pubPlace>
+                     <date>1903</date>
+                  </imprint>
+                  <extent>Vol. 3 of 4</extent>
+                  <biblScope unit="vol">2.1</biblScope>
+                  <biblScope unit="page">75-80</biblScope>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <editorialDecl>
+            <p/><!-- FILL IN -->
+         </editorialDecl>
+      </encodingDesc>
+      <profileDesc>
+         <creation>
+            <origDate type="composition"/><!-- FILL IN. La Route Royale dates are probably preferable to Brooks' dates. -->
+         </creation>
+      </profileDesc>
+      <revisionDesc status="draft">
+         <change when="2019-11" who="http://syriaca.org/person.xml#dschwartz">Created file</change>
+      </revisionDesc>
+   </teiHeader>
+  <text>
+      <body>
+         <div type="letter" n="1.22">
+            <head type="main" resp="#compiler">Of the same to the fathers.</head>
+            <head type="sub" resp="#compiler">From those during episcopacy, from the 4th book the 23st
+               letter.</head>
+            <p> Since all the holy fathers, if we may so say, have written us many various letters,
+               we considered it necessary to write in a common epistle to you what we have to say
+               concerning the common state, and to stir you all up to one harmonious petition and
+               earnest <pb n="76"/> prayer. But the matters which ought to be conveyed in writing to
+               your sanctities in particular are these. You did not do well or worthily of
+               yourselves in not sending the devout deacon Stephen. The proof that he was confined
+               to bed, by which you tried to prove his infirmity, we as a mean and sinful man will
+               perhaps accept: but I have no means of saying whether Christ has also accepted it.
+               For he is in fact even now still the same who ordered the man who was paralyzed and
+               had for the greater part of his life been confined to bed to take up his bed and
+               walk. However we will say with Paul, "All forsook me." And we will readily add, "May
+               it not be laid to their charge." But it is a matter for your prayers that the other
+               thing also which he says may be granted us, "The Lord stood by me and strengthened
+               me." For to say the words which follow these is too great a thing for me, I mean, "In
+               order that by me the preaching might be completed and all the peoples might hear."
+               But, since we have in fact come to mention that matter, we will say a few words about
+               it also; since, when writing a common epistle to all of you, we forgot it owing to
+               the multitude of subjects of discussion. Musonius, the uninstructed and presumptuous
+               man, who takes no account of the judgments of God, after disturbing and upsetting
+               Isauria has gone as we have learned to Alexandria. For, being infected with two very
+               serious diseases, <pb n="77"/> with avarice I mean and with pride, he wished to be a
+               legislator for the men of the whole province. And he despised like a carnal man the
+               smallness of his city (for to spiritual men the privileges of the priesthood are
+               matters that cannot be balanced, and are not weighed by the size of the cities, but
+               judged by the dignity of the sacred office), and, making the God-loving Solon bishop
+               of his metropolis, a man unversed in affairs and otherwise peacefully disposed, his
+               ally, he caused constant disturbances, requiring from each of the bishops
+               <foreign>homologiai</foreign> or professions in writing concerning principles
+               approved by him. He even went so far as to draw up a minute? in which it is stated
+               that all the names of those who ministered in any capacity whatever, presbyters and
+               deacons and monks and laymen, ought to be expunged from the sacred tablets: so that
+               everyone thereupon shrank from this burdensome and endless statute, and thenceforward
+               they talked to one another and said, "We are progressing by degrees; we shall also be
+               required to be re-baptized and re-ordained as it is said." And all in the province,
+               being goaded by this idea as by some sting, rose against their bishops, and they
+               upset things that had been rightly done before: insomuch as to name all who had been
+               left out, and associate in. communion with those who hold the opposite opinions: and,
+               to put it plainly, to go over to the opposite party, and drive the bishops out of
+               their own churches. <pb n="78"/> While these things were going on, the gallant
+               Musonius was sitting inside his house; for, though he is bishop of another city, he
+               registers his fathers' house at Olba; and he resides for the most part either there
+               or in the metropolis of the men of Seleucia; and he only creates disturbances and in
+               tyrannical fashion lays down heavy and unendurable laws. This man we have now already
+               for three years borne with ll meekness, though we often whispered of his madness, and
+               many times we reconciled him when he was lightly breaking away and turning backwards.
+               Wherefore also, when the bishops were assembled here, the same Musonius accused some
+               of them of behaving in an undiscriminating or unlawful manner. And, when these also
+               turned round upon him and accused him in their turn of lending his money on interest
+               contrary to the canons, he was convicted, and was silenced. And, whereas he ought to
+               have repented of this, with great shamelessness he proclaimed the sin a virtue,
+               saying that his church possessed nothing, and lamenting about poverty and need: in
+               consequence of which we ourselves assigned to him from here a sum of twelve darics a
+               year." Having received this he went away, after communicating with us and making a
+               promise to the bishop of his metropolis to go up also to the cities of Isauria that
+               had gone astray, and to undertake labour for a good end. And, when he reached the
+               province," he again lay hid (?) in his usual <pb n="79"/> haunts, and did not stir
+               his foot anywhere, and never once opened his presumptuous mouth that has no door as
+               the proverb says, and is learned only in arousing uncanonical contentions. Thinking
+               this an occasion that provided him with a means of amassing base gains, he composed a
+               letter to the devout presbyter Longinus who is with us, fishing for yet another sum
+               of gold, and a contribution of sacred property. And, failing in this, he turned to
+               men in Alexandria who are infected with an uncanonical disease like his and a madness
+               of no ordinary kind: who themselves received him as a priest, like Micah whose story
+               is recorded in the Tribes, him I mean of the hill-country of Ephraim: who, having
+               made a molten image out of his mother's silver and set this up as a god, found a
+               young man, a Levite, and, filling his hand, took this man as a priest, saying to him,
+               "Abide with me and be unto me a father and a priest, and I will give thee ten pieces
+               of silver by the day, and a pair of garments, and the necessaries of thy life."
+               Whence also we believe that both Musonius and those who shall receive him or have
+               received him will suffer the same end as those who oppose the judgments of the Holy
+               Spirit and pervert the right ways of the Lord. But, to establish what has been said,
+               we have thought good to quote also out of his fatuity some words taken <pb n="80"/>
+               from his actual letter that he wrote to the religious presbyter Longinus, words which
+               prove the passions that lurk in him. They are as follows: "But you remember that I
+               said to you, 'The patriarch ought to have sent something to our church as treasures.
+               By this means the men themselves also become more enthusiastic. In this way Flavian
+               also acted to the bishop of Germanicupolis, when he gave both robes and treasures to
+               the unholy Bisula, and he drew the inhabitants of his country to him.'" And again:
+               "For, although we do not ourselves know it, we ought to take an example from the
+               adversaries, how they show all energy and watchfulness in making presents to those
+               who are in opposition to them and endeavouring to bring them over to them by a gift.
+               For you are not unaware that nothing persuades unlearned persons so effectually as a
+               present and a gift." You see how, involved as he is in the passion of avarice, he
+               puts forward the specious name of the church and the simpleness of unlearned persons,
+               decorating the passion with mild words as with colours. I have also many other
+               letters of his that he wrote to me, from which it is clearly apparent how I sought to
+               change his haughtiness by mildness, and after many toils and labours did no good. And
+               at last, becoming weary, I handed him over to the judgments of God, because he
+               wrought such disturbance, and gave to those who were standing in the right way turbid
+               upheaval to drink. </p>
+            <trailer>The end.</trailer>
+         </div>
+      </body>
+  </text>
+</TEI>

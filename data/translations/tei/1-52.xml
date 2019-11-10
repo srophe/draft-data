@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title ref="http://syriaca.org/work/">To John and John the Presbyters and the
+               Rest</title>
+            <author ref="http://syriaca.org/person/51">Severus of Antioch</author>
+            <sponsor>Center of Digital Humanities Research, Texas A&amp;M University</sponsor>
+            <principal>Daniel L. Schwartz</principal>
+            <editor role="editor" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</editor>
+            <respStmt>
+               <resp>XML created by</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</name>
+            </respStmt>
+            <respStmt>
+               <resp>Based on the work of</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#ewbrooks">E. W. Brooks</name>
+            </respStmt>
+            <respStmt>
+               <resp>OCR corrected by</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</name>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition n="1"/>
+         </editionStmt>
+         <publicationStmt>
+            <distributor>
+               <placeName>Center of Digital Humanities Research, College Station, TX, USA</placeName>
+            </distributor>
+            <authority/><!-- FILL IN AFTER DECIDING ON NAME -->
+            <idno/><!-- FILL IN AFTER DECIDING ON URI/URL FORMAT -->
+            <availability>
+               <licence target="http://creativecommons.org/licenses/by/4.0/">
+                  <p>Creative Commons — Attribution 4.0 International — CC BY 4.0</p>
+                  <p>https://creativecommons.org/licenses/by/4.0/</p>
+               </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <editor ref="http://syriaca.org/person/403">
+                     <persName xml:lang="en">
+                        <forename>E. W.</forename>
+                        <surname>Brooks</surname>
+                     </persName>
+                  </editor>
+                  <title type="main" xml:lang="en" level="m">
+                     The Sixth Book of the Select Letters of
+                     <persName ref="http://syriaca.org/person/51">Severus Patriarch of Antioch</persName>
+                     in the Syriac Version of
+                     <persName ref="http://syriaca.org/person/1014">Athanasius of Nisibis</persName>
+                  </title>
+                  <title type="sub" xml:lang="en" level="m">Vol. II (Translation) Part I</title>
+                  <idno type="URI">http://syriaca.org/bibl/668</idno>
+                  <imprint>
+                     <publisher xml:lang="en">Williams and Norgate</publisher>
+                     <pubPlace ref="http://syriaca.org/place/861">Oxford</pubPlace>
+                     <date>1903</date>
+                  </imprint>
+                  <extent>Vol. 3 of 4</extent>
+                  <biblScope unit="vol">2.1</biblScope>
+                  <biblScope unit="page">148-51</biblScope>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <editorialDecl>
+            <p/><!-- FILL IN -->
+         </editorialDecl>
+      </encodingDesc>
+      <profileDesc>
+         <creation>
+            <origDate type="composition"/><!-- FILL IN. La Route Royale dates are probably preferable to Brooks' dates. -->
+         </creation>
+      </profileDesc>
+      <revisionDesc status="draft">
+         <change when="2019-11" who="http://syriaca.org/person.xml#dschwartz">Created file</change>
+      </revisionDesc>
+   </teiHeader>
+  <text>
+      <body>
+         <div type="letter" n="1.52">
+            <head type="main" resp="#compiler">Of the same to John and John the presbyters and the
+               rest.</head>
+            <head type="sub" resp="#compiler">From those after banishment, from the 2nd book the 42nd
+               letter.</head>
+            <p> I sent an answer at once to the earlier letter which reached me from your sanctity:
+               and, because no ship was at hand, the letter was delayed several days: but I expect
+               that you have by this time received it. As to the epistle that has just been sent,
+               about the slave who was sold by the Jews and the question regarding him, I have
+               nothing to write. For a letter was written by me about a similar matter to a certain
+               Theodore the God-loving bishop of Olba (this is a city in Isauria), and I have
+               thought well to give an <foreign>ison</foreign> or <pb n="149"/> copy of it at the
+               end of this letter, so that from it you may know what our own conclusion was. As to
+               clergymen who come from outside, who hold the correct faith but are not united in
+               communion with us, the answer is plain: <foreign>i.e.</foreign>, that we must not
+               admit these men to the exercise of the ministry: but in all other respects, in order
+               to promote sound and correct opinions, must hold intercourse with them as with our
+               own people and extend goodwill towards them. If we do not do this, we shall, unknown
+               to ourselves, be circumscribing, so to speak, the right ways of the Lord. But, if any
+               man, being a clergyman, wishes to hold entirely aloof from communion with those to
+               whom he is subject, let him go to the God-loving archbishop of the city of the
+               Alexandrines or to the banished bishops, and the privileges of communion will be
+               properly conceded to him by them. For your love of God it is a sufficient answer to
+               these men to say that without the bishops you can do nothing, and this does not lie
+               in your authority. By this plan you will be preserved from irregularity, and they
+               from finding any occasion of stumbling or of offence. As to those in Isauria and in
+               First Cilicia, an epistle that has just been sent to us is very gloomy: and, not to
+               say anything harsh, it accuses those of First Cilicia of remissness, and it announces
+               a grievous persecution and expulsion of the orthodox in Isauria, as well of the
+               devout monks, as of the clergymen and of those who are among the believing people,
+               not to speak of what has happened in consequence, that <pb n="150"/> all have
+               abandoned communion with Stephen the disturber, the present prelate, and are not
+               unaware of his treachery and falseness and the evil habits ingrained in him. The
+               wretched man has even presumed to send some of the clergymen who have been corrupted
+               by him here also to the saintly Isaurian bishops in banishment, as if summoning them
+               to him, and heaping vanities upon vanities, as is written, and "beating the air" in
+               vain, as the Apostle says. However these impious men do not cease from making
+               confusion, and from audaciously attempting to no purpose even things that are
+               impossible, and from polluting the water for drinking with their feet, in order to
+               give those who are not cautious turbid pollution to drink according to the prophetic
+               saying. Isidore the illustrious tribune has started in peace for Pelusium, after
+               promising the devout presbyter Thomas to do all things in accordance with God's
+               pleasure. He had also after the conversation held here written to the devout
+               presbyter Epimachus to tell his religiousness to go in the direction of Pelusium. In
+               order therefore that you may not be ignorant of what has happened, this also has been
+               added in this letter. Console and comfort with loving disposition the God-loving
+               Isidore bishop of the city of the men of Chalcis, who is troubled with a bodily
+               infirmity, or rather who is being better proved in the furnace of trials; and. reckon
+               it all as a gift to me: though <pb n="151"/> I know that I am acting superfluously in
+               this, since ready help and zealous attention in these matters are innate in you and
+               belong to your character. For you must believe that I was much distressed when
+               learned that he had been again seized with the same kind of infirmity. </p>
+            <trailer>The end.</trailer>
+         </div>
+      </body>
+  </text>
+</TEI>

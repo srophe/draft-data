@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title ref="http://syriaca.org/work/">To the Clergy of the Metropolis of
+               Apamea</title>
+            <author ref="http://syriaca.org/person/51">Severus of Antioch</author>
+            <sponsor>Center of Digital Humanities Research, Texas A&amp;M University</sponsor>
+            <principal>Daniel L. Schwartz</principal>
+            <editor role="editor" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</editor>
+            <respStmt>
+               <resp>XML created by</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</name>
+            </respStmt>
+            <respStmt>
+               <resp>Based on the work of</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#ewbrooks">E. W. Brooks</name>
+            </respStmt>
+            <respStmt>
+               <resp>OCR corrected by</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</name>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition n="1"/>
+         </editionStmt>
+         <publicationStmt>
+            <distributor>
+               <placeName>Center of Digital Humanities Research, College Station, TX, USA</placeName>
+            </distributor>
+            <authority/><!-- FILL IN AFTER DECIDING ON NAME -->
+            <idno/><!-- FILL IN AFTER DECIDING ON URI/URL FORMAT -->
+            <availability>
+               <licence target="http://creativecommons.org/licenses/by/4.0/">
+                  <p>Creative Commons — Attribution 4.0 International — CC BY 4.0</p>
+                  <p>https://creativecommons.org/licenses/by/4.0/</p>
+               </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <editor ref="http://syriaca.org/person/403">
+                     <persName xml:lang="en">
+                        <forename>E. W.</forename>
+                        <surname>Brooks</surname>
+                     </persName>
+                  </editor>
+                  <title type="main" xml:lang="en" level="m">
+                     The Sixth Book of the Select Letters of
+                     <persName ref="http://syriaca.org/person/51">Severus Patriarch of Antioch</persName>
+                     in the Syriac Version of
+                     <persName ref="http://syriaca.org/person/1014">Athanasius of Nisibis</persName>
+                  </title>
+                  <title type="sub" xml:lang="en" level="m">Vol. II (Translation) Part I</title>
+                  <idno type="URI">http://syriaca.org/bibl/668</idno>
+                  <imprint>
+                     <publisher xml:lang="en">Williams and Norgate</publisher>
+                     <pubPlace ref="http://syriaca.org/place/861">Oxford</pubPlace>
+                     <date>1903</date>
+                  </imprint>
+                  <extent>Vol. 3 of 4</extent>
+                  <biblScope unit="vol">2.1</biblScope>
+                  <biblScope unit="page">92-96</biblScope>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <editorialDecl>
+            <p/><!-- FILL IN -->
+         </editorialDecl>
+      </encodingDesc>
+      <profileDesc>
+         <creation>
+            <origDate type="composition"/><!-- FILL IN. La Route Royale dates are probably preferable to Brooks' dates. -->
+         </creation>
+      </profileDesc>
+      <revisionDesc status="draft">
+         <change when="2019-11" who="http://syriaca.org/person.xml#dschwartz">Created file</change>
+      </revisionDesc>
+   </teiHeader>
+  <text>
+      <body>
+         <div type="letter" n="1.30">
+            <head type="main" resp="#compiler">Of the same to the clergy of the metropolis of
+               Apamea.</head>
+            <head type="sub" resp="#compiler">from those during episcopacy, from the 5th book the
+               135th letter.</head>
+            <p> Your love of God, marked out as you are by the orders of the holy clergy of the
+               church, and addressing a <pb n="93"/> bishop, and upon a spiritual subject, ought not
+               to have cited the rhetor of Greece in the preludes or beginnings of your admirable
+               letter. In due time Elijah the Tishbite, urged by the same zeal, will now say to you
+               also, "Is it because there is not a prophet in Israel that ye go to inquire of the
+               fly-Baal, the abomination of the gods of Ekron?" Fitly also will the book of Proverbs
+               reprove you which says, "Drink waters out of thy vessels and out of the spring of thy
+               wells." You did not make search in order to draw from the divine scripture a saying
+               that would prove the swiftness and weakness of human life. For the prophet David
+               says, "Our days pass away like a shadow." And the divine Job, while playing the
+               philosopher during the grievous trial caused by his suffering, said, "For we are of
+               yesterday, and we know not": and again, "My life was swifter than a runner." We are
+               not unaware that the wise Paul also often quoted the words of poets in speaking to
+               certain persons. But the character of the hearers, who had not been instructed out of
+               the God-inspired words, in itself made the use of testimony from these seemly in his
+               case. The divine scripture should therefore have been enough for you, and you should
+               not have started by making the beginning spurious and false. We therefore (for we
+               must now return to that which is more useful and more urgent) have been grieved at
+               the decease of Isaac of religious <pb n="94"/> memory, your bishop; and we have been
+               distressed because he left the present life before he had maintained a contest on
+               behalf of the doctrines of orthodoxy, which he proclaimed in writing and otherwise in
+               this great Christ-loving city. However we submit to God, the orderer of such deep
+               judgments. But the duty that remains for us is this; not to be negligent and leave
+               your holy church without a shepherd during the days that are so venerated of the
+               saving Passion and of the Resurrection of Christ. Make haste therefore and draw up
+               quickly a <foreign>psephismata</foreign> in favour of three men of favourable repute
+               and well known for virtue and, as it is written, "powerful men and religious, men
+               that are just and hate pride." But the powerful man is defined by the divine law as
+               the man who through his life and conduct has power over the passions of the flesh,
+               and possesses accurate and well-tried faith, which is greater than everything and is
+               the foundation of our salvation. For the man who is to stand at the head of rational
+               souls must have power in him, and is "able to comfort by sound teaching and to refute
+               the gainsayers," as the Apostle, who had Christ speaking in him, handed down to us.
+               This besides pleasing God will also gladden our pious king, seeing that he is much
+               concerned for the apostolic faith, and has been brought up in such doctrines from his
+               boyhood: who also in some sort did not praise our meanness for having delayed until
+               to-day to institute shepherds for the cities <pb n="95"/> that are in need, who shall
+               feed them with understanding. Do not therefore look to worldly authorities, or under
+               the influence of fleshly considerations put forth your vote in favour of certain men
+               who live in a worldly atmosphere and need much purification, and ought not to be
+               entrusted with the purification of the people and to offer the bloodless and rational
+               sacrifice on behalf of the faults of whole congregations and as an expiation: for I
+               hear that certain men among you dare to do such things, thinking to make a mockery of
+               things that are divine and not subjects for mockery. Let no one think that I shall
+               acquiesce in a vote in favour of such men, no not if I be very mad. It does not suit
+               me because of the inconsiderate action of certain persons to "partake in other men's
+               sins," as it is written, or for no purpose to be sent to the eternal fire. When
+               therefore you have duly drawn up a <foreign>psephisma</foreign> in accordance with
+               our counsels, or rather according as the sacred ordinances and laws provide, let
+               there come according to custom devout men, men modest in their conduct and earnest in
+               character, such as are fitted to approach the apostolic throne and receive its
+               judgment. We learn that, while Isaac of saintly memory was breathing his last,
+               certain persons, wishing to hide their own faults, by an evil action dared to remove
+               from his office the man who was entrusted with the stewardship of the church
+               property, and to put forward <pb n="96"/> others in his place, having unlawfully and
+               contrary to custom taken the keys from him. Accordingly we have determined that the
+               man who administered the stewardship before shall hold the same charge, and those who
+               have now been introduced shall be turned out and remain somewhere at a distance, and
+               that they shall not participate at all, lest by depriving him for a short time of his
+               stewardship we seem to be giving him also some just reason for not giving an account
+               for the whole of his administration in time past. </p>
+            <trailer>The end.</trailer>
+         </div>
+      </body>
+  </text>
+</TEI>

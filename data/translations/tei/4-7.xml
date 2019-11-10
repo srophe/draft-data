@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title ref="http://syriaca.org/work/">To Father John Canopites</title><!-- FILL IN TITLE AND WORK URI -->
+            <author ref="http://syriaca.org/person/51">Severus of Antioch</author>
+            <sponsor>Center of Digital Humanities Research, Texas A&amp;M University</sponsor>
+            <principal>Daniel L. Schwartz</principal>
+            <editor role="editor" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</editor>
+            <respStmt>
+               <resp>XML created by</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</name>
+            </respStmt>
+            <respStmt>
+               <resp>Based on the work of</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#ewbrooks">E. W. Brooks</name>
+            </respStmt>
+            <respStmt>
+               <resp>OCR corrected by</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</name>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition n="1"/>
+         </editionStmt>
+         <publicationStmt>
+            <distributor>
+               <placeName>Center of Digital Humanities Research, College Station, TX, USA</placeName>
+            </distributor>
+            <authority/><!-- FILL IN AFTER DECIDING ON NAME -->
+            <idno/><!-- FILL IN AFTER DECIDING ON URI/URL FORMAT -->
+            <availability>
+               <licence target="http://creativecommons.org/licenses/by/4.0/">
+                  <p>Creative Commons — Attribution 4.0 International — CC BY 4.0</p>
+                  <p>https://creativecommons.org/licenses/by/4.0/</p>
+               </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <editor ref="http://syriaca.org/person/403">
+                     <persName xml:lang="en">
+                        <forename>E. W.</forename>
+                        <surname>Brooks</surname>
+                     </persName>
+                  </editor>
+                  <title type="main" xml:lang="en" level="m">
+                     The Sixth Book of the Select Letters of
+                     <persName ref="http://syriaca.org/person/51">Severus Patriarch of Antioch</persName>
+                     in the Syriac Version of
+                     <persName ref="http://syriaca.org/person/1014">Athanasius of Nisibis</persName>
+                  </title>
+                  <title type="sub" xml:lang="en" level="m">Vol. II (Translation) Part II</title>
+                  <idno type="URI">http://syriaca.org/bibl/669</idno>
+                  <imprint>
+                     <publisher xml:lang="en">Williams and Norgate</publisher>
+                     <pubPlace ref="http://syriaca.org/place/861">Oxford</pubPlace>
+                     <date>1903</date>
+                  </imprint>
+                  <extent>Vol. 4 of 4</extent>
+                  <biblScope unit="vol">2.2</biblScope>
+                  <biblScope unit="page">266-68</biblScope>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <editorialDecl>
+            <p/><!-- FILL IN -->
+         </editorialDecl>
+      </encodingDesc>
+      <profileDesc>
+         <creation>
+            <origDate type="composition"/><!-- FILL IN. La Route Royale dates are probably preferable to Brooks' dates. -->
+         </creation>
+      </profileDesc>
+      <revisionDesc status="draft">
+         <change when="2019-11" who="http://syriaca.org/person.xml#dschwartz">Created file</change>
+      </revisionDesc>
+   </teiHeader>
+  <text>
+      <body>
+         <div type="letter" n="4.7">
+            <head type="main" resp="#compiler">Of the same to father John Canopites.</head>
+            <head type="sub" resp="#compiler">From those that were found outside the 23 books, the 4th
+               letter.</head>
+            <p> We for our part, feeble although we are, write everything written by your holiness
+               upon the tablets of our heart, as it is written, and do not, as a man might think,
+               read it over hastily. And we pray, as sinners, that your words may with God's help be
+               continued to us in the time of trial. For I am in the habit of mentioning Basil and
+               Gregory, and having their names constantly upon my tongue: but there is nothing
+               resembling their virtue in me, seeing that I have passed all my life in negligence.
+               As for those who, as your holiness says, starting from this place, go to other
+               provinces and communicate indifferently, my conscience does not smite me as not
+               having given this injunction with all my power and all my capacity for <pb n="267"/>
+               teaching, and said that want of carefulness in these things is great wickedness;
+               whence I did not shrink from giving personal demonstration and proof even to women,
+               when need called, that there is a great gulf, as in the passage in the Gospels,
+               between the orthodox communion and that of the adversaries, and that we have no
+               communion or association with those of p. 301. adverse opinions. But, if some men
+               associate secretly in so great a number of cities and of provinces," your sanctity
+               knows that this reflects no blame on us. So far was I from being satisfied with the
+               matter that I even wrote an epistle to some of our brothers in Alexandria to say that
+               they ought not, on the pretext of worshipping in the holy places, to associate in
+               communion with men of other opinions. These are our proceedings, and this is the
+               position in which they stand. However matters are placed as in a balance and a scale
+               of a balance, and we do not know what will be the result of the things that are being
+               stirred in the royal city and the things reported concerning the synod that is to be
+               held, seeing that they are variously told and differently at different times. But of
+               this one thing we for our part are assured, that, while God extends His hand, no one
+               will be able to lead us away from the right faith, From places and from sees removal
+               by force is possible: but from belief it is wholly impossible, unless we ourselves
+               <pb n="268"/> desire it, and the fear of God be lacking in our souls. For "the
+               Lord taketh pleasure in them that fear Him and in those that hope for His grace," as
+               the singing prophet somewhere says. But you, father, help us with all the power that
+               is in you by stretching forth your saintly hands. </p>
+            <trailer>The end.</trailer>
+         </div>      
+      </body>
+  </text>
+</TEI>

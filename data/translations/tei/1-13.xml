@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title ref="http://syriaca.org/work/">To Entrechius, Bishop of Anazarba</title><!-- FILL IN TITLE AND WORK URI -->
+            <author ref="http://syriaca.org/person/51">Severus of Antioch</author>
+            <sponsor>Center of Digital Humanities Research, Texas A&amp;M University</sponsor>
+            <principal>Daniel L. Schwartz</principal>
+            <editor role="editor" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</editor>
+            <respStmt>
+               <resp>XML created by</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</name>
+            </respStmt>
+            <respStmt>
+               <resp>Based on the work of</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#ewbrooks">E. W. Brooks</name>
+            </respStmt>
+            <respStmt>
+               <resp>OCR corrected by</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</name>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition n="1"/>
+         </editionStmt>
+         <publicationStmt>
+            <distributor>
+               <placeName>Center of Digital Humanities Research, College Station, TX, USA</placeName>
+            </distributor>
+            <authority/><!-- FILL IN AFTER DECIDING ON NAME -->
+            <idno/><!-- FILL IN AFTER DECIDING ON URI/URL FORMAT -->
+            <availability>
+               <licence target="http://creativecommons.org/licenses/by/4.0/">
+                  <p>Creative Commons — Attribution 4.0 International — CC BY 4.0</p>
+                  <p>https://creativecommons.org/licenses/by/4.0/</p>
+               </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <editor ref="http://syriaca.org/person/403">
+                     <persName xml:lang="en">
+                        <forename>E. W.</forename>
+                        <surname>Brooks</surname>
+                     </persName>
+                  </editor>
+                  <title type="main" xml:lang="en" level="m">
+                     The Sixth Book of the Select Letters of
+                     <persName ref="http://syriaca.org/person/51">Severus Patriarch of Antioch</persName>
+                     in the Syriac Version of
+                     <persName ref="http://syriaca.org/person/1014">Athanasius of Nisibis</persName>
+                  </title>
+                  <title type="sub" xml:lang="en" level="m">Vol. II (Translation) Part I</title>
+                  <idno type="URI">http://syriaca.org/bibl/668</idno>
+                  <imprint>
+                     <publisher xml:lang="en">Williams and Norgate</publisher>
+                     <pubPlace ref="http://syriaca.org/place/861">Oxford</pubPlace>
+                     <date>1903</date>
+                  </imprint>
+                  <extent>Vol. 3 of 4</extent>
+                  <biblScope unit="vol">2.1</biblScope>
+                  <biblScope unit="page">53-56</biblScope>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <editorialDecl>
+            <p/><!-- FILL IN -->
+         </editorialDecl>
+      </encodingDesc>
+      <profileDesc>
+         <creation>
+            <origDate type="composition"/><!-- FILL IN. La Route Royale dates are probably preferable to Brooks' dates. -->
+         </creation>
+      </profileDesc>
+      <revisionDesc status="draft">
+         <change when="2019-11" who="http://syriaca.org/person.xml#dschwartz">Created file</change>
+      </revisionDesc>
+   </teiHeader>
+  <text>
+      <body>
+         <div type="letter" n="1.13">
+            <head type="main" resp="#compiler">Of the same to Entrechius, bishop of Anazarba.</head>
+            <head type="sub" resp="#compiler">From those during episcopacy, from the 3rd book the
+               397th, 398th letter.</head>
+            <p> I do not know whether should lay the blame of the events that are happening upon my
+               sins, or upon the operation of an evil demon. Though there is nothing else that I
+               have had so much at heart or for 'which I have prayed so much as that every Christian
+               should conduct himself blamelessly, but especially those who are high-priests, giving
+               no cause for reproach or blame against themselves, but being "in everything a pattern
+               of good works, in gravity and in holiness," as the Apostle says, "in order that he
+               that is of the contrary part may be ashamed, having no evil thing to say of us, I see
+               that not once only but twice also am worried about the same matters. Indeed, though
+               some of the devout clergymen of the holy church of Flavias had presented to us
+               certain accusations upon <pb n="54"/> certain subjects against their God-loving
+               bishop, and we managed the affair ourselves, and brought things that else would have
+               been troublesome to a peaceful typos or conclusion and so settled them, now again old
+               men bowed down with age have risen up to make more serious charges, men who, if one
+               may so say, struggle against life itself, and live tn utter poverty and need: if one
+               were to call them a pitiable sight, the expression would not be amiss. The statements
+               made by them are many and various. Still for my part, again following the same
+               practice, I wished to stop their accusation if it were possible: but, as they went on
+               saying the same things, I proposed to commit the hearing of the case to your
+               holiness. But, since they objected, and said that their life would be no life for
+               them, if the religious Procopius their bishop did not come here, I have adopted a
+               middle course (I do not think that others either will think the coming to us an easy
+               thing) and resolved to send the religious Theodosius a presbyter of our apostolic see
+               that he may examine the facts in conjunction with your love of God, and a decision
+               consonant to the canons may be given by you, and: a conclusion reached upon each of
+               the subjects with the greatest possible accuracy. But at the same time we have
+               resolved to say this much, that the said religious bishop Procopius should not, after
+               the first warning, have received a gift at ordinations on the pretext of making a
+               profit for the church, as he <pb n="55"/> used to say, and again been detected in the
+               same practices, as those who make the accusation against him say: nor should he have
+               named Lampetius at the divine sacrifice, a man who was infected with the heresy of
+               Adelphius, and for this reason was condemned at Commanus in Armenia, as the minutes
+               of the records of that synod also show. Indeed, to pass over old matters, it is easy
+               for your love of God to learn what canonical discussion the abominable flock of the
+               Adelphians received in Second Cappadocia, seeing that the saintly Soteric bishop of
+               the city of the men of Czsarea and the holy bishops who sat with him, from Cappadocia
+               and from Pontus and from Galatia, then put forth a decision worthy of the priesthood
+               against it. Of this same heresy the outward token is greed and immodesty and a mad
+               desire of vain glory, owing to which they pride themselves in attracting admiration
+               and receiving in secret the evil spirit: and, what is most important, the fact that,
+               infected as they are with extreme godlessness, and wearing as they do a deceitful
+               mask of hypocrisy in all things, they put forward this deception also, that their
+               heresy is not a heresy: for they count up all the heretics in order and anathematize
+               them, but Adelphius they honour by silence. The celebrated freedom from passions of
+               which they boast they do not display at all: and concerning matters on which charges
+               are made against them they give no satisfaction, but from <pb n="56"/> matters on
+               which they are not accused they gather the reputation of not being godless. It lies
+               therefore with your love of God in conjunction with the religious Theodosius the
+               presbyter of our apostolic see to see that the whole matter is as I have said
+               carefully examined, and to make known the result of the examination to us also, in
+               order that on all sides the appearance of the church may be preserved blameless. And
+               another thing seems to me to be urgently demanded by piety, I mean that these unhappy
+               men be not vexed by a long and useless session, who from necessity, as I believe,
+               have made the accusation; and that they should not support themselves at their own
+               expense, but that they should receive double the necessary daily sustenance from the
+               holy church of which they are members. Another matter too you must set right without
+               dispute before the trial itself, a thing which appeared to me absolutely incredible
+               and still even now appears so: I mean that the said men themselves should be enrolled
+               in the sacred number of the clergy, their names having been expunged, as they say,
+               for this reason and no other, because they were able to have recourse to the
+               apostolic throne on account of the things which they suffered and the wounds that
+               have been inflicted on them. That this, if it is true, surpassing as it does all
+               presumptuous audacity, needs canonical punishment, I leave to your love of God to
+               reflect. </p>
+            <trailer>The end.</trailer>
+         </div>
+      </body>
+  </text>
+</TEI>

@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title ref="http://syriaca.org/work/">To John and John the Presbyters and the
+               Rest</title><!-- FILL IN TITLE AND WORK URI -->
+            <author ref="http://syriaca.org/person/51">Severus of Antioch</author>
+            <sponsor>Center of Digital Humanities Research, Texas A&amp;M University</sponsor>
+            <principal>Daniel L. Schwartz</principal>
+            <editor role="editor" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</editor>
+            <respStmt>
+               <resp>XML created by</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</name>
+            </respStmt>
+            <respStmt>
+               <resp>Based on the work of</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#ewbrooks">E. W. Brooks</name>
+            </respStmt>
+            <respStmt>
+               <resp>OCR corrected by</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</name>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition n="1"/>
+         </editionStmt>
+         <publicationStmt>
+            <distributor>
+               <placeName>Center of Digital Humanities Research, College Station, TX, USA</placeName>
+            </distributor>
+            <authority/><!-- FILL IN AFTER DECIDING ON NAME -->
+            <idno/><!-- FILL IN AFTER DECIDING ON URI/URL FORMAT -->
+            <availability>
+               <licence target="http://creativecommons.org/licenses/by/4.0/">
+                  <p>Creative Commons — Attribution 4.0 International — CC BY 4.0</p>
+                  <p>https://creativecommons.org/licenses/by/4.0/</p>
+               </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <editor ref="http://syriaca.org/person/403">
+                     <persName xml:lang="en">
+                        <forename>E. W.</forename>
+                        <surname>Brooks</surname>
+                     </persName>
+                  </editor>
+                  <title type="main" xml:lang="en" level="m">
+                     The Sixth Book of the Select Letters of
+                     <persName ref="http://syriaca.org/person/51">Severus Patriarch of Antioch</persName>
+                     in the Syriac Version of
+                     <persName ref="http://syriaca.org/person/1014">Athanasius of Nisibis</persName>
+                  </title>
+                  <title type="sub" xml:lang="en" level="m">Vol. II (Translation) Part II</title>
+                  <idno type="URI">http://syriaca.org/bibl/669</idno>
+                  <imprint>
+                     <publisher xml:lang="en">Williams and Norgate</publisher>
+                     <pubPlace ref="http://syriaca.org/place/861">Oxford</pubPlace>
+                     <date>1903</date>
+                  </imprint>
+                  <extent>Vol. 4 of 4</extent>
+                  <biblScope unit="vol">2.2</biblScope>
+                  <biblScope unit="page">325-37</biblScope>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <editorialDecl>
+            <p/><!-- FILL IN -->
+         </editorialDecl>
+      </encodingDesc>
+      <profileDesc>
+         <creation>
+            <origDate type="composition"/><!-- FILL IN. La Route Royale dates are probably preferable to Brooks' dates. -->
+         </creation>
+      </profileDesc>
+      <revisionDesc status="draft">
+         <change when="2019-11" who="http://syriaca.org/person.xml#dschwartz">Created file</change>
+      </revisionDesc>
+   </teiHeader>
+  <text>
+      <body>
+         <div type="letter" n="5.11">
+            <head type="main" resp="#compiler">Of the same to John and John the presbyters and the
+               rest.</head>
+            <head type="sub" resp="#compiler">From those after banishment, from the 2nd book the 71st
+               letter.</head>
+            <p> I owe thanks to God that after the winter-season I have again through your letter
+               heard your sweet and cheerful voice. For to me to hold communication with you seems
+               more cheerful and joyful than any spring. To delight and adorn ourselves with flowers
+               from the meadows. that quickly bloom and wither is not like weaving together blossoms
+               of spiritual words. The first blossom, one very well adapted for giving joy, was
+               contained in your letter in the fact that the celebration of the saintly Theodore the
+               presbyter! provided a crowded festival and feast to those who assembled, so that the
+               believers are confirmed in future hope even by what is seen now. For the departure
+               hence of holy men and the remembrance of them on the occasion of this is a means of
+               instruction and of meditation on the blessed life: the life which Christ promised
+               when He revealed to us by actual experience the mystery of the Resurrection. As to
+               events in the East we also have certain know<pb n="326"/>ledge of the same things
+               that were also stated in your letter: and nothing beyond. Nevertheless the pangs
+               caused by the impiety compel us to bring the foul birth out. It rests therefore with
+               you, saintly men, and with all who love God to make supplication and to stir up your
+               fervent prayers like a censer, and cast upon them "fine composite incense" which is
+               earnest and laborious supplication, supplication that at the same time reminds the
+               divine ears of their wonders from eternity and is able to stop the corruption so that
+               the Lord's congregation may not utterly perish, and the peoples say, "Where is their
+               God?" As to Silvanus who is of heretical ordination, but begs to be received, you
+               ought not to be in difficulty seeing that the regulations of the holy Timothy have
+               marked out the proper course for you, and have laid down for you the method to be
+               followed in this case: so that everything that goes beyond and surpasses him falls
+               outside the limits of what is proper. However it will rest with you who are at hand
+               and know the man to shorten or lengthen his time according to the character of his
+               repentance. If possible therefore, the God-loving Isidore bishop of the city of the
+               Chalcidians will release this man. But, if it is thought that this will stir up
+               affliction to his bonds, as the Apostle says, it is easy for him to go with a letter
+               from you to the God-loving Epimachus bishop of Rhinocorura, and receive forgiveness.
+               Only beware <pb n="327"/> lest, when the man ts forgiven, he use the freedom as an
+               assistance in causing disturbance in various places, since such is the character that
+               you ascribe to him in your letter. As to John of blessed memory the reader and our
+               scribe, I should perhaps have been sorry that he did not come to see me and was
+               prevented from undertaking the daring journey which would have been in the winter and
+               is full of dangers, had it not been that he met with such an end of life, and a
+               gathering-place for which one might well pray and a holy tabernacle (I will not say
+               grave), it being one that foreshadowed for him rest in the eternal mansions. We pray
+               also that through your holy prayers he may receive the lot of the saints in all its
+               fulness. However both he and the devout Sergius the reader when they came here
+               injured many persons more than they edified them. One might hear them relating
+               certain dreams and prophecies, on account of which, as they said, they hesitated to
+               communicate with the holy churches in Egypt. From whom he heard these things I do not
+               wish to say, lest I even seem to certain persons to be a hard man. Who is there who
+               will not (and very rightly) pronounce against us as senseless, if we set ourselves
+               against such prophecies and dreams, and while occupying ecclesiastical thrones forget
+               these things, but, when we are outside and are expelled and driven out, again attend
+               to dreams and repeat dreamy prophecy? However, since it is not my pleasure to make
+               accusations, but to declare and explain to those <pb n="328"/> who love me what my
+               position is, and proclaim it also to the adversaries, the communion that now prevails
+               in the persecuted church of the East and in all the Egyptian church, and is pure in
+               the proclamation of the faith, and in the rejection of the evil Chalcedonian impiety,
+               and in purging itself of heretics and holding no association with them, this
+               communion I so hold and to it I so draw near, as I drew near in it with the highest
+               assurance and a fixed mind, when our holy father Peter the bishop from Iberia was
+               offering, and was performing the rational sacrifice. We did not by our concession
+               give anything like what we received. We waived the strict observance of names
+               according to the fathers' ordinances for the sake of the salvation of so many cities,
+               and instead of it we obtained besides the East the whole of Egypt also supporting us
+               and ranging itself on our side with a pure heart, and not bound in a yoke with
+               unbelievers, to speak in the words of the Apostle. Having cast this seed, we gained
+               for fruits banishment of bishops: confession on the part of cities: martyr-like
+               contests, such that men reckon every kind of torture small. This is to be seen not
+               only in men, but also in women and in every sex, and every age: insomuch that the
+               inhabitants of the whole of Egypt are ready to strip themselves for like contests, if
+               the time summon. What manner of man then were we when we had these things granted us,
+               a man deprived of bishops <pb n="329"/> and sitting in a corner, and resembling a
+               pelican of the wilderness as the prophet sings, and possessing a fruitless accuracy,
+               insomuch that some were eager to proceed to new and different divisions? But God,
+               knowing clearly that our holy fathers and His true servants always endeavoured to
+               walk in the royal road, cut away these things and made them cease as if they had
+               never begun at all, and instead of them by invisible means bestowed upon us riches
+               that we had never desired or been able to conceive in our mind. He exposed the
+               feebleness of human thoughts and efforts, but by means of facts themselves said, "For
+               what the holy God hath purposed who shall annul? and His high hand who shall turn
+               away?" How then shall we be found speaking in a contrary sense, we whose duty it is
+               to exhort those who communicate with us to show freedom of speech regarding these
+               things? Indeed according to my information the wonderful Mitras showed himself more
+               irrational even than irrational things by continually saying that he is not in
+               communion with the holy churches here, and gave ground for laughter to those who have
+               no soundness of their own, but apply themselves to find for themselves lines of
+               defence and discoveries of methods of support from the weaker brethren among us,
+               because he could not give a reason for this irrationality (I will not say "doubt").
+               Who is there who will not be disgusted with men who like Abimelech the <pb n="330"/>
+               offspring of Gideon's concubine, who illegally became king in Shechem by gathering
+               round him depraved and profligate men, as the God-inspired scripture somewhere
+               narrates, illegally receive bishops who have been canonically repudiated and received
+               deprivation, and make prayers over them, and crucify Christ afresh, as it is said,"
+               and think that they are practising religion: men, whom God has rendered more naked
+               than a pebble as the text of Proverbs says, as their evil disposition deserves: men
+               who have fallen so far into conflict with God as to presume to anathematize the
+               Edict, under which, as those men say in so many words, the followers of Julian the
+               presbyter, whose soul is at rest; continued joined in communion with Peter, who
+               became bishop of the city of the Alexandrines after Timothy, unto this day, and went
+               into the church with him; not knowing that they are laying under an anathema men
+               whom, as they think, they ascribe to themselves as their fathers. For how is it that,
+               the right confession being contained in the Edict, they sought to have that which is
+               wanting added, i.e. a rejection of the Synod of Chalcedon, and when this was not
+               added withdrew from communion? If the Edict deserved an anathema, they ought never to
+               have assented to this at the beginning: but have demanded that it also be repudiated,
+               like one of the repudiated doctrines. So great is the lack of instruction and the
+               desire of amassing money: an object <pb n="331"/> that "blinds" even "the eyes of the
+               wise," as the sacred text says, not to speak of men who turn their attention to their
+               belly only: which they fatten every day and carry about like some honoured sister,
+               making their cheeks red by constant feastings, and presenting them swollen with fat
+               to those that meet them, and not hiding themselves at all. The good Anatolius also is
+               one of these, who foretold death to some men who had in full assurance communicated
+               with the holy church in Alexandria, claiming to draw prophecies from that fat belly
+               of his: but, when the prophecy failed to be fulfilled, he changed his tack and acted
+               as a suppliant to those who had received his menaces. Having fallen in with them on
+               the road, he knelt down and kept begging those who had been threatened to give him
+               forgiveness, and only to return to communion with him. But they after laughing for a
+               long time left him lying on the ground his prophecies and all. I pray your sanctities
+               to be assured that a certain quiet man who had received such a threat from him, after
+               communicating the knowledge to the holy church and accepting its help in considering
+               what was best to do, by God's permission was smitten with bright tumours on the side,
+               which many are in the habit of naming carbuncles. He, coming up to me (for he was one
+               of those who know our affairs), begged me to touch the afflicted part: and I,
+               beginning to weep, applied to it the chrism of the holy cross, and its <pb n="332"/>
+               venerated sign; and I sent this man away expecting to die. And on the next day the
+               Lord of hosts made the swelling caused by the tumours to disappear, and he did not
+               keep his bed for one single hour: but, going about and following his usual pursuits,
+               he was delivered from the affliction, "walking and leaping and praising God"; for the
+               sacred scripture will again express this also. But, if I have become a fool by
+               relating this, Anatolius the false prophet compelled me, even as the false apostles
+               did Paul; though I am not Paul, and am a sinner, yet not a breaker of the law or the
+               canons, but an observer of the law of Christ. Many other things also might have been
+               related, which expose the foolishness of those men, but confirm the power of the
+               truth: but the limits of a letter are not suited for such stories, seeing that they
+               need the extended range of oral conversation. For the same Anatolius thought fit to
+               say to certain men, "Hosius an old man, in whom alone I had confidence, who also" (he
+               says) "gave me the monastic garb, used to urge me, when I came to Palestine, to
+               communicate with the bishop of the city of the Antiochenes, saying that he placed
+               confidence in him. But, when" (he says) "I for my part went on to ask him whether I
+               ought also to communicate with the bishop of the city of the Alexandrines, he
+               answered that I ought not to do this. But I" (he says), "laughing at the contrariety
+               and inconsistency of the words, declined <pb n="333"/> to follow the advice." And
+               many other falsehoods he tells. To women:too he was to be seen prophesying, and
+               presumptuously laying threats upon them, while not getting anything else from such
+               practices but laughter only. However he does not perceive things that are of a nature
+               to cause shame, because he takes his pleasure in loaves of bread and cooked dishes
+               and various drinks that are offered him, and feeds his belly only. For this has in
+               fact been his object for a long time. To such an extent did the good and excellent
+               Mitras (for to him I return) use words without sense, that I almost even forgot my
+               caution, and even asked to meet and speak with him, and prevent him from being
+               shaken: but I have not been able to find a way of doing so, since the necessity that
+               surrounds me hinders the accomplishment of my wish. For he put forward one and
+               another counter-argument of contemptible character, swimming and tossing (?) in his
+               own fatuities and driven hither and thither at random. Among these one is this. They
+               used in fact to say of us that we communicated with Simeon who stood on the pillar:
+               and against those who laid down this counter-argument some of our supporters brought
+               forward the truth and said, "Accordingly on your principle Timothy also of holy
+               memory will rightly incur blame in this matter, if one does not take into account
+               considerations of expediency concerning the holy churches and the necessity of
+               joining and binding them together. For indeed he also is shown to have sent clergymen
+               to <pb n="334"/> the East: who communicated with Peter who at that time held the
+               prelacy of the city of the Antiochenes, bringing with them a synodical letter, And,
+               after all the names had been read, the bearers of this communicated in the oblation:
+               one among whom was the man called Achillas." Then they out of contentiousness falsely
+               disputed and said that Achillas had orders to remove the names, and he did not do as
+               he was ordered, and after his return to Alexandria was visited with punishment and
+               separation. But the fiction was refuted by the fact that Antiochene clergymen had
+               come at that time to the city of the Alexandrines to buy wheat, Syria being afflicted
+               with lack of wheat, and exercised the ministry here and communicated in the sacred
+               oblation. And again those audacious men said, "why did I pronounce a laudatory
+               discourse about him, when I ought to have held my peace, and to have given effect to
+               the considerations of expediency by silence?" In answer to this I said to those who
+               spoke, "The <foreign>prooimion</foreign> or preface of the discourse shows the whole
+               truth. Because the unholy Nestorians, whose leader was Theodoret, wished to snatch
+               for themselves the splendour of the man's character, and to attach this to the
+               heresy, I in composing the discourse made the true statement that he actually drove
+               away Theodoret and said that he did not even know the Synod: but that he believed in
+               the Father and the Son and the Holy Spirit. I added this argument also, which is very
+               true, that a man who did not know letters did not <pb n="335"/> sign: and those who
+               have grown old in the flock and yet survive showed this by many proofs. And in order
+               to exclude the impiety I made this manifest in the discourse, and prevented the
+               deception of the believing peoples who by this plea were being brought to what the
+               heretics desired, and were spurning the substance of the sound faith." So far said J.
+               But I find that the holy fathers also defend conspicuous men who are capable of
+               attracting many by their reputation, and this while knowing that those men did not
+               keep the accuracy of the faith, whom they enthusiastically and with many praises
+               defended. Such was the conduct of Athanasius when he wrote on behalf of Dionysius
+               against the Arians, who wished to snatch for themselves the reputation of the man in
+               support of their heresy. The purpose of Athanasius that made him compose the defence
+               and the encomium was very plain: and this was, not to give the adversaries a chance
+               of priding themselves upon him, and of putting forward the glory of Dionysius as a
+               covering for their evil belief. Basil the great, as you know, in writing to Maximus
+               the philosopher utters a pronouncement about Dionysius, in which he says these words:
+               "Wherefore also he is many-coloured in his writings: now taking away the
+               co-essentiality, on account of him who uses it in an evil way for the destruction of
+               the substances, now accepting it and making a defence to his name<pb n="336"/>sake.
+               In addition to these things he has regarding the Holy Spirit also left utterances
+               that do not at all beseem a spiritual man, exiling Him from the adorable Godhead, and
+               reckoning Him with created and ministering nature in some lower place." What then?
+               When we hear these things, shall we bring a just accusation against Athanasius on the
+               ground that by his defence he extolled and praised a man who thus fell from the right
+               standard of accuracy? or shall we accept him the more on account of this high
+               spiritual service of his and the skilful policy by which he did not allow the Arians
+               to pride themselves in such a man and thereby hurl the more simple down into the pit?
+               In all things the methods and actions of the fathers were directed to the end that
+               the orthodox faith might be spread abroad and that this might prevail in the
+               churches, and to the end that they might hinder the plots of the heretics, and might
+               bar every opening for deceit against them, and that they might remove the stones from
+               the royal road that no one might go astray. I have given vent to these utterances, —
+               I have grieved in my spirit as it is somewhere written over the wonderful Mitras,
+               who, as was said by the wise Paul to the Corinthians, suffers fools though he is
+               wise. For this reason I said like Job, "Wherefore neither will I refrain my mouth; I
+               will speak in the anguish of my spirit; I will open my mouth being <pb n="337"/>
+               constrained by the bitterness of my soul." I beg and entreat your holinesses, since
+               still even now I have not had an opportunity of speaking with him (if I shall. find
+               an opportunity, I will not neglect it), yourselves to fill my place, and suggest to
+               his smallness of soul not only these few things which I have said, but all that it is
+               in the power of your understandings to say. But, if I too "have erred" (I will again
+               quote the words of Job), "and a deceiver dwells with me," "teach me: and I will be
+               dumb"; and "I will lay mine hand upon my mouth: and, having once spoken, I will not
+               go on to speak a second time." </p>
+            <trailer>The end.</trailer>
+         </div>      
+      </body>
+  </text>
+</TEI>

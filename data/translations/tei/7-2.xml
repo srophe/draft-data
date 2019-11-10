@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title ref="http://syriaca.org/work/">To Jannia the Deaconess and
+               Archimandritess</title><!-- FILL IN TITLE AND WORK URI -->
+            <author ref="http://syriaca.org/person/51">Severus of Antioch</author>
+            <sponsor>Center of Digital Humanities Research, Texas A&amp;M University</sponsor>
+            <principal>Daniel L. Schwartz</principal>
+            <editor role="editor" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</editor>
+            <respStmt>
+               <resp>XML created by</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</name>
+            </respStmt>
+            <respStmt>
+               <resp>Based on the work of</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#ewbrooks">E. W. Brooks</name>
+            </respStmt>
+            <respStmt>
+               <resp>OCR corrected by</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</name>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition n="1"/>
+         </editionStmt>
+         <publicationStmt>
+            <distributor>
+               <placeName>Center of Digital Humanities Research, College Station, TX, USA</placeName>
+            </distributor>
+            <authority/><!-- FILL IN AFTER DECIDING ON NAME -->
+            <idno/><!-- FILL IN AFTER DECIDING ON URI/URL FORMAT -->
+            <availability>
+               <licence target="http://creativecommons.org/licenses/by/4.0/">
+                  <p>Creative Commons — Attribution 4.0 International — CC BY 4.0</p>
+                  <p>https://creativecommons.org/licenses/by/4.0/</p>
+               </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <editor ref="http://syriaca.org/person/403">
+                     <persName xml:lang="en">
+                        <forename>E. W.</forename>
+                        <surname>Brooks</surname>
+                     </persName>
+                  </editor>
+                  <title type="main" xml:lang="en" level="m">
+                     The Sixth Book of the Select Letters of
+                     <persName ref="http://syriaca.org/person/51">Severus Patriarch of Antioch</persName>
+                     in the Syriac Version of
+                     <persName ref="http://syriaca.org/person/1014">Athanasius of Nisibis</persName>
+                  </title>
+                  <title type="sub" xml:lang="en" level="m">Vol. II (Translation) Part II</title>
+                  <idno type="URI">http://syriaca.org/bibl/669</idno>
+                  <imprint>
+                     <publisher xml:lang="en">Williams and Norgate</publisher>
+                     <pubPlace ref="http://syriaca.org/place/861">Oxford</pubPlace>
+                     <date>1903</date>
+                  </imprint>
+                  <extent>Vol. 4 of 4</extent>
+                  <biblScope unit="vol">2.2</biblScope>
+                  <biblScope unit="page">368-71</biblScope>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <editorialDecl>
+            <p/><!-- FILL IN -->
+         </editorialDecl>
+      </encodingDesc>
+      <profileDesc>
+         <creation>
+            <origDate type="composition"/><!-- FILL IN. La Route Royale dates are probably preferable to Brooks' dates. -->
+         </creation>
+      </profileDesc>
+      <revisionDesc status="draft">
+         <change when="2019-11" who="http://syriaca.org/person.xml#dschwartz">Created file</change>
+      </revisionDesc>
+   </teiHeader>
+  <text>
+      <body>
+         <div type="letter" n="7.2">
+            <head type="main" resp="#compiler">Of the same to Jannia the deaconess and
+               archimandritess.</head>
+            <head type="sub" resp="#compiler">From those before episcopacy, from the 4th book the
+               118th, 12st letter.</head>
+            <p> The religious deacon, father Theodore, has asked me about the commands which he
+               received from your devoutness. But I, being poor in knowledge and having no right
+               even to open my mouth, seeing that I am doing no good service that gives me freedom
+               to speak, have been under the necessity of writing these things, since I yielded to
+               his entreaties accompanied by adjurations, and I also shrink from distressing you by
+               silence. Therefore I wish your religiousness to know that she who is entrusted with
+               the governance and headship of rational souls must possess unlimited fear, and a
+               heart of mercy: fear, lest she neglect any of God's judgments or commandments, and do
+               not teach them to the sisters or enforce them upon them: goodness of heart, lest in
+               enforcing strict discipline she harshly and without sympathy make the Lord's gentle
+               yoke heavy, and render His light burden grievous to be borne, though He Himself says
+               in the Gospels, "For my yoke is gentle and my burden is light". <pb n="369"/> You did
+               well therefore in showing condescension towards her who has been weak and has been
+               tempted by the evil one, and in restoring her to repentance by displaying the mercy
+               of pity towards her. Do not cease bearing with her as long as she displays penitence
+               by works of asceticism that is worthy the name and able to wash away the pollution of
+               sin. However, if her faults are such as to injure and stain the others also and
+               inflict her leprosy upon them, like the stains of men of corrupt mind mentioned in
+               the Apostle, cut her off and cast her from you: "for it is good for thee that one of
+               thy members should perish, and not that thy whole body should fall into hell." Only
+               so long must you bear with her as the detriment is confined to her, and does not pass
+               to the others also like some grievous flood. Expel from the company of the sisters
+               all license and idle speech, unrestrained and unseemly laughter, and adornment of the
+               body or of clothes, from which spring fornication and foul and filthy thoughts. For
+               one may wear the lowly and dark tunic itself or cloak in no modest or chaste fashion,
+               but wantonly and immodestly, and walk unbecomingly, and turn one's eyes about in a
+               disorderly way, and use dissolute language, and place one's limbs in a languishing
+               posture, and so satisfy the passion of elegance, and excite the lascivious desires.
+               Command them therefore to keep their heart "with all carefulness," and with David to
+               cry, "My flesh trembled for <pb n="370"/> fear of thee: for I was afraid of thy
+               judgments." If the fear of God reach our mind, and we persuade ourselves that
+               to-morrow we shall be dust and ashes, and that the fire of hell that is not quenched
+               will receive us, we shall slay all carnal pleasure. For he that trembles for fear of
+               God is dead to deeds of sin: but he is alive to works of righteousness: and he takes
+               no account of the labour of watching: but he rejoices and delights in the consolation
+               of song; and at working with his hands he is ready and cheerful, seeing that, having
+               fled from the greed and covetousness of the world, he gains by his own toil his daily
+               bread to eat, and often also to give of it to a poor man, and to feed Christ when
+               hungry. To all kinds of obedience also such a one is prompt, and carries out what is
+               commanded without cause for blame and immediately, saying according to the Lord's
+               commandment, "That which is my duty to do I have done," and fears to open his mouth
+               and speak idle and inexpedient words, and lose his toil. Let us pray therefore that
+               the fear of God may be bestowed upon us, which is itself the beginning of good works
+               and their preservation and completion. For "the fear of the Lord is the beginning of
+               wisdom": and "let him that thinketh he standeth take heed lest he fall." Besides all
+               other things I wish you to know this: <pb n="371"/> that, if you do not through your
+               honourable demeanour offer yourself as a model of good works to those who are being
+               taught, and by your actual conduct show them uncorruptness and modesty, as the
+               Apostle says, during your teaching, though you perish ten thousand times every day,
+               you will profit nothing: but you will be "as sounding brass," and as "a tinkling
+               cymbal": since our teacher and God Jesus Himself first began to do, and then to
+               teach, thereby giving us a model of virtue. The prophet David also shows that a man
+               cannot otherwise open his mouth and speak spiritual words, unless he has first loved
+               and served God's commandments: for he says, "I opened my mouth and breathed in
+               spirit, because I loved thy commandments." I have out of affection reminded your
+               religiousness of these things as in a few words: but do you in your deeds show better
+               things than these. </p>
+            <trailer>The end.</trailer>
+         </div>      
+      </body>
+  </text>
+</TEI>

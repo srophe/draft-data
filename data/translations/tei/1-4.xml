@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title ref="http://syriaca.org/work/">To Solon</title><!-- FILL IN TITLE AND WORK URI -->
+            <author ref="http://syriaca.org/person/51">Severus of Antioch</author>
+            <sponsor>Center of Digital Humanities Research, Texas A&amp;M University</sponsor>
+            <principal>Daniel L. Schwartz</principal>
+            <editor role="editor" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</editor>
+            <respStmt>
+               <resp>XML created by</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</name>
+            </respStmt>
+            <respStmt>
+               <resp>Based on the work of</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#ewbrooks">E. W. Brooks</name>
+            </respStmt>
+            <respStmt>
+               <resp>OCR corrected by</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</name>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition n="1"/>
+         </editionStmt>
+         <publicationStmt>
+            <distributor>
+               <placeName>Center of Digital Humanities Research, College Station, TX, USA</placeName>
+            </distributor>
+            <authority/><!-- FILL IN AFTER DECIDING ON NAME -->
+            <idno/><!-- FILL IN AFTER DECIDING ON URI/URL FORMAT -->
+            <availability>
+               <licence target="http://creativecommons.org/licenses/by/4.0/">
+                  <p>Creative Commons — Attribution 4.0 International — CC BY 4.0</p>
+                  <p>https://creativecommons.org/licenses/by/4.0/</p>
+               </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <editor ref="http://syriaca.org/person/403">
+                     <persName xml:lang="en">
+                        <forename>E. W.</forename>
+                        <surname>Brooks</surname>
+                     </persName>
+                  </editor>
+                  <title type="main" xml:lang="en" level="m">
+                     The Sixth Book of the Select Letters of
+                     <persName ref="http://syriaca.org/person/51">Severus Patriarch of Antioch</persName>
+                     in the Syriac Version of
+                     <persName ref="http://syriaca.org/person/1014">Athanasius of Nisibis</persName>
+                  </title>
+                  <title type="sub" xml:lang="en" level="m">Vol. II (Translation) Part I</title>
+                  <idno type="URI">http://syriaca.org/bibl/668</idno>
+                  <imprint>
+                     <publisher xml:lang="en">Williams and Norgate</publisher>
+                     <pubPlace ref="http://syriaca.org/place/861">Oxford</pubPlace>
+                     <date>1903</date>
+                  </imprint>
+                  <extent>Vol. 3 of 4</extent>
+                  <biblScope unit="vol">2.1</biblScope>
+                  <biblScope unit="page">23-34</biblScope>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <editorialDecl>
+            <p/><!-- FILL IN -->
+         </editorialDecl>
+      </encodingDesc>
+      <profileDesc>
+         <creation>
+            <origDate type="composition"/><!-- FILL IN. La Route Royale dates are probably preferable to Brooks' dates. -->
+         </creation>
+      </profileDesc>
+      <revisionDesc status="draft">
+         <change when="2019-11" who="http://syriaca.org/person.xml#dschwartz">Created file</change>
+      </revisionDesc>
+   </teiHeader>
+  <text>
+      <body>
+         <div type="letter" n="1.4">
+            <head type="main" resp="#compiler">Of the same to the same Solon the bishop.</head>
+            <head type="sub" resp="#compiler">from those during episcopacy, from the 2nd book the
+               42nd, 50th letter.</head>
+            <p> That there are limits even to long-suffering the sacred scripture clearly teaches
+               us, in that it speaks thus in the person of God over all, "All the day I have spread
+               out my hands unto a gainsaying and disobedient people": and again: "Thus saith the
+               Lord, 'Have I become a wilderness to them of the house of Israel, or a desert land?
+               Because my people said, "We will not be brought into subjection, and we will come no
+               more unto thee."'" What therefore is one to say about Musonius, who was known to us
+               for impudence and rustic denseness, and for love of money which is greater than all
+               evil things, which Paul who had Christ speaking in him said is "the root of all
+               evil?" Being excited by these same passions, he did not notice that he was blinded by
+               beams and searching for other men's motes through love of fault-finding and not in
+               order to guard the salvation of the brethren; insomuch as to upset the whole province
+               as far as his power extends, disturbing both bishops and laity, and on his own
+               authority adding burdens to burdens, and <pb n="24"/> not allowing them to arrive at
+               excellence by gradual advance, but by his arrogance to cause those who were standing
+               rightly to go over to the adversaries: insomuch that yet another prophecy is adapted
+               for quoting against him which says, "My sheep fed upon the trampling of your feet,
+               and drank the water that, was fouled by your feet; and ye thrust them with your sides
+               and with your shoulders, and ye pushed them with your horns; everyone that was sick
+               ye oppressed, till ye had driven them out, and my sheep were scattered upon every
+               crossway"; and again, "That which was weak ye did not strengthen, and that which was
+               sick ye did not heal, and that which was broken ye did not bind up, and that which
+               was in evil plight ye did not comfort, and that which was wandering ye did not bring
+               again, and that which was lost ye did not seek, and that which was sound ye subjected
+               by force." Of all these things he has been guilty, and as far as in him lies he has
+               made havoc of the province. To the orthodox he is burdensome and hostile, and is
+               always kicking his neighbours and pushing them with his horns and gnashing his teeth,
+               like unbroken asses or bulls or wild boars which feed in bestial fashion; but against
+               the adversaries he has never dared to speak so much as a word, but sits inside his
+               house and lives in fear; for such is the boldness which in face of those against whom
+               it is right to be bold shrinks and draws back, but in committing illegal <pb n="25"/>
+               deeds is precipitous and easily moved to action, and turns everything upside down.
+               Finally, saying that he had become a man according to the saying of the prophet,
+               because he loved strange men and went after them, he went away and found those who
+               could satisfy his avarice and fill his hand. And he did not even think it wrong to
+               exact interest: but, when the God-loving bishops were assembled here, he piteously
+               alleged poverty and want, and openly confessed that for this reason he followed the
+               avaricious practice of taking interest. And, though we gave him many admonitions, he
+               did not even promise to withhold his hand from the unconsecrated means of gain for
+               the future, and that though we ourselves gave him twelve gold pieces and promised to
+               pay him that sum every year, and to relieve the needs of the church that had been
+               entrusted to him; for this he used, so to speak, to bewail every day, going so far as
+               to speak to one of our religious presbyters, whose name is Hesychius, in so many
+               words thus, with the rusticity that is natural to him, "By God! what do you care, you
+               who receive the stipend of the clergy of Antioch, while I possess nothing in my city,
+               not so much as six denarii?" When I wrote to you before also, I quoted in the letter
+               his abominable, unholy words, full of sacrilege, which he dared to write in an
+               epistle to our religious presbyter Longinus; and they also are word for word as
+               follows:—"But you remember that I said to you, <pb n="26"/> 'He ought to have sent
+               something to our church as treasures. By this means not only do the men themselves
+               become more enthusiastic, but the other cities also which are in error, as if they
+               were jealous of us, would have come over and entered into accord with us. In this way
+               Flavian also acted to the bishop of Germanicupolis, when he gave both robes and
+               treasures to the unholy Bisula, and he drew the inhabitants of his country to him.'
+               And your holiness also reported these words to the same holy patriarch, and you told
+               me that you told him and he did not help you at all." What are we to say of a man who
+               from such passions left his flock and would not submit to be poor with Christ, who,
+               while as God He was rich, became poor of His own accord for our sake? This I say,
+               because the money-lover called moderate means poverty, and because, now that he has
+               reached this incurable depth of wickedness, it is absolutely necessary to strip him
+               of the priestly functions, and to subject him to the punishment prescribed by the
+               holy canons. For the seventeenth canon runs thus:—"Since many, while enrolled in the
+               canon, by pursuing after covetousness and base gains have forgotten the divine text
+               that says, 'He hath not put out his money upon interest,' and exact
+               <foreign>hekatostai</foreign> or one per cent. when they lend, the holy synod has
+               decided, that, if after this ordinance anyone be found receiving interest, contriving
+               the matter by commerce or otherwise, and <pb n="27"/> exacting
+               <foreign>hemioliai</foreign> or half the whole, or contriving anything else for
+               the sake of filthy lucre, his deposition from the clergy shall follow, and that he
+               shall be an alien to the canon." The hundred and seventh law also, laying down the
+               same principles, says plainly as follows:—"Priests must not lend and receive
+               interest, and what are called <foreign>hemioliai</foreign>." </p>
+            <p> But as to Paul, who I would had never become bishop of the city of the Olbians, who
+               because of a provocation that deserves to be treated with contempt left his flock,
+               and was often admonished by me and calmed his savageness, and said that he would be
+               calm and remain at peace and stay in his church, and "returned again to his vomit,"
+               it is necessary for us to use the prophetic words and say, "We healed Babylon, and
+               she was not healed. Let us leave her." Having a dispute with the religious Hilarian,
+               bishop of Diocaesarea, about a certain monastery, an unhallowed and unseemly dispute,
+               but still a dispute, he closed his ears to the apostolic statutes, and would not give
+               them any admission, the statutes that say, "Behold! already ye are utterly in fault
+               that ye go to law with one another; why do ye not rather take wrong? why do ye not
+               rather suffer yourselves to be defrauded? but ye wrong and defraud and that your
+               brethren; or know ye not that unrighteous persons shall not inherit the kingdom of
+               God?"; and often, when he argued. in a childish and rustic manner about this, I
+               persuaded <pb n="28"/> him and restored him to a proper state of mind. For he used
+               always to swear and say that he had great faith in me, and that he revered my labours
+               and struggles on behalf of the orthodox faith (I am even compelled to become a fool
+               by quoting words in my own praise in order to show his disposition). And he would
+               depart from our presence, as if he had been delivered from thoughts that wallow on
+               the earth. But, being bound up in earthly things and infected with the perversity of
+               strife, he would again abandon himself to the same contentiousness. And, being wholly
+               swayed by anger, and swelling with contentious strifes, he would at one time go up to
+               the royal city, and at another hasten to other countries. And at last, out of love of
+               base gains, he went over to the schism of Musonius, the same Musonius who in his
+               letter to the religious presbyter Longinus, which I mentioned a short time ago, with
+               regard to the same Paul made, sentence for sentence and word for word; such
+               statements as these: "But I will make yet another small addition to the letter. In
+               everything I blame myself. I caused him to be made bishop of Olba, because thought
+               that there was some good in him, since he displayed an appearance of undergoing a
+               struggle for the faith. And it turned out contrary to my expectations. For he had a
+               mad and wicked strife about a place which was subject to pay tribute to the lord
+               Hilarian the bishop, while he wished to make this <pb n="29"/> subject to himself;
+               and the afore-mentioned saintly bishop Hilarian bore with him as long as possible,
+               but, not finding in him any advance towards settling the affair, at last appropriated
+               the place to himself by setting up an altar there. For it was a monastery. But Paul
+               went out of his mind and became like a demon and wrought every kind of disorder,
+               reviling me also. He says he will come there to you. If this happens, write to me and
+               I will come with the lord Hilarian also, and expose all his conduct. God forgive me
+               and be merciful to me! he is not worthy to set foot even on the doorway of the church
+               owing to the deeds done by him. I tremble and am afraid to repeat in the letter the
+               facts regarding him, lest I pollute your ears which are benevolent and God-loving.
+               May the holy God himself grant your holiness to me! For you are always our
+               refreshment and consolation, whenever we remember your name." What mercy therefore
+               can one admit in the case of men who are so foolish, and have unreasonably abandoned
+               their flock on account of base and unhallowed passions, while the sacred canons do
+               not give them any forgiveness, but the eighty-first canon plainly says: "If any
+               presbyter or deacon or generally anyone of the sacred order should leave his own
+               parish and pass to another, and afterwards, completely removing, try to live in
+               another parish for a long time, he shall not minister any more; and especially if
+               when his own bishop calls him and <pb n="30"/> admonishes him to return to his own
+               parish he should not obey; and, if he should continue in the same disorderly conduct,
+               his complete deposition from the ministry shall follow, so that he shall not again
+               have a chance of returning to his place; but, if when his deposition takes place for
+               this reason, another bishop should receive him, he also shall receive punishment from
+               a general synod, as breaking the church laws." And moreover the purport of the
+               eighty-seventh canon also is the same, and it says thus: "The bishops in each of the
+               provinces must know that the bishop who stands at their head in the metropolis is
+               himself entrusted with the care of the whole province, because those who have
+               business meet in the metropolis from every place; wherefore it has seemed good that
+               he shall also be the first in honour, and the other bishops shall do nothing outside
+               the ordinary course without him, in accordance with the canon that has prevailed from
+               the beginning from the time of the fathers, but only those things which belong to
+               each man's province and to the districts under this; for each of the bishops has
+               authority to administer his own parish, in proportion to the devoutness that has
+               fallen to the lot of each, and to undertake the care of all the district that is
+               under his city, in so far as to ordain presbyters and deacons, and to administer each
+               matter with judgment or examination, but not to do anything outside the course, or
+               even try to do so, without the <pb n="31"/> bishop of the metropolis. Neither shall
+               he again do this without the consent of the other bishops." It is a long task to
+               quote the things that are laid down in various places by the holy canons. However it
+               is manifest from the citations made that, since Musonius and Paul have offended
+               against the intention of all church discipline by leaving their country, they have
+               made themselves aliens to the high-priestly office, since they have run counter to
+               Him who said, "The good shepherd layeth down his life for his sheep: but he that is
+               an hireling and is not the shepherd, and whose own the sheep are not, when he hath
+               seen the wolf coming, leaveth the sheep and fleeth, and the wolf seizeth and
+               scattereth them: but the hireling fleeth because he is an hireling, and careth not
+               for the sheep." I had nearly omitted yet another fact which also affords a manifest
+               proof of the madness and of the foolish impulses of Musonius. When he was making a
+               charge against the devout archdeacon Callistus on the ground that he had bought the
+               priestly order and status, thereby satisfying his wrathful inclination, and not
+               actuated in any way by religious motives, he wrote to us to the effect that such a
+               man as that ought to retire from the archidiaconate, but minister in the order of
+               deacons. And he heard me quote, and with great justice, the passage of holy scripture
+               that says, "May thine own mouth convict thee and not I!", and that also which was
+               spoken by the divine Daniel to the <pb n="32"/> presumptuous elders, on one occasion,
+               "Rightly hast thou also lied against thine head," and on another, "O thou that hast
+               grown old in evil days, now have thy sins come near which thou usedst to commit
+               aforetime, in judging unjust judgments, and in condemning the innocent, and in
+               acquitting the guilty, when the Lord saith, 'The innocent and righteous thou shalt
+               not slay.'" "For, if, as you say, he bought for money the grace that may not be
+               bought, such a man ought to be removed not only from the archidiaconate, but also
+               from the diaconate itself." What then is his ignorant and very rustic defence to
+               this? "Callistus, while archdeacon, puts a stumbling-block in the others' way by
+               carrying the holy gospel on his breast." "What does he say then, madman, to the
+               ignorant person who is near him? Do you think that the cup of salvation of the divine
+               blood has less virtue than the book of the holy gospels, and that the onlookers will
+               not strike upon a greater stumbling-block, when a man who has bought the ministry
+               carries this?" It seems to me that I am doing a superfluous thing in insisting on
+               speaking words without eloquence to men who have contracted this unholy infection.
+               These words your sanctity ought to speak to those who have remained sound, and to
+               call to you the saintly bishops of your province, who confess the orthodox faith, and
+               hold the same communion with us, but strip those men of the priesthood, inasmuch as
+               they did not spare the rational <pb n="33"/> sheep, but reckoned the salvation of
+               these secondary to their own passions, and left these as in a night in which is no
+               brightness, and tried to submerge them so deeply in the turbid drink that they should
+               not even have power to rise. However we believe that they will find such efforts
+               vain. For by the mandate of the divine Spirit, and the lawful vote of the citizens
+               through the mediation of your <choice>
+                  <sic>sancity</sic>
+                  <corr>sanctity</corr>
+               </choice>, bishops and high-priest will be ordained for the cities who will feed
+               their flocks with understanding. For he that speaks through Ezekiel says, "Behold! I
+               will seek out my sheep, and will visit them. As the shepherd visiteth his flock on a
+               day of storm and darkness when his sheep are scattered, so will I seek my sheep, and
+               I will deliver them from every place wherein they have been scattered on the day of
+               storm and darkness." Therefore visit these sheep with the help of God, and do not
+               show negligence or give any occasion for delay, lest you bring yourself under the
+               condemnation of these men, and draw upon your head the sentence hanging over them.
+               For we may hear yet another sacred utterance of the prophet which says, "Cursed is he
+               that shall do the works of the Lord negligently, and cursed is he that shall keep
+               back his sword from blood." As there is a time for mercy, so also there is a time for
+               cutting off: for we hear the same Spirit saying in Koheleth, "There is a time to
+               plant, and a time to pluck up that which is planted: a time to kill, and a time to
+               heal: a <pb n="34"/> time to break down and a time to build," and the other passages
+               through which we understand how that it is with judgment that we must handle the
+               divine words and fulfil the ministry of these. </p>
+            <trailer>The end.</trailer>
+         </div>
+      </body>
+  </text>
+</TEI>

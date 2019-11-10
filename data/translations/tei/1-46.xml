@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title ref="http://syriaca.org/work/">To the Clergymen of Antaradus</title>
+            <author ref="http://syriaca.org/person/51">Severus of Antioch</author>
+            <sponsor>Center of Digital Humanities Research, Texas A&amp;M University</sponsor>
+            <principal>Daniel L. Schwartz</principal>
+            <editor role="editor" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</editor>
+            <respStmt>
+               <resp>XML created by</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</name>
+            </respStmt>
+            <respStmt>
+               <resp>Based on the work of</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#ewbrooks">E. W. Brooks</name>
+            </respStmt>
+            <respStmt>
+               <resp>OCR corrected by</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</name>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition n="1"/>
+         </editionStmt>
+         <publicationStmt>
+            <distributor>
+               <placeName>Center of Digital Humanities Research, College Station, TX, USA</placeName>
+            </distributor>
+            <authority/><!-- FILL IN AFTER DECIDING ON NAME -->
+            <idno/><!-- FILL IN AFTER DECIDING ON URI/URL FORMAT -->
+            <availability>
+               <licence target="http://creativecommons.org/licenses/by/4.0/">
+                  <p>Creative Commons — Attribution 4.0 International — CC BY 4.0</p>
+                  <p>https://creativecommons.org/licenses/by/4.0/</p>
+               </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <editor ref="http://syriaca.org/person/403">
+                     <persName xml:lang="en">
+                        <forename>E. W.</forename>
+                        <surname>Brooks</surname>
+                     </persName>
+                  </editor>
+                  <title type="main" xml:lang="en" level="m">
+                     The Sixth Book of the Select Letters of
+                     <persName ref="http://syriaca.org/person/51">Severus Patriarch of Antioch</persName>
+                     in the Syriac Version of
+                     <persName ref="http://syriaca.org/person/1014">Athanasius of Nisibis</persName>
+                  </title>
+                  <title type="sub" xml:lang="en" level="m">Vol. II (Translation) Part I</title>
+                  <idno type="URI">http://syriaca.org/bibl/668</idno>
+                  <imprint>
+                     <publisher xml:lang="en">Williams and Norgate</publisher>
+                     <pubPlace ref="http://syriaca.org/place/861">Oxford</pubPlace>
+                     <date>1903</date>
+                  </imprint>
+                  <extent>Vol. 3 of 4</extent>
+                  <biblScope unit="vol">2.1</biblScope>
+                  <biblScope unit="page">126-29</biblScope>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <editorialDecl>
+            <p/><!-- FILL IN -->
+         </editorialDecl>
+      </encodingDesc>
+      <profileDesc>
+         <creation>
+            <origDate type="composition"/><!-- FILL IN. La Route Royale dates are probably preferable to Brooks' dates. -->
+         </creation>
+      </profileDesc>
+      <revisionDesc status="draft">
+         <change when="2019-11" who="http://syriaca.org/person.xml#dschwartz">Created file</change>
+      </revisionDesc>
+   </teiHeader>
+  <text>
+      <body>
+         <div type="letter" n="1.46">
+            <head type="main" resp="#compiler">Of the same to the clergymen of Antaradus.</head>
+            <head type="sub" resp="#compiler">from those during episcopacy, from the 8th book the
+               264th, 265th letter.</head>
+            <p> When I had read your devoutnesses' petitions concerning the necessity of a shepherd
+               being nominated for you, in accordance with the precepts of the holy canons and the
+               laws of the Spirit, and concerning the articles that belong of right to your holy
+               church, but are unreasonably and unjustly detained by others, after giving due
+               consideration to the whole matter I thought it right to refer the whole case to our
+               serene Christ-loving king and his pious ears. For it is from him after God that we
+               receive useful and satisfactory assistance in difficult affairs. Wherefore it is your
+               duty at once to insert in a <foreign>psephisma</foreign> three men well-known for
+               virtue and capable of being entrusted with a rational leadership of this kind, in
+               order that we may choose the man who stands highest in these respects, and confer <pb
+                  n="127"/> ordination upon him; or rather present him for the inspiration of the
+               Spirit: for the choice and judgment and bestowal in such matters are from above:
+               since in fact "every good bestowal and every perfect gift is from above, coming down
+               from the Father of lights," as the sacred scripture somewhere says. Let this be both
+               considered and performed in this way, and may it be brought to a good end by God!
+               Whereas the devout deacon Stephen has just presented petitions to me and informed me
+               that Leontius, who has lived an unhallowed life, but was improperly admitted to
+               ordination as deacon, as if setting himself to act in accordance with his former
+               life, contracted a second marriage after ordination, and after this was by the
+               bishop's judgment struck out of the sacred tablets, and as an indulgence was allowed
+               to minister again, but now wishes to retain deacon's rank and claims to be made head
+               over the others, though he ought not to be ranked even among those that are under a
+               head, how can we neglect the intimation that has been given us, and close our ears to
+               such audacious deeds on his part? Even if it is the case that, while your holy church
+               was without anyone to act as shepherd, the man who then held the post of archdeacon
+               by a presumptuous action enrolled him in the order of deacons, this action is already
+               in every way invalid. This man ought therefore to stand entirely outside the
+               ministry, and to feel the sins that he has committed, and to congratulate himself
+               that he does not gain <pb n="128"/> experience of some canonical punishment; not go
+               on further to desire the headship that it is no way proper for him to hold. But the
+               first position in the order of religious deacons shall be held by those who are
+               summoned from among the members of the order. For the present this is the conclusion
+               at which we have arrived: but, if Leontius thinks that he has any right founded upon
+               the canons that may help him, let him inform the apostolic see of this; and the fact
+               of the accusation will not do him any harm whatever, if he have truth on his side. If
+               he was conscious of guilt even on one count only of those that were related to us, he
+               ought, he ought indeed to have restricted himself to a modest and humble demeanour,
+               and thought of Him who said by Jeremiah the prophet, "'Hear these things, foolish
+               people and without understanding, which have eyes and see not, and have ears and hear
+               not! or will ye not fear me,' saith the Lord, 'and will ye not tremble at my face,
+               which have placed the sand as a bound for the sea, an everlasting decree, and it
+               shall not pass it?'" However for our part we feared for his sake owing to the
+               terrible nature of the reports, and were unable to remain silent in such
+               circumstances. And, since the church ministry "requires blamelessness," we decided
+               that he should cease to exercise this, in order that we might not seem even to
+               ourselves by acquiescing in the sins that he committed and the deeds that he thought
+               good to do, to be by our silence actually <pb n="129"/> approving the evil thing, and
+               apply to ourselves the words spoken by God to the same prophet, "A wonder and a
+               horror has happened upon the earth; the prophets prophesy falsehood, and the priests
+               clapped their hands." But, since we are always desirous of arriving at the truth, and
+               we know that the magnificent Christ-loving count John is very desirous of this, we
+               have written to his magnificence to examine into the true state of the case, and
+               notify our meanness of it. For in everything let truth and justice be respected;
+               while at the same time the honour of the holy church is preserved, and the ministry
+               has the reverence assigned to it which is its by right, especially by those to whom
+               this ministry has been committed, through the benignance and ineffable grace of God. </p>
+            <trailer>The end.</trailer>
+         </div>
+      </body>
+  </text>
+</TEI>

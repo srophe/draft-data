@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title ref="http://syriaca.org/work/">To the Wife of Calliopius the Patrician on
+               a Diptych</title><!-- FILL IN TITLE AND WORK URI -->
+            <author ref="http://syriaca.org/person/51">Severus of Antioch</author>
+            <sponsor>Center of Digital Humanities Research, Texas A&amp;M University</sponsor>
+            <principal>Daniel L. Schwartz</principal>
+            <editor role="editor" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</editor>
+            <respStmt>
+               <resp>XML created by</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</name>
+            </respStmt>
+            <respStmt>
+               <resp>Based on the work of</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#ewbrooks">E. W. Brooks</name>
+            </respStmt>
+            <respStmt>
+               <resp>OCR corrected by</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</name>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition n="1"/>
+         </editionStmt>
+         <publicationStmt>
+            <distributor>
+               <placeName>Center of Digital Humanities Research, College Station, TX, USA</placeName>
+            </distributor>
+            <authority/><!-- FILL IN AFTER DECIDING ON NAME -->
+            <idno/><!-- FILL IN AFTER DECIDING ON URI/URL FORMAT -->
+            <availability>
+               <licence target="http://creativecommons.org/licenses/by/4.0/">
+                  <p>Creative Commons — Attribution 4.0 International — CC BY 4.0</p>
+                  <p>https://creativecommons.org/licenses/by/4.0/</p>
+               </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <editor ref="http://syriaca.org/person/403">
+                     <persName xml:lang="en">
+                        <forename>E. W.</forename>
+                        <surname>Brooks</surname>
+                     </persName>
+                  </editor>
+                  <title type="main" xml:lang="en" level="m">
+                     The Sixth Book of the Select Letters of
+                     <persName ref="http://syriaca.org/person/51">Severus Patriarch of Antioch</persName>
+                     in the Syriac Version of
+                     <persName ref="http://syriaca.org/person/1014">Athanasius of Nisibis</persName>
+                  </title>
+                  <title type="sub" xml:lang="en" level="m">Vol. II (Translation) Part II</title>
+                  <idno type="URI">http://syriaca.org/bibl/669</idno>
+                  <imprint>
+                     <publisher xml:lang="en">Williams and Norgate</publisher>
+                     <pubPlace ref="http://syriaca.org/place/861">Oxford</pubPlace>
+                     <date>1903</date>
+                  </imprint>
+                  <extent>Vol. 4 of 4</extent>
+                  <biblScope unit="vol">2.2</biblScope>
+                  <biblScope unit="page">382-84</biblScope>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <editorialDecl>
+            <p/><!-- FILL IN -->
+         </editorialDecl>
+      </encodingDesc>
+      <profileDesc>
+         <creation>
+            <origDate type="composition"/><!-- FILL IN. La Route Royale dates are probably preferable to Brooks' dates. -->
+         </creation>
+      </profileDesc>
+      <revisionDesc status="draft">
+         <change when="2019-11" who="http://syriaca.org/person.xml#dschwartz">Created file</change>
+      </revisionDesc>
+   </teiHeader>
+  <text>
+      <body>
+         <div type="letter" n="7.7">
+            <head type="main" resp="#compiler">Of the same to the wife of Calliopius the patrician on
+               a diptych.</head>
+            <head type="sub" resp="#compiler">From those during episcopacy, from the 8th book the
+               157th letter.</head>
+            <p> Being engaged in hearing a certain cause, I had not time to attend to what was
+               written by your highness immediately. But, now that I have read it, I have this much
+               to say: that concerning the confession of faith it is necessary for me to give you an
+               admonition. For in such things as these it is not right to be negligent. For we hear
+               the Apostle saying, "For necessity is laid upon me: and woe unto me if I preach not
+               the gospel." Indeed, even when such a <pb n="383"/> thing is said in simplicity as
+               you say, it is foreign and alien to the right confession, I mean that Christ should
+               be reckoned as an addition to the Holy Trinity, or, vice versa, that we should place
+               Him before and in this way confess the Trinity. Having positive knowledge that you
+               are sound in the faith, and that you rejoice at such an admonition, I have written to
+               you, and that with very just confidence. But, since the same apostle says in writing
+               in another place, "Let your speech be always seasoned with grace as with salt," with
+               grace that does not fall outside the limits of devoutness I have added also the case
+               of that woman: and that though it is certainly in no way alien to believing women to
+               help one another, especially in such urgent matters. The practice of women teaching
+               in public and giving expositions to men the wise Paul disallowed, saying, "I suffer
+               not a woman to teach, nor to usurp authority over a man: but let her be in silence."
+               But that they should correct their sisters in their assemblies and conversations he
+               properly permitted, especially those who are advanced in age, calling them "teachers
+               of good things," in order that they may give an example to the others also in
+               everything. Also the women who were taught at that time by the Lord show that
+               instruction in religion is not foreign even to the female sex. For this reason too he
+               accepted Mary who was industrious in this matter, saying, "Mary hath chosen for
+               herself the good part, <pb n="384"/> which shall not be taken from her." Accordingly
+               both to learn and to teach such things, in a proper manner and according to the
+               character of each person, belongs to every sex and is praiseworthy and blessed. I
+               forbear to go on to refer to Paul who says in his epistle to the Philippians about
+               certain women, "Which combated with me in the gospel with Clement and my other
+               helpers," in order not to be thought to be prolonging the argument, and doing
+               detriment to the brevity of an admonitory letter. </p>
+            <trailer>The end.</trailer>
+         </div>      
+      </body>
+  </text>
+</TEI>

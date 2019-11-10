@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title ref="http://syriaca.org/work/">To Antoninus, Bishop of Berrhoea</title>
+            <author ref="http://syriaca.org/person/51">Severus of Antioch</author>
+            <sponsor>Center of Digital Humanities Research, Texas A&amp;M University</sponsor>
+            <principal>Daniel L. Schwartz</principal>
+            <editor role="editor" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</editor>
+            <respStmt>
+               <resp>XML created by</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</name>
+            </respStmt>
+            <respStmt>
+               <resp>Based on the work of</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#ewbrooks">E. W. Brooks</name>
+            </respStmt>
+            <respStmt>
+               <resp>OCR corrected by</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</name>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition n="1"/>
+         </editionStmt>
+         <publicationStmt>
+            <distributor>
+               <placeName>Center of Digital Humanities Research, College Station, TX, USA</placeName>
+            </distributor>
+            <authority/><!-- FILL IN AFTER DECIDING ON NAME -->
+            <idno/><!-- FILL IN AFTER DECIDING ON URI/URL FORMAT -->
+            <availability>
+               <licence target="http://creativecommons.org/licenses/by/4.0/">
+                  <p>Creative Commons — Attribution 4.0 International — CC BY 4.0</p>
+                  <p>https://creativecommons.org/licenses/by/4.0/</p>
+               </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <editor ref="http://syriaca.org/person/403">
+                     <persName xml:lang="en">
+                        <forename>E. W.</forename>
+                        <surname>Brooks</surname>
+                     </persName>
+                  </editor>
+                  <title type="main" xml:lang="en" level="m">
+                     The Sixth Book of the Select Letters of
+                     <persName ref="http://syriaca.org/person/51">Severus Patriarch of Antioch</persName>
+                     in the Syriac Version of
+                     <persName ref="http://syriaca.org/person/1014">Athanasius of Nisibis</persName>
+                  </title>
+                  <title type="sub" xml:lang="en" level="m">Vol. II (Translation) Part I</title>
+                  <idno type="URI">http://syriaca.org/bibl/668</idno>
+                  <imprint>
+                     <publisher xml:lang="en">Williams and Norgate</publisher>
+                     <pubPlace ref="http://syriaca.org/place/861">Oxford</pubPlace>
+                     <date>1903</date>
+                  </imprint>
+                  <extent>Vol. 3 of 4</extent>
+                  <biblScope unit="vol">2.1</biblScope>
+                  <biblScope unit="page">61-63</biblScope>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <editorialDecl>
+            <p/><!-- FILL IN -->
+         </editorialDecl>
+      </encodingDesc>
+      <profileDesc>
+         <creation>
+            <origDate type="composition"/><!-- FILL IN. La Route Royale dates are probably preferable to Brooks' dates. -->
+         </creation>
+      </profileDesc>
+      <revisionDesc status="draft">
+         <change when="2019-11" who="http://syriaca.org/person.xml#dschwartz">Created file</change>
+      </revisionDesc>
+   </teiHeader>
+  <text>
+      <body>
+         <div type="letter" n="1.16">
+            <head type="main" resp="#compiler">Of the same to the same Antoninus, bishop of
+               Berrhoea.</head>
+            <head type="sub" resp="#compiler">From those during episcopacy, from the 4th book the
+               101st letter.</head>
+            <p> As for the accusation in the matter of the silence after the feast of salvation,
+               which you attack as if it had been a violation of justice, I shall be acquitted by
+               the experience of fact. For indeed before the charge itself was made at all I had
+               already sent a letter to your sanctity by John the eloquent scholastic. Nevertheless
+               you must know that the greeting which is given at the festival of the saving
+               Resurrection should always begin by a letter from you, as is the established rule
+               with regard to the other God-loving bishops also. How is it then that, when you had
+               not yet cast the <pb n="62"/> seed, you were thinking about the things that spring
+               from that? With a clever jest at our poverty or our need you said that the devout
+               Mark came to us in order to give presents, not in order to receive anything, and
+               therefore we thanked your sacred soul in this matter also, and readily showed towards
+               him too all the duties of love without expense, making the intercourse with him to
+               consist of a cheerful face, a serene aspect, and gentle speech, and repaying the
+               presents brought by him with torches and spices. Also on the subject'? of the estates
+               that are near the hamlet called Beth Remsha but of right belong to your holy church,
+               we are exerting all our ability, and will cause measures to be taken that will accord
+               with justice and also satisfy you. As to the Jews, as soon as I received your letter
+               and found a convenient time, I thought good to prescribe a course to you in a few
+               words. You must apply the distinction made by the apostolic laws of the wise Paul,
+               who in speaking of matters relating to us cries, "Avenge not yourselves, my beloved,
+               but give place unto wrath," and "'Mine is vengeance and will repay,' saith the Lord,"
+               but in speaking of presumptuous deeds against God says, "If a man despise Moses' law,
+               he dieth without mercy at the mouth of two or three witnesses; of how much sorer
+               punishment think ye that he will be worthy. who hath trampled on the Son of God, and
+               hath counted the blood of the covenant whereby he was sanctified a <pb n="63"/>
+               common thing, and hath done despite unto the Spirit of grace?" All who took part in
+               the sin should, in my opinion, be subjected to a penalty, in order that even in
+               future time the action taken may be a lawful example to those who dare to do the same
+               things. Knowing therefore that this is our mind on this matter, carry out what ought
+               to be done with the help of God, even though hereafter we appear to write something
+               that goes farther in the way of concession or is more ambiguous, avoiding however the
+               appearance of contradicting ourselves. This I say on account of certain men who show,
+               as they think, philosophy and clemency in the case of presumptuous deeds done against
+               Christ. But I bring my words back like some ship to the prelude or beginning of the
+               letter, and again pray on behalf of your love of God with a disposition that is at
+               the same time fervent and humble, one that exacts from us the debts of love and stirs
+               our coldness to spiritual affection. For who is there, even though he be a man of no
+               feeling, who would not be put to shame by such modest words as are written by you? </p>
+            <trailer>The end.</trailer>
+         </div>
+      </body>
+  </text>
+</TEI>

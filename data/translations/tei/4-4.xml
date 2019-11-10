@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title ref="http://syriaca.org/work/">To Dionysius Bishop of Tarsus</title><!-- FILL IN TITLE AND WORK URI -->
+            <author ref="http://syriaca.org/person/51">Severus of Antioch</author>
+            <sponsor>Center of Digital Humanities Research, Texas A&amp;M University</sponsor>
+            <principal>Daniel L. Schwartz</principal>
+            <editor role="editor" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</editor>
+            <respStmt>
+               <resp>XML created by</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</name>
+            </respStmt>
+            <respStmt>
+               <resp>Based on the work of</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#ewbrooks">E. W. Brooks</name>
+            </respStmt>
+            <respStmt>
+               <resp>OCR corrected by</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</name>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition n="1"/>
+         </editionStmt>
+         <publicationStmt>
+            <distributor>
+               <placeName>Center of Digital Humanities Research, College Station, TX, USA</placeName>
+            </distributor>
+            <authority/><!-- FILL IN AFTER DECIDING ON NAME -->
+            <idno/><!-- FILL IN AFTER DECIDING ON URI/URL FORMAT -->
+            <availability>
+               <licence target="http://creativecommons.org/licenses/by/4.0/">
+                  <p>Creative Commons — Attribution 4.0 International — CC BY 4.0</p>
+                  <p>https://creativecommons.org/licenses/by/4.0/</p>
+               </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <editor ref="http://syriaca.org/person/403">
+                     <persName xml:lang="en">
+                        <forename>E. W.</forename>
+                        <surname>Brooks</surname>
+                     </persName>
+                  </editor>
+                  <title type="main" xml:lang="en" level="m">
+                     The Sixth Book of the Select Letters of
+                     <persName ref="http://syriaca.org/person/51">Severus Patriarch of Antioch</persName>
+                     in the Syriac Version of
+                     <persName ref="http://syriaca.org/person/1014">Athanasius of Nisibis</persName>
+                  </title>
+                  <title type="sub" xml:lang="en" level="m">Vol. II (Translation) Part II</title>
+                  <idno type="URI">http://syriaca.org/bibl/669</idno>
+                  <imprint>
+                     <publisher xml:lang="en">Williams and Norgate</publisher>
+                     <pubPlace ref="http://syriaca.org/place/861">Oxford</pubPlace>
+                     <date>1903</date>
+                  </imprint>
+                  <extent>Vol. 4 of 4</extent>
+                  <biblScope unit="vol">2.2</biblScope>
+                  <biblScope unit="page">260-61</biblScope>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <editorialDecl>
+            <p/><!-- FILL IN -->
+         </editorialDecl>
+      </encodingDesc>
+      <profileDesc>
+         <creation>
+            <origDate type="composition"/><!-- FILL IN. La Route Royale dates are probably preferable to Brooks' dates. -->
+         </creation>
+      </profileDesc>
+      <revisionDesc status="draft">
+         <change when="2019-11" who="http://syriaca.org/person.xml#dschwartz">Created file</change>
+      </revisionDesc>
+   </teiHeader>
+  <text>
+      <body>
+         <div type="letter" n="4.4">
+            <head type="main" resp="#compiler">Of the same to Dionysius bishop of Tarsus.</head>
+            <head type="sub" resp="#compiler">From those during episcopacy, from the 2nd book the 4th
+               letter.</head>
+            <p> How I behaved with all attention and respect towards you when you came here it is
+               not mine to say, but it belongs to you who had the experience to declare this, if
+               need demand. Of this also I think your religiousness is not unaware, that of your own
+               accord and without pressure from anyone you confessed everything that ts required for
+               a confession of the orthodox faith and a renunciation of the offences that have
+               divided the unity of God's holy churches, and ratified it in writing and in a letter.
+               How is it then that you have treated things thus done with piety and of your own
+               accord as nothing and do not keep them "with all observance," as it is written," but
+               admit to the ministry men who do not share your belief, and by the expressions which
+               you carelessly and lightly utter to these show that you entered into union with the
+               cause of piety rather because you gave way before the time than because you
+               deliberately chose what was right? Perhaps it is time for me to say <pb n="261"/> to
+               you the words of the Apostle also, I mean, "Ye have not yet withstood unto blood in
+               the combat against sin, and ye have forgotten the exhortation which speaketh unto you
+               as unto sons." I shall in fact be very much ashamed, and hide myself, if we, whose
+               duty it is to see "the Lord's glory with open face" and with boldness and after the
+               manner of apostles, have the veil of fear and of respect of persons laid upon our
+               hearts. Therefore let that which has been neglected receive the required correction
+               and care. If the deed that has been done had been a case of rejecting my meanness, I
+               would perhaps have overlooked it: but, if it is a case of insulting and contemning
+               the orthodox faith, it is by no means a course free from danger for us to keep
+               silence in this matter, if we have any regard for the eternal torture that is
+               threatened. For the holy Basil also in writing to a certain Urbicius a monk speaks as
+               follows: [Here follows the citation given on p. 259]. </p>
+            <trailer>The end.</trailer>
+         </div>      
+      </body>
+  </text>
+</TEI>

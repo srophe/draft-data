@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title ref="http://syriaca.org/work/">To Georgia Daughter of Anastasia the
+               Hypatissa</title><!-- FILL IN TITLE AND WORK URI -->
+            <author ref="http://syriaca.org/person/51">Severus of Antioch</author>
+            <sponsor>Center of Digital Humanities Research, Texas A&amp;M University</sponsor>
+            <principal>Daniel L. Schwartz</principal>
+            <editor role="editor" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</editor>
+            <respStmt>
+               <resp>XML created by</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</name>
+            </respStmt>
+            <respStmt>
+               <resp>Based on the work of</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#ewbrooks">E. W. Brooks</name>
+            </respStmt>
+            <respStmt>
+               <resp>OCR corrected by</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</name>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition n="1"/>
+         </editionStmt>
+         <publicationStmt>
+            <distributor>
+               <placeName>Center of Digital Humanities Research, College Station, TX, USA</placeName>
+            </distributor>
+            <authority/><!-- FILL IN AFTER DECIDING ON NAME -->
+            <idno/><!-- FILL IN AFTER DECIDING ON URI/URL FORMAT -->
+            <availability>
+               <licence target="http://creativecommons.org/licenses/by/4.0/">
+                  <p>Creative Commons — Attribution 4.0 International — CC BY 4.0</p>
+                  <p>https://creativecommons.org/licenses/by/4.0/</p>
+               </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <editor ref="http://syriaca.org/person/403">
+                     <persName xml:lang="en">
+                        <forename>E. W.</forename>
+                        <surname>Brooks</surname>
+                     </persName>
+                  </editor>
+                  <title type="main" xml:lang="en" level="m">
+                     The Sixth Book of the Select Letters of
+                     <persName ref="http://syriaca.org/person/51">Severus Patriarch of Antioch</persName>
+                     in the Syriac Version of
+                     <persName ref="http://syriaca.org/person/1014">Athanasius of Nisibis</persName>
+                  </title>
+                  <title type="sub" xml:lang="en" level="m">Vol. II (Translation) Part II</title>
+                  <idno type="URI">http://syriaca.org/bibl/669</idno>
+                  <imprint>
+                     <publisher xml:lang="en">Williams and Norgate</publisher>
+                     <pubPlace ref="http://syriaca.org/place/861">Oxford</pubPlace>
+                     <date>1903</date>
+                  </imprint>
+                  <extent>Vol. 4 of 4</extent>
+                  <biblScope unit="vol">2.2</biblScope>
+                  <biblScope unit="page">455-59</biblScope>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <editorialDecl>
+            <p/><!-- FILL IN -->
+         </editorialDecl>
+      </encodingDesc>
+      <profileDesc>
+         <creation>
+            <origDate type="composition"/><!-- FILL IN. La Route Royale dates are probably preferable to Brooks' dates. -->
+         </creation>
+      </profileDesc>
+      <revisionDesc status="draft">
+         <change when="2019-11" who="http://syriaca.org/person.xml#dschwartz">Created file</change>
+      </revisionDesc>
+   </teiHeader>
+  <text>
+      <body>
+         <div type="letter" n="10.8">
+            <head type="main" resp="#compiler">Of the same to Georgia daughter of Anastasia the
+               hypatissa.</head>
+            <head type="sub" resp="#compiler">From those after banishment, from the 5th book the 22nd
+               letter.</head>
+            <p> Since for my part I never regard your glorious modesty's affairs with indifference,
+               but with great earnestness concern myself for your salvation, as for that of a
+               beloved daughter, and I look into God's deep judgments, by the evidence of actual
+               facts I perceive that you are supported by great help from above, and conduct your
+               life with very watchful care. For that you should have reached the flower of your age
+               and not yet been yoked in marriage to your glorious parents perhaps and to the others
+               who love a worldly manner seems a reason for anger as well as a matter of sorrow. But
+               I regard it as a thing of <pb n="456"/> great profit and pronounce it to be so. This,
+               I think, is the meaning to which the statement made by the wise Paul to the
+               Corinthians also points; "If any man thinketh that he is put to shame in his virgin
+               if she hath passed the flower of her age, so also ought it to be." What he says is in
+               fact something like this; "What is thought by some to be a cause of shame, I mean
+               that a virgin should reach an advanced time of life, this I have thought to be both
+               advantageous and beneficial." Just as the fruit of a tree, when taken before the
+               time, causes no pleasure by its taste, because it is without the sweetness that gives
+               the pleasure, but actually hurts the teeth, by reason of its sharpness or acidity, in
+               the same way also a virgin who has not yet ripened in her season so to speak, but has
+               the disposition of the flesh undeveloped and too tender, hurts and does not profit
+               the man who marries her: because her character is not fixed, and inasmuch as her time
+               has not yet come is unstable and not constant, but rather easily excited and driven
+               to childish wrath, and disturbed perhaps by melancholy and irrational gloominess. How
+               is it anything but shameful that, while a wrestler does not go down into the violence
+               of the arena [unless he has been thoroughly trained in wrestling, or a soldier] into
+               the battle array, unless he has been thoroughly trained <pb n="457"/> in military
+               matters, a virgin should be introduced into the society of marriage, and should pass
+               to the headship and government of her husband's house without having been perfectly
+               trained in her parents' house, or learned how she should govern a house, and in what
+               way she ought to behave to each of those that are under her authority? It has often
+               happened that bad men, when they have obtained women who are undeveloped and of
+               unfixed character, have perverted them to their own bad model, and stamped the lines
+               of their own wickedness upon their tender disposition as upon wax. Whence, when they
+               have been sated and not been able [...] your modest mother in your father's glorious
+               house, and through advanced age has been instructed in administrative science, and
+               has been perfectly exercised in such useful exercises, and you have at the same time
+               also increased the wisdom of your character, you will go to your husband's house like
+               some image and statue that is perfect in beauty and not lacking in anything, and you
+               will be to him "a helper like unto him"; since woman was in fact created by Him who
+               said in the beginning, "It is not good that the man should be alone; let us make him
+               a helper like unto him." A woman who is trained and skilled in governing a house, and
+               intelligent and a real helper in the world's difficulties, is in truth a <pb n="458"
+               /> haven fora man. For in fact, when a man has gone out to [...] in a law-court,
+               either because he is doing or because he is suffering wrong, or again he is often
+               inflamed to anger, and wantonly insults or on the contrary is insulted in his turn,
+               the anger of another blowing against him like some storm. But, when the time calls
+               and he returns to his house for food, agitated and disturbed by anxieties, he
+               encounters his wife's intelligence: he finds her temper both placid and calm: he
+               tells what has happened to him in the street. Then she like a trained physician
+               gently looks into the hidden sources of trouble: she touches his heart with
+               intelligent words, and learns the causes. And, when she has found that he has been
+               excited without good reason, she appeases the fury of his mind by offering peaceful
+               [...] that I have written these things also. And I beg you, lady, not to tell anyone
+               whatever that you have received this letter from me, even if he be an angel from
+               heaven. You will in fact both bring danger upon me by telling it and vex God; and you
+               will make many angry with me, because I did not write to them too just as I have done
+               to you. But we believe that Christ, the God of orthodoxy, who every day carries out
+               the words that say, "Other sheep also <pb n="459"/> I have which are not of this
+               fold; and I must bring them also and they shall hear my voice, and they shall be one
+               flock and one Shepherd," will make your glorious and exalted father also His own. </p>
+            <trailer>Not the end.</trailer>
+         </div>      
+      </body>
+  </text>
+</TEI>

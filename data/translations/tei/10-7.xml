@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title ref="http://syriaca.org/work/">To Caesaria the Patrician</title><!-- FILL IN TITLE AND WORK URI -->
+            <author ref="http://syriaca.org/person/51">Severus of Antioch</author>
+            <sponsor>Center of Digital Humanities Research, Texas A&amp;M University</sponsor>
+            <principal>Daniel L. Schwartz</principal>
+            <editor role="editor" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</editor>
+            <respStmt>
+               <resp>XML created by</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</name>
+            </respStmt>
+            <respStmt>
+               <resp>Based on the work of</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#ewbrooks">E. W. Brooks</name>
+            </respStmt>
+            <respStmt>
+               <resp>OCR corrected by</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</name>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition n="1"/>
+         </editionStmt>
+         <publicationStmt>
+            <distributor>
+               <placeName>Center of Digital Humanities Research, College Station, TX, USA</placeName>
+            </distributor>
+            <authority/><!-- FILL IN AFTER DECIDING ON NAME -->
+            <idno/><!-- FILL IN AFTER DECIDING ON URI/URL FORMAT -->
+            <availability>
+               <licence target="http://creativecommons.org/licenses/by/4.0/">
+                  <p>Creative Commons — Attribution 4.0 International — CC BY 4.0</p>
+                  <p>https://creativecommons.org/licenses/by/4.0/</p>
+               </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <editor ref="http://syriaca.org/person/403">
+                     <persName xml:lang="en">
+                        <forename>E. W.</forename>
+                        <surname>Brooks</surname>
+                     </persName>
+                  </editor>
+                  <title type="main" xml:lang="en" level="m">
+                     The Sixth Book of the Select Letters of
+                     <persName ref="http://syriaca.org/person/51">Severus Patriarch of Antioch</persName>
+                     in the Syriac Version of
+                     <persName ref="http://syriaca.org/person/1014">Athanasius of Nisibis</persName>
+                  </title>
+                  <title type="sub" xml:lang="en" level="m">Vol. II (Translation) Part II</title>
+                  <idno type="URI">http://syriaca.org/bibl/669</idno>
+                  <imprint>
+                     <publisher xml:lang="en">Williams and Norgate</publisher>
+                     <pubPlace ref="http://syriaca.org/place/861">Oxford</pubPlace>
+                     <date>1903</date>
+                  </imprint>
+                  <extent>Vol. 4 of 4</extent>
+                  <biblScope unit="vol">2.2</biblScope>
+                  <biblScope unit="page">448-55</biblScope>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <editorialDecl>
+            <p/><!-- FILL IN -->
+         </editorialDecl>
+      </encodingDesc>
+      <profileDesc>
+         <creation>
+            <origDate type="composition"/><!-- FILL IN. La Route Royale dates are probably preferable to Brooks' dates. -->
+         </creation>
+      </profileDesc>
+      <revisionDesc status="draft">
+         <change when="2019-11" who="http://syriaca.org/person.xml#dschwartz">Created file</change>
+      </revisionDesc>
+   </teiHeader>
+  <text>
+      <body>
+         <div type="letter" n="10.7">
+            <pb n="448"/>
+            <head type="main" resp="#compiler">Of the same to Caesaria the patrician.</head>
+            <head type="sub" resp="#compiler">From those after banishment, from the 3rd book the 46th
+               letter.</head>
+            <p> It seemed to me perfectly credible that, as stated by your glorious modesty, you
+               gained so much profit from reading my mean letter with understanding. The good soil
+               that is like your God-loving soul knows, it knows indeed, how, even when receiving
+               barren seed, to give forth fruitful produce in plenty, insomuch as to reach to the
+               perfect measure of a hundred. <add><emph>And after other things.</emph></add> As to
+               the short treatise that is being circulated and carried about by certain persons,
+               which you say is inscribed with my name and bears such an ascription, a treatise that
+               I shrink from even taking upon my lips, seeing that it is full of ignorance and
+               stupidity, know that it is not the work of our meanness at all: but a forgery either
+               of certain foolish men who are called orthodox, or of heretics who wish to hide their
+               shame and make it appear to those who come across it that it is we who keep men away
+               from communion with them by fraudulent words, not they who separate from them by
+               reason of their sound faith, and recognise and abhor their manifest impiety and
+               Jewish opinions. Let not this too be unknown to your God-loving <pb n="449"/>
+               highness: that a certain devout presbyter also came from the East, and showed us
+               other letters also purporting to be mine, that are in part forged and falsified; the
+               forgery and garbling having been done by certain persons whose business it is to
+               forge such things to their own destruction as the Apostle says. And we brought him
+               the documents themselves: and after comparing the genuine documents he reprobated and
+               condemned the falsehood, and cursed the wicked men who commit such wanton wickedness
+               against the truth. And no wonder if the devil through his own instruments wrought
+               such things against us the sinner and weakling, considering that in the same way he
+               contrived similar things or even more serious against the apostolic doctors of the
+               church also. The great Basil in the letter addressed to the ascetics and solitaries
+               under him, at Orobiane and at Chalane, asserts that certain persons were circulating
+               forged and spurious letters against him: as to whom he also says; "Many letters are
+               being circulated against me, which contain abuse and derision and speak evil of us in
+               respect of the actions: for which we have a defence ready before the court of truth":
+               and again; "My words shall judge me: but for the offences of others no man shall
+               condemn us." Moreover in another letter also, writing to those at Neocaesarea, he
+               showed that certain persons were also inventing dreams against him, thinking by this
+               also to cast aspersions upon his <pb n="450"/> faith: about whom even while laughing
+               at their absurdity he says, "Men who acted so shamelessly against us as even to
+               invent certain dreams against us, bringing charges against our teachings as hurtful."
+               But,.since I do not read negligently anything that is written to me by your believing
+               excellency, but do so with much consideration and diligently, I think it to be
+               necessary for us to give you some short answer on another matter also. You besought
+               me to pray on behalf of your modesty that the Lord would release you from the bonds
+               of this world, and would bring you to the calm haven of penitence, seeing that you
+               are buried as you say in the evils of this world. Do not forget therefore, you whom I
+               revere above everyone, that the apostle Paul in his epistle to Titus lays down a law
+               for women that are yoked in marriage in these terms; "Let the young women be lovers
+               of their husbands, lovers of their children, chaste, pure, good housekeepers, subject
+               to their husbands, that the word of God be not blasphemed." It is therefore manifest
+               that, if anyone depart from the canon of this statute, and be carried though but a
+               little to the right side or the left, he will be judged as a transgressor against the
+               law. A woman who fears God and obeys Christ's commands must practise love of her
+               husband as readily as the love of God itself. If the husband is the head of the wife
+               in the same fashion as the Lord is the head of the church, a woman who loves her
+               husband chastely <pb n="451"/> through the medium of her husband loves Christ the
+               Head of all heads. On the same principle also a woman who keeps her house, and keeps
+               the things within the house with strenuousness and watchfulness, imitates a man who
+               presides over a church and wisely administers the sacred things on the care of those
+               that are in need. That every believer's house also is a church the same Paul further
+               bears witness when in greeting certain believers in his epistles he says, "Greet also
+               the church that is in your house." One may fitly admire the way in which the Apostle,
+               after saying that women who love God ought to be such as keep their houses,
+               immediately added "good housekeepers." For there are women who from their great
+               carefulness in housekeeping are induced to make profit out of the goods, and are
+               hence incited to covetousness, the mother of evil deeds. Wherefore, to cut away such
+               a vice, he said that such women ought to be good, in order that by the justification
+               and consolation of those that are in need the house also may be increased; seeing
+               that the blessings that are from heaven will be measured to them in return, and they
+               will through beneficence lay down beforehand a good foundation for themselves in the
+               future life. At. the same time by naming them good he also inculcates kindness to
+               menservants and bondmaids, and all that are bound under the yoke of slavery. Of the
+               love of a husband also and of chastity this is the criterion, not that a wife <pb
+                  n="452"/> look at her personal chastity only, but how far she regards her
+               husband's preservation also with watchful eyes, and makes every effort that he too
+               may be content with intercourse with her only, not that he may turn himself to
+               another connexion. If she herself be chaste, but do not concern herself about her
+               husband falling into fornication, she has, unknown to herself, become chaste in half
+               her body and in half of it defiled, in that she is transgressing against the divine
+               laws. If in fact they are not two, according to our Saviour's saying, but the two are
+               reckoned as making one flesh, what profit is there in the chastity of one portion,
+               when the conjoined portion is led away to lasciviousness? Marriage is then
+               "honourable and the bed unsullied," when the whole of it is hallowed in the whole
+               body. But the whole body is husband and wife, having the same mind, and treating the
+               marriage as a mystery of God, and hence making the procreation of children to be
+               blessed, and from all sides bringing praise and glory, not reviling, upon the word of
+               God. If you walk by these laws and know your place, and do not desire other things
+               beyond the measure that is commanded, you will be an inheritor of the kingdom of
+               heaven, and with the wives of those patriarchs Abraham, Isaac, and Jacob, and all
+               that are such, you will receive the promises of immortal life: who also lived with
+               men that were owners of sheepfolds (?) and lords of cattle and of much wealth and
+               armed <pb n="453"/> themselves for war when the time summoned to this also, and with
+               them fulfilled God's commandments perfectly. These things I have written because I
+               gave my attention to the words contained in the letter of your believing soul, and I
+               considered the fire of the Spirit that is in you, and I feared lest out of great
+               fervour you might incautiously form some plan that is at variance with the laws of
+               piety; for you know such pleas, which by the use of considerations that are rather
+               upon the right side are apt to deceive the pious. The words of divine scripture that
+               have been cited would even by themselves have been enough to confirm your love of God
+               in acquiescence with the admonition of our meanness: but I have thought it good to
+               corroborate what I have said from the teaching of the fathers also, and to plant the
+               loyal disposition more firmly in you. The wise John, who was bishop of
+               Constantinople, towards the end of the commentary on the Gospel of Matthew, in the
+               exposition the beginning of which is "But Jesus stood before the governor wrote in
+               these terms about the cunning of the devil, by which he has cheated specially fervent
+               souls: "He has also a third evil trap: as for example: when he
+               <sic><reg>throws</reg><orig>thows</orig></sic> an appearance of devoutness over
+               a sin. 'And how has the devil succeeded so far as to cheat even in these things?'
+               Hear, and beware of his counsels. Christ commanded through Paul that wife should not
+               separate from husband, and they should not defraud one another, except perhaps by <pb
+                  n="454"/> consent. But some women, having on the ground of a desire for continence
+               separated themselves from their husbands as if they were doing some devout action,
+               have thrust them down into adultery. Reflect therefore what an evil thing it is that,
+               while undergoing so much toil, they should be charged with having done the greatest
+               wrong and pay the utmost penalty, and thrust their spouses down into a pit of
+               destruction. Other persons again by abstaining from foods under the law of fasting
+               have gradually come to reject these: a thing which itself also brings heavy
+               punishment. And this happens when they assign greater validity to their own thoughts
+               than to the determinations of the scriptures." Therefore I beg your glorious modesty
+               to turn the glances of your understanding on all sides, and hear the divine laws, and
+               listen to Paul who says, "Let every man wherein he was called therein abide." Since
+               God called you under the yoke of marriage, in it also maintain a loyal contest, and
+               show prowess: and be one that loves her husband and loves her children and is a good
+               housekeeper, in order that through these things you may at the same time be also one
+               that loves God. Never on account of these things term yourself one buried in the mire
+               of evils, and flee from the bonds of the world: but flee from the bonds of evil. For
+               in these we are all in the same fashion bound. The divine text somewhere says, <pb
+                  n="455"/> "Who will boast that he hath a pure heart? Or who will be confident of
+               being pure from sins?" But we who have believed the gospel try, as far as is possible
+               for men, to purify our soul through commandments: in order that God, looking upon the
+               readiness of our heart as is sung in the Psalms, not upon the weakness of our nature,
+               may admit us to mercy and graciousness in the day of judgment, and make us sharers in
+               the kingdom of heaven, because the heavenly One became man and consorted with those
+               that are on the earth, having become a man in truth and without difference and not in
+               semblance. </p>
+            <trailer>The end.</trailer>
+         </div>      
+      </body>
+  </text>
+</TEI>

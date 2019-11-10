@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title ref="http://syriaca.org/work/">To Thecla the Countess</title><!-- FILL IN TITLE AND WORK URI -->
+            <author ref="http://syriaca.org/person/51">Severus of Antioch</author>
+            <sponsor>Center of Digital Humanities Research, Texas A&amp;M University</sponsor>
+            <principal>Daniel L. Schwartz</principal>
+            <editor role="editor" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</editor>
+            <respStmt>
+               <resp>XML created by</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</name>
+            </respStmt>
+            <respStmt>
+               <resp>Based on the work of</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#ewbrooks">E. W. Brooks</name>
+            </respStmt>
+            <respStmt>
+               <resp>OCR corrected by</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</name>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition n="1"/>
+         </editionStmt>
+         <publicationStmt>
+            <distributor>
+               <placeName>Center of Digital Humanities Research, College Station, TX, USA</placeName>
+            </distributor>
+            <authority/><!-- FILL IN AFTER DECIDING ON NAME -->
+            <idno/><!-- FILL IN AFTER DECIDING ON URI/URL FORMAT -->
+            <availability>
+               <licence target="http://creativecommons.org/licenses/by/4.0/">
+                  <p>Creative Commons — Attribution 4.0 International — CC BY 4.0</p>
+                  <p>https://creativecommons.org/licenses/by/4.0/</p>
+               </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <editor ref="http://syriaca.org/person/403">
+                     <persName xml:lang="en">
+                        <forename>E. W.</forename>
+                        <surname>Brooks</surname>
+                     </persName>
+                  </editor>
+                  <title type="main" xml:lang="en" level="m">
+                     The Sixth Book of the Select Letters of
+                     <persName ref="http://syriaca.org/person/51">Severus Patriarch of Antioch</persName>
+                     in the Syriac Version of
+                     <persName ref="http://syriaca.org/person/1014">Athanasius of Nisibis</persName>
+                  </title>
+                  <title type="sub" xml:lang="en" level="m">Vol. II (Translation) Part II</title>
+                  <idno type="URI">http://syriaca.org/bibl/669</idno>
+                  <imprint>
+                     <publisher xml:lang="en">Williams and Norgate</publisher>
+                     <pubPlace ref="http://syriaca.org/place/861">Oxford</pubPlace>
+                     <date>1903</date>
+                  </imprint>
+                  <extent>Vol. 4 of 4</extent>
+                  <biblScope unit="vol">2.2</biblScope>
+                  <biblScope unit="page">423-27</biblScope>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <editorialDecl>
+            <p/><!-- FILL IN -->
+         </editorialDecl>
+      </encodingDesc>
+      <profileDesc>
+         <creation>
+            <origDate type="composition"/><!-- FILL IN. La Route Royale dates are probably preferable to Brooks' dates. -->
+         </creation>
+      </profileDesc>
+      <revisionDesc status="draft">
+         <change when="2019-11" who="http://syriaca.org/person.xml#dschwartz">Created file</change>
+      </revisionDesc>
+   </teiHeader>
+  <text>
+      <body>
+         <div type="letter" n="9.3">
+            <head type="main" resp="#compiler">Of the same to Thecla the countess.</head>
+            <head type="sub" resp="#compiler">From those after banishment, from the 3rd book the 53rd
+               letter.</head>
+            <p> The letter of reminder that was given by your magnificence to the learned and
+               believing grammarian Stephen <pb n="424"/> showed me by the reading of it that still
+               even now you remain that Thecla whom Theotecnus the presbyter, who is in all things
+               steadfast and religious, would depict to me in words of piety, tracing the likeness
+               as in colours: who so much attracted me by his words that I was then the first to
+               begin to write a letter to you. Wherefore also I confess myself indebted to God our
+               Saviour that neither has his testimony which he bore on your behalf been falsified,
+               nor my faith in your God-loving modesty which I then gained. The devoutness of your
+               character is shown by the fact that your own judgment was not enough for you, and you
+               had not confidence enough to presume to things to which it is not proper to presume
+               before being confirmed by a lawful utterance of high-priests. And now you are blessed
+               on account of your praiseworthy fear, by the text of the sacred writings that says,
+               "Blessed is he that feareth everything through devoutness." Further praise I assign
+               to you from the divine law also which ordered a man in disputed causes, and that
+               while the service consisting in shadowy things and types yet prevailed, to repair to
+               the place where the Levites and priests dwelt, and the judge who had the headship
+               over all things at that time, and from them obtain a solution of the doubt. It is
+               good and very beneficial to quote in the letter the words of the law itself, which
+               are as follows: "But, if any matter be too hard for thee in judgment, between blood
+               and blood, and between judgment and <pb n="425"/> judgment, and between stroke and
+               stroke, and between reviling and reviling, words of judgment in your cities, thou
+               shalt arise and go up to the place which the Lord God shall choose for His name to be
+               called there: and thou shalt go in unto the priests the Levites and unto the judge
+               that shall be in those days, and they shall inquire and show thee thy judgment: and
+               thou shalt do according to the commandment which they shall pronounce to thee that
+               are from the place which the Lord thy God shall choose for His name to be called
+               there: and thou shalt observe well to do according to all things that shall be
+               ordained for thee. According to the law and according to the judgment which they
+               shall pronounce to thee do: thou shalt not decline from the sentence which they shall
+               pronounce to thee, neither to the right hand, nor to the left." The intention of
+               these expressions of the law you have fulfilled in actual deed, both by feeling
+               intelligent doubt, and by referring the question as to the doubt to the pronouncement
+               of the high-priests, in that you have stated that a certain baby, having been seized
+               with severe illness, and having already reached the very gates of death, was sent to
+               a prayer house building to receive the laver of regeneration, and the communion of
+               the divine light; and, it so happening that the presbyter of that place was not
+               there, you say that the deacon by reason of the urgency of the case dipped the boy in
+               the water of life, and performed the legal ceremony; and after the action <pb n="426"
+               /> the presbyter came and complained of what had been done as unlawful, and sought to
+               subject the deacon to punishment. For it was doubted among you whether the boy who
+               was baptized received the perfect grace. You must know that in matters that are
+               doubtful and rarely occur one cannot find broad statutes: since those who made the
+               statutes took care to avoid giving occasion through absence of restraint for the
+               rules of strictness to be corrupted. Therefore concerning this problem? also and
+               concerning its rareness it is written in the Constitutions" or in the Commands of the
+               Apostles, which they named the Testament of the Lord, that a deacon also may
+               administer the laver of regeneration when a presbyter is not present, by reason of
+               the imminence of the necessary end of death: this same rare observance being
+               proclaimed in these words: "In case of necessity, if a presbyter is not present, let
+               a deacon baptize". Therefore the presbyter did well in paying attention to what was
+               done by the deacon out of necessity, and performing the ceremonies that follow
+               baptism, and laying upon the boy who had been baptized the anointing with the holy
+               chrism, and the seal of the perfection that results from this. As to the other
+               question about the other strange and unknown boy who could not repeat any mystic
+               symbol, by which you might have been able to learn whether he is a believer or an
+               unbeliever, as not having received <pb n="427"/> the laver of regeneration, a letter
+               has been written by me to the God-loving bishop Theodore of a certain city in Isauria
+               named Olbe, and I have determined to quote the same to you at the end of this letter,
+               as being sufficient to provide you with a solution of the doubt. May you be preserved
+               to us, noble God-loving woman, who show your strict practice regarding faith in God
+               even by the questions which you ask in doubt! That strictness continue to keep till
+               your last breath: for "without faith it is impossible to please" says the Apostle. </p>
+            <trailer>The end.</trailer>
+         </div>      
+      </body>
+  </text>
+</TEI>

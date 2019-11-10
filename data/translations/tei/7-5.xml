@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title ref="http://syriaca.org/work/">To Victor Bishop of Philadelphia</title><!-- FILL IN TITLE AND WORK URI -->
+            <author ref="http://syriaca.org/person/51">Severus of Antioch</author>
+            <sponsor>Center of Digital Humanities Research, Texas A&amp;M University</sponsor>
+            <principal>Daniel L. Schwartz</principal>
+            <editor role="editor" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</editor>
+            <respStmt>
+               <resp>XML created by</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</name>
+            </respStmt>
+            <respStmt>
+               <resp>Based on the work of</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#ewbrooks">E. W. Brooks</name>
+            </respStmt>
+            <respStmt>
+               <resp>OCR corrected by</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</name>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition n="1"/>
+         </editionStmt>
+         <publicationStmt>
+            <distributor>
+               <placeName>Center of Digital Humanities Research, College Station, TX, USA</placeName>
+            </distributor>
+            <authority/><!-- FILL IN AFTER DECIDING ON NAME -->
+            <idno/><!-- FILL IN AFTER DECIDING ON URI/URL FORMAT -->
+            <availability>
+               <licence target="http://creativecommons.org/licenses/by/4.0/">
+                  <p>Creative Commons — Attribution 4.0 International — CC BY 4.0</p>
+                  <p>https://creativecommons.org/licenses/by/4.0/</p>
+               </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <editor ref="http://syriaca.org/person/403">
+                     <persName xml:lang="en">
+                        <forename>E. W.</forename>
+                        <surname>Brooks</surname>
+                     </persName>
+                  </editor>
+                  <title type="main" xml:lang="en" level="m">
+                     The Sixth Book of the Select Letters of
+                     <persName ref="http://syriaca.org/person/51">Severus Patriarch of Antioch</persName>
+                     in the Syriac Version of
+                     <persName ref="http://syriaca.org/person/1014">Athanasius of Nisibis</persName>
+                  </title>
+                  <title type="sub" xml:lang="en" level="m">Vol. II (Translation) Part II</title>
+                  <idno type="URI">http://syriaca.org/bibl/669</idno>
+                  <imprint>
+                     <publisher xml:lang="en">Williams and Norgate</publisher>
+                     <pubPlace ref="http://syriaca.org/place/861">Oxford</pubPlace>
+                     <date>1903</date>
+                  </imprint>
+                  <extent>Vol. 4 of 4</extent>
+                  <biblScope unit="vol">2.2</biblScope>
+                  <biblScope unit="page">378-80</biblScope>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <editorialDecl>
+            <p/><!-- FILL IN -->
+         </editorialDecl>
+      </encodingDesc>
+      <profileDesc>
+         <creation>
+            <origDate type="composition"/><!-- FILL IN. La Route Royale dates are probably preferable to Brooks' dates. -->
+         </creation>
+      </profileDesc>
+      <revisionDesc status="draft">
+         <change when="2019-11" who="http://syriaca.org/person.xml#dschwartz">Created file</change>
+      </revisionDesc>
+   </teiHeader>
+  <text>
+      <body>
+         <div type="letter" n="7.5">
+            <head type="main" resp="#compiler">Of the same to Victor bishop of Philadelphia.</head>
+            <head type="sub" resp="#compiler">From those during episcopacy, from the 4th book the
+               156th letter.</head>
+            <p> That the thing which holds Christianity together is love we are all assured. But
+               what is the peculiarity of love except to regard a neighbour as itself? Therefore,
+               since we have heard a report that is not good about. the devout John, who formerly
+               ministered to the presbyter Aelian who is among the saints, to the effect that he has
+               lapsed into love of money and the vileness of filthy lucre, and the other vices that
+               are akin to <pb n="379"/> these (if the text is not false which said that "the love
+               of money is the root of all evil things "), we urge your holiness, who besides your
+               other good qualities are rich also in the virtue of obedience, to send this man to
+               his own monastery in order that he may keep quiet: especially since he came to us in
+               an improper way and as one may say self-invited, and not by invitation and as one who
+               is carrying out an order so that he might also receive a reward. For I have learned
+               that his evil repute has also reached our holy fathers of the house of the saintly
+               John and Theodore. In what way I do not intend to say: but that those who related
+               these things are not liars, and that they have "the fear of God before their eyes,"
+               and that they are greatly devoted to your love of God I know and am assured, and I
+               have gained this knowledge from actual experience. I remember also that the devout
+               John often showed a lucre-loving character in affairs, in the neighbourhood of the
+               holy monasteries where I and your love of God lived, and that he did not edify us
+               much (for we must speak thus moderately), The occasion of this hunting after lucre in
+               him was that old man, and the attendance on that invalid, and the disguise thence
+               derived, coloured with Melian earth of this kind. Therefore I beg your holiness to
+               purge away this blot also and reflect that nothing is likely to impair the whole
+               administration of those who preside over a people (not <pb n="380"/> only spiritual
+               administration but also political or any other kind whatever) so much as intercourse
+               with those who are constantly with them and serve them and are entrusted by them with
+               things that cannot be entrusted to those without. For this reason the prophet David,
+               leaving us a rule and a statute for an illustrious life, sang to the God of all,
+               "When the wicked man turned aside from me I did not know": and, "Mine eyes are upon
+               the faithful of the land that they may sit with me: and he that walked in a blameless
+               way he ministered to me": and the passages that agree with and resemble these, words
+               which everyone sings and takes into his mouth, but few, and those such as you,
+               display in act. These things have been written by us with the love of Christ going in
+               advance and filling up the measure of the letter. Though we are sinners, we are in
+               the habit of endeavouring to do what is good not for the sake of anything else, but
+               for the sake of goodness itself only. </p>
+            <trailer>The end.</trailer>
+         </div>      
+      </body>
+  </text>
+</TEI>

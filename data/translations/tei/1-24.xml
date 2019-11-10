@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title ref="http://syriaca.org/work/">To Theotecnus the
+               <foreign>Archiatros</foreign></title>
+            <author ref="http://syriaca.org/person/51">Severus of Antioch</author>
+            <sponsor>Center of Digital Humanities Research, Texas A&amp;M University</sponsor>
+            <principal>Daniel L. Schwartz</principal>
+            <editor role="editor" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</editor>
+            <respStmt>
+               <resp>XML created by</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</name>
+            </respStmt>
+            <respStmt>
+               <resp>Based on the work of</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#ewbrooks">E. W. Brooks</name>
+            </respStmt>
+            <respStmt>
+               <resp>OCR corrected by</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</name>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition n="1"/>
+         </editionStmt>
+         <publicationStmt>
+            <distributor>
+               <placeName>Center of Digital Humanities Research, College Station, TX, USA</placeName>
+            </distributor>
+            <authority/><!-- FILL IN AFTER DECIDING ON NAME -->
+            <idno/><!-- FILL IN AFTER DECIDING ON URI/URL FORMAT -->
+            <availability>
+               <licence target="http://creativecommons.org/licenses/by/4.0/">
+                  <p>Creative Commons — Attribution 4.0 International — CC BY 4.0</p>
+                  <p>https://creativecommons.org/licenses/by/4.0/</p>
+               </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <editor ref="http://syriaca.org/person/403">
+                     <persName xml:lang="en">
+                        <forename>E. W.</forename>
+                        <surname>Brooks</surname>
+                     </persName>
+                  </editor>
+                  <title type="main" xml:lang="en" level="m">
+                     The Sixth Book of the Select Letters of
+                     <persName ref="http://syriaca.org/person/51">Severus Patriarch of Antioch</persName>
+                     in the Syriac Version of
+                     <persName ref="http://syriaca.org/person/1014">Athanasius of Nisibis</persName>
+                  </title>
+                  <title type="sub" xml:lang="en" level="m">Vol. II (Translation) Part I</title>
+                  <idno type="URI">http://syriaca.org/bibl/668</idno>
+                  <imprint>
+                     <publisher xml:lang="en">Williams and Norgate</publisher>
+                     <pubPlace ref="http://syriaca.org/place/861">Oxford</pubPlace>
+                     <date>1903</date>
+                  </imprint>
+                  <extent>Vol. 3 of 4</extent>
+                  <biblScope unit="vol">2.1</biblScope>
+                  <biblScope unit="page">83-85</biblScope>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <editorialDecl>
+            <p/><!-- FILL IN -->
+         </editorialDecl>
+      </encodingDesc>
+      <profileDesc>
+         <creation>
+            <origDate type="composition"/><!-- FILL IN. La Route Royale dates are probably preferable to Brooks' dates. -->
+         </creation>
+      </profileDesc>
+      <revisionDesc status="draft">
+         <change when="2019-11" who="http://syriaca.org/person.xml#dschwartz">Created file</change>
+      </revisionDesc>
+   </teiHeader>
+  <text>
+      <body>
+         <div type="letter" n="1.24">
+            <head type="main" resp="#compiler">Of the same to Theotecnus the
+               <foreign>archiatros</foreign> or chief physician</head>
+            <head type="sub" resp="#compiler">From those during episcopacy, from the 4th book the
+               293rd letter.</head>
+            <p> The things that have been indicated or announced to us from the royal city are many
+               and various. But the sum of them is this. The bishops who assembled there have
+               separated without coming to an agreement, since the majority of them or, if one may
+               so say, all except the Romans, were found to be orthodox, but were obliged to
+               associate themselves with the state of affairs? prevailing in the royal city, the
+               saintly bishops Eleusinius and Proclus having for the time run away. Some said that
+               the object of their endeavours was not to accept the impious. synod that assembled at
+               <pb n="84"/> Chalcedon in respect of the definition of faith but "in respect of
+               the rejection of Eutyches and of his doctrines." But that this endeavour or trick is
+               the action of heretics your Christ-loving eloquence also is not unaware. But there is
+               yet another thing which it is right that you should know: that is that our pious king
+               and the glorious Master of the Offices wrote to my meanness by Leontius the
+               illustrious magistrian who is called Tapitoleon to ask that the deprivation of those
+               no-bishops and wicked men in Second Syria might be annulled. And I wrote in answer to
+               this, "Since this is your pleasure, if they lawfully repent, the intention of the
+               canons receives them, provided all the bishops who deposed them assemble together and
+               canonically receive them." It is enough to say this much as in a letter and in a few
+               words. For forbear to say that a certain defence-of the definition of the men who
+               assembled at Chalcedon was also contained in the pious letter: against which again we
+               further argued without any harsh speech, advancing the words of truth in opposition
+               to the plausible pretexts there put together. Regarding the name of Nestorius, which
+               has been included among the commemorations of the martyrs in the metropolis of the
+               Tarsians, and has rightly scandalized you, we have written to the God-loving bishop
+               Dionysius such things as are fitting and proper, and our words have no doubt come to
+               the knowledge of your God-loving <pb n="85"/> intelligence. The present of a shoe
+               woven of wool have received, and as a sinner I have prayed that a reward for it may
+               be given you from above, you who do well in mingling spiritual healing with material.
+               For the gift is material; but the fact of the affectionate thought is spiritual, and
+               therefore a thing that contains in it comfort for soul and body. </p>
+            <trailer>The end.</trailer>
+         </div>
+      </body>
+  </text>
+</TEI>

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title ref="http://syriaca.org/work/">To Theodore Bishop of Olbe</title><!-- FILL IN TITLE AND WORK URI -->
+            <author ref="http://syriaca.org/person/51">Severus of Antioch</author>
+            <sponsor>Center of Digital Humanities Research, Texas A&amp;M University</sponsor>
+            <principal>Daniel L. Schwartz</principal>
+            <editor role="editor" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</editor>
+            <respStmt>
+               <resp>XML created by</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</name>
+            </respStmt>
+            <respStmt>
+               <resp>Based on the work of</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#ewbrooks">E. W. Brooks</name>
+            </respStmt>
+            <respStmt>
+               <resp>OCR corrected by</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</name>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition n="1"/>
+         </editionStmt>
+         <publicationStmt>
+            <distributor>
+               <placeName>Center of Digital Humanities Research, College Station, TX, USA</placeName>
+            </distributor>
+            <authority/><!-- FILL IN AFTER DECIDING ON NAME -->
+            <idno/><!-- FILL IN AFTER DECIDING ON URI/URL FORMAT -->
+            <availability>
+               <licence target="http://creativecommons.org/licenses/by/4.0/">
+                  <p>Creative Commons — Attribution 4.0 International — CC BY 4.0</p>
+                  <p>https://creativecommons.org/licenses/by/4.0/</p>
+               </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <editor ref="http://syriaca.org/person/403">
+                     <persName xml:lang="en">
+                        <forename>E. W.</forename>
+                        <surname>Brooks</surname>
+                     </persName>
+                  </editor>
+                  <title type="main" xml:lang="en" level="m">
+                     The Sixth Book of the Select Letters of
+                     <persName ref="http://syriaca.org/person/51">Severus Patriarch of Antioch</persName>
+                     in the Syriac Version of
+                     <persName ref="http://syriaca.org/person/1014">Athanasius of Nisibis</persName>
+                  </title>
+                  <title type="sub" xml:lang="en" level="m">Vol. II (Translation) Part II</title>
+                  <idno type="URI">http://syriaca.org/bibl/669</idno>
+                  <imprint>
+                     <publisher xml:lang="en">Williams and Norgate</publisher>
+                     <pubPlace ref="http://syriaca.org/place/861">Oxford</pubPlace>
+                     <date>1903</date>
+                  </imprint>
+                  <extent>Vol. 4 of 4</extent>
+                  <biblScope unit="vol">2.2</biblScope>
+                  <biblScope unit="page">420-23</biblScope>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <editorialDecl>
+            <p/><!-- FILL IN -->
+         </editorialDecl>
+      </encodingDesc>
+      <profileDesc>
+         <creation>
+            <origDate type="composition"/><!-- FILL IN. La Route Royale dates are probably preferable to Brooks' dates. -->
+         </creation>
+      </profileDesc>
+      <revisionDesc status="draft">
+         <change when="2019-11" who="http://syriaca.org/person.xml#dschwartz">Created file</change>
+      </revisionDesc>
+   </teiHeader>
+  <text>
+      <body>
+         <div type="letter" n="9.2">
+            <head type="main" resp="#compiler">Of the same to Theodore bishop of Olbe.</head>
+            <head type="sub" resp="#compiler">From those during episcopacy, from the 9th book the 8th
+               letter.</head>
+            <p> The questions asked by your love of God no one will be able to decide, from the
+               written laws of divine scripture, or from the spiritual constitutions? of those who
+               at one time and another instructed the holy churches. To some extent it seems to be a
+               dangerous thing for us to say anything at all on such matters. But again, on account
+               of the importance of the question and its bearing on salvation, I considered it an
+               im<pb n="421"/>pious thing to hide in silence what has come to my knowledge
+               without written source, and not make it clear to your sanctity. You say in fact that
+               one of the barbarian slaves bought with money, after communicating in the communion
+               of the divine mysteries as a baptized man, after this said that he did not know at
+               all whether he had been admitted to the laver of regeneration. Know that I heard some
+               old Alexandrine monks, whose mind has been trained by long asceticism, tell the
+               following story. In the great city on the day called that of the recipients (thus in
+               accordance with the custom of the country they name what we call "first baptisms"), a
+               great multitude having as usual thronged together, especially of little babies at the
+               breast, and being admitted to the divine grace, it so happened that two women were in
+               doubt about their infants, whether that of the one or that of the other had been
+               baptized; for there had in fact been an interchange, and the two babes had been
+               received, and it was already manifest that one had been admitted to the laver of
+               forgiveness, while the other had not passed through the rite; only it was not known
+               which of them it was. This came to the ears of the holy Cyril the teacher of exact
+               orthodoxy who at that time adorned the high-priestly seat; and, taking the two
+               infants, by the inspiration of the wisdom from above, he dipped them in the
+               life-giving water, speaking over them as follows: "He that has not been baptized is
+               baptized in the name of the Father and of the Son and <pb n="422"/> of the Holy
+               Spirit"; and so he settled the point that was in doubt. I remember that in the holy
+               monastery of father Romanus of saintly memory also, which is situated in Palestine,
+               that a certain monk, who by race was an Ethiopian, after he had for a long time
+               communicated in the sacred mysteries, since he was also counted in the order of those
+               who had taken upon them the solitary life, upon seeing certain persons baptized
+               there, thinking that he had seen a strange sight, secretly confessed to one of the
+               brothers that he had not been admitted to the divine laver. And the man who was at
+               that time archimandrite of the said monastery (this was Eupraxius the holy old man),
+               fearing lest perhaps, if he were baptized, some might fasten the stigma of men who
+               re-baptize upon them, informed the prelate of the city of the men of Beth Gabrin of
+               what had then happened: and he concluded and judged that the brother who was
+               unbaptized ought to be admitted to holy baptism. This action was very right, and not
+               outside the scope of the divine laws of the Holy Spirit. For, since our Lord plainly
+               decreed and said to Nicodemus, "Verily verily I say unto thee; unless a man be born
+               of water and the Spirit, he cannot enter into the kingdom of God," it is absolutely
+               necessary to follow the safe course, and to use the holy Cyril's expression and say,
+               "So-and-so is baptized if he has not been baptized, in the name of the Father and of
+               the Son and of the Holy Spirit." <pb n="423"/> For in fact by ineffable graciousness
+               the immanent power of the Holy Spirit baptizes at the word of the baptizer and
+               accompanies it. For the wise Paul also says that we are cleansed "by the laver of
+               water by the word," and so put off every spot and wrinkle of sin. This power He who
+               became poor for our sake gave to those that perform priestly functions, in order that
+               we "through his poverty might be rich"; and He said also to the holy apostles, and to
+               those who succeeded these afterwards, "Verily I say unto you, all things that ye
+               shall bind on earth shall be bound in heaven; and all things that ye shall loose on
+               earth shall be loosed in heaven." This same power He also named "the keys of the
+               kingdom of heaven." Therefore with the knowledge of these things direct your steps to
+               that which it is right to do, and follow the safe course as I said before, not as by
+               stealth and with fear, but "with open face": because "we are not of fear that leadeth
+               unto perdition, but of faith that gaineth the soul," as the same wise Paul again
+               somewhere says. </p>
+            <trailer>The end.</trailer>
+         </div>      
+      </body>
+  </text>
+</TEI>

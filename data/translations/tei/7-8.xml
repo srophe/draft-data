@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title ref="http://syriaca.org/work/">To Eustace a Young Monk</title><!-- FILL IN TITLE AND WORK URI -->
+            <author ref="http://syriaca.org/person/51">Severus of Antioch</author>
+            <sponsor>Center of Digital Humanities Research, Texas A&amp;M University</sponsor>
+            <principal>Daniel L. Schwartz</principal>
+            <editor role="editor" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</editor>
+            <respStmt>
+               <resp>XML created by</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</name>
+            </respStmt>
+            <respStmt>
+               <resp>Based on the work of</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#ewbrooks">E. W. Brooks</name>
+            </respStmt>
+            <respStmt>
+               <resp>OCR corrected by</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</name>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition n="1"/>
+         </editionStmt>
+         <publicationStmt>
+            <distributor>
+               <placeName>Center of Digital Humanities Research, College Station, TX, USA</placeName>
+            </distributor>
+            <authority/><!-- FILL IN AFTER DECIDING ON NAME -->
+            <idno/><!-- FILL IN AFTER DECIDING ON URI/URL FORMAT -->
+            <availability>
+               <licence target="http://creativecommons.org/licenses/by/4.0/">
+                  <p>Creative Commons — Attribution 4.0 International — CC BY 4.0</p>
+                  <p>https://creativecommons.org/licenses/by/4.0/</p>
+               </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <editor ref="http://syriaca.org/person/403">
+                     <persName xml:lang="en">
+                        <forename>E. W.</forename>
+                        <surname>Brooks</surname>
+                     </persName>
+                  </editor>
+                  <title type="main" xml:lang="en" level="m">
+                     The Sixth Book of the Select Letters of
+                     <persName ref="http://syriaca.org/person/51">Severus Patriarch of Antioch</persName>
+                     in the Syriac Version of
+                     <persName ref="http://syriaca.org/person/1014">Athanasius of Nisibis</persName>
+                  </title>
+                  <title type="sub" xml:lang="en" level="m">Vol. II (Translation) Part II</title>
+                  <idno type="URI">http://syriaca.org/bibl/669</idno>
+                  <imprint>
+                     <publisher xml:lang="en">Williams and Norgate</publisher>
+                     <pubPlace ref="http://syriaca.org/place/861">Oxford</pubPlace>
+                     <date>1903</date>
+                  </imprint>
+                  <extent>Vol. 4 of 4</extent>
+                  <biblScope unit="vol">2.2</biblScope>
+                  <biblScope unit="page">384-86</biblScope>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <editorialDecl>
+            <p/><!-- FILL IN -->
+         </editorialDecl>
+      </encodingDesc>
+      <profileDesc>
+         <creation>
+            <origDate type="composition"/><!-- FILL IN. La Route Royale dates are probably preferable to Brooks' dates. -->
+         </creation>
+      </profileDesc>
+      <revisionDesc status="draft">
+         <change when="2019-11" who="http://syriaca.org/person.xml#dschwartz">Created file</change>
+      </revisionDesc>
+   </teiHeader>
+  <text>
+      <body>
+         <div type="letter" n="7.8">
+            <head type="main" resp="#compiler">Of the same to Eustace a young monk.</head>
+            <head type="sub" resp="#compiler">From those after banishment, from the 5th book the 38th
+               letter.</head>
+            <p> Your devoutness acted rightly and lawfully in informing both that saintly old man at
+               an earlier time and our meanness now of the thought that troubles you. <add><emph>And
+                  after other things.</emph></add> Know therefore that our Lord and God Jesus
+               Christ, by way of making the road that leads to salvation broad for us (for His
+               "commandment is exceeding broad," as the singing prophet says, although it seems
+               narrow to many by reason of the hardness and difficulty of works of virtue), when in
+               the Gospels urging us to bear the cross and follow Him, and to despise the worldly
+               matter that draws our mind away from heavenly things, and press on to perfection, in
+               one place says, <pb n="385"/> "If thou wilt be perfect, go sell that thou hast and
+               give to the poor, and thou shalt have treasure in heaven, and come follow me": while
+               in another place He laid down a principle saying, "Everyone that hath forsaken house
+               or brethren or sisters or mother or father, or wife or children, or lands, for my
+               name's sake shall receive an hundredfold, and shall inherit eternal life." Since
+               therefore you also have by God's grace chosen for yourself and completed one of the
+               said roads by forsaking all for His name, do not Jet your thoughts distress you and
+               think that you ought in all points and under all circumstances to carry the other
+               method into effect also, I) mean that of selling what you have forsaken and giving to
+               the poor. Indeed Basil the great in divine teaching, when drawing up the ascetic
+               canons for us, ordered us to testify to a charge of sacrilege only against men who
+               hold property that belongs to us, saying that the voice of religion does not permit
+               us to go to law about it. If therefore you be able to do so out of a superfluity (for
+               neither is there any need for you to do even this as a matter of necessity and
+               compulsion), I mean to take a part also of your father's or mother's inheritance to
+               help the poor, without relaxing the laws of the Spirit and being involved in the
+               confusions of courts, the action is good and not to be disallowed, and it ought not
+               to be despised. For the same doctor said, "But every<pb n="386"/> where let us take
+               care lest by. reason of one commandment we be seen to be breaking another." You are
+               therefore in need of a believing man, one who is powerful in the state, and able to
+               receive instructions and commissions from your devoutness as to the claims which it
+               is proper to make, in order that he may hold the fear of law-courts only before those
+               who hold your property, and when they have given way demand from them some of the
+               things that can be demanded. For you do not require him to be led into suits in the
+               courts, if those men be very unjust, and to be further found to be yourself going to
+               law through the instrumentality of the man who has received the instructions and do
+               violence to the laws and rules of the Spirit, which prohibit you from going to law.
+               This,I say, because among the things written by you stated that, if you do not at
+               once remind those who hold the things that belong to you, you will be barred by the
+               time that has elapsed from any claim or indictment. </p>
+            <trailer>Not the end.</trailer>
+         </div>      
+      </body>
+  </text>
+</TEI>

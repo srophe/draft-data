@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title ref="http://syriaca.org/work/">To Caesaria the Patrician</title><!-- FILL IN TITLE AND WORK URI -->
+            <author ref="http://syriaca.org/person/51">Severus of Antioch</author>
+            <sponsor>Center of Digital Humanities Research, Texas A&amp;M University</sponsor>
+            <principal>Daniel L. Schwartz</principal>
+            <editor role="editor" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</editor>
+            <respStmt>
+               <resp>XML created by</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</name>
+            </respStmt>
+            <respStmt>
+               <resp>Based on the work of</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#ewbrooks">E. W. Brooks</name>
+            </respStmt>
+            <respStmt>
+               <resp>OCR corrected by</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</name>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition n="1"/>
+         </editionStmt>
+         <publicationStmt>
+            <distributor>
+               <placeName>Center of Digital Humanities Research, College Station, TX, USA</placeName>
+            </distributor>
+            <authority/><!-- FILL IN AFTER DECIDING ON NAME -->
+            <idno/><!-- FILL IN AFTER DECIDING ON URI/URL FORMAT -->
+            <availability>
+               <licence target="http://creativecommons.org/licenses/by/4.0/">
+                  <p>Creative Commons — Attribution 4.0 International — CC BY 4.0</p>
+                  <p>https://creativecommons.org/licenses/by/4.0/</p>
+               </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <editor ref="http://syriaca.org/person/403">
+                     <persName xml:lang="en">
+                        <forename>E. W.</forename>
+                        <surname>Brooks</surname>
+                     </persName>
+                  </editor>
+                  <title type="main" xml:lang="en" level="m">
+                     The Sixth Book of the Select Letters of
+                     <persName ref="http://syriaca.org/person/51">Severus Patriarch of Antioch</persName>
+                     in the Syriac Version of
+                     <persName ref="http://syriaca.org/person/1014">Athanasius of Nisibis</persName>
+                  </title>
+                  <title type="sub" xml:lang="en" level="m">Vol. II (Translation) Part II</title>
+                  <idno type="URI">http://syriaca.org/bibl/669</idno>
+                  <imprint>
+                     <publisher xml:lang="en">Williams and Norgate</publisher>
+                     <pubPlace ref="http://syriaca.org/place/861">Oxford</pubPlace>
+                     <date>1903</date>
+                  </imprint>
+                  <extent>Vol. 4 of 4</extent>
+                  <biblScope unit="vol">2.2</biblScope>
+                  <biblScope unit="page">244-49</biblScope>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <editorialDecl>
+            <p/><!-- FILL IN -->
+         </editorialDecl>
+      </encodingDesc>
+      <profileDesc>
+         <creation>
+            <origDate type="composition"/><!-- FILL IN. La Route Royale dates are probably preferable to Brooks' dates. -->
+         </creation>
+      </profileDesc>
+      <revisionDesc status="draft">
+         <change when="2019-11" who="http://syriaca.org/person.xml#dschwartz">Created file</change>
+      </revisionDesc>
+   </teiHeader>
+  <text>
+      <body>
+         <div type="letter" n="3.4">
+            <head type="main" resp="#compiler">Of the same to Caesaria the patrician.</head>
+            <head type="sub" resp="#compiler">From those after banishment, from the 8th book the 54th
+               letter.</head>
+            <p> May our Lord Jesus Christ the great God and our Saviour rebuke the spirit of
+               infirmity, as is written in <pb n="245"/> Luke, and free your glorious modesty from
+               this long trouble (for it is He who chastises and slays not, and smites and heals, as
+               the divine Scripture teaches"), and render you sound and strong. This is our prayer
+               by night and day and at all times, as God knows who hears us when we entreat: and we
+               believe that He will complete His mercy towards you. Since you also ask for the
+               communion, and say that you have not communicated all this long time, see! we have
+               now sent you this also, conceding on account of your infirmity a thing that is
+               against the strictness of the sacred ordinances. But henceforth we beg you, and we
+               adjure you by the divine power, and by Christ's infallible tribunal, before which we
+               shall all stand, not to meditate, not to say do, anything of the kind again. It is a
+               great and unpardonable sin that, when the faith of the orthodox priests is one, a man
+               should take the holy and reverend communion from this one, and not take it from that.
+               For it is Christ Himself and His mysterious words which are pronounced over the bread
+               and the cup of blessing that complete the rational and bloodless sacrifice, not the
+               priest who stands before the altar. This is taught both by the God-inspired words of
+               the Old and of the New Testament, and by those who at different times fed the
+               churches in an approved manner: the transgression of whose precepts brings great
+               danger upon him who transgresses them: from which may <pb n="246"/> God deliver both
+               you and our poor self! In the case of the religious deacon Misael also, as well as
+               the Christ-loving brothers Ammian and Epagathus, who about two years ago sent me a
+               box and asked to have it filled full for them with the communion or holy oblation, I
+               did not fall in with the impiety and superfluity of the request, writing as follows:
+               [Here follows a citation from ep. 2, extending from 'But, when you enjoy' (p. 234
+               l.17) to the end]. But it is incumbent upon us to lay down as a law concerning these
+               things the utterances of Gregory the teacher of truth which we have mentioned, the
+               actual words of which are as follows: [Here follows the extract from Greg. Naz. given
+               on p. 242 ff.]. If therefore both the divine laws of the sacred Scripture and the
+               precepts of the saintly fathers and teachers give these commands, how is it not
+               manifest breach of the law for a man to say, "I will not consent to partake of any
+               other oblation but that which is consummated by so-and-so"? In the first place he
+               divides Christ who in this also is one and undivided, and draws upon himself the
+               condemnation of those who divide Him: in the second place, if such a man depart from
+               human affairs, and go without having communicated and taken with him the last
+               provisions, his soul will be liable to be seized by the demons, who will prevent it
+               from making the upward journey and resting at once in some light countries, but will
+               drag it away and convey it by force to the <pb n="247"/> depths of countries that are
+               dark and not light: in the third place, he will also lay himself under the burden of
+               another condemnation for opposing the precepts of the fathers and high-priests and
+               laying down a law, if one may so Say, in opposition to these. Indeed Paul, when
+               writing to the Romans about those who oppose political powers and authorities and
+               their commandments, says these words: "Let every soul be subject to higher powers,
+               for there is no power that is not from God: and those that exist are appointed by
+               God. Whoever therefore opposeth the power opposeth the commandment of God. And those
+               that oppose them shall receive judgment." If these words apply to political or
+               military powers, how great will be the condemnation of those. that oppose the rulers
+               of the holy church and their ordinances! For the difference and distinction is as
+               great as between heavenly and earthly things. Withdraw therefore and dissociate
+               yourself from such an awful and terrible judgment, and look upon all the orthodox
+               priests as one and as Christ Himself: and reckon the sacrifice performed by all of
+               them to be one, and do not lay down decrees against your soul, decreeing and saying,
+               "I will not touch any sacrifice except that which is performed by so-and-so." It is
+               said in the legal writings given through Moses that, if a woman, being in her
+               parents' house, decree a fast against her soul, or vow and promise to accomplish any
+               other action, or swear that she will do something <pb n="248"/> or other, and her
+               father hear and keep silent and do not dissent, she that vowed or decreed shall
+               certainly and by all means be bound to accomplish her vows and decrees: but, if, when
+               her father hear what his daughter in the first instance decreed, he do not consent,
+               but dissent and reject the decrees, God also will annul them, and will not require
+               her that decreed to accomplish them. Know therefore that your excellency's decree
+               also is null and worthless. For Gregory the father, the speaker of divine things,
+               rejects it, and does not allow you to discriminate between priests, and say
+               positively, "I will not communicate in the holy mysteries, unless they be such as
+               have been consummated by so-and-so." Hear also what the legal commandment says: "But,
+               if her father dissent in the day on which he heard her vows and decrees which she
+               decreed against her soul, they shall not stand. And the Lord shall absolve her,
+               because her father dissented." Do not therefore seek to accomplish in fact the things
+               which you decreed, but which the father resisted and disowned; and the Lord will
+               absolve you, and will free you from al! sickness of soul and of body, and will grant
+               you power to follow His laws in all things, and to impute divine things, as divine
+               things, to God alone, and not to any man. You say that all methods of treatment have
+               been tried by the physicians, but all have been found useless <pb n="249"/> and have
+               been defeated by the long continuance of the illness. Look therefore at the pattern
+               of the praiseworthy woman in the Gospels who was troubled by an issue of blood for
+               twelve years, and had spent all her wealth on physicians, and like her draw near to
+               Jesus, and, as Mark the Evangelist says, tell Him as God the whole case and the
+               truth. If you do this in a pure fashion He will assuredly say to you, "My daughter,
+               thy faith hath saved thee: go in peace, and be whole of thy plague." Such illnesses
+               need only the divine working in order to be healed, and this right-minded souls draw
+               upon themselves in its entirety by confessing the sins that they have committed. </p>
+            <trailer>The end.</trailer>
+         </div>      
+      </body>
+  </text>
+</TEI>

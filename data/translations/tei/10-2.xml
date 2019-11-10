@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title ref="http://syriaca.org/work/">To a Woman on behalf of Maximus in the Name of Abba</title><!-- FILL IN TITLE AND WORK URI -->
+            <author ref="http://syriaca.org/person/51">Severus of Antioch</author>
+            <sponsor>Center of Digital Humanities Research, Texas A&amp;M University</sponsor>
+            <principal>Daniel L. Schwartz</principal>
+            <editor role="editor" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</editor>
+            <respStmt>
+               <resp>XML created by</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</name>
+            </respStmt>
+            <respStmt>
+               <resp>Based on the work of</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#ewbrooks">E. W. Brooks</name>
+            </respStmt>
+            <respStmt>
+               <resp>OCR corrected by</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</name>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition n="1"/>
+         </editionStmt>
+         <publicationStmt>
+            <distributor>
+               <placeName>Center of Digital Humanities Research, College Station, TX, USA</placeName>
+            </distributor>
+            <authority/><!-- FILL IN AFTER DECIDING ON NAME -->
+            <idno/><!-- FILL IN AFTER DECIDING ON URI/URL FORMAT -->
+            <availability>
+               <licence target="http://creativecommons.org/licenses/by/4.0/">
+                  <p>Creative Commons — Attribution 4.0 International — CC BY 4.0</p>
+                  <p>https://creativecommons.org/licenses/by/4.0/</p>
+               </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <editor ref="http://syriaca.org/person/403">
+                     <persName xml:lang="en">
+                        <forename>E. W.</forename>
+                        <surname>Brooks</surname>
+                     </persName>
+                  </editor>
+                  <title type="main" xml:lang="en" level="m">
+                     The Sixth Book of the Select Letters of
+                     <persName ref="http://syriaca.org/person/51">Severus Patriarch of Antioch</persName>
+                     in the Syriac Version of
+                     <persName ref="http://syriaca.org/person/1014">Athanasius of Nisibis</persName>
+                  </title>
+                  <title type="sub" xml:lang="en" level="m">Vol. II (Translation) Part II</title>
+                  <idno type="URI">http://syriaca.org/bibl/669</idno>
+                  <imprint>
+                     <publisher xml:lang="en">Williams and Norgate</publisher>
+                     <pubPlace ref="http://syriaca.org/place/861">Oxford</pubPlace>
+                     <date>1903</date>
+                  </imprint>
+                  <extent>Vol. 4 of 4</extent>
+                  <biblScope unit="vol">2.2</biblScope>
+                  <biblScope unit="page">433-36</biblScope>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <editorialDecl>
+            <p/><!-- FILL IN -->
+         </editorialDecl>
+      </encodingDesc>
+      <profileDesc>
+         <creation>
+            <origDate type="composition"/><!-- FILL IN. La Route Royale dates are probably preferable to Brooks' dates. -->
+         </creation>
+      </profileDesc>
+      <revisionDesc status="draft">
+         <change when="2019-11" who="http://syriaca.org/person.xml#dschwartz">Created file</change>
+      </revisionDesc>
+   </teiHeader>
+  <text>
+      <body>
+         <div type="letter" n="10.2">
+            <head type="main" resp="#compiler">Of the same in the person of Abba on behalf of brother
+               Maximus, to a certain woman.</head>
+            <head type="sub" resp="#compiler">From those before episcopacy, from the 1st book the
+               272nd letter.</head>
+            <p> I have asked our holy father Abba about that question as requested in your modesty's
+               epistle, and I have received a complete answer from him. He said that those who have:
+               once been united in marriage, seeing that marriage "is honourable and the bed
+               unsullied," ought not to desire to separate from one another by reason of religion
+               except where there is consent. For the divine Apostle says, "Deprive not one another,
+               except it be by consent for a time, in order that ye may give yourselves up to
+               prayer, and again come together." For the same said above that it is the husband who
+               has power over the wife's body, and, <foreign>vice versa</foreign>, that it is the
+               wife who has power over the husband's body: saying, "The wife hath not power over the
+               body but the husband: and in the same fashion the husband also hath not power over
+               his body, but the wife." It is therefore manifest that, unless the husband consents,
+               the wife who separates has no forgiveness, and she makes herself a cause of <pb
+                  n="434"/> his turning aside to fornication. If then your husband consents, you are
+               permitted to place yourself under the yoke of piety: there is no one who will find
+               fault with so praiseworthy and admirable a choice. But, if the husband cannot
+               restrain his body, and therefore will not permit you to do this, put up with the
+               marriage-state: such intercourse that saves the husband is better than an abstinence
+               from pleasures that is unknown to the canons. The aim of divine scripture not in this
+               only but in everything else too regards not the person of him who has obtained mercy,
+               but that of him who is infirm: and it especially wishes that those who are strong
+               shall condescend to those who lie on the earth. It does not accept the man who
+               regards his own interest only, but the man who rather treats his neighbour's interest
+               as if it were his own profit. So therefore in this present case also it is pleasing
+               to God that both of you should attain and win the goal of purity consisting in
+               continence: but, if the inclinations of your husband's will do not accord with your
+               own readiness, the laws of holy scripture judge the marriage-state to be better, in
+               order that they may gain you both. This we say on the assumption that the husband
+               wishes to live chastely, and restricts the pleasures that cannot be restrained to
+               intercourse with his wife only. But, if he goes beyond what is right, and does not
+               keep the marriage unsullied, but associates with other women also after the manner of
+               a beast, then the wife incurs no danger by neglecting such a man, and giving the
+               preference to the excellent state, <pb n="435"/> and taking no account of the
+               marriage, but soaring on piety's wing, and turning her eyes to the solitary life, and
+               keeping her holiness of mind and of body always unsullied. This also our said holy
+               father further laid down, saying that, although the husband be living chastely, being
+               content to have intercourse with you only, but you have already chosen for yourself
+               to live among virgins, and have included yourself in their order, although the thing
+               was not right in its beginning, for you ought not in fact to have left your husband
+               while he was living chastely, yet still it is not seemly for you now to separate from
+               the virgins, and give them also occasion for stumbling. It is to be feared lest, if
+               you return to your husband, they also may imitate such a practice, and may defile
+               God's bridechamber after having been once united to Christ the heavenly Bridegroom.
+               It is impiety of a high degree that after having been set apart to God they should
+               prefer the corruptible intercourse rather than the immortal and heavenly connexion.
+               But, if you have not yet lived with virgins, but only withdrawn from intercourse,
+               according to the principle stated by us above act in common with the husband, and, if
+               he does not consent, you ought to follow his inclination, and prefer the
+               marriage-state to purity, because this is pleasing to God. But, if the husband does
+               not desire intercourse with you, but wishes you to live within the house with the
+               children who have been born to you from the common <pb n="436"/> marriage even if
+               they be males, this too is also acceptable to God. These things have been said as in
+               a letter: but we think that in what we have written we have in no point failed to
+               answer the question of your religiousness. This epistle has been addressed to you by
+               our holy father himself in his own very words; for he was able to make his own
+               spiritual. mind clear without the greatness of his divine thoughts being befouled by
+               the squalor of my words. </p>
+            <trailer>The end.</trailer>
+         </div>      
+      </body>
+  </text>
+</TEI>

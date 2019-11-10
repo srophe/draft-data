@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title ref="http://syriaca.org/work/">To Misael the Deacon</title><!-- FILL IN TITLE AND WORK URI -->
+            <author ref="http://syriaca.org/person/51">Severus of Antioch</author>
+            <sponsor>Center of Digital Humanities Research, Texas A&amp;M University</sponsor>
+            <principal>Daniel L. Schwartz</principal>
+            <editor role="editor" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</editor>
+            <respStmt>
+               <resp>XML created by</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</name>
+            </respStmt>
+            <respStmt>
+               <resp>Based on the work of</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#ewbrooks">E. W. Brooks</name>
+            </respStmt>
+            <respStmt>
+               <resp>OCR corrected by</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</name>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition n="1"/>
+         </editionStmt>
+         <publicationStmt>
+            <distributor>
+               <placeName>Center of Digital Humanities Research, College Station, TX, USA</placeName>
+            </distributor>
+            <authority/><!-- FILL IN AFTER DECIDING ON NAME -->
+            <idno/><!-- FILL IN AFTER DECIDING ON URI/URL FORMAT -->
+            <availability>
+               <licence target="http://creativecommons.org/licenses/by/4.0/">
+                  <p>Creative Commons — Attribution 4.0 International — CC BY 4.0</p>
+                  <p>https://creativecommons.org/licenses/by/4.0/</p>
+               </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <editor ref="http://syriaca.org/person/403">
+                     <persName xml:lang="en">
+                        <forename>E. W.</forename>
+                        <surname>Brooks</surname>
+                     </persName>
+                  </editor>
+                  <title type="main" xml:lang="en" level="m">
+                     The Sixth Book of the Select Letters of
+                     <persName ref="http://syriaca.org/person/51">Severus Patriarch of Antioch</persName>
+                     in the Syriac Version of
+                     <persName ref="http://syriaca.org/person/1014">Athanasius of Nisibis</persName>
+                  </title>
+                  <title type="sub" xml:lang="en" level="m">Vol. II (Translation) Part II</title>
+                  <idno type="URI">http://syriaca.org/bibl/669</idno>
+                  <imprint>
+                     <publisher xml:lang="en">Williams and Norgate</publisher>
+                     <pubPlace ref="http://syriaca.org/place/861">Oxford</pubPlace>
+                     <date>1903</date>
+                  </imprint>
+                  <extent>Vol. 4 of 4</extent>
+                  <biblScope unit="vol">2.2</biblScope>
+                  <biblScope unit="page">236-44</biblScope>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <editorialDecl>
+            <p/><!-- FILL IN -->
+         </editorialDecl>
+      </encodingDesc>
+      <profileDesc>
+         <creation>
+            <origDate type="composition"/><!-- FILL IN. La Route Royale dates are probably preferable to Brooks' dates. -->
+         </creation>
+      </profileDesc>
+      <revisionDesc status="draft">
+         <change when="2019-11" who="http://syriaca.org/person.xml#dschwartz">Created file</change>
+      </revisionDesc>
+   </teiHeader>
+  <text>
+      <body>
+         <div type="letter" n="3.3">
+            <head type="main" resp="#compiler">Of the same to Misael the deacon.</head>
+            <head type="sub" resp="#compiler">From those after banishment, from the 7th book the 30th
+               letter.</head>
+            <p> Those who wish and desire to receive tokens of affection in God avoid under all
+               circumstances receiving <pb n="237"/> such outside the scope of the divine laws or
+               obtaining gratification beyond what these wish as something grievous: among whom I
+               had come to believe with the greatest possible confidence that your devoutness was
+               included. For I confess that I loved you and do love you greatly on account of the
+               gentleness of your manners and on account of the modesty of your character: and, in
+               fine, because for the sake of the orthodox faith you spurned all the stage-play of
+               the world, and the deceitful pomps? of this life, and pleasures that wallow upon the
+               earth and honours. But the request which, as I have been informed by letter, you are
+               making, that the divine communion should be offered by my meanness and sent to you,
+               for the sake of certain persons who are desirous of this, seems to have some kind of
+               appearance of faith, but offends against the laws of the Spirit. For to those the
+               oblation is of necessity sent who, while living in countries outside the boundaries
+               and being orthodox, are deprived of priests to offer the rational and heavenly
+               sacrifice. To speak with God's permission, since both saintly bishops and God-loving
+               presbyters are living in the royal among cities, and without restraint and with
+               boldness give the bread of life and the cup of immortality, it is a very superfluous
+               and hurtful thing that the holy communion beyond the boundaries should be sent to you
+               by my feebleness. Since there is one faith and the same sound <pb n="238"/>
+               confession not corrupted at all by any adulterating doctrine, there is also assuredly
+               one communion of different priests who offer it; who are as far apart as east from
+               west, and confess the same unadulterated faith: although some be high and exalted to
+               heaven, and elevated by labours of asceticism and the highest degree of virtues, and
+               others men that creep on the earth owing to the remissness and idleness of their
+               character. It is not the offerer himself who, as by his own power and virtue, changes
+               the bread into Christ's body, and the cup of blessing into Christ's blood, but the
+               God-befitting and efficacious power of the words which Christ who instituted the
+               mystery commanded to be pronounced over the things that are offered. The priest who
+               stands before the altar, since he fulfils a mere ministerial function, pronouncing
+               his words as in the person of Christ, and carrying back the rite that is being
+               performed to the time at which He began the sacrifice for His apostles, says over the
+               bread, "This is my body which is given for you: this do in remembrance of me": while
+               over the cup again he pronounces the words, "This cup is the new testament in my
+               blood, which is shed for you." Accordingly it is Christ who still even now offers,
+               and the power of His divine words perfects the things that are provided so that they
+               may become His body and blood. But the priest who stands, since he fulfils a mere
+               subsidiary function only, makes <pb n="239"/> no addition whatever to the rites that
+               are performed, although he be an angelic and heavenly man in his character, nor does
+               he detract anything from the divine grace, if he has lived a degraded and low life.
+               This the divine writings confirm in another place also. Once, when Elijah the great
+               among prophets was commanded to decree a famine against the land of Israel, because
+               of the lawlessness and the prevalence of idolatry, he himself was commanded to dwell
+               in hiding beyond Jordan, in the torrent-bed of Cherith; "and the ravens brought him
+               bread in the morning, and flesh in the evening: and he drank water from the torrent."
+               But the law given by Moses reckoned ravens among unclean birds. Hence this historical
+               event that happened in the case of the prophet is pregnant with mystic and secret
+               teaching, It teaches that the food given by God, which in the morning as it were,
+               that is in the visible sense, is bread, but in the hidden and invisible sense (this
+               is the signification of "the evening") is flesh and God's body, is in no way injured
+               or impaired by those who mediate and minister, even if they be unclean men and loose
+               in their character after the manner of ravens. Gregory also, the Theologian, who fed
+               Nazianzus the small among cities, but is the teacher of the whole world over which
+               the church is spread, who in the exalted nature of his theology reached to the
+               citadel of Jerusalem in heaven, says in the discourse that was <pb n="240"/>
+               delivered by him upon baptism that the same grace of adoption is obtained from the
+               laver of regeneration both by a man who has received baptism from a priest eminent
+               for virtues, and by a man who has received it from one who is degraded and grovelling
+               in his character, both by a man who has received it from an archbishop, and by a man
+               who has received it from a presbyter who holds the lowest rank. For both give one and
+               the same seal, so long as they solemnize and preach one orthodox faith like in all
+               points and sound. Just as, he says, a seal of gold and one of iron, or of some other
+               cheaper material, so long as they bear one image and likeness engraved, not differing
+               in anything, impress one and the same stamp on wax, and no one who was not present
+               and saw can discern which is the wax that received the seal from the signet of gold,
+               and which on the other hand is that which was sealed by the signet of iron, or by a
+               cheaper signet, since both bear the same signet not differing in anything, in the
+               same way baptism, and similarly also the offering of the sacrifice, in no way
+               differs, not if the priest who celebrated these be, so to speak, a man of gold in his
+               character and approved and illustrious, by reason of the purity which comes from the
+               practice of virtues, nor if he be one who Is, so to speak, of iron, and a man who is
+               murky and dark in his life. The difference of the character of those who officiate
+               makes no difference whatever <pb n="241"/> in the mysteries that are celebrated, so
+               long as both confess one orthodox faith, and are not stained by the stain of any
+               heresy, nor do despite to the freedom of the preaching through servile fear and do
+               not declare the glory of the truth "with open face, or act craftily and speak with
+               treacherous and deceitful tongue both what pleases the heretics and what pleases us
+               the orthodox, and laugh at both sides in an illiberal and meretricious fashion, or
+               lie under the stigma of open abominations: for such as these one ought to avoid and
+               spurn as standing outside the sacred limits: but let us not inquire into sins that
+               are not open. Of these we are not the judges, but God, who searches into things that
+               are unknown and knows things that are hidden, Paul, who had Christ speaking in him,
+               rejecting grovelling fear, said, "But we are not of timidity that leadeth to
+               perdition, but of faith that gaineth us ourselves": and spurning accursed craftiness,
+               "For we are not as many which adulterate the word of God: but, as from the truth and
+               as from God before God, speak we in Christ Jesus:" and again: "Not walking in
+               craftiness, nor handling the word of God deceitfully: but by manifestation of the
+               truth commending ourselves to all conscience of men before God" And excluding open
+               and notorious and stigmatized abomination he writes, "But fornication and all
+               uncleanness and covetousness, let it not be even <pb n="242"/> or words of folly or
+               of derision and of jesting, which are not desirable": and again in another place,
+               "Thou that preachest, 'thou shalt not steal,' dost thou steal? Thou that sayest,
+               'thou shalt not commit adultery,' dost thou commit adultery?" These things, being
+               open and matters of shame, are certainly to be avoided, and are unhallowed. It will
+               be good and useful and will further confirm what has been said, if we also adduce the
+               actual words of the Theologian Gregory which run thus: "Say not, 'Let a bishop
+               baptize me, and he a metropolitan or a bishop of Jerusalem' (for the grace does not
+               belong to places, but to the Spirit), 'and he one of those of high birth; for it is
+               hard if my nobility shall be insulted by a baptizer; or a presbyter, but he also one
+               of the unmarried, and he one of the continent and angelic in his character; for it is
+               hard if I shall be defiled at the time of cleansing.' Seek not trustworthiness in the
+               preacher, nor in him that baptizes. Another is the judge of these matters and
+               searcher of things that are not clearly visible: since, 'man on the face, but God on
+               the heart——' But to you everyone is trustworthy for the cleansing. Only let him be
+               one of those that are approved, and not of those that are openly stigmatized, nor an
+               alien to the Church. Judge not the judges, you who need healing. Inquire not, I pray
+               you, into the authority of those that cleanse you. Hesitate not concerning begetters.
+               <pb n="243"/> One is better than another, or lower; but everyone is higher than
+               you. But look at it in this way. Take gold: take iron: and both of them rings: and
+               suppose the same royal image impressed on them. Then let them stamp wax. How will
+               this seal differ from that seal? In no way. Recognise the material in the wax; and,
+               if you are wiser than everyone, say which is the seal of the iron and which of the
+               gold. And how is it one? "Because the difference is in the material, not in the
+               image. So let every baptizer be to you. For, though he is more exalted in character,
+               yet the virtue of the baptism is equal: and everyone who imitates the same faith
+               brings you perfection in the same way." Strengthened therefore by these wise
+               admonitions of the. God-inspired Scripture and of the approved instructors? of the
+               apostolic church, inasmuch as you are entrusted with the ministry of God, warn our
+               beloved brothers not to deceive themselves with such self-made fears, but to reckon
+               and firmly believe the communion offered by our meanness to be one with that which is
+               consummated by our fellow-ministers, by the saintly high-priests and God-loving
+               priests who are living there, or are passing their lives in other places, and in all
+               points think and say the same as we do, as aforesaid. If one man say, "I partake of
+               the communion that was offered by so-and-so the patriarch," and another boastingly
+               say, "I partake <pb n="244"/> of that which was offered by so-and-so the ascetic,"
+               and another speak more proudly and say, "I partake of that which was offered by
+               so-and-so who is. learned and skilled in the sacred doctrines and in the divine
+               scriptures," such men will, unknown to themselves, have fallen into another
+               blasphemy, and be assigning human conceptions to the gift of the divine power, and
+               besides this abomination committing also the other sin of dividing the one Christ.
+               These Paul will rebuke in the form of a question and very reproachfully when he says,
+               "Has Christ been divided?", as well as another of our Saviour's disciples when he
+               writes in a general epistle, "It is not right, my brethren, that these things should
+               be so." Greet all that love us in the Lord. All our brothers who are with us greet
+               you. </p>
+            <trailer>The end.</trailer>
+         </div>      
+      </body>
+  </text>
+</TEI>

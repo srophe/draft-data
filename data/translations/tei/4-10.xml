@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title ref="http://syriaca.org/work/">To Caesaria the Patrician</title><!-- FILL IN TITLE AND WORK URI -->
+            <author ref="http://syriaca.org/person/51">Severus of Antioch</author>
+            <sponsor>Center of Digital Humanities Research, Texas A&amp;M University</sponsor>
+            <principal>Daniel L. Schwartz</principal>
+            <editor role="editor" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</editor>
+            <respStmt>
+               <resp>XML created by</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</name>
+            </respStmt>
+            <respStmt>
+               <resp>Based on the work of</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#ewbrooks">E. W. Brooks</name>
+            </respStmt>
+            <respStmt>
+               <resp>OCR corrected by</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</name>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition n="1"/>
+         </editionStmt>
+         <publicationStmt>
+            <distributor>
+               <placeName>Center of Digital Humanities Research, College Station, TX, USA</placeName>
+            </distributor>
+            <authority/><!-- FILL IN AFTER DECIDING ON NAME -->
+            <idno/><!-- FILL IN AFTER DECIDING ON URI/URL FORMAT -->
+            <availability>
+               <licence target="http://creativecommons.org/licenses/by/4.0/">
+                  <p>Creative Commons — Attribution 4.0 International — CC BY 4.0</p>
+                  <p>https://creativecommons.org/licenses/by/4.0/</p>
+               </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <editor ref="http://syriaca.org/person/403">
+                     <persName xml:lang="en">
+                        <forename>E. W.</forename>
+                        <surname>Brooks</surname>
+                     </persName>
+                  </editor>
+                  <title type="main" xml:lang="en" level="m">
+                     The Sixth Book of the Select Letters of
+                     <persName ref="http://syriaca.org/person/51">Severus Patriarch of Antioch</persName>
+                     in the Syriac Version of
+                     <persName ref="http://syriaca.org/person/1014">Athanasius of Nisibis</persName>
+                  </title>
+                  <title type="sub" xml:lang="en" level="m">Vol. II (Translation) Part II</title>
+                  <idno type="URI">http://syriaca.org/bibl/669</idno>
+                  <imprint>
+                     <publisher xml:lang="en">Williams and Norgate</publisher>
+                     <pubPlace ref="http://syriaca.org/place/861">Oxford</pubPlace>
+                     <date>1903</date>
+                  </imprint>
+                  <extent>Vol. 4 of 4</extent>
+                  <biblScope unit="vol">2.2</biblScope>
+                  <biblScope unit="page">272-75</biblScope>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <editorialDecl>
+            <p/><!-- FILL IN -->
+         </editorialDecl>
+      </encodingDesc>
+      <profileDesc>
+         <creation>
+            <origDate type="composition"/><!-- FILL IN. La Route Royale dates are probably preferable to Brooks' dates. -->
+         </creation>
+      </profileDesc>
+      <revisionDesc status="draft">
+         <change when="2019-11" who="http://syriaca.org/person.xml#dschwartz">Created file</change>
+      </revisionDesc>
+   </teiHeader>
+  <text>
+      <body>
+         <div type="letter" n="4.10">
+            <head type="main" resp="#compiler">Of the same to Caesaria the patrician.</head>
+            <head type="sub" resp="#compiler">From I those which were found outside the 23 books, the
+               15th letter.</head>
+            <p> Out of piety that loves instruction you ask whether some of the orthodox are doing
+               well in not communicating with the heretics, but listening to the reading of the holy
+               Gospel, or even staying during the time of the mysterious prayers, but not
+               communicating in the rites that are being performed. To those who are not ignorant of
+               the divine laws the answer is manifest. John the Evangelist, the speaker of divine
+               things, wrote: [Here follows the citation given on p. 263]. If then it is not right
+               to offer even a bare greeting to those who bring another teaching and do not teach
+               <pb n="273"/> the orthodox faith, how can one communicate in prayers and in
+               lessons or in any other such things with such men as these? And Paul the wise
+               commands us to turn away even the very face from those who are in servitude to
+               heresy, writing thus to Titus: [Here follows the citation given on p. 264]. He
+               therefore who joins in assembly with the guilty renders himself subject to the same
+               judgment. Nay even the holy canons of the Church have manifestly repudiated the
+               principle of a man praying with heretics. For the hundred and thirty-fifth canon
+               says; "It is not right to receive the blessings' of heretics, which are rather
+               no-blessings and not blessings." And there immediately follows the hundred and
+               thirty-sixth also, which says; "It is not right to pray with heretics or
+               schismatics." These statements give the strict rule. But, when I the mean one, as far
+               as my mean knowledge extends, consider the broadness of the God-inspired scripture, I
+               find that men who hold ministerial posts or high offices, and are obliged to
+               accompany and attend upon rulers, receive an indulgence, if, when they go in with
+               them and hear a lesson and prayers, they keep themselves perfect: I mean if they do
+               not communicate in the communion from which they are divided. For instance in the
+               fourth Book of Kingdoms there is something like this written. A certain captain of
+               the host of the King of Syria of Damascus, by name Naaman, who was a leper, went to
+               the prophet Elisha, and received <pb n="274"/> cleansing from his affliction. And
+               through his healing he recognised the one and only true God of Israel, the Maker and
+               Creator of all, and spurned the falsely-named gods and his fathers' worship and
+               error. And, when he was about to return to his own country, he said to the prophet
+               that he would no more look upon the strange gods and vain demons, "But," he says,
+               "although the King of Syria go into the temple of the demon in their country who is
+               called Rimmon, and I also go in with him to do him honour and to support him with my
+               hand, I will worship the true God in my heart, and I will recognise Him only, but I
+               will not communicate with the king in the error and worship the demon with him. Only"
+               (he says) "pray for me, that God may be gracious to me in this thing also on account
+               of necessity." And the prophet was silent and did not praise or blame: but by silence
+               he followed a middle line and gave him indulgence: and, having invoked peace upon
+               him, he sent him away. But it is well that we cite also the actual words of the
+               divine scripture, which Naaman spoke to the prophet himself, which run as follows:
+               "Thy slave will no more perform a burnt-offering or a sacrifice unto other gods, but
+               unto the Lord only. And in this thing the Lord will be gracious to thy slave, when my
+               lord goeth into the house of Rimmon to worship him there, because he leaneth upon my
+               hands. And, when he worshippeth in the house of Rimmon, I, being with him, will
+               worship the Lord God. And the Lord will be gracious to thy slave in <pb n="275"/>
+               this thing. And Elisha said to Naaman, "Go in peace." Therefore, seeing that your
+               glorious devoutness knows these things, I pray that with pure and sincere faith you
+               may walk in the Lord's paths both in deed and in word. For besides your other
+               excellencies I admire also your practice of reading and meditating on the divine
+               words, the fruits and flowers of which are displayed in your God-loving letters,
+               which gladden those before whom they come. </p>
+            <trailer>The end.</trailer>
+         </div>      
+      </body>
+  </text>
+</TEI>

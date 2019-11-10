@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title ref="http://syriaca.org/work/">To Solon the Bishop</title>
+            <author ref="http://syriaca.org/person/51">Severus of Antioch</author>
+            <sponsor>Center of Digital Humanities Research, Texas A&amp;M University</sponsor>
+            <principal>Daniel L. Schwartz</principal>
+            <editor role="editor" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</editor>
+            <respStmt>
+               <resp>XML created by</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</name>
+            </respStmt>
+            <respStmt>
+               <resp>Based on the work of</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#ewbrooks">E. W. Brooks</name>
+            </respStmt>
+            <respStmt>
+               <resp>OCR corrected by</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</name>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition n="1"/>
+         </editionStmt>
+         <publicationStmt>
+            <distributor>
+               <placeName>Center of Digital Humanities Research, College Station, TX, USA</placeName>
+            </distributor>
+            <authority/><!-- FILL IN AFTER DECIDING ON NAME -->
+            <idno/><!-- FILL IN AFTER DECIDING ON URI/URL FORMAT -->
+            <availability>
+               <licence target="http://creativecommons.org/licenses/by/4.0/">
+                  <p>Creative Commons — Attribution 4.0 International — CC BY 4.0</p>
+                  <p>https://creativecommons.org/licenses/by/4.0/</p>
+               </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <editor ref="http://syriaca.org/person/403">
+                     <persName xml:lang="en">
+                        <forename>E. W.</forename>
+                        <surname>Brooks</surname>
+                     </persName>
+                  </editor>
+                  <title type="main" xml:lang="en" level="m">
+                     The Sixth Book of the Select Letters of
+                     <persName ref="http://syriaca.org/person/51">Severus Patriarch of Antioch</persName>
+                     in the Syriac Version of
+                     <persName ref="http://syriaca.org/person/1014">Athanasius of Nisibis</persName>
+                  </title>
+                  <title type="sub" xml:lang="en" level="m">Vol. II (Translation) Part I</title>
+                  <idno type="URI">http://syriaca.org/bibl/668</idno>
+                  <imprint>
+                     <publisher xml:lang="en">Williams and Norgate</publisher>
+                     <pubPlace ref="http://syriaca.org/place/861">Oxford</pubPlace>
+                     <date>1903</date>
+                  </imprint>
+                  <extent>Vol. 3 of 4</extent>
+                  <biblScope unit="vol">2.1</biblScope>
+                  <biblScope unit="page">116-18</biblScope>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <editorialDecl>
+            <p/><!-- FILL IN -->
+         </editorialDecl>
+      </encodingDesc>
+      <profileDesc>
+         <creation>
+            <origDate type="composition"/><!-- FILL IN. La Route Royale dates are probably preferable to Brooks' dates. -->
+         </creation>
+      </profileDesc>
+      <revisionDesc status="draft">
+         <change when="2019-11" who="http://syriaca.org/person.xml#dschwartz">Created file</change>
+      </revisionDesc>
+   </teiHeader>
+  <text>
+      <body>
+         <div type="letter" n="1.41">
+            <pb n="116"/>
+            <head type="main" resp="#compiler">Of the same to Solon the bishop.</head>
+            <head type="sub" resp="#compiler">From those during episcopacy, from the 7th book the
+               51st, 42nd letter.</head>
+            <p> It is written somewhere in the legal writings that the divine Moses, after
+               appointing judges over Israel, allowed them to judge unimportant causes (I must quote
+               the actual expression of the God-inspired utterances): but a hard matter they were to
+               report to him, and from him to receive the solution that God "the knower of secrets"
+               (this also I take from another scripture) should reveal and signify to him. You also
+               therefore as a giver and teacher of divine laws have followed this rule and reported
+               to the apostolic see (not to my mean self who scarcely see even what is before my
+               feet owing to the denseness of my understanding) a matter which seemed to be hard.
+               Therefore your love of God must know that Maximus the presbyter, who has fallen into
+               the snare of fornication, although he has shown fervent repentance, and for a period
+               of five years has given himself up to such labours, cannot be restored and take his
+               place in the sacred office: and it is a simple thing for us to obtain a solution of
+               this question without trouble from the holy canons themselves. For indeed the
+               God-loving bishops who met together at Neocaesarea made these distinct pronouncements
+               in the ninth canon: "If a <pb n="117"/> presbyter be promoted after having previously
+               sinned with his body, and confess that he sinned before ordination, he shall not.
+               offer: but he shall retain the rest of his functions on account of his zeal in other
+               respects." If then a man who before ordination has sinned with his body,
+               <foreign>i.e.</foreign> has committed fornication (for this the Apostle also said,
+               "Every sin is without the body, but he that committeth fornication sinneth against
+               his own body"), is not permitted to offer, but to retain the rest of his functions on
+               account of his zeal in other respects, how can it be doubted that he who has
+               committed this same sin after ordination cannot offer the divine sacrifice, or
+               consecrate the water of regeneration, or perform any such function? Let no man say,
+               "What then is the advantage of repentance to a man who has committed fornication, if
+               he is not after labours of continence to be restored to the sacred service?"
+               Repentance brings about forgiveness and bestows communion in the bloodless sacrifice
+               for the sake of purification and preservation upon those who wash away the sin by
+               tears and the other forms of bodily mortification: but the service of the priesthood
+               is the reward of a blameless character. The ninth canon of the three hundred and
+               eighteen holy fathers also says thus, as you also know, "If men have without
+               examination been promoted to be presbyters, and being. examined have confessed the
+               sins committed by them, and after they have confessed <pb n="118"/> some men being
+               moved in a manner contrary to the canon have laid a hand upon them, such men the
+               canon does not accept: for the catholic church requires blamelessness." I forbear to
+               say that you have adopted a very mild policy and one of exceeding leniency in the
+               matter of Maximus, because the canon did not say anything plainly about a man who
+               commits. fornication after ordination. You have openly permitted him (this was stated
+               in your letter) to perform evening and morning prayers, and to sit on every occasion
+               with the presbyters, a thing forbidden in the case of a man who has sinned before
+               ordination and afterwards confessed; for this is clearly written down in the ninth
+               canon of those who met together at Neocaesarea, which we mentioned a short time ago,
+               which says that he should retain the rest of his functions on account of his zeal in
+               other respects, but should not again go so far as to offer the rational sacrifice,
+               and do things like this and of equal honour, Therefore, since you have the nature of
+               what ought to be done from the canonical utterances themselves, do not allow anyone
+               to take refuge in the unknown, and in the pretence of searching into the spirit of
+               the holy canons. One seeks for the spirit in cases where nothing is defined in actual
+               words and phrases. </p>
+            <trailer>The end.</trailer>
+         </div>
+      </body>
+  </text>
+</TEI>

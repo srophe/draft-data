@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title ref="http://syriaca.org/work/">To Simeon, Bishop of Chalcis</title>
+            <author ref="http://syriaca.org/person/51">Severus of Antioch</author>
+            <sponsor>Center of Digital Humanities Research, Texas A&amp;M University</sponsor>
+            <principal>Daniel L. Schwartz</principal>
+            <editor role="editor" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</editor>
+            <respStmt>
+               <resp>XML created by</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</name>
+            </respStmt>
+            <respStmt>
+               <resp>Based on the work of</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#ewbrooks">E. W. Brooks</name>
+            </respStmt>
+            <respStmt>
+               <resp>OCR corrected by</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</name>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition n="1"/>
+         </editionStmt>
+         <publicationStmt>
+            <distributor>
+               <placeName>Center of Digital Humanities Research, College Station, TX, USA</placeName>
+            </distributor>
+            <authority/><!-- FILL IN AFTER DECIDING ON NAME -->
+            <idno/><!-- FILL IN AFTER DECIDING ON URI/URL FORMAT -->
+            <availability>
+               <licence target="http://creativecommons.org/licenses/by/4.0/">
+                  <p>Creative Commons — Attribution 4.0 International — CC BY 4.0</p>
+                  <p>https://creativecommons.org/licenses/by/4.0/</p>
+               </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <editor ref="http://syriaca.org/person/403">
+                     <persName xml:lang="en">
+                        <forename>E. W.</forename>
+                        <surname>Brooks</surname>
+                     </persName>
+                  </editor>
+                  <title type="main" xml:lang="en" level="m">
+                     The Sixth Book of the Select Letters of
+                     <persName ref="http://syriaca.org/person/51">Severus Patriarch of Antioch</persName>
+                     in the Syriac Version of
+                     <persName ref="http://syriaca.org/person/1014">Athanasius of Nisibis</persName>
+                  </title>
+                  <title type="sub" xml:lang="en" level="m">Vol. II (Translation) Part I</title>
+                  <idno type="URI">http://syriaca.org/bibl/668</idno>
+                  <imprint>
+                     <publisher xml:lang="en">Williams and Norgate</publisher>
+                     <pubPlace ref="http://syriaca.org/place/861">Oxford</pubPlace>
+                     <date>1903</date>
+                  </imprint>
+                  <extent>Vol. 3 of 4</extent>
+                  <biblScope unit="vol">2.1</biblScope>
+                  <biblScope unit="page">106-10</biblScope>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <editorialDecl>
+            <p/><!-- FILL IN -->
+         </editorialDecl>
+      </encodingDesc>
+      <profileDesc>
+         <creation>
+            <origDate type="composition"/><!-- FILL IN. La Route Royale dates are probably preferable to Brooks' dates. -->
+         </creation>
+      </profileDesc>
+      <revisionDesc status="draft">
+         <change when="2019-11" who="http://syriaca.org/person.xml#dschwartz">Created file</change>
+      </revisionDesc>
+   </teiHeader>
+  <text>
+      <body>
+         <div type="letter" n="1.38">
+            <head type="main" resp="#compiler">Of the same to the same Simeon, bishop of
+               Chalcis.</head>
+            <head type="sub" resp="#compiler">From those during episcopacy, from the 7th book the
+               267th, 269th letter.</head>
+            <p> For my part I had no need of words and of assurance by letter as regards the various
+               matters that have happened and been transacted with the tranquillity of <pb n="107"/>
+               your love of God, since the facts, if one may so Say, utter a voice and plainly cry
+               this out. But, because there is a time to speak, as there is also a time to keep
+               silence, according to the saying of the wise Koheleth, I now wish to repeat again as
+               in a summary the events that occurred before, and to say like the prophet, "I have
+               kept silence, lest I should keep silence also for ever; I have refrained myself like
+               a travailing woman." Your holiness probably, think, remembers that all through the
+               summer the men from the village called Thelhadin were urging us, and that, though
+               their request was refused by us once and twice (I do not hesitate to say even three
+               times and many times), so that a chance might be given you of settling their affair
+               by some wise method and God-pleasing plan, we effected nothing at all, but we were
+               more pressingly and more violently urged by them, and we were now being abused even
+               by the citizens themselves who saw that they were continually complaining to us and
+               did not receive any answer; and thenceforward we had also to submit to murmurs of no
+               ordinary kind. Whence also we exhorted the devout presbyter Ignatius, who happened to
+               be here, to appease the men by some means and invite them to a peaceful frame of
+               mind. At last, not to make a long story, we were compelled to resort to such an
+               extreme measure as bringing the <foreign>periodeutes</foreign> himself here and
+               having the details of the case examined before the <pb n="108"/> saintly bishops. How
+               repulsive to the ears the counts of the accusations that were examined were I forbear
+               to state, seeing that the gravity of these is known to those who examined them with
+               us, and closed their ears when they were being examined and proved. But this I know
+               clearly, that in the middle of the examination into these things the same
+               <foreign>periodeutes</foreign> wanted to run away; and in the hearing of everyone
+               and while he was standing up I said to him in clear and distinct tones, directing the
+               words towards him, "If you dare to depart, you old man, before the investigation is
+               ended, you will be excommunicate, and under deprivation." Upon hearing this he
+               promised not to run away. And the next day, when his presence was required, though he
+               was sitting in what is called the <foreign>psepheion</foreign>, and had been seen by
+               certain men, he would not come: but he formed the plan of running away, and departed
+               while in full health, thus offending against the reverence due to the apostolic see,
+               and against the synod of saintly bishops. The saintly bishops Sergius and Marion, who
+               are much devoted to your love of God, are trustworthy witnesses of these things.
+               These things therefore having thus passed in order and been transacted, it is now
+               your part, not mine, to say what punishment the man deserves who presumed to take
+               part in priestly functions and down to yesterday to write letters as a
+               <foreign>chorepiscopus</foreign> and to administer the affairs of the <pb n="109"
+               /> district. When a man dares even to lie and swear, and to retain a thing in
+               ignorance, and that after he has personally received the prohibition, what chance of
+               forgiveness or indulgence can he have? Who is there even among men of very peaceful
+               disposition whom he is not treating as a fool and rousing to an anger that is just
+               and well-pleasing to God? For for a man to be jealous for the divine laws when they
+               are transgressed is to offer a sacrifice to God, just as the opposite course, I mean
+               to be silent on such occasions, is to rouse the wrath of Him who laid down such laws.
+               And yet we for the sake of your holiness' tranquillity remained silent, as we ought
+               not to have done under such circumstances: and, when at an earlier time those who
+               came from the monastery of the holy lord <choice>
+                  <reg>ʿAkiba</reg>
+                  <orig>'Akiba</orig>
+               </choice> were asking us about the same said <foreign>chorepiscopus</foreign> or
+               <foreign>periodeutes</foreign>, we kept silence out of respect to you, because we
+               were ashamed to expose the abominable character of the affair, of which even men of
+               no distinction were not unaware. Quite recently again, when the religious presbyter
+               father Cosmas came to us about this same matter, and: said that his conscience and
+               that of the others was wounded, and that they ought not to communicate with a man who
+               had trampled upon the strictness of the canons, and had reckoned the ban of
+               excommunication as nothing, we were compelled to tell them the whole affair, and to
+               place the facts proved by examination before their eyes and read them to them,
+               fearing as we did the prophetic curse which lays under a miserable con<pb n="110"
+               />demnation those who call bitter sweet or darkness light! After this again the
+               letter of your love of God came, and we gathered together in our mind all the details
+               of the same affair, and we summoned the said God-loving presbyter Cosmas to us, and
+               we had some conversation with him concerning peace and concord; after which we
+               thought it right for the sake of your holiness' tranquillity to relieve the
+               above-mentioned presbyter from his punishment, and allow him communion: but only on
+               condition of his remaining quiet and not approaching the office of
+               <foreign>chorepiscopus</foreign> or <foreign>periodeutes</foreign> in any way,
+               because, to speak in the words of scripture and in fitting language, some had been
+               caused to stumble through him. But, while I was in the middle of writing these
+               things, the company of the men of Thelhadin again assailed me, buzzing about my ears
+               like bees: and they were again dismissed by us with insult and with many contumelies
+               heaped upon them. It is therefore the duty of your sanctity to appoint such a
+               <foreign>chorepiscopus</foreign> and <foreign>periodeutes</foreign> for them that
+               God may be praised, and all occasion be cut off from those that wish to find
+               occasion. </p>
+            <trailer>The end.</trailer>
+         </div>
+      </body>
+  </text>
+</TEI>

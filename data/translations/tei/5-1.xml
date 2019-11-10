@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title ref="http://syriaca.org/work/">To John the Tribune</title><!-- FILL IN TITLE AND WORK URI -->
+            <author ref="http://syriaca.org/person/51">Severus of Antioch</author>
+            <sponsor>Center of Digital Humanities Research, Texas A&amp;M University</sponsor>
+            <principal>Daniel L. Schwartz</principal>
+            <editor role="editor" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</editor>
+            <respStmt>
+               <resp>XML created by</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</name>
+            </respStmt>
+            <respStmt>
+               <resp>Based on the work of</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#ewbrooks">E. W. Brooks</name>
+            </respStmt>
+            <respStmt>
+               <resp>OCR corrected by</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</name>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition n="1"/>
+         </editionStmt>
+         <publicationStmt>
+            <distributor>
+               <placeName>Center of Digital Humanities Research, College Station, TX, USA</placeName>
+            </distributor>
+            <authority/><!-- FILL IN AFTER DECIDING ON NAME -->
+            <idno/><!-- FILL IN AFTER DECIDING ON URI/URL FORMAT -->
+            <availability>
+               <licence target="http://creativecommons.org/licenses/by/4.0/">
+                  <p>Creative Commons — Attribution 4.0 International — CC BY 4.0</p>
+                  <p>https://creativecommons.org/licenses/by/4.0/</p>
+               </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <editor ref="http://syriaca.org/person/403">
+                     <persName xml:lang="en">
+                        <forename>E. W.</forename>
+                        <surname>Brooks</surname>
+                     </persName>
+                  </editor>
+                  <title type="main" xml:lang="en" level="m">
+                     The Sixth Book of the Select Letters of
+                     <persName ref="http://syriaca.org/person/51">Severus Patriarch of Antioch</persName>
+                     in the Syriac Version of
+                     <persName ref="http://syriaca.org/person/1014">Athanasius of Nisibis</persName>
+                  </title>
+                  <title type="sub" xml:lang="en" level="m">Vol. II (Translation) Part II</title>
+                  <idno type="URI">http://syriaca.org/bibl/669</idno>
+                  <imprint>
+                     <publisher xml:lang="en">Williams and Norgate</publisher>
+                     <pubPlace ref="http://syriaca.org/place/861">Oxford</pubPlace>
+                     <date>1903</date>
+                  </imprint>
+                  <extent>Vol. 4 of 4</extent>
+                  <biblScope unit="vol">2.2</biblScope>
+                  <biblScope unit="page">275-82</biblScope>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <editorialDecl>
+            <p/><!-- FILL IN -->
+         </editorialDecl>
+      </encodingDesc>
+      <profileDesc>
+         <creation>
+            <origDate type="composition"/><!-- FILL IN. La Route Royale dates are probably preferable to Brooks' dates. -->
+         </creation>
+      </profileDesc>
+      <revisionDesc status="draft">
+         <change when="2019-11" who="http://syriaca.org/person.xml#dschwartz">Created file</change>
+      </revisionDesc>
+   </teiHeader>
+  <text>
+      <body>
+         <div type="letter" n="5.1">
+            <head type="main" resp="#compiler">Of the same to John the tribune, in the name of father
+               Leontius.</head>
+            <head type="sub" resp="#compiler">From those before episcopacy, from the 4th book the 2nd
+               letter.</head>
+            <p> For my part I thought that the negligence and sloth that has grown old with me, and
+               the sleep of sins from which up to the present day I have not been roused, were
+               unknown to the majority of men, but known to God only, "who knoweth the hearts," and
+               makes "light the hidden things of darkness," and reveals the thoughts that are in the
+               mind. But you by naming me a city set upon a height have caused me an increase of
+               tears, if I not only injure myself by my <pb n="276"/> forgetfulness, but also make
+               myself a bad example to others who know me. The holy scripture knows of such cities
+               also and evil powers, and men who regard impiety, whose memory the Lord destroyed
+               with tumult. However, I considered that you were led by love and your faith towards
+               Christ to write thus, though you distressed my wretchedness. But, concerning the
+               other part of your letter, I was much grieved: and I prayed that the earth might open
+               for me, seeing that you have dared to open a blaspheming mouth against the saint and
+               archbishop Timothy, the preserver of the orthodox faith, who was left as a remnant
+               and a root for Israel, enduring long exiles, and bearing Christ's marks in him. What
+               cause of blame is there, tell me, in the fact of his receiving canonically upon
+               repentance those who were ordained by heretics, when they anathematized their heresy
+               in writing? Are you not in the habit of hearing that Melitus, the archbishop of
+               Antioch, was ordained by Arians, and that he afterwards showed himself an approved
+               champion of orthodoxy, insomuch that he was thought worthy to suffer many things, and
+               put on the crown of confession? What then? Did those who received this man at that
+               time and honoured him with tens of thousands of praises, one of whom was the great
+               Basil, also praise or receive the man who ordained him, holding as he did Arian
+               opinions? Nay, him they justly repudiated as having remained in the nets <pb n="277"
+               /> of Arius, while they admired Melitus as having by repentance purged away the dregs
+               of heresy and combated on behalf of orthodoxy. But you say that the holy Timothy
+               contradicted himself, seeing that at first he said that those who had been ordained
+               should not be received, but at a later time received them. Being an old man and
+               without learning and uninstructed I acquiesce in what you say. However, we find that
+               the holy apostles also showed similar self-contradiction. For instance Peter, though
+               he was in the habit of preaching the gospel to those of the circumcision only, and
+               did not go on to preach to those of the nations also, because he thought it to be
+               "unlawful to approach or join himself to anyone of another race," afterwards, when he
+               had received a revelation from God, said, "God hath showed me also not to call any
+               man common and unclean": and again, "God also who knoweth the hearts bare them
+               witness, giving them the Holy Spirit even as unto us, and put no difference between
+               us and them." In such cases the purpose is approved though the things done are
+               thought to appear in some way contradictory. But, that you may learn that it is not I
+               only the uninstructed who say these things, I remember to have heard a discourse of
+               the holy John, bishop of Constantinople, read: and I have now again looked for the
+               book, and have copied some sentences from it for your affection, which give us an
+               example bearing upon this <pb n="278"/> present subject, that we are not to be
+               scandalized without reason. The discourse in which the holy man writes these things
+               is the encomium on Paul the Apostle: and he speaks thus: "So neither would Paul have
+               been known to imitate his Lord, except that he became now a Jew, now as one not under
+               the law. For now he would keep the law: now he would neglect the law. And at one time
+               he would cleave to the life here; at another again he would despise it. And now he
+               would ask for money: now he would refuse it even when given. And he would sacrifice,
+               and shave: and again he would anathematize the doers of these things. And now he
+               would circumcize: now he would reject circumcision. And the things done were
+               contradictory: but the thought and intention from which these proceeded was very
+               consistent and consonant with itself. For he sought one thing, the salvation of those
+               who saw and heard these things. For this reason now he would keep the law: now he
+               would subvert it. For it was not only in what he did, but also in what he said that
+               he was versatile and rich in expedients: not being changed in his mind, nor passing
+               from one disposition to another, but remaining that which he was, and treating each
+               of the said matters in accordance with the need of the time. Do not therefore speak
+               evil of him on account of these things, but celebrate and crown him the more on
+               account of these things. For in fact in the case of a physician also, when you see
+               him now burning now feeding; and using now iron now medicine; and now prohibiting
+               foods <pb n="279"/> and drinks, now allowing the patient to enjoy these without
+               stint; and at one time restricting him on all sides, at another ordering the man who
+               has been seized with fever to drink a glass full of cold water, you do not blame him
+               for the variation, nor because of the perpetual change: but you will then praise the
+               technical skill the more, because you see it boldly applying methods that seem to us
+               contradictory and hurtful, and pledging itself for a safe result. For such is the man
+               of technical skill. But, if we accept a physician when he does these contradictory.
+               things, much more must we celebrate the soul of Paul, which approached those in
+               trouble in this way." So far the holy John: but I wish to say one other thing which
+               also springs from rusticity and an uninstructed mind. I consider that all the bishops
+               throughout the earth who are bound together with one another in the orthodox faith
+               and combined in union are one. For all follow the model of one, of the great God and
+               our Saviour Jesus Christ. Therefore, as, when Cyprian in Africa with the synod under
+               him said that all who had been baptized by heresy ought to receive the laver of
+               <sic><reg>regeneration</reg><orig>regenertion</orig></sic>, as if they had
+               never originally been baptized at all, but at last the opinion of Sixtus of Rome, and
+               of Dionysius of Alexandria and of the others prevailed, so that those who had been
+               baptized by heretics in the name of the three substances, the Father, the Son, and
+               the Holy Spirit, were not re-baptized, no one of sound <pb n="280"/> intelligence
+               said that those saintly bishops contradicted themselves, but that upon later
+               consideration they chose a better and more canonical course, so also the holy Timothy
+               too at first, owing to the blasphemy and the impenitent heart of the Proterians as it
+               was at the beginning, and the zeal of the orthodox people of the city of the
+               Alexandrines, said that he would not accept those who had been ordained by the
+               opposite party: but at last, when they canonically repented and he lawfully accepted
+               them, he did not show himself self-contradictory, but rather very consistent, since
+               he said those things on account of the zeal of the believers, but allowed the canons
+               to prevail, and accepted those who repented in accordance with the final conclusions
+               of the fathers, and further by signing the Encyclical united himself to all the
+               bishops in the world. Though these things seem contradictory to many, yet
+               nevertheless their one purpose was the salvation of those who had perished, and that
+               those who stood upright might not under the influence of immoderate zeal leave the
+               royal road, and turn away to that which is rather on the right side. Therefore, you
+               that are beloved on account of our Lord Jesus, do not out of ignorance injure your
+               soul: but hear me the unlearned and uninstructed, and do not revile the man of God,
+               with whom all the fathers were satisfied at that time, not having received the
+               satisfaction that is from men, but that which is from God: and I the mean and sinful
+               <pb n="281"/> am, as I persuade myself, no false witness of this. We did not love
+               Timothy as having been crucified for us, as you say, but as having been a true
+               bondservant of Him who was of His own accord crucified for the race of men, and a
+               faithful and wise steward of God's mysteries: who also contended against the heresy
+               of the Diphysites or Nestorians, and the impious phantasy of the Eutychianists,
+               proclaiming Emmanuel to be one nature out of two, the Godhead that is and the
+               manhood, and the same of one essence with the Father in the Godhead, and of one
+               essence with us men in the manhood. For He took of the seed of Abraham and was made
+               like us His brethren in all things except sin, in order that He might redeem those
+               who were under sin, and might save us by His blood, and we might thenceforth be
+               called a holy people, inasmuch as we were created by the blood of God, who suffered
+               for us in the flesh and remained impassible. Let your beloved person know that to all
+               who came to my pitifulness of the holy fathers in Pamphylia, and of the Christ-loving
+               laymen, I read what was written to me by you: and each of them urged me to write to
+               you many things taken from the doctors who were eminent at various times in the
+               church. For some of them actually knew you at the time when Promotus the count, whose
+               soul is at rest, was living in the royal city: with whom you perhaps in fact
+               discussed these things. But for my part, seeing that <pb n="282"/> as an uninstructed
+               and unlearned man I avoid many words, I have sent you in an epistle the fruit of my
+               rusticity: having besought the merciful God to place in you the wisdom which is
+               gentle and obedient, in respect of the things that have been written by me. May the
+               Lord of peace and of tranquillity grant us peace and tranquillity at all times and in
+               all ways! </p>
+            <trailer>The end.</trailer>
+         </div>      
+      </body>
+  </text>
+</TEI>

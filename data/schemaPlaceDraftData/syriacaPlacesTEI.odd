@@ -2016,6 +2016,18 @@
               </sch:rule>
             </constraint>
           </constraintSpec>
+          <constraintSpec ident="atts-on-location" scheme="schematron">
+            <constraint>
+              <sch:rule context="//tei:place/tei:location">
+                <sch:assert test="attribute::source or attribute::resp">
+                  The &lt;location&gt; element must have either a @source attribute (preferred when available) or a @resp attribute.
+                </sch:assert>
+                <sch:report test="attribute::source and attribute::resp">
+                  The &lt;location&gt; element may not have both a @source attribute (the preferred when available) and a @resp attribute.
+                </sch:report>
+              </sch:rule>
+            </constraint>
+          </constraintSpec>
           <attList>
             <attDef ident="type" mode="change" usage="req">
               <valList mode="change" type="closed">
@@ -2031,7 +2043,6 @@
                 <valItem ident="quote"/>
               </valList>
             </attDef>
-            <attDef ident="source" mode="change" usage="req"/>
           </attList>
         </elementSpec>
         

@@ -1,8 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/srophe/srophe-eXist-app/master/documentation/SPEARschema/out/SPEAR.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/srophe/srophe-eXist-app/master/documentation/SPEARschema/out/SPEAR.rng" type="application/xml"
-	schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<?xml-model href="https://raw.githubusercontent.com/srophe/srophe-eXist-app/master/documentation/SPEARschema/out/SPEAR.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://raw.githubusercontent.com/srophe/srophe-eXist-app/master/documentation/SPEARschema/out/SPEAR.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader>
         <fileDesc>
             <titleStmt>
@@ -12,20 +9,13 @@
                 <principal>Daniel L. Schwartz</principal>
                 <funder>Texas A&amp;M University</funder>
                 <principal>Daniel L. Schwartz</principal>
-                <editor role="general" ref="http://syriaca.org/documentation/editors.xml#dschwartz"
-                    >Daniel L. Schwartz</editor>
-                <editor role="creator" ref="http://syriaca.org/documentation/editors.xml#dschwartz"
-                    >Daniel L. Schwartz</editor>
-                <editor role="creator" ref="http://syriaca.org/documentation/editors.xml#jnsaintlaurent"
-                    >Jeanne-Nicole Saint-Laurent</editor>
-                <editor role="creator" ref="http://syriaca.org/documentation/editors.xml#tbaillargeon"
-                    >Tara Baillargeon</editor>
-                <editor role="creator" ref="http://syriaca.org/documentation/editors.xml#syoung"
-                    >Sam Young</editor>
-                <editor role="creator" ref="http://syriaca.org/documentation/editors.xml#tmcneir"
-                    >Taylor McNeir</editor>
-                <editor role="creator" ref="http://syriaca.org/documentation/editors.xml#rtrupiano"
-                    >Rose Trupiano</editor>
+                <editor role="general" ref="http://syriaca.org/documentation/editors.xml#dschwartz">Daniel L. Schwartz</editor>
+                <editor role="creator" ref="http://syriaca.org/documentation/editors.xml#dschwartz">Daniel L. Schwartz</editor>
+                <editor role="creator" ref="http://syriaca.org/documentation/editors.xml#jnsaintlaurent">Jeanne-Nicole Saint-Laurent</editor>
+                <editor role="creator" ref="http://syriaca.org/documentation/editors.xml#tbaillargeon">Tara Baillargeon</editor>
+                <editor role="creator" ref="http://syriaca.org/documentation/editors.xml#syoung">Sam Young</editor>
+                <editor role="creator" ref="http://syriaca.org/documentation/editors.xml#tmcneir">Taylor McNeir</editor>
+                <editor role="creator" ref="http://syriaca.org/documentation/editors.xml#rtrupiano">Rose Trupiano</editor>
                 <respStmt>
                     <resp>Data architecture, data entry, editing, proofreading, and revision
                         by</resp>
@@ -39,33 +29,27 @@
                 </respStmt>
                 <respStmt>
                     <resp>Data entry and encoding by</resp>
-                    <name ref="http://syriaca.org/documentation/editors.xml#jwalters"
-                        >James Walters</name>
+                    <name ref="http://syriaca.org/documentation/editors.xml#jwalters">James Walters</name>
                 </respStmt>
                 <respStmt>
                     <resp>Data entry and encoding by</resp>
-                    <name ref="http://syriaca.org/documentation/editors.xml#tbaillargeon"
-                        >Tara Baillargeon</name>
+                    <name ref="http://syriaca.org/documentation/editors.xml#tbaillargeon">Tara Baillargeon</name>
                 </respStmt>
                 <respStmt>
                     <resp>Data entry and encoding by</resp>
-                    <name ref="http://syriaca.org/documentation/editors.xml#jdaccache"
-                        >Jimmy Daccache</name>
+                    <name ref="http://syriaca.org/documentation/editors.xml#jdaccache">Jimmy Daccache</name>
                 </respStmt>
                 <respStmt>
                     <resp>Data entry and encoding by</resp>
-                    <name ref="http://syriaca.org/documentation/editors.xml#tmcneir"
-                        >Taylor McNeir</name>
+                    <name ref="http://syriaca.org/documentation/editors.xml#tmcneir">Taylor McNeir</name>
                 </respStmt>
                 <respStmt>
                     <resp>Data entry and encoding by</resp>
-                    <name ref="http://syriaca.org/documentation/editors.xml#ewalsh"
-                        >Erin Galgay Walsh</name>
+                    <name ref="http://syriaca.org/documentation/editors.xml#ewalsh">Erin Galgay Walsh</name>
                 </respStmt>
                 <respStmt>
                     <resp>Data entry and encoding by</resp>
-                    <name ref="http://syriaca.org/documentation/editors.xml#syoung"
-                        >Samuel Young</name>
+                    <name ref="http://syriaca.org/documentation/editors.xml#syoung">Samuel Young</name>
                 </respStmt>
             </titleStmt>
             <editionStmt>
@@ -80,7 +64,7 @@
                             License.</p>
                     </licence>
                 </availability>
-                <date><!-- INPUT ONCE WE HAVE A "FINAL" DRAFT --></date>
+                <date>2020-01-03-05:00</date>
             </publicationStmt>
             <sourceDesc>
                 <listBibl>
@@ -102,8 +86,7 @@
                     </bibl>
                 </listBibl>
                 <listRelation>
-                    <relation type="part" active="http://syriaca.org/work/810"
-                        ref="dcterms:isPartOf" passive="http://syriaca.org/work/9501"/>
+                    <relation type="part" active="http://syriaca.org/work/810" ref="dcterms:isPartOf" passive="http://syriaca.org/work/9501"/>
                 </listRelation>
             </sourceDesc>
         </fileDesc>
@@ -124,9 +107,7 @@
         </encodingDesc>
         <profileDesc> </profileDesc>
         <revisionDesc>
-            <change
-                who="http://syriaca.org/documentation/editors.xml#jwalters http://syriaca.org/documentation/editors.xml#tbaillargeon http://syriaca.org/documentation/editors.xml#jdaccache http://syriaca.org/documentation/editors.xml#tmcneir http://syriaca.org/documentation/editors.xml#ewalsh http://syriaca.org/documentation/editors.xml#syoung"
-                >Initial data collected Jeanne-Nicole Saint-Laurent,Tara Baillargeon, Taylor McNeir,Samuel Young, Rose Trupiano at "Mapping Ancient Lives &amp;
+            <change who="http://syriaca.org/documentation/editors.xml#srophe-util" when="2020-01-03-05:00">CHANGED: Add a human readable version or the tei:relation element in a tei:desc.</change><change who="http://syriaca.org/documentation/editors.xml#jwalters http://syriaca.org/documentation/editors.xml#tbaillargeon http://syriaca.org/documentation/editors.xml#jdaccache http://syriaca.org/documentation/editors.xml#tmcneir http://syriaca.org/documentation/editors.xml#ewalsh http://syriaca.org/documentation/editors.xml#syoung">Initial data collected Jeanne-Nicole Saint-Laurent,Tara Baillargeon, Taylor McNeir,Samuel Young, Rose Trupiano at "Mapping Ancient Lives &amp;
                 Social Networks: A Digital Workshop," held at Marquette University, 23-24 May
                 2017.</change>
         </revisionDesc>

@@ -1,8 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/srophe/srophe-eXist-app/master/documentation/SPEARschema/out/SPEAR.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/srophe/srophe-eXist-app/master/documentation/SPEARschema/out/SPEAR.rng" type="application/xml"
-	schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg">
+<?xml-model href="https://raw.githubusercontent.com/srophe/srophe-eXist-app/master/documentation/SPEARschema/out/SPEAR.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://raw.githubusercontent.com/srophe/srophe-eXist-app/master/documentation/SPEARschema/out/SPEAR.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML">
     <teiHeader>
         <fileDesc>
             <titleStmt>
@@ -15,7 +12,7 @@
                 <editor role="general" ref="http://syriaca.org/editors.xml#dschwartz">Daniel L. Schwartz</editor>
                 <editor role="creator" ref="http://syriaca.org/editors.xml#dschwartz">Daniel L. Schwartz</editor>
                 <respStmt>
-                    <resp></resp>
+                    <resp/>
                     <name ref="http://syriaca.org/editors.xml#dschwartz">Daniel L. Schwartz</name>
                 </respStmt>
             </titleStmt>
@@ -30,7 +27,7 @@
                         <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
                     </licence>
                 </availability>
-                <date></date>
+                <date>2020-01-03-05:00</date>
             </publicationStmt>
             <sourceDesc>
                 <listBibl>
@@ -60,14 +57,14 @@
         <profileDesc>
         </profileDesc>
         <revisionDesc>
-            <change/>
+            <change who="http://syriaca.org/documentation/editors.xml#srophe-util" when="2020-01-03-05:00">CHANGED: Add a human readable version or the tei:relation element in a tei:desc.</change><change/>
         </revisionDesc>
     </teiHeader>
     <text>
         <body>
             <div type="factoid" uri="http://syriaca.org/spear/3096-1" resp="#ktorabi #dschwartz">
                 <listRelation>
-                    <relation ref="syriaca:SenderOfLetterTo" active="http://syriaca.org/person/51" passive="http://syriaca.org/person/2427"></relation>
+                    <relation ref="syriaca:SenderOfLetterTo" active="http://syriaca.org/person/51" passive="http://syriaca.org/person/2427"><desc><persName ref="http://syriaca.org/person/51">Severus of Antioch</persName> sent a letter to <persName ref="http://syriaca.org/person/2427">John</persName>.</desc></relation>
                 </listRelation>
                 <bibl type="primary">
                     <ptr target="http://syriaca.org/bibl/668"/>
@@ -76,7 +73,7 @@
             </div>
             <div type="factoid" uri="http://syriaca.org/spear/3096-2" resp="#ktorabi #dschwartz">
                 <listRelation>
-                    <relation ref="syriaca:SenderOfLetterTo" active="http://syriaca.org/person/51" passive="http://syriaca.org/person/2428"></relation>
+                    <relation ref="syriaca:SenderOfLetterTo" active="http://syriaca.org/person/51" passive="http://syriaca.org/person/2428"><desc><persName ref="http://syriaca.org/person/51">Severus of Antioch</persName> sent a letter to <persName ref="http://syriaca.org/person/2428">John</persName>.</desc></relation>
                 </listRelation>
                 <bibl type="primary">
                     <ptr target="http://syriaca.org/bibl/668"/>
@@ -136,7 +133,7 @@
             </div>
             <div type="factoid" uri="http://syriaca.org/spear/3096-6" resp="#ktorabi #dschwartz">
                 <listRelation><!-- Check this relationship  -->
-                    <relation ref="syriaca:CarrierOfLetterBetween" active="http://syriaca.org/person/2489" passive="http://syriaca.org/person/51"/>                
+                    <relation ref="syriaca:CarrierOfLetterBetween" active="http://syriaca.org/person/2489" passive="http://syriaca.org/person/51"><desc><persName ref="http://syriaca.org/person/2489">Zenobius</persName> carried a letter between <persName ref="http://syriaca.org/person/51">Severus of Antioch</persName>.</desc></relation>                
                 </listRelation>
                 <bibl type="primary">
                     <ptr target="http://syriaca.org/bibl/668"/>
@@ -336,7 +333,7 @@
             </div>
             <div type="factoid" uri="http://syriaca.org/spear/3096-21" resp="#ktorabi #dschwartz">
                 <listRelation>
-                    <relation ref="syriaca:BishopOverBishop" active="http://syriaca.org/person/2492" passive="http://syriaca.org/person/2490"/>                
+                    <relation ref="syriaca:BishopOverBishop" active="http://syriaca.org/person/2492" passive="http://syriaca.org/person/2490"><desc><persName ref="http://syriaca.org/person/2492">Theodore</persName> had ecclesiastical authority over the bishop(s) <persName ref="http://syriaca.org/person/2490">Bosporius</persName>.</desc></relation>                
                 </listRelation>
                 <bibl type="primary">
                     <ptr target="http://syriaca.org/bibl/668"/>
@@ -380,7 +377,7 @@
             </div>
             <div type="factoid" uri="http://syriaca.org/spear/3096-25" resp="#ktorabi #dschwartz">
                 <listRelation>
-                    <relation ref="snap:AllianceWith" mutual="http://syriaca.org/person/512 http://syriaca.org/person/2490 http://syriaca.org/person/2491"/>                
+                    <relation ref="snap:AllianceWith" mutual="http://syriaca.org/person/512 http://syriaca.org/person/2490 http://syriaca.org/person/2491"><desc><persName ref="http://syriaca.org/person/512">Gregory of Nyssa</persName>, <persName ref="http://syriaca.org/person/2490">Bosporius</persName> and <persName ref="http://syriaca.org/person/2491">Helladius</persName> formed an alliance.</desc></relation>                
                 </listRelation>
                 <bibl type="primary">
                     <ptr target="http://syriaca.org/bibl/668"/>
@@ -424,7 +421,7 @@
             </div>
             <div type="factoid" uri="http://syriaca.org/spear/3096-29" resp="#ktorabi #dschwartz">
                 <listRelation>
-                    <relation ref="snap:AllianceWith" mutual="http://syriaca.org/person/511 http://syriaca.org/person/2490 http://syriaca.org/person/2492"/>                
+                    <relation ref="snap:AllianceWith" mutual="http://syriaca.org/person/511 http://syriaca.org/person/2490 http://syriaca.org/person/2492"><desc><persName ref="http://syriaca.org/person/511">Gregory Nazianzen</persName>, <persName ref="http://syriaca.org/person/2490">Bosporius</persName> and <persName ref="http://syriaca.org/person/2492">Theodore</persName> formed an alliance.</desc></relation>                
                 </listRelation>
                 <bibl type="primary">
                     <ptr target="http://syriaca.org/bibl/668"/>
@@ -541,7 +538,7 @@
             </div>
             <div type="factoid" uri="http://syriaca.org/spear/3096-36" resp="#ktorabi #dschwartz">
                 <listRelation><!-- Severus states, "Liberius...opposed Constantinus, even to blood." I think that EnmityFor may be the best, though not a perfect, way to encode this relationship. -->
-                    <relation ref="snap:EnmityFor" active="http://syriaca.org/person/2494" passive="http://syriaca.org/person/2249"/>                
+                    <relation ref="snap:EnmityFor" active="http://syriaca.org/person/2494" passive="http://syriaca.org/person/2249"><desc><persName ref="http://syriaca.org/person/2494">Liberius</persName> had enmity for <persName ref="http://syriaca.org/person/2249">Constantius II</persName>.</desc></relation>                
                 </listRelation>
                 <bibl type="primary">
                     <ptr target="http://syriaca.org/bibl/668"/>
@@ -595,7 +592,7 @@
             </div>
             <div type="factoid" uri="http://syriaca.org/spear/3096-40" resp="#ktorabi #dschwartz">
                 <listRelation>
-                    <relation ref="snap:AllianceWith" mutual="http://syriaca.org/person/2494 http://syriaca.org/person/354"/>                
+                    <relation ref="snap:AllianceWith" mutual="http://syriaca.org/person/2494 http://syriaca.org/person/354"><desc><persName ref="http://syriaca.org/person/2494">Liberius</persName> and <persName ref="http://syriaca.org/person/354">Athanasius, bishop of Alexandria</persName> formed an alliance.</desc></relation>                
                 </listRelation>
                 <bibl type="primary">
                     <ptr target="http://syriaca.org/bibl/668"/>
@@ -658,7 +655,7 @@
             </div>
             <div type="factoid" uri="http://syriaca.org/spear/3096-44" resp="#ktorabi #dschwartz">
                 <listRelation>
-                    <relation ref="syriaca:EpistolaryReferenceTo" active="http://syriaca.org/person/354" passive="http://syriaca.org/person/2493"/>                
+                    <relation ref="syriaca:EpistolaryReferenceTo" active="http://syriaca.org/person/354" passive="http://syriaca.org/person/2493"><desc>A letter between <persName ref="http://syriaca.org/person/354">Athanasius, bishop of Alexandria</persName> referenced <persName ref="http://syriaca.org/person/354">Athanasius, bishop of Alexandria</persName>.</desc></relation>                
                 </listRelation>
                 <bibl type="primary">
                     <ptr target="http://syriaca.org/bibl/668"/>

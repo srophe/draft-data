@@ -1,8 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/srophe/srophe-eXist-app/master/documentation/SPEARschema/out/SPEAR.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/srophe/srophe-eXist-app/master/documentation/SPEARschema/out/SPEAR.rng" type="application/xml"
-	schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<?xml-model href="https://raw.githubusercontent.com/srophe/srophe-eXist-app/master/documentation/SPEARschema/out/SPEAR.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://raw.githubusercontent.com/srophe/srophe-eXist-app/master/documentation/SPEARschema/out/SPEAR.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader>
         <fileDesc>
             <titleStmt>
@@ -12,24 +9,15 @@
                 <principal>Daniel L. Schwartz</principal>
                 <funder>Texas A&amp;M University</funder>
                 <principal>Daniel L. Schwartz</principal>
-                <editor role="general" ref="http://syriaca.org/documentation/editors.xml#dschwartz"
-                    >Daniel L. Schwartz</editor>
-                <editor role="creator" ref="http://syriaca.org/documentation/editors.xml#dschwartz"
-                    >Daniel L. Schwartz</editor>
-                <editor role="creator"
-                    ref="http://syriaca.org/documentation/editors.xml#dmichelson">David A. Michelson</editor>
-                <editor role="creator" ref="http://syriaca.org/documentation/editors.xml#mdebie"
-                    >Muriel Debie</editor>
-                <editor role="creator" ref="http://syriaca.org/documentation/editors.xml#egarret"
-                    >Eric Garret</editor>
-                <editor role="creator" ref="http://syriaca.org/documentation/editors.xml#egibes"
-                    >Elizabeth Gibes</editor>
-                <editor role="creator" ref="http://syriaca.org/documentation/editors.xml#sgross"
-                    >Simcha Gross</editor>
-                <editor role="creator" ref="http://syriaca.org/documentation/editors.xml#ekeogh"
-                    >Edward Keogh</editor>
-                <editor role="creator" ref="http://syriaca.org/documentation/editors.xml#upossekel"
-                    >Ute Possekel</editor>
+                <editor role="general" ref="http://syriaca.org/documentation/editors.xml#dschwartz">Daniel L. Schwartz</editor>
+                <editor role="creator" ref="http://syriaca.org/documentation/editors.xml#dschwartz">Daniel L. Schwartz</editor>
+                <editor role="creator" ref="http://syriaca.org/documentation/editors.xml#dmichelson">David A. Michelson</editor>
+                <editor role="creator" ref="http://syriaca.org/documentation/editors.xml#mdebie">Muriel Debie</editor>
+                <editor role="creator" ref="http://syriaca.org/documentation/editors.xml#egarret">Eric Garret</editor>
+                <editor role="creator" ref="http://syriaca.org/documentation/editors.xml#egibes">Elizabeth Gibes</editor>
+                <editor role="creator" ref="http://syriaca.org/documentation/editors.xml#sgross">Simcha Gross</editor>
+                <editor role="creator" ref="http://syriaca.org/documentation/editors.xml#ekeogh">Edward Keogh</editor>
+                <editor role="creator" ref="http://syriaca.org/documentation/editors.xml#upossekel">Ute Possekel</editor>
                 <respStmt>
                     <resp>Data architecture, data entry, editing, proofreading, and revision
                         by</resp>
@@ -43,33 +31,27 @@
                 </respStmt>
                 <respStmt>
                     <resp>Data entry and encoding by</resp>
-                    <name ref="http://syriaca.org/documentation/editors.xml#mdebie"
-                        >Muriel Debie</name>
+                    <name ref="http://syriaca.org/documentation/editors.xml#mdebie">Muriel Debie</name>
                 </respStmt>
                 <respStmt>
                     <resp>Data entry and encoding by</resp>
-                    <name ref="http://syriaca.org/documentation/editors.xml#egarret"
-                        >Eric Garret</name>
+                    <name ref="http://syriaca.org/documentation/editors.xml#egarret">Eric Garret</name>
                 </respStmt>
                 <respStmt>
                     <resp>Data entry and encoding by</resp>
-                    <name ref="http://syriaca.org/documentation/editors.xml#egibes"
-                        >Elizabeth Gibes</name>
+                    <name ref="http://syriaca.org/documentation/editors.xml#egibes">Elizabeth Gibes</name>
                 </respStmt>
                 <respStmt>
                     <resp>Data entry and encoding by</resp>
-                    <name ref="http://syriaca.org/documentation/editors.xml#sgross"
-                        >Simcha Gross</name>
+                    <name ref="http://syriaca.org/documentation/editors.xml#sgross">Simcha Gross</name>
                 </respStmt>
                 <respStmt>
                     <resp>Data entry and encoding by</resp>
-                    <name ref="http://syriaca.org/documentation/editors.xml#ekeogh"
-                        >Edward Keogh</name>
+                    <name ref="http://syriaca.org/documentation/editors.xml#ekeogh">Edward Keogh</name>
                 </respStmt>
                 <respStmt>
                     <resp>Data entry and encoding by</resp>
-                    <name ref="http://syriaca.org/documentation/editors.xml#upossekel"
-                        >Ute Possekel</name>
+                    <name ref="http://syriaca.org/documentation/editors.xml#upossekel">Ute Possekel</name>
                 </respStmt>
             </titleStmt>
             <editionStmt>
@@ -85,7 +67,7 @@
                             License.</p>
                     </licence>
                 </availability>
-                <date><!-- INPUT ONCE WE HAVE A "FINAL" DRAFT --></date>
+                <date>2020-01-03-05:00</date>
             </publicationStmt>
             <sourceDesc>
                 <listBibl>
@@ -107,8 +89,7 @@
                     </bibl>
                 </listBibl>
                 <listRelation>
-                    <relation type="part" active="http://syriaca.org/work/831"
-                        ref="dcterms:isPartOf" passive="http://syriaca.org/work/9501"/>
+                    <relation type="part" active="http://syriaca.org/work/831" ref="dcterms:isPartOf" passive="http://syriaca.org/work/9501"/>
                 </listRelation>
             </sourceDesc>
         </fileDesc>
@@ -129,9 +110,7 @@
         </encodingDesc>
         <profileDesc> </profileDesc>
         <revisionDesc>
-            <change
-                who="http://syriaca.org/documentation/editors.xml#dmichelson http://syriaca.org/documentation/editors.xml#ekeogh http://syriaca.org/documentation/editors.xml#egarret http://syriaca.org/documentation/editors.xml#egibes http://syriaca.org/documentation/editors.xml#mdebie http://syriaca.org/documentation/editors.xml#sgross http://syriaca.org/documentation/editors.xml #upossekel"
-                >Initial data collected by David A. Michelson, Muriel Debie,
+            <change who="http://syriaca.org/documentation/editors.xml#srophe-util" when="2020-01-03-05:00">CHANGED: Add a human readable version or the tei:relation element in a tei:desc.</change><change who="http://syriaca.org/documentation/editors.xml#dmichelson http://syriaca.org/documentation/editors.xml#ekeogh http://syriaca.org/documentation/editors.xml#egarret http://syriaca.org/documentation/editors.xml#egibes http://syriaca.org/documentation/editors.xml#mdebie http://syriaca.org/documentation/editors.xml#sgross http://syriaca.org/documentation/editors.xml #upossekel">Initial data collected by David A. Michelson, Muriel Debie,
                 Eric Garret, Elizabeth Gibes, Simcha Gross, and Ute Possekel at "Mapping Ancient Lives &amp;
                 Social Networks: A Digital Workshop," held at Marquette University, 23-24 May
                 2017.</change>
@@ -214,10 +193,10 @@
                     <citedRange unit="pp">647</citedRange>
                 </bibl>
                 
-                <note type= "incerta">  District name filled based on the Life of Tribunus. Wording identical apart from "such-and-such." 
-                <bibl type= "secondary"> <ptr target= "http://syriaca.org/work/835"/>
+                <note type="incerta">  District name filled based on the Life of Tribunus. Wording identical apart from "such-and-such." 
+                <bibl type="secondary"> <ptr target="http://syriaca.org/work/835"/>
                     <citedRange unit="pp"> 459</citedRange> 
-                    <citedRange unit= "pp"> 661</citedRange>
+                    <citedRange unit="pp"> 661</citedRange>
                 </bibl>
                 </note>
             </div>
@@ -257,7 +236,7 @@
             </div>
             <div type="factoid" uri="http://syriaca.org/spear/831-7" resp="#sgross #egibes #ekeogh">
                 <listRelation>
-                    <relation ref="snap:ChildOf" active="http://syriaca.org/person/1554" passive="http://syriaca.org/person/3270"/>
+                    <relation ref="snap:ChildOf" active="http://syriaca.org/person/1554" passive="http://syriaca.org/person/3270"><desc><persName ref="http://syriaca.org/person/1554">Abraham the Priest</persName> was the child of <persName ref="http://syriaca.org/person/3270"/>.</desc></relation>
                 </listRelation>
                 <bibl type="primary">
                     <ptr target="http://syriaca.org/work/831"/>
@@ -327,7 +306,7 @@
             </div>
             <div type="factoid" uri="http://syriaca.org/spear/831-11" resp="#sgross #egibes #ekeogh">
              <listRelation>
-                 <relation ref="snap:ChildOfSiblingOf" active="http://syriaca.org/person/1554" passive="http://syriaca.org/person/3204"/>
+                 <relation ref="snap:ChildOfSiblingOf" active="http://syriaca.org/person/1554" passive="http://syriaca.org/person/3204"><desc><persName ref="http://syriaca.org/person/1554">Abraham the Priest</persName> was the child of a sibling of <persName ref="http://syriaca.org/person/3204"/>.</desc></relation>
              </listRelation>
              <bibl type="primary">
                  <ptr target="http://syriaca.org/work/831"/>

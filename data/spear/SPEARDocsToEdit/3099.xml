@@ -1,8 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/srophe/srophe-eXist-app/master/documentation/SPEARschema/out/SPEAR.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/srophe/srophe-eXist-app/master/documentation/SPEARschema/out/SPEAR.rng" type="application/xml"
-	schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg">
+<?xml-model href="https://raw.githubusercontent.com/srophe/srophe-eXist-app/master/documentation/SPEARschema/out/SPEAR.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://raw.githubusercontent.com/srophe/srophe-eXist-app/master/documentation/SPEARschema/out/SPEAR.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML">
     <teiHeader>
         <fileDesc>
             <titleStmt>
@@ -15,7 +12,7 @@
                 <editor role="general" ref="http://syriaca.org/editors.xml#dschwartz">Daniel L. Schwartz</editor>
                 <editor role="creator" ref="http://syriaca.org/editors.xml#dschwartz">Daniel L. Schwartz</editor>
                 <respStmt>
-                    <resp></resp>
+                    <resp/>
                     <name ref="http://syriaca.org/editors.xml#dschwartz">Daniel L. Schwartz</name>
                 </respStmt>
             </titleStmt>
@@ -30,7 +27,7 @@
                         <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
                     </licence>
                 </availability>
-                <date></date>
+                <date>2020-01-03-05:00</date>
             </publicationStmt>
             <sourceDesc>
                 <listBibl>
@@ -60,14 +57,14 @@
         <profileDesc>
         </profileDesc>
         <revisionDesc>
-            <change/>
+            <change who="http://syriaca.org/documentation/editors.xml#srophe-util" when="2020-01-03-05:00">CHANGED: Add a human readable version or the tei:relation element in a tei:desc.</change><change/>
         </revisionDesc>
     </teiHeader>
     <text>
         <body>
             <div type="factoid" uri="http://syriaca.org/spear/3099-1" resp="#ktorabi #dschwartz">
                 <listRelation>
-                    <relation ref="syriaca:SenderOfLetterTo" active="http://syriaca.org/person/51" passive="http://syriaca.org/person/2427"/>
+                    <relation ref="syriaca:SenderOfLetterTo" active="http://syriaca.org/person/51" passive="http://syriaca.org/person/2427"><desc><persName ref="http://syriaca.org/person/51">Severus of Antioch</persName> sent a letter to <persName ref="http://syriaca.org/person/2427">John</persName>.</desc></relation>
                 </listRelation>
                 <bibl type="primary">
                     <ptr target="http://syriaca.org/bibl/668"/>
@@ -76,7 +73,7 @@
             </div>
             <div type="factoid" uri="http://syriaca.org/spear/3099-2" resp="#ktorabi #dschwartz">
                 <listRelation>
-                    <relation ref="syriaca:SenderOfLetterTo" active="http://syriaca.org/person/51" passive="http://syriaca.org/person/2428"/>
+                    <relation ref="syriaca:SenderOfLetterTo" active="http://syriaca.org/person/51" passive="http://syriaca.org/person/2428"><desc><persName ref="http://syriaca.org/person/51">Severus of Antioch</persName> sent a letter to <persName ref="http://syriaca.org/person/2428">John</persName>.</desc></relation>
                 </listRelation>
                 <bibl type="primary">
                     <ptr target="http://syriaca.org/bibl/668"/>
@@ -173,7 +170,7 @@
             <div type="factoid" uri="http://syriaca.org/spear/3099-9" resp="#ktorabi #dschwartz">
             <listRelation>
                 <relation ref="syriaca:FollowerOf" active="http://syriaca.org/person/anonymi3" passive="http://syriaca.org/anonymi2">
-                 </relation>
+                 <desc><persName ref="http://syriaca.org/person/anonymi3"/> was a follower of <persName ref="http://syriaca.org/anonymi2"/>.</desc></relation>
             </listRelation>
                 <bibl type="primary">
                     <ptr target="http://syriaca.org/bibl/668"/>
@@ -214,7 +211,7 @@
             </div>
             <div type="factoid" uri="http://syriaca.org/spear/3099-12" resp="#ktorabi #dschwartz">
                 <listRelation>
-                    <relation ref="syriaca:SenderOfLetterTo" active="http://syriaca.org/person/51" passive="http://syriaca.org/person/2430"/>
+                    <relation ref="syriaca:SenderOfLetterTo" active="http://syriaca.org/person/51" passive="http://syriaca.org/person/2430"><desc><persName ref="http://syriaca.org/person/51">Severus of Antioch</persName> sent a letter to <persName ref="http://syriaca.org/person/2430">Dioscorus II</persName>.</desc></relation>
                 </listRelation>
                 <bibl type="primary">
                     <ptr target="http://syriaca.org/bibl/668"/>
@@ -379,7 +376,7 @@
             </div>
             <div type="factoid" uri="http://syriaca.org/spear/3099-22" resp="#ktorabi #dschwartz">
                 <listRelation>
-                    <relation ref="snap:SiblingOf" mutual="http://syriaca.org/person/2409 http://syriaca.org/person/51"/>
+                    <relation ref="snap:SiblingOf" mutual="http://syriaca.org/person/2409 http://syriaca.org/person/51"><desc><persName ref="http://syriaca.org/person/2409">Peter</persName> and <persName ref="http://syriaca.org/person/51">Severus of Antioch</persName> were siblings.</desc></relation>
                 </listRelation>
                 <bibl type="primary">
                     <ptr target="http://syriaca.org/bibl/668"/>
@@ -506,7 +503,7 @@
             </div>
             <div type="factoid" uri="http://syriaca.org/spear/3099-33" resp="#ktorabi #dschwartz">
                 <listRelation>
-                    <relation ref="syriaca:EpistolaryReferenceTo" active="http://syriaca.org/person/51" passive="http://syriaca.org/person/2432"/>
+                    <relation ref="syriaca:EpistolaryReferenceTo" active="http://syriaca.org/person/51" passive="http://syriaca.org/person/2432"><desc>A letter between <persName ref="http://syriaca.org/person/51">Severus of Antioch</persName> referenced <persName ref="http://syriaca.org/person/51">Severus of Antioch</persName>.</desc></relation>
                 </listRelation>
                 <bibl type="primary">
                     <ptr target="http://syriaca.org/bibl/668"/>
@@ -515,7 +512,7 @@
             </div>
             <div type="factoid" uri="http://syriaca.org/spear/3099-34" resp="#ktorabi #dschwartz">
                 <listRelation>
-                    <relation ref="syriaca:EpistolaryReferenceTo" active="http://syriaca.org/person/2432" passive="http://syriaca.org/person/2308 http://syriaca.org/person/847"/>
+                    <relation ref="syriaca:EpistolaryReferenceTo" active="http://syriaca.org/person/2432" passive="http://syriaca.org/person/2308 http://syriaca.org/person/847"><desc>A letter between <persName ref="http://syriaca.org/person/2432">Dioscorus I</persName> referenced <persName ref="http://syriaca.org/person/2432">Dioscorus I</persName>.</desc></relation>
                 </listRelation>
                 <bibl type="primary">
                     <ptr target="http://syriaca.org/bibl/668"/>
@@ -620,7 +617,7 @@
             </div>
             <div type="factoid" uri="http://syriaca.org/spear/3099-44" resp="#ktorabi #dschwartz">
                 <listRelation>
-                    <relation ref="syriaca:EpistolaryReferenceTo" active="http://syriaca.org/person/2427 http://syriaca.org/person/2428" passive="http://syriaca.org/person/2545"/>
+                    <relation ref="syriaca:EpistolaryReferenceTo" active="http://syriaca.org/person/2427 http://syriaca.org/person/2428" passive="http://syriaca.org/person/2545"><desc>A letter between <persName ref="http://syriaca.org/person/2427">John</persName> and <persName ref="http://syriaca.org/person/2428">John</persName> referenced <persName ref="http://syriaca.org/person/2427">John</persName> and <persName ref="http://syriaca.org/person/2428">John</persName>.</desc></relation>
                 </listRelation>
                 <bibl type="primary">
                     <ptr target="http://syriaca.org/bibl/668"/>
@@ -629,7 +626,7 @@
             </div>
             <div type="factoid" uri="http://syriaca.org/spear/3099-45" resp="#ktorabi #dschwartz">
                 <listRelation>
-                    <relation ref="snap:ProfessionalRelationship" mutual="http://syriaca.org/person/2545 http://syriaca.org/person/51"/>
+                    <relation ref="snap:ProfessionalRelationship" mutual="http://syriaca.org/person/2545 http://syriaca.org/person/51"><desc><persName ref="http://syriaca.org/person/2545">Isidore</persName> and <persName ref="http://syriaca.org/person/51">Severus of Antioch</persName> had a professional relationship.</desc></relation>
                 </listRelation>
                 <bibl type="primary">
                     <ptr target="http://syriaca.org/bibl/668"/>
@@ -689,7 +686,7 @@
             </div>
             <div type="factoid" uri="http://syriaca.org/spear/3099-49" resp="#ktorabi #dschwartz">
                 <listRelation>
-                    <relation ref="syriaca:BishopOverClergy" active="http://syriaca.org/person/51" passive="http://syriaca.org/person/2433"/>
+                    <relation ref="syriaca:BishopOverClergy" active="http://syriaca.org/person/51" passive="http://syriaca.org/person/2433"><desc><persName ref="http://syriaca.org/person/51">Severus of Antioch</persName> had ecclesiastical authority over <persName ref="http://syriaca.org/person/2433">Victor</persName>.</desc></relation>
                 </listRelation>
                 <bibl type="primary">
                     <ptr target="http://syriaca.org/bibl/668"/>

@@ -1,8 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/srophe/srophe-eXist-app/master/documentation/SPEARschema/out/SPEAR.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/srophe/srophe-eXist-app/master/documentation/SPEARschema/out/SPEAR.rng" type="application/xml"
-	schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg">
+<?xml-model href="https://raw.githubusercontent.com/srophe/srophe-eXist-app/master/documentation/SPEARschema/out/SPEAR.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://raw.githubusercontent.com/srophe/srophe-eXist-app/master/documentation/SPEARschema/out/SPEAR.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML">
     <teiHeader>
         <fileDesc>
             <titleStmt>
@@ -15,7 +12,7 @@
                 <editor role="general" ref="http://syriaca.org/editors.xml#dschwartz">Daniel L. Schwartz</editor>
                 <editor role="creator" ref="http://syriaca.org/editors.xml#dschwartz">Daniel L. Schwartz</editor>
                 <respStmt>
-                    <resp></resp>
+                    <resp/>
                     <name ref="http://syriaca.org/editors.xml#dschwartz">Daniel L. Schwartz</name>
                 </respStmt>
             </titleStmt>
@@ -30,7 +27,7 @@
                         <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
                     </licence>
                 </availability>
-                <date></date>
+                <date>2020-01-03-05:00</date>
             </publicationStmt>
             <sourceDesc>
                 <listBibl>
@@ -60,7 +57,7 @@
         <profileDesc>
         </profileDesc>
         <revisionDesc>
-            <change/>
+            <change who="http://syriaca.org/documentation/editors.xml#srophe-util" when="2020-01-03-05:00">CHANGED: Add a human readable version or the tei:relation element in a tei:desc.</change><change/>
         </revisionDesc>
     </teiHeader>
     <text>
@@ -86,7 +83,7 @@
             </div>
             <div type="factoid" uri="http://syriaca.org/spear/3149-2" resp="#ktorabi #dschwartz">
                 <listRelation>
-                    <relation ref="syriaca:SenderOfLetterTo" active="http://syriaca.org/person/51" passive="http://syriaca.org/person/anonymous1"/>
+                    <relation ref="syriaca:SenderOfLetterTo" active="http://syriaca.org/person/51" passive="http://syriaca.org/person/anonymous1"><desc><persName ref="http://syriaca.org/person/51">Severus of Antioch</persName> sent a letter to <persName ref="http://syriaca.org/person/anonymous1"/>.</desc></relation>
                 </listRelation>
                 <bibl type="primary">
                     <ptr target="http://syriaca.org/bibl/668"/>
@@ -252,7 +249,7 @@
             </div>
             <div type="factoid" uri="http://syriaca.org/spear/3149-13" resp="#ktorabi #dschwartz">
                 <listRelation>
-                    <relation ref="syriaca:EpistolaryReferenceTo" active="http://syriaca.org/person/51" passive="http://syriaca.org/person/2477 http://syriaca.org/person/2476 http://syriaca.org/person/2475"/>
+                    <relation ref="syriaca:EpistolaryReferenceTo" active="http://syriaca.org/person/51" passive="http://syriaca.org/person/2477 http://syriaca.org/person/2476 http://syriaca.org/person/2475"><desc>A letter between <persName ref="http://syriaca.org/person/51">Severus of Antioch</persName> referenced <persName ref="http://syriaca.org/person/51">Severus of Antioch</persName>.</desc></relation>
                 </listRelation>
                 <bibl type="primary">
                     <ptr target="http://syriaca.org/bibl/668"/>
@@ -371,7 +368,7 @@
             </div>
             <div type="factoid" uri="http://syriaca.org/spear/3149-20" resp="#ktorabi #dschwartz">
                 <listRelation>
-                    <relation ref="syriaca:SenderOfLetterTo" active="http://syriaca.org/person/anonymous1" passive="http://syriaca.org/person/2479 http://syriaca.org/person/2443"/>
+                    <relation ref="syriaca:SenderOfLetterTo" active="http://syriaca.org/person/anonymous1" passive="http://syriaca.org/person/2479 http://syriaca.org/person/2443"><desc><persName ref="http://syriaca.org/person/anonymous1"/> sent a letter to <persName ref="http://syriaca.org/person/2479">Victor</persName> and <persName ref="http://syriaca.org/person/2443">Constantine</persName>.</desc></relation>
                 </listRelation>
                 <bibl type="primary">
                     <ptr target="http://syriaca.org/bibl/668"/>
@@ -447,7 +444,7 @@
             </div>
             <div type="factoid" uri="http://syriaca.org/spear/3149-25" resp="#ktorabi #dschwartz">
                 <listRelation><!-- From the information in this letter, it seems that the addressee's conflict with Heracliana, her monastic sisters, and John is of a personal nature. He removed the sisters from the monastery because of the insults that he felt were directed toward him by those individuals. Anonymous1 dislikes these individuals and they seem to dislike him, but I'm not sure if these feelings rise to the level of "enmity" This may not be the best way to encode these relationships  -->
-                    <relation ref="snap:EnmityFor" active="http://syriaca.org/person/anomymous1" passive="http://syriaca.org/person/2478"/>
+                    <relation ref="snap:EnmityFor" active="http://syriaca.org/person/anomymous1" passive="http://syriaca.org/person/2478"><desc><persName ref="http://syriaca.org/person/anomymous1"/> had enmity for <persName ref="http://syriaca.org/person/2478">Heracliana</persName>.</desc></relation>
                 </listRelation>
                 <bibl type="primary">
                     <ptr target="http://syriaca.org/bibl/668"/>
@@ -456,7 +453,7 @@
             </div>
             <div type="factoid" uri="http://syriaca.org/spear/3149-26" resp="#ktorabi #dschwartz">
                 <listRelation><!-- From the information in this letter, it seems that the addressee's conflict with Heracliana, her monastic sisters, and John is of a personal nature. He removed the sisters from the monastery because of the insults that he felt were directed toward him by those individuals. Anonymous1 dislikes these individuals and they seem to dislike him, but I'm not sure if these feelings rise to the level of "enmity" This may not be the best way to encode these relationships  -->
-                    <relation ref="snap:EnmityFor" active="http://syriaca.org/person/2478" passive="http://syriaca.org/person/anonymous1"/>
+                    <relation ref="snap:EnmityFor" active="http://syriaca.org/person/2478" passive="http://syriaca.org/person/anonymous1"><desc><persName ref="http://syriaca.org/person/2478">Heracliana</persName> had enmity for <persName ref="http://syriaca.org/person/anonymous1"/>.</desc></relation>
                 </listRelation>
                 <bibl type="primary">
                     <ptr target="http://syriaca.org/bibl/668"/>
@@ -485,7 +482,7 @@
             </div>
             <div type="factoid" uri="http://syriaca.org/spear/3149-28" resp="#ktorabi #dschwartz">
                 <listRelation><!-- From the information in this letter, it seems that the addressee's conflict with Heracliana, her monastic sisters, and John is of a personal nature. He removed the sisters from the monastery because of the insults that he felt were directed toward him by those individuals. Anonymous1 dislikes these individuals and they seem to dislike him, but I'm not sure if these feelings rise to the level of "enmity" This may not be the best way to encode these relationships  -->
-                    <relation ref="snap:EnmityFor" active="http://syriaca.org/person/anonymi1" passive="http://syriaca.org/person/anonymous1"/>
+                    <relation ref="snap:EnmityFor" active="http://syriaca.org/person/anonymi1" passive="http://syriaca.org/person/anonymous1"><desc><persName ref="http://syriaca.org/person/anonymi1"/> had enmity for <persName ref="http://syriaca.org/person/anonymous1"/>.</desc></relation>
                 </listRelation>
                 <bibl type="primary">
                     <ptr target="http://syriaca.org/bibl/668"/>
@@ -494,7 +491,7 @@
             </div>
             <div type="factoid" uri="http://syriaca.org/spear/3149-29" resp="#ktorabi #dschwartz">
                 <listRelation><!-- From the information in this letter, it seems that the addressee's conflict with Heracliana, her monastic sisters, and John is of a personal nature. He removed the sisters from the monastery because of the insults that he felt were directed toward him by those individuals. Anonymous1 dislikes these individuals and they seem to dislike him, but I'm not sure if these feelings rise to the level of "enmity" This may not be the best way to encode these relationships  -->
-                    <relation ref="snap:EnmityFor" active="http://syriaca.org/person/anonymous1" passive="http://syriaca.org/person/anonymi1"/>
+                    <relation ref="snap:EnmityFor" active="http://syriaca.org/person/anonymous1" passive="http://syriaca.org/person/anonymi1"><desc><persName ref="http://syriaca.org/person/anonymous1"/> had enmity for <persName ref="http://syriaca.org/person/anonymi1"/>.</desc></relation>
                 </listRelation>
                 <bibl type="primary">
                     <ptr target="http://syriaca.org/bibl/668"/>
@@ -503,7 +500,7 @@
             </div>
             <div type="factoid" uri="http://syriaca.org/spear/3149-30" resp="#ktorabi #dschwartz">
                 <listRelation>
-                    <relation ref="syriaca:MonasticHeadOver" active="http://syriaca.org/person/2478" passive="http://syriaca.org/person/anonymi1"/>
+                    <relation ref="syriaca:MonasticHeadOver" active="http://syriaca.org/person/2478" passive="http://syriaca.org/person/anonymi1"><desc><persName ref="http://syriaca.org/person/2478">Heracliana</persName> was a monastic authority over <persName ref="http://syriaca.org/person/anonymi1"/>.</desc></relation>
                 </listRelation>
                 <bibl type="primary">
                     <ptr target="http://syriaca.org/bibl/668"/>
@@ -512,7 +509,7 @@
             </div>
             <div type="factoid" uri="http://syriaca.org/spear/3149-31" resp="#ktorabi #dschwartz">
                 <listRelation><!-- From the information in this letter, it seems that the addressee's conflict with Heracliana, her monastic sisters, and John is of a personal nature. He removed the sisters from the monastery because of the insults that he felt were directed toward him by those individuals. Anonymous1 dislikes these individuals and they seem to dislike him, but I'm not sure if these feelings rise to the level of "enmity" This may not be the best way to encode these relationships  -->
-                    <relation ref="snap:EnmityFor" active="http://syriaca.org/person/anomymous1" passive="http://syriaca.org/person/2477"/>
+                    <relation ref="snap:EnmityFor" active="http://syriaca.org/person/anomymous1" passive="http://syriaca.org/person/2477"><desc><persName ref="http://syriaca.org/person/anomymous1"/> had enmity for <persName ref="http://syriaca.org/person/2477">John</persName>.</desc></relation>
                 </listRelation>
                 <bibl type="primary">
                     <ptr target="http://syriaca.org/bibl/668"/>
@@ -521,7 +518,7 @@
             </div>
             <div type="factoid" uri="http://syriaca.org/spear/3149-32" resp="#ktorabi #dschwartz">
                 <listRelation><!-- From the information in this letter, it seems that the addressee's conflict with Heracliana, her monastic sisters, and John is of a personal nature. He removed the sisters from the monastery because of the insults that he felt were directed toward him by those individuals. Anonymous1 dislikes these individuals and they seem to dislike him, but I'm not sure if these feelings rise to the level of "enmity" This may not be the best way to encode these relationships  -->
-                    <relation ref="snap:EnmityFor" active="http://syriaca.org/person/2477" passive="http://syriaca.org/person/anonymous1"/>
+                    <relation ref="snap:EnmityFor" active="http://syriaca.org/person/2477" passive="http://syriaca.org/person/anonymous1"><desc><persName ref="http://syriaca.org/person/2477">John</persName> had enmity for <persName ref="http://syriaca.org/person/anonymous1"/>.</desc></relation>
                 </listRelation>
                 <bibl type="primary">
                     <ptr target="http://syriaca.org/bibl/668"/>

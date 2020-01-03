@@ -1,8 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/srophe/srophe-eXist-app/master/documentation/SPEARschema/out/SPEAR.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/srophe/srophe-eXist-app/master/documentation/SPEARschema/out/SPEAR.rng" type="application/xml"
-	schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<?xml-model href="https://raw.githubusercontent.com/srophe/srophe-eXist-app/master/documentation/SPEARschema/out/SPEAR.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://raw.githubusercontent.com/srophe/srophe-eXist-app/master/documentation/SPEARschema/out/SPEAR.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader>
         <fileDesc>
             <titleStmt>
@@ -12,12 +9,9 @@
                 <principal>Daniel L. Schwartz</principal>
                 <funder>Texas A&amp;M University</funder>
                 <principal>Daniel L. Schwartz</principal>
-                <editor role="general" ref="http://syriaca.org/documentation/editors.xml#dschwartz"
-                    >Daniel L. Schwartz</editor>
-                <editor role="creator" ref="http://syriaca.org/documentation/editors.xml#dschwartz"
-                    >Daniel L. Schwartz</editor>
-                <editor role="creator" ref="http://syriaca.org/documentation/editors.xml#syoung"
-                    >Samuel Young</editor>
+                <editor role="general" ref="http://syriaca.org/documentation/editors.xml#dschwartz">Daniel L. Schwartz</editor>
+                <editor role="creator" ref="http://syriaca.org/documentation/editors.xml#dschwartz">Daniel L. Schwartz</editor>
+                <editor role="creator" ref="http://syriaca.org/documentation/editors.xml#syoung">Samuel Young</editor>
                 <respStmt>
                     <resp>Data architecture, data entry, editing, proofreading, and revision
                         by</resp>
@@ -31,8 +25,7 @@
                 </respStmt>
                 <respStmt>
                     <resp>Data entry and encoding by</resp>
-                    <name ref="http://syriaca.org/documentation/editors.xml#syoung"
-                        >Samuel Young</name>
+                    <name ref="http://syriaca.org/documentation/editors.xml#syoung">Samuel Young</name>
                 </respStmt>
                
             </titleStmt>
@@ -48,7 +41,7 @@
                             License.</p>
                     </licence>
                 </availability>
-                <date><!-- INPUT ONCE WE HAVE A "FINAL" DRAFT --></date>
+                <date>2020-01-03-05:00</date>
             </publicationStmt>
             <sourceDesc>
                 <listBibl>
@@ -70,8 +63,7 @@
                     </bibl>
                 </listBibl>
                 <listRelation>
-                    <relation type="part" active="http://syriaca.org/work/793"
-                        ref="dcterms:isPartOf" passive="http://syriaca.org/work/9501"/>
+                    <relation type="part" active="http://syriaca.org/work/793" ref="dcterms:isPartOf" passive="http://syriaca.org/work/9501"/>
                 </listRelation>
             </sourceDesc>
         </fileDesc>
@@ -92,9 +84,7 @@
         </encodingDesc>
         <profileDesc> </profileDesc>
         <revisionDesc>
-            <change
-                who="http://syriaca.org/documentation/editors.xml#syoung"
-                >Initial data collected by Sam Young, Summer 2018. </change>
+            <change who="http://syriaca.org/documentation/editors.xml#srophe-util" when="2020-01-03-05:00">CHANGED: Add a human readable version or the tei:relation element in a tei:desc.</change><change who="http://syriaca.org/documentation/editors.xml#syoung">Initial data collected by Sam Young, Summer 2018. </change>
         </revisionDesc>
     </teiHeader>
     <text>
@@ -159,7 +149,7 @@
             
             <div type="factoid" uri="http://syriaca.org/spear/793-4" resp="#syoung">
                 <listRelation>
-                    <relation ref="syriaca:FollowerOf" active="http://syriaca.org/person/1260" passive="http://syriaca.org/person/3503"/>
+                    <relation ref="syriaca:FollowerOf" active="http://syriaca.org/person/1260" passive="http://syriaca.org/person/3503"><desc><persName ref="http://syriaca.org/person/1260">Habib</persName> was a follower of <persName ref="http://syriaca.org/person/3503"/>.</desc></relation>
                 </listRelation>
                 <bibl type="primary">
                     <ptr target="http://syriaca.org/work/793"/>
@@ -280,7 +270,7 @@
             
             <div type="factoid" uri="http://syriaca.org/spear/793-10" resp="#syoung">
                 <listRelation>
-                    <relation ref="syriaca:FollowerOf" active="http://syriaca.org/person/3503" passive="http://syriaca.org/person/3203"/>
+                    <relation ref="syriaca:FollowerOf" active="http://syriaca.org/person/3503" passive="http://syriaca.org/person/3203"><desc><persName ref="http://syriaca.org/person/3503"/> was a follower of <persName ref="http://syriaca.org/person/3203"/>.</desc></relation>
                 </listRelation>
                 <bibl type="primary">
                     <ptr target="http://syriaca.org/work/793"/>
@@ -351,7 +341,7 @@
                 <listEvent>
                     <event>
                         <desc>
-                            When <persName ref="http://syriaca.org/person/1260">Habib</persName>was 10 years old, he entered the monastery at <placeName ref="http://syriaca.org/place/2779">Fytr</placeName>, under the direction of <persName ref="http://syriaca.org/person/3503">Bar Nbyl></persName>.
+                            When <persName ref="http://syriaca.org/person/1260">Habib</persName>was 10 years old, he entered the monastery at <placeName ref="http://syriaca.org/place/2779">Fytr</placeName>, under the direction of <persName ref="http://syriaca.org/person/3503">Bar Nbyl&gt;</persName>.
                         </desc>
                         <ptr target="http://syriaca.org/keyword/monasteries http://syriaca.org/keyword/monastic-heads http://syriaca.org/keyword/monks"/>
                     </event>
@@ -477,7 +467,7 @@
             
             <div type="factoid" uri="http://syriaca.org/spear/793-21" resp="#syoung">
                 <listRelation>
-                    <relation ref="syriaca:FollowerOf" active="http://syriaca.org/person/1524" passive="http://syriaca.org/person/1260"/>
+                    <relation ref="syriaca:FollowerOf" active="http://syriaca.org/person/1524" passive="http://syriaca.org/person/1260"><desc><persName ref="http://syriaca.org/person/1524">Zeʿora</persName> was a follower of <persName ref="http://syriaca.org/person/1260">Habib</persName>.</desc></relation>
                 </listRelation>
                 <bibl type="primary">
                     <ptr target="http://syriaca.org/work/793"/>
@@ -527,7 +517,7 @@
                 </bibl>
             </div>
             
-            <div  uri="http://syriaca.org/spear/793-24" resp="#syoung">
+            <div uri="http://syriaca.org/spear/793-24" resp="#syoung">
                 <listEvent>
                     <event>
                         <desc>
@@ -659,7 +649,7 @@
             
             <div type="factoid" uri="http://syriaca.org/spear/793-31" resp="#syoung">
                 <listRelation>
-                    <relation ref="syriaca:FollowerOf" active="http://syriaca.org/person/3212" passive="http://syriaca.org/person/1260"/>
+                    <relation ref="syriaca:FollowerOf" active="http://syriaca.org/person/3212" passive="http://syriaca.org/person/1260"><desc><persName ref="http://syriaca.org/person/3212"/> was a follower of <persName ref="http://syriaca.org/person/1260">Habib</persName>.</desc></relation>
                 </listRelation>
                 <bibl type="primary">
                     <ptr target="http://syriaca.org/work/793"/>

@@ -96,7 +96,7 @@
             </div>
             <div type="factoid" uri="http://syriaca.org/spear/3137-4" resp="#ktorabi #dschwartz">
                 <listRelation>
-                    <relation ref="syriaca:SenderOfLetterTo" active="http://syriaca.org/person/51" passive="http://syriaca.org/person/2620"><desc><persName ref="http://syriaca.org/person/51">Severus of Antioch</persName> sent a letter to <persName ref="http://syriaca.org/person/2620">Caesaria</persName>.</desc></relation>
+                    <relation name="syriaca:SenderOfLetterTo" active="http://syriaca.org/person/51" passive="http://syriaca.org/person/2620"><desc><persName ref="http://syriaca.org/person/51">Severus of Antioch</persName> sent a letter to <persName ref="http://syriaca.org/person/2620">Caesaria</persName>.</desc></relation>
                 </listRelation>
                 <bibl type="primary">
                     <ptr target="http://syriaca.org/bibl/669"/>
@@ -211,7 +211,7 @@
             </div>
             <div type="factoid" uri="http://syriaca.org/spear/3137-12" resp="#ktorabi #dschwartz">
                 <listRelation><!-- It is not clear whether Misael AND the brothers Ammian and Epagathus asked Severus for communion in a box or if it was just the brothers Ammian and Epagathus who made the request-->
-                    <relation ref="syriaca:SenderOfLetterTo" active="http://syriaca.org/person/2558 http://syriaca.org/person/2593 http://syriaca.org/person/2642" passive="http://syriaca.org/person/51"><desc><persName ref="http://syriaca.org/person/2558">Misael</persName>, <persName ref="http://syriaca.org/person/2593">Ammian</persName> and <persName ref="http://syriaca.org/person/2642">Epagathus</persName> sent a letter to <persName ref="http://syriaca.org/person/51">Severus of Antioch</persName>.</desc></relation>
+                    <relation name="syriaca:SenderOfLetterTo" active="http://syriaca.org/person/2558 http://syriaca.org/person/2593 http://syriaca.org/person/2642" passive="http://syriaca.org/person/51"><desc><persName ref="http://syriaca.org/person/2558">Misael</persName>, <persName ref="http://syriaca.org/person/2593">Ammian</persName> and <persName ref="http://syriaca.org/person/2642">Epagathus</persName> sent a letter to <persName ref="http://syriaca.org/person/51">Severus of Antioch</persName>.</desc></relation>
                     <!-- Schema seems to allow illegal URI as a option for the active attribute value provided it is not the first value. I need to fix this. -->
                 </listRelation>
                 <bibl type="primary">
@@ -221,7 +221,7 @@
             </div> 
             <div type="factoid" uri="http://syriaca.org/spear/3137-13" resp="#ktorabi #dschwartz">
                 <listRelation><!-- It is not clear whether Misael AND the brothers Ammian and Epagathus asked Severus for communion in a box or if it was just the brothers Ammian and Epagathus who made the request -->
-                    <relation ref="syriaca:SenderOfLetterTo" active="http://syriaca.org/person/51" passive="http://syriaca.org/person/2558 http://syriaca.org/person/2593 http://syriaca.org/person/2642"><desc><persName ref="http://syriaca.org/person/51">Severus of Antioch</persName> sent a letter to <persName ref="http://syriaca.org/person/2558">Misael</persName>, <persName ref="http://syriaca.org/person/2593">Ammian</persName> and <persName ref="http://syriaca.org/person/2642">Epagathus</persName>.</desc></relation>
+                    <relation name="syriaca:SenderOfLetterTo" active="http://syriaca.org/person/51" passive="http://syriaca.org/person/2558 http://syriaca.org/person/2593 http://syriaca.org/person/2642"><desc><persName ref="http://syriaca.org/person/51">Severus of Antioch</persName> sent a letter to <persName ref="http://syriaca.org/person/2558">Misael</persName>, <persName ref="http://syriaca.org/person/2593">Ammian</persName> and <persName ref="http://syriaca.org/person/2642">Epagathus</persName>.</desc></relation>
                 </listRelation>
                 <bibl type="primary">
                     <ptr target="http://syriaca.org/bibl/669"/>

@@ -188,7 +188,7 @@
             <div type="factoid" xml:id="factoid-5" resp="#kgibson #rbarczok">
                 <idno type="URI">http://syriaca.org/spear/846-5</idno>
                 <listRelation>
-                    <relation ref="snap:SpouseOf"
+                    <relation name="snap:SpouseOf"
                         mutual="http://syriaca.org/person/3020 http://syriaca.org/person/1820"/>
                     <!-- we've added a type of married relationship for sexually continent spouses, I've had to move the proposed type attribute "sexually continent" to this comment - DLS -->
                 </listRelation>
@@ -229,7 +229,7 @@
             <div type="factoid" xml:id="factoid-8" resp="#kgibson #rbarczok">
                 <idno type="URI">http://syriaca.org/spear/846-8</idno>
                 <listRelation>
-                    <relation ref="snap:ProfessionalRelationship"
+                    <relation name="snap:ProfessionalRelationship"
                         mutual="http://syriaca.org/person/1820 http://syriaca.org/person/2621"/>
                 </listRelation>
                 <bibl type="primary"><ptr target="http://syriaca.org/work/846"/><citedRange
@@ -255,7 +255,7 @@
             <div type="factoid" xml:id="factoid-10" resp="#kgibson #rbarczok">
                 <idno type="URI">http://syriaca.org/spear/846-10</idno>
                 <listRelation>
-                    <relation ref="snap:ProfessionalRelationship"
+                    <relation name="snap:ProfessionalRelationship"
                         mutual="http://syriaca.org/person/3020 http://syriaca.org/person/2621"/>
                 </listRelation>
                 <bibl type="primary"><ptr target="http://syriaca.org/work/846"/><citedRange
@@ -267,7 +267,7 @@
                 <idno type="URI">http://syriaca.org/spear/846-11</idno>
                 <listRelation>
                     <!-- We need a patronage relationship tag here -->
-                    <relation ref="syriaca:PatronOf" active="http://syriaca.org/person/3020"
+                    <relation name="syriaca:PatronOf" active="http://syriaca.org/person/3020"
                         passive="http://syriaca.org/person/74"/>
                 </listRelation>
                 <bibl type="primary"><ptr target="http://syriaca.org/work/846"/><citedRange

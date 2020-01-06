@@ -134,7 +134,7 @@
             </div>
             <div type="factoid" uri="http://syriaca.org/spear/3134-5" resp="#ktorabi #dschwartz">
                 <listRelation>
-                    <relation ref="syriaca:SenderOfLetterTo" active="http://syriaca.org/person/51" passive="http://syriaca.org/person/2467"><desc><persName ref="http://syriaca.org/person/51">Severus of Antioch</persName> sent a letter to <persName ref="http://syriaca.org/person/2467">Photius</persName>.</desc></relation>
+                    <relation name="syriaca:SenderOfLetterTo" active="http://syriaca.org/person/51" passive="http://syriaca.org/person/2467"><desc><persName ref="http://syriaca.org/person/51">Severus of Antioch</persName> sent a letter to <persName ref="http://syriaca.org/person/2467">Photius</persName>.</desc></relation>
                 </listRelation>
                 <bibl type="primary">
                     <ptr target="http://syriaca.org/bibl/668"/>
@@ -214,7 +214,7 @@
             <!-- Check to see if a fellow monastics relationship for 2466 and 2467 is in order. -->
             <div type="factoid" uri="http://syriaca.org/spear/3134-10" resp="#ktorabi #dschwartz">
                 <listRelation>
-                    <relation ref="syriaca:SenderOfLetterTo" active="http://syriaca.org/person/51" passive="http://syriaca.org/person/2466"><desc><persName ref="http://syriaca.org/person/51">Severus of Antioch</persName> sent a letter to <persName ref="http://syriaca.org/person/2466">Andrew</persName>.</desc></relation>
+                    <relation name="syriaca:SenderOfLetterTo" active="http://syriaca.org/person/51" passive="http://syriaca.org/person/2466"><desc><persName ref="http://syriaca.org/person/51">Severus of Antioch</persName> sent a letter to <persName ref="http://syriaca.org/person/2466">Andrew</persName>.</desc></relation>
                 </listRelation>
                 <bibl type="primary">
                     <ptr target="http://syriaca.org/bibl/668"/>
@@ -269,7 +269,7 @@
             </div>
             <div type="factoid" uri="http://syriaca.org/spear/3134-14" resp="#ktorabi #dschwartz">
                 <listRelation>
-                    <relation ref="syriaca:MonasticHeadOver" active="http://syriaca.org/person/2466 http://syriaca.org/person/2467" passive="http://syriaca.org/person/anonymous1"><desc><persName ref="http://syriaca.org/person/2466">Andrew</persName> and <persName ref="http://syriaca.org/person/2467">Photius</persName> was a monastic authority over <persName ref="http://syriaca.org/person/anonymous1"/>.</desc></relation>
+                    <relation name="syriaca:MonasticHeadOver" active="http://syriaca.org/person/2466 http://syriaca.org/person/2467" passive="http://syriaca.org/person/anonymous1"><desc><persName ref="http://syriaca.org/person/2466">Andrew</persName> and <persName ref="http://syriaca.org/person/2467">Photius</persName> was a monastic authority over <persName ref="http://syriaca.org/person/anonymous1"/>.</desc></relation>
                 </listRelation>
                 <bibl type="primary">
                     <ptr target="http://syriaca.org/bibl/668"/>
@@ -345,7 +345,7 @@
             </div>
             <div type="factoid" uri="http://syriaca.org/spear/3134-21" resp="#ktorabi #dschwartz">
                 <listRelation>
-                    <relation ref="syriaca:FollowerOf" active="http://syriaca.org/person/51" passive="http://syriaca.org/person/792"><desc><persName ref="http://syriaca.org/person/51">Severus of Antioch</persName> was a follower of <persName ref="http://syriaca.org/person/792">Timothy II of Alexandria</persName>.</desc></relation>
+                    <relation name="syriaca:FollowerOf" active="http://syriaca.org/person/51" passive="http://syriaca.org/person/792"><desc><persName ref="http://syriaca.org/person/51">Severus of Antioch</persName> was a follower of <persName ref="http://syriaca.org/person/792">Timothy II of Alexandria</persName>.</desc></relation>
                 </listRelation>
                 <bibl type="primary">
                     <ptr target="http://syriaca.org/bibl/668"/>
@@ -383,7 +383,7 @@
             </div>
             <div type="factoid" uri="http://syriaca.org/spear/3134-25" resp="#ktorabi #dschwartz">
                 <listRelation>
-                    <relation ref="snap:EnmityFor" active="http://syriaca.org/person/51" passive="http://syriaca.org/person/2471"><desc><persName ref="http://syriaca.org/person/51">Severus of Antioch</persName> had enmity for <persName ref="http://syriaca.org/person/2471">Proterius</persName>.</desc></relation>
+                    <relation name="snap:EnmityFor" active="http://syriaca.org/person/51" passive="http://syriaca.org/person/2471"><desc><persName ref="http://syriaca.org/person/51">Severus of Antioch</persName> had enmity for <persName ref="http://syriaca.org/person/2471">Proterius</persName>.</desc></relation>
                 </listRelation>
                 <bibl type="primary">
                     <ptr target="http://syriaca.org/bibl/668"/>
@@ -467,7 +467,7 @@
             </div>
             <div type="factoid" uri="http://syriaca.org/spear/3134-30" resp="#ktorabi #dschwartz">
                 <listRelation>
-                    <relation ref="syriaca:CommuneTogether" mutual="http://syriaca.org/person/2470 http://syriaca.org/person/anonymi1"><desc><persName ref="http://syriaca.org/person/2470">Paul</persName> and <persName ref="http://syriaca.org/person/anonymi1"/> shared the Eucharist.</desc></relation>
+                    <relation name="syriaca:CommuneTogether" mutual="http://syriaca.org/person/2470 http://syriaca.org/person/anonymi1"><desc><persName ref="http://syriaca.org/person/2470">Paul</persName> and <persName ref="http://syriaca.org/person/anonymi1"/> shared the Eucharist.</desc></relation>
                     <!-- The schema seems to need an edit. The uri format rule applying to @passive has a report stating "@active". -->
                     <!-- The schema allows an illegal URI as the second value of the @mutual attribute. -->
                 </listRelation>
@@ -529,7 +529,7 @@
             </div>
             <div type="factoid" uri="http://syriaca.org/spear/3134-38" resp="#ktorabi #dschwartz">
                 <listRelation>
-                    <relation ref="snap:EnmityFor" active="http://syriaca.org/person/51" passive="http://syriaca.org/person/2472"><desc><persName ref="http://syriaca.org/person/51">Severus of Antioch</persName> had enmity for <persName ref="http://syriaca.org/person/2472">Theodotus</persName>.</desc></relation>
+                    <relation name="snap:EnmityFor" active="http://syriaca.org/person/51" passive="http://syriaca.org/person/2472"><desc><persName ref="http://syriaca.org/person/51">Severus of Antioch</persName> had enmity for <persName ref="http://syriaca.org/person/2472">Theodotus</persName>.</desc></relation>
                 </listRelation>
                 <bibl type="primary">
                     <ptr target="http://syriaca.org/bibl/668"/>
@@ -589,7 +589,7 @@
             </div>
             <div type="factoid" uri="http://syriaca.org/spear/3134-42" resp="#ktorabi #dschwartz">
                 <listRelation>
-                    <relation ref="syriaca:EpistolaryReferenceTo" active="http://syriaca.org/person/51" passive="http://syriaca.org/person/573"><desc>A letter between <persName ref="http://syriaca.org/person/51">Severus of Antioch</persName> referenced <persName ref="http://syriaca.org/person/51">Severus of Antioch</persName>.</desc></relation>
+                    <relation name="syriaca:EpistolaryReferenceTo" active="http://syriaca.org/person/51" passive="http://syriaca.org/person/573"><desc>A letter between <persName ref="http://syriaca.org/person/51">Severus of Antioch</persName> referenced <persName ref="http://syriaca.org/person/51">Severus of Antioch</persName>.</desc></relation>
                 </listRelation>
                 <bibl type="primary">
                     <ptr target="http://syriaca.org/bibl/668"/>

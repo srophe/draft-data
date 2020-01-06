@@ -80,7 +80,7 @@
             </div>
             <div type="factoid" uri="http://syriaca.org/spear/3148-2" resp="#ktorabi #dschwartz">
                 <listRelation>
-                    <relation ref="syriaca:SenderOfLetterTo" active="http://syriaca.org/person/51" passive="http://syriaca.org/person/anonymous1"><desc><persName ref="http://syriaca.org/person/51">Severus of Antioch</persName> sent a letter to <persName ref="http://syriaca.org/person/anonymous1"/>.</desc></relation>
+                    <relation name="syriaca:SenderOfLetterTo" active="http://syriaca.org/person/51" passive="http://syriaca.org/person/anonymous1"><desc><persName ref="http://syriaca.org/person/51">Severus of Antioch</persName> sent a letter to <persName ref="http://syriaca.org/person/anonymous1"/>.</desc></relation>
                 </listRelation>
                 <bibl type="primary">
                     <ptr target="http://syriaca.org/bibl/668"/>
@@ -177,7 +177,7 @@
             </div>
             <div type="factoid" uri="http://syriaca.org/spear/3148-8" resp="#ktorabi #dschwartz">
                 <listRelation><!-- I'm not sure if this is appropriately encoded as EnmityFor, as Severus's feelings for anonymi1 seems to be contempt, rather than hatred -->
-                    <relation ref="snap:EnmityFor" active="http://syriaca.org/person/51" passive="http://syriaca.org/person/anonymi1"><desc><persName ref="http://syriaca.org/person/51">Severus of Antioch</persName> had enmity for <persName ref="http://syriaca.org/person/anonymi1"/>.</desc></relation> 
+                    <relation name="snap:EnmityFor" active="http://syriaca.org/person/51" passive="http://syriaca.org/person/anonymi1"><desc><persName ref="http://syriaca.org/person/51">Severus of Antioch</persName> had enmity for <persName ref="http://syriaca.org/person/anonymi1"/>.</desc></relation> 
                 </listRelation>
                 <bibl type="primary">
                     <ptr target="http://syriaca.org/bibl/668"/>
@@ -253,7 +253,7 @@
             </div>
             <div type="factoid" uri="http://syriaca.org/spear/3148-13" resp="#ktorabi #dschwartz">
                 <listRelation>
-                    <relation ref="syriaca:EpistolaryReferenceTo" active="http://syriaca.org/person/51" passive="http://syriaca.org/person/2454 http://syriaca.org/person/anonymi1"><desc>A letter between <persName ref="http://syriaca.org/person/51">Severus of Antioch</persName> referenced <persName ref="http://syriaca.org/person/51">Severus of Antioch</persName>.</desc></relation> 
+                    <relation name="syriaca:EpistolaryReferenceTo" active="http://syriaca.org/person/51" passive="http://syriaca.org/person/2454 http://syriaca.org/person/anonymi1"><desc>A letter between <persName ref="http://syriaca.org/person/51">Severus of Antioch</persName> referenced <persName ref="http://syriaca.org/person/51">Severus of Antioch</persName>.</desc></relation> 
                 </listRelation>
                 <bibl type="primary">
                     <ptr target="http://syriaca.org/bibl/668"/>

@@ -97,7 +97,7 @@
             </div>
             <div type="factoid" uri="http://syriaca.org/spear/3082-3" resp="#ktorabi #dschwartz">
                 <listRelation>
-                        <relation ref="syriaca:SenderOfLetterTo" active="http://syriaca.org/person/51" passive="http://syriaca.org/person/anonymous1"><desc><persName ref="http://syriaca.org/person/51">Severus of Antioch</persName> sent a letter to <persName ref="http://syriaca.org/person/anonymous1"/>.</desc></relation>
+                        <relation name="syriaca:SenderOfLetterTo" active="http://syriaca.org/person/51" passive="http://syriaca.org/person/anonymous1"><desc><persName ref="http://syriaca.org/person/51">Severus of Antioch</persName> sent a letter to <persName ref="http://syriaca.org/person/anonymous1"/>.</desc></relation>
                     </listRelation>
                 <bibl type="primary">
                     <ptr target="http://syriaca.org/bibl/669"/>
@@ -106,7 +106,7 @@
             </div> 
             <div type="factoid" uri="http://syriaca.org/spear/3082-4" resp="#ktorabi #dschwartz">
                 <listRelation>
-                    <relation ref="syriaca:SenderOfLetterTo" active="http://syriaca.org/person/anonymous1" passive="http://syriaca.org/person/51"><desc><persName ref="http://syriaca.org/person/anonymous1"/> sent a letter to <persName ref="http://syriaca.org/person/51">Severus of Antioch</persName>.</desc></relation>
+                    <relation name="syriaca:SenderOfLetterTo" active="http://syriaca.org/person/anonymous1" passive="http://syriaca.org/person/51"><desc><persName ref="http://syriaca.org/person/anonymous1"/> sent a letter to <persName ref="http://syriaca.org/person/51">Severus of Antioch</persName>.</desc></relation>
                 </listRelation>
                 <bibl type="primary">
                     <ptr target="http://syriaca.org/bibl/669"/>
@@ -166,7 +166,7 @@
             </div>
             <div type="factoid" uri="http://syriaca.org/spear/3082-8" resp="#ktorabi #dschwartz"><!-- Not sure if this should be mutual or act/pass? -->
                 <listRelation>
-                    <relation ref="snap:SpouseOf" active="http://syriaca.org/person/anonymous1" passive="http://syriaca.org/person/2622"><desc> were spouses.</desc></relation>
+                    <relation name="snap:SpouseOf" active="http://syriaca.org/person/anonymous1" passive="http://syriaca.org/person/2622"><desc> were spouses.</desc></relation>
                 </listRelation>
                 <bibl type="primary">
                     <ptr target="http://syriaca.org/bibl/669"/>
@@ -175,7 +175,7 @@
             </div> 
             <div type="factoid" uri="http://syriaca.org/spear/3082-9" resp="#ktorabi #dschwartz">
                 <listRelation>
-                    <relation ref="snap:SpouseOf" mutual=" http://syriaca.org/person/anonymous1 http://syriaca.org/person/2622"><desc><persName ref=""/>, <persName ref="http://syriaca.org/person/anonymous1"/> and <persName ref="http://syriaca.org/person/2622">Calliopius</persName> were spouses.</desc></relation>
+                    <relation name="snap:SpouseOf" mutual=" http://syriaca.org/person/anonymous1 http://syriaca.org/person/2622"><desc><persName ref=""/>, <persName ref="http://syriaca.org/person/anonymous1"/> and <persName ref="http://syriaca.org/person/2622">Calliopius</persName> were spouses.</desc></relation>
                     <!-- SCHEMA: attribute value requirements on mutual not working properly. -->
                 </listRelation>
                 <bibl type="primary">

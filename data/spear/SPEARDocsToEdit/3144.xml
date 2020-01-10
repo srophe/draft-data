@@ -62,7 +62,7 @@
     </teiHeader>
     <text>
         <body>
-            <div type="factoid" uri="http://syriaca.org/spear/3144-1" resp="#ktorabi #dschwartz">
+            <div type="factoid" subtype="nameVariant" uri="http://syriaca.org/spear/3144-1" resp="#ktorabi #dschwartz">
                 <listPerson>
                         <person>
                             <persName ref="http://syriaca.org/person/2620"><!-- Not sure if this is the correct URI for Caesaria -->
@@ -75,7 +75,7 @@
                     <citedRange unit="pp">272</citedRange>
                 </bibl>
                 </div>
-                <div type="factoid" uri="http://syriaca.org/spear/3144-2" resp="#ktorabi #dschwartz">
+                <div type="factoid" subtype="gender" uri="http://syriaca.org/spear/3144-2" resp="#ktorabi #dschwartz">
                     <listPerson>
                         <person>
                             <persName ref="http://syriaca.org/person/2620"/>
@@ -89,7 +89,7 @@
                         <citedRange unit="pp">272</citedRange>
                     </bibl>
                 </div>
-                <div type="factoid" uri="http://syriaca.org/spear/3144-3" resp="#ktorabi #dschwartz">
+                <div type="factoid" subtype="socecStatus" uri="http://syriaca.org/spear/3144-3" resp="#ktorabi #dschwartz">
                     <listPerson>
                         <person>
                             <persName ref="http://syriaca.org/person/2620"/>
@@ -108,7 +108,7 @@
                         <citedRange unit="pp">272</citedRange>
                     </bibl>
                 </div>
-                <div type="factoid" uri="http://syriaca.org/spear/3144-4" resp="#ktorabi #dschwartz">
+                <div type="factoid" subtype="relation" uri="http://syriaca.org/spear/3144-4" resp="#ktorabi #dschwartz">
                     <listRelation>
                         <relation name="syriaca:SenderOfLetterTo" active="http://syriaca.org/person/51" passive="http://syriaca.org/person/2620"><desc><persName ref="http://syriaca.org/person/51">Severus of Antioch</persName> sent a letter to <persName ref="http://syriaca.org/person/2620">Caesaria</persName>.</desc></relation>
                     </listRelation>
@@ -117,7 +117,7 @@
                         <citedRange unit="pp">272</citedRange>
                     </bibl>
                 </div> 
-            <div type="factoid" uri="http://syriaca.org/spear/3144-5" resp="#ktorabi #dschwartz">
+            <div type="factoid" subtype="relation" uri="http://syriaca.org/spear/3144-5" resp="#ktorabi #dschwartz">
                 <listRelation>
                     <relation name="syriaca:SenderOfLetterTo" active="http://syriaca.org/person/2620" passive="http://syriaca.org/person/51"><desc><persName ref="http://syriaca.org/person/2620">Caesaria</persName> sent a letter to <persName ref="http://syriaca.org/person/51">Severus of Antioch</persName>.</desc></relation>
                 </listRelation>

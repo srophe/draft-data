@@ -62,7 +62,7 @@
     </teiHeader>
     <text>
         <body>
-            <div type="factoid" uri="http://syriaca.org/spear/3081-1" resp="#ktorabi #dschwartz">
+            <div type="factoid" subtype="nameVariant" uri="http://syriaca.org/spear/3081-1" resp="#ktorabi #dschwartz">
                 <listPerson>
                         <person>
                             <persName ref="http://syriaca.org/person/anonymous1"><!-- No URI for Simeon in letter 43. I'm assumiming Simeon is just the name of the monastery and not a bishop or head of that monastery -->
@@ -78,7 +78,7 @@
                     <citedRange unit="pp">120</citedRange>
                 </bibl>
                 </div>
-            <div type="factoid" uri="http://syriaca.org/spear/3081-2" resp="#ktorabi #dschwartz">
+            <div type="factoid" subtype="gender" uri="http://syriaca.org/spear/3081-2" resp="#ktorabi #dschwartz">
                 <listPerson>
                     <person>
                         <persName ref="http://syriaca.org/person/anonymous1"/>
@@ -95,7 +95,7 @@
                     <citedRange unit="pp">120</citedRange>
                 </bibl>
             </div>
-            <div type="factoid" uri="http://syriaca.org/spear/3081-3" resp="#ktorabi #dschwartz">
+            <div type="factoid" subtype="occupation" uri="http://syriaca.org/spear/3081-3" resp="#ktorabi #dschwartz">
                 <listPerson>
                     <person>
                         <persName ref="http://syriaca.org/person/anonymous1"/>
@@ -112,7 +112,7 @@
                     <citedRange unit="pp">120</citedRange>
                 </bibl>
             </div>
-            <div type="factoid" uri="http://syriaca.org/spear/3081-4" resp="#ktorabi #dschwartz">
+            <div type="factoid" subtype="relation" uri="http://syriaca.org/spear/3081-4" resp="#ktorabi #dschwartz">
                 <listRelation>
                     <relation name="syriaca:SenderOfLetterTo" active="http://syriaca.org/person/51" passive="http://syriaca.org/person/anonymous1"><desc><persName ref="http://syriaca.org/person/51">Severus of Antioch</persName> sent a letter to <persName ref="http://syriaca.org/person/anonymous1"/>.</desc></relation>
                 </listRelation>
@@ -121,7 +121,7 @@
                     <citedRange unit="pp">120</citedRange>
                 </bibl>
             </div>
-            <div type="factoid" uri="http://syriaca.org/spear/3081-5" resp="#ktorabi #dschwartz">
+            <div type="factoid" subtype="nameVariant" uri="http://syriaca.org/spear/3081-5" resp="#ktorabi #dschwartz">
                 <listPerson>
                     <person>
                         <persName ref="http://syriaca.org/person/2418">
@@ -134,7 +134,7 @@
                     <citedRange unit="pp">120</citedRange>
                 </bibl>
             </div>
-            <div type="factoid" uri="http://syriaca.org/spear/3081-6" resp="#ktorabi #dschwartz">
+            <div type="factoid" subtype="gender" uri="http://syriaca.org/spear/3081-6" resp="#ktorabi #dschwartz">
                 <listPerson>
                     <person>
                         <persName ref="http://syriaca.org/person/2418"/>
@@ -153,7 +153,7 @@
                     <citedRange unit="pp">120</citedRange>
                 </bibl>
             </div>
-            <div type="factoid" uri="http://syriaca.org/spear/3081-7" resp="#ktorabi #dschwartz">
+            <div type="factoid" subtype="occupation" uri="http://syriaca.org/spear/3081-7" resp="#ktorabi #dschwartz">
                 <listPerson>
                     <person>
                         <persName ref="http://syriaca.org/person/2418"/>
@@ -175,7 +175,7 @@
                     <citedRange unit="pp">120</citedRange>
                 </bibl>
             </div>
-            <div type="factoid" uri="http://syriaca.org/spear/3081-8" resp="#ktorabi #dschwartz">
+            <div type="factoid" subtype="relation" uri="http://syriaca.org/spear/3081-8" resp="#ktorabi #dschwartz">
                 <listRelation>
                     <relation name="syriaca:MonasticHeadOver" active="http://syriaca.org/person/anonymous1" passive="http://syriaca.org/person/2418"><desc><persName ref="http://syriaca.org/person/anonymous1"/> was a monastic authority over <persName ref="http://syriaca.org/person/2418">Nonnus</persName>.</desc></relation> 
                 </listRelation>
@@ -184,7 +184,7 @@
                     <citedRange unit="pp">120</citedRange>
                 </bibl>
             </div>
-            <div type="factoid" uri="http://syriaca.org/spear/3081-9" resp="#ktorabi #dschwartz"><!-- Make sure to include an event with keyword ekklesiekdidoi -->
+            <div type="factoid" subtype="nameVariant" uri="http://syriaca.org/spear/3081-9" resp="#ktorabi #dschwartz"><!-- Make sure to include an event with keyword ekklesiekdidoi -->
                 <listPerson>
                     <personGrp>
                         <persName ref="http://syriaca.org/person/anonymi1">
@@ -201,7 +201,7 @@
                     <citedRange unit="pp">120</citedRange>
                 </bibl>
             </div>
-            <div type="factoid" uri="http://syriaca.org/spear/3081-10" resp="#ktorabi #dschwartz">
+            <div type="factoid" subtype="relation" uri="http://syriaca.org/spear/3081-10" resp="#ktorabi #dschwartz">
                 <listRelation><!-- Nonnus is under an injunction by the ekklesiekdikoi. Is this the best way to encode that relationship?  -->
                     <relation name="syriaca:LegalChargesAgainst" active="http://syriaca.org/person/anonymi1" passive="http://syriaca.org/person/2418"><desc><persName ref="http://syriaca.org/person/anonymi1"/> brought legal charges or a petition against <persName ref="http://syriaca.org/person/2418">Nonnus</persName>.</desc></relation>
                 </listRelation>
@@ -210,7 +210,7 @@
                     <citedRange unit="pp">120</citedRange>
                 </bibl>
             </div>
-            <div type="factoid" uri="http://syriaca.org/spear/3081-11" resp="#ktorabi #dschwartz">
+            <div type="factoid" subtype="nameVariant" uri="http://syriaca.org/spear/3081-11" resp="#ktorabi #dschwartz">
                 <listPerson>
                     <personGrp>
                         <persName ref="http://syriaca.org/person/anonymi2">
@@ -230,7 +230,7 @@
                     <citedRange unit="pp">122</citedRange>
                 </bibl>
             </div>
-            <div type="factoid" uri="http://syriaca.org/spear/3081-12" resp="#ktorabi #dschwartz">
+            <div type="factoid" subtype="relation" uri="http://syriaca.org/spear/3081-12" resp="#ktorabi #dschwartz">
                 <listRelation>
                     <relation name="snap:LegallyRecognizedRelationshipWith" mutual="http://syriaca.org/person/anonymi2 http://syriaca.org/person/2418"><desc>  Legally Recognized Relationship With   .</desc></relation>
                 </listRelation>
@@ -239,7 +239,7 @@
                     <citedRange unit="pp">122</citedRange>
                 </bibl>
             </div>
-            <div type="factoid" uri="http://syriaca.org/spear/3081-13" resp="#ktorabi #dschwartz">
+            <div type="factoid" subtype="nameVariant" uri="http://syriaca.org/spear/3081-13" resp="#ktorabi #dschwartz">
                 <listPerson>
                     <personGrp>
                         <persName ref="http://syriaca.org/person/anonymi3">
@@ -267,7 +267,7 @@
                     <citedRange unit="pp">122</citedRange>
                 </bibl>
             </div>
-            <div type="factoid" uri="http://syriaca.org/spear/3081-14" resp="#dschwartz">
+            <div type="factoid" subtype="socecStatus" uri="http://syriaca.org/spear/3081-14" resp="#dschwartz">
                 <listPerson>
                     <personGrp>
                         <persName ref="http://syriaca.org/person/anonymi3"/>
@@ -283,7 +283,7 @@
                     <citedRange unit="pp">122</citedRange>
                 </bibl>
             </div>
-            <div type="factoid" uri="http://syriaca.org/spear/3081-15" resp="#ktorabi #dschwartz">
+            <div type="factoid" subtype="nameVariant" uri="http://syriaca.org/spear/3081-15" resp="#ktorabi #dschwartz">
                 <listPerson>
                     <personGrp>
                         <persName ref="http://syriaca.org/person/anonymi4">
@@ -311,7 +311,7 @@
                     <citedRange unit="pp">122</citedRange>
                 </bibl>
             </div>
-            <div type="factoid" uri="http://syriaca.org/spear/3081-16" resp="#dschwartz">
+            <div type="factoid" subtype="occupation" uri="http://syriaca.org/spear/3081-16" resp="#dschwartz">
                 <listPerson>
                     <personGrp>
                         <persName ref="http://syriaca.org/person/anonymi4"/>
@@ -327,7 +327,7 @@
                     <citedRange unit="pp">122</citedRange>
                 </bibl>
             </div>
-            <div type="factoid" uri="http://syriaca.org/spear/3081-17" resp="#ktorabi #dschwartz">
+            <div type="factoid" subtype="nameVariant" uri="http://syriaca.org/spear/3081-17" resp="#ktorabi #dschwartz">
                 <listPerson>
                     <person>
                         <persName ref="http://syriaca.org/person/2419">
@@ -340,7 +340,7 @@
                     <citedRange unit="pp">123</citedRange>
                 </bibl>
             </div>
-            <div type="factoid" uri="http://syriaca.org/spear/3081-18" resp="#ktorabi #dschwartz">
+            <div type="factoid" subtype="gender" uri="http://syriaca.org/spear/3081-18" resp="#ktorabi #dschwartz">
                 <listPerson>
                     <person>
                         <persName ref="http://syriaca.org/person/2419"/>
@@ -359,7 +359,7 @@
                     <citedRange unit="pp">123</citedRange>
                 </bibl>
             </div>
-            <div type="factoid" uri="http://syriaca.org/spear/3081-19" resp="#ktorabi #dschwartz">
+            <div type="factoid" subtype="occupation" uri="http://syriaca.org/spear/3081-19" resp="#ktorabi #dschwartz">
                 <listPerson>
                     <person>
                         <persName ref="http://syriaca.org/person/2419"/>
@@ -381,7 +381,7 @@
                     <citedRange unit="pp">120</citedRange>
                 </bibl>
             </div>
-            <div type="factoid" uri="http://syriaca.org/spear/3081-20" resp="#ktorabi #dschwartz">
+            <div type="factoid" subtype="relation" uri="http://syriaca.org/spear/3081-20" resp="#ktorabi #dschwartz">
                 <listRelation>
                     <relation name="syriaca:BishopOverClergy" active="http://syriaca.org/person/51" passive="http://syriaca.org/person/2419"><desc><persName ref="http://syriaca.org/person/51">Severus of Antioch</persName> had ecclesiastical authority over <persName ref="http://syriaca.org/person/2419">Eusebius</persName>.</desc></relation> 
                 </listRelation>

@@ -1,19 +1,25 @@
-<?xml-model href="https://raw.githubusercontent.com/srophe/srophe-eXist-app/master/documentation/SPEARschema/out/SPEAR.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://raw.githubusercontent.com/srophe/srophe-eXist-app/master/documentation/SPEARschema/out/SPEAR.rng" type="application/xml"
-	schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML">
+<?xml-model href="https://raw.githubusercontent.com/srophe/srophe-eXist-app/master/documentation/SPEARschema/out/SPEAR.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude"
+    xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML">
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title level="a">Severus of Antioch, Letter,<title ref="http://syriaca.org/work/3079">To Hypatius, Master of the Soldiers</title></title>
+                <title level="a">Severus of Antioch, Letter,<title
+                        ref="http://syriaca.org/work/3079">To Hypatius, Master of the
+                        Soldiers</title></title>
                 <title level="m">SPEAR: Syriac Persons, Events, and Relations</title>
                 <funder>The National Endowment for the Humanities</funder>
                 <principal>Daniel L. Schwartz</principal>
                 <funder>Texas A&amp;M University</funder>
                 <principal>Daniel L. Schwartz</principal>
-                <editor role="general" ref="http://syriaca.org/editors.xml#dschwartz">Daniel L. Schwartz</editor>
-                <editor role="creator" ref="http://syriaca.org/editors.xml#dschwartz">Daniel L. Schwartz</editor>
+                <editor role="general" ref="http://syriaca.org/editors.xml#dschwartz">Daniel L.
+                    Schwartz</editor>
+                <editor role="creator" ref="http://syriaca.org/editors.xml#dschwartz">Daniel L.
+                    Schwartz</editor>
                 <respStmt>
                     <resp/>
-                    <name ref="http://syriaca.org/editors.xml#dschwartz">Daniel L. Schwartz</name>
+                    <name ref="http://syriaca.org/editors.xml#dschwartz" full="yes" instant="false"
+                        >Daniel L. Schwartz</name>
                 </respStmt>
             </titleStmt>
             <editionStmt>
@@ -21,53 +27,60 @@
             </editionStmt>
             <publicationStmt>
                 <authority>Syriaca.org: The Syriac Reference Portal</authority>
-                <idno type="URI">http://syriaca.org/spear/3079/tei</idno> 
-                <availability>
+                <idno type="URI">http://syriaca.org/spear/3079/tei</idno>
+                <availability default="false">
                     <licence target="http://creativecommons.org/licenses/by/3.0/">
-                        <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
+                        <p part="N">Distributed under a Creative Commons Attribution 3.0 Unported
+                            License.</p>
                     </licence>
                 </availability>
                 <date>2020-01-03-05:00</date>
             </publicationStmt>
-            <sourceDesc>
-                <listBibl>
+            <sourceDesc default="false">
+                <listBibl default="false">
                     <head>Sources for the Data in this Born Digital Prosopography</head>
                     <bibl type="primary">
-                        <title xml:lang="en">The Sixth Book of the Select Letters of Severus, Patriarch of Antioch in the Syriac Version of Athanasius of Nisibis</title>
+                        <title xml:lang="en">The Sixth Book of the Select Letters of Severus,
+                            Patriarch of Antioch in the Syriac Version of Athanasius of
+                            Nisibis</title>
                         <title type="sub">Translation, I.1 - II.3</title>
                         <title type="part">To Hypatius, Master of the Soldiers</title>
-                        <author><persName ref="http://syriaca.org/person/51">Severus of Antioch</persName></author>
-                        <editor><persName ref="http://syriaca.org/person/403">E. W. Brooks</persName></editor>
+                        <author><persName ref="http://syriaca.org/person/51">Severus of
+                                Antioch</persName></author>
+                        <editor><persName ref="http://syriaca.org/person/403">E. W.
+                                Brooks</persName></editor>
                         <ptr target="http://syriaca.org/bibl/668"/>
                     </bibl>
                     <bibl type="primary">
                         <title>To Hypatius, Master of the Soldiers</title>
-                        <author><persName ref="http://syriaca.org/person/51"/>Severus of Antioch</author>
+                        <author><persName ref="http://syriaca.org/person/51"/>Severus of
+                            Antioch</author>
                         <ptr target="http://syriaca.org/work/3079"/>
                     </bibl>
                 </listBibl>
             </sourceDesc>
         </fileDesc>
         <encodingDesc>
-            <editorialDecl>
-                <p>
-                </p>
+            <editorialDecl default="false">
+                <p part="N"/>
             </editorialDecl>
         </encodingDesc>
-        <profileDesc>
-        </profileDesc>
-        <revisionDesc>
-            <change who="http://syriaca.org/documentation/editors.xml#srophe-util" when="2020-01-03-05:00">CHANGED: Add a human readable version or the tei:relation element in a tei:desc.</change><change/>
+        <profileDesc/>
+        <revisionDesc status="draft">
+            <change who="http://syriaca.org/documentation/editors.xml#srophe-util"
+                when="2020-01-03-05:00" status="draft">CHANGED: Add a human readable version or the
+                tei:relation element in a tei:desc.</change>
+            <change status="draft"/>
         </revisionDesc>
     </teiHeader>
     <text>
         <body>
-            <div type="factoid" subtype="nameVariant" uri="http://syriaca.org/spear/3079-1" resp="#ktorabi #dschwartz">
+            <div type="factoid" subtype="nameVariant" xml:id="factoid-1" resp="#ktorabi #dschwartz">
+                <idno type="URI">http://syriaca.org/spear/3079-1</idno>
                 <listPerson>
                     <person>
-                        <persName ref="http://syriaca.org/person/2556">
-                            Hypatius, the Master of the Soldiers
-                        </persName>
+                        <persName ref="http://syriaca.org/person/2556"> Hypatius, the Master of the
+                            Soldiers </persName>
                     </person>
                 </listPerson>
                 <bibl type="primary">
@@ -75,17 +88,14 @@
                     <citedRange unit="pp">113</citedRange>
                 </bibl>
             </div>
-            <div type="factoid" subtype="gender" uri="http://syriaca.org/spear/3079-2" resp="#ktorabi #dschwartz">
+            <div type="factoid" subtype="gender" xml:id="factoid-2" resp="#ktorabi #dschwartz">
+                <idno type="URI">http://syriaca.org/spear/3079-2</idno>
                 <listPerson>
                     <person>
                         <persName ref="http://syriaca.org/person/2556"/>
-                        <trait type="gender" ref="http://syriaca.org/keyword/male">
-                            <note type="desc">
-                                <persName ref="http://syriaca.org/person/2556">
-                                    Hypatius
-                                </persName>
-                                was male.
-                            </note>
+                        <trait type="gender" ana="http://syriaca.org/keyword/male">
+                            <note type="desc"><persName ref="http://syriaca.org/person/2556">
+                                    Hypatius </persName> was male. </note>
                         </trait>
                     </person>
                 </listPerson>
@@ -94,16 +104,75 @@
                     <citedRange unit="pp">113</citedRange>
                 </bibl>
             </div>
-            <div type="factoid" subtype="occupation" uri="http://syriaca.org/spear/3079-3" resp="#ktorabi #dschwartz">
+            <div type="factoid" subtype="occupation" xml:id="factoid-3" resp="#ktorabi #dschwartz">
+                <idno type="URI">http://syriaca.org/spear/3079-3</idno>
                 <listPerson>
                     <person>
                         <persName ref="http://syriaca.org/person/2556"/>
-                        <occupation ref="http://syriaca.org/keyword/magister-militum">
-                            <note type="desc">
-                                <persName ref="http://syriaca.org/person/2556">
-                                    Hypatius
-                                </persName>
-                                was Master of the Soldiers.
+                        <occupation ana="http://syriaca.org/keyword/magister-militum">
+                            <note type="desc"><persName ref="http://syriaca.org/person/2556">
+                                    Hypatius </persName> was Master of the Soldiers. </note>
+                        </occupation>
+                    </person>
+                </listPerson>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="pp">113</citedRange>
+                </bibl>
+            </div>
+            <div type="factoid" subtype="relation" xml:id="factoid-4" resp="#ktorabi #dschwartz">
+                <idno type="URI">http://syriaca.org/spear/3079-4</idno>
+                <listRelation>
+                    <relation name="syriaca:SenderOfLetterTo" active="http://syriaca.org/person/51"
+                        passive="http://syriaca.org/person/2556">
+                        <desc><persName ref="http://syriaca.org/person/51">Severus of
+                                Antioch</persName> sent a letter to <persName
+                                ref="http://syriaca.org/person/2556">Hypatius</persName>.</desc>
+                    </relation>
+                </listRelation>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="pp">113</citedRange>
+                </bibl>
+            </div>
+            <div type="factoid" subtype="nameVariant" xml:id="factoid-5" resp="#ktorabi #dschwartz">
+                <idno type="URI">http://syriaca.org/spear/3079-5</idno>
+                <listPerson>
+                    <person>
+                        <persName ref="http://syriaca.org/person/2410"> The devout presbyter Julian
+                        </persName>
+                    </person>
+                </listPerson>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="pp">113</citedRange>
+                </bibl>
+            </div>
+            <div type="factoid" subtype="gender" xml:id="factoid-6" resp="#ktorabi #dschwartz">
+                <idno type="URI">http://syriaca.org/spear/3079-6</idno>
+                <listPerson>
+                    <person>
+                        <persName ref="http://syriaca.org/person/2410"/>
+                        <trait type="gender" ana="http://syriaca.org/keyword/male">
+                            <note type="desc"><persName ref="http://syriaca.org/person/2410"> Julian
+                                </persName> was male. </note>
+                        </trait>
+                    </person>
+                </listPerson>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="pp">113</citedRange>
+                </bibl>
+            </div>
+            <div type="factoid" subtype="occupation" xml:id="factoid-7" resp="#ktorabi #dschwartz">
+                <idno type="URI">http://syriaca.org/spear/3079-7</idno>
+                <listPerson>
+                    <person>
+                        <persName ref="http://syriaca.org/person/2410"/>
+                        <occupation ana="http://syriaca.org/keyword/priests">
+                            <note type="desc"><persName ref="http://syriaca.org/person/2410"> Julian
+                                </persName> was a presbyter of <placeName
+                                    ref="http://syriaca.org/place/2722"> Tarsus </placeName>.
                             </note>
                         </occupation>
                     </person>
@@ -113,83 +182,15 @@
                     <citedRange unit="pp">113</citedRange>
                 </bibl>
             </div>
-            <div type="factoid" subtype="relation" uri="http://syriaca.org/spear/3079-4" resp="#ktorabi #dschwartz">
-                <listRelation>
-                    <relation name="syriaca:SenderOfLetterTo" active="http://syriaca.org/person/51" passive="http://syriaca.org/person/2556"><desc><persName ref="http://syriaca.org/person/51">Severus of Antioch</persName> sent a letter to <persName ref="http://syriaca.org/person/2556">Hypatius</persName>.</desc></relation>
-                </listRelation>
-                <bibl type="primary">
-                    <ptr target="http://syriaca.org/bibl/668"/>
-                    <citedRange unit="pp">113</citedRange>
-                </bibl>
-            </div>
-            <div type="factoid" subtype="nameVariant" uri="http://syriaca.org/spear/3079-5" resp="#ktorabi #dschwartz">
-                <listPerson>
-                    <person>
-                        <persName ref="http://syriaca.org/person/2410">
-                            The devout presbyter Julian
-                        </persName>
-                    </person>
-                </listPerson>
-                <bibl type="primary">
-                    <ptr target="http://syriaca.org/bibl/668"/>
-                    <citedRange unit="pp">113</citedRange>
-                </bibl>
-            </div>
-            <div type="factoid" subtype="gender" uri="http://syriaca.org/spear/3079-6" resp="#ktorabi #dschwartz">
-                <listPerson>
-                    <person>
-                        <persName ref="http://syriaca.org/person/2410"/>
-                        <trait type="gender" ref="http://syriaca.org/keyword/male">
-                            <note type="desc">
-                                <persName ref="http://syriaca.org/person/2410">
-                                    Julian
-                                </persName>
-                                was male.
-                            </note>
-                        </trait>
-                    </person>
-                </listPerson>
-                <bibl type="primary">
-                    <ptr target="http://syriaca.org/bibl/668"/>
-                    <citedRange unit="pp">113</citedRange>
-                </bibl>
-            </div>
-            <div type="factoid" subtype="occupation" uri="http://syriaca.org/spear/3079-7" resp="#ktorabi #dschwartz">
-                <listPerson>
-                    <person>
-                        <persName ref="http://syriaca.org/person/2410"/>
-                        <occupation ref="http://syriaca.org/keyword/priests">
-                            <note type="desc">
-                                <persName ref="http://syriaca.org/person/2410">
-                                    Julian
-                                </persName>
-                                was a presbyter of
-                                <placeName ref="http://syriaca.org/place/2722">
-                                    Tarsus
-                                </placeName>.
-                            </note>
-                        </occupation>
-                    </person>
-                </listPerson>
-                <bibl type="primary">
-                    <ptr target="http://syriaca.org/bibl/668"/>
-                    <citedRange unit="pp">113</citedRange>
-                </bibl>
-            </div>
-            <div type="factoid" subtype="nameVariant" uri="http://syriaca.org/spear/3079-8" resp="#ktorabi #dschwartz">
+            <div type="factoid" subtype="nameVariant" xml:id="factoid-8" resp="#ktorabi #dschwartz">
+                <idno type="URI">http://syriaca.org/spear/3079-8</idno>
                 <listPerson>
                     <personGrp>
-                        <persName ref="http://syriaca.org/person/anonymi1"><!-- I encoded this as an anonymous group  -->
-                            The holy church of the Tarsians in
-                            <date notBefore="0513" notAfter="0518">
-                                A.D. 513-518
-                            </date> 
-                            accused 
-                            <persName ref="http://syriaca.org/person/2410"> 
-                                Julian 
-                            </persName> 
-                            of detaining property that belonged to it
-                        </persName>
+                        <persName ref="http://syriaca.org/person/anonymi1"
+                            ><!-- I encoded this as an anonymous group  --> The holy church of the
+                            Tarsians in <date notBefore="0513" notAfter="0518"> A.D. 513-518 </date>
+                            accused <persName ref="http://syriaca.org/person/2410"> Julian
+                            </persName> of detaining property that belonged to it </persName>
                     </personGrp>
                 </listPerson>
                 <bibl type="primary">
@@ -197,50 +198,14 @@
                     <citedRange unit="pp">113</citedRange>
                 </bibl>
             </div>
-            <div type="factoid" subtype="nameVariant" uri="http://syriaca.org/spear/3079-9" resp="#ktorabi #dschwartz">
-            <listPerson>
-                <personGrp>
-                    <persName ref="http://syriaca.org/person/anonymi2">
-                        Those under same charge as
-                        <persName ref="http://syriaca.org/person/2410"> 
-                            Julian 
-                        </persName>
-                        in
-                        <date notBefore="0513" notAfter="0518">
-                            A.D. 513-518
-                        </date> 
-                        </persName>
-                </personGrp>
-            </listPerson>
-                <bibl type="primary">
-                    <ptr target="http://syriaca.org/bibl/668"/>
-                    <citedRange unit="pp">113</citedRange>
-                </bibl>
-            </div>
-            <div type="factoid" subtype="relation" uri="http://syriaca.org/spear/3079-10" resp="#ktorabi #dschwartz">
-                <listRelation>
-                    <relation name="syriaca:LegalChargesAgainst" active="http://syriaca.org/person/anonymi1" passive="http://syriaca.org/person/2410 http://syriaca.org/person/anonymi2"><desc><persName ref="http://syriaca.org/person/anonymi1"/> brought legal charges or a petition against <persName ref="http://syriaca.org/person/2410">Julian</persName> and <persName ref="http://syriaca.org/person/anonymi2"/>.</desc></relation>
-                </listRelation>
-                <bibl type="primary">
-                    <ptr target="http://syriaca.org/bibl/668"/>
-                    <citedRange unit="pp">113</citedRange>
-                </bibl>
-            </div>
-            <div type="factoid" subtype="nameVariant" uri="http://syriaca.org/spear/3079-11" resp="#ktorabi #dschwartz">
+            <div type="factoid" subtype="nameVariant" xml:id="factoid-9" resp="#ktorabi #dschwartz">
+                <idno type="URI">http://syriaca.org/spear/3079-9</idno>
                 <listPerson>
                     <personGrp>
-                        <persName ref="http://syriaca.org/person/anonymi3">
-                            All the saintly bishops of First Cilicia in
-                            <date notBefore="0513" notAfter="0518">
-                                A.D. 513-518
-                            </date> 
-                            who will hear the case against
-                            <persName ref="http://syriaca.org/person/2410"> 
-                                Julian 
-                            </persName>
-                            and
-                            <persName ref="http://syriaca.org/person/anonymi2"/>
-                        </persName>
+                        <persName ref="http://syriaca.org/person/anonymi2"> Those under same charge
+                            as <persName ref="http://syriaca.org/person/2410"> Julian </persName> in
+                                <date notBefore="0513" notAfter="0518"> A.D. 513-518
+                            </date></persName>
                     </personGrp>
                 </listPerson>
                 <bibl type="primary">
@@ -248,14 +213,47 @@
                     <citedRange unit="pp">113</citedRange>
                 </bibl>
             </div>
-            <div type="factoid" subtype="occupation" uri="http://syriaca.org/spear/3079-21" resp="#dschwartz">
+            <div type="factoid" subtype="relation" xml:id="factoid-10" resp="#ktorabi #dschwartz">
+                <idno type="URI">http://syriaca.org/spear/3079-10</idno>
+                <listRelation>
+                    <relation name="syriaca:LegalChargesAgainst"
+                        active="http://syriaca.org/person/anonymi1"
+                        passive="http://syriaca.org/person/2410 http://syriaca.org/person/anonymi2">
+                        <desc><persName ref="http://syriaca.org/person/anonymi1"/> brought legal
+                            charges or a petition against <persName
+                                ref="http://syriaca.org/person/2410">Julian</persName> and <persName
+                                ref="http://syriaca.org/person/anonymi2"/>.</desc>
+                    </relation>
+                </listRelation>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="pp">113</citedRange>
+                </bibl>
+            </div>
+            <div type="factoid" subtype="nameVariant" xml:id="factoid-11" resp="#ktorabi #dschwartz">
+                <idno type="URI">http://syriaca.org/spear/3079-11</idno>
+                <listPerson>
+                    <personGrp>
+                        <persName ref="http://syriaca.org/person/anonymi3"> All the saintly bishops
+                            of First Cilicia in <date notBefore="0513" notAfter="0518"> A.D. 513-518
+                            </date> who will hear the case against <persName
+                                ref="http://syriaca.org/person/2410"> Julian </persName> and
+                                <persName ref="http://syriaca.org/person/anonymi2"/></persName>
+                    </personGrp>
+                </listPerson>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="pp">113</citedRange>
+                </bibl>
+            </div>
+            <div type="factoid" subtype="occupation" xml:id="factoid-21" resp="#dschwartz">
+                <idno type="URI">http://syriaca.org/spear/3079-21</idno>
                 <listPerson>
                     <personGrp>
                         <persName ref="http://syriaca.org/person/anonymi3"/>
-                        <occupation ref="http://syriaca.org/keyword/bishops">
-                            <note type="desc">
-                                <persName ref="http://syriaca.org/person/anonymi3"/> were bishops.
-                            </note>
+                        <occupation ana="http://syriaca.org/keyword/bishops">
+                            <note type="desc"><persName ref="http://syriaca.org/person/anonymi3"/>
+                                were bishops. </note>
                         </occupation>
                     </personGrp>
                 </listPerson>
@@ -264,21 +262,15 @@
                     <citedRange unit="pp">113</citedRange>
                 </bibl>
             </div>
-            <div type="factoid" subtype="nameVariant" uri="http://syriaca.org/spear/3079-12" resp="#ktorabi #dschwartz">
+            <div type="factoid" subtype="nameVariant" xml:id="factoid-12" resp="#ktorabi #dschwartz">
+                <idno type="URI">http://syriaca.org/spear/3079-12</idno>
                 <listPerson>
                     <personGrp>
-                        <persName ref="http://syriaca.org/person/anonymi4">
-                            The eloquent scholastics in
-                            <date notBefore="0513" notAfter="0518">
-                                A.D. 513-518
-                            </date> 
-                            who will hear the case against 
-                            <persName ref="http://syriaca.org/person/2410"> 
-                                Julian 
-                            </persName>
-                            and
-                            <persName ref="http://syriaca.org/person/anonymi2"/>
-                        </persName>
+                        <persName ref="http://syriaca.org/person/anonymi4"> The eloquent scholastics
+                            in <date notBefore="0513" notAfter="0518"> A.D. 513-518 </date> who will
+                            hear the case against <persName ref="http://syriaca.org/person/2410">
+                                Julian </persName> and <persName
+                                ref="http://syriaca.org/person/anonymi2"/></persName>
                     </personGrp>
                 </listPerson>
                 <bibl type="primary">
@@ -286,14 +278,14 @@
                     <citedRange unit="pp">113-114</citedRange>
                 </bibl>
             </div>
-            <div type="factoid" subtype="occupation" uri="http://syriaca.org/spear/3079-22" resp="#dschwartz">
+            <div type="factoid" subtype="occupation" xml:id="factoid-22" resp="#dschwartz">
+                <idno type="URI">http://syriaca.org/spear/3079-22</idno>
                 <listPerson>
                     <personGrp>
                         <persName ref="http://syriaca.org/person/anonymi4"/>
-                        <occupation ref="http://syriaca.org/keyword/scholastics">
-                            <note type="desc">
-                                <persName ref="http://syriaca.org/person/anonymi4"/> were scholastics.
-                            </note>
+                        <occupation ana="http://syriaca.org/keyword/scholastics">
+                            <note type="desc"><persName ref="http://syriaca.org/person/anonymi4"/>
+                                were scholastics. </note>
                         </occupation>
                     </personGrp>
                 </listPerson>
@@ -302,15 +294,13 @@
                     <citedRange unit="pp">113-114</citedRange>
                 </bibl>
             </div>
-            <div type="factoid" subtype="nameVariant" uri="http://syriaca.org/spear/3079-13" resp="#ktorabi #dschwartz">
+            <div type="factoid" subtype="nameVariant" xml:id="factoid-13" resp="#ktorabi #dschwartz">
+                <idno type="URI">http://syriaca.org/spear/3079-13</idno>
                 <listPerson>
                     <person>
-                        <persName ref="http://syriaca.org/person/2412">
-                            The God-loving Syrian, bishop of the City of
-                            <placeName ref="http://syriaca.org/place/3030">
-                                Augusta
-                            </placeName>
-                        </persName>
+                        <persName ref="http://syriaca.org/person/2412"> The God-loving Syrian,
+                            bishop of the City of <placeName ref="http://syriaca.org/place/3030">
+                                Augusta </placeName></persName>
                     </person>
                 </listPerson>
                 <bibl type="primary">
@@ -318,17 +308,14 @@
                     <citedRange unit="pp">114</citedRange>
                 </bibl>
             </div>
-            <div type="factoid" subtype="gender" uri="http://syriaca.org/spear/3079-14" resp="#ktorabi #dschwartz">
+            <div type="factoid" subtype="gender" xml:id="factoid-14" resp="#ktorabi #dschwartz">
+                <idno type="URI">http://syriaca.org/spear/3079-14</idno>
                 <listPerson>
                     <person>
                         <persName ref="http://syriaca.org/person/2412"/>
-                        <trait type="gender" ref="http://syriaca.org/keyword/male">
-                            <note type="desc">
-                                <persName ref="http://syriaca.org/person/2412">
-                                    Serenus
-                                </persName>
-                                was male.
-                            </note>
+                        <trait type="gender" ana="http://syriaca.org/keyword/male">
+                            <note type="desc"><persName ref="http://syriaca.org/person/2412">
+                                    Serenus </persName> was male. </note>
                         </trait>
                     </person>
                 </listPerson>
@@ -337,19 +324,15 @@
                     <citedRange unit="pp">114</citedRange>
                 </bibl>
             </div>
-            <div type="factoid" subtype="occupation" uri="http://syriaca.org/spear/3079-15" resp="#ktorabi #dschwartz">
+            <div type="factoid" subtype="occupation" xml:id="factoid-15" resp="#ktorabi #dschwartz">
+                <idno type="URI">http://syriaca.org/spear/3079-15</idno>
                 <listPerson>
                     <person>
                         <persName ref="http://syriaca.org/person/2412"/>
-                        <occupation ref="http://syriaca.org/keyword/bishops">
-                            <note type="desc">
-                                <persName ref="http://syriaca.org/person/2412">
-                                    Serenus
-                                </persName>
-                                was the bishop of 
-                                <placeName ref="http://syriaca.org/place/3031">
-                                    Augusta
-                                </placeName>.
+                        <occupation ana="http://syriaca.org/keyword/bishops">
+                            <note type="desc"><persName ref="http://syriaca.org/person/2412">
+                                    Serenus </persName> was the bishop of <placeName
+                                    ref="http://syriaca.org/place/3031"> Augusta </placeName>.
                             </note>
                         </occupation>
                     </person>
@@ -359,20 +342,26 @@
                     <citedRange unit="pp">114</citedRange>
                 </bibl>
             </div>
-            <div type="factoid" subtype="relation" uri="http://syriaca.org/spear/3079-16" resp="#ktorabi #dschwartz">
+            <div type="factoid" subtype="relation" xml:id="factoid-16" resp="#ktorabi #dschwartz">
+                <idno type="URI">http://syriaca.org/spear/3079-16</idno>
                 <listRelation>
-                    <relation name="snap:SiblingOf" mutual="http://syriaca.org/person/2412 http://syriaca.org/person/2410"><desc><persName ref="http://syriaca.org/person/2412">Serenus</persName> and <persName ref="http://syriaca.org/person/2410">Julian</persName> were siblings.</desc></relation>
+                    <relation name="snap:SiblingOf"
+                        mutual="http://syriaca.org/person/2412 http://syriaca.org/person/2410">
+                        <desc><persName ref="http://syriaca.org/person/2412">Serenus</persName> and
+                                <persName ref="http://syriaca.org/person/2410">Julian</persName>
+                            were siblings.</desc>
+                    </relation>
                 </listRelation>
                 <bibl type="primary">
                     <ptr target="http://syriaca.org/bibl/668"/>
                     <citedRange unit="pp">114</citedRange>
                 </bibl>
             </div>
-            <div type="factoid" subtype="nameVariant" uri="http://syriaca.org/spear/3079-17" resp="#ktorabi #dschwartz">
+            <div type="factoid" subtype="nameVariant" xml:id="factoid-17" resp="#ktorabi #dschwartz">
+                <idno type="URI">http://syriaca.org/spear/3079-17</idno>
                 <listPerson>
                     <person>
-                        <persName ref="http://syriaca.org/person/2411">
-                            The illustrious Heliodorus
+                        <persName ref="http://syriaca.org/person/2411"> The illustrious Heliodorus
                         </persName>
                     </person>
                 </listPerson>
@@ -381,17 +370,14 @@
                     <citedRange unit="pp">114</citedRange>
                 </bibl>
             </div>
-            <div type="factoid" subtype="gender" uri="http://syriaca.org/spear/3079-18" resp="#ktorabi #dschwartz">
+            <div type="factoid" subtype="gender" xml:id="factoid-18" resp="#ktorabi #dschwartz">
+                <idno type="URI">http://syriaca.org/spear/3079-18</idno>
                 <listPerson>
                     <person>
                         <persName ref="http://syriaca.org/person/2411"/>
-                        <trait type="gender" ref="http://syriaca.org/keyword/male">
-                            <note type="desc">
-                                <persName ref="http://syriaca.org/person/2411">
-                                    Heliodorus
-                                </persName>
-                                was male.
-                            </note>
+                        <trait type="gender" ana="http://syriaca.org/keyword/male">
+                            <note type="desc"><persName ref="http://syriaca.org/person/2411">
+                                    Heliodorus </persName> was male. </note>
                         </trait>
                     </person>
                 </listPerson>
@@ -400,19 +386,15 @@
                     <citedRange unit="pp">114</citedRange>
                 </bibl>
             </div>
-            <div type="factoid" subtype="occupation" uri="http://syriaca.org/spear/3079-19" resp="#ktorabi #dschwartz">
+            <div type="factoid" subtype="occupation" xml:id="factoid-19" resp="#ktorabi #dschwartz">
+                <idno type="URI">http://syriaca.org/spear/3079-19</idno>
                 <listPerson>
                     <person>
                         <persName ref="http://syriaca.org/person/2411"/>
-                        <occupation ref="http://syriaca.org/keyword/curators">
-                            <note type="desc">
-                                <persName ref="http://syriaca.org/person/2411">
-                                    Heliodorus
-                                </persName>
-                                was the curator of 
-                                <persName ref="http://syriaca.org/person/2556">
-                                    Hypatius
-                                </persName>.
+                        <occupation ana="http://syriaca.org/keyword/curators">
+                            <note type="desc"><persName ref="http://syriaca.org/person/2411">
+                                    Heliodorus </persName> was the curator of <persName
+                                    ref="http://syriaca.org/person/2556"> Hypatius </persName>.
                             </note>
                         </occupation>
                     </person>
@@ -422,9 +404,15 @@
                     <citedRange unit="pp">114</citedRange>
                 </bibl>
             </div>
-            <div type="factoid" subtype="relation" uri="http://syriaca.org/spear/3079-20" resp="#ktorabi #dschwartz"><!-- It is my understanding that a curator is an official in charge of various departments of public works; therefore, I encoded the relationship between Hypatius and Heliodorus as CommanderOver. -->
+            <div type="factoid" subtype="relation" xml:id="factoid-20" resp="#ktorabi #dschwartz">
+                <idno type="URI">http://syriaca.org/spear/3079-20</idno>
                 <listRelation>
-                    <relation name="syriaca:CommandOver" active="http://syriaca.org/person/2556" passive="http://syriaca.org/person/2411"><desc><persName ref="http://syriaca.org/person/2556">Hypatius</persName> had military command over <persName ref="http://syriaca.org/person/2411">Heliodorus</persName>.</desc></relation>
+                    <relation name="syriaca:CommandOver" active="http://syriaca.org/person/2556"
+                        passive="http://syriaca.org/person/2411">
+                        <desc><persName ref="http://syriaca.org/person/2556">Hypatius</persName> had
+                            military command over <persName ref="http://syriaca.org/person/2411"
+                                >Heliodorus</persName>.</desc>
+                    </relation>
                 </listRelation>
                 <bibl type="primary">
                     <ptr target="http://syriaca.org/bibl/668"/>
@@ -433,14 +421,17 @@
             </div>
         </body>
         <back>
-            <listBibl>
+            <listBibl default="false">
                 <head>Works Cited</head>
                 <bibl type="primary" xml:id="bibl3079-1">
-                    <title xml:lang="en">The Sixth Book of the Select Letters of Severus, Patriarch of Antioch in the Syriac Version of Athanasius of Nisibis</title>
+                    <title xml:lang="en">The Sixth Book of the Select Letters of Severus, Patriarch
+                        of Antioch in the Syriac Version of Athanasius of Nisibis</title>
                     <title type="sub">Translation, I.1 - II.3</title>
                     <title type="part">To Hypatius, Master of the Soldiers</title>
-                    <author><persName ref="http://syriaca.org/person/51">Severus of Antioch</persName></author>
-                    <editor><persName ref="http://syriaca.org/person/403">E. W. Brooks</persName></editor>
+                    <author><persName ref="http://syriaca.org/person/51">Severus of
+                            Antioch</persName></author>
+                    <editor><persName ref="http://syriaca.org/person/403">E. W.
+                        Brooks</persName></editor>
                     <ptr target="http://syriaca.org/bibl/668"/>
                 </bibl>
             </listBibl>

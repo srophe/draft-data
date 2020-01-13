@@ -1,56 +1,71 @@
-<?xml-model href="https://raw.githubusercontent.com/srophe/srophe-eXist-app/master/documentation/SPEARschema/out/SPEAR.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://raw.githubusercontent.com/srophe/srophe-eXist-app/master/documentation/SPEARschema/out/SPEAR.rng" type="application/xml"
-	schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
+<?xml-model href="https://raw.githubusercontent.com/srophe/srophe-eXist-app/master/documentation/SPEARschema/out/SPEAR.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title level="a">John of Ephesus, Theodore Castrensis, in the Lives of the Eastern Saints</title>
+                <title level="a">John of Ephesus, Theodore Castrensis, in the Lives of the Eastern
+                    Saints</title>
                 <title level="m">SPEAR: Syriac Persons, Events, and Relations</title>
                 <funder>The National Endowment for the Humanities</funder>
                 <principal>Daniel L. Schwartz</principal>
                 <funder>Texas A&amp;M University</funder>
                 <principal>Daniel L. Schwartz</principal>
-                <editor role="general" ref="http://syriaca.org/documentation/editors.xml#dschwartz">Daniel L. Schwartz</editor>
-                <editor role="creator" ref="http://syriaca.org/documentation/editors.xml#dschwartz">Daniel L. Schwartz</editor>
-                <editor role="creator" ref="http://syriaca.org/documentation/editors.xml#ktorabi">Katayoun Torabi</editor>
-                <editor role="creator" ref="http://syriaca.org/documentation/editors.xml#rdurmaz">Reyhan Durmaz</editor>
-                <editor role="creator" ref="http://syriaca.org/documentation/editors.xml#nelder">Nick Elder</editor>
-                <editor role="creator" ref="http://syriaca.org/documentation/editors.xml#jfalconer">Joshua Falconer</editor>
-                <editor role="creator" ref="http://syriaca.org/documentation/editors.xml#rtrupiano">Rose Trupiano</editor>
-                <editor role="creator" ref="http://syriaca.org/documentation/editors.xml#jwickes">Jeffrey Wickes</editor>
+                <editor role="general" ref="http://syriaca.org/documentation/editors.xml#dschwartz"
+                    >Daniel L. Schwartz</editor>
+                <editor role="creator" ref="http://syriaca.org/documentation/editors.xml#dschwartz"
+                    >Daniel L. Schwartz</editor>
+                <editor role="creator" ref="http://syriaca.org/documentation/editors.xml#ktorabi"
+                    >Katayoun Torabi</editor>
+                <editor role="creator" ref="http://syriaca.org/documentation/editors.xml#rdurmaz"
+                    >Reyhan Durmaz</editor>
+                <editor role="creator" ref="http://syriaca.org/documentation/editors.xml#nelder"
+                    >Nick Elder</editor>
+                <editor role="creator" ref="http://syriaca.org/documentation/editors.xml#jfalconer"
+                    >Joshua Falconer</editor>
+                <editor role="creator" ref="http://syriaca.org/documentation/editors.xml#rtrupiano"
+                    >Rose Trupiano</editor>
+                <editor role="creator" ref="http://syriaca.org/documentation/editors.xml#jwickes"
+                    >Jeffrey Wickes</editor>
                 <respStmt>
                     <resp>Data architecture, data entry, editing, proofreading, and revision
                         by</resp>
-                    <name ref="http://syriaca.org/documentation/editors.xml#dschwartz">Daniel L.
-                        Schwartz</name>
+                    <name ref="http://syriaca.org/documentation/editors.xml#dschwartz" full="yes"
+                        instant="false">Daniel L. Schwartz</name>
                 </respStmt>
                 <respStmt>
                     <resp>Data architecture and technical assistance by</resp>
-                    <name ref="http://syriaca.org/documentation/editors.xml#dmichelson">David A.
-                        Michelson</name>
+                    <name ref="http://syriaca.org/documentation/editors.xml#dmichelson" full="yes"
+                        instant="false">David A. Michelson</name>
                 </respStmt>
                 <respStmt>
                     <resp>Data entry and encoding by</resp>
-                    <name ref="http://syriaca.org/documentation/editors.xml#ktorabi">Katayoun Torabi</name>
+                    <name ref="http://syriaca.org/documentation/editors.xml#ktorabi" full="yes"
+                        instant="false">Katayoun Torabi</name>
                 </respStmt>
                 <respStmt>
                     <resp>Data entry and encoding by</resp>
-                    <name ref="http://syriaca.org/documentation/editors.xml#rdurmaz">Reyhan Durmaz</name>
+                    <name ref="http://syriaca.org/documentation/editors.xml#rdurmaz" full="yes"
+                        instant="false">Reyhan Durmaz</name>
                 </respStmt>
                 <respStmt>
                     <resp>Data entry and encoding by</resp>
-                    <name ref="http://syriaca.org/documentation/editors.xml#nelder">Nick Elder</name>
+                    <name ref="http://syriaca.org/documentation/editors.xml#nelder" full="yes"
+                        instant="false">Nick Elder</name>
                 </respStmt>
                 <respStmt>
                     <resp>Data entry and encoding by</resp>
-                    <name ref="http://syriaca.org/documentation/editors.xml#jfalconer">Joshua Falconer</name>
+                    <name ref="http://syriaca.org/documentation/editors.xml#jfalconer" full="yes"
+                        instant="false">Joshua Falconer</name>
                 </respStmt>
                 <respStmt>
                     <resp>Data entry and encoding by</resp>
-                    <name ref="http://syriaca.org/documentation/editors.xml#rtrupiano">Rose Trupiano</name>
+                    <name ref="http://syriaca.org/documentation/editors.xml#rtrupiano" full="yes"
+                        instant="false">Rose Trupiano</name>
                 </respStmt>
                 <respStmt>
                     <resp>Data entry and encoding by</resp>
-                    <name ref="http://syriaca.org/documentation/editors.xml#jwickes">Jeffrey Wickes</name>
+                    <name ref="http://syriaca.org/documentation/editors.xml#jwickes" full="yes"
+                        instant="false">Jeffrey Wickes</name>
                 </respStmt>
             </titleStmt>
             <editionStmt>
@@ -59,40 +74,44 @@
             <publicationStmt>
                 <authority>Syriaca.org: The Syriac Reference Portal</authority>
                 <idno type="URI">http://syriaca.org/spear/848/tei</idno>
-                <availability>
+                <availability default="false">
                     <licence target="http://creativecommons.org/licenses/by/3.0/">
-                        <p>Distributed under a Creative Commons Attribution 3.0 Unported
+                        <p part="N">Distributed under a Creative Commons Attribution 3.0 Unported
                             License.</p>
                     </licence>
                 </availability>
                 <date>2020-01-03-05:00</date>
             </publicationStmt>
-            <sourceDesc>
-                <listBibl>
+            <sourceDesc default="false">
+                <listBibl default="false">
                     <head>Sources for the Data in this Born Digital Prosopography</head>
                     <bibl type="primary">
                         <title>Lives of the Eastern Saints III</title>
                         <title>Theodore Castrensis</title>
-                        <author><persName ref="http://syriaca.org/person/74">John of Ephesus</persName></author>
-                        <editor><persName ref="http://syriaca.org/person/403">E. W. Brooks</persName></editor>
+                        <author><persName ref="http://syriaca.org/person/74">John of
+                                Ephesus</persName></author>
+                        <editor><persName ref="http://syriaca.org/person/403">E. W.
+                                Brooks</persName></editor>
                         <ptr target="http://syriaca.org/bibl/2033"/>
                     </bibl>
                     <bibl type="primary">
                         <title>Theodore Castrensis</title>
-                        <author><persName ref="http://syriaca.org/person/74">John of Ephesus</persName></author>
+                        <author><persName ref="http://syriaca.org/person/74">John of
+                                Ephesus</persName></author>
                         <ptr target="http://syriaca.org/work/848"/>
                     </bibl>
                 </listBibl>
                 <listRelation>
-                    <relation type="part" active="http://syriaca.org/work/848" ref="dcterms:isPartOf" passive="http://syriaca.org/work/9501"/>
+                    <relation type="part" active="http://syriaca.org/work/848"
+                        ref="dcterms:isPartOf" passive="http://syriaca.org/work/9501"/>
                 </listRelation>
             </sourceDesc>
         </fileDesc>
         <encodingDesc>
-            <editorialDecl>
-                <p>The prosopographical data in this document was encoded from E. W. Brooks'
-                    edition and English translation of John of Ephesus’s Lives of the Eastern
-                    Saints, Patrologia Orientalis, volume 19, 1925. </p>
+            <editorialDecl default="false">
+                <p part="N">The prosopographical data in this document was encoded from E. W.
+                    Brooks' edition and English translation of John of Ephesus’s Lives of the
+                    Eastern Saints, Patrologia Orientalis, volume 19, 1925. </p>
             </editorialDecl>
             <classDecl>
                 <taxonomy>
@@ -103,21 +122,26 @@
                 </taxonomy>
             </classDecl>
         </encodingDesc>
-        <profileDesc> </profileDesc>
-        <revisionDesc>
-            <change who="http://syriaca.org/documentation/editors.xml#srophe-util" when="2020-01-03-05:00">CHANGED: Add a human readable version or the tei:relation element in a tei:desc.</change><change who="http://syriaca.org/documentation/editors.xml#ktorabi http://syriaca.org/documentation/editors.xml#rdurmaz http://syriaca.org/documentation/editors.xml#nelder http://syriaca.org/documentation/editors.xml#jfalconer http://syriaca.org/documentation/editors.xml#rtrupiano http://syriaca.org/documentation/editors.xml#jwickes">Initial data collected by Katayoun Torabi, Reyhan Durmaz, Nick Elder, Joshua Falconer, Rose Trupiano, and Jeffrey Wickes at "Mapping Ancient Lives &amp;
+        <profileDesc/>
+        <revisionDesc status="draft">
+            <change who="http://syriaca.org/documentation/editors.xml#srophe-util"
+                when="2020-01-03-05:00" status="draft">CHANGED: Add a human readable version or the
+                tei:relation element in a tei:desc.</change>
+            <change
+                who="http://syriaca.org/documentation/editors.xml#ktorabi http://syriaca.org/documentation/editors.xml#rdurmaz http://syriaca.org/documentation/editors.xml#nelder http://syriaca.org/documentation/editors.xml#jfalconer http://syriaca.org/documentation/editors.xml#rtrupiano http://syriaca.org/documentation/editors.xml#jwickes"
+                status="draft">Initial data collected by Katayoun Torabi, Reyhan Durmaz, Nick Elder,
+                Joshua Falconer, Rose Trupiano, and Jeffrey Wickes at "Mapping Ancient Lives &amp;
                 Social Networks: A Digital Workshop," held at Marquette University, 23-24 May
                 2017.</change>
         </revisionDesc>
     </teiHeader>
     <text>
         <body>
-            <div type="factoid" subtype="nameVariant" uri="http://syriaca.org/spear/848-1" resp="#rtrupiano">
+            <div type="factoid" subtype="nameVariant" xml:id="factoid-1" resp="#rtrupiano">
+                <idno type="URI">http://syriaca.org/spear/848-1</idno>
                 <listPerson>
                     <person>
-                        <persName ref="http://syriaca.org/person/2108">
-                            Theodore
-                        </persName>
+                        <persName ref="http://syriaca.org/person/2108"> Theodore </persName>
                     </person>
                 </listPerson>
                 <bibl type="primary">
@@ -129,12 +153,14 @@
                     <citedRange unit="pp">200</citedRange>
                 </bibl>
             </div>
-            <div type="factoid" subtype="gender" uri="http://syriaca.org/spear/848-2" resp="#rtrupiano">
+            <div type="factoid" subtype="gender" xml:id="factoid-2" resp="#rtrupiano">
+                <idno type="URI">http://syriaca.org/spear/848-2</idno>
                 <listPerson>
                     <person>
                         <persName ref="http://syriaca.org/person/2108"/>
-                        <trait type="gender" ref="http://syriaca.org/keyword/male">
-                            <note type="desc"><persName ref="http://syriaca.org/person/2108"> Theodore </persName> was male.</note>
+                        <trait type="gender" ana="http://syriaca.org/keyword/male">
+                            <note type="desc"><persName ref="http://syriaca.org/person/2108">
+                                    Theodore </persName> was male.</note>
                         </trait>
                     </person>
                 </listPerson>
@@ -147,14 +173,14 @@
                     <citedRange unit="pp">200</citedRange>
                 </bibl>
             </div>
-            <div type="factoid" subtype="occupation" uri="http://syriaca.org/spear/848-3" resp="#rtrupiano">
+            <div type="factoid" subtype="occupation" xml:id="factoid-3" resp="#rtrupiano">
+                <idno type="URI">http://syriaca.org/spear/848-3</idno>
                 <listPerson>
                     <person>
                         <persName ref="http://syriaca.org/person/2108"/>
-                        <occupation ref="http://syriaca.org/keyword/chamberlains">
-                            <note type="desc">
-                                <persName ref="http://syriaca.org/person/2108">Theodore</persName> was a chamberlain.
-                            </note>
+                        <occupation ana="http://syriaca.org/keyword/chamberlains">
+                            <note type="desc"><persName ref="http://syriaca.org/person/2108"
+                                    >Theodore</persName> was a chamberlain. </note>
                         </occupation>
                     </person>
                 </listPerson>
@@ -167,14 +193,14 @@
                     <citedRange unit="pp">200</citedRange>
                 </bibl>
             </div>
-            <div type="factoid" subtype="physicalTrait" uri="http://syriaca.org/spear/848-4" resp="#rtrupiano">
+            <div type="factoid" subtype="physicalTrait" xml:id="factoid-4" resp="#rtrupiano">
+                <idno type="URI">http://syriaca.org/spear/848-4</idno>
                 <listPerson>
                     <person>
                         <persName ref="http://syriaca.org/person/2108"/>
-                        <trait type="physical" ref="http://syriaca.org/keyword/eunuches">
-                            <note type="desc">
-                                <persName ref="http://syriaca.org/person/2108">Theodore</persName> was a castrensis.
-                            </note>
+                        <trait type="physical" ana="http://syriaca.org/keyword/eunuches">
+                            <note type="desc"><persName ref="http://syriaca.org/person/2108"
+                                    >Theodore</persName> was a castrensis. </note>
                         </trait>
                     </person>
                 </listPerson>
@@ -187,15 +213,16 @@
                     <citedRange unit="pp">200</citedRange>
                 </bibl>
             </div>
-            <div type="factoid" subtype="residence" uri="http://syriaca.org/spear/848-5" resp="#rtrupiano">
+            <div type="factoid" subtype="residence" xml:id="factoid-5" resp="#rtrupiano">
+                <idno type="URI">http://syriaca.org/spear/848-5</idno>
                 <listPerson>
-                    <person> 
+                    <person>
                         <persName ref="http://syriaca.org/person/2108"/>
                         <residence>
                             <placeName ref="http://syriaca.org/place/2841"/>
-                            <note type="desc">
-                                <persName ref="http://syriaca.org/person/2108">Theodore</persName>resided in <placeName ref="http://syriaca.org/place/2841">Sema</placeName>.
-                            </note>
+                            <note type="desc"><persName ref="http://syriaca.org/person/2108"
+                                    >Theodore</persName>resided in <placeName
+                                    ref="http://syriaca.org/place/2841">Sema</placeName>. </note>
                         </residence>
                     </person>
                 </listPerson>
@@ -208,14 +235,12 @@
                     <citedRange unit="pp">205</citedRange>
                 </bibl>
             </div>
-            <div type="factoid" subtype="event" uri="http://syriaca.org/spear/848-6" resp="#rtrupiano">
+            <div type="factoid" subtype="event" xml:id="factoid-6" resp="#rtrupiano">
+                <idno type="URI">http://syriaca.org/spear/848-6</idno>
                 <listEvent>
-                    <event>
-                        <desc>
-                            <persName ref="http://syriaca.org/person/2108">Theodore</persName> gave all his wealth to the poor and needy.
-                        </desc>
-                        <ptr target="http://syriaca.org/keyword/charity"/>
-                        
+                    <event ana="http://syriaca.org/keyword/charity">
+                        <desc><persName ref="http://syriaca.org/person/2108">Theodore</persName>
+                            gave all his wealth to the poor and needy. </desc>
                     </event>
                 </listEvent>
                 <bibl type="primary">
@@ -227,33 +252,33 @@
                     <citedRange unit="pp">204</citedRange>
                 </bibl>
             </div>
-            <div type="factoid" subtype="event" uri="http://syriaca.org/spear/848-7" resp="#rtrupiano">
-        <listEvent>
-            <event>
-                <desc>
-                    <persName ref="http://syriaca.org/person/2108">Theodore</persName> worked for <persName ref="http://syriaca.org/person/2284">King Justinian</persName>
-                </desc>
-                <ptr target="http://syriaca.org/keyword/Employment"/>
-            </event>
-        </listEvent>
-        <bibl type="primary">
-            <ptr target="http://syriaca.org/work/848"/>
-            <citedRange unit="pp">547</citedRange>
-        </bibl>
-        <bibl type="primary">
-            <ptr target="http://syriaca.org/bibl/2033"/>
-            <citedRange unit="pp">201</citedRange>
-        </bibl>
-    </div>
-            <div type="factoid" subtype="event" uri="http://syriaca.org/spear/848-8" resp="#rtrupiano">
+            <div type="factoid" subtype="event" xml:id="factoid-7" resp="#rtrupiano">
+                <idno type="URI">http://syriaca.org/spear/848-7</idno>
                 <listEvent>
-                    <event>
-                        <desc>
-                            <persName ref="http://syriaca.org/person/2108">Theodore</persName> retired from his position as castrensis for <persName ref="http://syriaca.org/person/2284">King Justinian</persName>
-                        </desc>
-                       
-                            <ptr target="http://syriaca.org/keyword/Retirement"/>
-                            </event>
+                    <event ana="http://syriaca.org/keyword/Employment">
+                        <desc><persName ref="http://syriaca.org/person/2108">Theodore</persName>
+                            worked for <persName ref="http://syriaca.org/person/2284">King
+                                Justinian</persName></desc>
+                    </event>
+                </listEvent>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/work/848"/>
+                    <citedRange unit="pp">547</citedRange>
+                </bibl>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/bibl/2033"/>
+                    <citedRange unit="pp">201</citedRange>
+                </bibl>
+            </div>
+            <div type="factoid" subtype="event" xml:id="factoid-8" resp="#rtrupiano">
+                <idno type="URI">http://syriaca.org/spear/848-8</idno>
+                <listEvent>
+                    <event ana="http://syriaca.org/keyword/Retirement">
+                        <desc><persName ref="http://syriaca.org/person/2108">Theodore</persName>
+                            retired from his position as castrensis for <persName
+                                ref="http://syriaca.org/person/2284">King
+                            Justinian</persName></desc>
+                    </event>
                 </listEvent>
                 <bibl type="primary">
                     <ptr target="http://syriaca.org/work/848"/>
@@ -264,29 +289,30 @@
                     <citedRange unit="pp">202</citedRange>
                 </bibl>
             </div>
-            <div type="factoid" subtype="nameVariant" uri="http://syriaca.org/spear/848-9" resp="#rtrupiano">
-            <listPerson>
-                <person>
-                    <persName ref="http://syriaca.org/person/2284">
-                        King Justinian
-                    </persName>
-                </person>
-            </listPerson>
-            <bibl type="primary">
-                <ptr target="http://syriaca.org/work/848"/>
-                <citedRange unit="pp">547</citedRange>
-            </bibl>
-            <bibl type="primary">
-                <ptr target="http://syriaca.org/bibl/2033"/>
-                <citedRange unit="pp">201</citedRange>
-            </bibl>
-        </div>
-            <div type="factoid" subtype="gender" uri="http://syriaca.org/spear/848-10" resp="#rtrupiano">
+            <div type="factoid" subtype="nameVariant" xml:id="factoid-9" resp="#rtrupiano">
+                <idno type="URI">http://syriaca.org/spear/848-9</idno>
+                <listPerson>
+                    <person>
+                        <persName ref="http://syriaca.org/person/2284"> King Justinian </persName>
+                    </person>
+                </listPerson>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/work/848"/>
+                    <citedRange unit="pp">547</citedRange>
+                </bibl>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/bibl/2033"/>
+                    <citedRange unit="pp">201</citedRange>
+                </bibl>
+            </div>
+            <div type="factoid" subtype="gender" xml:id="factoid-10" resp="#rtrupiano">
+                <idno type="URI">http://syriaca.org/spear/848-10</idno>
                 <listPerson>
                     <person>
                         <persName ref="http://syriaca.org/person/2284"/>
-                        <trait type="gender" ref="http://syriaca.org/keyword/male">
-                            <note type="desc"><persName ref="http://syriaca.org/person/2284"> Justinian </persName> was male.</note>
+                        <trait type="gender" ana="http://syriaca.org/keyword/male">
+                            <note type="desc"><persName ref="http://syriaca.org/person/2284">
+                                    Justinian </persName> was male.</note>
                         </trait>
                     </person>
                 </listPerson>
@@ -299,12 +325,14 @@
                     <citedRange unit="pp">201</citedRange>
                 </bibl>
             </div>
-            <div type="factoid" subtype="gender" uri="http://syriaca.org/spear/848-11" resp="#rtrupiano">
+            <div type="factoid" subtype="gender" xml:id="factoid-11" resp="#rtrupiano">
+                <idno type="URI">http://syriaca.org/spear/848-11</idno>
                 <listPerson>
                     <person>
                         <persName ref="http://syriaca.org/person/2558"/>
-                        <trait type="gender" ref="http://syriaca.org/keyword/male">
-                            <note type="desc"><persName ref="http://syriaca.org/person/2558"> Mishael </persName> was male.</note>
+                        <trait type="gender" ana="http://syriaca.org/keyword/male">
+                            <note type="desc"><persName ref="http://syriaca.org/person/2558">
+                                    Mishael </persName> was male.</note>
                         </trait>
                     </person>
                 </listPerson>
@@ -317,14 +345,14 @@
                     <citedRange unit="pp">200</citedRange>
                 </bibl>
             </div>
-            <div type="factoid" subtype="occupation" uri="http://syriaca.org/spear/848-12" resp="#rtrupiano">
+            <div type="factoid" subtype="occupation" xml:id="factoid-12" resp="#rtrupiano">
+                <idno type="URI">http://syriaca.org/spear/848-12</idno>
                 <listPerson>
                     <person>
                         <persName ref="http://syriaca.org/person/2558"/>
-                        <occupation ref="http://syriaca.org/keyword/praepositus">
-                            <note type="desc">
-                                <persName ref="http://syriaca.org/person/2558">Mishael</persName> was a praepositus.
-                            </note>
+                        <occupation ana="http://syriaca.org/keyword/praepositus">
+                            <note type="desc"><persName ref="http://syriaca.org/person/2558"
+                                    >Mishael</persName> was a praepositus. </note>
                         </occupation>
                     </person>
                 </listPerson>
@@ -337,13 +365,12 @@
                     <citedRange unit="pp">200</citedRange>
                 </bibl>
             </div>
-            <div type="factoid" subtype="event" uri="http://syriaca.org/spear/848-13" resp="#rtrupiano">
+            <div type="factoid" subtype="event" xml:id="factoid-13" resp="#rtrupiano">
+                <idno type="URI">http://syriaca.org/spear/848-13</idno>
                 <listEvent>
-                    <event>
-                        <desc>
-                            <persName ref="http://syriaca.org/person/2558">Mishael</persName>had previously worked as a carpenter and builder.
-                        </desc>
-                        <ptr target="http://syriaca.org/keyword/employment"/>
+                    <event ana="http://syriaca.org/keyword/employment">
+                        <desc><persName ref="http://syriaca.org/person/2558">Mishael</persName>had
+                            previously worked as a carpenter and builder. </desc>
                     </event>
                 </listEvent>
                 <bibl type="primary">
@@ -355,13 +382,13 @@
                     <citedRange unit="pp">201</citedRange>
                 </bibl>
             </div>
-            <div type="factoid" subtype="event" uri="http://syriaca.org/spear/848-14" resp="#rtrupiano">
+            <div type="factoid" subtype="event" xml:id="factoid-14" resp="#rtrupiano">
+                <idno type="URI">http://syriaca.org/spear/848-14</idno>
                 <listEvent>
-                    <event>
-                        <desc>
-                            <persName ref="http://syriaca.org/person/2558">Mishael</persName> was in exile due to disagreement with Council of <placeName ref="http://syriaca.org/place/622">Chalcedon</placeName>
-                        </desc>
-                        <ptr target="http://syriaca.org/keyword/exile"/>
+                    <event ana="http://syriaca.org/keyword/exile">
+                        <desc><persName ref="http://syriaca.org/person/2558">Mishael</persName> was
+                            in exile due to disagreement with Council of <placeName
+                                ref="http://syriaca.org/place/622">Chalcedon</placeName></desc>
                     </event>
                 </listEvent>
                 <bibl type="primary">
@@ -373,12 +400,11 @@
                     <citedRange unit="pp">200</citedRange>
                 </bibl>
             </div>
-            <div type="factoid" subtype="nameVariant" uri="http://syriaca.org/spear/848-15" resp="#rtrupiano">
+            <div type="factoid" subtype="nameVariant" xml:id="factoid-15" resp="#rtrupiano">
+                <idno type="URI">http://syriaca.org/spear/848-15</idno>
                 <listPerson>
                     <person>
-                        <persName ref="http://syriaca.org/person/3224">
-                           John
-                        </persName>
+                        <persName ref="http://syriaca.org/person/3224"> John </persName>
                     </person>
                 </listPerson>
                 <bibl type="primary">
@@ -390,12 +416,14 @@
                     <citedRange unit="pp">201</citedRange>
                 </bibl>
             </div>
-            <div type="factoid" subtype="gender" uri="http://syriaca.org/spear/848-16" resp="#rtrupiano">
+            <div type="factoid" subtype="gender" xml:id="factoid-16" resp="#rtrupiano">
+                <idno type="URI">http://syriaca.org/spear/848-16</idno>
                 <listPerson>
                     <person>
                         <persName ref="http://syriaca.org/person/3224"/>
-                        <trait type="gender" ref="http://syriaca.org/keyword/male">
-                            <note type="desc"><persName ref="http://syriaca.org/person/3224"> John </persName> was male.</note>
+                        <trait type="gender" ana="http://syriaca.org/keyword/male">
+                            <note type="desc"><persName ref="http://syriaca.org/person/3224"> John
+                                </persName> was male.</note>
                         </trait>
                     </person>
                 </listPerson>
@@ -408,14 +436,14 @@
                     <citedRange unit="pp">206</citedRange>
                 </bibl>
             </div>
-            <div type="factoid" subtype="occupation" uri="http://syriaca.org/spear/848-17" resp="#rtrupiano">
+            <div type="factoid" subtype="occupation" xml:id="factoid-17" resp="#rtrupiano">
+                <idno type="URI">http://syriaca.org/spear/848-17</idno>
                 <listPerson>
                     <person>
                         <persName ref="http://syriaca.org/person/3224"/>
-                        <occupation ref="http://syriaca.org/keyword/praepositus">
-                            <note type="desc">
-                                <persName ref="http://syriaca.org/person/3224">John</persName> was a chamberlain. 
-                            </note>
+                        <occupation ana="http://syriaca.org/keyword/praepositus">
+                            <note type="desc"><persName ref="http://syriaca.org/person/3224"
+                                    >John</persName> was a chamberlain. </note>
                         </occupation>
                     </person>
                 </listPerson>
@@ -428,13 +456,13 @@
                     <citedRange unit="pp">206</citedRange>
                 </bibl>
             </div>
-            <div type="factoid" subtype="event" uri="http://syriaca.org/spear/848-18" resp="#rtrupiano">
+            <div type="factoid" subtype="event" xml:id="factoid-18" resp="#rtrupiano">
+                <idno type="URI">http://syriaca.org/spear/848-18</idno>
                 <listEvent>
-                    <event>
-                        <desc>
-                            <persName ref="http://syriaca.org/person/3224">John</persName> worked for <persName ref="http://syriaca.org/person/2284">Justinian</persName>
-                        </desc>
-                        <ptr target="http://syriaca.org/keyword/employment"/>
+                    <event ana="http://syriaca.org/keyword/employment">
+                        <desc><persName ref="http://syriaca.org/person/3224">John</persName> worked
+                            for <persName ref="http://syriaca.org/person/2284"
+                            >Justinian</persName></desc>
                     </event>
                 </listEvent>
                 <bibl type="primary">
@@ -447,20 +475,23 @@
                 </bibl>
             </div>
             <LifeNorFullyEncoded/>
-         </body>
+        </body>
         <back>
-            <listBibl>
+            <listBibl default="false">
                 <head>Works Cited</head>
                 <bibl type="primary" xml:id="bibl848-1">
                     <title>Lives of the Eastern Saints III</title>
                     <title>Theodore Castrensis</title>
-                    <author><persName ref="http://syriaca.org/person/74">John of Ephesus</persName></author>
-                    <editor><persName ref="http://syriaca.org/person/403">E. W. Brooks</persName></editor>
+                    <author><persName ref="http://syriaca.org/person/74">John of
+                        Ephesus</persName></author>
+                    <editor><persName ref="http://syriaca.org/person/403">E. W.
+                        Brooks</persName></editor>
                     <ptr target="http://syriaca.org/bibl/2033"/>
                 </bibl>
                 <bibl type="primary" xml:id="bibl848-2">
                     <title>Theodore Castrensis</title>
-                    <author><persName ref="http://syriaca.org/person/74">John of Ephesus</persName></author>
+                    <author><persName ref="http://syriaca.org/person/74">John of
+                        Ephesus</persName></author>
                     <ptr target="http://syriaca.org/work/848"/>
                 </bibl>
             </listBibl>

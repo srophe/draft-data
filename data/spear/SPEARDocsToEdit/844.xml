@@ -1,59 +1,72 @@
-<?xml-model href="https://raw.githubusercontent.com/srophe/srophe-eXist-app/master/documentation/SPEARschema/out/SPEAR.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://raw.githubusercontent.com/srophe/srophe-eXist-app/master/documentation/SPEARschema/out/SPEAR.rng" type="application/xml"
-	schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
+<?xml-model href="https://raw.githubusercontent.com/srophe/srophe-eXist-app/master/documentation/SPEARschema/out/SPEAR.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title level="a">John of Ephesus, Priscus, in The Lives of the Eastern Saints</title>
+                <title level="a">John of Ephesus, Priscus, in The Lives of the Eastern
+                    Saints</title>
                 <title level="m">SPEAR: Syriac Persons, Events, and Relations</title>
                 <funder>The National Endowment for the Humanities</funder>
                 <principal>Daniel L. Schwartz</principal>
                 <funder>Texas A&amp;M University</funder>
                 <principal>Daniel L. Schwartz</principal>
-                <editor role="general" ref="http://syriaca.org/documentation/editors.xml#dschwartz">Daniel L. Schwartz</editor>
-                <editor role="creator" ref="http://syriaca.org/documentation/editors.xml#dschwartz">Daniel L. Schwartz</editor>
-                <editor role="creator" ref="http://syriaca.org/documentation/editors.xml#jnsaint-laurent">Jeanne-Nicole
+                <editor role="general" ref="http://syriaca.org/documentation/editors.xml#dschwartz"
+                    >Daniel L. Schwartz</editor>
+                <editor role="creator" ref="http://syriaca.org/documentation/editors.xml#dschwartz"
+                    >Daniel L. Schwartz</editor>
+                <editor role="creator"
+                    ref="http://syriaca.org/documentation/editors.xml#jnsaint-laurent">Jeanne-Nicole
                     Mellon Saint-Laurent</editor>
-                <editor role="creator" ref="http://syriaca.org/documentation/editors.xml#mdoerfler">Maria E. Doerfler</editor>
-                <editor role="creator" ref="http://syriaca.org/documentation/editors.xml#cjohnson">Christopher D. L. Johnson</editor>
-                <editor role="creator" ref="http://syriaca.org/documentation/editors.xml#dkiger">David Kiger</editor>
-                <editor role="creator" ref="http://syriaca.org/documentation/editors.xml#ayousif">Ashoor Yousif</editor>
-                <editor role="creator" ref="http://syriaca.org/documentation/editors.xml#ekowalik">Eric Kowalik</editor>
+                <editor role="creator" ref="http://syriaca.org/documentation/editors.xml#mdoerfler"
+                    >Maria E. Doerfler</editor>
+                <editor role="creator" ref="http://syriaca.org/documentation/editors.xml#cjohnson"
+                    >Christopher D. L. Johnson</editor>
+                <editor role="creator" ref="http://syriaca.org/documentation/editors.xml#dkiger"
+                    >David Kiger</editor>
+                <editor role="creator" ref="http://syriaca.org/documentation/editors.xml#ayousif"
+                    >Ashoor Yousif</editor>
+                <editor role="creator" ref="http://syriaca.org/documentation/editors.xml#ekowalik"
+                    >Eric Kowalik</editor>
                 <respStmt>
                     <resp>Data architecture, data entry, editing, proofreading, and revision
                         by</resp>
-                    <name ref="http://syriaca.org/documentation/editors.xml#dschwartz">Daniel L.
-                        Schwartz</name>
+                    <name ref="http://syriaca.org/documentation/editors.xml#dschwartz" full="yes"
+                        instant="false">Daniel L. Schwartz</name>
                 </respStmt>
                 <respStmt>
                     <resp>Data architecture and technical assistance by</resp>
-                    <name ref="http://syriaca.org/documentation/editors.xml#dmichelson">David A.
-                        Michelson</name>
+                    <name ref="http://syriaca.org/documentation/editors.xml#dmichelson" full="yes"
+                        instant="false">David A. Michelson</name>
                 </respStmt>
                 <respStmt>
                     <resp>Data entry and encoding by</resp>
-                    <name ref="http://syriaca.org/documentation/editors.xml#ayousif">Ashoor
-                        Yousif</name>
+                    <name ref="http://syriaca.org/documentation/editors.xml#ayousif" full="yes"
+                        instant="false">Ashoor Yousif</name>
                 </respStmt>
                 <respStmt>
                     <resp>Data entry and encoding by</resp>
-                    <name ref="http://syriaca.org/documentation/editors.xml#mdoerfler">Maria E.
-                        Doerfler</name>
+                    <name ref="http://syriaca.org/documentation/editors.xml#mdoerfler" full="yes"
+                        instant="false">Maria E. Doerfler</name>
                 </respStmt>
                 <respStmt>
                     <resp>Data entry and encoding by</resp>
-                    <name ref="http://syriaca.org/documentation/editors.xml#jnsaint-laurent">Jeanne-Nicole Mellon Saint-Laurent</name>
+                    <name ref="http://syriaca.org/documentation/editors.xml#jnsaint-laurent"
+                        full="yes" instant="false">Jeanne-Nicole Mellon Saint-Laurent</name>
                 </respStmt>
                 <respStmt>
                     <resp>Data entry and encoding by</resp>
-                    <name ref="http://syriaca.org/documentation/editors.xml#cjohnson">Christopher D. L. Johnson</name>
+                    <name ref="http://syriaca.org/documentation/editors.xml#cjohnson" full="yes"
+                        instant="false">Christopher D. L. Johnson</name>
                 </respStmt>
                 <respStmt>
                     <resp>Data entry and encoding by</resp>
-                    <name ref="http://syriaca.org/documentation/editors.xml#dkiger">David Kiger</name>
+                    <name ref="http://syriaca.org/documentation/editors.xml#dkiger" full="yes"
+                        instant="false">David Kiger</name>
                 </respStmt>
                 <respStmt>
                     <resp>Data entry and encoding by</resp>
-                    <name ref="http://syriaca.org/documentation/editors.xml#ekwoalik">Eric Kowalik</name>
+                    <name ref="http://syriaca.org/documentation/editors.xml#ekwoalik" full="yes"
+                        instant="false">Eric Kowalik</name>
                 </respStmt>
             </titleStmt>
             <editionStmt>
@@ -62,40 +75,44 @@
             <publicationStmt>
                 <authority>Syriaca.org: The Syriac Reference Portal</authority>
                 <idno type="URI">http://syriaca.org/spear/844/tei</idno>
-                <availability>
+                <availability default="false">
                     <licence target="http://creativecommons.org/licenses/by/3.0/">
-                        <p>Distributed under a Creative Commons Attribution 3.0 Unported
+                        <p part="N">Distributed under a Creative Commons Attribution 3.0 Unported
                             License.</p>
                     </licence>
                 </availability>
                 <date>2020-01-03-05:00</date>
             </publicationStmt>
-            <sourceDesc>
-                <listBibl>
+            <sourceDesc default="false">
+                <listBibl default="false">
                     <head>Sources for the Data in this Born Digital Prosopography</head>
                     <bibl type="primary">
                         <title>Lives of the Eastern Saints III</title>
                         <title>Priscus</title>
-                        <author><persName ref="http://syriaca.org/person/74">John of Ephesus</persName></author>
-                        <editor><persName ref="http://syriaca.org/person/403">E. W. Brooks</persName></editor>
+                        <author><persName ref="http://syriaca.org/person/74">John of
+                                Ephesus</persName></author>
+                        <editor><persName ref="http://syriaca.org/person/403">E. W.
+                                Brooks</persName></editor>
                         <ptr target="http://syriaca.org/bibl/2033"/>
                     </bibl>
                     <bibl type="primary">
                         <title>Priscus</title>
-                        <author><persName ref="http://syriaca.org/person/74">John of Ephesus</persName></author>
+                        <author><persName ref="http://syriaca.org/person/74">John of
+                                Ephesus</persName></author>
                         <ptr target="http://syriaca.org/work/844"/>
                     </bibl>
                 </listBibl>
                 <listRelation>
-                    <relation type="part" active="http://syriaca.org/work/844" ref="dcterms:isPartOf" passive="http://syriaca.org/work/9501"/>
+                    <relation type="part" active="http://syriaca.org/work/844"
+                        ref="dcterms:isPartOf" passive="http://syriaca.org/work/9501"/>
                 </listRelation>
             </sourceDesc>
         </fileDesc>
         <encodingDesc>
-            <editorialDecl>
-                <p>The prosopographical data in this document was encoded from E. W. Brooks'
-                    edition and English translation of John of Ephesus’s Lives of the Eastern
-                    Saints, Patrologia Orientalis, volume 19, 1925. </p>
+            <editorialDecl default="false">
+                <p part="N">The prosopographical data in this document was encoded from E. W.
+                    Brooks' edition and English translation of John of Ephesus’s Lives of the
+                    Eastern Saints, Patrologia Orientalis, volume 19, 1925. </p>
             </editorialDecl>
             <classDecl>
                 <taxonomy>
@@ -106,79 +123,82 @@
                 </taxonomy>
             </classDecl>
         </encodingDesc>
-        <profileDesc> </profileDesc>
-        <revisionDesc>
-            <change who="http://syriaca.org/documentation/editors.xml#srophe-util" when="2020-01-03-05:00">CHANGED: Add a human readable version or the tei:relation element in a tei:desc.</change><change who="http://syriaca.org/documentation/editors.xml#ayousif http://syriaca.org/documentation/editors.xml#mdoerfler http://syriaca.org/documentation/editors.xml#jnsaint-laurent http://syriaca.org/documentation/editors.xml#ekwoalik http://syriaca.org/documentation/editors.xml#jmcmanaway http://syriaca.org/documentation/editors.xml#nelder">Initial data collected by Jeanne-Nicole Mellon Saint-Laurent, Maria E Doerfler,
-                Nick Elder, Eric Kowalik, Joshua McManaway, and Ashoor Yousif at "Mapping Ancient Lives &amp;
-                Social Networks: A Digital Workshop," held at Marquette University, 23-24 May
-                2017.</change>
+        <profileDesc/>
+        <revisionDesc status="draft">
+            <change who="http://syriaca.org/documentation/editors.xml#srophe-util"
+                when="2020-01-03-05:00" status="draft">CHANGED: Add a human readable version or the
+                tei:relation element in a tei:desc.</change>
+            <change
+                who="http://syriaca.org/documentation/editors.xml#ayousif http://syriaca.org/documentation/editors.xml#mdoerfler http://syriaca.org/documentation/editors.xml#jnsaint-laurent http://syriaca.org/documentation/editors.xml#ekwoalik http://syriaca.org/documentation/editors.xml#jmcmanaway http://syriaca.org/documentation/editors.xml#nelder"
+                status="draft">Initial data collected by Jeanne-Nicole Mellon Saint-Laurent, Maria E
+                Doerfler, Nick Elder, Eric Kowalik, Joshua McManaway, and Ashoor Yousif at "Mapping
+                Ancient Lives &amp; Social Networks: A Digital Workshop," held at Marquette
+                University, 23-24 May 2017.</change>
         </revisionDesc>
     </teiHeader>
     <text>
         <body>
-         
-        <div type="factoid" subtype="nameVariant" uri="http://syriaca.org/spear/844-1" resp="#ayousif #ekowalik">
-            <listPerson>
-                <person>
-                    <persName ref="http://syriaca.org/person/2024">
-                        Priscus
-                    </persName>
-                </person>
-            </listPerson>
-            <bibl type="primary">
-                <ptr target="http://syriaca.org/work/844"/>
-                <citedRange unit="pp">525</citedRange>
-            </bibl>
-            <bibl type="primary">
-                <ptr target="http://syriaca.org/bibl/2033"/>
-                <citedRange unit="pp">179</citedRange>
-            </bibl>
-        </div>
-        
-            <div type="factoid" subtype="nameVariant" uri="http://syriaca.org/spear/844-2" resp="#ayousif #ekowalik">
-            <listPerson>
-                <person>
-                    <persName ref="http://syriaca.org/person/3539"> <!-- This cannot be the correct URI. Also, check to see if this is John of Ephesus -->
-                        The Abbot who suppoted Priscus
-                    </persName>
-                </person>
-            </listPerson>
-            <bibl type="primary">
-                <ptr target="http://syriaca.org/work/844"/>
-                <citedRange unit="pp">526</citedRange>
-            </bibl>
-            <bibl type="primary">
-                <ptr target="http://syriaca.org/bibl/2033"/>
-                <citedRange unit="pp">180</citedRange>
-            </bibl>
-        </div>
-            
-        <div type="factoid" subtype="event" uri="http://syriaca.org/spear/844-3" resp="#ayousif #ekowalik">
-            <listEvent>
-                <event>
-                    <desc><!-- Use persName, placeName, orgName, and date elements as needed, with URIs whenever possible. -->
-                        <persName ref="http://syriaca.org/person/2024">Priscus</persName> was supportted finnacially by <persName ref="http://syriaca.org/person/3539">the Abbot</persName>, who sent him coins.
-                    </desc>
-                    <ptr target="http://syriaca.org/keyword/coins"/><!-- Use as many keywords as needed to describe content in the description. -->
-                </event>
-            </listEvent>
-            <bibl type="primary">
-                <ptr target="http://syriaca.org/work/844"/>
-                <citedRange unit="pp">526</citedRange>
-            </bibl>
-            <bibl type="primary">
-                <ptr target="http://syriaca.org/bibl/2033"/>
-                <citedRange unit="pp">180</citedRange>
-            </bibl>
-        </div>
-        
-            <div type="factoid" subtype="event" uri="http://syriaca.org/spear/844-4" resp="#ayousif #ekowalik">
+            <div type="factoid" subtype="nameVariant" xml:id="factoid-1" resp="#ayousif #ekowalik">
+                <idno type="URI">http://syriaca.org/spear/844-1</idno>
+                <listPerson>
+                    <person>
+                        <persName ref="http://syriaca.org/person/2024"> Priscus </persName>
+                    </person>
+                </listPerson>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/work/844"/>
+                    <citedRange unit="pp">525</citedRange>
+                </bibl>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/bibl/2033"/>
+                    <citedRange unit="pp">179</citedRange>
+                </bibl>
+            </div>
+            <div type="factoid" subtype="nameVariant" xml:id="factoid-2" resp="#ayousif #ekowalik">
+                <idno type="URI">http://syriaca.org/spear/844-2</idno>
+                <listPerson>
+                    <person>
+                        <persName ref="http://syriaca.org/person/3539"
+                            ><!-- This cannot be the correct URI. Also, check to see if this is John of Ephesus -->
+                            The Abbot who suppoted Priscus </persName>
+                    </person>
+                </listPerson>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/work/844"/>
+                    <citedRange unit="pp">526</citedRange>
+                </bibl>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/bibl/2033"/>
+                    <citedRange unit="pp">180</citedRange>
+                </bibl>
+            </div>
+            <div type="factoid" subtype="event" xml:id="factoid-3" resp="#ayousif #ekowalik">
+                <idno type="URI">http://syriaca.org/spear/844-3</idno>
                 <listEvent>
-                    <event>
-                        <desc><!-- Use persName, placeName, orgName, and date elements as needed, with URIs whenever possible. -->
-                            <persName ref="http://syriaca.org/person/2024">Priscus</persName> was supportted by <persName ref="http://syriaca.org/person/3539">the Abbot</persName>, who sent him a tunic and a cloack.
-                        </desc>
-                        <ptr target="http://syriaca.org/keyword/dress"/><!-- Use as many keywords as needed to describe content in the description. -->
+                    <event ana="http://syriaca.org/keyword/coins">
+                        <desc><!-- Use persName, placeName, orgName, and date elements as needed, with URIs whenever possible. --><persName
+                                ref="http://syriaca.org/person/2024">Priscus</persName> was
+                            supportted finnacially by <persName ref="http://syriaca.org/person/3539"
+                                >the Abbot</persName>, who sent him coins. </desc>
+                    </event>
+                </listEvent>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/work/844"/>
+                    <citedRange unit="pp">526</citedRange>
+                </bibl>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/bibl/2033"/>
+                    <citedRange unit="pp">180</citedRange>
+                </bibl>
+            </div>
+            <div type="factoid" subtype="event" xml:id="factoid-4" resp="#ayousif #ekowalik">
+                <idno type="URI">http://syriaca.org/spear/844-4</idno>
+                <listEvent>
+                    <event ana="http://syriaca.org/keyword/dress">
+                        <desc><!-- Use persName, placeName, orgName, and date elements as needed, with URIs whenever possible. --><persName
+                                ref="http://syriaca.org/person/2024">Priscus</persName> was
+                            supportted by <persName ref="http://syriaca.org/person/3539">the
+                                Abbot</persName>, who sent him a tunic and a cloack. </desc>
                     </event>
                 </listEvent>
                 <bibl type="primary">
@@ -190,27 +210,34 @@
                     <citedRange unit="pp">181</citedRange>
                 </bibl>
             </div>
-        
-        <div type="factoid" subtype="relation" uri="http://syriaca.org/spear/844-5" resp="#ayousif #ekowalik">
-            <listRelation>
-                <relation name="syriaca:MonasticHeadOver" active="http://syriaca.org/person/3539" passive="http://syriaca.org/person/2024"><desc><persName ref="http://syriaca.org/person/3539">Isaac of Mosul</persName> was a monastic authority over <persName ref="http://syriaca.org/person/2024">Priscus</persName>.</desc></relation>
-            </listRelation>
-            <bibl type="primary">
-                <ptr target="http://syriaca.org/work/844"/>
-                <citedRange unit="pp">526</citedRange>
-            </bibl>
-            <bibl type="primary">
-                <ptr target="http://syriaca.org/bibl/2033"/>
-                <citedRange unit="pp">180</citedRange>
-            </bibl>
-        </div>
-            
-           <div type="factoid" subtype="nameVariant" uri="http://syriaca.org/spear/844-6" resp="#ayousif #ekowalik">
+            <div type="factoid" subtype="relation" xml:id="factoid-5" resp="#ayousif #ekowalik">
+                <idno type="URI">http://syriaca.org/spear/844-5</idno>
+                <listRelation>
+                    <relation name="syriaca:MonasticHeadOver"
+                        active="http://syriaca.org/person/3539"
+                        passive="http://syriaca.org/person/2024">
+                        <desc><persName ref="http://syriaca.org/person/3539">Isaac of
+                                Mosul</persName> was a monastic authority over <persName
+                                ref="http://syriaca.org/person/2024">Priscus</persName>.</desc>
+                    </relation>
+                </listRelation>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/work/844"/>
+                    <citedRange unit="pp">526</citedRange>
+                </bibl>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/bibl/2033"/>
+                    <citedRange unit="pp">180</citedRange>
+                </bibl>
+            </div>
+            <div type="factoid" subtype="nameVariant" xml:id="factoid-6" resp="#ayousif #ekowalik">
+                <idno type="URI">http://syriaca.org/spear/844-6</idno>
                 <listPerson>
                     <person>
-                        <persName ref="http://syriaca.org/person/3542">
-                            A friend of <persName ref="http://syriaca.org/person/74">John of Ephesus</persName> and <persName ref="http://syriaca.org/person/2024">Priscus</persName>
-                        </persName>
+                        <persName ref="http://syriaca.org/person/3542"> A friend of <persName
+                                ref="http://syriaca.org/person/74">John of Ephesus</persName> and
+                                <persName ref="http://syriaca.org/person/2024"
+                            >Priscus</persName></persName>
                     </person>
                 </listPerson>
                 <bibl type="primary">
@@ -222,15 +249,19 @@
                     <citedRange unit="pp">181</citedRange>
                 </bibl>
             </div>
-            
-            <div type="factoid" subtype="birthPlace" uri="http://syriaca.org/spear/844-7" resp="#ayousif #ekowalik">
+            <div type="factoid" subtype="birthPlace" xml:id="factoid-7" resp="#ayousif #ekowalik">
+                <idno type="URI">http://syriaca.org/spear/844-7</idno>
                 <listPerson>
                     <person>
                         <persName ref="http://syriaca.org/person/3542"/>
                         <birth>
                             <placeName ref="http://syriaca.org/place/2763"/>
-                            <note type="desc">
-                                <persName ref="http://syriaca.org/person/3542">A firend of <persName ref="http://syriaca.org/person/74">John of Ephesus</persName> and <persName ref="http://syriaca.org/person/2024">Priscus</persName></persName> was born in <placeName ref="http://syriaca.org/place/2763">Cappadoica</placeName>.
+                            <note type="desc"><persName ref="http://syriaca.org/person/3542">A
+                                    firend of <persName ref="http://syriaca.org/person/74">John of
+                                        Ephesus</persName> and <persName
+                                        ref="http://syriaca.org/person/2024"
+                                    >Priscus</persName></persName> was born in <placeName
+                                    ref="http://syriaca.org/place/2763">Cappadoica</placeName>.
                             </note>
                         </birth>
                     </person>
@@ -244,14 +275,13 @@
                     <citedRange unit="pp">181</citedRange>
                 </bibl>
             </div>
-        
-            <div type="factoid" subtype="event" uri="http://syriaca.org/spear/844-8" resp="#ayousif #ekowalik">
+            <div type="factoid" subtype="event" xml:id="factoid-8" resp="#ayousif #ekowalik">
+                <idno type="URI">http://syriaca.org/spear/844-8</idno>
                 <listEvent>
-                    <event>
-                        <desc><!-- Use persName, placeName, orgName, and date elements as needed, with URIs whenever possible. -->
-                            <persName ref="http://syriaca.org/person/2024">Priscus</persName> experinced a spritual specacle.
-                        </desc>
-                        <ptr target="http://syriaca.org/keyword/miracles"/><!-- Use as many keywords as needed to describe content in the description. -->
+                    <event ana="http://syriaca.org/keyword/miracles">
+                        <desc><!-- Use persName, placeName, orgName, and date elements as needed, with URIs whenever possible. --><persName
+                                ref="http://syriaca.org/person/2024">Priscus</persName> experinced a
+                            spritual specacle. </desc>
                     </event>
                 </listEvent>
                 <bibl type="primary">
@@ -263,21 +293,23 @@
                     <citedRange unit="pp">180</citedRange>
                 </bibl>
             </div>
-        
         </body>
         <back>
-            <listBibl>
+            <listBibl default="false">
                 <head>Works Cited</head>
                 <bibl type="primary" xml:id="bibl844-1">
                     <title>Lives of the Eastern Saints III</title>
                     <title>Priscus</title>
-                    <author><persName ref="http://syriaca.org/person/74">John of Ephesus</persName></author>
-                    <editor><persName ref="http://syriaca.org/person/403">E. W. Brooks</persName></editor>
+                    <author><persName ref="http://syriaca.org/person/74">John of
+                        Ephesus</persName></author>
+                    <editor><persName ref="http://syriaca.org/person/403">E. W.
+                        Brooks</persName></editor>
                     <ptr target="http://syriaca.org/bibl/2033"/>
                 </bibl>
                 <bibl type="primary" xml:id="bibl844-2">
                     <title>Priscus</title>
-                    <author><persName ref="http://syriaca.org/person/74">John of Ephesus</persName></author>
+                    <author><persName ref="http://syriaca.org/person/74">John of
+                        Ephesus</persName></author>
                     <ptr target="http://syriaca.org/work/844"/>
                 </bibl>
             </listBibl>

@@ -1,5 +1,5 @@
-<?xml-model href="https://raw.githubusercontent.com/srophe/srophe-eXist-app/master/documentation/SPEARschema/out/SPEAR.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://raw.githubusercontent.com/srophe/srophe-eXist-app/master/documentation/SPEARschema/out/SPEAR.rng" type="application/xml"
-	schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
+<?xml-model href="https://raw.githubusercontent.com/srophe/srophe-eXist-app/master/documentation/SPEARschema/out/SPEAR.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader>
         <fileDesc>
             <titleStmt>
@@ -12,49 +12,57 @@
                 <principal>Daniel L. Schwartz</principal>
                 <funder>Texas A&amp;M University</funder>
                 <principal>Daniel L. Schwartz</principal>
-                <editor role="general" ref="http://syriaca.org/documentation/editors.xml#dschwartz">Daniel L. Schwartz</editor>
-                <editor role="creator" ref="http://syriaca.org/documentation/editors.xml#dschwartz">Daniel L. Schwartz</editor>
-                <editor role="creator" ref="http://syriaca.org/documentation/editors.xml#ngibson">Nathan Gibson</editor>
-                <editor role="creator" ref="http://syriaca.org/documentation/editors.xml#rbarczok">Ralph Barczok</editor>
-                <editor role="creator" ref="http://syriaca.org/documentation/editors.xml#jburns">Joshua Ezra Burns</editor>
-                <editor role="creator" ref="http://syriaca.org/documentation/editors.xml#kgibson">Kelli Bryant Gibson</editor>
-                <editor role="creator" ref="http://syriaca.org/documentation/editors.xml#jmcmanaway">Joshua R. McManaway</editor>
-                <editor role="creator" ref="http://syriaca.org/documentation/editors.xml#avawter">Alex Vawter</editor>
+                <editor role="general" ref="http://syriaca.org/documentation/editors.xml#dschwartz"
+                    >Daniel L. Schwartz</editor>
+                <editor role="creator" ref="http://syriaca.org/documentation/editors.xml#dschwartz"
+                    >Daniel L. Schwartz</editor>
+                <editor role="creator" ref="http://syriaca.org/documentation/editors.xml#ngibson"
+                    >Nathan Gibson</editor>
+                <editor role="creator" ref="http://syriaca.org/documentation/editors.xml#rbarczok"
+                    >Ralph Barczok</editor>
+                <editor role="creator" ref="http://syriaca.org/documentation/editors.xml#jburns"
+                    >Joshua Ezra Burns</editor>
+                <editor role="creator" ref="http://syriaca.org/documentation/editors.xml#kgibson"
+                    >Kelli Bryant Gibson</editor>
+                <editor role="creator" ref="http://syriaca.org/documentation/editors.xml#jmcmanaway"
+                    >Joshua R. McManaway</editor>
+                <editor role="creator" ref="http://syriaca.org/documentation/editors.xml#avawter"
+                    >Alex Vawter</editor>
                 <respStmt>
                     <resp>Data architecture, data entry, editing, proofreading, and revision
                         by</resp>
-                    <name ref="http://syriaca.org/documentation/editors.xml#dschwartz">Daniel L.
-                        Schwartz</name>
+                    <name ref="http://syriaca.org/documentation/editors.xml#dschwartz" full="yes"
+                        instant="false">Daniel L. Schwartz</name>
                 </respStmt>
                 <respStmt>
                     <resp>Data architecture and technical assistance by</resp>
-                    <name ref="http://syriaca.org/documentation/editors.xml#dmichelson">David A.
-                        Michelson</name>
+                    <name ref="http://syriaca.org/documentation/editors.xml#dmichelson" full="yes"
+                        instant="false">David A. Michelson</name>
                 </respStmt>
                 <respStmt>
                     <resp>Data entry and encoding by</resp>
-                    <name ref="http://syriaca.org/documentation/editors.xml#ngibson">Nathan
-                        Gibson</name>
+                    <name ref="http://syriaca.org/documentation/editors.xml#ngibson" full="yes"
+                        instant="false">Nathan Gibson</name>
                 </respStmt>
                 <respStmt>
                     <resp>Data entry and encoding by</resp>
-                    <name ref="http://syriaca.org/documentation/editors.xml#rbarczok">Ralph
-                        Barczok</name>
+                    <name ref="http://syriaca.org/documentation/editors.xml#rbarczok" full="yes"
+                        instant="false">Ralph Barczok</name>
                 </respStmt>
                 <respStmt>
                     <resp>Data entry and encoding by</resp>
-                    <name ref="http://syriaca.org/documentation/editors.xml#jburns">Joshua Ezra
-                        Burns</name>
+                    <name ref="http://syriaca.org/documentation/editors.xml#jburns" full="yes"
+                        instant="false">Joshua Ezra Burns</name>
                 </respStmt>
                 <respStmt>
                     <resp>Data entry and encoding by</resp>
-                    <name ref="http://syriaca.org/documentation/editors.xml#kgibson">Kelli Bryant
-                        Gibson</name>
+                    <name ref="http://syriaca.org/documentation/editors.xml#kgibson" full="yes"
+                        instant="false">Kelli Bryant Gibson</name>
                 </respStmt>
                 <respStmt>
                     <resp>Data entry and encoding by</resp>
-                    <name ref="http://syriaca.org/documentation/editors.xml#avawter">Alex
-                        Vawter</name>
+                    <name ref="http://syriaca.org/documentation/editors.xml#avawter" full="yes"
+                        instant="false">Alex Vawter</name>
                 </respStmt>
             </titleStmt>
             <editionStmt>
@@ -63,44 +71,44 @@
             <publicationStmt>
                 <authority>Syriaca.org: The Syriac Reference Portal</authority>
                 <idno type="URI">http://syriaca.org/spear/837/tei</idno>
-
-                <availability>
+                <availability default="false">
                     <licence target="http://creativecommons.org/licenses/by/3.0/">
-                        <p>Distributed under a Creative Commons Attribution 3.0 Unported
+                        <p part="N">Distributed under a Creative Commons Attribution 3.0 Unported
                             License.</p>
                     </licence>
                 </availability>
                 <date>2020-01-03-05:00</date>
             </publicationStmt>
-            <sourceDesc>
-                <listBibl>
+            <sourceDesc default="false">
+                <listBibl default="false">
                     <head>Sources for the Data in this Born Digital Prosopography</head>
                     <bibl type="primary">
                         <title>Lives of the Eastern Saints II</title>
                         <title>Paul of Antioch</title>
                         <author><persName ref="http://syriaca.org/person/74">John of
-                            Ephesus</persName></author>
+                                Ephesus</persName></author>
                         <editor><persName ref="http://syriaca.org/person/403">E. W.
-                            Brooks</persName></editor>
+                                Brooks</persName></editor>
                         <ptr target="http://syriaca.org/bibl/2032"/>
                     </bibl>
                     <bibl type="primary">
                         <title>Two Antiochenes</title>
                         <author><persName ref="http://syriaca.org/person/74">John of
-                            Ephesus</persName></author>
+                                Ephesus</persName></author>
                         <ptr target="http://syriaca.org/work/837"/>
                     </bibl>
                 </listBibl>
                 <listRelation>
-                    <relation type="part" active="http://syriaca.org/work/837" ref="dcterms:isPartOf" passive="http://syriaca.org/work/9501"/>
+                    <relation type="part" active="http://syriaca.org/work/837"
+                        ref="dcterms:isPartOf" passive="http://syriaca.org/work/9501"/>
                 </listRelation>
             </sourceDesc>
         </fileDesc>
         <encodingDesc>
-            <editorialDecl>
-                <p>The prosopographical data in this document was encoded from E. W. Brooks' edition
-                    and English translation of John of Ephesus’s Lives of the Eastern Saints,
-                    Patrologia Orientalis, volume 18, 1924. </p>
+            <editorialDecl default="false">
+                <p part="N">The prosopographical data in this document was encoded from E. W.
+                    Brooks' edition and English translation of John of Ephesus’s Lives of the
+                    Eastern Saints, Patrologia Orientalis, volume 18, 1924. </p>
             </editorialDecl>
             <classDecl>
                 <taxonomy>
@@ -111,22 +119,28 @@
                 </taxonomy>
             </classDecl>
         </encodingDesc>
-        <profileDesc> </profileDesc>
-        <revisionDesc>
-            <change who="http://syriaca.org/documentation/editors.xml#srophe-util" when="2020-01-03-05:00">CHANGED: Add a human readable version or the tei:relation element in a tei:desc.</change><change who="http://syriaca.org/documentation/editors.xml#ngibson http://syriaca.org/documentation/editors.xml#rbarczok http://syriaca.org/documentation/editors.xml#jburns http://syriaca.org/documentation/editors.xml#kgibson http://syriaca.org/documentation/editors.xml#avawter">Initial data collected by Nathan Gibson, Ralph Barczok, Joshua Ezra Burns, Kelli
-                Bryant Gibson, Joshua R. McManaway, and Alex Vawter at "Mapping Ancient Lives &amp;
-                Social Networks: A Digital Workshop," held at Marquette University, 23-24 May
-                2017.</change>
+        <profileDesc/>
+        <revisionDesc status="draft">
+            <change who="http://syriaca.org/documentation/editors.xml#srophe-util"
+                when="2020-01-03-05:00" status="draft">CHANGED: Add a human readable version or the
+                tei:relation element in a tei:desc.</change>
+            <change
+                who="http://syriaca.org/documentation/editors.xml#ngibson http://syriaca.org/documentation/editors.xml#rbarczok http://syriaca.org/documentation/editors.xml#jburns http://syriaca.org/documentation/editors.xml#kgibson http://syriaca.org/documentation/editors.xml#avawter"
+                status="draft">Initial data collected by Nathan Gibson, Ralph Barczok, Joshua Ezra
+                Burns, Kelli Bryant Gibson, Joshua R. McManaway, and Alex Vawter at "Mapping Ancient
+                Lives &amp; Social Networks: A Digital Workshop," held at Marquette University,
+                23-24 May 2017.</change>
         </revisionDesc>
     </teiHeader>
     <text>
         <body>
-            <div type="factoid" subtype="nameVariant" uri="http://syriaca.org/spear/837-1" resp="#ngibson">
+            <div type="factoid" subtype="nameVariant" xml:id="factoid-1" resp="#ngibson">
+                <idno type="URI">http://syriaca.org/spear/837-1</idno>
                 <listPerson>
                     <person>
                         <persName ref="http://syriaca.org/person/1977"> the blessed Paul, who was
-                            from the city of <placeName ref="http://syriaca.org/place/10">Antioch</placeName>
-                        </persName>
+                            from the city of <placeName ref="http://syriaca.org/place/10"
+                                >Antioch</placeName></persName>
                     </person>
                 </listPerson>
                 <bibl type="primary">
@@ -138,16 +152,12 @@
                     <citedRange unit="pp">671</citedRange>
                 </bibl>
             </div>
-            <div type="factoid" subtype="nameVariant" uri="http://syriaca.org/spear/837-2" resp="#ngibson">
+            <div type="factoid" subtype="nameVariant" xml:id="factoid-2" resp="#ngibson">
+                <idno type="URI">http://syriaca.org/spear/837-2</idno>
                 <listPerson>
                     <person>
                         <persName ref="http://syriaca.org/person/1977"/>
-                        <event ref="http://syriaca.org/keyword/vineyard http://syriaca.org/keyword/vinedresser http://syriaca.org/keyword/metaphor">
-                            <note type="desc">
-                                <persName ref="http://syriaca.org/person/1977">Paul, patriarch of
-                                    Antioch</persName> worked in the Lord's vineyard from morning
-                                till evening without growing weary.</note>
-                        </event>
+                        <event ana=""/>
                     </person>
                 </listPerson>
                 <bibl type="primary">
@@ -159,15 +169,16 @@
                     <citedRange unit="pp">671-672</citedRange>
                 </bibl>
             </div>
-            <div type="factoid" subtype="birthPlace" uri="http://syriaca.org/spear/837-3" resp="#ngibson">
+            <div type="factoid" subtype="birthPlace" xml:id="factoid-3" resp="#ngibson">
+                <idno type="URI">http://syriaca.org/spear/837-3</idno>
                 <listPerson>
                     <person>
                         <persName ref="http://syriaca.org/person/1977"/>
                         <birth>
                             <placeName ref="http://syriaca.org/place/10"/>
-                            <note type="desc">
-                                <persName ref="http://syriaca.org/person/1977">Paul, patriarch of
-                                    Antioch</persName> was by birth from <placeName ref="http://syriaca.org/place/10">Antioch</placeName>. </note>
+                            <note type="desc"><persName ref="http://syriaca.org/person/1977">Paul,
+                                    patriarch of Antioch</persName> was by birth from <placeName
+                                    ref="http://syriaca.org/place/10">Antioch</placeName>. </note>
                         </birth>
                     </person>
                 </listPerson>
@@ -180,15 +191,15 @@
                     <citedRange unit="pp">672</citedRange>
                 </bibl>
             </div>
-            <div type="factoid" subtype="mentalState" uri="http://syriaca.org/spear/837-4" resp="#ngibson">
+            <div type="factoid" subtype="mentalState" xml:id="factoid-4" resp="#ngibson">
+                <idno type="URI">http://syriaca.org/spear/837-4</idno>
                 <listPerson>
                     <person>
                         <persName ref="http://syriaca.org/person/1977"/>
-                        <state type="mental" ref="http://syriaca.org/keyword/zeal">
-                            <note type="desc">
-                                <persName ref="http://syriaca.org/person/1977">Paul, patriarch of
-                                    Antioch</persName> was earnest and fervent in religious zeal,
-                                becoming stern and harsh. </note>
+                        <state type="mental" ana="http://syriaca.org/keyword/zeal">
+                            <note type="desc"><persName ref="http://syriaca.org/person/1977">Paul,
+                                    patriarch of Antioch</persName> was earnest and fervent in
+                                religious zeal, becoming stern and harsh. </note>
                         </state>
                     </person>
                 </listPerson>
@@ -201,14 +212,13 @@
                     <citedRange unit="pp">672</citedRange>
                 </bibl>
             </div>
-            <div type="factoid" subtype="event" uri="http://syriaca.org/spear/837-5" resp="#ngibson">
+            <div type="factoid" subtype="event" xml:id="factoid-5" resp="#ngibson">
+                <idno type="URI">http://syriaca.org/spear/837-5</idno>
                 <listEvent>
-                    <event>
-                        <desc>
-                            <persName ref="http://syriaca.org/person/1977">Paul, patriarch of
+                    <event ana="http://syriaca.org/keyword/rebuke">
+                        <desc><persName ref="http://syriaca.org/person/1977">Paul, patriarch of
                                 Antioch</persName> rebuked those who approached religious work
                             sluggishly. </desc>
-                        <ptr target="http://syriaca.org/keyword/rebuke"/>
                     </event>
                 </listEvent>
                 <bibl type="primary">
@@ -220,17 +230,17 @@
                     <citedRange unit="pp">672</citedRange>
                 </bibl>
             </div>
-            <div type="factoid" subtype="event" uri="http://syriaca.org/spear/837-6" resp="#ngibson">
+            <div type="factoid" subtype="event" xml:id="factoid-6" resp="#ngibson">
+                <idno type="URI">http://syriaca.org/spear/837-6</idno>
                 <listEvent>
-                    <event>
-                        <desc>
-                            <persName ref="http://syriaca.org/person/1977">Paul, patriarch of
-                                Antioch</persName> used to take <persName ref="http://syriaca.org/person/3649">poor, old, and sick
+                    <event
+                        ana="http://syriaca.org/keyword/poor http://syriaca.org/keyword/illness http://syriaca.org/keyword/old-age http://syriaca.org/keyword/washing http://syriaca.org/keyword/alms http://syriaca.org/keyword/dress http://syriaca.org/keyword/care">
+                        <desc><persName ref="http://syriaca.org/person/1977">Paul, patriarch of
+                                Antioch</persName> used to take <persName
+                                ref="http://syriaca.org/person/3649">poor, old, and sick
                                 people</persName> at night and bathe and anoint them, mend and
                             change the clothes of the needy, provide them drink and small coins, and
                             them take them back to their place.</desc>
-                        <ptr target="http://syriaca.org/keyword/poor http://syriaca.org/keyword/illness http://syriaca.org/keyword/old-age http://syriaca.org/keyword/washing http://syriaca.org/keyword/alms http://syriaca.org/keyword/dress http://syriaca.org/keyword/care"/>
-                        <!-- New keywords: washing, care. -->
                     </event>
                 </listEvent>
                 <bibl type="primary">
@@ -242,16 +252,17 @@
                     <citedRange unit="pp">672</citedRange>
                 </bibl>
             </div>
-            <div type="factoid" subtype="event" uri="http://syriaca.org/spear/837-7" resp="#ngibson">
+            <div type="factoid" subtype="event" xml:id="factoid-7" resp="#ngibson">
+                <idno type="URI">http://syriaca.org/spear/837-7</idno>
                 <listEvent>
-                    <event>
-                        <desc>
-                            <persName ref="http://syriaca.org/person/1977">Paul, patriarch of
-                                Antioch</persName> taught <persName ref="http://syriaca.org/person/3652">Anonymi 3652</persName> to care
+                    <event
+                        ana="http://syriaca.org/keyword/poor http://syriaca.org/keyword/old-age http://syriaca.org/keyword/illness http://syriaca.org/keyword/alms http://syriaca.org/keyword/care">
+                        <desc><persName ref="http://syriaca.org/person/1977">Paul, patriarch of
+                                Antioch</persName> taught <persName
+                                ref="http://syriaca.org/person/3652">Anonymi 3652</persName> to care
                             for the poor, aged, and sick by carrying things with them from their
                             houses or work produce. Many of these became enthusiastic about this
                             labor.</desc>
-                        <ptr target="http://syriaca.org/keyword/poor http://syriaca.org/keyword/old-age http://syriaca.org/keyword/illness http://syriaca.org/keyword/alms http://syriaca.org/keyword/care"/>
                     </event>
                 </listEvent>
                 <bibl type="primary">
@@ -263,14 +274,16 @@
                     <citedRange unit="pp">672-673</citedRange>
                 </bibl>
             </div>
-            <div type="factoid" subtype="event" uri="http://syriaca.org/spear/837-8" resp="#ngibson">
+            <div type="factoid" subtype="event" xml:id="factoid-8" resp="#ngibson">
+                <idno type="URI">http://syriaca.org/spear/837-8</idno>
                 <listEvent>
-                    <event>
-                        <desc> Many of <persName ref="http://syriaca.org/person/3653">the great and eminent men of <placeName ref="http://syriaca.org/place/10">Antioch</placeName></persName> disguised
-                            themselves in poor apparel, carried the chairs of the sick and poor, and
-                            provided for them according to their ability. </desc>
-                        <ptr target="http://syriaca.org/keyword/dress http://syriaca.org/keyword/disguise http://syriaca.org/keyword/poor http://syriaca.org/keyword/illness http://syriaca.org/keyword/charity http://syriaca.org/keyword/care"/>
-                        
+                    <event
+                        ana="http://syriaca.org/keyword/dress http://syriaca.org/keyword/disguise http://syriaca.org/keyword/poor http://syriaca.org/keyword/illness http://syriaca.org/keyword/charity http://syriaca.org/keyword/care">
+                        <desc> Many of <persName ref="http://syriaca.org/person/3653">the great and
+                                eminent men of <placeName ref="http://syriaca.org/place/10"
+                                    >Antioch</placeName></persName> disguised themselves in poor
+                            apparel, carried the chairs of the sick and poor, and provided for them
+                            according to their ability. </desc>
                     </event>
                 </listEvent>
                 <bibl type="primary">
@@ -282,18 +295,18 @@
                     <citedRange unit="pp">673</citedRange>
                 </bibl>
             </div>
-            <div type="factoid" subtype="event" uri="http://syriaca.org/spear/837-9" resp="#ngibson">
+            <div type="factoid" subtype="event" xml:id="factoid-9" resp="#ngibson">
+                <idno type="URI">http://syriaca.org/spear/837-9</idno>
                 <listEvent>
-                    <event>
-                        <desc>
-                            <persName ref="http://syriaca.org/person/1977">Paul, patriarch of
-                                Antioch</persName> organized the ministry to the poor in <placeName ref="http://syriaca.org/place/10">Antioch</placeName> and then went
+                    <event
+                        ana="http://syriaca.org/keyword/poor http://syriaca.org/keyword/alms http://syriaca.org/keyword/care http://syriaca.org/keyword/salvation http://syriaca.org/keyword/christian http://syriaca.org/keyword/cities">
+                        <desc><persName ref="http://syriaca.org/person/1977">Paul, patriarch of
+                                Antioch</persName> organized the ministry to the poor in <placeName
+                                ref="http://syriaca.org/place/10">Antioch</placeName> and then went
                             to other great cities, both eastern and western, encouraging,
                             organizing, and instituting this kind of ministry through Christian
                             people who concerned themselves about their lives' salvation, and
                             earnestly endeavoured to gain the inheritance of eternal life. </desc>
-                        <ptr target="http://syriaca.org/keyword/poor http://syriaca.org/keyword/alms http://syriaca.org/keyword/care http://syriaca.org/keyword/salvation http://syriaca.org/keyword/christian http://syriaca.org/keyword/cities"/>
-                        <!-- new keywords: salvation, christian -->
                     </event>
                 </listEvent>
                 <bibl type="primary">
@@ -305,15 +318,15 @@
                     <citedRange unit="pp">673-674</citedRange>
                 </bibl>
             </div>
-            <div type="factoid" subtype="event" uri="http://syriaca.org/spear/837-10" resp="#ngibson">
+            <div type="factoid" subtype="event" xml:id="factoid-10" resp="#ngibson">
+                <idno type="URI">http://syriaca.org/spear/837-10</idno>
                 <listEvent>
-                    <event>
-                        <desc>
-                            <persName ref="http://syriaca.org/person/1977">Paul, patriarch of
+                    <event
+                        ana="http://syriaca.org/keyword/poor http://syriaca.org/keyword/alms http://syriaca.org/keyword/care http://syriaca.org/keyword/zeal http://syriaca.org/keyword/cities">
+                        <desc><persName ref="http://syriaca.org/person/1977">Paul, patriarch of
                                 Antioch</persName> roused the citizens of various cities to the work
                             of caring for the poor, and this work, was instituted in every city
                             through his zealous enthusiasm.</desc>
-                        <ptr target="http://syriaca.org/keyword/poor http://syriaca.org/keyword/alms http://syriaca.org/keyword/care http://syriaca.org/keyword/zeal http://syriaca.org/keyword/cities"/>
                     </event>
                 </listEvent>
                 <bibl type="primary">
@@ -325,13 +338,15 @@
                     <citedRange unit="pp">674</citedRange>
                 </bibl>
             </div>
-            <div type="factoid" subtype="event" uri="http://syriaca.org/spear/837-11" resp="#ngibson">
+            <div type="factoid" subtype="event" xml:id="factoid-11" resp="#ngibson">
+                <idno type="URI">http://syriaca.org/spear/837-11</idno>
                 <listEvent>
-                    <event>
+                    <event
+                        ana="http://syriaca.org/keyword/poor http://syriaca.org/keyword/alms http://syriaca.org/keyword/care">
                         <desc><persName ref="http://syriaca.org/person/1977">Paul, patriarch of
-                                Antioch</persName> extended his ministry to the poor to <placeName ref="http://syriaca.org/place/586">Constantinople</placeName> and
+                                Antioch</persName> extended his ministry to the poor to <placeName
+                                ref="http://syriaca.org/place/586">Constantinople</placeName> and
                             gained distinction for it there. </desc>
-                        <ptr target="http://syriaca.org/keyword/poor http://syriaca.org/keyword/alms http://syriaca.org/keyword/care"/>
                     </event>
                 </listEvent>
                 <bibl type="primary">
@@ -343,19 +358,23 @@
                     <citedRange unit="pp">674</citedRange>
                 </bibl>
             </div>
-            <div type="factoid" subtype="event" uri="http://syriaca.org/spear/837-12" resp="#ngibson">
+            <div type="factoid" subtype="event" xml:id="factoid-12" resp="#ngibson">
+                <idno type="URI">http://syriaca.org/spear/837-12</idno>
                 <listEvent>
-                    <event>
+                    <event
+                        ana="http://syriaca.org/keyword/poor http://syriaca.org/keyword/alms http://syriaca.org/keyword/care http://syriaca.org/keyword/cities http://syriaca.org/keyword/clothing http://syriaca.org/keyword/washing">
                         <desc><persName ref="http://syriaca.org/person/1977">Paul, patriarch of
                                 Antioch</persName> extended his ministry to the poor to the banks on
-                            all sides of <placeName ref="http://syriaca.org/place/586">Constantinople</placeName> and in the nearby cities of <placeName ref="http://syriaca.org/place/622">Chalcedon</placeName>, <placeName ref="http://syriaca.org/place/502">Nicomedia</placeName>, <placeName ref="http://syriaca.org/place/439">Cyzicus</placeName>, <placeName ref="http://syriaca.org/place/2835">Prusias</placeName>, and
+                            all sides of <placeName ref="http://syriaca.org/place/586"
+                                >Constantinople</placeName> and in the nearby cities of <placeName
+                                ref="http://syriaca.org/place/622">Chalcedon</placeName>, <placeName
+                                ref="http://syriaca.org/place/502">Nicomedia</placeName>, <placeName
+                                ref="http://syriaca.org/place/439">Cyzicus</placeName>, <placeName
+                                ref="http://syriaca.org/place/2835">Prusias</placeName>, and
                                 <placeName ref="http://syriaca.org/place/2790">Heraclea</placeName>,
                             as far as the <placeName ref="http://syriaca.org/place/503">sea of
                                 Pontus</placeName>. He bought and distributed clothing and bathed
                             the poor and strangers.</desc>
-                        <ptr target="http://syriaca.org/keyword/poor http://syriaca.org/keyword/alms http://syriaca.org/keyword/care http://syriaca.org/keyword/cities http://syriaca.org/keyword/clothing http://syriaca.org/keyword/washing"/>
-                        <!-- new keyword: clothing (or could it be the existing "dress"?) Here clothing 
-                        seems to be a commodity. -->
                     </event>
                 </listEvent>
                 <bibl type="primary">
@@ -367,15 +386,14 @@
                     <citedRange unit="pp">675</citedRange>
                 </bibl>
             </div>
-            <div type="factoid" subtype="event" uri="http://syriaca.org/spear/837-13" resp="#ngibson">
+            <div type="factoid" subtype="event" xml:id="factoid-13" resp="#ngibson">
+                <idno type="URI">http://syriaca.org/spear/837-13</idno>
                 <listEvent>
-                    <event>
-                        <desc>
-                            <persName ref="http://syriaca.org/person/1977">Paul, patriarch of
+                    <event ana="http://syriaca.org/keyword/distinction">
+                        <desc><persName ref="http://syriaca.org/person/1977">Paul, patriarch of
                                 Antioch</persName> continued to gain distinction and show prowess in
-                            the Lord's work in <placeName ref="http://syriaca.org/place/586">Constantinople</placeName>. </desc>
-                        <ptr target="http://syriaca.org/keyword/distinction"/>
-                        <!-- new keyword: need something like distinction or advancement or known for -->
+                            the Lord's work in <placeName ref="http://syriaca.org/place/586"
+                                >Constantinople</placeName>. </desc>
                     </event>
                 </listEvent>
                 <bibl type="primary">
@@ -387,14 +405,15 @@
                     <citedRange unit="pp">675</citedRange>
                 </bibl>
             </div>
-            <div type="factoid" subtype="event" uri="http://syriaca.org/spear/837-14" resp="#ngibson">
+            <div type="factoid" subtype="event" xml:id="factoid-14" resp="#ngibson">
+                <idno type="URI">http://syriaca.org/spear/837-14</idno>
                 <listEvent>
-                    <event>
+                    <event
+                        ana="http://syriaca.org/keyword/money http://syriaca.org/keyword/poor http://syriaca.org/keyword/alms http://syriaca.org/keyword/cities">
                         <desc><persName ref="http://syriaca.org/person/1977">Paul, patriarch of
-                                Antioch</persName> sent money to the cities around <placeName ref="http://syriaca.org/place/2845">Sycae</placeName> to support the
+                                Antioch</persName> sent money to the cities around <placeName
+                                ref="http://syriaca.org/place/2845">Sycae</placeName> to support the
                             ministry to the poor that he had started there. </desc>
-                        <ptr target="http://syriaca.org/keyword/money http://syriaca.org/keyword/poor http://syriaca.org/keyword/alms http://syriaca.org/keyword/cities"/>
-                        <!-- new keywords: money -->
                     </event>
                 </listEvent>
                 <bibl type="primary">
@@ -406,13 +425,15 @@
                     <citedRange unit="pp">675</citedRange>
                 </bibl>
             </div>
-            <div type="factoid" subtype="event" uri="http://syriaca.org/spear/837-15" resp="#ngibson">
+            <div type="factoid" subtype="event" xml:id="factoid-15" resp="#ngibson">
+                <idno type="URI">http://syriaca.org/spear/837-15</idno>
                 <listEvent>
-                    <event>
-                        <desc>Deaconries were established for the men and women who 
-                            emulated <persName ref="http://syriaca.org/person/1977">Paul, patriarch of
-                            Antioch</persName>'s zeal and earnestness by serving and giving.</desc>
-                        <ptr target="http://syriaca.org/keyword/money http://syriaca.org/keyword/alms http://syriaca.org/keyword/deacons http://syriaca.org/keyword/institutions"/>
+                    <event
+                        ana="http://syriaca.org/keyword/money http://syriaca.org/keyword/alms http://syriaca.org/keyword/deacons http://syriaca.org/keyword/institutions">
+                        <desc>Deaconries were established for the men and women who emulated
+                                <persName ref="http://syriaca.org/person/1977">Paul, patriarch of
+                                Antioch</persName>'s zeal and earnestness by serving and
+                            giving.</desc>
                     </event>
                 </listEvent>
                 <bibl type="primary">
@@ -424,13 +445,15 @@
                     <citedRange unit="pp">675</citedRange>
                 </bibl>
             </div>
-            <div type="factoid" subtype="event" uri="http://syriaca.org/spear/837-16" resp="#ngibson">
+            <div type="factoid" subtype="event" xml:id="factoid-16" resp="#ngibson">
+                <idno type="URI">http://syriaca.org/spear/837-16</idno>
                 <listEvent>
-                    <event>
-                        <desc>By the end of his ministry, <persName ref="http://syriaca.org/person/1977">Paul, patriarch of
-                                Antioch</persName>'s body was dried up from his labor, abstinence, and watching.</desc>
-                        <ptr target="http://syriaca.org/keyword/work http://syriaca.org/keyword/abstinence"/>
-                        <!-- new keywords: work, abstinence -->
+                    <event
+                        ana="http://syriaca.org/keyword/work http://syriaca.org/keyword/abstinence">
+                        <desc>By the end of his ministry, <persName
+                                ref="http://syriaca.org/person/1977">Paul, patriarch of
+                                Antioch</persName>'s body was dried up from his labor, abstinence,
+                            and watching.</desc>
                     </event>
                 </listEvent>
                 <bibl type="primary">
@@ -442,13 +465,15 @@
                     <citedRange unit="pp">676</citedRange>
                 </bibl>
             </div>
-            <div type="factoid" subtype="event" uri="http://syriaca.org/spear/837-17" resp="#ngibson">
+            <div type="factoid" subtype="event" xml:id="factoid-17" resp="#ngibson">
+                <idno type="URI">http://syriaca.org/spear/837-17</idno>
                 <listEvent>
-                    <event>
+                    <event ana="http://syriaca.org/keyword/prayer http://syriaca.org/keyword/cities">
                         <desc><persName ref="http://syriaca.org/person/1977">Paul, patriarch of
-                            Antioch</persName> accompanied his service with prayer in all cities 
-                            in the east and west, and especially in <placeName ref="http://syriaca.org/place/586">Constantinople</placeName>.</desc>
-                        <ptr target="http://syriaca.org/keyword/prayer http://syriaca.org/keyword/cities"/>
+                                Antioch</persName> accompanied his service with prayer in all cities
+                            in the east and west, and especially in <placeName
+                                ref="http://syriaca.org/place/586"
+                            >Constantinople</placeName>.</desc>
                     </event>
                 </listEvent>
                 <bibl type="primary">
@@ -460,14 +485,14 @@
                     <citedRange unit="pp">676</citedRange>
                 </bibl>
             </div>
-            <div type="factoid" subtype="socecStatus" uri="http://syriaca.org/spear/837-18" resp="#dschwartz">
+            <div type="factoid" subtype="socecStatus" xml:id="factoid-18" resp="#dschwartz">
+                <idno type="URI">http://syriaca.org/spear/837-18</idno>
                 <listPerson>
                     <person>
                         <persName ref="http://syriaca.org/person/3653"/>
-                        <socecStatus ref="http://syriaca.org/keyword/upper-class">
-                            <note type="desc">
-                                <persName ref="http://syriaca.org/person/3653">Anonymi 3653</persName> was elite.
-                            </note>
+                        <socecStatus ana="http://syriaca.org/keyword/upper-class">
+                            <note type="desc"><persName ref="http://syriaca.org/person/3653">Anonymi
+                                    3653</persName> was elite. </note>
                         </socecStatus>
                     </person>
                 </listPerson>
@@ -480,10 +505,9 @@
                     <citedRange unit="pp">673</citedRange>
                 </bibl>
             </div>
-            
         </body>
         <back>
-            <listBibl>
+            <listBibl default="false">
                 <head>Works Cited</head>
                 <bibl type="primary" xml:id="bibl837-1">
                     <title>Lives of the Eastern Saints II</title>

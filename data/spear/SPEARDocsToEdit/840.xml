@@ -5,15 +5,12 @@
             <titleStmt>
                 <title level="a">John of Ephesus, James, in the Lives of the Eastern Saints</title>
                 <title level="m">SPEAR: Syriac Persons, Events, and Relations</title>
+                <sponsor>Syriaca.org: The Syriac Reference Portal</sponsor>
                 <funder>The National Endowment for the Humanities</funder>
-                <principal>Daniel L. Schwartz</principal>
                 <funder>Texas A&amp;M University</funder>
-                <principal>Daniel L. Schwartz</principal>
-                <editor role="general" ref="http://syriaca.org/documentation/editors.xml#dschwartz"
-                    >Daniel L. Schwartz</editor>
-                <editor role="creator" ref="http://syriaca.org/documentation/editors.xml#dschwartz"
-                    >Daniel L. Schwartz</editor>
-                <editor role="creator"
+                <editor role="general" ref="http://syriaca.org/documentation/editors.xml#dschwartz">Daniel L. Schwartz</editor>
+                <editor role="creator" ref="http://syriaca.org/documentation/editors.xml#dschwartz">Daniel L. Schwartz</editor>
+               <editor role="creator"
                     ref="http://syriaca.org/documentation/editors.xml#jnsaint-laurent">Jeanne-Nicole
                     Mellon Saint-Laurent</editor>
                 <editor role="creator" ref="http://syriaca.org/documentation/editors.xml#mdoerfler"
@@ -74,16 +71,31 @@
             <publicationStmt>
                 <authority>Syriaca.org: The Syriac Reference Portal</authority>
                 <idno type="URI">http://syriaca.org/spear/840/tei</idno>
-                <availability default="false">
+                <availability>
                     <licence target="http://creativecommons.org/licenses/by/3.0/">
-                        <p part="N">Distributed under a Creative Commons Attribution 3.0 Unported
+                        <p>Distributed under a Creative Commons Attribution 3.0 Unported
                             License.</p>
                     </licence>
                 </availability>
                 <date>2020-01-03-05:00</date>
             </publicationStmt>
-            <sourceDesc default="false">
-                <listBibl default="false">
+            <seriesStmt>
+                <title level="s">SPEAR: Syriac Persons, Events, and Relations</title>
+                <editor role="general" ref="http://syriaca.org/documentation/editors.xml#dschwartz">Daniel L. Schwartz</editor>
+                <idno type="URI">http://syriaca.org/spear</idno>
+            </seriesStmt>
+            <seriesStmt>
+                <title level="m" xml:lang="en">The Lives of the Eastern Saints</title>
+                <title type="sub">A SPEAR Prosopography</title>
+                <editor role="general" ref="http://syriaca.org/documentation/editors.xml#dschwartz">Daniel L. Schwartz</editor>
+                <idno type="URI">http://syriaca.org/spear/lives-eastern-saints</idno>
+                <biblScope unit="volume">
+                    <title level="s">SPEAR: Syriac Persons, Events, and Relations</title>
+                    <idno type="URI">http://syriaca.org/spear</idno>
+                </biblScope>
+            </seriesStmt>
+            <sourceDesc>
+                <listBibl>
                     <head>Sources for the Data in this Born Digital Prosopography</head>
                     <bibl type="primary">
                         <title>Lives of the Eastern Saints II</title>
@@ -103,13 +115,13 @@
                 </listBibl>
                 <listRelation>
                     <relation type="part" active="http://syriaca.org/work/840"
-                        ref="dcterms:isPartOf" passive="http://syriaca.org/work/9501"/>
+                        name="dcterms:isPartOf" passive="http://syriaca.org/work/9501"/>
                 </listRelation>
             </sourceDesc>
         </fileDesc>
         <encodingDesc>
-            <editorialDecl default="false">
-                <p part="N">The prosopographical data in this document was encoded from E. W.
+            <editorialDecl>
+                <p>The prosopographical data in this document was encoded from E. W.
                     Brooks' edition and English translation of John of Ephesus’s Lives of the
                     Eastern Saints, Patrologia Orientalis, volume 17, 1923. </p>
             </editorialDecl>
@@ -137,7 +149,7 @@
     </teiHeader>
     <text>
         <body>
-            <div type="" subtype="" xml:id="factoid-1" resp="#ekowalik #tb">
+            <div type="factoid" subtype="nameVariant" xml:id="factoid-1" resp="#ekowalik #tb">
                 <idno type="URI">http://syriaca.org/spear/840-1</idno>
                 <listPerson>
                     <person>
@@ -153,7 +165,7 @@
                     <citedRange unit="pp">690</citedRange>
                 </bibl>
             </div>
-            <div type="" subtype="" xml:id="factoid-2" resp="#ekowalik #tb">
+            <div type="factoid" subtype="birthPlace" xml:id="factoid-2" resp="#ekowalik #tb">
                 <idno type="URI">http://syriaca.org/spear/840-2</idno>
                 <listPerson>
                     <person>
@@ -175,7 +187,7 @@
                     <citedRange unit="pp">690</citedRange>
                 </bibl>
             </div>
-            <div type="" subtype="" xml:id="factoid-3" resp="#ekowalik #tb">
+            <div type="factoid" subtype="gender" xml:id="factoid-3" resp="#ekowalik #tb">
                 <idno type="URI">http://syriaca.org/spear/840-3</idno>
                 <listPerson>
                     <person>
@@ -195,7 +207,7 @@
                     <citedRange unit="pp">690</citedRange>
                 </bibl>
             </div>
-            <div type="" subtype="" xml:id="factoid-4" resp="#ekowalik #tb">
+            <div type="factoid" subtype="occupation" xml:id="factoid-4" resp="#ekowalik #tb">
                 <idno type="URI">http://syriaca.org/spear/840-4</idno>
                 <listPerson>
                     <person>
@@ -215,7 +227,7 @@
                     <citedRange unit="pp">690</citedRange>
                 </bibl>
             </div>
-            <div type="" subtype="" xml:id="factoid-5" resp="#ekowalik #tb">
+            <div type="factoid" subtype="event" xml:id="factoid-5" resp="#ekowalik #tb">
                 <idno type="URI">http://syriaca.org/spear/840-5</idno>
                 <listPerson>
                     <person>
@@ -236,7 +248,7 @@
                     <citedRange unit="pp">690</citedRange>
                 </bibl>
             </div>
-            <div type="" subtype="" xml:id="factoid-6" resp="#ekowalik #tb">
+            <div type="factoid" subtype="relation" xml:id="factoid-6" resp="#ekowalik #tb">
                 <idno type="URI">http://syriaca.org/spear/840-6</idno>
                 <listRelation>
                     <relation name="syriaca:FellowClergy"
@@ -255,7 +267,7 @@
                     <citedRange unit="pp">691</citedRange>
                 </bibl>
             </div>
-            <div type="" subtype="" xml:id="factoid-7" resp="#ekowalik #tb">
+            <div type="div" subtype="event" xml:id="factoid-7" resp="#ekowalik #tb">
                 <idno type="URI">http://syriaca.org/spear/840-7</idno>
                 <listEvent>
                     <event ana="http://syriaca.org/keyword/travel">
@@ -274,7 +286,7 @@
                     <citedRange unit="pp">691</citedRange>
                 </bibl>
             </div>
-            <div type="" subtype="" xml:id="factoid-8" resp="#ekowalik #tb">
+            <div type="factoid" subtype="event" xml:id="factoid-8" resp="#ekowalik #tb">
                 <idno type="URI">http://syriaca.org/spear/840-8</idno>
                 <listEvent>
                     <event ana="http://syriaca.org/keyword/patronage">
@@ -419,7 +431,7 @@
             </div>
         </body>
         <back>
-            <listBibl default="false">
+            <listBibl>
                 <head>Works Cited</head>
                 <bibl type="primary" xml:id="bibl840-1">
                     <title>Lives of the Eastern Saints II</title>

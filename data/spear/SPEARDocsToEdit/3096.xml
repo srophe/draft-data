@@ -8,14 +8,11 @@
                         ref="http://syriaca.org/work/3096">To John and John, the
                     Presbyters</title></title>
                 <title level="m">SPEAR: Syriac Persons, Events, and Relations</title>
+                <sponsor>Syriaca.org: The Syriac Reference Portal</sponsor>
                 <funder>The National Endowment for the Humanities</funder>
-                <principal>Daniel L. Schwartz</principal>
                 <funder>Texas A&amp;M University</funder>
-                <principal>Daniel L. Schwartz</principal>
-                <editor role="general" ref="http://syriaca.org/editors.xml#dschwartz">Daniel L.
-                    Schwartz</editor>
-                <editor role="creator" ref="http://syriaca.org/editors.xml#dschwartz">Daniel L.
-                    Schwartz</editor>
+                <editor role="general" ref="http://syriaca.org/documentation/editors.xml#dschwartz">Daniel L. Schwartz</editor>
+                <editor role="creator" ref="http://syriaca.org/documentation/editors.xml#dschwartz">Daniel L. Schwartz</editor>
                 <respStmt>
                     <resp/>
                     <name ref="http://syriaca.org/editors.xml#dschwartz" full="yes" instant="false"
@@ -28,7 +25,7 @@
             <publicationStmt>
                 <authority>Syriaca.org: The Syriac Reference Portal</authority>
                 <idno type="URI">http://syriaca.org/spear/3096/tei</idno>
-                <availability default="false">
+                <availability>
                     <licence target="http://creativecommons.org/licenses/by/3.0/">
                         <p part="N">Distributed under a Creative Commons Attribution 3.0 Unported
                             License.</p>
@@ -36,8 +33,23 @@
                 </availability>
                 <date>2020-01-03-05:00</date>
             </publicationStmt>
-            <sourceDesc default="false">
-                <listBibl default="false">
+            <seriesStmt>
+                <title level="s">SPEAR: Syriac Persons, Events, and Relations</title>
+                <editor role="general" ref="http://syriaca.org/documentation/editors.xml#dschwartz">Daniel L. Schwartz</editor>
+                <idno type="URI">http://syriaca.org/spear</idno>
+            </seriesStmt>
+            <seriesStmt>
+                <title level="m" xml:lang="en">The Letters of Severus of Antioch</title>
+                <title type="sub">A SPEAR Prosopography</title>
+                <editor role="general" ref="http://syriaca.org/documentation/editors.xml#dschwartz">Daniel L. Schwartz</editor>
+                <idno type="URI">http://syriaca.org/spear/letters-severus</idno>
+                <biblScope unit="volume">
+                    <title level="s">SPEAR: Syriac Persons, Events, and Relations</title>
+                    <idno type="URI">http://syriaca.org/spear</idno>
+                </biblScope>
+            </seriesStmt>
+            <sourceDesc>
+                <listBibl>
                     <head>Sources for the Data in this Born Digital Prosopography</head>
                     <bibl type="primary">
                         <title xml:lang="en">The Sixth Book of the Select Letters of Severus,
@@ -61,9 +73,17 @@
             </sourceDesc>
         </fileDesc>
         <encodingDesc>
-            <editorialDecl default="false">
-                <p part="N"/>
+            <editorialDecl>
+                <p><!-- POINT USERS TO WIKI DOCUMENTATION WHEN COMPLETED. --></p>
             </editorialDecl>
+            <classDecl>
+                <taxonomy>
+                    <category xml:id="calculated">
+                        <catDesc> Used to denote a date calculated by the editor from a regnal year
+                            or some other dating method given in the text. </catDesc>
+                    </category>
+                </taxonomy>
+            </classDecl>
         </encodingDesc>
         <profileDesc/>
         <revisionDesc status="draft">
@@ -666,7 +686,7 @@
             </div>
         </body>
         <back>
-            <listBibl default="false">
+            <listBibl>
                 <head>Works Cited</head>
                 <bibl type="primary" xml:id="bibl3096-1">
                     <title xml:lang="en">The Sixth Book of the Select Letters of Severus, Patriarch

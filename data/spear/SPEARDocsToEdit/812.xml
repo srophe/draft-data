@@ -1,26 +1,59 @@
 <?xml-model href="https://raw.githubusercontent.com/srophe/srophe-eXist-app/master/documentation/SPEARschema/out/SPEAR.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/srophe/srophe-eXist-app/master/documentation/SPEARschema/out/SPEAR.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title level="a">John of Ephesus, A Monk from the Same Monastery as Zacharias, in
+                <title level="a" type="main">John of Ephesus, A Monk from the Same Monastery as Zacharias, in
                     the Lives of the Eastern Saints: </title>
-                <title level="m">SPEAR: Syriac Persons, Events, and Relations</title>
+                <title type="sub">A SPEAR Prosopography</title>
                 <sponsor>Syriaca.org: The Syriac Reference Portal</sponsor>
                 <funder>The National Endowment for the Humanities</funder>
                 <funder>Texas A&amp;M University</funder>
                 <editor role="general" ref="http://syriaca.org/documentation/editors.xml#dschwartz">Daniel L. Schwartz</editor>
                 <editor role="creator" ref="http://syriaca.org/documentation/editors.xml#dschwartz">Daniel L. Schwartz</editor>
+                <editor role="creator"
+                    ref="http://syriaca.org/documentation/editors.xml#jnsaint-laurent">Jeanne-Nicole
+                    Saint-Laurent</editor>
+                <editor role="creator"
+                    ref="http://syriaca.org/documentation/editors.xml#tbaillargeon">Tara
+                    Baillargeon</editor>
+                <editor role="creator" ref="http://syriaca.org/documentation/editors.xml#syoung">Sam
+                    Young</editor>
+                <editor role="creator" ref="http://syriaca.org/documentation/editors.xml#tmcneir"
+                    >Taylor McNeir</editor>
+                <editor role="creator" ref="http://syriaca.org/documentation/editors.xml#rtrupiano"
+                    >Rose Trupiano</editor>
                 <respStmt>
                     <resp>Data architecture, data entry, editing, proofreading, and revision
                         by</resp>
-                    <name ref="http://syriaca.org/documentation/editors.xml#dschwartz" full="yes"
-                        instant="false">Daniel L. Schwartz</name>
+                    <name ref="http://syriaca.org/documentation/editors.xml#dschwartz"
+                        >Daniel L. Schwartz</name>
                 </respStmt>
                 <respStmt>
-                    <resp>Data architecture and technical assistance by</resp>
-                    <name ref="http://syriaca.org/documentation/editors.xml#dmichelson" full="yes"
-                        instant="false">David A. Michelson</name>
+                    <resp>Data entry and encoding by</resp>
+                    <name ref="http://syriaca.org/documentation/editors.xml#jnsaint-laurent">Jeanne-Nicole
+                        Saint-Laurent</name>
+                </respStmt>
+                <respStmt>
+                    <resp>Data entry and encoding by</resp>
+                    <name ref="http://syriaca.org/documentation/editors.xml#tbaillargeon"
+                        >Tara Baillargeon</name>
+                </respStmt>
+                <respStmt>
+                    <resp>Data entry and encoding by</resp>
+                    <name ref="http://syriaca.org/documentation/editors.xml#tmcneir"
+                        >Taylor McNeir</name>
+                </respStmt>
+                <respStmt>
+                    <resp>Data entry and encoding by</resp>
+                    <name ref="http://syriaca.org/documentation/editors.xml#syoung"
+                        >Samuel Young</name>
+                </respStmt>
+                <respStmt>
+                    <resp>Data entry and encoding by</resp>
+                    <name ref="http://syriaca.org/documentation/editors.xml#rtrupiano"
+                        >Rose Trupiano</name>
                 </respStmt>
             </titleStmt>
             <editionStmt>
@@ -104,7 +137,7 @@
     <text>
         <body>
             <div type="factoid" subtype="event" xml:id="factoid-1"
-                resp="#jnsaint-laurent, #tbaillargeon, #tmcneir, #syoung, #rtrupiano">
+                resp="#jnsaint-laurent #tbaillargeon #tmcneir #syoung #rtrupiano">
                 <idno type="URI">http://syriaca.org/spear/812-1</idno>
                 <listEvent>
                     <event
@@ -124,7 +157,7 @@
                 </bibl>
             </div>
             <div type="factoid" subtype="event" xml:id="factoid-2"
-                resp="#jnsaint-laurent, #tbaillargeon, #tmcneir, #syoung, #rtrupiano">
+                resp="#jnsaint-laurent #tbaillargeon #tmcneir #syoung #rtrupiano">
                 <idno type="URI">http://syriaca.org/spear/812-2</idno>
                 <listEvent>
                     <event
@@ -144,7 +177,7 @@
                 </bibl>
             </div>
             <div type="factoid" subtype="event" xml:id="factoid-3"
-                resp="#jnsaint-laurent, #tbaillargeon, #tmcneir, #syoung, #rtrupiano">
+                resp="#jnsaint-laurent #tbaillargeon #tmcneir #syoung #rtrupiano">
                 <idno type="URI">http://syriaca.org/spear/812-3</idno>
                 <listEvent>
                     <event
@@ -163,7 +196,7 @@
                 </bibl>
             </div>
             <div type="factoid" subtype="event" xml:id="factoid-4"
-                resp="#jnsaint-laurent, #tbaillargeon, #tmcneir, #syoung, #rtrupiano">
+                resp="#jnsaint-laurent #tbaillargeon #tmcneir #syoung #rtrupiano">
                 <idno type="URI">http://syriaca.org/spear/812-4</idno>
                 <listEvent>
                     <event
@@ -183,7 +216,7 @@
                 </bibl>
             </div>
             <div type="factoid" subtype="event" xml:id="factoid-5"
-                resp="#jnsaint-laurent, #tbaillargeon, #tmcneir, #syoung, #rtrupiano">
+                resp="#jnsaint-laurent #tbaillargeon #tmcneir #syoung #rtrupiano">
                 <idno type="URI">http://syriaca.org/spear/812-5</idno>
                 <listEvent>
                     <event
@@ -203,7 +236,7 @@
                 </bibl>
             </div>
             <div type="factoid" subtype="event" xml:id="factoid-6"
-                resp="#jnsaint-laurent, #tbaillargeon, #tmcneir, #syoung, #rtrupiano">
+                resp="#jnsaint-laurent #tbaillargeon #tmcneir #syoung #rtrupiano">
                 <idno type="URI">http://syriaca.org/spear/812-6</idno>
                 <listEvent>
                     <event ana="http://syriaca.org/keyword/repentence">
@@ -221,7 +254,7 @@
                 </bibl>
             </div>
             <div type="factoid" subtype="event" xml:id="factoid-7"
-                resp="#jnsaint-laurent, #tbaillargeon, #tmcneir, #syoung, #rtrupiano">
+                resp="#jnsaint-laurent #tbaillargeon #tmcneir #syoung #rtrupiano">
                 <idno type="URI">http://syriaca.org/spear/812-7</idno>
                 <listEvent>
                     <event
@@ -241,7 +274,7 @@
                 </bibl>
             </div>
             <div type="factoid" subtype="event" xml:id="factoid-8"
-                resp="#jnsaint-laurent, #tbaillargeon, #tmcneir, #syoung, #rtrupiano">
+                resp="#jnsaint-laurent #tbaillargeon #tmcneir #syoung #rtrupiano">
                 <idno type="URI">http://syriaca.org/spear/812-8</idno>
                 <listEvent>
                     <event
@@ -260,7 +293,7 @@
                 </bibl>
             </div>
             <div type="factoid" subtype="event" xml:id="factoid-9"
-                resp="#jnsaint-laurent, #tbaillargeon, #tmcneir, #syoung, #rtrupiano">
+                resp="#jnsaint-laurent #tbaillargeon #tmcneir #syoung #rtrupiano">
                 <idno type="URI">http://syriaca.org/spear/812-9</idno>
                 <listEvent>
                     <event
@@ -280,7 +313,7 @@
                 </bibl>
             </div>
             <div type="factoid" subtype="event" xml:id="factoid-10?"
-                resp="#jnsaint-laurent, #tbaillargeon, #tmcneir, #syoung, #rtrupiano">
+                resp="#jnsaint-laurent #tbaillargeon #tmcneir #syoung #rtrupiano">
                 <idno type="URI">http://syriaca.org/spear/812-10?</idno>
                 <listEvent>
                     <event
@@ -299,7 +332,7 @@
                 </bibl>
             </div>
             <div type="factoid" subtype="event" xml:id="factoid-11?"
-                resp="#jnsaint-laurent, #tbaillargeon, #tmcneir, #syoung, #rtrupiano">
+                resp="#jnsaint-laurent #tbaillargeon #tmcneir #syoung #rtrupiano">
                 <idno type="URI">http://syriaca.org/spear/812-11?</idno>
                 <listEvent>
                     <event
@@ -318,7 +351,7 @@
                 </bibl>
             </div>
             <div type="factoid" subtype="event" xml:id="factoid-12?"
-                resp="#jnsaint-laurent, #tbaillargeon, #tmcneir, #syoung, #rtrupiano">
+                resp="#jnsaint-laurent #tbaillargeon #tmcneir #syoung #rtrupiano">
                 <idno type="URI">http://syriaca.org/spear/812-12?</idno>
                 <listEvent>
                     <event
@@ -338,7 +371,7 @@
                 </bibl>
             </div>
             <div type="factoid" subtype="event" xml:id="factoid-13?"
-                resp="#jnsaint-laurent, #tbaillargeon, #tmcneir, #syoung, #rtrupiano">
+                resp="#jnsaint-laurent #tbaillargeon #tmcneir #syoung #rtrupiano">
                 <idno type="URI">http://syriaca.org/spear/812-13?</idno>
                 <listEvent>
                     <event

@@ -1,18 +1,19 @@
 <?xml-model href="https://raw.githubusercontent.com/srophe/srophe-eXist-app/master/documentation/SPEARschema/out/SPEAR.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/srophe/srophe-eXist-app/master/documentation/SPEARschema/out/SPEAR.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title level="a">John of Ephesus, A Monk who Left the Monastery, in the Lives of the
+                <title level="a" type="main">John of Ephesus, A Monk who Left the Monastery, in the Lives of the
                     Eastern Saints</title>
-                <title level="m">SPEAR: Syriac Persons, Events, and Relations</title>
+                <title type="sub">A SPEAR Prosopography</title>
                 <sponsor>Syriaca.org: The Syriac Reference Portal</sponsor>
                 <funder>The National Endowment for the Humanities</funder>
                 <funder>Texas A&amp;M University</funder>
                 <editor role="general" ref="http://syriaca.org/documentation/editors.xml#dschwartz">Daniel L. Schwartz</editor>
                 <editor role="creator" ref="http://syriaca.org/documentation/editors.xml#dschwartz">Daniel L. Schwartz</editor>
                 <editor role="creator"
-                    ref="http://syriaca.org/documentation/editors.xml#jnsaintlaurent">Jeanne-Nicole
+                    ref="http://syriaca.org/documentation/editors.xml#jnsaint-laurent">Jeanne-Nicole
                     Saint-Laurent</editor>
                 <editor role="creator"
                     ref="http://syriaca.org/documentation/editors.xml#tbaillargeon">Tara
@@ -26,43 +27,33 @@
                 <respStmt>
                     <resp>Data architecture, data entry, editing, proofreading, and revision
                         by</resp>
-                    <name ref="http://syriaca.org/documentation/editors.xml#dschwartz" full="yes"
-                        instant="false">Daniel L. Schwartz</name>
-                </respStmt>
-                <respStmt>
-                    <resp>Data architecture and technical assistance by</resp>
-                    <name ref="http://syriaca.org/documentation/editors.xml#dmichelson" full="yes"
-                        instant="false">David A. Michelson</name>
+                    <name ref="http://syriaca.org/documentation/editors.xml#dschwartz"
+                       >Daniel L. Schwartz</name>
                 </respStmt>
                 <respStmt>
                     <resp>Data entry and encoding by</resp>
-                    <name ref="http://syriaca.org/documentation/editors.xml#jwalters" full="yes"
-                        instant="false">James Walters</name>
+                    <name ref="http://syriaca.org/documentation/editors.xml#jnsaint-laurent">Jeanne-Nicole
+                        Saint-Laurent</name>
                 </respStmt>
                 <respStmt>
                     <resp>Data entry and encoding by</resp>
-                    <name ref="http://syriaca.org/documentation/editors.xml#tbaillargeon" full="yes"
-                        instant="false">Tara Baillargeon</name>
+                    <name ref="http://syriaca.org/documentation/editors.xml#tbaillargeon"
+                       >Tara Baillargeon</name>
                 </respStmt>
                 <respStmt>
                     <resp>Data entry and encoding by</resp>
-                    <name ref="http://syriaca.org/documentation/editors.xml#jdaccache" full="yes"
-                        instant="false">Jimmy Daccache</name>
+                    <name ref="http://syriaca.org/documentation/editors.xml#tmcneir"
+                       >Taylor McNeir</name>
                 </respStmt>
                 <respStmt>
                     <resp>Data entry and encoding by</resp>
-                    <name ref="http://syriaca.org/documentation/editors.xml#tmcneir" full="yes"
-                        instant="false">Taylor McNeir</name>
+                    <name ref="http://syriaca.org/documentation/editors.xml#syoung"
+                       >Samuel Young</name>
                 </respStmt>
                 <respStmt>
                     <resp>Data entry and encoding by</resp>
-                    <name ref="http://syriaca.org/documentation/editors.xml#ewalsh" full="yes"
-                        instant="false">Erin Galgay Walsh</name>
-                </respStmt>
-                <respStmt>
-                    <resp>Data entry and encoding by</resp>
-                    <name ref="http://syriaca.org/documentation/editors.xml#syoung" full="yes"
-                        instant="false">Samuel Young</name>
+                    <name ref="http://syriaca.org/documentation/editors.xml#rtrupiano"
+                        >Rose Trupiano</name>
                 </respStmt>
             </titleStmt>
             <editionStmt>
@@ -149,8 +140,7 @@
     </teiHeader>
     <text>
         <body>
-            <div type="factoid" subtype="nameVariant" xml:id="factoid-1"
-                resp="#jnsaint-laurent, #tbaillargeon, #tmcneir, #syoung, #rtrupiano">
+            <div type="factoid" subtype="nameVariant" xml:id="factoid-1" resp="#jnsaint-laurent #tbaillargeon #tmcneir #syoung #rtrupiano">
                 <idno type="URI">http://syriaca.org/spear/810-1</idno>
                 <listPerson>
                     <person>
@@ -168,12 +158,12 @@
                 </bibl>
             </div>
             <div type="factoid" subtype="event" xml:id="factoid-2"
-                resp="#jnsaint-laurent, #tbaillargeon, #tmcneir, #syoung, #rtrupiano">
+                resp="#jnsaint-laurent #tbaillargeon #tmcneir #syoung #rtrupiano">
                 <idno type="URI">http://syriaca.org/spear/810-2</idno>
                 <listEvent>
                     <event
-                        ana="http://syriaca.org/keyword/exile, http://syriaca.org/keyword/monastery">
-                        <desc><!-- Use persName, placeName, orgName, and date elements as needed, with URIs whenever possible. -->
+                        ana="http://syriaca.org/keyword/exile http://syriaca.org/keyword/monastery">
+                        <desc>
                             A group exiled of monks welcome everyone in the village of <placeName
                                 ref="http://syriaca.org/place/2796">Hzyn</placeName>. </desc>
                     </event>
@@ -188,12 +178,12 @@
                 </bibl>
             </div>
             <div type="factoid" subtype="event" xml:id="factoid-3"
-                resp="#jnsaint-laurent, #tbaillargeon, #tmcneir, #syoung, #rtrupiano">
+                resp="#jnsaint-laurent #tbaillargeon #tmcneir #syoung #rtrupiano">
                 <idno type="URI">http://syriaca.org/spear/810-3</idno>
                 <listEvent>
                     <event
-                        ana="http://syriaca.org/keyword/monastery, http://syriaca.org/keyword/asceticism">
-                        <desc><!-- Use persName, placeName, orgName, and date elements as needed, with URIs whenever possible. -->
+                        ana="http://syriaca.org/keyword/monastery http://syriaca.org/keyword/asceticism">
+                        <desc>
                             A <persName ref="http://syriaca.org/person/1932">blessed man</persName>
                             enters the monastery. </desc>
                     </event>
@@ -208,12 +198,12 @@
                 </bibl>
             </div>
             <div type="factoid" subtype="event" xml:id="factoid-4"
-                resp="#jnsaint-laurent, #tbaillargeon, #tmcneir, #syoung, #rtrupiano">
+                resp="#jnsaint-laurent #tbaillargeon #tmcneir #syoung #rtrupiano">
                 <idno type="URI">http://syriaca.org/spear/810-4</idno>
                 <listEvent>
                     <event
-                        ana="http://syriaca.org/keyword/plague, http://syriaca.org/keyword/monks, http://syriaca.org/keyword/death, http://syriaca.org/keyword/burial">
-                        <desc><!-- Use persName, placeName, orgName, and date elements as needed, with URIs whenever possible. -->
+                        ana="http://syriaca.org/keyword/plague http://syriaca.org/keyword/monks http://syriaca.org/keyword/death http://syriaca.org/keyword/burial">
+                        <desc>
                             A plague breaks out and 84 monks die and were buried. </desc>
                     </event>
                 </listEvent>
@@ -227,11 +217,11 @@
                 </bibl>
             </div>
             <div type="factoid" subtype="event" xml:id="factoid-5"
-                resp="#jnsaint-laurent, #tbaillargeon, #tmcneir, #syoung, #rtrupiano">
+                resp="#jnsaint-laurent #tbaillargeon #tmcneir #syoung #rtrupiano">
                 <idno type="URI">http://syriaca.org/spear/810-5</idno>
                 <listEvent>
                     <event ana="http://syriaca.org/keyword/suffering">
-                        <desc><!-- Use persName, placeName, orgName, and date elements as needed, with URIs whenever possible. -->
+                        <desc>
                             The <persName ref="http://syriaca.org/person/1932">blessed
                                 man</persName> was suffering and in great pain from a curse. </desc>
                     </event>
@@ -246,12 +236,12 @@
                 </bibl>
             </div>
             <div type="factoid" subtype="event" xml:id="factoid-6"
-                resp="#jnsaint-laurent, #tbaillargeon, #tmcneir, #syoung, #rtrupiano">
+                resp="#jnsaint-laurent #tbaillargeon #tmcneir #syoung #rtrupiano">
                 <idno type="URI">http://syriaca.org/spear/810-6</idno>
                 <listEvent>
                     <event
-                        ana="http://syriaca.org/keyword/prayer, http://syriaca.org/keyword/incense, http://syriaca.org/keyword/relics, http://syriaca.org/keyword/fasting">
-                        <desc><!-- Use persName, placeName, orgName, and date elements as needed, with URIs whenever possible. -->
+                        ana="http://syriaca.org/keyword/prayer http://syriaca.org/keyword/incense http://syriaca.org/keyword/relics http://syriaca.org/keyword/fasting">
+                        <desc>
                             A group of monks prayed over the<persName
                                 ref="http://syriaca.org/person/1932">blessed man</persName> and held
                             vigil for ten days. </desc>
@@ -267,11 +257,11 @@
                 </bibl>
             </div>
             <div type="factoid" subtype="event" xml:id="factoid-7"
-                resp="#jnsaint-laurent, #tbaillargeon, #tmcneir, #syoung, #rtrupiano">
+                resp="#jnsaint-laurent #tbaillargeon #tmcneir #syoung #rtrupiano">
                 <idno type="URI">http://syriaca.org/spear/810-7</idno>
                 <listEvent>
                     <event ana="http://syriaca.org/keyword/death">
-                        <desc><!-- Use persName, placeName, orgName, and date elements as needed, with URIs whenever possible. -->
+                        <desc>
                                 The<persName ref="http://syriaca.org/person/1932">blessed
                                 man</persName>dies. </desc>
                     </event>

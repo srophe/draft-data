@@ -1,71 +1,43 @@
 <?xml-model href="https://raw.githubusercontent.com/srophe/srophe-eXist-app/master/documentation/SPEARschema/out/SPEAR.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/srophe/srophe-eXist-app/master/documentation/SPEARschema/out/SPEAR.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title level="a">John of Ephesus, Abraham the presbyter, in The Lives of the Eastern
+                <title level="a" type="main">John of Ephesus, Abraham the presbyter, in The Lives of the Eastern
                     Saints</title>
-                <title level="m">SPEAR: Syriac Persons, Events, and Relations</title>
+                <title type="sub">A SPEAR Prosopography</title>
                 <sponsor>Syriaca.org: The Syriac Reference Portal</sponsor>
                 <funder>The National Endowment for the Humanities</funder>
                 <funder>Texas A&amp;M University</funder>
                 <editor role="general" ref="http://syriaca.org/documentation/editors.xml#dschwartz">Daniel L. Schwartz</editor>
                 <editor role="creator" ref="http://syriaca.org/documentation/editors.xml#dschwartz">Daniel L. Schwartz</editor>
-                <editor role="creator" ref="http://syriaca.org/documentation/editors.xml#dmichelson"
-                    >David A. Michelson</editor>
-                <editor role="creator" ref="http://syriaca.org/documentation/editors.xml#mdebie"
-                    >Muriel Debie</editor>
-                <editor role="creator" ref="http://syriaca.org/documentation/editors.xml#egarret"
-                    >Eric Garret</editor>
                 <editor role="creator" ref="http://syriaca.org/documentation/editors.xml#egibes"
                     >Elizabeth Gibes</editor>
                 <editor role="creator" ref="http://syriaca.org/documentation/editors.xml#sgross"
                     >Simcha Gross</editor>
                 <editor role="creator" ref="http://syriaca.org/documentation/editors.xml#ekeogh"
                     >Edward Keogh</editor>
-                <editor role="creator" ref="http://syriaca.org/documentation/editors.xml#upossekel"
-                    >Ute Possekel</editor>
                 <respStmt>
                     <resp>Data architecture, data entry, editing, proofreading, and revision
                         by</resp>
-                    <name ref="http://syriaca.org/documentation/editors.xml#dschwartz" full="yes"
-                        instant="false">Daniel L. Schwartz</name>
-                </respStmt>
-                <respStmt>
-                    <resp>Data architecture, technical assistance, data entry, and encoding
-                        by</resp>
-                    <name ref="http://syriaca.org/documentation/editors.xml#dmichelson" full="yes"
-                        instant="false">David A. Michelson</name>
+                    <name ref="http://syriaca.org/documentation/editors.xml#dschwartz"
+                       >Daniel L. Schwartz</name>
                 </respStmt>
                 <respStmt>
                     <resp>Data entry and encoding by</resp>
-                    <name ref="http://syriaca.org/documentation/editors.xml#mdebie" full="yes"
-                        instant="false">Muriel Debie</name>
+                    <name ref="http://syriaca.org/documentation/editors.xml#egibes"
+                       >Elizabeth Gibes</name>
                 </respStmt>
                 <respStmt>
                     <resp>Data entry and encoding by</resp>
-                    <name ref="http://syriaca.org/documentation/editors.xml#egarret" full="yes"
-                        instant="false">Eric Garret</name>
+                    <name ref="http://syriaca.org/documentation/editors.xml#sgross"
+                       >Simcha Gross</name>
                 </respStmt>
                 <respStmt>
                     <resp>Data entry and encoding by</resp>
-                    <name ref="http://syriaca.org/documentation/editors.xml#egibes" full="yes"
-                        instant="false">Elizabeth Gibes</name>
-                </respStmt>
-                <respStmt>
-                    <resp>Data entry and encoding by</resp>
-                    <name ref="http://syriaca.org/documentation/editors.xml#sgross" full="yes"
-                        instant="false">Simcha Gross</name>
-                </respStmt>
-                <respStmt>
-                    <resp>Data entry and encoding by</resp>
-                    <name ref="http://syriaca.org/documentation/editors.xml#ekeogh" full="yes"
-                        instant="false">Edward Keogh</name>
-                </respStmt>
-                <respStmt>
-                    <resp>Data entry and encoding by</resp>
-                    <name ref="http://syriaca.org/documentation/editors.xml#upossekel" full="yes"
-                        instant="false">Ute Possekel</name>
+                    <name ref="http://syriaca.org/documentation/editors.xml#ekeogh"
+                       >Edward Keogh</name>
                 </respStmt>
             </titleStmt>
             <editionStmt>

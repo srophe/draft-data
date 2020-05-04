@@ -6,7 +6,7 @@
          xmlns="http://relaxng.org/ns/structure/1.0"
          datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"
          ns="http://www.tei-c.org/ns/1.0"><!--
-Schema generated from ODD source 2020-05-04T21:12:26Z. .
+Schema generated from ODD source 2020-05-04T21:23:57Z. .
 TEI Edition: Version 3.6.0. Last updated on
 	16th July 2019, revision daa3cc0b9
 TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 3.6.0/
@@ -2475,9 +2475,24 @@ attributes @target and @cRef may be supplied on <name/>.</report>
                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Specifies the connection of the editor to the work, selected from http://syriaca.org/documentation/author-editor-roles.xml . The attribute value should contain the above URL followed by a hash (#) and the <code xmlns="http://www.w3.org/1999/xhtml">@xml:id</code> of the role. For example, http://syriaca.org/documentation/author-editor-roles.xml#translator . This is recommended, but not required if the type of connection is unknown.</a:documentation>
                <list>
                   <oneOrMore>
-                     <data type="token">
-                        <param name="pattern">(\p{L}|\p{N}|\p{P}|\p{S})+</param>
-                     </data>
+                     <choice>
+                        <value>associate</value>
+                        <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">An associate editor</a:documentation>
+                        <value>creator</value>
+                        <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The main author responsible for the document</a:documentation>
+                        <value>general</value>
+                        <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">A general editor of a module</a:documentation>
+                        <value>code-author</value>
+                        <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The person responsible for the creation of the xml encoding</a:documentation>
+                        <value>content-author</value>
+                        <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The person responsible for the content encoded in this document by another person</a:documentation>
+                        <value>contributor</value>
+                        <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">A person who contributed some data but is not the main person responsible for the document</a:documentation>
+                        <value>editor</value>
+                        <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">An editor as defined by the Chicago Manual of Style</a:documentation>
+                        <value>translator</value>
+                        <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The translator of a text</a:documentation>
+                     </choice>
                   </oneOrMore>
                </list>
             </attribute>
@@ -2587,15 +2602,11 @@ Suggested values include: 1] main; 2] sub (subordinate); 3] alt (alternate); 4] 
                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">indicates the bibliographic level for a title, that is, whether it identifies an article, book, journal, series, or unpublished material.</a:documentation>
                <choice>
                   <value>a</value>
-                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(analytic) the title applies to an analytic item, such as an article, poem, or other work published as part of a larger item.</a:documentation>
-                  <value>m</value>
-                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(monographic) the title applies to a monograph such as a book or other item considered to be a distinct publication, including single volumes of multi-volume works</a:documentation>
-                  <value>j</value>
-                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(journal) the title applies to any serial or periodical publication such as a journal, magazine, or newspaper</a:documentation>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(analytic) The title for each individual xml file has a <code xmlns="http://www.w3.org/1999/xhtml">@level</code> attribute with value "a" to distinguish it from the title of the entire project (e.g. The Syriac Gazetteer). The "a" value stands for analytic, which means that the title is part of a larger publication.</a:documentation>
                   <value>s</value>
-                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(series) the title applies to a series of otherwise distinct publications such as a collection</a:documentation>
-                  <value>u</value>
-                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(unpublished) the title applies to any unpublished material (including theses and dissertations unless published by a commercial press)</a:documentation>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(series) The series title. This applies to Syriaca.org modules such as the "Syriac Biographical Dictionary" and the "Syriac Gazetteer." </a:documentation>
+                  <value>m</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(monographic) The <code xmlns="http://www.w3.org/1999/xhtml">@level</code> "m" indicates that this title is monographic which TEI defines as a distinct publication that may be part of the larger publication. Syriaca.org uses this title level to indicate a sub-module or volume of a module such as the "Saints" sub-module which is part of the larger "Syriac Biographical Dictionary."</a:documentation>
                </choice>
             </attribute>
          </optional>
@@ -2638,20 +2649,6 @@ Suggested values include: 1] main; 2] sub (subordinate); 3] alt (alternate); 4] 
             <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">identifies the unit of information conveyed by the element, e.g. columns, pages, volume, entry.</a:documentation>
             <choice>
                <value>volume</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">the element contains a volume number.</a:documentation>
-               <value>issue</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-               <value>page</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-               <value>line</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-               <value>chapter</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-               <value>part</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-               <value>column</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-               <value>entry</value>
                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
             </choice>
          </attribute>
@@ -2675,6 +2672,8 @@ Suggested values include: 1] main; 2] sub (subordinate); 3] alt (alternate); 4] 
                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">the element identifies an entry in a collection such as an reference work.</a:documentation>
                <value>line</value>
                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">the element contains a line number or line range.</a:documentation>
+               <value>map</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">the element identifies a map.</a:documentation>
                <value>part</value>
                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">the element contains a part of a book or collection, i.e. chapter and verse of a biblical text.</a:documentation>
                <value>pp</value>
@@ -2981,22 +2980,8 @@ Suggested values include: 1] main; 2] sub (subordinate); 3] alt (alternate); 4] 
          <attribute name="type">
             <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The <code xmlns="http://www.w3.org/1999/xhtml">@type</code> attribute on <code xmlns="http://www.w3.org/1999/xhtml">&lt;idno&gt;</code> defines the kind of identifier contained in the text value. In the Gazetteer, the only type of <code xmlns="http://www.w3.org/1999/xhtml">&lt;idno&gt;</code> used is "URI".</a:documentation>
             <choice>
-               <value>ISBN</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">International Standard Book Number: a 13- or (if assigned prior to 2007) 10-digit identifying number assigned by the publishing industry to a published book or similar item, registered with the <a xmlns="http://www.w3.org/1999/xhtml"
-                     href="https://www.isbn-international.org"> International ISBN Agency.</a>
-               </a:documentation>
-               <value>ISSN</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">International Standard Serial Number: an eight-digit number to uniquely identify a serial publication.</a:documentation>
-               <value>DOI</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Digital Object Identifier: a unique string of letters and numbers assigned to an electronic document.</a:documentation>
                <value>URI</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Uniform Resource Identifier: a string of characters to uniquely identify a resource which usually contains indication of the means of accessing that resource, the name of its host, and its filepath.</a:documentation>
-               <value>VIAF</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">A data number in the Virtual Internet Authority File assigned to link different names in catalogs around the world for the same entity.</a:documentation>
-               <value>ESTC</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">English Short-Title Catalogue number: an identifying number assigned to a document in English printed in the British Isles or North America before 1801.</a:documentation>
-               <value>OCLC</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">OCLC control number (record number) for the union catalog record in WorldCat, a union catalog for member libraries in the Online Computer Library Center global cooperative.</a:documentation>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">A Uniform Resource Identifier.</a:documentation>
             </choice>
          </attribute>
          <empty/>
@@ -3276,11 +3261,17 @@ Suggested values include: 1] main; 2] sub (subordinate); 3] alt (alternate); 4] 
          <attribute xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"
                     name="status"
                     a:defaultValue="draft">
-            <a:documentation>describes the status of a document either currently or, when associated with a dated element, at the time indicated.
-Sample values include: 1] approved; 2] candidate; 3] cleared; 4] deprecated; 5] draft; 6] embargoed; 7] expired; 8] frozen; 9] galley; 10] proposed; 11] published; 12] recommendation; 13] submitted; 14] unfinished; 15] withdrawn</a:documentation>
-            <data type="token">
-               <param name="pattern">(\p{L}|\p{N}|\p{P}|\p{S})+</param>
-            </data>
+            <a:documentation>describes the status of a document either currently or, when associated with a dated element, at the time indicated.</a:documentation>
+            <choice>
+               <value>draft</value>
+               <a:documentation>(draft) Indicates that this document is more-or-less complete but remains in draft status.</a:documentation>
+               <value>incomplete</value>
+               <a:documentation>(incomplete) Indicates that this document is incomplete.</a:documentation>
+               <value>published</value>
+               <a:documentation>(published) Indicates that this document has been published.</a:documentation>
+               <value>underReview</value>
+               <a:documentation>(under review) Indicates that this document is under review by one or more editors.</a:documentation>
+            </choice>
          </attribute>
          <empty/>
       </element>
@@ -4236,9 +4227,12 @@ Sample values include: 1] approved; 2] candidate; 3] cleared; 4] deprecated; 5] 
          </attribute>
          <attribute name="type">
             <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The <code xmlns="http://www.w3.org/1999/xhtml">&lt;event&gt;</code> element requires a <code xmlns="http://www.w3.org/1999/xhtml">@type</code> attribute.</a:documentation>
-            <data type="token">
-               <param name="pattern">(\p{L}|\p{N}|\p{P}|\p{S})+</param>
-            </data>
+            <choice>
+               <value>attestation</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">An event that attests to the entity described in the document</a:documentation>
+               <value>other</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Any event that does something other than attest to the entity described in the document</a:documentation>
+            </choice>
          </attribute>
          <optional>
             <attribute name="where">
@@ -4566,7 +4560,32 @@ Sample values include: 1] approved; 2] candidate; 3] cleared; 4] deprecated; 5] 
             <ref name="desc"/>
          </optional>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="syriacaPlacesTEI-relation-reforkeyorname-constraint-assert-60">
+                  id="syriacaPlacesTEI-relation-atts-on-relation-constraint-rule-63">
+            <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
+                      xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                      xmlns:srophe="https://srophe.app"
+                      context="//tei:body//tei:relation/@mutual">
+               <sch:let name="docURI"
+                        value="//tei:publicationStmt/tei:idno/substring-before(., '/tei')"/>
+               <sch:assert test="contains(., ' ')">
+                  The @mutual attribute on a &lt;relation&gt; element must contain two or more values.
+                </sch:assert>
+               <sch:assert test="                   every $i in (tokenize(., ' '))                   satisfies matches($i, concat('http://syriaca.org/place/', '\d+'))">
+                  The @mutual attribute on a &lt;relation&gt; element should contain two or more properly formatted 
+                  Syriaca.org place URIs ('http://syriaca.org/place/{\d+}') separated by a blank space.
+                </sch:assert>
+               <sch:report test="                   every $i in (tokenize(., ' '))                   satisfies matches(substring-after($i, 'http://syriaca.org/place/'), '\D')">
+                  
+                  The @mutual attribute on a &lt;relation&gt; element with should contain two or more properly formatted 
+                  Syriaca.org place URIs ('http://syriaca.org/place/{\d+}') separated by a blank space.
+                </sch:report>
+               <sch:assert test="contains(., $docURI)">
+                  One on the values of the @mutual attribute must be the URI for this document's place: <sch:value-of select="$docURI"/>.
+                </sch:assert>
+            </sch:rule>
+         </pattern>
+         <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
+                  id="syriacaPlacesTEI-relation-reforkeyorname-constraint-assert-63">
             <rule context="tei:relation">
                <assert xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                        xmlns:srophe="https://srophe.app"
@@ -4574,7 +4593,7 @@ Sample values include: 1] approved; 2] candidate; 3] cleared; 4] deprecated; 5] 
             </rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="syriacaPlacesTEI-relation-activemutual-constraint-report-25">
+                  id="syriacaPlacesTEI-relation-activemutual-constraint-report-26">
             <rule context="tei:relation">
                <report xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                        xmlns:srophe="https://srophe.app"
@@ -4582,7 +4601,7 @@ Sample values include: 1] approved; 2] candidate; 3] cleared; 4] deprecated; 5] 
             </rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="syriacaPlacesTEI-relation-activepassive-constraint-report-26">
+                  id="syriacaPlacesTEI-relation-activepassive-constraint-report-27">
             <rule context="tei:relation">
                <report xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                        xmlns:srophe="https://srophe.app"
@@ -4606,16 +4625,14 @@ Sample values include: 1] approved; 2] candidate; 3] cleared; 4] deprecated; 5] 
                   </list>
                </attribute>
             </optional>
-            <optional>
-               <attribute name="mutual">
-                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">supplies a list of participants amongst all of whom the relationship holds equally.</a:documentation>
-                  <list>
-                     <oneOrMore>
-                        <data type="anyURI"/>
-                     </oneOrMore>
-                  </list>
-               </attribute>
-            </optional>
+            <attribute name="mutual">
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">supplies a list of participants amongst all of whom the relationship holds equally.</a:documentation>
+               <list>
+                  <oneOrMore>
+                     <data type="anyURI"/>
+                  </oneOrMore>
+               </list>
+            </attribute>
          </choice>
          <attribute name="name">
             <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">supplies a name for the kind of relationship of which this is an instance.</a:documentation>
@@ -4652,7 +4669,7 @@ Sample values include: 1] approved; 2] candidate; 3] cleared; 4] deprecated; 5] 
             <ref name="precision"/>
          </zeroOrMore>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="syriacaPlacesTEI-state-xmlID-on-state-constraint-rule-63">
+                  id="syriacaPlacesTEI-state-xmlID-on-state-constraint-rule-64">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       xmlns:srophe="https://srophe.app"
@@ -4668,7 +4685,7 @@ Sample values include: 1] approved; 2] candidate; 3] cleared; 4] deprecated; 5] 
             </sch:rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="syriacaPlacesTEI-state-xmlID-on-state-constraint-rule-64">
+                  id="syriacaPlacesTEI-state-xmlID-on-state-constraint-rule-65">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       xmlns:srophe="https://srophe.app"
@@ -4767,7 +4784,7 @@ Sample values include: 1] TEI; 2] DBK (docbook); 3] XX (unknown); 4] Schematron;
       </choice>
    </start>
    <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-            id="syriacaPlacesTEI-source-att-constraint-rule-65">
+            id="syriacaPlacesTEI-source-att-constraint-rule-66">
       <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                 xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                 xmlns:srophe="https://srophe.app"

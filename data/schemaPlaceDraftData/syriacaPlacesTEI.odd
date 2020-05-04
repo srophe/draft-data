@@ -73,7 +73,7 @@
             </attDef>
             <attDef ident="xml:lang" mode="change">
               <!-- Should this be ingested into the Taxonomy? We could we use keyword URIs instead of these. -->
-              <valList mode="add" type="closed">
+              <valList mode="replace" type="closed">
                 <valItem ident="ar">
                   <gloss>Arabic</gloss>
                   <desc>Arabic of any variety or period</desc>
@@ -642,7 +642,7 @@
           </content>
           <attList>
             <attDef ident="unit" mode="change" usage="req">
-              <valList type="closed" mode="change">
+              <valList type="closed" mode="replace">
                 <valItem ident="volume"/>
               </valList>
             </attDef>
@@ -865,7 +865,7 @@
           </content>
           <attList>
             <attDef ident="status" mode="change" usage="req">
-              <valList type="closed">
+              <valList type="closed" mode="replace">
                 <valItem ident="draft">
                   <gloss>draft</gloss>
                   <desc>Indicates that this document is more-or-less complete but remains in draft status.</desc>
@@ -1018,7 +1018,7 @@
               </valList>
             </attDef>
             <attDef ident="level" mode="change">
-              <valList type="closed">
+              <valList type="closed" mode="replace">
                 <valItem ident="a">
                   <gloss>analytic</gloss>
                   <desc> The title for each individual xml file has a <att>level</att> attribute
@@ -1085,7 +1085,7 @@
             <attDef ident="type" mode="change" usage="req">
               <desc>The <att>type</att> attribute on <gi>idno</gi> defines the kind of identifier
                 contained in the text value. In the Gazetteer, the only type of <gi>idno</gi> used is "URI".</desc>
-              <valList mode="change" type="closed">
+              <valList mode="replace" type="closed">
                 <valItem ident="URI">
                   <desc>A Uniform Resource Identifier.</desc>
                 </valItem>
@@ -1160,7 +1160,7 @@
                 role. For example,
              http://syriaca.org/documentation/author-editor-roles.xml#translator . This is
                 recommended, but not required if the type of connection is unknown.</desc>
-              <valList type="closed">
+              <valList type="closed" mode="replace">
                 <valItem ident="associate">
                   <desc>An associate editor</desc>
                 </valItem>
@@ -1213,7 +1213,7 @@
             <attDef ident="type" mode="change" usage="rec">
               <desc>specifies how the date is associated with the entity (work, person, etc.) to
                 which it refers</desc>
-              <valList mode="change" type="closed">
+              <valList mode="replace" type="closed">
                 <valItem ident="original-composition">
                   <desc>the date a work was originally composed</desc>
                 </valItem>
@@ -1397,18 +1397,7 @@
         </elementSpec>
         
         <elementSpec ident="relation" module="namesdates" mode="change">
-          <attList>
-            <attDef ident="name" mode="change" usage="req">
-              <valList mode="replace" type="closed">
-                <valItem ident="share-a-name"/>
-                <valItem ident="see-also"/>
-              </valList>
-            </attDef>
-          </attList>
-        </elementSpec>
-
-        <!--<elementSpec ident="relation" module="namesdates" mode="change">
-          <!-\-<constraintSpec ident="atts-on-relation" scheme="schematron">
+          <constraintSpec ident="atts-on-relation" scheme="schematron">
             <constraint>
               <sch:rule context="//tei:body//tei:relation/@mutual">
                 <sch:let name="docURI" value="//tei:publicationStmt/tei:idno/substring-before(., '/tei')"/>
@@ -1428,7 +1417,7 @@
                   every $i in (tokenize(., ' '))
                   satisfies matches(substring-after($i, 'http://syriaca.org/place/'), '\D')"
                   >
-                  <!-\\- Needs testing. Something here doesn't seem to be working properly. -\\->
+                  <!-- Needs testing. Something here doesn't seem to be working properly. -->
                   The @mutual attribute on a &lt;relation&gt; element with should contain two or more properly formatted 
                   Syriaca.org place URIs ('http://syriaca.org/place/{\d+}') separated by a blank space.
                 </sch:report>
@@ -1437,25 +1426,21 @@
                 </sch:assert>
               </sch:rule>
             </constraint>
-          </constraintSpec>-\->
-          
-          <attList>
-            <attDef ident="mutual" mode="change" usage="req"/>
+          </constraintSpec><attList>
             <attDef ident="name" mode="change" usage="req">
-              <valList mode="change" type="closed">
-                <valItem ident="share-a-name">
-                  <desc>Used when two or more locations share a name</desc>
-                </valItem>
-                <valItem ident="see-also">
-                  <desc>Used when two or more locations have a unspecified relationship</desc>
-                </valItem>
+              <valList mode="replace" type="closed">
+                <valItem ident="share-a-name"/>
+                <valItem ident="see-also"/>
               </valList>
             </attDef>
-            <!-\-<attDef ident="active" mode="delete"/>
-            <attDef ident="passive" mode="delete"/>
-            <attDef ident="ref" mode="delete"/>-\->
+            <attDef ident="mutual" mode="change" usage="req"/>
           </attList>
-        </elementSpec>-->
+        </elementSpec>
+
+        <elementSpec ident="relation" module="namesdates" mode="change">
+          
+          
+                  </elementSpec>
 
 
 
@@ -1610,7 +1595,7 @@
             </attDef>
             <attDef ident="type" mode="change" usage="req">
               <desc>The <gi>event</gi> element requires a <att>type</att> attribute.</desc>
-              <valList type="closed">
+              <valList type="closed" mode="replace">
                 <valItem ident="attestation">
                   <desc>An event that attests to the entity described in the document</desc>
                 </valItem>
@@ -1666,6 +1651,9 @@
                 </valItem>
                 <valItem ident="line">
                   <desc>the element contains a line number or line range.</desc>
+                </valItem>
+                <valItem ident="map">
+                  <desc>the element identifies a map.</desc>
                 </valItem>
                 <valItem ident="part">
                   <desc>the element contains a part of a book or collection, i.e. chapter and verse
@@ -1741,7 +1729,7 @@
           </constraintSpec>
           <attList>
             <attDef ident="type" mode="replace" usage="req">
-              <valList type="closed">
+              <valList type="closed" mode="replace">
                 <valItem ident="building">
                   <desc>A construction for which there is no narrower category, such as a church or mosque. Examples of this type include palaces and named city gates.</desc>
                 </valItem>
@@ -2008,14 +1996,14 @@
           </constraintSpec>
           <attList>
             <attDef ident="type" mode="change" usage="req">
-              <valList mode="change" type="closed">
+              <valList mode="replace" type="closed">
                 <valItem ident="gps"/>
                 <valItem ident="nested"/>
                 <valItem ident="relative"/>
               </valList>
             </attDef>
             <attDef ident="subtype" mode="change">
-              <valList mode="change" type="closed">
+              <valList mode="replace" type="closed">
                 <valItem ident="alternate"/>
                 <valItem ident="preferred"/>
                 <valItem ident="quote"/>

@@ -5,10 +5,8 @@
          xmlns="http://relaxng.org/ns/structure/1.0"
          datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"
          ns="http://www.tei-c.org/ns/1.0"
-         xmlns:srophe="https://srophe.app">
-   
-   <!--
-Schema generated from ODD source 2020-05-04T20:07:27Z. .
+         xmlns:srophe="https://srophe.app"><!--
+Schema generated from ODD source 2020-05-04T20:18:17Z. .
 TEI Edition: Version 3.6.0. Last updated on
 	16th July 2019, revision daa3cc0b9
 TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 3.6.0/
@@ -4648,9 +4646,7 @@ Sample values include: 1] approved; 2] candidate; 3] cleared; 4] deprecated; 5] 
          </choice>
          <attribute name="name">
             <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">supplies a name for the kind of relationship of which this is an instance.</a:documentation>
-            <data type="token">
-               <param name="pattern">(\p{L}|\p{N}|\p{P}|\p{S})+</param>
-            </data>
+            <empty/>
          </attribute>
          <empty/>
       </element>

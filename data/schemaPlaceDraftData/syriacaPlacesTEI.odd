@@ -1433,17 +1433,17 @@
           <attList>
             <attDef ident="mutual" mode="change" usage="req"/>
             <attDef ident="name" mode="change" usage="req">
-              <valList type="closed">
+              <valList type="closed" mode="change">
                 <valItem ident="share-a-name">
-                  <desc>Two or more locations that share a name</desc>
+                  <desc>Used when two or more locations share a name</desc>
                 </valItem>
                 <valItem ident="see-also">
-                  <desc>Two or more locations that have a unspecified relationship</desc>
+                  <desc>Used when two or more locations have a unspecified relationship</desc>
                 </valItem>
               </valList>
             </attDef>
             <attDef ident="active" mode="delete"/>
-            <attDef ident="passive" mode="delete"></attDef>
+            <attDef ident="passive" mode="delete"/>
             <attDef ident="ref" mode="delete"/>
           </attList>
           <exemplum versionDate="2016-11-24">

@@ -1429,8 +1429,12 @@
           </constraintSpec><attList>
             <attDef ident="name" mode="change" usage="req">
               <valList mode="replace" type="closed">
-                <valItem ident="share-a-name"/>
-                <valItem ident="see-also"/>
+                <valItem ident="share-a-name">
+                  <desc>Use when two or more locations share a name</desc>
+                </valItem>
+                <valItem ident="see-also">
+                  <desc>Use when two or more locations share an unspecified relationship</desc>
+                </valItem>
               </valList>
             </attDef>
             <attDef ident="mutual" mode="replace" usage="req"/>

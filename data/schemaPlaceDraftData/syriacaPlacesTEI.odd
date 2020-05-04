@@ -1402,14 +1402,6 @@
           </content>
           <constraintSpec ident="atts-on-relation" scheme="schematron">
             <constraint>
-              <sch:rule context="//tei:body//tei:relation">
-                <sch:assert test="@mutual">
-                  A &lt;relation&gt; element requires a @mutual attribute.
-                </sch:assert>
-                <sch:assert test="@name='share-a-name'">
-                  A &lt;relation&gt; element requires a @name attribute with value "share-a-name".
-                </sch:assert>
-              </sch:rule>
               <sch:rule context="//tei:body//tei:relation/@mutual">
                 <sch:let name="docURI" value="//tei:publicationStmt/tei:idno/substring-before(., '/tei')"/>
                 <sch:assert test="contains(., ' ')">
@@ -1420,7 +1412,7 @@
                   every $i in (tokenize(., ' '))
                   satisfies matches($i, concat('http://syriaca.org/place/', '\d+'))"
                   >
-                  The @mutual attribute on a &lt;relation&gt; element with @name="share-a-name" should contain two or more properly formatted 
+                  The @mutual attribute on a &lt;relation&gt; element should contain two or more properly formatted 
                   Syriaca.org place URIs ('http://syriaca.org/place/{\d+}') separated by a blank space.
                 </sch:assert>
                 <sch:report
@@ -1429,7 +1421,7 @@
                   satisfies matches(substring-after($i, 'http://syriaca.org/place/'), '\D')"
                   >
                   <!-- Needs testing. Something here doesn't seem to be working properly. -->
-                  The @mutual attribute on a &lt;relation&gt; element with @name="share-a-name" should contain two or more properly formatted 
+                  The @mutual attribute on a &lt;relation&gt; element with should contain two or more properly formatted 
                   Syriaca.org place URIs ('http://syriaca.org/place/{\d+}') separated by a blank space.
                 </sch:report>
                 <sch:assert test="contains(., $docURI)">
@@ -1439,10 +1431,20 @@
             </constraint>
           </constraintSpec>
           <attList>
-            <attDef ident="ref" mode="delete"/>
-            <attDef ident="key" mode="delete"/>
+            <attDef ident="mutual" mode="change" usage="req"/>
+            <attDef ident="name" mode="change" usage="req">
+              <valList type="closed">
+                <valItem ident="share-a-name">
+                  <desc>Two or more locations that share a name</desc>
+                </valItem>
+                <valItem ident="see-also">
+                  <desc>Two or more locations that have a unspecified relationship</desc>
+                </valItem>
+              </valList>
+            </attDef>
             <attDef ident="active" mode="delete"/>
-            <attDef ident="passive" mode="delete"/>
+            <attDef ident="passive" mode="delete"></attDef>
+            <attDef ident="ref" mode="delete"/>
           </attList>
           <exemplum versionDate="2016-11-24">
             <egXML xmlns="http://www.tei-c.org/ns/Examples">

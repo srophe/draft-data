@@ -2,11 +2,11 @@
 <grammar xmlns:xlink="http://www.w3.org/1999/xlink"
          xmlns:tei="http://www.tei-c.org/ns/1.0"
          xmlns:teix="http://www.tei-c.org/ns/Examples"
+         xmlns:srophe="https://srophe.app"
          xmlns="http://relaxng.org/ns/structure/1.0"
          datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"
-         ns="http://www.tei-c.org/ns/1.0"
-         xmlns:srophe="https://srophe.app"><!--
-Schema generated from ODD source 2020-05-04T20:18:17Z. .
+         ns="http://www.tei-c.org/ns/1.0"><!--
+Schema generated from ODD source 2020-05-04T20:44:57Z. .
 TEI Edition: Version 3.6.0. Last updated on
 	16th July 2019, revision daa3cc0b9
 TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 3.6.0/
@@ -4574,32 +4574,7 @@ Sample values include: 1] approved; 2] candidate; 3] cleared; 4] deprecated; 5] 
             <ref name="desc"/>
          </optional>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="syriacaPlacesTEI-relation-atts-on-relation-constraint-rule-63">
-            <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
-                      xmlns:sch="http://purl.oclc.org/dsdl/schematron"
-                      xmlns:srophe="https://srophe.app"
-                      context="//tei:body//tei:relation/@mutual">
-               <sch:let name="docURI"
-                        value="//tei:publicationStmt/tei:idno/substring-before(., '/tei')"/>
-               <sch:assert test="contains(., ' ')">
-                  The @mutual attribute on a &lt;relation&gt; element must contain two or more values.
-                </sch:assert>
-               <sch:assert test="                   every $i in (tokenize(., ' '))                   satisfies matches($i, concat('http://syriaca.org/place/', '\d+'))">
-                  The @mutual attribute on a &lt;relation&gt; element should contain two or more properly formatted 
-                  Syriaca.org place URIs ('http://syriaca.org/place/{\d+}') separated by a blank space.
-                </sch:assert>
-               <sch:report test="                   every $i in (tokenize(., ' '))                   satisfies matches(substring-after($i, 'http://syriaca.org/place/'), '\D')">
-                  
-                  The @mutual attribute on a &lt;relation&gt; element with should contain two or more properly formatted 
-                  Syriaca.org place URIs ('http://syriaca.org/place/{\d+}') separated by a blank space.
-                </sch:report>
-               <sch:assert test="contains(., $docURI)">
-                  One on the values of the @mutual attribute must be the URI for this document's place: <sch:value-of select="$docURI"/>.
-                </sch:assert>
-            </sch:rule>
-         </pattern>
-         <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="syriacaPlacesTEI-relation-reforkeyorname-constraint-assert-63">
+                  id="syriacaPlacesTEI-relation-reforkeyorname-constraint-assert-60">
             <rule context="tei:relation">
                <assert xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                        xmlns:srophe="https://srophe.app"
@@ -4607,7 +4582,7 @@ Sample values include: 1] approved; 2] candidate; 3] cleared; 4] deprecated; 5] 
             </rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="syriacaPlacesTEI-relation-activemutual-constraint-report-26">
+                  id="syriacaPlacesTEI-relation-activemutual-constraint-report-25">
             <rule context="tei:relation">
                <report xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                        xmlns:srophe="https://srophe.app"
@@ -4615,7 +4590,7 @@ Sample values include: 1] approved; 2] candidate; 3] cleared; 4] deprecated; 5] 
             </rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="syriacaPlacesTEI-relation-activepassive-constraint-report-27">
+                  id="syriacaPlacesTEI-relation-activepassive-constraint-report-26">
             <rule context="tei:relation">
                <report xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                        xmlns:srophe="https://srophe.app"
@@ -4625,29 +4600,62 @@ Sample values include: 1] approved; 2] candidate; 3] cleared; 4] deprecated; 5] 
          <ref name="att.global.attributes"/>
          <ref name="att.datable.attributes"/>
          <ref name="att.editLike.attributes"/>
-         <ref name="att.canonical.attribute.key"/>
+         <ref name="att.canonical.attributes"/>
          <ref name="att.sortable.attributes"/>
          <ref name="att.typed.attributes"/>
+         <attribute name="mutual">
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+            <text/>
+         </attribute>
+         <attribute name="name">
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+            <choice>
+               <value>share-a-name</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Used when two or more locations share a name</a:documentation>
+               <value>see-also</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Used when two or more locations have a unspecified relationship</a:documentation>
+            </choice>
+         </attribute>
          <choice>
             <optional>
                <attribute name="active">
-                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                  <text/>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">identifies the active participants in a non-mutual relationship, or all the participants in a mutual one.</a:documentation>
+                  <list>
+                     <oneOrMore>
+                        <data type="anyURI"/>
+                     </oneOrMore>
+                  </list>
                </attribute>
             </optional>
-            <attribute name="mutual">
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">supplies a list of participants amongst all of whom the relationship holds equally.</a:documentation>
+            <optional>
+               <attribute name="mutual">
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">supplies a list of participants amongst all of whom the relationship holds equally.</a:documentation>
+                  <list>
+                     <oneOrMore>
+                        <data type="anyURI"/>
+                     </oneOrMore>
+                  </list>
+               </attribute>
+            </optional>
+         </choice>
+         <optional>
+            <attribute name="name">
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">supplies a name for the kind of relationship of which this is an instance.</a:documentation>
+               <data type="token">
+                  <param name="pattern">(\p{L}|\p{N}|\p{P}|\p{S})+</param>
+               </data>
+            </attribute>
+         </optional>
+         <optional>
+            <attribute name="passive">
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">identifies the passive participants in a non-mutual relationship.</a:documentation>
                <list>
                   <oneOrMore>
                      <data type="anyURI"/>
                   </oneOrMore>
                </list>
             </attribute>
-         </choice>
-         <attribute name="name">
-            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">supplies a name for the kind of relationship of which this is an instance.</a:documentation>
-            <empty/>
-         </attribute>
+         </optional>
          <empty/>
       </element>
    </define>
@@ -4664,7 +4672,7 @@ Sample values include: 1] approved; 2] candidate; 3] cleared; 4] deprecated; 5] 
             <ref name="precision"/>
          </zeroOrMore>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="syriacaPlacesTEI-state-xmlID-on-state-constraint-rule-64">
+                  id="syriacaPlacesTEI-state-xmlID-on-state-constraint-rule-63">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       xmlns:srophe="https://srophe.app"
@@ -4680,7 +4688,7 @@ Sample values include: 1] approved; 2] candidate; 3] cleared; 4] deprecated; 5] 
             </sch:rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="syriacaPlacesTEI-state-xmlID-on-state-constraint-rule-65">
+                  id="syriacaPlacesTEI-state-xmlID-on-state-constraint-rule-64">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       xmlns:srophe="https://srophe.app"
@@ -4779,7 +4787,7 @@ Sample values include: 1] TEI; 2] DBK (docbook); 3] XX (unknown); 4] Schematron;
       </choice>
    </start>
    <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-            id="syriacaPlacesTEI-source-att-constraint-rule-66">
+            id="syriacaPlacesTEI-source-att-constraint-rule-65">
       <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                 xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                 xmlns:srophe="https://srophe.app"

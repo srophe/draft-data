@@ -1397,10 +1397,7 @@
         </elementSpec>
 
         <elementSpec ident="relation" module="namesdates" mode="change">
-          <content>
-            <elementRef key="desc" minOccurs="0" maxOccurs="1"/>
-          </content>
-          <constraintSpec ident="atts-on-relation" scheme="schematron">
+          <!--<constraintSpec ident="atts-on-relation" scheme="schematron">
             <constraint>
               <sch:rule context="//tei:body//tei:relation/@mutual">
                 <sch:let name="docURI" value="//tei:publicationStmt/tei:idno/substring-before(., '/tei')"/>
@@ -1420,7 +1417,7 @@
                   every $i in (tokenize(., ' '))
                   satisfies matches(substring-after($i, 'http://syriaca.org/place/'), '\D')"
                   >
-                  <!-- Needs testing. Something here doesn't seem to be working properly. -->
+                  <!-\- Needs testing. Something here doesn't seem to be working properly. -\->
                   The @mutual attribute on a &lt;relation&gt; element with should contain two or more properly formatted 
                   Syriaca.org place URIs ('http://syriaca.org/place/{\d+}') separated by a blank space.
                 </sch:report>
@@ -1429,10 +1426,11 @@
                 </sch:assert>
               </sch:rule>
             </constraint>
-          </constraintSpec>
+          </constraintSpec>-->
+          
           <attList>
-            <attDef ident="mutual" mode="change" usage="req"/>
-            <attDef ident="name" mode="change" usage="req">
+            <attDef ident="mutual" mode="add" usage="req"/>
+            <attDef ident="name" mode="add" usage="req">
               <valList type="closed" mode="change">
                 <valItem ident="share-a-name">
                   <desc>Used when two or more locations share a name</desc>
@@ -1442,46 +1440,10 @@
                 </valItem>
               </valList>
             </attDef>
-            <attDef ident="active" mode="delete"/>
+            <!--<attDef ident="active" mode="delete"/>
             <attDef ident="passive" mode="delete"/>
-            <attDef ident="ref" mode="delete"/>
+            <attDef ident="ref" mode="delete"/>-->
           </attList>
-          <exemplum versionDate="2016-11-24">
-            <egXML xmlns="http://www.tei-c.org/ns/Examples">
-              <bibl type="lawd:Translation" xml:id="bib2501-18" source="#bib2501-7">
-                <lang>ar</lang>
-                <title level="m" xml:lang="ar">تاريخ الزمان</title>
-                <ptr target="http://syriaca.org/bibl/2286"/>
-                <listRelation>
-                  <relation type="translationSource" active="#bib2501-18" ref="dct:source"
-                    passive="#bib2501-2" source="#bib2501-7"/>
-                  <relation active="#bib2501-18" ref="lawd:embodies"
-                    passive="http://syriaca.org/work/2501"/>
-                </listRelation>
-              </bibl>
-            </egXML>
-          </exemplum>
-          <exemplum versionDate="2016-11-24">
-            <egXML xmlns="http://www.tei-c.org/ns/Examples">
-              <relation xml:id="relation2501-1" type="part" active="http://syriaca.org/work/2501"
-                ref="dct:isPartOf" passive="http://syriaca.org/work/2500">
-                <desc>
-                  <label type="order" subtype="part" n="1">part 1</label>
-                </desc>
-              </relation>
-            </egXML>
-            <p>This relation shows that the work described in this record is part 1 of a larger
-              work.</p>
-          </exemplum>
-          <remarks versionDate="2016-11-24">
-            <p><gi>relation</gi> is used to link Syriaca.org entities to each other, when possible
-              in a semantically robust, RDF-friendly way. The values of <att>active</att>,
-                <att>ref</att>, and <att>passive</att> should be construable as RDF triples. For
-              this reason, <att>ref</att> is required, as is either <att>active</att> and
-                <att>passive</att>, or <att>mutual</att>. The <gi>relation</gi> may also contain
-              text inside a <gi>desc</gi> if such must be visualized on the record, but this text
-              should be standardized to the extent possible.</p>
-          </remarks>
         </elementSpec>
 
 

@@ -1395,9 +1395,20 @@
             </constraint>
           </constraintSpec>
         </elementSpec>
-
+        
         <elementSpec ident="relation" module="namesdates" mode="change">
-          <!--<constraintSpec ident="atts-on-relation" scheme="schematron">
+          <attList>
+            <attDef ident="name" mode="change" usage="req">
+              <valList mode="replace" type="closed">
+                <valItem ident="share-a-name"/>
+                <valItem ident="see-also"/>
+              </valList>
+            </attDef>
+          </attList>
+        </elementSpec>
+
+        <!--<elementSpec ident="relation" module="namesdates" mode="change">
+          <!-\-<constraintSpec ident="atts-on-relation" scheme="schematron">
             <constraint>
               <sch:rule context="//tei:body//tei:relation/@mutual">
                 <sch:let name="docURI" value="//tei:publicationStmt/tei:idno/substring-before(., '/tei')"/>
@@ -1417,7 +1428,7 @@
                   every $i in (tokenize(., ' '))
                   satisfies matches(substring-after($i, 'http://syriaca.org/place/'), '\D')"
                   >
-                  <!-\- Needs testing. Something here doesn't seem to be working properly. -\->
+                  <!-\\- Needs testing. Something here doesn't seem to be working properly. -\\->
                   The @mutual attribute on a &lt;relation&gt; element with should contain two or more properly formatted 
                   Syriaca.org place URIs ('http://syriaca.org/place/{\d+}') separated by a blank space.
                 </sch:report>
@@ -1426,12 +1437,12 @@
                 </sch:assert>
               </sch:rule>
             </constraint>
-          </constraintSpec>-->
+          </constraintSpec>-\->
           
           <attList>
-            <attDef ident="mutual" mode="add" usage="req"/>
-            <attDef ident="name" mode="add" usage="req">
-              <valList type="closed" mode="change">
+            <attDef ident="mutual" mode="change" usage="req"/>
+            <attDef ident="name" mode="change" usage="req">
+              <valList mode="change" type="closed">
                 <valItem ident="share-a-name">
                   <desc>Used when two or more locations share a name</desc>
                 </valItem>
@@ -1440,11 +1451,11 @@
                 </valItem>
               </valList>
             </attDef>
-            <!--<attDef ident="active" mode="delete"/>
+            <!-\-<attDef ident="active" mode="delete"/>
             <attDef ident="passive" mode="delete"/>
-            <attDef ident="ref" mode="delete"/>-->
+            <attDef ident="ref" mode="delete"/>-\->
           </attList>
-        </elementSpec>
+        </elementSpec>-->
 
 
 
@@ -1645,7 +1656,7 @@
               <datatype>
                 <dataRef key="teidata.enumerated"/>
               </datatype>
-              <valList type="closed">
+              <valList type="closed" mode="replace">
                 <valItem ident="column">
                   <desc>the element identifies a column.</desc>
                 </valItem>

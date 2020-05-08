@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title ref="http://syriaca.org/work/3007">To Conon the Silentiary</title>
+            <author ref="http://syriaca.org/person/51">Severus of Antioch</author>
+            <sponsor>Center of Digital Humanities Research, Texas A&amp;M University</sponsor>
+            <principal>Daniel L. Schwartz</principal>
+            <editor role="editor" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</editor>
+            <respStmt>
+               <resp>XML created by</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</name>
+            </respStmt>
+            <respStmt>
+               <resp>Based on the work of</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#ewbrooks">E. W. Brooks</name>
+            </respStmt>
+            <respStmt>
+               <resp>OCR corrected by</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</name>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition n="1"/>
+         </editionStmt>
+         <publicationStmt>
+            <distributor>
+               <placeName>Center of Digital Humanities Research, College Station, TX, USA</placeName>
+            </distributor>
+            <authority/><!-- FILL IN AFTER DECIDING ON NAME -->
+            <idno/><!-- FILL IN AFTER DECIDING ON URI/URL FORMAT -->
+            <availability>
+               <licence target="http://creativecommons.org/licenses/by/4.0/">
+                  <p>Creative Commons — Attribution 4.0 International — CC BY 4.0</p>
+                  <p>https://creativecommons.org/licenses/by/4.0/</p>
+               </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <editor ref="http://syriaca.org/person/403">
+                     <persName xml:lang="en">
+                        <forename>E. W.</forename>
+                        <surname>Brooks</surname>
+                     </persName>
+                  </editor>
+                  <title type="main" xml:lang="en" level="m">
+                     The Sixth Book of the Select Letters of
+                     <persName ref="http://syriaca.org/person/51">Severus Patriarch of Antioch</persName>
+                     in the Syriac Version of
+                     <persName ref="http://syriaca.org/person/1014">Athanasius of Nisibis</persName>
+                  </title>
+                  <title type="sub" xml:lang="en" level="m">Vol. II (Translation) Part II</title>
+                  <idno type="URI">http://syriaca.org/bibl/669</idno>
+                  <imprint>
+                     <publisher xml:lang="en">Williams and Norgate</publisher>
+                     <pubPlace ref="http://syriaca.org/place/861">Oxford</pubPlace>
+                     <date>1903</date>
+                  </imprint>
+                  <extent>Vol. 4 of 4</extent>
+                  <biblScope unit="vol">2.2</biblScope>
+                  <biblScope unit="page">439-42</biblScope>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <editorialDecl>
+            <p/><!-- FILL IN -->
+         </editorialDecl>
+      </encodingDesc>
+      <profileDesc>
+         <creation>
+            <origDate type="composition"/><!-- FILL IN. La Route Royale dates are probably preferable to Brooks' dates. -->
+         </creation>
+      </profileDesc>
+      <revisionDesc status="draft">
+         <change when="2019-11" who="http://syriaca.org/person.xml#dschwartz">Created file</change>
+      </revisionDesc>
+   </teiHeader>
+  <text>
+      <body>
+         <div type="letter" n="10.4">
+            <head type="main" resp="#compiler">Of the same to Conon the silentiary.</head>
+            <head type="sub" resp="#compiler">From those before episcopacy, from the 3rd book the
+               227th letter.</head>
+            <p> John, the soldier of Christ, being ardent in everything, and fervent through
+               abundance of faith, has thought fit to address an epistle to me containing a <pb
+                  n="440"/> question that is overbold and passes beyond canonical limits about your
+               modest daughter, and about those who are eager to take her in marriage. He gave in
+               fact the names of those who are wooing her, and also in the name of your magnificence
+               asked that the question might be brought before the holy old men, and before some of
+               the women who have practised an ascetic life, in order that they may say to whom it
+               is most fitting for the girl to be joined in marriage. But I, knowing that fathers
+               who have the spirit of discretion turn deaf ears to such questions, in order that
+               they may not seem to be bringing upon themselves the reputation of soothsayers and
+               charlatans, did not dare to write anything of the kind to them, lest perhaps I might
+               even expose myself to sentence as an uninstructed person, for being clad in the
+               philosophic and solitary garb and yet propounding to them questions suited for those
+               that live in the world, which those attempt only out of compliance with the pleasure
+               of those that ask, men who pass all their time in Byzantium, and often turn their
+               attention even involuntarily to such voluntary service, to use a scriptural
+               expression. But we know a few of the fathers who return answer, being stirred by God,
+               and not by the questions or the propositions, but by abundant Spirit: of whom the
+               sacred text says, "Speech in the heart of a man is as deep water, and a flowing river
+               and a <pb n="441"/> fountain of life." The wealth of grace is so to speak plentiful,
+               and of its own accord it makes those that surround it outside share in any gift. If
+               your greatness had gone to some such men in order to visit them, you would perhaps at
+               any rate have derived, not as the result of the question or of the proposition, but
+               as the product of such plentiful store, something that would have been of service for
+               the solution of the question and the understanding of the present matter. As to those
+               who have received such grace from God let this suffice. But, since the utterance of
+               our Saviour says in the Gospels, "To every one that asketh thee give," whether it be
+               a gift pertaining to the intellect, or one pertaining to the senses, it is necessary
+               for me also who see few things, and, far from being able to foresee or preconceive
+               the future, do not even know what lies at hand, to say what my advice is. It is that
+               you should give the girl who has been brought up by you in faith and in the love of
+               God to that one among all her wooers who has the most correct and orthodox
+               disposition as regards faith in Christ, and sets himself most earnestly to lead a
+               devout and modest life: for this all other things also follow as in the second line.
+               In fact He is no liar who said, "Seek first the kingdom of God and His righteousness,
+               and all these things shall be added unto you": since to speak the truth it is indeed
+               an abominable <pb n="442"/> thing, and one that does not greatly gratify God, or
+               perhaps even excites His wrath, for us to pass over manifest judgments as to what it
+               is right to do, and facts from which God's pleasure is especially to be seen, from
+               whom everything whatsoever that is good comes down, and give directions by unknown
+               things or by predispositions, and commit everything to revelations; for some have
+               even applied this meaning to the words, "Thou shalt not tempt the Lord thy God." If
+               you will turn your eyes towards the said object, and choose what it is right to do,
+               you will not stray from the right course, seeing that: you will obtain God as a
+               surety for the future and for a goad result. The Apostle also admonishes us saying,
+               "Whatsoever ye do whether in word or in deed, do all in the name of our Lord Jesus,
+               giving thanks to God and the Father through Him." </p>
+            <trailer>The end.</trailer>
+         </div>      
+      </body>
+  </text>
+</TEI>

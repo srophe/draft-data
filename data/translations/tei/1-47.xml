@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title ref="http://syriaca.org/work/3087">To Cassian, Bishop of Bostra</title>
+            <author ref="http://syriaca.org/person/51">Severus of Antioch</author>
+            <sponsor>Center of Digital Humanities Research, Texas A&amp;M University</sponsor>
+            <principal>Daniel L. Schwartz</principal>
+            <editor role="editor" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</editor>
+            <respStmt>
+               <resp>XML created by</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</name>
+            </respStmt>
+            <respStmt>
+               <resp>Based on the work of</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#ewbrooks">E. W. Brooks</name>
+            </respStmt>
+            <respStmt>
+               <resp>OCR corrected by</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</name>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition n="1"/>
+         </editionStmt>
+         <publicationStmt>
+            <distributor>
+               <placeName>Center of Digital Humanities Research, College Station, TX, USA</placeName>
+            </distributor>
+            <authority/><!-- FILL IN AFTER DECIDING ON NAME -->
+            <idno/><!-- FILL IN AFTER DECIDING ON URI/URL FORMAT -->
+            <availability>
+               <licence target="http://creativecommons.org/licenses/by/4.0/">
+                  <p>Creative Commons — Attribution 4.0 International — CC BY 4.0</p>
+                  <p>https://creativecommons.org/licenses/by/4.0/</p>
+               </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <editor ref="http://syriaca.org/person/403">
+                     <persName xml:lang="en">
+                        <forename>E. W.</forename>
+                        <surname>Brooks</surname>
+                     </persName>
+                  </editor>
+                  <title type="main" xml:lang="en" level="m">
+                     The Sixth Book of the Select Letters of
+                     <persName ref="http://syriaca.org/person/51">Severus Patriarch of Antioch</persName>
+                     in the Syriac Version of
+                     <persName ref="http://syriaca.org/person/1014">Athanasius of Nisibis</persName>
+                  </title>
+                  <title type="sub" xml:lang="en" level="m">Vol. II (Translation) Part I</title>
+                  <idno type="URI">http://syriaca.org/bibl/668</idno>
+                  <imprint>
+                     <publisher xml:lang="en">Williams and Norgate</publisher>
+                     <pubPlace ref="http://syriaca.org/place/861">Oxford</pubPlace>
+                     <date>1903</date>
+                  </imprint>
+                  <extent>Vol. 3 of 4</extent>
+                  <biblScope unit="vol">2.1</biblScope>
+                  <biblScope unit="page">129-30</biblScope>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <editorialDecl>
+            <p/><!-- FILL IN -->
+         </editorialDecl>
+      </encodingDesc>
+      <profileDesc>
+         <creation>
+            <origDate type="composition"/><!-- FILL IN. La Route Royale dates are probably preferable to Brooks' dates. -->
+         </creation>
+      </profileDesc>
+      <revisionDesc status="draft">
+         <change when="2019-11" who="http://syriaca.org/person.xml#dschwartz">Created file</change>
+      </revisionDesc>
+   </teiHeader>
+  <text>
+      <body>
+         <div type="letter" n="1.47">
+            <head type="main" resp="#compiler">Of the same to Cassian bishop of Bostra.</head>
+            <head type="sub" resp="#compiler">From those during episcopacy, from the 8th book the
+               288th letter.</head>
+            <p> It is nothing surprising if the prelate of the city of the men of Jerusalem, being
+               such in his character and in his faith as everyone knows him to be, but as I for my
+               part loathe even to take upon my lips, has done this act also which you have
+               mentioned in violation of the holy canons, I mean the act of raising to the bishopric
+               a man who was included in <pb n="130"/> the clergy of your holy church. On the
+               contrary one ought to have been surprised if one such as he in his faith and in his
+               character had done anything canonical and according to regulation. We have told this
+               therefore to those who manage our <foreign>apokriseis</foreign> in the royal city. As
+               to Agapius the devout bishop, we have this much to say, that, if the offences
+               committed by him are of such a nature, this man must be corrected by canonical
+               reproofs: with moderation however on account of the difficulty of the time, and
+               because the man has now "grown old in evil days," as the sacred scripture says, and
+               has already come near to being reckoned with those that are in Hades. For "God is
+               faithful, who will not suffer" those that are not rightly disposed towards Him to
+               outrage the sacred prelacy for a great length of time, so that through them His name
+               should be "blasphemed among the nations," as it is written. </p>
+            <trailer>The end.</trailer>
+         </div>
+      </body>
+  </text>
+</TEI>

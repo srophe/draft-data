@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title ref="http://syriaca.org/work/3129">To John, Scholastic of Bostra</title>
+            <author ref="http://syriaca.org/person/51">Severus of Antioch</author>
+            <sponsor>Center of Digital Humanities Research, Texas A&amp;M University</sponsor>
+            <principal>Daniel L. Schwartz</principal>
+            <editor role="editor" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</editor>
+            <respStmt>
+               <resp>XML created by</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</name>
+            </respStmt>
+            <respStmt>
+               <resp>Based on the work of</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#ewbrooks">E. W. Brooks</name>
+            </respStmt>
+            <respStmt>
+               <resp>OCR corrected by</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</name>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition n="1"/>
+         </editionStmt>
+         <publicationStmt>
+            <distributor>
+               <placeName>Center of Digital Humanities Research, College Station, TX, USA</placeName>
+            </distributor>
+            <authority/><!-- FILL IN AFTER DECIDING ON NAME -->
+            <idno/><!-- FILL IN AFTER DECIDING ON URI/URL FORMAT -->
+            <availability>
+               <licence target="http://creativecommons.org/licenses/by/4.0/">
+                  <p>Creative Commons — Attribution 4.0 International — CC BY 4.0</p>
+                  <p>https://creativecommons.org/licenses/by/4.0/</p>
+               </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <editor ref="http://syriaca.org/person/403">
+                     <persName xml:lang="en">
+                        <forename>E. W.</forename>
+                        <surname>Brooks</surname>
+                     </persName>
+                  </editor>
+                  <title type="main" xml:lang="en" level="m">
+                     The Sixth Book of the Select Letters of
+                     <persName ref="http://syriaca.org/person/51">Severus Patriarch of Antioch</persName>
+                     in the Syriac Version of
+                     <persName ref="http://syriaca.org/person/1014">Athanasius of Nisibis</persName>
+                  </title>
+                  <title type="sub" xml:lang="en" level="m">Vol. II (Translation) Part II</title>
+                  <idno type="URI">http://syriaca.org/bibl/669</idno>
+                  <imprint>
+                     <publisher xml:lang="en">Williams and Norgate</publisher>
+                     <pubPlace ref="http://syriaca.org/place/861">Oxford</pubPlace>
+                     <date>1903</date>
+                  </imprint>
+                  <extent>Vol. 4 of 4</extent>
+                  <biblScope unit="vol">2.2</biblScope>
+                  <biblScope unit="page">397-412</biblScope>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <editorialDecl>
+            <p/><!-- FILL IN -->
+         </editorialDecl>
+      </encodingDesc>
+      <profileDesc>
+         <creation>
+            <origDate type="composition"/><!-- FILL IN. La Route Royale dates are probably preferable to Brooks' dates. -->
+         </creation>
+      </profileDesc>
+      <revisionDesc status="draft">
+         <change when="2019-11" who="http://syriaca.org/person.xml#dschwartz">Created file</change>
+      </revisionDesc>
+   </teiHeader>
+  <text>
+      <body>
+         <div type="letter" n="8.4">
+            <pb n="397"/>
+            <head type="main" resp="#compiler">Of the same to John the scholastic of Bostra.</head>
+            <head type="sub" resp="#compiler">From those after banishment, from the 5th book the 39th
+               letter.</head>
+            <p> I praise the man who addressed an epistle to your Christ-loving erudition, and is
+               earnestly desirous of learning the intention of the commandments of the Spirit, and
+               rightly shrinks from the crime of transgressing the commandment of the divine laws,
+               which leads to manifest death. For the God-inspired writings somewhere say, "The
+               commandment of the Lord is a fountain of life: and it makes one turn aside from the
+               snare of death." Wherefore I also of necessity answer with what comes to my
+               knowledge, since it is not a safe thing for me to keep silence and neglect the
+               question. If men who have been admitted to act as priests to God do not make manifest
+               to those that are in need the path of what ought to be done, it is equivalent to
+               committing murder. For He that speaks in Hosea the prophet says, "Priests have hidden
+               the Lord's way: they have slain Shechem: because they have wrought iniquity in the
+               house of Israel." For the sharp sword that provides the devil with an instrument for
+               the slaughter of our souls is an iniquity. Wherefore we will set the question of him
+               who asks before our answer, as he requested. It is word for word as follows. <pb
+                  n="398"/> Question one. "The loud-voiced Isaiah admonishes those that thirst to go
+               to the water. Having therefore for a long time disputed about the points to be
+               mentioned without being able to find anyone here to explain these clearly to us, and
+               yearning greatly in thirst, we have now had recourse to your wisdom as to fountains
+               of salvation, you who are able from your own resources and by the help of the
+               God-taught men there to explain to us what the right opinion is concerning the
+               propositions submitted by us. But let the story be taken as relating to imaginary
+               persons. There were with a certain man two deacons who had received the habit from
+               him, and were admitted to the diaconate by his hands: not both at one time: but each
+               of them separately. These concerted a partnership in wickedness: and having corrupted
+               one another left their archimandrite, having perhaps even before their departure made
+               an agreement to trample under foot the anathema that would be launched against them.
+               Therefore, after they had withdrawn themselves, these men's archimandrite, wishing to
+               check the evil, immediately through a certain brother placed them under an anathema,
+               the exact terms of which were that they were not to be together nor talk with one
+               another, nor taste wine for some short stated time. For it was thought that what had
+               been done was chiefly due to the indulgence of the belly. But these men treated the
+               anathema with contempt, and on the very day <pb n="399"/> were together and in
+               company, and did not refrain from the drinking of wine even for the space of one day
+               only. "That if they had observed the pronouncement they would not have been under the
+               anathema, and that after the anathema had been removed also it would have been easy
+               for them to be together is, I think, obvious to everyone: but, since they were
+               infected with contemptuousness and did not take account of the anathema, in what
+               light must we hold these men? and is it possible for him who placed them under
+               anathema to give them forgiveness when the ban has once been broken contrary to his
+               pleasure? Or, even if he who pronounced the anathema shall forgive them, will the
+               Lord also with him forgive their contempt of the anathema and their neglect of the
+               pronouncement? What I ask is whether even if the author of the ban himself wishes to
+               grant release it is difficult for him to do so, or if it is in fact upon him that the
+               whole matter depends so that he may even change his mind and give way, or if it
+               depends upon a certain definite penance and strict observance of the things that were
+               forbidden them before, and whether this is to be observed for ever, or is to be
+               applied to them for a space of time as a discipline. "To speak generally, if a man is
+               under an anathema, and on his own authority deliberately transgresses against it,
+               what does he deserve? And is the act of release after the transgression free from
+               danger for the author of the ban? and does God grant forgiveness with him, and judge
+               the man who has sinned inno<pb n="400"/>cent? I ask further also whether
+               pronouncement and anathema and separation differ from one another in meaning, or if,
+               the meaning being one, it is only the articulation of the syllables that is
+               different." Answer. Since Moses who was named a faithful servant in all God's house
+               says to those who are to judge, "Ye shall not recognise a person in judgment; judge
+               according to the small and according to the great; thou shalt not be afraid of the
+               person of a man, since the judgment is God's," and Koheleth too gives us wise
+               instruction, speaking plainly thus, "There is a time for everything under the sun,"
+               we the mean one also must, as far as is possible for us, so make answer to the
+               question as if the judgment were divine and not human, and produce a solution of the
+               doubt in accordance with the distinctive character of the time. If therefore the head
+               of the monastery reproved the brothers who have now left while they were within and
+               living under his power, and found fault with them for disorderliness of conduct, and
+               forbade them the corrupting intercourse, he would have reason for laying an ordinance
+               upon them after they left also, and ratifying this by an admonitory anathema. But, if
+               he is shown to have been silent the whole of the time during which they were under
+               his authority, and not to have found any such fault with them at all, he is now
+               giving ground for suspicion that he is rather inflicting a man's vengeance upon them
+               for his own <pb n="401"/> injury, not applying a correction out of concern for their
+               salvation. Everyone who wishes is allowed to leave a cloister freely without any
+               blame following him. A man who leaves a monastic community does not, as in the case
+               of the holy churches and of those who are included in the honourable clergy, need a
+               dimissory letter or similar permission: for this is not laid down in any of the holy
+               canons. In conformance with this distinction therefore we say that the pronouncement
+               that has been laid upon the brethren shall hold or not hold. If they received a
+               warning while within the cloister, it is manifest that they have sinned, inasmuch as
+               they have trampled upon the pronouncement. But, if they left without having had any
+               fault found with them, they are not subject to the pronouncement that was laid upon
+               them after their departure: but for their disorderly character they shall give
+               account to the righteous Judge, when they shall themselves bear the burden of their
+               own sin: "for everyone," as the Apostle says, "shall bear his own burden". But, if
+               they fall under the ordinance, it is manifest that penitence will help them. Every
+               sin, even one that is very grievous, is cured by the method of sincere penitence, and
+               those who show penitence worthy the name have nothing incurable about them; and the
+               man himself also who laid the ordinance upon them can remove the interdict: not
+               introducing thereby human favour, but serving the divine will. But, if he shall be
+               wrathfully and <pb n="402"/> hostilely disposed, and be unwilling to release those
+               who sincerely repent, it rests with another authority higher than his, viz., that of
+               the bishops, upon learning the truth, to remove that which out of human bitterness
+               and malice is maintained even after sincere penitence. But it rests with him who has
+               authority to remove the interdict to approve the measure and character of sincere
+               penitence, where nothing is explicitly stated by the church canons, as in the case of
+               certain sins. Such pronouncements the divine scripture is able to term both
+               "ordinances" and "pronouncement", For it is written in Numbers as follows: "This is
+               the word" which the Lord commanded. Any man who shall vow a vow unto the Lord, or
+               swear oaths, or lay down an ordinance concerning himself, shall not make his
+               pronouncement void. All that proceedeth out of his mouth he shall perform." Also,
+               when Samuel the prophet had commanded Saul, and had ordered him to arm himself
+               against Amalek, and deliver to death everything soever that he captured of men and of
+               cattle, and he was victorious and gained mighty success in war, and he transgressed
+               the ordinance and kept the goats and oxen alive, and he angered God, the divine
+               scripture introduces the prophet himself saying thus: "Because thou hast. rejected
+               the pronouncement of the Lord, the Lord shall reject thee from being king over
+               Israel." And Saul said to Samuel: "I have sinned in that I have transgressed <pb
+                  n="403"/> against the word of the Lord." You see Samuel called the divine
+               commandment and ordinance "the pronouncement of the Lord", and Saul "the word of the
+               Lord." Jeremiah the prophet also applied the term "commandment" to the ordinance that
+               the righteous Jonadab established for his sons and his sons' sons, commanding them
+               not to taste wine at all, nor possess a house or field, but to live in tents.
+               Jeremiah was commanded by God over all to take a jar of wine and a cup, and urge his
+               sons to drink, contrary to what was commanded them by their fathers' father: and they
+               made answer saying, "We have hearkened to the voice of Jonadab our father, that we
+               should not drink wine all the days of our life, we and our wives and our sons and our
+               daughters, besides not building houses to live in them. And we have had no vineyard
+               or field or seed: and we have dwelt in tents: and we have done all the things that
+               Jonadab our father commanded us." And thereupon He that commanded the prophet to do
+               these things, in order to convict the disobedient people of Israel, speaks thus: "The
+               sons of Jonadab the son of Rechab have maintained the commandment of their father:
+               but this people hath not hearkened unto me." This ordinance the Spirit-inspired
+               writings are also in the habit of calling "covenant." For instance, when the chiefs
+               of the Jews had with the knowledge of King Zedekiah agreed after the space of six
+               years to let the Hebrew <pb n="404"/> handmaid and slave go free according to what is
+               written in the law, and they had transgressed the ordinance that was enacted by them,
+               the same prophet Jeremiah speaks thus; "The word that came from the Lord unto
+               Jeremiah, after King Zedekiah had completed a covenant with the people in Jerusalem
+               to proclaim a release, and to let every man his Hebrew slave and his Hebrew bondmaid
+               go free, that no man might be in bondage from Jerusalem; and all the great men and
+               all the people who entered into the covenant turned aside from dismissing every man
+               his bondman and his bondwoman, and releasing their bondmen and their bondwomen."
+               Also, when those who had returned from Babylon joined themselves to foreign women, of
+               the peoples of the countries that were near them, from among whom God had forbidden
+               them to make marriages, and Ezra was roused to wrath on account of the sin, those who
+               had offended agreed and ordained to send away from them the women that were united to
+               them: and one of them is described in the second book of those that were written by
+               him as speaking in this manner: "We for our part have been false to our God, and have
+               taken strange women of the peoples of the land: and now there is hope for Israel
+               concerning this. And let us now make a covenant to our God, to put away all the women
+               and such as are born of them. As thou willest, arise, and frighten them by the
+               commandments of our <pb n="405"/> God: and let it be done according to the law.
+               Arise, because the word is upon thee and we are with thee. Be strengthened, and act."
+               You see here also he called that which was resolved and ordained both "word" and
+               "covenant": so that in the God-inspired writings the same thing was named "word" and
+               "ordinance" (or "prescription") and "pronouncement" and "commandment" and "covenant."
+               An anathema fills the place of punishment for him who transgresses what has been
+               ordained. But you must know that there are two kinds of anathema. For the expression
+               "anathema" is also applied to that which is devoted and consecrated to God, gold it
+               may be and silver, and garments and slaves, and cattle and fields: in some cases for
+               the honour and adornment of a prayer-house building, in others for the service or
+               support of those who are in need, or "those who constantly attend upon the altar" as
+               Paul says. Such things it is in no way lawful to transfer to private use after they
+               have been consecrated, and to remove from the use whereby they are appropriated to
+               God. This principle is stated as follows in Leviticus: "Every anathema that a man
+               shall devote unto the Lord of all that he hath, from man unto head of cattle, and
+               from the plot of his inheritance, he shall not sell it, nor redeem it. It shall be a
+               holy thing unto the Lord." Thus it is written that Judith acted. <pb n="406"/> 
+               Judith set apart all the goods of Holophernes that the people gave
+               her, and the net that she took for herself from his chamber, and gave it as an
+               anathema to the Lord." But the other kind of anathema is when persons are by the
+               sentence and judgment of God set apart for death, as Joshua the son of Nun ordained
+               in the case of Jericho according to the determination of the Lord, saying, "This city
+               and all that is therein shall be anathema to the Mighty Lord; however Rahab the
+               harlot and all whom she hath in the house save alive." After the same fashion the
+               divine Samuel also said to Saul about Amalek: "And thou shalt destroy and make
+               anathema him and all that he hath, and shalt not spare him: and thou shalt slay from
+               man unto woman: from babe unto suckling: and from ox unto sheep: and from camel unto
+               ass." Wherefore also Moses to the words cited shortly before from Leviticus adds
+               these expressions which distinguish this other kind of anathema as we said: "And
+               every anathema which shall be set apart by men shall not be redeemed, but shall
+               surely die." The anathema therefore that is laid upon those who transgress against
+               the divine ordinances, or commandments or commands, is of the second kind, the
+               anathema which ordains death to the man who transgresses or sins. But death is
+               separation from God. For God is life. Accordingly it follows <pb n="407"/> that death
+               also is deprivation of life, and it consists in our being separated and removed from
+               God. Into this kind of anathema Paul also cast those who preach to us contrary to
+               what we ourselves have received: and he said in the epistle to the Galatians, "But,
+               even if we or an angel from heaven preach unto you contrary to what we preached unto
+               you, let him be anathema. As we have said before, I say now also again: if any man
+               preach to you contrary to what ye received, let him be anathema." In, the first
+               epistle to the Corinthians also he wrote in a similar fashion: "If any man loveth not
+               our Lord, let him be anathema." However he that tramples upon an anathema decrees
+               against him double and manifold death, and he is alien to the blessed calling and
+               name of Christians: whence by transgressing against the pronouncements of the laws
+               that hold the church of God together he becomes disobedient to the church: and the
+               man who becomes disobedient to the church our Saviour and Lord and God Jesus Christ
+               in the Gospels consigned to the lot of the nations, saying, "But, if he also hear not
+               the church, let him be unto thee as a Gentile and as a tax-gatherer." In general
+               therefore an anathema is a separation. For it separates the man who is guilty and is
+               removed from God's people, as is said by Isaiah, "Let not a foreigner that is nigh
+               unto the Lord say, 'The Lord shall then separate me from His people.'" <pb n="408"/>
+               But the word "separation" is also used when a man is separated for a time from
+               ministering, or from communicating in the sacrifice that is offered. Question two.
+               "Men who cut off their own members are rejected by the great synod: with the
+               qualification that it grants remission to those who have suffered this at the hands
+               of masters or of barbarians, or by reason of disease, or some other imperative cause.
+               This is manifest to those who look at the canon: but for the sake of a searching
+               investigation let a case in point such as this be presupposed. A certain man among
+               those with us, who had worn the monastic habit from his childhood, as soon as he
+               began to reach physical puberty, fearing the enticements of nature, and thinking that
+               he was doing a great thing, did not consider the consequences beforehand: but, being
+               deceived by ignorance or by enthusiasm, cut off his own members without his superiors
+               having knowledge of it. At the time he underwent many punishments for his
+               presumption: but, when he attained to manhood, he adopted a very devout mode of life,
+               giving himself up to fasts and to the singing of psalms accompanied by many tears,
+               and shunning women and bringing his body into subjection by abstinence; though it is
+               for the sake of these things that those who cut off their own members generally fall
+               into. this audacity, since they then associate with women without suspicion, and
+               expect thenceforward to minister to their belly without dis<pb n="409"/>crimination.
+               But the man whose case we are considering is not of this kind. He is temperate in all
+               things: his hand is unsparing in deeds of mercy: and his whole life he is, if one may
+               so say, mourning for the presumptuous deed that he committed against himself: and so
+               much so that he is often brought even to despair. But some bid him despair of grace,
+               and say that the sum of his many labours is useless to him. Wherefore, even though
+               after his audacious act he was admitted first to the diaconate then to the
+               presbyterate, he is in distress because he has learned that this is forbidden by the
+               canons. Therefore let your God-inspired wisdom explain to us what ought to be thought
+               about men who so conduct themselves, or what is the penitence proper for these, and
+               what is the benefit derived from that penitence, and whether the hopes of these men
+               are vain, and they have no expectation of salvation, and in this matter only the
+               power of penitence is weak, seeing that, not even when he is penitent for what he has
+               done, and weeps constantly and wears himself out with supplication, is he to expect
+               forgiveness for the sins committed: or if his upright life and sincere penitence are
+               enough to blot out the presumption of the deed; and if he should continue to hold his
+               <foreign>axia</foreign> or function, or must inevitably be stripped of this, being
+               expelled by the canons?" Answer. The decision and answer upon this question is
+               manifest. If a man who has cut off his own genital members and destroyed them was to
+               have forgiveness, be it on the ground of ignorance or immature age, or <pb n="410"/>
+               fear, or a devout life after the presumptuous deed and evil act, the exactitude of
+               the canons, pronounced as they were through the inspiration of the divine Spirit, by
+               the holy apostles and by the saintly shepherds who were after them, would have
+               foreseen it. The twenty-first canon of the Constitutions? published to the nations by
+               the apostles through Clement speaks thus: "Let not a man who has mutilated himself
+               become a clergyman. For he is a self-slayer, and an enemy of God's creation." And the
+               twenty-second canon also speaks thus: "If a man being a clergyman shall mutilate
+               himself, let his deprivation be effected. For he is a slayer of himself." Next
+               follows the twenty-third canon also, which says these words: "Let a layman who has
+               mutilated himself be separated for three years. For he is an offender against his own
+               life." The first canon also of the great synod of the three hundred and eighteen holy
+               men, of which the question also made mention, proclaimed principles consonant with
+               the declarations of these apostolic constitutions, placing those who have cut off
+               their own members outside the whole clergy, even those who have already been admitted
+               to any kind of ordination. For it spoke thus: "But, if any man being sound in health
+               has cut off his own members, this man even if enrolled in the clergy must be set
+               aside. And henceforth no such man ought to be presented." But the practice of
+               penitence prepares those who have com<pb n="411"/>mitted this presumption for
+               forgiveness in respect of the sins committed, in order that they may not fail to
+               attain the expected life and the kingdom of heaven. But, if any man thinks penitence
+               profitless, and fancies that this is feeble, because it does not contrary to the
+               intention of the holy canons introduce into the clergy a man who has cut off his own
+               members, and restore him to the sacred ministry, he misses the right conception. No
+               one is blamed on that dreadful day of judgment because he was not a clergyman, but
+               because he did not produce fruits worthy of penitence. A man who is sincerely
+               penitent and conscious of his own position, even if he is a man free from every
+               canonical impediment that might prevent him from officiating as a priest and
+               ministering, shuns such an honour. In fact a man does not take "honour unto himself,
+               but by being called of God, as also was Aaron", as said the apostle Paul in the
+               epistle to the Hebrews. The ninth canon also makes these general provisions about
+               those who have fallen under canonical impediments and been presented to the
+               priesthood: "If any have been presented as presbyters without examination, and when
+               examined have confessed the sins committed by them, and after they have confessed any
+               men being moved in a direction contrary to the canon have laid a hand upon them, such
+               men the canon does not accept. For the catholic church <pb n="412"/> requires
+               blamelessness". To the same object the tenth canon also is directed. These things I
+               for my part have considered and written down in answer to the questions sent me by
+               your believing wisdom; not as one who has high thoughts (far be it!), and who exalts
+               himself above those who sin; but I have poured forth a flood of sympathetic tears
+               over the sinners, and I also am clad in weakness of flesh, as the Apostle somewhere
+               says; and of necessity as well as in consequence my speech has borrowed the
+               exactitude of the canons, and has uttered their words; to listen to which and delight
+               oneself even for a short time in this transitory life that flits away sooner than a
+               dream is a cause of great and unending joy, and of the exaltation of the angels and
+               the festival of the spirits above, and of ineffable bliss. May the holy Unity in
+               Trinity, for that is our God, keep your believing wisdom: while you increase in zeal
+               for the orthodox faith, and bear troubles for its sake with firmness, and walk
+               blamelessly in the evangelic commandments; and may It admit you to the future endless
+               life in the kingdom of heaven, through the prayers of all the saints, Amen! </p>
+            <trailer>The end.</trailer>
+         </div>      
+      </body>
+  </text>
+</TEI>

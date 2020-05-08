@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title ref="http://syriaca.org/work/3052">To Solon, Bishop of Seleucia in
+               Isauria</title>
+            <author ref="http://syriaca.org/person/51">Severus of Antioch</author>
+            <sponsor>Center of Digital Humanities Research, Texas A&amp;M University</sponsor>
+            <principal>Daniel L. Schwartz</principal>
+            <editor role="editor" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</editor>
+            <respStmt>
+               <resp>XML created by</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</name>
+            </respStmt>
+            <respStmt>
+               <resp>Based on the work of</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#ewbrooks">E. W. Brooks</name>
+            </respStmt>
+            <respStmt>
+               <resp>OCR corrected by</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</name>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition n="1"/>
+         </editionStmt>
+         <publicationStmt>
+            <distributor>
+               <placeName>Center of Digital Humanities Research, College Station, TX, USA</placeName>
+            </distributor>
+            <authority/><!-- FILL IN AFTER DECIDING ON NAME -->
+            <idno/><!-- FILL IN AFTER DECIDING ON URI/URL FORMAT -->
+            <availability>
+               <licence target="http://creativecommons.org/licenses/by/4.0/">
+                  <p>Creative Commons — Attribution 4.0 International — CC BY 4.0</p>
+                  <p>https://creativecommons.org/licenses/by/4.0/</p>
+               </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <editor ref="http://syriaca.org/person/403">
+                     <persName xml:lang="en">
+                        <forename>E. W.</forename>
+                        <surname>Brooks</surname>
+                     </persName>
+                  </editor>
+                  <title type="main" xml:lang="en" level="m">
+                     The Sixth Book of the Select Letters of
+                     <persName ref="http://syriaca.org/person/51">Severus Patriarch of Antioch</persName>
+                     in the Syriac Version of
+                     <persName ref="http://syriaca.org/person/1014">Athanasius of Nisibis</persName>
+                  </title>
+                  <title type="sub" xml:lang="en" level="m">Vol. II (Translation) Part I</title>
+                  <idno type="URI">http://syriaca.org/bibl/668</idno>
+                  <imprint>
+                     <publisher xml:lang="en">Williams and Norgate</publisher>
+                     <pubPlace ref="http://syriaca.org/place/861">Oxford</pubPlace>
+                     <date>1903</date>
+                  </imprint>
+                  <extent>Vol. 3 of 4</extent>
+                  <biblScope unit="vol">2.1</biblScope>
+                  <biblScope unit="page">81-83</biblScope>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <editorialDecl>
+            <p/><!-- FILL IN -->
+         </editorialDecl>
+      </encodingDesc>
+      <profileDesc>
+         <creation>
+            <origDate type="composition"/><!-- FILL IN. La Route Royale dates are probably preferable to Brooks' dates. -->
+         </creation>
+      </profileDesc>
+      <revisionDesc status="draft">
+         <change when="2019-11" who="http://syriaca.org/person.xml#dschwartz">Created file</change>
+      </revisionDesc>
+   </teiHeader>
+  <text>
+      <body>
+         <div type="letter" n="1.23">
+            <pb n="81"/>
+            <head type="main" resp="#compiler">Of the same to Solon, bishop of Seleucia in
+               Isauria.</head>
+            <head type="sub" resp="#compiler">From those during episcopacy, from the 4th book the
+               270th letter.</head>
+            <p> Your sanctity has acted rightly and has shown a disposition consonant to the divine
+               canons in thinking it right to ask me about Musonius and Paul. But, seeing that they
+               have left their own flock, and played the part of hirelings and not of shepherds,
+               whatever else can one say except that it is necessary that these men should be
+               stripped of all priestly authority, and that they should be cut off from the number
+               of the shepherds? We know that our Saviour also says these words in the Gospel: "He
+               that is an hireling and is not the shepherd, whose own the sheep are not, when he
+               hath seen the wolf coming, leaveth the sheep and fleeth, And the wolf catcheth the
+               sheep, and scattereth them. But the hireling fleeth because he is an hireling, and
+               careth not for the sheep." You therefore, in order that you may not be found liable
+               to the very same punishments, are bound quickly to appoint shepherds for the rational
+               sheep: for those that are at Meloe immediately and without delay, since, as I said,
+               Musonius took to flight like a hireling, and made this excuse for his absence as you
+               write (and we have heard others also who know state the same), though the canons do
+               not allow a man to absent him<pb n="82"/>self from his flock on his own authority and
+               without the consent of patriarchs or metropolitans: but for those at Olba after the
+               winter season has passed, since it was for another reason that Paul set out for the
+               royal city, and it has not yet been made manifest to what city or country he went
+               when he returned thence. But it is known to everyone that, when the deprivation of
+               men who have utterly neglected their own cities is lawfully effected and in
+               accordance with the precepts of the holy canons, others are appointed in the places
+               of those who have been deprived. But, if you resolve to ask our pious king about
+               this, I mean whether the God-loving bishops in Isauria ought to assemble and discuss
+               the matter, and to compose a clear epistle and to report to his hearing that the men
+               who have departed have fled to those who are eager to support their schism, you will
+               be doing very rightly, and, as far as one can guess, not contrary to the intention of
+               his God-loving sovereignty. In my judgment this is a necessary and very advantageous
+               step, and one which may show his piety that we avoid the rocks on all sides, and keep
+               to the royal road and to the unity of the holy churches. While writing these things
+               we weep and groan, and do not rejoice at our brothers' fall, and we consider how,
+               while Musonius was extending his eyebrows upwards and puffing out his cheeks, and
+               devoting his attention only to judging others, we were unaware of the fact that he
+               was feeding his belly, and <pb n="83"/> that he was inflamed with the passion of
+               avarice. We have also letters of his which lay bare his passions that are so
+               shameful. As to the question I have thought it best to refer to the magnificent
+               Oecumenius, since have great confidence in your perfection, and because you love the
+               man just as we do. Moreover by referring the matter to a man who has already
+               discussed this with us we shall escape the necessity of using many words; for we have
+               no leisure, and we are not even able to take recreation owing to the multitude of
+               subjects of concern. </p>
+            <trailer>The end.</trailer>
+         </div>
+      </body>
+  </text>
+</TEI>

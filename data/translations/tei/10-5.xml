@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title ref="http://syriaca.org/work/3010">To Theodore, a Byzantine Monk and Brother-in-law of the Prefects</title>
+            <author ref="http://syriaca.org/person/51">Severus of Antioch</author>
+            <sponsor>Center of Digital Humanities Research, Texas A&amp;M University</sponsor>
+            <principal>Daniel L. Schwartz</principal>
+            <editor role="editor" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</editor>
+            <respStmt>
+               <resp>XML created by</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</name>
+            </respStmt>
+            <respStmt>
+               <resp>Based on the work of</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#ewbrooks">E. W. Brooks</name>
+            </respStmt>
+            <respStmt>
+               <resp>OCR corrected by</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</name>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition n="1"/>
+         </editionStmt>
+         <publicationStmt>
+            <distributor>
+               <placeName>Center of Digital Humanities Research, College Station, TX, USA</placeName>
+            </distributor>
+            <authority/><!-- FILL IN AFTER DECIDING ON NAME -->
+            <idno/><!-- FILL IN AFTER DECIDING ON URI/URL FORMAT -->
+            <availability>
+               <licence target="http://creativecommons.org/licenses/by/4.0/">
+                  <p>Creative Commons — Attribution 4.0 International — CC BY 4.0</p>
+                  <p>https://creativecommons.org/licenses/by/4.0/</p>
+               </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <editor ref="http://syriaca.org/person/403">
+                     <persName xml:lang="en">
+                        <forename>E. W.</forename>
+                        <surname>Brooks</surname>
+                     </persName>
+                  </editor>
+                  <title type="main" xml:lang="en" level="m">
+                     The Sixth Book of the Select Letters of
+                     <persName ref="http://syriaca.org/person/51">Severus Patriarch of Antioch</persName>
+                     in the Syriac Version of
+                     <persName ref="http://syriaca.org/person/1014">Athanasius of Nisibis</persName>
+                  </title>
+                  <title type="sub" xml:lang="en" level="m">Vol. II (Translation) Part II</title>
+                  <idno type="URI">http://syriaca.org/bibl/669</idno>
+                  <imprint>
+                     <publisher xml:lang="en">Williams and Norgate</publisher>
+                     <pubPlace ref="http://syriaca.org/place/861">Oxford</pubPlace>
+                     <date>1903</date>
+                  </imprint>
+                  <extent>Vol. 4 of 4</extent>
+                  <biblScope unit="vol">2.2</biblScope>
+                  <biblScope unit="page">442-47</biblScope>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <editorialDecl>
+            <p/><!-- FILL IN -->
+         </editorialDecl>
+      </encodingDesc>
+      <profileDesc>
+         <creation>
+            <origDate type="composition"/><!-- FILL IN. La Route Royale dates are probably preferable to Brooks' dates. -->
+         </creation>
+      </profileDesc>
+      <revisionDesc status="draft">
+         <change when="2019-11" who="http://syriaca.org/person.xml#dschwartz">Created file</change>
+      </revisionDesc>
+   </teiHeader>
+  <text>
+      <body>
+         <div type="letter" n="10.5">
+            <head type="main" resp="#compiler">Of the same to Theodore the Byzantine monk,
+               brother-in-law of prefects.</head>
+            <head type="sub" resp="#compiler">From those during episcopacy, from the 4th book the 18th
+               letter.</head>
+            <p> It was perfectly obvious that your devoutness would fall into "a later mind" as is
+               written after thus inconsiderately beginning the solitary life; and this after many
+               arguments had often been discussed between you and <pb n="443"/> me, and scriptural
+               principles and patristic admonitions; which the God-clad doctors of the holy church
+               left to us, directing every man in every order and kind of life known to the gospel
+               to the royal road, and handing down the advice that we should beware of turning aside
+               to the right or to the left, as the divine scripture says. However, as you have in
+               fervour betaken yourself to such a garb and mode of life, you need another
+               exposition. Before attaching yourself to Jesus and taking up the cross you were
+               yourself free to consider what mode of life was best for you to choose. But, as. you
+               have gone up to the hill of philosophy, do not any: more return to the land of Sodom,
+               lest you be fixed as a pillar of salt. To bury a father also was right, and in full
+               accord with reasons of nature: but even this was thought a secondary matter after
+               following Jesus. You should at the beginning have listened to Koheleth who says, "Let
+               not thine heart be hasty to utter thy speech before God's face; since a dream cometh
+               through a multitude of trials." However, since as I said we have come to this, we
+               will now quote the admonition of the same Koheleth which says, "Better is it for thee
+               that thou shouldst not vow than vow and not pay." This too is worthy of
+               consideration: that, when Moses the great was prescribing the array of physical war
+               (which however signified the nature of the spiritual array), he ordered the. rulers
+               of the sons <pb n="444"/> of Israel in time of battle to cry to those that were going
+               out to combat and say, "Who is the man that hath built a new house and hath not
+               dedicated it? let him go and return to his house, lest he die in the war and another
+               man dedicate it. And who is the man that hath planted a vineyard? And who is the man
+               that hath betrothed a wife?", and things like these. If a man then, when the law gave
+               him liberty to stay at home for one of these reasons, had in ready ardour taken up
+               arms and hastened to join battle with the foemen, and accordingly stood even at the
+               very pinnacle of danger: and afterwards had come to remember the passibility of the
+               flesh, and had gone back again, would anyone be right in saying that he had not left
+               the line of battle and been enrolled with deserters and traitors, because before
+               going out to the combat he had permission from the law to remain within the house?
+               Certainly not. Accordingly you also, who have joined battle with invisible enemies,
+               and stripped yourself not against blood and flesh, but against principalities and
+               powers and spirits of wickedness," must not trade upon laws which you rendered
+               superfluous by taking arms: but keep the same excellent mind in which you made light
+               of children and of wife, and perform true service to the "Father of the orphans and
+               Judge of the widows," and He will be more truly a husband to the wife, and a father
+               to the children. We must also examine the character of <pb n="445"/> times and of
+               persons, and so apply the divine commandments to deeds to be done, and choose those
+               that are good instead of those that are bad. For this reason among animals also some
+               are clean and allowed to be eaten and hallowed for sacrifice, those whose hoof is
+               parted, and those that besides this chew their food also and masticate it, and chew
+               the cud as it is written. Often, when a thing a short time before appeared to be
+               lawful and a matter of duty, the interposition of some small circumstance has at once
+               and immediately rendered it unlawful. For instance, after the twelve men whom Moses
+               sent had explored the land of promise, together with Caleb and Joshua the son of Nun
+               he urged the whole congregation to go up to that land; but, when they showed fear and
+               hung back and turned to contention and abuse, and after the transgression against
+               God's commandment and the wrath threatened against them prayed the next day that they
+               might go up, he who the day before had been urging them to go up prevented them from
+               doing so, saying, "Ye shall not prosper. Go not up, for the Lord is not with you;"
+               and nevertheless they went up, and they roused God to double exasperation. You too
+               therefore, who put on the angelic garb of the monastic life without restraining the
+               fervour that led you to this by the strict letter of the canons, have other men also
+               as an example, who were fired with a fire or fervour like yours. Imitate them, and
+               distin<pb n="446"/>guish yourself in the struggles of the solitary existence,
+               lest, while wishing to correct a small fault, and that at an improper time, you
+               forget yourself and fall into a pit of evils, and dishonour the sacred garb by
+               involving yourself in worldly cares. As it is an unhallowed and profane thing for us
+               to apply to human use a revered vessel that has once been set apart for the service
+               of God, so also is it foul and abominable for a man who has given himself to God, and
+               hallowed in some sort his own life, to turn back to the claims and judgments of the
+               flesh. Say farewell therefore to the thoughts that call you to live in the world, and
+               keep to the road that lies before you, until you reach, as it is written, "the goal
+               of victory of the upward calling of God, which is in Christ Jesus our Lord." There is
+               only one thing which I would have wished added to, the beginning that you have made;
+               that you had joined yourself in everything, both in community of opinion concerning
+               the faith and in community of habitation, to the holy fathers of the house of the
+               saintly presbyter Theodore; which also you were in the beginning impelled to do and
+               for which you were very eager; and I do not know how the hater of what is good
+               hindered you. But it is easy for us not to be cheated by Satan to use the language of
+               the divine Apostle. These things we have written while much harassed <pb n="447"/>
+               with many affairs and not able even to breathe, because we are inflamed with love
+               towards you, and know that we owe even more to your excellent person. Never at any
+               time shall we be forgetful of the good deeds that you have shown towards us. </p>
+            <trailer>The end.</trailer>
+         </div>      
+      </body>
+  </text>
+</TEI>

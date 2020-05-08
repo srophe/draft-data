@@ -34,6 +34,9 @@
            <xsl:attribute name="type">
                <xsl:value-of select="@type"/>
            </xsl:attribute>
+           <xsl:attribute name="subtype">
+               <xsl:value-of select="@subtype"/>
+           </xsl:attribute>
            <xsl:attribute name="xml:id">
                <xsl:value-of select="concat('factoid-', substring-after(@uri, '-'))"/>
            </xsl:attribute>

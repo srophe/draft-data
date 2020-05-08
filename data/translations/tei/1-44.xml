@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title ref="http://syriaca.org/work/3083">To Eutychian, Governor of Apamea</title>
+            <author ref="http://syriaca.org/person/51">Severus of Antioch</author>
+            <sponsor>Center of Digital Humanities Research, Texas A&amp;M University</sponsor>
+            <principal>Daniel L. Schwartz</principal>
+            <editor role="editor" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</editor>
+            <respStmt>
+               <resp>XML created by</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</name>
+            </respStmt>
+            <respStmt>
+               <resp>Based on the work of</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#ewbrooks">E. W. Brooks</name>
+            </respStmt>
+            <respStmt>
+               <resp>OCR corrected by</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</name>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition n="1"/>
+         </editionStmt>
+         <publicationStmt>
+            <distributor>
+               <placeName>Center of Digital Humanities Research, College Station, TX, USA</placeName>
+            </distributor>
+            <authority/><!-- FILL IN AFTER DECIDING ON NAME -->
+            <idno/><!-- FILL IN AFTER DECIDING ON URI/URL FORMAT -->
+            <availability>
+               <licence target="http://creativecommons.org/licenses/by/4.0/">
+                  <p>Creative Commons — Attribution 4.0 International — CC BY 4.0</p>
+                  <p>https://creativecommons.org/licenses/by/4.0/</p>
+               </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <editor ref="http://syriaca.org/person/403">
+                     <persName xml:lang="en">
+                        <forename>E. W.</forename>
+                        <surname>Brooks</surname>
+                     </persName>
+                  </editor>
+                  <title type="main" xml:lang="en" level="m">
+                     The Sixth Book of the Select Letters of
+                     <persName ref="http://syriaca.org/person/51">Severus Patriarch of Antioch</persName>
+                     in the Syriac Version of
+                     <persName ref="http://syriaca.org/person/1014">Athanasius of Nisibis</persName>
+                  </title>
+                  <title type="sub" xml:lang="en" level="m">Vol. II (Translation) Part I</title>
+                  <idno type="URI">http://syriaca.org/bibl/668</idno>
+                  <imprint>
+                     <publisher xml:lang="en">Williams and Norgate</publisher>
+                     <pubPlace ref="http://syriaca.org/place/861">Oxford</pubPlace>
+                     <date>1903</date>
+                  </imprint>
+                  <extent>Vol. 3 of 4</extent>
+                  <biblScope unit="vol">2.1</biblScope>
+                  <biblScope unit="page">123-25</biblScope>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <editorialDecl>
+            <p/><!-- FILL IN -->
+         </editorialDecl>
+      </encodingDesc>
+      <profileDesc>
+         <creation>
+            <origDate type="composition"/><!-- FILL IN. La Route Royale dates are probably preferable to Brooks' dates. -->
+         </creation>
+      </profileDesc>
+      <revisionDesc status="draft">
+         <change when="2019-11" who="http://syriaca.org/person.xml#dschwartz">Created file</change>
+      </revisionDesc>
+   </teiHeader>
+  <text>
+      <body>
+         <div type="letter" n="1.44">
+            <head type="main" resp="#compiler">Of the same to Eutychian, governor of Apamea.</head>
+            <head type="sub" resp="#compiler">from those during episcopacy, from the 8th book the
+               190th letter.</head>
+            <p> When I compare the reports that have recently come to my hearing with the words
+               spoken by your magnificence when I was leaving the royal city and had reached this
+               city of Antiochus, I still even now consider these untrustworthy and shrink from
+               setting them down in so many words in this letter. I learn that, when one of those
+               who have been deprived and stripped of the high-priestly office was celebrating (as
+               he thinks) the unhallowed memory of martyrs and the initiatory festival and
+               dedication of a certain house, you also went there and took part in a feast that thus
+               contends against God. In order that you may not think that it is from a quarrelsome
+               disposition that we have been led to use such hard words, or rather in order that you
+               may know that what I have written <pb n="124"/> falls short of the real abomination,
+               I will immediately quote to you the actual canon and law of the Spirit, and you will
+               know clearly that for a man who is in servitude to the pious king and is the ruler of
+               a people to do anything of the kind without consideration is not a thing free from
+               danger. The canon or law that has been mentioned is as follows:—"If any bishop,
+               after. he has been deprived by a synod, or a presbyter or deacon by his bishop, shall
+               presume to perform any part of the ministry, be he a bishop according to the
+               previously existing custom, or a presbyter or deacon, no hope of restoration even in
+               another synod shall thenceforward be permitted him, nor shall he be permitted an
+               opportunity of defence: but those also who communicate with him shall all be expelled
+               from the church, and especially if they have presumed to communicate with the
+               aforesaid persons after they have learned the verdict that has been put forth against
+               them." Do you think even after reading this law that it is about small or
+               contemptible matters that we are speaking; or that we do so out of concern for your
+               soul and for your reputation? You must therefore abandon this discreditable state of
+               mind, if indeed it really is a state of mind at all, and reflect upon the purpose of
+               God and of our pious king, and of the glorious notables who are earnest upholders of
+               the orthodox faith, and not set yourself in hostility to the saintly Peter bishop of
+               your metropolis in any<pb n="125"/>thing, or rather not conceive any thought that is
+               hostile and hateful to God, and to our triumphant, serene, Christ-loving king. </p>
+            <trailer>The end.</trailer>
+         </div>
+      </body>
+  </text>
+</TEI>

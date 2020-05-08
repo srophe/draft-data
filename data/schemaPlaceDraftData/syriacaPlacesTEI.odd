@@ -1,7 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_customization.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI 
-  xmlns="http://www.tei-c.org/ns/1.0" 
+<TEI xmlns="http://www.tei-c.org/ns/1.0" 
   xmlns:sch="http://purl.oclc.org/dsdl/schematron" 
   xmlns:srophe="https://srophe.app">
   <teiHeader>
@@ -21,7 +20,7 @@
     <body>
 
       
-      <schemaSpec ident="syriacaPlacesTEI" source="tei:current" start="TEI">
+      <schemaSpec ident="syriacaPlacesTEI" start="TEI">
         <desc/>
         <moduleRef key="tei"/>
         <moduleRef key="certainty" include="precision"/>
@@ -74,7 +73,7 @@
             </attDef>
             <attDef ident="xml:lang" mode="change">
               <!-- Should this be ingested into the Taxonomy? We could we use keyword URIs instead of these. -->
-              <valList mode="add" type="closed">
+              <valList mode="replace" type="closed">
                 <valItem ident="ar">
                   <gloss>Arabic</gloss>
                   <desc>Arabic of any variety or period</desc>
@@ -293,7 +292,7 @@
               <elementRef key="titleStmt" minOccurs="1" maxOccurs="1"/>
               <elementRef key="editionStmt" minOccurs="1" maxOccurs="1"/>
               <elementRef key="publicationStmt" minOccurs="1" maxOccurs="1"/>
-              <elementRef key="seriesStmt" minOccurs="1" maxOccurs="unbounded"/>
+              <elementRef key="seriesStmt" minOccurs="0" maxOccurs="unbounded"/>
               <elementRef key="sourceDesc" minOccurs="1" maxOccurs="1"/>
             </sequence>
           </content>
@@ -310,6 +309,7 @@
                 <elementRef key="title" minOccurs="1" maxOccurs="unbounded"/>
                 <elementRef key="sponsor" minOccurs="1" maxOccurs="unbounded"/>
                 <elementRef key="funder" minOccurs="0" maxOccurs="unbounded"/>
+                <elementRef key="principal" minOccurs="0" maxOccurs="unbounded"/>
                 <elementRef key="editor" minOccurs="1" maxOccurs="unbounded"/>
                 <elementRef key="respStmt" minOccurs="1" maxOccurs="unbounded"/>
               </sequence>
@@ -642,7 +642,7 @@
           </content>
           <attList>
             <attDef ident="unit" mode="change" usage="req">
-              <valList type="closed" mode="change">
+              <valList type="closed" mode="replace">
                 <valItem ident="volume"/>
               </valList>
             </attDef>
@@ -865,7 +865,7 @@
           </content>
           <attList>
             <attDef ident="status" mode="change" usage="req">
-              <valList type="closed">
+              <valList type="closed" mode="replace">
                 <valItem ident="draft">
                   <gloss>draft</gloss>
                   <desc>Indicates that this document is more-or-less complete but remains in draft status.</desc>
@@ -1018,7 +1018,7 @@
               </valList>
             </attDef>
             <attDef ident="level" mode="change">
-              <valList type="closed">
+              <valList type="closed" mode="replace">
                 <valItem ident="a">
                   <gloss>analytic</gloss>
                   <desc> The title for each individual xml file has a <att>level</att> attribute
@@ -1085,7 +1085,7 @@
             <attDef ident="type" mode="change" usage="req">
               <desc>The <att>type</att> attribute on <gi>idno</gi> defines the kind of identifier
                 contained in the text value. In the Gazetteer, the only type of <gi>idno</gi> used is "URI".</desc>
-              <valList mode="change" type="closed">
+              <valList mode="replace" type="closed">
                 <valItem ident="URI">
                   <desc>A Uniform Resource Identifier.</desc>
                 </valItem>
@@ -1160,7 +1160,7 @@
                 role. For example,
              http://syriaca.org/documentation/author-editor-roles.xml#translator . This is
                 recommended, but not required if the type of connection is unknown.</desc>
-              <valList type="closed">
+              <valList type="closed" mode="replace">
                 <valItem ident="associate">
                   <desc>An associate editor</desc>
                 </valItem>
@@ -1213,7 +1213,7 @@
             <attDef ident="type" mode="change" usage="rec">
               <desc>specifies how the date is associated with the entity (work, person, etc.) to
                 which it refers</desc>
-              <valList mode="change" type="closed">
+              <valList mode="replace" type="closed">
                 <valItem ident="original-composition">
                   <desc>the date a work was originally composed</desc>
                 </valItem>
@@ -1264,6 +1264,7 @@
                 <elementRef key="placeName"/>
                 <elementRef key="quote"/>
                 <elementRef key="ref"/>
+                <elementRef key="title"/>
               </alternate>
             </sequence>
           </content>
@@ -1394,21 +1395,10 @@
             </constraint>
           </constraintSpec>
         </elementSpec>
-
+        
         <elementSpec ident="relation" module="namesdates" mode="change">
-          <content>
-            <elementRef key="desc" minOccurs="0" maxOccurs="1"/>
-          </content>
           <constraintSpec ident="atts-on-relation" scheme="schematron">
             <constraint>
-              <sch:rule context="//tei:body//tei:relation">
-                <sch:assert test="@mutual">
-                  A &lt;relation&gt; element requires a @mutual attribute.
-                </sch:assert>
-                <sch:assert test="@name='share-a-name'">
-                  A &lt;relation&gt; element requires a @name attribute with value "share-a-name".
-                </sch:assert>
-              </sch:rule>
               <sch:rule context="//tei:body//tei:relation/@mutual">
                 <sch:let name="docURI" value="//tei:publicationStmt/tei:idno/substring-before(., '/tei')"/>
                 <sch:assert test="contains(., ' ')">
@@ -1419,7 +1409,7 @@
                   every $i in (tokenize(., ' '))
                   satisfies matches($i, concat('http://syriaca.org/place/', '\d+'))"
                   >
-                  The @mutual attribute on a &lt;relation&gt; element with @name="share-a-name" should contain two or more properly formatted 
+                  The @mutual attribute on a &lt;relation&gt; element should contain two or more properly formatted 
                   Syriaca.org place URIs ('http://syriaca.org/place/{\d+}') separated by a blank space.
                 </sch:assert>
                 <sch:report
@@ -1428,7 +1418,7 @@
                   satisfies matches(substring-after($i, 'http://syriaca.org/place/'), '\D')"
                   >
                   <!-- Needs testing. Something here doesn't seem to be working properly. -->
-                  The @mutual attribute on a &lt;relation&gt; element with @name="share-a-name" should contain two or more properly formatted 
+                  The @mutual attribute on a &lt;relation&gt; element with should contain two or more properly formatted 
                   Syriaca.org place URIs ('http://syriaca.org/place/{\d+}') separated by a blank space.
                 </sch:report>
                 <sch:assert test="contains(., $docURI)">
@@ -1436,50 +1426,22 @@
                 </sch:assert>
               </sch:rule>
             </constraint>
-          </constraintSpec>
-          <attList>
-            <attDef ident="ref" mode="delete"/>
-            <attDef ident="key" mode="delete"/>
-            <attDef ident="active" mode="delete"/>
-            <attDef ident="passive" mode="delete"/>
+          </constraintSpec><attList>
+            <attDef ident="name" mode="change" usage="req">
+              <valList mode="replace" type="closed">
+                <valItem ident="share-a-name">
+                  <desc>Use when two or more locations share a name</desc>
+                </valItem>
+                <valItem ident="see-also">
+                  <desc>Use when two or more locations share an unspecified relationship</desc>
+                </valItem>
+              </valList>
+            </attDef>
+            <attDef ident="mutual" mode="replace" usage="req"/>
           </attList>
-          <exemplum versionDate="2016-11-24">
-            <egXML xmlns="http://www.tei-c.org/ns/Examples">
-              <bibl type="lawd:Translation" xml:id="bib2501-18" source="#bib2501-7">
-                <lang>ar</lang>
-                <title level="m" xml:lang="ar">تاريخ الزمان</title>
-                <ptr target="http://syriaca.org/bibl/2286"/>
-                <listRelation>
-                  <relation type="translationSource" active="#bib2501-18" ref="dct:source"
-                    passive="#bib2501-2" source="#bib2501-7"/>
-                  <relation active="#bib2501-18" ref="lawd:embodies"
-                    passive="http://syriaca.org/work/2501"/>
-                </listRelation>
-              </bibl>
-            </egXML>
-          </exemplum>
-          <exemplum versionDate="2016-11-24">
-            <egXML xmlns="http://www.tei-c.org/ns/Examples">
-              <relation xml:id="relation2501-1" type="part" active="http://syriaca.org/work/2501"
-                ref="dct:isPartOf" passive="http://syriaca.org/work/2500">
-                <desc>
-                  <label type="order" subtype="part" n="1">part 1</label>
-                </desc>
-              </relation>
-            </egXML>
-            <p>This relation shows that the work described in this record is part 1 of a larger
-              work.</p>
-          </exemplum>
-          <remarks versionDate="2016-11-24">
-            <p><gi>relation</gi> is used to link Syriaca.org entities to each other, when possible
-              in a semantically robust, RDF-friendly way. The values of <att>active</att>,
-                <att>ref</att>, and <att>passive</att> should be construable as RDF triples. For
-              this reason, <att>ref</att> is required, as is either <att>active</att> and
-                <att>passive</att>, or <att>mutual</att>. The <gi>relation</gi> may also contain
-              text inside a <gi>desc</gi> if such must be visualized on the record, but this text
-              should be standardized to the extent possible.</p>
-          </remarks>
         </elementSpec>
+
+        
 
 
 
@@ -1634,7 +1596,7 @@
             </attDef>
             <attDef ident="type" mode="change" usage="req">
               <desc>The <gi>event</gi> element requires a <att>type</att> attribute.</desc>
-              <valList type="closed">
+              <valList type="closed" mode="replace">
                 <valItem ident="attestation">
                   <desc>An event that attests to the entity described in the document</desc>
                 </valItem>
@@ -1680,7 +1642,7 @@
               <datatype>
                 <dataRef key="teidata.enumerated"/>
               </datatype>
-              <valList type="closed">
+              <valList type="closed" mode="replace">
                 <valItem ident="column">
                   <desc>the element identifies a column.</desc>
                 </valItem>
@@ -1690,6 +1652,9 @@
                 </valItem>
                 <valItem ident="line">
                   <desc>the element contains a line number or line range.</desc>
+                </valItem>
+                <valItem ident="map">
+                  <desc>the element identifies a map.</desc>
                 </valItem>
                 <valItem ident="part">
                   <desc>the element contains a part of a book or collection, i.e. chapter and verse
@@ -1765,7 +1730,7 @@
           </constraintSpec>
           <attList>
             <attDef ident="type" mode="replace" usage="req">
-              <valList type="closed">
+              <valList type="closed" mode="replace">
                 <valItem ident="building">
                   <desc>A construction for which there is no narrower category, such as a church or mosque. Examples of this type include palaces and named city gates.</desc>
                 </valItem>
@@ -1914,11 +1879,13 @@
             <attDef ident="resp" mode="change">
               <desc>
                 Most <gi>placeName</gi> elements will have a <att>source</att> attribute pointing to the <gi>bibl</gi> element that is the 
-                source of that name. In instances where a place name is generated by Syriaca.org for consistency of transcription but is not attested 
-                in a print or online source, a <att>resp</att> is used with a value of 'http://syriaca.org'. 
+                source of that name. In instances where a place name is generated consistency of transcription but is not attested 
+                in a print or online source, a <att>resp</att> is used with a value of either 'http://syriaca.org' or 
+                'https://bqgazetteer.bethmardutho.org'. 
               </desc>
               <valList type="closed" mode="replace">
                 <valItem ident="http://syriaca.org"/>
+                <valItem ident="https://bqgazetteer.bethmardutho.org"></valItem>
               </valList>
             </attDef>
           </attList>
@@ -2016,20 +1983,46 @@
               </sch:rule>
             </constraint>
           </constraintSpec>
+          <constraintSpec ident="atts-on-location" scheme="schematron">
+            <constraint>
+              <sch:rule context="//tei:place/tei:location">
+                <sch:assert test="attribute::source or attribute::resp">
+                  The &lt;location&gt; element must have either a @source attribute (preferred when available) or a @resp attribute.
+                </sch:assert>
+                <sch:report test="attribute::source and attribute::resp">
+                  The &lt;location&gt; element may not have both a @source attribute (the preferred when available) and a @resp attribute.
+                </sch:report>
+              </sch:rule>
+            </constraint>
+          </constraintSpec>
           <attList>
             <attDef ident="type" mode="change" usage="req">
-              <valList mode="change" type="closed">
+              <valList mode="replace" type="closed">
                 <valItem ident="gps"/>
                 <valItem ident="nested"/>
                 <valItem ident="relative"/>
               </valList>
             </attDef>
             <attDef ident="subtype" mode="change">
-              <valList mode="change" type="closed">
+              <valList mode="replace" type="closed">
+                <valItem ident="alternate"/>
+                <valItem ident="preferred"/>
                 <valItem ident="quote"/>
+                <valItem ident="representative"/>
               </valList>
             </attDef>
-            <attDef ident="source" mode="change" usage="req"/>
+            <attDef ident="resp" mode="change">
+              <desc>
+                Most <gi>location</gi> elements will have a <att>source</att> attribute pointing to the <gi>bibl</gi> element that is the 
+                source of that name. In instances where a place name is generated consistency of transcription but is not attested 
+                in a print or online source, a <att>resp</att> is used with a value of either 'http://syriaca.org' or 
+                'https://bqgazetteer.bethmardutho.org'. 
+              </desc>
+              <valList type="closed" mode="replace">
+                <valItem ident="http://syriaca.org"/>
+                <valItem ident="https://bqgazetteer.bethmardutho.org"></valItem>
+              </valList>
+            </attDef>
           </attList>
         </elementSpec>
         

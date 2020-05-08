@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title ref="http://syriaca.org/work/3081">To the Archimandrite of the Monastery of
+               the Holy Lord Simeon</title>
+            <author ref="http://syriaca.org/person/51">Severus of Antioch</author>
+            <sponsor>Center of Digital Humanities Research, Texas A&amp;M University</sponsor>
+            <principal>Daniel L. Schwartz</principal>
+            <editor role="editor" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</editor>
+            <respStmt>
+               <resp>XML created by</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</name>
+            </respStmt>
+            <respStmt>
+               <resp>Based on the work of</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#ewbrooks">E. W. Brooks</name>
+            </respStmt>
+            <respStmt>
+               <resp>OCR corrected by</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</name>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition n="1"/>
+         </editionStmt>
+         <publicationStmt>
+            <distributor>
+               <placeName>Center of Digital Humanities Research, College Station, TX, USA</placeName>
+            </distributor>
+            <authority/><!-- FILL IN AFTER DECIDING ON NAME -->
+            <idno/><!-- FILL IN AFTER DECIDING ON URI/URL FORMAT -->
+            <availability>
+               <licence target="http://creativecommons.org/licenses/by/4.0/">
+                  <p>Creative Commons — Attribution 4.0 International — CC BY 4.0</p>
+                  <p>https://creativecommons.org/licenses/by/4.0/</p>
+               </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <editor ref="http://syriaca.org/person/403">
+                     <persName xml:lang="en">
+                        <forename>E. W.</forename>
+                        <surname>Brooks</surname>
+                     </persName>
+                  </editor>
+                  <title type="main" xml:lang="en" level="m">
+                     The Sixth Book of the Select Letters of
+                     <persName ref="http://syriaca.org/person/51">Severus Patriarch of Antioch</persName>
+                     in the Syriac Version of
+                     <persName ref="http://syriaca.org/person/1014">Athanasius of Nisibis</persName>
+                  </title>
+                  <title type="sub" xml:lang="en" level="m">Vol. II (Translation) Part I</title>
+                  <idno type="URI">http://syriaca.org/bibl/668</idno>
+                  <imprint>
+                     <publisher xml:lang="en">Williams and Norgate</publisher>
+                     <pubPlace ref="http://syriaca.org/place/861">Oxford</pubPlace>
+                     <date>1903</date>
+                  </imprint>
+                  <extent>Vol. 3 of 4</extent>
+                  <biblScope unit="vol">2.1</biblScope>
+                  <biblScope unit="page">120-23</biblScope>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <editorialDecl>
+            <p/><!-- FILL IN -->
+         </editorialDecl>
+      </encodingDesc>
+      <profileDesc>
+         <creation>
+            <origDate type="composition"/><!-- FILL IN. La Route Royale dates are probably preferable to Brooks' dates. -->
+         </creation>
+      </profileDesc>
+      <revisionDesc status="draft">
+         <change when="2019-11" who="http://syriaca.org/person.xml#dschwartz">Created file</change>
+      </revisionDesc>
+   </teiHeader>
+  <text>
+      <body>
+         <div type="letter" n="1.43">
+            <head type="main" resp="#compiler">Of the same to the archimandrite of the monastery of
+               the holy lord Simeon.</head>
+            <head type="sub" resp="#compiler">From those during episcopacy, from the 8th book the
+               134th letter.</head>
+            <p> Whereas Nonnus even before entering the holy Simeon's flock was often summoned to
+               answer the charges and accusations that were being brought against him and did not
+               obey, but, even when placed under an injunction by the God-loving
+               <foreign>ekklesiekdikoi</foreign>, trampled upon this with similar impudence, like
+               a man who had grown accustomed to treat holy things with contempt, and after
+               repairing to me by night once only and in secret, as if doing things worthy of night
+               and darkness, thought that he had thus done enough <pb n="121"/> to give satisfaction
+               (?), and at last after receiving an explicit letter through your religiousness
+               continued in the same shameless state, I for my part endured, and was not roused to
+               just indignation: but after appointing him a limit of ten days I allowed him to have
+               this doubled. And he behaved exactly as one who had not been summoned, alleging only
+               pretexts founded upon sins, and answered through your religiousness that he asked
+               that clergymen should not be present at his trial, because they are clergymen who
+               have been injured by him, and from whom he used to receive the unhallowed and profane
+               gains. For he did the same as those who have stolen or committed adultery, or
+               perpetrated a murder, and say that those who have been outraged and injured by theft
+               and those who have thus suffered by adultery and those who have suffered by murder
+               ought not to be present at their trial. No wonder if, being guilty of such evil
+               deeds, he belches forth such words. What will they say who 'hate judgment and pervert
+               all right things, and build Zion with blood and Jerusalem with iniquity," as one of
+               the prophets somewhere said? For how can one help saying that the hands are full of
+               blood which have sold the gifts of the Holy Spirit, which he had no right to give to
+               some men, or to take away from those who possess them? For this is the wonderful
+               point about his sacrilege, that he used to hide himself as in some lurking place, I
+               mean in hypocrisy, while hearing at <pb n="122"/> every ordination the anathemas and
+               terrific curses that I pronounced against such unlawful gains, and to stop his ears
+               "like the deaf asp that stoppeth her ears, which will not hearken to the voice of the
+               charmer," as the singing prophet says. However, that I may not by using many words
+               protract the letter unnecessarily, this is the second and third summons that I am
+               addressing to him through your love of God, or, rather to speak more truly, a summons
+               that has the force of the tenth and twentieth (for one may justly reckon them as
+               equal in number to the days that have passed); since I wish even if late yet some
+               time or other to induce him to make a defence, with the saintly bishops present
+               according to the intention of the holy canons, and ready to conduct his trial, with
+               the holy Gospels laid in the midst, and the terrific threat pronounced by them
+               hanging over those who turn aside justice." But, if even after this letter he shall
+               dare to delay, then after this the same divine statutes of church discipline shall
+               pronounce judgment and the fitting verdict upon him. For we for our part in no way
+               wished the circumstances of his case to remain unknown to the glorious notables also
+               in Antiochus' city: but we even brought these as far as was possible to their
+               knowledge; and we would have urged them and some of the learned rhetors to be judges
+               of the cause, had it not been that we were hindered by reflecting upon the order of
+               the holy canons, which command that ecclesi<pb n="123"/>astical cases shall be tried
+               and decided by saintly bishops, and subject to penalties those who pass over these
+               and turn to civil courts." And it was for this same reason that we sent the religious
+               Eusebius the deacon also; for we cannot consent, after the lapse of so many days, to
+               keep the saintly bishops here, when they ought to return to their own flock. </p>
+            <trailer>The end.</trailer>
+         </div>
+      </body>
+  </text>
+</TEI>

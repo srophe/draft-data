@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title ref="http://syriaca.org/work/3012">To Solon, Bishop of Seleucia in Isauria</title>
+            
+            <author ref="http://syriaca.org/person/51">Severus of Antioch</author>
+            <sponsor>Center of Digital Humanities Research, Texas A&amp;M University</sponsor>
+            <principal>Daniel L. Schwartz</principal>
+            <editor role="editor" ref="http://syriaca.org/person.xml#dschwartz">Daniel L.
+               Schwartz</editor>
+            <respStmt>
+               <resp>XML created by</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#dschwartz">Daniel L.
+                  Schwartz</name>
+            </respStmt>
+            <respStmt>
+               <resp>Based on the work of</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#ewbrooks">E. W. Brooks</name>
+            </respStmt>
+            <respStmt>
+               <resp>OCR corrected by</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#dschwartz">Daniel L.
+                  Schwartz</name>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition n="1"/>
+         </editionStmt>
+         <publicationStmt>
+            <distributor>
+               <placeName>Center of Digital Humanities Research, College Station, TX,
+                  USA</placeName>
+            </distributor>
+            <authority/>
+            <!-- FILL IN AFTER DECIDING ON NAME -->
+            <idno/>
+            <!-- FILL IN AFTER DECIDING ON URI/URL FORMAT -->
+            <availability>
+               <licence target="http://creativecommons.org/licenses/by/4.0/">
+                  <p>Creative Commons — Attribution 4.0 International — CC BY 4.0</p>
+                  <p>https://creativecommons.org/licenses/by/4.0/</p>
+               </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <editor ref="http://syriaca.org/person/403">
+                     <persName xml:lang="en">
+                        <forename>E. W.</forename>
+                        <surname>Brooks</surname>
+                     </persName>
+                  </editor>
+                  <title type="main" xml:lang="en" level="m"> The Sixth Book of the Select Letters
+                     of <persName ref="http://syriaca.org/person/51">Severus Patriarch of
+                        Antioch</persName> in the Syriac Version of <persName
+                        ref="http://syriaca.org/person/1014">Athanasius of Nisibis</persName>
+                  </title>
+                  <title type="sub" xml:lang="en" level="m">Vol. II (Translation) Part I</title>
+                  <idno type="URI">http://syriaca.org/bibl/668</idno>
+                  <imprint>
+                     <publisher xml:lang="en">Williams and Norgate</publisher>
+                     <pubPlace ref="http://syriaca.org/place/861">Oxford</pubPlace>
+                     <date>1903</date>
+                  </imprint>
+                  <extent>Vol. 3 of 4</extent>
+                  <biblScope unit="vol">2.1</biblScope>
+                  <biblScope unit="page">12-16</biblScope>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <editorialDecl>
+            <p/>
+            <!-- FILL IN -->
+         </editorialDecl>
+      </encodingDesc>
+      <profileDesc>
+         <creation>
+            <origDate type="composition"
+            /><!-- FILL IN. La Route Royale dates are probably preferable to Brooks' dates. -->
+         </creation>
+      </profileDesc>
+      <revisionDesc status="draft">
+         <change when="2019-11" who="http://syriaca.org/person.xml#dschwartz">Created file</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div type="letter" n="1.2">
+            <pb n="12"/>
+            <head type="main" resp="#compiler">Of the same to Solon, bishop and metropolitan.</head>
+            <head type="sub" resp="#compiler">From those before episcopacy, from the 4th book the
+               105th, 106th letter.</head>
+            <p> If anyone who knows how to discern spiritually the dispensations of the Lord, who
+               does all things with wisdom, will recall to mind your struggles on behalf of the
+               orthodox faith— <add><emph>And after other things.</emph></add> Henceforth clothe
+               yourself in the immaterial dress of the priesthood, and stand firm. Instead of the
+               ephod take upon your shoulders the Lord's cross; and instead of the tunic woven of
+               fine linen and blue stuff put on the many-coloured tunic of virtues; and strengthen
+               yourself by the struggles of the martyrs which extended to blood. But assuredly the
+               honourable in virginity and first of female martyrs, and skilled maker of these
+               things, I mean the holy Thecla, will clothe you in such raiment to do honour to her
+               vote concerning you. But the crown of the orthodox faith, and purity and good
+               character, and sincerity and vehemence of preaching, by which others also will be
+               stirred up to the same zeal, will be to you the mitre and the crown of gold and the
+               fair-sounding bells. And you are girt with a girdle and a breastpiece, a solitary and
+               unwedded walk in life. Wherefore also Christ shall lie upon your breast, the Word of
+               God, who took flesh for us, who was typified beforehand by the robe and knowledge and
+               truth." When therefore things are thus <pb n="13"/> with you, who will dare to find
+               fault with the innovation in the matter of your institution, when so many bishops
+               with one accord canonically performed the ordination? That a patriarch or a
+               metropolitan or the synod of the province should according to custom ordain such and
+               such a man is not a matter of the strictness of the canons, but rather of church
+               discipline. But this discipline we see to have been often neglected in times of
+               persecution. Take the holy Basil. Because the bishops of the province were adversely
+               disposed towards him, partly from envy, partly because they were attached to the
+               madness of Arius, Gregory the Theologian says that he was ordained by bishops outside
+               the boundaries, writing thus in the funeral discourse on him: [Here follows the
+               citation given above, p. 9]. However, Flavian may be caught by his own wings. If he
+               himself, and that when accused of heresy, formerly ordained someone in
+               Germanicupolis, and snatched away an ordination that belonged to the metropolitan,
+               let him not be annoyed when he has been treated in the same way, when on our side we
+               have an advocate in defence of a similar act in the orthodox faith; and what can a
+               man think could be a better advocate than this? This has the approval of the holy
+               Gregory the Theologian also when he writes in this manner in the first of the
+               conciliatory discourses, I mean that on the union of the monks, when certain men,
+               perhaps like these, were thought to have intro<pb n="14"/>duced an innovation
+               contrary to the law of the Church: 'For for our part we received the heads also who
+               were given to the severed part with joy, inasmuch as they introduced an innovation on
+               behalf of piety and to help the right teaching which was in distress, and we did not
+               turn away our faces as from enemies, but welcomed them as our brothers, who for a
+               short time were at discord respecting the paternal inheritance, in a brotherly but
+               not a wicked manner. And we did not praise them on account of the enmity: but we
+               received them on account of the zeal. For separation for piety's sake is better than
+               vicious concord. And for this reason we made the loss our gain, silently removing by
+               love the supposition that there was against us: and to this extent we changed the
+               order of things, that the gift should not follow the election, but the election the
+               gift; and we made use of other men's hands in this matter, having been a little
+               anticipated by the Spirit." From the citation it is possible to discern clearly that
+               the innovation which was thought to have been introduced at that time was one similar
+               to the present position, and that, while the election and the right of ordaining
+               belonged to one set of men, others ordained, especially from his expression, "and we
+               made use of other men's hands in this matter"; and above again, "who for a short time
+               were at discord respecting the paternal inheritance." But he shows that those who had
+               the right to elect and ordain, one among whom in <pb n="15"/> particular was the holy
+               Gregory himself, concurred in the election with those who on account of zeal for the
+               orthodox faith had once made an innovation, by uniting with those who separated and
+               made the innovation, and accepting what had been done by them, in that they said,
+               "and for this reason we made the loss our gain, silently removing by love the
+               supposition that: there was against us; and to this extent we changed the order of
+               things, that. the gift should not follow the election, but the election the gift." </p>
+            <p> If Gregory the Theologian, and that being orthodox, or rather a guide and teacher of
+               orthodoxy, bore with and endured those who seceded from him out of superfluous zeal,
+               and accepted the things done by them by way of innovation, let Flavian, who is
+               infected with heresy, either change his evil belief under teaching, and rejoice with
+               us in the things done by us; or if he remains such as he is let him justly suffer
+               annoyance, and put up with it, enwrapped as he is in the bonds of impiety. But, since
+               there was also contained in your letter the question on what conditions it is right
+               to adopt a union with those of the same opinions, it is necessary to say this much.
+               It is right to unite with those of the same opinions, when they are of the same
+               opinions in everything. Putting aside the complete union of the holy churches, since
+               that needs a lawful concession on certain points, the man who privately wishes to be
+               united with you must in everything seek the same ends; as Constantine also of
+               God-loving memory proclaimed to the people before the church; <pb n="16"/> the
+               mention of the Henotikon only being passed over as superfluous: for, if it does not
+               touch the stumbling-blocks that sprang up at Chalcedon and separated the churches,
+               what is the use of mentioning it? To the pious king this was necessary for the
+               general union of the churches, since he was desirous of showing that the king who
+               preceded him also had before him the object of bringing into union those who
+               separated on account of the synod at Chalcedon, and that he is not now the first to
+               introduce this question into the churches, as if making an innovation. We for our
+               part therefore have written these things out of our poverty, because you bade us do
+               this also, giving us an example of a modest or humble disposition. But you will of
+               yourself add things greater and better than these, inasmuch as you have already
+               received from the Spirit together with the pastorate ability also to feed the flock
+               with understanding. </p>
+            <trailer>The end.</trailer>
+         </div>
+      </body>
+   </text>
+</TEI>

@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title ref="http://syriaca.org/work/3124">To Sergius, Bishop of Cyrrhus, and Marion,
+               Bishop of Sura</title>
+            <author ref="http://syriaca.org/person/51">Severus of Antioch</author>
+            <sponsor>Center of Digital Humanities Research, Texas A&amp;M University</sponsor>
+            <principal>Daniel L. Schwartz</principal>
+            <editor role="editor" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</editor>
+            <respStmt>
+               <resp>XML created by</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</name>
+            </respStmt>
+            <respStmt>
+               <resp>Based on the work of</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#ewbrooks">E. W. Brooks</name>
+            </respStmt>
+            <respStmt>
+               <resp>OCR corrected by</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</name>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition n="1"/>
+         </editionStmt>
+         <publicationStmt>
+            <distributor>
+               <placeName>Center of Digital Humanities Research, College Station, TX, USA</placeName>
+            </distributor>
+            <authority/><!-- FILL IN AFTER DECIDING ON NAME -->
+            <idno/><!-- FILL IN AFTER DECIDING ON URI/URL FORMAT -->
+            <availability>
+               <licence target="http://creativecommons.org/licenses/by/4.0/">
+                  <p>Creative Commons — Attribution 4.0 International — CC BY 4.0</p>
+                  <p>https://creativecommons.org/licenses/by/4.0/</p>
+               </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <editor ref="http://syriaca.org/person/403">
+                     <persName xml:lang="en">
+                        <forename>E. W.</forename>
+                        <surname>Brooks</surname>
+                     </persName>
+                  </editor>
+                  <title type="main" xml:lang="en" level="m">
+                     The Sixth Book of the Select Letters of
+                     <persName ref="http://syriaca.org/person/51">Severus Patriarch of Antioch</persName>
+                     in the Syriac Version of
+                     <persName ref="http://syriaca.org/person/1014">Athanasius of Nisibis</persName>
+                  </title>
+                  <title type="sub" xml:lang="en" level="m">Vol. II (Translation) Part II</title>
+                  <idno type="URI">http://syriaca.org/bibl/669</idno>
+                  <imprint>
+                     <publisher xml:lang="en">Williams and Norgate</publisher>
+                     <pubPlace ref="http://syriaca.org/place/861">Oxford</pubPlace>
+                     <date>1903</date>
+                  </imprint>
+                  <extent>Vol. 4 of 4</extent>
+                  <biblScope unit="vol">2.2</biblScope>
+                  <biblScope unit="page">350-59</biblScope>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <editorialDecl>
+            <p/><!-- FILL IN -->
+         </editorialDecl>
+      </encodingDesc>
+      <profileDesc>
+         <creation>
+            <origDate type="composition"/><!-- FILL IN. La Route Royale dates are probably preferable to Brooks' dates. -->
+         </creation>
+      </profileDesc>
+      <revisionDesc status="draft">
+         <change when="2019-11" who="http://syriaca.org/person.xml#dschwartz">Created file</change>
+      </revisionDesc>
+   </teiHeader>
+  <text>
+      <body>
+         <div type="letter" n="5.15">
+            <head type="main" resp="#compiler">Of the same to Sergius, bishop of Cyrrhus, and Marion,
+               bishop of Sura.</head>
+            <head type="sub" resp="#compiler">From those after banishment, from the 4th book the 81st
+               letter.</head>
+            <p> I have read your sanctities' letter in no negligent way but very carefully indeed:
+               for it was such as to <pb n="351"/> attract even those whose mind wanders and who
+               stare vacantly at the stage-play of the life here and cleave to it. <add><emph>And
+                  after other things.</emph></add> As to the sub-deacon who has fallen under a
+               decree of separation from the miserable wicked Cyriac, if he repent of the sins that
+               he has committed, the merciful sentence of God will absolve him through your
+               holinesses. And, if anyone else also has committed or shall commit any such sin, as
+               we pray may not be the case, he shall in an exactly similar way attain absolution
+               according to your legal judgment, on account of Him who does "not wish the death of
+               the sinner so much as that he be converted and live." In fact even in the ordinance
+               regarding Cyriac we have mixed with the severity the mild drug of penitence by
+               inviting him also to recognise the sin that has been committed. For we hear Paul
+               saying in his epistle to the Romans as follows: "Behold therefore the mildness and
+               severity of God; on them which fell severity, but upon thee the mildness of God if
+               thou continue in mildness." For by everything this is what we are taught, to look to
+               Him who sought the sheep that was lost, and bore it on His shoulders and carried it
+               up and counted it in the flock of those that are being saved. Greatly did I rejoice
+               in the Lord, as the wise Paul somewhere said, that the religious presbyter and
+               archimandrite John, trained as he is to do all things with understanding and guided
+               by the divine Spirit, <pb n="352"/> brought first to your sanctities the letter
+               written by me to the saintly bishops Philoxenus, Thomas, and John, who were then
+               living on the hill called that of Marde. For my part I say that your ears and your
+               tranquil and thoughtful mind, which is built up with all devoutness, are like a
+               furnace of fire, in that they have the capacity of distinguishing what is alloyed
+               from what is sound. Wherefore also I have gladly accepted your action in keeping with
+               you the letter written by me to them, and first giving me the benefit of your advice.
+               If therefore it is in order to cause fear and trembling in those who have turned
+               their eyes towards penitence that your sanctities are making the delay in the matter
+               of the reception of the children who were baptized by heretics, I concur with your
+               purpose: only unless perhaps the long delay cause those who have turned their eyes
+               towards penitence to become inert, and despair of being received by you, and return
+               to their first vomit as it is written, and wallow again in the same mire."
+               Nevertheless the form of penitence that was once approved by the holy oecumenical
+               synod that assembled at Ephesus in the case of those who have been baptized by men
+               who hold the hateful profane doctrines of Nestorius must be maintained in full force,
+               and there must be no thought either of second baptism or of chrism. Indeed those who
+               did this when the impiety introduced as an innovation at Chalcedon first prevailed
+               were repudiated both by the <pb n="353"/> holy Timothy who fed the great
+               Christ-loving city of the Alexandrines in saintly fashion and by all the orthodox
+               bishops, as having walked outside the royal and lawful road. But, if we are now going
+               to discuss the question in what way those who are baptized by men who divide the one
+               Christ into two natures after the ineffable union ought to be received, those who
+               observe our actions carefully will say to us, and very rightly, "Why did you
+               repudiate such an inquiry at the time when the impious wicked Flavian was driven from
+               the see of the city of the Antiochenes, and all the bishops who deposed him were
+               assembled together?" They will also blame us for receiving those who were ordained by
+               him in the orders which they then held on merely anathematizing and renouncing the
+               heresy. No one is so devoid of the sacred teachings of orthodoxy as not to call
+               baptism given by any heresy imperfect and spurious: but those who know this look at
+               the regulations of the holy fathers, and reflect that according to the character of
+               the heresy treatment also must be applied, and the stain must be purged and expiated
+               either by another baptism or by chrism, or by an anathema of the heresy, and the
+               judgment of the orthodox priests and reception by them. The utterance of those who
+               officiate with orthodox mind, whatever it may be, is accompanied also by the curative
+               treatment and grace of the Spirit; since the word of the baptizer. perfects baptism
+               also and causes the Spirit to come down upon the water, on account of Him who
+               graciously allowed <pb n="354"/> us who creep upon earth to share in this power. For
+               He cleanses the washing of water by His word, as Paul says in his epistle to the
+               Ephesians. So also the word of the anointer is mingled with the chrism, and applies
+               curative treatment and brings the grace of the Spirit into play. After the
+               same fashion also an anathema of the heresy, when enjoined upon those who utter the
+               condemnation by order of orthodox high-priests, and proffered by the mouth of those,
+               as well as entrance into the holy of holies performed in accordance with the judgment
+               of those who receive them brings healing to the sore, and causes the pure and sincere
+               grace of the Spirit to flash invisibly upon those who have been accepted. With these
+               things the sanction from above is also identified in the giving of the decision,
+               according to the commandment plainly laid down in the Gospels of Him who said to
+               Peter, "I will give thee the keys of the kingdom of heaven, and whatsoever thou shalt
+               bind on earth shall be bound in heaven, and whatsoever thou shalt loose on earth
+               shall be loosed in heaven," and repeated the same again to all the disciples and
+               said, "All things that ye shall bind on earth shall be bound in heaven, and all
+               things that ye shall loose on earth shall be loosed in heaven." For there is nothing
+               lawfully said by the orthodox high-priests, and performed in accordance with the
+               divine commandments and canons, that is not full of the Holy Spirit, as David
+               also the spiritual singer said, <pb n="355"/> "I opened my mouth and breathed in
+               spirit because I longed for thy commandments." I beg your sanctities also to consult
+               carefully the words written by me in Antiochus' city against those who dare to
+               re-anoint contrary to the law, and to reflect what unhallowed objections we met on
+               their part, and that we have not held different opinions at different times, but
+               always have the same thoughts, endeavouring as we do all the days of our life to
+               guide our short-sighted mind by the writings of our holy fathers and their lawful
+               regulations. If you like, assign a certain time for converts from heresy to the
+               orthodox faith, in order that they may expiate their sin by tears and weeping, being
+               admitted, that is, to expiation through your holy prayers and entreaties, and the
+               outstretching of your saintly hands. Wherefore like Jacob the divine patriarch show
+               them the rod of orthodox teaching, which is white and shines with sound doctrines,
+               and is cleared of every green and dead hue of heresy: in order that these rational
+               sheep, fired by your teachings, may cast from them all the murkiness and darkness of
+               heresy, and in its stead put on the white and full light of the orthodox faith: and
+               may clothe themselves in the many colours of virtues, and may cease to be counted
+               among the heretics unknown sheep, and may mix with those that are known, making up
+               the one flock of the one Shepherd and God and our Saviour Christ. <pb n="356"/> I for
+               my part have written these things to you the ministers of Christ, and careful
+               stewards of God's mysteries, But it will rest with your discriminations at the
+               present time to take what steps you like in the existing circumstances. Only please
+               communicate what we have written to our brothers and fellow-ministers who brought
+               before us the question concerning this present matter, in order that it may not be
+               thought that we did not deign to answer your sanctities: and, after you have examined
+               all the circumstances conjointly, take the right course. As to the mad dogs who have
+               followed the witless Romanus and the stony Julian we have not a word to say, seeing
+               that, while we walk according to the law in all respects, both in doctrines and in
+               canonical actions, they are absurdly spreading these contrary opinions concerning us.
+               For neither will we for our part by reason of rivalry with those filthy men abandon
+               the middle of the royal road and walk upon the rocks on the other side. We must
+               listen to Him who cries with a loud voice through Isaiah the prophet to those who
+               keep His laws, "Hearken unto me, ye that know judgment, my people in whose heart is
+               my law; fear not the reproach of men, and be not overcome by their derision; for like
+               a garment shall it be consumed by lapse of time, and like wool shall it be eaten by a
+               moth; but my righteousness shall be for ever, and my salvation to generations." <pb
+                  n="357"/> This point also I have thought necessary to bring to the knowledge of
+               your perfections in Christ our God: that the religious presbyter and archimandrite of
+               the holy cloister of the blessed Bassus has sent two of his devout monks to the great
+               Christ-loving city of Alexander, bearing a letter which states that they are in
+               straits with regard to the sacred ministry, and in want of presbyters and deacons.
+               Wherefore also he begged me to write to your holinesses, or else to some other of the
+               saintly bishops who share the same persecution with us, in order that you may satisfy
+               this their need by your saintly and lawful hand. And, since it was then the winter
+               season, the letter remained, as I have been informed, in the same great city of the
+               Alexandrines, because it was no longer possible for voyagers to cross the sea.
+               Therefore I beg your sanctities not to be remiss in supplying such a need. In all
+               good things it beseems you to show courage as well as to give comfort, and to be
+               first in every action that is on the right side. For I intend, if God pleases, to
+               write about this through you also, in order that either you or others with your
+               sanction may carry out the duty which thus presents itself and is urgent: that is
+               upon the archimandrites presenting with their testimony those who ought to be duly
+               advanced to the ministry of the sacraments, lest any take necessity as an excuse for
+               being appointed deacons and priests without discrimination and casually, without
+               having any <pb n="358"/> virtue to qualify them for this, except that they desire the
+               priesthood and diaconate. Therefore, now that you know these things, speaking with
+               God's permission, I beg you, when the winter has passed, as soon as sailing begins,
+               to write us a careful answer, saying what your opinion is on all the matters
+               mentioned in the epistle, and to put our meanness in a safer position through your
+               understanding in the Lord. For the safety of the learned and Christ-loving scholastic
+               Maximin we offer prayers of thanksgiving as sacrifices at all times, as we also
+               stated in the previous letter: and we moreover give him loving greeting through your
+               sanctities. Against the last fatuous work of the wickedly impious Julian, which
+               promulgates the same arguments upon the same subjects, I have not up to to-day begun
+               to write, although it is refuted beforehand by what has been already written by me
+               before, so that everyone who meets with it will know its feebleness and the futility
+               of the erroneous phantasy which he confessed. During the whole time of the summer,
+               and that though I have been hiding in corners, I have never ceased being worried by
+               constant letters from men who in various ways ask different questions at different
+               times, and beg to have now scriptural expres<pb n="359"/>sions, now doctrinal
+               theories explained to them. Also the loneliness of solitude, and the fact that I have
+               not men at hand to serve as scribes when I want it in addition to the other things
+               hinder me from writing. But I think that I shall be strengthened through your saintly
+               prayers, and that I shall be sufficient for everything, if Christ our God grant me
+               life and grace from above. </p>
+            <trailer>The end.</trailer>
+         </div>      
+      </body>
+  </text>
+</TEI>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title ref="http://syriaca.org/work/3096">To John and John, the Presbyters</title>
+            <author ref="http://syriaca.org/person/51">Severus of Antioch</author>
+            <sponsor>Center of Digital Humanities Research, Texas A&amp;M University</sponsor>
+            <principal>Daniel L. Schwartz</principal>
+            <editor role="editor" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</editor>
+            <respStmt>
+               <resp>XML created by</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</name>
+            </respStmt>
+            <respStmt>
+               <resp>Based on the work of</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#ewbrooks">E. W. Brooks</name>
+            </respStmt>
+            <respStmt>
+               <resp>OCR corrected by</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</name>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition n="1"/>
+         </editionStmt>
+         <publicationStmt>
+            <distributor>
+               <placeName>Center of Digital Humanities Research, College Station, TX, USA</placeName>
+            </distributor>
+            <authority/><!-- FILL IN AFTER DECIDING ON NAME -->
+            <idno/><!-- FILL IN AFTER DECIDING ON URI/URL FORMAT -->
+            <availability>
+               <licence target="http://creativecommons.org/licenses/by/4.0/">
+                  <p>Creative Commons — Attribution 4.0 International — CC BY 4.0</p>
+                  <p>https://creativecommons.org/licenses/by/4.0/</p>
+               </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <editor ref="http://syriaca.org/person/403">
+                     <persName xml:lang="en">
+                        <forename>E. W.</forename>
+                        <surname>Brooks</surname>
+                     </persName>
+                  </editor>
+                  <title type="main" xml:lang="en" level="m">
+                     The Sixth Book of the Select Letters of
+                     <persName ref="http://syriaca.org/person/51">Severus Patriarch of Antioch</persName>
+                     in the Syriac Version of
+                     <persName ref="http://syriaca.org/person/1014">Athanasius of Nisibis</persName>
+                  </title>
+                  <title type="sub" xml:lang="en" level="m">Vol. II (Translation) Part I</title>
+                  <idno type="URI">http://syriaca.org/bibl/668</idno>
+                  <imprint>
+                     <publisher xml:lang="en">Williams and Norgate</publisher>
+                     <pubPlace ref="http://syriaca.org/place/861">Oxford</pubPlace>
+                     <date>1903</date>
+                  </imprint>
+                  <extent>Vol. 3 of 4</extent>
+                  <biblScope unit="vol">2.1</biblScope>
+                  <biblScope unit="page">204-07</biblScope>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <editorialDecl>
+            <p/><!-- FILL IN -->
+         </editorialDecl>
+      </encodingDesc>
+      <profileDesc>
+         <creation>
+            <origDate type="composition"/><!-- FILL IN. La Route Royale dates are probably preferable to Brooks' dates. -->
+         </creation>
+      </profileDesc>
+      <revisionDesc status="draft">
+         <change when="2019-11" who="http://syriaca.org/person.xml#dschwartz">Created file</change>
+      </revisionDesc>
+   </teiHeader>
+  <text>
+      <body>
+         <div type="letter" n="2.2">
+            <pb n="204"/>
+            <head type="main" resp="#compiler">Of the same to John and John the presbyters.</head>
+            <head type="sub" resp="#compiler">From those after banishment, from the 1st book the 6th
+               letter.</head>
+            <p> Your holinesses' letter, which was brought me by Zenobius the devout deacon, has
+               refreshed me greatly, and has been to me, as in the words of the proverb, "as cool
+               water that relieveth a thirsty soul." <add><emph>And after other things.</emph></add>
+               As to what you say about those who are residing in Byzantium, the report that has
+               been received is true, that they contended about precedence. In fact at an earlier
+               time also they discussed this doubtful point, and the proper regulation was given.
+               Now however, when they are outside the phantasy of worldly sleep, they ought not to
+               have contended as with a shadow and seen dreams. But may the hateful passion of
+               jealousy and envy perish from among men, a passion that goes down with a man even to
+               Hades itself and is a thing unendurable! For this reason the God-inspired scripture
+               says, "Wrath is merciless and anger sharp, but nothing endureth jealousy." For both
+               the merciless wrath and the sharp anger eat away and destroy those against whom they
+               are whetted: but still it is sometimes possible for us to assuage them and turn them
+               aside, by lapse of time and by methods of treatment and by gifts. But jealousy there
+               is nothing than can endure. This passion knows one relief, the destruction of the man
+               <pb n="205"/> who is its object, and his ruin: and in the same fashion also the
+               death of the man himself who is jealous: especially that of the soul before that of
+               the body. For the very wise book of Job says, "Jealousy slayeth him that is in
+               error." Such annoyances I received from the two aforesaid men: and He who came down
+               from on high and humbled Himself for our sake and said,: "My peace I give unto you,
+               my tranquillity leave unto you," breathed upon them and extinguished their gall, and
+               even caused them wholly to disappear. Do not wonder if these strove about precedence.
+               Such things indeed happened even in former times. When in old days Helladius
+               succeeded to the see of the men of Caesarea after the great and renowned Basil, a man
+               who lived a virtuous life and was worthy of such a succession, and was one of the
+               Holy men of the synod of the hundred and fifty, Cappadocia having been divided into
+               two, Theodore, a man praiseworthy both for faith and for character, was bishop of the
+               other metropolis (this was Tyana): and under him among others was Bosporius, a good
+               man and one who had reached such a high standard of holiness that even his grave
+               performs miracles down to the present day. But, though they were both of such a
+               character and so highly exalted in virtue, they strove with one another about some
+               contemptible claim of right in their parish, and fell into great and long rivalry:
+               and they had the two Gregories, he of Nyssa siding with Helladius and <pb n="206"/>
+               he of Nazianzus with Theodore, and Bosporius the renowned, divided in sympathies, and
+               like armed men bringing help to the generals when they engaged in battle, and writing
+               letters in opposition to one another. If then those towers of the church and men of
+               heavenly minds were convicted of sometimes walking upon earth, what will a man say of
+               ourselves the gnats, who are ever flying over the sores and mire of passions and
+               feeding on them? Nor yet at this must one wonder, mean that one of the very men who
+               have been mentioned now uses humble words, saying, "It is against the things done at
+               Chalcedon, not against the actual synod itself, that we must put forth a sentence and
+               anathema." For Liberius, the bishop of Rome, resisted Constantius even to blood, on
+               behalf of Athanasius the apostolic preacher of the orthodox faith, and went out to
+               the figurative stadium, and readily allowed himself to be carried into exile: and at
+               last, bent by the long continuance of the sojourn in the place of exile, he gave way,
+               and yielded to the violence of the time. Hosius also the bishop of Corduba (a little
+               city so named), who had always been arrayed on the side of the orthodox, owing to his
+               extreme old age and advanced time of life, was overcome at Nice in Thrace, and
+               submitted to compulsion. And Athanasius the champion of the truth in word and in
+               deed, a man of practised skill in doing service, who discharges the rational shafts
+               against enemies with understanding, <pb n="207"/> both in epistles and in treatises
+               against the Ariomanita: calls Hosius "of honourable old age," and mentions him with
+               distinction: while in respect of the contests undergone by Liberius he praises and
+               extols the man; saying not a word of what happened to them under violence, but like a
+               wise man passing rapidly over it with closed eyes, as the saying is. Let us also
+               therefore, inasmuch as sacred contests lie before us, follow the spiritual captains,
+               and in respect of actions on the right side, both be ourselves edified and edify
+               others thereby, in order that the others also may be strengthened: but human actions
+               let us pass rapidly over. For we are mortal and weak, and we are put under compulsion
+               and led by force by spirits of wickedness. Let us pray therefore that the details of
+               our weakness be not greatly exposed. But you for your part have the power of sharing
+               the contest with everyone through your prayers. </p>
+            <trailer>Not the end.</trailer>
+         </div>
+      </body>
+  </text>
+</TEI>

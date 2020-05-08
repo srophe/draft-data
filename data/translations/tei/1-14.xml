@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title ref="http://syriaca.org/work/3040">To Antoninus, Bishop of Berrhoea</title>
+            <author ref="http://syriaca.org/person/51">Severus of Antioch</author>
+            <sponsor>Center of Digital Humanities Research, Texas A&amp;M University</sponsor>
+            <principal>Daniel L. Schwartz</principal>
+            <editor role="editor" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</editor>
+            <respStmt>
+               <resp>XML created by</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</name>
+            </respStmt>
+            <respStmt>
+               <resp>Based on the work of</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#ewbrooks">E. W. Brooks</name>
+            </respStmt>
+            <respStmt>
+               <resp>OCR corrected by</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</name>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition n="1"/>
+         </editionStmt>
+         <publicationStmt>
+            <distributor>
+               <placeName>Center of Digital Humanities Research, College Station, TX, USA</placeName>
+            </distributor>
+            <authority/><!-- FILL IN AFTER DECIDING ON NAME -->
+            <idno/><!-- FILL IN AFTER DECIDING ON URI/URL FORMAT -->
+            <availability>
+               <licence target="http://creativecommons.org/licenses/by/4.0/">
+                  <p>Creative Commons — Attribution 4.0 International — CC BY 4.0</p>
+                  <p>https://creativecommons.org/licenses/by/4.0/</p>
+               </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <editor ref="http://syriaca.org/person/403">
+                     <persName xml:lang="en">
+                        <forename>E. W.</forename>
+                        <surname>Brooks</surname>
+                     </persName>
+                  </editor>
+                  <title type="main" xml:lang="en" level="m">
+                     The Sixth Book of the Select Letters of
+                     <persName ref="http://syriaca.org/person/51">Severus Patriarch of Antioch</persName>
+                     in the Syriac Version of
+                     <persName ref="http://syriaca.org/person/1014">Athanasius of Nisibis</persName>
+                  </title>
+                  <title type="sub" xml:lang="en" level="m">Vol. II (Translation) Part I</title>
+                  <idno type="URI">http://syriaca.org/bibl/668</idno>
+                  <imprint>
+                     <publisher xml:lang="en">Williams and Norgate</publisher>
+                     <pubPlace ref="http://syriaca.org/place/861">Oxford</pubPlace>
+                     <date>1903</date>
+                  </imprint>
+                  <extent>Vol. 3 of 4</extent>
+                  <biblScope unit="vol">2.1</biblScope>
+                  <biblScope unit="page">57-59</biblScope>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <editorialDecl>
+            <p/><!-- FILL IN -->
+         </editorialDecl>
+      </encodingDesc>
+      <profileDesc>
+         <creation>
+            <origDate type="composition"/><!-- FILL IN. La Route Royale dates are probably preferable to Brooks' dates. -->
+         </creation>
+      </profileDesc>
+      <revisionDesc status="draft">
+         <change when="2019-11" who="http://syriaca.org/person.xml#dschwartz">Created file</change>
+      </revisionDesc>
+   </teiHeader>
+  <text>
+      <body>
+         <div type="letter" n="1.14">
+            <pb n="57"/>
+            <head type="main" resp="#compiler">Of the same to Antoninus, bishop of Berrhoea.</head>
+            <head type="sub" resp="#compiler">From those during episcopacy, from the 4th book the 65th
+               letter.</head>
+            <p> We were glad to see even the illustrious tribune Antiochus inasmuch as he came from
+               you, and we encouraged him to converse constantly with us, and to ask for everything
+               that is in our power, and is for the spiritual assistance of your love of God. And we
+               praised him to the God-loving bishop Thomas, and, although we are sinful and vile, we
+               repaid him by prayers. We have come to believe that the man who made the happy
+               mistake in the address of the letters did not fall into the error without some divine
+               providence. For this showed clearly that the two of us are wrapped up in one another,
+               being joined together by the love that is in Christ, and that we have all things
+               common according to the commandment, and have nothing of our own. Know however that
+               the letter which properly belonged to you but was addressed to us we have not yet
+               received. As to the ordination at Chalcis (I call the truth to bear witness to my
+               words) no letter has come to us, or any information or indication. But, if you have
+               in a philosophic manner been brought to a state of exasperation on account of the
+               things that have happened among you, there is no cause for wonder: since this also is
+               proper to the orderliness of your habits and to your discretion, which allots all <pb
+                  n="58"/> things to the times suited for them. But, since we know that your
+               holiness delights in words of admonition, and that you are eager to amass all things
+               that conduce to the salvation of the soul and the acquisition of divine wisdom (for
+               it is written, "The ear that heareth the reproof of life shall dwell among the wise,"
+               and, "He that keepeth reproof loveth his soul"), we say with boldness the things
+               that seem to us to be right. You also were not ignorant that those who managed Simeon
+               whose soul is at rest (for he did not rule himself but was ruled by others) performed
+               no sacred or ecclesiastical action except for money or under the influence of
+               passion. For, if one may so speak, they were not known for virtue to any one of all
+               the men who live in the East. To men such as these therefore you should never have
+               lent your undefiled and sacred right hand, when they were making a division and
+               presenting men for the sacred order of priests, especially when the ordination,
+               performed as it was just before death, contained in itself a great fraud. For how was
+               it possible that a man who in time of health never did anything sound in such matters
+               should in time of disease be in any but a diseased condition for examining the
+               question of propriety? For that he was awake when he gave you permission neither do I
+               dispute: I consider your testimony more trustworthy than all oaths and every ground
+               of confidence. Still, since you thirst to hear things that <pb n="59"/> profit, there
+               is a further point which I will not omit, that it would have been a thing in accord
+               and very consonant with the devoutness of the rest of your life to tremble and
+               hesitate to undertake ordinations that belong to others, and by actual deeds to show
+               that it is with order and in all fear and only from actual necessity that you
+               minister and serve even in those that belong to yourself. As to the question whether
+               the ordination performed on the said persons ought to hold good or not, we believe
+               that, after we have learned the whole character of the action and of the persons, we
+               shall give a decision that agrees with the judgments of God, and shall urge that this
+               hold good: not because we do not think the fruit of your blameless hand perfect (this
+               is beyond doubt), but because we are examining the question whether those who
+               received the grace are worthy or not. In any case we think your love of God will be
+               contented, Since you do not even desire to be contented with things other than those
+               with which God is contented. If our wretched discourses be copied out, we will send
+               them to you. For we have ordered them to be copied out, though we have not in plain
+               fact even a man to copy. Before this present letter was closed, the God-loving
+               Isidore bishop of the men of Chalcis arrived in our city: and this has been added to
+               the things written, because we honour the truth before all things. And now it will be
+               our endeavour to learn from him also what his disposition is with regard to the same
+               aforesaid ordination. </p>
+            <trailer>The end.</trailer>
+         </div>
+      </body>
+  </text>
+</TEI>

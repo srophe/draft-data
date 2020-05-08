@@ -1,0 +1,489 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title ref="http://syriaca.org/work/3111">To the Orthodox in Emesa</title>
+            <author ref="http://syriaca.org/person/51">Severus of Antioch</author>
+            <sponsor>Center of Digital Humanities Research, Texas A&amp;M University</sponsor>
+            <principal>Daniel L. Schwartz</principal>
+            <editor role="editor" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</editor>
+            <respStmt>
+               <resp>XML created by</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</name>
+            </respStmt>
+            <respStmt>
+               <resp>Based on the work of</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#ewbrooks">E. W. Brooks</name>
+            </respStmt>
+            <respStmt>
+               <resp>OCR corrected by</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</name>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition n="1"/>
+         </editionStmt>
+         <publicationStmt>
+            <distributor>
+               <placeName>Center of Digital Humanities Research, College Station, TX, USA</placeName>
+            </distributor>
+            <authority/><!-- FILL IN AFTER DECIDING ON NAME -->
+            <idno/><!-- FILL IN AFTER DECIDING ON URI/URL FORMAT -->
+            <availability>
+               <licence target="http://creativecommons.org/licenses/by/4.0/">
+                  <p>Creative Commons — Attribution 4.0 International — CC BY 4.0</p>
+                  <p>https://creativecommons.org/licenses/by/4.0/</p>
+               </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <editor ref="http://syriaca.org/person/403">
+                     <persName xml:lang="en">
+                        <forename>E. W.</forename>
+                        <surname>Brooks</surname>
+                     </persName>
+                  </editor>
+                  <title type="main" xml:lang="en" level="m">
+                     The Sixth Book of the Select Letters of
+                     <persName ref="http://syriaca.org/person/51">Severus Patriarch of Antioch</persName>
+                     in the Syriac Version of
+                     <persName ref="http://syriaca.org/person/1014">Athanasius of Nisibis</persName>
+                  </title>
+                  <title type="sub" xml:lang="en" level="m">Vol. II (Translation) Part I</title>
+                  <idno type="URI">http://syriaca.org/bibl/668</idno>
+                  <imprint>
+                     <publisher xml:lang="en">Williams and Norgate</publisher>
+                     <pubPlace ref="http://syriaca.org/place/861">Oxford</pubPlace>
+                     <date>1903</date>
+                  </imprint>
+                  <extent>Vol. 3 of 4</extent>
+                  <biblScope unit="vol">2.1</biblScope>
+                  <biblScope unit="page">207-229</biblScope>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <editorialDecl>
+            <p/><!-- FILL IN -->
+         </editorialDecl>
+      </encodingDesc>
+      <profileDesc>
+         <creation>
+            <origDate type="composition"/><!-- FILL IN. La Route Royale dates are probably preferable to Brooks' dates. -->
+         </creation>
+      </profileDesc>
+      <revisionDesc status="draft">
+         <change when="2019-11" who="http://syriaca.org/person.xml#dschwartz">Created file</change>
+      </revisionDesc>
+   </teiHeader>
+  <text>
+      <body>
+         <div type="letter" n="2.3">
+            <head type="main" resp="#compiler">Of the same to the orthodox in Emesa.</head>
+            <head type="sub" resp="#compiler">From those after banishment, from the 2nd book the 93rd
+               letter.</head>
+            <p> Men often think that time is bringing them new and unwonted events. Nevertheless
+               they are not such as are wholly without similar instances in times that have already
+               passed. This is confirmed by Koheleth who <pb n="208"/> says, "There is nothing new
+               under the sun. Many indeed have desired the priesthood in an unhallowed manner; of
+               which unlawful thought an instance was provided in time past by Dathan and Abiram,
+               and the company of Korah who rose against Moses and Aaron, the first priests under
+               the shadowy law. A scion of this impious action and of this audacious deed is this
+               also which has just been reported to me in the desert, where I am dwelling unseen for
+               the sake of the common hope and substance of our salvation, which is the orthodox
+               faith. I learn that a certain Gregory and Isaiah, who register their fathers' house
+               the one in Pontus, the other in Armenia, have appeared in the countries of the East
+               and are falsely and lyingly ascribing to themselves the great name and the functions
+               of the episcopate: and it is reported that their mad practices do not extend to words
+               only: but Gregory in the great distinguished Christ-loving city of the Antiochenes,
+               and Isaiah in the illustrious believing metropolis of the Emesenes, have laid their
+               presumptuous and illegal hand upon certain men, and by a mockery as in a play will
+               create certain men ridiculous priests for filthy lucre; like those whom Jeroboam the
+               rebel created, after he had led the ten tribes away from the lawful service which was
+               established through Moses the great, and fashioned golden calves, and by one and the
+               same creation instituted at the same time both the hateful thing and the
+               falsely-named hierophants of <pb n="209"/> the creation itself. Gregory, I learn, has
+               created a fraud more plausible than that of Isaiah; having in fact stated of himself
+               that he is bishop of Diocaesarea which is situated in the Pontic diocese, and that he
+               left his throne on account of the sound faith: which, if true, would be worthy of
+               crowns, and of all praise that is warranted by the spiritual laws: and, to speak
+               plainly, a thing preparative for the kingdom of heaven according to the voice of the
+               Lord that cannot lie which cries in the Gospels, "Blessed are they which have been
+               persecuted for righteousness' sake for theirs is the kingdom of heaven." But Isaiah's
+               elaboration is, I learn, twice as abominable: and it has been so badly concocted
+               that, even if the foolish tale were established, he would have no confirmation
+               whatever for his position nor any plausibility. Certain men in Egypt told me that he
+               says he is a bishop, but, when he alleges ordination to have been performed over him,
+               he produces no evidence or proof, names no city, and says that it was performed by
+               one man, and by him when he was drawing his last breath and lying dead. For, when he
+               kept perversely lying and was asked for proof of what he was saying, he came down to
+               this as the sum of the allegation and tripped himself up. This is in fact established
+               by the sacred text which says, "He that is incautious with his lips in that he is
+               perverse shall be tripped up." Who is there who is reckoned among Christians to whom
+               it is not manifest that these things stand outside all <pb n="210"/> canonical order
+               and the apostolic church? Indeed from the very beginning those who were disciples and
+               eye-witnesses and ministers of the Word Himself divided the bishops among cities, and
+               to each church as to a spiritual bride figuratively united the bishop as a
+               bridegroom. A witness of this is the divine Paul who writes to Titus and says, "For
+               this cause left I thee in Crete that thou shouldest set in order the things that are
+               wanting, and appoint presbyters in every city as I commanded thee." Here he calls
+               bishops presbyters: for indeed after saying, "In order that thou shouldest appoint
+               presbyters in every city," he went on further to say, "For the bishop must be
+               blameless, as the steward of God." This the holy John also, who was bishop of
+               Constantinople, interpreted in this way when he wrote as follows about Titus: "This
+               man was highly approved among those who were with Paul: and, if not, he would not
+               have entrusted the island to him in its entirety, nor have commanded him to supply
+               the things that were wanting ('in order that thou shouldest set in order the things
+               that are wanting'): he would not have entrusted him with the selection of so many
+               bishops, if it had not been that he had great confidence in the man." The apostles
+               also divided the peoples by the lots of the Holy Spirit: and each of them took
+               possession of the inheritance that was given to him, and was contented with it: and
+               the gift of it was made to him by inspira<pb n="211"/>tion from above. This gift the
+               singing prophet compared to the wings of a dove that are covered with silver and her
+               feathers superbly decorated with gold; and he foretold that this grace would be given
+               them openly and in actual deeds, in that he addresses his words to them thus, "If ye
+               lie among the lots, there there are the wings of a dove that are covered with silver,
+               and her feathers with the yellowness of gold": the words manifestly showing this,
+               that, if each apostle had not been satisfied with the lot that fell to him and shown
+               regard for order, the Holy Spirit would not have bountifully bestowed upon them
+               illustrious powers of working signs and wonders, and teaching that shone after the
+               fashion of silver, and the steadfastness in sufferings which gold shows when tried in
+               the fire of the furnace. But the excellent Isaiah does not fear to give himself out
+               as holding a bishopric not obtained by lot and irregular and without a city. Who has
+               seen a marriage-chamber of an unnamed bride, and a foul bridegroom without a consort,
+               or rather one who becomes everything to himself, as the nature of his fiction
+               requires? I hear that those who after the fashion of some brute beast have adhered to
+               his error, three or four wicked creatures, bring forward a canon also to substantiate
+               their fraud which is without substance and full of all absurdity. This they also say
+               is a canon of Simon the Cananaean, and it has never prevailed in the holy churches
+               and been accepted by holy <pb n="212"/> synods, or been named in them at all. How
+               could it have been, when the holy canons once for all enact that the ordination of a
+               bishop must not be performed under any other conditions by him who has the right to
+               ordain except when all the bishops of the same province take part in the solemn
+               function, or, if they are not all present, at any rate there shall be no smaller
+               number than three, and the others also shall give their <foreign>psephisma</foreign>
+               by their letters, even if they are absent in body? For in ecclesiastical regulations
+               enactments carefully made at a later time in the churches allow no play to those of
+               ancient date. For. example Cyprian the divine among bishops, who adorned the chief
+               throne of Africa with all excellencies, but above all with a crown of martyrdom, once
+               assembled a synod of the saintly bishops under him and ruled that converts from
+               heresy must not be accepted, unless they have received the baptism given by the
+               orthodox. And in modern times, now that the high-priests who fed the churches in the
+               West and in the East, as well as the great and holy synod of the three hundred and
+               eighteen, have discussed the quality of heresies, and enacted that we ought not in
+               the case of all of them to accept penitents through baptism, no one presumes contrary
+               to this conclusion to apply baptism to those who come from all heresies, as seemed
+               right at an earlier time to Cyprian: but, if anyone contrary to the law which has
+               prevailed shall <pb n="213"/> presume to re-baptize, he will fall within the grasp of
+               the canons as having performed unlawful actions. The bishop also of the city renowned
+               for its orthodox faith of the city of the Alexandrines was in old times appointed by
+               presbyters. But in modern times, in accordance with the canon which has prevailed
+               everywhere, the solemn institution of their bishop is performed by bishops: and no
+               one makes light of the accurate practice that prevails in the holy churches and
+               recurs to the earlier condition of things, which has given way to the later clear and
+               accurate, deliberate and spiritual injunctions." However, if agreeable, we will also
+               adduce the canon that is given out as having been enacted by Simon the Cananaean, in
+               order that everyone may learn that Isaiah's partners in the idle 'fiction are
+               stirring up destruction against themselves, as the common saying is. It is said to be
+               as follows: "I also, Simon the Cananaean, command you by how many the bishop ought to
+               be ordained. A bishop should be ordained by two or by three bishops. But, if anyone
+               be ordained by one bishop, let both him and the man who ordained him be deprived.
+               But, if necessity arise for him to be ordained by one, since a large number cannot
+               come, because there is a persecution or some other cause, let him bring a
+                  <foreign>psephisma</foreign> of authority from several bishops." Where then are we
+               to place the fictitious ordination of Isaiah, <pb n="214"/> which passes all
+               plausibility? Who are the bishops who confirmed for him the ordination that was
+               performed by one as he says? or where are those who made the
+                  <foreign>psephisma</foreign> about him? It is known to everyone that the apostles
+               made all their enactments through the Holy Spirit, and saw the future like the
+               present through the illumination of the heavenly light from above. Therefore it seems
+               that Isaiah's ordination escaped the notice of Simon the Cananaean, and the fact that
+               it alone was to be devoid of bishops to make a <foreign>psephisma</foreign> about
+               him, and to confirm that which was lame and imperfect. This is an absurdity, and a
+               piece of silly trifling: nay rather it is a fit subject for sorrow, and fraught with
+               tears. For how will even the spirits of the saints refrain from sighing when they see
+               the high priesthood, which is awful even in the sight of the heavenly powers
+               themselves, turned into a mockery? For of such a kind are the mysteries to which we
+               summon, which, as Peter the chosen one of the apostles wrote, even "the angels desire
+               to look into." What need is there of many words, when the very devices of Isaiah the
+               stony man, who has taken to him all the madness of Satan, show the demon-like nature
+               of the act? He has indeed refuted his impiety which he falsely reported of himself by
+               means of another impiety, adding iniquity to his iniquity according to the saying of
+               the Psalmist in the Psalms." For he did not even stay his presumptuous and unholy
+               hand at <pb n="215"/> the name of deacons and of presbyters, but he assigns bishops
+               also and archbishops to peoples and to cities, after the manner of the giants of the
+               fable who sprang from the earth. And "let so-and-so," he says, "be archbishop of
+               Egypt: and so-and-so of Pamphylia: and another of Palestine": and, since he lacks
+               instruments for such madness, I have learned that he even collects men for himself
+               from the crossroads, some blind men some lepers, some men with other bodily
+               afflictions or suffering from disease. When I say this, I do not put forward the
+               infirmities of the body as something shameful (the one real sickness and disease is
+               the sin of the soul and falling away on our part from God), but I am desirous of
+               showing the folly of the lunatic, how he is eager to lay his unholy and
+               all-presumptuous hand even upon irrational things, if one may so speak, if the
+               fatuity of men fail him. The holy Basil also in his letters mentions such roving
+               pseudo-bishops as having been foolishly instituted by the foolish Apollinaris,
+               writing thus: "Is not the great mystery of religion. made a laughingstock, in that
+               bishops are going about without people and clergy, carrying about the bare name only,
+               and doing no such right action as tends to the extension of the gospel of our
+               salvation?"; so the spirit of error, which uttered much nonsense in Apollinaris and
+               in the heretics who resemble him, but was deaf and dumb, as the Gospel says," was in
+               Isaiah <pb n="216"/> and knew how to do uncanonical acts. Many other things might be
+               said to refute the illegal fraud and this irrational madness. But, since the
+               greatness of the unseemly and unstable abomination reaches to absurdity, it is a very
+               superfluous thing to extend the discussion unnecessarily. What synod of saintly
+               orthodox bishops has accepted this? Who has not closed his ears and refused to endure
+               even so much as the bare mention of this unlawful report? In what other country did
+               not the gentle Isaiah deceive, or to what place did he not betake himself, as we may
+               hear those that know relate? Did he not move his erring steps to Egypt seeing that he
+               has no stability, but as Jeremiah the prophet says loved to move his feet'? did he
+               not betake himself to Pamphylia, boasting and lying and saying that he was called to
+               this illegal episcopate by Leontius the saintly old hermit, who practised the
+               philosophic life in the wilderness? for on the contrary he was actually anathematized
+               by him by word of mouth, as all who dwell in that country testify. Did he not also
+               come to the great Christ-loving city of Alexander, having been driven to it, like
+               some ship without a helmsman, by the stormy waves of error; and, after he had been
+               rejected by all, form the plan, as he in fact said, of confirming the fiction
+               regarding him by supposed signs, and setting himself to imitate Christ, and fast
+               forty days continuously, in order to raise a dead boy who lay like meat that has been
+               dried <pb n="217"/> and thrown into an earthenware vessel; but, when the greater part
+               of the forty days had passed, he was sorely tried by the lack of food, which was
+               broken by bread taken by stealth, though he hypocritically pretended not to have
+               tasted anything; while the dead boy's father was beginning to mourn and weep at
+               having been disappointed of his hope, and was crying aloud and wailing bitterly and
+               after the manner of a rustic (he was a gardener); but the body having become putrid
+               filled the house with noisome corruption and a deadly smell, so that the pretended
+               bishop, simulated faster, and false miracle-worker was in danger of being delivered
+               to the fire, seeing that his hateful conduct had been exposed, if it had not been
+               that he hid himself and escaped from the hands of those who sought to inflict a just
+               vengeance upon him for the drunkenness of his mind? Is inquiry therefore needed in
+               the case of such men, who from the declaration of our Saviour himself have the
+               confutation which plainly says of false shepherds like them, "By their fruits ye
+               shall know them"? If "the less is blessed by the greater," as the wise Paul says, let
+               us examine as a proposition who it was who gave Isaiah the fictitious ordination. Was
+               it one who has the right of ordaining bishops and, being a metropolitan, knows also
+               the prayer for the appointment of high-priests? or, if as a concession we grant this
+               point also, how does a bishop of a metropolis give a man who is ordained by him
+               authority to institute <pb n="218"/> archbishops among peoples and cities; as in
+               fables and dreams? If, as he says, bishop Epiphanius of saintly memory was actually
+               drawing his last breath and giving up the ghost, a man who was not bishop of a
+               metropolis, but of one of the cities under a metropolis, and gave him the hand of
+               ordination at the moment of death, and never finished the ordination such as it was,
+               what are we to say of such a prayer? and how is it not a matter for tears, if Paul in
+               speaking to the Corinthians about all prayer says, "I will pray with my spirit, I
+               will pray also with my understanding," while Isaiah's institutor uttered the prayer
+               which is, if one may so say, higher and more solemn than all prayers, I mean that
+               which institutes high-priests, with faltering tongue and indistinct and feeble voice,
+               when he had not even ordinary intelligent consciousness, and heard it repeated from a
+               book like a small boy who goes to school, and each word was pronounced and lisped to
+               him by those standing round him, since they elaborate this also as part and parcel of
+               the snare and fraud? All the details of this elaborate play and of the case show
+               weakness and lack of substance, but set the saintly bishop Epiphanius free from
+               calumny, who departed blamelessly to the Lord, and, when he stands before the
+               judgement-seat that does not respect persons on the last day, will have no knowledge
+               of what the prayer of the ordination of a bishop is, and by the sentence of the just
+               Judge will send those who calumniate him to the fire that is <pb n="219"/> not
+               quenched, and the wicked Isaiah to the outer darkness, with those that are "clad in
+               strange apparel," as one of the prophets said. Why should one repeat the whole story?
+               It has been told me that he has reached such a height of madness as even to entitle
+               himself "high-priest of high-priests," and even "apostle" also, and thereby to show
+               everyone that he has received the evil spirit of Montanus and of Mani. For in fact
+               those also named themselves apostles, and presumed to exalt themselves to the title
+               of Paraclete which cannot be shared by any creature, and fitly belongs to Christ only
+               and to the Holy Spirit; imitating Satan the chief of the rebel host, who in ancient
+               times said, "I will exalt myself to heaven, and above the stars of heaven will I set
+               my throne," and is also expected through Antichrist, as Paul the speaker of divine
+               things foretold, "to sit in the temple of God and make it appear concerning himself
+               that he is God." And yet, after those stupid unlearned advocates of the error have
+               gone through all these things which show the artificial nature of the fiction, they
+               presume, hear, to cite, as if the imaginary ordination of Isaiah were valid, the
+               action that was taken in the case of Gregory the Miracle-worker, I mean how Phaedimus
+               who ordained this man hunted him by the power of prayer when he was fleeing from the
+               burden of the bishopric, and when absent and at a distance uttered a prayer, so that
+               even when absent he was involved in the chains of prayer, and <pb n="220"/> was
+               caught in the nets of the Spirit from which there is no escape, and hastened to him
+               who was lawfully pursuing him, and thus underwent and received all the legal
+               requirements of ordination, and did not stop at the prayer made at a distance, as is
+               thought by the men who are bereft of intelligence and do not understand what they
+               read. A witness of this is Gregory, who wrote his history, the brother in blood and
+               in the Spirit and in the office of the high-priesthood of the great Basil, and bishop
+               of Nyssa, who wrote as follows: "For this reason Phaedimus having been by some
+               specially divine impulse roused to the task before him, paying no regard to the
+               intervening space by which he was separated from Gregory (seeing he was three days
+               journey distant from him), but, looking to God and saying that he himself was seen by
+               God at that hour in the same way as he was, in place of a hand applies the spoken
+               word to Gregory, dedicating to God a man who was absent in body, and allotting him to
+               a city which down to those times had, it so happened, been held in the error of
+               idols, so that, while those who dwelt in the city itself and in its neighbourhood
+               were without number, there were not found more than seventeen who had received the
+               word of faith, Having thus therefore received the yoke by force, and all the legal
+               requirements having afterwards been performed over him, and having asked the man who
+               proclaimed the priesthood over him for a short time to reflect upon the exact
+               character of the mystery, he no longer thought it right for him, as the Apostle <pb
+                  n="221"/> said, to 'attend to blood and flesh,' but asked God that a revelation of
+               the secrets might be made to him." You see he has clearly shown that the prayer made
+               at a distance only stopped his course of flight, but all the legal requirements were
+               performed over him after he had hastened to him who consecrated him, and nothing
+               whatever was lacking. At the same time it has certainly been admitted that, since
+               Phaedimus was head of the-metropolis of the men of Amasia, that he had his bishops
+               close by him, and with them pursued Gregory. For, when he pursued, he pursued
+               promptly: so that, when he had caught the quarry, he immediately performed the
+               ordination. Accordingly he had the bishops standing round him, and taking part with
+               him in the prayer also that was made over the divine Gregory at a distance. But it
+               seems ridiculous for us to pass beyond the proper limits in considering the silly
+               arguments of those deceivers, and to go on to refute arguments that are feeble and
+               have no substance, which some intelligent and devout hermits repeated to me in Egypt
+               as having been invented by one of Isaiah's deceivers. To these I also said, "The
+               saintly bishop Epiphanius we ourselves committed to the grave in our monastery in
+               Palestine: and of these follies and futilities we have a clear written refutation.
+               For indeed at the very end of his life he made a will, in which he appointed count
+               Eusebius the Alexandrine of magnificent <pb n="222"/> memory, who was called
+               'Eleonos,' who was living at that time his heir, because he knew that the man had
+               spent all his property on the poor, ordering that what was left by him also should be
+               distributed to the needy in an exactly similar manner: and Isaiah was to have charge
+               of the distribution of it, who was then educating the sons of the magnificent
+               Eusebius, who were being brought up in the monastic fashion. And the man who made
+               these provisions at the actual very gate of departure from the world named Isaiah
+               'presbyter,' thereby leaving a written confutation of the dead calumny. For, if he
+               had had the intention of ordaining him bishop after the will, he would not yesterday
+               have named a man in writing 'presbyter,' whom to-morrow he was going to make an
+               unrecorded and unnamed bishop. This is manifestly foolishness. But let the reproof be
+               turned against the head of those who invented the fraud." They, having heard these
+               things and been delighted at what was said, said to me, "One of us was invited by
+               Isaiah through a certain intermediary to become archbishop of Egypt. However all we
+               Egyptians made answer with one consent, 'We for our part do not inquire into this
+               foolish tale of Isaiah's ordination: but we hold to the canon of the holy and great
+               synod of the three hundred and eighteen fathers, knowing an ordination that is
+               performed by one bishop to be void and illegal.'" To this I made answer and said:
+               "Let <pb n="223"/> your devoutnesses know that at a later time also, when Paulinus,
+               being patriarch of the city of the Antiochenes, himself alone at the end of his life
+               ordained Evagrius and appointed him his successor, while the orthodox bishops in the
+               East lawfully ordained Flavian archbishop of the same Antioch, a synod was assembled
+               to deal with this case: in the West in the city of Capua: and in the East at Caesarea
+               in Palestine: because Siricius, who was then archbishop of Rome, had decided that
+               after the discussion at Capua the task of making a more careful investigation of the
+               actual facts of the case should be transferred to the East, Theophilus, the
+               archbishop of the great city of the Alexandrines, having been invited to preside over
+               those who were assembled: who owing to the overthrow of the heathen temples and of
+               the images in Alexander's city had his time occupied and failed to join in assembly
+               with them. And then the synod of saintly bishops which was assembled at Caesaria in
+               Palestine reported its decree to the God-loving kings of pious memory, Theodosius,
+               Arcadius, and Honorius, and made it known to them in these words: 'For we have read
+               the letter of our reverend brothers to our reverend brother and bishop? Theophilus,
+               and that which was written to ourselves the bishops of the East by the bishops at
+               Capua, and that of the religious Siricius the bishop of Rome, to the effect that
+               before all things we must <pb n="224"/> look to this point, <foreign>i.e.</foreign>
+               not to disturb the canon of Nicaea which clearly lays down that it is not permissible
+               for the ordination of a bishop to be performed by one only. There was further
+               inserted in the letter of the religious bishop Siricius a decision also upon the
+               hearing that was to be held: in which was inserted the statement "there must be one
+               bishop of Antioch, he who has been legally and ecclesiastically appointed according
+               to the canon of the Synod of Nicaea"; and which clearly decreed that an ordination
+               performed by one is illegal and not to be accepted. With joy therefore we have
+               received the accurate teaching of bishop Siricius concerning the church canons, and,
+               following this letter, we have decreed that these things be ratified: in that we have
+               given legal and just votes, to the effect that we know one bishop of Antioch only the
+               religious lord Flavian the bishop.'" After I had given vent to these words, the
+               devout old men and Egyptian monks to whom I was speaking added that the advocate of
+               Isaiah's deception who promised them the archbishopric of Egypt used to say that the
+               holy Timothy also, the archbishop of the city of the Alexandrines, was ordained by
+               two bishops only, not by three according to the canon. And it has been shown clearly
+               that Peter also the bishop, he of saintly memory, the apostolic man, who came from
+               Iberia, our father, was present there, and held the gospel over Timothy's sacred
+               head, and made up the number of <pb n="225"/> three bishops: he having been brought
+               by force to the church by the orthodox people, and dragged from the very bed on which
+               he was still lying as being an old and infirm man. But, while he was being carried
+               along by violence, he in an ineffable manner heard a voice from heaven commanding him
+               not to flee from the sacred service." Whence also he gladly and with much assurance?
+               assisted in the ordination. Afterwards, when the institution had been thus legally
+               completed, the whole synod of the God-loving bishops of the Egyptian administrative
+               district after these things acknowledged and considered the saintly Timothy as
+               archbishop: and again, when he was returning after exile to Alexander's city, all the
+               bishops of the other districts made union with him through the Encyclical letter and
+               proclaimed him archbishop. How then do those presumptuous and unlearned men presume
+               to compare with those legitimate bishops the illegitimate Isaiah, who was not even
+               carried in the womb at all or conceived like the abortive and imperfect offspring of
+               mothers who bring forth abortions, but by the fact of wishing it only created himself
+               bishop for those silly men? These things I have written not because I wish to upset a
+               thing that is tottering on all sides and contains feebleness in itself, but because I
+               desire none of the Statements made about him and discussed in my presence in Egypt to
+               be unknown to your diligences: <pb n="226"/> since this other futility also was, as I
+               heard, being advanced by that deceiver: "Some men, you know, in the churches buy
+               ordinations for gold contrary to the canons. Therefore" (he says) "it is in no way
+               beyond the limits of what is proper for me too to become a bishop contrary to strict
+               canonical rule": and the wretched man is not ashamed of daring to confirm his illegal
+               fiction by a similar illegality. Who when taken in adultery says, "I am not an
+               adulterer because so-and-so also is a murderer," and, "I have not offended against
+               the laws because that man also is an offender"? In the next place, in which of the
+               churches of the orthodox, fellow, is it openly put forward as a law that it is right
+               for some men to be ordained for gold, as you make the fictitious and illegal
+               episcopate into a law, and call sin righteousness? If a man tramples in secret on
+               church ordinances, he will give account to the just Judge, but he will not inflict
+               any stain on the appearance of the holy churches, which is confident in its enjoyment
+               of freedom from blame and reproof in all things. I forbear to say that he even
+               presumed to circulate a fictitious letter as having been written by me, which makes a
+               show of finding fault with the fraud concerning him, and gains the plausibility
+               thence derived, but admits that the mockery of the spurious and pretended episcopate
+               was carried to completion. Isaiah therefore, who has been on all points rejected as
+               illegitimate and unhallowed, and has been cast out as a stinking abomination, is
+               trying to force himself into your distinguished believing metropolis, though there
+               also (speaking under <pb n="227"/> God's permission) he will not find an entrance.
+               For the proof of your faith and loyalty has even by actual experience been
+               disseminated among all men: and we know well and are confident that you are
+               gloriously minded in the Lord, all you who belong to the revered clergy, who have
+               respected the orthodox faith, and all you magnificent and distinguished
+                  <foreign>ktetores</foreign>, who hold the first place, and all you who fill up the
+               body of the church, and cleave to the sound faith. But I have thought it right and
+               seemly for me and a deed consonant with the ordinances of the Spirit not to commit to
+               silence that which has just come into my thoughts, but to testify beforehand to the
+               delusion of error and mark it beforehand and point it out beforehand, lest, when the
+               divine wrath comes upon those who are led to act in violation of the divine laws, and
+               have become the prey of the devil, I find myself under condemnation for those men's
+               blood. For He that speaks through Ezekiel says, "And thou man, have given thee as a
+               watchman to them of the house of Israel, and thou shalt hear a word from my mouth.
+               When I shall say to the sinner, 'Thou shalt surely die,' and thou speak not that the
+               impious man may refrain from his way, the wicked man shall die in his wickedness, but
+               his blood will I require at thine hand. But, if for thy part thou forewarn the
+               impious man concerning his way that he may turn from it and he turn not from his way,
+               he shall die in his impiety, and thou shalt deliver thy soul." In the same <pb
+                  n="228"/> way as Isaiah Gregory also has been convicted, as have learned, in the
+               great city of Alexander. For he too has been detected, and his guile exposed in the
+               minutes of the records. Therefore, learning these things as you do through this mean
+               letter of mine, if anyone presumes to name Gregory or Isaiah a bishop, or shall
+               reckon as valid the profane ordinations performed by them, and does not reject even
+               the very mention of them as being altogether abominable and unlawful, such a man
+               shall be anathema, and shall be found an alien to the glory and communion of the
+               Father and. of the Son and of the Holy Spirit, both in this world, and in the world
+               that is to come. If anyone, despising our exile and the persecution by which we are
+               persecuted for the sake of the orthodox faith, shall reckon the things written as
+               nothing, he shall give account to Him who said to the holy apostles and disciples,
+               "But when they persecute you in this city flee to the other"; and again, "He that
+               scorneth me and receiveth not my words hath one that judgeth him; the word that I
+               have spoken it shall judge him in the last day"; and again, "If they have persecuted
+               me they will also persecute you"; and all the expressions that are like and similar
+               to these. For, when men have such an unlawful and unholy disposition, and reduce the
+               great mystery of religion to an absurdity, the sacred scripture commands us not even
+               to give <pb n="229"/> them greeting, and not to receive these men in the house or
+               take them under our roof, nor to have any dealings at all with them. "If any man," it
+               says, "cometh unto you, and bringeth not this teaching, receive him not in the house,
+               and say not to him 'Hail!': For he that saith to him 'Hail!', is partaker of his evil
+               deeds." And again Paul the Apostle, "But I beseech you, my brethren, to mark them
+               which cause the divisions and offences contrary to the teaching which we have
+               learned, and avoid them. For such men minister not to our Lord Jesus Christ, but to
+               their belly. And by mild words and blessings they deceive the hearts of the simple."
+               If you observe these things, the words also that the same sacred Paul added to these
+               will assuredly be fit to address to you in praise and approbation: and we will truly
+               say, "For your obedience has reached the ears of all men. I rejoice therefore over
+               you." For with this it is well to conclude what we have to say. </p>
+            <trailer>The end.</trailer>
+         </div>
+      </body>
+  </text>
+</TEI>

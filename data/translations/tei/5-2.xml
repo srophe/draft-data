@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title ref="http://syriaca.org/work/3034">To Nicias the Bishop</title>
+            <author ref="http://syriaca.org/person/51">Severus of Antioch</author>
+            <sponsor>Center of Digital Humanities Research, Texas A&amp;M University</sponsor>
+            <principal>Daniel L. Schwartz</principal>
+            <editor role="editor" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</editor>
+            <respStmt>
+               <resp>XML created by</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</name>
+            </respStmt>
+            <respStmt>
+               <resp>Based on the work of</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#ewbrooks">E. W. Brooks</name>
+            </respStmt>
+            <respStmt>
+               <resp>OCR corrected by</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</name>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition n="1"/>
+         </editionStmt>
+         <publicationStmt>
+            <distributor>
+               <placeName>Center of Digital Humanities Research, College Station, TX, USA</placeName>
+            </distributor>
+            <authority/><!-- FILL IN AFTER DECIDING ON NAME -->
+            <idno/><!-- FILL IN AFTER DECIDING ON URI/URL FORMAT -->
+            <availability>
+               <licence target="http://creativecommons.org/licenses/by/4.0/">
+                  <p>Creative Commons — Attribution 4.0 International — CC BY 4.0</p>
+                  <p>https://creativecommons.org/licenses/by/4.0/</p>
+               </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <editor ref="http://syriaca.org/person/403">
+                     <persName xml:lang="en">
+                        <forename>E. W.</forename>
+                        <surname>Brooks</surname>
+                     </persName>
+                  </editor>
+                  <title type="main" xml:lang="en" level="m">
+                     The Sixth Book of the Select Letters of
+                     <persName ref="http://syriaca.org/person/51">Severus Patriarch of Antioch</persName>
+                     in the Syriac Version of
+                     <persName ref="http://syriaca.org/person/1014">Athanasius of Nisibis</persName>
+                  </title>
+                  <title type="sub" xml:lang="en" level="m">Vol. II (Translation) Part II</title>
+                  <idno type="URI">http://syriaca.org/bibl/669</idno>
+                  <imprint>
+                     <publisher xml:lang="en">Williams and Norgate</publisher>
+                     <pubPlace ref="http://syriaca.org/place/861">Oxford</pubPlace>
+                     <date>1903</date>
+                  </imprint>
+                  <extent>Vol. 4 of 4</extent>
+                  <biblScope unit="vol">2.2</biblScope>
+                  <biblScope unit="page">282-83</biblScope>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <editorialDecl>
+            <p/><!-- FILL IN -->
+         </editorialDecl>
+      </encodingDesc>
+      <profileDesc>
+         <creation>
+            <origDate type="composition"/><!-- FILL IN. La Route Royale dates are probably preferable to Brooks' dates. -->
+         </creation>
+      </profileDesc>
+      <revisionDesc status="draft">
+         <change when="2019-11" who="http://syriaca.org/person.xml#dschwartz">Created file</change>
+      </revisionDesc>
+   </teiHeader>
+  <text>
+      <body>
+         <div type="letter" n="5.2">
+            <head type="main" resp="#compiler">Of the same to Nicias the bishop.</head>
+            <head type="sub" resp="#compiler">From those during episcopacy, from the 3rd book the
+               323rd letter.</head>
+            <p> We were surprised when your sanctity's letter came before us, by which we learned
+               that Gennadius the devout presbyter of the village called Minidus had any doubt
+               whether those who have received and undergone the spurious ordination, and have
+               purged themselves of these dregs by petitions of confession which they presented to
+               you, and have once put off by a written legal renunciation the strange and foreign
+               clothing in which they thought themselves to have been clothed by the heretics, ought
+               to return to their former grade in the ministry. Therefore they must show this in
+               deed by returning to the former grade, and in it performing their sacred
+               ministrations, if we are not sinning in using this same expression, and mentioning
+               "the <pb n="283"/> former," as if there were a second: whereas, since the second has
+               no validity and is unknown to God, it is more fitting to say that they ought to
+               minister in the true and only grade, which they have legally received, there being no
+               other at all. For no one who has been legally ordained a deacon maybe shall be able
+               to think of himself that he is a presbyter, whether by fraud or by some disowned and
+               illegal hand. Therefore as I said, the devout Gennadius must know clearly that it is
+               by deeds that they ought to unite to themselves those who have cast from them in
+               writing the strange and accursed laying on of a heretical hand, if "the kingdom of
+               God is not in word but in power," and not he that says "Lord, Lord!" but he that does
+               the will of the heavenly Father enters into the kingdom of heaven. </p>
+            <trailer>The end.</trailer>
+         </div>      
+      </body>
+  </text>
+</TEI>

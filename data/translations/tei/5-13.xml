@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title ref="http://syriaca.org/work/3113">To Proclus and Eusebuna the Bishops</title>
+            <author ref="http://syriaca.org/person/51">Severus of Antioch</author>
+            <sponsor>Center of Digital Humanities Research, Texas A&amp;M University</sponsor>
+            <principal>Daniel L. Schwartz</principal>
+            <editor role="editor" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</editor>
+            <respStmt>
+               <resp>XML created by</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</name>
+            </respStmt>
+            <respStmt>
+               <resp>Based on the work of</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#ewbrooks">E. W. Brooks</name>
+            </respStmt>
+            <respStmt>
+               <resp>OCR corrected by</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</name>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition n="1"/>
+         </editionStmt>
+         <publicationStmt>
+            <distributor>
+               <placeName>Center of Digital Humanities Research, College Station, TX, USA</placeName>
+            </distributor>
+            <authority/><!-- FILL IN AFTER DECIDING ON NAME -->
+            <idno/><!-- FILL IN AFTER DECIDING ON URI/URL FORMAT -->
+            <availability>
+               <licence target="http://creativecommons.org/licenses/by/4.0/">
+                  <p>Creative Commons — Attribution 4.0 International — CC BY 4.0</p>
+                  <p>https://creativecommons.org/licenses/by/4.0/</p>
+               </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <editor ref="http://syriaca.org/person/403">
+                     <persName xml:lang="en">
+                        <forename>E. W.</forename>
+                        <surname>Brooks</surname>
+                     </persName>
+                  </editor>
+                  <title type="main" xml:lang="en" level="m">
+                     The Sixth Book of the Select Letters of
+                     <persName ref="http://syriaca.org/person/51">Severus Patriarch of Antioch</persName>
+                     in the Syriac Version of
+                     <persName ref="http://syriaca.org/person/1014">Athanasius of Nisibis</persName>
+                  </title>
+                  <title type="sub" xml:lang="en" level="m">Vol. II (Translation) Part II</title>
+                  <idno type="URI">http://syriaca.org/bibl/669</idno>
+                  <imprint>
+                     <publisher xml:lang="en">Williams and Norgate</publisher>
+                     <pubPlace ref="http://syriaca.org/place/861">Oxford</pubPlace>
+                     <date>1903</date>
+                  </imprint>
+                  <extent>Vol. 4 of 4</extent>
+                  <biblScope unit="vol">2.2</biblScope>
+                  <biblScope unit="page">342-45</biblScope>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <editorialDecl>
+            <p/><!-- FILL IN -->
+         </editorialDecl>
+      </encodingDesc>
+      <profileDesc>
+         <creation>
+            <origDate type="composition"/><!-- FILL IN. La Route Royale dates are probably preferable to Brooks' dates. -->
+         </creation>
+      </profileDesc>
+      <revisionDesc status="draft">
+         <change when="2019-11" who="http://syriaca.org/person.xml#dschwartz">Created file</change>
+      </revisionDesc>
+   </teiHeader>
+  <text>
+      <body>
+         <div type="letter" n="5.13">
+            <head type="main" resp="#compiler">Of the same to Proclus and Eusebuna the bishops.</head>
+            <head type="sub" resp="#compiler">From those after banishment, from the 3rd book the 35th
+               letter.</head>
+            <p> It was not without sorrow nor with a mind free from affliction that [ read the
+               letter of your love of God: but, as is sung in the Psalms, "My heart was disturbed
+               within me." <add><emph>And after other things.</emph></add> But what? If, even after
+               taking all these offences that are so manifest into account we allow him to be
+               purified by association only as Cyrus said, he will reckon this a <pb n="343"/> small
+               thing, and a thing that does not injure the soul on the most important points, and in
+               the matter of its very salvation. Let him therefore, if he likes, ask the Theologian
+               Gregory, and he will answer clearly: for I do not know how it is that, when besides
+               the holy scripture you pride yourselves in the teachings of your countrymen, and can
+               obtain from them instruction in what is right, you have had recourse to my poverty.
+               What therefore says the mouth of Christ, the mouth that at all times instructs the
+               church, and catches souls out of the pit of destruction, upon the principle that we
+               must not associate in any way whatever with the adversaries who make an accusation
+               and a charge out of the fact that those who stand upright are not perishing with
+               them? [Here follows the citation from Greg. Naz. given on p. 270 with the variation
+               "we" for "they".] How is it therefore that the excellent Cyrus asks for association
+               only as he says to be permitted him like a man innocent on the other matters? And how
+               is it that after confirming the impiety in writing he wishes to become an orthodox
+               man not enrolled in writing and in a corner? Or do we not hear the great Basil saying
+               in his letters, "But, if they say that they have repented, let them show their
+               written form of repentance and an anathema of the faith of Constantinople, and
+               separation from the heretics, and let them not deceive those that are simple"? Look
+               therefore, I beg, to these columns of the church and your progenitors, and emulate
+               their glory. For they are your progenitors, after the true and spiritual family: and
+               <pb n="344"/> for you to put their glory to shame is in truth a deed of great
+               shame, and worthy of the final and endless fire. Cappadocia is in danger of becoming
+               a tale of laughter in our age. For indeed, if, as I pray may not happen, you be
+               caught in those sophistical traps, the enemies of the truth will count the latter as
+               added to the former and will laugh and say, "Cyrus has lapsed: Soteric has fallen:
+               Proclus and Eusebuna after many circuitous courses and useless movements have been
+               cast down into the same ditch: and the whole trap has been spread abroad. Great
+               champions of the faith Cappadocia displays to us." Therefore, even though there were
+               nothing grievous to expect in the world to come, are these things tolerable to the
+               ears of the pious? Will they not seem fraught with lamentations and tears to those
+               that hope in Christ? Will they not mourn and instead of their garments rend their
+               hearts, as the prophetic text says?" Be not, I beg and pray you, be not the cause of
+               such lamentation. Short is our time: and "yet a very little while and He that cometh
+               will come and will not tarry," and "will reward every man according to his works":
+               and, while we are now gaping after the shadowy things of this world, He will come
+               upon us and seize us in the midst of our pleasures: whereas we ought to have gone
+               while watching. For, as the end of the life here finds us, so will He that shall
+               judge us see us on the great effulgent day of the last judgment. May it come about
+               that we are ready when <pb n="345"/> we appear before Him, and that we find Him
+               gentle, and not pronouncing the sentence that condemns, but that which acquits, and
+               giving us a share in the good things that are prepared for those that have hoped in
+               Him! I have committed these things to writing in fear and trembling, and with caution
+               lest anywhere I should think or utter anything contrary to the divine laws, and be
+               found with those that are accused by the prophet as perverting justice, or as
+               possessing two weights contrary to the law, and to be weighing the words of the
+               Spirit not worthily nor intelligently, but inclining the balances of truth like a
+               huckster, and making myself liable to the divine sentence. Pray therefore, saintly
+               men, that I may receive forgiveness from Christ the great God and our Saviour, both
+               for what has been written and for what has been omitted. </p>
+            <trailer>The end.</trailer>
+         </div>      
+      </body>
+  </text>
+</TEI>

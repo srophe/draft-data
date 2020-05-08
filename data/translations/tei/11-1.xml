@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title ref="http://syriaca.org/work/3042">To Misael the Chamberlain</title>
+            <author ref="http://syriaca.org/person/51">Severus of Antioch</author>
+            <sponsor>Center of Digital Humanities Research, Texas A&amp;M University</sponsor>
+            <principal>Daniel L. Schwartz</principal>
+            <editor role="editor" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</editor>
+            <respStmt>
+               <resp>XML created by</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</name>
+            </respStmt>
+            <respStmt>
+               <resp>Based on the work of</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#ewbrooks">E. W. Brooks</name>
+            </respStmt>
+            <respStmt>
+               <resp>OCR corrected by</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</name>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition n="1"/>
+         </editionStmt>
+         <publicationStmt>
+            <distributor>
+               <placeName>Center of Digital Humanities Research, College Station, TX, USA</placeName>
+            </distributor>
+            <authority/><!-- FILL IN AFTER DECIDING ON NAME -->
+            <idno/><!-- FILL IN AFTER DECIDING ON URI/URL FORMAT -->
+            <availability>
+               <licence target="http://creativecommons.org/licenses/by/4.0/">
+                  <p>Creative Commons — Attribution 4.0 International — CC BY 4.0</p>
+                  <p>https://creativecommons.org/licenses/by/4.0/</p>
+               </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <editor ref="http://syriaca.org/person/403">
+                     <persName xml:lang="en">
+                        <forename>E. W.</forename>
+                        <surname>Brooks</surname>
+                     </persName>
+                  </editor>
+                  <title type="main" xml:lang="en" level="m">
+                     The Sixth Book of the Select Letters of
+                     <persName ref="http://syriaca.org/person/51">Severus Patriarch of Antioch</persName>
+                     in the Syriac Version of
+                     <persName ref="http://syriaca.org/person/1014">Athanasius of Nisibis</persName>
+                  </title>
+                  <title type="sub" xml:lang="en" level="m">Vol. II (Translation) Part II</title>
+                  <idno type="URI">http://syriaca.org/bibl/669</idno>
+                  <imprint>
+                     <publisher xml:lang="en">Williams and Norgate</publisher>
+                     <pubPlace ref="http://syriaca.org/place/861">Oxford</pubPlace>
+                     <date>1903</date>
+                  </imprint>
+                  <extent>Vol. 4 of 4</extent>
+                  <biblScope unit="vol">2.2</biblScope>
+                  <biblScope unit="page">459-63</biblScope>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <editorialDecl>
+            <p/><!-- FILL IN -->
+         </editorialDecl>
+      </encodingDesc>
+      <profileDesc>
+         <creation>
+            <origDate type="composition"/><!-- FILL IN. La Route Royale dates are probably preferable to Brooks' dates. -->
+         </creation>
+      </profileDesc>
+      <revisionDesc status="draft">
+         <change when="2019-11" who="http://syriaca.org/person.xml#dschwartz">Created file</change>
+      </revisionDesc>
+   </teiHeader>
+  <text>
+      <body>
+         <div type="letter" n="11.1">
+            <head type="main" resp="#compiler">Of the same to Misael the chamberlain.</head>
+            <head type="sub" resp="#compiler">From those during episcopacy, from the 4th book the
+               100th letter.</head>
+            <p> How can I express my admiration of the labours of your magnificence which you
+               display towards my meanness in the way that they deserve, seeing that I have one
+               mouth and one tongue? Still however, since you do not care about praises upon earth,
+               but make it your one and only endeavour that through good works your name may be
+               written in the book of life, I pray as a sinner that this grace may be abundantly
+               bestowed upon you by God the bestower of gifts that are so great. For by your
+               faithful care you have delivered our church that was in a pitiful condition through
+               the hostile contrivances of the illustrious Aegilas from a heavy burden. <pb n="460"
+               /> But it wounds me deeply that, because your soul has been smitten with divine love,
+               it should conceive the idea of adopting the philosophic and solitary life, though it
+               is living in a philosophic manner and has within that which it seeks as if it were at
+               a distance. By God's grace, while you conduct yourself in so chaste and ascetic a
+               fashion, you have this privilege also that has been bestowed from above, I mean not
+               only to believe on Christ, but also to suffer for His sake, and endure distress with
+               Israel when in turmoil; whence also the illustrious crown of martyrdom is being woven
+               for you. By desiring retreat or solitariness at a time so unsuited for it you are
+               doing the same as if one of those three boys, of one of whom you are namesake, when
+               the golden image of Nebuchadnezzar the fighter against God was set forth, and he was
+               required to stand up and confute the error, had fled and withdrawn, thinking to win
+               safety for himself, and not bow his head to the abominable and unlawful object of
+               worship. In. that case they would not have obtained such glory with God as that which
+               they gained by undergoing the trial of the furnace, and quenching the fire by their
+               virtue, and gaining God as a witness to their modest and humble mind by saying, "Our
+               God is in heaven whom we serve, one that is able to deliver us from the burning
+               furnace of fire; and if not be it known unto thee, O king, that we do not serve thy
+               gods, and the golden image <pb n="461"/> which thou hast set up we do not worship";
+               in order that these words might be an instruction and a pattern in piety to all in
+               later times too who should love God. How then can you, when the king is pious, flee
+               from the fight with the heretics, instigated as you are by a God-loving thought, and
+               refusing to endure their blasphemies, and looking at this only, and reckoning our
+               nakedness as nothing? If this is carried into effect, you will now double for me
+               personally the grief that I felt by reason of the departure of Peter the presbyter?
+               who is among the saints, and will throw me "fall after fall," as the great Job
+               somewhere says: and then I shall know clearly from facts themselves that God has
+               utterly abandoned us, and has turned away His face from those that praise Him in the
+               right way: and we will say as is written "to the mountains, 'Fall upon us,' and to
+               the hills, 'Cover us.'" I forbear to say that neither will you obtain that desire,
+               seeing it will not be in accordance with God's judgment that you will be abandoning
+               the life in the world. Further also a story like this has been conveyed to us by
+               those who have grown old in asceticism. In the times of the Arians, two men who lived
+               in the philosophic manner remained in the desert, and in the unsocial life. And, when
+               the word of truth was being attacked, and was being obscured by heretical craftiness
+               of speech, and they were called to give help (for they had in fact qualifications for
+               fighting on behalf of piety), they were <pb n="462"/> disinclined to do so, because
+               they clung to philosophy, and action seemed to them irksome. And the one put
+               constraint upon himself, and showed more respect to the commandment than to the peace
+               that he loved, and hastily set off to take part in the contests, and obeyed those who
+               called him. But the other remained according to his pleasure in the desert, and the
+               spirits of evil came and assailed him with greater vehemence, and he became possessed
+               of the feeling that he had been stripped of God's grace and help, and was in danger
+               of being devoured by fiends as it were by lions; and he was awakened and reflected
+               upon his thoughtlessness, and he changed his mind and immediately followed his
+               brother's good resolution, and took a hand with him in the contests on behalf of the
+               faith. I say nothing of Obadiah who served under Ahab the grievous tyrant, and
+               secretly fed a hundred prophets in a cave, contrary to the pleasure of the holder of
+               power. I also pass over the selling of Joseph, and the bondage to the Egyptian woman
+               and her false charge, and the other stories: since not only have you heard the sacred
+               writings, but you are in fact well-versed in them. Wherefore these things too we have
+               written as a mere admonition only so to speak, by which we urge you, inasmuch as you
+               live not to yourself but to God, immediately to say what has been written and has
+               been handed down by our Lord as a teacher, "Nevertheless not as I will but as thou
+               wilt." <pb n="463"/> It is in truth a great sin for us to desert Christ when He needs
+               help. Such a man acts in the same way as a man who is rich and quickly passes by one
+               who is hungry, and one who is naked or sick, or shut up in prison; for the need of
+               all these Christ makes His own. Wherefore also He bitterly inveighs against the crime
+               and holds it up to reprobation before the theatre of the world or rather before all
+               rational nature, saying, "Inasmuch as ye did it not to one of these little ones,
+               neither did ye it to me." May we all escape having experience of these words! </p>
+            <trailer>The end.</trailer>
+         </div>      
+      </body>
+  </text>
+</TEI>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title ref="http://syriaca.org/work/3029">To Valeriana, Deaconess and
+               Archimandritess</title>
+            <author ref="http://syriaca.org/person/51">Severus of Antioch</author>
+            <sponsor>Center of Digital Humanities Research, Texas A&amp;M University</sponsor>
+            <principal>Daniel L. Schwartz</principal>
+            <editor role="editor" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</editor>
+            <respStmt>
+               <resp>XML created by</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</name>
+            </respStmt>
+            <respStmt>
+               <resp>Based on the work of</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#ewbrooks">E. W. Brooks</name>
+            </respStmt>
+            <respStmt>
+               <resp>OCR corrected by</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</name>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition n="1"/>
+         </editionStmt>
+         <publicationStmt>
+            <distributor>
+               <placeName>Center of Digital Humanities Research, College Station, TX, USA</placeName>
+            </distributor>
+            <authority/><!-- FILL IN AFTER DECIDING ON NAME -->
+            <idno/><!-- FILL IN AFTER DECIDING ON URI/URL FORMAT -->
+            <availability>
+               <licence target="http://creativecommons.org/licenses/by/4.0/">
+                  <p>Creative Commons — Attribution 4.0 International — CC BY 4.0</p>
+                  <p>https://creativecommons.org/licenses/by/4.0/</p>
+               </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <editor ref="http://syriaca.org/person/403">
+                     <persName xml:lang="en">
+                        <forename>E. W.</forename>
+                        <surname>Brooks</surname>
+                     </persName>
+                  </editor>
+                  <title type="main" xml:lang="en" level="m">
+                     The Sixth Book of the Select Letters of
+                     <persName ref="http://syriaca.org/person/51">Severus Patriarch of Antioch</persName>
+                     in the Syriac Version of
+                     <persName ref="http://syriaca.org/person/1014">Athanasius of Nisibis</persName>
+                  </title>
+                  <title type="sub" xml:lang="en" level="m">Vol. II (Translation) Part II</title>
+                  <idno type="URI">http://syriaca.org/bibl/669</idno>
+                  <imprint>
+                     <publisher xml:lang="en">Williams and Norgate</publisher>
+                     <pubPlace ref="http://syriaca.org/place/861">Oxford</pubPlace>
+                     <date>1903</date>
+                  </imprint>
+                  <extent>Vol. 4 of 4</extent>
+                  <biblScope unit="vol">2.2</biblScope>
+                  <biblScope unit="page">364-68</biblScope>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <editorialDecl>
+            <p/><!-- FILL IN -->
+         </editorialDecl>
+      </encodingDesc>
+      <profileDesc>
+         <creation>
+            <origDate type="composition"/><!-- FILL IN. La Route Royale dates are probably preferable to Brooks' dates. -->
+         </creation>
+      </profileDesc>
+      <revisionDesc status="draft">
+         <change when="2019-11" who="http://syriaca.org/person.xml#dschwartz">Created file</change>
+      </revisionDesc>
+   </teiHeader>
+  <text>
+      <body>
+         <div type="letter" n="7.1">
+            <head type="main" resp="#compiler">Of the same to Valieriana the deaconess and
+               archimandritess.</head>
+            <head type="sub" resp="#compiler">From those during episcopacy, from the 3rd book the
+               10th, 15th letter.</head>
+            <p> I rejoiced greatly on learning that your religiousness had by God's decree received
+               the headship of those <pb n="365"/> sacred virgins. <add><emph>And after other
+                  things.</emph></add> Wherefore gird up the loins of your understanding, and
+               with watching and strenuousness guide the rational souls over which you have been
+               appointed to be head to every good action. Require from them not only asceticism of
+               body, but also purity of mind. Make the virgins' holy convent inaccessible to every
+               male, and let none whatever set foot within their sacred precincts: neither if he be
+               a boy in his time of life, nor if he has reached advanced old age, except the priest
+               who performs divine service for you. Neither let the virgins look freely at one
+               another, but with eyes turned downwards let them say what is needed. The lust of the
+               flesh obtains occasions from the lust of the eyes, as the divine John the Evangelist
+               says in his epistle. Paul the wise also writes to the Ephesians, "Let no foul speech
+               proceed out of your mouth: but that which is good for needful edification, in order
+               that it may give grace to them that hear." To this also your religiousness must
+               carefully see: <foreign>i.e.</foreign> that all the virgins do not take their food separately, lest one
+               be hungry and another drunken: but be at one and the same table, as it is written in
+               the Acts of the Apostles concerning those who in the beginning believed on the name
+               of our Lord Jesus Christ, that they were all together, and they broke bread in a
+               house and "took food, with gladness and singleness of their heart praising God"; and
+               that "the heart and soul of the whole number of <pb n="366"/> those who had believed
+               was one, and none said of any of the things that he possessed that it was his own,
+               but everything that they had was common." But neither let any of them keep a
+               bondwoman within to minister to her: but let those that are young minister to those
+               that have grown old. It is not lawful for a virgin or a solitary, who have promised
+               to imitate Christ, to keep a bondman or bondwoman. "The Son of man," He says, "came
+               not to be ministered unto but to minister, and to give His life a ransom for many."
+               If therefore the bondwomen are willing to be bound with the yoke of virginity, after
+               due examination receive these, and let them live with the rest as freewomen; and let
+               them have no liberty of intercourse with their former mistresses, nor for the future
+               perform service for them. "He that was called as a bondman in the Lord is the Lord's
+               freedman," as the divine Apostle says. But, if they desire to minister to their
+               mistresses in the monastery while yet bondwomen and living a secular life, use all
+               your power to expel these women. If "evil communications corrupt gentle
+               dispositions," much more does the servile character cause corruption in the
+               characters of the freeborn when it lives with them. But do not exert yourself to
+               apply correction to all these things immediately, lest you grow weary of labours, and
+               load yourself with an excessive burden: but cut away the <pb n="367"/> evil practices
+               little by little, and provide the proper remedy for every disorder, like the most
+               skilled physicians: and, when you have healed one disorder according to the method
+               proper for it, then bestir yourself to cure another also; and thus you will make the
+               whole body sound by gradual corrections, and will win the reward of wise stewards.
+               Enforce God's laws: but slanders against you or contumelies despise; and thus you
+               will be a good example of humility of mind to those under your headship. Those that
+               are ill comfort: before those that are well hold out readiness for ascetic exercises.
+               Those that are harassed by cares help and sympathize with them, inasmuch as you also
+               are clad in bodily infirmity, and strengthen them with hopes for the future: teaching
+               them that "the fashion of this world passeth away." Warn them not to despise the work
+               of their hands. In fact even the wise Paul used to work: and he would say, "These
+               hands ministered to my necessities and to them that were with me. And I have showed
+               you all things, how that ye ought so to labour and work and help the weak." Warn them
+               to have ever in their mouth meditation upon the divine scriptures, and to sing night
+               and day the songs that the. Holy Spirit delivered to us through David's mouth, not
+               men's hymns, which are made to give pleasure, and which weaken the soul and relax the
+               vigour of asceticism. "Meditate upon these things: think upon these things: <pb
+                  n="368"/> in order that thy progress may be manifest to everyone": and you may be
+               as a ship that is engaged in commerce and gathers the spiritual profit from every
+               quarter, in Christ Jesus our Lord. </p>
+            <trailer>The end.</trailer>
+         </div>      
+      </body>
+  </text>
+</TEI>

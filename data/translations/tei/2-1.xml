@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title ref="http://syriaca.org/work/3006">To the Patricians</title>
+            <author ref="http://syriaca.org/person/51">Severus of Antioch</author>
+            <sponsor>Center of Digital Humanities Research, Texas A&amp;M University</sponsor>
+            <principal>Daniel L. Schwartz</principal>
+            <editor role="editor" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</editor>
+            <respStmt>
+               <resp>XML created by</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</name>
+            </respStmt>
+            <respStmt>
+               <resp>Based on the work of</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#ewbrooks">E. W. Brooks</name>
+            </respStmt>
+            <respStmt>
+               <resp>OCR corrected by</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</name>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition n="1"/>
+         </editionStmt>
+         <publicationStmt>
+            <distributor>
+               <placeName>Center of Digital Humanities Research, College Station, TX, USA</placeName>
+            </distributor>
+            <authority/><!-- FILL IN AFTER DECIDING ON NAME -->
+            <idno/><!-- FILL IN AFTER DECIDING ON URI/URL FORMAT -->
+            <availability>
+               <licence target="http://creativecommons.org/licenses/by/4.0/">
+                  <p>Creative Commons — Attribution 4.0 International — CC BY 4.0</p>
+                  <p>https://creativecommons.org/licenses/by/4.0/</p>
+               </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <editor ref="http://syriaca.org/person/403">
+                     <persName xml:lang="en">
+                        <forename>E. W.</forename>
+                        <surname>Brooks</surname>
+                     </persName>
+                  </editor>
+                  <title type="main" xml:lang="en" level="m">
+                     The Sixth Book of the Select Letters of
+                     <persName ref="http://syriaca.org/person/51">Severus Patriarch of Antioch</persName>
+                     in the Syriac Version of
+                     <persName ref="http://syriaca.org/person/1014">Athanasius of Nisibis</persName>
+                  </title>
+                  <title type="sub" xml:lang="en" level="m">Vol. II (Translation) Part I</title>
+                  <idno type="URI">http://syriaca.org/bibl/668</idno>
+                  <imprint>
+                     <publisher xml:lang="en">Williams and Norgate</publisher>
+                     <pubPlace ref="http://syriaca.org/place/861">Oxford</pubPlace>
+                     <date>1903</date>
+                  </imprint>
+                  <extent>Vol. 3 of 4</extent>
+                  <biblScope unit="vol">2.1</biblScope>
+                  <biblScope unit="page">199-203</biblScope>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <editorialDecl>
+            <p/><!-- FILL IN -->
+         </editorialDecl>
+      </encodingDesc>
+      <profileDesc>
+         <creation>
+            <origDate type="composition"/><!-- FILL IN. La Route Royale dates are probably preferable to Brooks' dates. -->
+         </creation>
+      </profileDesc>
+      <revisionDesc status="draft">
+         <change when="2019-11" who="http://syriaca.org/person.xml#dschwartz">Created file</change>
+      </revisionDesc>
+   </teiHeader>
+  <text>
+      <body>
+         <div type="letter" n="2.1">
+            <head type="main" resp="#compiler">Of the same to the patricians.</head>
+            <head type="sub" resp="#compiler">From those before episcopacy, from the 3rd book the 5th
+               letter.</head>
+            <p> As the brightness of the stars brings comfort to those who in the depth of night
+               raise their looks towards heaven, so it is good for us also, whose <pb n="200"/>
+               mind's eye is darkened by the darkness of sorrow, to look towards you the rational
+               stars of the sacred Senate. If we are allowed to enjoy your genial splendour, all the
+               cloud: of despondency will pass away, and we shall certainly see the sun also which
+               is surrounded by you shining gently upon us as at hot noonday. It has come to the
+               ears of our worthlessness that our pious Christ-loving king believed that some of us
+               without having priestly rank are officiating as priests with profane hands and
+               handling the sacraments, Such reports it is the practice of slanderers to put forth
+               about us: who, being unable to accuse the orthodoxy of our faith for which we were
+               persecuted, betake themselves to such unholy futilities. But our acts are known to
+               everyone, even if we ourselves keep silent. Although we are sinners, yet we are not
+               unversed in the divine scriptures, nor have we an uninstructed mind with regard to
+               them (I forbear to say that we make these our meditation by night and by day, as we
+               are commanded?). Trying therefore as we do to direct our own life by them, we know
+               that all who coveted the priestly functions without being in the position of priests
+               suffered sudden death. Such were Dathan and Abiram and the company of Korah: who
+               wished to usurp the high-priestly office of Moses and Aaron, and dared to burn
+               incense, and the earth opened and swallowed some of them up, <pb n="201"/> while
+               others were consumed by the strange fire. Another man, because he presumed to touch
+               the sacred ark with profane hand when it leaned over and was about to be dashed to
+               the ground, was immediately struck lifeless. And what of Uzziah the king? Is it not
+               the fact that, because he inconsiderately dared to be called a priest, he was smitten
+               with the scab of leprosy between his eyes before he passed the sacred barrier or
+               veil, and was thenceforth ashamed even to reign? How then could we who through mercy
+               devote ourselves to the study of such teachings, and so know that there was power
+               even in the legal shadowy service, have presumed to officiate as priests with
+               unconsecrated hands at the heavenly sacrifice, which even to angels is inaccessible,
+               but out of benignance has been made accessible to the priests only, because they
+               typify Christ? For it is in truth He who down to the present time offers Himself
+               every day on our behalf to God and the Father. Those who minister in the new
+               covenant? do not offer any new 'sacrifice upon the altar, but celebrate the memory of
+               that one, in which Christ, God the Word the high-priest, the priesthood, the new and
+               glorious victim, and noble oblation preparative for immortal life, offered Himself.
+               In fact the wise Paul also in his epistle to the Hebrews says of Christ, "By one
+               offering He hath perfected them that are sanctified:" and again, "So also Christ,
+               having been once offered to bear the sins <pb n="202"/> of many, shall appear a
+               second time without sin, to those who look for Him for salvation through faith." That
+               Christ's mystery is inaccessible even to the sublime hosts Isaiah the loud trumpet of
+               the prophets bears witness who said that one of the suprasensual and immaterial hosts
+               of the seraphs took a coal with the tongs and not in his hand, and laid it on his
+               lips and said, "This shall purge thy sins." That the coal signifies the one Christ
+               made out of two elements, of the Godhead I mean and of the manhood which are each
+               perfect, undoubtedly does not escape your God-loving excellencies. Holding therefore
+               to such right principles, in order to cause perfect confidence in what we say, we lay
+               ourselves under the direst curse, to fall from the glory of the Holy Trinity and not
+               attain to the hope promised to Christians, if we are conscious in ourselves that any
+               such presumptuous deed has been committed by our fathers or is being committed. If
+               anyone presumes to lay hands upon the priesthood without having received the sacred
+               ordination lawfully and in accordance with the apostolic canons, let him be anathema,
+               and let him be ranked with men that rob a sanctuary and lie in wait at altars. The
+               other slander also we cast from us and assert that no one who has been admitted to
+               the clergy in the churches has been re-ordained among us. Wherefore we even place
+               under anathema the man who re-ordains these <pb n="203"/> or says that they must be
+               re-ordained. But, if anyone after he has been admitted to the clergy has turned his
+               eye towards the solitary mode of life, and, being trained in the toilsome exercises
+               of philosophy, and desiring to know how to bear contempt for Christ's sake, has
+               debarred himself for a time from the ministry, this is not re-ordination (far be
+               it!), but a philosophic and divine exercise which renders the priest more worthy of
+               reverence. It is in fact the custom of our fathers to look to the soul's profit only,
+               and, when men have once taken upon themselves to practise philosophy, whether they be
+               priests or whether they be kings, to lead them on through the performance of humble
+               services, in order that by trampling upon pride they may imitate Him who humbled
+               Himself for our salvation and became flesh and took the form of a slave. For the
+               correct definition of philosophy is this, that a man imitate God as much as possible.
+               Therefore, now that you know these things, we beg your glorious noble eminences to
+               convey them to the ears of our Christ-loving triumphant king. For it is not just
+               that, when we are near and able to give satisfactory answers to the slanders against
+               us, that we should be condemned by default as if we were absent. </p>
+            <trailer>The end.</trailer>
+         </div>
+      </body>
+  </text>
+</TEI>

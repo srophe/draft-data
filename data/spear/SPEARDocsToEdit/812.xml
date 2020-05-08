@@ -1,0 +1,414 @@
+<?xml-model href="https://raw.githubusercontent.com/srophe/srophe-eXist-app/master/documentation/SPEARschema/out/SPEAR.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/srophe/srophe-eXist-app/master/documentation/SPEARschema/out/SPEAR.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title level="a" type="main">John of Ephesus, <title ref="http://syriaca.org/work/812">A Monk from the Same Monastery as Zacharias</title>, in
+                    <title>The Lives of the Eastern Saints</title></title>
+                <title type="sub">A SPEAR Prosopography</title>
+                <sponsor>Syriaca.org: The Syriac Reference Portal</sponsor>
+                <funder>The National Endowment for the Humanities</funder>
+                <funder>Texas A&amp;M University</funder>
+                <editor role="general" ref="http://syriaca.org/documentation/editors.xml#dschwartz">Daniel L. Schwartz</editor>
+                <editor role="creator" ref="http://syriaca.org/documentation/editors.xml#dschwartz">Daniel L. Schwartz</editor>
+                <editor role="creator"
+                    ref="http://syriaca.org/documentation/editors.xml#jnsaint-laurent">Jeanne-Nicole
+                    Saint-Laurent</editor>
+                <editor role="creator"
+                    ref="http://syriaca.org/documentation/editors.xml#tbaillargeon">Tara
+                    Baillargeon</editor>
+                <editor role="creator" ref="http://syriaca.org/documentation/editors.xml#syoung">Sam
+                    Young</editor>
+                <editor role="creator" ref="http://syriaca.org/documentation/editors.xml#tmcneir"
+                    >Taylor McNeir</editor>
+                <editor role="creator" ref="http://syriaca.org/documentation/editors.xml#rtrupiano"
+                    >Rose Trupiano</editor>
+                <respStmt>
+                    <resp>Data architecture, data entry, editing, proofreading, and revision
+                        by</resp>
+                    <name ref="http://syriaca.org/documentation/editors.xml#dschwartz"
+                        >Daniel L. Schwartz</name>
+                </respStmt>
+                <respStmt>
+                    <resp>Text analysis and data encoding by</resp>
+                    <name ref="http://syriaca.org/documentation/editors.xml#jnsaint-laurent">Jeanne-Nicole
+                        Saint-Laurent</name>
+                </respStmt>
+                <respStmt>
+                    <resp>Text analysis and data encoding by</resp>
+                    <name ref="http://syriaca.org/documentation/editors.xml#tbaillargeon"
+                        >Tara Baillargeon</name>
+                </respStmt>
+                <respStmt>
+                    <resp>Text analysis and data encoding by</resp>
+                    <name ref="http://syriaca.org/documentation/editors.xml#tmcneir"
+                        >Taylor McNeir</name>
+                </respStmt>
+                <respStmt>
+                    <resp>Text analysis and data encoding by</resp>
+                    <name ref="http://syriaca.org/documentation/editors.xml#syoung"
+                        >Samuel Young</name>
+                </respStmt>
+                <respStmt>
+                    <resp>Text analysis and data encoding by</resp>
+                    <name ref="http://syriaca.org/documentation/editors.xml#rtrupiano"
+                        >Rose Trupiano</name>
+                </respStmt>
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0"/>
+            </editionStmt>
+            <publicationStmt>
+                <authority>Syriaca.org: The Syriac Reference Portal</authority>
+                <idno type="URI">http://syriaca.org/spear/812/tei</idno>
+                <availability>
+                    <licence target="http://creativecommons.org/licenses/by/3.0/">
+                        <p>Distributed under a Creative Commons Attribution 3.0 Unported
+                            License.</p>
+                    </licence>
+                </availability>
+                <date>2020-01-03-05:00</date>
+            </publicationStmt>
+            <seriesStmt>
+                <title level="s">SPEAR: Syriac Persons, Events, and Relations</title>
+                <editor role="general" ref="http://syriaca.org/documentation/editors.xml#dschwartz">Daniel L. Schwartz</editor>
+                <idno type="URI">http://syriaca.org/spear</idno>
+            </seriesStmt>
+            <seriesStmt>
+                <title level="m" xml:lang="en">The Lives of the Eastern Saints</title>
+                <title type="sub">A SPEAR Prosopography</title>
+                <editor role="general" ref="http://syriaca.org/documentation/editors.xml#dschwartz">Daniel L. Schwartz</editor>
+                <idno type="URI">http://syriaca.org/spear/lives-eastern-saints</idno>
+                <biblScope unit="volume">
+                    <title level="s">SPEAR: Syriac Persons, Events, and Relations</title>
+                    <idno type="URI">http://syriaca.org/spear</idno>
+                </biblScope>
+            </seriesStmt>
+            <sourceDesc>
+                <listBibl>
+                    <head>Sources for the Data in this Born Digital Prosopography</head>
+                    <bibl type="primary">
+                        <title>Lives of the Eastern Saints I</title>
+                        <title>A Monk from the Same Monastery as Zacharias</title>
+                        <author><persName ref="http://syriaca.org/person/74">John of
+                                Ephesus</persName></author>
+                        <editor><persName ref="http://syriaca.org/person/403">E. W.
+                                Brooks</persName></editor>
+                        <ptr target="http://syriaca.org/bibl/1409"/>
+                    </bibl>
+                    <bibl type="primary">
+                        <title>A Monk from the Same Monastery as Zacharias</title>
+                        <author><persName ref="http://syriaca.org/person/74">John of
+                                Ephesus</persName></author>
+                        <ptr target="http://syriaca.org/work/812"/>
+                    </bibl>
+                </listBibl>
+                <listRelation>
+                    <relation type="part" active="http://syriaca.org/work/812"
+                        name="dcterms:isPartOf" passive="http://syriaca.org/work/9501"/>
+                </listRelation>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <editorialDecl>
+                <p>The prosopographical data in this document was encoded from E. W.
+                    Brooks' edition and English translation of John of Ephesus’s Lives of the
+                    Eastern Saints, Patrologia Orientalis, volume 17, 1923. </p>
+                <!-- Fix volume number -->
+            </editorialDecl>
+            <classDecl>
+                <taxonomy>
+                    <category xml:id="calculated">
+                        <catDesc> Used to denote a date calculated by the editor from a regnal year
+                            given in the text. </catDesc>
+                    </category>
+                </taxonomy>
+            </classDecl>
+        </encodingDesc>
+        <profileDesc/>
+        <revisionDesc status="draft">
+            <change who="http://syriaca.org/documentation/editors.xml#srophe-util"
+                when="2020-01-03-05:00" status="draft">CHANGED: Add a human readable version or the
+                tei:relation element in a tei:desc.</change>
+            <change status="draft"/>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="factoid" subtype="event" xml:id="factoid-1"
+                resp="#jnsaint-laurent #tbaillargeon #tmcneir #syoung #rtrupiano">
+                <idno type="URI">http://syriaca.org/spear/812-1</idno>
+                <listEvent>
+                    <event
+                        ana="http://syriaca.org/keyword/liturgics http://syriaca.org/keyword/prayer http://syriaca.org/keyword/monasticism">
+                        <desc><persName>A pre-emminent monk</persName> was fervently praying with
+                            his eyes toward the heaven while bouncing on the soles of his feet.
+                        </desc>
+                    </event>
+                </listEvent>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/work/812"/>
+                    <citedRange unit="pp">274</citedRange>
+                </bibl>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/bibl/1409"/>
+                    <citedRange unit="pp">274</citedRange>
+                </bibl>
+            </div>
+            <div type="factoid" subtype="event" xml:id="factoid-2"
+                resp="#jnsaint-laurent #tbaillargeon #tmcneir #syoung #rtrupiano">
+                <idno type="URI">http://syriaca.org/spear/812-2</idno>
+                <listEvent>
+                    <event
+                        ana="http://syriaca.org/keyword/hussaya http://syriaca.org/keyword/penitence">
+                        <desc><persName ref="http://syriaca.org/person/74">John</persName> asks the
+                            monk why he is upset. <persName>The monk</persName> is contrite for a
+                            sin he has committed. </desc>
+                    </event>
+                </listEvent>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/work/812"/>
+                    <citedRange unit="pp">275</citedRange>
+                </bibl>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/bibl/1409"/>
+                    <citedRange unit="pp">275</citedRange>
+                </bibl>
+            </div>
+            <div type="factoid" subtype="event" xml:id="factoid-3"
+                resp="#jnsaint-laurent #tbaillargeon #tmcneir #syoung #rtrupiano">
+                <idno type="URI">http://syriaca.org/spear/812-3</idno>
+                <listEvent>
+                    <event
+                        ana="http://syriaca.org/keyword/sexuality http://syriaca.org/keyword/shame">
+                        <desc><persName>The man</persName> confesses that his sin is worse than
+                            fornication. </desc>
+                    </event>
+                </listEvent>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/work/812"/>
+                    <citedRange unit="pp">275</citedRange>
+                </bibl>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/bibl/1409"/>
+                    <citedRange unit="pp">275</citedRange>
+                </bibl>
+            </div>
+            <div type="factoid" subtype="event" xml:id="factoid-4"
+                resp="#jnsaint-laurent #tbaillargeon #tmcneir #syoung #rtrupiano">
+                <idno type="URI">http://syriaca.org/spear/812-4</idno>
+                <listEvent>
+                    <event
+                        ana="http://syriaca.org/keyword/laughter http://syriaca.org/keyword/liturgics http://syriaca.org/keyword/demonology http://syriaca.org/keyword/confession">
+                        <desc><persName>The monk</persName> confesses that while he was celebrating
+                            the liturgy, he laughed at <persName>another monk</persName> whom
+                                <persName>Satan</persName> has pushed down. </desc>
+                    </event>
+                </listEvent>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/work/812"/>
+                    <citedRange unit="pp">276</citedRange>
+                </bibl>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/bibl/1409"/>
+                    <citedRange unit="pp">276</citedRange>
+                </bibl>
+            </div>
+            <div type="factoid" subtype="event" xml:id="factoid-5"
+                resp="#jnsaint-laurent #tbaillargeon #tmcneir #syoung #rtrupiano">
+                <idno type="URI">http://syriaca.org/spear/812-5</idno>
+                <listEvent>
+                    <event
+                        ana="http://syriaca.org/keyword/didactic http://syriaca.org/keyword/humor">
+                        <desc><persName ref="http://syriaca.org/person/74">John</persName> responded
+                            to the story of <persName>the monks</persName> and told him that he did
+                            not sin. </desc>
+                    </event>
+                </listEvent>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/work/812"/>
+                    <citedRange unit="pp">277</citedRange>
+                </bibl>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/bibl/1409"/>
+                    <citedRange unit="pp">277</citedRange>
+                </bibl>
+            </div>
+            <div type="factoid" subtype="event" xml:id="factoid-6"
+                resp="#jnsaint-laurent #tbaillargeon #tmcneir #syoung #rtrupiano">
+                <idno type="URI">http://syriaca.org/spear/812-6</idno>
+                <listEvent>
+                    <event ana="http://syriaca.org/keyword/repentence">
+                        <desc><persName>The monk</persName> accepts the advice and goes away.
+                        </desc>
+                    </event>
+                </listEvent>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/work/812"/>
+                    <citedRange unit="pp">278</citedRange>
+                </bibl>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/bibl/1409"/>
+                    <citedRange unit="pp">278</citedRange>
+                </bibl>
+            </div>
+            <div type="factoid" subtype="event" xml:id="factoid-7"
+                resp="#jnsaint-laurent #tbaillargeon #tmcneir #syoung #rtrupiano">
+                <idno type="URI">http://syriaca.org/spear/812-7</idno>
+                <listEvent>
+                    <event
+                        ana="http://syriaca.org/keyword/monasticism http://syriaca.org/keyword/monasteries http://syriaca.org/keyword/monks">
+                        <desc><persName ref="http://syriaca.org/person/74">John</persName> describes
+                            the questions posed to <persName>the laymen</persName> wishing to enter
+                            this convent. </desc>
+                    </event>
+                </listEvent>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/work/812"/>
+                    <citedRange unit="pp">279</citedRange>
+                </bibl>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/bibl/1409"/>
+                    <citedRange unit="pp">279</citedRange>
+                </bibl>
+            </div>
+            <div type="factoid" subtype="event" xml:id="factoid-8"
+                resp="#jnsaint-laurent #tbaillargeon #tmcneir #syoung #rtrupiano">
+                <idno type="URI">http://syriaca.org/spear/812-8</idno>
+                <listEvent>
+                    <event
+                        ana="http://syriaca.org/keyword/monks http://syriaca.org/keyword/monasticism http://syriaca.org/keyword/monasteries http://syriaca.org/keyword/discernment http://syriaca.org/keyword/monastic-heads">
+                        <desc><persName>The monks</persName> go through a thirty day waiting period
+                            before they can enter the monastery. </desc>
+                    </event>
+                </listEvent>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/work/812"/>
+                    <citedRange unit="pp">280</citedRange>
+                </bibl>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/bibl/1409"/>
+                    <citedRange unit="pp">280</citedRange>
+                </bibl>
+            </div>
+            <div type="factoid" subtype="event" xml:id="factoid-9"
+                resp="#jnsaint-laurent #tbaillargeon #tmcneir #syoung #rtrupiano">
+                <idno type="URI">http://syriaca.org/spear/812-9</idno>
+                <listEvent>
+                    <event
+                        ana="http://syriaca.org/keyword/penitence http://syriaca.org/keyword/monasteries">
+                        <desc> After three months of menial labor at the monastery, if
+                                <persName>they</persName> are still enthusiastic, they may become a
+                            penitent. </desc>
+                    </event>
+                </listEvent>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/work/812"/>
+                    <citedRange unit="pp">281</citedRange>
+                </bibl>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/bibl/1409"/>
+                    <citedRange unit="pp">281</citedRange>
+                </bibl>
+            </div>
+            <div type="factoid" subtype="event" xml:id="factoid-10?"
+                resp="#jnsaint-laurent #tbaillargeon #tmcneir #syoung #rtrupiano">
+                <idno type="URI">http://syriaca.org/spear/812-10?</idno>
+                <listEvent>
+                    <event
+                        ana="http://syriaca.org/keyword/sin http://syriaca.org/keyword/fasting http://syriaca.org/keyword/celibacy http://syriaca.org/keyword/souls">
+                        <desc> Penitents will need to cleanse their souls of worldly foulness for
+                            three years. </desc>
+                    </event>
+                </listEvent>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/work/812"/>
+                    <citedRange unit="pp">281</citedRange>
+                </bibl>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/bibl/1409"/>
+                    <citedRange unit="pp">281</citedRange>
+                </bibl>
+            </div>
+            <div type="factoid" subtype="event" xml:id="factoid-11?"
+                resp="#jnsaint-laurent #tbaillargeon #tmcneir #syoung #rtrupiano">
+                <idno type="URI">http://syriaca.org/spear/812-11?</idno>
+                <listEvent>
+                    <event
+                        ana="http://syriaca.org/keyword/monasticism http://syriaca.org/keyword/clergy">
+                        <desc> After another three months, the penitent will petition to be tonsured
+                            and to seek intercessors. </desc>
+                    </event>
+                </listEvent>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/work/812"/>
+                    <citedRange unit="pp">282</citedRange>
+                </bibl>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/bibl/1409"/>
+                    <citedRange unit="pp">282</citedRange>
+                </bibl>
+            </div>
+            <div type="factoid" subtype="event" xml:id="factoid-12?"
+                resp="#jnsaint-laurent #tbaillargeon #tmcneir #syoung #rtrupiano">
+                <idno type="URI">http://syriaca.org/spear/812-12?</idno>
+                <listEvent>
+                    <event
+                        ana="http://syriaca.org/keyword/dress http://syriaca.org/keyword/monasticism http://syriaca.org/keyword/clergy">
+                        <desc> If the penitent is still earnest, half of his head will be shaved and
+                            after a year, he will complete the tonsure and will be given tunic of
+                            straw. </desc>
+                    </event>
+                </listEvent>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/work/812"/>
+                    <citedRange unit="pp">282</citedRange>
+                </bibl>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/bibl/1409"/>
+                    <citedRange unit="pp">282</citedRange>
+                </bibl>
+            </div>
+            <div type="factoid" subtype="event" xml:id="factoid-13?"
+                resp="#jnsaint-laurent #tbaillargeon #tmcneir #syoung #rtrupiano">
+                <idno type="URI">http://syriaca.org/spear/812-13?</idno>
+                <listEvent>
+                    <event
+                        ana="http://syriaca.org/keyword/monasticism http://syriaca.org/keyword/dress">
+                        <desc> After another three years, the penitent will be given a habit.
+                        </desc>
+                    </event>
+                </listEvent>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/work/812"/>
+                    <citedRange unit="pp">282</citedRange>
+                </bibl>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/bibl/1409"/>
+                    <citedRange unit="pp">282</citedRange>
+                </bibl>
+            </div>
+        </body>
+        <back>
+            <listBibl>
+                <head>Works Cited</head>
+                <bibl type="primary" xml:id="bibl812-1">
+                    <title>Lives of the Eastern Saints I</title>
+                    <title>A Monk from the Same Monastery as Zacharias</title>
+                    <author><persName ref="http://syriaca.org/person/74">John of
+                        Ephesus</persName></author>
+                    <editor><persName ref="http://syriaca.org/person/403">E. W.
+                        Brooks</persName></editor>
+                    <ptr target="http://syriaca.org/bibl/1409"/>
+                </bibl>
+                <bibl type="primary" xml:id="bibl812-2">
+                    <title>A Monk from the Same Monastery as Zacharias</title>
+                    <author><persName ref="http://syriaca.org/person/74">John of
+                        Ephesus</persName></author>
+                    <ptr target="http://syriaca.org/work/812"/>
+                </bibl>
+            </listBibl>
+        </back>
+    </text>
+</TEI>

@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title ref="http://syriaca.org/work/3055">To the archimandrite of monastery of Bassus</title>
+            <author ref="http://syriaca.org/person/51">Severus of Antioch</author>
+            <sponsor>Center of Digital Humanities Research, Texas A&amp;M University</sponsor>
+            <principal>Daniel L. Schwartz</principal>
+            <editor role="editor" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</editor>
+            <respStmt>
+               <resp>XML created by</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</name>
+            </respStmt>
+            <respStmt>
+               <resp>Based on the work of</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#ewbrooks">E. W. Brooks</name>
+            </respStmt>
+            <respStmt>
+               <resp>OCR corrected by</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</name>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition n="1"/>
+         </editionStmt>
+         <publicationStmt>
+            <distributor>
+               <placeName>Center of Digital Humanities Research, College Station, TX, USA</placeName>
+            </distributor>
+            <authority/><!-- FILL IN AFTER DECIDING ON NAME -->
+            <idno/><!-- FILL IN AFTER DECIDING ON URI/URL FORMAT -->
+            <availability>
+               <licence target="http://creativecommons.org/licenses/by/4.0/">
+                  <p>Creative Commons — Attribution 4.0 International — CC BY 4.0</p>
+                  <p>https://creativecommons.org/licenses/by/4.0/</p>
+               </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <editor ref="http://syriaca.org/person/403">
+                     <persName xml:lang="en">
+                        <forename>E. W.</forename>
+                        <surname>Brooks</surname>
+                     </persName>
+                  </editor>
+                  <title type="main" xml:lang="en" level="m">
+                     The Sixth Book of the Select Letters of
+                     <persName ref="http://syriaca.org/person/51">Severus Patriarch of Antioch</persName>
+                     in the Syriac Version of
+                     <persName ref="http://syriaca.org/person/1014">Athanasius of Nisibis</persName>
+                  </title>
+                  <title type="sub" xml:lang="en" level="m">Vol. II (Translation) Part I</title>
+                  <idno type="URI">http://syriaca.org/bibl/668</idno>
+                  <imprint>
+                     <publisher xml:lang="en">Williams and Norgate</publisher>
+                     <pubPlace ref="http://syriaca.org/place/861">Oxford</pubPlace>
+                     <date>1903</date>
+                  </imprint>
+                  <extent>Vol. 3 of 4</extent>
+                  <biblScope unit="vol">2.1</biblScope>
+                  <biblScope unit="page">47-52</biblScope>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <editorialDecl>
+            <p/><!-- FILL IN -->
+         </editorialDecl>
+      </encodingDesc>
+      <profileDesc>
+         <creation>
+            <origDate type="composition"/><!-- FILL IN. La Route Royale dates are probably preferable to Brooks' dates. -->
+         </creation>
+      </profileDesc>
+      <revisionDesc status="draft">
+         <change when="2019-11" who="http://syriaca.org/person.xml#dschwartz">Created file</change>
+      </revisionDesc>
+   </teiHeader>
+  <text>
+      <body>
+         <div type="letter" n="1.11">
+            <head type="main" resp="#compiler">Of the same to the archimandrite of the monastery of
+               Bassus.</head>
+            <head type="sub" resp="#compiler">From those during episcopacy, from the 3rd book the
+               345th letter.</head>
+            <p> The letter of your love of God which has just been brought to me I have taken into
+               my hands, and received as yours. For I rejoice and exult when I read your name even
+               on the mere outside address, and I am brought to a more lively memory of your holy
+               monastery, and draw away my thoughts from the worry of affairs, and in this way am
+               refreshed and comforted. But, when the things written met my eye, I was astonished,
+               and wondered how it could have come into your mind to make a profitless and
+               impossible request. The devout Cosmas, who has just died, I instituted bishop of the
+               city of the Apamenes, because I trusted to the report of others concerning him and
+               their partiality on his behalf. For I confess to your holiness <pb n="48"/> that I
+               never had any confidence in him. Accordingly during all the time previous to my
+               coming to this city of Antiochus it can in no case be shown that I addressed a letter
+               to him; but it was the religious presbyter Theodore who used to write to him. But for
+               what reason I would not consent to write to him it is not proper to the present time
+               to say. However, as I said, J instituted him bishop, thus adding yet another to my
+               sins. For what blasphemous utterances he vomited forth, and what darts he hurled
+               against heaven God who heard knows. In plain language, not to make a long story,
+               after many roundabout methods and entreaties on my part, and tears unsuited to the
+               Holy Spirit, after alleging one reason and another, and at last bringing in his
+               bodily infirmity also, he resigned the bishopric. Thenceforward the whole position
+               was an insoluble difficulty to us, and full of doubt. For it was not only on account
+               of the mistake made in his case and the words blasphemously put forward by him that
+               there was cause for weeping, but also owing to the question in what way the affairs
+               of the Apamenes would have to be administered: for in such a state of confusion all
+               counsel was helpless. The God-loving bishops who in accordance with the statutes of
+               the church were residing at that time in the city of the Antiochenes, being present,
+               exhorted me to receive him as wishing to resign. And, since it was impossible for one
+               church to be united to two men at the same time, he drew up petitions of resignation,
+               saying of himself that he was no bishop and no clergy<pb n="49"/>man, nor did he hold
+               any other degree in the ministry. And, after this had taken place, the God-loving
+               bishop Peter was thereupon instituted. How then is it possible to undo, as you ask, a
+               thing that was carried out with so much caution and without anger? Assuredly, if the
+               transaction which renders Cosmas not a bishop is not maintained, it results that the
+               God-loving Peter was uncanonically instituted, and was given to a church that had
+               already received a bishop. Accordingly it is plain that the resignation of the
+               often-mentioned Cosmas tends to establish the ordination of the God-loving bishop
+               Peter. But I for my part am wondering who advised your sanctity to ask this. Does
+               anyone intend to clothe the dead man in that of which in accordance with the
+               ordinances of the Holy Spirit that cannot be rejected he voluntarily stripped
+               himself? or does anyone wish to mention him as a bishop? What therefore the wisdom of
+               such a request is am unable to understand. And what a time was it for a man’s
+               resignation to be recalled after his decease! Again, as to the fact that I went out
+               to the devout Cosmas after he had fallen ill, I wish the sequence of events not to be
+               unknown to your sanctity. Some of the zealous brethren came up to me and begged me to
+               go to him, on the ground that he himself was asking for this. But I said, "This
+               cannot be. With a man who is not in communion with the holy church, I do not consider
+               that I myself have any communion." And, though those who made the entreaty
+               persevered, I would not consent: and I was so firm that for three whole days they
+               urged <pb n="50"/> the point, and J did not yield. But at last one of those who were
+               with us, the religious deacon father Elijah, began to say that perhaps he wished to
+               repent, and to receive the oblation from my sinful hands. When this was said, I
+               considered that I should bring myself under the judgment of God, if I did not on this
+               consideration consent to the request itself: and in this hope I went to visit the
+               afore-mentioned man. However, knowing as I did his unyielding character, said to
+               those who were with me: "Believe me when I say that I am going out against my will
+               and without any confidence." And, when I had gone, I made a prayer in the expectation
+               that he would repent: but to give him a greeting or to ask a greeting from him I
+               would not consent, far be it! For with what reason could I have given a greeting of
+               peace to a man who refused the mystical peace before the holy altars and communion
+               with us? Woe is me if I give a bodily greeting to any man when my soul does not agree
+               to the greeting. When therefore we had sat down and none of the things that were
+               expected was said by him, but, though he could not articulate, he kept urging and
+               inviting us to enter upon a long conversation, while I for my part considered it a
+               sin for us to enter upon a contentious and profitless conversation while the man was
+               on the point of giving up the ghost, I rose, and prayed to God in private to forgive
+               me the inconsiderate visit. To a man who was so disposed I <pb n="51"/> ought not to
+               have gone out at all. Even when he was dead and many thought I should go there, I did
+               not go; considering that "everything that is not of faith is sin," according to the
+               words of the Apostle. For I for my part consider a man who separated himself without
+               reason from our orthodox communion an enemy not a brother, even if he is deceived by
+               the devil, who "is transformed into an angel of light," by considerations that are
+               rather upon the right side. For hear the Lord say, "He that is not with me is against
+               me: and he that gathereth not with me scattereth." Indeed by the prayers of the
+               saints and of your holiness, when church histories and the labours of the holy
+               fathers from the coming of the great God and our Saviour Jesus Christ down to this
+               time come before me, I find that this present condition of the holy churches in the
+               East and in Egypt is purer than the condition in former times, when the facts are
+               examined side by side. They therefore that trouble the simple "shall themselves bear
+               the judgment whosoever" they are, and shall themselves "give account in the day of
+               judgment, when "he shall come who knoweth the hidden things of darkness and revealeth
+               the counsels of the hearts." As for me, may have no part with such men, either in
+               this world or in that which is to come! For, shunning as I do harshness of speech, do
+               not wish to declare in detail what is the judgment <pb n="52"/> of those who turn
+               aside. Wherefore also I am urgent in entreating every one of those who have been
+               involved in the error not to continue in the plausible strangulation of this
+               righteousness, and hold aloof from the life-giving communion of the holy mysteries.
+               And so forth. </p>
+            <trailer>The end.</trailer>
+         </div>
+      </body>
+  </text>
+</TEI>

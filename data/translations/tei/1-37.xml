@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title ref="http://syriaca.org/work/3071">To Simeon, Bishop of Chalcis</title>
+            <author ref="http://syriaca.org/person/51">Severus of Antioch</author>
+            <sponsor>Center of Digital Humanities Research, Texas A&amp;M University</sponsor>
+            <principal>Daniel L. Schwartz</principal>
+            <editor role="editor" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</editor>
+            <respStmt>
+               <resp>XML created by</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</name>
+            </respStmt>
+            <respStmt>
+               <resp>Based on the work of</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#ewbrooks">E. W. Brooks</name>
+            </respStmt>
+            <respStmt>
+               <resp>OCR corrected by</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</name>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition n="1"/>
+         </editionStmt>
+         <publicationStmt>
+            <distributor>
+               <placeName>Center of Digital Humanities Research, College Station, TX, USA</placeName>
+            </distributor>
+            <authority/><!-- FILL IN AFTER DECIDING ON NAME -->
+            <idno/><!-- FILL IN AFTER DECIDING ON URI/URL FORMAT -->
+            <availability>
+               <licence target="http://creativecommons.org/licenses/by/4.0/">
+                  <p>Creative Commons — Attribution 4.0 International — CC BY 4.0</p>
+                  <p>https://creativecommons.org/licenses/by/4.0/</p>
+               </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <editor ref="http://syriaca.org/person/403">
+                     <persName xml:lang="en">
+                        <forename>E. W.</forename>
+                        <surname>Brooks</surname>
+                     </persName>
+                  </editor>
+                  <title type="main" xml:lang="en" level="m">
+                     The Sixth Book of the Select Letters of
+                     <persName ref="http://syriaca.org/person/51">Severus Patriarch of Antioch</persName>
+                     in the Syriac Version of
+                     <persName ref="http://syriaca.org/person/1014">Athanasius of Nisibis</persName>
+                  </title>
+                  <title type="sub" xml:lang="en" level="m">Vol. II (Translation) Part I</title>
+                  <idno type="URI">http://syriaca.org/bibl/668</idno>
+                  <imprint>
+                     <publisher xml:lang="en">Williams and Norgate</publisher>
+                     <pubPlace ref="http://syriaca.org/place/861">Oxford</pubPlace>
+                     <date>1903</date>
+                  </imprint>
+                  <extent>Vol. 3 of 4</extent>
+                  <biblScope unit="vol">2.1</biblScope>
+                  <biblScope unit="page">104-06</biblScope>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <editorialDecl>
+            <p/><!-- FILL IN -->
+         </editorialDecl>
+      </encodingDesc>
+      <profileDesc>
+         <creation>
+            <origDate type="composition"/><!-- FILL IN. La Route Royale dates are probably preferable to Brooks' dates. -->
+         </creation>
+      </profileDesc>
+      <revisionDesc status="draft">
+         <change when="2019-11" who="http://syriaca.org/person.xml#dschwartz">Created file</change>
+      </revisionDesc>
+   </teiHeader>
+  <text>
+      <body>
+         <div type="letter" n="1.37">
+            <head type="main" resp="#compiler">Of the same to Simeon, bishop of Chalcis.</head>
+            <head type="sub" resp="#compiler">From those during episcopacy, from the 7th book the
+               238th, 240th letter.</head>
+            <p> The devout monk so-and-so came to us, sadly lamenting and saying that he had been
+               separated by your love of God and forbidden to live in the monastery of the holy lord <choice>
+                  <reg>ʿAkiba</reg>
+                  <orig>'Akiba</orig>
+               </choice>, where he had also been: educated from the beginning and practised
+               philosophic modes of life. What moved you to this was, he said, because it was he who
+               told us that the man who is <foreign>chorepiscopus</foreign> and also
+               <foreign>periodeutes</foreign> of the village of <pb n="105"/> Thelhadin, who had
+               previously been tried by us at a time when the saintly bishops were here, and
+               themselves also joined us in the examination, had treated the canonical inhibition
+               with contempt and presumed to take part in the sacred ministry. When I learned this,
+               I judged it right to send and tell your love of God that, as God is witness, I did
+               not even know the very name of this monk, nor was I acquainted with his personal
+               appearance, until I learned it just now, when he made the complaint to me; nor was it
+               he who disclosed a fact that was hidden: for it was already being whispered by
+               everyone. Whence those of the house of the God-loving bishop Maron also had learned
+               it before this came to the knowledge of my vileness, and they were distressed in
+               themselves, and did not reveal it or tell it out: but they concealed the distress and
+               kept it to themselves, as the truth is witness. It is therefore the duty of your love
+               of God to release the man from his inhibition, seeing that it is without cause, and
+               he gave no handle for blame against him. For the <foreign>chorepiscopus</foreign> or
+               <foreign>periodeutes</foreign>, whom we just now mentioned, whether it is openly
+               or secretly that he presumes to transgress the law by treating with contempt the
+               inhibition from us, in the same way and without any difference rouses the wrath of
+               God. For, though a man escape men's eyes, he cannot escape the eye that sees
+               everything. Let such a man hear also from the singing prophet, "He that planted the
+               ears, <pb n="106"/> doth He not hear? or He that created the eyes, doth He not
+               perceive?" Let this therefore be a matter for inquiry, and for your consideration:
+               for our part, bound as we are by respect for your venerable age, we commit everything
+               to you: for know that, as you have undergone a contest on behalf of the orthodox
+               faith, and have shown great concern on behalf of accuracy in this respect, so you
+               will show similar concern in the case of the canons. But for the present please
+               release from his inhibition the devout monk whom we have many times mentioned, who
+               brings you this letter; since, to say the truth, he has not committed any of the sins
+               with which you have charged him. As to the matters" that were the cause of the devout
+               deacon Stephen coming to you, do your diligence to handle them as befits you and is
+               reasonable, in order that none of the troubles which have been stirred up may remain
+               without healing and without cure. This will bring you no small praise both in the
+               sight of God and in the sight of men. </p>
+            <trailer>The end.</trailer>
+         </div>
+      </body>
+  </text>
+</TEI>

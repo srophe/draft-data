@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title ref="http://syriaca.org/work/3092">To Philoxenus, Bishop of Hierapolis</title>
+            <author ref="http://syriaca.org/person/51">Severus of Antioch</author>
+            <sponsor>Center of Digital Humanities Research, Texas A&amp;M University</sponsor>
+            <principal>Daniel L. Schwartz</principal>
+            <editor role="editor" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</editor>
+            <respStmt>
+               <resp>XML created by</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</name>
+            </respStmt>
+            <respStmt>
+               <resp>Based on the work of</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#ewbrooks">E. W. Brooks</name>
+            </respStmt>
+            <respStmt>
+               <resp>OCR corrected by</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</name>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition n="1"/>
+         </editionStmt>
+         <publicationStmt>
+            <distributor>
+               <placeName>Center of Digital Humanities Research, College Station, TX, USA</placeName>
+            </distributor>
+            <authority/><!-- FILL IN AFTER DECIDING ON NAME -->
+            <idno/><!-- FILL IN AFTER DECIDING ON URI/URL FORMAT -->
+            <availability>
+               <licence target="http://creativecommons.org/licenses/by/4.0/">
+                  <p>Creative Commons — Attribution 4.0 International — CC BY 4.0</p>
+                  <p>https://creativecommons.org/licenses/by/4.0/</p>
+               </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <editor ref="http://syriaca.org/person/403">
+                     <persName xml:lang="en">
+                        <forename>E. W.</forename>
+                        <surname>Brooks</surname>
+                     </persName>
+                  </editor>
+                  <title type="main" xml:lang="en" level="m">
+                     The Sixth Book of the Select Letters of
+                     <persName ref="http://syriaca.org/person/51">Severus Patriarch of Antioch</persName>
+                     in the Syriac Version of
+                     <persName ref="http://syriaca.org/person/1014">Athanasius of Nisibis</persName>
+                  </title>
+                  <title type="sub" xml:lang="en" level="m">Vol. II (Translation) Part I</title>
+                  <idno type="URI">http://syriaca.org/bibl/668</idno>
+                  <imprint>
+                     <publisher xml:lang="en">Williams and Norgate</publisher>
+                     <pubPlace ref="http://syriaca.org/place/861">Oxford</pubPlace>
+                     <date>1903</date>
+                  </imprint>
+                  <extent>Vol. 3 of 4</extent>
+                  <biblScope unit="vol">2.1</biblScope>
+                  <biblScope unit="page">130-32</biblScope>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <editorialDecl>
+            <p/><!-- FILL IN -->
+         </editorialDecl>
+      </encodingDesc>
+      <profileDesc>
+         <creation>
+            <origDate type="composition"/><!-- FILL IN. La Route Royale dates are probably preferable to Brooks' dates. -->
+         </creation>
+      </profileDesc>
+      <revisionDesc status="draft">
+         <change when="2019-11" who="http://syriaca.org/person.xml#dschwartz">Created file</change>
+      </revisionDesc>
+   </teiHeader>
+  <text>
+      <body>
+         <div type="letter" n="1.48">
+            <head type="main" resp="#compiler">Of the same to Philoxenus bishop of Hierapolis.</head>
+            <head type="sub" resp="#compiler">From those during episcopacy, from the 10th book the
+               295th letter.</head>
+            <p> Hearing the divine writings which say, "Salvation cometh by much counsel," I wish
+               yet now again to ask your sanctity even about a matter upon which we have often
+               already counselled and deliberated. You <pb n="131"/> know that those who received
+               ordination for payment and bought for themselves from Flavian the trafficker in all
+               divine things the grace of the Spirit that is not to be bought, alleging ignorance of
+               the strictness of the holy canons, begged you and the other bishops of the other
+               resplendent metropolitan cities that they might obtain forgiveness on the ground of
+               ignorance of the sin. And, though the same said men further brought us letters
+               written in lenient terms from one and another set of persons, even so they did not
+               obtain release from the interdicts. And some of them even went up to the royal city,
+               and showed letters of this kind to those who conduct our
+               <foreign>apokriseis</foreign> and to all those who are in power and deign to love
+               our meanness, and caused them all, though certainly in a friendly manner, to charge
+               me with cruelty. For all being moved to pity for them granted them forgiveness. And,
+               when they returned thence, they did not desist from this course of action, since we
+               even after this would not incline our ear to their entreaty and lamentation: but they
+               went to the holy cloisters of the orthodox and moved the chiefs or rulers of the
+               solitary and sacred orders to compassion. And they also, after weeping for the fall
+               of certain persons, in an exactly similar manner and much more earnestly than the
+               others, addressed supplications to us in writing with the object of procuring for
+               them liberation from their evil plight. Being in some sort harassed and troubled by
+               all the facts stated, I have taken the course of asking your holiness by this letter
+               whether <pb n="132"/> these men ought to receive forgiveness at the feast of the
+               Epiphany or if they ought not, let your love of God put yourself to a little trouble,
+               and after the feast mentioned repair to this great Christ-loving city of Antiochus,
+               and assist in a course of lenient mildness towards men who have sinned from
+               ignorance, a course perhaps not wholly inconsistent with canonical strictness: for
+               they say that the gift was concealed under the name of a present by those
+               gain-hunters, and it deceived them. </p>
+            <trailer>The end.</trailer>
+         </div>
+      </body>
+  </text>
+</TEI>

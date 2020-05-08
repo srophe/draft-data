@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title ref="http://syriaca.org/work/3058">To the Monks of the Monastery of Isaac</title>
+            <author ref="http://syriaca.org/person/51">Severus of Antioch</author>
+            <sponsor>Center of Digital Humanities Research, Texas A&amp;M University</sponsor>
+            <principal>Daniel L. Schwartz</principal>
+            <editor role="editor" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</editor>
+            <respStmt>
+               <resp>XML created by</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</name>
+            </respStmt>
+            <respStmt>
+               <resp>Based on the work of</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#ewbrooks">E. W. Brooks</name>
+            </respStmt>
+            <respStmt>
+               <resp>OCR corrected by</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</name>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition n="1"/>
+         </editionStmt>
+         <publicationStmt>
+            <distributor>
+               <placeName>Center of Digital Humanities Research, College Station, TX, USA</placeName>
+            </distributor>
+            <authority/><!-- FILL IN AFTER DECIDING ON NAME -->
+            <idno/><!-- FILL IN AFTER DECIDING ON URI/URL FORMAT -->
+            <availability>
+               <licence target="http://creativecommons.org/licenses/by/4.0/">
+                  <p>Creative Commons — Attribution 4.0 International — CC BY 4.0</p>
+                  <p>https://creativecommons.org/licenses/by/4.0/</p>
+               </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <editor ref="http://syriaca.org/person/403">
+                     <persName xml:lang="en">
+                        <forename>E. W.</forename>
+                        <surname>Brooks</surname>
+                     </persName>
+                  </editor>
+                  <title type="main" xml:lang="en" level="m">
+                     The Sixth Book of the Select Letters of
+                     <persName ref="http://syriaca.org/person/51">Severus Patriarch of Antioch</persName>
+                     in the Syriac Version of
+                     <persName ref="http://syriaca.org/person/1014">Athanasius of Nisibis</persName>
+                  </title>
+                  <title type="sub" xml:lang="en" level="m">Vol. II (Translation) Part I</title>
+                  <idno type="URI">http://syriaca.org/bibl/668</idno>
+                  <imprint>
+                     <publisher xml:lang="en">Williams and Norgate</publisher>
+                     <pubPlace ref="http://syriaca.org/place/861">Oxford</pubPlace>
+                     <date>1903</date>
+                  </imprint>
+                  <extent>Vol. 3 of 4</extent>
+                  <biblScope unit="vol">2.1</biblScope>
+                  <biblScope unit="page">90-92</biblScope>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <editorialDecl>
+            <p/><!-- FILL IN -->
+         </editorialDecl>
+      </encodingDesc>
+      <profileDesc>
+         <creation>
+            <origDate type="composition"/><!-- FILL IN. La Route Royale dates are probably preferable to Brooks' dates. -->
+         </creation>
+      </profileDesc>
+      <revisionDesc status="draft">
+         <change when="2019-11" who="http://syriaca.org/person.xml#dschwartz">Created file</change>
+      </revisionDesc>
+   </teiHeader>
+  <text>
+      <body>
+         <div type="letter" n="1.29">
+            <head type="main" resp="#compiler">Of the same to the devout monks of the blessed lord
+               Isaac.</head>
+            <head type="sub" resp="#compiler">From those during episcopacy, from the 5th book the 97th
+               letter.</head>
+            <p> The trial concerning the affair of the magnificent Antipater has by your prayers
+               passed away: and in accordance with the mercy granted us from above we have been
+               delivered from this: the magistrates having given this one order only, that the said
+               Antipater shall not be permitted to remove anything from the room in which he put his
+               baggage, since you are ready to give satisfaction on this point also. But now I am
+               writing <pb n="91"/> to your love of God about a matter which is for the common
+               benefit, and tends to the advancement of the right faith and the preservation and
+               extension of the holy churches of God in the East. The men of the camp of Anasartha
+               by their <foreign>psephismata</foreign> proposed various persons in order that a
+               bishop might be ordained for them; and I for my part determined that we would ordain
+               the religious father Stephen, who is adorned with character and with faith, and, if
+               one may so say, with all excellencies of virtues, bishop for the aforesaid camp: not
+               because we wish to honour the man, for I know that he shrinks from this, having more
+               regard for his own profit; but, just as I paid no attention to this but complied with
+               the judgments of God, in the same way beg your holinesses also and him not to resist
+               the grace of the Spirit which calls him. For the whole force of Christianity tends to
+               this, that we should not have regard and respect to our own interests but to those of
+               others. Moreover, it is also utterly unreasonable that, while we are displaying such
+               contests on behalf of the orthodox faith, we should entrust the presidency of the
+               holy churches to reprobate persons, men too who (which I pray may not happen), when
+               tribulation or persecution has come, as the holy Gospel says, are converted to
+               impiety. Do your diligence therefore to obey this letter, and to send him whether he
+               wishes or not: and be assuredly convinced of this, <pb n="92"/> that, if another man,
+               who is reprobate, be instituted owing to his delay, you will be responsible for the
+               loss. Do not pass him over and wish to send me someone else from your holy cloister
+               in his stead: for I will not consent even to look at anyone else. I have chosen the
+               religious father Stephen as being one of those mentioned in the
+               <foreign>psephismata</foreign> by those who came from the aforesaid camp?!: and
+               for us to introduce someone else not included in the <foreign>psephismata</foreign>
+               is impossible. I add also that neither have I myself confidence?" in anyone else.
+               This much we have written out of love. But, although we are a sinner, we have
+               received, as you also with one accord confess, authority from Christ, who is God over
+               all, to bind and loose: wherefore I wish you to know that, if you do not obey the
+               words written above, you will be placed under a ban of excommunication; especially
+               the devout Stephen himself, if he dare to resist this proposal. My reason for adding
+               this after the completion of the letter is to show that it is from necessity that I
+               come to adopt a decisive course of action. </p>
+            <trailer>The end.</trailer>
+         </div>
+      </body>
+  </text>
+</TEI>

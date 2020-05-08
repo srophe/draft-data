@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title ref="http://syriaca.org/work/3114">To Proclus the Bishop</title>
+            <author ref="http://syriaca.org/person/51">Severus of Antioch</author>
+            <sponsor>Center of Digital Humanities Research, Texas A&amp;M University</sponsor>
+            <principal>Daniel L. Schwartz</principal>
+            <editor role="editor" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</editor>
+            <respStmt>
+               <resp>XML created by</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</name>
+            </respStmt>
+            <respStmt>
+               <resp>Based on the work of</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#ewbrooks">E. W. Brooks</name>
+            </respStmt>
+            <respStmt>
+               <resp>OCR corrected by</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</name>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition n="1"/>
+         </editionStmt>
+         <publicationStmt>
+            <distributor>
+               <placeName>Center of Digital Humanities Research, College Station, TX, USA</placeName>
+            </distributor>
+            <authority/><!-- FILL IN AFTER DECIDING ON NAME -->
+            <idno/><!-- FILL IN AFTER DECIDING ON URI/URL FORMAT -->
+            <availability>
+               <licence target="http://creativecommons.org/licenses/by/4.0/">
+                  <p>Creative Commons — Attribution 4.0 International — CC BY 4.0</p>
+                  <p>https://creativecommons.org/licenses/by/4.0/</p>
+               </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <editor ref="http://syriaca.org/person/403">
+                     <persName xml:lang="en">
+                        <forename>E. W.</forename>
+                        <surname>Brooks</surname>
+                     </persName>
+                  </editor>
+                  <title type="main" xml:lang="en" level="m">
+                     The Sixth Book of the Select Letters of
+                     <persName ref="http://syriaca.org/person/51">Severus Patriarch of Antioch</persName>
+                     in the Syriac Version of
+                     <persName ref="http://syriaca.org/person/1014">Athanasius of Nisibis</persName>
+                  </title>
+                  <title type="sub" xml:lang="en" level="m">Vol. II (Translation) Part I</title>
+                  <idno type="URI">http://syriaca.org/bibl/668</idno>
+                  <imprint>
+                     <publisher xml:lang="en">Williams and Norgate</publisher>
+                     <pubPlace ref="http://syriaca.org/place/861">Oxford</pubPlace>
+                     <date>1903</date>
+                  </imprint>
+                  <extent>Vol. 3 of 4</extent>
+                  <biblScope unit="vol">2.1</biblScope>
+                  <biblScope unit="page">167-71</biblScope>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <editorialDecl>
+            <p/><!-- FILL IN -->
+         </editorialDecl>
+      </encodingDesc>
+      <profileDesc>
+         <creation>
+            <origDate type="composition"/><!-- FILL IN. La Route Royale dates are probably preferable to Brooks' dates. -->
+         </creation>
+      </profileDesc>
+      <revisionDesc status="draft">
+         <change when="2019-11" who="http://syriaca.org/person.xml#dschwartz">Created file</change>
+      </revisionDesc>
+   </teiHeader>
+  <text>
+      <body>
+         <div type="letter" n="1.56">
+            <head type="main" resp="#compiler">Of the same to Proclus the bishop.</head>
+            <head type="sub" resp="#compiler">From those after expulsion, from the 3rd book the 36th
+               letter.</head>
+            <p> The words that I wrote to the two of you in common were enough to show your love of
+               God my opinion, since you thought me at all competent to give advice. For my part,
+               since "I have boldness of speech towards you," as Paul says to the Corinthians, I
+               thought that, inasmuch as you have been brought up from the earliest times in works
+               of piety, and have stood with us from the beginning, and borne the assaults of many
+               waves, that you are competent to give advice and direction to others also in what is
+               right. However choice is an evil thing, evil indeed, and may involve even wise men in
+               ruin in adverse times, for, "they were confounded and staggered like a drunken man,
+               and all their wisdom was swallowed up," says he that sings figuratively and
+               instructively. Wherefore I myself also recognise our nature's feebleness, and,
+               inasmuch as I am subject to the same weaknesses, I grant you forgiveness for having
+               <pb n="168"/> shown a common weakness and being in need of encouragement, Perhaps
+               also some thoughts are springing up in your heart, which put such ideas as these into
+               you and say, "This man, because he has nothing to do with the affairs of the world,
+               and is not assailed by trouble of this sort, and does not know what kind of thing is
+               the tie of nature that arises from the marriage connexion and the birth of children,
+               will give you impassioned advice from beyond the boundaries, and will speak as from
+               some exalted height with those that creep upon the earth." Therefore in answer to
+               these things also we must use introductory words and say what is the truth. Paul the
+               wise man and chosen vessel, who had Christ so firmly established in him that in
+               giving ecclesiastical commandments he would sometimes appeal to the laws of Christ,
+               and draw his admonitions from them, and at another put forward his own thoughts in
+               place of a law and say, "I have no commandment of the Lord; but I give counsel;
+               inasmuch as I have obtained mercy of the Lord to be a believer," when appointing
+               bishops, did not take men from the training-school of the solitary life and set them
+               over the churches, nor men of philosophic habits, free from wives, and without
+               children, but he said, "The bishop ought to be the husband of one wife," and, "one
+               that ruleth his house well and hath his children in subjection with all gravity"; and
+               he was not assured as regards these ties of nature, the ties of <pb n="169"/>
+               children I mean and of a wife, that they would corrupt the character of a shepherd in
+               times of stress. But, as to what the character of a shepherd is, hear the shepherd
+               Himself crying and saying, "The good shepherd layeth down his life for his sheep." If
+               therefore we have been called by Him to so great a height of Spiritual authority, it
+               is absolutely necessary that we should rise to the same height, and that we should
+               "mind high things" and "seek the things which are above, where Christ is, sitting on
+               the right hand of God": so that, when He "is revealed," then we "also may be revealed
+               with Him in glory," and share with Him in splendour. But, that you may not think to
+               yourself that you alone among bishops have had a wife and children, and are required
+               to "resist sin even to blood," as it is written, and to distinguish yourself in
+               combats on behalf of piety, the words of the apostolic legislation that have just
+               been quoted, words that have a general application to every bishop, would in
+               themselves have been sufficient answer to such a fancy: but I will quote to you from
+               actual experience also an example worthy of consideration, which shows that in times
+               of martyrdom the women also who were joined in marriage to those who held the rank of
+               the episcopate contested and strove in the same contests. Here it is. Dionysius, who
+               was bishop of the great Christ-loving city of the Alexandrines, in an epistle to
+               Flavian bishop of <pb n="170"/> Antioch, in which he describes the combats of those
+               who were martyred in the neighbourhood of Alexander's city in the days of Decius,
+               after describing the other events introduces this statement also: [...] in sin, and
+               utterly refuses to turn her eyes upwards while there is time. For for you, who bear
+               with patience that which has happened in this matter also, a worthy reward will
+               surely be reserved, although you did not treat her case with circumspection at the
+               beginning. But, if you both exert yourself and bring her back from the error in which
+               she is involved to repentance and recognition of the truth, then you will in truth be
+               doubly a father to her, insomuch as to be able to say, "Behold! I and the children
+               whom God has given me." For you must do all these things to the best of your power,
+               in order that you may not have your conscience accusing you, as if you ought to have
+               done something and had neglected it. You know well from the sacred writings what Eli
+               suffered, because, though he spoke reprovingly to his sons and chid their folly in
+               the unhallowed deeds which they committed, yet he did not deal with them as a ruler.
+               But the Lord will, I know well, grant your sanctity understanding, so that with
+               fatherly admonitions you may mingle such censures as are likely to produce conversion
+               and are suited to a ruler, and that you may take the sheep upon your shoulders, and
+               present it to the chief shepherd Christ, <pb n="171"/> and reckon it among those that
+               are saved. For indeed He alone is able by His almighty power and His grace to make
+               things possible that with men are impossible. </p>
+            <trailer>The end.</trailer>
+         </div>
+      </body>
+  </text>
+</TEI>

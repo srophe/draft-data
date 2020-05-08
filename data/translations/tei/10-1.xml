@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title ref="http://syriaca.org/work/3008">To Alypius</title>
+            <author ref="http://syriaca.org/person/51">Severus of Antioch</author>
+            <sponsor>Center of Digital Humanities Research, Texas A&amp;M University</sponsor>
+            <principal>Daniel L. Schwartz</principal>
+            <editor role="editor" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</editor>
+            <respStmt>
+               <resp>XML created by</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</name>
+            </respStmt>
+            <respStmt>
+               <resp>Based on the work of</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#ewbrooks">E. W. Brooks</name>
+            </respStmt>
+            <respStmt>
+               <resp>OCR corrected by</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</name>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition n="1"/>
+         </editionStmt>
+         <publicationStmt>
+            <distributor>
+               <placeName>Center of Digital Humanities Research, College Station, TX, USA</placeName>
+            </distributor>
+            <authority/><!-- FILL IN AFTER DECIDING ON NAME -->
+            <idno/><!-- FILL IN AFTER DECIDING ON URI/URL FORMAT -->
+            <availability>
+               <licence target="http://creativecommons.org/licenses/by/4.0/">
+                  <p>Creative Commons — Attribution 4.0 International — CC BY 4.0</p>
+                  <p>https://creativecommons.org/licenses/by/4.0/</p>
+               </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <editor ref="http://syriaca.org/person/403">
+                     <persName xml:lang="en">
+                        <forename>E. W.</forename>
+                        <surname>Brooks</surname>
+                     </persName>
+                  </editor>
+                  <title type="main" xml:lang="en" level="m">
+                     The Sixth Book of the Select Letters of
+                     <persName ref="http://syriaca.org/person/51">Severus Patriarch of Antioch</persName>
+                     in the Syriac Version of
+                     <persName ref="http://syriaca.org/person/1014">Athanasius of Nisibis</persName>
+                  </title>
+                  <title type="sub" xml:lang="en" level="m">Vol. II (Translation) Part II</title>
+                  <idno type="URI">http://syriaca.org/bibl/669</idno>
+                  <imprint>
+                     <publisher xml:lang="en">Williams and Norgate</publisher>
+                     <pubPlace ref="http://syriaca.org/place/861">Oxford</pubPlace>
+                     <date>1903</date>
+                  </imprint>
+                  <extent>Vol. 4 of 4</extent>
+                  <biblScope unit="vol">2.2</biblScope>
+                  <biblScope unit="page">427-433</biblScope>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <editorialDecl>
+            <p/><!-- FILL IN -->
+         </editorialDecl>
+      </encodingDesc>
+      <profileDesc>
+         <creation>
+            <origDate type="composition"/><!-- FILL IN. La Route Royale dates are probably preferable to Brooks' dates. -->
+         </creation>
+      </profileDesc>
+      <revisionDesc status="draft">
+         <change when="2019-11" who="http://syriaca.org/person.xml#dschwartz">Created file</change>
+      </revisionDesc>
+   </teiHeader>
+  <text>
+      <body>
+         <div type="letter" n="10.1">
+            <head type="main" resp="#compiler">Of the same to Alypius.</head>
+            <head type="sub" resp="#compiler">From those before episcopacy, from the 3rd book the
+               257th letter.</head>
+            <p> In many instances, when it was necessary for some sanction to be given to an action,
+               I have known your illustriousness to set great store by the judgments of my erring
+               and uncertain mind, as I persuade myself that it is. <add><emph>And after other
+                  things.</emph></add> You certainly, I think, <pb n="428"/> remember that I
+               engaged in. a. discussion with you about your consort, whom, having been struck by
+               some unexpected suspicion, you drove from your house, and acted like men whose
+               marriage has been dissolved, not even giving her the necessary sustenance; and how I
+               quoted to you the laws of the Lord and God and Saviour of all, that men are not
+               permitted to put away those that cohabit with them under. any other conditions except
+               for one reason, I mean, that of fornication; and fornication we judge to be that
+               which is manifestly detected, and demonstrated by witnesses or manifest proofs, so
+               that, if any suspicion otherwise occur, we do not define this as fornication: but
+               rather we turn the supposition into a gentler channel. For "in matters that are in
+               doubt we must incline to clemency," as the Theologian Gregory says. I have indeed
+               gained sure knowledge that the woman is not liable to charges of fornication so much
+               as to going out freely. But such a thing as this invites you to forgiveness, and does
+               not give you cause for separation. But, if you are strict in requiring modest
+               conduct, know clearly that you are commanded to practise the same observance towards
+               your wife as you wish her to practise towards yourself. Christ our lawgiver speaking
+               through Paul said, "The wife hath not power over her body: but the husband: and in
+               the same fashion the husband also hath not power over his body: but the wife." Re<pb
+                  n="429"/>flect therefore whether you also have never been discovered to have been
+               seduced by the pleasures of the body. But why do I say "pleasures"? Whether you have
+               not in curiosity gratified your eye with greedy gazing, making yourself in no lovely
+               fashion a spectator of another's loveliness; the eye which the divine word condemns
+               to be plucked out, in. order that it may not bring eternal torture upon the whole
+               body: whether you have not relaxed under the influence of the touch: whether you have
+               not indulged the sense of smell: whether your ears have never taken delight in
+               dissolute songs: whether you have kept all your senses untainted. He that is a strict
+               examiner of the doings of others shall have the same judgment exacted from him in the
+               case of his: own sins also. If "the head of the wife is the husband," how is he to
+               find fault with the rest of his body as being diseased, when he himself is not in
+               sound health? <add><emph>And again after other things.</emph></add> And many think in
+               the case of a man that when he sins with his body he deserves forgiveness, but a
+               woman deserves to be afflicted with grievous punishments. But this is not so: but
+               exactly the contrary. For scripture says that a woman shall be admitted to
+               forgiveness, inasmuch as she is the "weaker vessel": but a man, inasmuch as he holds
+               the place of head, must be an example to the other members of the same body.
+               Therefore be <pb n="430"/> not merciless or hard to your member, if you obey Christ's
+               laws; and do not apply amputation and cut it off from you: but claim it as part of
+               your body, in order that Christ, the Word of God, who out of graciousness became head
+               to the body of the church that was infirm, may claim you also as part of Him. If He
+               raised human nature, which had committed fornication, to heaven by showing Himself as
+               man upon earth, what terrible thing shall we think ourselves to be doing, if we show
+               ourselves gentle to our own members, or rather if we are not found to be harsh to
+               them beyond what is right, and that when they are not committing unpardonable sins?
+               In fact Christ plainly proclaims to us that we ought not casually and lightly to cut
+               off her who has been united to us in one flesh through trusting vain suspicions: and
+               He says that separation was introduced into the polity or social life by Moses on
+               account of our own hardness of heart: but "from the beginning it was not so," He
+               proclaims to the discerning. How therefore, tell me, shall we ourselves have
+               forgiveness, when we do not conduct ourselves, I do not say according to the gospel
+               laws, but not even according to the figurative laws used by Israel who conducted
+               himself according to the flesh and was a child? For such statutes were given to them
+               in the Book of Numbers by Moses, or rather by God who gave the statute to Moses. He
+               says that, if a man say that his <pb n="431"/> wife has committed adultery, and do
+               not find her doing this evidently, or be able to prove the act by witnesses, but is
+               excited by the rage of jealousy, that he shall commit such judgment to God: and that
+               he shall approach the priests of his time, not entering a suit of jealousy, but
+               offering "a sacrifice of jealousy." And look, I pray, at the principle that is
+               carried out in the sacrifice, how even before the actual methods of conviction are
+               used it defends the woman. Whereas it was the custom for fine wheaten flour to be
+               offered in sacrifice, he commanded barley meal to be offered on her behalf,
+               signifying by the barley the falseness and futility of jealous suspicion: but neither
+               shall oil (he says) be poured over the sacrifice, on account of the asperity and
+               unkindness of the occasion: and, when the sacrifice has been performed in this way,
+               and the rest of the sacred rite has been duly accomplished, then the woman shall
+               drink the water of conviction, the priest having first prayed over the same water,
+               and shall either repel the evil suspicion from her by suffering no evil in her body,
+               or shall be found to be guilty of the charges, and fall into God's hands by her belly
+               being rent and the penalty for the deeds that have been done paid by her on the spot.
+               Wherefore have I repeated this to you? That you may learn that we also ought not to
+               entrust the judgment upon this matter to ourselves, but to refer everything to our
+               sacrifice which is Christ. He is no liar who said that <pb n="432"/> unless our
+               "righteousness exceed that of the scribes and of the Pharisees" we shall not "enter
+               into the kingdom of heaven". Therefore both according to the old law and according to
+               the gospel polity," where the suspicion is not clear, let us not take ourselves but
+               God as the judge of these things. And we must obey Paul who gives wiser advice than
+               we do. He says, "Therefore judge nothing before the time, until the Lord come and
+               make light the hidden things of darkness, and reveal the counsels of the hearts; and
+               then shall every man have praise from God." That you have just cause for making the
+               charge we are clearly persuaded: but that the woman has not offended beyond
+               forgiveness I think you have already been persuaded by what has been written. But, if
+               this does not persuade, we say this. She has sinned, she has done all that is evil as
+               you have said, she has recognized her sin, she confesses that she ts guilty, she
+               weeps and groans, she takes refuge in your mercy, she begs your clemency; seize the
+               opportunity. Commit yourself to God: prepare pity for yourself by showing pity. You
+               also being a man are certainly in need of mercy. Look at common nature. Consider the
+               instability of human things. We are certainly not walking upon ground that is firm
+               and not to be shaken. Let us expect ourselves also to fall, and let us set upright
+               those that have fallen. The saying <pb n="433"/> is not mine: "Let him that thinketh
+               he standeth take heed lest he fall," says divine scripture. </p>
+            <trailer>Not the end.</trailer>
+         </div>      
+      </body>
+  </text>
+</TEI>

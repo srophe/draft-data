@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title ref="http://syriaca.org/work/3142">To Andrew, Reader and Notary</title>
+            <author ref="http://syriaca.org/person/51">Severus of Antioch</author>
+            <sponsor>Center of Digital Humanities Research, Texas A&amp;M University</sponsor>
+            <principal>Daniel L. Schwartz</principal>
+            <editor role="editor" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</editor>
+            <respStmt>
+               <resp>XML created by</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</name>
+            </respStmt>
+            <respStmt>
+               <resp>Based on the work of</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#ewbrooks">E. W. Brooks</name>
+            </respStmt>
+            <respStmt>
+               <resp>OCR corrected by</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</name>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition n="1"/>
+         </editionStmt>
+         <publicationStmt>
+            <distributor>
+               <placeName>Center of Digital Humanities Research, College Station, TX, USA</placeName>
+            </distributor>
+            <authority/><!-- FILL IN AFTER DECIDING ON NAME -->
+            <idno/><!-- FILL IN AFTER DECIDING ON URI/URL FORMAT -->
+            <availability>
+               <licence target="http://creativecommons.org/licenses/by/4.0/">
+                  <p>Creative Commons — Attribution 4.0 International — CC BY 4.0</p>
+                  <p>https://creativecommons.org/licenses/by/4.0/</p>
+               </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <editor ref="http://syriaca.org/person/403">
+                     <persName xml:lang="en">
+                        <forename>E. W.</forename>
+                        <surname>Brooks</surname>
+                     </persName>
+                  </editor>
+                  <title type="main" xml:lang="en" level="m">
+                     The Sixth Book of the Select Letters of
+                     <persName ref="http://syriaca.org/person/51">Severus Patriarch of Antioch</persName>
+                     in the Syriac Version of
+                     <persName ref="http://syriaca.org/person/1014">Athanasius of Nisibis</persName>
+                  </title>
+                  <title type="sub" xml:lang="en" level="m">Vol. II (Translation) Part II</title>
+                  <idno type="URI">http://syriaca.org/bibl/669</idno>
+                  <imprint>
+                     <publisher xml:lang="en">Williams and Norgate</publisher>
+                     <pubPlace ref="http://syriaca.org/place/861">Oxford</pubPlace>
+                     <date>1903</date>
+                  </imprint>
+                  <extent>Vol. 4 of 4</extent>
+                  <biblScope unit="vol">2.2</biblScope>
+                  <biblScope unit="page">270-72</biblScope>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <editorialDecl>
+            <p/><!-- FILL IN -->
+         </editorialDecl>
+      </encodingDesc>
+      <profileDesc>
+         <creation>
+            <origDate type="composition"/><!-- FILL IN. La Route Royale dates are probably preferable to Brooks' dates. -->
+         </creation>
+      </profileDesc>
+      <revisionDesc status="draft">
+         <change when="2019-11" who="http://syriaca.org/person.xml#dschwartz">Created file</change>
+      </revisionDesc>
+   </teiHeader>
+  <text>
+      <body>
+         <div type="letter" n="4.9">
+            <head type="main" resp="#compiler">Of the same to Andrew the reader and notary.</head>
+            <head type="sub" resp="#compiler">From those after banishment, from the 9th book the 62nd
+               letter.</head>
+            <p> By a wonderful chance, such as no one expects before it happens, the letter of your
+               devoutness was delivered to me on the fourth day of the present month of September,
+               on which is celebrated the memory of the thrice-blessed Dioscorus, the archbishop and
+               holy martyr, who is now counted among the heretics in Alexandria and anathematized by
+               the impious. With this letter was also joined a letter of the holy virgins who were
+               expelled from Antioch: which in us <pb n="271"/> excited many sighs and tears, but
+               for them has prepared right glorious heavenly blessings, such as are described in the
+               book of life. <add><emph>And after other things.</emph></add> But you have rightly
+               determined that the Christ-loving freewomen shall in no way be afraid to visit their
+               <foreign>anepsios</foreign> or cousin," who is laid in the martyr's chapel of the
+               holy Peter the archbishop and martyr. Where the bones of holy martyrs have previously
+               been laid, it is right to pray without hesitation: especially when the place is in
+               silence, and the heretics are not unlawfully conducting services or singing inside.
+               In fact even Peter the bishop of holy memory from Iberia prayed in the house of the
+               chapel of the glorious holy martyr and apostle Judas the brother of James, who is
+               laid at Berytus (in the same fashion he prayed also at Tripolis in the house of the
+               chapel of the holy victory-clad martyr Leontius). As to the fact which you mention
+               that they are constantly busying themselves about the offering that they made to me,
+               I say that here again is a timely act on the part of the sacred martyrs and divine
+               virgins who are expected from the East, and are ready to show forth in themselves as
+               pious women the love of God. For my part, if I be hungry or thirsty, I will rend by
+               force the mantle and tunic with which they are clad, if they do not generously feed
+               me. May the Lord therefore in return for everything give them a perfect reward for
+               their good will! You did rightly <pb n="272"/> in informing us further of the decease
+               of the pious bishop Zosimus, in order that we may praise God, who did not allow him
+               to be wholly perverted to any of the deeds of the adversaries, but to depart while in
+               some sort counted in the communion of the orthodox, and find mercy in the judgment
+               before the awful tribunal: that is, unless he is perhaps stained somewhere at bottom
+               with the leprosy of heresy and with impious belief. In the case of men of this kind I
+               say with confidence that they will find no place of clemency, seeing that, as far as
+               in them lies, they have given strength to the noose of error to destroy the souls of
+               many. </p>
+            <trailer>The end.</trailer>
+         </div>      
+      </body>
+  </text>
+</TEI>

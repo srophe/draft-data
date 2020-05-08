@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title ref="http://syriaca.org/work/3140">To Misael the Deacon</title>
+            <author ref="http://syriaca.org/person/51">Severus of Antioch</author>
+            <sponsor>Center of Digital Humanities Research, Texas A&amp;M University</sponsor>
+            <principal>Daniel L. Schwartz</principal>
+            <editor role="editor" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</editor>
+            <respStmt>
+               <resp>XML created by</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</name>
+            </respStmt>
+            <respStmt>
+               <resp>Based on the work of</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#ewbrooks">E. W. Brooks</name>
+            </respStmt>
+            <respStmt>
+               <resp>OCR corrected by</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</name>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition n="1"/>
+         </editionStmt>
+         <publicationStmt>
+            <distributor>
+               <placeName>Center of Digital Humanities Research, College Station, TX, USA</placeName>
+            </distributor>
+            <authority/><!-- FILL IN AFTER DECIDING ON NAME -->
+            <idno/><!-- FILL IN AFTER DECIDING ON URI/URL FORMAT -->
+            <availability>
+               <licence target="http://creativecommons.org/licenses/by/4.0/">
+                  <p>Creative Commons — Attribution 4.0 International — CC BY 4.0</p>
+                  <p>https://creativecommons.org/licenses/by/4.0/</p>
+               </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <editor ref="http://syriaca.org/person/403">
+                     <persName xml:lang="en">
+                        <forename>E. W.</forename>
+                        <surname>Brooks</surname>
+                     </persName>
+                  </editor>
+                  <title type="main" xml:lang="en" level="m">
+                     The Sixth Book of the Select Letters of
+                     <persName ref="http://syriaca.org/person/51">Severus Patriarch of Antioch</persName>
+                     in the Syriac Version of
+                     <persName ref="http://syriaca.org/person/1014">Athanasius of Nisibis</persName>
+                  </title>
+                  <title type="sub" xml:lang="en" level="m">Vol. II (Translation) Part I</title>
+                  <idno type="URI">http://syriaca.org/bibl/668</idno>
+                  <imprint>
+                     <publisher xml:lang="en">Williams and Norgate</publisher>
+                     <pubPlace ref="http://syriaca.org/place/861">Oxford</pubPlace>
+                     <date>1903</date>
+                  </imprint>
+                  <extent>Vol. 3 of 4</extent>
+                  <biblScope unit="vol">2.1</biblScope>
+                  <biblScope unit="page">195-99</biblScope>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <editorialDecl>
+            <p/><!-- FILL IN -->
+         </editorialDecl>
+      </encodingDesc>
+      <profileDesc>
+         <creation>
+            <origDate type="composition"/><!-- FILL IN. La Route Royale dates are probably preferable to Brooks' dates. -->
+         </creation>
+      </profileDesc>
+      <revisionDesc status="draft">
+         <change when="2019-11" who="http://syriaca.org/person.xml#dschwartz">Created file</change>
+      </revisionDesc>
+   </teiHeader>
+  <text>
+      <body>
+         <div type="letter" n="1.63">
+            <pb n="195"/>
+            <head type="main" resp="#compiler">Of the same to Misael the deacon.</head>
+            <head type="sub" resp="#compiler">From those after banishment, from the 9th book the 43rd
+               letter.</head>
+            <p> I received the letter of your religiousness, which was forwarded to me from
+               Alexandria, from the devout Andrew the reader on the eighth of July. <add><emph>And
+                  after other things.</emph></add> The holy Basil also, the teacher of truth,
+               says in his ascetic treatise that he who is entrusted with the duty of ministering to
+               the needs of a monastery, even if it be the archimandrite, ought not to use or spend
+               any of the property of the brother. hood on any pious object, for example on the
+               support of the poor and needy or on the ransoming of captives. Therefore neither
+               would the case of the saintly man, though it seems to be a matter of piety, have
+               given you a right to do anything without my consent, if you are certain from the laws
+               and from the will which left the legacy? that it is mine. For you must excuse me from
+               adopting the honorary expressions used by friends or by men who are otherwise on
+               familiar terms with one another, "My things are yours," and, "You are my lord, lord
+               both of my own person and of what possess." For the subject of the present argument
+               is the true state of the facts. Moreover also the saintly man does not need a gift
+               from us, seeing that he has the serene queen, who will provide him <pb n="196"/> if
+               he wish even with more than he needs, and now he has all the orthodox also on account
+               of his attested steadfastness in the matter of the confession of the faith. These
+               things I have written for the sake of the principles of the evangelic laws, and for
+               the sake of preserving a blameless conscience. If it were not so, I reckon things
+               once given by you just as if they had been given by me. <add><emph>And after other
+                  things.</emph></add> As to the impious Sergius, who is called Bar Fathya and
+               has become broad in impiety, so far am from saying that it was by my advice that he
+               was ordained deacon that I even anathematize him and the man who, if even in this: he
+               speaks truth, ordained him: the one for unlawfully sleeping with his father's wife or
+               concubine, and the other for daring to perform ordinations without witnesses in other
+               men's cities which do not belong to him at all, without an invitation and on his own
+               authority, and not even without price but for filthy lucre. Under the same anathema
+               lies also Anatolius, who after ordination to the diaconate has married a second time
+               and is godless in his doctrines, even if it is not stated by us, and Podolirius who
+               has taught his children to play the harp and dance, and has made them serve the
+               devil, and has fallen under the divine canons of the apostles. To the same anathema
+               those also are liable who cause confusion <pb n="197"/> besides these, and imagine
+               vain things against the orthodox faith, like those who once "imagined vain things
+               against the Lord and against his Anointed," and fell from His glory. For these too by
+               always reckoning the belly and the passions that are subject to the belly as a god
+               inflicted a stain and a blot upon us by being numbered with the orthodox. Therefore
+               they must plead not to us but to God, whose name they are profaning among the nations
+               as Isaiah and Paul say. <add><emph>And after other things.</emph></add> But I was
+               much distressed that the serene queen presumes to say such grievous, not to say
+               blasphemous, things against the holy fathers in respect of doctrines which she does
+               not understand, and mocks at the holy Alexander the archbishop, who is one of the
+               prelates of the holy synod at Nicaea, and father of the apostolic preacher
+               Athanasius, on the ground that even in the theology of the Trinity he termed person
+               "nature," and jeers at him as one of those who practise manual crafts, a coppersmith
+               for instance or a carpenter of the name of Alexander, or as she says by way of
+               accusation an advocate of the treasure-chambers. Let her then mock and jeer at the
+               other saintly Alexander also, who was in the same times bishop of Constantinople, and
+               by stretching out his hands all night and praying brought it about that, when the
+               impious Arius was going to communicate hypocritically with the orthodox, his entrails
+               fell through his belly and he gave up the <pb n="198"/> ghost; if the fact that a man
+               is called Alexander is a jest, and an occasion and subject for jeering. What are we
+               to do about these things, except be silent and grieve our heart, and ask God to have
+               mercy upon our many lawlessnesses? For, though much might have been said in answer to
+               these things, it is better for us to be silent. As to the mischievous words that the
+               heretics invent, the expressions of the holy fathers show what they are, blinding as
+               they do like some lightning-flash their keen eyes, and enlightening the minds of the
+               orthodox and understanding, while the uninstructed and unlearned see that God is
+               glorified and admired among His saints, as David says in song, for the things at
+               which they jest and against which they blaspheme. I speak the truth and do not lie
+               when I say that, since I wrote the treatise <title>Against the Grammarian</title>,
+               there has been no one among the believers who had a high or moderate or small share
+               in divine knowledge who was not astonished when he found such expressions of the holy
+               fathers collected there, some expressed at length others in few words, and stopping
+               the mouth of the blaspheming heretics, who plot against the truth itself. From what
+               you now say, that the serene queen has not shrunk from saying such presumptuous
+               things against the holy fathers, I certainly imagine that she has also spurned and
+               despised, as vain trifling and superfluous futility, <pb n="199"/> my little treatise
+               on the question whether our Lord and God Jesus Christ should be said to be from two
+               substances even as from two natures, which she thought good to accept when it was
+               copied by you in large letters, or through fear of the king's laws which were put
+               forth against my writings has not dared to accept it. I wrote to you at that time
+               from Chios and to the magnificent and Christ-loving chamberlain Julian to give it to
+               be copied: but you wrote nothing at all to me upon these matters. He who writes an
+               answer should reply to all the points contained in the letter. </p>
+            <trailer>Not the end.</trailer>
+         </div>
+      </body>
+  </text>
+</TEI>

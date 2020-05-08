@@ -1,0 +1,507 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title ref="http://syriaca.org/work/3088">Against Those Who Say that Converts from Diphysitism Should be Re-anointed</title>
+            <author ref="http://syriaca.org/person/51">Severus of Antioch</author>
+            <sponsor>Center of Digital Humanities Research, Texas A&amp;M University</sponsor>
+            <principal>Daniel L. Schwartz</principal>
+            <editor role="editor" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</editor>
+            <respStmt>
+               <resp>XML created by</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</name>
+            </respStmt>
+            <respStmt>
+               <resp>Based on the work of</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#ewbrooks">E. W. Brooks</name>
+            </respStmt>
+            <respStmt>
+               <resp>OCR corrected by</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</name>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition n="1"/>
+         </editionStmt>
+         <publicationStmt>
+            <distributor>
+               <placeName>Center of Digital Humanities Research, College Station, TX, USA</placeName>
+            </distributor>
+            <authority/><!-- FILL IN AFTER DECIDING ON NAME -->
+            <idno/><!-- FILL IN AFTER DECIDING ON URI/URL FORMAT -->
+            <availability>
+               <licence target="http://creativecommons.org/licenses/by/4.0/">
+                  <p>Creative Commons — Attribution 4.0 International — CC BY 4.0</p>
+                  <p>https://creativecommons.org/licenses/by/4.0/</p>
+               </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <editor ref="http://syriaca.org/person/403">
+                     <persName xml:lang="en">
+                        <forename>E. W.</forename>
+                        <surname>Brooks</surname>
+                     </persName>
+                  </editor>
+                  <title type="main" xml:lang="en" level="m">
+                     The Sixth Book of the Select Letters of
+                     <persName ref="http://syriaca.org/person/51">Severus Patriarch of Antioch</persName>
+                     in the Syriac Version of
+                     <persName ref="http://syriaca.org/person/1014">Athanasius of Nisibis</persName>
+                  </title>
+                  <title type="sub" xml:lang="en" level="m">Vol. II (Translation) Part II</title>
+                  <idno type="URI">http://syriaca.org/bibl/669</idno>
+                  <imprint>
+                     <publisher xml:lang="en">Williams and Norgate</publisher>
+                     <pubPlace ref="http://syriaca.org/place/861">Oxford</pubPlace>
+                     <date>1903</date>
+                  </imprint>
+                  <extent>Vol. 4 of 4</extent>
+                  <biblScope unit="vol">2.2</biblScope>
+                  <biblScope unit="page">294-317</biblScope>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <editorialDecl>
+            <p/><!-- FILL IN -->
+         </editorialDecl>
+      </encodingDesc>
+      <profileDesc>
+         <creation>
+            <origDate type="composition"/><!-- FILL IN. La Route Royale dates are probably preferable to Brooks' dates. -->
+         </creation>
+      </profileDesc>
+      <revisionDesc status="draft">
+         <change when="2019-11" who="http://syriaca.org/person.xml#dschwartz">Created file</change>
+      </revisionDesc>
+   </teiHeader>
+  <text>
+      <body>
+         <div type="letter" n="5.6">
+            <head type="main" resp="#compiler">Of the same against those who say that men who have
+               communicated with the Synod of Chalcedon, and are penitent and anathematize those who
+               call our one Lord and God Jesus Christ two natures after the ineffable union and come
+               over to the orthodox faith must be re-anointed.</head>
+            <head type="sub" resp="#compiler">From those during episcopacy, from the 9th book the 1st
+               letter.</head>
+            <p> I for my part am not conscious in myself of any quality such as that to which you
+               bear witness, when you say that the fame of our meanness has gone out over all the
+               earth, and that we are one competent to teach and to heal the afflictions of the
+               soul: but I know clearly that, if I utter anything that is on the right side and is
+               capable of profiting, it is out of the writings and labours of the God-clad educators
+               of the church that I utter and speak this: and I think that I hear plainly from God
+               what is said by the wise Paul, "And what hast thou that thou didst not receive? but
+               if thou didst indeed receive it why <pb n="295"/> boastest thou as if thou didst not
+               receive it?" For I for my part am not competent to break the bread of knowledge for
+               those that are hungry: on the contrary I gather the food of learning by picking up
+               the crumbs of the orthodox shepherds, and so I seem to give this to others also.
+               Wherefore it is from their labours that I make answer to your affection also, and it
+               is by adducing their utterances that I find a solution of the doubts that have been
+               raised. Whereas you say that those who assembled at Chalcedon, and divided our one
+               Lord and God and Saviour Jesus Christ by calling Him two natures after the union fell
+               under the anathema laid down against abominable godless heresies, and that men coming
+               from them are not to be received, but their "end is to be burned," because they are
+               devoid of the grace of the Holy Spirit, know that you have missed the truth. That by
+               denial of the faith they are stripped of every spiritual heavenly gift it is
+               impossible for me to gainsay; but that when they repudiate and renounce the heresy
+               and condemn it by anathema, and come over to the church, they are according to the
+               ordinances of the fathers to be received, I will try to show in what I am about to
+               say (by the church I too mean the confession which is founded on the true faith,
+               since Peter also heard the words, "Thou art Cephas and upon this rock will I build my
+               church, and the gates of Hades shall <pb n="296"/> not prevail against it": and I
+               find that Gregory the Theologian also says of the Arians who formerly held the
+               temples of God, "They have the house, we the dweller in it: they the temples, we the
+               privilege of becoming temples of the living God"). Now, when Cyprian held a prominent
+               position at Carthage in Africa, and God-loving bishops assembled there, who were in
+               number eighty-seven, some from the same Africa itself, some from Mauretania and
+               Numidia, they determined that those who come from all heresies should be perfected by
+               the true baptism of the church, as if they had not been baptized at all, not
+               distinguishing the character of each of the heresies, but bringing all under one
+               pronouncement. It was from God-loving zeal that these adopted this resolution: as is
+               clearly shown by the words which the holy Cyprian who has been mentioned wrote in
+               epistles to Juvian and Quintus and Magnus, where he also includes a reference to
+               those who are baptized on their beds during sickness. And soon afterwards Dionysius
+               to whom it fell at that time to feed the church of the city of the Alexandrines,
+               writing to Dionysius his namesake and Stephen, who presided over the holy church of
+               the city of the Romans, made a distinction, saying that those who had been baptized
+               in the name of the three substances, the Father, the Son, and the Holy Spirit, even
+               though it were by heretics <pb n="297"/> that they were baptized, but still such as
+               confess the three substances, should not be re-baptized: but converts from the other
+               heresies should certainly be perfected by the baptism of the church. This opinion the
+               three hundred and eighteen fathers who assembled at Nicaea also followed, and those
+               who fed the churches after them. Those who assembled in Africa in the days of
+               Cyprian, looking at the common name of the heresies only, applied a single method of
+               cure. But the contemporaries of the great Dionysius and those who came after him
+               distinguished the varieties of diseases, and so applied to each of them the cure
+               suited for it. Just as in bodily troubles every infirmity is termed disease, and they
+               are expressed by this general name, which however covers many different diseases,
+               fever for instance and dropsy and elephantiasis, so also in the weaknesses of the
+               faith every aberration from the sound word is named generally heresy, but every one
+               of the diseases that are included in this term is not of the same character: for
+               neither do they hold an equal eminence in impiety. But, as a skilful physician heals
+               a man with fever in one way, and in another a man who has ague maybe or dropsy, or is
+               troubled by a swelling of the spleen, in the same way those also who healed and fed
+               the churches with more than ordinary spirituality and sagacity judged it right to
+               distinguish the nature of each heresy, and did not think the same cure fit to be
+               applied to those who shared in the sickness of Novatus and of Photinus, and to those
+               who had <pb n="298"/> been stained with the corruption and mire of Paul of Samosata.
+               The nineteenth canon of the three hundred and eighteen fathers requires those who
+               come from Paul of Samosata to be re-baptized: but in the case of converts from
+               Photinus and Novatus to the orthodox church the hundred and tenth canon, which was
+               enacted by the synod that assembled at Laodicea in Phrygia, decided that they should
+               be perfected by chrism: although much the same folly gives birth to the miserable
+               heresy of Paul of Samosata and of Photinus, and they do not differ from one another
+               except to a slight extent. And yet we for our part follow the regulations of the
+               fathers and do not make ingenious investigations, nor have recourse to that which in
+               former times pleased Cyprian and those who assembled in Africa, whom we mentioned
+               shortly before. For we must follow the common conclusions made at different times by
+               the God-loving orthodox rulers of the churches, and not adduce the private
+               conclusions of different men, or opinions which seem to contain self-created
+               scrupulosity or strict teaching, and lay down a contrary law, and presumptuously
+               contend against the holy fathers. Indeed the holy Cyprian himself, as if laying down
+               a general canon in his letter to Quintus, enjoins that we ought to follow later
+               principles adopted as a matter of expediency and for the sake of the union of the
+               church, and not be <pb n="299"/> shackled by prejudices held at an earlier time: and
+               I am convinced that he was moved by the Holy Spirit to say this beforehand: and that
+               though he was then insisting that converts from all heresies should be perfected by
+               the baptism of the church. This is what he says: "Moreover also Paul the Apostle,
+               being himself also concerned for peace and concord, entreats and teaches in his
+               letter in such words as these: 'Let two or three prophets speak: and let the rest
+               discern. But, if a revelation be made to another while sitting, let the first keep
+               silence.' By this he clearly taught and showed that many things are revealed to each
+               man for the better: and therefore each man ought not to be constantly and at all
+               times contending for the opinions which once won his approval and prevailed: but, if
+               anything better and more beneficial show itself, gladly accept it. For, when better
+               things are brought before us, we are not conquered, but are instructed: especially in
+               things that conduce to the unity of the church, and to the hope and assurance of our
+               salvation." Therefore it is right to consider what was determined by those who
+               assembled at Ephesus to depose the impious Nestorius and anathematize his doctrines.
+               Now after the examination of the heresy and its refutation, and the deprivation of
+               that wicked man, Charisius a presbyter from Philadelphia (this is a city of the
+               province of the Lydians) came through into the midst, and laid before everyone a
+               silly <pb n="300"/> symbol composed by Theodore of Mopsuestia the teacher of the
+               folly of Nestorius, and showed that there were many from that country who had denied
+               the accurate faith of the three hundred and eighteen fathers, and had fallen away to
+               this alien and spurious symbol. And they were moreover brought in and anathematized
+               the hateful heresy of Nestorius; and they did not put forward any such canon
+               declaring that converts from his perdition to the bright light of orthodoxy must be
+               perfected by baptism or by chrism; nor has anyone been shown to have been anointed at
+               that time: and this though the schism lasted a long time, and the bishops of the East
+               supported Nestorius, and separated themselves from the Catholic synod, and afterwards
+               joined themselves to the same and were reconciled at the time when Paul bishop of the
+               city of the Emesenes went to Alexander's city and acted as mediator of the union
+               between the churches in Egypt and in the East. As it seemed necessary to the men of
+               earlier days that converts from heresies should be perfected through baptism, but
+               afterwards a sagacious discrimination regarding the matter introduced the principle
+               that some must be re-baptized, others re-anointed, so concerning the Nestorian heresy
+               the fathers after examining the character of the heresy decided that the impious
+               doctrine should only be anathematized by those who repent. Paul of Samosata and
+               Photinus sinned <pb n="301"/> against the very substance of God the Word; and assert
+               the Lord born of Mary to be a mere man. But Nestorius says that He is the Word which
+               existed before the ages, but divides the mystery of the. dispensation into two by
+               saying that it was not in substance but by brotherly conjunction that God the Word
+               was united to the flesh containing the intellectual soul. Therefore we embrace the
+               conclusion adopted by the fathers, and the cure that was introduced by them with
+               reference to converts from the Nestorian heresy we hold as a law that cannot be
+               shaken, and we do not have recourse to the conclusions that were adopted and
+               introduced by the men of earlier days with reference to other heresies: but we decide
+               that each conclusion has its own validity in the case of those with reference to whom
+               it was introduced: for everything whatever that God's priests decide, this is a law.
+               As the men of earlier times gave the gift of the Holy Spirit to the heretics who were
+               devoid of His grace by means of the true baptism of the church, and those who came
+               later filled up what was lacking in those that repented by means of chrism, so in the
+               case of converts from the evil belief of Nestorius also the fathers thought that an
+               anathema of the heresy ought to be sufficient to fill up what is lacking in them;
+               and, whatever was determined by them to be sufficient, this we, as I said, observe as
+               a law. For it is written; "the lips of a priest shall keep knowledge: and they shall
+               ask law at his mouth, because he is an <pb n="302"/> angel of the Lord the
+               All-ruler." And, since this course was approved by them, we believe that it was
+               "rightly approved, in accordance with the apostolic statute that says, "With the
+               heart man believeth unto righteousness, and with the mouth man confesseth unto
+               salvation," according to the Lord's utterance that does not lie which says, "By thy
+               words thou shalt be justified." This same principle one may see in the case of
+               ordinations also. For the statute ts that converts should be re-ordained, or should
+               be ordained, when they come from those same heresies from which when men come over to
+               piety after having received a spurious baptism from them they are perfected by the
+               true baptism. And I will show you clearly that ordinations also that were performed
+               by the Arians were accepted by those who then presided over orthodoxy. Now in the
+               times of the Arians there were two sections among our brothers who confessed the
+               orthodox faith in this great Christ-loving city of Antiochus, because of the wrongful
+               expulsion of Eustace; and each of the same sections had an orthodox bishop, one
+               having Paulinus and the other Melitus: and, Paulinus having left the life here and
+               uncanonically appointed Evagrius his successor (for he ordained him alone without
+               having two or three bishops with him as the ordinance of the church commands), after
+               Melitus decease and his departure to God the other section lawfully and according to
+               the <pb n="303"/> canons nominated Flavian, by the <foreign>psephisma</foreign> of a
+               large number of bishops, and Evagrius and Flavian disputed the throne; and, the
+               ordination of Evagrius (who had also departed from the life here) having been
+               repudiated as unsound, Theophilus who was bishop of the city of the Alexandrines
+               writes to Flavian to accept the clergymen who had been ordained by Evagrius, speaking
+               thus: "Therefore in your days allow those also who assemble apart by themselves to be
+               united to the clergy under your religiousness, and to the whole people. If we are in
+               communion with the devout Anastasius, bishop of the church of the Romans, and he
+               gives the communion of clergymen to those who assemble by themselves, and
+               communicates with them all, you understand to what the conclusion points. Therefore,
+               seeing that the reverend Anastasius our fellow-minister has communicated with them, I
+               think it henceforth necessary that a concession on the ground of policy should be
+               made to them, in order that the peace with our beloved fellow-ministers in the West
+               may not be disturbed on account of anything that is wanting. Therefore I pray you to
+               assume a salutary courage for a good end, in no point yielding to those who maintain
+               the principles of strictness. Being an old man, you are well aware that our holy
+               fathers cured more difficult matters than these, and that, adopting intelligent
+               counsels, they became 'to those not under the <pb n="304"/> law as not under the
+               law,' and checked things difficult to cure, and did not disturb the whole body of the
+               church. Wherefore Ambrose also of blessed memory [received those who had received
+               ordination from Auxentius his predecessor in Milan: and they received many others in
+               the East who had not been ordained by the orthodox, lest, if these remained outside,
+               the heresy of the Arians should strike root, and the flocks perish, and the greater
+               portion of the body of the nations be lost. In this way they treated both those of
+               Palestine and Phoenice and many others; properly relaxing the strict rules of
+               ordination for the sake of the salvation of the nations, so that after these things
+               the universal concord might remain firm and unshaken. Accordingly, since things that
+               are serious and are incurable were by making a great concession as far as was
+               possible healed without turning to evil, it is not difficult, but very easy, for
+               these things to be now managed; since we have chosen by comparison the faults of the
+               orthodox rather than the virtues of the Arians." Bearing these things in mind, show
+               us that men who come from the heresy of Diphysitism, that is of the Nestorians, ought
+               to be re-baptized, in order that we may be compelled to insist upon re-ordination
+               also; or, if you do not show this, respect the laws laid down by the fathers, and
+               orderly administration. For neither has Timothy of holy memory, who fed the church of
+               the Alexandrines in apostolic fashion, <pb n="305"/> been shown to have been
+               inconsistent with himself, as you vainly suppose. When the people under the influence
+               of ardent enthusiasm were unwilling even to look at those who had received ordination
+               from Proterius, he, wishing to soften their sternness and to follow a course opposed
+               to them, spoke to them in such words as these, "Regard them just as if they had
+               received ordination from me"; or, as you say, "I have determined to give them
+               ordination" (for we will allow it to be thus): and, after seeing that by the
+               application of this remedy the sternness of the zeal was softened, he did not in the
+               matter of the reception of those who derived ordination from Proterius transgress
+               against the moderation of the canons, nor was he carried away by the violence of
+               zeal; but he restrained enthusiasm by the cords of politic action; and he induced
+               them to acquiesce in the established canons. And, when he accepted the repentance of
+               the converts, he did not give them ordination at all, a thing contrary to the
+               intention of the canons; nor did he recur to the strictness of the men of early days
+               and their stern method. As to the principle that these things are rather matters of
+               politic administration, and not inconsistent, the divine Paul also signifies it to be
+               so in that he circumcised Timothy by reason of the policy which he adopted towards
+               certain persons, as the Book of the Acts clearly states, saying: "And he took and
+                  circum<pb n="306"/>cised him, because of the Jews who were there in the country.
+               For all these knew that his father was a Gentile." But to the Galatians, who had
+               turned to the observances of Judaism, he writes as for the general profit, and as if
+               laying down a law for the whole church, and says: "Behold I Paul say unto you that,
+               if ye are circumcised, Christ will profit you nothing." And that this is so the
+               saintly John will bear witness, who with wisdom fed the holy church at
+               Constantinople, in that in the fifth book of his Praises of the apostle Paul he
+               speaks thus: "For he desires those things only which bring him advantages in God,
+               even though it happened that these were contrary to the previous actions. For he was
+               something versatile, and rich in expedients; not that he acted hypocritically (far be
+               it!); but he became everything which the necessity of the preaching and the salvation
+               of men required: and in this also he imitated his Lord. For God too would appear as a
+               man also when it was necessary for Him so to appear; and again in fire when the time
+               required this; and at one time in the form of an armed man and a soldier; and at
+               another in the guise of an old man; and at another in the breeze; and at another as a
+               wayfarer; and at another He becomes human, and did not refuse even to die so. But,
+               when I said that this was necessary, let no one think that there is reference to
+               compulsion; but to His mercifulness only. And He sits sometimes upon <pb n="307"/> a
+               throne; sometimes again upon the cherubim. But all these things He did in accordance
+               with the subservient dispensations. For this reason He said through the prophet also,
+               'I have multiplied visions; and through prophets I have made myself like.' [Here
+               follows the citation given at p. 278 ff. I give such variations only as are nearer to
+               the original, which are as follows: l. 5 'Paul, who imitated his Lord, have been
+               condemned. He becomes now a Jew, now as one not under the law; now one who keeps'; l.
+               12 om. 'again'; l. 19 'For this reason he now supports the law, now subverts'; p. 279
+               l. 9 'For this the man of professional skill does'.] I For those that are diseased in
+               soul require treatment and cure no less than those that are sick in body: and, if you
+               simply offer them everything, the cause of their salvation will be ruined." Holding
+               this same opinion, the holy Theophilus also in the letter to Flavian, which we
+               mentioned shortly before, speaks thus: "Therefore carry out this policy boldly. If
+               the Apostle 'became to them that were without law as without law, being not without
+               law to God, but under the law of Christ,' and 'became everything to every man that he
+               might by all means save some,' the reception of those who assemble apart according to
+               the rank which they hold does not steal away your reputation, but rather indeed
+               increases it; nor yet are you acting inconsistently when the urgency of the case
+               compels the adoption of a <pb n="308"/> policy of concession for the sake of profit.
+               You know that the blessed Paul also, looking to what was of advantage, circumcised
+               Timothy; but puts the Galatians, who were circumcised, to shame, in that he writes,
+               'If ye are circumcised, Christ will profit you nothing.' And, among wise men, he does
+               not appear to be inconsistent, but to be acting in a politic manner towards living
+               men, while healing troubles that occur with great profit." But perhaps when you hear
+               these things you will say, "Who is there among orthodox bishops who received those
+               who assembled at Chalcedon, or rather those who succeeded to their sees, upon
+               repentance?" But I as against this will bring before you a scriptural law which shows
+               how the God of repentance accepts and justifies a sudden conversion to virtue, such
+               as has now taken place in the countries of the East, where all by the divine counsel
+               under behest from above have cast forth and banned the heresy of the duality of the
+               natures with definite anathemas, and have in pure fashion confessed the faith of the
+               fathers, which is pure from all corrupt mixture and alien addition. When in old times
+               the Jews had lapsed, and had fallen into the pits of idolatry, and had so much
+               neglected the law of their fathers that even the places for the performance of the
+               priestly service that was commanded by Moses were no longer maintained, then Hezekiah
+               was established as king, and, his mind having been en<pb n="309"/>lightened by God,
+               he wished to sacrifice the passover according to the law, and according to the law he
+               commanded that Aaron's sons only should offer the sacrifices, as is said in the Book
+               of the Priests: "And they shall kill the calf before the Lord, and the priests
+               Aaron's sons shall bring the blood near, and pour it out all round by the side of the
+               altar that is before the doors of the tent of witness. And they shall flay the
+               burnt-offering, and cut his limbs in pieces." But at that time, since the priests
+               were too few, contrary to the intention of the law, Levites also were brought forward
+               together with Aaron's sons, to perform the service: and the passover was celebrated
+               without the purification of the whole people having been strictly carried out. And
+               God accepted the pleasant savour, having had regard to the completeness of the
+               repentance of their hearts, though it was thought to be defective in the matter of
+               lack of faith. But it is well also to recite to you the actual words of the Holy
+               Spirit, which are written as follows, in the second part of the Book of Chronicles:
+               "And the priests received the blood from the hand of the Levites, by reason of the
+               numbers of the congregation, and they were not sanctified. And the Levites had the
+               charge of sacrificing the passover, for everyone who could not be sanctified to the
+               Lord, by reason of the multitude of people from Ephraim and from Manasseh, and from
+               Issachar and <pb n="310"/> from Zebulon, and they were not sanctified; but they even
+               ate this passover contrary to the scripture. And Hezekiah prayed for them, saying,
+               'The good Lord God be propitious toward every heart that has turned in sincerity to
+               seek the Lord God of their fathers, and not according to the purification of the holy
+               things.' And the Lord hearkened to the voice of Hezekiah, and healed the people."
+               Observe clearly the reason for which God accepted such repentance, as stated in the
+               divine scriptures; because they had prepared their hearts to seek the Lord God of
+               their fathers. And even after the coming of Christ in the flesh one may see that this
+               happened in the church also. Socrates, who wrote the Church History, related a
+               similar thing in the seventh book and the second chapter; and he writes thus: "At
+               Synada, a city of Phrygia Pacatiana, a certain Theodosius was bishop, who vigorously
+               persecuted the heretics of the religious party of the Macedonians, of whom it
+               contained many, expelling them not only from the city, but from the country-districts
+               also. And this he did although it is not the practice of the church of the orthodox
+               to persecute; and not out of zeal for the right faith, but because he ministered to
+               the passion of avarice, and was desirous of amassing gold from the heretics. For this
+               reason he set everything in motion against those who held the opinions of Macedonius,
+               putting arms into the hands of the clergymen who were subject to <pb n="311"/> him,
+               and using countless tricks against them; and he did not even refrain from putting
+               them in bonds: in law-courts: and especially their bishop, whose name was Agapetus,
+               he harassed in various ways. But, since the governors of the country seemed
+               insufficient for his purpose in the infliction of punishment, he betook himself to
+               Constantinople, and asked for orders from the prefects. And, while Theodosius was
+               for. this same reason spending time in Constantinople, Agapetus, the leader as I said
+               of the religious party of Macedonius, came to a good resolution. For he consulted
+               with the whole of his clergy, and summoned the people who were under subjection to
+               him, and persuaded them to accept the faith] of the co-essentiality. And, having
+               arranged this, he ran immediately to. the church as fast as he could with a great
+               multitude: or rather with the whole people. And after conducting prayer he occupies
+               the throne on which Theodosius was wont to sit. And, having united the people, and
+               preaching from that time the faith of the co-essentiality, he took possession of the
+               churches under Synada. And, these things having happened in this way, not long
+               afterwards Theodosius arrives, bringing with him assistance from the prefect. But,
+               not knowing anything of what had happened, he made his way to the best of his ability
+               towards the church. But, being driven from it by all alike, he again: made his way to
+                  <pb n="312"/> Constantinople. And, when he was there in the presence of bishop
+               Atticus, he bewailed his fortune as having been without reason driven from the
+               bishopric. But Atticus, since he knew that the affair had turned out for the benefit
+               of the church, consoled Theodosius in words, persuading him to embrace a retired life
+               without anger, and taught him to prefer the common good to his own, while he writes
+               to Agapetus to keep the bishopric without imagining that any annoyance would result
+               from Theodosius' anger." Tell us therefore in this case, my excellent man, what
+               chrism or what laying on of hands, or what ordination, confirmed these proceedings.
+               Or is it matter of previous knowledge that the uprightness of their heart, to use the
+               words of the divine scripture," made these also genuine instead of spurious," and
+               this though they had been converted from the stinking heresy of Macedonius which
+               blasphemes against the Holy Spirit, in the case of which the perfecting rite of
+               chrism is in fact laid down as necessary for those who repent from it? But perhaps
+               under the influence of a mistaken feeling you will further bring up against us that
+               you do not accept the testimony of Socrates who is a Novatian in heresy. But know
+               plainly that especially in historical narratives even the statements of those that
+               are such are accepted. For instance the holy Basil in his letter to Amphilochius
+               cited the testimony <pb n="313"/> both of Eusebius known by the name of Pamphilus and
+               of Origen, who in doctrines are faulty, saying that they are trustworthy owing to
+               their great experience. And Basil cited the testimony of those men to support
+               doctrines: but we do so only for a statement of bare historical fact. But it is well
+               that we quote to you the actual testimony of the holy doctor, which is as follows:
+               "But, if Eusebius the Palestinian also is trustworthy in any man's eyes on account of
+               much experience, we produce the same expressions from him too in the 'Difficulties
+               concerning the polygamy of the ancients.' For he speaks thus, encouraging himself to
+               deal with the subject: 'Inviting as a guide the holy God of the prophets through our
+               Saviour Jesus with the Holy Spirit.'" Upon Origen also, a man who has not much that
+               is sound in him in all his tenets concerning the Spirit, we now find that under the
+               Spirit's direction he bestows praise in many of his comments on the Psalms. Follow
+               therefore the statutes of the divine scripture, and the dispensations of the fathers
+               of which they made use from time to time, under the influence of more subtle
+               consideration and being much concerned for the abolition of the divisions and for
+               church unity. There is in fact no one who denies that heretics are base and split
+               coin, and in need of the grace of the Spirit. But the educators" of the church
+               supplied this want in many ways; in some cases by fresh baptism, in others by chrism,
+               in others by those who repent <pb n="314"/> merely condemning the impious belief by
+               anathema, and renouncing the stain of heresy, and attaching themselves to orthodox
+               opinions. If you have recourse to what was approved by the men of earlier days, and
+               say that the Holy Spirit must be given through chrism to converts from heresies,
+               inasmuch as the heretics cannot give what they have not, it is time for you to have
+               recourse to the other rule too and say that it is also absolutely necessary for them
+               to be re-baptized, according to the opinion held by Cyprian. But it is very plain
+               that we must follow the more recent precepts of the fathers, and the methods of cure
+               which they introduced for each disease, and not issue commands out of presumption and
+               pride, and lay down a law going beyond what seemed to them to be good. For "the
+               Spirit bloweth where it listeth", as it is written, and it determines the regulations
+               of the high-priests, and accompanies their sacred utterances. I am convinced that it
+               was for this reason that in the Acts of the Apostles also, when Cornelius the
+               centurion and those with him had with all their heart believed in the preaching of
+               Peter the chief of the apostles, the Holy Spirit went in advance of the water, so
+               that Peter said, "Can any man forbid water to these that they should not be baptized,
+               which have received the Holy Spirit even as we?" If you think Theodotus a man of
+               strict practice <pb n="315"/> because he recently introduced chrism in the case of
+               the heresy of the Diphysites, know clearly that others also among those who were
+               zealous against this heresy were afflicted with a madness that surpassed his in
+               strictness. For instance a certain Cassian, who was a disciple of father Romanus who
+               is among the saints, who after an approved fashion was distinguished in Palestine for
+               ascetic life and excelled at that time in tens of thousands of gifts of the Spirit,
+               caused many of the disciples to secede: and he betook himself to Skanthin (?), and
+               used audaciously and illegally to baptize converts from the Chalcedonian evil belief.
+               About this same Theodotus, who went through tens of thousands of changes, and
+               contradicted himself, and is led in different directions at different times like the
+               teachers of the adverse party, I might have said much, which I pass over. For he
+               further also adhered to the fatuities of John the Rhetor, who said that it was in His
+               essence that the Word of God endured the saving cross and took upon Himself the
+               passion on our behalf, and would not consent to call the one Lord and our God and
+               Saviour Jesus Christ of one essence with us in the flesh: a point which you also
+               omitted in the preface of the document that was published in which you make
+               confession of faith, and thereby. dealt us no small blow and gave cause of offence.
+               Nevertheless, just as I said, it becomes us to pass his affairs by in <pb n="316"/>
+               silence: for we do not draw a defence from the sins of others for propositions
+               advanced by ourselves, nor do we take the weakness of others as a support to
+               strengthen our own position, but we establish our own case by the good and invincible
+               arguments that we have, adducing the ordinances of the church and the dispensations
+               of the fathers. As to this other statement of yours, i.e. that difficulty has been
+               caused to your mind by the fact that the God-loving bishops who assembled at Laodicea
+               call those who cleave Emmanuel into two natures Paulianists," you must on no account
+               be alarmed by this. It is in fact a custom of the fathers to refer heresies to the
+               roots from which they sprang by way of reducing them to something shameful. Hence
+               they called the corruption of Arius idolatry, inasmuch as it exhorts us to worship a
+               creature, and the witlessness of Sabellius they termed Judaism, inasmuch as it
+               includes the three substances in one person after the Jewish fashion. But they did
+               not on this account receive those who repented from these heresies as Gentiles or
+               Jews, and men who have never been initiated. In consonance with this principle which
+               I have just stated they also term those who are infected with the phantasmal tenet of
+               Eutyches Manichees: not because they are in all respects enveloped in the nets of the
+               Manichees, but because the fatuous idea of a phantasy is part of the vitiated
+               conception of Mani, <pb n="317"/> and is derived from him. After this manner the holy
+               Cyril also in writing against Theodore of Mopsuestia said, "'Sodom has been justified
+               more than you'; you have surpassed the babblings of the heathen which they uttered
+               against Christ, 'reckoning the cross foolishness'; you have shown that the charges
+               against Jewish arrogance are nothing." Therefore neither is anything shameful said by
+               the saintly bishops who assembled at Laodicea, who called those who cleave the one
+               Christ into a duality of natures after the ineffable and incomprehensible union
+               Paulianists: nor ought we on this account to re-baptize those who repent from them
+               like converts from Paul of Samosata. Thus much we have written to your affection as
+               in a few words, lying as we are under a mass of many affairs, and not able, as we
+               wished, to extend the refutation of your propositions," so as to cover a wider field
+               of examination; but, since you have a right disposition, and are not subject to
+               prejudice, even what has been written is enough. We have in fact dealt with each of
+               them in no defective manner in accordance with our ability, quoting the testimonies
+               of the God-clad doctors of the church. </p>
+            <trailer>The end.</trailer>
+         </div>      
+      </body>
+  </text>
+</TEI>

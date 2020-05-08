@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title ref="http://syriaca.org/work/3063">To Theotecnus, Presbyter and
+               <foreign>archiatros</foreign></title>
+            <author ref="http://syriaca.org/person/51">Severus of Antioch</author>
+            <sponsor>Center of Digital Humanities Research, Texas A&amp;M University</sponsor>
+            <principal>Daniel L. Schwartz</principal>
+            <editor role="editor" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</editor>
+            <respStmt>
+               <resp>XML created by</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</name>
+            </respStmt>
+            <respStmt>
+               <resp>Based on the work of</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#ewbrooks">E. W. Brooks</name>
+            </respStmt>
+            <respStmt>
+               <resp>OCR corrected by</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</name>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition n="1"/>
+         </editionStmt>
+         <publicationStmt>
+            <distributor>
+               <placeName>Center of Digital Humanities Research, College Station, TX, USA</placeName>
+            </distributor>
+            <authority/><!-- FILL IN AFTER DECIDING ON NAME -->
+            <idno/><!-- FILL IN AFTER DECIDING ON URI/URL FORMAT -->
+            <availability>
+               <licence target="http://creativecommons.org/licenses/by/4.0/">
+                  <p>Creative Commons — Attribution 4.0 International — CC BY 4.0</p>
+                  <p>https://creativecommons.org/licenses/by/4.0/</p>
+               </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <editor ref="http://syriaca.org/person/403">
+                     <persName xml:lang="en">
+                        <forename>E. W.</forename>
+                        <surname>Brooks</surname>
+                     </persName>
+                  </editor>
+                  <title type="main" xml:lang="en" level="m">
+                     The Sixth Book of the Select Letters of
+                     <persName ref="http://syriaca.org/person/51">Severus Patriarch of Antioch</persName>
+                     in the Syriac Version of
+                     <persName ref="http://syriaca.org/person/1014">Athanasius of Nisibis</persName>
+                  </title>
+                  <title type="sub" xml:lang="en" level="m">Vol. II (Translation) Part II</title>
+                  <idno type="URI">http://syriaca.org/bibl/669</idno>
+                  <imprint>
+                     <publisher xml:lang="en">Williams and Norgate</publisher>
+                     <pubPlace ref="http://syriaca.org/place/861">Oxford</pubPlace>
+                     <date>1903</date>
+                  </imprint>
+                  <extent>Vol. 4 of 4</extent>
+                  <biblScope unit="vol">2.2</biblScope>
+                  <biblScope unit="page">286-90</biblScope>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <editorialDecl>
+            <p/><!-- FILL IN -->
+         </editorialDecl>
+      </encodingDesc>
+      <profileDesc>
+         <creation>
+            <origDate type="composition"/><!-- FILL IN. La Route Royale dates are probably preferable to Brooks' dates. -->
+         </creation>
+      </profileDesc>
+      <revisionDesc status="draft">
+         <change when="2019-11" who="http://syriaca.org/person.xml#dschwartz">Created file</change>
+      </revisionDesc>
+   </teiHeader>
+  <text>
+      <body>
+         <div type="letter" n="5.4">
+            <head type="main" resp="#compiler">Of the same to Theotecnus the presbyter and
+               <foreign>archiatros</foreign>.</head>
+            <head type="sub" resp="#compiler">From those during episcopacy, from the 6th book the
+               161st letter.</head>
+            <p> With regard to the case of Mark the devout monk and presbyter you have written
+               throughout wisely and with the religious feeling and the intelligence that belongs to
+               you. Know however that, even if we had not the instance of the saintly bishop
+               Eleusinius, we have many other examples provided by the holy fathers in the times of
+               the Arians, which charge us not to repel those who have been often perverted, and
+               recurred to the evil thing as before, but, as far as is possible, to allow them the
+               last repentance. It ts related in church histories that Asterius, who was a sophist
+               and author among the Arians," was often received and often returned to his vomit,
+               insomuch that this expression of his is cited in histories. He cried out lying on his
+               face before everyone and saying, "Trample upon me, the salt which has lost its
+               savour." Hosius also, the bishop of <pb n="287"/> Corduba, the old man, whom
+               Athanasius who is among the saints often called "a man of goodly old age," was often
+               perverted and overcome by the times and again received, and many others. Therefore
+               with Mark also this same principle should hold good, and he should be received on the
+               basis of a written document, upon his anathematizing the heresies of the Diphysites
+               and of the Massalians, together with the impious men themselves and their impiety.
+               For indeed "both the impious man and his impiety are equally hated before God," as a
+               wise man said; although the fathers as pilots from motives of policy received some
+               men upon the impiety alone being anathematized (I refer to the
+               <foreign>pepragmena</foreign> or things done at Chalcedon), thinking that those
+               who did them were also anathematized at the same time in silence, When this is done
+               it is absolutely necessary that the office of superintendent should also be entrusted
+               to Mark, seeing that the majority of the brethren and, if one may so say, all are
+               asking for him as you write. Indeed after considering the matter from many points of
+               view I have come to this conclusion, that it is better that he should be canonically
+               received now while he is humbled, than that, desired as he is by many persons, he
+               should betake himself perhaps to the royal among cities, and do things that many are
+               wont to do, and with money buy independence, and get the monastery <pb n="288"/>
+               under his control with liberty to follow the impiety with head bare and unashamed. I
+               have also received the letter that you wrote about the hateful opinions of Romanus,
+               in which you state that you have read the tome written by me cursorily. But I wish
+               you to read it yet again and pay attention to the contents, and to condemn more
+               strongly the impious man, and induce the saintly bishops also to do the same, and
+               repudiate that wicked man by a common synodical letter addressed by them to my
+               meanness. There is yet another thing that I had almost forgotten to make known to
+               your religiousness, viz., that the devout Mark in what he said displayed an
+               appearance of shrinking from the superintendence of the monastery, and seeking only
+               to live at peace, and besides this asserted further that a royal letter had assigned
+               the monastery to the apostolic see of the city of the Antiochenes, and that the
+               clergymen in Tarsus had a spite against them, and prevented them from lesson-reading
+               and the offering of oblations if they were in need, the holy remnants of the
+               bloodless sacrifice being often lacking to them. And I said to him and to the man who
+               was with him, "You cannot raise these matters now: but for the present you Mark must
+               certainly show true repentance by a form of satisfaction and by a change in your
+               deeds, and then, if you have the witness of time to the blamelessness of your future
+               conduct, we will also go on to settle the said points, if <pb n="289"/> anyone try to
+               act perversely towards you, and to do any spiteful and injurious action to your holy
+               monastery." Therefore, in order that the questions raised upon these subjects too may
+               not be unknown to you, I have added these few words in the letter. Moreover on second
+               thoughts I have determined to warn your religiousness of this further point also:
+               that, when I was composing the letter to the metropolitan, and I thought that the
+               number of brethren living in the monastery was large, I came to the following
+               decision: that is that the entrusting of the superintendence to the devout Mark
+               should depend on the opinion of the majority. But I learn that there are not more
+               than fifteen: and distinct information has been sent me that one or two only are
+               thought to be opposed to him, and that it is certainly he who ought to receive the
+               post of superintendent, upon giving complete satisfaction with sincerity and with his
+               whole heart, so far as men can see. We have also sent an <foreign>ison</foreign> or
+               copy of the form of satisfaction which our notaries have drawn up, having compiled it
+               from other forms that were previously composed by me in the cases of various persons.
+               The God-loving Basil bishop of Pompeiupolis has informed us that he has been
+               compelled by the God-loving Dionysius bishop of the metropolis to undertake an
+               unlawful laying on of hands or ordination. If this is really so, it is also proper
+               that your love of <pb n="290"/> God and the religious presbyter and logothete John
+               should take care that it too receive correction. </p>
+            <trailer>The end.</trailer>
+         </div>      
+      </body>
+  </text>
+</TEI>

@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title ref="http://syriaca.org/work/3138">To the Christ-loving Isidora</title>
+            <author ref="http://syriaca.org/person/51">Severus of Antioch</author>
+            <sponsor>Center of Digital Humanities Research, Texas A&amp;M University</sponsor>
+            <principal>Daniel L. Schwartz</principal>
+            <editor role="editor" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</editor>
+            <respStmt>
+               <resp>XML created by</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</name>
+            </respStmt>
+            <respStmt>
+               <resp>Based on the work of</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#ewbrooks">E. W. Brooks</name>
+            </respStmt>
+            <respStmt>
+               <resp>OCR corrected by</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</name>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition n="1"/>
+         </editionStmt>
+         <publicationStmt>
+            <distributor>
+               <placeName>Center of Digital Humanities Research, College Station, TX, USA</placeName>
+            </distributor>
+            <authority/><!-- FILL IN AFTER DECIDING ON NAME -->
+            <idno/><!-- FILL IN AFTER DECIDING ON URI/URL FORMAT -->
+            <availability>
+               <licence target="http://creativecommons.org/licenses/by/4.0/">
+                  <p>Creative Commons — Attribution 4.0 International — CC BY 4.0</p>
+                  <p>https://creativecommons.org/licenses/by/4.0/</p>
+               </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <editor ref="http://syriaca.org/person/403">
+                     <persName xml:lang="en">
+                        <forename>E. W.</forename>
+                        <surname>Brooks</surname>
+                     </persName>
+                  </editor>
+                  <title type="main" xml:lang="en" level="m">
+                     The Sixth Book of the Select Letters of
+                     <persName ref="http://syriaca.org/person/51">Severus Patriarch of Antioch</persName>
+                     in the Syriac Version of
+                     <persName ref="http://syriaca.org/person/1014">Athanasius of Nisibis</persName>
+                  </title>
+                  <title type="sub" xml:lang="en" level="m">Vol. II (Translation) Part II</title>
+                  <idno type="URI">http://syriaca.org/bibl/669</idno>
+                  <imprint>
+                     <publisher xml:lang="en">Williams and Norgate</publisher>
+                     <pubPlace ref="http://syriaca.org/place/861">Oxford</pubPlace>
+                     <date>1903</date>
+                  </imprint>
+                  <extent>Vol. 4 of 4</extent>
+                  <biblScope unit="vol">2.2</biblScope>
+                  <biblScope unit="page">386-91</biblScope>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <editorialDecl>
+            <p/><!-- FILL IN -->
+         </editorialDecl>
+      </encodingDesc>
+      <profileDesc>
+         <creation>
+            <origDate type="composition"/><!-- FILL IN. La Route Royale dates are probably preferable to Brooks' dates. -->
+         </creation>
+      </profileDesc>
+      <revisionDesc status="draft">
+         <change when="2019-11" who="http://syriaca.org/person.xml#dschwartz">Created file</change>
+      </revisionDesc>
+   </teiHeader>
+  <text>
+      <body>
+         <div type="letter" n="7.9">
+            <head type="main" resp="#compiler">Of the same to the Christ-loving Isidora.</head>
+            <head type="sub" resp="#compiler">From those after banishment, from the 9th book the 13th
+               letter.</head>
+            <p> The fact that I learned from your Christ-loving modesty's letter (to speak with
+               God's permission) that <pb n="387"/> both you and our common children are sound both
+               in soul and in body was a cause of great joy to me. <add><emph>And after other
+                  things.</emph></add> And she is blessed because of her departure: but you are
+               more blessed in that you did not see her in the body, for the sake of the law of the
+               Spirit and the future eternal hope. You will assuredly see her there, since by
+               enduring not to see her here you have consecrated your endurance as a sacrifice to
+               God. This principle is also stated in the sayings of the holy old men who after an
+               approved fashion gained distinction in the solitary and immaterial life. Once indeed,
+               when father Poemen was following the life of philosophic quietude with his brothers,
+               and the door of his cell was shut, his mother stood outside the house, and he spoke
+               to her thus in so many words, "Do you wish to see us here, or to see us in that
+               country?"; and the old woman said to him: "If I do not see you here shall I certainly
+               see you there, my son?"; and he answered her, "If you force yourself not to see us
+               here, you will see us there." And she went away rejoicing and saying, "Shall I
+               certainly see you there? I do not seek to see you here." These things were said and
+               done by those understanding old men, and fathers of the holy and solitary life, not
+               because they were cruel and unkind men in respect of the. claims of nature, but
+               because they were taught by the: God-inspired scripture that those. who have been set
+               apart and consecrated to God have no <pb n="388"/> family on earth, but among angelic
+               hosts and the heavenly spirits. For this reason Moses in his blessings said of the
+               tribe of Levi that was set apart to perform priestly functions, from which was Aaron
+               the first high-priest, and those who after him wore the robe of judgment and the
+               revelation and truth upon their breast (these were bright stones, which signified the
+               fact that all things that are true and are not revealed to most men are revealed by
+               God to the high-priests),"Give to Levi his revelations, and his truth to the saintly
+               man." Then also he adduces the cause of such honour, saying, "Who saith to his father
+               and to his mother, 'I have not seen thee': and acknowledged not his brethren and his
+               sons." For this reason Elisha also, who was working at the tilling of the earth, and
+               was looking after twelve yoke of oxen ploughing, when he suddenly received the
+               heavenly calling from. Elijah the prophet, was not allowed to see his parents and bid
+               them farewell: but, when he said,." Let me kiss my father and my mother and I will
+               follow after thee," he heard the prophet indignantly commanding him and saying, "Go
+               and turn back, what have I done to thee?" Jesus Himself also, the teacher and God of
+               the prophets, and of the righteous men who have been from all time and from the
+               beginning of the world, for the sake of example and instruction to us made answer in
+               the sacred Gospels to the man who said to Him while <pb n="389"/> He was teaching the
+               multitudes, "Behold! thy mother and thy brethren stand without and seek to speak with
+               thee," and said in the ears of. everyone, "Who is my mother? and who are my
+               brethren?": and He stretched forth His hand towards His disciples, and said: "Behold!
+               my mother and my brethren. For, whosoever shall do the will of my Father which is in
+               heaven, he is my brother and sister, and mother." <add><emph>And again after other
+                  things.</emph></add> With regard also to the burial of that blessed God-loving
+               virgin's body, if you determine upon a course worthy of the perfection of Christians
+               and the high garb of virginity, you will allow her,to be buried in the place where
+               she placed her: spirit in the heavenly Father's hands, an expression which Christ,
+               the new first fruits of our race, left us as an inheritance, when He died the
+               voluntary death for our liberation and said, "My Father in thy hands I place my
+               spirit." For "the earth is the Lord's and the fulness thereof" says the singing
+               prophet: who also in another place teaches that the whole earth is a foreign land to
+               holy men, and that they have no country, in that he sings thus to God over all: "I am
+               a denizen with thee, and a sojourner, like all my fathers." The reason that
+               patriarchs such as Jacob and Joseph desired to be removed from the country of the
+               Egyptians to. the land of promise, and there receive perfect burial, was that with
+               prophetic <pb n="390"/> eyes they foresaw our God and Saviour's Resurrection, which
+               was to take place there; for which reason also the observances of the divine service
+               and worship were confined to these places only, so that in the legal writings also
+               the following command is given by Moses, "Take heed that thou offer not thy burnt
+               offerings in every place where thou shalt see, but in the place which the Lord thy
+               God shall choose." But now, when the gospel service and the worship in spirit has
+               embraced all the ends of the world, and one sacrifice has been offered for the sin of
+               the whole world (for, "Behold!" He says, "the Lamb of God which taketh away the sin
+               of the world "), it is lawful for us to do spiritual service and to worship and pray
+               everywhere, and no one can any longer be found among saints and those who conducted
+               themselves according to the perfection of the gospel who gave injunctions or who
+               greatly concerned himself about being buried in this land or in that. For they looked
+               to the hope of the resurrection, and the last trump, which shall in the same manner
+               awake those who sleep from the dust of earth, as says Daniel the divine among
+               prophets,.and "from end to end of heaven," as Jesus Christ who spoke in the
+               prophets said in the Gospels; who to the Samaritan woman. also:who thought that the
+               observances of worship were limited and confined either to Mount Gerizim according to
+               the <pb n="391"/> folly of the Samaritans, or to Jerusalem according to the opinion
+               of the Jews, said, "Woman, believe me, an hour cometh when neither in this mountain
+               nor at Jerusalem shall they worship the Father"; and again after a little more; "But
+               an hour cometh, yea now is, when the true worshippers shall worship the Father in
+               spirit and in truth; for the Father also seeketh such worshippers. God is spirit; and
+               they that worship him must worship in spirit and in truth," Following these things
+               the wise Paul also in writing to Timothy said, "I will therefore that men pray
+               everywhere, lifting up holy hands without wrath or cogitations." </p>
+            <trailer>Not the end.</trailer>
+         </div>      
+      </body>
+  </text>
+</TEI>

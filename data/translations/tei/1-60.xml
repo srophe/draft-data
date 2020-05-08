@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title ref="http://syriaca.org/work/3134">To Photius and Andrew the Presbyters and
+               Archimandrites of the Holy Cloisters in Caria</title>
+            <author ref="http://syriaca.org/person/51">Severus of Antioch</author>
+            <sponsor>Center of Digital Humanities Research, Texas A&amp;M University</sponsor>
+            <principal>Daniel L. Schwartz</principal>
+            <editor role="editor" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</editor>
+            <respStmt>
+               <resp>XML created by</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</name>
+            </respStmt>
+            <respStmt>
+               <resp>Based on the work of</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#ewbrooks">E. W. Brooks</name>
+            </respStmt>
+            <respStmt>
+               <resp>OCR corrected by</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</name>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition n="1"/>
+         </editionStmt>
+         <publicationStmt>
+            <distributor>
+               <placeName>Center of Digital Humanities Research, College Station, TX, USA</placeName>
+            </distributor>
+            <authority/><!-- FILL IN AFTER DECIDING ON NAME -->
+            <idno/><!-- FILL IN AFTER DECIDING ON URI/URL FORMAT -->
+            <availability>
+               <licence target="http://creativecommons.org/licenses/by/4.0/">
+                  <p>Creative Commons — Attribution 4.0 International — CC BY 4.0</p>
+                  <p>https://creativecommons.org/licenses/by/4.0/</p>
+               </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <editor ref="http://syriaca.org/person/403">
+                     <persName xml:lang="en">
+                        <forename>E. W.</forename>
+                        <surname>Brooks</surname>
+                     </persName>
+                  </editor>
+                  <title type="main" xml:lang="en" level="m">
+                     The Sixth Book of the Select Letters of
+                     <persName ref="http://syriaca.org/person/51">Severus Patriarch of Antioch</persName>
+                     in the Syriac Version of
+                     <persName ref="http://syriaca.org/person/1014">Athanasius of Nisibis</persName>
+                  </title>
+                  <title type="sub" xml:lang="en" level="m">Vol. II (Translation) Part I</title>
+                  <idno type="URI">http://syriaca.org/bibl/668</idno>
+                  <imprint>
+                     <publisher xml:lang="en">Williams and Norgate</publisher>
+                     <pubPlace ref="http://syriaca.org/place/861">Oxford</pubPlace>
+                     <date>1903</date>
+                  </imprint>
+                  <extent>Vol. 3 of 4</extent>
+                  <biblScope unit="vol">2.1</biblScope>
+                  <biblScope unit="page">179-91</biblScope>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <editorialDecl>
+            <p/><!-- FILL IN -->
+         </editorialDecl>
+      </encodingDesc>
+      <profileDesc>
+         <creation>
+            <origDate type="composition"/><!-- FILL IN. La Route Royale dates are probably preferable to Brooks' dates. -->
+         </creation>
+      </profileDesc>
+      <revisionDesc status="draft">
+         <change when="2019-11" who="http://syriaca.org/person.xml#dschwartz">Created file</change>
+      </revisionDesc>
+   </teiHeader>
+  <text>
+      <body>
+         <div type="letter" n="1.60">
+            <head type="main" resp="#compiler">Of the same to Photius and Andrew the presbyters and
+               archimandrites of the holy cloisters in Caria.</head>
+            <head type="sub" resp="#compiler">From those after banishment, from the 7th book the 15th
+               letter.</head>
+            <p> Since you loyally fulfil the active part of the ascetic and philosophic life,
+               therefore you also gather the fruits of knowledge from your labours, which are sound
+               faith and zeal on its behalf which raises itself to God, and devoutness and a spirit
+               of understanding and of discretion. [...] [You also therefore, who through practice
+               in asceticism are pure in your minds, in the same manner burn in the spirit, and
+               carry the flame of zeal blazing in you: knowing as you do that all zeal is not
+               praiseworthy, but that which is according to knowledge. <pb n="180"/> For you listen
+               to Paul accusing the Jews and saying, "For I bear record of them that there is a zeal
+               of God in them: but not according to knowledge": and you have restrained the ardour
+               of zeal with the cords of devoutness: for "blessed is the man that feareth all things
+               on account of devoutness." The case of the man who was received by you to communion
+               and was converted from the heresy of the Nestorians and the Diphysites and the
+               believers in two persons to the orthodox faith and said that he had received
+               ordination to the diaconate you have thought fit to bring to the knowledge of my
+               meanness, and learn whether you received this man lawfully and in accordance with the
+               strictness of the canons or not. We say therefore that, in so far as you required him
+               to anathematize on oath and in writing the heresy of the Nestorians and of the
+               Diphysites, and renounce communion with them, the transaction was good and lawful:
+               and he should not otherwise have shared in the reception of the divine mysteries,
+               unless he had after this model done something to satisfy the mind. But neither should
+               he have been presented for the ministry of the diaconate at all, nor on the other
+               hand should he have proclaimed in writing the diaconal rank. For no canon or precept
+               orders that those who have been converted from the heresy of the Nestorians shall
+               receive ordination afresh. If they received ordination afresh, those also besides who
+               were bap<pb n="181"/>tized by the same heresy would always be baptized afresh. For,
+               when men who have received ordination from particular heresies receive the laying on
+               of hands afresh, those also who have been baptized by those very same heresies are
+               baptized afresh: as the synod of the three hundred and eighteen holy fathers ordered
+               in the case of the heresy of Paul of Samosata, and the heresies of those who are like
+               them in impiety. And no one has ever been shown to have perfected by a second baptism
+               those who flee from] the Nestorian and Diphysite heresy, and have taken
+               refuge in the church, of the orthodox. Timothy also of saintly memory, archbishop of
+               the city of the Alexandrines, who wrote in more severe terms from exile owing to the
+               extreme ardour of the people, which would not consent even to cast a glance at those
+               who derived ordination from the Diphysite error, which Proterius introduced there,
+               after his return both communicated with Paul of God-loving memory, high-priest of the
+               city of the Ephesians and head of the holy churches in Asia, in the Encyclical
+               formula, upon his anathematizing with the bishops under him the Chalcedonian impiety:
+               and also, after he had reached Alexandria, received those who came from the heresy of
+               the Diphysites in the rank in which they were, bishops I mean and presbyters and
+               deacons, upon their anathematizing the heresy itself in writing, and accepting such a
+               period of separation for peni<pb n="182"/>tence only as he judged and determined to
+               be good. In such cases in fact it is in the discretion of high-priests to shorten and
+               to extend the spaces of time according to the consciousness of the penitents with
+               regard to the sins committed by them. But he has not been shown to have done anything
+               else whatever as to these men which impairs or disturbs the strictness of the canons
+               in any point whatsoever; no second ordination, no second baptism, no chrism; as some
+               from unreasonable fervour and inconsiderate zeal dared to do, at the beginning
+               immediately after the synod at Chalcedon had been held, and became a cause of schisms
+               and of divisions. For this reason also, after the holy Timothy of whom we are now
+               speaking had thus received those who came from the error of Proterius and of the
+               Diphysite heresy in accordance with the laws of the apostolic church, many men, fired
+               as it were by some disorderly madness and self-willed ardour, separated from
+               communion with him, while they did their best to inflame others also among those who
+               were more than ordinarily weak, like those who said, "We have no part in David,
+               neither inheritance in the son of Jesse," and divided Israel into two. Hence also
+               they ascribed to them the name of the Novatians who do not accept penitence for sins
+               committed; and for a long time they disturbed the church, although they gradually
+               melted away, and as the book of the Acts says "were scattered and <pb n="183"/> came
+               to naught," like the rebellious band and seditious flock of Theudas and of Judas the
+               Galilean. These things we have related, not because we would reckon acts done by
+               heretics valid (they are in fact invalid and without foundation and unsubstantial),
+               but because we would explain that healing is not applied to converts from heresy in
+               one way only, but according to the nature of the error: perfection and the cure of
+               the disease being granted to some through baptism and ordination, to others through
+               chrism, to others through their anathematizing the heresy in writing, and repudiating
+               it and showing fruits of penitence. It is in fact absolutely necessary for us to
+               follow the canonical precepts and regulations of the saintly bishops as medical
+               directions given with understanding, and from them to apply to each man the cure
+               suited to him. Therefore he also who has been received to communion by your love of
+               God, if he scrupulously fulfil the prescribed time in the reforming practice of
+               penitence and you bear witness to it, will be allowed the position of deacon by the
+               orthodox bishops, upon presenting to them a written. petition containing a confession
+               of his sin and an anathema of the heresy. For the voice of a high-priest and bishop
+               and his permission is a law of the Spirit, and full of power to turn the convert into
+               another man, as is written about Saul when he heard the voice of the prophet Samuel,
+               and went in the way that he ordered <pb n="184"/> him to go: and the sacred scripture
+               speaks thus: "And it was so that, when he turned his shoulder to go from Samuel, God
+               gave him a changed heart, and all these signs came upon him that day." Those also who
+               are in the rank of laymen, if they repudiate by anathema the Nestorian and Jewish
+               heresy of the Diphysites, and by sincerely repenting place themselves within the
+               bounds of the orthodox apostolic church, and are included among the sheep of the
+               great God and chief shepherd Christ, will immediately cast from them everyone soever
+               who is an alien, and will be invisibly adorned with the manifestations of the Holy
+               Spirit. If a man on entering by night a house full of torches? is completely pervaded
+               by the flashing light, who doubts that the church of the orthodox, which is full of
+               the gifts of the Holy Spirit, causes the man who opens the eyes of a repentant heart
+               to be pervaded by the light that is suprasensual and divine? The power of the true
+               church assembled in a pure fashion in the Lord's name is so great that it even
+               constitutes men who come to it prophets, men who have not joined the congregation in
+               order to share in any divine gift, but in order to carry out a royal order. For in
+               the first book of Kingdoms it is written thus: "And Saul sent messengers to take
+               David. And they saw the church of the prophets, and Samuel was standing at their
+               head. And the Spirit of God came upon the messengers of Saul, and they prophesy. And
+               it was told <pb n="185"/> Saul and he sent other messengers and they also prophesy.
+               And Saul again sent a third set of messengers, and they also prophesied." If
+               therefore at a time when the practices of the legal shadowy service prevailed the
+               Holy Spirit granted such things to the assembly and the name of a church, what great
+               and wonderful thing will it not do in the church that was bought by the divine blood
+               of the Lamb and God, and has nothing shadowy in it, but the whole sun of
+               righteousness flashing upon all the acts that are performed in it? For many other
+               instances might have been added to those mentioned. At the very beginning when I was
+               set over the Christ-loving city of the Antiochenes, and immediately, so to speak,
+               upon my being raised to the episcopal throne (unworthily indeed, but still by God's
+               mercy), certain men who were infected with the self-created religion of the
+               Re-anointers, following a certain deceiver named Theodotus, who unlawfully
+               re-anointed converts from the Nestorian heresy to the orthodox faith, composed a
+               petition consisting of uncanonical propositions, and had this given to me as I was
+               going out into the street by a certain man who was himself also a victim of their
+               disease; and ] have composed a certain short treatise against it. Accordingly out of
+               respect for the love of teaching and the strictness of your religiousnesses I have
+               thought it necessary to look <pb n="186"/> for this and copy it out and send it you,
+               in order that nothing bearing upon this subject may remain unknown to you, so far
+               as the power and the limited capacity that has fallen to the lot of my meanness
+               extends. For we must "walk in the royal road," as it is written," and "not turn aside
+               to the right or to the left." For many, starting from considerations that are rather
+               upon the right side than otherwise, have been led into excess, and so fallen into the
+               very pit of destruction. For this reason also the text of the law commands that he
+               that pursues after justice shall pursue it justly: that is, know the principles of
+               justice and be instructed in them when you pursue that which is just: and be free
+               from all passion, and be in this respect a just seeker of justice, and restrain
+               yourself on all sides, and stand within the bounds of justice. Many by the very fact
+               of wishing to be just have become mentally drunk, and have injured justice through
+               their justice which had the appearance of being strict. Whence also the wise
+               Koheleth, or rather the teacher of wisdom (for the true Koheleth is Christ, the head
+               of the church and the wisdom and the sublime and substantial power of God and the
+               Father), checking excess, even if directed to the right side, gives admonition,
+               saying, "Be not very righteous nor contrive superfluous wisdom, lest thou be
+               astonied." On all points therefore I praise your religiousnesses for having informed
+               us of this present question, in order that you may wisely follow the precepts of the
+               Holy <pb n="187"/> Spirit: for it is written, "The wise turn not aside from the mouth
+               of the Lord: but they reason in assemblies." Accordingly, when a man is not so
+               minded, but, making his will law, does what comes into his mind, death is the
+               penalty. For he that said these things said also this: "Death lights upon the
+               uninstructed." In answer to your other question I shrink and hesitate to say
+               anything, and I tardily and reluctantly bring myself to answer, lest I be thought to
+               be a cruel and harsh man, when I bring forward the strictness of the church
+               tradition. For indeed this custom has prevailed in the holy churches up to the
+               present day, I .mean that after the reading of the holy revered book of the Gospels
+               there should be a petition on behalf of the catechumens, one of the deacons
+               proclaiming the names, and the presbyter thereupon offering a prayer applying to
+               those whose names have been proclaimed, in order that they may receive the laver of
+               regeneration and the communion of the holy mysteries, and that immediately afterwards
+               another proclamation and prayer should follow on behalf of those that are possessed,
+               in order that they also may be freed from the. possession of evil spirits, and may
+               receive the communion of the all-holy body and blood. Further, when the holy symbols
+               that are consecrated in the mysterious sacrifice are about to be brought out into the
+               church, and to be placed on the holy altar, the first of the deacons, looking out of
+               the door of the deacons' chamber, utters the <pb n="188"/> fearful and awful words,
+               "No catechumen, no possessed person, no one that is incapable'," and so those that
+               consecrate and those that have been consummated begin the ineffable sacred sacrifice,
+               and send upwards the mysterious words. But I have nowhere found in the divine canons
+               that such a distinction as this concerning those that are possessed is contained in
+               them, the tenor of which is that if a man fights with a fierce demon, and is in the
+               habit of assailing and attacking those who come in his way, and rends chains and
+               fetters asunder like the man mentioned [in the Gospels which Paul the great also in
+               writing to the Corinthians commands men to do, and to discern what is the power of
+               the all-holy body, and to consider its greatness, and what the disposition is in the
+               heart of him who is to communicate in it. This is what he says: "But let a man
+               examine himself, and so let him eat of the bread and drink of the cup. For he that
+               eateth and drinketh when he is unworthy eateth and drinketh condemnation to himself,
+               in that he hath not discerned the Lord's body. For this cause the sick and diseased
+               among you are many, and there are many that sleep. For, if we judged ourselves, we
+               should not be judged. But, being judged by the Lord, we are chastised, that we may
+               not be condemned with the world:" even as <pb n="189"/> He that cares for our souls
+               and is their benign instructor directs everything to this end, that He may not
+               condemn us on the day on which He will judge the world and the earth in
+               righteousness, in the last condemnation to which there is no end. Those that do not
+               judge themselves, but communicate without fear in the holy body and blood He judges
+               for a time, chastising them with sicknesses and with diseases that they may come to
+               conversion and penitence. And some, even when they are incorrigible, He removes from
+               life, in order that they may not be afflicted by endless torments of greater severity
+               and greater bitterness in the world to come. Blessed therefore is he who has been
+               visited here and been chastised as by an instructor and been moved to prepare for the
+               better life, and does not "owing to his hardness and impenitent heart," as the
+               Apostle says, "lay up" for himself "a store of wrath for the day of wrath, and for
+               the revelation of the just judgment of God, who will render to every man according to
+               his deeds." Therefore he also who is possessed by an invasion of evil spirits must
+               submit to the canon of the apostolic church, and endure the chastening with
+               devoutness, and take upon him thoughts and expressions of thanksgiving and make
+               confession to the Lord and say, "I have submitted to the Lord and made supplication
+               to him": and He will assuredly have pity upon him (for "He is one that loveth mercy,"
+               as the prophet Micah says), and will <pb n="190"/> rebuke the operation of the evil
+               spirit, and will deliver His creature. For a man to be contemptuously disposed, and
+               to communicate in the sacraments or take part in the sacred ministry contrary to what
+               is commanded makes the assault of man-hating spirits yet more fierce. This is also
+               confirmed by the wise John who was bishop of Constantinople, in the sermon entitled
+               "On the treason of Judas and on the Passover and on the institution of the mysteries,
+               and concerning the principle that we should not retain anger," in that he wrote as
+               follows: "For then also it was after Judas had received the oblation that the devil
+               assailed him; not that he despised the Lord's body, but that he despised Judas on
+               account of his presumption: in order that you may learn that it is especially those
+               who communicate in the divine mysteries without being worthy that the devil
+               constantly assails and attacks, as he attacked Judas then. For privileges benefit
+               those who are worthy: but, when men enjoy them undeservedly, they expose them to
+               greater punishment. And these things I do not say in order to frighten, but in order
+               to secure." As I said before, the intention of the disciplinary regulations of the
+               canons is to preserve the visible appearance of the church blameless. For this reason
+               they forbade those also who are possessed by an invasion of demons to communicate in
+               the holy mysteries: but invisible and secret afflictions [they left] to the <pb
+                  n="191"/> conscience of each man. [...] </p>
+         </div>
+      </body>
+  </text>
+</TEI>

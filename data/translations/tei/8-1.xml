@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title ref="http://syriaca.org/work/3077">To Stephen the Reader</title>
+            <author ref="http://syriaca.org/person/51">Severus of Antioch</author>
+            <sponsor>Center of Digital Humanities Research, Texas A&amp;M University</sponsor>
+            <principal>Daniel L. Schwartz</principal>
+            <editor role="editor" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</editor>
+            <respStmt>
+               <resp>XML created by</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</name>
+            </respStmt>
+            <respStmt>
+               <resp>Based on the work of</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#ewbrooks">E. W. Brooks</name>
+            </respStmt>
+            <respStmt>
+               <resp>OCR corrected by</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</name>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition n="1"/>
+         </editionStmt>
+         <publicationStmt>
+            <distributor>
+               <placeName>Center of Digital Humanities Research, College Station, TX, USA</placeName>
+            </distributor>
+            <authority/><!-- FILL IN AFTER DECIDING ON NAME -->
+            <idno/><!-- FILL IN AFTER DECIDING ON URI/URL FORMAT -->
+            <availability>
+               <licence target="http://creativecommons.org/licenses/by/4.0/">
+                  <p>Creative Commons — Attribution 4.0 International — CC BY 4.0</p>
+                  <p>https://creativecommons.org/licenses/by/4.0/</p>
+               </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <editor ref="http://syriaca.org/person/403">
+                     <persName xml:lang="en">
+                        <forename>E. W.</forename>
+                        <surname>Brooks</surname>
+                     </persName>
+                  </editor>
+                  <title type="main" xml:lang="en" level="m">
+                     The Sixth Book of the Select Letters of
+                     <persName ref="http://syriaca.org/person/51">Severus Patriarch of Antioch</persName>
+                     in the Syriac Version of
+                     <persName ref="http://syriaca.org/person/1014">Athanasius of Nisibis</persName>
+                  </title>
+                  <title type="sub" xml:lang="en" level="m">Vol. II (Translation) Part II</title>
+                  <idno type="URI">http://syriaca.org/bibl/669</idno>
+                  <imprint>
+                     <publisher xml:lang="en">Williams and Norgate</publisher>
+                     <pubPlace ref="http://syriaca.org/place/861">Oxford</pubPlace>
+                     <date>1903</date>
+                  </imprint>
+                  <extent>Vol. 4 of 4</extent>
+                  <biblScope unit="vol">2.2</biblScope>
+                  <biblScope unit="page">391-93</biblScope>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <editorialDecl>
+            <p/><!-- FILL IN -->
+         </editorialDecl>
+      </encodingDesc>
+      <profileDesc>
+         <creation>
+            <origDate type="composition"/><!-- FILL IN. La Route Royale dates are probably preferable to Brooks' dates. -->
+         </creation>
+      </profileDesc>
+      <revisionDesc status="draft">
+         <change when="2019-11" who="http://syriaca.org/person.xml#dschwartz">Created file</change>
+      </revisionDesc>
+   </teiHeader>
+  <text>
+      <body>
+         <div type="letter" n="8.1">
+            <head type="main" resp="#compiler">Of the same to Stephen the reader.</head>
+            <head type="sub" resp="#compiler">From those during episcopacy, from the 7th book the
+               392nd letter.</head>
+            <p> I confess that I rejoiced greatly when I received the letter which your
+               religiousness sent me by the <pb n="392"/> magnificent Sergius, the governor of the
+               second people of the Syrians, for two reasons: both because it was yours, and because
+               its contents were what they are. For we have now by experience found the man such as
+               you described him in your words to be: and in this great thanks are due to your
+               God-loving soul. By asking after you have received the discourse produced by us upon
+               the saintly Simeon that we should compose another also in the form of a historical
+               Narrative you seem to me to be doing the same as a covetous and strict lender, who,
+               when he sees that his debtor is unfruitful, desires to receive the principal only,
+               but, when he has received it and seen the gold in his hands, is induced to demand the
+               interest also, which before receiving the principal he despised, determining in a
+               friendly way that his own only should be repaid without increment. Know clearly
+               however that it was our endeavour in that discourse, even while applying ourselves to
+               the festal and laudatory style of composition, not to neglect the historical and
+               narratival aspect also: in order that it might contain both at once, and the hearer
+               might be more gratified at receiving a history adorned with flowers of praises, and
+               at the same time as far as possible not failing in ecclesiastical gravity. That the
+               praises of the saints are read even in <pb n="393"/> churches is witnessed by the
+               discourse of the wise Basil on the forty martyrs, which is read to the people in the
+               city of the men of Berytus, as well as by that of the holy Pamphilus, both there and
+               in the city of the men of Caesarea, which is the metropolis of First Palestine. The
+               laudatory discourse also that was delivered upon Gregory the Wonder-worker we
+               ourselves have known to be read in many churches, and in the royal city itself:
+               similarly also that upon the great Basil. We who are scrutinizers of the laws must do
+               you an injury, and so stop your greedy ears. I think that the preface of the same
+               discourse that we wrote on the same holy Simeon will cause you difficulty, seeing
+               that it is unacceptable to the Byzantines, But it is easy for you to use three or
+               four passages that stand at the beginning, and leave out the things that cause
+               difficulty, and read the rest continuously. But the lawful freedom of speech of your
+               love of God, or rather to say what is more true your confession on behalf of piety,
+               we have heard from others. And you are blessed both in the distinction enjoyed here,
+               and in the expected reward, which is promised to those who have fought well. </p>
+            <trailer>The end.</trailer>
+         </div>      
+      </body>
+  </text>
+</TEI>

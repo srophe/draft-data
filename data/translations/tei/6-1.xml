@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title ref="http://syriaca.org/work/3019">To Eleusinius the bishop</title>
+            <author ref="http://syriaca.org/person/51">Severus of Antioch</author>
+            <sponsor>Center of Digital Humanities Research, Texas A&amp;M University</sponsor>
+            <principal>Daniel L. Schwartz</principal>
+            <editor role="editor" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</editor>
+            <respStmt>
+               <resp>XML created by</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</name>
+            </respStmt>
+            <respStmt>
+               <resp>Based on the work of</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#ewbrooks">E. W. Brooks</name>
+            </respStmt>
+            <respStmt>
+               <resp>OCR corrected by</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</name>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition n="1"/>
+         </editionStmt>
+         <publicationStmt>
+            <distributor>
+               <placeName>Center of Digital Humanities Research, College Station, TX, USA</placeName>
+            </distributor>
+            <authority/><!-- FILL IN AFTER DECIDING ON NAME -->
+            <idno/><!-- FILL IN AFTER DECIDING ON URI/URL FORMAT -->
+            <availability>
+               <licence target="http://creativecommons.org/licenses/by/4.0/">
+                  <p>Creative Commons — Attribution 4.0 International — CC BY 4.0</p>
+                  <p>https://creativecommons.org/licenses/by/4.0/</p>
+               </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <editor ref="http://syriaca.org/person/403">
+                     <persName xml:lang="en">
+                        <forename>E. W.</forename>
+                        <surname>Brooks</surname>
+                     </persName>
+                  </editor>
+                  <title type="main" xml:lang="en" level="m">
+                     The Sixth Book of the Select Letters of
+                     <persName ref="http://syriaca.org/person/51">Severus Patriarch of Antioch</persName>
+                     in the Syriac Version of
+                     <persName ref="http://syriaca.org/person/1014">Athanasius of Nisibis</persName>
+                  </title>
+                  <title type="sub" xml:lang="en" level="m">Vol. II (Translation) Part II</title>
+                  <idno type="URI">http://syriaca.org/bibl/669</idno>
+                  <imprint>
+                     <publisher xml:lang="en">Williams and Norgate</publisher>
+                     <pubPlace ref="http://syriaca.org/place/861">Oxford</pubPlace>
+                     <date>1903</date>
+                  </imprint>
+                  <extent>Vol. 4 of 4</extent>
+                  <biblScope unit="vol">2.2</biblScope>
+                  <biblScope unit="page">359-63</biblScope>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <editorialDecl>
+            <p/><!-- FILL IN -->
+         </editorialDecl>
+      </encodingDesc>
+      <profileDesc>
+         <creation>
+            <origDate type="composition"/><!-- FILL IN. La Route Royale dates are probably preferable to Brooks' dates. -->
+         </creation>
+      </profileDesc>
+      <revisionDesc status="draft">
+         <change when="2019-11" who="http://syriaca.org/person.xml#dschwartz">Created file</change>
+      </revisionDesc>
+   </teiHeader>
+  <text>
+      <body>
+         <div type="letter" n="6.1">
+            <head type="main" resp="#compiler">Of the same to Eleusinius the bishop.</head>
+            <head type="sub" resp="#compiler">From those during episcopacy, from the 1st book the
+               121st letter.</head>
+            <p> Many men after gazing on the likenesses of those whom they love are refreshed and
+               comforted, and think that by this they satisfy their affection. But I, not having
+               fashioned a likeness of your sanctity for myself, but having joined it. to myself, am
+               the more attracted to the picture, and every hour, if I may so Say, am smitten in my
+               soul and yearn in thirst for your delightful and spiritual conversation, and wish to
+               <pb n="360"/> be immediately gratified by speaking with you, and to have again the
+               former joy. But this I am well assured the Giver of all good things will give me and
+               at no distant time. However I rejoiced excessively at the contents of your holiness'
+               epistle, and that the affair of the trial concerning the presbyters in the country
+               did not come upon you as a snare. For it is manifest that, seeing they are still of
+               this disposition, if you meet with them, you will envelop and catch these also in
+               your spiritual nets. You have also described very well and like men who are wise in
+               all things the character of the many-footed Isidore, the unphilosophic and deceitful
+               solitary, who for the destruction of the holy churches, as he thought, emulated the
+               character of the cunning fox, and who composes his outward appearance only to an
+               expression pleasing to everyone, but within carries a smoking firebrand according to
+               the prophetic saying: by which we believe that he will be utterly consumed, and will
+               become fuel for it like faggot-material, and will not be changed into another man but
+               reduced to ashes. As to the man who has just been instituted and holds the prelacy of
+               the royal city, we have learned that he is John called by the name of Florentinus,
+               who held the post of syncellus to him who is dead; who is thought to be inclined to
+               the right opinions, <pb n="361"/> and holds out some pleasing hopes to the orthodox,
+               but is more desirous of adopting a deceitful middle course, and of walking himself
+               also according to that model which Timothy his predecessor adopted in his synodical
+               letter. There are therefore two ways; for we must say briefly what ought to be done
+               as it occurs to my feeble mind. Either you must accept the synodical letter, though
+               it does not contain the same sense as the document of the ten bishops or anathematize
+               the transactions of Chalcedon and the Tome of Leo and those who called and call our
+               one Lord and God Jesus Christ two natures after the union; or you must write what is
+               repugnant to you and say that if he show himself such and such you will accept
+               communion with him. But I am wondering whether a man who accepts a synodical letter
+               is not obliged to communicate with those who bring this to him. But the advice which
+               I have given you is that which I also am endeavouring to carry out, God supporting my
+               feebleness. Know that the God-loving bishop Soteric also is going up to the royal
+               among cities with a similar purpose to that which you too declare in your letter. For
+               the saintly bishop Entrechius has done him much good since the time that he has been
+               more thoroughly on our side. Now however, now that he also has learned that Timothy
+               is dead and his successor has been appointed, he wishes to put off the journey, and
+               <pb n="362"/> see by events themselves what position the man who now presides over
+               the royal city is inclined to take up, and so prepare himself for the questions that
+               will arise. But he too intends, if he stay where he is, not to accept the synodical
+               letter, unless it contain something that tends to heal the division of the holy
+               churches. But keep this to yourself and tell no man whatever. But know this too: that
+               the anathema which has been reported to have been pronounced against us by him who
+               has now been instituted is quite untrue. Certain men, in number very few, tried to
+               make use of such rumours, and they were exposed and it became known by whom they were
+               employed to do this: and the bishop who has now been instituted never consented to
+               turn his attention to the rumours put about by those men: but on the next day we hear
+               that some of them were actually arrested. However on New Sunday so great an assembly
+               of orthodox was purposely collected that those who were collected by a gleaning
+               process by the heretics did not dare even to appear, but only to slink away and hide,
+               and they were in great fear, and by flight gained freedom from all harm. The
+               magnificent and believing silentiary Conon, when in conversation with him who now
+               ranks before me, found that with regard to unity and with regard to our meanness he
+               said such things as those who are <pb n="363"/> exceedingly orthodox would say. But I
+               am wondering, as I also said before, whether he will withdraw from the middle
+               position which inclines to both sides. My reason for writing about the anathema that
+               has been reported was that I wish merely to inform you of the sequence of events:
+               otherwise I take no account whatever of such things. Anathemas by men who are not
+               united in communion with those who hold right opinions, but walk contrary to us, are
+               similar to what one would consider those to be that were pronounced by the Arians
+               against the holy Athanasius and decreed his complete deposition without touching his
+               faith at all) He who on account of his sound faith was able to hear from Christ the
+               words, "Thou art Cephas and upon this rock I will build my church," has consequently
+               also the power of binding and loosing, inasmuch as the heavenly mandate also
+               sanctions such things. But, if he is carried beyond this rock, it is manifest that
+               such a man does not escape detection as beating the air, as the Apostle says. </p>
+            <trailer>The end.</trailer>
+         </div>      
+      </body>
+  </text>
+</TEI>

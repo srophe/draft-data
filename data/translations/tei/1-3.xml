@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title ref="http://syriaca.org/work/3025">To Solon, Bishop of Seleucia in Isauria</title>
+            <author ref="http://syriaca.org/person/51">Severus of Antioch</author>
+            <sponsor>Center of Digital Humanities Research, Texas A&amp;M University</sponsor>
+            <principal>Daniel L. Schwartz</principal>
+            <editor role="editor" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</editor>
+            <respStmt>
+               <resp>XML created by</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</name>
+            </respStmt>
+            <respStmt>
+               <resp>Based on the work of</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#ewbrooks">E. W. Brooks</name>
+            </respStmt>
+            <respStmt>
+               <resp>OCR corrected by</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</name>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition n="1"/>
+         </editionStmt>
+         <publicationStmt>
+            <distributor>
+               <placeName>Center of Digital Humanities Research, College Station, TX, USA</placeName>
+            </distributor>
+            <authority/><!-- FILL IN AFTER DECIDING ON NAME -->
+            <idno/><!-- FILL IN AFTER DECIDING ON URI/URL FORMAT -->
+            <availability>
+               <licence target="http://creativecommons.org/licenses/by/4.0/">
+                  <p>Creative Commons — Attribution 4.0 International — CC BY 4.0</p>
+                  <p>https://creativecommons.org/licenses/by/4.0/</p>
+               </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <editor ref="http://syriaca.org/person/403">
+                     <persName xml:lang="en">
+                        <forename>E. W.</forename>
+                        <surname>Brooks</surname>
+                     </persName>
+                  </editor>
+                  <title type="main" xml:lang="en" level="m">
+                     The Sixth Book of the Select Letters of
+                     <persName ref="http://syriaca.org/person/51">Severus Patriarch of Antioch</persName>
+                     in the Syriac Version of
+                     <persName ref="http://syriaca.org/person/1014">Athanasius of Nisibis</persName>
+                  </title>
+                  <title type="sub" xml:lang="en" level="m">Vol. II (Translation) Part I</title>
+                  <idno type="URI">http://syriaca.org/bibl/668</idno>
+                  <imprint>
+                     <publisher xml:lang="en">Williams and Norgate</publisher>
+                     <pubPlace ref="http://syriaca.org/place/861">Oxford</pubPlace>
+                     <date>1903</date>
+                  </imprint>
+                  <extent>Vol. 3 of 4</extent>
+                  <biblScope unit="vol">2.1</biblScope>
+                  <biblScope unit="page">16-23</biblScope>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <editorialDecl>
+            <p/><!-- FILL IN -->
+         </editorialDecl>
+      </encodingDesc>
+      <profileDesc>
+         <creation>
+            <origDate type="composition"/><!-- FILL IN. La Route Royale dates are probably preferable to Brooks' dates. -->
+         </creation>
+      </profileDesc>
+      <revisionDesc status="draft">
+         <change when="2019-11" who="http://syriaca.org/person.xml#dschwartz">Created file</change>
+      </revisionDesc>
+   </teiHeader>
+  <text>
+      <body>
+         <div type="letter" n="1.3">
+            <head type="main" resp="#compiler">Of the same to the same Solon, bishop and metropolitan
+               of Seleucia in Isauria.</head>
+            <head type="sub" resp="#compiler">From those during episcopacy, from the 2nd book the 24th
+               letter.</head>
+            <p> The letter of your religiousness was enough to bring even those who are not easily
+               roused to wrath into a state of anger and indignation. But for our. part, because we
+               are accustomed to endure such things philosophically, especially when they are done
+               and <pb n="17"/> said by honoured and beloved men like you, we have thought it right
+               in this instance also not to strive with contentious words, but rather, as far as
+               possible, in consonance with the actual truth to write such things as are in accord
+               with the judgments of God, and to show that we are free from all cause of blame on
+               your part. Callistus was not dragged before us by anyone upon any new charges being
+               made against him by you. Then he would have had ground for complaint, inasmuch as
+               discipline would, as you say, have been violated, and a judgment and cause that
+               belonged to the holy throne of the metropolitan would have been forcibly removed
+               before examination or pardon by being called up, as one may say, to the exaltation
+               and height of the patriarchal and apostolic throne. But, if the matters upon which
+               the party of Hilarian and Musonius made charges against Callistus were examined and
+               investigated while your holiness was in this great city, how comes it that the
+               transaction does not lie beyond the reach of your objections? Nay, how can you avoid
+               praising us if you again recall to your memory how I turned benevolent ears to such
+               faults, and to the bitter attacks of the accusers, and that with much wise moderation
+               we tempered the vehemence of those men, and the gravity of the accusations in which
+               he was involved; and that after this we further in some sort sent a request, which
+               otherwise would not have beseemed us, to each of the bishops, asking them, <pb n="18"
+               /> inasmuch as he had repented, to vote unanimously for the forgiveness which was to
+               be granted him; and, upon our showing such solicitude, he received letters from each
+               of the bishops, and we received these with joy, and immediately the things written
+               were read, and the decree of pardon followed? But, as for the matter which is now
+               thought by Hilarian to be connected with the same subject, how will it be suited for
+               the hearing of your love of God, and that when the sin was directed against me, I
+               mean that of the forged letter? For I do not know if anyone else among men, or an
+               angel from heaven, will come and disprove its spuriousness, seeing that its prejudice
+               is so manifest, and that Hilarian's handwriting also, when compared with his other
+               signatures, utters, so to speak, a voice and proclaims the fiction. Therefore look
+               into these things with carefulness and sincere God-loving thought, and consider
+               whether you are not making a preposterous request, viz., that the patriarch should
+               receive judgment from your love of God in a case of insults or sins that were
+               directed against him, and that in the words sung by everyone you may turn things
+               upside down; and whether we ourselves have not now the right to use your words, "I am
+               insulted and contemned." I forbear to mention that, even after the conviction from
+               the letter, Paul, the God-loving bishop of the city of the Olbians, came here, and
+               bore witness and said that Hilarian said in the presence of his love of God that <pb
+                  n="19"/> with Musonius' assent he wrote that the diaconate ought to be restored to
+               Callistus, but that he should not in addition be archdeacon also, and hold the first
+               place." But what is the modest defence to these things, which is given even by your
+               sanctity (for this is the wonderful thing)? "Callistus is not subject to reproof for
+               saying of himself that he does not communicate with us in the matter of the mention
+               of Peter and Palladius, who are by a violation of strict accuracy named in the sacred
+               tablets, and in the matter of communion with the God-loving bishop of the city of the
+               Hierapolitans, Philoxenus, who names a man who signed the things unlawfully done at
+               Chalcedon." May the all-holy soul of Constantine hear these words, against whom that
+               wicked man armed himself, both by writing to those on the other side and by creeping
+               into the archive-house, and arming and inciting the governor of the province to do
+               everything that could bow down his venerable old age and subvert the orthodox faith!
+               For so much did he infuriate him, I mean the governor of Isauria at that time, that
+               death alone put a stop to his fury against piety. May Solon also, who succeeded to
+               Constantine's see, hear these words! and let him hold Callistus as a teacher of zeal
+               for strict accuracy, because after intolerable impieties he has of his own accord
+               come forth as an unlawful champion on behalf of the laws of the church, one who
+               sprang suddenly from the ground <pb n="20"/> like the giants fabled in legends.
+               However let Callistus stand upon this peak, there is no objection, and let Solon go
+               up with him. Only let them stay in this citadel, and not immediately come down and
+               say, 'All the cities of Isauria have also introduced into the sacred tablets the
+               names of those who unlawfully signed at Chalcedon"; for it is time for me also to say
+               what the well-disposed robber, who was crucified with our Lord and Saviour Christ,
+               said to the blasphemous robber, "Dost not even thou fear God, seeing thou art in the
+               same judgment?" These things we for our part say out of an abundant choice. But
+               anyone who makes a careful investigation will find that your love of God has not
+               maintained the order of things which you took over from Constantine the metropolitan
+               who is among the saints, but that your feathers have gradually fallen off after the
+               manner of a bird, while our meanness has carried out a gradual progress, and has in
+               no way fallen short of the beginning previously made. Indeed every one of those who
+               were ordained by us, whether he incurred dangers or was free from danger, removed the
+               names under suspicion. For neither is the statement made by your religiousness true,
+               I mean that the God-loving Mammian bishop of the city of the Damascenes mentions the
+               name of one who signed. Immediately upon his setting foot in the city. and
+               sacrificing the first sacrifice and at the same time with it he offered to God the
+               legal omission of his <pb n="21"/> name. But the omission of the mention of such men
+               as Peter and Palladius we for our part have for the present not promised to any man.
+               The things that must be yielded to junctions or general unions of God's holy churches
+               are both regulated and defined, and we never stretch ourselves to things outside the
+               bounds of moderation, "being vainly puffed up," as the apostle says, and wandering
+               outside the royal road. If we had in the beginning yielded this difficulty in these
+               other names to you who did this, but had stopped at this one only, that of those who
+               signed as you say several times, how could I on my own authority have laid either
+               upon myself-or upon those who have in no way attained to this strictness "heavy
+               burdens and grievous to be borne," according to the Gospel saying, which injure the
+               right teaching of the faith and upset everything owing to the stress and difficulty
+               of the present time? The things done in the case of Callistus are therefore as stated
+               above. But your love of God ought also to reflect upon the accusations that Musonius
+               and Hilarian brought in the case of the devout Eustace, and how we for our part dealt
+               with the affair in a proper way and in a seemly fashion; and to see with your eyes
+               how honourable is the place that you hold before us, though you show an appearance of
+               forgetting. Indeed I know clearly that in the matters in which it is my duty to
+               trouble my mind: have not relaxed at all But, if any man seeks to be burdened <pb
+                  n="22"/> by God's laws, "we have no such custom, neither the churches of God." But
+               may the Lord be witness. for me of my words and of the feelings of my heart, that I
+               am still even now praying that Callistus may be found upon manifest proofs to be
+               innocent of the charges made against him, as the previous proceedings also and the
+               various measures taken by me in his case showed! But, if he shall neglect the right
+               road of defence and take refuge in an accuracy of names that does not exist, and in
+               the fact that he does not communicate with us, it is time for me to say to him
+               appropriately the words of Jeremiah, "'If thou whiten thyself with natron and take
+               thee much soap, thy sins have scarred thee before me' saith the Lord." But neither
+               will the religious Hilarian escape from the strict execution of the canons, if he be
+               proved to be lying. A certain term of days has been fixed for him, and this has been
+               set down in writing; and, if he fail to appear and make no defence to the accusation
+               against him, Callistus will be released from the interdict, and the position of a man
+               under a charge will rightly pass to him, as disturbing the discipline of the Church.
+               <add><emph>And after other things.</emph></add> But you must believe that,
+               after I had given the letter to the devout Stephen, something that had been omitted
+               came into my mind, I mean, to tell you the time within which the religious bishop
+               Hilarian is to come, or else the things stated in the letter about Callistus and
+               about him will be carried <pb n="23"/> out. The time is reckoned from to-day, and
+               extends to the end of the month of September. </p>
+            <trailer>The end.</trailer>
+         </div>
+      </body>
+  </text>
+</TEI>

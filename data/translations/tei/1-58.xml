@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title ref="http://syriaca.org/work/3119">To Didymus the Bishop</title>
+            <author ref="http://syriaca.org/person/51">Severus of Antioch</author>
+            <sponsor>Center of Digital Humanities Research, Texas A&amp;M University</sponsor>
+            <principal>Daniel L. Schwartz</principal>
+            <editor role="editor" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</editor>
+            <respStmt>
+               <resp>XML created by</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</name>
+            </respStmt>
+            <respStmt>
+               <resp>Based on the work of</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#ewbrooks">E. W. Brooks</name>
+            </respStmt>
+            <respStmt>
+               <resp>OCR corrected by</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</name>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition n="1"/>
+         </editionStmt>
+         <publicationStmt>
+            <distributor>
+               <placeName>Center of Digital Humanities Research, College Station, TX, USA</placeName>
+            </distributor>
+            <authority/><!-- FILL IN AFTER DECIDING ON NAME -->
+            <idno/><!-- FILL IN AFTER DECIDING ON URI/URL FORMAT -->
+            <availability>
+               <licence target="http://creativecommons.org/licenses/by/4.0/">
+                  <p>Creative Commons — Attribution 4.0 International — CC BY 4.0</p>
+                  <p>https://creativecommons.org/licenses/by/4.0/</p>
+               </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <editor ref="http://syriaca.org/person/403">
+                     <persName xml:lang="en">
+                        <forename>E. W.</forename>
+                        <surname>Brooks</surname>
+                     </persName>
+                  </editor>
+                  <title type="main" xml:lang="en" level="m">
+                     The Sixth Book of the Select Letters of
+                     <persName ref="http://syriaca.org/person/51">Severus Patriarch of Antioch</persName>
+                     in the Syriac Version of
+                     <persName ref="http://syriaca.org/person/1014">Athanasius of Nisibis</persName>
+                  </title>
+                  <title type="sub" xml:lang="en" level="m">Vol. II (Translation) Part I</title>
+                  <idno type="URI">http://syriaca.org/bibl/668</idno>
+                  <imprint>
+                     <publisher xml:lang="en">Williams and Norgate</publisher>
+                     <pubPlace ref="http://syriaca.org/place/861">Oxford</pubPlace>
+                     <date>1903</date>
+                  </imprint>
+                  <extent>Vol. 3 of 4</extent>
+                  <biblScope unit="vol">2.1</biblScope>
+                  <biblScope unit="page">176-78</biblScope>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <editorialDecl>
+            <p/><!-- FILL IN -->
+         </editorialDecl>
+      </encodingDesc>
+      <profileDesc>
+         <creation>
+            <origDate type="composition"/><!-- FILL IN. La Route Royale dates are probably preferable to Brooks' dates. -->
+         </creation>
+      </profileDesc>
+      <revisionDesc status="draft">
+         <change when="2019-11" who="http://syriaca.org/person.xml#dschwartz">Created file</change>
+      </revisionDesc>
+   </teiHeader>
+  <text>
+      <body>
+         <div type="letter" n="1.58">
+            <pb n="176"/>
+            <head type="main" resp="#compiler">Of the same to Didymus the bishop.</head>
+            <head type="sub" resp="#compiler">From those after banishment, from the 3rd book the 90th
+               letter.</head>
+            <p> I have learned with accuracy the whole story of the devout deacon Sannus: and how
+               before coming to the see where your love of God is priest he lived an indiscriminate
+               or disordered life, and how you brought him back to devout habits, and how you laid
+               down an injunction for him to keep. Now after examining the whole matter I have found
+               that, because he appropriated to himself some small sum which formed part of the
+               revenue, you were wroth and angry with him, and removed him from the charge with
+               which he had been entrusted. Therefore I beg you to receive this man, and place him
+               in the same rank, without any difference whatever. If by careful observance he
+               observed all the other points on which reform was difficult, and gave up the
+               long-standing practice of disorderly habits, which is like a necessity of nature, and
+               was converted to a devout life, and took upon him the character proper to deacons,
+               let us not upset everything on account of a sin in one single point: for it is
+               impossible for everything to be reformed at once. This is the practice of teachers
+               also, gently to bear with pupils once and twice and many times, when they are at
+               fault and do not repeat without mistake, until they attain to perfection. Physicians
+               also after the same fashion, when they warn patients to abstain from things <pb
+                  n="177"/> that are pleasant and harmful, are often defeated and grant them
+               indulgences, allowing them to taste some of the things that they like: and they do
+               not in every point insist upon strict observance of the irksome methods demanded by
+               science, but they treat the patient in accordance with what is possible. This method
+               of gradual treatment and cure was shown in a figurative manner by our Lord and God
+               Jesus Christ also in the Gospels. When He might have healed, one of the blind men who
+               were brought to Him by word only, as He did in the case of that leper, saying in a
+               manner befitting God, "I will be thou clean," and immediately upon the word completed
+               the cure, He cured him with a certain delay and procrastination. For "He led him," he
+               says, "out of the village. And, when He had spat on his eyes, He put His hands upon
+               him and was asking him if he saw aught. And, his eyes having been opened, he said, 'I
+               see the men walking like trees.' Then He put His hands again upon his eyes and his
+               sight was restored and his eyes were opened, and he saw everything clearly."
+               Therefore He that is our God and the instructor of our souls by working this cure
+               with a certain wise delay instructs us that the bishops in His holy churches, who are
+               His representatives, ought to make use of gradual modes of treatment in order to
+               bring those whose minds are blinded to the light, until their eyes are gradually
+               opened and they see the rays of truth clearly. <pb n="178"/> Accordingly do you also
+               adopt this plan, both in this present affair and in others that happen after the same
+               pattern. </p>
+            <trailer>The end.</trailer>
+         </div>
+      </body>
+  </text>
+</TEI>

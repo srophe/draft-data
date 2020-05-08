@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title ref="http://syriaca.org/work/3141">To Andrew the Reader and Notary</title>
+            <author ref="http://syriaca.org/person/51">Severus of Antioch</author>
+            <sponsor>Center of Digital Humanities Research, Texas A&amp;M University</sponsor>
+            <principal>Daniel L. Schwartz</principal>
+            <editor role="editor" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</editor>
+            <respStmt>
+               <resp>XML created by</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</name>
+            </respStmt>
+            <respStmt>
+               <resp>Based on the work of</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#ewbrooks">E. W. Brooks</name>
+            </respStmt>
+            <respStmt>
+               <resp>OCR corrected by</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#dschwartz">Daniel L. Schwartz</name>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition n="1"/>
+         </editionStmt>
+         <publicationStmt>
+            <distributor>
+               <placeName>Center of Digital Humanities Research, College Station, TX, USA</placeName>
+            </distributor>
+            <authority/><!-- FILL IN AFTER DECIDING ON NAME -->
+            <idno/><!-- FILL IN AFTER DECIDING ON URI/URL FORMAT -->
+            <availability>
+               <licence target="http://creativecommons.org/licenses/by/4.0/">
+                  <p>Creative Commons — Attribution 4.0 International — CC BY 4.0</p>
+                  <p>https://creativecommons.org/licenses/by/4.0/</p>
+               </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <editor ref="http://syriaca.org/person/403">
+                     <persName xml:lang="en">
+                        <forename>E. W.</forename>
+                        <surname>Brooks</surname>
+                     </persName>
+                  </editor>
+                  <title type="main" xml:lang="en" level="m">
+                     The Sixth Book of the Select Letters of
+                     <persName ref="http://syriaca.org/person/51">Severus Patriarch of Antioch</persName>
+                     in the Syriac Version of
+                     <persName ref="http://syriaca.org/person/1014">Athanasius of Nisibis</persName>
+                  </title>
+                  <title type="sub" xml:lang="en" level="m">Vol. II (Translation) Part II</title>
+                  <idno type="URI">http://syriaca.org/bibl/669</idno>
+                  <imprint>
+                     <publisher xml:lang="en">Williams and Norgate</publisher>
+                     <pubPlace ref="http://syriaca.org/place/861">Oxford</pubPlace>
+                     <date>1903</date>
+                  </imprint>
+                  <extent>Vol. 4 of 4</extent>
+                  <biblScope unit="vol">2.2</biblScope>
+                  <biblScope unit="page">413-17</biblScope>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <editorialDecl>
+            <p/><!-- FILL IN -->
+         </editorialDecl>
+      </encodingDesc>
+      <profileDesc>
+         <creation>
+            <origDate type="composition"/><!-- FILL IN. La Route Royale dates are probably preferable to Brooks' dates. -->
+         </creation>
+      </profileDesc>
+      <revisionDesc status="draft">
+         <change when="2019-11" who="http://syriaca.org/person.xml#dschwartz">Created file</change>
+      </revisionDesc>
+   </teiHeader>
+  <text>
+      <body>
+         <div type="letter" n="8.5">
+            <pb n="413"/>
+            <head type="main" resp="#compiler">Of the same to Andrew the reader and notary.</head>
+            <head type="sub" resp="#compiler">From those after banishment, from the 9th book the 61st,
+               51st letter.</head>
+            <p> The letter of your devoutness which has now been brought, I received on the last day
+               of the month of July, on which was the commemoration of the saintly Timothy, who was
+               archbishop of the city of the Alexandrines, who completed a long residence in exile
+               after the manner of a martyr, and of King Theodosius the younger, piously deceased,
+               who in zeal and in the maturity of his intellect surpassed all who reigned before
+               him: to whose prayers I also ascribed the receipt of the letter, since I had been
+               expecting it for many days, and I was disturbed by various anxieties, and I was
+               anxious lest it too had been overlooked and lost. <add><emph>And after other
+                  things.</emph></add> As to John the scribe who threw himself into a river and
+               departed from this life, I am in doubt, and I have no sure decision to give. Know
+               that since the times of Christ's coming in the flesh we find in church histories that
+               this is allowed to women, to remove themselves I mean from this life, and throw
+               themselves on to rocks or into water: on account of the weakness of their nature, and
+               the fact that they are exposed to double danger, that of the pollution of the body I
+               mean, and that of denial of the faith: but in the case of men we have nowhere known
+               this principle to have been accepted or <pb n="414"/> sanctioned. But it is written
+               about one of the holy Maccabean martyrs that the torturers thought he was drawing
+               back, and that he was showing signs of change: and upon their releasing him for a
+               short time he leaped upon the implements of torment glowing from the fire and the
+               instruments of torture, and separated his soul from his body and flew to heaven.
+               Therefore, what has thus happened must certainly be judged according to the
+               disposition of his heart and the character of the words that John said. But may the
+               God of mercy, who desires our salvation rather than our destruction, grant him the
+               portion of those that are saved! Indeed the holy John the bishop not only treats such
+               a death as a subject of praise in the case of the holy Pelagia the martyr, but also
+               pronounces a festal discourse over three other women, I mean Domnina and Prosdocia
+               and Berenice, who by reason of the urgent dangers to which they were exposed threw
+               themselves into the waves of the Euphrates. Eusebius also in his Church History
+               recorded acts like these on the part of females. <add><emph>And after other
+                  things.</emph></add> But you did well in sending <foreign>isa</foreign> or
+               copies of the synodical letter and of the other letter to those in the East, for
+               their comfort and establishment in the faith. <add><emph>And again after other
+                  things.</emph></add> But the fact that <pb n="415"/> you have continued to
+               reside at Alexandria we also regard as the effect of great prayer, although I am in
+               no small degree weary, since I write letters to everyone with my own hands, and fill
+               the place of a notary, and I am moreover annoyed at the confusion of the letters,
+               since my handwriting is ill-regulated, although the recipients of them are good
+               believers. If you are obliged to come to us, seek the lord James the man of the
+               count's retinue (?), and he will appear before you more quickly than words can
+               express, and with God's help you will be free from care in other things.
+               <add><emph>And again after other things.</emph></add> But as for those who,
+               after knowing of the death of the wicked Gaian, hold assemblies in which a dead
+               service is performed in his name, and commit impieties like those of the heathen, who
+               celebrate symbolic services in honour of dead men as of gods, it is quite clear that
+               some divine wrath of no gentle kind will come upon them in common, as may be inferred
+               from the divine scriptures. But may God grant them to be roused from their error, and
+               to be converted from their recklessness while there is time! As to the passage in the
+               letter addressed to father John the son of Aphthonia which you say was a difficulty
+               to you, it is a perfectly recognised construction, and it ought not after such long
+               consideration to have baffled you. After the conjunction "indeed" the conjunction
+               "but" is used, either immediately, or after other things <pb n="416"/> that have been
+               said in a parenthesis: as is also to be seen clearly apparent in the place that was a
+               difficulty to you. It stands thus: "And let these things indeed be both conceived and
+               understood in this way: and let them keep us away indeed from things that are evil,
+               but let them lead us to the hope of things that are excellent." If we inquire into
+               things that are so well recognised, it will even give rise to an accusation of
+               foolish speaking among those who are versed in outside learning. Such constructions
+               may be found plentifully used, both in every one of the ancients, and in the holy
+               fathers. For such a construction is a piece of fine and artistic composition. For
+               instance, an expression of the holy Basil, taken from the letter to Amphilochius
+               about the Holy Spirit, follows so to speak in the very track and confirms what I say.
+               "Therefore the names indeed are of exalted nature and great like these, and names
+               that have not indeed any excess of glory. But of what kind are the operations?
+               Ineffable indeed on account of their greatness, but innumerable on account of their
+               abundance." You notice, I think, how the doctor after saying "Therefore the names
+               indeed are like these," again employed another conjunction "indeed", saying "names
+               that have not indeed any excess of glory." But this clause is a parenthesis, and the
+               sentence composed by him fits together as if it had never been inserted at all: as if
+               he had said, "There<pb n="417"/>fore the names indeed are of exalted nature and great
+               like these. But of what kind are the operations? Ineffable indeed on account of their
+               greatness, but innumerable on account of their abundance." Since this book was found
+               lying at hand by me, I have quoted this to you from it. If it had not been so, as I
+               said before, one may find similar constructions like showers of rain in every book. </p>
+            <trailer>Not the end.</trailer>
+         </div>      
+      </body>
+  </text>
+</TEI>

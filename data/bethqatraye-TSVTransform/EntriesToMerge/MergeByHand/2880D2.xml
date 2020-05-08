@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://raw.githubusercontent.com/srophe/draft-data/master/data/schemaPlaceDraftData/out/syriacaPlacesTEI.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/srophe/draft-data/master/data/schemaPlaceDraftData/out/syriacaPlacesTEI.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title level="a" xml:lang="en">Mazun - <foreign xml:lang="ar">مازون</foreign>
+        </title>
+        <title level="m" xml:lang="en">The Beth Qaṭraye Gazetteer</title>
+        <sponsor>Beth Mardutho: The Syriac Institute</sponsor>
+        <funder>Qatar National Research Foundation</funder>
+        <principal>Haya Al Thani</principal>
+        <editor role="general" ref="http://syriaca.org/documentation/editors.xml#halthani">Haya Al Thani</editor>
+        <editor role="general" ref="http://syriaca.org/documentation/editors.xml#sal-murikhi">Saif al-Murikhi</editor>
+        <editor role="general" ref="http://syriaca.org/documentation/editors.xml#aabu-husayn">Abdulrahim Abu-Husayn</editor>
+        <editor role="general" ref="http://syriaca.org/documentation/editors.xml#achamseddine">Abdul Rahman Chamseddine</editor>
+        <editor role="general" ref="http://syriaca.org/documentation/editors.xml#mkozah">Mario Kozah</editor>
+        <editor role="general" ref="http://syriaca.org/documentation/editors.xml#tcarlson">Thomas A. Carlson</editor>
+        <editor role="technical" ref="http://syriaca.org/documentation/editors.xml#dmichelson">David A. Michelson</editor>
+        <editor role="technical" ref="http://syriaca.org/documentation/editors.xml#wpotter">William L. Potter</editor>
+        <editor role="creator" ref="http://syriaca.org/documentation/editors.xml#tscheunchen">Tobias Scheunchen</editor>
+        <respStmt>
+          <resp>Isho’yahb III data collection by</resp>
+          <name ref="http://syriaca.org/documentation/editors.xml#mkozah">Mario Kozah</name>
+        </respStmt>
+        <respStmt>
+          <resp>Data merging and XML by</resp>
+          <name ref="http://syriaca.org/documentation/editors.xml#wpotter">William L. Potter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition n="1.0"/>
+      </editionStmt>
+      <publicationStmt>
+        <authority>Beth Mardutho: The Syriac Institute</authority>
+        <idno type="URI">http://bqgazetteer.bethmardutho.org/place/2880/tei</idno>
+        <availability>
+          <licence target="http://creativecommons.org/licenses/by/3.0/">
+            <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
+          </licence>
+        </availability>
+        <date>2019-11-13-06:00</date>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Born digital.</p>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <editorialDecl>
+        <p>This record created following the guidelines for TEI encoding established by Syriaca.org. Documentation available at: <ref target="http://syriaca.org/documentation">http://syriaca.org/documentation</ref>.</p>
+        <p>The <gi>state</gi> element of @type="existence" indicates the period for which this place was in use as a place of its indicated type (e.g. an inhabited settlement, a functioning monastery or church, an administrative province).  Natural features always in existence have no <gi>state</gi> element of @type="existence".</p>
+      </editorialDecl>
+      <classDecl>
+        <taxonomy>
+          <category xml:id="srophe-headword">
+            <catDesc>The name used by the Srophé App for document titles, citation, and disambiguation. These names have been created according to the Syriac.org guidelines for headwords: <ref target="http://syriaca.org/documentation/headwords.html">http://syriaca.org/documentation/headwords.html</ref>.</catDesc>
+          </category>
+        </taxonomy>
+      </classDecl>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <p>Language codes used in this record follow the Syriaca.org guidelines. Documentation available at: 
+                  <ref target="http://syriaca.org/documentation/langusage.xml">http://syriaca.org/documentation/langusage.xml</ref>
+        </p>
+      </langUsage>
+    </profileDesc>
+    <revisionDesc status="draft">
+      <change who="http://syriaca.org/documentation/editors.xml#wpotter" when="2019-11-13-06:00">CREATED: place</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <listPlace>
+        <place type="diocese">
+          <placeName xml:id="name2880-1" xml:lang="en" syriaca-tags="#syriaca-headword" resp="http://bqgazetteer.bethmardutho.org">Mazun</placeName>
+          <placeName xml:id="name2880-2" xml:lang="ar" syriaca-tags="#syriaca-headword" resp="http://bqgazetteer.bethmardutho.org">مازون</placeName>
+          <placeName xml:id="name2880-3" xml:lang="en">Māzūn</placeName>
+          <placeName xml:id="name2880-4" xml:lang="syr" source="#bib2880-2">ܚܛܐ</placeName>
+          <placeName xml:id="name2880-5" xml:lang="la" source="#bib2880-3">Mazun</placeName>
+          <desc type="abstract" xml:id="abstract2880-1" xml:lang="en">A former diocese in the region of what is now Oman.</desc>
+          <desc xml:lang="syr">
+            <quote source="#bib2880-1">ܘܬܪܝܢ ܒܠܚܘܕ ܐܘܕ̈ܐ ܡܚܪ̈ܟܐ ܐܫܬܚܪܘ ܡܢ ܐܠܦ̈ܐ ܘܪ̈ܒܘܬܐ ܕܒܡܪܢ (ܕܒܡܪܘܢ)</quote>
+          </desc>
+          <idno type="URI">http://bqgazetteer.bethmardutho.org/place/2880</idno>
+          <idno type="URI">http://syriaca.org/place/2880</idno>
+          <bibl xml:id="bib2880-1">
+            <ptr target="http://syriaca.org/bibl/6YEH5ZPJ"/>
+            <citedRange unit="pp">72</citedRange>
+          </bibl>
+          <bibl xml:id="bib2880-2">
+            <ptr target="http://syriaca.org/bibl/6YEH5ZPJ"/>
+            <citedRange unit="pp">75, 87</citedRange>
+          </bibl>
+          <bibl xml:id="bib2880-3">
+            <ptr target="http://syriaca.org/bibl/6YEH5ZPJ"/>
+            <citedRange unit="pp">49</citedRange>
+          </bibl>
+        </place>
+      </listPlace>
+    </body>
+  </text>
+</TEI>

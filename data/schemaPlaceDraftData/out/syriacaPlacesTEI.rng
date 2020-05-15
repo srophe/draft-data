@@ -2,11 +2,11 @@
 <grammar xmlns:xlink="http://www.w3.org/1999/xlink"
          xmlns:tei="http://www.tei-c.org/ns/1.0"
          xmlns:teix="http://www.tei-c.org/ns/Examples"
-         xmlns:srophe="https://srophe.app"
          xmlns="http://relaxng.org/ns/structure/1.0"
+         xmlns:srophe="https://srophe.app"
          datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"
          ns="http://www.tei-c.org/ns/1.0"><!--
-Schema generated from ODD source 2020-05-04T21:52:47Z. .
+Schema generated from ODD source 2020-05-15T18:50:05Z. .
 TEI Edition: Version 3.6.0. Last updated on
 	16th July 2019, revision daa3cc0b9
 TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 3.6.0/
@@ -4504,6 +4504,8 @@ Suggested values include: 1] main; 2] sub (subordinate); 3] alt (alternate); 4] 
             <choice>
                <value>building</value>
                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">A construction for which there is no narrower category, such as a church or mosque. Examples of this type include palaces and named city gates.</a:documentation>
+               <value>cemetery</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
                <value>church</value>
                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
                <value>composite</value>
@@ -4548,6 +4550,8 @@ Suggested values include: 1] main; 2] sub (subordinate); 3] alt (alternate); 4] 
                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">A building designated for use in pagan worship.</a:documentation>
                <value>unknown</value>
                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">A place whose name is known, but what sort of place it represents is unknown.</a:documentation>
+               <value>valley</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
             </choice>
          </attribute>
          <empty/>

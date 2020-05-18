@@ -1985,6 +1985,11 @@
                   A &lt;location&gt; element of @type="relative" may only contain text and child elements: &lt;placeName&gt;, &lt;measure&gt;, or &lt;offset&gt;.
                 </sch:report>
               </sch:rule>
+              <sch:rule context="//tei:location/tei:placeName">
+                <sch:report test="./@calendar or ./@period or ./@when or ./@notBefore or ./@notAfter or ./@from or ./@to or ./@when-iso or ./@notBefore-iso or ./@notAfter-iso or ./@from-iso or ./@to-iso or ./@when-custom or ./@notBefore-custom or ./@notAfter-custom or ./@from-custom or ./@to-custom or ./@datingPoint or ./@datingMethod">
+                  Date attributes in this context should go on the &lt;location&gt; element and not on the &lt;persName&gt; element.
+                </sch:report>
+              </sch:rule>
             </constraint>
           </constraintSpec>
           <constraintSpec ident="atts-on-location" scheme="schematron">
@@ -2029,6 +2034,12 @@
         </elementSpec>
         
         <elementSpec ident="district" module="namesdates" mode="change">
+          <classes mode="change">
+            <memberOf key="att.datable" mode="delete"/>
+            <memberOf key="att.datable.custom" mode="delete"/>
+            <memberOf key="att.datable.iso" mode="delete"/>
+            <memberOf key="att.datable.w3c" mode="delete"/>
+          </classes>
           <constraintSpec ident="ref-on-district" scheme="schematron">
             <constraint>
               <sch:rule context="//tei:location/tei:district/@ref">
@@ -2047,6 +2058,12 @@
         </elementSpec>
         
         <elementSpec ident="settlement" module="namesdates" mode="change">
+          <classes mode="change">
+            <memberOf key="att.datable" mode="delete"/>
+            <memberOf key="att.datable.custom" mode="delete"/>
+            <memberOf key="att.datable.iso" mode="delete"/>
+            <memberOf key="att.datable.w3c" mode="delete"/>
+          </classes>
           <constraintSpec ident="ref-on-settlement" scheme="schematron">
             <constraint>
               <sch:rule context="//tei:location/tei:settlement/@ref">
@@ -2065,6 +2082,12 @@
         </elementSpec>
         
         <elementSpec ident="region" module="namesdates" mode="change">
+          <classes mode="change">
+            <memberOf key="att.datable" mode="delete"/>
+            <memberOf key="att.datable.custom" mode="delete"/>
+            <memberOf key="att.datable.iso" mode="delete"/>
+            <memberOf key="att.datable.w3c" mode="delete"/>
+          </classes>
           <constraintSpec ident="ref-on-region" scheme="schematron">
             <constraint>
               <sch:rule context="//tei:location/tei:region/@ref">
@@ -2083,6 +2106,12 @@
         </elementSpec>
         
         <elementSpec ident="country" module="namesdates" mode="change">
+          <classes mode="change">
+            <memberOf key="att.datable" mode="delete"/>
+            <memberOf key="att.datable.custom" mode="delete"/>
+            <memberOf key="att.datable.iso" mode="delete"/>
+            <memberOf key="att.datable.w3c" mode="delete"/>
+          </classes>
           <constraintSpec ident="ref-on-country" scheme="schematron">
             <constraint>
               <sch:rule context="//tei:location/tei:country/@ref">
@@ -2101,6 +2130,12 @@
         </elementSpec>
         
         <elementSpec ident="bloc" module="namesdates" mode="change">
+          <classes mode="change">
+            <memberOf key="att.datable" mode="delete"/>
+            <memberOf key="att.datable.custom" mode="delete"/>
+            <memberOf key="att.datable.iso" mode="delete"/>
+            <memberOf key="att.datable.w3c" mode="delete"/>
+          </classes>
           <constraintSpec ident="ref-on-bloc" scheme="schematron">
             <constraint>
               <sch:rule context="//tei:location/tei:bloc/@ref">
@@ -2116,6 +2151,15 @@
           <attList>
             <attDef ident="ref" mode="change" usage="req"/>
           </attList>
+        </elementSpec>
+        
+        <elementSpec ident="offset" module="namesdates" mode="change">
+          <classes mode="change">
+            <memberOf key="att.datable" mode="delete"/>
+            <memberOf key="att.datable.custom" mode="delete"/>
+            <memberOf key="att.datable.iso" mode="delete"/>
+            <memberOf key="att.datable.w3c" mode="delete"/>
+          </classes>
         </elementSpec>
         
         <elementSpec ident="ptr" module="linking" mode="change">

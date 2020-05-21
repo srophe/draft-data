@@ -269,6 +269,36 @@
           </constraint>
         </constraintSpec>
         
+        <constraintSpec ident="ref-on-person" scheme="schematron">
+          <constraint>
+            <sch:rule context="//tei:text//tei:persName/@ref">
+              <sch:let name="personIndex" value="doc('http://wwwb.library.vanderbilt.edu/exist/apps/srophe/documentation/indexes/persons.xml')"></sch:let>
+              <sch:let name="personURIs" value="$personIndex//tei:person/@ref"/>
+              <sch:assert test="
+                every $i in .
+                satisfies $i = $personURIs">
+                This @ref attribute is not a person URI in use in Syriaca.org data. Note that all person URIs take the form 'http://syriaca.org/person/{\d+}' (where {\d+} is a number).
+              </sch:assert>
+              <sch:report test="contains(., ' ')">This @ref may contain only one URI.</sch:report>
+            </sch:rule>
+          </constraint>
+        </constraintSpec>
+        
+        <constraintSpec ident="ref-on-place" scheme="schematron">
+          <constraint>
+            <sch:rule context="//tei:text//tei:placeName/@ref  | tei:district/@ref  | tei:settlement/@ref  | tei:region/@ref  | tei:country/@ref | tei:bloc/@ref">
+              <sch:let name="placeIndex" value="doc('http://wwwb.library.vanderbilt.edu/exist/apps/srophe/documentation/indexes/places.xml')"/>
+              <sch:let name="placeURIs" value="$placeIndex//tei:place/@ref"/>
+              <sch:assert test="
+                every $i in .
+                satisfies $i = $placeURIs">
+                This @ref attribute is not a place URI in use in Syriaca.org data. Note that all place URIs take the form 'http://syriaca.org/place/{\d+}' (where {\d+} is a number).
+              </sch:assert>
+              <sch:report test="contains(., ' ')">This @ref may contain only one URI.</sch:report>
+            </sch:rule>
+          </constraint>
+        </constraintSpec>
+        
         <elementSpec ident="teiHeader" module="header" mode="change">
           <content>
             <sequence minOccurs="1" maxOccurs="1" preserveOrder="true">
@@ -2055,18 +2085,6 @@
             <memberOf key="att.datable.iso" mode="delete"/>
             <memberOf key="att.datable.w3c" mode="delete"/>
           </classes>
-          <constraintSpec ident="ref-on-district" scheme="schematron">
-            <constraint>
-              <sch:rule context="//tei:location/tei:district/@ref">
-                <sch:assert test="matches(., concat('http://syriaca.org/place/', '\d+'))">
-                  The @ref attribute on a &lt;district&gt; element must be a Syriaca.org place URI - 'http://syriaca.org/place/{\d+}' (where {\d+} is a number).
-                </sch:assert>
-                <sch:report test="matches(substring-after(., 'http://syriaca.org/place/'), '\D')">
-                  This @ref attribute must end with a number.
-                </sch:report>
-              </sch:rule>
-            </constraint>
-          </constraintSpec>
           <attList>
             <attDef ident="ref" mode="change" usage="req"/>
           </attList>
@@ -2079,18 +2097,6 @@
             <memberOf key="att.datable.iso" mode="delete"/>
             <memberOf key="att.datable.w3c" mode="delete"/>
           </classes>
-          <constraintSpec ident="ref-on-settlement" scheme="schematron">
-            <constraint>
-              <sch:rule context="//tei:location/tei:settlement/@ref">
-                <sch:assert test="matches(., concat('http://syriaca.org/place/', '\d+'))">
-                  The @ref attribute on a &lt;settlement&gt; element must be a Syriaca.org place URI - 'http://syriaca.org/place/{\d+}' (where {\d+} is a number).
-                </sch:assert>
-                <sch:report test="matches(substring-after(., 'http://syriaca.org/place/'), '\D')">
-                  This @ref attribute must end with a number.
-                </sch:report>
-              </sch:rule>
-            </constraint>
-          </constraintSpec>
           <attList>
             <attDef ident="ref" mode="change" usage="req"/>
           </attList>
@@ -2103,18 +2109,6 @@
             <memberOf key="att.datable.iso" mode="delete"/>
             <memberOf key="att.datable.w3c" mode="delete"/>
           </classes>
-          <constraintSpec ident="ref-on-region" scheme="schematron">
-            <constraint>
-              <sch:rule context="//tei:location/tei:region/@ref">
-                <sch:assert test="matches(., concat('http://syriaca.org/place/', '\d+'))">
-                  The @ref attribute on a &lt;region&gt; element must be a Syriaca.org place URI - 'http://syriaca.org/place/{\d+}' (where {\d+} is a number).
-                </sch:assert>
-                <sch:report test="matches(substring-after(., 'http://syriaca.org/place/'), '\D')">
-                  This @ref attribute must end with a number.
-                </sch:report>
-              </sch:rule>
-            </constraint>
-          </constraintSpec>
           <attList>
             <attDef ident="ref" mode="change" usage="req"/>
           </attList>
@@ -2127,18 +2121,6 @@
             <memberOf key="att.datable.iso" mode="delete"/>
             <memberOf key="att.datable.w3c" mode="delete"/>
           </classes>
-          <constraintSpec ident="ref-on-country" scheme="schematron">
-            <constraint>
-              <sch:rule context="//tei:location/tei:country/@ref">
-                <sch:assert test="matches(., concat('http://syriaca.org/place/', '\d+'))">
-                  The @ref attribute on a &lt;country&gt; element must be a Syriaca.org place URI - 'http://syriaca.org/place/{\d+}' (where {\d+} is a number).
-                </sch:assert>
-                <sch:report test="matches(substring-after(., 'http://syriaca.org/place/'), '\D')">
-                  This @ref attribute must end with a number.
-                </sch:report>
-              </sch:rule>
-            </constraint>
-          </constraintSpec>
           <attList>
             <attDef ident="ref" mode="change" usage="req"/>
           </attList>
@@ -2151,18 +2133,6 @@
             <memberOf key="att.datable.iso" mode="delete"/>
             <memberOf key="att.datable.w3c" mode="delete"/>
           </classes>
-          <constraintSpec ident="ref-on-bloc" scheme="schematron">
-            <constraint>
-              <sch:rule context="//tei:location/tei:bloc/@ref">
-                <sch:assert test="matches(., concat('http://syriaca.org/place/', '\d+'))">
-                  The @ref attribute on a &lt;bloc&gt; element must be a Syriaca.org place URI - 'http://syriaca.org/place/{\d+}' (where {\d+} is a number).
-                </sch:assert>
-                <sch:report test="matches(substring-after(., 'http://syriaca.org/place/'), '\D')">
-                  This @ref attribute must end with a number.
-                </sch:report>
-              </sch:rule>
-            </constraint>
-          </constraintSpec>
           <attList>
             <attDef ident="ref" mode="change" usage="req"/>
           </attList>

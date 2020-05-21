@@ -1866,7 +1866,8 @@
               </sch:rule>
             </constraint>
           </constraintSpec>
-          <constraintSpec ident="langHeadword" scheme="schematron">
+          <!-- This works in the schematron but not when placed into the ODD and converted to RelaxNG. There is a namespace issue I will try to troubleshoot.
+            <constraintSpec ident="langHeadword" scheme="schematron">
             <constraint>
               <sch:rule context="//tei:place/tei:placeName">
                 <sch:let name="langsOfHW" value="//tei:place/tei:placeName[@srophe:tags='#syriaca-headword']/@xml:lang"/>
@@ -1878,7 +1879,7 @@
                 </sch:assert>
               </sch:rule>
             </constraint>
-          </constraintSpec>
+          </constraintSpec>-->
           <attList>
             <attDef ident="xml:id" mode="change">
               <desc>The <gi>placeName</gi> element requires an <att>xml:id</att> attribute whose value is the concatenation of "name", 

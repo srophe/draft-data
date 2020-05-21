@@ -6,7 +6,7 @@
          xmlns="http://relaxng.org/ns/structure/1.0"
          datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"
          ns="http://www.tei-c.org/ns/1.0"><!--
-Schema generated from ODD source 2020-05-21T22:16:37Z. .
+Schema generated from ODD source 2020-05-21T22:58:59Z. .
 TEI Edition: Version 3.6.0. Last updated on
 	16th July 2019, revision daa3cc0b9
 TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 3.6.0/
@@ -2420,7 +2420,7 @@ attributes @target and @cRef may be supplied on <name/>.</report>
             </choice>
          </zeroOrMore>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="syriacaPlacesTEI-note-target-on-note-constraint-rule-17">
+                  id="syriacaPlacesTEI-note-ID-target-on-note-constraint-rule-17">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       xmlns:srophe="https://srophe.app"
@@ -2428,26 +2428,22 @@ attributes @target and @cRef may be supplied on <name/>.</report>
                <sch:assert test="./@target">
                   A &lt;note&gt; element of @type="deprecation" must have a @target attribute.
                 </sch:assert>
+               <sch:assert test="./@xml:id">
+                  A &lt;note&gt; element of @type="deprecation" must have an @xml:id attribute.
+                </sch:assert>
             </sch:rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="syriacaPlacesTEI-note-target-on-note-constraint-report-10">
-            <rule context="tei:note">
-               <sch:report xmlns:sch="http://purl.oclc.org/dsdl/schematron" test="./@xml:id">
-                A &lt;note&gt; element of @type="deprecation" should not have an @xml:id attribute.
-              </sch:report>
-            </rule>
-         </pattern>
-         <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="syriacaPlacesTEI-note-target-on-note-constraint-rule-18">
+                  id="syriacaPlacesTEI-note-ID-target-on-note-constraint-rule-18">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       xmlns:srophe="https://srophe.app"
                       context="//tei:body//tei:note[@type='deprecation']/@target">
                <sch:let name="nameIDs" value="//tei:place/tei:placeName/@xml:id"/>
                <sch:let name="IDvalues" value="for $i in $nameIDs return concat('#', $i)"/>
-               <sch:assert test="                   every $i in .                   satisfies $i = $IDvalues">
-                  Acceptable values for the @xml:id attribute on a &lt;note&gt; element of @type="deprecation" include: 
+               <sch:assert test="                   every $i in tokenize(., ' ')                   satisfies $i = $IDvalues">
+                  This @xml:id attribute on &lt;note&gt; of @type="deprecation" can take one or more of the following value 
+                  separated by a space: 
                   <sch:value-of select="string-join($IDvalues, ' | ')"/>.
                 </sch:assert>
             </sch:rule>
@@ -3648,7 +3644,7 @@ Suggested values include: 1] main; 2] sub (subordinate); 3] alt (alternate); 4] 
             </sch:rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="syriacaPlacesTEI-link-linkTargets3-constraint-assert-42">
+                  id="syriacaPlacesTEI-link-linkTargets3-constraint-assert-43">
             <rule context="tei:link">
                <sch:assert xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                            test="contains(normalize-space(@target),' ')">You must supply at least two values for @target or  on <sch:name/>
@@ -4678,7 +4674,7 @@ Suggested values include: 1] main; 2] sub (subordinate); 3] alt (alternate); 4] 
             </sch:rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="syriacaPlacesTEI-relation-reforkeyorname-constraint-assert-58">
+                  id="syriacaPlacesTEI-relation-reforkeyorname-constraint-assert-59">
             <rule context="tei:relation">
                <assert xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                        xmlns:srophe="https://srophe.app"
@@ -4686,7 +4682,7 @@ Suggested values include: 1] main; 2] sub (subordinate); 3] alt (alternate); 4] 
             </rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="syriacaPlacesTEI-relation-activemutual-constraint-report-22">
+                  id="syriacaPlacesTEI-relation-activemutual-constraint-report-21">
             <rule context="tei:relation">
                <report xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                        xmlns:srophe="https://srophe.app"
@@ -4694,7 +4690,7 @@ Suggested values include: 1] main; 2] sub (subordinate); 3] alt (alternate); 4] 
             </rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="syriacaPlacesTEI-relation-activepassive-constraint-report-23">
+                  id="syriacaPlacesTEI-relation-activepassive-constraint-report-22">
             <rule context="tei:relation">
                <report xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                        xmlns:srophe="https://srophe.app"

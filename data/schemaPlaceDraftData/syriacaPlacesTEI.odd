@@ -1297,23 +1297,25 @@
               </alternate>
             </sequence>
           </content>
-          <constraintSpec ident="target-on-note" scheme="schematron">
+          <constraintSpec ident="ID-target-on-note" scheme="schematron">
             <constraint>
               <sch:rule context="//tei:body//tei:note[@type='deprecation']">
                 <sch:assert test="./@target">
                   A &lt;note&gt; element of @type="deprecation" must have a @target attribute.
                 </sch:assert>
+                <sch:assert test="./@xml:id">
+                  A &lt;note&gt; element of @type="deprecation" must have an @xml:id attribute.
+                </sch:assert>
               </sch:rule>
-              <sch:report test="./@xml:id">
-                A &lt;note&gt; element of @type="deprecation" should not have an @xml:id attribute.
-              </sch:report>
+              
               <sch:rule context="//tei:body//tei:note[@type='deprecation']/@target">
                 <sch:let name="nameIDs" value="//tei:place/tei:placeName/@xml:id"/>
                 <sch:let name="IDvalues" value="for $i in $nameIDs return concat('#', $i)"/>
                 <sch:assert test="
-                  every $i in .
+                  every $i in tokenize(., ' ')
                   satisfies $i = $IDvalues">
-                  Acceptable values for the @xml:id attribute on a &lt;note&gt; element of @type="deprecation" include: 
+                  This @xml:id attribute on &lt;note&gt; of @type="deprecation" can take one or more of the following value 
+                  separated by a space: 
                   <sch:value-of select="string-join($IDvalues, ' | ')"/>.
                 </sch:assert>
               </sch:rule>

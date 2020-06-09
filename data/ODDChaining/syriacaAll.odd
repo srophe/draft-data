@@ -233,38 +233,7 @@
             </attDef>
           </attList>
         </classSpec>
-        
-        
-        <constraintSpec ident="ref-on-person" scheme="schematron">
-          <constraint>
-            <sch:rule context="//tei:text//tei:persName/@ref">
-              <sch:let name="personIndex" value="doc('https://raw.githubusercontent.com/srophe/srophe-eXist-app/master/documentation/indexes/persons.xml')"></sch:let>
-              <sch:let name="personURIs" value="$personIndex//tei:person/@ref"/>
-              <sch:assert test="
-                every $i in .
-                satisfies $i = $personURIs">
-                This @ref attribute is not a person URI in use in Syriaca.org data. Note that all person URIs take the form 'http://syriaca.org/person/{\d+}' (where {\d+} is a number).
-              </sch:assert>
-              <sch:report test="contains(., ' ')">This @ref may contain only one URI.</sch:report>
-            </sch:rule>
-          </constraint>
-        </constraintSpec>
-        
-        <constraintSpec ident="ref-on-place" scheme="schematron">
-          <constraint>
-            <sch:rule context="//tei:text//tei:placeName/@ref  | tei:district/@ref  | tei:settlement/@ref  | tei:region/@ref  | tei:country/@ref | tei:bloc/@ref">
-              <sch:let name="placeIndex" value="doc('https://raw.githubusercontent.com/srophe/srophe-eXist-app/master/documentation/indexes/places.xml')"/>
-              <sch:let name="placeURIs" value="$placeIndex//tei:place/@ref"/>
-              <sch:assert test="
-                every $i in .
-                satisfies $i = $placeURIs">
-                This @ref attribute is not a place URI in use in Syriaca.org data. Note that all place URIs take the form 'http://syriaca.org/place/{\d+}' (where {\d+} is a number).
-              </sch:assert>
-              <sch:report test="contains(., ' ')">This @ref may contain only one URI.</sch:report>
-            </sch:rule>
-          </constraint>
-        </constraintSpec>
-        
+               
 
         <elementSpec ident="sponsor" module="header" mode="change">
           <exemplum>
@@ -513,9 +482,36 @@
         </elementSpec>
         
         <elementSpec ident="text" module="textstructure" mode="change">
+          <classes mode="change">
+            <memberOf key="att.global" mode="delete"/>
+            <memberOf key="att.global.rendition" mode="delete"/>
+            <memberOf key="att.global.linking" mode="delete"/>
+            <memberOf key="att.global.analytic" mode="delete"/>
+            <memberOf key="att.global.facs" mode="delete"/>
+            <memberOf key="att.global.change" mode="delete"/>
+            <memberOf key="att.global.responsibility" mode="delete"/>
+            <memberOf key="att.global.source" mode="delete"/>
+            <memberOf key="att.declaring" mode="delete"/>
+            <memberOf key="att.typed" mode="delete"/>
+            <memberOf key="att.written" mode="delete"/>
+          </classes>
           <content>
             <elementRef key="body" minOccurs="1" maxOccurs="1"/>
           </content>
+        </elementSpec>
+        
+        <elementSpec ident="body" module="textstructure" mode="change">
+          <classes mode="change">
+            <memberOf key="att.global" mode="delete"/>
+            <memberOf key="att.global.rendition" mode="delete"/>
+            <memberOf key="att.global.linking" mode="delete"/>
+            <memberOf key="att.global.analytic" mode="delete"/>
+            <memberOf key="att.global.facs" mode="delete"/>
+            <memberOf key="att.global.change" mode="delete"/>
+            <memberOf key="att.global.responsibility" mode="delete"/>
+            <memberOf key="att.global.source" mode="delete"/>
+            <memberOf key="att.declaring" mode="delete"/>
+          </classes>
         </elementSpec>
         
         <elementSpec ident="title" module="core" mode="change">
@@ -622,6 +618,133 @@
           </exemplum>
         </elementSpec>
         
+        
+        <elementSpec ident="persName" module="namesdates" mode="change">
+          <constraintSpec ident="ref-on-person" scheme="schematron">
+            <constraint>
+              <sch:rule context="//tei:text//tei:persName/@ref">
+                <sch:let name="personIndex" value="doc('https://raw.githubusercontent.com/srophe/srophe-eXist-app/master/documentation/indexes/persons.xml')"></sch:let>
+                <sch:let name="personURIs" value="$personIndex//tei:person/@ref"/>
+                <sch:assert test="
+                  every $i in .
+                  satisfies $i = $personURIs">
+                  This @ref attribute is not a person URI in use in Syriaca.org data. Note that all person URIs take the form 'http://syriaca.org/person/{\d+}' (where {\d+} is a number).
+                </sch:assert>
+                <sch:report test="contains(., ' ')">This @ref may contain only one URI.</sch:report>
+              </sch:rule>
+            </constraint>
+          </constraintSpec>
+        </elementSpec>
+        
+        
+        <elementSpec ident="placeName" module="namesdates" mode="change">
+          <constraintSpec ident="ref-on-placeName" scheme="schematron">
+            <constraint>
+              <sch:rule context="//tei:text//tei:placeName/@ref">
+                <sch:let name="placeIndex" value="doc('https://raw.githubusercontent.com/srophe/srophe-eXist-app/master/documentation/indexes/places.xml')"/>
+                <sch:let name="placeURIs" value="$placeIndex//tei:place/@ref"/>
+                <sch:assert test="
+                  every $i in .
+                  satisfies $i = $placeURIs">
+                  This @ref attribute is not a place URI in use in Syriaca.org data. Note that all place URIs take the form 'http://syriaca.org/place/{\d+}' (where {\d+} is a number).
+                </sch:assert>
+                <sch:report test="contains(., ' ')">This @ref may contain only one URI.</sch:report>
+              </sch:rule>
+            </constraint>
+          </constraintSpec>
+        </elementSpec>
+        
+        
+        <elementSpec ident="district" module="namesdates" mode="change">
+          <constraintSpec ident="ref-on-district" scheme="schematron">
+            <constraint>
+              <sch:rule context="//tei:text//tei:district/@ref">
+                <sch:let name="placeIndex" value="doc('https://raw.githubusercontent.com/srophe/srophe-eXist-app/master/documentation/indexes/places.xml')"/>
+                <sch:let name="placeURIs" value="$placeIndex//tei:place/@ref"/>
+                <sch:assert test="
+                  every $i in .
+                  satisfies $i = $placeURIs">
+                  This @ref attribute is not a place URI in use in Syriaca.org data. Note that all place URIs take the form 'http://syriaca.org/place/{\d+}' (where {\d+} is a number).
+                </sch:assert>
+                <sch:report test="contains(., ' ')">This @ref may contain only one URI.</sch:report>
+              </sch:rule>
+            </constraint>
+          </constraintSpec>
+        </elementSpec>
+        
+        
+        <elementSpec ident="settlement" module="namesdates" mode="change">
+          <constraintSpec ident="ref-on-settlement" scheme="schematron">
+            <constraint>
+              <sch:rule context="//tei:text//tei:settlement/@ref">
+                <sch:let name="placeIndex" value="doc('https://raw.githubusercontent.com/srophe/srophe-eXist-app/master/documentation/indexes/places.xml')"/>
+                <sch:let name="placeURIs" value="$placeIndex//tei:place/@ref"/>
+                <sch:assert test="
+                  every $i in .
+                  satisfies $i = $placeURIs">
+                  This @ref attribute is not a place URI in use in Syriaca.org data. Note that all place URIs take the form 'http://syriaca.org/place/{\d+}' (where {\d+} is a number).
+                </sch:assert>
+                <sch:report test="contains(., ' ')">This @ref may contain only one URI.</sch:report>
+              </sch:rule>
+            </constraint>
+          </constraintSpec>
+        </elementSpec>
+        
+        
+        <elementSpec ident="region" module="namesdates" mode="change">
+          <constraintSpec ident="ref-on-region" scheme="schematron">
+            <constraint>
+              <sch:rule context="//tei:text//tei:region/@ref">
+                <sch:let name="placeIndex" value="doc('https://raw.githubusercontent.com/srophe/srophe-eXist-app/master/documentation/indexes/places.xml')"/>
+                <sch:let name="placeURIs" value="$placeIndex//tei:place/@ref"/>
+                <sch:assert test="
+                  every $i in .
+                  satisfies $i = $placeURIs">
+                  This @ref attribute is not a place URI in use in Syriaca.org data. Note that all place URIs take the form 'http://syriaca.org/place/{\d+}' (where {\d+} is a number).
+                </sch:assert>
+                <sch:report test="contains(., ' ')">This @ref may contain only one URI.</sch:report>
+              </sch:rule>
+            </constraint>
+          </constraintSpec>
+        </elementSpec>
+        
+        
+        <elementSpec ident="country" module="namesdates" mode="change">
+          <constraintSpec ident="ref-on-country" scheme="schematron">
+            <constraint>
+              <sch:rule context="//tei:text//tei:country/@ref">
+                <sch:let name="placeIndex" value="doc('https://raw.githubusercontent.com/srophe/srophe-eXist-app/master/documentation/indexes/places.xml')"/>
+                <sch:let name="placeURIs" value="$placeIndex//tei:place/@ref"/>
+                <sch:assert test="
+                  every $i in .
+                  satisfies $i = $placeURIs">
+                  This @ref attribute is not a place URI in use in Syriaca.org data. Note that all place URIs take the form 'http://syriaca.org/place/{\d+}' (where {\d+} is a number).
+                </sch:assert>
+                <sch:report test="contains(., ' ')">This @ref may contain only one URI.</sch:report>
+              </sch:rule>
+            </constraint>
+          </constraintSpec>
+        </elementSpec>
+        
+        
+        <elementSpec ident="bloc" module="namesdates" mode="change">
+          <constraintSpec ident="ref-on-bloc" scheme="schematron">
+            <constraint>
+              <sch:rule context="//tei:text//tei:bloc/@ref">
+                <sch:let name="placeIndex" value="doc('https://raw.githubusercontent.com/srophe/srophe-eXist-app/master/documentation/indexes/places.xml')"/>
+                <sch:let name="placeURIs" value="$placeIndex//tei:place/@ref"/>
+                <sch:assert test="
+                  every $i in .
+                  satisfies $i = $placeURIs">
+                  This @ref attribute is not a place URI in use in Syriaca.org data. Note that all place URIs take the form 'http://syriaca.org/place/{\d+}' (where {\d+} is a number).
+                </sch:assert>
+                <sch:report test="contains(., ' ')">This @ref may contain only one URI.</sch:report>
+              </sch:rule>
+            </constraint>
+          </constraintSpec>
+        </elementSpec>
+        
+                       
         <elementSpec ident="idno" module="header" mode="change">
           <constraintSpec ident="idno-uri" scheme="schematron">
             <constraint>
@@ -682,6 +805,47 @@
                 Syriaca.org documentation</ref> for editorial conventions regarding dates.</p>
           </remarks>
         </elementSpec>
+        
+        <elementSpec ident="note" module="core" mode="change">
+          <classes mode="change">
+            <memberOf key="att.global.rendition" mode="delete"/>
+            <memberOf key="att.global.linking" mode="delete"/>
+            <memberOf key="att.global.analytic" mode="delete"/>
+            <memberOf key="att.global.facs" mode="delete"/>
+            <memberOf key="att.global.change" mode="delete"/>
+            <memberOf key="att.global.responsibility" mode="delete"/>
+            <memberOf key="att.placement" mode="delete"/>
+          </classes>
+          <attList>
+            <attDef ident="subtype" mode="delete"/>
+            <attDef ident="anchored" mode="delete"/>
+            <attDef ident="targetEnd" mode="delete"/>
+          </attList>
+        </elementSpec>
+        
+        <elementSpec ident="listRelation" module="namesdates" mode="change">
+          <content>
+            <elementRef key="relation" minOccurs="1" maxOccurs="unbounded"/>
+          </content>
+        </elementSpec>
+        
+        <elementSpec ident="relation" module="namesdates" mode="change">
+          <classes mode="change">
+            <memberOf key="att.global" mode="delete"/>
+            <memberOf key="att.global.rendition" mode="delete"/>
+            <memberOf key="att.global.linking" mode="delete"/>
+            <memberOf key="att.global.analytic" mode="delete"/>
+            <memberOf key="att.global.facs" mode="delete"/>
+            <memberOf key="att.global.change" mode="delete"/>
+            <memberOf key="att.global.responsibility" mode="delete"/>
+            <memberOf key="att.global.source" mode="delete"/>
+            <memberOf key="att.editLike" mode="delete"/>
+            <memberOf key="att.sortable" mode="delete"/>
+            <memberOf key="att.typed" mode="delete"></memberOf>
+          </classes>
+        </elementSpec>
+        
+        
                
         
       </schemaSpec>

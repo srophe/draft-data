@@ -648,25 +648,21 @@ The MS. was lost in transmission by mail from <del rend="overstrike"><gap reason
     <ref target="http://www.tei-c.org/release/doc/tei-p5-doc/en/html/CO.html#CONADA">3.5.4. Dates and Times</ref>
     <ref target="http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ND.html#NDDATE">13.3.7. Dates and Times</ref>
   </listRef>
-</classSpec><classSpec xmlns:rng="http://relaxng.org/ns/structure/1.0" module="tei" type="atts" xml:id="DATABLE" ident="att.datable">
-  <desc versionDate="2007-06-12" xml:lang="en">provides attributes for normalization of elements
-    that contain dates, times, or datable events.</desc>
-  <desc versionDate="2007-12-20" xml:lang="ko">날짜, 시간 또는 날짜 명기 사건을 포함하는 요소의 규격화에 대한 속성을 제공한다.</desc>
-  <desc versionDate="2007-05-02" xml:lang="zh-TW">提供用於元素規格化的屬性， 這些元素包含日期明確的事件。</desc>
-  <desc versionDate="2008-04-05" xml:lang="ja">日付や時間または時間事象を含む要素の正規化手法を示す属性を示す．</desc>
-  <desc versionDate="2007-06-12" xml:lang="fr">fournit des attributs pour la normalisation
-    d'éléments qui contiennent des mentions d'événements datés ou susceptibles de l'être</desc>
-  <desc versionDate="2007-05-04" xml:lang="es">atributos para registrar expresiones temporales
-    normalizadas.</desc>
-  <desc versionDate="2007-01-21" xml:lang="it">assegna attributi per la normalizzazione di elementi
-    che contengono eventi databili</desc>
-  <classes>
-    <memberOf key="att.datable.w3c"/>
-    <memberOf key="att.datable.iso"/>
-    <memberOf key="att.datable.custom"/>
-  </classes>
-  <attList>
-    <attDef ident="calendar" usage="opt">
+</classSpec><classSpec xmlns:rng="http://relaxng.org/ns/structure/1.0" rend="change" module="tei" type="atts" xml:id="DATABLE" ident="att.datable"><desc versionDate="2007-06-12" xml:lang="en">provides attributes for normalization of elements
+    that contain dates, times, or datable events.</desc><desc versionDate="2007-12-20" xml:lang="ko">날짜, 시간 또는 날짜 명기 사건을 포함하는 요소의 규격화에 대한 속성을 제공한다.</desc><desc versionDate="2007-05-02" xml:lang="zh-TW">提供用於元素規格化的屬性， 這些元素包含日期明確的事件。</desc><desc versionDate="2008-04-05" xml:lang="ja">日付や時間または時間事象を含む要素の正規化手法を示す属性を示す．</desc><desc versionDate="2007-06-12" xml:lang="fr">fournit des attributs pour la normalisation
+    d'éléments qui contiennent des mentions d'événements datés ou susceptibles de l'être</desc><desc versionDate="2007-05-04" xml:lang="es">atributos para registrar expresiones temporales
+    normalizadas.</desc><desc versionDate="2007-01-21" xml:lang="it">assegna attributi per la normalizzazione di elementi
+    che contengono eventi databili</desc><classes><memberOf key="att.datable.w3c"/><memberOf key="att.datable.iso"/><memberOf key="att.datable.custom"/></classes><attList><attDef ident="srophe:computed-start" ns="https://srophe.app">
+              <desc>Start date</desc>
+              <datatype maxOccurs="unbounded" minOccurs="1">
+                <rng:text/>
+              </datatype>
+            </attDef><attDef ident="srophe:computed-end" ns="https://srophe.app">
+              <desc>End date</desc>
+              <datatype maxOccurs="unbounded" minOccurs="1">
+                <rng:text/>
+              </datatype>
+            </attDef><attDef ident="calendar" usage="opt">
       <desc versionDate="2011-11-25" xml:lang="en">indicates the system or calendar to which the
         date represented by the content of this element belongs.</desc>
       <desc versionDate="2007-12-20" xml:lang="ko">날짜 표현 시스템 또는 달력 표시 형식을 표시한다.</desc>
@@ -709,8 +705,7 @@ The MS. was lost in transmission by mail from <del rend="overstrike"><gap reason
         <att>calendar</att>属性は(<ident type="class">att.datable.custom</ident>クラスで定義される<att>datingMethod</att>属性と異なり、
         親要素によって定義される原資料の日付の暦日システムを定義するものであり、
         どの暦日に日付を正規化するかではない。</p></remarks>
-    </attDef>
-    <attDef ident="period" usage="opt">
+    </attDef><attDef ident="period" usage="opt">
       <desc versionDate="2011-11-25" xml:lang="en">supplies a pointer to some location defining a
         named period of time within which the datable item is understood to have occurred.</desc>
       <desc versionDate="2007-12-20" xml:lang="ko">시간을 명시할 수 있는 항목이 일어난 시간의 기간명을 정의하는 특정 위치로의 포인터를
@@ -728,9 +723,7 @@ The MS. was lost in transmission by mail from <del rend="overstrike"><gap reason
       <datatype>
         <dataRef key="teidata.pointer"/>
       </datatype>
-    </attDef>
-  </attList>
-  <remarks versionDate="2011-11-25" xml:lang="en">
+    </attDef></attList><remarks versionDate="2011-11-25" xml:lang="en">
     <p>This <soCalled>superclass</soCalled> provides attributes that can be used to provide
       normalized values of temporal information. By default, the attributes from the <ident type="class">att.datable.w3c</ident> class are provided. If the module for names &amp; dates
       is loaded, this class also provides attributes from the <ident type="class">att.datable.iso</ident> and <ident type="class">att.datable.custom</ident> classes. In
@@ -738,8 +731,7 @@ The MS. was lost in transmission by mail from <del rend="overstrike"><gap reason
       those values available via the ISO 8601 standard. However, the greater expressiveness of the
       ISO datatypes may not be needed, and there exists much greater software support for the W3C
       datatypes.</p>
-  </remarks>
-  <remarks xml:lang="fr" versionDate="2007-06-12">
+  </remarks><remarks xml:lang="fr" versionDate="2007-06-12">
     <p>Cette<soCalled>superclasse</soCalled> fournit des attributs qui peuvent être employés pour
       donner des valeurs normalisées à des informations relatives au temps. Par défaut, les
       attributs de la classe <ident type="class">att.datable.w3c</ident> sont fournis. Si le module
@@ -749,8 +741,7 @@ The MS. was lost in transmission by mail from <del rend="overstrike"><gap reason
       trouve dans la norme ISO 8601. Cependant, il n'est peut-être pas nécessaire de recourir aux
       possibilités très étendues des types de données de l'ISO. Il existe en effet une bien plus
       grande offre logicielle pour le traitement des types de données W3C.</p>
-  </remarks>
-  <remarks xml:lang="es" versionDate="2008-04-06">
+  </remarks><remarks xml:lang="es" versionDate="2008-04-06">
     <p>Esta <soCalled>superclase</soCalled> proporciona atributos que pueden ser utilizados para
       proporcionar valores normalizados de información temporal. Por defecto, los atributos de la
       clase <ident type="class">att.datable.w3c</ident> son proporcionados. Si el módulo para los
@@ -759,8 +750,7 @@ The MS. was lost in transmission by mail from <del rend="overstrike"><gap reason
       disponibles vía el estándar de ISO 8601. Sin embargo, la mayoría de expresiones de los
       datatypes de ISO pueden no ser necesarios, y existe software de soporte para los datatypes de
       W3C.</p>
-  </remarks>
-  <remarks xml:lang="ja" versionDate="2019-02-03">
+  </remarks><remarks xml:lang="ja" versionDate="2019-02-03">
     <p>この<soCalled>親クラス(スーパークラス)</soCalled>は， 
       正規化された時間情報を示すために用いる属性を提供する．デフォルト値として，当該属性は，
       クラス<ident type="class">att.datable.w3c</ident>が付与されている．
@@ -769,12 +759,10 @@ The MS. was lost in transmission by mail from <del rend="overstrike"><gap reason
       しかし，より強力な表現力を持つISOのデータ形式が必要にはならないかもしれない．
       W3Cのデータ形式に対するさらに強力な表現力をサポートするソフトウェアも存在する．
     </p>
-  </remarks>
-  <listRef>
+  </remarks><listRef>
     <ref target="http://www.tei-c.org/release/doc/tei-p5-doc/en/html/CO.html#CONADA">3.5.4. Dates and Times</ref>
     <ref target="http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ND.html#NDDATE">13.3.7. Dates and Times</ref>
-  </listRef>
-</classSpec><classSpec module="tei" xml:id="DECLABL" type="atts" ident="att.declarable">
+  </listRef></classSpec><classSpec module="tei" xml:id="DECLABL" type="atts" ident="att.declarable">
   <desc versionDate="2013-02-02" xml:lang="en">provides attributes for those elements in the TEI header which
   may be independently selected by means of  the special purpose <att>decls</att> attribute.</desc>
   <desc versionDate="2007-12-20" xml:lang="ko">특별한 목적의 <att>decls</att> 속성을 통해서 독립적으로 선택될 수 있는 TEI 헤더의 요소에 대한 속성을 제공한다.</desc>
@@ -1440,17 +1428,7 @@ the TEI header.</p>
 </classSpec><classSpec rend="change" module="tei" xml:id="GLOBAL" type="atts" ident="att.global"><desc versionDate="2007-10-02" xml:lang="en">provides attributes common to all elements in the TEI encoding scheme.</desc><desc versionDate="2007-12-20" xml:lang="ko">TEI 부호화 스키마의 모든 요소에 공통 속성을 제공한다.</desc><desc versionDate="2007-05-02" xml:lang="zh-TW">提供一組屬性，通用於TEI編碼標準中的所有元素。</desc><desc versionDate="2008-04-05" xml:lang="ja">TEI符号化スキーム中の全要素に共通する属性を示す． </desc><desc versionDate="2007-06-12" xml:lang="fr">fournit un jeu d'attributs communs à tous les éléments
     dans le système de codage TEI.</desc><desc versionDate="2007-05-04" xml:lang="es">proporciona un conjunto de atributos común a todos los
     elementos del esquema de codificación TEI.</desc><desc versionDate="2007-01-21" xml:lang="it">stabilisce un insieme di attributi comuni a tutti gli
-    elementi dello schema di codifica TEI</desc><classes><memberOf key="att.global.rendition"/><memberOf key="att.global.linking"/><memberOf key="att.global.responsibility"/><memberOf key="att.global.source"/></classes><attList><attDef ident="srophe:computed-start" ns="https://srophe.app">
-              <desc>Start date</desc>
-              <datatype maxOccurs="unbounded" minOccurs="1">
-                <rng:text xmlns:rng="http://relaxng.org/ns/structure/1.0"/>
-              </datatype>
-            </attDef><attDef ident="srophe:computed-end" ns="https://srophe.app">
-              <desc>End date</desc>
-              <datatype maxOccurs="unbounded" minOccurs="1">
-                <rng:text xmlns:rng="http://relaxng.org/ns/structure/1.0"/>
-              </datatype>
-            </attDef><attDef ident="srophe:tags" ns="https://srophe.app">
+    elementi dello schema di codifica TEI</desc><classes><memberOf key="att.global.rendition"/><memberOf key="att.global.linking"/><memberOf key="att.global.responsibility"/><memberOf key="att.global.source"/></classes><attList><attDef ident="srophe:tags" ns="https://srophe.app">
               <desc>Specialized attributes specific to the functions performed by the Srophé App.</desc>
               <datatype maxOccurs="unbounded" minOccurs="1">
                 <rng:text xmlns:rng="http://relaxng.org/ns/structure/1.0"/>
@@ -8651,58 +8629,32 @@ epistemology, methodology and history of
     <ref target="http://www.tei-c.org/release/doc/tei-p5-doc/en/html/HD.html#HD3">2.2.7. The Source Description</ref>
     <ref target="http://www.tei-c.org/release/doc/tei-p5-doc/en/html/CC.html#CCAS2">15.3.2. Declarable Elements</ref>
   </listRef>
-</elementSpec><elementSpec module="certainty" ident="precision">
-  <desc versionDate="2009-06-05" xml:lang="en">indicates the numerical accuracy or precision  associated
-  with some aspect of the text markup.</desc>
-  <classes>
-    <memberOf key="att.global"/>
-    <memberOf key="model.global.meta"/>
-    <memberOf key="att.scoping"/>
-    <memberOf key="att.ranging"/>
-    <memberOf key="model.certLike"/>
-    <memberOf key="att.datable"/>
-  </classes>
-  <content>
-    
-      <alternate minOccurs="0" maxOccurs="unbounded">
-        <classRef key="model.descLike"/>
-        <classRef key="model.certLike"/>
-      </alternate>
-    
-  </content>
-  <attList>
-    <attDef ident="precision">
+</elementSpec><elementSpec rend="change" module="certainty" ident="precision"><desc versionDate="2009-06-05" xml:lang="en">indicates the numerical accuracy or precision  associated
+  with some aspect of the text markup.</desc><classes><memberOf key="model.global.meta"/><memberOf key="att.scoping"/><memberOf key="att.ranging"/><memberOf key="model.certLike"/><memberOf key="att.datable"/></classes><content><alternate minOccurs="0" maxOccurs="unbounded"><classRef key="model.descLike"/><classRef key="model.certLike"/></alternate></content><attList><attDef ident="target" mode="delete"/><attDef ident="precision">
       <desc versionDate="2011-04-13" xml:lang="en">characterizes the precision of the element or attribute pointed 
         to by the <gi>precision</gi> element.</desc>
       <datatype><dataRef key="teidata.certainty"/></datatype>
-    </attDef>
-    <attDef ident="stdDeviation" usage="opt">
+    </attDef><attDef ident="stdDeviation" usage="opt">
       <desc versionDate="2009-06-05" xml:lang="en">supplies a standard deviation associated with the value in
       question</desc>
       <datatype><dataRef key="teidata.numeric"/></datatype>
-    </attDef>
-  </attList>
-  <exemplum xml:lang="en">
+    </attDef></attList><exemplum xml:lang="en">
     <egXML xmlns="http://www.tei-c.org/ns/Examples">
       <date xml:id="date001" notBefore="0014" notAfter="0064">Within about 50
         years of the death of Augustus</date>
       <precision target="#date001" match="@notBefore" precision="high"/>
       <precision target="#date001" match="@notAfter" precision="low"/>
     </egXML>
-  </exemplum>
-  <exemplum xml:lang="en">
+  </exemplum><exemplum xml:lang="en">
     <egXML xmlns="http://www.tei-c.org/ns/Examples">
       <date notBefore="1632" notAfter="1642">Not more than ten years before the start of the Civil War
             <precision match="@notBefore" precision="low"/>
             <precision match="@notAfter" precision="high"/>
          </date>
     </egXML>
-  </exemplum>
-  
-  <listRef>
+  </exemplum><listRef>
     <ref target="http://www.tei-c.org/release/doc/tei-p5-doc/en/html/CE.html#CEPREC">21.2. Indications of Precision</ref>
-  </listRef>
-</elementSpec><elementSpec xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:rng="http://relaxng.org/ns/structure/1.0" rend="change" module="header" ident="teiHeader"><gloss versionDate="2013-02-02" xml:lang="en">TEI header</gloss><gloss versionDate="2009-01-05" xml:lang="fr">en-tête TEI</gloss><gloss versionDate="2007-12-20" xml:lang="ko">TEI 헤더</gloss><gloss versionDate="2007-05-02" xml:lang="zh-TW">TEI標頭</gloss><gloss versionDate="2006-10-18" xml:lang="de">TEI-Header (elektronische Titelseite)</gloss><gloss versionDate="2007-05-04" xml:lang="es">Encabezado TEI</gloss><gloss versionDate="2007-01-21" xml:lang="it">intestazione</gloss><desc versionDate="2016-02-19" xml:lang="en">supplies descriptive and
+  </listRef></elementSpec><elementSpec xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:rng="http://relaxng.org/ns/structure/1.0" rend="change" module="header" ident="teiHeader"><gloss versionDate="2013-02-02" xml:lang="en">TEI header</gloss><gloss versionDate="2009-01-05" xml:lang="fr">en-tête TEI</gloss><gloss versionDate="2007-12-20" xml:lang="ko">TEI 헤더</gloss><gloss versionDate="2007-05-02" xml:lang="zh-TW">TEI標頭</gloss><gloss versionDate="2006-10-18" xml:lang="de">TEI-Header (elektronische Titelseite)</gloss><gloss versionDate="2007-05-04" xml:lang="es">Encabezado TEI</gloss><gloss versionDate="2007-01-21" xml:lang="it">intestazione</gloss><desc versionDate="2016-02-19" xml:lang="en">supplies descriptive and
     declarative metadata associated with a digital resource or set of
     resources.</desc><desc versionDate="2009-01-05" xml:lang="fr">fournit des informations descriptives et déclaratives qui
     constituent une page de titre électronique au début de tout texte conforme à la TEI.</desc><desc versionDate="2007-12-20" xml:lang="ko">모든 TEI 구조의 텍스트 서두에 위치하는 전자 제목 페이지를 구성하는 기술적이고 선언적인 정보를
@@ -10354,7 +10306,7 @@ langues, registres, dialectes, etc. présents à l’intérieur d’un texte.</d
   <listRef>
     <ref target="http://www.tei-c.org/release/doc/tei-p5-doc/en/html/SA.html#SA">16. Linking, Segmentation, and Alignment</ref>
   </listRef>
-</classSpec><elementSpec xmlns:rng="http://relaxng.org/ns/structure/1.0" rend="change" module="linking" ident="link"><gloss versionDate="2007-06-12" xml:lang="fr"> lien</gloss><desc versionDate="2005-01-14" xml:lang="en">defines an association or hypertextual link among elements or passages, of some type not more precisely specifiable by other elements.</desc><desc versionDate="2007-12-20" xml:lang="ko">다른 요소들에 의해 좀 더 명확하게 명시되지 않는 유형의 요소 또는 단락들의 연관 또는 하이퍼텍스트 연결을 정의한다.</desc><desc versionDate="2007-05-02" xml:lang="zh-TW">定義元素或段落之間的關連或超文字連結，其他元素無法將此連結類型作更詳細說明。</desc><desc versionDate="2008-04-05" xml:lang="ja">他の要素では上手く示せない，要素や一節間にある関連性やハイパーテキス トリンクを定義する．</desc><desc versionDate="2007-06-12" xml:lang="fr">définit une association ou un lien hypertextuel entre des éléments ou des passages, lien dont le type ne peut être spécifié précisément par d'autres éléments.</desc><desc versionDate="2007-05-04" xml:lang="es">define una asociación o vínculo hipertextual entre elementos o fragmentos de texto que no es especificable por otros elementos.</desc><desc versionDate="2007-01-21" xml:lang="it">definisce tra elementi o porzioni di testo un'associazione o legame ipertestuale non meglio specificabile da altri elementi</desc><classes><memberOf key="att.global"/><memberOf key="att.pointing"/><memberOf key="att.typed"/><memberOf key="model.global.meta"/></classes><content><empty/></content><constraintSpec ident="target-on-link" scheme="schematron">
+</classSpec><elementSpec xmlns:rng="http://relaxng.org/ns/structure/1.0" rend="change" module="linking" ident="link"><gloss versionDate="2007-06-12" xml:lang="fr"> lien</gloss><desc versionDate="2005-01-14" xml:lang="en">defines an association or hypertextual link among elements or passages, of some type not more precisely specifiable by other elements.</desc><desc versionDate="2007-12-20" xml:lang="ko">다른 요소들에 의해 좀 더 명확하게 명시되지 않는 유형의 요소 또는 단락들의 연관 또는 하이퍼텍스트 연결을 정의한다.</desc><desc versionDate="2007-05-02" xml:lang="zh-TW">定義元素或段落之間的關連或超文字連結，其他元素無法將此連結類型作更詳細說明。</desc><desc versionDate="2008-04-05" xml:lang="ja">他の要素では上手く示せない，要素や一節間にある関連性やハイパーテキス トリンクを定義する．</desc><desc versionDate="2007-06-12" xml:lang="fr">définit une association ou un lien hypertextuel entre des éléments ou des passages, lien dont le type ne peut être spécifié précisément par d'autres éléments.</desc><desc versionDate="2007-05-04" xml:lang="es">define una asociación o vínculo hipertextual entre elementos o fragmentos de texto que no es especificable por otros elementos.</desc><desc versionDate="2007-01-21" xml:lang="it">definisce tra elementi o porzioni di testo un'associazione o legame ipertestuale non meglio specificabile da altri elementi</desc><classes><memberOf key="att.pointing"/><memberOf key="model.global.meta"/></classes><content><empty/></content><constraintSpec ident="target-on-link" scheme="schematron">
             <constraint>
               <sch:rule context="//tei:link/@target">
                 <sch:let name="allIDs" value="//@xml:id"/>
@@ -10368,7 +10320,7 @@ langues, registres, dialectes, etc. présents à l’intérieur d’un texte.</d
     <constraint>
       <sch:assert test="contains(normalize-space(@target),' ')">You must supply at least two values for @target or  on <sch:name/></sch:assert>
     </constraint>
-  </constraintSpec><attList/><exemplum xml:lang="en">
+  </constraintSpec><attList><attDef ident="targetLang" mode="delete"/><attDef ident="evaluate" mode="delete"/></attList><exemplum xml:lang="en">
     <egXML xmlns="http://www.tei-c.org/ns/Examples">
       <s n="1">The state Supreme Court has refused to release <rs xml:id="R1"><rs xml:id="R2">Rahway State Prison</rs> inmate</rs> 
             <rs xml:id="R3">James Scott</rs> on bail.</s>
@@ -12211,51 +12163,28 @@ langues, registres, dialectes, etc. présents à l’intérieur d’un texte.</d
     <ref target="http://www.tei-c.org/release/doc/tei-p5-doc/en/html/DS.html#DS">4. Default Text Structure</ref>
     <ref target="http://www.tei-c.org/release/doc/tei-p5-doc/en/html/CC.html#CCDEF">15.1. Varieties of Composite Text</ref>
   </listRef>
-</elementSpec><elementSpec module="textstructure" ident="text">
-  <gloss versionDate="2007-06-12" xml:lang="fr">texte</gloss>
-  <desc versionDate="2005-01-14" xml:lang="en">contains a single text of any kind, whether unitary or composite, for example a poem or
-    drama, a collection of essays, a novel, a dictionary, or a corpus sample.</desc>
-  <desc versionDate="2007-12-20" xml:lang="ko">어떤 종류의 단일 텍스트를 포함한다. 예를 들어, 시 또는 드라마, 수필선, 소설, 사전 또는 코퍼스
-    표본과 같은 단일 텍스트 또는 혼합 텍스트.</desc>
-  <desc versionDate="2007-05-02" xml:lang="zh-TW">包含一份任何種類的文本，無論是單一或複合的，例如詩詞或戲劇、散文集、小說、字典、或是文集範例。</desc>
-  <desc versionDate="2008-04-05" xml:lang="ja">ひとつのテキストを示す．単体でも複合体でもよい．例えば，詩，舞台芸術， 随筆，小説，辞書，コーパスなど．</desc>
-  <desc versionDate="2007-06-12" xml:lang="fr">contient un seul texte quelconque, simple ou composite,
+</elementSpec><elementSpec rend="change" module="textstructure" ident="text"><gloss versionDate="2007-06-12" xml:lang="fr">texte</gloss><desc versionDate="2005-01-14" xml:lang="en">contains a single text of any kind, whether unitary or composite, for example a poem or
+    drama, a collection of essays, a novel, a dictionary, or a corpus sample.</desc><desc versionDate="2007-12-20" xml:lang="ko">어떤 종류의 단일 텍스트를 포함한다. 예를 들어, 시 또는 드라마, 수필선, 소설, 사전 또는 코퍼스
+    표본과 같은 단일 텍스트 또는 혼합 텍스트.</desc><desc versionDate="2007-05-02" xml:lang="zh-TW">包含一份任何種類的文本，無論是單一或複合的，例如詩詞或戲劇、散文集、小說、字典、或是文集範例。</desc><desc versionDate="2008-04-05" xml:lang="ja">ひとつのテキストを示す．単体でも複合体でもよい．例えば，詩，舞台芸術， 随筆，小説，辞書，コーパスなど．</desc><desc versionDate="2007-06-12" xml:lang="fr">contient un seul texte quelconque, simple ou composite,
     par exemple un poème ou une pièce de théâtre, un recueil d’essais, un roman, un dictionnaire ou
-    un échantillon de corpus.</desc>
-  <desc versionDate="2017-06-25" xml:lang="de">enthält einen einzelnen, eigenständigen oder kompilierten Text, zum Beispiel ein Gedicht oder
-    Drama, eine Sammlung von Aufsätzen, einen Roman, ein Wörterbuch oder ein Korpus-Sample.</desc>
-  <desc versionDate="2007-05-04" xml:lang="es">contiene un único texto de cualquier tipo, sea este
+    un échantillon de corpus.</desc><desc versionDate="2017-06-25" xml:lang="de">enthält einen einzelnen, eigenständigen oder kompilierten Text, zum Beispiel ein Gedicht oder
+    Drama, eine Sammlung von Aufsätzen, einen Roman, ein Wörterbuch oder ein Korpus-Sample.</desc><desc versionDate="2007-05-04" xml:lang="es">contiene un único texto de cualquier tipo, sea este
     unitario o combinado, p.ej. un texto en verso o teatral, una recopilación de ensayos, una
-    novela, un diccionario, o una fragmento de corpus.</desc>
-  <desc versionDate="2007-01-21" xml:lang="it">contiene un unico testo di qualsiasi tipo, sia esso
+    novela, un diccionario, o una fragmento de corpus.</desc><desc versionDate="2007-01-21" xml:lang="it">contiene un unico testo di qualsiasi tipo, sia esso
     unitario o composito, per esempio un testo in versi o teatrale, una raccolta di saggi, un
-    romanzo, un dizionario, o una porzione di corpus</desc>
-  <classes>
-    <memberOf key="att.global"/>
-    <memberOf key="att.declaring"/>
-    <memberOf key="att.typed"/>
-    <memberOf key="att.written"/>
-    <memberOf key="model.resource"/>
-  </classes>
-  <content>
-    <sequence>
-      <classRef key="model.global" minOccurs="0" maxOccurs="unbounded"/>
-      <sequence minOccurs="0">
-        <elementRef key="front"/>
-	<classRef key="model.global" minOccurs="0" maxOccurs="unbounded"/>
-      </sequence>
-      <alternate>
-        <elementRef key="body"/>
-        <elementRef key="group"/>
-      </alternate>
-      <classRef key="model.global" minOccurs="0" maxOccurs="unbounded"/>
-      <sequence minOccurs="0">
-        <elementRef key="back"/>
-	<classRef key="model.global" minOccurs="0" maxOccurs="unbounded"/>
-      </sequence>
-    </sequence>
-  </content>
-  <exemplum xml:lang="en">
+    romanzo, un dizionario, o una porzione di corpus</desc><classes><memberOf key="model.resource"/></classes><content><sequence minOccurs="1" maxOccurs="1"><classRef key="model.global" minOccurs="0" maxOccurs="unbounded"/><sequence minOccurs="0" maxOccurs="1"><elementRef key="front"/><classRef key="model.global" minOccurs="0" maxOccurs="unbounded"/></sequence><alternate minOccurs="1" maxOccurs="1"><elementRef key="body"/><elementRef key="group"/></alternate><classRef key="model.global" minOccurs="0" maxOccurs="unbounded"/><sequence minOccurs="0" maxOccurs="1"><elementRef key="back"/><classRef key="model.global" minOccurs="0" maxOccurs="unbounded"/></sequence></sequence></content><constraintSpec ident="source-in-text" scheme="schematron">
+            <constraint>
+              <sch:rule context="//tei:text//@source">
+                <sch:let name="biblIDs" value="//tei:body//tei:bibl/@xml:id"/>
+                <sch:let name="sourceValues" value="for $i in $biblIDs return concat('#', $i)"/>
+                <sch:assert test="                   every $i in (tokenize(., ' '))                   satisfies $i = $sourceValues">
+                  A @source attribute must point to an @xml:id attribute on a &lt;bibl&gt; element. 
+                  Multiple values are allowed and must be separated by a blank space. Acceptable values include: 
+                  <sch:value-of select="string-join($sourceValues, ' | ')"/>.
+                </sch:assert>
+              </sch:rule>
+            </constraint>
+          </constraintSpec><attList/><exemplum xml:lang="en">
     <egXML xmlns="http://www.tei-c.org/ns/Examples" source="#lowellAut">
       <text>
         <front>
@@ -12269,8 +12198,7 @@ langues, registres, dialectes, etc. présents à l’intérieur d’un texte.</d
         </body>
       </text>
     </egXML>
-  </exemplum>
-  <exemplum versionDate="2008-04-06" xml:lang="fr">
+  </exemplum><exemplum versionDate="2008-04-06" xml:lang="fr">
     <egXML xmlns="http://www.tei-c.org/ns/Examples" source="#fr-ex-Hugo-Nuit">
       <text>
         <front>
@@ -12283,8 +12211,7 @@ langues, registres, dialectes, etc. présents à l’intérieur d’un texte.</d
         </body>
       </text>
     </egXML>
-  </exemplum>
-  <exemplum versionDate="2008-04-06" xml:lang="fr">
+  </exemplum><exemplum versionDate="2008-04-06" xml:lang="fr">
     <p>Le <gi>body</gi> d'un texte peut être remplacé par un groupe de textes enchâssés, comme
         dans la structure suivante : </p>
     <egXML xmlns="http://www.tei-c.org/ns/Examples" valid="feasible" source="#UND">
@@ -12327,8 +12254,7 @@ langues, registres, dialectes, etc. présents à l’intérieur d’un texte.</d
         </text>
       </TEI>
     </egXML>
-  </exemplum>
-  <exemplum xml:lang="zh-TW">
+  </exemplum><exemplum xml:lang="zh-TW">
     <egXML xmlns="http://www.tei-c.org/ns/Examples" source="#biblzh-tw_n59">
       <text>
         <front>
@@ -12345,8 +12271,7 @@ langues, registres, dialectes, etc. présents à l’intérieur d’un texte.</d
         </body>
       </text>
     </egXML>
-  </exemplum>
-  <exemplum xml:lang="en">
+  </exemplum><exemplum xml:lang="en">
     <p>The body of a text may be replaced by a group of nested texts, as in the following schematic:</p>
     <egXML xmlns="http://www.tei-c.org/ns/Examples" valid="feasible" source="#UND">
       <text>
@@ -12363,8 +12288,7 @@ langues, registres, dialectes, etc. présents à l’intérieur d’un texte.</d
         </group>
       </text>
     </egXML>
-  </exemplum>
-  <exemplum xml:lang="de" versionDate="2017-06-25">
+  </exemplum><exemplum xml:lang="de" versionDate="2017-06-25">
     <p>Der Textkörper kann durch eine Gruppierung von verschachtelten Texten ersetzt werden, wie das folgende Beispiel zeigt:</p>
     <egXML xmlns="http://www.tei-c.org/ns/Examples" valid="feasible" source="#UND">
       <text>
@@ -12381,32 +12305,26 @@ langues, registres, dialectes, etc. présents à l’intérieur d’un texte.</d
         </group>
       </text>
     </egXML>
-  </exemplum>
-  <remarks versionDate="2007-03-30" xml:lang="en">
+  </exemplum><remarks versionDate="2007-03-30" xml:lang="en">
     <p>This element should not be used to represent a text which is inserted at an arbitrary point
       within the structure of another, for example as in an embedded or quoted narrative; the
         <gi>floatingText</gi> is provided for this purpose.</p>
-  </remarks>
-  <remarks xml:lang="fr" versionDate="2007-06-12">
+  </remarks><remarks xml:lang="fr" versionDate="2007-06-12">
     <p>Cet élément ne devrait pas être utilisé pour encoder un texte inséré à un endroit non
       prévisible à l'intérieur de la structure d'un autre texte, comme par exemple dans un récit qui est enchâssé 
     ou cité dans un autre ; c'est l'élément <gi>floatingText</gi> qui doit être utilisé à
       cet effet.</p>
-  </remarks>
-  <remarks xml:lang="ja" versionDate="2008-04-05">
+  </remarks><remarks xml:lang="ja" versionDate="2008-04-05">
     <p> 当該要素は，別の構造中，例えば引用された語りの任意の場所に挿入され るテキストを示すためには使うべきではない．この場合は，要素 <gi>floatingText</gi>が使われる．
     </p>
-  </remarks>
-  <remarks versionDate="2017-06-25" xml:lang="de">
+  </remarks><remarks versionDate="2017-06-25" xml:lang="de">
     <p>Dieses Element sollte nicht benutzt werden, um einen Text wiederzugeben, der an irgendeiner
       Stelle in einer anderen Struktur eingefügt ist, wie z. B. eine eingebettete oder zitierte
       Erzählung. Für diesen Zweck wird das Element <gi>floatingText</gi> benutzt.</p>
-  </remarks>
-  <listRef>
+  </remarks><listRef>
     <ref target="http://www.tei-c.org/release/doc/tei-p5-doc/en/html/DS.html#DS">4. Default Text Structure</ref>
     <ref target="http://www.tei-c.org/release/doc/tei-p5-doc/en/html/CC.html#CCDEF">15.1. Varieties of Composite Text</ref>
-  </listRef>
-</elementSpec><elementSpec module="textstructure" ident="body">
+  </listRef></elementSpec><elementSpec module="textstructure" ident="body">
   <gloss versionDate="2005-01-14" xml:lang="en">text body</gloss>
   <gloss versionDate="2007-12-20" xml:lang="ko">텍스트 본문</gloss>
   <gloss versionDate="2007-05-02" xml:lang="zh-TW">正文</gloss>
@@ -12573,19 +12491,7 @@ langues, registres, dialectes, etc. présents à l’intérieur d’un texte.</d
   <listRef>
     <ref target="http://www.tei-c.org/release/doc/tei-p5-doc/en/html/DS.html#DS">4. Default Text Structure</ref>
   </listRef>
-</elementSpec><constraintSpec ident="source-att" scheme="schematron">
-          <constraint>
-            <sch:rule context="//tei:body//@source">
-              <sch:let name="biblIDs" value="//tei:body//tei:bibl/@xml:id"/>
-              <sch:let name="sourceValues" value="for $i in $biblIDs return concat('#', $i)"/>
-              <sch:assert test="                 every $i in (tokenize(., ' '))                 satisfies $i = $sourceValues">
-                A @source attribute must point to an @xml:id attribute on a &lt;bibl&gt; element. 
-                Multiple values are allowed and must be separated by a blank space. Acceptable values include: 
-                <sch:value-of select="string-join($sourceValues, ' | ')"/>.
-              </sch:assert>
-            </sch:rule>
-          </constraint>
-        </constraintSpec><moduleSpec n="ST" xml:id="DSTTEI2" ident="tei" type="core"/><moduleSpec n="CO" xml:id="DCO" ident="core"/><moduleSpec n="CE" xml:id="DCE" ident="certainty"/><moduleSpec xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:rng="http://relaxng.org/ns/structure/1.0" n="HD" xml:id="DHD" ident="header"/><moduleSpec n="SA" xml:id="DSA" ident="linking"/><moduleSpec n="ND" xml:id="DND" ident="namesdates"/><moduleSpec n="TD" xml:id="DTDDTD" ident="tagdocs"/><moduleSpec n="DS" xml:id="DDS" ident="textstructure"/></schemaSpec>
+</elementSpec><moduleSpec n="ST" xml:id="DSTTEI2" ident="tei" type="core"/><moduleSpec n="CO" xml:id="DCO" ident="core"/><moduleSpec n="CE" xml:id="DCE" ident="certainty"/><moduleSpec xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:rng="http://relaxng.org/ns/structure/1.0" n="HD" xml:id="DHD" ident="header"/><moduleSpec n="SA" xml:id="DSA" ident="linking"/><moduleSpec n="ND" xml:id="DND" ident="namesdates"/><moduleSpec n="TD" xml:id="DTDDTD" ident="tagdocs"/><moduleSpec n="DS" xml:id="DDS" ident="textstructure"/></schemaSpec>
     </body>
   </text>
 </TEI>

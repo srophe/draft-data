@@ -33,7 +33,18 @@
         <moduleRef key="textstructure" include="TEI body text"/>
         
         
-        <classSpec ident="att.global" mode="change" module="tei" type="atts">
+        <classSpec ident="att.global" mode="change" type="atts" source="tei">
+          <attList>
+            <attDef ident="srophe:tags" ns="https://srophe.app" mode="add">
+              <desc>Specialized attributes specific to the functions performed by the Srophé App.</desc>
+              <datatype maxOccurs="unbounded" minOccurs="1">
+                <rng:text xmlns:rng="http://relaxng.org/ns/structure/1.0"/>
+              </datatype>
+            </attDef>
+          </attList>
+        </classSpec>
+        
+        <classSpec ident="att.datable" mode="change" type="atts" source="tei">
           <attList>
             <attDef ident="srophe:computed-start" ns="https://srophe.app" mode="add">
               <desc>Start date</desc>
@@ -47,32 +58,10 @@
                 <rng:text xmlns:rng="http://relaxng.org/ns/structure/1.0"/>
               </datatype>
             </attDef>
-            <attDef ident="srophe:tags" ns="https://srophe.app" mode="add">
-              <desc>Specialized attributes specific to the functions performed by the Srophé App.</desc>
-              <datatype maxOccurs="unbounded" minOccurs="1">
-                <rng:text xmlns:rng="http://relaxng.org/ns/structure/1.0"/>
-              </datatype>
-            </attDef>
           </attList>
         </classSpec>
         
-        <constraintSpec ident="source-att" scheme="schematron">
-          <constraint>
-            <sch:rule context="//tei:body//@source">
-              <sch:let name="biblIDs" value="//tei:body//tei:bibl/@xml:id"/>
-              <sch:let name="sourceValues" value="for $i in $biblIDs return concat('#', $i)"/>
-              <sch:assert
-                test="
-                every $i in (tokenize(., ' '))
-                satisfies $i = $sourceValues"
-                >
-                A @source attribute must point to an @xml:id attribute on a &lt;bibl&gt; element. 
-                Multiple values are allowed and must be separated by a blank space. Acceptable values include: 
-                <sch:value-of select="string-join($sourceValues, ' | ')"/>.
-              </sch:assert>
-            </sch:rule>
-          </constraint>
-        </constraintSpec>
+        
         
         <elementSpec ident="teiHeader" module="header" mode="change">
           <content>
@@ -632,6 +621,40 @@
           </remarks>
         </elementSpec>
         
+        <elementSpec ident="text" module="textstructure" mode="change">
+          <classes mode="change">
+            <memberOf key="att.global" mode="delete"/>
+            <memberOf key="att.global.rendition" mode="delete"/>
+            <memberOf key="att.global.linking" mode="delete"/>
+            <memberOf key="att.global.analytic" mode="delete"/>
+            <memberOf key="att.global.facs" mode="delete"/>
+            <memberOf key="att.global.change" mode="delete"/>
+            <memberOf key="att.global.responsibility" mode="delete"/>
+            <memberOf key="att.global.source" mode="delete"/>
+            <memberOf key="att.declaring" mode="delete"/>
+            <memberOf key="att.typed" mode="delete"/>
+            <memberOf key="att.written" mode="delete"/>
+          </classes>
+          <constraintSpec ident="source-in-text" scheme="schematron">
+            <constraint>
+              <sch:rule context="//tei:text//@source">
+                <sch:let name="biblIDs" value="//tei:body//tei:bibl/@xml:id"/>
+                <sch:let name="sourceValues" value="for $i in $biblIDs return concat('#', $i)"/>
+                <sch:assert
+                  test="
+                  every $i in (tokenize(., ' '))
+                  satisfies $i = $sourceValues"
+                  >
+                  A @source attribute must point to an @xml:id attribute on a &lt;bibl&gt; element. 
+                  Multiple values are allowed and must be separated by a blank space. Acceptable values include: 
+                  <sch:value-of select="string-join($sourceValues, ' | ')"/>.
+                </sch:assert>
+              </sch:rule>
+            </constraint>
+          </constraintSpec>
+        </elementSpec>
+        
+               
         <elementSpec ident="note" module="core" mode="change">
           <constraintSpec ident="xmlLang-in-note" scheme="schematron">
             <constraint>
@@ -684,6 +707,17 @@
         </elementSpec>
         
         <elementSpec ident="link" module="linking" mode="change">
+          <classes mode="change">
+            <memberOf key="att.global" mode="delete"/>
+            <memberOf key="att.global.rendition" mode="delete"/>
+            <memberOf key="att.global.linking" mode="delete"/>
+            <memberOf key="att.global.analytic" mode="delete"/>
+            <memberOf key="att.global.facs" mode="delete"/>
+            <memberOf key="att.global.change" mode="delete"/>
+            <memberOf key="att.global.responsibility" mode="delete"/>
+            <memberOf key="att.global.source" mode="delete"/>
+            <memberOf key="att.typed" mode="delete"/>
+          </classes>
           <constraintSpec ident="target-on-link" scheme="schematron">
             <constraint>
               <sch:rule context="//tei:link/@target">
@@ -699,6 +733,26 @@
               </sch:rule>
             </constraint>
           </constraintSpec>
+          <attList>
+            <attDef ident="targetLang" mode="delete"/>
+            <attDef ident="evaluate" mode="delete"/>
+          </attList>
+        </elementSpec>
+        
+        <elementSpec ident="precision" module="certainty" mode="change">
+          <classes mode="change">
+            <memberOf key="att.global" mode="delete"/>
+            <memberOf key="att.global.rendition" mode="delete"/>
+            <memberOf key="att.global.linking" mode="delete"/>
+            <memberOf key="att.global.analytic" mode="delete"/>
+            <memberOf key="att.global.facs" mode="delete"/>
+            <memberOf key="att.global.change" mode="delete"/>
+            <memberOf key="att.global.responsibility" mode="delete"/>
+            <memberOf key="att.global.source" mode="delete"/>
+          </classes>
+          <attList>
+            <attDef ident="target" mode="delete"/>
+          </attList>
         </elementSpec>
         
         <elementSpec ident="author" module="core" mode="change">
@@ -764,6 +818,7 @@
             </constraint>
           </constraintSpec>
         </elementSpec>
+        
         
         
         

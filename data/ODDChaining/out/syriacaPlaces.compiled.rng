@@ -6,7 +6,7 @@
          xmlns="http://relaxng.org/ns/structure/1.0"
          datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"
          ns="http://www.tei-c.org/ns/1.0"><!--
-Schema generated from ODD source 2020-06-08T23:19:39Z. .
+Schema generated from ODD source 2020-06-09T22:46:38Z. .
 TEI Edition: Version 4.0.0. Last updated on
 	13th February 2020, revision ccd19b0ba
 TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 4.0.0/
@@ -389,8 +389,26 @@ Sample values include: 1] all; 2] most; 3] range</a:documentation>
       <ref name="tei_att.datable.w3c.attributes"/>
       <ref name="tei_att.datable.iso.attributes"/>
       <ref name="tei_att.datable.custom.attributes"/>
+      <ref name="tei_att.datable.attribute.srophecomputed-start"/>
+      <ref name="tei_att.datable.attribute.srophecomputed-end"/>
       <ref name="tei_att.datable.attribute.calendar"/>
       <ref name="tei_att.datable.attribute.period"/>
+   </define>
+   <define name="tei_att.datable.attribute.srophecomputed-start">
+      <optional>
+         <attribute name="srophe:computed-start" ns="https://srophe.app">
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Start date</a:documentation>
+            <text/>
+         </attribute>
+      </optional>
+   </define>
+   <define name="tei_att.datable.attribute.srophecomputed-end">
+      <optional>
+         <attribute name="srophe:computed-end" ns="https://srophe.app">
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">End date</a:documentation>
+            <text/>
+         </attribute>
+      </optional>
    </define>
    <define name="tei_att.datable.attribute.calendar">
       <optional>
@@ -633,30 +651,12 @@ Suggested values include: 1] internal; 2] external; 3] conjecture</a:documentati
       <ref name="tei_att.global.linking.attributes"/>
       <ref name="tei_att.global.responsibility.attributes"/>
       <ref name="tei_att.global.source.attributes"/>
-      <ref name="tei_att.global.attribute.srophecomputed-start"/>
-      <ref name="tei_att.global.attribute.srophecomputed-end"/>
       <ref name="tei_att.global.attribute.srophetags"/>
       <ref name="tei_att.global.attribute.xmlid"/>
       <ref name="tei_att.global.attribute.n"/>
       <ref name="tei_att.global.attribute.xmllang"/>
       <ref name="tei_att.global.attribute.xmlbase"/>
       <ref name="tei_att.global.attribute.xmlspace"/>
-   </define>
-   <define name="tei_att.global.attribute.srophecomputed-start">
-      <optional>
-         <attribute name="srophe:computed-start" ns="https://srophe.app">
-            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Start date</a:documentation>
-            <text/>
-         </attribute>
-      </optional>
-   </define>
-   <define name="tei_att.global.attribute.srophecomputed-end">
-      <optional>
-         <attribute name="srophe:computed-end" ns="https://srophe.app">
-            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">End date</a:documentation>
-            <text/>
-         </attribute>
-      </optional>
    </define>
    <define name="tei_att.global.attribute.srophetags">
       <optional>
@@ -963,46 +963,6 @@ Suggested values include: 1] m (metre); 2] kg (kilogram); 3] s (second); 4] Hz (
          </attribute>
       </optional>
    </define>
-   <define name="tei_att.placement.attributes">
-      <ref name="tei_att.placement.attribute.place"/>
-   </define>
-   <define name="tei_att.placement.attribute.place">
-      <optional>
-         <attribute name="place">
-            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">specifies where this item is placed.
-Suggested values include: 1] below; 2] bottom; 3] margin; 4] top; 5] opposite; 6] overleaf; 7] above; 8] end; 9] inline; 10] inspace</a:documentation>
-            <list>
-               <oneOrMore>
-                  <choice>
-                     <value>below</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">below the line</a:documentation>
-                     <value>bottom</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">at the foot of the page</a:documentation>
-                     <value>margin</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">in the margin (left, right, or both)</a:documentation>
-                     <value>top</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">at the top of the page</a:documentation>
-                     <value>opposite</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">on the opposite, i.e. facing, page</a:documentation>
-                     <value>overleaf</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">on the other side of the leaf</a:documentation>
-                     <value>above</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">above the line</a:documentation>
-                     <value>end</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">at the end of e.g. chapter or volume.</a:documentation>
-                     <value>inline</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">within the body of the text.</a:documentation>
-                     <value>inspace</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">in a predefined space, for example left by an earlier scribe.</a:documentation>
-                     <data type="token">
-                        <param name="pattern">[^\p{C}\p{Z}]+</param>
-                     </data>
-                  </choice>
-               </oneOrMore>
-            </list>
-         </attribute>
-      </optional>
-   </define>
    <define name="tei_att.typed.attributes">
       <ref name="tei_att.typed.attribute.type"/>
       <ref name="tei_att.typed.attribute.subtype"/>
@@ -1094,22 +1054,6 @@ Suggested values include: 1] below; 2] bottom; 3] margin; 4] top; 5] opposite; 6
          </attribute>
       </optional>
    </define>
-   <define name="tei_att.scoping.attributes">
-      <ref name="tei_att.scoping.attribute.target"/>
-      <ref name="tei_att.scoping.attribute.match"/>
-   </define>
-   <define name="tei_att.scoping.attribute.target">
-      <optional>
-         <attribute name="target">
-            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">points at one or several elements or sets of elements by means of one or more data pointers, using the URI syntax.</a:documentation>
-            <list>
-               <oneOrMore>
-                  <data type="anyURI"/>
-               </oneOrMore>
-            </list>
-         </attribute>
-      </optional>
-   </define>
    <define name="tei_att.scoping.attribute.match">
       <optional>
          <attribute name="match">
@@ -1128,26 +1072,6 @@ Suggested values include: 1] below; 2] bottom; 3] margin; 4] top; 5] opposite; 6
             <data type="token">
                <param name="pattern">[^\p{C}\p{Z}]+</param>
             </data>
-         </attribute>
-      </optional>
-   </define>
-   <define name="tei_att.translatable.attributes">
-      <ref name="tei_att.translatable.attribute.versionDate"/>
-   </define>
-   <define name="tei_att.translatable.attribute.versionDate">
-      <optional>
-         <attribute name="versionDate">
-            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">specifies the date on which the source text was extracted and sent to the translator</a:documentation>
-            <choice>
-               <data type="date"/>
-               <data type="gYear"/>
-               <data type="gMonth"/>
-               <data type="gDay"/>
-               <data type="gYearMonth"/>
-               <data type="gMonthDay"/>
-               <data type="time"/>
-               <data type="dateTime"/>
-            </choice>
          </attribute>
       </optional>
    </define>
@@ -1542,9 +1466,6 @@ Suggested values include: 1] below; 2] bottom; 3] margin; 4] top; 5] opposite; 6
          <ref name="tei_bibl"/>
          <ref name="tei_listBibl"/>
       </choice>
-   </define>
-   <define name="tei_model.headLike">
-      <notAllowed/>
    </define>
    <define name="tei_model.labelLike">
       <choice>
@@ -2081,8 +2002,6 @@ Suggested values include: 1] below; 2] bottom; 3] margin; 4] top; 5] opposite; 6
             </sch:rule>
          </pattern>
          <ref name="tei_att.global.attributes"/>
-         <ref name="tei_att.translatable.attributes"/>
-         <ref name="tei_att.typed.attribute.subtype"/>
          <optional>
             <attribute name="type">
                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
@@ -2190,17 +2109,7 @@ Normalization 12. Critical Apparatus]</a:documentation>
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">contains a word or phrase referring to some quantity of an object or commodity, usually comprising a number, a unit, and a commodity name. [3.5.3. Numbers and
 Measures]</a:documentation>
          <ref name="tei_macro.phraseSeq"/>
-         <ref name="tei_att.global.attributes"/>
-         <ref name="tei_att.typed.attribute.subtype"/>
          <ref name="tei_att.measurement.attributes"/>
-         <optional>
-            <attribute name="type">
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">specifies the type of measurement in any convenient typology.</a:documentation>
-               <data type="token">
-                  <param name="pattern">[^\p{C}\p{Z}]+</param>
-               </data>
-            </attribute>
-         </optional>
          <empty/>
       </element>
    </define>
@@ -2217,6 +2126,8 @@ Measures]</a:documentation>
          </zeroOrMore>
          <ref name="tei_att.global.attributes"/>
          <ref name="tei_att.canonical.attributes"/>
+         <ref name="tei_att.datable.attribute.srophecomputed-start"/>
+         <ref name="tei_att.datable.attribute.srophecomputed-end"/>
          <ref name="tei_att.datable.attribute.calendar"/>
          <ref name="tei_att.datable.attribute.period"/>
          <ref name="tei_att.datable.w3c.attribute.when"/>
@@ -2337,12 +2248,7 @@ Sample values include: 1] suspension; 2] contraction; 3] brevigraph; 4] superscr
 attributes @target and @cRef may be supplied on <name/>.</report>
             </rule>
          </pattern>
-         <ref name="tei_att.global.attributes"/>
-         <ref name="tei_att.pointing.attributes"/>
-         <ref name="tei_att.internetMedia.attributes"/>
-         <ref name="tei_att.typed.attributes"/>
-         <ref name="tei_att.declaring.attributes"/>
-         <ref name="tei_att.cReferencing.attributes"/>
+         <ref name="tei_att.pointing.attribute.target"/>
          <empty/>
       </element>
    </define>
@@ -2372,7 +2278,7 @@ attributes @target and @cRef may be supplied on <name/>.</report>
    <define name="tei_label">
       <element name="label">
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">contains any label or heading used to identify part of a text, typically but not exclusively in a list or glossary. [3.7. Lists]</a:documentation>
-         <ref name="tei_macro.phraseSeq"/>
+         <text/>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   id="syriacaPlaces-label-confession-label-constraint-rule-16">
             <sch:rule xmlns:sch="http://purl.oclc.org/dsdl/schematron"
@@ -2398,11 +2304,6 @@ attributes @target and @cRef may be supplied on <name/>.</report>
                 </sch:assert>
             </sch:rule>
          </pattern>
-         <ref name="tei_att.global.attributes"/>
-         <ref name="tei_att.typed.attributes"/>
-         <ref name="tei_att.placement.attributes"/>
-         <ref name="tei_att.written.attributes"/>
-         <empty/>
       </element>
    </define>
    <define name="tei_note">
@@ -2443,8 +2344,6 @@ attributes @target and @cRef may be supplied on <name/>.</report>
                 </sch:assert>
             </sch:rule>
          </pattern>
-         <ref name="tei_att.global.attribute.srophecomputed-start"/>
-         <ref name="tei_att.global.attribute.srophecomputed-end"/>
          <ref name="tei_att.global.attribute.srophetags"/>
          <ref name="tei_att.global.attribute.n"/>
          <ref name="tei_att.global.attribute.xmllang"/>
@@ -2464,9 +2363,7 @@ attributes @target and @cRef may be supplied on <name/>.</report>
          <ref name="tei_att.global.responsibility.attribute.cert"/>
          <ref name="tei_att.global.responsibility.attribute.resp"/>
          <ref name="tei_att.global.source.attribute.source"/>
-         <ref name="tei_att.placement.attributes"/>
          <ref name="tei_att.pointing.attributes"/>
-         <ref name="tei_att.typed.attribute.subtype"/>
          <ref name="tei_att.written.attributes"/>
          <attribute name="type">
             <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Describes the function of the note. This attribute is recommended and determines how the note is displayed on the page.</a:documentation>
@@ -2487,24 +2384,6 @@ attributes @target and @cRef may be supplied on <name/>.</report>
                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">A note that cannot be categorized as any other type.</a:documentation>
             </choice>
          </attribute>
-         <optional>
-            <attribute xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"
-                       name="anchored"
-                       a:defaultValue="true">
-               <a:documentation>indicates whether the copy text shows the exact place of reference for the note.</a:documentation>
-               <data type="boolean"/>
-            </attribute>
-         </optional>
-         <optional>
-            <attribute name="targetEnd">
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">points to the end of the span to which the note is attached, if the note is not embedded in the text at that point.</a:documentation>
-               <list>
-                  <oneOrMore>
-                     <data type="anyURI"/>
-                  </oneOrMore>
-               </list>
-            </attribute>
-         </optional>
          <empty/>
       </element>
    </define>
@@ -2748,8 +2627,6 @@ Suggested values include: 1] main; 2] sub (subordinate); 3] alt (alternate); 4] 
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(scope of bibliographic reference) defines the scope of a bibliographic reference, for example as a list of page numbers, or a named subdivision of a larger work. [3.11.2.5. Scopes and Ranges in Bibliographic Citations]</a:documentation>
          <ref name="tei_title"/>
          <ref name="tei_idno"/>
-         <ref name="tei_att.global.attribute.srophecomputed-start"/>
-         <ref name="tei_att.global.attribute.srophecomputed-end"/>
          <ref name="tei_att.global.attribute.srophetags"/>
          <ref name="tei_att.global.attribute.xmlid"/>
          <ref name="tei_att.global.attribute.xmllang"/>
@@ -2855,36 +2732,15 @@ Suggested values include: 1] main; 2] sub (subordinate); 3] alt (alternate); 4] 
             </sch:rule>
          </pattern>
          <ref name="tei_att.global.attributes"/>
-         <ref name="tei_att.declarable.attributes"/>
-         <ref name="tei_att.typed.attributes"/>
-         <ref name="tei_att.sortable.attributes"/>
-         <ref name="tei_att.docStatus.attributes"/>
          <empty/>
       </element>
    </define>
    <define name="tei_listBibl">
       <element name="listBibl">
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(citation list) contains a list of bibliographic citations of any kind. [3.11.1. Methods of Encoding Bibliographic References and Lists of References 2.2.7. The Source Description 15.3.2. Declarable Elements]</a:documentation>
-         <group>
-            <zeroOrMore>
-               <ref name="tei_model.headLike"/>
-            </zeroOrMore>
-            <zeroOrMore>
-               <ref name="tei_desc"/>
-            </zeroOrMore>
-            <oneOrMore>
-               <choice>
-                  <ref name="tei_model.biblLike"/>
-                  <ref name="tei_model.milestoneLike"/>
-               </choice>
-            </oneOrMore>
-            <zeroOrMore>
-               <choice>
-                  <ref name="tei_relation"/>
-                  <ref name="tei_listRelation"/>
-               </choice>
-            </zeroOrMore>
-         </group>
+         <oneOrMore>
+            <ref name="tei_bibl"/>
+         </oneOrMore>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   id="syriacaPlaces-listBibl-xmlID-on-listBibl-constraint-rule-31">
             <sch:rule xmlns:sch="http://purl.oclc.org/dsdl/schematron"
@@ -2899,9 +2755,6 @@ Suggested values include: 1] main; 2] sub (subordinate); 3] alt (alternate); 4] 
             </sch:rule>
          </pattern>
          <ref name="tei_att.global.attributes"/>
-         <ref name="tei_att.sortable.attributes"/>
-         <ref name="tei_att.declarable.attributes"/>
-         <ref name="tei_att.typed.attributes"/>
          <empty/>
       </element>
    </define>
@@ -2914,8 +2767,7 @@ Suggested values include: 1] main; 2] sub (subordinate); 3] alt (alternate); 4] 
                <ref name="tei_model.certLike"/>
             </choice>
          </zeroOrMore>
-         <ref name="tei_att.global.attributes"/>
-         <ref name="tei_att.scoping.attributes"/>
+         <ref name="tei_att.scoping.attribute.match"/>
          <ref name="tei_att.ranging.attributes"/>
          <ref name="tei_att.datable.attributes"/>
          <optional>
@@ -3071,13 +2923,7 @@ Suggested values include: 1] main; 2] sub (subordinate); 3] alt (alternate); 4] 
    <define name="tei_idno">
       <element name="idno">
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(identifier) supplies any form of identifier used to identify some object, such as a bibliographic item, a person, a title, an organization, etc. in a standardized way. [13.3.1. Basic Principles 2.2.4. Publication, Distribution, Licensing, etc. 2.2.5. The Series Statement 3.11.2.4. Imprint, Size of a Document, and Reprint Information]</a:documentation>
-         <zeroOrMore>
-            <choice>
-               <text/>
-               <ref name="tei_model.gLike"/>
-               <ref name="tei_idno"/>
-            </choice>
-         </zeroOrMore>
+         <text/>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   id="syriacaPlaces-idno-idno-uri-constraint-rule-33">
             <sch:rule xmlns:sch="http://purl.oclc.org/dsdl/schematron"
@@ -3429,6 +3275,8 @@ Suggested values include: 1] main; 2] sub (subordinate); 3] alt (alternate); 4] 
                 </sch:assert>
             </sch:rule>
          </pattern>
+         <ref name="tei_att.datable.attribute.srophecomputed-start"/>
+         <ref name="tei_att.datable.attribute.srophecomputed-end"/>
          <ref name="tei_att.datable.attribute.calendar"/>
          <ref name="tei_att.datable.attribute.period"/>
          <ref name="tei_att.datable.w3c.attribute.notBefore"/>
@@ -3448,8 +3296,6 @@ Suggested values include: 1] main; 2] sub (subordinate); 3] alt (alternate); 4] 
          <ref name="tei_att.datable.custom.attribute.datingPoint"/>
          <ref name="tei_att.datable.custom.attribute.datingMethod"/>
          <ref name="tei_att.docStatus.attributes"/>
-         <ref name="tei_att.global.attribute.srophecomputed-start"/>
-         <ref name="tei_att.global.attribute.srophecomputed-end"/>
          <ref name="tei_att.global.attribute.srophetags"/>
          <ref name="tei_att.global.attribute.xmlid"/>
          <ref name="tei_att.global.attribute.xmllang"/>
@@ -3629,9 +3475,7 @@ Suggested values include: 1] main; 2] sub (subordinate); 3] alt (alternate); 4] 
                </sch:assert>
             </rule>
          </pattern>
-         <ref name="tei_att.global.attributes"/>
-         <ref name="tei_att.pointing.attributes"/>
-         <ref name="tei_att.typed.attributes"/>
+         <ref name="tei_att.pointing.attribute.target"/>
          <empty/>
       </element>
    </define>
@@ -3859,6 +3703,21 @@ Suggested values include: 1] main; 2] sub (subordinate); 3] alt (alternate); 4] 
       <element name="persName">
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(personal name) contains a proper noun or proper-noun phrase referring to a person, possibly including one or more of the person's forenames, surnames, honorifics, added names, etc. [13.2.1. Personal Names]</a:documentation>
          <ref name="tei_macro.phraseSeq"/>
+         <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
+                  id="syriacaPlaces-persName-ref-on-person-constraint-rule-44">
+            <sch:rule xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                      xmlns:srophe="https://srophe.app"
+                      xmlns="http://www.tei-c.org/ns/1.0"
+                      context="//tei:text//tei:persName/@ref">
+               <sch:let name="personIndex"
+                        value="doc('https://raw.githubusercontent.com/srophe/srophe-eXist-app/master/documentation/indexes/persons.xml')"/>
+               <sch:let name="personURIs" value="$personIndex//tei:person/@ref"/>
+               <sch:assert test="                   every $i in .                   satisfies $i = $personURIs">
+                  This @ref attribute is not a person URI in use in Syriaca.org data. Note that all person URIs take the form 'http://syriaca.org/person/{\d+}' (where {\d+} is a number).
+                </sch:assert>
+               <sch:report test="contains(., ' ')">This @ref may contain only one URI.</sch:report>
+            </sch:rule>
+         </pattern>
          <ref name="tei_att.global.attributes"/>
          <ref name="tei_att.datable.attributes"/>
          <ref name="tei_att.editLike.attributes"/>
@@ -3872,11 +3731,11 @@ Suggested values include: 1] main; 2] sub (subordinate); 3] alt (alternate); 4] 
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">contains an absolute or relative place name. [13.2.3. Place Names]</a:documentation>
          <ref name="tei_macro.phraseSeq"/>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="syriacaPlaces-placeName-source-on-placeName-constraint-rule-44">
+                  id="syriacaPlaces-placeName-source-on-placeName-constraint-rule-45">
             <sch:rule xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       xmlns:srophe="https://srophe.app"
                       xmlns="http://www.tei-c.org/ns/1.0"
-                      context="//tei:place/tei:placeName">
+                      context="//tei:text/tei:place/tei:placeName">
                <sch:assert test="attribute::source or attribute::resp">
                   The &lt;placeName&gt; element must have either a @source attribute (preferred when available) or a @resp attribute.
                 </sch:assert>
@@ -3886,11 +3745,11 @@ Suggested values include: 1] main; 2] sub (subordinate); 3] alt (alternate); 4] 
             </sch:rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="syriacaPlaces-placeName-xmlID-on-placeName-constraint-rule-45">
+                  id="syriacaPlaces-placeName-xmlID-on-placeName-constraint-rule-46">
             <sch:rule xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       xmlns:srophe="https://srophe.app"
                       xmlns="http://www.tei-c.org/ns/1.0"
-                      context="//tei:place/tei:placeName">
+                      context="//tei:text/tei:place/tei:placeName">
                <sch:let name="docURIno"
                         value="//tei:publicationStmt/tei:idno/substring-before(substring-after(substring-after(., 'http://syriaca.org/'), '/'), '/tei')"/>
                <sch:assert test="matches(./@xml:id, concat('name', $docURIno, '-', '\d+$'))">
@@ -3899,7 +3758,7 @@ Suggested values include: 1] main; 2] sub (subordinate); 3] alt (alternate); 4] 
             </sch:rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="syriacaPlaces-placeName-xmlLang-on-placeName-constraint-rule-46">
+                  id="syriacaPlaces-placeName-xmlLang-on-placeName-constraint-rule-47">
             <sch:rule xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       xmlns:srophe="https://srophe.app"
                       xmlns="http://www.tei-c.org/ns/1.0"
@@ -3907,10 +3766,24 @@ Suggested values include: 1] main; 2] sub (subordinate); 3] alt (alternate); 4] 
                <sch:assert test="./@xml:lang">A &lt;placeName&gt; element that is the direct child of the &lt;place&gt; element must have an @xml:lang attribute.</sch:assert>
             </sch:rule>
          </pattern>
+         <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
+                  id="syriacaPlaces-placeName-ref-on-placeName-constraint-rule-48">
+            <sch:rule xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                      xmlns:srophe="https://srophe.app"
+                      xmlns="http://www.tei-c.org/ns/1.0"
+                      context="//tei:text//tei:placeName/@ref">
+               <sch:let name="placeIndex"
+                        value="doc('https://raw.githubusercontent.com/srophe/srophe-eXist-app/master/documentation/indexes/places.xml')"/>
+               <sch:let name="placeURIs" value="$placeIndex//tei:place/@ref"/>
+               <sch:assert test="                   every $i in .                   satisfies $i = $placeURIs">
+                  This @ref attribute is not a place URI in use in Syriaca.org data. Note that all place URIs take the form 'http://syriaca.org/place/{\d+}' (where {\d+} is a number).
+                </sch:assert>
+               <sch:report test="contains(., ' ')">This @ref may contain only one URI.</sch:report>
+            </sch:rule>
+         </pattern>
+         <ref name="tei_att.canonical.attributes"/>
          <ref name="tei_att.datable.attributes"/>
          <ref name="tei_att.editLike.attributes"/>
-         <ref name="tei_att.global.attribute.srophecomputed-start"/>
-         <ref name="tei_att.global.attribute.srophecomputed-end"/>
          <ref name="tei_att.global.attribute.srophetags"/>
          <ref name="tei_att.global.attribute.n"/>
          <ref name="tei_att.global.attribute.xmlbase"/>
@@ -3928,8 +3801,6 @@ Suggested values include: 1] main; 2] sub (subordinate); 3] alt (alternate); 4] 
          <ref name="tei_att.global.linking.attribute.select"/>
          <ref name="tei_att.global.responsibility.attribute.cert"/>
          <ref name="tei_att.global.source.attribute.source"/>
-         <ref name="tei_att.personal.attributes"/>
-         <ref name="tei_att.typed.attributes"/>
          <optional>
             <attribute name="xml:id">
                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(identifier) The <code xmlns="http://www.w3.org/1999/xhtml">&lt;placeName&gt;</code> element requires an <code xmlns="http://www.w3.org/1999/xhtml">@xml:id</code> attribute whose value is the concatenation of "name", the Syriaca.org ID number of this place (i.e. the last element of the URI), a ‘-’, and the number of this name element in order.</a:documentation>
@@ -4042,11 +3913,22 @@ Suggested values include: 1] main; 2] sub (subordinate); 3] alt (alternate); 4] 
       <element name="bloc">
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">contains the name of a geo-political unit consisting of two or more nation states or countries. [13.2.3. Place Names]</a:documentation>
          <ref name="tei_macro.phraseSeq"/>
-         <ref name="tei_att.global.attributes"/>
-         <ref name="tei_att.naming.attribute.role"/>
-         <ref name="tei_att.naming.attribute.nymRef"/>
-         <ref name="tei_att.canonical.attribute.key"/>
-         <ref name="tei_att.typed.attributes"/>
+         <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
+                  id="syriacaPlaces-bloc-ref-on-bloc-constraint-rule-49">
+            <sch:rule xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                      xmlns:srophe="https://srophe.app"
+                      xmlns="http://www.tei-c.org/ns/1.0"
+                      context="//tei:text//tei:bloc/@ref">
+               <sch:let name="placeIndex"
+                        value="doc('https://raw.githubusercontent.com/srophe/srophe-eXist-app/master/documentation/indexes/places.xml')"/>
+               <sch:let name="placeURIs" value="$placeIndex//tei:place/@ref"/>
+               <sch:assert test="                   every $i in .                   satisfies $i = $placeURIs">
+                  This @ref attribute is not a place URI in use in Syriaca.org data. Note that all place URIs take the form 'http://syriaca.org/place/{\d+}' (where {\d+} is a number).
+                </sch:assert>
+               <sch:report test="contains(., ' ')">This @ref may contain only one URI.</sch:report>
+            </sch:rule>
+         </pattern>
+         <ref name="tei_att.datable.attributes"/>
          <attribute name="ref">
             <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(reference) provides an explicit means of locating a full definition or identity for the entity being named by means of one or more URIs.</a:documentation>
             <list>
@@ -4062,11 +3944,22 @@ Suggested values include: 1] main; 2] sub (subordinate); 3] alt (alternate); 4] 
       <element name="country">
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">contains the name of a geo-political unit, such as a nation, country, colony, or commonwealth, larger than or administratively superior to a region and smaller than a bloc. [13.2.3. Place Names]</a:documentation>
          <ref name="tei_macro.phraseSeq"/>
-         <ref name="tei_att.global.attributes"/>
-         <ref name="tei_att.naming.attribute.role"/>
-         <ref name="tei_att.naming.attribute.nymRef"/>
-         <ref name="tei_att.canonical.attribute.key"/>
-         <ref name="tei_att.typed.attributes"/>
+         <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
+                  id="syriacaPlaces-country-ref-on-country-constraint-rule-50">
+            <sch:rule xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                      xmlns:srophe="https://srophe.app"
+                      xmlns="http://www.tei-c.org/ns/1.0"
+                      context="//tei:text//tei:country/@ref">
+               <sch:let name="placeIndex"
+                        value="doc('https://raw.githubusercontent.com/srophe/srophe-eXist-app/master/documentation/indexes/places.xml')"/>
+               <sch:let name="placeURIs" value="$placeIndex//tei:place/@ref"/>
+               <sch:assert test="                   every $i in .                   satisfies $i = $placeURIs">
+                  This @ref attribute is not a place URI in use in Syriaca.org data. Note that all place URIs take the form 'http://syriaca.org/place/{\d+}' (where {\d+} is a number).
+                </sch:assert>
+               <sch:report test="contains(., ' ')">This @ref may contain only one URI.</sch:report>
+            </sch:rule>
+         </pattern>
+         <ref name="tei_att.datable.attributes"/>
          <attribute name="ref">
             <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(reference) provides an explicit means of locating a full definition or identity for the entity being named by means of one or more URIs.</a:documentation>
             <list>
@@ -4082,11 +3975,22 @@ Suggested values include: 1] main; 2] sub (subordinate); 3] alt (alternate); 4] 
       <element name="region">
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">contains the name of an administrative unit such as a state, province, or county, larger than a settlement, but smaller than a country. [13.2.3. Place Names]</a:documentation>
          <ref name="tei_macro.phraseSeq"/>
-         <ref name="tei_att.global.attributes"/>
-         <ref name="tei_att.naming.attribute.role"/>
-         <ref name="tei_att.naming.attribute.nymRef"/>
-         <ref name="tei_att.canonical.attribute.key"/>
-         <ref name="tei_att.typed.attributes"/>
+         <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
+                  id="syriacaPlaces-region-ref-on-region-constraint-rule-51">
+            <sch:rule xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                      xmlns:srophe="https://srophe.app"
+                      xmlns="http://www.tei-c.org/ns/1.0"
+                      context="//tei:text//tei:region/@ref">
+               <sch:let name="placeIndex"
+                        value="doc('https://raw.githubusercontent.com/srophe/srophe-eXist-app/master/documentation/indexes/places.xml')"/>
+               <sch:let name="placeURIs" value="$placeIndex//tei:place/@ref"/>
+               <sch:assert test="                   every $i in .                   satisfies $i = $placeURIs">
+                  This @ref attribute is not a place URI in use in Syriaca.org data. Note that all place URIs take the form 'http://syriaca.org/place/{\d+}' (where {\d+} is a number).
+                </sch:assert>
+               <sch:report test="contains(., ' ')">This @ref may contain only one URI.</sch:report>
+            </sch:rule>
+         </pattern>
+         <ref name="tei_att.datable.attributes"/>
          <attribute name="ref">
             <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(reference) provides an explicit means of locating a full definition or identity for the entity being named by means of one or more URIs.</a:documentation>
             <list>
@@ -4102,11 +4006,22 @@ Suggested values include: 1] main; 2] sub (subordinate); 3] alt (alternate); 4] 
       <element name="settlement">
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">contains the name of a settlement such as a city, town, or village identified as a single geo-political or administrative unit. [13.2.3. Place Names]</a:documentation>
          <ref name="tei_macro.phraseSeq"/>
-         <ref name="tei_att.global.attributes"/>
-         <ref name="tei_att.naming.attribute.role"/>
-         <ref name="tei_att.naming.attribute.nymRef"/>
-         <ref name="tei_att.canonical.attribute.key"/>
-         <ref name="tei_att.typed.attributes"/>
+         <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
+                  id="syriacaPlaces-settlement-ref-on-settlement-constraint-rule-52">
+            <sch:rule xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                      xmlns:srophe="https://srophe.app"
+                      xmlns="http://www.tei-c.org/ns/1.0"
+                      context="//tei:text//tei:settlement/@ref">
+               <sch:let name="placeIndex"
+                        value="doc('https://raw.githubusercontent.com/srophe/srophe-eXist-app/master/documentation/indexes/places.xml')"/>
+               <sch:let name="placeURIs" value="$placeIndex//tei:place/@ref"/>
+               <sch:assert test="                   every $i in .                   satisfies $i = $placeURIs">
+                  This @ref attribute is not a place URI in use in Syriaca.org data. Note that all place URIs take the form 'http://syriaca.org/place/{\d+}' (where {\d+} is a number).
+                </sch:assert>
+               <sch:report test="contains(., ' ')">This @ref may contain only one URI.</sch:report>
+            </sch:rule>
+         </pattern>
+         <ref name="tei_att.datable.attributes"/>
          <attribute name="ref">
             <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(reference) provides an explicit means of locating a full definition or identity for the entity being named by means of one or more URIs.</a:documentation>
             <list>
@@ -4122,11 +4037,22 @@ Suggested values include: 1] main; 2] sub (subordinate); 3] alt (alternate); 4] 
       <element name="district">
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">contains the name of any kind of subdivision of a settlement, such as a parish, ward, or other administrative or geographic unit. [13.2.3. Place Names]</a:documentation>
          <ref name="tei_macro.phraseSeq"/>
-         <ref name="tei_att.global.attributes"/>
-         <ref name="tei_att.naming.attribute.role"/>
-         <ref name="tei_att.naming.attribute.nymRef"/>
-         <ref name="tei_att.canonical.attribute.key"/>
-         <ref name="tei_att.typed.attributes"/>
+         <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
+                  id="syriacaPlaces-district-ref-on-district-constraint-rule-53">
+            <sch:rule xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                      xmlns:srophe="https://srophe.app"
+                      xmlns="http://www.tei-c.org/ns/1.0"
+                      context="//tei:text//tei:district/@ref">
+               <sch:let name="placeIndex"
+                        value="doc('https://raw.githubusercontent.com/srophe/srophe-eXist-app/master/documentation/indexes/places.xml')"/>
+               <sch:let name="placeURIs" value="$placeIndex//tei:place/@ref"/>
+               <sch:assert test="                   every $i in .                   satisfies $i = $placeURIs">
+                  This @ref attribute is not a place URI in use in Syriaca.org data. Note that all place URIs take the form 'http://syriaca.org/place/{\d+}' (where {\d+} is a number).
+                </sch:assert>
+               <sch:report test="contains(., ' ')">This @ref may contain only one URI.</sch:report>
+            </sch:rule>
+         </pattern>
+         <ref name="tei_att.datable.attributes"/>
          <attribute name="ref">
             <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(reference) provides an explicit means of locating a full definition or identity for the entity being named by means of one or more URIs.</a:documentation>
             <list>
@@ -4142,10 +4068,8 @@ Suggested values include: 1] main; 2] sub (subordinate); 3] alt (alternate); 4] 
       <element name="offset">
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">marks that part of a relative temporal or spatial expression which indicates the direction of the offset between the two place names, dates, or times involved in the expression. [13.2.3. Place Names]</a:documentation>
          <ref name="tei_macro.phraseSeq"/>
+         <ref name="tei_att.datable.attributes"/>
          <ref name="tei_att.editLike.attributes"/>
-         <ref name="tei_att.global.attributes"/>
-         <ref name="tei_att.naming.attributes"/>
-         <ref name="tei_att.typed.attributes"/>
          <ref name="tei_att.dimensions.attributes"/>
          <empty/>
       </element>
@@ -4161,7 +4085,7 @@ Suggested values include: 1] main; 2] sub (subordinate); 3] alt (alternate); 4] 
             <ref name="tei_precision"/>
          </zeroOrMore>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="syriacaPlaces-event-xmlID-on-event-constraint-rule-47">
+                  id="syriacaPlaces-event-xmlID-on-event-constraint-rule-54">
             <sch:rule xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       xmlns:srophe="https://srophe.app"
                       xmlns="http://www.tei-c.org/ns/1.0"
@@ -4173,8 +4097,6 @@ Suggested values include: 1] main; 2] sub (subordinate); 3] alt (alternate); 4] 
                 </sch:assert>
             </sch:rule>
          </pattern>
-         <ref name="tei_att.global.attribute.srophecomputed-start"/>
-         <ref name="tei_att.global.attribute.srophecomputed-end"/>
          <ref name="tei_att.global.attribute.srophetags"/>
          <ref name="tei_att.global.attribute.xmlid"/>
          <ref name="tei_att.global.attribute.n"/>
@@ -4195,10 +4117,7 @@ Suggested values include: 1] main; 2] sub (subordinate); 3] alt (alternate); 4] 
          <ref name="tei_att.global.responsibility.attribute.cert"/>
          <ref name="tei_att.global.responsibility.attribute.resp"/>
          <ref name="tei_att.datable.attributes"/>
-         <ref name="tei_att.editLike.attributes"/>
          <ref name="tei_att.typed.attribute.subtype"/>
-         <ref name="tei_att.naming.attributes"/>
-         <ref name="tei_att.sortable.attributes"/>
          <attribute name="source">
             <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The <code xmlns="http://www.w3.org/1999/xhtml">&lt;event&gt;</code> element requires a <code xmlns="http://www.w3.org/1999/xhtml">@source</code> attribute.</a:documentation>
             <list>
@@ -4241,11 +4160,6 @@ Suggested values include: 1] main; 2] sub (subordinate); 3] alt (alternate); 4] 
          <optional>
             <ref name="tei_listRelation"/>
          </optional>
-         <ref name="tei_att.global.attributes"/>
-         <ref name="tei_att.typed.attributes"/>
-         <ref name="tei_att.declarable.attributes"/>
-         <ref name="tei_att.sortable.attributes"/>
-         <empty/>
       </element>
    </define>
    <define name="tei_location">
@@ -4286,7 +4200,21 @@ Suggested values include: 1] main; 2] sub (subordinate); 3] alt (alternate); 4] 
             </group>
          </choice>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="syriacaPlaces-location-location-children-constraint-rule-48">
+                  id="syriacaPlaces-location-source-on-location-constraint-rule-55">
+            <sch:rule xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                      xmlns:srophe="https://srophe.app"
+                      xmlns="http://www.tei-c.org/ns/1.0"
+                      context="//tei:text/tei:place/tei:location">
+               <sch:assert test="attribute::source or attribute::resp">
+                  The &lt;location&gt; element must have either a @source attribute (preferred when available) or a @resp attribute.
+                </sch:assert>
+               <sch:report test="attribute::source and attribute::resp">
+                  The &lt;location&gt; element may not have both a @source attribute (the preferred when available) and a @resp attribute.
+                </sch:report>
+            </sch:rule>
+         </pattern>
+         <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
+                  id="syriacaPlaces-location-location-children-constraint-rule-56">
             <sch:rule xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       xmlns:srophe="https://srophe.app"
                       xmlns="http://www.tei-c.org/ns/1.0"
@@ -4321,7 +4249,7 @@ Suggested values include: 1] main; 2] sub (subordinate); 3] alt (alternate); 4] 
             </sch:rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="syriacaPlaces-location-atts-on-location-constraint-rule-52">
+                  id="syriacaPlaces-location-atts-on-location-constraint-rule-60">
             <sch:rule xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       xmlns:srophe="https://srophe.app"
                       xmlns="http://www.tei-c.org/ns/1.0"
@@ -4334,8 +4262,6 @@ Suggested values include: 1] main; 2] sub (subordinate); 3] alt (alternate); 4] 
                 </sch:report>
             </sch:rule>
          </pattern>
-         <ref name="tei_att.global.attribute.srophecomputed-start"/>
-         <ref name="tei_att.global.attribute.srophecomputed-end"/>
          <ref name="tei_att.global.attribute.srophetags"/>
          <ref name="tei_att.global.attribute.xmlid"/>
          <ref name="tei_att.global.attribute.n"/>
@@ -4353,19 +4279,26 @@ Suggested values include: 1] main; 2] sub (subordinate); 3] alt (alternate); 4] 
          <ref name="tei_att.global.linking.attribute.prev"/>
          <ref name="tei_att.global.linking.attribute.exclude"/>
          <ref name="tei_att.global.linking.attribute.select"/>
-         <ref name="tei_att.global.responsibility.attribute.cert"/>
-         <ref name="tei_att.global.source.attribute.source"/>
          <ref name="tei_att.datable.attributes"/>
-         <ref name="tei_att.editLike.attributes"/>
          <optional>
             <attribute name="resp">
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(responsible party) Most <code xmlns="http://www.w3.org/1999/xhtml">&lt;placeName&gt;</code> elements will have a <code xmlns="http://www.w3.org/1999/xhtml">@source</code> attribute pointing to the <code xmlns="http://www.w3.org/1999/xhtml">&lt;bibl&gt;</code> element that is the source of that name. In instances where a place name is generated by Syriaca.org for consistency of transcription but is not attested in a print or online source, a <code xmlns="http://www.w3.org/1999/xhtml">@resp</code> is used with a value of 'http://syriaca.org'.</a:documentation>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(responsible party) In most cases the <code xmlns="http://www.w3.org/1999/xhtml">&lt;location&gt;</code> element will have a <code xmlns="http://www.w3.org/1999/xhtml">@source</code> attribute pointing to the <code xmlns="http://www.w3.org/1999/xhtml">&lt;bibl&gt;</code> element that is the source of that location information. In instances were the location information has been collected by a Syriaca.org contributor but is not attested in print, a a <code xmlns="http://www.w3.org/1999/xhtml">@resp</code> is used with a value of 'http://syriaca.org'.</a:documentation>
                <list>
                   <oneOrMore>
                      <choice>
                         <value>http://syriaca.org</value>
                         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
                      </choice>
+                  </oneOrMore>
+               </list>
+            </attribute>
+         </optional>
+         <optional>
+            <attribute name="source">
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">In most cases the <code xmlns="http://www.w3.org/1999/xhtml">&lt;location&gt;</code> element will have a <code xmlns="http://www.w3.org/1999/xhtml">@source</code> attribute pointing to the <code xmlns="http://www.w3.org/1999/xhtml">&lt;bibl&gt;</code> element that is the source of that location information. In instances were the location information has been collected by a Syriaca.org contributor but is not attested in print, a a <code xmlns="http://www.w3.org/1999/xhtml">@resp</code> is used with a value of 'http://syriaca.org'.</a:documentation>
+               <list>
+                  <oneOrMore>
+                     <data type="anyURI"/>
                   </oneOrMore>
                </list>
             </attribute>
@@ -4402,23 +4335,9 @@ Suggested values include: 1] main; 2] sub (subordinate); 3] alt (alternate); 4] 
    <define name="tei_listRelation">
       <element name="listRelation">
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">provides information about relationships identified amongst people, places, and organizations, either informally as prose or as formally expressed relation links. [13.3.2.3. Personal Relationships]</a:documentation>
-         <group>
-            <zeroOrMore>
-               <ref name="tei_model.headLike"/>
-            </zeroOrMore>
-            <zeroOrMore>
-               <ref name="tei_desc"/>
-            </zeroOrMore>
-            <choice>
-               <ref name="tei_model.pLike"/>
-               <oneOrMore>
-                  <choice>
-                     <ref name="tei_relation"/>
-                     <ref name="tei_listRelation"/>
-                  </choice>
-               </oneOrMore>
-            </choice>
-         </group>
+         <oneOrMore>
+            <ref name="tei_relation"/>
+         </oneOrMore>
          <ref name="tei_att.global.attributes"/>
          <ref name="tei_att.typed.attributes"/>
          <ref name="tei_att.sortable.attributes"/>
@@ -4453,7 +4372,7 @@ Suggested values include: 1] main; 2] sub (subordinate); 3] alt (alternate); 4] 
             <ref name="tei_bibl"/>
          </oneOrMore>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="syriacaPlaces-place-abstract-in-place-constraint-rule-53">
+                  id="syriacaPlaces-place-abstract-in-place-constraint-rule-61">
             <sch:rule xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       xmlns:srophe="https://srophe.app"
                       xmlns="http://www.tei-c.org/ns/1.0"
@@ -4463,30 +4382,6 @@ Suggested values include: 1] main; 2] sub (subordinate); 3] alt (alternate); 4] 
                 </sch:report>
             </sch:rule>
          </pattern>
-         <ref name="tei_att.global.attribute.srophecomputed-start"/>
-         <ref name="tei_att.global.attribute.srophecomputed-end"/>
-         <ref name="tei_att.global.attribute.srophetags"/>
-         <ref name="tei_att.global.attribute.n"/>
-         <ref name="tei_att.global.attribute.xmllang"/>
-         <ref name="tei_att.global.attribute.xmlbase"/>
-         <ref name="tei_att.global.attribute.xmlspace"/>
-         <ref name="tei_att.global.rendition.attribute.rend"/>
-         <ref name="tei_att.global.rendition.attribute.style"/>
-         <ref name="tei_att.global.rendition.attribute.rendition"/>
-         <ref name="tei_att.global.linking.attribute.corresp"/>
-         <ref name="tei_att.global.linking.attribute.synch"/>
-         <ref name="tei_att.global.linking.attribute.sameAs"/>
-         <ref name="tei_att.global.linking.attribute.copyOf"/>
-         <ref name="tei_att.global.linking.attribute.next"/>
-         <ref name="tei_att.global.linking.attribute.prev"/>
-         <ref name="tei_att.global.linking.attribute.exclude"/>
-         <ref name="tei_att.global.linking.attribute.select"/>
-         <ref name="tei_att.global.responsibility.attribute.cert"/>
-         <ref name="tei_att.global.responsibility.attribute.resp"/>
-         <ref name="tei_att.global.source.attribute.source"/>
-         <ref name="tei_att.typed.attribute.subtype"/>
-         <ref name="tei_att.editLike.attributes"/>
-         <ref name="tei_att.sortable.attributes"/>
          <attribute name="type">
             <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
             <choice>
@@ -4552,7 +4447,7 @@ Suggested values include: 1] main; 2] sub (subordinate); 3] alt (alternate); 4] 
             <ref name="tei_desc"/>
          </optional>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="syriacaPlaces-relation-atts-on-relation-constraint-rule-54">
+                  id="syriacaPlaces-relation-atts-on-relation-constraint-rule-62">
             <sch:rule xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       xmlns:srophe="https://srophe.app"
                       xmlns="http://www.tei-c.org/ns/1.0"
@@ -4574,7 +4469,7 @@ Suggested values include: 1] main; 2] sub (subordinate); 3] alt (alternate); 4] 
             </sch:rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="syriacaPlaces-relation-reforkeyorname-constraint-assert-51">
+                  id="syriacaPlaces-relation-reforkeyorname-constraint-assert-59">
             <rule context="tei:relation">
                <assert xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                        xmlns:srophe="https://srophe.app"
@@ -4582,7 +4477,7 @@ Suggested values include: 1] main; 2] sub (subordinate); 3] alt (alternate); 4] 
             </rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="syriacaPlaces-relation-activemutual-constraint-report-18">
+                  id="syriacaPlaces-relation-activemutual-constraint-report-26">
             <rule context="tei:relation">
                <report xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                        xmlns:srophe="https://srophe.app"
@@ -4590,19 +4485,15 @@ Suggested values include: 1] main; 2] sub (subordinate); 3] alt (alternate); 4] 
             </rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="syriacaPlaces-relation-activepassive-constraint-report-19">
+                  id="syriacaPlaces-relation-activepassive-constraint-report-27">
             <rule context="tei:relation">
                <report xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                        xmlns:srophe="https://srophe.app"
                        test="@passive and not(@active)">the attribute 'passive' may be supplied only if the attribute 'active' is supplied</report>
             </rule>
          </pattern>
-         <ref name="tei_att.global.attributes"/>
          <ref name="tei_att.datable.attributes"/>
-         <ref name="tei_att.editLike.attributes"/>
          <ref name="tei_att.canonical.attributes"/>
-         <ref name="tei_att.sortable.attributes"/>
-         <ref name="tei_att.typed.attributes"/>
          <attribute name="mutual">
             <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
             <data type="anyURI"/>
@@ -4616,25 +4507,11 @@ Suggested values include: 1] main; 2] sub (subordinate); 3] alt (alternate); 4] 
                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
             </choice>
          </attribute>
-         <optional>
-            <attribute name="passive">
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">identifies the passive participants in a non-mutual relationship.</a:documentation>
-               <list>
-                  <oneOrMore>
-                     <data type="anyURI"/>
-                  </oneOrMore>
-               </list>
-            </attribute>
-         </optional>
          <choice>
             <optional>
                <attribute name="active">
-                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">identifies the active participants in a non-mutual relationship, or all the participants in a mutual one.</a:documentation>
-                  <list>
-                     <oneOrMore>
-                        <data type="anyURI"/>
-                     </oneOrMore>
-                  </list>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+                  <text/>
                </attribute>
             </optional>
          </choice>
@@ -4654,7 +4531,7 @@ Suggested values include: 1] main; 2] sub (subordinate); 3] alt (alternate); 4] 
             <ref name="tei_precision"/>
          </zeroOrMore>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="syriacaPlaces-state-xmlID-on-state-constraint-rule-55">
+                  id="syriacaPlaces-state-xmlID-on-state-constraint-rule-63">
             <sch:rule xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       xmlns:srophe="https://srophe.app"
                       xmlns="http://www.tei-c.org/ns/1.0"
@@ -4667,7 +4544,7 @@ Suggested values include: 1] main; 2] sub (subordinate); 3] alt (alternate); 4] 
             </sch:rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="syriacaPlaces-state-state-type-existence-constraint-rule-56">
+                  id="syriacaPlaces-state-state-type-existence-constraint-rule-64">
             <sch:rule xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       xmlns:srophe="https://srophe.app"
                       xmlns="http://www.tei-c.org/ns/1.0"
@@ -4684,7 +4561,7 @@ Suggested values include: 1] main; 2] sub (subordinate); 3] alt (alternate); 4] 
             </sch:rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="syriacaPlaces-state-state-type-confession-constraint-rule-57">
+                  id="syriacaPlaces-state-state-type-confession-constraint-rule-65">
             <sch:rule xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       xmlns:srophe="https://srophe.app"
                       xmlns="http://www.tei-c.org/ns/1.0"
@@ -4716,7 +4593,6 @@ Suggested values include: 1] main; 2] sub (subordinate); 3] alt (alternate); 4] 
          <ref name="tei_att.editLike.attributes"/>
          <ref name="tei_att.typed.attribute.subtype"/>
          <ref name="tei_att.naming.attributes"/>
-         <ref name="tei_att.dimensions.attributes"/>
          <attribute name="type">
             <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">characterizes the element in some sense, using any convenient classification scheme or typology.</a:documentation>
             <choice>
@@ -4802,20 +4678,27 @@ Sample values include: 1] TEI; 2] DBK (docbook); 3] XX (unknown); 4] Schematron;
       <element name="text">
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">contains a single text of any kind, whether unitary or composite, for example a poem or drama, a collection of essays, a novel, a dictionary, or a corpus sample. [4. Default Text Structure 15.1. Varieties of Composite Text]</a:documentation>
          <ref name="tei_body"/>
-         <ref name="tei_att.global.attributes"/>
-         <ref name="tei_att.declaring.attributes"/>
-         <ref name="tei_att.typed.attributes"/>
-         <ref name="tei_att.written.attributes"/>
-         <empty/>
+         <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
+                  id="syriacaPlaces-text-source-in-text-constraint-rule-67">
+            <sch:rule xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                      xmlns:srophe="https://srophe.app"
+                      xmlns="http://www.tei-c.org/ns/1.0"
+                      context="//tei:text//@source">
+               <sch:let name="biblIDs" value="//tei:body//tei:bibl/@xml:id"/>
+               <sch:let name="sourceValues" value="for $i in $biblIDs return concat('#', $i)"/>
+               <sch:assert test="                   every $i in (tokenize(., ' '))                   satisfies $i = $sourceValues">
+                  A @source attribute must point to an @xml:id attribute on a &lt;bibl&gt; element. 
+                  Multiple values are allowed and must be separated by a blank space. Acceptable values include: 
+                  <sch:value-of select="string-join($sourceValues, ' | ')"/>.
+                </sch:assert>
+            </sch:rule>
+         </pattern>
       </element>
    </define>
    <define name="tei_body">
       <element name="body">
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(text body) contains the whole body of a single unitary text, excluding any front or back matter. [4. Default Text Structure]</a:documentation>
          <ref name="tei_listPlace"/>
-         <ref name="tei_att.global.attributes"/>
-         <ref name="tei_att.declaring.attributes"/>
-         <empty/>
       </element>
    </define>
    <start>

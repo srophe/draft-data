@@ -35,6 +35,9 @@
         
         
         <elementSpec ident="idno" module="header" mode="change">
+          <content>
+            <textNode/>
+          </content>
           <attList>
             <attDef ident="type" mode="change" usage="req">
               <desc>The <att>type</att> attribute on <gi>idno</gi> defines the kind of identifier
@@ -64,12 +67,14 @@
                   The @mutual attribute on a &lt;relation&gt; element must contain two or more values.
                 </sch:assert>
                 <sch:assert test="contains(., $docURI)">
-                  One on the values of the @mutual attribute must be the URI for this document's place: <sch:value-of select="$docURI"/>.
+                  One of the values of the @mutual attribute must be the URI for this document's place: <sch:value-of select="$docURI"/>.
                 </sch:assert>
               </sch:rule>
             </constraint>
           </constraintSpec>
           <attList>
+            <attDef ident="active" mode="delete"/>
+            <attDef ident="passive" mode="delete"/>
             <attDef ident="name" mode="change" usage="req">
               <valList type="closed" mode="replace">
                 <valItem ident="share-a-name"/>
@@ -96,6 +101,19 @@
         </elementSpec>
         
         <elementSpec ident="listPlace" module="namesdates" mode="change">
+          <classes mode="change">
+            <memberOf key="att.global" mode="delete"/>
+            <memberOf key="att.global.rendition" mode="delete"/>
+            <memberOf key="att.global.linking" mode="delete"/>
+            <memberOf key="att.global.analytic" mode="delete"/>
+            <memberOf key="att.global.facs" mode="delete"/>
+            <memberOf key="att.global.change" mode="delete"/>
+            <memberOf key="att.global.responsibility" mode="delete"/>
+            <memberOf key="att.global.source" mode="delete"/>
+            <memberOf key="att.typed" mode="delete"/>
+            <memberOf key="att.declarable" mode="delete"/>
+            <memberOf key="att.sortable" mode="delete"/>
+          </classes>
           <content>
             <elementRef key="place" minOccurs="1" maxOccurs="1"/>
             <elementRef key="listRelation" minOccurs="0" maxOccurs="1"/>
@@ -108,6 +126,18 @@
         </elementSpec>
         
         <elementSpec ident="place" module="namesdates" mode="change">
+          <classes mode="change">
+            <memberOf key="att.global" mode="delete"/>
+            <memberOf key="att.global.rendition" mode="delete"/>
+            <memberOf key="att.global.linking" mode="delete"/>
+            <memberOf key="att.global.analytic" mode="delete"/>
+            <memberOf key="att.global.facs" mode="delete"/>
+            <memberOf key="att.global.change" mode="delete"/>
+            <memberOf key="att.global.responsibility" mode="delete"/>
+            <memberOf key="att.global.source" mode="delete"/>
+            <memberOf key="att.editLike" mode="delete"/>
+            <memberOf key="att.sortable" mode="delete"/>
+         </classes>
           <content>
             <elementRef key="placeName" minOccurs="1" maxOccurs="unbounded"/>
             <elementRef key="desc" minOccurs="1" maxOccurs="unbounded"/>
@@ -128,6 +158,7 @@
             </constraint>
           </constraintSpec>
           <attList>
+            <attDef ident="subtype" mode="delete"/>
             <attDef ident="type" mode="replace" usage="req">
               <valList type="closed" mode="replace">
                 <valItem ident="building">
@@ -204,15 +235,14 @@
                 </valItem>
               </valList>
             </attDef>
-            <attDef ident="xml:id" mode="delete"/>
           </attList>
           <remarks>
             <p>Within each <gi>place</gi> element will be a series of: 
               one or more <gi>placeName</gi> elements,
-              one or more <gi>note</gi> description elements,
               zero or more <gi>location</gi> elements,
               zero or more <gi>event</gi> elements,
               zero or more <gi>state</gi> elements,
+              one or more <gi>note</gi> description elements,
               one or more <gi>idno</gi> elements, and
               one or more <gi>bibl</gi> elements.
             </p>
@@ -220,9 +250,21 @@
         </elementSpec>
         
         <elementSpec ident="placeName" module="namesdates" mode="change">
+          <classes mode="change">
+            <memberOf key="att.global.rendition" mode="delete"/>
+            <memberOf key="att.global.linking" mode="delete"/>
+            <memberOf key="att.global.analytic" mode="delete"/>
+            <memberOf key="att.global.facs" mode="delete"/>
+            <memberOf key="att.global.change" mode="delete"/>
+            <memberOf key="att.global.responsibility" mode="delete"/>
+            <memberOf key="att.typed" mode="delete"/>
+            <memberOf key="att.personal" mode="delete"/>
+            <memberOf key="att.naming" mode="delete"/>
+            <memberOf key="att.canonical" mode="add"/>
+          </classes>
           <constraintSpec ident="source-on-placeName" scheme="schematron">
             <constraint>
-              <sch:rule context="//tei:place/tei:placeName">
+              <sch:rule context="//tei:text/tei:place/tei:placeName">
                 <sch:assert test="attribute::source or attribute::resp">
                   The &lt;placeName&gt; element must have either a @source attribute (preferred when available) or a @resp attribute.
                 </sch:assert>
@@ -234,7 +276,7 @@
           </constraintSpec>
           <constraintSpec ident="xmlID-on-placeName" scheme="schematron">
             <constraint>
-              <sch:rule context="//tei:place/tei:placeName">
+              <sch:rule context="//tei:text/tei:place/tei:placeName">
                 <sch:let name="docURIno" value="//tei:publicationStmt/tei:idno/substring-before(substring-after(substring-after(., 'http://syriaca.org/'), '/'), '/tei')"/>
                 <sch:assert test="matches(./@xml:id, concat('name', $docURIno, '-', '\d+$'))">
                   The required @xml:id must be 'name<sch:value-of select="$docURIno"/>-{\d+$}' (where {\d+$} is a number).
@@ -317,6 +359,16 @@
         </elementSpec>
         
         <elementSpec ident="desc" module="core" mode="change">
+          <classes mode="change">
+            <memberOf key="att.global.rendition" mode="delete"/>
+            <memberOf key="att.global.linking" mode="delete"/>
+            <memberOf key="att.global.analytic" mode="delete"/>
+            <memberOf key="att.global.facs" mode="delete"/>
+            <memberOf key="att.global.change" mode="delete"/>
+            <memberOf key="att.global.responsibility" mode="delete"/>
+            <memberOf key="att.global.source" mode="delete"/>
+            <memberOf key="att.translatable" mode="delete"/>
+          </classes>
           <constraintSpec ident="xmlID-on-desc" scheme="schematron">
             <constraint>
               <sch:rule context="//tei:place/tei:desc[@type='abstract']">
@@ -345,6 +397,7 @@
             </constraint>
           </constraintSpec>
           <attList>
+            <attDef ident="subtype" mode="delete"/>
             <attDef ident="type" mode="replace">
               <valList type="closed">
                 <valItem ident="abstract"/>
@@ -354,6 +407,14 @@
         </elementSpec>
         
         <elementSpec ident="location" module="namesdates" mode="change">
+          <classes mode="change">
+            <memberOf key="att.global.rendition" mode="delete"/>
+            <memberOf key="att.global.linking" mode="delete"/>
+            <memberOf key="att.global.analytic" mode="delete"/>
+            <memberOf key="att.global.facs" mode="delete"/>
+            <memberOf key="att.global.change" mode="delete"/>
+            <memberOf key="att.editLike" mode="delete"/>
+          </classes>
           <content>
             <alternate>
               <elementRef key="geo"/>
@@ -372,6 +433,18 @@
               </sequence>
             </alternate>
           </content>
+          <constraintSpec ident="source-on-location" scheme="schematron">
+            <constraint>
+              <sch:rule context="//tei:text/tei:place/tei:location">
+                <sch:assert test="attribute::source or attribute::resp">
+                  The &lt;location&gt; element must have either a @source attribute (preferred when available) or a @resp attribute.
+                </sch:assert>
+                <sch:report test="attribute::source and attribute::resp">
+                  The &lt;location&gt; element may not have both a @source attribute (the preferred when available) and a @resp attribute.
+                </sch:report>
+              </sch:rule>
+            </constraint>
+          </constraintSpec>
           <constraintSpec ident="location-children" scheme="schematron">
             <constraint>
               <sch:rule context="//tei:location[@type='gps']">
@@ -409,6 +482,7 @@
             </constraint>
           </constraintSpec>
           <attList>
+            <attDef ident="cert" mode="delete"/>
             <attDef ident="type" mode="change" usage="req">
               <valList mode="replace" type="closed">
                 <valItem ident="gps"/>
@@ -424,11 +498,18 @@
                 <valItem ident="representative"/>
               </valList>
             </attDef>
+            <attDef ident="source" mode="change">
+              <desc>
+                In most cases the <gi>location</gi> element will have a <att>source</att> attribute pointing to the <gi>bibl</gi> element that is the 
+                source of that location information. In instances were the location information has been collected by a Syriaca.org contributor but is
+                not attested in print, a a <att>resp</att> is used with a value of 'http://syriaca.org'.
+              </desc>
+            </attDef>
             <attDef ident="resp" mode="change">
               <desc>
-                Most <gi>placeName</gi> elements will have a <att>source</att> attribute pointing to the <gi>bibl</gi> element that is the 
-                source of that name. In instances where a place name is generated by Syriaca.org for consistency of transcription but is not attested 
-                in a print or online source, a <att>resp</att> is used with a value of 'http://syriaca.org'. 
+                In most cases the <gi>location</gi> element will have a <att>source</att> attribute pointing to the <gi>bibl</gi> element that is the 
+                source of that location information. In instances were the location information has been collected by a Syriaca.org contributor but is
+                not attested in print, a a <att>resp</att> is used with a value of 'http://syriaca.org'.
               </desc>
               <valList type="closed" mode="replace">
                 <valItem ident="http://syriaca.org"/>
@@ -439,74 +520,152 @@
         
         <elementSpec ident="district" module="namesdates" mode="change">
           <classes mode="change">
-            <memberOf key="att.datable" mode="delete"/>
-            <memberOf key="att.datable.custom" mode="delete"/>
-            <memberOf key="att.datable.iso" mode="delete"/>
-            <memberOf key="att.datable.w3c" mode="delete"/>
+            <memberOf key="att.global" mode="delete"/>
+            <memberOf key="att.global.rendition" mode="delete"/>
+            <memberOf key="att.global.linking" mode="delete"/>
+            <memberOf key="att.global.analytic" mode="delete"/>
+            <memberOf key="att.global.facs" mode="delete"/>
+            <memberOf key="att.global.change" mode="delete"/>
+            <memberOf key="att.global.responsibility" mode="delete"/>
+            <memberOf key="att.global.source" mode="delete"/>
+            <memberOf key="att.naming" mode="delete"/>
+            <memberOf key="att.typed" mode="delete"/>
+            <memberOf key="att.canonical" mode="add"/>
           </classes>
           <attList>
+            <attDef ident="key" mode="delete"/>
             <attDef ident="ref" mode="change" usage="req"/>
           </attList>
         </elementSpec>
         
         <elementSpec ident="settlement" module="namesdates" mode="change">
           <classes mode="change">
-            <memberOf key="att.datable" mode="delete"/>
-            <memberOf key="att.datable.custom" mode="delete"/>
-            <memberOf key="att.datable.iso" mode="delete"/>
-            <memberOf key="att.datable.w3c" mode="delete"/>
+            <memberOf key="att.global" mode="delete"/>
+            <memberOf key="att.global.rendition" mode="delete"/>
+            <memberOf key="att.global.linking" mode="delete"/>
+            <memberOf key="att.global.analytic" mode="delete"/>
+            <memberOf key="att.global.facs" mode="delete"/>
+            <memberOf key="att.global.change" mode="delete"/>
+            <memberOf key="att.global.responsibility" mode="delete"/>
+            <memberOf key="att.global.source" mode="delete"/>
+            <memberOf key="att.naming" mode="delete"/>
+            <memberOf key="att.typed" mode="delete"/>
+            <memberOf key="att.canonical" mode="add"/>
           </classes>
           <attList>
+            <attDef ident="key" mode="delete"/>
             <attDef ident="ref" mode="change" usage="req"/>
           </attList>
         </elementSpec>
         
         <elementSpec ident="region" module="namesdates" mode="change">
           <classes mode="change">
-            <memberOf key="att.datable" mode="delete"/>
-            <memberOf key="att.datable.custom" mode="delete"/>
-            <memberOf key="att.datable.iso" mode="delete"/>
-            <memberOf key="att.datable.w3c" mode="delete"/>
+            <memberOf key="att.global" mode="delete"/>
+            <memberOf key="att.global.rendition" mode="delete"/>
+            <memberOf key="att.global.linking" mode="delete"/>
+            <memberOf key="att.global.analytic" mode="delete"/>
+            <memberOf key="att.global.facs" mode="delete"/>
+            <memberOf key="att.global.change" mode="delete"/>
+            <memberOf key="att.global.responsibility" mode="delete"/>
+            <memberOf key="att.global.source" mode="delete"/>
+            <memberOf key="att.naming" mode="delete"/>
+            <memberOf key="att.typed" mode="delete"/>
+            <memberOf key="att.canonical" mode="add"/>
           </classes>
           <attList>
+            <attDef ident="key" mode="delete"/>
             <attDef ident="ref" mode="change" usage="req"/>
           </attList>
         </elementSpec>
         
         <elementSpec ident="country" module="namesdates" mode="change">
           <classes mode="change">
-            <memberOf key="att.datable" mode="delete"/>
-            <memberOf key="att.datable.custom" mode="delete"/>
-            <memberOf key="att.datable.iso" mode="delete"/>
-            <memberOf key="att.datable.w3c" mode="delete"/>
+            <memberOf key="att.global" mode="delete"/>
+            <memberOf key="att.global.rendition" mode="delete"/>
+            <memberOf key="att.global.linking" mode="delete"/>
+            <memberOf key="att.global.analytic" mode="delete"/>
+            <memberOf key="att.global.facs" mode="delete"/>
+            <memberOf key="att.global.change" mode="delete"/>
+            <memberOf key="att.global.responsibility" mode="delete"/>
+            <memberOf key="att.global.source" mode="delete"/>
+            <memberOf key="att.naming" mode="delete"/>
+            <memberOf key="att.typed" mode="delete"/>
+            <memberOf key="att.canonical" mode="add"/>
           </classes>
           <attList>
+            <attDef ident="key" mode="delete"/>
             <attDef ident="ref" mode="change" usage="req"/>
           </attList>
         </elementSpec>
         
         <elementSpec ident="bloc" module="namesdates" mode="change">
           <classes mode="change">
-            <memberOf key="att.datable" mode="delete"/>
-            <memberOf key="att.datable.custom" mode="delete"/>
-            <memberOf key="att.datable.iso" mode="delete"/>
-            <memberOf key="att.datable.w3c" mode="delete"/>
+            <memberOf key="att.global" mode="delete"/>
+            <memberOf key="att.global.rendition" mode="delete"/>
+            <memberOf key="att.global.linking" mode="delete"/>
+            <memberOf key="att.global.analytic" mode="delete"/>
+            <memberOf key="att.global.facs" mode="delete"/>
+            <memberOf key="att.global.change" mode="delete"/>
+            <memberOf key="att.global.responsibility" mode="delete"/>
+            <memberOf key="att.global.source" mode="delete"/>
+            <memberOf key="att.naming" mode="delete"/>
+            <memberOf key="att.typed" mode="delete"/>
+            <memberOf key="att.canonical" mode="add"/>
           </classes>
           <attList>
+            <attDef ident="key" mode="delete"/>
             <attDef ident="ref" mode="change" usage="req"/>
           </attList>
         </elementSpec>
         
         <elementSpec ident="offset" module="namesdates" mode="change">
           <classes mode="change">
-            <memberOf key="att.datable" mode="delete"/>
-            <memberOf key="att.datable.custom" mode="delete"/>
-            <memberOf key="att.datable.iso" mode="delete"/>
-            <memberOf key="att.datable.w3c" mode="delete"/>
+            <memberOf key="att.global" mode="delete"/>
+            <memberOf key="att.global.rendition" mode="delete"/>
+            <memberOf key="att.global.linking" mode="delete"/>
+            <memberOf key="att.global.analytic" mode="delete"/>
+            <memberOf key="att.global.facs" mode="delete"/>
+            <memberOf key="att.global.change" mode="delete"/>
+            <memberOf key="att.global.responsibility" mode="delete"/>
+            <memberOf key="att.global.source" mode="delete"/>
+            <memberOf key="att.naming" mode="delete"/>
+            <memberOf key="att.typed" mode="delete"/>
           </classes>
+          <attList>
+            <attDef ident="key" mode="delete"/>
+            <attDef ident="ref" mode="change" usage="req"/>
+          </attList>
+        </elementSpec>
+        
+        <elementSpec ident="measure" module="core" mode="change">
+          <classes mode="change">
+            <memberOf key="att.global" mode="delete"/>
+            <memberOf key="att.global.rendition" mode="delete"/>
+            <memberOf key="att.global.linking" mode="delete"/>
+            <memberOf key="att.global.analytic" mode="delete"/>
+            <memberOf key="att.global.facs" mode="delete"/>
+            <memberOf key="att.global.change" mode="delete"/>
+            <memberOf key="att.global.responsibility" mode="delete"/>
+            <memberOf key="att.typed" mode="delete"/>
+          </classes>
+          <attList>
+            <attDef ident="type" mode="delete"/>
+          </attList>
         </elementSpec>
         
         <elementSpec ident="event" module="namesdates" mode="change">
+          <classes mode="change">
+            <memberOf key="att.global.rendition" mode="delete"/>
+            <memberOf key="att.global.linking" mode="delete"/>
+            <memberOf key="att.global.analytic" mode="delete"/>
+            <memberOf key="att.global.facs" mode="delete"/>
+            <memberOf key="att.global.change" mode="delete"/>
+            <memberOf key="att.global.responsibility" mode="delete"/>
+            <memberOf key="att.naming" mode="delete"/>
+            <memberOf key="att.canonical" mode="delete"/>
+            <memberOf key="att.editLike" mode="delete"/>
+            <memberOf key="att.sortable" mode="delete"/>
+          </classes>
           <content>
             <elementRef key="p" minOccurs="1"/>
             <elementRef key="link" minOccurs="0" maxOccurs="unbounded"/>
@@ -541,6 +700,18 @@
         </elementSpec>
         
         <elementSpec ident="state" module="namesdates" mode="change">
+          <classes mode="change">
+            <memberOf key="att.global.rendition" mode="delete"/>
+            <memberOf key="att.global.linking" mode="delete"/>
+            <memberOf key="att.global.analytic" mode="delete"/>
+            <memberOf key="att.global.facs" mode="delete"/>
+            <memberOf key="att.global.change" mode="delete"/>
+            <memberOf key="att.global.responsibility" mode="delete"/>
+            <memberOf key="att.global.source" mode="delete"/>
+            <memberOf key="att.dimensions" mode="delete"/>
+            <memberOf key="att.ranging" mode="delete"/>
+            <memberOf key="att.sortable" mode="delete"/>
+          </classes>
           <content>
             <elementRef key="p" minOccurs="0" maxOccurs="1"/>
             <elementRef key="label" minOccurs="0"/>
@@ -606,6 +777,22 @@
         </elementSpec>
         
         <elementSpec ident="label" module="core" mode="change">
+          <classes mode="change">
+            <memberOf key="att.global" mode="delete"/>
+            <memberOf key="att.global.rendition" mode="delete"/>
+            <memberOf key="att.global.linking" mode="delete"/>
+            <memberOf key="att.global.analytic" mode="delete"/>
+            <memberOf key="att.global.facs" mode="delete"/>
+            <memberOf key="att.global.change" mode="delete"/>
+            <memberOf key="att.global.responsibility" mode="delete"/>
+            <memberOf key="att.global.source" mode="delete"/>
+            <memberOf key="att.typed" mode="delete"/>
+            <memberOf key="att.placement" mode="delete"/>
+            <memberOf key="att.written" mode="delete"/>
+          </classes>
+          <content>
+            <textNode/>
+          </content>
           <constraintSpec ident="confession-label" scheme="schematron">
             <constraint>
               <sch:rule context="//tei:state/tei:label">
@@ -647,6 +834,19 @@
         </elementSpec>
         
         <elementSpec ident="bibl" module="core" mode="change">
+          <classes mode="change">
+            <memberOf key="att.global.rendition" mode="delete"/>
+            <memberOf key="att.global.linking" mode="delete"/>
+            <memberOf key="att.global.analytic" mode="delete"/>
+            <memberOf key="att.global.facs" mode="delete"/>
+            <memberOf key="att.global.change" mode="delete"/>
+            <memberOf key="att.global.responsibility" mode="delete"/>
+            <memberOf key="att.global.source" mode="delete"/>
+            <memberOf key="att.declarable" mode="delete"/>
+            <memberOf key="att.typed" mode="delete"/>
+            <memberOf key="att.sortable" mode="delete"/>
+            <memberOf key="att.docStatus" mode="delete"/>
+          </classes>
           <content>
             <sequence>
               <alternate minOccurs="0" maxOccurs="unbounded">
@@ -688,6 +888,21 @@
         </elementSpec>
         
         <elementSpec ident="listBibl" module="core" mode="change">
+          <classes mode="change">
+            <memberOf key="att.global.rendition" mode="delete"/>
+            <memberOf key="att.global.linking" mode="delete"/>
+            <memberOf key="att.global.analytic" mode="delete"/>
+            <memberOf key="att.global.facs" mode="delete"/>
+            <memberOf key="att.global.change" mode="delete"/>
+            <memberOf key="att.global.responsibility" mode="delete"/>
+            <memberOf key="att.global.source" mode="delete"/>
+            <memberOf key="att.declarable" mode="delete"/>
+            <memberOf key="att.typed" mode="delete"/>
+            <memberOf key="att.sortable" mode="delete"/>
+          </classes>
+          <content>
+            <elementRef key="bibl" minOccurs="1" maxOccurs="unbounded"/>
+          </content>
           <constraintSpec ident="xmlID-on-listBibl" scheme="schematron">
             <constraint>
               <sch:rule context="//tei:body/tei:listPlace/tei:place/tei:listBibl">
@@ -701,6 +916,20 @@
         </elementSpec>
         
         <elementSpec ident="ptr" module="linking" mode="change">
+          <classes mode="change">
+            <memberOf key="att.global" mode="delete"/>
+            <memberOf key="att.global.rendition" mode="delete"/>
+            <memberOf key="att.global.linking" mode="delete"/>
+            <memberOf key="att.global.analytic" mode="delete"/>
+            <memberOf key="att.global.facs" mode="delete"/>
+            <memberOf key="att.global.change" mode="delete"/>
+            <memberOf key="att.global.responsibility" mode="delete"/>
+            <memberOf key="att.global.source" mode="delete"/>
+            <memberOf key="att.internetMedia" mode="delete"/>
+            <memberOf key="att.typed" mode="delete"/>
+            <memberOf key="att.declaring" mode="delete"/>
+            <memberOf key="att.cReferencing" mode="delete"/>
+          </classes>
           <constraintSpec ident="target-in-ptr" scheme="schematron">
             <constraint>
               <sch:rule context="//tei:body/tei:place/tei:bibl/tei:ptr/@target" role="warning">
@@ -712,6 +941,10 @@
               </sch:rule>
             </constraint>
           </constraintSpec>
+          <attList>
+            <attDef ident="targetLang" mode="delete"/>
+            <attDef ident="evaluate" mode="delete"/>
+          </attList>
           <remarks>
             <p>
               Contained within the <gi>bibl</gi> element is a <gi>ptr</gi> element whose <att>target</att> attribute has the value of a URI pointing to the bibliographic item.

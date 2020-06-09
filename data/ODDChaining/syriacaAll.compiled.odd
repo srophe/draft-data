@@ -638,25 +638,21 @@ The MS. was lost in transmission by mail from <del rend="overstrike"><gap reason
 	  </p>
       </remarks>
   
-</classSpec><classSpec rend="add" module="tei" type="atts" xml:id="DATABLE" ident="att.datable">
-  <desc xmlns:rng="http://relaxng.org/ns/structure/1.0" versionDate="2007-06-12" xml:lang="en">provides attributes for normalization of elements
-    that contain dates, times, or datable events.</desc>
-  <desc xmlns:rng="http://relaxng.org/ns/structure/1.0" versionDate="2007-12-20" xml:lang="ko">날짜, 시간 또는 날짜 명기 사건을 포함하는 요소의 규격화에 대한 속성을 제공한다.</desc>
-  <desc xmlns:rng="http://relaxng.org/ns/structure/1.0" versionDate="2007-05-02" xml:lang="zh-TW">提供用於元素規格化的屬性， 這些元素包含日期明確的事件。</desc>
-  <desc xmlns:rng="http://relaxng.org/ns/structure/1.0" versionDate="2008-04-05" xml:lang="ja">日付や時間または時間事象を含む要素の正規化手法を示す属性を示す．</desc>
-  <desc xmlns:rng="http://relaxng.org/ns/structure/1.0" versionDate="2007-06-12" xml:lang="fr">fournit des attributs pour la normalisation
-    d'éléments qui contiennent des mentions d'événements datés ou susceptibles de l'être</desc>
-  <desc xmlns:rng="http://relaxng.org/ns/structure/1.0" versionDate="2007-05-04" xml:lang="es">atributos para registrar expresiones temporales
-    normalizadas.</desc>
-  <desc xmlns:rng="http://relaxng.org/ns/structure/1.0" versionDate="2007-01-21" xml:lang="it">assegna attributi per la normalizzazione di elementi
-    che contengono eventi databili</desc>
-  <classes xmlns:rng="http://relaxng.org/ns/structure/1.0">
-    <memberOf key="att.datable.w3c"/>
-    <memberOf key="att.datable.iso"/>
-    <memberOf key="att.datable.custom"/>
-  </classes>
-  <attList xmlns:rng="http://relaxng.org/ns/structure/1.0">
-    <attDef ident="calendar" usage="opt">
+</classSpec><classSpec rend="change" module="tei" type="atts" xml:id="DATABLE" ident="att.datable"><desc xmlns:rng="http://relaxng.org/ns/structure/1.0" versionDate="2007-06-12" xml:lang="en">provides attributes for normalization of elements
+    that contain dates, times, or datable events.</desc><desc xmlns:rng="http://relaxng.org/ns/structure/1.0" versionDate="2007-12-20" xml:lang="ko">날짜, 시간 또는 날짜 명기 사건을 포함하는 요소의 규격화에 대한 속성을 제공한다.</desc><desc xmlns:rng="http://relaxng.org/ns/structure/1.0" versionDate="2007-05-02" xml:lang="zh-TW">提供用於元素規格化的屬性， 這些元素包含日期明確的事件。</desc><desc xmlns:rng="http://relaxng.org/ns/structure/1.0" versionDate="2008-04-05" xml:lang="ja">日付や時間または時間事象を含む要素の正規化手法を示す属性を示す．</desc><desc xmlns:rng="http://relaxng.org/ns/structure/1.0" versionDate="2007-06-12" xml:lang="fr">fournit des attributs pour la normalisation
+    d'éléments qui contiennent des mentions d'événements datés ou susceptibles de l'être</desc><desc xmlns:rng="http://relaxng.org/ns/structure/1.0" versionDate="2007-05-04" xml:lang="es">atributos para registrar expresiones temporales
+    normalizadas.</desc><desc xmlns:rng="http://relaxng.org/ns/structure/1.0" versionDate="2007-01-21" xml:lang="it">assegna attributi per la normalizzazione di elementi
+    che contengono eventi databili</desc><classes xmlns:rng="http://relaxng.org/ns/structure/1.0"><memberOf key="att.datable.w3c"/><memberOf key="att.datable.iso"/><memberOf key="att.datable.custom"/></classes><attList xmlns:rng="http://relaxng.org/ns/structure/1.0"><attDef ident="srophe:computed-start" ns="https://srophe.app">
+              <desc>Start date</desc>
+              <datatype maxOccurs="unbounded" minOccurs="1">
+                <rng:text/>
+              </datatype>
+            </attDef><attDef ident="srophe:computed-end" ns="https://srophe.app">
+              <desc>End date</desc>
+              <datatype maxOccurs="unbounded" minOccurs="1">
+                <rng:text/>
+              </datatype>
+            </attDef><attDef ident="calendar" usage="opt">
       <desc versionDate="2011-11-25" xml:lang="en">indicates the system or calendar to which the
         date represented by the content of this element belongs.</desc>
       <desc versionDate="2007-12-20" xml:lang="ko">날짜 표현 시스템 또는 달력 표시 형식을 표시한다.</desc>
@@ -699,8 +695,7 @@ The MS. was lost in transmission by mail from <del rend="overstrike"><gap reason
         <att>calendar</att>属性は(<ident type="class">att.datable.custom</ident>クラスで定義される<att>datingMethod</att>属性と異なり、
         親要素によって定義される原資料の日付の暦日システムを定義するものであり、
         どの暦日に日付を正規化するかではない。</p></remarks>
-    </attDef>
-    <attDef ident="period" usage="opt">
+    </attDef><attDef ident="period" usage="opt">
       <desc versionDate="2011-11-25" xml:lang="en">supplies a pointer to some location defining a
         named period of time within which the datable item is understood to have occurred.</desc>
       <desc versionDate="2007-12-20" xml:lang="ko">시간을 명시할 수 있는 항목이 일어난 시간의 기간명을 정의하는 특정 위치로의 포인터를
@@ -718,9 +713,7 @@ The MS. was lost in transmission by mail from <del rend="overstrike"><gap reason
       <datatype>
         <dataRef key="teidata.pointer"/>
       </datatype>
-    </attDef>
-  </attList>
-  <remarks xmlns:rng="http://relaxng.org/ns/structure/1.0" versionDate="2011-11-25" xml:lang="en">
+    </attDef></attList><remarks xmlns:rng="http://relaxng.org/ns/structure/1.0" versionDate="2011-11-25" xml:lang="en">
     <p>This <soCalled>superclass</soCalled> provides attributes that can be used to provide
       normalized values of temporal information. By default, the attributes from the <ident type="class">att.datable.w3c</ident> class are provided. If the module for names &amp; dates
       is loaded, this class also provides attributes from the <ident type="class">att.datable.iso</ident> and <ident type="class">att.datable.custom</ident> classes. In
@@ -728,8 +721,7 @@ The MS. was lost in transmission by mail from <del rend="overstrike"><gap reason
       those values available via the ISO 8601 standard. However, the greater expressiveness of the
       ISO datatypes may not be needed, and there exists much greater software support for the W3C
       datatypes.</p>
-  </remarks>
-  <remarks xmlns:rng="http://relaxng.org/ns/structure/1.0" xml:lang="fr" versionDate="2007-06-12">
+  </remarks><remarks xmlns:rng="http://relaxng.org/ns/structure/1.0" xml:lang="fr" versionDate="2007-06-12">
     <p>Cette<soCalled>superclasse</soCalled> fournit des attributs qui peuvent être employés pour
       donner des valeurs normalisées à des informations relatives au temps. Par défaut, les
       attributs de la classe <ident type="class">att.datable.w3c</ident> sont fournis. Si le module
@@ -739,8 +731,7 @@ The MS. was lost in transmission by mail from <del rend="overstrike"><gap reason
       trouve dans la norme ISO 8601. Cependant, il n'est peut-être pas nécessaire de recourir aux
       possibilités très étendues des types de données de l'ISO. Il existe en effet une bien plus
       grande offre logicielle pour le traitement des types de données W3C.</p>
-  </remarks>
-  <remarks xmlns:rng="http://relaxng.org/ns/structure/1.0" xml:lang="es" versionDate="2008-04-06">
+  </remarks><remarks xmlns:rng="http://relaxng.org/ns/structure/1.0" xml:lang="es" versionDate="2008-04-06">
     <p>Esta <soCalled>superclase</soCalled> proporciona atributos que pueden ser utilizados para
       proporcionar valores normalizados de información temporal. Por defecto, los atributos de la
       clase <ident type="class">att.datable.w3c</ident> son proporcionados. Si el módulo para los
@@ -749,8 +740,7 @@ The MS. was lost in transmission by mail from <del rend="overstrike"><gap reason
       disponibles vía el estándar de ISO 8601. Sin embargo, la mayoría de expresiones de los
       datatypes de ISO pueden no ser necesarios, y existe software de soporte para los datatypes de
       W3C.</p>
-  </remarks>
-  <remarks xmlns:rng="http://relaxng.org/ns/structure/1.0" xml:lang="ja" versionDate="2019-02-03">
+  </remarks><remarks xmlns:rng="http://relaxng.org/ns/structure/1.0" xml:lang="ja" versionDate="2019-02-03">
     <p>この<soCalled>親クラス(スーパークラス)</soCalled>は， 
       正規化された時間情報を示すために用いる属性を提供する．デフォルト値として，当該属性は，
       クラス<ident type="class">att.datable.w3c</ident>が付与されている．
@@ -759,9 +749,7 @@ The MS. was lost in transmission by mail from <del rend="overstrike"><gap reason
       しかし，より強力な表現力を持つISOのデータ形式が必要にはならないかもしれない．
       W3Cのデータ形式に対するさらに強力な表現力をサポートするソフトウェアも存在する．
     </p>
-  </remarks>
-  
-</classSpec><classSpec rend="add" module="tei" xml:id="DECLABL" type="atts" ident="att.declarable">
+  </remarks></classSpec><classSpec rend="add" module="tei" xml:id="DECLABL" type="atts" ident="att.declarable">
   <desc versionDate="2013-02-02" xml:lang="en">provides attributes for those elements in the TEI header which
   may be independently selected by means of  the special purpose <att>decls</att> attribute.</desc>
   <desc versionDate="2007-12-20" xml:lang="ko">특별한 목적의 <att>decls</att> 속성을 통해서 독립적으로 선택될 수 있는 TEI 헤더의 요소에 대한 속성을 제공한다.</desc>
@@ -1404,17 +1392,7 @@ the TEI header.</p>
 </classSpec><classSpec rend="change" module="tei" xml:id="GLOBAL" type="atts" ident="att.global"><desc versionDate="2007-10-02" xml:lang="en">provides attributes common to all elements in the TEI encoding scheme.</desc><desc versionDate="2007-12-20" xml:lang="ko">TEI 부호화 스키마의 모든 요소에 공통 속성을 제공한다.</desc><desc versionDate="2007-05-02" xml:lang="zh-TW">提供一組屬性，通用於TEI編碼標準中的所有元素。</desc><desc versionDate="2008-04-05" xml:lang="ja">TEI符号化スキーム中の全要素に共通する属性を示す． </desc><desc versionDate="2007-06-12" xml:lang="fr">fournit un jeu d'attributs communs à tous les éléments
     dans le système de codage TEI.</desc><desc versionDate="2007-05-04" xml:lang="es">proporciona un conjunto de atributos común a todos los
     elementos del esquema de codificación TEI.</desc><desc versionDate="2007-01-21" xml:lang="it">stabilisce un insieme di attributi comuni a tutti gli
-    elementi dello schema di codifica TEI</desc><classes><memberOf key="att.global.rendition"/><memberOf key="att.global.linking"/><memberOf key="att.global.responsibility"/><memberOf key="att.global.source"/></classes><attList><attDef ident="srophe:computed-start" ns="https://srophe.app">
-              <desc>Start date</desc>
-              <datatype maxOccurs="unbounded" minOccurs="1">
-                <rng:text xmlns:rng="http://relaxng.org/ns/structure/1.0"/>
-              </datatype>
-            </attDef><attDef ident="srophe:computed-end" ns="https://srophe.app">
-              <desc>End date</desc>
-              <datatype maxOccurs="unbounded" minOccurs="1">
-                <rng:text xmlns:rng="http://relaxng.org/ns/structure/1.0"/>
-              </datatype>
-            </attDef><attDef ident="srophe:tags"><desc rend="replace">tags usable</desc><datatype maxOccurs="unbounded" minOccurs="1">
+    elementi dello schema di codifica TEI</desc><classes><memberOf key="att.global.rendition"/><memberOf key="att.global.linking"/><memberOf key="att.global.responsibility"/><memberOf key="att.global.source"/></classes><attList><attDef ident="srophe:tags"><desc rend="replace">tags usable</desc><datatype maxOccurs="unbounded" minOccurs="1">
                 <rng:text xmlns:rng="http://relaxng.org/ns/structure/1.0"/>
               </datatype><valList type="closed"><valItem ident="#syriaca-headword">
                   <desc>The name used by Syriaca.org for document titles, citation, and
@@ -6317,7 +6295,7 @@ entre les Romains.</label>
       Labels zu unterscheiden.</p>
   </exemplum><listRef>
     <ref target="http://www.tei-c.org/release/doc/tei-p5-doc/en/html/CO.html#COLI">3.7. Lists</ref>
-  </listRef></elementSpec><elementSpec rend="change" module="core" ident="note"><gloss versionDate="2017-06-25" xml:lang="de">Anmerkung</gloss><desc versionDate="2005-01-14" xml:lang="en">contains a note or annotation.</desc><desc versionDate="2009-01-06" xml:lang="fr">contient une note ou une annotation</desc><desc versionDate="2007-05-04" xml:lang="es">contiene una nota o aclaración</desc><desc versionDate="2007-05-02" xml:lang="zh-TW">包含附註或註釋。</desc><desc versionDate="2007-01-21" xml:lang="it">contiene una nota o un'annotazione</desc><desc versionDate="2006-10-28" xml:lang="ja">注釈・コメント．</desc><desc versionDate="2017-06-25" xml:lang="de">enthält eine Anmerkung oder Annotation.</desc><classes><memberOf key="att.global"/><memberOf key="model.noteLike"/><memberOf key="att.placement"/><memberOf key="att.pointing"/><memberOf key="att.typed"/><memberOf key="att.written"/></classes><content><macroRef key="macro.specialPara"/></content><constraintSpec ident="xmlLang-in-note" scheme="schematron">
+  </listRef></elementSpec><elementSpec rend="change" module="core" ident="note"><gloss versionDate="2017-06-25" xml:lang="de">Anmerkung</gloss><desc versionDate="2005-01-14" xml:lang="en">contains a note or annotation.</desc><desc versionDate="2009-01-06" xml:lang="fr">contient une note ou une annotation</desc><desc versionDate="2007-05-04" xml:lang="es">contiene una nota o aclaración</desc><desc versionDate="2007-05-02" xml:lang="zh-TW">包含附註或註釋。</desc><desc versionDate="2007-01-21" xml:lang="it">contiene una nota o un'annotazione</desc><desc versionDate="2006-10-28" xml:lang="ja">注釈・コメント．</desc><desc versionDate="2017-06-25" xml:lang="de">enthält eine Anmerkung oder Annotation.</desc><classes><memberOf key="att.global"/><memberOf key="model.noteLike"/><memberOf key="att.pointing"/><memberOf key="att.typed"/><memberOf key="att.written"/></classes><content><macroRef key="macro.specialPara"/></content><constraintSpec ident="xmlLang-in-note" scheme="schematron">
             <constraint>
               <sch:rule context="//tei:body//tei:note">
                 <sch:assert test="./@xml:lang">
@@ -6325,7 +6303,7 @@ entre les Romains.</label>
                 </sch:assert>
               </sch:rule>
             </constraint>
-          </constraintSpec><attList><attDef ident="xml:id" mode="delete"/><attDef ident="type" mode="change" usage="req">
+          </constraintSpec><attList><attDef ident="subtype" mode="delete"/><attDef ident="xml:id" mode="delete"/><attDef ident="type" mode="change" usage="req">
               <desc>Describes the function of the note. This attribute is recommended and determines
                 how the note is displayed on the page.</desc>
               <valList mode="replace" type="closed">
@@ -6354,84 +6332,7 @@ entre les Romains.</label>
                   <desc>A note that cannot be categorized as any other type.</desc>
                 </valItem>
               </valList>
-            </attDef><attDef ident="anchored" usage="opt">
-      <gloss versionDate="2017-06-25" xml:lang="de">verankert</gloss>
-      <desc versionDate="2005-01-14" xml:lang="en">indicates whether the copy text shows the exact place of reference for the note.</desc>
-      <desc versionDate="2009-01-06" xml:lang="fr">indique si l'exemplaire du texte montre l'emplacement
-        de référence exact pour la note</desc>
-      <desc versionDate="2007-05-04" xml:lang="es">indica si el texto de copia muestra el lugar exacto
-        de referencia para una nota.</desc>
-      <desc versionDate="2007-05-02" xml:lang="zh-TW">說明來源文件是否指出附註的確切參照位置。</desc>
-      <desc versionDate="2007-01-21" xml:lang="it">indica se il testo copia mostra l'esatta posizione di
-        riferimento della nota.</desc>
-      <desc versionDate="2006-10-28" xml:lang="ja">当該注釈がある場所への参照は，正確にその場所を示しているかどうか．</desc>
-      <desc versionDate="2017-06-25" xml:lang="de">gibt an, ob eine Vorlage den exakten Referenzort der Anmerkung anzeigt.</desc>
-      <datatype><dataRef key="teidata.truthValue"/></datatype>
-      <defaultVal>true</defaultVal>
-      <remarks versionDate="2007-04-22" xml:lang="en">
-        <p>In modern texts, notes are usually anchored by means of explicit footnote or endnote
-          symbols. An explicit indication of the phrase or line annotated may however be used
-          instead (e.g. <q>page 218, lines 3–4</q>). The <att>anchored</att> attribute indicates
-          whether any explicit location is given, whether by symbol or by prose cross-reference. The
-          value <val>true</val> indicates that such an explicit location is indicated in the copy
-          text; the value <val>false</val> indicates that the copy text does not indicate a specific
-          place of attachment for the note. If the specific symbols used in the copy text at the
-          location the note is anchored are to be recorded, use the <att>n</att> attribute.</p>
-      </remarks>
-      <remarks xml:lang="fr" versionDate="2007-06-12">
-        <p>Dans des textes modernes, les notes sont habituellement ancrées au moyen d’appels de
-          notes explicites (pour des notes de bas de page ou des notes de fin de texte). A la place, une indication explicite de
-          l'expression ou de la ligne annotée peut cependant être employée (par exemple <q>page 218,
-            lignes 3–4</q>). L'attribut <att>anchored</att> indique si un emplacement est donné
-          explicitement ou s'il est exprimé par un symbole ou par un renvoi. La valeur
-          <val>true</val> indique qu'un endroit explicite est indiqué dans le texte ; la valeur
-            <val>false</val> indique que le texte n'indique pas un endroit spécifique d'attachement
-          pour la note. Si des symboles spécifiques utilisés dans le texte à l'endroit où la note
-          est ancrée doivent être enregistrés, l'attribut <att>n</att> sera utilisé.</p>
-      </remarks>
-      <remarks versionDate="2017-06-25" xml:lang="de">
-        <p>In modernen Texten wird auf Anmerkungen üblicherweise durch explizite Fuß- oder Endnotensymbole
-          verwiesen. Stattdessen kann aber auch ein expliziter Hinweis auf die Phrase oder Zeile verwendet
-          werden (z. B. <q>Seite 218, Zeile 3–4</q>). Das <att>anchored</att>-Attribut gibt an, ob ein
-          expliziter Ort durch ein Symbol oder einen Querverweis angegeben ist. Der Wert <val>true</val>
-          gibt an, dass ein expliziter Ort in der Vorlage angegeben ist; der Wert <val>false</val> gibt
-          an, dass die Vorlage kein spezifisches Verweisziel für die Anmerkung angibt. Zur Verzeichnung
-          von spezifischen Referenzzeichen, die in der Vorlage verwendet werden, wird das
-          <att>n</att>-Attribut benutzt.</p>
-      </remarks>
-    </attDef><attDef ident="targetEnd" usage="opt">
-      <gloss versionDate="2017-06-25" xml:lang="de">Bereichsende</gloss>
-      <desc versionDate="2005-01-14" xml:lang="en">points to the end of the span to which the note is attached, if the note is not embedded
-        in the text at that point.</desc>
-      <desc versionDate="2009-01-06" xml:lang="fr">pointe vers la fin d'un passage auquel la note est
-        attachée, si la note n'est pas enchâssée dans le texte à cet endroit</desc>
-      <desc versionDate="2007-05-04" xml:lang="es">indica el final de un periodo al cual una nota está
-        enlazada, si la nota no está insertada en ese punto del texto.</desc>
-      <desc versionDate="2007-05-02" xml:lang="zh-TW">如果附註不是嵌在正文中，則用以標明附註所註段落的終點。</desc>
-      <desc versionDate="2007-01-21" xml:lang="it">rimanda alla fine della porzione di testo a cui la
-        nota è allegata nel caso in cui la nota non sia inclusa nel testo in quel punto.</desc>
-      <desc versionDate="2006-10-28" xml:lang="ja">当該注釈・コメントの終了点を示す．(当該注釈が注釈先の場所に埋め込 まれていない場合)</desc>
-      <desc versionDate="2017-06-25" xml:lang="de">verweist auf das Ende eines Bereichs, dem das <gi>note</gi>-Element angefügt ist, es sei denn die
-        Anmerkung ist in den Text an diesem Punkt bereits eingebettet.</desc>
-      <datatype maxOccurs="unbounded"><dataRef key="teidata.pointer"/></datatype>
-      <remarks versionDate="2009-01-23" xml:lang="en">
-        <p>This attribute is retained for backwards compatibility; it may be removed at a subsequent
-          release of the Guidelines. The recommended way of pointing to a span of elements is by
-          means of the <ident>range</ident> function of XPointer, as further described in <ref target="http://www.tei-c.org/release/doc/tei-p5-doc/en/html/SA.html#SATSRN">16.2.4.6. range()</ref>. </p>
-      </remarks>
-      <remarks xml:lang="fr" versionDate="2007-06-12">
-        <p>Cet attribut est conservé pour assurer un arrière-plan compatible ; il sera supprimé dans la
-          prochaine mise à jour des Recommandations. La procédure recommandée pour pointer en
-          direction d'une expansion des éléments est de le faire au moyen de la fonction
-            <ident>range</ident> de XPointer, telle que la description en est faite  à <ref target="http://www.tei-c.org/release/doc/tei-p5-doc/en/html/SA.html#SATSRN">16.2.4.6. range()</ref>. </p>
-      </remarks>
-      <remarks versionDate="2017-06-25" xml:lang="de">
-        <p>Dieses Attribut wurde beibehalten, um eine Abwärtskompatibilität zu gewährleisten; bei einem
-          zukünftigen Release der Guidelines kann es entfernt werden. Der empfohlene Weg, um auf einen
-          Bereich zu verweisen, ist die Verwendung der <ident>range</ident>-Funktion von XPointer, wie in
-          <ref target="http://www.tei-c.org/release/doc/tei-p5-doc/en/html/SA.html#SATSRN">16.2.4.6. range()</ref> beschrieben.</p>
-      </remarks>
-    </attDef></attList><exemplum xml:lang="en">
+            </attDef><attDef ident="anchored" mode="delete"/><attDef ident="targetEnd" mode="delete"/></attList><exemplum xml:lang="en">
     <p>In the following example, the translator has supplied a footnote
       containing an explanation of the term translated as "painterly":</p>
 <egXML xmlns="http://www.tei-c.org/ns/Examples" source="#NOTE-eg">And yet it is not only
@@ -7355,19 +7256,8 @@ inclus, peuvent être encodés dans un élément
     <ref target="http://www.tei-c.org/release/doc/tei-p5-doc/en/html/CO.html#COBITY">3.11.1. Methods of Encoding Bibliographic References and Lists of References</ref>
     <ref target="http://www.tei-c.org/release/doc/tei-p5-doc/en/html/HD.html#HD3">2.2.7. The Source Description</ref>
     <ref target="http://www.tei-c.org/release/doc/tei-p5-doc/en/html/CC.html#CCAS2">15.3.2. Declarable Elements</ref>
-  </listRef></elementSpec><elementSpec rend="add" module="certainty" ident="precision"><desc versionDate="2009-06-05" xml:lang="en">indicates the numerical accuracy or precision  associated
-  with some aspect of the text markup.</desc><classes>
-    <memberOf key="att.global"/>
-    <memberOf key="model.global.meta"/>
-    <memberOf key="att.scoping"/>
-    <memberOf key="att.ranging"/>
-    <memberOf key="model.certLike"/>
-    <memberOf key="att.datable"/>
-  </classes><content>
-    
-      <alternate minOccurs="0" maxOccurs="unbounded"><classRef key="model.descLike"/><classRef key="model.certLike"/></alternate>
-    
-  </content><attList><attDef ident="precision">
+  </listRef></elementSpec><elementSpec rend="change" module="certainty" ident="precision"><desc versionDate="2009-06-05" xml:lang="en">indicates the numerical accuracy or precision  associated
+  with some aspect of the text markup.</desc><classes><memberOf key="model.global.meta"/><memberOf key="att.scoping"/><memberOf key="att.ranging"/><memberOf key="model.certLike"/><memberOf key="att.datable"/></classes><content><alternate minOccurs="0" maxOccurs="unbounded"><classRef key="model.descLike"/><classRef key="model.certLike"/></alternate></content><attList><attDef ident="target" mode="delete"/><attDef ident="precision">
       <desc versionDate="2011-04-13" xml:lang="en">characterizes the precision of the element or attribute pointed 
         to by the <gi>precision</gi> element.</desc>
       <datatype><dataRef key="teidata.certainty"/></datatype>
@@ -8726,7 +8616,7 @@ langues, registres, dialectes, etc. présents à l’intérieur d’un texte.</d
     </attDef>
   </attList>
   
-</classSpec><elementSpec rend="change" module="linking" ident="link"><gloss xmlns:rng="http://relaxng.org/ns/structure/1.0" versionDate="2007-06-12" xml:lang="fr"> lien</gloss><desc xmlns:rng="http://relaxng.org/ns/structure/1.0" versionDate="2005-01-14" xml:lang="en">defines an association or hypertextual link among elements or passages, of some type not more precisely specifiable by other elements.</desc><desc xmlns:rng="http://relaxng.org/ns/structure/1.0" versionDate="2007-12-20" xml:lang="ko">다른 요소들에 의해 좀 더 명확하게 명시되지 않는 유형의 요소 또는 단락들의 연관 또는 하이퍼텍스트 연결을 정의한다.</desc><desc xmlns:rng="http://relaxng.org/ns/structure/1.0" versionDate="2007-05-02" xml:lang="zh-TW">定義元素或段落之間的關連或超文字連結，其他元素無法將此連結類型作更詳細說明。</desc><desc xmlns:rng="http://relaxng.org/ns/structure/1.0" versionDate="2008-04-05" xml:lang="ja">他の要素では上手く示せない，要素や一節間にある関連性やハイパーテキス トリンクを定義する．</desc><desc xmlns:rng="http://relaxng.org/ns/structure/1.0" versionDate="2007-06-12" xml:lang="fr">définit une association ou un lien hypertextuel entre des éléments ou des passages, lien dont le type ne peut être spécifié précisément par d'autres éléments.</desc><desc xmlns:rng="http://relaxng.org/ns/structure/1.0" versionDate="2007-05-04" xml:lang="es">define una asociación o vínculo hipertextual entre elementos o fragmentos de texto que no es especificable por otros elementos.</desc><desc xmlns:rng="http://relaxng.org/ns/structure/1.0" versionDate="2007-01-21" xml:lang="it">definisce tra elementi o porzioni di testo un'associazione o legame ipertestuale non meglio specificabile da altri elementi</desc><classes xmlns:rng="http://relaxng.org/ns/structure/1.0"><memberOf key="att.global"/><memberOf key="att.pointing"/><memberOf key="att.typed"/><memberOf key="model.global.meta"/></classes><content xmlns:rng="http://relaxng.org/ns/structure/1.0"><empty/></content><constraintSpec xmlns:rng="http://relaxng.org/ns/structure/1.0" ident="target-on-link" scheme="schematron">
+</classSpec><elementSpec rend="change" module="linking" ident="link"><gloss xmlns:rng="http://relaxng.org/ns/structure/1.0" versionDate="2007-06-12" xml:lang="fr"> lien</gloss><desc xmlns:rng="http://relaxng.org/ns/structure/1.0" versionDate="2005-01-14" xml:lang="en">defines an association or hypertextual link among elements or passages, of some type not more precisely specifiable by other elements.</desc><desc xmlns:rng="http://relaxng.org/ns/structure/1.0" versionDate="2007-12-20" xml:lang="ko">다른 요소들에 의해 좀 더 명확하게 명시되지 않는 유형의 요소 또는 단락들의 연관 또는 하이퍼텍스트 연결을 정의한다.</desc><desc xmlns:rng="http://relaxng.org/ns/structure/1.0" versionDate="2007-05-02" xml:lang="zh-TW">定義元素或段落之間的關連或超文字連結，其他元素無法將此連結類型作更詳細說明。</desc><desc xmlns:rng="http://relaxng.org/ns/structure/1.0" versionDate="2008-04-05" xml:lang="ja">他の要素では上手く示せない，要素や一節間にある関連性やハイパーテキス トリンクを定義する．</desc><desc xmlns:rng="http://relaxng.org/ns/structure/1.0" versionDate="2007-06-12" xml:lang="fr">définit une association ou un lien hypertextuel entre des éléments ou des passages, lien dont le type ne peut être spécifié précisément par d'autres éléments.</desc><desc xmlns:rng="http://relaxng.org/ns/structure/1.0" versionDate="2007-05-04" xml:lang="es">define una asociación o vínculo hipertextual entre elementos o fragmentos de texto que no es especificable por otros elementos.</desc><desc xmlns:rng="http://relaxng.org/ns/structure/1.0" versionDate="2007-01-21" xml:lang="it">definisce tra elementi o porzioni di testo un'associazione o legame ipertestuale non meglio specificabile da altri elementi</desc><classes xmlns:rng="http://relaxng.org/ns/structure/1.0"><memberOf key="att.pointing"/><memberOf key="model.global.meta"/></classes><content xmlns:rng="http://relaxng.org/ns/structure/1.0"><empty/></content><constraintSpec xmlns:rng="http://relaxng.org/ns/structure/1.0" ident="target-on-link" scheme="schematron">
             <constraint>
               <sch:rule context="//tei:link/@target">
                 <sch:let name="allIDs" value="//@xml:id"/>
@@ -8740,7 +8630,7 @@ langues, registres, dialectes, etc. présents à l’intérieur d’un texte.</d
     <constraint>
       <sch:assert test="contains(normalize-space(@target),' ')">You must supply at least two values for @target or  on <sch:name/></sch:assert>
     </constraint>
-  </constraintSpec><attList/><exemplum xmlns:rng="http://relaxng.org/ns/structure/1.0" xml:lang="en">
+  </constraintSpec><attList><attDef ident="targetLang" mode="delete"/><attDef ident="evaluate" mode="delete"/></attList><exemplum xmlns:rng="http://relaxng.org/ns/structure/1.0" xml:lang="en">
     <egXML xmlns="http://www.tei-c.org/ns/Examples">
       <s n="1">The state Supreme Court has refused to release <rs xml:id="R1"><rs xml:id="R2">Rahway State Prison</rs> inmate</rs> 
             <rs xml:id="R3">James Scott</rs> on bail.</s>
@@ -9035,17 +8925,18 @@ langues, registres, dialectes, etc. présents à l’intérieur d’un texte.</d
     como un nombre propio, que se refiere a una persona y puede incluir cualquier o todos los
     nombres de pila, apellidos, títulos honoríficos, o nombres añadidos de la persona en cuestión.</desc><desc versionDate="2007-01-21" xml:lang="it">contiene un nome proprio o un sintagma identificabile
     come nome proprio, che si riferisce a una persona e può includere qualsiasi o tutti i prenomi,
-    cognomi, titoli onorifici, o nomi aggiunti della persona in questione</desc><classes>
-    <memberOf key="att.global"/>
-    
-    <memberOf key="model.nameLike.agent"/>
-    <memberOf key="att.datable"/>
-    <memberOf key="att.editLike"/>
-    <memberOf key="att.personal"/>
-    <memberOf key="att.typed"/>
-  </classes><content>
-    <macroRef key="macro.phraseSeq"/>
-  </content><exemplum xml:lang="en">
+    cognomi, titoli onorifici, o nomi aggiunti della persona in questione</desc><classes><memberOf key="att.global"/><memberOf key="model.nameLike.agent"/><memberOf key="att.datable"/><memberOf key="att.editLike"/><memberOf key="att.personal"/><memberOf key="att.typed"/></classes><content><macroRef key="macro.phraseSeq"/></content><constraintSpec ident="ref-on-person" scheme="schematron">
+            <constraint>
+              <sch:rule context="//tei:text//tei:persName/@ref">
+                <sch:let name="personIndex" value="doc('https://raw.githubusercontent.com/srophe/srophe-eXist-app/master/documentation/indexes/persons.xml')"/>
+                <sch:let name="personURIs" value="$personIndex//tei:person/@ref"/>
+                <sch:assert test="                   every $i in .                   satisfies $i = $personURIs">
+                  This @ref attribute is not a person URI in use in Syriaca.org data. Note that all person URIs take the form 'http://syriaca.org/person/{\d+}' (where {\d+} is a number).
+                </sch:assert>
+                <sch:report test="contains(., ' ')">This @ref may contain only one URI.</sch:report>
+              </sch:rule>
+            </constraint>
+          </constraintSpec><attList/><exemplum xml:lang="en">
     <egXML xmlns="http://www.tei-c.org/ns/Examples">
       <persName><forename>Edward</forename><forename>George</forename><surname type="linked">Bulwer-Lytton</surname>, <roleName>Baron Lytton of
         <placeName>Knebworth</placeName>
@@ -9070,17 +8961,18 @@ langues, registres, dialectes, etc. présents à l’intérieur d’un texte.</d
     </egXML>
   </exemplum><listRef>
     <ref target="http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ND.html#NDPER">13.2.1. Personal Names</ref>
-  </listRef></elementSpec><elementSpec rend="add" module="namesdates" ident="placeName"><gloss versionDate="2008-12-09" xml:lang="fr">nom de lieu</gloss><desc versionDate="2005-01-14" xml:lang="en">contains an absolute or relative place name.</desc><desc versionDate="2007-12-20" xml:lang="ko">절대적 또는 상대적 위치명을 포함한다.</desc><desc versionDate="2007-05-02" xml:lang="zh-TW">包含一個確切位置或相對位置的名稱。</desc><desc versionDate="2008-04-05" xml:lang="ja">絶対的，相対的場所名を示す．</desc><desc versionDate="2009-03-19" xml:lang="fr">contient un nom de lieu absolu ou relatif.</desc><desc versionDate="2007-05-04" xml:lang="es">contiene la indicación absoluta o relativa de un nombre de lugar.</desc><desc versionDate="2007-01-21" xml:lang="it">contiene l'indicazione assoluta o relativa di un nome di luogo</desc><classes>
-    <memberOf key="att.datable"/>
-    <memberOf key="att.editLike"/>
-    <memberOf key="att.global"/>
-    <memberOf key="att.personal"/>
-    <memberOf key="att.typed"/>
-    <memberOf key="model.placeNamePart"/>
-    
-  </classes><content>
-    <macroRef key="macro.phraseSeq"/>
-  </content><exemplum xml:lang="en">
+  </listRef></elementSpec><elementSpec rend="add" module="namesdates" ident="placeName"><gloss versionDate="2008-12-09" xml:lang="fr">nom de lieu</gloss><desc versionDate="2005-01-14" xml:lang="en">contains an absolute or relative place name.</desc><desc versionDate="2007-12-20" xml:lang="ko">절대적 또는 상대적 위치명을 포함한다.</desc><desc versionDate="2007-05-02" xml:lang="zh-TW">包含一個確切位置或相對位置的名稱。</desc><desc versionDate="2008-04-05" xml:lang="ja">絶対的，相対的場所名を示す．</desc><desc versionDate="2009-03-19" xml:lang="fr">contient un nom de lieu absolu ou relatif.</desc><desc versionDate="2007-05-04" xml:lang="es">contiene la indicación absoluta o relativa de un nombre de lugar.</desc><desc versionDate="2007-01-21" xml:lang="it">contiene l'indicazione assoluta o relativa di un nome di luogo</desc><classes><memberOf key="att.datable"/><memberOf key="att.editLike"/><memberOf key="att.global"/><memberOf key="att.personal"/><memberOf key="att.typed"/><memberOf key="model.placeNamePart"/></classes><content><macroRef key="macro.phraseSeq"/></content><constraintSpec ident="ref-on-placeName" scheme="schematron">
+            <constraint>
+              <sch:rule context="//tei:text//tei:placeName/@ref">
+                <sch:let name="placeIndex" value="doc('https://raw.githubusercontent.com/srophe/srophe-eXist-app/master/documentation/indexes/places.xml')"/>
+                <sch:let name="placeURIs" value="$placeIndex//tei:place/@ref"/>
+                <sch:assert test="                   every $i in .                   satisfies $i = $placeURIs">
+                  This @ref attribute is not a place URI in use in Syriaca.org data. Note that all place URIs take the form 'http://syriaca.org/place/{\d+}' (where {\d+} is a number).
+                </sch:assert>
+                <sch:report test="contains(., ' ')">This @ref may contain only one URI.</sch:report>
+              </sch:rule>
+            </constraint>
+          </constraintSpec><attList/><exemplum xml:lang="en">
     <egXML xmlns="http://www.tei-c.org/ns/Examples">
       <placeName>
         <settlement>Rochester</settlement>
@@ -9152,15 +9044,18 @@ langues, registres, dialectes, etc. présents à l’intérieur d’un texte.</d
     countries.</desc><desc versionDate="2007-12-20" xml:lang="ko">둘 이상의 민족국가 또는 국가로 구성된 지리-정치적 단위의 이름을 포함한다.</desc><desc versionDate="2007-05-02" xml:lang="zh-TW">包含一個地理政治區域名稱，由一個或多個國家所組成。</desc><desc versionDate="2008-04-05" xml:lang="ja">複数の国や地域を跨ぐ地政学的な名前を示す．</desc><desc versionDate="2008-12-09" xml:lang="fr">contient le nom d'une unité géo-politique composée d'au
     moins deux états ou pays</desc><desc versionDate="2007-05-04" xml:lang="es">contiene el nombre de una unidad geopolítica que
     comprende uno o más estados nacionales o países.</desc><desc versionDate="2007-01-21" xml:lang="it">contiene il nome di un'unità geopolitica comprendente uno
-    o più stati nazione o paesi</desc><classes>
-    <memberOf key="att.global"/>
-    <memberOf key="model.placeNamePart"/>
-    <memberOf key="att.naming"/>
-    <memberOf key="att.typed"/>
-    <memberOf key="att.datable"/>
-  </classes><content>
-    <macroRef key="macro.phraseSeq"/>
-  </content><exemplum xml:lang="en">
+    o più stati nazione o paesi</desc><classes><memberOf key="att.global"/><memberOf key="model.placeNamePart"/><memberOf key="att.naming"/><memberOf key="att.typed"/><memberOf key="att.datable"/></classes><content><macroRef key="macro.phraseSeq"/></content><constraintSpec ident="ref-on-bloc" scheme="schematron">
+            <constraint>
+              <sch:rule context="//tei:text//tei:bloc/@ref">
+                <sch:let name="placeIndex" value="doc('https://raw.githubusercontent.com/srophe/srophe-eXist-app/master/documentation/indexes/places.xml')"/>
+                <sch:let name="placeURIs" value="$placeIndex//tei:place/@ref"/>
+                <sch:assert test="                   every $i in .                   satisfies $i = $placeURIs">
+                  This @ref attribute is not a place URI in use in Syriaca.org data. Note that all place URIs take the form 'http://syriaca.org/place/{\d+}' (where {\d+} is a number).
+                </sch:assert>
+                <sch:report test="contains(., ' ')">This @ref may contain only one URI.</sch:report>
+              </sch:rule>
+            </constraint>
+          </constraintSpec><attList/><exemplum xml:lang="en">
     <egXML xmlns="http://www.tei-c.org/ns/Examples">
       <bloc type="union">the European Union</bloc>
       <bloc type="continent">Africa</bloc>
@@ -9186,15 +9081,18 @@ langues, registres, dialectes, etc. présents à l’intérieur d’un texte.</d
     nation, un pays, une colonie ou une communauté, plus grande ou administrativement supérieure à
     une région et plus petite qu'un bloc.</desc><desc versionDate="2007-01-21" xml:lang="it">contiene il nome di un'unità geopolitica, come una
     nazione, un paese, una colonia, o un'unione di stati, che sia più ampia o amministrativamente
-    superiore rispetto a una regione ma di dimensioni inferiori rispetto a un blocco</desc><classes>
-    <memberOf key="att.global"/>
-    <memberOf key="model.placeNamePart"/>
-    <memberOf key="att.naming"/>
-    <memberOf key="att.typed"/>
-    <memberOf key="att.datable"/>
-  </classes><content>
-    <macroRef key="macro.phraseSeq"/>
-  </content><exemplum xml:lang="en">
+    superiore rispetto a una regione ma di dimensioni inferiori rispetto a un blocco</desc><classes><memberOf key="att.global"/><memberOf key="model.placeNamePart"/><memberOf key="att.naming"/><memberOf key="att.typed"/><memberOf key="att.datable"/></classes><content><macroRef key="macro.phraseSeq"/></content><constraintSpec ident="ref-on-country" scheme="schematron">
+            <constraint>
+              <sch:rule context="//tei:text//tei:country/@ref">
+                <sch:let name="placeIndex" value="doc('https://raw.githubusercontent.com/srophe/srophe-eXist-app/master/documentation/indexes/places.xml')"/>
+                <sch:let name="placeURIs" value="$placeIndex//tei:place/@ref"/>
+                <sch:assert test="                   every $i in .                   satisfies $i = $placeURIs">
+                  This @ref attribute is not a place URI in use in Syriaca.org data. Note that all place URIs take the form 'http://syriaca.org/place/{\d+}' (where {\d+} is a number).
+                </sch:assert>
+                <sch:report test="contains(., ' ')">This @ref may contain only one URI.</sch:report>
+              </sch:rule>
+            </constraint>
+          </constraintSpec><attList/><exemplum xml:lang="en">
     <egXML xmlns="http://www.tei-c.org/ns/Examples">
       <country key="DK">Denmark</country>
     </egXML>
@@ -9219,15 +9117,18 @@ langues, registres, dialectes, etc. présents à l’intérieur d’un texte.</d
     une province ou un comté, plus grande qu'un lieu de peuplement, mais plus petite qu'un pays.</desc><desc versionDate="2007-05-04" xml:lang="es">&gt;contiene el nombre de una unidad administrativa,
     como un estado, una región o una província, que sea mayor que un pequeño asentamiento, pero
     menor a un país.</desc><desc versionDate="2007-01-21" xml:lang="it">contiene il nome di un'unità amministrativa, come uno
-    stato o una provincia, che sia più ampia di un piccolo insediamento ma più piccola di un paese</desc><classes>
-    <memberOf key="att.global"/>
-    <memberOf key="model.placeNamePart"/>
-    <memberOf key="att.naming"/>
-    <memberOf key="att.typed"/>
-    <memberOf key="att.datable"/>
-  </classes><content>
-    <macroRef key="macro.phraseSeq"/>
-  </content><exemplum xml:lang="mul">
+    stato o una provincia, che sia più ampia di un piccolo insediamento ma più piccola di un paese</desc><classes><memberOf key="att.global"/><memberOf key="model.placeNamePart"/><memberOf key="att.naming"/><memberOf key="att.typed"/><memberOf key="att.datable"/></classes><content><macroRef key="macro.phraseSeq"/></content><constraintSpec ident="ref-on-region" scheme="schematron">
+            <constraint>
+              <sch:rule context="//tei:text//tei:region/@ref">
+                <sch:let name="placeIndex" value="doc('https://raw.githubusercontent.com/srophe/srophe-eXist-app/master/documentation/indexes/places.xml')"/>
+                <sch:let name="placeURIs" value="$placeIndex//tei:place/@ref"/>
+                <sch:assert test="                   every $i in .                   satisfies $i = $placeURIs">
+                  This @ref attribute is not a place URI in use in Syriaca.org data. Note that all place URIs take the form 'http://syriaca.org/place/{\d+}' (where {\d+} is a number).
+                </sch:assert>
+                <sch:report test="contains(., ' ')">This @ref may contain only one URI.</sch:report>
+              </sch:rule>
+            </constraint>
+          </constraintSpec><attList/><exemplum xml:lang="mul">
     <egXML xmlns="http://www.tei-c.org/ns/Examples">
       <placeName>
         <region type="state" n="IL">Illinois</region>
@@ -9250,15 +9151,18 @@ langues, registres, dialectes, etc. présents à l’intérieur d’un texte.</d
   </listRef></elementSpec><elementSpec rend="add" module="namesdates" ident="settlement"><gloss versionDate="2008-12-09" xml:lang="fr">lieu de peuplement</gloss><desc versionDate="2006-01-22" xml:lang="en">contains the name of a settlement such as a city, town, or village identified as a single geo-political or administrative unit.</desc><desc versionDate="2007-12-20" xml:lang="ko">하나의 지리-정치 또는 행정 단위로 식별되는 시, 읍, 마을과 같이 거주지명을 포함한다.</desc><desc versionDate="2007-05-02" xml:lang="zh-TW">包含主行政區的名稱，例如城市、鄉鎮、村莊等單一地理政治或行政單位。</desc><desc versionDate="2008-04-05" xml:lang="ja">地政学上または行政上の単位としてある市，街，村などの居住地の名前を示 す．</desc><desc versionDate="2009-03-19" xml:lang="fr">contient le nom d'un lieu de peuplement comme une cité, une ville ou un village, identifié comme une
         unité géo-politique ou administrative unique.</desc><desc versionDate="2007-05-04" xml:lang="es">contiene el nombre de un asentamiento, del tipo ciudad, pueblo, villa etc. identificado como una unidad
         geopolítica o administrativa.</desc><desc versionDate="2007-01-21" xml:lang="it">contiene il nome di un insediamento quale una città o un comune considerati come unità geopolitica o
-        amministrativa</desc><classes>
-    <memberOf key="att.global"/>
-    <memberOf key="model.placeNamePart"/>
-    <memberOf key="att.naming"/>
-    <memberOf key="att.typed"/>
-    <memberOf key="att.datable"/>
-  </classes><content>
-    <macroRef key="macro.phraseSeq"/>
-  </content><exemplum xml:lang="en">
+        amministrativa</desc><classes><memberOf key="att.global"/><memberOf key="model.placeNamePart"/><memberOf key="att.naming"/><memberOf key="att.typed"/><memberOf key="att.datable"/></classes><content><macroRef key="macro.phraseSeq"/></content><constraintSpec ident="ref-on-settlement" scheme="schematron">
+            <constraint>
+              <sch:rule context="//tei:text//tei:settlement/@ref">
+                <sch:let name="placeIndex" value="doc('https://raw.githubusercontent.com/srophe/srophe-eXist-app/master/documentation/indexes/places.xml')"/>
+                <sch:let name="placeURIs" value="$placeIndex//tei:place/@ref"/>
+                <sch:assert test="                   every $i in .                   satisfies $i = $placeURIs">
+                  This @ref attribute is not a place URI in use in Syriaca.org data. Note that all place URIs take the form 'http://syriaca.org/place/{\d+}' (where {\d+} is a number).
+                </sch:assert>
+                <sch:report test="contains(., ' ')">This @ref may contain only one URI.</sch:report>
+              </sch:rule>
+            </constraint>
+          </constraintSpec><attList/><exemplum xml:lang="en">
     <egXML xmlns="http://www.tei-c.org/ns/Examples">
       <placeName>
         <settlement type="town">Glasgow</settlement>
@@ -9284,15 +9188,18 @@ langues, registres, dialectes, etc. présents à l’intérieur d’un texte.</d
   </listRef></elementSpec><elementSpec rend="add" module="namesdates" ident="district"><gloss versionDate="2008-12-09" xml:lang="fr">district</gloss><desc versionDate="2006-01-22" xml:lang="en">contains the name of any kind of subdivision of a settlement, such as a parish, ward, or other administrative or geographic unit.</desc><desc versionDate="2007-12-20" xml:lang="ko">교구, 구 또는 다른 행정 지리적 단위와 같이 거주지의 하위 구분명을 포함한다.</desc><desc versionDate="2007-05-02" xml:lang="zh-TW">包含任何次行政區名稱，例如教區、選區、或其他行政或地理單元。</desc><desc versionDate="2008-04-05" xml:lang="ja">場所を示す要素として，集落より小さい名前を示す．例えば，小教区や区な ど，行政上・地勢上の単位．</desc><desc versionDate="2009-03-19" xml:lang="fr">contient le nom d'une subdivision quelconque d'une ville, comme une paroisse, une circonscription
         électorale ou toute autre unité administrative ou géographique.</desc><desc versionDate="2007-05-04" xml:lang="es">contiene el nombre de cualquier subdivisión al interno de un asentamiento, como una circunscripción, un
         barrio u otras unidades administrativas o geográficas.</desc><desc versionDate="2007-01-21" xml:lang="it">contiene il nome di una qualsiasi suddivisione all'interno di un insediamento, come una circoscrizione,
-        un quartiere o altre unità amministrative o geografiche</desc><classes>
-    <memberOf key="att.global"/>
-    <memberOf key="model.placeNamePart"/>
-    <memberOf key="att.naming"/>
-    <memberOf key="att.typed"/>
-    <memberOf key="att.datable"/>
-  </classes><content>
-    <macroRef key="macro.phraseSeq"/>
-  </content><exemplum xml:lang="en">
+        un quartiere o altre unità amministrative o geografiche</desc><classes><memberOf key="att.global"/><memberOf key="model.placeNamePart"/><memberOf key="att.naming"/><memberOf key="att.typed"/><memberOf key="att.datable"/></classes><content><macroRef key="macro.phraseSeq"/></content><constraintSpec ident="ref-on-district" scheme="schematron">
+            <constraint>
+              <sch:rule context="//tei:text//tei:district/@ref">
+                <sch:let name="placeIndex" value="doc('https://raw.githubusercontent.com/srophe/srophe-eXist-app/master/documentation/indexes/places.xml')"/>
+                <sch:let name="placeURIs" value="$placeIndex//tei:place/@ref"/>
+                <sch:assert test="                   every $i in .                   satisfies $i = $placeURIs">
+                  This @ref attribute is not a place URI in use in Syriaca.org data. Note that all place URIs take the form 'http://syriaca.org/place/{\d+}' (where {\d+} is a number).
+                </sch:assert>
+                <sch:report test="contains(., ' ')">This @ref may contain only one URI.</sch:report>
+              </sch:rule>
+            </constraint>
+          </constraintSpec><attList/><exemplum xml:lang="en">
     <egXML xmlns="http://www.tei-c.org/ns/Examples">
       <placeName>
         <district type="ward">Jericho</district>
@@ -9546,15 +9453,7 @@ langues, registres, dialectes, etc. présents à l’intérieur d’un texte.</d
     식별되는 관련성에 관한 정보를 제공한다.</desc><desc versionDate="2007-05-02" xml:lang="zh-TW">描述一項語言互動中參與者之間的關係或社交關聯。</desc><desc versionDate="2008-04-05" xml:lang="ja">人，場所，組織間の関係に関する情報を，散文またはリンクによる形式的表 現で示す．</desc><desc versionDate="2007-11-06" xml:lang="it">fornisce informazioni relative alle relazioni
     identificate tra persone, luoghi e organizzazioni, a livello informale discorsivo o sotto forma
     di legami formalmente espressi</desc><desc versionDate="2007-05-04" xml:lang="es">describe las relaciones o los lazos sociales entre los
-    participantes de una interacción verbal.</desc><classes>
-    <memberOf key="att.global"/>
-    <memberOf key="att.typed"/>
-    <memberOf key="att.sortable"/>
-    <memberOf key="model.biblPart"/>
-    <memberOf key="model.listLike"/>
-  </classes><content>
-    <sequence minOccurs="1" maxOccurs="1"><classRef key="model.headLike" minOccurs="0" maxOccurs="unbounded"/><elementRef key="desc" minOccurs="0" maxOccurs="unbounded"/><alternate minOccurs="1" maxOccurs="1"><classRef key="model.pLike"/><alternate minOccurs="1" maxOccurs="unbounded"><elementRef key="relation"/><elementRef key="listRelation"/></alternate></alternate></sequence>
-  </content><exemplum xml:lang="en">
+    participantes de una interacción verbal.</desc><classes><memberOf key="att.global"/><memberOf key="att.typed"/><memberOf key="att.sortable"/><memberOf key="model.biblPart"/><memberOf key="model.listLike"/></classes><content><elementRef key="relation" minOccurs="1" maxOccurs="unbounded"/></content><attList/><exemplum xml:lang="en">
     <egXML xmlns="http://www.tei-c.org/ns/Examples" source="#UND">
       <listPerson>
         <person xml:id="pp1">
@@ -9667,16 +9566,7 @@ langues, registres, dialectes, etc. présents à l’intérieur d’un texte.</d
   </exemplum><listRef>
     <ref target="http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ND.html#NDGEOG">13.3.4. Places</ref>
   </listRef></elementSpec><elementSpec rend="add" module="namesdates" ident="relation"><gloss versionDate="2005-01-14" xml:lang="en">relationship</gloss><gloss versionDate="2007-12-20" xml:lang="ko">관련성</gloss><gloss versionDate="2007-05-02" xml:lang="zh-TW">人際關係</gloss><gloss versionDate="2007-06-12" xml:lang="fr">relation</gloss><gloss versionDate="2007-05-04" xml:lang="es">relación</gloss><gloss versionDate="2007-01-21" xml:lang="it">relazione</gloss><desc versionDate="2013-04-12" xml:lang="en">describes any kind of relationship or linkage amongst a
-  specified group of places, events, persons, objects or other items.</desc><desc versionDate="2007-12-20" xml:lang="ko">명시된 참여자군 사이에 관련성 또는 연결 종류를 기술한다.</desc><desc versionDate="2007-05-02" xml:lang="zh-TW">描述在特定團體中，參與者彼此之間的關係或關聯。</desc><desc versionDate="2008-04-05" xml:lang="ja">指定された参加者グループ間の関連性の種類を示す．</desc><desc versionDate="2009-03-19" xml:lang="fr">décrit tout type de relation ou de lien à l'intérieur d'un groupe donné de participants.</desc><desc versionDate="2007-05-04" xml:lang="es">describe cualquier tipo de relación o vínculo entre un determinato grupo de personas.</desc><desc versionDate="2007-01-21" xml:lang="it">descrive una qualsiasi relazione o legame all'interno di un determinato gruppo di persone</desc><classes>
-    <memberOf key="att.global"/>
-    <memberOf key="att.datable"/>
-    <memberOf key="att.editLike"/>
-    <memberOf key="att.canonical"/>
-    <memberOf key="att.sortable"/>
-    <memberOf key="att.typed"/>
-  </classes><content>
-    <elementRef key="desc" minOccurs="0"/>
-  </content><constraintSpec ident="reforkeyorname" scheme="schematron">
+  specified group of places, events, persons, objects or other items.</desc><desc versionDate="2007-12-20" xml:lang="ko">명시된 참여자군 사이에 관련성 또는 연결 종류를 기술한다.</desc><desc versionDate="2007-05-02" xml:lang="zh-TW">描述在特定團體中，參與者彼此之間的關係或關聯。</desc><desc versionDate="2008-04-05" xml:lang="ja">指定された参加者グループ間の関連性の種類を示す．</desc><desc versionDate="2009-03-19" xml:lang="fr">décrit tout type de relation ou de lien à l'intérieur d'un groupe donné de participants.</desc><desc versionDate="2007-05-04" xml:lang="es">describe cualquier tipo de relación o vínculo entre un determinato grupo de personas.</desc><desc versionDate="2007-01-21" xml:lang="it">descrive una qualsiasi relazione o legame all'interno di un determinato gruppo di persone</desc><classes><memberOf key="att.datable"/><memberOf key="att.canonical"/></classes><content><elementRef key="desc" minOccurs="0"/></content><constraintSpec ident="reforkeyorname" scheme="schematron">
     <constraint>
       <assert xmlns="http://purl.oclc.org/dsdl/schematron" test="@ref or @key or @name">One of the attributes  'name', 'ref' or 'key' must be supplied</assert>
     </constraint>
@@ -9689,7 +9579,24 @@ langues, registres, dialectes, etc. présents à l’intérieur d’un texte.</d
     <constraint>
       <report xmlns="http://purl.oclc.org/dsdl/schematron" test="@passive and not(@active)">the attribute 'passive' may be supplied only if the attribute 'active' is supplied</report>
     </constraint>
-  </constraintSpec><attList><attDef ident="name">
+  </constraintSpec><attList><attList org="choice"><attDef ident="active">
+        <desc versionDate="2005-07-24" xml:lang="en">identifies the <soCalled>active</soCalled> participants in a non-mutual relationship, or all the participants in a mutual
+                    one.</desc>
+        <desc versionDate="2008-04-06" xml:lang="es">identifica los participantes activos en una relación no-mutua, o todos los participantes de
+                    una mutua.</desc>
+        <desc versionDate="2008-03-30" xml:lang="fr">identifie les participants actifs dans une relation à sens unique, ou tous les participants
+                    dans une relation réciproque.</desc>
+        <desc versionDate="2007-11-06" xml:lang="it">identifica i partecipanti attivi in una relazione di non reciprocità, oppure tutti i
+                    partecipanti in una relazione di reciprocità</desc>
+        <datatype maxOccurs="unbounded"><dataRef key="teidata.pointer"/></datatype>
+      </attDef><attDef ident="mutual" usage="opt">
+        <desc versionDate="2005-07-24" xml:lang="en">supplies a list of participants amongst all of whom the relationship holds equally.</desc>
+        <desc versionDate="2008-04-06" xml:lang="es">proporciona una lista de participantes entre los cuales se establece una idéntica
+                    relación</desc>
+        <desc versionDate="2009-03-19" xml:lang="fr">fournit une liste de participants entre lesquels la relation est réciproque.</desc>
+        <desc versionDate="2007-11-06" xml:lang="it">fornisce una lista di partecipanti tra i quali c'è una relazione paritaria</desc>
+        <datatype maxOccurs="unbounded"><dataRef key="teidata.pointer"/></datatype>
+      </attDef></attList><attDef ident="name">
       <desc versionDate="2005-10-27" xml:lang="en">supplies a name for the kind of relationship of which this is an instance.</desc>
       <desc versionDate="2007-12-20" xml:lang="ko">이것이 실례인 관련성 종류에 대한 이름을 제공한다.</desc>
       <desc versionDate="2007-05-02" xml:lang="zh-TW">提供該關係的確切名稱。</desc>
@@ -9707,27 +9614,7 @@ langues, registres, dialectes, etc. présents à l’intérieur d’un texte.</d
       <desc versionDate="2007-05-04" xml:lang="es">identifica los participantes <q>pasivos</q> en una relación de no reciprocidad.</desc>
       <desc versionDate="2007-01-21" xml:lang="it">identifica i partecipanti <q>passivi</q>all'interno di una relazione di non reciprocità.</desc>
       <datatype maxOccurs="unbounded"><dataRef key="teidata.pointer"/></datatype>
-    </attDef><attList org="choice">
-      <attDef ident="active">
-        <desc versionDate="2005-07-24" xml:lang="en">identifies the <soCalled>active</soCalled> participants in a non-mutual relationship, or all the participants in a mutual
-                    one.</desc>
-        <desc versionDate="2008-04-06" xml:lang="es">identifica los participantes activos en una relación no-mutua, o todos los participantes de
-                    una mutua.</desc>
-        <desc versionDate="2008-03-30" xml:lang="fr">identifie les participants actifs dans une relation à sens unique, ou tous les participants
-                    dans une relation réciproque.</desc>
-        <desc versionDate="2007-11-06" xml:lang="it">identifica i partecipanti attivi in una relazione di non reciprocità, oppure tutti i
-                    partecipanti in una relazione di reciprocità</desc>
-        <datatype maxOccurs="unbounded"><dataRef key="teidata.pointer"/></datatype>
-      </attDef>
-      <attDef ident="mutual" usage="opt">
-        <desc versionDate="2005-07-24" xml:lang="en">supplies a list of participants amongst all of whom the relationship holds equally.</desc>
-        <desc versionDate="2008-04-06" xml:lang="es">proporciona una lista de participantes entre los cuales se establece una idéntica
-                    relación</desc>
-        <desc versionDate="2009-03-19" xml:lang="fr">fournit une liste de participants entre lesquels la relation est réciproque.</desc>
-        <desc versionDate="2007-11-06" xml:lang="it">fornisce una lista di partecipanti tra i quali c'è una relazione paritaria</desc>
-        <datatype maxOccurs="unbounded"><dataRef key="teidata.pointer"/></datatype>
-      </attDef>
-    </attList></attList><exemplum xml:lang="en">
+    </attDef></attList><exemplum xml:lang="en">
     <egXML xmlns="http://www.tei-c.org/ns/Examples" source="#UND">
       <relation type="social" name="supervisor" active="#p1" passive="#p2 #p3 #p4"/>
     </egXML>
@@ -10109,7 +9996,7 @@ langues, registres, dialectes, etc. présents à l’intérieur d’un texte.</d
   </remarks><listRef xmlns:rng="http://relaxng.org/ns/structure/1.0">
     <ref target="http://www.tei-c.org/release/doc/tei-p5-doc/en/html/DS.html#DS">4. Default Text Structure</ref>
     <ref target="http://www.tei-c.org/release/doc/tei-p5-doc/en/html/CC.html#CCDEF">15.1. Varieties of Composite Text</ref>
-  </listRef></elementSpec><elementSpec rend="add" module="textstructure" ident="text"><gloss versionDate="2007-06-12" xml:lang="fr">texte</gloss><desc versionDate="2005-01-14" xml:lang="en">contains a single text of any kind, whether unitary or composite, for example a poem or
+  </listRef></elementSpec><elementSpec rend="change" module="textstructure" ident="text"><gloss versionDate="2007-06-12" xml:lang="fr">texte</gloss><desc versionDate="2005-01-14" xml:lang="en">contains a single text of any kind, whether unitary or composite, for example a poem or
     drama, a collection of essays, a novel, a dictionary, or a corpus sample.</desc><desc versionDate="2007-12-20" xml:lang="ko">어떤 종류의 단일 텍스트를 포함한다. 예를 들어, 시 또는 드라마, 수필선, 소설, 사전 또는 코퍼스
     표본과 같은 단일 텍스트 또는 혼합 텍스트.</desc><desc versionDate="2007-05-02" xml:lang="zh-TW">包含一份任何種類的文本，無論是單一或複合的，例如詩詞或戲劇、散文集、小說、字典、或是文集範例。</desc><desc versionDate="2008-04-05" xml:lang="ja">ひとつのテキストを示す．単体でも複合体でもよい．例えば，詩，舞台芸術， 随筆，小説，辞書，コーパスなど．</desc><desc versionDate="2007-06-12" xml:lang="fr">contient un seul texte quelconque, simple ou composite,
     par exemple un poème ou une pièce de théâtre, un recueil d’essais, un roman, un dictionnaire ou
@@ -10118,7 +10005,19 @@ langues, registres, dialectes, etc. présents à l’intérieur d’un texte.</d
     unitario o combinado, p.ej. un texto en verso o teatral, una recopilación de ensayos, una
     novela, un diccionario, o una fragmento de corpus.</desc><desc versionDate="2007-01-21" xml:lang="it">contiene un unico testo di qualsiasi tipo, sia esso
     unitario o composito, per esempio un testo in versi o teatrale, una raccolta di saggi, un
-    romanzo, un dizionario, o una porzione di corpus</desc><classes><memberOf key="att.global"/><memberOf key="att.declaring"/><memberOf key="att.typed"/><memberOf key="att.written"/><memberOf key="model.resource"/></classes><content><elementRef key="body" minOccurs="1" maxOccurs="1"/></content><attList/><exemplum xml:lang="en">
+    romanzo, un dizionario, o una porzione di corpus</desc><classes><memberOf key="model.resource"/></classes><content><elementRef key="body" minOccurs="1" maxOccurs="1"/></content><constraintSpec ident="source-in-text" scheme="schematron">
+            <constraint>
+              <sch:rule context="//tei:text//@source">
+                <sch:let name="biblIDs" value="//tei:body//tei:bibl/@xml:id"/>
+                <sch:let name="sourceValues" value="for $i in $biblIDs return concat('#', $i)"/>
+                <sch:assert test="                   every $i in (tokenize(., ' '))                   satisfies $i = $sourceValues">
+                  A @source attribute must point to an @xml:id attribute on a &lt;bibl&gt; element. 
+                  Multiple values are allowed and must be separated by a blank space. Acceptable values include: 
+                  <sch:value-of select="string-join($sourceValues, ' | ')"/>.
+                </sch:assert>
+              </sch:rule>
+            </constraint>
+          </constraintSpec><attList/><exemplum xml:lang="en">
     <egXML xmlns="http://www.tei-c.org/ns/Examples" source="#lowellAut">
       <text>
         <front>
@@ -10262,12 +10161,7 @@ langues, registres, dialectes, etc. présents à l’intérieur d’un texte.</d
     l’exclusion de toute partie pré- ou post-liminaire.</desc><desc versionDate="2017-06-13" xml:lang="de">enthält den gesamten Textkörper eines eigenständigen Textes, außer den Vorspann (front) und Nachspann (back).</desc><desc versionDate="2007-05-04" xml:lang="es">contiene el cuerpo completo de un texto unitario,
     excluyendo los eventuales añadidos paratextuales (prólogos, dedicatorias, apéndices, etc.) al
     inicio o fin de un texto.</desc><desc versionDate="2007-01-21" xml:lang="it">contiene l'intero corpo di un testo unitario, esclusi
-    eventuale peritesto iniziale e finale</desc><classes>
-    <memberOf key="att.global"/>
-    <memberOf key="att.declaring"/>
-  </classes><content>
-    <sequence minOccurs="1" maxOccurs="1"><classRef key="model.global" minOccurs="0" maxOccurs="unbounded"/><sequence minOccurs="0" maxOccurs="1"><classRef key="model.divTop"/><alternate minOccurs="0" maxOccurs="unbounded"><classRef key="model.global"/><classRef key="model.divTop"/></alternate></sequence><sequence minOccurs="0" maxOccurs="1"><classRef key="model.divGenLike"/><alternate minOccurs="0" maxOccurs="unbounded"><classRef key="model.global"/><classRef key="model.divGenLike"/></alternate></sequence><alternate minOccurs="1" maxOccurs="1"><sequence minOccurs="1" maxOccurs="unbounded"><classRef key="model.divLike"/><alternate minOccurs="0" maxOccurs="unbounded"><classRef key="model.global"/><classRef key="model.divGenLike"/></alternate></sequence><sequence minOccurs="1" maxOccurs="unbounded"><classRef key="model.div1Like"/><alternate minOccurs="0" maxOccurs="unbounded"><classRef key="model.global"/><classRef key="model.divGenLike"/></alternate></sequence><sequence minOccurs="1" maxOccurs="1"><sequence minOccurs="1" maxOccurs="unbounded"><classRef key="model.common"/><classRef key="model.global" minOccurs="0" maxOccurs="unbounded"/></sequence><alternate minOccurs="0" maxOccurs="1"><sequence minOccurs="1" maxOccurs="unbounded"><classRef key="model.divLike"/><alternate minOccurs="0" maxOccurs="unbounded"><classRef key="model.global"/><classRef key="model.divGenLike"/></alternate></sequence><sequence minOccurs="1" maxOccurs="unbounded"><classRef key="model.div1Like"/><alternate minOccurs="0" maxOccurs="unbounded"><classRef key="model.global"/><classRef key="model.divGenLike"/></alternate></sequence></alternate></sequence></alternate><sequence minOccurs="0" maxOccurs="unbounded"><classRef key="model.divBottom"/><classRef key="model.global" minOccurs="0" maxOccurs="unbounded"/></sequence></sequence>
-  </content><exemplum xml:lang="mul">
+    eventuale peritesto iniziale e finale</desc><classes/><content><sequence minOccurs="1" maxOccurs="1"><classRef key="model.global" minOccurs="0" maxOccurs="unbounded"/><sequence minOccurs="0" maxOccurs="1"><classRef key="model.divTop"/><alternate minOccurs="0" maxOccurs="unbounded"><classRef key="model.global"/><classRef key="model.divTop"/></alternate></sequence><sequence minOccurs="0" maxOccurs="1"><classRef key="model.divGenLike"/><alternate minOccurs="0" maxOccurs="unbounded"><classRef key="model.global"/><classRef key="model.divGenLike"/></alternate></sequence><alternate minOccurs="1" maxOccurs="1"><sequence minOccurs="1" maxOccurs="unbounded"><classRef key="model.divLike"/><alternate minOccurs="0" maxOccurs="unbounded"><classRef key="model.global"/><classRef key="model.divGenLike"/></alternate></sequence><sequence minOccurs="1" maxOccurs="unbounded"><classRef key="model.div1Like"/><alternate minOccurs="0" maxOccurs="unbounded"><classRef key="model.global"/><classRef key="model.divGenLike"/></alternate></sequence><sequence minOccurs="1" maxOccurs="1"><sequence minOccurs="1" maxOccurs="unbounded"><classRef key="model.common"/><classRef key="model.global" minOccurs="0" maxOccurs="unbounded"/></sequence><alternate minOccurs="0" maxOccurs="1"><sequence minOccurs="1" maxOccurs="unbounded"><classRef key="model.divLike"/><alternate minOccurs="0" maxOccurs="unbounded"><classRef key="model.global"/><classRef key="model.divGenLike"/></alternate></sequence><sequence minOccurs="1" maxOccurs="unbounded"><classRef key="model.div1Like"/><alternate minOccurs="0" maxOccurs="unbounded"><classRef key="model.global"/><classRef key="model.divGenLike"/></alternate></sequence></alternate></sequence></alternate><sequence minOccurs="0" maxOccurs="unbounded"><classRef key="model.divBottom"/><classRef key="model.global" minOccurs="0" maxOccurs="unbounded"/></sequence></sequence></content><attList/><exemplum xml:lang="mul">
     <egXML xmlns="http://www.tei-c.org/ns/Examples" source="#caedmon" xml:lang="ang">
       <body>
         <l>Nu scylun hergan hefaenricaes uard</l>
@@ -10284,29 +10178,7 @@ langues, registres, dialectes, etc. présents à l’intérieur d’un texte.</d
     </egXML>
   </exemplum><listRef>
     <ref target="http://www.tei-c.org/release/doc/tei-p5-doc/en/html/DS.html#DS">4. Default Text Structure</ref>
-  </listRef></elementSpec><constraintSpec ident="ref-on-person" scheme="schematron">
-          <constraint>
-            <sch:rule context="//tei:text//tei:persName/@ref">
-              <sch:let name="personIndex" value="doc('https://raw.githubusercontent.com/srophe/srophe-eXist-app/master/documentation/indexes/persons.xml')"/>
-              <sch:let name="personURIs" value="$personIndex//tei:person/@ref"/>
-              <sch:assert test="                 every $i in .                 satisfies $i = $personURIs">
-                This @ref attribute is not a person URI in use in Syriaca.org data. Note that all person URIs take the form 'http://syriaca.org/person/{\d+}' (where {\d+} is a number).
-              </sch:assert>
-              <sch:report test="contains(., ' ')">This @ref may contain only one URI.</sch:report>
-            </sch:rule>
-          </constraint>
-        </constraintSpec><constraintSpec ident="ref-on-place" scheme="schematron">
-          <constraint>
-            <sch:rule context="//tei:text//tei:placeName/@ref  | tei:district/@ref  | tei:settlement/@ref  | tei:region/@ref  | tei:country/@ref | tei:bloc/@ref">
-              <sch:let name="placeIndex" value="doc('https://raw.githubusercontent.com/srophe/srophe-eXist-app/master/documentation/indexes/places.xml')"/>
-              <sch:let name="placeURIs" value="$placeIndex//tei:place/@ref"/>
-              <sch:assert test="                 every $i in .                 satisfies $i = $placeURIs">
-                This @ref attribute is not a place URI in use in Syriaca.org data. Note that all place URIs take the form 'http://syriaca.org/place/{\d+}' (where {\d+} is a number).
-              </sch:assert>
-              <sch:report test="contains(., ' ')">This @ref may contain only one URI.</sch:report>
-            </sch:rule>
-          </constraint>
-        </constraintSpec><moduleSpec n="ST" xml:id="DSTTEI2" ident="tei" type="core"/><moduleSpec n="CO" xml:id="DCO" ident="core"/><moduleSpec n="CE" xml:id="DCE" ident="certainty"/><moduleSpec xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:rng="http://relaxng.org/ns/structure/1.0" n="HD" xml:id="DHD" ident="header"/><moduleSpec n="SA" xml:id="DSA" ident="linking"/><moduleSpec n="ND" xml:id="DND" ident="namesdates"/><moduleSpec n="TD" xml:id="DTDDTD" ident="tagdocs"/><moduleSpec n="DS" xml:id="DDS" ident="textstructure"/></schemaSpec>
+  </listRef></elementSpec><moduleSpec n="ST" xml:id="DSTTEI2" ident="tei" type="core"/><moduleSpec n="CO" xml:id="DCO" ident="core"/><moduleSpec n="CE" xml:id="DCE" ident="certainty"/><moduleSpec xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:rng="http://relaxng.org/ns/structure/1.0" n="HD" xml:id="DHD" ident="header"/><moduleSpec n="SA" xml:id="DSA" ident="linking"/><moduleSpec n="ND" xml:id="DND" ident="namesdates"/><moduleSpec n="TD" xml:id="DTDDTD" ident="tagdocs"/><moduleSpec n="DS" xml:id="DDS" ident="textstructure"/></schemaSpec>
     
     </body>
     

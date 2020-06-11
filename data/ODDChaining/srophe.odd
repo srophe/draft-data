@@ -33,7 +33,7 @@
         <moduleRef key="textstructure" include="TEI body text"/>
         
         
-        <classSpec ident="att.global" mode="change" type="atts" source="tei">
+        <classSpec ident="att.srophe.tags" mode="add" type="atts">
           <attList>
             <attDef ident="srophe:tags" ns="https://srophe.app" mode="add">
               <desc>Specialized attributes specific to the functions performed by the Srophé App.</desc>
@@ -622,7 +622,7 @@
         </elementSpec>
         
         <elementSpec ident="text" module="textstructure" mode="change">
-          <classes mode="change">
+          <classes mode="change"><!-- all deleted -->
             <memberOf key="att.global" mode="delete"/>
             <memberOf key="att.global.rendition" mode="delete"/>
             <memberOf key="att.global.linking" mode="delete"/>
@@ -707,7 +707,7 @@
         </elementSpec>
         
         <elementSpec ident="link" module="linking" mode="change">
-          <classes mode="change">
+          <classes mode="change"><!-- all deleted -->
             <memberOf key="att.global" mode="delete"/>
             <memberOf key="att.global.rendition" mode="delete"/>
             <memberOf key="att.global.linking" mode="delete"/>
@@ -740,7 +740,7 @@
         </elementSpec>
         
         <elementSpec ident="precision" module="certainty" mode="change">
-          <classes mode="change">
+          <classes mode="change"><!-- all deleted -->
             <memberOf key="att.global" mode="delete"/>
             <memberOf key="att.global.rendition" mode="delete"/>
             <memberOf key="att.global.linking" mode="delete"/>

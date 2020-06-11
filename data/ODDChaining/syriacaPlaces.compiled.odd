@@ -1389,21 +1389,10 @@ the TEI header.</p>
     <p>Create a schema using components taken from the file <ident>mycompiledODD.xml</ident>.</p>
   </exemplum>
   
-</classSpec><classSpec rend="change" module="tei" xml:id="GLOBAL" type="atts" ident="att.global"><desc versionDate="2007-10-02" xml:lang="en">provides attributes common to all elements in the TEI encoding scheme.</desc><desc versionDate="2007-12-20" xml:lang="ko">TEI 부호화 스키마의 모든 요소에 공통 속성을 제공한다.</desc><desc versionDate="2007-05-02" xml:lang="zh-TW">提供一組屬性，通用於TEI編碼標準中的所有元素。</desc><desc versionDate="2008-04-05" xml:lang="ja">TEI符号化スキーム中の全要素に共通する属性を示す． </desc><desc versionDate="2007-06-12" xml:lang="fr">fournit un jeu d'attributs communs à tous les éléments
+</classSpec><classSpec rend="add" module="tei" xml:id="GLOBAL" type="atts" ident="att.global"><desc versionDate="2007-10-02" xml:lang="en">provides attributes common to all elements in the TEI encoding scheme.</desc><desc versionDate="2007-12-20" xml:lang="ko">TEI 부호화 스키마의 모든 요소에 공통 속성을 제공한다.</desc><desc versionDate="2007-05-02" xml:lang="zh-TW">提供一組屬性，通用於TEI編碼標準中的所有元素。</desc><desc versionDate="2008-04-05" xml:lang="ja">TEI符号化スキーム中の全要素に共通する属性を示す． </desc><desc versionDate="2007-06-12" xml:lang="fr">fournit un jeu d'attributs communs à tous les éléments
     dans le système de codage TEI.</desc><desc versionDate="2007-05-04" xml:lang="es">proporciona un conjunto de atributos común a todos los
     elementos del esquema de codificación TEI.</desc><desc versionDate="2007-01-21" xml:lang="it">stabilisce un insieme di attributi comuni a tutti gli
-    elementi dello schema di codifica TEI</desc><classes><memberOf key="att.global.rendition"/><memberOf key="att.global.linking"/><memberOf key="att.global.responsibility"/><memberOf key="att.global.source"/></classes><attList><attDef ident="srophe:tags"><desc rend="replace">tags usable</desc><datatype maxOccurs="unbounded" minOccurs="1">
-                <rng:text xmlns:rng="http://relaxng.org/ns/structure/1.0"/>
-              </datatype><valList type="closed"><valItem ident="#syriaca-headword">
-                  <desc>The name used by Syriaca.org for document titles, citation, and
-                    disambiguation. These names have been created according to the Syriaca.org
-                    guidelines for headwords: <ref target="http://syriaca.org/documentation/headwords.html">http://syriaca.org/documentation/headwords.html</ref>.</desc>
-                </valItem><valItem ident="#syriaca-anglicized">
-                  <desc>An anglicized version of a name created by Syriaca.org used to facilitate
-                    searching in English.</desc>
-                </valItem><valItem ident="#ektobe-headword">
-                  <desc>The name used by e-Ktobe as a standardized name form.</desc>
-                </valItem></valList></attDef><attDef ident="xml:id" usage="opt">
+    elementi dello schema di codifica TEI</desc><classes><memberOf key="att.global.rendition"/><memberOf key="att.global.linking"/><memberOf key="att.global.responsibility"/><memberOf key="att.global.source"/></classes><attList><attDef ident="xml:id" usage="opt">
       <gloss versionDate="2007-07-02" xml:lang="en">identifier</gloss>
       <gloss versionDate="2007-12-20" xml:lang="ko">확인소</gloss>
       <gloss versionDate="2008-04-06" xml:lang="es">identificador</gloss>
@@ -5662,7 +5651,7 @@ attributes @target and @cRef may be supplied on <name/>.</report>
             </p>
           </remarks><listRef>
     <ref target="http://www.tei-c.org/release/doc/tei-p5-doc/en/html/CO.html#COLI">3.7. Lists</ref>
-  </listRef></elementSpec><elementSpec rend="change" module="core" ident="note"><gloss versionDate="2017-06-25" xml:lang="de">Anmerkung</gloss><desc versionDate="2005-01-14" xml:lang="en">contains a note or annotation.</desc><desc versionDate="2009-01-06" xml:lang="fr">contient une note ou une annotation</desc><desc versionDate="2007-05-04" xml:lang="es">contiene una nota o aclaración</desc><desc versionDate="2007-05-02" xml:lang="zh-TW">包含附註或註釋。</desc><desc versionDate="2007-01-21" xml:lang="it">contiene una nota o un'annotazione</desc><desc versionDate="2006-10-28" xml:lang="ja">注釈・コメント．</desc><desc versionDate="2017-06-25" xml:lang="de">enthält eine Anmerkung oder Annotation.</desc><classes><memberOf key="att.global"/><memberOf key="model.noteLike"/><memberOf key="att.pointing"/><memberOf key="att.typed"/><memberOf key="att.written"/></classes><content><macroRef key="macro.specialPara"/></content><constraintSpec ident="note-type-deprecation" scheme="schematron">
+  </listRef></elementSpec><elementSpec rend="change" module="core" ident="note"><gloss versionDate="2017-06-25" xml:lang="de">Anmerkung</gloss><desc versionDate="2005-01-14" xml:lang="en">contains a note or annotation.</desc><desc versionDate="2009-01-06" xml:lang="fr">contient une note ou une annotation</desc><desc versionDate="2007-05-04" xml:lang="es">contiene una nota o aclaración</desc><desc versionDate="2007-05-02" xml:lang="zh-TW">包含附註或註釋。</desc><desc versionDate="2007-01-21" xml:lang="it">contiene una nota o un'annotazione</desc><desc versionDate="2006-10-28" xml:lang="ja">注釈・コメント．</desc><desc versionDate="2017-06-25" xml:lang="de">enthält eine Anmerkung oder Annotation.</desc><classes><memberOf key="att.global"/><memberOf key="model.noteLike"/><memberOf key="att.pointing"/><memberOf key="att.typed"/></classes><content><macroRef key="macro.specialPara"/></content><constraintSpec ident="note-type-deprecation" scheme="schematron">
             <constraint>
               <sch:rule context="//tei:body//tei:note[@type='deprecation']">
                 <sch:assert test="./@target">
@@ -8352,7 +8341,11 @@ langues, registres, dialectes, etc. présents à l’intérieur d’un texte.</d
                 <sch:report test="contains(., ' ')">This @ref may contain only one URI.</sch:report>
               </sch:rule>
             </constraint>
-          </constraintSpec><attList><attDef ident="xml:id" mode="change">
+          </constraintSpec><attList><attDef ident="srophe:tags">
+              <datatype>
+                <dataRef key="teidata.pointer"/>
+              </datatype>
+            </attDef><attDef ident="key" mode="delete"/><attDef ident="xml:id" mode="change">
               <desc>The <gi>placeName</gi> element requires an <att>xml:id</att> attribute whose value is the concatenation of "name", 
                 the Syriaca.org ID number of this place (i.e. the last element of the URI), a ‘-’, and the number of this name element in order.</desc>
             </attDef><attDef ident="xml:lang" mode="change">
@@ -8447,7 +8440,7 @@ langues, registres, dialectes, etc. présents à l’intérieur d’un texte.</d
     countries.</desc><desc versionDate="2007-12-20" xml:lang="ko">둘 이상의 민족국가 또는 국가로 구성된 지리-정치적 단위의 이름을 포함한다.</desc><desc versionDate="2007-05-02" xml:lang="zh-TW">包含一個地理政治區域名稱，由一個或多個國家所組成。</desc><desc versionDate="2008-04-05" xml:lang="ja">複数の国や地域を跨ぐ地政学的な名前を示す．</desc><desc versionDate="2008-12-09" xml:lang="fr">contient le nom d'une unité géo-politique composée d'au
     moins deux états ou pays</desc><desc versionDate="2007-05-04" xml:lang="es">contiene el nombre de una unidad geopolítica que
     comprende uno o más estados nacionales o países.</desc><desc versionDate="2007-01-21" xml:lang="it">contiene il nome di un'unità geopolitica comprendente uno
-    o più stati nazione o paesi</desc><classes><memberOf key="att.canonical"/><memberOf key="model.placeNamePart"/><memberOf key="att.datable"/></classes><content><macroRef key="macro.phraseSeq"/></content><constraintSpec ident="ref-on-bloc" scheme="schematron">
+    o più stati nazione o paesi</desc><classes><memberOf key="att.canonical"/><memberOf key="model.placeNamePart"/></classes><content><macroRef key="macro.phraseSeq"/></content><constraintSpec ident="ref-on-bloc" scheme="schematron">
             <constraint>
               <sch:rule context="//tei:text//tei:bloc/@ref">
                 <sch:let name="placeIndex" value="doc('https://raw.githubusercontent.com/srophe/srophe-eXist-app/master/documentation/indexes/places.xml')"/>
@@ -8484,7 +8477,7 @@ langues, registres, dialectes, etc. présents à l’intérieur d’un texte.</d
     nation, un pays, une colonie ou une communauté, plus grande ou administrativement supérieure à
     une région et plus petite qu'un bloc.</desc><desc versionDate="2007-01-21" xml:lang="it">contiene il nome di un'unità geopolitica, come una
     nazione, un paese, una colonia, o un'unione di stati, che sia più ampia o amministrativamente
-    superiore rispetto a una regione ma di dimensioni inferiori rispetto a un blocco</desc><classes><memberOf key="att.canonical"/><memberOf key="model.placeNamePart"/><memberOf key="att.datable"/></classes><content><macroRef key="macro.phraseSeq"/></content><constraintSpec ident="ref-on-country" scheme="schematron">
+    superiore rispetto a una regione ma di dimensioni inferiori rispetto a un blocco</desc><classes><memberOf key="att.canonical"/><memberOf key="model.placeNamePart"/></classes><content><macroRef key="macro.phraseSeq"/></content><constraintSpec ident="ref-on-country" scheme="schematron">
             <constraint>
               <sch:rule context="//tei:text//tei:country/@ref">
                 <sch:let name="placeIndex" value="doc('https://raw.githubusercontent.com/srophe/srophe-eXist-app/master/documentation/indexes/places.xml')"/>
@@ -8520,7 +8513,7 @@ langues, registres, dialectes, etc. présents à l’intérieur d’un texte.</d
     une province ou un comté, plus grande qu'un lieu de peuplement, mais plus petite qu'un pays.</desc><desc versionDate="2007-05-04" xml:lang="es">&gt;contiene el nombre de una unidad administrativa,
     como un estado, una región o una província, que sea mayor que un pequeño asentamiento, pero
     menor a un país.</desc><desc versionDate="2007-01-21" xml:lang="it">contiene il nome di un'unità amministrativa, come uno
-    stato o una provincia, che sia più ampia di un piccolo insediamento ma più piccola di un paese</desc><classes><memberOf key="att.canonical"/><memberOf key="model.placeNamePart"/><memberOf key="att.datable"/></classes><content><macroRef key="macro.phraseSeq"/></content><constraintSpec ident="ref-on-region" scheme="schematron">
+    stato o una provincia, che sia più ampia di un piccolo insediamento ma più piccola di un paese</desc><classes><memberOf key="att.canonical"/><memberOf key="model.placeNamePart"/></classes><content><macroRef key="macro.phraseSeq"/></content><constraintSpec ident="ref-on-region" scheme="schematron">
             <constraint>
               <sch:rule context="//tei:text//tei:region/@ref">
                 <sch:let name="placeIndex" value="doc('https://raw.githubusercontent.com/srophe/srophe-eXist-app/master/documentation/indexes/places.xml')"/>
@@ -8554,7 +8547,7 @@ langues, registres, dialectes, etc. présents à l’intérieur d’un texte.</d
   </listRef></elementSpec><elementSpec rend="add" module="namesdates" ident="settlement"><gloss versionDate="2008-12-09" xml:lang="fr">lieu de peuplement</gloss><desc versionDate="2006-01-22" xml:lang="en">contains the name of a settlement such as a city, town, or village identified as a single geo-political or administrative unit.</desc><desc versionDate="2007-12-20" xml:lang="ko">하나의 지리-정치 또는 행정 단위로 식별되는 시, 읍, 마을과 같이 거주지명을 포함한다.</desc><desc versionDate="2007-05-02" xml:lang="zh-TW">包含主行政區的名稱，例如城市、鄉鎮、村莊等單一地理政治或行政單位。</desc><desc versionDate="2008-04-05" xml:lang="ja">地政学上または行政上の単位としてある市，街，村などの居住地の名前を示 す．</desc><desc versionDate="2009-03-19" xml:lang="fr">contient le nom d'un lieu de peuplement comme une cité, une ville ou un village, identifié comme une
         unité géo-politique ou administrative unique.</desc><desc versionDate="2007-05-04" xml:lang="es">contiene el nombre de un asentamiento, del tipo ciudad, pueblo, villa etc. identificado como una unidad
         geopolítica o administrativa.</desc><desc versionDate="2007-01-21" xml:lang="it">contiene il nome di un insediamento quale una città o un comune considerati come unità geopolitica o
-        amministrativa</desc><classes><memberOf key="att.canonical"/><memberOf key="model.placeNamePart"/><memberOf key="att.datable"/></classes><content><macroRef key="macro.phraseSeq"/></content><constraintSpec ident="ref-on-settlement" scheme="schematron">
+        amministrativa</desc><classes><memberOf key="att.canonical"/><memberOf key="model.placeNamePart"/></classes><content><macroRef key="macro.phraseSeq"/></content><constraintSpec ident="ref-on-settlement" scheme="schematron">
             <constraint>
               <sch:rule context="//tei:text//tei:settlement/@ref">
                 <sch:let name="placeIndex" value="doc('https://raw.githubusercontent.com/srophe/srophe-eXist-app/master/documentation/indexes/places.xml')"/>
@@ -8591,7 +8584,7 @@ langues, registres, dialectes, etc. présents à l’intérieur d’un texte.</d
   </listRef></elementSpec><elementSpec rend="add" module="namesdates" ident="district"><gloss versionDate="2008-12-09" xml:lang="fr">district</gloss><desc versionDate="2006-01-22" xml:lang="en">contains the name of any kind of subdivision of a settlement, such as a parish, ward, or other administrative or geographic unit.</desc><desc versionDate="2007-12-20" xml:lang="ko">교구, 구 또는 다른 행정 지리적 단위와 같이 거주지의 하위 구분명을 포함한다.</desc><desc versionDate="2007-05-02" xml:lang="zh-TW">包含任何次行政區名稱，例如教區、選區、或其他行政或地理單元。</desc><desc versionDate="2008-04-05" xml:lang="ja">場所を示す要素として，集落より小さい名前を示す．例えば，小教区や区な ど，行政上・地勢上の単位．</desc><desc versionDate="2009-03-19" xml:lang="fr">contient le nom d'une subdivision quelconque d'une ville, comme une paroisse, une circonscription
         électorale ou toute autre unité administrative ou géographique.</desc><desc versionDate="2007-05-04" xml:lang="es">contiene el nombre de cualquier subdivisión al interno de un asentamiento, como una circunscripción, un
         barrio u otras unidades administrativas o geográficas.</desc><desc versionDate="2007-01-21" xml:lang="it">contiene il nome di una qualsiasi suddivisione all'interno di un insediamento, come una circoscrizione,
-        un quartiere o altre unità amministrative o geografiche</desc><classes><memberOf key="att.canonical"/><memberOf key="model.placeNamePart"/><memberOf key="att.datable"/></classes><content><macroRef key="macro.phraseSeq"/></content><constraintSpec ident="ref-on-district" scheme="schematron">
+        un quartiere o altre unità amministrative o geografiche</desc><classes><memberOf key="att.canonical"/><memberOf key="model.placeNamePart"/></classes><content><macroRef key="macro.phraseSeq"/></content><constraintSpec ident="ref-on-district" scheme="schematron">
             <constraint>
               <sch:rule context="//tei:text//tei:district/@ref">
                 <sch:let name="placeIndex" value="doc('https://raw.githubusercontent.com/srophe/srophe-eXist-app/master/documentation/indexes/places.xml')"/>
@@ -8650,7 +8643,7 @@ langues, registres, dialectes, etc. présents à l’intérieur d’un texte.</d
         times involved in the expression.</desc><desc versionDate="2007-12-20" xml:lang="ko">표현에 포함된 두 장소명, 날짜, 또는 시간 사이의 차이 방향을 표시하는 상대적 시간 또는 공간 표현의 부분</desc><desc versionDate="2007-05-02" xml:lang="zh-TW">在時間或空間差距的表示中，該部分指出兩個地名、日期、或時間之間差距的方向性。</desc><desc versionDate="2008-04-05" xml:lang="ja">当該表現に含まれている2つの場所名，日付，時間のオフセットの方向を示 す，相対的な時空表現の部分を示す．</desc><desc versionDate="2009-03-19" xml:lang="fr">la partie d'une expression temporelle ou spatiale qui indique la distance et/ou la direction entre les
         deux lieux, dates ou heures sur lesquels porte l'expression.</desc><desc versionDate="2007-05-04" xml:lang="es">la parte de una expresión temporal o espacial relativa que indica la dirección del desfase entre dos
         nombres de lugar, fecha u horario al interno de la expresión.</desc><desc versionDate="2007-01-21" xml:lang="it">la parte di un'espressione temporale o spaziale relativa che indica la direzione dello sfasamento tra due
-        nomi di luogo, date o orari all'interno dell'espressione</desc><classes><memberOf key="att.datable"/><memberOf key="att.editLike"/><memberOf key="model.offsetLike"/><memberOf key="att.dimensions"/></classes><content><macroRef key="macro.phraseSeq"/></content><attList><attDef ident="key" mode="delete"/><attDef ident="ref" mode="change" usage="req"/></attList><exemplum xml:lang="en">
+        nomi di luogo, date o orari all'interno dell'espressione</desc><classes><memberOf key="model.offsetLike"/><memberOf key="att.dimensions"/></classes><content><macroRef key="macro.phraseSeq"/></content><attList><attDef ident="key" mode="delete"/><attDef ident="ref" mode="change" usage="req"/></attList><exemplum xml:lang="en">
     <egXML xmlns="http://www.tei-c.org/ns/Examples">
       <placeName key="NRPA1">
         <offset>50 metres below the summit of</offset>
@@ -9126,7 +9119,7 @@ langues, registres, dialectes, etc. présents à l’intérieur d’un texte.</d
                   The @mutual attribute on a &lt;relation&gt; element must contain two or more values.
                 </sch:assert>
                 <sch:assert test="contains(., $docURI)">
-                  One on the values of the @mutual attribute must be the URI for this document's place: <sch:value-of select="$docURI"/>.
+                  One of the values of the @mutual attribute must be the URI for this document's place: <sch:value-of select="$docURI"/>.
                 </sch:assert>
               </sch:rule>
             </constraint>
@@ -9196,7 +9189,7 @@ langues, registres, dialectes, etc. présents à l’intérieur d’un texte.</d
     
   </listRef></elementSpec><elementSpec rend="add" module="namesdates" ident="state"><gloss versionDate="2009-03-19" xml:lang="fr">statut</gloss><desc versionDate="2011-12-01" xml:lang="en">contains a description of some status or quality attributed to a person, place, or organization often at some specific time or for a specific date range.</desc><desc versionDate="2009-03-19" xml:lang="fr">contient la description d'un statut ou d'une qualité actuels attribués à une personne, un lieu ou une
         organisation.</desc><desc versionDate="2007-12-20" xml:lang="ko">개인, 장소, 또는 조직에 관련한 현재 지위 또는 특성 기술을 포함한다.</desc><desc versionDate="2007-05-02" xml:lang="zh-TW">標明分界方法所定義的權威參照標準裡其中ㄧ個組件。</desc><desc versionDate="2008-04-05" xml:lang="ja">人物，場所，組織などの，現在の社会的状態や地位を示す．</desc><desc versionDate="2018-07-18" xml:lang="de">enthält eine Beschreibung eines Status oder einer Qualität, die einer Person, einem Ort oder einer Organisation 
-    oft zu einem bestimmten Zeitpunkt oder für einen bestimmten Zeitraum zugeordnet wird.</desc><desc versionDate="2007-05-04" xml:lang="es">especifica un componente de una referencia canónica definida por el método milestone (hito).</desc><desc versionDate="2007-01-21" xml:lang="it">specifica un componente di un riferimento canonico definito dal metodo milestone.</desc><classes><memberOf key="att.global"/><memberOf key="att.datable"/><memberOf key="att.editLike"/><memberOf key="att.typed"/><memberOf key="att.naming"/><memberOf key="model.placeStateLike"/></classes><content><elementRef key="p" minOccurs="0" maxOccurs="1"/><elementRef key="label" minOccurs="0"/><elementRef key="precision" minOccurs="0" maxOccurs="unbounded"/></content><constraintSpec ident="xmlID-on-state" scheme="schematron">
+    oft zu einem bestimmten Zeitpunkt oder für einen bestimmten Zeitraum zugeordnet wird.</desc><desc versionDate="2007-05-04" xml:lang="es">especifica un componente de una referencia canónica definida por el método milestone (hito).</desc><desc versionDate="2007-01-21" xml:lang="it">specifica un componente di un riferimento canonico definito dal metodo milestone.</desc><classes><memberOf key="att.canonical"/><memberOf key="att.global"/><memberOf key="att.datable"/><memberOf key="att.typed"/><memberOf key="model.placeStateLike"/></classes><content><elementRef key="p" minOccurs="0" maxOccurs="1"/><elementRef key="label" minOccurs="0"/><elementRef key="precision" minOccurs="0" maxOccurs="unbounded"/></content><constraintSpec ident="xmlID-on-state" scheme="schematron">
             <constraint>
               <sch:rule context="//tei:text//tei:state[@type='confession']">
                 <sch:let name="docURIno" value="//tei:publicationStmt/tei:idno/substring-before(substring-after(substring-after(., 'http://syriaca.org/'), '/'), '/tei')"/>

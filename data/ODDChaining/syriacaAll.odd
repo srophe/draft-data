@@ -33,7 +33,7 @@
         <moduleRef key="tagdocs" include="gi"/>
         <moduleRef key="textstructure" include="TEI body text"/>
         
-        <classSpec ident="att.global" mode="change" module="tei" type="atts">
+        <classSpec type="atts" ident="att.srophe.tags" mode="change">
           <attList>
             <attDef ident="srophe:tags" ns="https://srophe.app" mode="change">
               <desc>tags usable</desc>
@@ -54,6 +54,11 @@
                 </valItem>
               </valList>
             </attDef>
+          </attList>
+        </classSpec>
+        
+        <classSpec ident="att.global" mode="change" module="tei" type="atts">
+          <attList>
             <attDef ident="xml:lang" mode="change">
               <!-- Should this be ingested into the Taxonomy? We could we use keyword URIs instead of these. -->
               <valList mode="replace" type="closed">
@@ -482,36 +487,9 @@
         </elementSpec>
         
         <elementSpec ident="text" module="textstructure" mode="change">
-          <classes mode="change">
-            <memberOf key="att.global" mode="delete"/>
-            <memberOf key="att.global.rendition" mode="delete"/>
-            <memberOf key="att.global.linking" mode="delete"/>
-            <memberOf key="att.global.analytic" mode="delete"/>
-            <memberOf key="att.global.facs" mode="delete"/>
-            <memberOf key="att.global.change" mode="delete"/>
-            <memberOf key="att.global.responsibility" mode="delete"/>
-            <memberOf key="att.global.source" mode="delete"/>
-            <memberOf key="att.declaring" mode="delete"/>
-            <memberOf key="att.typed" mode="delete"/>
-            <memberOf key="att.written" mode="delete"/>
-          </classes>
           <content>
             <elementRef key="body" minOccurs="1" maxOccurs="1"/>
           </content>
-        </elementSpec>
-        
-        <elementSpec ident="body" module="textstructure" mode="change">
-          <classes mode="change">
-            <memberOf key="att.global" mode="delete"/>
-            <memberOf key="att.global.rendition" mode="delete"/>
-            <memberOf key="att.global.linking" mode="delete"/>
-            <memberOf key="att.global.analytic" mode="delete"/>
-            <memberOf key="att.global.facs" mode="delete"/>
-            <memberOf key="att.global.change" mode="delete"/>
-            <memberOf key="att.global.responsibility" mode="delete"/>
-            <memberOf key="att.global.source" mode="delete"/>
-            <memberOf key="att.declaring" mode="delete"/>
-          </classes>
         </elementSpec>
         
         <elementSpec ident="title" module="core" mode="change">
@@ -808,14 +786,25 @@
         
         <elementSpec ident="note" module="core" mode="change">
           <classes mode="change">
-            <memberOf key="att.global.rendition" mode="delete"/>
-            <memberOf key="att.global.linking" mode="delete"/>
-            <memberOf key="att.global.analytic" mode="delete"/>
-            <memberOf key="att.global.facs" mode="delete"/>
-            <memberOf key="att.global.change" mode="delete"/>
-            <memberOf key="att.global.responsibility" mode="delete"/>
-            <memberOf key="att.placement" mode="delete"/>
+            <memberOf key="att.global.rendition" mode="delete"/><!-- not deleted -->
+            <memberOf key="att.global.linking" mode="delete"/><!-- not deleted -->
+            <memberOf key="att.global.analytic" mode="delete"/><!-- deleted -->
+            <memberOf key="att.global.facs" mode="delete"/><!-- deleted -->
+            <memberOf key="att.global.change" mode="delete"/><!-- deleted -->
+            <memberOf key="att.global.responsibility" mode="delete"/><!-- not deleted -->
+            <memberOf key="att.placement" mode="delete"/><!-- deleted -->
+            <memberOf key="att.written" mode="delete"/><!-- deleted -->
           </classes>
+          <!--<classes mode="replace">
+            <memberOf key="att.global" mode="add"/>
+            <memberOf key="att.global.source" mode="add"/>
+            <memberOf key="att.pointing" mode="add"/>
+            <memberOf key="att.typed" mode="add"/>
+            <memberOf key="model.noteLike" mode="add"/>
+            <memberOf key="model.correspDescPart" mode="add"/>
+            <memberOf key="model.correspContextPart" mode="add"/>
+            <memberOf key="model.correspActionPart" mode="add"/>
+          </classes>-->
           <attList>
             <attDef ident="subtype" mode="delete"/>
             <attDef ident="anchored" mode="delete"/>
@@ -830,7 +819,7 @@
         </elementSpec>
         
         <elementSpec ident="relation" module="namesdates" mode="change">
-          <classes mode="change">
+          <classes mode="change"><!-- all deleted -->
             <memberOf key="att.global" mode="delete"/>
             <memberOf key="att.global.rendition" mode="delete"/>
             <memberOf key="att.global.linking" mode="delete"/>
@@ -841,11 +830,65 @@
             <memberOf key="att.global.source" mode="delete"/>
             <memberOf key="att.editLike" mode="delete"/>
             <memberOf key="att.sortable" mode="delete"/>
-            <memberOf key="att.typed" mode="delete"></memberOf>
+            <memberOf key="att.typed" mode="delete"/>
           </classes>
         </elementSpec>
         
+        <elementSpec ident="bibl" module="core" mode="change">
+          <classes mode="change">
+            <memberOf key="att.global.rendition" mode="delete"/><!-- deleted -->
+            <memberOf key="att.global.linking" mode="delete"/><!-- not deleted -->
+            <memberOf key="att.global.analytic" mode="delete"/><!-- deleted -->
+            <memberOf key="att.global.facs" mode="delete"/><!-- deleted -->
+            <memberOf key="att.global.change" mode="delete"/><!-- deleted -->
+            <memberOf key="att.global.responsibility" mode="delete"/>
+            <memberOf key="att.global.source" mode="delete"/><!-- not deleted -->
+            <memberOf key="att.declarable" mode="delete"/><!-- deleted -->
+            <memberOf key="att.typed" mode="delete"/><!-- deleted -->
+            <memberOf key="att.sortable" mode="delete"/><!-- deleted -->
+            <memberOf key="att.docStatus" mode="delete"/><!-- deleted -->
+          </classes>
+          <constraintSpec ident="xmlID-on-bibl" scheme="schematron">
+            <constraint>
+              <sch:rule context="//tei:body/tei:listPlace/tei:place/tei:bibl">
+                <sch:let name="docURIno" value="//tei:publicationStmt/tei:idno/substring-before(substring-after(substring-after(., 'http://syriaca.org/'), '/'), '/tei')"/>
+                <sch:assert test="matches(./@xml:id, concat('bib', $docURIno, '-', '\d+$'))">
+                  The required @xml:id must be 'bib<sch:value-of select="$docURIno"/>-{\d+$}' (where {\d+$} is a number).
+                </sch:assert>
+              </sch:rule>
+            </constraint>
+          </constraintSpec>
+         </elementSpec>
         
+        
+        <elementSpec ident="listBibl" module="core" mode="change">
+          <classes mode="change">
+            <memberOf key="att.global.rendition" mode="delete"/><!-- deleted -->
+            <memberOf key="att.global.linking" mode="delete"/><!-- not deleted -->
+            <memberOf key="att.global.analytic" mode="delete"/><!-- deleted -->
+            <memberOf key="att.global.facs" mode="delete"/><!-- deleted -->
+            <memberOf key="att.global.change" mode="delete"/><!-- deleted -->
+            <memberOf key="att.global.responsibility" mode="delete"/><!-- not deleted -->
+            <memberOf key="att.global.source" mode="delete"/><!-- not deleted -->
+            <memberOf key="att.declarable" mode="delete"/><!-- deleted -->
+            <memberOf key="att.typed" mode="delete"/><!-- deleted -->
+            <memberOf key="att.sortable" mode="delete"/><!-- deleted -->
+            <memberOf key="att.docStatus" mode="delete"/><!-- deleted -->
+          </classes>
+          <content>
+            <elementRef key="bibl" minOccurs="1" maxOccurs="unbounded"/>
+          </content>
+          <constraintSpec ident="xmlID-on-listBibl" scheme="schematron">
+            <constraint>
+              <sch:rule context="//tei:body/tei:listPlace/tei:place/tei:listBibl">
+                <sch:let name="docURIno" value="//tei:publicationStmt/tei:idno/substring-before(substring-after(substring-after(., 'http://syriaca.org/'), '/'), '/tei')"/>
+                <sch:assert test="matches(./@xml:id, concat('bib', $docURIno, '-', '\d+$'))">
+                  The required @xml:id must be 'bib<sch:value-of select="$docURIno"/>-{\d+$}' (where {\d+$} is a number).
+                </sch:assert>
+              </sch:rule>
+            </constraint>
+          </constraintSpec>
+        </elementSpec>
                
         
       </schemaSpec>

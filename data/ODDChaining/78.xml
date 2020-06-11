@@ -7,12 +7,9 @@
             <titleStmt>
                 <title level="a" xml:lang="en">Edessa — <foreign xml:lang="syr">ܐܘܪܗܝ</foreign>
                 </title>
-                <title level="m" xml:lang="en">The Syriac Gazetteer</title>
                 <sponsor>Syriaca.org: The Syriac Reference Portal</sponsor>
                 <funder>The National Endowment for the Humanities</funder>
                 <funder>The International Balzan Prize Foundation</funder>
-                <editor role="general" ref="http://syriaca.org/documentation/editors.xml#tcarlson">Thomas A. Carlson</editor>
-                <editor role="general" ref="http://syriaca.org/documentation/editors.xml#dmichelson">David A. Michelson</editor>
                 <editor role="creator" ref="http://syriaca.org/documentation/editors.xml#tcarlson">Thomas A. Carlson</editor>
                 <editor role="creator" ref="http://syriaca.org/documentation/editors.xml#dmichelson">David A. Michelson</editor>
                 <respStmt>
@@ -170,6 +167,7 @@
                         <placeName ref="http://syriaca.org/place/18">Aleppo</placeName>
                     </location>
                     <location type="nested" source="#bib78-1" to="0641">
+                        <district ref="http://syriaca.org/place/78"></district>
                         <settlement ref="http://syriaca.org/place/239">Test</settlement>
                         <region ref="http://syriaca.org/place/344">Osrhoene</region>
                         <country ref="http://syriaca.org/place/166">Roman Empire</country>
@@ -335,7 +333,7 @@
                     </bibl>
                 </place>
                 <listRelation>
-                    <relation mutual="" name=""></relation>
+                    <relation mutual="http://syriaca.org/place/78 http://syriaca.org/place/423" name="share-a-name"></relation>
                 </listRelation>
             </listPlace>
         </body>

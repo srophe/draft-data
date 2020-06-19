@@ -38,7 +38,7 @@
                         <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
                     </licence>
                 </availability>
-        <date>2020-06-18-05:00</date>
+        <date>2020-06-19-05:00</date>
       </publicationStmt>
       <seriesStmt>
                 <title level="s" xml:lang="en">The Syriac Gazetteer</title>
@@ -47,8 +47,7 @@
                 <editor role="general" ref="http://syriaca.org/documentation/editors.xml#wpotter">
                     <persName>William L. Potter</persName>, <date from="2020">2020-present</date>.</editor>
                 <editor role="past-general" ref="http://syriaca.org/documentation/editors.xml#tcarlson">
-                    <persName>Thomas A. Carlson</persName>, <date from="2014" to="2018">2014-2018</date>
-        </editor>
+                    <persName>Thomas A. Carlson</persName>, <date from="2014" to="2018">2014-2018</date>.</editor>
                 <editor role="technical" ref="http://syriaca.org/documentation/editors.xml#dmichelson">
                     <persName>David A. Michelson</persName>, <date from="2014">2014-present</date>.</editor>
                 <editor role="technical" ref="http://syriaca.org/documentation/editors.xml#dschwartz">
@@ -75,7 +74,7 @@
                 <classDecl>
                     <taxonomy>
                         <category xml:id="syriaca-headword">
-                            <catDesc>The name used by Syriaca.org for document titles, citation, and disambiguation. These names have been created according to the Syriac.org guidelines for headwords: <ref target="http://syriaca.org/documentation/headwords.html">http://syriaca.org/documentation/headwords.html</ref>.</catDesc>
+                            <catDesc>The name used by Syriaca.org for document titles, citation, and disambiguation. These names have been created according to the Syriaca.org guidelines for headwords: <ref target="http://syriaca.org/documentation/headwords.html">http://syriaca.org/documentation/headwords.html</ref>.</catDesc>
                         </category>
                     </taxonomy>
                 </classDecl>
@@ -89,7 +88,7 @@
                 </langUsage>
             </profileDesc>
     <revisionDesc status="draft">
-      <change who="http://syriaca.org/documentation/editors.xml#wpotter" when="2020-06-18-05:00">CREATED: place</change>
+      <change who="http://syriaca.org/documentation/editors.xml#wpotter" when="2020-06-19-05:00">CREATED: place</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -106,8 +105,8 @@
           <idno type="URI">https://pleiades.stoa.org/places/648557</idno>
           <bibl xml:id="bib4003-1">
             <title xml:lang="en" level="a">Diachronic Maps of Syriac Cultures and Their Geographic Contexts</title>
-            <author>Ian Mladjov</author>
             <editor>David A. Michelson</editor>
+            <editor>Ian Mladjov</editor>
             <title xml:lang="en" level="m">The Syriac World</title>
             <editor>Daniel King</editor>
             <ptr target="http://syriaca.org/bibl/QK9W3LED"/>
@@ -115,8 +114,8 @@
           </bibl>
           <bibl xml:id="bib4003-2">
             <title xml:lang="en" level="a">Diachronic Maps of Syriac Cultures and Their Geographic Contexts</title>
-            <author>Ian Mladjov</author>
             <editor>David A. Michelson</editor>
+            <editor>Ian Mladjov</editor>
             <title xml:lang="en" level="m">The Syriac World</title>
             <editor>Daniel King</editor>
             <ptr target="http://syriaca.org/bibl/QK9W3LED"/>
@@ -133,15 +132,13 @@
           </bibl>
         </place>
       </listPlace>
-      <note xml:lang="en" type="misc">
-        <list>
-          <item>Okay to keep</item>
-          <item>We can save space and delete this.</item>
-          <item>I think we can delete this.</item>
-          <item>Wasn't Anemurium deleted from Map 02-03? Do we need it on this map?</item>
-          <item>Anemurium</item>
-        </list>
-      </note>
+      <!--Notes:
+       - NewNotes4-26: Okay to keep
+    - Notes-4-Ian: We can save space and delete this.
+    - Notes-4-Ian: I think we can delete this.
+    - My-Notes: Wasn't Anemurium deleted from Map 02-03? Do we need it on this map?
+    - Other_Name: Anemurium
+   -->
     </body>
   </text>
 </TEI>

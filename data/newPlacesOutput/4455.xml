@@ -27,7 +27,7 @@
                     <name ref="http://syriaca.org/documentation/editors.xml#imladjov">Ian Mladjov</name>
                 </respStmt>
         <respStmt>
-          <resp>Connection to the Syriac World identified by</resp>
+          <resp>Connection to the <title>Syriac World</title> identified by</resp>
           <name ref="http://syriaca.org/documentation/editors.xml#mberg">Murre-van Den Berg</name>
         </respStmt>
       </titleStmt>
@@ -42,7 +42,7 @@
                         <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
                     </licence>
                 </availability>
-        <date>2020-06-18-05:00</date>
+        <date>2020-06-19-05:00</date>
       </publicationStmt>
       <seriesStmt>
                 <title level="s" xml:lang="en">The Syriac Gazetteer</title>
@@ -51,8 +51,7 @@
                 <editor role="general" ref="http://syriaca.org/documentation/editors.xml#wpotter">
                     <persName>William L. Potter</persName>, <date from="2020">2020-present</date>.</editor>
                 <editor role="past-general" ref="http://syriaca.org/documentation/editors.xml#tcarlson">
-                    <persName>Thomas A. Carlson</persName>, <date from="2014" to="2018">2014-2018</date>
-        </editor>
+                    <persName>Thomas A. Carlson</persName>, <date from="2014" to="2018">2014-2018</date>.</editor>
                 <editor role="technical" ref="http://syriaca.org/documentation/editors.xml#dmichelson">
                     <persName>David A. Michelson</persName>, <date from="2014">2014-present</date>.</editor>
                 <editor role="technical" ref="http://syriaca.org/documentation/editors.xml#dschwartz">
@@ -79,7 +78,7 @@
                 <classDecl>
                     <taxonomy>
                         <category xml:id="syriaca-headword">
-                            <catDesc>The name used by Syriaca.org for document titles, citation, and disambiguation. These names have been created according to the Syriac.org guidelines for headwords: <ref target="http://syriaca.org/documentation/headwords.html">http://syriaca.org/documentation/headwords.html</ref>.</catDesc>
+                            <catDesc>The name used by Syriaca.org for document titles, citation, and disambiguation. These names have been created according to the Syriaca.org guidelines for headwords: <ref target="http://syriaca.org/documentation/headwords.html">http://syriaca.org/documentation/headwords.html</ref>.</catDesc>
                         </category>
                     </taxonomy>
                 </classDecl>
@@ -93,7 +92,7 @@
                 </langUsage>
             </profileDesc>
     <revisionDesc status="draft">
-      <change who="http://syriaca.org/documentation/editors.xml#wpotter" when="2020-06-18-05:00">CREATED: place</change>
+      <change who="http://syriaca.org/documentation/editors.xml#wpotter" when="2020-06-19-05:00">CREATED: place</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -105,13 +104,11 @@
           <location type="gps" source="#bib4455-1">
             <geo>41.3345629000 37.4257253000</geo>
           </location>
-          <state resp="http://syriaca.org" type="existence" from="1500" to="2016"/>
           <idno type="URI">http://syriaca.org/place/4455</idno>
-          <idno type="URI">http://syriaca.org/place/137</idno>
           <bibl xml:id="bib4455-1">
             <title xml:lang="en" level="a">Diachronic Maps of Syriac Cultures and Their Geographic Contexts</title>
-            <author>Ian Mladjov</author>
             <editor>David A. Michelson</editor>
+            <editor>Ian Mladjov</editor>
             <title xml:lang="en" level="m">The Syriac World</title>
             <editor>Daniel King</editor>
             <ptr target="http://syriaca.org/bibl/QK9W3LED"/>
@@ -136,13 +133,12 @@
           </bibl>
         </place>
       </listPlace>
-      <note xml:lang="en" type="misc">
-        <list>
-          <item>Perhaps the dot for Estil should be slightly closer to Midyat, in the modern town they are the same metropolitan area? https://books.google.com/books?id=M6xEBAAAQBAJ&amp;lpg=PA315&amp;ots=x7BgTR8A6o&amp;dq=Estel%20Midyat&amp;pg=PA315#v=onepage&amp;q=Estel%20Midyat&amp;f=false</item>
-          <item>Muslim quater of Midyat, https://gazetteer.dainst.org/place/2108126, https://books.google.com/books?id=FMLYAAAAMAAJ&amp;q=%22Estil%22+village+near+midyat&amp;dq=%22Estil%22+village+near+midyat&amp;hl=en&amp;sa=X&amp;ved=0ahUKEwiOyqOQ7qbTAhXE2yYKHYGjA1sQ6AEIJTAA, https://books.google.com/books?id=-gsVAQAAIAAJ&amp;q=%22Estil%22+village+near+midyat&amp;dq=%22Estil%22+village+near+midyat&amp;hl=en&amp;sa=X&amp;ved=0ahUKEwiOyqOQ7qbTAhXE2yYKHYGjA1sQ6AEIKjAB</item>
-          <item>Medeat,Mid'jat,Midyad,Midyat,Mityat,mdyad,mdyat,mdyd,mi di ya te,mydyat,Мидьят,Мідьят,ضلع مدیا... Turkey, Mardin seat of a second-order administrative division; population 76,268 N 37° 25' 8'' E 41° 20' 20''</item>
-        </list>
-      </note>
+      <!--Notes:
+       - Notes-4-Ian: Perhaps the dot for Estil should be slightly closer to Midyat, in the modern town they are the same metropolitan area? https://books.google.com/books?id=M6xEBAAAQBAJ&lpg=PA315&ots=x7BgTR8A6o&dq=Estel%20Midyat&pg=PA315#v=onepage&q=Estel%20Midyat&f=false
+    - My-Notes: Muslim quater of Midyat, https://gazetteer.dainst.org/place/2108126, https://books.google.com/books?id=FMLYAAAAMAAJ&q=%22Estil%22+village+near+midyat&dq=%22Estil%22+village+near+midyat&hl=en&sa=X&ved=0ahUKEwiOyqOQ7qbTAhXE2yYKHYGjA1sQ6AEIJTAA, https://books.google.com/books?id=-gsVAQAAIAAJ&q=%22Estil%22+village+near+midyat&dq=%22Estil%22+village+near+midyat&hl=en&sa=X&ved=0ahUKEwiOyqOQ7qbTAhXE2yYKHYGjA1sQ6AEIKjAB
+    - Notes_from_working-data: Medeat,Mid'jat,Midyad,Midyat,Mityat,mdyad,mdyat,mdyd,mi di ya te,mydyat,Мидьят,Мідьят,ضلع مدیا... Turkey, Mardin seat of a second-order administrative division; population 76,268 N 37° 25' 8'' E 41° 20' 20''
+    - Syriaca-URI: http://syriaca.org/place/137
+   -->
     </body>
   </text>
 </TEI>

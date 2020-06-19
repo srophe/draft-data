@@ -27,7 +27,7 @@
                     <name ref="http://syriaca.org/documentation/editors.xml#imladjov">Ian Mladjov</name>
                 </respStmt>
         <respStmt>
-          <resp>Connection to the Syriac World identified by</resp>
+          <resp>Connection to the <title>Syriac World</title> identified by</resp>
           <name ref="http://syriaca.org/documentation/editors.xml#dwilmshurst">David Wilmshurst</name>
         </respStmt>
       </titleStmt>
@@ -42,7 +42,7 @@
                         <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
                     </licence>
                 </availability>
-        <date>2020-06-18-05:00</date>
+        <date>2020-06-19-05:00</date>
       </publicationStmt>
       <seriesStmt>
                 <title level="s" xml:lang="en">The Syriac Gazetteer</title>
@@ -51,8 +51,7 @@
                 <editor role="general" ref="http://syriaca.org/documentation/editors.xml#wpotter">
                     <persName>William L. Potter</persName>, <date from="2020">2020-present</date>.</editor>
                 <editor role="past-general" ref="http://syriaca.org/documentation/editors.xml#tcarlson">
-                    <persName>Thomas A. Carlson</persName>, <date from="2014" to="2018">2014-2018</date>
-        </editor>
+                    <persName>Thomas A. Carlson</persName>, <date from="2014" to="2018">2014-2018</date>.</editor>
                 <editor role="technical" ref="http://syriaca.org/documentation/editors.xml#dmichelson">
                     <persName>David A. Michelson</persName>, <date from="2014">2014-present</date>.</editor>
                 <editor role="technical" ref="http://syriaca.org/documentation/editors.xml#dschwartz">
@@ -79,7 +78,7 @@
                 <classDecl>
                     <taxonomy>
                         <category xml:id="syriaca-headword">
-                            <catDesc>The name used by Syriaca.org for document titles, citation, and disambiguation. These names have been created according to the Syriac.org guidelines for headwords: <ref target="http://syriaca.org/documentation/headwords.html">http://syriaca.org/documentation/headwords.html</ref>.</catDesc>
+                            <catDesc>The name used by Syriaca.org for document titles, citation, and disambiguation. These names have been created according to the Syriaca.org guidelines for headwords: <ref target="http://syriaca.org/documentation/headwords.html">http://syriaca.org/documentation/headwords.html</ref>.</catDesc>
                         </category>
                     </taxonomy>
                 </classDecl>
@@ -93,7 +92,7 @@
                 </langUsage>
             </profileDesc>
     <revisionDesc status="draft">
-      <change who="http://syriaca.org/documentation/editors.xml#wpotter" when="2020-06-18-05:00">CREATED: place</change>
+      <change who="http://syriaca.org/documentation/editors.xml#wpotter" when="2020-06-19-05:00">CREATED: place</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -106,15 +105,13 @@
           <location type="gps" subtype="representative" source="#bib4203-1 #bib4203-2">
             <geo>47.7011347000 30.7818659000</geo>
           </location>
-          <state resp="http://syriaca.org" type="existence" from="0400" to="2016"/>
           <idno type="URI">http://syriaca.org/place/4203</idno>
           <idno type="URI">http://www.iranicaonline.org/articles/bahman-ardasir-or-forat-maysan-town-and-subdistrict-in-maysan-in-lower-iraq</idno>
           <idno type="URI">https://en.wikipedia.org/wiki/Maishan_(East_Syrian_Ecclesiastical_Province)</idno>
-          <idno type="URI">http://dare.ht.lu.se/places/25149</idno>
           <bibl xml:id="bib4203-1">
             <title xml:lang="en" level="a">Diachronic Maps of Syriac Cultures and Their Geographic Contexts</title>
-            <author>Ian Mladjov</author>
             <editor>David A. Michelson</editor>
+            <editor>Ian Mladjov</editor>
             <title xml:lang="en" level="m">The Syriac World</title>
             <editor>Daniel King</editor>
             <ptr target="http://syriaca.org/bibl/QK9W3LED"/>
@@ -122,8 +119,8 @@
           </bibl>
           <bibl xml:id="bib4203-2">
             <title xml:lang="en" level="a">Diachronic Maps of Syriac Cultures and Their Geographic Contexts</title>
-            <author>Ian Mladjov</author>
             <editor>David A. Michelson</editor>
+            <editor>Ian Mladjov</editor>
             <title xml:lang="en" level="m">The Syriac World</title>
             <editor>Daniel King</editor>
             <ptr target="http://syriaca.org/bibl/QK9W3LED"/>
@@ -157,12 +154,11 @@
           </bibl>
         </place>
       </listPlace>
-      <note xml:lang="en" type="misc">
-        <list>
-          <item>May want to keep Furāt around as the Arabic name, but we do need Prat d-Maishan. I don't know if we need to keep Bahman Ardashir. At present http://syriaca.org/place/44 is both Basra and Prat d-Maishan - do we need to split that?</item>
-          <item>http://www.iranicaonline.org/articles/bahman-ardasir-or-forat-maysan-town-and-subdistrict-in-maysan-in-lower-iraq</item>
-        </list>
-      </note>
+      <!--Notes:
+       - My-Notes: May want to keep Furāt around as the Arabic name, but we do need Prat d-Maishan. I don't know if we need to keep Bahman Ardashir. At present http://syriaca.org/place/44 is both Basra and Prat d-Maishan - do we need to split that?
+    - GazetterNote_from_working-data: http://www.iranicaonline.org/articles/bahman-ardasir-or-forat-maysan-town-and-subdistrict-in-maysan-in-lower-iraq
+    - Source: http://dare.ht.lu.se/places/25149
+   -->
     </body>
   </text>
 </TEI>

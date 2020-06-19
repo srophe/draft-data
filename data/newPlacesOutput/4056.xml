@@ -27,7 +27,7 @@
                     <name ref="http://syriaca.org/documentation/editors.xml#imladjov">Ian Mladjov</name>
                 </respStmt>
         <respStmt>
-          <resp>Connection to the Syriac World identified by</resp>
+          <resp>Connection to the <title>Syriac World</title> identified by</resp>
           <name ref="http://syriaca.org/documentation/editors.xml#dwilmshurst">David Wilmshurst</name>
         </respStmt>
       </titleStmt>
@@ -42,7 +42,7 @@
                         <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
                     </licence>
                 </availability>
-        <date>2020-06-18-05:00</date>
+        <date>2020-06-19-05:00</date>
       </publicationStmt>
       <seriesStmt>
                 <title level="s" xml:lang="en">The Syriac Gazetteer</title>
@@ -51,8 +51,7 @@
                 <editor role="general" ref="http://syriaca.org/documentation/editors.xml#wpotter">
                     <persName>William L. Potter</persName>, <date from="2020">2020-present</date>.</editor>
                 <editor role="past-general" ref="http://syriaca.org/documentation/editors.xml#tcarlson">
-                    <persName>Thomas A. Carlson</persName>, <date from="2014" to="2018">2014-2018</date>
-        </editor>
+                    <persName>Thomas A. Carlson</persName>, <date from="2014" to="2018">2014-2018</date>.</editor>
                 <editor role="technical" ref="http://syriaca.org/documentation/editors.xml#dmichelson">
                     <persName>David A. Michelson</persName>, <date from="2014">2014-present</date>.</editor>
                 <editor role="technical" ref="http://syriaca.org/documentation/editors.xml#dschwartz">
@@ -79,7 +78,7 @@
                 <classDecl>
                     <taxonomy>
                         <category xml:id="syriaca-headword">
-                            <catDesc>The name used by Syriaca.org for document titles, citation, and disambiguation. These names have been created according to the Syriac.org guidelines for headwords: <ref target="http://syriaca.org/documentation/headwords.html">http://syriaca.org/documentation/headwords.html</ref>.</catDesc>
+                            <catDesc>The name used by Syriaca.org for document titles, citation, and disambiguation. These names have been created according to the Syriaca.org guidelines for headwords: <ref target="http://syriaca.org/documentation/headwords.html">http://syriaca.org/documentation/headwords.html</ref>.</catDesc>
                         </category>
                     </taxonomy>
                 </classDecl>
@@ -93,7 +92,7 @@
                 </langUsage>
             </profileDesc>
     <revisionDesc status="draft">
-      <change who="http://syriaca.org/documentation/editors.xml#wpotter" when="2020-06-18-05:00">CREATED: place</change>
+      <change who="http://syriaca.org/documentation/editors.xml#wpotter" when="2020-06-19-05:00">CREATED: place</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -105,14 +104,13 @@
           <location type="gps" source="#bib4056-1">
             <geo>44.3124962000 33.7824290000</geo>
           </location>
-          <state resp="http://syriaca.org" type="existence" from="0400" to="2016"/>
           <idno type="URI">http://syriaca.org/place/4056</idno>
           <idno type="URI">https://pleiades.stoa.org/places/893968</idno>
           <idno type="URI">http://gap.alexandriaarchive.org/gane/edit-place?placeID=63707</idno>
           <bibl xml:id="bib4056-1">
             <title xml:lang="en" level="a">Diachronic Maps of Syriac Cultures and Their Geographic Contexts</title>
-            <author>Ian Mladjov</author>
             <editor>David A. Michelson</editor>
+            <editor>Ian Mladjov</editor>
             <title xml:lang="en" level="m">The Syriac World</title>
             <editor>Daniel King</editor>
             <ptr target="http://syriaca.org/bibl/QK9W3LED"/>
@@ -137,16 +135,14 @@
           </bibl>
         </place>
       </listPlace>
-      <note xml:lang="en" type="misc">
-        <list>
-          <item>ʕUkbara – my coordinates are correct, I researched this point in detail and located the tell in Wikimapia.</item>
-          <item>Great, thanks.</item>
-          <item>Are the coordinates correct? See https://pleiades.stoa.org/places/893968</item>
-          <item>I have not seen this in Syriac, only in Arabic, where it should have a macron on the final 'a'.</item>
-          <item>http://referenceworks.brillonline.com/entries/encyclopedia-of-jews-in-the-islamic-world/mishawayh-al-ukbari-SIM_0015420?s.num=16&amp;s.rows=20&amp;s.start=0</item>
-          <item>Needs to be confirmed; location names are close but not the same</item>
-        </list>
-      </note>
+      <!--Notes:
+       - Notes-From-Ian: ʕUkbara – my coordinates are correct, I researched this point in detail and located the tell in Wikimapia.
+    - NewNotes4-26: Great, thanks.
+    - Notes-4-Ian: Are the coordinates correct? See https://pleiades.stoa.org/places/893968
+    - My-Notes: I have not seen this in Syriac, only in Arabic, where it should have a macron on the final 'a'.
+    - GazetterNote_from_working-data: http://referenceworks.brillonline.com/entries/encyclopedia-of-jews-in-the-islamic-world/mishawayh-al-ukbari-SIM_0015420?s.num=16&s.rows=20&s.start=0
+    - Notes_from_working-data: Needs to be confirmed; location names are close but not the same
+   -->
     </body>
   </text>
 </TEI>

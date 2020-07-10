@@ -213,9 +213,9 @@
                 <idno type="URI">http://syriaca.org/spear/3099-9</idno>
                 <listRelation>
                     <relation name="syriaca:FollowerOf" active="http://syriaca.org/person/anonymi3"
-                        passive="http://syriaca.org/anonymi2">
-                        <desc><persName ref="http://syriaca.org/person/anonymi3"/> was a follower of
-                                <persName ref="http://syriaca.org/anonymi2"/>.</desc>
+                        passive="http://syriaca.org/person/anonymi2">
+                        <desc><persName ref="http://syriaca.org/person/anonymi3">  </persName> was a follower of
+                                <persName ref="http://syriaca.org/person/anonymi2">  </persName>.</desc>
                     </relation>
                 </listRelation>
                 <bibl type="primary">
@@ -511,7 +511,7 @@
                 <idno type="URI">http://syriaca.org/spear/3099-30</idno>
                 <listPerson>
                     <person>
-                        <persName ref="http://syriaca.org/person/2308"> Theodosius </persName>
+                        <persName ref="http://syriaca.org/person/1529"> Theodosius </persName>
                     </person>
                 </listPerson>
                 <bibl type="primary">
@@ -525,10 +525,12 @@
                     <relation name="syriaca:EpistolaryReferenceTo"
                         active="http://syriaca.org/person/51"
                         passive="http://syriaca.org/person/2432">
-                        <desc>A letter between <persName ref="http://syriaca.org/person/51">Severus
-                                of Antioch</persName> referenced <persName
-                                ref="http://syriaca.org/person/51">Severus of
-                            Antioch</persName>.</desc>
+                        <desc>
+                            A letter between <persName ref="http://syriaca.org/person/51">Severus of Antioch</persName> referenced 
+                            <persName ref="http://syriaca.org/person/2432">Dioscorus I</persName>,
+                            <persName ref="http://syriaca.org/person/847">Irenaeus of Tyre</persName>, and 
+                            <persName ref="http://syriaca.org/person/1529">Theodosius</persName>
+                            .</desc>
                     </relation>
                 </listRelation>
                 <bibl type="primary">
@@ -541,10 +543,10 @@
                 <listRelation>
                     <relation name="syriaca:EpistolaryReferenceTo"
                         active="http://syriaca.org/person/2432"
-                        passive="http://syriaca.org/person/2308 http://syriaca.org/person/847">
-                        <desc>A letter between <persName ref="http://syriaca.org/person/2432"
-                                >Dioscorus I</persName> referenced <persName
-                                ref="http://syriaca.org/person/2432">Dioscorus I</persName>.</desc>
+                        passive="http://syriaca.org/person/1529 http://syriaca.org/person/847">
+                        <desc>A letter by <persName ref="http://syriaca.org/person/2432">Dioscorus I</persName> referenced 
+                            <persName ref="http://syriaca.org/person/847">Irenaeus of Tyre</persName> and 
+                            <persName ref="http://syriaca.org/person/1529">Theodosius</persName>.</desc>
                     </relation>
                 </listRelation>
                 <bibl type="primary">

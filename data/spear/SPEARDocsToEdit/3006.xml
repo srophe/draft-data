@@ -106,10 +106,7 @@
                 <idno type="URI">http://syriaca.org/spear/3006-1</idno>
                 <listPerson>
                     <personGrp>
-                        <persName ref="http://syriaca.org/person/anonymi1"
-                            ><!-- This is tricky. Who are these patricians. The senate? See index p. 470 where "Patricians" has the following pages, 11, 60, 125, 199, 200, 203-->
-                            The Patricians <date notBefore="0465" notAfter="0513"> A.D. 465-513
-                            </date></persName>
+                        <persName ref="http://syriaca.org/person/3722">The Patricians</persName>
                     </personGrp>
                 </listPerson>
                 <bibl type="primary">
@@ -121,9 +118,7 @@
                 <idno type="URI">http://syriaca.org/spear/3006-2</idno>
                 <listPerson>
                     <personGrp>
-                        <!-- I believe that the patricians and the sacred senate are the same group -->
-                        <persName ref="http://syriaca.org/person/anonymi1"> the sacred Senate <date
-                                notBefore="0465" notAfter="0513"> A.D. 465-513 </date></persName>
+                        <persName ref="http://syriaca.org/person/3722">Rational stars of the sacred Senate</persName>
                     </personGrp>
                 </listPerson>
                 <bibl type="primary">
@@ -135,15 +130,31 @@
                 <idno type="URI">http://syriaca.org/spear/3006-3</idno>
                 <listRelation>
                     <relation name="syriaca:SenderOfLetterTo" active="http://syriaca.org/person/51"
-                        passive="http://syriaca.org/person/anonymi1">
+                        passive="http://syriaca.org/person/3722">
                         <desc><persName ref="http://syriaca.org/person/51">Severus of
-                                Antioch</persName> sent a letter to <persName
-                                ref="http://syriaca.org/person/anonymi1">  </persName>.</desc>
+                                Antioch</persName> sent a letter to <persName ref="http://syriaca.org/person/3722">Anonymi 3722 </persName>.</desc>
                     </relation>
                 </listRelation>
                 <bibl type="primary">
                     <ptr target="http://syriaca.org/bibl/668"/>
                     <citedRange unit="pp">199-200</citedRange>
+                </bibl>
+            </div>
+            <div type="factoid" subtype="event" xml:id="factoid-4" resp="#dschwartz">
+                <idno type="URI">http://syriaca.org/spear/3006-4</idno>
+                <listEvent>
+                    <event ana="http://syriaca.org/keyword/ordination http://syriaca.org/keyword/sacraments">
+                        <desc>
+                            <date notBefore="0508" notAfter="0511">Sometime between A.D. 508-511</date>, 
+                            <persName ref="http://syriaca.org/person/51">Severus of Antioch</persName> sent a letter to 
+                            <persName ref="http://syriaca.org/person/3722">Anonymi 3722 </persName> on the subject of his ordination, the 
+                            legitimacy of his administration of the sacraments, and the issue of re-ordination.
+                        </desc>
+                    </event>
+                </listEvent>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="pp">199-203</citedRange>
                 </bibl>
             </div>
         </body>

@@ -134,12 +134,11 @@
                     <citedRange unit="pp">179</citedRange>
                 </bibl>
             </div>
-            <div type="factoid" subtype="nameVariant" xml:id="factoid-2" resp="#ayousif #ekowalik">
+            <div type="factoid" subtype="nameVariant" xml:id="factoid-2" resp="#dschwartz">
                 <idno type="URI">http://syriaca.org/spear/844-2</idno>
                 <listPerson>
                     <person>
-                        <persName ref="http://syriaca.org/person/a"><!-- This cannot be the correct URI. Also, check to see if this is John of Ephesus -->
-                             </persName>
+                        <persName ref="http://syriaca.org/person/3720">A certain gentleman</persName>
                     </person>
                 </listPerson>
                 <bibl type="primary">
@@ -151,14 +150,16 @@
                     <citedRange unit="pp">180</citedRange>
                 </bibl>
             </div>
-            <div type="factoid" subtype="event" xml:id="factoid-3" resp="#ayousif #ekowalik">
+            <div type="factoid" subtype="event" xml:id="factoid-3" resp="#dschwartz">
                 <idno type="URI">http://syriaca.org/spear/844-3</idno>
                 <listEvent>
-                    <event ana="http://syriaca.org/keyword/coins">
-                        <desc><persName
-                                ref="http://syriaca.org/person/2024">Priscus</persName> was
-                            supportted finnacially by <persName ref="http://syriaca.org/person/a"
-                                ><!-- sort out who this person is --></persName>, who sent him coins. </desc>
+                    <event ana="http://syriaca.org/keyword/coins http://syriaca.org/keyword/charity http://syriaca.org/keyword/poverty http://syriaca.org/keyword/humility">
+                        <desc>
+                            <persName ref="http://syriaca.org/person/74">John of Ephesus</persName> attempted to 
+                            provide financial assistance to the poor holy man <persName ref="http://syriaca.org/person/2024">Priscus</persName> 
+                            by sending <persName ref="http://syriaca.org/person/3720">a certain gentlemen</persName> to give a tremissis (gold coin). 
+                            <persName ref="http://syriaca.org/person/2024">Priscus</persName> refused and ran away but finally relented and took one follis.
+                        </desc>
                     </event>
                 </listEvent>
                 <bibl type="primary">
@@ -170,13 +171,16 @@
                     <citedRange unit="pp">180</citedRange>
                 </bibl>
             </div>
-            <div type="factoid" subtype="event" xml:id="factoid-4" resp="#ayousif #ekowalik">
+            <div type="factoid" subtype="event" xml:id="factoid-4" resp="#dschwartz">
                 <idno type="URI">http://syriaca.org/spear/844-4</idno>
                 <listEvent>
-                    <event ana="http://syriaca.org/keyword/dress">
-                        <desc><persName
-                                ref="http://syriaca.org/person/2024">Priscus</persName> was
-                            supportted by <persName ref="http://syriaca.org/person/a"><!-- sort out who this person is --></persName>, who sent him a tunic and a cloack. </desc>
+                    <event ana="http://syriaca.org/keyword/dress http://syriaca.org/keyword/charity http://syriaca.org/keyword/poverty http://syriaca.org/keyword/humility">
+                        <desc>
+                            <persName ref="http://syriaca.org/person/74">John of Ephesus</persName> attempted to 
+                            provide assistance to the poor holy man <persName ref="http://syriaca.org/person/2024">Priscus</persName> 
+                            by sending <persName ref="http://syriaca.org/person/3720">a certain gentlemen</persName> to give him a tunic and a cloak.
+                            
+                        </desc>
                     </event>
                 </listEvent>
                 <bibl type="primary">
@@ -188,14 +192,15 @@
                     <citedRange unit="pp">181</citedRange>
                 </bibl>
             </div>
-            <div type="factoid" subtype="relation" xml:id="factoid-5" resp="#ayousif #ekowalik">
+            <div type="factoid" subtype="relation" xml:id="factoid-5" resp="#dschwartz">
                 <idno type="URI">http://syriaca.org/spear/844-5</idno>
                 <listRelation>
                     <relation name="syriaca:MonasticHeadOver"
-                        active="http://syriaca.org/person/a"
-                        passive="http://syriaca.org/person/2024">
-                        <desc><persName ref="http://syriaca.org/person/a"><!-- sort out who this person is --></persName> was a monastic authority over <persName
-                                ref="http://syriaca.org/person/2024">Priscus</persName>.</desc>
+                        active="http://syriaca.org/person/74"
+                        passive="http://syriaca.org/person/3720">
+                        <desc>
+                            <persName ref="http://syriaca.org/person/74">John of Ephesus</persName> was a monastic authority over 
+                            <persName ref="http://syriaca.org/person/3720">Anonymous 3720</persName>.</desc>
                     </relation>
                 </listRelation>
                 <bibl type="primary">
@@ -207,16 +212,17 @@
                     <citedRange unit="pp">180</citedRange>
                 </bibl>
             </div>
-            <div type="factoid" subtype="nameVariant" xml:id="factoid-6" resp="#ayousif #ekowalik">
+            <div type="factoid" subtype="event" xml:id="factoid-6" resp="#dschwartz">
                 <idno type="URI">http://syriaca.org/spear/844-6</idno>
-                <listPerson>
-                    <person>
-                        <persName ref="http://syriaca.org/person/3542a"> A friend of <persName
-                                ref="http://syriaca.org/person/74">John of Ephesus</persName> and
-                                <persName ref="http://syriaca.org/person/2024"
-                            >Priscus</persName></persName>
-                    </person>
-                </listPerson>
+                <listEvent>
+                    <event ana="http://syriaca.org/keyword/sanctity">
+                        <desc>
+                            <persName ref="http://syriaca.org/person/3720">Anonymous 3720 </persName> began to observe the poor man 
+                            <persName ref="http://syriaca.org/person/2024">Priscus</persName> because of his sanctity. He saw him engaged 
+                            in prayer with fire and lightening coming from his face and fled in terror.
+                        </desc>
+                    </event>
+                </listEvent>
                 <bibl type="primary">
                     <ptr target="http://syriaca.org/work/844"/>
                     <citedRange unit="pp">527</citedRange>
@@ -226,19 +232,15 @@
                     <citedRange unit="pp">181</citedRange>
                 </bibl>
             </div>
-            <div type="factoid" subtype="birthPlace" xml:id="factoid-7" resp="#ayousif #ekowalik">
+            <div type="factoid" subtype="birthPlace" xml:id="factoid-7" resp="#ayousif #ekowalik #dschwartz">
                 <idno type="URI">http://syriaca.org/spear/844-7</idno>
                 <listPerson>
                     <person>
-                        <persName ref="http://syriaca.org/person/3542a"/>
+                        <persName ref="http://syriaca.org/person/3720"/>
                         <birth>
                             <placeName ref="http://syriaca.org/place/2763"/>
-                            <note type="desc"><persName ref="http://syriaca.org/person/3542a">A
-                                    friend of <persName ref="http://syriaca.org/person/74">John of
-                                        Ephesus</persName> and <persName
-                                        ref="http://syriaca.org/person/2024"
-                                    >Priscus</persName></persName> was born in <placeName
-                                    ref="http://syriaca.org/place/2763">Cappadoica</placeName>.
+                            <note type="desc"><persName ref="http://syriaca.org/person/3720">Anonymous 3720 </persName> was born in 
+                                <placeName ref="http://syriaca.org/place/2763">Cappadoica</placeName>.
                             </note>
                         </birth>
                     </person>
@@ -252,13 +254,17 @@
                     <citedRange unit="pp">181</citedRange>
                 </bibl>
             </div>
-            <div type="factoid" subtype="event" xml:id="factoid-8" resp="#ayousif #ekowalik">
+            <div type="factoid" subtype="event" xml:id="factoid-8" resp="#dschwartz">
                 <idno type="URI">http://syriaca.org/spear/844-8</idno>
                 <listEvent>
-                    <event ana="http://syriaca.org/keyword/miracles">
-                        <desc><persName
-                                ref="http://syriaca.org/person/2024">Priscus</persName> experinced a
-                            spritual specacle. </desc>
+                    <event ana="http://syriaca.org/keyword/sanctity http://syriaca.org/keyword/poverty http://syriaca.org/keyword/madness">
+                        <desc>
+                            <persName ref="http://syriaca.org/person/3720">Anonymous 3720 </persName> returned to  
+                            <persName ref="http://syriaca.org/person/2024">Priscus</persName> and they discussed his mode of life:
+                            his poverty and his apparent madness. <persName ref="http://syriaca.org/person/2024">Priscus</persName> explained 
+                            that he did these things to be left alone in order to pursue God. <persName ref="http://syriaca.org/person/3720">Anonymous 3720 </persName>
+                            promised only to reveal his secret to <persName ref="http://syriaca.org/person/74">John of Ephesus</persName>.
+                        </desc>
                     </event>
                 </listEvent>
                 <bibl type="primary">

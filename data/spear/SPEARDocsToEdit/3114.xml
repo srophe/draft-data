@@ -330,26 +330,13 @@
                     <citedRange unit="pp">170</citedRange>
                 </bibl>
             </div>
-            <div type="factoid" subtype="nameVariant" xml:id="factoid-16" resp="#ktorabi #dschwartz">
-                <idno type="URI">http://syriaca.org/spear/3114-16</idno>
-                <listPerson>
-                    <person>
-                        <!-- I'm not sure how to encode this as a name variant.  This person appears to be Proclus's wayward daugther; however, Severus only refers to her in this section of the fragmented letter by the pronouns "her" and "she" -->
-                        <persName ref="http://syriaca.org/person/anonymous1"> a woman </persName>
-                    </person>
-                </listPerson>
-                <bibl type="primary">
-                    <ptr target="http://syriaca.org/bibl/668"/>
-                    <citedRange unit="pp">170</citedRange>
-                </bibl>
-            </div>
             <div type="factoid" subtype="gender" xml:id="factoid-17" resp="#ktorabi #dschwartz">
                 <idno type="URI">http://syriaca.org/spear/3114-17</idno>
                 <listPerson>
                     <person>
-                        <persName ref="http://syriaca.org/person/anonymous1"/>
+                        <persName ref="http://syriaca.org/person/3728"/>
                         <trait type="gender" ana="http://syriaca.org/keyword/female">
-                            <note type="desc"><persName ref="http://syriaca.org/person/anonymous1">  </persName>
+                            <note type="desc"><persName ref="http://syriaca.org/person/3728">Anonymous 3728</persName>
                                 was female. </note>
                         </trait>
                     </person>
@@ -362,17 +349,35 @@
             <div type="factoid" subtype="relation" xml:id="factoid-18" resp="#ktorabi #dschwartz">
                 <idno type="URI">http://syriaca.org/spear/3114-18</idno>
                 <listRelation>
-                    <relation name="snap:ChildOf" active="http://syriaca.org/person/anonymous1"
+                    <relation name="snap:ChildOf" active="http://syriaca.org/person/3728"
                         passive="http://syriaca.org/person/2569">
-                        <desc><persName ref="http://syriaca.org/person/anonymous1">  </persName> was the child
+                        <desc><persName ref="http://syriaca.org/person/3728">Anonymous 3728</persName> was the child
                             of <persName ref="http://syriaca.org/person/2569"
                             >Proclus</persName>.</desc>
                     </relation>
-                    <!-- Check this relationship. -->
                 </listRelation>
                 <bibl type="primary">
                     <ptr target="http://syriaca.org/bibl/668"/>
                     <citedRange unit="pp">170</citedRange>
+                </bibl>
+            </div>
+            <div type="factoid" subtype="event" xml:id="factoid-19" resp="#dschwartz">
+                <idno type="URI">http://syriaca.org/spear/3114-19</idno>
+                <listEvent>
+                    <event ana="http://syriaca.org/keyword/canon-law http://syriaca.org/keyword/bishops http://syriaca.org/keyword/fathers http://syriaca.org/keyword/repentance">
+                        <desc>
+                            <date notBefore="0519" notAfter="0538">Sometime between 519 and 538</date>
+                            <persName ref="http://syriaca.org/person/51">Severus of Antioch</persName> wrote a letter to 
+                            <persName ref="http://syriaca.org/person/2569">Proclus</persName> discussing the difficulties of 
+                            being a bishop with a wife and child. He encouraged <persName ref="http://syriaca.org/person/2569">Proclus</persName>
+                            that his situation was not unique and urged him to call his wayward <persName ref="http://syriaca.org/person/3728">daughter</persName>
+                            to repentance. 
+                        </desc>
+                    </event>
+                </listEvent>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="pp">167-171</citedRange>
                 </bibl>
             </div>
         </body>

@@ -106,7 +106,7 @@
                 <idno type="URI">http://syriaca.org/spear/3050-1</idno>
                 <listPerson>
                     <personGrp>
-                        <persName ref="http://syriaca.org/person/anonymi1"> The fathers </persName>
+                        <persName ref="http://syriaca.org/person/3726"> The fathers </persName>
                     </personGrp>
                 </listPerson>
                 <bibl type="primary">
@@ -118,10 +118,10 @@
                 <idno type="URI">http://syriaca.org/spear/3050-2</idno>
                 <listRelation>
                     <relation name="syriaca:SenderOfLetterTo" active="http://syriaca.org/person/51"
-                        passive="http://syriaca.org/person/anonymi1">
+                        passive="http://syriaca.org/person/3726">
                         <desc><persName ref="http://syriaca.org/person/51">Severus of
-                                Antioch</persName> Sender Of Letters To <persName
-                                ref="http://syriaca.org/person/anonymi1">  </persName>.</desc>
+                                Antioch</persName> sent a letter to <persName
+                                ref="http://syriaca.org/person/3726">the fathers</persName>.</desc>
                     </relation>
                 </listRelation>
                 <bibl type="primary">
@@ -133,7 +133,7 @@
                 <idno type="URI">http://syriaca.org/spear/3050-3</idno>
                 <listPerson>
                     <personGrp>
-                        <persName ref="http://syriaca.org/person/anonymi1"> All the holy fathers
+                        <persName ref="http://syriaca.org/person/3726"> All the holy fathers
                         </persName>
                     </personGrp>
                 </listPerson>
@@ -207,7 +207,7 @@
                 <idno type="URI">http://syriaca.org/spear/3050-8</idno>
                 <listPerson>
                     <personGrp>
-                        <persName ref="http://syriaca.org/person/anonymi3"> The bishops, whom in
+                        <persName ref="http://syriaca.org/person/3727"> The bishops, whom in
                                 <date notBefore="0513" notAfter="0518"> A.D. 513-518
                                 </date><persName ref="http://syriaca.org/person/2460"> Musonius
                             </persName> accused of behaving in an undiscriminating and unlawful
@@ -219,13 +219,16 @@
                     <citedRange unit="pp">78</citedRange>
                 </bibl>
             </div>
-            <div type="factoid" subtype="relation" xml:id="factoid-9" resp="#ktorabi #dschwartz">
+            <div type="factoid" subtype="relation" xml:id="factoid-9" resp="#dschwartz">
                 <idno type="URI">http://syriaca.org/spear/3050-9</idno>
                 <listRelation>
-                    <relation name="snap:EnmityFor" active="http://syriaca.org/person/2460"
-                        passive="http://syriaca.org/person/anonymi3">
-                        <desc><persName ref="http://syriaca.org/person/2460">Musonius</persName> had
-                            enmity for <persName ref="http://syriaca.org/person/anonymi3">  </persName>.</desc>
+                    <relation name="syriaca:LegalChargesAgainst"
+                        active="http://syriaca.org/person/2460"
+                        passive="http://syriaca.org/person/3727">
+                        <desc>
+                            <persName ref="http://syriaca.org/person/2460">Musonius</persName>
+                            brought legal charges or a petition against <persName ref="http://syriaca.org/person/3727">Anonymi 3727</persName>.
+                       </desc>
                     </relation>
                 </listRelation>
                 <bibl type="primary">
@@ -237,11 +240,12 @@
                 <idno type="URI">http://syriaca.org/spear/3050-10</idno>
                 <listRelation>
                     <relation name="syriaca:LegalChargesAgainst"
-                        active="http://syriaca.org/person/anonymi3"
+                        active="http://syriaca.org/person/3727"
                         passive="http://syriaca.org/person/2460">
-                        <desc><persName ref="http://syriaca.org/person/anonymi3">  </persName> brought legal
-                            charges or a petition against <persName
-                                ref="http://syriaca.org/person/2460">Musonius</persName>.</desc>
+                        <desc>
+                            <persName ref="http://syriaca.org/person/3727">Anonymi 3727</persName> brought legal
+                            charges or a petition against <persName ref="http://syriaca.org/person/2460">Musonius</persName>.
+                        </desc>
                     </relation>
                 </listRelation>
                 <bibl type="primary">
@@ -263,6 +267,54 @@
                 <bibl type="primary">
                     <ptr target="http://syriaca.org/bibl/668"/>
                     <citedRange unit="pp">79</citedRange>
+                </bibl>
+            </div>
+            <div type="factoid" subtype="event" xml:id="factoid-12" resp="#dschwartz">
+                <idno type="URI">http://syriaca.org/spear/3050-12</idno>
+                <listEvent>
+                    <event ana="http://syriaca.org/keyword/sin http://syriaca.org/keyword/greed http://syriaca.org/keyword/pride">
+                        <desc>
+                            <date notBefore="0516" notAfter="0517">Sometime between 516 and 517</date>
+                            <persName ref="http://syriaca.org/person/51">Severus of Antioch</persName> sender a letter to
+                            <persName ref="http://syriaca.org/person/3726">Anonymi 3726</persName> on the subject of 
+                            <persName ref="http://syriaca.org/person/2460">Musonius</persName>, especially his greed, pride, and disruptive behavior.
+                        </desc>
+                    </event>
+                </listEvent>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="pp">75-80</citedRange>
+                </bibl>
+            </div>
+            <div type="factoid" subtype="event" xml:id="factoid-13" resp="#dschwartz">
+                <idno type="URI">http://syriaca.org/spear/3050-13</idno>
+                <listEvent>
+                    <event ana="http://syriaca.org/keyword/travel">
+                        <desc>
+                            <date notAfter="0517">Sometime before 0518</date>
+                            <persName ref="http://syriaca.org/person/2460">Musonius</persName> traveled from <placeName ref="http://syriaca.org/place/99">Isaurai</placeName>
+                            to <placeName ref="http://syriaca.org/place/572">Alexandria</placeName>.
+                        </desc>
+                    </event>
+                </listEvent>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="pp">76</citedRange>
+                </bibl>
+            </div>
+            <div type="factoid" subtype="event" xml:id="factoid-14" resp="#dschwartz">
+                <idno type="URI">http://syriaca.org/spear/3050-14</idno>
+                <listEvent>
+                    <event ana="http://syriaca.org/keyword/greed http://syriaca.org/keyword/usury">
+                        <desc>
+                            <persName ref="http://syriaca.org/person/2460">Musonius</persName> was convicted of lending money at interest 
+                            in the episcopal court of <persName ref="http://syriaca.org/person/51">Severus of Antioch</persName>.
+                        </desc>
+                    </event>
+                </listEvent>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="pp">76</citedRange>
                 </bibl>
             </div>
         </body>

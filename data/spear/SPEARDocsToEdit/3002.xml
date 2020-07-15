@@ -108,7 +108,7 @@
                 <idno type="URI">http://syriaca.org/spear/3002-1</idno>
                 <listPerson>
                     <person>
-                        <persName ref="http://syriaca.org/person/anonymous1"> A certain woman
+                        <persName ref="http://syriaca.org/person/3721"> A certain woman
                         </persName>
                     </person>
                 </listPerson>
@@ -121,9 +121,9 @@
                 <idno type="URI">http://syriaca.org/spear/3002-2</idno>
                 <listPerson>
                     <person>
-                        <persName ref="http://syriaca.org/person/anonymous1"/>
+                        <persName ref="http://syriaca.org/person/3721"/>
                         <trait type="gender" ana="http://syriaca.org/keyword/female">
-                            <note type="desc"><persName ref="http://syriaca.org/person/anonymous1">  </persName>
+                            <note type="desc"><persName ref="http://syriaca.org/person/3721">Anonymous 3721 </persName>
                                 was female. </note>
                         </trait>
                     </person>
@@ -137,10 +137,10 @@
                 <idno type="URI">http://syriaca.org/spear/3002-3</idno>
                 <listRelation>
                     <relation name="syriaca:SenderOfLetterTo" active="http://syriaca.org/person/51"
-                        passive="http://syriaca.org/person/anonymous1">
+                        passive="http://syriaca.org/person/3721">
                         <desc><persName ref="http://syriaca.org/person/51">Severus of
                                 Antioch</persName> sent a letter to <persName
-                                ref="http://syriaca.org/person/anonymous1">  </persName>.</desc>
+                                ref="http://syriaca.org/person/3721">Anonymous 3721</persName>.</desc>
                     </relation>
                 </listRelation>
                 <bibl type="primary">
@@ -152,9 +152,9 @@
                 <idno type="URI">http://syriaca.org/spear/3002-4</idno>
                 <listRelation>
                     <relation name="syriaca:SenderOfLetterTo"
-                        active="http://syriaca.org/person/anonymous1"
+                        active="http://syriaca.org/person/3721"
                         passive="http://syriaca.org/person/51">
-                        <desc><persName ref="http://syriaca.org/person/anonymous1">  </persName> sent a letter
+                        <desc><persName ref="http://syriaca.org/person/3721">Anonymous 3721 </persName> sent a letter
                             to <persName ref="http://syriaca.org/person/51">Severus of
                                 Antioch</persName>.</desc>
                     </relation>
@@ -266,6 +266,23 @@
                 <bibl type="primary">
                     <ptr target="http://syriaca.org/bibl/669"/>
                     <citedRange unit="pp">433</citedRange>
+                </bibl>
+            </div>
+            <div type="factoid" subtype="event" xml:id="factoid-13" resp="#dschwartz">
+                <idno type="URI">http://syriaca.org/spear/3002-13</idno>
+                <listEvent>
+                    <event ana="http://syriaca.org/keyword/marriage http://syriaca.org/keyword/divorce">
+                        <desc>
+                            <date notBefore="0489" notAfter="0508">Sometime between 489 and 508</date>
+                            <persName ref="http://syriaca.org/person/51">Severus of Antioch</persName> brokered an exchange of letters
+                            between <persName ref="http://syriaca.org/person/2582">Abba</persName>, <persName ref="http://syriaca.org/person/2722">Maximus</persName>, and
+                            <persName ref="http://syriaca.org/person/3721">Anonymous 3721 </persName> on the subject of marriage and divorce.
+                        </desc>
+                    </event>
+                </listEvent>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/bibl/669"/>
+                    <citedRange unit="pp">433-436</citedRange>
                 </bibl>
             </div>
         </body>

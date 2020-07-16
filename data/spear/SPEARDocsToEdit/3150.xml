@@ -102,16 +102,17 @@
     </teiHeader>
     <text>
         <body>
-            <div type="factoid" subtype="nameVariant" xml:id="factoid-1" resp="#ktorabi #dschwartz">
+            <div type="factoid" subtype="relation" xml:id="factoid-1" resp="#ktorabi #dschwartz">
                 <idno type="URI">http://syriaca.org/spear/3150-1</idno>
-                <listPerson>
-                    <person>
-                        <persName ref="http://syriaca.org/person/anonymous1"> Recipient of a letter
-                            from <persName ref="http://syriaca.org/person/51"> Severus of
-                                </persName><placeName ref="http://syriaca.org/place/10"> Antioch
-                            </placeName></persName>
-                    </person>
-                </listPerson>
+                <listRelation>
+                    <relation name="syriaca:SenderOfLetterTo" active="http://syriaca.org/person/3729"
+                        passive="http://syriaca.org/person/51">
+                        <desc>
+                            <persName
+                                ref="http://syriaca.org/person/3729">Anonymi 3729</persName> sent a letter to <persName ref="http://syriaca.org/person/51">Severus of
+                                    Antioch</persName>.</desc>
+                    </relation>
+                </listRelation>
                 <bibl type="primary">
                     <ptr target="http://syriaca.org/bibl/668"/>
                     <citedRange unit="pp">193</citedRange>
@@ -121,10 +122,10 @@
                 <idno type="URI">http://syriaca.org/spear/3150-2</idno>
                 <listRelation>
                     <relation name="syriaca:SenderOfLetterTo" active="http://syriaca.org/person/51"
-                        passive="http://syriaca.org/person/anonymous1">
+                        passive="http://syriaca.org/person/3729">
                         <desc><persName ref="http://syriaca.org/person/51">Severus of
                                 Antioch</persName> sent a letter to <persName
-                                ref="http://syriaca.org/person/anonymous1">  </persName>.</desc>
+                                ref="http://syriaca.org/person/3729">Anonymi 3729</persName>.</desc>
                     </relation>
                 </listRelation>
                 <bibl type="primary">
@@ -132,33 +133,24 @@
                     <citedRange unit="pp">193</citedRange>
                 </bibl>
             </div>
-            <div type="factoid" subtype="nameVariant" xml:id="factoid-3" resp="#ktorabi #dschwartz">
+            <div type="factoid" subtype="event" xml:id="factoid-3" resp="#dschwartz">
                 <idno type="URI">http://syriaca.org/spear/3150-3</idno>
-                <listPerson>
-                    <personGrp>
-                        <persName ref="http://syriaca.org/person/anonymi1"> baptized females <date
-                                notBefore="0518" notAfter="0538"> A.D. 518-538 </date></persName>
-                    </personGrp>
-                </listPerson>
+                <listEvent>
+                    <event ana="http://syriaca.org/keyword/baptism http://syriaca.org/keyword/eucharist http://syriaca.org/keyword/women http://syriaca.org/keyword/canon-law http://syriaca.org/keyword/deacons http://syriaca.org/keyword/priests">
+                        <desc>
+                            <persName ref="http://syriaca.org/person/51">Severus of
+                                Antioch</persName> and <persName
+                                    ref="http://syriaca.org/person/3729">Anonymi 3729</persName> exchanged letters 
+                            on questions of whether or not there would be sufficient ordained clergy to adminster
+                            the Lord's Supper and baptism to the women. <persName ref="http://syriaca.org/person/51">Severus of
+                                Antioch</persName> states that deaconnesses may administer baptism to women and male 
+                            presbyters or deacons may administer the Lord's Supper.
+                        </desc>
+                    </event>
+                </listEvent>
                 <bibl type="primary">
                     <ptr target="http://syriaca.org/bibl/668"/>
-                    <citedRange unit="pp">194</citedRange>
-                </bibl>
-            </div>
-            <div type="factoid" subtype="nameVariant" xml:id="factoid-4" resp="#ktorabi #dschwartz">
-                <idno type="URI">http://syriaca.org/spear/3150-4</idno>
-                <listPerson>
-                    <personGrp>
-                        <persName ref="http://syriaca.org/person/anonymi2"> the deaconesses in the
-                            cities, who minster the divine laver to <persName
-                                ref="http://syriaca.org/person/anonymi1"/> baptized females, between
-                                <date notBefore="0518" notAfter="0538"> A.D. 518-538
-                            </date></persName>
-                    </personGrp>
-                </listPerson>
-                <bibl type="primary">
-                    <ptr target="http://syriaca.org/bibl/668"/>
-                    <citedRange unit="pp">194</citedRange>
+                    <citedRange unit="pp">193-94</citedRange>
                 </bibl>
             </div>
         </body>

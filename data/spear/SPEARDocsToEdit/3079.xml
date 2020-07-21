@@ -215,9 +215,8 @@
                 <idno type="URI">http://syriaca.org/spear/3079-8</idno>
                 <listPerson>
                     <personGrp>
-                        <persName ref="http://syriaca.org/person/anonymi1"
-                            ><!-- I encoded this as an anonymous group  --> The holy church of the
-                            Tarsians in <date notBefore="0513" notAfter="0518"> A.D. 513-518 </date>
+                        <persName ref="http://syriaca.org/person/3734"> Those of the church of 
+                            <placeName ref="http://syriaca.org/place/196">Tarsus</placeName> in <date notBefore="0513" notAfter="0518"> A.D. 513-518 </date> who
                             accused <persName ref="http://syriaca.org/person/2410"> Julian
                             </persName> of detaining property that belonged to it </persName>
                     </personGrp>
@@ -227,31 +226,16 @@
                     <citedRange unit="pp">113</citedRange>
                 </bibl>
             </div>
-            <div type="factoid" subtype="nameVariant" xml:id="factoid-9" resp="#ktorabi #dschwartz">
-                <idno type="URI">http://syriaca.org/spear/3079-9</idno>
-                <listPerson>
-                    <personGrp>
-                        <persName ref="http://syriaca.org/person/anonymi2"> Those under same charge
-                            as <persName ref="http://syriaca.org/person/2410"> Julian </persName> in
-                                <date notBefore="0513" notAfter="0518"> A.D. 513-518
-                            </date></persName>
-                    </personGrp>
-                </listPerson>
-                <bibl type="primary">
-                    <ptr target="http://syriaca.org/bibl/668"/>
-                    <citedRange unit="pp">113</citedRange>
-                </bibl>
-            </div>
+            
             <div type="factoid" subtype="relation" xml:id="factoid-10" resp="#ktorabi #dschwartz">
                 <idno type="URI">http://syriaca.org/spear/3079-10</idno>
                 <listRelation>
                     <relation name="syriaca:LegalChargesAgainst"
-                        active="http://syriaca.org/person/anonymi1"
-                        passive="http://syriaca.org/person/2410 http://syriaca.org/person/anonymi2">
-                        <desc><persName ref="http://syriaca.org/person/anonymi1">  </persName> brought legal
+                        active="http://syriaca.org/person/3734"
+                        passive="http://syriaca.org/person/2410">
+                        <desc><persName ref="http://syriaca.org/person/3734">Anonymi 3734</persName> brought legal
                             charges or a petition against <persName
-                                ref="http://syriaca.org/person/2410">Julian</persName> and <persName
-                                ref="http://syriaca.org/person/anonymi2">  </persName>.</desc>
+                                ref="http://syriaca.org/person/2410">Julian</persName>.</desc>
                     </relation>
                 </listRelation>
                 <bibl type="primary">
@@ -263,11 +247,9 @@
                 <idno type="URI">http://syriaca.org/spear/3079-11</idno>
                 <listPerson>
                     <personGrp>
-                        <persName ref="http://syriaca.org/person/anonymi3"> All the saintly bishops
+                        <persName ref="http://syriaca.org/person/3735"> All the saintly bishops
                             of First Cilicia in <date notBefore="0513" notAfter="0518"> A.D. 513-518
-                            </date> who will hear the case against <persName
-                                ref="http://syriaca.org/person/2410"> Julian </persName> and
-                                <persName ref="http://syriaca.org/person/anonymi2"/></persName>
+                            </date> who heard the case against <persName ref="http://syriaca.org/person/2410">Julian</persName></persName>
                     </personGrp>
                 </listPerson>
                 <bibl type="primary">
@@ -279,9 +261,9 @@
                 <idno type="URI">http://syriaca.org/spear/3079-21</idno>
                 <listPerson>
                     <personGrp>
-                        <persName ref="http://syriaca.org/person/anonymi3"/>
+                        <persName ref="http://syriaca.org/person/3735"/>
                         <occupation ana="http://syriaca.org/keyword/bishops">
-                            <note type="desc"><persName ref="http://syriaca.org/person/anonymi3">  </persName>
+                            <note type="desc"><persName ref="http://syriaca.org/person/3735">Anonymi 3735</persName>
                                 were bishops. </note>
                         </occupation>
                     </personGrp>
@@ -295,11 +277,10 @@
                 <idno type="URI">http://syriaca.org/spear/3079-12</idno>
                 <listPerson>
                     <personGrp>
-                        <persName ref="http://syriaca.org/person/anonymi4"> The eloquent scholastics
+                        <persName ref="http://syriaca.org/person/3736"> The eloquent scholastics
                             in <date notBefore="0513" notAfter="0518"> A.D. 513-518 </date> who will
                             hear the case against <persName ref="http://syriaca.org/person/2410">
-                                Julian </persName> and <persName
-                                ref="http://syriaca.org/person/anonymi2"/></persName>
+                                Julian </persName></persName>
                     </personGrp>
                 </listPerson>
                 <bibl type="primary">
@@ -311,9 +292,9 @@
                 <idno type="URI">http://syriaca.org/spear/3079-22</idno>
                 <listPerson>
                     <personGrp>
-                        <persName ref="http://syriaca.org/person/anonymi4"/>
+                        <persName ref="http://syriaca.org/person/3736"/>
                         <occupation ana="http://syriaca.org/keyword/scholastics">
-                            <note type="desc"><persName ref="http://syriaca.org/person/anonymi4">  </persName>
+                            <note type="desc"><persName ref="http://syriaca.org/person/3736">Anonymi 3736</persName>
                                 were scholastics. </note>
                         </occupation>
                     </personGrp>
@@ -321,6 +302,26 @@
                 <bibl type="primary">
                     <ptr target="http://syriaca.org/bibl/668"/>
                     <citedRange unit="pp">113-114</citedRange>
+                </bibl>
+            </div>
+            <div type="factoid" subtype="residence" xml:id="factoid-14" resp="#dschwartz">
+                <idno type="URI">http://syriaca.org/spear/3079-14</idno>
+                <listPerson>
+                    <person>
+                        <persName ref="http://syriaca.org/person/3736"/>
+                        <residence>
+                            <placeName ref="http://syriaca.org/place/46"/>
+                            <note type="desc">
+                                <persName ref="http://syriaca.org/person/3736">Anonymi 3736</persName>
+                                resided in 
+                                <placeName ref="http://syriaca.org/place/46">Beirut</placeName>. 
+                            </note>
+                        </residence>
+                    </person>
+                </listPerson>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="pp">114</citedRange>
                 </bibl>
             </div>
             <div type="factoid" subtype="nameVariant" xml:id="factoid-13" resp="#ktorabi #dschwartz">
@@ -337,22 +338,7 @@
                     <citedRange unit="pp">114</citedRange>
                 </bibl>
             </div>
-            <div type="factoid" subtype="gender" xml:id="factoid-14" resp="#ktorabi #dschwartz">
-                <idno type="URI">http://syriaca.org/spear/3079-14</idno>
-                <listPerson>
-                    <person>
-                        <persName ref="http://syriaca.org/person/2412"/>
-                        <trait type="gender" ana="http://syriaca.org/keyword/male">
-                            <note type="desc"><persName ref="http://syriaca.org/person/2412">
-                                    Serenus </persName> was male. </note>
-                        </trait>
-                    </person>
-                </listPerson>
-                <bibl type="primary">
-                    <ptr target="http://syriaca.org/bibl/668"/>
-                    <citedRange unit="pp">114</citedRange>
-                </bibl>
-            </div>
+            
             <div type="factoid" subtype="occupation" xml:id="factoid-15" resp="#ktorabi #dschwartz">
                 <idno type="URI">http://syriaca.org/spear/3079-15</idno>
                 <listPerson>
@@ -446,6 +432,60 @@
                 <bibl type="primary">
                     <ptr target="http://syriaca.org/bibl/668"/>
                     <citedRange unit="pp">114</citedRange>
+                </bibl>
+            </div>
+            <div type="factoid" subtype="event" xml:id="factoid-23" resp="#dschwartz">
+                <idno type="URI">http://syriaca.org/spear/3079-23</idno>
+                <listEvent>
+                    <event ana="http://syriaca.org/keyword/civil-law http://syriaca.org/keyword/canon-law http://syriaca.org/keyword/property http://syriaca.org/keyword/churches">
+                        <desc>
+                            <date notBefore="0515" notAfter="0518">Sometime between 515-18</date>
+                            <persName ref="http://syriaca.org/person/51">Severus of Antioch</persName> wrote a letter to  the magister militum
+                            <persName ref="http://syriaca.org/person/2556">Hypatius</persName> about the case of 
+                            <persName ref="http://syriaca.org/person/2410">Julian</persName> who petitioned <persName ref="http://syriaca.org/person/2556">Hypatius</persName>
+                            to overturn the ruling of an ecclesiastical court that found him guilt of using church property for personal benefit.
+                        </desc>
+                    </event>
+                </listEvent>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="pp">113-15</citedRange>
+                </bibl>
+            </div>
+            <div type="factoid" subtype="relation" xml:id="factoid-24" resp="#dschwartz">
+                <idno type="URI">http://syriaca.org/spear/3079-24</idno>
+                <listRelation>
+                    <relation name="syriaca:Petitioned" active="http://syriaca.org/person/2410" passive="http://syriaca.org/person/2411">
+                        <desc>
+                            <persName ref="http://syriaca.org/person/2410">Julian</persName> 
+                            made a legal petition to
+                            <persName ref="http://syriaca.org/person/2411">Heliodorus</persName>
+                        </desc>
+                    </relation>
+                </listRelation>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="pp">114</citedRange>
+                </bibl>
+            </div>
+            
+            <div type="factoid" subtype="event" xml:id="factoid-26" resp="#dschwartz">
+                <idno type="URI">http://syriaca.org/spear/3079-26</idno>
+                <listEvent>
+                    <event ana="http://syriaca.org/keyword/civil-law http://syriaca.org/keyword/canon-law http://syriaca.org/keyword/property http://syriaca.org/keyword/churches">
+                        <desc>
+                            <date notBefore="0515" notAfter="0518">Sometime between 515-18</date>
+                            <persName ref="http://syriaca.org/person/51">Severus of Antioch</persName> and a group of <persName ref="http://syriaca.org/person/3735">clergy</persName>
+                            and <persName ref="http://syriaca.org/person/3736">scholastics</persName> ruled against <persName ref="http://syriaca.org/person/2410">Julian</persName>
+                            in a dispute regarding church property in <placeName ref="http://syriaca.org/place/196">Tarsus</placeName>. 
+                            <persName ref="http://syriaca.org/person/2410">Julian</persName> attempted to appeal to the magister militum
+                            <persName ref="http://syriaca.org/person/2556">Hypatius</persName>.
+                        </desc>
+                    </event>
+                </listEvent>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="pp">113-15</citedRange>
                 </bibl>
             </div>
         </body>

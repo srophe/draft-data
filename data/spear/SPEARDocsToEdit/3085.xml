@@ -107,8 +107,8 @@
                 <idno type="URI">http://syriaca.org/spear/3085-1</idno>
                 <listPerson>
                     <personGrp>
-                        <persName ref="http://syriaca.org/person/anonymi1"> The clergymen of
-                            Antardus between <date notBefore="0513" notAfter="0518"> A.D. 513-518
+                        <persName ref="http://syriaca.org/person/3741"> The clergy of
+                            <placeName ref="http://syriaca.org/place/1471">Antaradus</placeName> <date notBefore="0513" notAfter="0518">sometime between A.D. 513-518
                             </date></persName>
                     </personGrp>
                 </listPerson>
@@ -121,10 +121,10 @@
                 <idno type="URI">http://syriaca.org/spear/3085-2</idno>
                 <listRelation>
                     <relation name="syriaca:SenderOfLetterTo" active="http://syriaca.org/person/51"
-                        passive="http://syriaca.org/person/anonymi1">
+                        passive="http://syriaca.org/person/3741">
                         <desc><persName ref="http://syriaca.org/person/51">Severus of
                                 Antioch</persName> sent a letter to <persName
-                                ref="http://syriaca.org/person/anonymi1">  </persName>.</desc>
+                                ref="http://syriaca.org/person/3741">Anonymi 3741</persName>.</desc>
                     </relation>
                 </listRelation>
                 <bibl type="primary">
@@ -136,7 +136,7 @@
                 <idno type="URI">http://syriaca.org/spear/3085-3</idno>
                 <listPerson>
                     <person>
-                        <persName ref="http://syriaca.org/person/2268"> Our serene Christ-loving
+                        <persName ref="http://syriaca.org/person/2265"> Our serene Christ-loving
                             King </persName>
                     </person>
                 </listPerson>
@@ -194,8 +194,8 @@
                 <idno type="URI">http://syriaca.org/spear/3085-9</idno>
                 <listRelation>
                     <relation name="syriaca:FellowClergy"
-                        mutual="http://syriaca.org/person/anonymi1 http://syriaca.org/person/2422 http://syriaca.org/person/2423">
-                        <desc><persName ref="http://syriaca.org/person/anonymi1">  </persName>, <persName
+                        mutual="http://syriaca.org/person/3741 http://syriaca.org/person/2422 http://syriaca.org/person/2423">
+                        <desc><persName ref="http://syriaca.org/person/3741">Anonymi 3741</persName>, <persName
                                 ref="http://syriaca.org/person/2422">Stephen</persName> and
                                 <persName ref="http://syriaca.org/person/2423">Leontius</persName>
                             were fellow clergy.</desc>
@@ -270,7 +270,7 @@
                 <idno type="URI">http://syriaca.org/spear/3085-14</idno>
                 <listPerson>
                     <person>
-                        <persName ref="http://syriaca.org/person/anonymous2"> The bishop who
+                        <persName ref="http://syriaca.org/person/3742"> The bishop who
                             stripped the rank of deacon from <persName
                                 ref="http://syriaca.org/person/2423"> Leontius
                             </persName></persName>
@@ -285,9 +285,9 @@
                 <idno type="URI">http://syriaca.org/spear/3085-15</idno>
                 <listPerson>
                     <person>
-                        <persName ref="http://syriaca.org/person/anonymous2"/>
+                        <persName ref="http://syriaca.org/person/3742"/>
                         <trait type="gender" ana="http://syriaca.org/keyword/male">
-                            <note type="desc"><persName ref="http://syriaca.org/person/anonymous2">  </persName>
+                            <note type="desc"><persName ref="http://syriaca.org/person/3742">Anonymous 3742</persName>
                                 was male. </note>
                         </trait>
                     </person>
@@ -301,9 +301,9 @@
                 <idno type="URI">http://syriaca.org/spear/3085-16</idno>
                 <listPerson>
                     <person>
-                        <persName ref="http://syriaca.org/person/anonymous2"/>
+                        <persName ref="http://syriaca.org/person/3742"/>
                         <occupation ana="http://syriaca.org/keyword/bishops">
-                            <note type="desc"><persName ref="http://syriaca.org/person/anonymous2">  </persName>
+                            <note type="desc"><persName ref="http://syriaca.org/person/3742">Anonymous 3742</persName>
                                 was a bishop. </note>
                         </occupation>
                     </person>
@@ -317,9 +317,9 @@
                 <idno type="URI">http://syriaca.org/spear/3085-17</idno>
                 <listRelation>
                     <relation name="syriaca:BishopOverClergy"
-                        active="http://syriaca.org/person/anonymous2"
+                        active="http://syriaca.org/person/3742"
                         passive="http://syriaca.org/person/2423">
-                        <desc><persName ref="http://syriaca.org/person/anonymous2">  </persName> had
+                        <desc><persName ref="http://syriaca.org/person/3742">Anonymous 3742</persName> had
                             ecclesiastical authority over <persName
                                 ref="http://syriaca.org/person/2423">Leontius</persName>.</desc>
                     </relation>
@@ -386,6 +386,76 @@
                 <bibl type="primary">
                     <ptr target="http://syriaca.org/bibl/668"/>
                     <citedRange unit="pp">129</citedRange>
+                </bibl>
+            </div>
+            <div type="factoid" subtype="relation" xml:id="factoid-22" resp="#ktorabi #dschwartz">
+                <idno type="URI">http://syriaca.org/spear/3085-22</idno>
+                <listRelation>
+                    <relation name="syriaca:SenderOfLetterTo"
+                        active="http://syriaca.org/person/51" passive="http://syriaca.org/person/2424">
+                        <desc><persName ref="http://syriaca.org/person/51">Severus of Antioch</persName>
+                            sent a letter to <persName ref="http://syriaca.org/person/2424">John</persName>.</desc>
+                    </relation>
+                </listRelation>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="pp">129</citedRange>
+                </bibl>
+            </div>
+            <div type="factoid" subtype="event" xml:id="factoid-23" resp="#dschwartz">
+                <idno type="URI">http://syriaca.org/spear/3085-23</idno>
+                <listEvent>
+                    <event ana="http://syriaca.org/keyword/letters http://syriaca.org/keyword/canon-law http://syriaca.org/keyword/deacons http://syriaca.org/keyword/sin http://syriaca.org/keyword/repentance http://syriaca.org/keyword/ordination http://syriaca.org/keyword/bishops">
+                        <desc>
+                            <date notBefore="0513" notAfter="0518">Sometime during his episcopacy</date>
+                            <persName ref="http://syriaca.org/person/51">Severus of Antioch</persName> wrote a letter to 
+                            <persName ref="http://syriaca.org/person/3741">the clergy of <placeName ref="http://syriaca.org/place/1471">Antaradus</placeName></persName>
+                            regarding a difficult set of circumstance surrounding their efforts to have a bishop ordained for their city and the case of 
+                            <persName ref="http://syriaca.org/person/2423">Leontius</persName>, a deacon who had been disciplined because of his sin but was unrepentant and
+                            indeed sought to become head deacon. 
+                        </desc>
+                    </event>
+                </listEvent>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="pp">126-29</citedRange>
+                </bibl>
+            </div>
+            <div type="factoid" subtype="event" xml:id="factoid-24" resp="#dschwartz">
+                <idno type="URI">http://syriaca.org/spear/3085-24</idno>
+                <listEvent>
+                    <event ana="http://syriaca.org/keyword/emperors http://syriaca.org/keyword/bishops http://syriaca.org/keyword/canon-law">
+                        <desc>
+                            <date notBefore="0513" notAfter="0518">Sometime during his episcopacy</date>
+                            <persName ref="http://syriaca.org/person/51">Severus of Antioch</persName> consulted with 
+                            <persName ref="http://syriaca.org/person/2265"> Anastasios I </persName> regarding the difficult circumstances surrounding the lack of a 
+                            bishop in <placeName ref="http://syriaca.org/place/1471">Antaradus</placeName>.
+                        </desc>
+                    </event>
+                </listEvent>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="pp">126</citedRange>
+                </bibl>
+            </div>
+            <div type="factoid" subtype="event" xml:id="factoid-25" resp="#dschwartz">
+                <idno type="URI">http://syriaca.org/spear/3085-25</idno>
+                <listEvent>
+                    <event ana="http://syriaca.org/keyword/canon-law http://syriaca.org/keyword/deacons http://syriaca.org/keyword/deposition-of-clergy http://syriaca.org/keyword/marriage">
+                        <desc>
+                            <date notBefore="0513" notAfter="0518">Sometime during his episcopacy</date>
+                            <persName ref="http://syriaca.org/person/51">Severus of Antioch</persName> received a petition from
+                            <persName ref="http://syriaca.org/person/2422">Stephen</persName>, a deacon in <placeName ref="http://syriaca.org/place/1471">Antaradus</placeName>
+                            requesting the intervention of <persName ref="http://syriaca.org/person/51">Severus</persName> in the case of 
+                            <persName ref="http://syriaca.org/person/2423">Leontius</persName> who had been removed from the sacred tables for taking a second wife 
+                            after his ordination as a deacon but allowed to keep ministering. <persName ref="http://syriaca.org/person/2422">Stephen</persName> opposed his 
+                            lifestyle and his attempts to become head deacon.
+                        </desc>
+                    </event>
+                </listEvent>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="pp">127</citedRange>
                 </bibl>
             </div>
         </body>

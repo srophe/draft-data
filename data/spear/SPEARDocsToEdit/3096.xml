@@ -107,10 +107,12 @@
                 <idno type="URI">http://syriaca.org/spear/3096-1</idno>
                 <listRelation>
                     <relation name="syriaca:SenderOfLetterTo" active="http://syriaca.org/person/51"
-                        passive="http://syriaca.org/person/2427">
-                        <desc><persName ref="http://syriaca.org/person/51">Severus of
-                                Antioch</persName> sent a letter to <persName
-                                ref="http://syriaca.org/person/2427">John</persName>.</desc>
+                        passive="http://syriaca.org/person/2427 http://syriaca.org/person/2428">
+                        <desc>
+                            <persName ref="http://syriaca.org/person/2427">John</persName> and <persName ref="http://syriaca.org/person/2428">John</persName>
+                            sent a letter to 
+                            <persName ref="http://syriaca.org/person/51">Severus of Antioch</persName> 
+                        </desc>
                     </relation>
                 </listRelation>
                 <bibl type="primary">
@@ -118,14 +120,13 @@
                     <citedRange unit="pp">204</citedRange>
                 </bibl>
             </div>
-            <div type="factoid" subtype="relation" xml:id="factoid-2" resp="#ktorabi #dschwartz">
+            <div type="factoid" subtype="relation" xml:id="factoid-2" resp="#dschwartz">
                 <idno type="URI">http://syriaca.org/spear/3096-2</idno>
                 <listRelation>
                     <relation name="syriaca:SenderOfLetterTo" active="http://syriaca.org/person/51"
-                        passive="http://syriaca.org/person/2428">
-                        <desc><persName ref="http://syriaca.org/person/51">Severus of
-                                Antioch</persName> sent a letter to <persName
-                                ref="http://syriaca.org/person/2428">John</persName>.</desc>
+                        passive="http://syriaca.org/person/2427 http://syriaca.org/person/2428">
+                        <desc><persName ref="http://syriaca.org/person/51">Severus of Antioch</persName> sent a letter to 
+                            <persName ref="http://syriaca.org/person/2427">John</persName> and <persName ref="http://syriaca.org/person/2428">John</persName>.</desc>
                     </relation>
                 </listRelation>
                 <bibl type="primary">
@@ -181,10 +182,9 @@
             <div type="factoid" subtype="relation" xml:id="factoid-6" resp="#ktorabi #dschwartz">
                 <idno type="URI">http://syriaca.org/spear/3096-6</idno>
                 <listRelation>
-                    <!-- Check this relationship  -->
                     <relation name="syriaca:CarrierOfLetterBetween"
                         active="http://syriaca.org/person/2489"
-                        passive="http://syriaca.org/person/51">
+                        passive="http://syriaca.org/person/51 http://syriaca.org/person/2427 http://syriaca.org/person/2428">
                         <desc><persName ref="http://syriaca.org/person/2489">Zenobius</persName>
                             carried a letter between <persName ref="http://syriaca.org/person/51"
                                 >Severus of Antioch</persName>.</desc>
@@ -193,36 +193,6 @@
                 <bibl type="primary">
                     <ptr target="http://syriaca.org/bibl/668"/>
                     <citedRange unit="pp">204</citedRange>
-                </bibl>
-            </div>
-            <div type="factoid" subtype="nameVariant" xml:id="factoid-7" resp="#ktorabi #dschwartz">
-                <idno type="URI">http://syriaca.org/spear/3096-7</idno>
-                <listPerson>
-                    <personGrp>
-                        <persName ref="http://syriaca.org/person/anonymi1"> Those residing in
-                                <placeName ref="http://syriaca.org/place/586"> Byzantium
-                            </placeName> between <date notBefore="0518" notAfter="0538"> A.D.
-                                518-538 </date></persName>
-                    </personGrp>
-                </listPerson>
-                <bibl type="primary">
-                    <ptr target="http://syriaca.org/bibl/668"/>
-                    <citedRange unit="pp">204</citedRange>
-                </bibl>
-            </div>
-            <div type="factoid" subtype="nameVariant" xml:id="factoid-8" resp="#ktorabi #dschwartz">
-                <idno type="URI">http://syriaca.org/spear/3096-8</idno>
-                <listPerson>
-                    <personGrp>
-                        <persName ref="http://syriaca.org/person/anonymi1"> The aforesaid men who
-                            annoyed <persName ref="http://syriaca.org/person/51"/> Severus between
-                                <date notBefore="0518" notAfter="0538"> A.D. 518-538
-                            </date></persName>
-                    </personGrp>
-                </listPerson>
-                <bibl type="primary">
-                    <ptr target="http://syriaca.org/bibl/668"/>
-                    <citedRange unit="pp">205</citedRange>
                 </bibl>
             </div>
             <div type="factoid" subtype="nameVariant" xml:id="factoid-9" resp="#ktorabi #dschwartz">
@@ -559,7 +529,6 @@
             <div type="factoid" subtype="relation" xml:id="factoid-36" resp="#ktorabi #dschwartz">
                 <idno type="URI">http://syriaca.org/spear/3096-36</idno>
                 <listRelation>
-                    <!-- Severus states, "Liberius...opposed Constantinus, even to blood." I think that EnmityFor may be the best, though not a perfect, way to encode this relationship. -->
                     <relation name="snap:EnmityFor" active="http://syriaca.org/person/2494"
                         passive="http://syriaca.org/person/2249">
                         <desc><persName ref="http://syriaca.org/person/2494">Liberius</persName> had
@@ -675,21 +644,21 @@
                     <citedRange unit="pp">206</citedRange>
                 </bibl>
             </div>
-            <div type="factoid" subtype="relation" xml:id="factoid-44" resp="#ktorabi #dschwartz">
+            <div type="factoid" subtype="event" xml:id="factoid-44" resp="#dschwartz">
                 <idno type="URI">http://syriaca.org/spear/3096-44</idno>
-                <listRelation>
-                    <relation name="syriaca:EpistolaryReferenceTo"
-                        active="http://syriaca.org/person/354"
-                        passive="http://syriaca.org/person/2493">
-                        <desc>A letter between <persName ref="http://syriaca.org/person/354"
-                                >Athanasius, bishop of Alexandria</persName> referenced <persName
-                                ref="http://syriaca.org/person/354">Athanasius, bishop of
-                                Alexandria</persName>.</desc>
-                    </relation>
-                </listRelation>
+                <listEvent>
+                    <event ana="http://syriaca.org/keyword/letters http://syriaca.org/keyword/authority http://syriaca.org/keyword/bishops">
+                        <desc>
+                            <date notBefore="0519" notAfter="0538">Sometime after his removal from episcopal office</date>
+                            <persName ref="http://syriaca.org/person/51">Severus of Antioch</persName> exchanged letters with 
+                            <persName ref="http://syriaca.org/person/2427">John</persName> and <persName ref="http://syriaca.org/person/2428">John</persName> 
+                            on the subject of <persName ref="http://syriaca.org/person/3743">two bishops involved in a dispute</persName> over who had precedence. 
+                        </desc>
+                    </event>
+                </listEvent>
                 <bibl type="primary">
                     <ptr target="http://syriaca.org/bibl/668"/>
-                    <citedRange unit="pp">206-207</citedRange>
+                    <citedRange unit="pp">204-207</citedRange>
                 </bibl>
             </div>
         </body>

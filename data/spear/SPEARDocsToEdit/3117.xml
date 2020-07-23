@@ -272,11 +272,11 @@
             <div type="factoid" subtype="relation" xml:id="factoid-12" resp="#ktorabi #dschwartz">
                 <idno type="URI">http://syriaca.org/spear/3117-12</idno>
                 <listRelation>
-                    <relation name="syriaca:SenderOfLetterTo" active="http://syriaca.org/person/51"
-                        passive="http://syriaca.org/person/2568">
-                        <desc><persName ref="http://syriaca.org/person/51">Severus of
-                                Antioch</persName> sent a letter to <persName
-                                ref="http://syriaca.org/person/2568">Theotecnus</persName>.</desc>
+                    <relation name="snap:IntimateRelationshipWith" mutual="http://syriaca.org/person/51 http://syriaca.org/person/2568">
+                        <desc>
+                            <persName ref="http://syriaca.org/person/51">Severus of Antioch</persName> and 
+                            <persName ref="http://syriaca.org/person/2568">Theotecnus</persName>
+                            had a personal relationship.</desc>
                     </relation>
                 </listRelation>
                 <bibl type="primary">
@@ -284,90 +284,30 @@
                     <citedRange unit="p">424</citedRange>
                 </bibl>
             </div>
-            <div type="factoid" subtype="nameVariant" xml:id="factoid-13" resp="#ktorabi #dschwartz">
+            <div type="factoid" subtype="relation" xml:id="factoid-13" resp="#ktorabi #dschwartz">
                 <idno type="URI">http://syriaca.org/spear/3117-13</idno>
-                <listPerson>
-                    <person>
-                        <persName ref="http://syriaca.org/person/anonymous3"> A certain baby seized
-                            with severe illness </persName>
-                    </person>
-                </listPerson>
+                <listRelation>
+                    <relation name="snap:IntimateRelationshipWith" mutual="http://syriaca.org/person/2764 http://syriaca.org/person/2568">
+                        <desc>
+                            <persName ref="http://syriaca.org/person/2568">Theotecnus</persName> and 
+                            <persName ref="http://syriaca.org/person/2764">Thecla</persName>
+                            had a personal relationship.</desc>
+                    </relation>
+                </listRelation>
                 <bibl type="primary">
                     <ptr target="http://syriaca.org/bibl/669"/>
-                    <citedRange unit="p">425</citedRange>
+                    <citedRange unit="p">424</citedRange>
                 </bibl>
             </div>
             <div type="factoid" subtype="gender" xml:id="factoid-14" resp="#ktorabi #dschwartz">
                 <idno type="URI">http://syriaca.org/spear/3117-14</idno>
                 <listPerson>
                     <person>
-                        <persName ref="http://syriaca.org/person/anonymous3"/>
+                        <persName ref="http://syriaca.org/person/3747"/>
                         <trait type="gender" ana="http://syriaca.org/keyword/male">
-                            <note type="desc"><persName ref="http://syriaca.org/person/anonymous3">  </persName>
+                            <note type="desc"><persName ref="http://syriaca.org/person/3747">Anonymous 3747</persName>
                                 was male. </note>
                         </trait>
-                    </person>
-                </listPerson>
-                <bibl type="primary">
-                    <ptr target="http://syriaca.org/bibl/669"/>
-                    <citedRange unit="p">425</citedRange>
-                </bibl>
-            </div>
-            <div type="factoid" subtype="nameVariant" xml:id="factoid-15" resp="#ktorabi #dschwartz">
-                <idno type="URI">http://syriaca.org/spear/3117-15</idno>
-                <listPerson>
-                    <person>
-                        <persName ref="http://syriaca.org/person/anonymous4"
-                            ><!-- I do not think that this presbyter is Theotecnus, mentioned earlier in the letter -->
-                            A presbyter </persName>
-                    </person>
-                </listPerson>
-                <bibl type="primary">
-                    <ptr target="http://syriaca.org/bibl/669"/>
-                    <citedRange unit="p">425</citedRange>
-                </bibl>
-            </div>
-            <div type="factoid" subtype="gender" xml:id="factoid-16" resp="#ktorabi #dschwartz">
-                <idno type="URI">http://syriaca.org/spear/3117-16</idno>
-                <listPerson>
-                    <person>
-                        <persName ref="http://syriaca.org/person/anonymous4"/>
-                        <trait type="gender" ana="http://syriaca.org/keyword/male">
-                            <note type="desc"><persName ref="http://syriaca.org/person/anonymous4">  </persName>
-                                was male. </note>
-                        </trait>
-                    </person>
-                </listPerson>
-                <bibl type="primary">
-                    <ptr target="http://syriaca.org/bibl/669"/>
-                    <citedRange unit="p">425</citedRange>
-                </bibl>
-            </div>
-            <div type="factoid" subtype="occupation" xml:id="factoid-17" resp="#ktorabi #dschwartz">
-                <idno type="URI">http://syriaca.org/spear/3117-17</idno>
-                <listPerson>
-                    <person>
-                        <persName ref="http://syriaca.org/person/anonymous4"/>
-                        <occupation ana="http://syriaca.org/keyword/priests">
-                            <note type="desc"><persName ref="http://syriaca.org/person/anonymous4">  </persName>
-                                was a presbyter. </note>
-                        </occupation>
-                    </person>
-                </listPerson>
-                <bibl type="primary">
-                    <ptr target="http://syriaca.org/bibl/669"/>
-                    <citedRange unit="p">425</citedRange>
-                </bibl>
-            </div>
-            <div type="factoid" subtype="nameVariant" xml:id="factoid-18" resp="#ktorabi #dschwartz">
-                <idno type="URI">http://syriaca.org/spear/3117-18</idno>
-                <listPerson>
-                    <person>
-                        <persName ref="http://syriaca.org/person/anonymous5"> a deacon, who in the
-                            absence of the <persName ref="http://syriaca.org/person/anonymous4">
-                                presbyter </persName> baptized the <persName
-                                ref="http://syriaca.org/person/anonymous3"> baby seized with severe
-                                illness </persName></persName>
                     </person>
                 </listPerson>
                 <bibl type="primary">
@@ -379,9 +319,9 @@
                 <idno type="URI">http://syriaca.org/spear/3117-19</idno>
                 <listPerson>
                     <person>
-                        <persName ref="http://syriaca.org/person/anonymous5"/>
+                        <persName ref="http://syriaca.org/person/3748"/>
                         <trait type="gender" ana="http://syriaca.org/keyword/male">
-                            <note type="desc"><persName ref="http://syriaca.org/person/anonymous5">  </persName>
+                            <note type="desc"><persName ref="http://syriaca.org/person/3748">Anonymous 3748</persName>
                                 was male. </note>
                         </trait>
                     </person>
@@ -395,9 +335,9 @@
                 <idno type="URI">http://syriaca.org/spear/3117-20</idno>
                 <listPerson>
                     <person>
-                        <persName ref="http://syriaca.org/person/anonymous5"/>
+                        <persName ref="http://syriaca.org/person/3748"/>
                         <occupation ana="http://syriaca.org/keyword/deacons">
-                            <note type="desc"><persName ref="http://syriaca.org/person/anonymous5">  </persName>
+                            <note type="desc"><persName ref="http://syriaca.org/person/3748">Anonymous 3748</persName>
                                 was a deacon. </note>
                         </occupation>
                     </person>
@@ -407,41 +347,14 @@
                     <citedRange unit="p">425</citedRange>
                 </bibl>
             </div>
-            <div type="factoid" subtype="relation" xml:id="factoid-21" resp="#ktorabi #dschwartz">
-                <idno type="URI">http://syriaca.org/spear/3117-21</idno>
-                <listRelation>
-                    <relation name="snap:ProfessionalRelationship"
-                        mutual="http://syriaca.org/person/anonymous4 http://syriaca.org/person/anonymous5">
-                        <desc><persName ref="http://syriaca.org/person/anonymous4">  </persName> and <persName
-                                ref="http://syriaca.org/person/anonymous5">  </persName> had a professional
-                            relationship.</desc>
-                    </relation>
-                </listRelation>
-                <bibl type="primary">
-                    <ptr target="http://syriaca.org/bibl/669"/>
-                    <citedRange unit="p">425</citedRange>
-                </bibl>
-            </div>
-            <div type="factoid" subtype="nameVariant" xml:id="factoid-22" resp="#ktorabi #dschwartz">
-                <idno type="URI">http://syriaca.org/spear/3117-22</idno>
-                <listPerson>
-                    <person>
-                        <persName ref="http://syriaca.org/person/anonymous6"> A strange and unknown
-                            boy who could not repeat any mystic symbol </persName>
-                    </person>
-                </listPerson>
-                <bibl type="primary">
-                    <ptr target="http://syriaca.org/bibl/669"/>
-                    <citedRange unit="p">426</citedRange>
-                </bibl>
-            </div>
+            
             <div type="factoid" subtype="gender" xml:id="factoid-23" resp="#ktorabi #dschwartz">
                 <idno type="URI">http://syriaca.org/spear/3117-23</idno>
                 <listPerson>
                     <person>
-                        <persName ref="http://syriaca.org/person/anonymous6"/>
+                        <persName ref="http://syriaca.org/person/3749"/>
                         <trait type="gender" ana="http://syriaca.org/keyword/male">
-                            <note type="desc"><persName ref="http://syriaca.org/person/anonymous6">  </persName>
+                            <note type="desc"><persName ref="http://syriaca.org/person/3749">Anonymous 3749</persName>
                                 was male. </note>
                         </trait>
                     </person>
@@ -470,8 +383,7 @@
                     <person>
                         <persName ref="http://syriaca.org/person/2439"/>
                         <trait type="gender" ana="http://syriaca.org/keyword/male">
-                            <note type="desc"><persName ref="http://syriaca.org/person/2439"
-                                    >Theodore</persName> was male. </note>
+                            <note type="desc"><persName ref="http://syriaca.org/person/2439">Theodore</persName> was male. </note>
                         </trait>
                     </person>
                 </listPerson>
@@ -512,6 +424,57 @@
                 <bibl type="primary">
                     <ptr target="http://syriaca.org/bibl/669"/>
                     <citedRange unit="p">427</citedRange>
+                </bibl>
+            </div>
+            <div type="factoid" subtype="event" xml:id="factoid-28" resp="#dschwartz">
+                <idno type="URI">http://syriaca.org/spear/3117-28</idno>
+                <listEvent>
+                    <event ana="http://syriaca.org/keyword/letters http://syriaca.org/keyword/authority http://syriaca.org/keyword/clergy http://syriaca.org/keyword/baptism http://syriaca.org/keyword/canon-law http://syriaca.org/keyword/deacons http://syriaca.org/keyword/priests http://syriaca.org/keyword/creeds">
+                        <desc>
+                            <date notBefore="0519" notAfter="0538">Sometime after the end of his episcopacy</date>
+                            <persName ref="http://syriaca.org/person/51">Severus of Antioch</persName> wrote a letter to 
+                            <persName ref="http://syriaca.org/person/2764">Thecla</persName> discussing her devoutness and answering questions she had posed to
+                            <persName ref="http://syriaca.org/person/2758">Stephen</persName> about deacons baptizing in extraordinary situations and whether
+                            or not to baptize someone unable to make a profession of faith.
+                        </desc>
+                    </event>
+                </listEvent>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/bibl/669"/>
+                    <citedRange unit="p">423-27</citedRange>
+                </bibl>
+            </div>
+            <div type="factoid" subtype="event" xml:id="factoid-29" resp="#dschwartz">
+                <idno type="URI">http://syriaca.org/spear/3117-29</idno>
+                <listEvent>
+                    <event ana="http://syriaca.org/keyword/baptism http://syriaca.org/keyword/death http://syriaca.org/keyword/deacons http://syriaca.org/keyword/canon-law">
+                        <desc>
+                            <date notBefore="0519" notAfter="0538">Sometime between 519-538</date>
+                            <persName ref="http://syriaca.org/person/3747">a very ill baby</persName> was baptized by 
+                            <persName ref="http://syriaca.org/person/3748">a deacon</persName> in the absence of a priest.
+                            This raised questions about the legitimacy of the baptism.
+                        </desc>
+                    </event>
+                </listEvent>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/bibl/669"/>
+                    <citedRange unit="p">425</citedRange>
+                </bibl>
+            </div>
+            <div type="factoid" subtype="event" xml:id="factoid-30" resp="#dschwartz">
+                <idno type="URI">http://syriaca.org/spear/3117-30</idno>
+                <listEvent>
+                    <event ana="http://syriaca.org/keyword/creeds http://syriaca.org/keyword/faith http://syriaca.org/keyword/baptism http://syriaca.org/keyword/canon-law">
+                        <desc>
+                            <date notBefore="0519" notAfter="0538">Sometime between 519-538</date>
+                            questions arose about whether <persName ref="http://syriaca.org/person/3749">a boy unable to make a profession of faith</persName>
+                            should be considered a believer or an unbeliever.
+                        </desc>
+                    </event>
+                </listEvent>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/bibl/669"/>
+                    <citedRange unit="p">426-27</citedRange>
                 </bibl>
             </div>
         </body>

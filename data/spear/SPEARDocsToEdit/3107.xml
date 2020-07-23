@@ -168,10 +168,11 @@
                 <idno type="URI">http://syriaca.org/spear/3107-5</idno>
                 <listRelation>
                     <relation name="syriaca:SenderOfLetterTo" active="http://syriaca.org/person/51"
-                        passive="http://syriaca.org/person/2427">
-                        <desc><persName ref="http://syriaca.org/person/51">Severus of
-                                Antioch</persName> sent a letter to <persName
-                                ref="http://syriaca.org/person/2427">John</persName>.</desc>
+                        passive="http://syriaca.org/person/2427 http://syriaca.org/person/2428">
+                        <desc>
+                            <persName ref="http://syriaca.org/person/51">Severus of Antioch</persName> sent a letter to 
+                            <persName ref="http://syriaca.org/person/2427">John</persName> and 
+                            <persName ref="http://syriaca.org/person/2428">John</persName>.</desc>
                     </relation>
                 </listRelation>
                 <bibl type="primary">
@@ -179,8 +180,58 @@
                     <citedRange unit="p">148</citedRange>
                 </bibl>
             </div>
-            <div type="factoid" subtype="nameVariant" xml:id="factoid-6" resp="#ktorabi #dschwartz">
-                <idno type="URI">http://syriaca.org/spear/3107-6</idno>
+            <div type="factoid" subtype="relation" xml:id="factoid-41" resp="#ktorabi #dschwartz">
+                <idno type="URI">http://syriaca.org/spear/3107-41</idno>
+                <listRelation>
+                    <relation name="syriaca:SenderOfLetterTo" active="http://syriaca.org/person/51"
+                        passive="http://syriaca.org/person/2427 http://syriaca.org/person/2428">
+                        <desc>
+                            <persName ref="http://syriaca.org/person/51">Severus of Antioch</persName> sent a letter to 
+                            <persName ref="http://syriaca.org/person/2427">John</persName> and 
+                            <persName ref="http://syriaca.org/person/2428">John</persName>.</desc>
+                    </relation>
+                </listRelation>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="p">148</citedRange>
+                </bibl>
+            </div>
+            <div type="factoid" subtype="relation" xml:id="factoid-42" resp="#dschwartz">
+                <idno type="URI">http://syriaca.org/spear/3107-42</idno>
+                <listRelation>
+                    <relation name="syriaca:SenderOfLetterTo" active="http://syriaca.org/person/2427 http://syriaca.org/person/2428" passive="http://syriaca.org/person/51">
+                        <desc>
+                            <persName ref="http://syriaca.org/person/2427">John</persName> and 
+                            <persName ref="http://syriaca.org/person/2428">John</persName>
+                            sent a letter to 
+                            <persName ref="http://syriaca.org/person/51">Severus of Antioch</persName>.
+                        </desc>
+                    </relation>
+                </listRelation>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="p">148</citedRange>
+                </bibl>
+            </div>
+            <div type="factoid" subtype="relation" xml:id="factoid-43" resp="#dschwartz">
+                <idno type="URI">http://syriaca.org/spear/3107-43</idno>
+                <listRelation>
+                    <relation name="syriaca:SenderOfLetterTo" active="http://syriaca.org/person/2427 http://syriaca.org/person/2428" passive="http://syriaca.org/person/51">
+                        <desc>
+                            <persName ref="http://syriaca.org/person/2427">John</persName> and 
+                            <persName ref="http://syriaca.org/person/2428">John</persName>
+                            sent a letter to 
+                            <persName ref="http://syriaca.org/person/51">Severus of Antioch</persName>.
+                        </desc>
+                    </relation>
+                </listRelation>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="p">148</citedRange>
+                </bibl>
+            </div>
+            <div type="factoid" subtype="nameVariant" xml:id="factoid-7" resp="#ktorabi #dschwartz">
+                <idno type="URI">http://syriaca.org/spear/3107-7</idno>
                 <listPerson>
                     <person>
                         <persName ref="http://syriaca.org/person/2428"> John, the presbyter and
@@ -192,8 +243,8 @@
                     <citedRange unit="p">148</citedRange>
                 </bibl>
             </div>
-            <div type="factoid" subtype="gender" xml:id="factoid-7" resp="#ktorabi #dschwartz">
-                <idno type="URI">http://syriaca.org/spear/3107-7</idno>
+            <div type="factoid" subtype="gender" xml:id="factoid-8" resp="#ktorabi #dschwartz">
+                <idno type="URI">http://syriaca.org/spear/3107-8</idno>
                 <listPerson>
                     <person>
                         <persName ref="http://syriaca.org/person/2428"/>
@@ -208,8 +259,8 @@
                     <citedRange unit="p">148</citedRange>
                 </bibl>
             </div>
-            <div type="factoid" subtype="occupation" xml:id="factoid-8" resp="#ktorabi #dschwartz">
-                <idno type="URI">http://syriaca.org/spear/3107-8</idno>
+            <div type="factoid" subtype="occupation" xml:id="factoid-9" resp="#ktorabi #dschwartz">
+                <idno type="URI">http://syriaca.org/spear/3107-9</idno>
                 <listPerson>
                     <person>
                         <persName ref="http://syriaca.org/person/2428"/>
@@ -224,8 +275,8 @@
                     <citedRange unit="p">148</citedRange>
                 </bibl>
             </div>
-            <div type="factoid" subtype="occupation" xml:id="factoid-9" resp="#ktorabi #dschwartz">
-                <idno type="URI">http://syriaca.org/spear/3107-9</idno>
+            <div type="factoid" subtype="occupation" xml:id="factoid-10" resp="#ktorabi #dschwartz">
+                <idno type="URI">http://syriaca.org/spear/3107-10</idno>
                 <listPerson>
                     <person>
                         <persName ref="http://syriaca.org/person/2428"/>
@@ -240,57 +291,13 @@
                     <citedRange unit="p">148</citedRange>
                 </bibl>
             </div>
-            <div type="factoid" subtype="relation" xml:id="factoid-10" resp="#ktorabi #dschwartz">
-                <idno type="URI">http://syriaca.org/spear/3107-10</idno>
-                <listRelation>
-                    <relation name="syriaca:SenderOfLetterTo" active="http://syriaca.org/person/51"
-                        passive="http://syriaca.org/person/2428">
-                        <desc><persName ref="http://syriaca.org/person/51">Severus of
-                                Antioch</persName> sent a letter to <persName
-                                ref="http://syriaca.org/person/2428">John</persName>.</desc>
-                    </relation>
-                </listRelation>
-                <bibl type="primary">
-                    <ptr target="http://syriaca.org/bibl/668"/>
-                    <citedRange unit="p">148</citedRange>
-                </bibl>
-            </div>
-            <div type="factoid" subtype="nameVariant" xml:id="factoid-11" resp="#ktorabi #dschwartz">
-                <idno type="URI">http://syriaca.org/spear/3107-11</idno>
-                <listPerson>
-                    <personGrp>
-                        <persName ref="http://syriaca.org/person/anonymi1"> Jews who sold a
-                                <persName ref="http://syriaca.org/person/anonymous1"> slave
-                                </persName><date notBefore="0513" notAfter="0518"> between A.D.
-                                513-518 </date></persName>
-                    </personGrp>
-                </listPerson>
-                <bibl type="primary">
-                    <ptr target="http://syriaca.org/bibl/668"/>
-                    <citedRange unit="p">148</citedRange>
-                </bibl>
-            </div>
-            <div type="factoid" subtype="nameVariant" xml:id="factoid-12" resp="#ktorabi #dschwartz">
-                <idno type="URI">http://syriaca.org/spear/3107-12</idno>
-                <listPerson>
-                    <person>
-                        <persName ref="http://syriaca.org/person/anonymous1"> a slave sold by
-                                <persName ref="http://syriaca.org/person/anonymi1"> Jews
-                            </persName></persName>
-                    </person>
-                </listPerson>
-                <bibl type="primary">
-                    <ptr target="http://syriaca.org/bibl/668"/>
-                    <citedRange unit="p">148</citedRange>
-                </bibl>
-            </div>
             <div type="factoid" subtype="gender" xml:id="factoid-13" resp="#ktorabi #dschwartz">
                 <idno type="URI">http://syriaca.org/spear/3107-13</idno>
                 <listPerson>
                     <person>
-                        <persName ref="http://syriaca.org/person/anonymous1"/>
+                        <persName ref="http://syriaca.org/person/3745"/>
                         <trait type="gender" ana="http://syriaca.org/keyword/male">
-                            <note type="desc"><persName ref="http://syriaca.org/person/anonymous1">  </persName>
+                            <note type="desc"><persName ref="http://syriaca.org/person/3745">Anonymous 3745</persName>
                                 was male. </note>
                         </trait>
                     </person>
@@ -303,10 +310,10 @@
             <div type="factoid" subtype="relation" xml:id="factoid-14" resp="#ktorabi #dschwartz">
                 <idno type="URI">http://syriaca.org/spear/3107-14</idno>
                 <listRelation>
-                    <relation name="snap:SlaveOf" active="http://syriaca.org/person/anonymous1"
-                        passive="http://syriaca.org/person/anonymi1">
-                        <desc><persName ref="http://syriaca.org/person/anonymi1">  </persName> enslaved
-                                <persName ref="http://syriaca.org/person/anonymous1">  </persName>.</desc>
+                    <relation name="snap:SlaveOf" active="http://syriaca.org/person/3745"
+                        passive="http://syriaca.org/person/3744">
+                        <desc><persName ref="http://syriaca.org/person/3744">Anonymi 3744</persName> enslaved
+                                <persName ref="http://syriaca.org/person/3745">Anonymous 3745</persName>.</desc>
                     </relation>
                 </listRelation>
                 <bibl type="primary">
@@ -376,36 +383,6 @@
                     <citedRange unit="p">148</citedRange>
                 </bibl>
             </div>
-            <div type="factoid" subtype="nameVariant" xml:id="factoid-19" resp="#ktorabi #dschwartz">
-                <idno type="URI">http://syriaca.org/spear/3107-19</idno>
-                <listPerson>
-                    <personGrp>
-                        <persName ref="http://syriaca.org/person/anonymi2"> The orthodox of
-                                <placeName ref="http://syriaca.org/place/2799"> Isauria in
-                                </placeName><date notBefore="0513" notAfter="0518"> A.D. 513-518
-                            </date></persName>
-                    </personGrp>
-                </listPerson>
-                <bibl type="primary">
-                    <ptr target="http://syriaca.org/bibl/668"/>
-                    <citedRange unit="p">149</citedRange>
-                </bibl>
-            </div>
-            <div type="factoid" subtype="nameVariant" xml:id="factoid-20" resp="#ktorabi #dschwartz">
-                <idno type="URI">http://syriaca.org/spear/3107-20</idno>
-                <listPerson>
-                    <personGrp>
-                        <persName ref="http://syriaca.org/person/anonymi3"> Those of <placeName
-                                ref="http://syriaca.org/place/56"> First Cilicia </placeName><date
-                                notBefore="0513" notAfter="0518"> between A.D. 513-518
-                            </date></persName>
-                    </personGrp>
-                </listPerson>
-                <bibl type="primary">
-                    <ptr target="http://syriaca.org/bibl/668"/>
-                    <citedRange unit="p">149</citedRange>
-                </bibl>
-            </div>
             <div type="factoid" subtype="nameVariant" xml:id="factoid-21" resp="#ktorabi #dschwartz">
                 <idno type="URI">http://syriaca.org/spear/3107-21</idno>
                 <listPerson>
@@ -466,38 +443,7 @@
                     <citedRange unit="p">150</citedRange>
                 </bibl>
             </div>
-            <div type="factoid" subtype="nameVariant" xml:id="factoid-25" resp="#ktorabi #dschwartz">
-                <idno type="URI">http://syriaca.org/spear/3107-25</idno>
-                <listPerson>
-                    <personGrp>
-                        <persName ref="http://syriaca.org/person/anonymi4"> The clergymen who were
-                            corrupted by <persName ref="http://syriaca.org/person/2442"> Stephen,
-                                the disturber </persName> in <date notBefore="0513" notAfter="0518">
-                                A.D. 513-518 </date></persName>
-                    </personGrp>
-                </listPerson>
-                <bibl type="primary">
-                    <ptr target="http://syriaca.org/bibl/668"/>
-                    <citedRange unit="p">150</citedRange>
-                </bibl>
-            </div>
-            <div type="factoid" subtype="nameVariant" xml:id="factoid-26" resp="#ktorabi #dschwartz">
-                <idno type="URI">http://syriaca.org/spear/3107-26</idno>
-                <listPerson>
-                    <personGrp>
-                        <persName ref="http://syriaca.org/person/anonymi5"> The saintly Isaurian
-                            bishops in banishment, to whom <persName
-                                ref="http://syriaca.org/person/2442"> Stephen </persName> sent his
-                                <persName ref="http://syriaca.org/person/anonymi4"> corrupt
-                                clergymen </persName> in <date notBefore="0513" notAfter="0518">
-                                A.D. 513-518 </date></persName>
-                    </personGrp>
-                </listPerson>
-                <bibl type="primary">
-                    <ptr target="http://syriaca.org/bibl/668"/>
-                    <citedRange unit="p">150</citedRange>
-                </bibl>
-            </div>
+            
             <div type="factoid" subtype="nameVariant" xml:id="factoid-27" resp="#ktorabi #dschwartz">
                 <idno type="URI">http://syriaca.org/spear/3107-27</idno>
                 <listPerson>
@@ -593,11 +539,13 @@
             <div type="factoid" subtype="relation" xml:id="factoid-33" resp="#ktorabi #dschwartz">
                 <idno type="URI">http://syriaca.org/spear/3107-33</idno>
                 <listRelation>
-                    <relation name="snap:ProfessionalRelationship"
-                        mutual="http://syriaca.org/person/2441 http://syriaca.org/person/2515">
-                        <desc><persName ref="http://syriaca.org/person/2441">Isidore</persName> and
-                                <persName ref="http://syriaca.org/person/2515">Thomas</persName> had
-                            a professional relationship.</desc>
+                    <relation name="snap:AllianceWith"
+                        mutual="http://syriaca.org/person/2441 http://syriaca.org/person/2515 http://syriaca.org/person/2431">
+                        <desc>
+                            <persName ref="http://syriaca.org/person/2441">Isidore</persName>, 
+                            <persName ref="http://syriaca.org/person/2515">Thomas</persName>, and 
+                            <persName ref="http://syriaca.org/person/2431">Epimachus</persName> 
+                            formed an alliance.</desc>
                     </relation>
                 </listRelation>
                 <bibl type="primary">
@@ -711,6 +659,141 @@
                 <bibl type="primary">
                     <ptr target="http://syriaca.org/bibl/668"/>
                     <citedRange unit="p">150</citedRange>
+                </bibl>
+            </div>
+            <div type="factoid" subtype="event" xml:id="factoid-44" resp="#dschwartz">
+                <idno type="URI">http://syriaca.org/spear/3107-44</idno>
+                <listEvent>
+                    <event ana="http://syriaca.org/keyword/letters http://syriaca.org/keyword/slavery http://syriaca.org/keyword/jews http://syriaca.org/keyword/canon-law http://syriaca.org/keyword/clergy http://syriaca.org/keyword/ordination http://syriaca.org/keyword/orthodoxy http://syriaca.org/keyword/persecution">
+                        <desc>
+                            <date notBefore="0520" notAfter="0525">Sometime in the early 520s</date>
+                            <persName ref="http://syriaca.org/person/51">Severus of Antioch</persName> sent a letter to 
+                            <persName ref="http://syriaca.org/person/2427">John</persName> and 
+                            <persName ref="http://syriaca.org/person/2428">John</persName>
+                            on the subjects of Christian slaves sold by Jewish owners, fellowship with clergy who accept 
+                            non-Chalcedonian theology but remain in communion with Chalcedonians, and the persecution of 
+                            non-Chalcedonians.
+                        </desc>
+                    </event>
+                </listEvent>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="p">148-51</citedRange>
+                </bibl>
+            </div>
+            <div type="factoid" subtype="event" xml:id="factoid-45" resp="#dschwartz">
+                <idno type="URI">http://syriaca.org/spear/3107-45</idno>
+                <listEvent>
+                    <event ana="http://syriaca.org/keyword/persecution http://syriaca.org/keyword/deposition-of-clergy http://syriaca.org/keyword/exile">
+                        <desc>
+                            <date notBefore="0520" notAfter="0525">Sometime in the early 520s</date>
+                            <persName ref="http://syriaca.org/person/3108">Anonymi 3108</persName> and <persName ref="http://syriaca.org/person/3105">Anonymi 3105</persName> in <placeName ref="http://syriaca.org/place/2799">Isauria</placeName>
+                            suffered persecution and expulsion at the hands of <persName ref="http://syriaca.org/person/2442">Stephen</persName>. 
+                            <persName ref="http://syriaca.org/person/3108">Anonymi 3108</persName> went into exile.
+                        </desc>
+                    </event>
+                </listEvent>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="p">150</citedRange>
+                </bibl>
+            </div>
+            <div type="factoid" subtype="event" xml:id="factoid-46" resp="#dschwartz">
+                <idno type="URI">http://syriaca.org/spear/3107-46</idno>
+                <listEvent>
+                    <event ana="http://syriaca.org/keyword/persecution http://syriaca.org/keyword/deposition-of-clergy http://syriaca.org/keyword/exile">
+                        <desc>
+                            <date notBefore="0520" notAfter="0525">Sometime in the early 520s</date>
+                            <persName ref="http://syriaca.org/person/2442">Stephen</persName> sent <persName ref="http://syriaca.org/person/3746">Anonymi 3746</persName> 
+                            to bring back
+                            <persName ref="http://syriaca.org/person/3108">Anonymi 3108</persName> 
+                            who had fled.
+                        </desc>
+                    </event>
+                </listEvent>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="p">150</citedRange>
+                </bibl>
+            </div>
+            <div type="factoid" subtype="relation" xml:id="factoid-47" resp="#dschwartz">
+                <idno type="URI">http://syriaca.org/spear/3107-47</idno>
+                <listRelation>
+                    <relation name="syriaca:BishopOverClergy" active="http://syriaca.org/person/2442" passive="http://syriaca.org/person/3746">
+                        <desc>
+                            <persName ref="http://syriaca.org/person/2442"> Stephen </persName> 
+                            was a bishop with authority over
+                            <persName ref="http://syriaca.org/person/3746">Anonymi 3746</persName>
+                        </desc>
+                    </relation>
+                </listRelation>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="p">150</citedRange>
+                </bibl>
+            </div>
+            <div type="factoid" subtype="event" xml:id="factoid-48" resp="#dschwartz">
+                <idno type="URI">http://syriaca.org/spear/3107-48</idno>
+                <listEvent>
+                    <event ana="http://syriaca.org/keyword/anti-chalcedonian">
+                        <desc>
+                            <date notBefore="0520" notAfter="0525">Sometime in the early 520s</date>
+                            <persName ref="http://syriaca.org/person/2441">Isidore</persName>, 
+                            <persName ref="http://syriaca.org/person/2515">Thomas</persName>, and 
+                            <persName ref="http://syriaca.org/person/2431">Epimachus</persName> traveled to 
+                            <placeName ref="http://syriaca.org/place/1473">Pelusium</placeName> to support the non-Chalcedonian cause.
+                        </desc>
+                    </event>
+                </listEvent>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="p">150</citedRange>
+                </bibl>
+            </div>
+            <div type="factoid" subtype="relation" xml:id="factoid-49" resp="#ktorabi #dschwartz">
+                <idno type="URI">http://syriaca.org/spear/3107-49</idno>
+                <listRelation>
+                    <relation name="syriaca:SenderOfLetterTo" active="http://syriaca.org/person/2441"
+                        passive="http://syriaca.org/person/2427 http://syriaca.org/person/2428">
+                        <desc>
+                            <persName ref="http://syriaca.org/person/51">Severus of Antioch</persName> sent a letter to 
+                            <persName ref="http://syriaca.org/person/2431">John</persName>.</desc>
+                    </relation>
+                </listRelation>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="p">150</citedRange>
+                </bibl>
+            </div>
+            <div type="factoid" subtype="event" xml:id="factoid-50" resp="#dschwartz">
+                <idno type="URI">http://syriaca.org/spear/3107-50</idno>
+                <listEvent>
+                    <event ana="http://syriaca.org/keyword/slavery http://syriaca.org/keyword/trade">
+                        <desc>
+                            <persName ref="http://syriaca.org/person/3744">Anonymi 3744</persName> sold
+                            <persName ref="http://syriaca.org/person/3745">Anonymous 3745</persName> whom they had enslaved.
+                        </desc>
+                    </event>
+                </listEvent>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="p">148</citedRange>
+                </bibl>
+            </div>
+            <div type="factoid" subtype="event" xml:id="factoid-51" resp="#dschwartz">
+                <idno type="URI">http://syriaca.org/spear/3107-51</idno>
+                <listEvent>
+                    <event ana="http://syriaca.org/keyword/apostasy">
+                        <desc>
+                            <date notBefore="0520" notAfter="0525">Sometime in the early 520s</date>
+                            <persName ref="http://syriaca.org/person/3106">certain clergy</persName> in <placeName ref="http://syriaca.org/place/56">Cilicia Prima</placeName>
+                            were remiss in resisting Chalcedonians.
+                        </desc>
+                    </event>
+                </listEvent>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="p">149</citedRange>
                 </bibl>
             </div>
         </body>

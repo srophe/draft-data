@@ -153,58 +153,10 @@
                 <listRelation>
                     <relation name="syriaca:SenderOfLetterTo" active="http://syriaca.org/person/51"
                         passive="http://syriaca.org/person/2462">
-                        <desc><persName ref="http://syriaca.org/person/51">Severus of
-                                Antioch</persName> sent a letter to <persName
-                                ref="http://syriaca.org/person/2462">Didymus</persName>.</desc>
-                    </relation>
-                    <!-- Schema: The @type attribute on relation needs to have a closed list of values. -->
-                </listRelation>
-                <bibl type="primary">
-                    <ptr target="http://syriaca.org/bibl/668"/>
-                    <citedRange unit="p">171</citedRange>
-                </bibl>
-            </div>
-            <div type="factoid" subtype="nameVariant" xml:id="factoid-5" resp="#ktorabi #dschwartz">
-                <idno type="URI">http://syriaca.org/spear/3116-5</idno>
-                <listPerson>
-                    <personGrp>
-                        <persName ref="http://syriaca.org/person/anonymi1"> Those who live in the
-                            neighborhoood of <persName ref="http://syriaca.org/person/2462"> Didymus
-                                </persName><date notBefore="0518" notAfter="0538"> between A.D.
-                                518-538 </date></persName>
-                    </personGrp>
-                </listPerson>
-                <bibl type="primary">
-                    <ptr target="http://syriaca.org/bibl/668"/>
-                    <citedRange unit="p">171</citedRange>
-                </bibl>
-            </div>
-            <div type="factoid" subtype="nameVariant" xml:id="factoid-6" resp="#ktorabi #dschwartz">
-                <idno type="URI">http://syriaca.org/spear/3116-6</idno>
-                <listPerson>
-                    <personGrp>
-                        <persName ref="http://syriaca.org/person/anonymi2"> The barbarians who
-                            attacked the neighborhood of <persName
-                                ref="http://syriaca.org/person/2462"> Didymus </persName><date
-                                notBefore="0518" notAfter="0538"> between A.D. 518-538
-                            </date></persName>
-                    </personGrp>
-                </listPerson>
-                <bibl type="primary">
-                    <ptr target="http://syriaca.org/bibl/668"/>
-                    <citedRange unit="p">171</citedRange>
-                </bibl>
-            </div>
-            <div type="factoid" subtype="relation" xml:id="factoid-7" resp="#ktorabi #dschwartz">
-                <idno type="URI">http://syriaca.org/spear/3116-7</idno>
-                <listRelation>
-                    <relation name="syriaca:EpistolaryReferenceTo"
-                        active="http://syriaca.org/person/51"
-                        passive="http://syriaca.org/person/anonymi1 http://syriaca.org/person/anonymi2">
-                        <desc>A letter between <persName ref="http://syriaca.org/person/51">Severus
-                                of Antioch</persName> referenced <persName
-                                ref="http://syriaca.org/person/51">Severus of
-                            Antioch</persName>.</desc>
+                        <desc>
+                            <persName ref="http://syriaca.org/person/51">Severus of Antioch</persName> sent a letter to 
+                            <persName ref="http://syriaca.org/person/2462">Didymus</persName>.
+                        </desc>
                     </relation>
                 </listRelation>
                 <bibl type="primary">
@@ -212,6 +164,7 @@
                     <citedRange unit="p">171</citedRange>
                 </bibl>
             </div>
+            
             <div type="factoid" subtype="nameVariant" xml:id="factoid-8" resp="#ktorabi #dschwartz">
                 <idno type="URI">http://syriaca.org/spear/3116-8</idno>
                 <listPerson>
@@ -280,98 +233,6 @@
                         </state>
                     </person>
                 </listPerson>
-                <bibl type="primary">
-                    <ptr target="http://syriaca.org/bibl/668"/>
-                    <citedRange unit="p">174</citedRange>
-                </bibl>
-            </div>
-            <div type="factoid" subtype="nameVariant" xml:id="factoid-13" resp="#ktorabi #dschwartz">
-                <idno type="URI">http://syriaca.org/spear/3116-13</idno>
-                <listPerson>
-                    <personGrp>
-                        <persName ref="http://syriaca.org/person/anonymi3"> The men of <placeName
-                                ref="http://syriaca.org/place/2718"> Smyrna </placeName> who
-                            received a letter from <persName ref="http://syriaca.org/person/544">
-                                Ignatius </persName><date notBefore="0035" notAfter="0108"> between
-                                A.D. 35-108 </date></persName>
-                    </personGrp>
-                </listPerson>
-                <bibl type="primary">
-                    <ptr target="http://syriaca.org/bibl/668"/>
-                    <citedRange unit="p">174</citedRange>
-                </bibl>
-            </div>
-            <div type="factoid" subtype="relation" xml:id="factoid-14" resp="#ktorabi #dschwartz">
-                <idno type="URI">http://syriaca.org/spear/3116-14</idno>
-                <listRelation>
-                    <relation name="syriaca:SenderOfLetterTo" active="http://syriaca.org/person/544"
-                        passive="http://syriaca.org/person/anonymi3">
-                        <desc><persName ref="http://syriaca.org/person/544">Ignatius of
-                                Antioch</persName> sent a letter to <persName
-                                ref="http://syriaca.org/person/anonymi3">  </persName>.</desc>
-                    </relation>
-                </listRelation>
-                <bibl type="primary">
-                    <ptr target="http://syriaca.org/bibl/668"/>
-                    <citedRange unit="p">174</citedRange>
-                </bibl>
-            </div>
-            <div type="factoid" subtype="nameVariant" xml:id="factoid-15" resp="#ktorabi #dschwartz">
-                <idno type="URI">http://syriaca.org/spear/3116-15</idno>
-                <listPerson>
-                    <personGrp>
-                        <persName ref="http://syriaca.org/person/anonymi4"> Those at <placeName
-                                ref="http://syriaca.org/place/1476"> Philadelphia </placeName> who
-                            received a letter from <persName ref="http://syriaca.org/person/544">
-                                Ignatius </persName><date notBefore="0035" notAfter="0108"> between
-                                A.D. 35-108 </date></persName>
-                    </personGrp>
-                </listPerson>
-                <bibl type="primary">
-                    <ptr target="http://syriaca.org/bibl/668"/>
-                    <citedRange unit="p">174</citedRange>
-                </bibl>
-            </div>
-            <div type="factoid" subtype="relation" xml:id="factoid-16" resp="#ktorabi #dschwartz">
-                <idno type="URI">http://syriaca.org/spear/3116-16</idno>
-                <listRelation>
-                    <relation name="syriaca:SenderOfLetterTo" active="http://syriaca.org/person/544"
-                        passive="http://syriaca.org/person/anonymi4">
-                        <desc><persName ref="http://syriaca.org/person/544">Ignatius of
-                                Antioch</persName> sent a letter to <persName
-                                ref="http://syriaca.org/person/anonymi4">  </persName>.</desc>
-                    </relation>
-                </listRelation>
-                <bibl type="primary">
-                    <ptr target="http://syriaca.org/bibl/668"/>
-                    <citedRange unit="p">174</citedRange>
-                </bibl>
-            </div>
-            <div type="factoid" subtype="nameVariant" xml:id="factoid-17" resp="#ktorabi #dschwartz">
-                <idno type="URI">http://syriaca.org/spear/3116-17</idno>
-                <listPerson>
-                    <personGrp>
-                        <persName ref="http://syriaca.org/person/anonymi5"> Tthe Ephesians who
-                            received a letter from <persName ref="http://syriaca.org/person/544">
-                                Ignatius </persName><date notBefore="0035" notAfter="0108"> between
-                                A.D. 35-108 </date></persName>
-                    </personGrp>
-                </listPerson>
-                <bibl type="primary">
-                    <ptr target="http://syriaca.org/bibl/668"/>
-                    <citedRange unit="p">174</citedRange>
-                </bibl>
-            </div>
-            <div type="factoid" subtype="relation" xml:id="factoid-18" resp="#ktorabi #dschwartz">
-                <idno type="URI">http://syriaca.org/spear/3116-18</idno>
-                <listRelation>
-                    <relation name="syriaca:SenderOfLetterTo" active="http://syriaca.org/person/544"
-                        passive="http://syriaca.org/person/anonymi5">
-                        <desc><persName ref="http://syriaca.org/person/544">Ignatius of
-                                Antioch</persName> sent a letter to <persName
-                                ref="http://syriaca.org/person/anonymi5">  </persName>.</desc>
-                    </relation>
-                </listRelation>
                 <bibl type="primary">
                     <ptr target="http://syriaca.org/bibl/668"/>
                     <citedRange unit="p">174</citedRange>
@@ -486,6 +347,68 @@
                     <citedRange unit="p">175</citedRange>
                 </bibl>
             </div>
+            <div type="factoid" subtype="relation" xml:id="factoid-27" resp="#dschwartz">
+                <idno type="URI">http://syriaca.org/spear/3116-27</idno>
+                <listRelation>
+                    <relation name="syriaca:StudentOf" active="http://syriaca.org/person/2020" passive="http://syriaca.org/person/1826">
+                        <desc>
+                            <persName ref="http://syriaca.org/person/2020">Polycarp</persName> 
+                            was a disciple of 
+                            <persName ref="http://syriaca.org/person/1826">John the Evangelist</persName>
+                        </desc>
+                    </relation>
+                </listRelation>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="p">175</citedRange>
+                </bibl>
+            </div>
+            <div type="factoid" subtype="event" xml:id="factoid-26" resp="#dschwartz">
+                <idno type="URI">http://syriaca.org/spear/3116-26</idno>
+                <listEvent>
+                    <event ana="http://syriaca.org/keyword/letter http://syriaca.org/keyword/violence http://syriaca.org/keyword/war http://syriaca.org/keyword/persecution">
+                        <desc>
+                            <date notBefore="0519" notAfter="0525">Sometime between 519 and 525</date>
+                            <persName ref="http://syriaca.org/person/51">Severus of Antioch</persName> sent a letter to 
+                            <persName ref="http://syriaca.org/person/2462">Didymus</persName> on the subject of a barbarian incursion
+                            and the persecution of the non-Chalcedonians.
+                        </desc>
+                    </event>
+                </listEvent>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="p">171-75</citedRange>
+                </bibl>
+            </div>
+            <div type="factoid" subtype="event" xml:id="factoid-28" resp="#dschwartz">
+                <idno type="URI">http://syriaca.org/spear/3116-28</idno>
+                <listEvent>
+                    <event ana="http://syriaca.org/keyword/violence http://syriaca.org/keyword/war">
+                        <desc>
+                            <date notBefore="0519" notAfter="0525">Sometime between 519 and 525</date>
+                            there was a barbarian incursion into <placeName ref="http://syriaca.org/place/166">Roman territory</placeName>.
+                        </desc>
+                    </event>
+                </listEvent>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="p">171-75</citedRange>
+                </bibl>
+                <note type="desc">
+                    Brooks suggests that this likely refers to the incursion of Al Mundhir; cf. 
+                    <bibl type="primary">
+                        <ptr target="http://syriaca.org/bibl/668"/>
+                        <citedRange unit="p">171n.1</citedRange>
+                    </bibl>
+                    and
+                    <bibl type="secondary">
+                        <ptr target="http://syriaca.org/bibl/1986"/>
+                        <citedRange unit="part">VIII.5</citedRange>
+                        <citedRange unit="p">206-07</citedRange>
+                    </bibl>
+                </note>
+            </div>
+            
         </body>
         <back>
             <listBibl>

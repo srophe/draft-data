@@ -103,29 +103,35 @@
     </teiHeader>
     <text>
         <body>
-            <div type="factoid" subtype="relation" xml:id="factoid-1" resp="#ktorabi #dschwartz">
+            <div type="factoid" subtype="event" xml:id="factoid-1" resp="#ktorabi #dschwartz">
                 <idno type="URI">http://syriaca.org/spear/3099-1</idno>
-                <listRelation>
-                    <relation name="syriaca:SenderOfLetterTo" active="http://syriaca.org/person/51"
-                        passive="http://syriaca.org/person/2427">
-                        <desc><persName ref="http://syriaca.org/person/51">Severus of
-                                Antioch</persName> sent a letter to <persName
-                                ref="http://syriaca.org/person/2427">John</persName>.</desc>
-                    </relation>
-                </listRelation>
+                <listEvent>
+                    <event ana="http://syriaca.org/keyword/letters http://syriaca.org/keyword/eucharist http://syriaca.org/keyword/canon-law http://syriaca.org/keyword/ordination http://syriaca.org/keyword/marriage http://syriaca.org/keyword/clergy http://syriaca.org/keyword/deacons http://syriaca.org/keyword/monasticism http://syriaca.org/keyword/women">
+                        <desc>
+                            <date notBefore="0519" notAfter="0520">Sometime between 519-520</date>
+                            <persName ref="http://syriaca.org/person/51">Severus of Antioch</persName> sent a letter to 
+                            <persName ref="http://syriaca.org/person/2428">John</persName> and 
+                            <persName ref="http://syriaca.org/person/2427">John</persName> on the subjects of 
+                            whether or not non-Chalcedonian exiles in Egypt should take communion; and the question of what to do about 
+                            <persName ref="http://syriaca.org/person/2431"> Epimachus </persName>, a devout man ordained to the clergy 
+                            but who had entered into a second marriage; and questions about the ordination of deacons and deaconesses in monasteries.
+                        </desc>
+                    </event>
+                </listEvent>
                 <bibl type="primary">
                     <ptr target="http://syriaca.org/bibl/668"/>
-                    <citedRange unit="p">132</citedRange>
+                    <citedRange unit="p">132-40</citedRange>
                 </bibl>
             </div>
             <div type="factoid" subtype="relation" xml:id="factoid-2" resp="#ktorabi #dschwartz">
                 <idno type="URI">http://syriaca.org/spear/3099-2</idno>
                 <listRelation>
                     <relation name="syriaca:SenderOfLetterTo" active="http://syriaca.org/person/51"
-                        passive="http://syriaca.org/person/2428">
-                        <desc><persName ref="http://syriaca.org/person/51">Severus of
-                                Antioch</persName> sent a letter to <persName
-                                ref="http://syriaca.org/person/2428">John</persName>.</desc>
+                        passive="http://syriaca.org/person/2427 http://syriaca.org/person/2428">
+                        <desc>
+                            <persName ref="http://syriaca.org/person/51">Severus of Antioch</persName> sent a letter to 
+                            <persName ref="http://syriaca.org/person/2428">John</persName> and 
+                            <persName ref="http://syriaca.org/person/2427">John</persName>.</desc>
                     </relation>
                 </listRelation>
                 <bibl type="primary">
@@ -159,68 +165,6 @@
                 <bibl type="primary">
                     <ptr target="http://syriaca.org/bibl/668"/>
                     <citedRange unit="p">132-133</citedRange>
-                </bibl>
-            </div>
-            <div type="factoid" subtype="nameVariant" xml:id="factoid-6" resp="#ktorabi #dschwartz">
-                <idno type="URI">http://syriaca.org/spear/3099-6</idno>
-                <listPerson>
-                    <personGrp>
-                        <persName ref="http://syriaca.org/person/anonymi1"> The party of <persName
-                                ref="http://syriaca.org/person/2429"> Hippocrates </persName>
-                            between <date notBefore="0518" notAfter="0538"> A.D. 518-538
-                            </date></persName>
-                    </personGrp>
-                </listPerson>
-                <bibl type="primary">
-                    <ptr target="http://syriaca.org/bibl/668"/>
-                    <citedRange unit="p">132</citedRange>
-                </bibl>
-            </div>
-            <div type="factoid" subtype="nameVariant" xml:id="factoid-7" resp="#ktorabi #dschwartz">
-                <idno type="URI">http://syriaca.org/spear/3099-7</idno>
-                <listPerson>
-                    <personGrp>
-                        <persName ref="http://syriaca.org/person/anonymi2"> large number of other
-                            well-known and distinguished men, who have always concerned themselves
-                            about their own salvation and about the strict observance of the
-                            orthodox faith between <date notBefore="0518" notAfter="0538"> A.D.
-                                518-538 </date></persName>
-                    </personGrp>
-                </listPerson>
-                <bibl type="primary">
-                    <ptr target="http://syriaca.org/bibl/668"/>
-                    <citedRange unit="p">132</citedRange>
-                </bibl>
-            </div>
-            <div type="factoid" subtype="nameVariant" xml:id="factoid-8" resp="#ktorabi #dschwartz">
-                <idno type="URI">http://syriaca.org/spear/3099-8</idno>
-                <listPerson>
-                    <personGrp>
-                        <persName ref="http://syriaca.org/person/anonymi3"> those who followed
-                                <persName ref="http://syriaca.org/person/anonymi2"> the large number
-                                of other well-known and distinguished men, who have always concerned
-                                themselves about their own salvation and about the strict observance
-                                of the orthodox faith between <date notBefore="0518" notAfter="0538"
-                                    > A.D. 518-538 </date></persName></persName>
-                    </personGrp>
-                </listPerson>
-                <bibl type="primary">
-                    <ptr target="http://syriaca.org/bibl/668"/>
-                    <citedRange unit="p">132</citedRange>
-                </bibl>
-            </div>
-            <div type="factoid" subtype="relation" xml:id="factoid-9" resp="#ktorabi #dschwartz">
-                <idno type="URI">http://syriaca.org/spear/3099-9</idno>
-                <listRelation>
-                    <relation name="syriaca:FollowerOf" active="http://syriaca.org/person/anonymi3"
-                        passive="http://syriaca.org/person/anonymi2">
-                        <desc><persName ref="http://syriaca.org/person/anonymi3">  </persName> was a follower of
-                                <persName ref="http://syriaca.org/person/anonymi2">  </persName>.</desc>
-                    </relation>
-                </listRelation>
-                <bibl type="primary">
-                    <ptr target="http://syriaca.org/bibl/668"/>
-                    <citedRange unit="p">132</citedRange>
                 </bibl>
             </div>
             <div type="factoid" subtype="nameVariant" xml:id="factoid-10" resp="#ktorabi #dschwartz">
@@ -258,7 +202,7 @@
                         passive="http://syriaca.org/person/2430">
                         <desc><persName ref="http://syriaca.org/person/51">Severus of
                                 Antioch</persName> sent a letter to <persName
-                                ref="http://syriaca.org/person/2430">Dioscorus II</persName>.</desc>
+                                ref="http://syriaca.org/person/2430">Dioscorus</persName>.</desc>
                     </relation>
                 </listRelation>
                 <bibl type="primary">
@@ -270,8 +214,7 @@
                 <idno type="URI">http://syriaca.org/spear/3099-13</idno>
                 <listPerson>
                     <person>
-                        <persName ref="http://syriaca.org/person/anonymous1"
-                            ><!-- No URI for Theodore --> The presbyter father Theodore </persName>
+                        <persName ref="http://syriaca.org/person/2540">The presbyter father Theodore</persName>
                     </person>
                 </listPerson>
                 <bibl type="primary">
@@ -283,9 +226,9 @@
                 <idno type="URI">http://syriaca.org/spear/3099-14</idno>
                 <listPerson>
                     <person>
-                        <persName ref="http://syriaca.org/person/anonymous1"/>
+                        <persName ref="http://syriaca.org/person/2540"/>
                         <trait type="gender" ana="http://syriaca.org/keyword/male">
-                            <note type="desc"><persName ref="http://syriaca.org/person/anonmyous1">
+                            <note type="desc"><persName ref="http://syriaca.org/person/2540">
                                     Theodore </persName> was male. </note>
                         </trait>
                     </person>
@@ -299,9 +242,9 @@
                 <idno type="URI">http://syriaca.org/spear/3099-15</idno>
                 <listPerson>
                     <person>
-                        <persName ref="http://syriaca.org/person/anonymous1"/>
+                        <persName ref="http://syriaca.org/person/2540"/>
                         <occupation ana="http://syriaca.org/keyword/priests">
-                            <note type="desc"><persName ref="http://syriaca.org/person/anonymous1">
+                            <note type="desc"><persName ref="http://syriaca.org/person/2540">
                                     Theodore </persName> was a presbyter. </note>
                         </occupation>
                     </person>
@@ -355,6 +298,22 @@
                     <citedRange unit="p">137</citedRange>
                 </bibl>
             </div>
+            <div type="factoid" subtype="relation" xml:id="factoid-5" resp="#dschwartz">
+                <idno type="URI">http://syriaca.org/spear/3099-5</idno>
+                <listRelation>
+                    <relation name="snap:IntimateRelationshipWith" mutual="http://syriaca.org/person/51 http://syriaca.org/person/2431">
+                        <desc>
+                            <persName ref="http://syriaca.org/person/51">Severus</persName> and <persName ref="http://syriaca.org/person/2431">Epimachus</persName> 
+                            had an intimate relationship.
+                        </desc>
+                    </relation>
+                </listRelation>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="p">135</citedRange>
+                </bibl>
+            </div>
+            
             <div type="factoid" subtype="nameVariant" xml:id="factoid-19" resp="#ktorabi #dschwartz">
                 <idno type="URI">http://syriaca.org/spear/3099-19</idno>
                 <listPerson>
@@ -629,8 +588,7 @@
                     <person>
                         <persName ref="http://syriaca.org/person/2545"/>
                         <trait type="gender" ana="http://syriaca.org/keyword/male">
-                            <note type="desc"><persName ref="http://syriaca.org/person/2545">
-                                    Isidore </persName> was male. </note>
+                            <note type="desc"><persName ref="http://syriaca.org/person/2545">Isidore</persName> was male. </note>
                         </trait>
                     </person>
                 </listPerson>
@@ -642,20 +600,33 @@
             <div type="factoid" subtype="relation" xml:id="factoid-44" resp="#ktorabi #dschwartz">
                 <idno type="URI">http://syriaca.org/spear/3099-44</idno>
                 <listRelation>
-                    <relation name="syriaca:EpistolaryReferenceTo"
-                        active="http://syriaca.org/person/2427 http://syriaca.org/person/2428"
-                        passive="http://syriaca.org/person/2545">
-                        <desc>A letter between <persName ref="http://syriaca.org/person/2427"
-                                >John</persName> and <persName ref="http://syriaca.org/person/2428"
-                                >John</persName> referenced <persName
-                                ref="http://syriaca.org/person/2427">John</persName> and <persName
-                                ref="http://syriaca.org/person/2428">John</persName>.</desc>
+                    <relation name="snap:IntimateRelationshipWith"
+                        mutual="http://syriaca.org/person/2545 http://syriaca.org/person/51">
+                        <desc>
+                            <persName ref="http://syriaca.org/person/51">Severus</persName> and 
+                            <persName ref="http://syriaca.org/person/2545">Isidore</persName> 
+                            had an intimate relationship.</desc>
                     </relation>
                 </listRelation>
                 <bibl type="primary">
                     <ptr target="http://syriaca.org/bibl/668"/>
                     <citedRange unit="p">138</citedRange>
                 </bibl>
+            </div>
+            <div type="factoid" subtype="event" xml:id="factoid-6" resp="#dschwartz">
+                <idno type="URI">http://syriaca.org/spear/3099-6</idno>
+                <listEvent>
+                    <event ana="http://syriaca.org/keyword/ordination http://syriaca.org/keyword/canon-law">
+                        <desc>
+                            <date notAfter="0520">Sometime before 520</date>
+                            <persName ref="http://syriaca.org/person/2545">Isidore</persName> re-ordained deacons whom
+                            <persName ref="http://syriaca.org/person/51">Severus</persName> had already ordained. 
+                            <persName ref="http://syriaca.org/person/51">Severus</persName> did not object to this because 
+                            this ordination took place far outside of his jurisdiction. 
+                        </desc>
+                    </event>
+                </listEvent>
+                
             </div>
             <div type="factoid" subtype="relation" xml:id="factoid-45" resp="#ktorabi #dschwartz">
                 <idno type="URI">http://syriaca.org/spear/3099-45</idno>
@@ -721,8 +692,7 @@
                 <listRelation>
                     <relation name="syriaca:BishopOverClergy" active="http://syriaca.org/person/51"
                         passive="http://syriaca.org/person/2433">
-                        <desc><persName ref="http://syriaca.org/person/51">Severus of
-                                Antioch</persName> had ecclesiastical authority over <persName
+                        <desc><persName ref="http://syriaca.org/person/51">Severus of Antioch</persName> had ecclesiastical authority over <persName
                                 ref="http://syriaca.org/person/2433">Victor</persName>.</desc>
                     </relation>
                 </listRelation>
@@ -731,6 +701,7 @@
                     <citedRange unit="p">139</citedRange>
                 </bibl>
             </div>
+            
         </body>
         <back>
             <listBibl>

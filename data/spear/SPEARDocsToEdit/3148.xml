@@ -102,28 +102,46 @@
     </teiHeader>
     <text>
         <body>
-            <div type="factoid" subtype="nameVariant" xml:id="factoid-1" resp="#ktorabi #dschwartz">
+            <div type="factoid" subtype="event" xml:id="factoid-1" resp="#dschwartz">
                 <idno type="URI">http://syriaca.org/spear/3148-1</idno>
-                <listPerson>
-                    <person>
-                        <persName ref="http://syriaca.org/person/anonymous1"> Recipient of a letter
-                            from <persName ref="http://syriaca.org/person/51"> Severus </persName>.
-                        </persName>
-                    </person>
-                </listPerson>
+                <listEvent>
+                    <event ana="http://syriaca.org/keyword/letters http://syriaca.org/keyword/persecution http://syriaca.org/keyword/commemoration">
+                        <desc>
+                            <date notBefore="0519" notAfter="0538">Sometime after his episcopacy</date>
+                            <persName ref="http://syriaca.org/person/51"> Severus </persName> wrote a letter to
+                            <persName ref="http://syriaca.org/person/3750">Anonymous 3750</persName> on the subject of
+                            the persecution of non-Chalcedonians and the commemoration of faithful non-Chalcedonians no longer living.
+                        </desc>
+                    </event>
+                </listEvent>
                 <bibl type="primary">
                     <ptr target="http://syriaca.org/bibl/668"/>
-                    <citedRange unit="p">162</citedRange>
+                    <citedRange unit="p">162-63</citedRange>
                 </bibl>
             </div>
             <div type="factoid" subtype="relation" xml:id="factoid-2" resp="#ktorabi #dschwartz">
                 <idno type="URI">http://syriaca.org/spear/3148-2</idno>
                 <listRelation>
                     <relation name="syriaca:SenderOfLetterTo" active="http://syriaca.org/person/51"
-                        passive="http://syriaca.org/person/anonymous1">
-                        <desc><persName ref="http://syriaca.org/person/51">Severus of
-                                Antioch</persName> sent a letter to <persName
-                                ref="http://syriaca.org/person/anonymous1">  </persName>.</desc>
+                        passive="http://syriaca.org/person/3750">
+                        <desc>
+                            <persName ref="http://syriaca.org/person/51">Severus of Antioch</persName> sent a letter to 
+                            <persName ref="http://syriaca.org/person/3750">Anonymous 3750</persName>.</desc>
+                    </relation>
+                </listRelation>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="p">162</citedRange>
+                </bibl>
+            </div>
+            <div type="factoid" subtype="relation" xml:id="factoid-17" resp="#dschwartz">
+                <idno type="URI">http://syriaca.org/spear/3148-17</idno>
+                <listRelation>
+                    <relation name="syriaca:SenderOfLetterTo" active="http://syriaca.org/person/3750" passive="http://syriaca.org/person/51">
+                        <desc>
+                            <persName ref="http://syriaca.org/person/3750">Anonymous 3750</persName> sent a letter to 
+                            <persName ref="http://syriaca.org/person/51">Severus of Antioch</persName>.
+                        </desc>
                     </relation>
                 </listRelation>
                 <bibl type="primary">
@@ -192,63 +210,38 @@
                     <citedRange unit="p">162</citedRange>
                 </bibl>
             </div>
-            <div type="factoid" subtype="nameVariant" xml:id="factoid-7" resp="#ktorabi #dschwartz"><!-- Check this -->
-                <idno type="URI">http://syriaca.org/spear/3148-7?</idno>
-                <listPerson>
-                    <personGrp>
-                        <persName ref="http://syriaca.org/person/anonymi1"> believers in <placeName
-                                ref="http://syriaca.org/place/10"> Antioch </placeName> between
-                                <date notBefore="0518" notAfter="0538"> A.D. 518-538 </date> who
-                            have girded themselves for a second and third contest as if they had
-                            never been tried by any tribulation </persName>
-                    </personGrp>
-                </listPerson>
-                <bibl type="primary">
-                    <ptr target="http://syriaca.org/bibl/668"/>
-                    <citedRange unit="p">163</citedRange>
-                </bibl>
-            </div>
-            <div type="factoid" subtype="relation" xml:id="factoid-8" resp="#ktorabi #dschwartz">
-                <idno type="URI">http://syriaca.org/spear/3148-8</idno>
-                <listRelation>
-                    <!-- I'm not sure if this is appropriately encoded as EnmityFor, as Severus's feelings for anonymi1 seems to be contempt, rather than hatred -->
-                    <relation name="snap:EnmityFor" active="http://syriaca.org/person/51"
-                        passive="http://syriaca.org/person/anonymi1">
-                        <desc><persName ref="http://syriaca.org/person/51">Severus of
-                                Antioch</persName> had enmity for <persName
-                                ref="http://syriaca.org/person/anonymi1">  </persName>.</desc>
-                    </relation>
-                </listRelation>
-                <bibl type="primary">
-                    <ptr target="http://syriaca.org/bibl/668"/>
-                    <citedRange unit="p">163</citedRange>
-                </bibl>
-            </div>
-            <div type="factoid" subtype="nameVariant" xml:id="factoid-9" resp="#ktorabi #dschwartz">
-                <idno type="URI">http://syriaca.org/spear/3148-9</idno>
-                <listPerson>
-                    <personGrp>
-                        <persName ref="http://syriaca.org/person/anonymi2"> those who are combating
-                            in more earnest remembrance between <date notBefore="0518"
-                                notAfter="0538"> A.D. 518-538 </date></persName>
-                    </personGrp>
-                </listPerson>
-                <bibl type="primary">
-                    <ptr target="http://syriaca.org/bibl/668"/>
-                    <citedRange unit="p">163</citedRange>
-                </bibl>
-            </div>
-            <div type="factoid" subtype="nameVariant" xml:id="factoid-10" resp="#ktorabi #dschwartz">
-                <idno type="URI">http://syriaca.org/spear/3148-10</idno>
+            <div type="factoid" subtype="deathDate" xml:id="factoid-7" resp="#dschwartz">
+                <idno type="URI">http://syriaca.org/spear/3148-7</idno>
                 <listPerson>
                     <person>
-                        <persName ref="http://syriaca.org/person/2454"> Eustochius, deacon
-                        </persName>
+                        <persName ref="http://syriaca.org/person/2453"/>
+                        <death>
+                            <date notAfter="0538"/>
+                            <note type="desc">
+                                <persName ref="http://syriaca.org/person/2453">Patrick</persName> died sometime before 538.
+                            </note>
+                        </death>
                     </person>
                 </listPerson>
                 <bibl type="primary">
                     <ptr target="http://syriaca.org/bibl/668"/>
-                    <citedRange unit="p">163</citedRange>
+                    <citedRange unit="p">162</citedRange>
+                </bibl>
+            </div>
+            <div type="factoid" subtype="relation" xml:id="factoid-8" resp="#dschwartz">
+                <idno type="URI">http://syriaca.org/spear/3148-8</idno>
+                <listRelation>
+                    <relation name="syriaca:Commemoration" active="http://syriaca.org/person/3750" passive="http://syriaca.org/person/2453">
+                        <desc>
+                            <persName ref="http://syriaca.org/person/3750">Anonymi 3750</persName> 
+                            commemorated
+                            <persName ref="http://syriaca.org/person/2453">Patrick</persName>
+                        </desc>
+                    </relation>
+                </listRelation>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="p">162</citedRange>
                 </bibl>
             </div>
             <div type="factoid" subtype="gender" xml:id="factoid-11" resp="#ktorabi #dschwartz">
@@ -285,16 +278,34 @@
                     <citedRange unit="p">163</citedRange>
                 </bibl>
             </div>
+            <div type="factoid" subtype="deathDate" xml:id="factoid-9" resp="#dschwartz">
+                <idno type="URI">http://syriaca.org/spear/3148-9</idno>
+                <listPerson>
+                    <person>
+                        <persName ref="http://syriaca.org/person/2454"/>
+                        <death>
+                            <date notAfter="0538"/>
+                            <note type="desc">
+                                <persName ref="http://syriaca.org/person/2454">Eustochius</persName> died sometime before 538. 
+                            </note>
+                        </death>
+                    </person>
+                </listPerson>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="p">163</citedRange>
+                </bibl>
+            </div>
             <div type="factoid" subtype="relation" xml:id="factoid-13" resp="#ktorabi #dschwartz">
                 <idno type="URI">http://syriaca.org/spear/3148-13</idno>
                 <listRelation>
                     <relation name="syriaca:EpistolaryReferenceTo"
                         active="http://syriaca.org/person/51"
-                        passive="http://syriaca.org/person/2454 http://syriaca.org/person/anonymi1">
-                        <desc>A letter between <persName ref="http://syriaca.org/person/51">Severus
-                                of Antioch</persName> referenced <persName
-                                ref="http://syriaca.org/person/51">Severus of
-                            Antioch</persName>.</desc>
+                        passive="http://syriaca.org/person/2454 http://syriaca.org/person/3750">
+                        <desc>
+                            A letter between <persName ref="http://syriaca.org/person/51">Severus of Antioch</persName> and 
+                            <persName ref="http://syriaca.org/person/3750">Anonymi 3750</persName> referenced 
+                            <persName ref="http://syriaca.org/person/2454">Eustochius</persName>.</desc>
                     </relation>
                 </listRelation>
                 <bibl type="primary">

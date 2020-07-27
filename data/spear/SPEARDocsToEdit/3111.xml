@@ -102,30 +102,33 @@
     </teiHeader>
     <text>
         <body>
-            <div type="factoid" subtype="nameVariant" xml:id="factoid-1" resp="#ktorabi #dschwartz">
+            <div type="factoid" subtype="event" xml:id="factoid-1" resp="#dschwartz">
                 <idno type="URI">http://syriaca.org/spear/3111-1</idno>
-                <listPerson>
-                    <personGrp>
-                        <persName ref="http://syriaca.org/person/anonymi1"> The orthodox in
-                                <placeName ref="http://syriaca.org/place/215"> Emesa </placeName>
-                            who received a letter from <persName ref="http://syriaca.org/person/51"
-                            /> Severus, between <date notBefore="0518" notAfter="0538"> A.D. 518-538
-                            </date></persName>
-                    </personGrp>
-                </listPerson>
+                <listEvent>
+                    <event ana="http://syriaca.org/keyword/letters http://syriaca.org/keyword/canon-law http://syriaca.org/keyword/ordination http://syriaca.org/keyword/bishops">
+                        <desc>
+                            <date notBefore="0519" notAfter="0520">Sometime between 519-520</date>
+                            <persName ref="http://syriaca.org/person/51">Severus of Antioch</persName> sent a letter to 
+                            <persName ref="http://syriaca.org/person/3753">Anonymi 3753</persName> about the attempts of 
+                            <persName ref="http://syriaca.org/person/2495"> Gregory </persName> and 
+                            <persName ref="http://syriaca.org/person/2496"> Isaiah </persName> to falsely claim episcopal status.
+                            He refuted their claims with references to scripture, canon law, and the lifestyles of these men.
+                        </desc>
+                    </event>
+                </listEvent>
                 <bibl type="primary">
                     <ptr target="http://syriaca.org/bibl/668"/>
-                    <citedRange unit="p">207</citedRange>
+                    <citedRange unit="p">207-29</citedRange>
                 </bibl>
             </div>
             <div type="factoid" subtype="relation" xml:id="factoid-2" resp="#ktorabi #dschwartz">
                 <idno type="URI">http://syriaca.org/spear/3111-2</idno>
                 <listRelation>
                     <relation name="syriaca:SenderOfLetterTo" active="http://syriaca.org/person/51"
-                        passive="http://syriaca.org/person/anonymi1">
-                        <desc><persName ref="http://syriaca.org/person/51">Severus of
-                                Antioch</persName> sent a letter to <persName
-                                ref="http://syriaca.org/person/anonymi1">  </persName>.</desc>
+                        passive="http://syriaca.org/person/3753">
+                        <desc>
+                            <persName ref="http://syriaca.org/person/51">Severus of Antioch</persName> sent a letter to 
+                            <persName ref="http://syriaca.org/person/3753">Anonymi 3753</persName>.</desc>
                     </relation>
                 </listRelation>
                 <bibl type="primary">
@@ -178,6 +181,25 @@
                     <citedRange unit="p">208</citedRange>
                 </bibl>
             </div>
+            <div type="factoid" subtype="citizenship" xml:id="factoid-10" resp="#dschwartz">
+                <idno type="URI">http://syriaca.org/spear/3111-10</idno>
+                <listPerson>
+                    <person>
+                        <persName ref="http://syriaca.org/person/2495"/>
+                        <nationality>
+                            <placeName ref="http://syriaca.org/place/633"/>
+                            <note type="desc">
+                                <persName ref="http://syriaca.org/person/2495">Gregory</persName> was from 
+                                <placeName ref="http://syriaca.org/place/633">Pontus</placeName>.
+                            </note>
+                        </nationality>
+                    </person>
+                </listPerson>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="p">208</citedRange>
+                </bibl>
+            </div>
             <div type="factoid" subtype="nameVariant" xml:id="factoid-6" resp="#ktorabi #dschwartz">
                 <idno type="URI">http://syriaca.org/spear/3111-6</idno>
                 <listPerson>
@@ -222,37 +244,74 @@
                     <citedRange unit="p">208</citedRange>
                 </bibl>
             </div>
-            <div type="factoid" subtype="nameVariant" xml:id="factoid-9" resp="#ktorabi #dschwartz">
-                <idno type="URI">http://syriaca.org/spear/3111-9</idno>
+            <div type="factoid" subtype="citizenship" xml:id="factoid-15" resp="#dschwartz">
+                <idno type="URI">http://syriaca.org/spear/3111-15</idno>
                 <listPerson>
-                    <personGrp>
-                        <persName ref="http://syriaca.org/person/anonymi2"> Certain men in
-                                <placeName ref="http://syriaca.org/place/715"> Egypt </placeName>
-                            who wrote to <persName ref="http://syriaca.org/person/51"> Severus
-                            </persName> about <persName ref="http://syriaca.org/person/2496"> Isaiah
-                                </persName><date notBefore="0518" notAfter="0538"> between A.D.
-                                518-538 </date></persName>
-                    </personGrp>
+                    <person>
+                        <persName ref="http://syriaca.org/person/2496"/>
+                        <nationality>
+                            <placeName ref="http://syriaca.org/place/2743"/>
+                            <note type="desc">
+                                <persName ref="http://syriaca.org/person/2496">Isaiah</persName> was from 
+                                <placeName ref="http://syriaca.org/place/2743">Armenia</placeName>.
+                            </note>
+                        </nationality>
+                    </person>
                 </listPerson>
                 <bibl type="primary">
                     <ptr target="http://syriaca.org/bibl/668"/>
-                    <citedRange unit="p">209</citedRange>
+                    <citedRange unit="p">208</citedRange>
                 </bibl>
             </div>
-            <div type="factoid" subtype="relation" xml:id="factoid-10" resp="#ktorabi #dschwartz">
-                <idno type="URI">http://syriaca.org/spear/3111-10</idno>
-                <listRelation>
-                    <relation name="syriaca:SenderOfLetterTo"
-                        active="http://syriaca.org/person/anonymi2"
-                        passive="http://syriaca.org/person/51">
-                        <desc><persName ref="http://syriaca.org/person/anonymi2">  </persName> sent a letter to
-                                <persName ref="http://syriaca.org/person/51">Severus of
-                                Antioch</persName>.</desc>
-                    </relation>
-                </listRelation>
+            <div type="factoid" subtype="event" xml:id="factoid-16" resp="#dschwartz">
+                <idno type="URI">http://syriaca.org/spear/3111-16</idno>
+                <listEvent>
+                    <event ana="http://syriaca.org/keyword/bishops http://syriaca.org/keyword/ordination http://syriaca.org/keyword/authority">
+                        <desc>
+                            <date notBefore="0519" notAfter="0520">Sometime around 519-520</date>
+                            <persName ref="http://syriaca.org/person/2495">Gregory</persName> attempted to claim he had been legitimately 
+                            ordained a bishop and claim episcopal authority in 
+                            <placeName ref="http://syriaca.org/place/2610">Antioch</placeName>. He attempted to claim he held authority based on 
+                            his ordination in <placeName ref="http://syriaca.org/place/3029">Diocaesarea</placeName>.
+                        </desc>
+                    </event>
+                </listEvent>
                 <bibl type="primary">
                     <ptr target="http://syriaca.org/bibl/668"/>
-                    <citedRange unit="p">209</citedRange>
+                    <citedRange unit="p">208-09</citedRange>
+                </bibl>
+            </div>
+            <div type="factoid" subtype="event" xml:id="factoid-17" resp="#dschwartz">
+                <idno type="URI">http://syriaca.org/spear/3111-17</idno>
+                <listEvent>
+                    <event ana="http://syriaca.org/keyword/bishops http://syriaca.org/keyword/ordination http://syriaca.org/keyword/authority">
+                        <desc>
+                            <date notBefore="0519" notAfter="0520">Sometime around 519-520</date>
+                            <persName ref="http://syriaca.org/person/2496">Isaiah</persName> attempted to claim he had been legitimately 
+                            ordained a bishop and claim episcopal authority in 
+                            <placeName ref="http://syriaca.org/place/2665">Emesa</placeName>.
+                        </desc>
+                    </event>
+                </listEvent>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="p">208</citedRange>
+                </bibl>
+            </div>
+            <div type="factoid" subtype="event" xml:id="factoid-18" resp="#dschwartz">
+                <idno type="URI">http://syriaca.org/spear/3111-18</idno>
+                <listEvent>
+                    <event ana="http://syriaca.org/keyword/canon-law http://syriaca.org/keyword/bishops http://syriaca.org/keyword/ordination">
+                        <desc>
+                            <date notBefore="0519" notAfter="0520">Sometime around 519-520</date>
+                            <persName ref="http://syriaca.org/person/2496">Isaiah</persName> produced false canons in an attempt to 
+                            claim that his ordination by one bishop was lawful.
+                        </desc>
+                    </event>
+                </listEvent>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="p">211</citedRange>
                 </bibl>
             </div>
             <div type="factoid" subtype="nameVariant" xml:id="factoid-11" resp="#ktorabi #dschwartz">
@@ -315,143 +374,7 @@
                     <citedRange unit="p">212</citedRange>
                 </bibl>
             </div>
-            <div type="factoid" subtype="nameVariant" xml:id="factoid-15" resp="#ktorabi #dschwartz">
-                <idno type="URI">http://syriaca.org/spear/3111-15</idno>
-                <listPerson>
-                    <personGrp>
-                        <persName ref="http://syriaca.org/person/anonymi3"> Men from the crossroads,
-                            who followed <persName ref="http://syriaca.org/person/2496"> Isaiah
-                            </persName> between <date notBefore="0518" notAfter="0538"> A.D. 518-538
-                            </date></persName>
-                    </personGrp>
-                </listPerson>
-                <bibl type="primary">
-                    <ptr target="http://syriaca.org/bibl/668"/>
-                    <citedRange unit="p">215</citedRange>
-                </bibl>
-            </div>
-            <div type="factoid" subtype="relation" xml:id="factoid-16" resp="#ktorabi #dschwartz">
-                <idno type="URI">http://syriaca.org/spear/3111-16</idno>
-                <listRelation>
-                    <relation name="syriaca:FollowerOf" active="http://syriaca.org/person/anonymi3"
-                        passive="http://syriaca.org/person/2496">
-                        <desc><persName ref="http://syriaca.org/person/anonymi3">  </persName> was a follower of
-                                <persName ref="http://syriaca.org/person/2496"
-                            >Isaiah</persName>.</desc>
-                    </relation>
-                </listRelation>
-                <bibl type="primary">
-                    <ptr target="http://syriaca.org/bibl/668"/>
-                    <citedRange unit="p">215</citedRange>
-                </bibl>
-            </div>
-            <div type="factoid" subtype="nameVariant" xml:id="factoid-17" resp="#ktorabi #dschwartz">
-                <idno type="URI">http://syriaca.org/spear/3111-17</idno>
-                <listPerson>
-                    <personGrp>
-                        <persName ref="http://syriaca.org/person/anonymi4"> Blind men, who followed
-                                <persName ref="http://syriaca.org/person/2496"> Isaiah </persName>
-                            between <date notBefore="0518" notAfter="0538"> A.D. 518-538
-                            </date></persName>
-                    </personGrp>
-                </listPerson>
-                <bibl type="primary">
-                    <ptr target="http://syriaca.org/bibl/668"/>
-                    <citedRange unit="p">215</citedRange>
-                </bibl>
-            </div>
-            <div type="factoid" subtype="relation" xml:id="factoid-18" resp="#ktorabi #dschwartz">
-                <idno type="URI">http://syriaca.org/spear/3111-18</idno>
-                <listRelation>
-                    <relation name="syriaca:FollowerOf" active="http://syriaca.org/person/anonymi4"
-                        passive="http://syriaca.org/person/2496">
-                        <desc><persName ref="http://syriaca.org/person/anonymi4">  </persName> was a follower of
-                                <persName ref="http://syriaca.org/person/2496"
-                            >Isaiah</persName>.</desc>
-                    </relation>
-                </listRelation>
-                <bibl type="primary">
-                    <ptr target="http://syriaca.org/bibl/668"/>
-                    <citedRange unit="p">215</citedRange>
-                </bibl>
-            </div>
-            <div type="factoid" subtype="nameVariant" xml:id="factoid-19" resp="#ktorabi #dschwartz">
-                <idno type="URI">http://syriaca.org/spear/3111-19</idno>
-                <listPerson>
-                    <personGrp>
-                        <persName ref="http://syriaca.org/person/anonymi5"> Lepers, who followed
-                                <persName ref="http://syriaca.org/person/2496"> Isaiah </persName>
-                            between <date notBefore="0518" notAfter="0538"> A.D. 518-538
-                            </date></persName>
-                    </personGrp>
-                </listPerson>
-                <bibl type="primary">
-                    <ptr target="http://syriaca.org/bibl/668"/>
-                    <citedRange unit="p">215</citedRange>
-                </bibl>
-            </div>
-            <div type="factoid" subtype="relation" xml:id="factoid-20" resp="#ktorabi #dschwartz">
-                <idno type="URI">http://syriaca.org/spear/3111-20</idno>
-                <listRelation>
-                    <relation name="syriaca:FollowerOf" active="http://syriaca.org/person/anonymi5"
-                        passive="http://syriaca.org/person/2496">
-                        <desc><persName ref="http://syriaca.org/person/anonymi5">  </persName> was a follower of
-                                <persName ref="http://syriaca.org/person/2496"
-                            >Isaiah</persName>.</desc>
-                    </relation>
-                </listRelation>
-                <bibl type="primary">
-                    <ptr target="http://syriaca.org/bibl/668"/>
-                    <citedRange unit="p">215</citedRange>
-                </bibl>
-            </div>
-            <div type="factoid" subtype="nameVariant" xml:id="factoid-21" resp="#ktorabi #dschwartz">
-                <idno type="URI">http://syriaca.org/spear/3111-21</idno>
-                <listPerson>
-                    <personGrp>
-                        <persName ref="http://syriaca.org/person/anonymi6"> Men with bodily
-                            afflictions or suffering from disease, who followed <persName
-                                ref="http://syriaca.org/person/2496"> Isaiah </persName> between
-                                <date notBefore="0518" notAfter="0538"> A.D. 518-538
-                            </date></persName>
-                    </personGrp>
-                </listPerson>
-                <bibl type="primary">
-                    <ptr target="http://syriaca.org/bibl/668"/>
-                    <citedRange unit="p">215</citedRange>
-                </bibl>
-            </div>
-            <div type="factoid" subtype="relation" xml:id="factoid-22" resp="#ktorabi #dschwartz">
-                <idno type="URI">http://syriaca.org/spear/3111-22</idno>
-                <listRelation>
-                    <relation name="syriaca:FollowerOf" active="http://syriaca.org/person/anonymi6"
-                        passive="http://syriaca.org/person/2496">
-                        <desc><persName ref="http://syriaca.org/person/anonymi6">  </persName> was a follower of
-                                <persName ref="http://syriaca.org/person/2496"
-                            >Isaiah</persName>.</desc>
-                    </relation>
-                </listRelation>
-                <bibl type="primary">
-                    <ptr target="http://syriaca.org/bibl/668"/>
-                    <citedRange unit="p">215</citedRange>
-                </bibl>
-            </div>
-            <div type="factoid" subtype="relation" xml:id="factoid-23" resp="#ktorabi #dschwartz">
-                <idno type="URI">http://syriaca.org/spear/3111-23</idno>
-                <listRelation>
-                    <relation name="syriaca:SenderOfLetterTo" active="http://syriaca.org/person/376"
-                        passive="http://syriaca.org/person/51">
-                        <desc><persName ref="http://syriaca.org/person/376">Basil of
-                                Caesarea</persName> sent a letter to <persName
-                                ref="http://syriaca.org/person/51">Severus of
-                            Antioch</persName>.</desc>
-                    </relation>
-                </listRelation>
-                <bibl type="primary">
-                    <ptr target="http://syriaca.org/bibl/668"/>
-                    <citedRange unit="p">215</citedRange>
-                </bibl>
-            </div>
+            
             <div type="factoid" subtype="nameVariant" xml:id="factoid-24" resp="#ktorabi #dschwartz">
                 <idno type="URI">http://syriaca.org/spear/3111-24</idno>
                 <listPerson>
@@ -480,23 +403,7 @@
                     <citedRange unit="p">215</citedRange>
                 </bibl>
             </div>
-            <div type="factoid" subtype="relation" xml:id="factoid-27" resp="#ktorabi #dschwartz">
-                <idno type="URI">http://syriaca.org/spear/3111-27</idno>
-                <listRelation>
-                    <relation name="syriaca:EpistolaryReferenceTo"
-                        active="http://syriaca.org/person/376"
-                        passive="http://syriaca.org/person/2499">
-                        <desc>A letter between <persName ref="http://syriaca.org/person/376">Basil
-                                of Caesarea</persName> referenced <persName
-                                ref="http://syriaca.org/person/376">Basil of
-                            Caesarea</persName>.</desc>
-                    </relation>
-                </listRelation>
-                <bibl type="primary">
-                    <ptr target="http://syriaca.org/bibl/668"/>
-                    <citedRange unit="p">215</citedRange>
-                </bibl>
-            </div>
+            
             <div type="factoid" subtype="nameVariant" xml:id="factoid-28" resp="#ktorabi #dschwartz">
                 <idno type="URI">http://syriaca.org/spear/3111-28</idno>
                 <listPerson>
@@ -542,27 +449,87 @@
                     <citedRange unit="p">216</citedRange>
                 </bibl>
             </div>
-            <div type="factoid" subtype="nameVariant" xml:id="factoid-31" resp="#ktorabi #dschwartz">
-                <idno type="URI">http://syriaca.org/spear/3111-31</idno>
+            <div type="factoid" subtype="event" xml:id="factoid-19" resp="#dschwartz">
+                <idno type="URI">http://syriaca.org/spear/3111-19</idno>
+                <listEvent>
+                    <event ana="http://syriaca.org/keyword/travel http://syriaca.org/keyword/bishops">
+                        <desc>
+                            <date notAfter="0519">Sometime before 519</date>
+                            <persName ref="http://syriaca.org/person/2496">Isaiah</persName> travelled to 
+                            <placeName ref="http://syriaca.org/place/715">Egypt</placeName> and 
+                            <placeName ref="http://syriaca.org/place/1531">Pamphylia</placeName>
+                            seeking support for his claim to episcopal office.
+                        </desc>
+                    </event>
+                </listEvent>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="p">216</citedRange>
+                </bibl>
+            </div>
+            <div type="factoid" subtype="residence" xml:id="factoid-20" resp="#dschwartz">
+                <idno type="URI">http://syriaca.org/spear/3111-20</idno>
                 <listPerson>
                     <person>
-                        <persName ref="http://syriaca.org/person/anonymous1"> A dead boy whom
-                                <persName ref="http://syriaca.org/person/2496"> Isaiah </persName>
-                            tried to resurrect. </persName>
+                        <persName ref="http://syriaca.org/person/2496"/>
+                        <residence notAfter="0519">
+                            <placeName ref="http://syriaca.org/place/715"/>
+                            <note type="desc">
+                                <persName ref="http://syriaca.org/person/2496">Isaiah</persName>
+                                resided in 
+                                <placeName ref="http://syriaca.org/place/715">Egypt</placeName>. 
+                            </note>
+                        </residence>
                     </person>
                 </listPerson>
                 <bibl type="primary">
                     <ptr target="http://syriaca.org/bibl/668"/>
-                    <citedRange unit="p">216-217</citedRange>
+                    <citedRange unit="p">216</citedRange>
+                </bibl>
+            </div>
+            <div type="factoid" subtype="residence" xml:id="factoid-21" resp="#dschwartz">
+                <idno type="URI">http://syriaca.org/spear/3111-21</idno>
+                <listPerson>
+                    <person>
+                        <persName ref="http://syriaca.org/person/2496"/>
+                        <residence notAfter="0519">
+                            <placeName ref="http://syriaca.org/place/715"/>
+                            <note type="desc">
+                                <persName ref="http://syriaca.org/person/2496">Isaiah</persName>
+                                resided in 
+                                <placeName ref="http://syriaca.org/place/1531">Pamphylia</placeName>. 
+                            </note>
+                        </residence>
+                    </person>
+                </listPerson>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="p">216</citedRange>
+                </bibl>
+            </div>
+            <div type="factoid" subtype="relation" xml:id="factoid-22" resp="#dschwartz">
+                <idno type="URI">http://syriaca.org/spear/3111-22</idno>
+                <listRelation>
+                    <relation name="snap:EnmityFor" active="http://syriaca.org/person/2500" passive="http://syriaca.org/person/2496">
+                        <desc>
+                            <persName ref="http://syriaca.org/person/2500">Leontius</persName> 
+                            anathematized
+                            <persName ref="http://syriaca.org/person/2496">Isaiah</persName>
+                        </desc>
+                    </relation>
+                </listRelation>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="p">216</citedRange>
                 </bibl>
             </div>
             <div type="factoid" subtype="gender" xml:id="factoid-32" resp="#ktorabi #dschwartz">
                 <idno type="URI">http://syriaca.org/spear/3111-32</idno>
                 <listPerson>
                     <person>
-                        <persName ref="http://syriaca.org/person/anonymous1"/>
+                        <persName ref="http://syriaca.org/person/3754"/>
                         <trait type="gender" ana="http://syriaca.org/keyword/male">
-                            <note type="desc"><persName ref="http://syriaca.org/person/anonymous1">  </persName>
+                            <note type="desc"><persName ref="http://syriaca.org/person/3754">Anonymous 3754</persName>
                                 was male. </note>
                         </trait>
                     </person>
@@ -572,26 +539,14 @@
                     <citedRange unit="p">216-217</citedRange>
                 </bibl>
             </div>
-            <div type="factoid" subtype="nameVariant" xml:id="factoid-33" resp="#ktorabi #dschwartz">
-                <idno type="URI">http://syriaca.org/spear/3111-33</idno>
-                <listPerson>
-                    <person>
-                        <persName ref="http://syriaca.org/person/anonymous2"> The father of
-                                <persName ref="http://syriaca.org/person/anonymous1"/></persName>
-                    </person>
-                </listPerson>
-                <bibl type="primary">
-                    <ptr target="http://syriaca.org/bibl/668"/>
-                    <citedRange unit="p">217</citedRange>
-                </bibl>
-            </div>
+            
             <div type="factoid" subtype="gender" xml:id="factoid-34" resp="#ktorabi #dschwartz">
                 <idno type="URI">http://syriaca.org/spear/3111-34</idno>
                 <listPerson>
                     <person>
-                        <persName ref="http://syriaca.org/person/anonymous2"/>
+                        <persName ref="http://syriaca.org/person/3755"/>
                         <trait type="gender" ana="http://syriaca.org/keyword/male">
-                            <note type="desc"><persName ref="http://syriaca.org/person/anonymous2">  </persName>
+                            <note type="desc"><persName ref="http://syriaca.org/person/3755">Anonymous 3755</persName>
                                 was male. </note>
                         </trait>
                     </person>
@@ -605,10 +560,9 @@
                 <idno type="URI">http://syriaca.org/spear/3111-35</idno>
                 <listPerson>
                     <person>
-                        <persName ref="http://syriaca.org/person/anonymous2"/>
+                        <persName ref="http://syriaca.org/person/3755"/>
                         <occupation ana="http://syriaca.org/keyword/gardners">
-                            <note type="desc"><persName ref="http://syriaca.org/person/anonymous2">
-                                    this man </persName> was a gardener </note>
+                            <note type="desc"><persName ref="http://syriaca.org/person/3755">Anonymous 3755</persName> was a gardener </note>
                         </occupation>
                     </person>
                 </listPerson>
@@ -620,10 +574,10 @@
             <div type="factoid" subtype="relation" xml:id="factoid-36" resp="#ktorabi #dschwartz">
                 <idno type="URI">http://syriaca.org/spear/3111-36</idno>
                 <listRelation>
-                    <relation name="snap:ParentOf" active="http://syriaca.org/person/anonymous2"
-                        passive="http://syriaca.org/person/anonymous1">
-                        <desc><persName ref="http://syriaca.org/person/anonymous2">  </persName> was the parent
-                            of <persName ref="http://syriaca.org/person/anonymous1">  </persName>.</desc>
+                    <relation name="snap:ParentOf" active="http://syriaca.org/person/3755"
+                        passive="http://syriaca.org/person/3754">
+                        <desc><persName ref="http://syriaca.org/person/3755">Anonymous 3755</persName> was the parent
+                            of <persName ref="http://syriaca.org/person/3754">Anonymous 3754</persName>.</desc>
                     </relation>
                 </listRelation>
                 <bibl type="primary">
@@ -631,32 +585,19 @@
                     <citedRange unit="p">217</citedRange>
                 </bibl>
             </div>
-            <div type="factoid" subtype="nameVariant" xml:id="factoid-37" resp="#ktorabi #dschwartz">
-                <idno type="URI">http://syriaca.org/spear/3111-37</idno>
-                <listPerson>
-                    <personGrp>
-                        <persName ref="http://syriaca.org/person/anonymi7"> those who sought to
-                            inflict just vengeance upon <persName
-                                ref="http://syriaca.org/person/2496"> Isaiah </persName> between
-                                <date notBefore="0518" notAfter="0538"> A.D. 518-538
-                            </date></persName>
-                    </personGrp>
-                </listPerson>
-                <bibl type="primary">
-                    <ptr target="http://syriaca.org/bibl/668"/>
-                    <citedRange unit="p">217</citedRange>
-                </bibl>
-            </div>
-            <div type="factoid" subtype="relation" xml:id="factoid-38" resp="#ktorabi #dschwartz">
-                <idno type="URI">http://syriaca.org/spear/3111-38</idno>
-                <listRelation>
-                    <relation name="snap:EnmityFor" active="http://syriaca.org/person/anonymi7"
-                        passive="http://syriaca.org/person/2496">
-                        <desc><persName ref="http://syriaca.org/person/anonymi7">  </persName> had enmity for
-                                <persName ref="http://syriaca.org/person/2496"
-                            >Isaiah</persName>.</desc>
-                    </relation>
-                </listRelation>
+            <div type="factoid" subtype="event" xml:id="factoid-9" resp="#dschwartz">
+                <idno type="URI">http://syriaca.org/spear/3111-9</idno>
+                <listEvent>
+                    <event ana="http://syriaca.org/keyword/healing http://syriaca.org/keyword/fasting http://syriaca.org/keyword/miracles">
+                        <desc>
+                            <date notBefore="0519" notAfter="0520">Sometime around 519-520</date>
+                            <persName ref="http://syriaca.org/person/2496"> Isaiah </persName> attempted to demonstrate his 
+                            sanctity in the city of <placeName ref="http://syriaca.org/place/572">Alexandria</placeName> by raising 
+                            <persName ref="http://syriaca.org/person/3754">Anonymous 3754</persName>
+                            from the dead. He was unsuccessful and fled. 
+                        </desc>
+                    </event>
+                </listEvent>
                 <bibl type="primary">
                     <ptr target="http://syriaca.org/bibl/668"/>
                     <citedRange unit="p">217</citedRange>
@@ -752,28 +693,13 @@
                     <citedRange unit="p">219</citedRange>
                 </bibl>
             </div>
-            <div type="factoid" subtype="sanctity" xml:id="factoid-45" resp="#ktorabi #dschwartz">
-                <idno type="URI">http://syriaca.org/spear/3111-45</idno>
-                <listPerson>
-                    <person>
-                        <persName ref="http://syriaca.org/person/2501"/>
-                        <state type="sanctity" ana="http://syriaca.org/keyword/heretics">
-                            <note type="desc"><persName ref="http://syriaca.org/person/2501">
-                                    Montanus </persName> was a heresiarch. </note>
-                        </state>
-                    </person>
-                </listPerson>
-                <bibl type="primary">
-                    <ptr target="http://syriaca.org/bibl/668"/>
-                    <citedRange unit="p">219</citedRange>
-                </bibl>
-            </div>
+            
             <div type="factoid" subtype="relation" xml:id="factoid-46" resp="#ktorabi #dschwartz">
                 <idno type="URI">http://syriaca.org/spear/3111-46</idno>
                 <listRelation>
-                    <relation name="syriaca:FollowerOf" active="http://syriaca.org/person/2496"
+                    <relation name="syriaca:FollowerOf" type="syriaca:AllegedRelationship" active="http://syriaca.org/person/2496"
                         passive="http://syriaca.org/person/2501">
-                        <desc><persName ref="http://syriaca.org/person/2496">Isaiah</persName> was a
+                        <desc><persName ref="http://syriaca.org/person/2496">Isaiah</persName> was an alledged
                             follower of <persName ref="http://syriaca.org/person/2501"
                                 >Montanus</persName>.</desc>
                     </relation>
@@ -811,26 +737,11 @@
                     <citedRange unit="p">219</citedRange>
                 </bibl>
             </div>
-            <div type="factoid" subtype="sanctity" xml:id="factoid-49" resp="#ktorabi #dschwartz">
-                <idno type="URI">http://syriaca.org/spear/3111-49</idno>
-                <listPerson>
-                    <person>
-                        <persName ref="http://syriaca.org/person/608"/>
-                        <state type="sanctity" ana="http://syriaca.org/keyword/heretics">
-                            <note type="desc"><persName ref="http://syriaca.org/person/608"> Mani
-                                </persName> was a heresiarch. </note>
-                        </state>
-                    </person>
-                </listPerson>
-                <bibl type="primary">
-                    <ptr target="http://syriaca.org/bibl/668"/>
-                    <citedRange unit="p">219</citedRange>
-                </bibl>
-            </div>
+            
             <div type="factoid" subtype="relation" xml:id="factoid-50" resp="#ktorabi #dschwartz">
                 <idno type="URI">http://syriaca.org/spear/3111-50</idno>
                 <listRelation>
-                    <relation name="syriaca:FollowerOf" active="http://syriaca.org/person/2496"
+                    <relation name="syriaca:FollowerOf" type="syriaca:AllegedRelationship" active="http://syriaca.org/person/2496"
                         passive="http://syriaca.org/person/608">
                         <desc><persName ref="http://syriaca.org/person/2496">Isaiah</persName> was a
                             follower of <persName ref="http://syriaca.org/person/608"
@@ -871,24 +782,7 @@
                     <citedRange unit="p">219</citedRange>
                 </bibl>
             </div>
-            <div type="factoid" subtype="occupation" xml:id="factoid-53" resp="#ktorabi #dschwartz">
-                <idno type="URI">http://syriaca.org/spear/3111-53</idno>
-                <listPerson>
-                    <person>
-                        <persName ref="http://syriaca.org/person/513"/>
-                        <occupation ana="http://syriaca.org/keyword/bishops">
-                            <note type="desc"><persName ref="http://syriaca.org/person/513"> Gregory
-                                    Thaumaturgus </persName> was the bishop of <placeName
-                                    ref="http://syriaca.org/place/466"> Neocaesarea </placeName>.
-                            </note>
-                        </occupation>
-                    </person>
-                </listPerson>
-                <bibl type="primary">
-                    <ptr target="http://syriaca.org/bibl/668"/>
-                    <citedRange unit="p">219</citedRange>
-                </bibl>
-            </div>
+            
             <div type="factoid" subtype="nameVariant" xml:id="factoid-54" resp="#ktorabi #dschwartz">
                 <idno type="URI">http://syriaca.org/spear/3111-54</idno>
                 <listPerson>
@@ -917,33 +811,18 @@
                     <citedRange unit="p">219</citedRange>
                 </bibl>
             </div>
-            <div type="factoid" subtype="occupation" xml:id="factoid-56" resp="#ktorabi #dschwartz">
-                <idno type="URI">http://syriaca.org/spear/3111-56</idno>
-                <listPerson>
-                    <person>
-                        <persName ref="http://syriaca.org/person/2502"/>
-                        <occupation ana="http://syriaca.org/keyword/bishops">
-                            <note type="desc"><persName ref="http://syriaca.org/person/2502">
-                                    Phaedimus </persName> was the bishop of <placeName
-                                    ref="http://syriaca.org/place/2622"> Amasia </placeName></note>
-                        </occupation>
-                    </person>
-                </listPerson>
-                <bibl type="primary">
-                    <ptr target="http://syriaca.org/bibl/668"/>
-                    <citedRange unit="p">219</citedRange>
-                </bibl>
-            </div>
+            
             <div type="factoid" subtype="relation" xml:id="factoid-57" resp="#ktorabi #dschwartz">
                 <idno type="URI">http://syriaca.org/spear/3111-57</idno>
                 <listRelation>
-                    <relation name="syriaca:BishopOverBishop"
-                        active="http://syriaca.org/person/2502"
-                        passive="http://syriaca.org/person/513">
-                        <desc><persName ref="http://syriaca.org/person/2502">Phaedimus</persName>
-                            had ecclesiastical authority over the bishop(s) <persName
-                                ref="http://syriaca.org/person/513">Gregory the
-                                Wonderworker</persName>.</desc>
+                    <relation name="syriaca:Ordination"
+                        active="http://syriaca.org/person/513"
+                        passive="http://syriaca.org/person/2502">
+                        <desc>
+                            <persName ref="http://syriaca.org/person/513">Gregory the Wonderworker</persName>
+                            ordained
+                            <persName ref="http://syriaca.org/person/2502">Phaedimus</persName>.
+                        </desc>
                     </relation>
                 </listRelation>
                 <bibl type="primary">
@@ -1023,28 +902,49 @@
                     <citedRange unit="p">221-222</citedRange>
                 </bibl>
             </div>
-            <div type="factoid" subtype="nameVariant" xml:id="factoid-63" resp="#ktorabi #dschwartz">
-                <idno type="URI">http://syriaca.org/spear/3111-63</idno>
+            <div type="factoid" subtype="deathPlace" xml:id="factoid-23" resp="#dschwartz">
+                <idno type="URI">http://syriaca.org/spear/3111-23</idno>
                 <listPerson>
-                    <personGrp>
-                        <persName ref="http://syriaca.org/person/anonymi8"> The sons of <persName
-                                ref="http://syriaca.org/person/2504"> Eusebius
-                            </persName></persName>
-                    </personGrp>
+                    <person>
+                        <persName ref="http://syriaca.org/person/2562"/>
+                        <death>
+                            <placeName ref="http://syriaca.org/place/149"/>
+                            <note type="desc">
+                                <persName ref="http://syriaca.org/person/2562">Epiphanius</persName> died in 
+                                <placeName ref="http://syriaca.org/place/149">Palestine</placeName>.
+                            </note>
+                        </death>
+                    </person>
                 </listPerson>
                 <bibl type="primary">
                     <ptr target="http://syriaca.org/bibl/668"/>
-                    <citedRange unit="p">222</citedRange>
+                    <citedRange unit="p">221</citedRange>
+                </bibl>
+            </div>
+            <div type="factoid" subtype="event" xml:id="factoid-26" resp="#dschwartz">
+                <idno type="URI">http://syriaca.org/spear/3111-26</idno>
+                <listEvent>
+                    <event ana="http://syriaca.org/keyword/burial">
+                        <desc>
+                            <persName ref="http://syriaca.org/person/51">Severus</persName> buried
+                            <persName ref="http://syriaca.org/person/2562">Epiphanius</persName> in the monastery of 
+                            <placeName ref="http://syriaca.org/place/2832">Abba Peter the Iberian</placeName>.
+                        </desc>
+                    </event>
+                </listEvent>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="p">221</citedRange>
                 </bibl>
             </div>
             <div type="factoid" subtype="relation" xml:id="factoid-64" resp="#ktorabi #dschwartz">
                 <idno type="URI">http://syriaca.org/spear/3111-64</idno>
                 <listRelation>
-                    <relation name="snap:ChildOf" active="http://syriaca.org/person/anonymi8"
+                    <relation name="snap:ChildOf" active="http://syriaca.org/person/3756"
                         passive="http://syriaca.org/person/2504">
-                        <desc><persName ref="http://syriaca.org/person/anonymi8">  </persName> was the child of
-                                <persName ref="http://syriaca.org/person/2504"
-                            >Eusebius</persName>.</desc>
+                        <desc>
+                            <persName ref="http://syriaca.org/person/3756">Anonymi 3756</persName> were the children of
+                            <persName ref="http://syriaca.org/person/2504">Eusebius</persName>.</desc>
                     </relation>
                 </listRelation>
                 <bibl type="primary">
@@ -1055,11 +955,28 @@
             <div type="factoid" subtype="relation" xml:id="factoid-65" resp="#ktorabi #dschwartz">
                 <idno type="URI">http://syriaca.org/spear/3111-65</idno>
                 <listRelation>
-                    <relation name="syriaca:StudentOf" active="http://syriaca.org/person/anonymi8"
+                    <relation name="syriaca:StudentOf" active="http://syriaca.org/person/3756"
                         passive="http://syriaca.org/person/2496">
-                        <desc><persName ref="http://syriaca.org/person/anonymi8">  </persName> studied under
-                                <persName ref="http://syriaca.org/person/2496"
-                            >Isaiah</persName>.</desc>
+                        <desc>
+                            <persName ref="http://syriaca.org/person/3756">Anonymi 3756</persName> studied under
+                            <persName ref="http://syriaca.org/person/2496">Isaiah</persName>.</desc>
+                    </relation>
+                </listRelation>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/bibl/668"/>
+                    <citedRange unit="p">222</citedRange>
+                </bibl>
+            </div>
+            <div type="factoid" subtype="relation" xml:id="factoid-27" resp="#dschwartz">
+                <idno type="URI">http://syriaca.org/spear/3111-27</idno>
+                <listRelation>
+                    <relation name="syriaca:Ordination" active="http://syriaca.org/person/2504" passive="http://syriaca.org/person/2496">
+                        <desc>
+                            <persName ref="http://syriaca.org/person/2504">Eusebius</persName> 
+                            ordained
+                            <persName ref="http://syriaca.org/person/2496">Isaiah</persName>
+                            presbyter.
+                        </desc>
                     </relation>
                 </listRelation>
                 <bibl type="primary">
@@ -1174,29 +1091,14 @@
                     <citedRange unit="p">223</citedRange>
                 </bibl>
             </div>
-            <div type="factoid" subtype="nameVariant" xml:id="factoid-73" resp="#ktorabi #dschwartz">
-                <idno type="URI">http://syriaca.org/spear/3111-73</idno>
-                <listPerson>
-                    <personGrp>
-                        <persName ref="http://syriaca.org/person/anonymi9"> The orthodox bishops in
-                                <placeName ref="http://syriaca.org/place/2604">the East</placeName>
-                            , who ordained <persName ref="http://syriaca.org/person/2508"> Flavian
-                            </persName></persName>
-                    </personGrp>
-                </listPerson>
-                <bibl type="primary">
-                    <ptr target="http://syriaca.org/bibl/668"/>
-                    <citedRange unit="p">223</citedRange>
-                </bibl>
-            </div>
             <div type="factoid" subtype="relation" xml:id="factoid-74" resp="#ktorabi #dschwartz">
                 <idno type="URI">http://syriaca.org/spear/3111-74</idno>
                 <listRelation>
-                    <relation name="syriaca:Ordination" active="http://syriaca.org/person/anonymi9"
+                    <relation name="syriaca:Ordination" active="http://syriaca.org/person/3757"
                         passive="http://syriaca.org/person/2508">
-                        <desc><persName ref="http://syriaca.org/person/anonymi9">  </persName> ordained
-                                <persName ref="http://syriaca.org/person/2508">Flavian I of
-                                Antioch</persName>.</desc>
+                        <desc>
+                            <persName ref="http://syriaca.org/person/3757">Anonymi 3757</persName> ordained
+                            <persName ref="http://syriaca.org/person/2508">Flavian I of Antioch</persName>.</desc>
                     </relation>
                 </listRelation>
                 <bibl type="primary">
@@ -1314,71 +1216,9 @@
                     <citedRange unit="p">223</citedRange>
                 </bibl>
             </div>
-            <div type="factoid" subtype="nameVariant" xml:id="factoid-84" resp="#ktorabi #dschwartz">
-                <idno type="URI">http://syriaca.org/spear/3111-84</idno>
-                <listPerson>
-                    <personGrp>
-                        <persName ref="http://syriaca.org/person/anonymi10"> The synod of saintly
-                            bishops who met at <placeName ref="http://syriaca.org/place/53">
-                                Caesarea </placeName><choice>
-                                <reg><date notBefore="0393" notAfter="0395" calendar="Gregorian"
-                                        >between A.D. 393-395</date><note ana="calculated">This
-                                        regularized date was calculated by the SPEAR editor from a
-                                        non-calendrical dating system such as regnal years,
-                                        etc.</note></reg>
-                                <orig><date datingMethod="regnalYear"> during the reign joint reign
-                                        of <persName ref="http://syriaca.org/person/2271">
-                                            Theodosius </persName>, <persName
-                                            ref="http://syriaca.org/person/2266"> Arcadius
-                                        </persName>, and <persName
-                                            ref="http://syriaca.org/person/2267"> Honorius
-                                        </persName></date></orig>
-                            </choice><date notBefore="0393" notAfter="0395"> between A.D. 393-395
-                            </date></persName>
-                    </personGrp>
-                </listPerson>
-                <bibl type="primary">
-                    <ptr target="http://syriaca.org/bibl/668"/>
-                    <citedRange unit="p">223</citedRange>
-                </bibl>
-            </div>
-            <div type="factoid" subtype="relation" xml:id="factoid-94" resp="#ktorabi #dschwartz">
-                <idno type="URI">http://syriaca.org/spear/3111-94</idno>
-                <listRelation>
-                    <relation name="syriaca:SenderOfLetterTo"
-                        active="http://syriaca.org/person/2507"
-                        passive="http://syriaca.org/person/2271 http://syriaca.org/person/2266 http://syriaca.org/person/2267">
-                        <desc><persName ref="http://syriaca.org/person/2507">Theophilos</persName>
-                            sent a letter to <persName ref="http://syriaca.org/person/2271"
-                                >Theodosius I</persName>, <persName
-                                ref="http://syriaca.org/person/2266">Arcadius</persName> and
-                                <persName ref="http://syriaca.org/person/2267"
-                            >Honorios</persName>.</desc>
-                    </relation>
-                </listRelation>
-                <bibl type="primary">
-                    <ptr target="http://syriaca.org/bibl/668"/>
-                    <citedRange unit="p">223</citedRange>
-                </bibl>
-            </div>
-            <div type="factoid" subtype="relation" xml:id="factoid-95" resp="#ktorabi #dschwartz">
-                <idno type="URI">http://syriaca.org/spear/3111-95</idno>
-                <listRelation>
-                    <!-- Severus references Timothy and Peter in this letter as examples of bishops who conducted the process of ordination according to canon law   -->
-                    <relation name="syriaca:EpistolaryReferenceTo"
-                        active="http://syriaca.org/person/51"
-                        passive="http://syriaca.org/person/680 http://syriaca.org/person/792">
-                        <desc>A letter between <persName ref="http://syriaca.org/person/51">Severus
-                                of Antioch</persName> referenced <persName
-                                ref="http://syriaca.org/person/51">Severus of
-                            Antioch</persName>.</desc>
-                    </relation>
-                </listRelation>
-                <bibl type="primary">
-                    <ptr target="http://syriaca.org/bibl/668"/>
-                    <citedRange unit="p">224-225</citedRange>
-                </bibl>
-            </div>
+            
+            
+            
         </body>
         <back>
             <listBibl>

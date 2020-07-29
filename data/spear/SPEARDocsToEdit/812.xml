@@ -136,14 +136,78 @@
     </teiHeader>
     <text>
         <body>
+            <div type="factoid" subtype="relation" xml:id="factoid-14" resp="#dschwartz">
+                <idno type="URI">http://syriaca.org/spear/812-14</idno>
+                <listRelation>
+                    <relation name="snap:IntimateRelationshipWith" mutual="http://syriaca.org/person/74 http://syriaca.org/person/3762">
+                        <desc>
+                            <persName ref="http://syriaca.org/person/74">John of Ephesus</persName> and <persName ref="http://syriaca.org/person/3762">Anonymous 3762</persName> 
+                            had an intimate relationship.
+                        </desc>
+                    </relation>
+                </listRelation>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/work/812"/>
+                    <citedRange unit="p">274</citedRange>
+                </bibl>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/bibl/1409"/>
+                    <citedRange unit="p">274</citedRange>
+                </bibl>
+            </div>
+            <div type="factoid" subtype="sanctity" xml:id="factoid-15" resp="#dschwartz">
+                <idno type="URI">http://syriaca.org/spear/812-15</idno>
+                <listPerson>
+                    <person>
+                        <persName ref="http://syriaca.org/person/3762"/>
+                        <state type="sanctity" ana="http://syriaca.org/keyword/saints">
+                            <note type="desc">
+                                <persName ref="http://syriaca.org/person/3762">Anonymous 3762</persName>
+                                was a saint.
+                            </note>
+                        </state>
+                    </person>
+                </listPerson>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/work/812"/>
+                    <citedRange unit="p">274</citedRange>
+                </bibl>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/bibl/1409"/>
+                    <citedRange unit="p">274</citedRange>
+                </bibl>
+            </div>
+            <div type="factoid" subtype="occupation" xml:id="factoid-16" resp="#dschwartz">
+                <idno type="URI">http://syriaca.org/spear/812-16</idno>
+                <listPerson>
+                    <person>
+                        <persName ref="http://syriaca.org/person/3762"/>
+                        <occupation ana="http://syriaca.org/keyword/monks">
+                            <note type="desc">
+                                <persName ref="http://syriaca.org/person/3762">Anonymous 3762</persName>
+                                was a monk
+                            </note>
+                        </occupation>
+                    </person>
+                </listPerson>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/work/812"/>
+                    <citedRange unit="p">274</citedRange>
+                </bibl>
+                <bibl type="primary">
+                    <ptr target="http://syriaca.org/bibl/1409"/>
+                    <citedRange unit="p">274</citedRange>
+                </bibl>
+            </div>
             <div type="factoid" subtype="event" xml:id="factoid-1"
-                resp="#jnsaint-laurent #tbaillargeon #tmcneir #syoung #rtrupiano">
+                resp="#jnsaint-laurent #tbaillargeon #tmcneir #syoung #rtrupiano #dschwartz">
                 <idno type="URI">http://syriaca.org/spear/812-1</idno>
                 <listEvent>
                     <event
-                        ana="http://syriaca.org/keyword/liturgics http://syriaca.org/keyword/prayer http://syriaca.org/keyword/monasticism">
-                        <desc><persName>A pre-emminent monk</persName> was fervently praying with
-                            his eyes toward the heaven while bouncing on the soles of his feet.
+                        ana="http://syriaca.org/keyword/prayer http://syriaca.org/keyword/spiritual-or-ascetic-disciplines">
+                        <desc>
+                            <persName ref="http://syriaca.org/person/3762">Anonymous 3762</persName> engaged in earnest prayer and 
+                            physically strenuous acts of asceticism.
                         </desc>
                     </event>
                 </listEvent>
@@ -156,54 +220,17 @@
                     <citedRange unit="p">274</citedRange>
                 </bibl>
             </div>
-            <div type="factoid" subtype="event" xml:id="factoid-2"
-                resp="#jnsaint-laurent #tbaillargeon #tmcneir #syoung #rtrupiano">
-                <idno type="URI">http://syriaca.org/spear/812-2</idno>
-                <listEvent>
-                    <event
-                        ana="http://syriaca.org/keyword/hussaya http://syriaca.org/keyword/penitence">
-                        <desc><persName ref="http://syriaca.org/person/74">John</persName> asks the
-                            monk why he is upset. <persName>The monk</persName> is contrite for a
-                            sin he has committed. </desc>
-                    </event>
-                </listEvent>
-                <bibl type="primary">
-                    <ptr target="http://syriaca.org/work/812"/>
-                    <citedRange unit="p">275</citedRange>
-                </bibl>
-                <bibl type="primary">
-                    <ptr target="http://syriaca.org/bibl/1409"/>
-                    <citedRange unit="p">275</citedRange>
-                </bibl>
-            </div>
-            <div type="factoid" subtype="event" xml:id="factoid-3"
-                resp="#jnsaint-laurent #tbaillargeon #tmcneir #syoung #rtrupiano">
-                <idno type="URI">http://syriaca.org/spear/812-3</idno>
-                <listEvent>
-                    <event
-                        ana="http://syriaca.org/keyword/sexuality http://syriaca.org/keyword/shame">
-                        <desc><persName>The man</persName> confesses that his sin is worse than
-                            fornication. </desc>
-                    </event>
-                </listEvent>
-                <bibl type="primary">
-                    <ptr target="http://syriaca.org/work/812"/>
-                    <citedRange unit="p">275</citedRange>
-                </bibl>
-                <bibl type="primary">
-                    <ptr target="http://syriaca.org/bibl/1409"/>
-                    <citedRange unit="p">275</citedRange>
-                </bibl>
-            </div>
             <div type="factoid" subtype="event" xml:id="factoid-4"
-                resp="#jnsaint-laurent #tbaillargeon #tmcneir #syoung #rtrupiano">
+                resp="#jnsaint-laurent #tbaillargeon #tmcneir #syoung #rtrupiano #dschwartz">
                 <idno type="URI">http://syriaca.org/spear/812-4</idno>
                 <listEvent>
                     <event
                         ana="http://syriaca.org/keyword/laughter http://syriaca.org/keyword/liturgics http://syriaca.org/keyword/demonology http://syriaca.org/keyword/confession">
-                        <desc><persName>The monk</persName> confesses that while he was celebrating
-                            the liturgy, he laughed at <persName>another monk</persName> whom
-                                <persName>Satan</persName> has pushed down. </desc>
+                        <desc>
+                            <persName ref="http://syriaca.org/person/3762">Anonymous 3762</persName> 
+                            confesses that while he was celebrating the liturgy, he laughed at another monk whom
+                            <persName ref="http://syriaca.org/person/3651">Satan</persName> had pushed down. 
+                        </desc>
                     </event>
                 </listEvent>
                 <bibl type="primary">
@@ -213,34 +240,15 @@
                 <bibl type="primary">
                     <ptr target="http://syriaca.org/bibl/1409"/>
                     <citedRange unit="p">276</citedRange>
-                </bibl>
-            </div>
-            <div type="factoid" subtype="event" xml:id="factoid-5"
-                resp="#jnsaint-laurent #tbaillargeon #tmcneir #syoung #rtrupiano">
-                <idno type="URI">http://syriaca.org/spear/812-5</idno>
-                <listEvent>
-                    <event
-                        ana="http://syriaca.org/keyword/didactic http://syriaca.org/keyword/humor">
-                        <desc><persName ref="http://syriaca.org/person/74">John</persName> responded
-                            to the story of <persName>the monks</persName> and told him that he did
-                            not sin. </desc>
-                    </event>
-                </listEvent>
-                <bibl type="primary">
-                    <ptr target="http://syriaca.org/work/812"/>
-                    <citedRange unit="p">277</citedRange>
-                </bibl>
-                <bibl type="primary">
-                    <ptr target="http://syriaca.org/bibl/1409"/>
-                    <citedRange unit="p">277</citedRange>
                 </bibl>
             </div>
             <div type="factoid" subtype="event" xml:id="factoid-6"
                 resp="#jnsaint-laurent #tbaillargeon #tmcneir #syoung #rtrupiano">
                 <idno type="URI">http://syriaca.org/spear/812-6</idno>
                 <listEvent>
-                    <event ana="http://syriaca.org/keyword/repentence">
-                        <desc><persName>The monk</persName> accepts the advice and goes away.
+                    <event ana="http://syriaca.org/keyword/repentence http://syriaca.org/keyword/penitence">
+                        <desc>
+                            <persName ref="http://syriaca.org/person/3762">Anonymous 3762</persName> repented and did penance.
                         </desc>
                     </event>
                 </listEvent>
@@ -258,10 +266,12 @@
                 <idno type="URI">http://syriaca.org/spear/812-7</idno>
                 <listEvent>
                     <event
-                        ana="http://syriaca.org/keyword/monasticism http://syriaca.org/keyword/monasteries http://syriaca.org/keyword/monks">
-                        <desc><persName ref="http://syriaca.org/person/74">John</persName> describes
-                            the questions posed to <persName>the laymen</persName> wishing to enter
-                            this convent. </desc>
+                        ana="http://syriaca.org/keyword/monasticism http://syriaca.org/keyword/monasteries http://syriaca.org/keyword/monks http://syriaca.org/keyword/repentence http://syriaca.org/keyword/penitence http://syriaca.org/keyword/dress">
+                        <desc><persName ref="http://syriaca.org/person/74">John</persName> 
+                            describes the lengthy process by which men enter the monastery of 
+                            <persName ref="http://syriaca.org/person/3762">Anonymous 3762</persName>. After one month of testing 
+                            they may become penitents, after three months they many be partially tonsured and wear a limited monastic habit. 
+                            Only after three years they may become monks, fully tonsured and wearing the complete habit. </desc>
                     </event>
                 </listEvent>
                 <bibl type="primary">
@@ -271,122 +281,6 @@
                 <bibl type="primary">
                     <ptr target="http://syriaca.org/bibl/1409"/>
                     <citedRange unit="p">279</citedRange>
-                </bibl>
-            </div>
-            <div type="factoid" subtype="event" xml:id="factoid-8"
-                resp="#jnsaint-laurent #tbaillargeon #tmcneir #syoung #rtrupiano">
-                <idno type="URI">http://syriaca.org/spear/812-8</idno>
-                <listEvent>
-                    <event
-                        ana="http://syriaca.org/keyword/monks http://syriaca.org/keyword/monasticism http://syriaca.org/keyword/monasteries http://syriaca.org/keyword/discernment http://syriaca.org/keyword/monastic-heads">
-                        <desc><persName>The monks</persName> go through a thirty day waiting period
-                            before they can enter the monastery. </desc>
-                    </event>
-                </listEvent>
-                <bibl type="primary">
-                    <ptr target="http://syriaca.org/work/812"/>
-                    <citedRange unit="p">280</citedRange>
-                </bibl>
-                <bibl type="primary">
-                    <ptr target="http://syriaca.org/bibl/1409"/>
-                    <citedRange unit="p">280</citedRange>
-                </bibl>
-            </div>
-            <div type="factoid" subtype="event" xml:id="factoid-9"
-                resp="#jnsaint-laurent #tbaillargeon #tmcneir #syoung #rtrupiano">
-                <idno type="URI">http://syriaca.org/spear/812-9</idno>
-                <listEvent>
-                    <event
-                        ana="http://syriaca.org/keyword/penitence http://syriaca.org/keyword/monasteries">
-                        <desc> After three months of menial labor at the monastery, if
-                                <persName>they</persName> are still enthusiastic, they may become a
-                            penitent. </desc>
-                    </event>
-                </listEvent>
-                <bibl type="primary">
-                    <ptr target="http://syriaca.org/work/812"/>
-                    <citedRange unit="p">281</citedRange>
-                </bibl>
-                <bibl type="primary">
-                    <ptr target="http://syriaca.org/bibl/1409"/>
-                    <citedRange unit="p">281</citedRange>
-                </bibl>
-            </div>
-            <div type="factoid" subtype="event" xml:id="factoid-10?"
-                resp="#jnsaint-laurent #tbaillargeon #tmcneir #syoung #rtrupiano">
-                <idno type="URI">http://syriaca.org/spear/812-10?</idno>
-                <listEvent>
-                    <event
-                        ana="http://syriaca.org/keyword/sin http://syriaca.org/keyword/fasting http://syriaca.org/keyword/celibacy http://syriaca.org/keyword/souls">
-                        <desc> Penitents will need to cleanse their souls of worldly foulness for
-                            three years. </desc>
-                    </event>
-                </listEvent>
-                <bibl type="primary">
-                    <ptr target="http://syriaca.org/work/812"/>
-                    <citedRange unit="p">281</citedRange>
-                </bibl>
-                <bibl type="primary">
-                    <ptr target="http://syriaca.org/bibl/1409"/>
-                    <citedRange unit="p">281</citedRange>
-                </bibl>
-            </div>
-            <div type="factoid" subtype="event" xml:id="factoid-11?"
-                resp="#jnsaint-laurent #tbaillargeon #tmcneir #syoung #rtrupiano">
-                <idno type="URI">http://syriaca.org/spear/812-11?</idno>
-                <listEvent>
-                    <event
-                        ana="http://syriaca.org/keyword/monasticism http://syriaca.org/keyword/clergy">
-                        <desc> After another three months, the penitent will petition to be tonsured
-                            and to seek intercessors. </desc>
-                    </event>
-                </listEvent>
-                <bibl type="primary">
-                    <ptr target="http://syriaca.org/work/812"/>
-                    <citedRange unit="p">282</citedRange>
-                </bibl>
-                <bibl type="primary">
-                    <ptr target="http://syriaca.org/bibl/1409"/>
-                    <citedRange unit="p">282</citedRange>
-                </bibl>
-            </div>
-            <div type="factoid" subtype="event" xml:id="factoid-12?"
-                resp="#jnsaint-laurent #tbaillargeon #tmcneir #syoung #rtrupiano">
-                <idno type="URI">http://syriaca.org/spear/812-12?</idno>
-                <listEvent>
-                    <event
-                        ana="http://syriaca.org/keyword/dress http://syriaca.org/keyword/monasticism http://syriaca.org/keyword/clergy">
-                        <desc> If the penitent is still earnest, half of his head will be shaved and
-                            after a year, he will complete the tonsure and will be given tunic of
-                            straw. </desc>
-                    </event>
-                </listEvent>
-                <bibl type="primary">
-                    <ptr target="http://syriaca.org/work/812"/>
-                    <citedRange unit="p">282</citedRange>
-                </bibl>
-                <bibl type="primary">
-                    <ptr target="http://syriaca.org/bibl/1409"/>
-                    <citedRange unit="p">282</citedRange>
-                </bibl>
-            </div>
-            <div type="factoid" subtype="event" xml:id="factoid-13?"
-                resp="#jnsaint-laurent #tbaillargeon #tmcneir #syoung #rtrupiano">
-                <idno type="URI">http://syriaca.org/spear/812-13?</idno>
-                <listEvent>
-                    <event
-                        ana="http://syriaca.org/keyword/monasticism http://syriaca.org/keyword/dress">
-                        <desc> After another three years, the penitent will be given a habit.
-                        </desc>
-                    </event>
-                </listEvent>
-                <bibl type="primary">
-                    <ptr target="http://syriaca.org/work/812"/>
-                    <citedRange unit="p">282</citedRange>
-                </bibl>
-                <bibl type="primary">
-                    <ptr target="http://syriaca.org/bibl/1409"/>
-                    <citedRange unit="p">282</citedRange>
                 </bibl>
             </div>
         </body>
